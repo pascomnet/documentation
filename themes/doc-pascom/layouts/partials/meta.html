@@ -1,0 +1,5 @@
+<meta name="keywords" content="{{ delimit .Keywords ", " }}" >
+    <meta name="title" content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}" property="og:title">
+    <meta name="author" content="pascom Netzwerktechnik GmbH & Co.KG">
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+

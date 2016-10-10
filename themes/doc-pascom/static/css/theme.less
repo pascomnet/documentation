@@ -1,0 +1,149 @@
+// out: ./theme.css
+
+@import "_variables";
+@import "_bootstrap";
+@import "_theme";
+@import "_languageswitch";
+@import "_algolia-search";
+
+#header {
+  background: #080808;
+  border-bottom: 4px solid @black;
+}
+
+#body {
+  .nav:hover {
+    background: @almostwhite;
+  }
+  .padding {
+    padding: 1rem 6rem;
+    max-width: 1192px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img {
+    margin: 0.5rem auto;
+  }
+}
+
+#sidebar ul.topics > li > a {
+  line-height: 1.5rem;
+  font-size: 1.0rem;
+}
+
+#sidebar ul li a span {
+  white-space: normal;
+}
+
+#sidebar {
+  background-color: @almostblack;
+
+  ul.topics > li.parent {
+    background-color: #323232;
+  }
+
+  a {
+    color: @almostwhite;
+    &:hover {
+      color: @red;
+    }
+  }
+  ul li li {
+    padding-left: 1rem;
+    text-indent: 0;
+  }
+
+  ul li.active > a {
+    color: @red;
+    //background: @almostwhite;
+    background: #323232;
+    border-bottom: 1px solid @red;
+  }
+}
+
+#top-bar {
+  background-color: @almostwhite;
+}
+
+a {
+  color: @red;
+  &:hover {
+    color: @red;
+  }
+}
+
+.pc-video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.highlightable {
+  padding-top: 0px;
+}
+
+#body-inner {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#top-bar {
+  max-width: 1030px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+code {
+  border-radius: 2px;
+  white-space: normal;
+  color: @black;
+  background: #FFF7DD;
+  border: 1px solid #fbf0cb;
+  padding: 3px 3px;
+}
+
+@media only all and (max-width: 50em) {
+  #sidebar-toggle-span {
+    display: inline;
+  }
+  #sidebar {
+    width: 230px;
+    left: -230px;
+  }
+  #body {
+    margin-left: 0;
+    width: 100%;
+  }
+  .sidebar-hidden {
+    overflow: hidden;
+  }
+  .sidebar-hidden #sidebar {
+    left: 0;
+  }
+  .sidebar-hidden #body {
+    margin-left: 230px;
+    overflow: hidden;
+  }
+  .sidebar-hidden #overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+}
+
+#docuname {
+  padding: 10px 0 5px 0;
+  font-size:18px;
+}
+
+/* End */

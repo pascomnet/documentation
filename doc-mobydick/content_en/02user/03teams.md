@@ -1,0 +1,213 @@
+---
+title: Teams bilden
+url: /benutzer/teams-bilden/
+prev: /benutzer/benutzer-und-arbeitsplaetze/
+next: /benutzer/erweiterte-team-funktionen/
+weight: 23
+toc: true
+---
+
+## Konzept
+
+Jeder Benutzer hat in der mobydick seine eigene Durchwahl, Geräte und Aktionen die den Anruf an diese Durchwahl steuern.
+**Zusätzlich kann** ein Benutzer Mitglied in einem Team sein.
+
+![Illustration - Team Konzept](../../images/team_konzept.png?width=50% "Teams und Warteschlangen in der mobydick")
+
+
+Das **Team** hat eine eigene Durchwahl und eigene Aktionen. Wird die Durchwahl des Teams gerufen klingeln die Telefone der Mitglieder je nach im Team hinterlegter Strategie und Aktionen.  
+{{% notice info %}}
+Wird ein Team gerufen gelten ausschließlich die dort hinterlegten Aktionen. Die Aktionen die bei den Benutzer hinterlegt sind werden in diesem Fall ingnoriert.
+{{% /notice %}}
+Somit kann man beispielsweise steuern, dass Frank auf seiner direkten Durchwahl **22** auch **außerhalb der Geschäftszeiten erreichbar bleibt** das Support Team nach 18:00 Uhr aber auf den **Anrufbeantworter** umleitet.
+
+### Teamarten
+
+Es gibt zwei verschiedene Arten von Teams die sich lediglich im Funktionsumfang unterscheiden.
+
+#### Rufgruppen
+
+Rufgruppen haben **fix zugeteilte** Mitglieder und kennen nur die beiden Rufstrategien **alle** und **nacheinander**. Anrufer bekommen entweder ein Freizeichen oder Wartemusik vorgespielt.
+
+#### Warteschlangen
+
+Warteschlangen können fixe und **dynamische Mitglieder** habe. Das bedeutet Benutzer können sich bei Bedarf an einer Warteschlange ad hoc anmelden. Außerdem kennen Warteschlangen eine **Vielzahl** verschiedener **Rufstrategien**.
+
+Anrufer werden nacheinander in der Warteschlange **eingereiht** und bekommen auf Wunsch die **Warteposition** und **durchschnittliche Wartezeit** angesagt. Während der Wartezeit kann man entweder Wartemusik oder ein Freizeichen einspielen.
+
+### Rufstrategien
+
+|Strategie|	Asterisk Bezeichnung|	Beschreibung|Rufgruppe|Warteschlange|
+|---------|---------------------|--------------|:--------:|:------------:|
+|alle| ringall|	Alle Mitglieder werden gleichzeitig gerufen.| <i class="fa fa-check-square" aria-hidden="true"></i>  |  <i class="fa fa-check-square" aria-hidden="true"></i>| 
+|nacheinander|	linear	|Die Mitglieder werden nach der Zuweisungsreihenfolge gerufen. Achtung: Dynamische Mitglieder verändern durch Ein- und Ausbuchen aus dem Team die Position.|  <i class="fa fa-check-square" aria-hidden="true"></i>| <i class="fa fa-check-square" aria-hidden="true"></i> |
+|längste zurück| lastrecent	|Das Mitglied welches am längsten keinen Anruf entgegen genommen hat kommt als nächstes dran. Achtung: Dynamische Mitglieder setzten durch Ein- und Ausbuchen aus dem Team alle Zähler zurück und sind somit nach dem Einbuchen automatisch immer derjenige der am längsten keinen Anruf bekommen hat.|  |<i class="fa fa-check-square" aria-hidden="true"></i>  |
+|wenigsten Anrufer|	fewestcalls	|Das Mitglied welches am wenigsten Anrufe angenommen hat kommt als nächstes dran. Diese Einstellung berücksichtig nicht die Anrufdauer. Wenn ein Mitglied beispielsweise 5 mal eine Minute lang telefoniert und ein anderes 2 mal eine Stunde ist trotzdem letzteres an der Reihe. Dynamische Mitglieder setzten durch Ein- und Ausbuchen aus dem Team alle Zähler zurück und sind somit nach dem Einbuchen automatisch immer derjenige der am wenigsten Anruf bekommen hat.|  | <i class="fa fa-check-square" aria-hidden="true"></i> |
+|per Zufall|	random	|Wählt zufällig einen Agenten aus.|  | <i class="fa fa-check-square" aria-hidden="true"></i> |
+|mem-nacheinander|	rrmemory	|Wie nacheinander allerdings beginnt die Reihe beim nächsten Anrufer nicht von vorne sondern nach dem der als letztes einen Anruf entgegengenommen hat.|  | <i class="fa fa-check-square" aria-hidden="true"></i> |
+|per Zufall nach Priorität| wrandom|	Wie per Zufall nur werden die Prioritäten der Agenten berücksichtigt. Erst wenn alle Agenten mit niedriger Priorität telefonieren werden die mit der nächst höheren gerufen.|  | <i class="fa fa-check-square" aria-hidden="true"></i> |
+
+### Warteschlangen gewichten
+
+Warteschlangen können ein unterschiedliches Gewicht haben. Desto schwerer desto wichtiger. Als Gewicht können Sei eine beliebige Zahl eintragen.
+
+![Illustration - Warteschlangen gewichten](../../images/team_prioritaet.png?width=70% "Warteschlangen gewichten in der mobydick")
+
+In unserem Beispiel sind Frank und Peter in die Warteschlange Support und VIP-Support eingebucht. Beide telefonieren. In Support warten 2 Kunden darauf bedient zu werden in VIP-Support einer. Beendet Frank oder Peter das aktuelle Gespräch wird auf jeden Fall der wartende Anrufer aus dem VIP-Support als nächstes dran kommen, egal ob dieser bereits länger oder kürzer als die anderen wartet, da diese Warteschleife mehr Gewicht hat. Es werden also solange Wartende aus der schwersten Warteschlange dran kommen bis diese leer ist.
+{{% notice tip %}}
+A tip disclaimer
+Wenn Sie mit Gewichten arbeiten, dürfen Sie keine Warteschlangen ohne Gewicht benutzen. Diese haben dann ein Gewicht von 0 und kommen somit nie an die Reihe.
+{{% /notice %}}
+
+## Konfiguration
+
+### Team von Typ Rufgruppe verwalten
+
+Wählen Sie hierzu in der mobydick Weboberfläche unter **Benutzer > Teams** den Button `+Hinzufügen` um ein neues Team zu erstellen oder markieren Sie eine bereits vorhandenes Team und wählen `Bearbeiten`.
+
+Beim Hinzufügen selektieren Sie den **Typ Rufgruppe** und geben Sie eine **Bezeichnung** sowie die Durchwahl unter der das Team erreichbar sein soll ein.
+
+#### Basisdaten
+![Screenshot - Rufgruppe verwalten](../../images/team_rufgruppe_basic.png?width=90% "Rufgruppe verwalten in der mobydick")
+
+|Parameter| Bedeutung|
+|----------|----------|
+|Bezeichnung|Name des Teams.|
+|Durchwahl|Unter welcher Durchwahl ist das Team erreichbar.|
+|Rufstrategie|Nach welcher Strategie sollen die Mitglieder gerufen werden.|
+|Pickup Benachrichtigungen|Hier kann man festlegen, wer alles Pickup Benachrichtigungen einer Rufgruppe sieht. Mehr dazu unter: Pickup Benachrichtigungen|
+|Anzeigetext|Dieser Text wird dem Mitglied auf seinem Telefon-Display vor dem Namen und der Nummer des Anrufenden angezeigt. Somit kann das Mitglied nachvollziehen das es sich nicht um einen direkten Anruf sonder einen Anruf über das Team "SP" handelt.|
+|Kanal beantworten|Normalerweise wird der Kanal sofort beantwortet falls Wartemusik oder eine Ansage abgespielt werden soll. Dies kann man hier verzögern (in Millisekunden). Bei manchen Anrufern kommt es vor, dass bei einer sofortigen Beantwortung die erste Silbe der Ansage "verschluckt" wird. Durch eine Verzögerung kann dies vermieden werden.|
+|Wartemusik|Welche Wartemusik Playliste soll abgespielt werden. Wählen Sie - Freizeichen - wenn Sie nicht möchten, dass der Kanal beantwortet wird sondern der Anrufer ein Freizeichen erhält. Dies mach natürlich nur sinn wenn Sie nicht bereits in den Aktionen den Kanal beantwortet haben um z.B. eine Begrüßung abzuspielen.|
+
+#### Erweitert
+![Screenshot - Rufgruppe mit Erweiterten Funktionen](../../images/team_rufgruppe_erweitert.png?width=90% "Rufgruppe - Erweiterte Funktionen")
+
+
+|Parameter| Bedeutung|
+|----------|----------|
+|Timeout extern |Wie lange sollen externe Anrufer maximal in der Rufgruppe bleiben (Sekunden). Nach diesem Timeout geht der Anruf weiter in die Aktionen **Extern/Nachher** mit dem **Ruf status** *Timeout*.|
+|Timeout intern|Wie lange sollen interne Anrufer maximal in der Rufgruppe bleiben (Sekunden). Nach diesem Timeout geht der Anruf weiter in die Aktionen  Intern/Nachher mit dem **Ruf status** *Timeout*.|
+|Voicemail Pin|Pin für die Voicemailbox. Details zum Konzept siehe Voicemailbox.|
+|Voicemails speichern|Wählen Sie ob Voicemails auf der Festplatte gespeichert werden sollen. Details zum Konzept siehe Voicemailbox.|
+|Voicemail Email|Tragen Sie die Email ein an die Voicemails für diese Team gesendet werden sollen. Details zum Konzept siehe Voicemailbox.|
+
+
+##### Mitglieder
+![Screenshot - Mitglieder einer Rufgruppe](../../images/team_rufgruppe_mitglieder.png?width=90% "Rufgruppenmitglieder")
+
+Weisen Sie hier der Gruppe Mitglieder zu.  Durch die Auf- und Abpfeile können Sie die Reihenfolge der Mitglieder ändern auch dies ist für manche  Rufstrategien von Bedeutung.
+
+#### Rollen
+Definiert in welchen Rollen das jeweilige Team Mitglied ist. Siehe Rollen für Details.
+
+#### Aktionen (intern, extern, voher, nachher)
+
+Mit Aktionen steuern Sie den Anruf Ablauf. Details siehe Aktionen.
+
+### Team von Typ Warteschlange verwalten
+
+Wählen Sie hierzu in der mobydick Weboberfläche unter **Benutzer > Teams** den Button `+Hinzufügen` um ein neues Team zu erstellen oder markieren Sie eine bereits vorhandenes Team und wählen `Bearbeiten`.
+Beim Hinzufügen selektieren Sie den **Typ Warteschlange** und geben Sie eine **Bezeichnung** sowie die Durchwahl unter der das Team erreichbar sein soll ein.
+
+#### Basisdaten
+![Screenshot - Warteschlangen verwalten](../../images/team_warteschlangen_basics.png?width=90% "Warteschlangen verwalten in der mobydick")
+
+|Parameter| Bedeutung|
+|----------|----------|
+|Bezeichnung|Name des Teams|
+|Durchwahl| Unter welcher Durchwahl ist das Team erreichbar|
+|Rufstrategie|Nach welcher Strategie sollen die Mitglieder gerufen werden|
+|Pickup Benachrichtigungen|Hier kann man festlegen, wer alles Pickup Benachrichtigungen einer Rufgruppe sieht. Mehr dazu unter: Pickup Benachrichtigungen|
+|Anzeigetext|Dieser Text wird dem Mitglied auf seinem Telefon-Display vor dem Namen und der Nummer des Anrufenden angezeigt. Somit kann das Mitglied nachvollziehen das es sich nicht um einen direkten Anruf sondern einen Anruf über das Team "SP" handelt|
+|Wartemusik|Welche Wartemusik Playliste soll abgespielt werden. Wählen Sie - Freizeichen - wenn Sie nicht möchten, dass der Kanal beantwortet wird sondern der Anrufer ein Freizeichen erhält. Dies mach natürlich nur sinn wenn Sie nicht bereits in den Aktionen den Kanal beantwortet haben um z.B. eine Begrüßung abzuspielen.|
+|Mitglied-Timeout|Wie lange soll mobydick versuchen das einzelne Mitglied zu erreichen (in Sekunden). Z.B. bei Rufstrategie nacheinander wird das erste Mitglied ausgewählt und dessen Telefon läutet. Nach dem Timeout (hier 15 Sekunden) hört das Telefon auf zu läuten, der Anrufer wird wieder in dei Warteschleife zurückgezogen. Das System ermittelt nun das nächste Mitglied in der Reihe und versucht dieses, wiederum für 15 Sekunden, zu erreichen, usw...|
+|Maximal Anzahl Wartende|Bestimmt wie viele Wartenden sich maximal in der Warteschleife befinden dürfen. Kommt im Beispiel ein sechster Anrufer herein wird dieser nicht in der Warteschleife warten sonder direkt in die Aktionen Nachher vermittelt.|
+|Call Completed Elsewhere senden|Sobald ein Anruf in der Warteschlange durch einen Mitglied angenommen wird, erhalten die noch freien Teammitglieder einen Hinweis. So wissen die Mitglieder, dass der Anruf angenommen wurde.|
+
+#### Erweitert
+![Screenshot - Warteschlangen erweiterte Funktionen](../../images/team_warteschlangen_advanced.png?width=90% "Warteschlangen mit erweiterten Funktionen")
+
+|Parameter| Bedeutung|
+|----------|----------|
+|Einbuchcode|Mit diesem Code gefolgt von seiner Durchwahl kann sich ein Benutzer, der dynamisches Mitglied in diesem Team ist, an- und abmelden. Siehe Benutzer dynamisch an- und abmelden.|
+|Timeout extern |Wie lange sollen externe Anrufer maximal in der Warteschlange bleiben (Sekunden). Nach diesem Timeout geht der Anruf weiter in die Aktionen **Extern/Nachher** mit dem **Ruf status** *Timeout*.|
+Timeout intern|	Wie lange sollen interne Anrufer maximal in der Warteschlange bleiben (Sekunden). Nach diesem Timeout geht der Anruf weiter in die Aktionen  **Intern/Nachher** mit dem Ruf status *Timeout*.|
+|Kanal beantworten|	Normalerweise wird der Kanal sofort beantwortet falls Wartemusik oder eine Ansage abgespielt werden soll. Dies kann man hier verzögern (in Millisekunden). Bei manchen Anrufern kommt es vor, dass bei einer sofortigen Beantwortung die erste Silbe der Ansage "verschluckt" wird. Durch eine Verzögerung kann dies vermieden werden.|
+|Gewichtung	|Warteschlangen können ein unterschiedliches Gewicht haben. Desto schwerer desto wichtiger. Als Gewicht können Sei eine beliebige Zahl eintragen. Siehe Warteschlangen gewichten|
+|Ansage-Frequenz|	Tragen Sie hier ein in welchen Abständen (Sekunden) der Anrufer über seine Position und Wartezeit in der Warteschleife informiert werden soll. Lassen Sie dieses Feld leer wir der Anrufer keine derartigen Ansagen hören.|
+|Optionen|Hier können Sie alle Optionen eintragen die Asterisk für Warteschleifen kennt. Eine Option pro Zeile. Siehe http://www.voip-info.org/wiki/view/Asterisk+config+queues.conf|
+|Betreten wenn leer|	Regelt ob Anrufer die Warteschlange betreten können obwohl diese leer ist. Verwendet man ausschließlich dyn. Mitglieder kann es sein, dass alle Mitglieder ausgebucht sind. Wählen Sie hier *nein* werden Anrufer in dieser Situation direkt in die Aktionen **Nachher** mit dem **Ruf status** *Beitritt bei leer* weitergeleitet.|
+|Verlassen wenn leer|	Regelt ob Anrufer die Warteschlange automatisch verlassen sobald diese leer ist. Verwendet man ausschließlich dyn. Mitglieder kann es sein, dass sich das letzte Mitglieder ausgebucht während noch ein Anrufer wartet. Wählen Sie hier ja werden Anrufer in dieser Situation direkt in die Aktionen  **Nachher** mit dem **Ruf status** *Verlassen bei leer* weitergeleitet.|
+|Voicemail Pin|	Pin für die Voicemailbox. Details zum Konzept siehe Voicemailbox.|
+|Voicemails speichern|	Wählen Sie ob Voicemails auf der Festplatte gespeichert werden sollen. Details zum Konzept siehe Voicemailbox.|
+|Voicemail Email	|Tragen Sie die Email ein an die Voicemails für diese Team gesendet werden sollen. Details zum Konzept siehe Voicemailbox.|
+
+#### Mitglieder
+
+![Screenshot - Mitglieder einer Warteschlange](../../images/team_warteschlangen_mitglieder.png?width=90% "Warteschlangenmitglieder")
+
+Weisen Sie hier der Warteschlange Mitglieder zu. Durch **Flexibel** *ja* markieren Sie dieses Mitglied als dynamisch. Mitglieder mit **Flexibel** *nein* werden immer gerufen und können sich nicht ausbuchen. Manche Rufstrategien berücksichtigen die Priorität eines Mitgliedes. Durch die Auf- und Abpfeile können Sie die Reihenfolge der Mitglieder ändern auch dies ist für manche Rufstrategien von Bedeutung.
+
+#### Rollen
+
+Definiert in welchen Rollen das jeweilige Team Mitglied ist. Siehe Rollen für Details.
+
+#### Aktionen (intern, extern, voher, nachher)
+
+Mit Aktionen steuern Sie den Anruf Ablauf. Details siehe Aktionen.
+
+#### Dynamisch an- und abmelden
+
+mobydick bietet den Benutzern die Möglichkeit sich dynamisch an Warteschlagen an- und abzumelden. Vorraussetzung hierfür ist, dass der Benutzer als flexiebles Mitglied bei der Warteschleife hinterlegt ist. Dies stellen Sie im Reiter **Tab Mitglieder** unter **Zugewiesene Benutzer** -> **Flexibel** *Ja* ein.
+
+Ist für die Warteschlange ein Einbuchcode *(Warteschlange -> Tab Erweitert -> Einbuchcode)* hinterlegt kann sich ein Benutzer,  der dynamisches Mitglied in diesem Team ist, an dieser an- und abmelden.
+
+Wenn Sie als Einbuchcode z.B. ***80** eintragen kann sich Peter, der die Durchwahl **21** hat durch Wählen von ***8021** an diesem Team an- und abmelden. **Alternativ** können Sie sich immer, egal ob etwas im Einbuchcode eingetragen ist oder nicht, per **Systemdurchwahl** ***99Warteschlangendurchwahl#Benutzerdurchwahl** an- und abmelden. Z.B. ***99800#21** wenn sich Peter mit der Durchwahl **21** an der Warteschleife mit der Durchwahl **800** anmelden möchte.
+
+Der Vorteil des Einbuchcodes im Gegensatz zur Systemdurchwahl ist, dass Sie den Einbuchcode auch auf die **LED-Nebenstellentaste** eines IP-Telefones legen können. Somit leuchtet die **LED** wenn der Benutzer in der Warteschlange angemeldet ist und erlischt sobald sich dieser abmeldet.
+
+Alternativ kann sich ein Benutzer auch per mobydick Client in der Team Anzeige durch das + und - Symbol an einem Warteschlangen Team ab- und anmelden:
+
+Auch besteht die Möglichkeit einen Benutzer aus allen Warteschleifen, in den er Mitglied ist, auf einmal an- und abzumelden. Dazu gibt es den TastenCode ***99#Benutzerdurchwahl**.
+![Screenshot - Dynamisch an- und abmelden](../../images/team_einbuchen.png?width=30% "Dynamisch an- und abmelden in Warteschlagen")
+
+#### Pausieren und Pausengründe
+
+Statt sich an- und abzumelden ist es auch möglich als Mitglied einer Warteschlange zu pausieren. In dieser Zeit bleiben Sie an der Warteschlange angemeldet erhalten aber keine Anrufe. Zusätzlich können in der mobydick Weboberfläche unter dem Menüpunkt **Erweitert > Pausengründe** Pausengründe definiert werden.
+
+![Screenshot - Pausengründe verwalten](../../images/team_pause_list.png?width=90% "Pausengründe der Warteschlagen verwalten")
+
+
+|Parameter| Bedeutung|
+|----------|----------|
+|Bezeichnung|	Die Bezeichnung wird im mobydick Client als Pausengrund angezeigt|
+|Kennung|Mit der Kennung kann man die Pause pro Mitglied per TastenCode am Telefon aktivieren/deaktivieren.**99Warteschlangendurchwahl#Benutzerdurchwahl#PausengrundKennung**. |
+
+Pausiert ein Mitglied in der Warteschleife kann das von den anderen Mitgliedern incl. Pausengrund im mobydick Client gesehen werden:
+![Screenshot - Pause aktivieren im mobydick Client](../../images/team_pause.png?width=90% " Pause aktivieren im mobydick Client")
+
+Das Pausieren kann im mobydick Client in der Team Anzeige durch das Pausensymbol gesteuert werden:
+![Screenshot - Pausengründe im mobydick Client](../../images/team_pause_detail.png?width=30% " Pausengründe im mobydick Client")
+
+Alternativ lassen Sich die Pausengründe pro Mitglied auch per Tastencode-Eingabe am Telefon steuern.
+Der Tastencode setzt sich wie folgt zusammen: ***99Warteschlangendurchwahl#Benutzerdurchwahl#PausengrundKennung**
+
+### Pickup Benachrichtigungen
+
+In einem Team ist es möglich einzustellen, welche Benutzer im mobydick Client Pickup Benachrichtigungen über eingehende Rufe erhalten.
+
+Zuerst muss eine Pickup-Rolle definiert werden. Diese kann als Mitglieder ein Team haben und auch einzelne Benutzer, die nicht zum Team gehören. Informationen zu Rollen finden Sie unter: Konzept: Rollen.
+
+Anschließend können Sie im Team, das zur angelegten Pickup-Rolle gehört festlegen wer Banchrichtigugnen erhält:
+![Screenshot - PPickup Benachrichtigungen](../../images/team_pickup_hinweis.png?width=90% " Pickup Benachrichtigungen")
+
+Folgende Einstellungen sind möglich:
+
+|Parameter| Bedeutung|
+|----------|----------|
+|Niemand|Niemand erhält Benachrichtigungen|
+|Verfügbare Agenten und Nichtmitglieder|Agenten die im Team angemeldet sind und Agenten die Nichtmitglieder im Team sind erhalten eine Benachrichtigung. Flexible Agenten die gerade nicht im Team angemeldet sind und pausierte Agenten erhalten keine Benachrichtigung.|
+|Nicht verfügbare Agenten und Nichtmitglieder|Agenten die nicht im Team angemeldet sind, Agenten die pausiert sind und Nichtmitglieder des Teams erhalten eine Benachrichtigung. Agenten die feste Mitglieder des Teams sind und flexible Agenten die gerade angemeldet sind erhalten keine Benachrichtigungen.|
+|Nur Nichtmitglieder|Nur Nichtmitglieder des Teams erhalten eine Benachrichtigung.|
+|Gesamte Pickup-Gruppe|Die gesamte Pickup-Gruppe bekommt Benachrichtigungen.|

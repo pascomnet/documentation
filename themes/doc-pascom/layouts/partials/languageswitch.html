@@ -1,0 +1,5 @@
+<div id="languageswitch">
+    <a href="">DE</a> | <a href="{{with .Site.Params.baseurlen}}{{.}}{{end}}{{ .Params.linken}}" title="Read the article in English">EN</a> | <a href="{{ with .Site.Params.mypascomurl }}{{ . }}{{ end }}" target="_blank" title="{{ with .Site.Params.mypascomtitle }}{{ . }}{{ end }}">
+    {{ with .Site.Params.mypascomtext }}{{ . }}{{ end }}
+</a>
+</div>

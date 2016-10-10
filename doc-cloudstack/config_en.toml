@@ -1,0 +1,44 @@
+baseurl = "http://localhost:1313/"
+languageCode = "en-EN"
+title = "mobydick cloudstack documentation"
+theme = "doc-pascom"
+contentdir = "content_en"
+canonifyurls = true
+
+
+[params]
+
+    # basurlde Link zur Startseite der Doku (bei der Deutschen Doku immer auf den ersten Artikel verlinken | bei der Englischen Doku immer Link ohne ersten Artikel)
+    baseurlde = "https://www.pascom.net/de/dokumentation/cloudstack"
+
+    # baseurlen Notwendig für den Umschalter in die Englische Wiki
+    baseurlen = "https://www.pascom.net/en/documentation/cloudstack"
+
+    # lang Variable damit der HMTL Header auch de oder en anzeigt
+    lang = "en"
+
+    # wikiurl Ist die BaseUrl der Wiki und muss entweder nach de oder en umgestellt werden. Kann auch später auf andere Sprachen umschalten
+    wikiurl= "https://www.pascom.net/en/documentation/"
+    wikiname="Documentation"
+
+    # handbook* definiert die Doku e.g. mobydick Handbuch, cloudstack, release notes,...
+    handbookurl="cloudstack"
+    handbookname ="cloudstack"
+
+    # Wir haben ein Menü links, welches auf bestimmte Theme verweist. Die Inhalte der Variablen müssen dann auch immer entsprechend der Sprache angepasst werden.
+    furthertips = "Useful Links"
+    impressumtext = "Imprint"
+    impressumurl = "https://www.pascom.net/en/legal-notice/"
+    impressumtitle = "pascom Imprint"
+
+
+    mypascomurl = "https://my.pascom.net/"
+    mypascomtext = "my.pascom.net"
+    mypascomtitle = "my.pascom Portal"
+
+    # URL pascom.net
+    pascomurl = "https://www.pascom.net/en/"
+
+    searchfield = "Search in cloudstack docs (shortcut 's')"
+
+    algoliaindex = "doc-cloudstack-en"

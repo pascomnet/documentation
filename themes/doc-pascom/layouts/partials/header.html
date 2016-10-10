@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.Params.lang }}{{ . }}{{ end }}" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    {{ .Hugo.Generator }}
+    {{ partial "meta.html" . }}
+    {{ partial "favicon.html" . }}
+    {{ .Scratch.Add "title" "" }}{{ if isset .Site.Data.titles .Title }}{{ .Scratch.Set "title" (index .Site.Data.titles .Title).title }}{{ else }}{{ .Scratch.Set "title" .Title}}{{end}}
+    <title>{{ .Scratch.Get "title" }}</title>
+    <link href="/css/nucleus.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/hybrid.css" rel="stylesheet">
+    <link href="/css/featherlight.min.css" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="/css/theme.css" rel="stylesheet">
+    <link href="/css/hugo-theme.css" rel="stylesheet">
+    <style type="text/css">:root #header + #content > #left > #rlblock_left
+    {display:none !important;}</style>
+    {{ partial "style.html" . }}
+  </head>
+  <body class="" data-url="{{ .RelPermalink }}">
+    {{ partial "menu.html" . }}
+        <section id="body">
+        <div id="overlay"></div>
+
+        <div class="padding highlightable">
+
+          <div class="search">
+  <span class="fa fa-search"></span>
+  <input type="text" id="search-input" placeholder="{{ .Site.Params.searchfield }}">
+</div>
+
+          <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+          <script type="text/javascript">
+            var client = algoliasearch("GEETCE1DI1", "b0971ec5f58948f0ef803d3eccf92bad")
+            var index = client.initIndex('{{ .Site.Params.algoliaindex }}');
+
+            autocomplete('#search-input', {hint: true, autoselect: true, keyboardShortcuts: ['s']  }, [
+              {
+                source: autocomplete.sources.hits(index, {hitsPerPage: 5}),
+                displayKey: 'title',
+                title: 'text',
+                templates: {
+
+                  suggestion: function(suggestion) {
+
+                    return ('<div class="">' +
+                      '<div class="icon">'+ suggestion.icon +'</div>' +
+                      '<div class="title">'                     +suggestion._highlightResult.title.value+ '</div>'+
+                      '<div class="text">...'+suggestion._snippetResult.text.value+'...</div>' +
+                      '</div>');
+                  }
+                }
+              }
+            ]).on('autocomplete:selected', function(event, suggestion, dataset) {
+              //console.log(suggestion, dataset);
+              window.open(suggestion.url,"_self");
+            });
+          </script>
+            <div id="top-bar">
+              {{ if and .IsPage .Site.Params.editURL }}
+                {{ $File := .File }}
+                {{ $Site := .Site }}
+                {{with $File.Path }}
+              <div id="top-github-link">
+                  <a class="github-link" href="{{ $Site.Params.editURL }}{{ $File.Dir }}{{ $File.LogicalName }}" target="blank">
+                    <i class="fa fa-code-fork"></i>
+                    Edit this page
+                  </a>
+              </div>
+                {{ end }}
+              {{ end }}
+              <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                  <span id="sidebar-toggle-span">
+                      <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                  </span>
+                {{ if and (not .Params.chapter) (.Params.toc) }}
+                <span id="toc-menu"><a href=""><i class="fa fa-list-alt"></i></a></span>
+                {{ end }}
+                  <a href="{{ with .Site.Params.wikiurl }}{{ . }}{{ end }}">{{ with .Site.Params.wikiname }}{{ . }}{{ end }}</a>  <i class="fa fa-angle-right"></i> <a href="{{ with .Site.Params.baseurlde }}{{ . }}{{ end }}">{{ with .Site.Params.handbookname }}{{ . }}{{ end }}</a>  <i class="fa fa-angle-right"></i>
+                {{ $type := .Type }}
+                {{ $relLink := .RelPermalink }}
+                {{ range $name , $value := .Site.Sections }}
+                  {{ if eq $name $type }}
+                    {{ $first := (index $value 0).Page }}
+                    {{ if ne $first.RelPermalink $relLink }}
+                <a href="{{ $first.RelPermalink }}" itemprop="url"><span itemprop="title">{{ $first.Title }}</span></a> <i class="fa fa-angle-right"></i>
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+                {{ with .Title }}<span itemprop="title"> {{ . }}</span>{{ end }}
+              </div>
+              {{ if .Params.toc }}
+                  {{ partial "toc.html" . }}
+              {{ end }}
+
+            </div>
+
+            {{ if .Params.chapter }}
+              <div id="chapter">
+            {{ end }}
+    	        <div id="body-inner">
+                {{ if not .Params.chapter }}
+                <h1>{{.Title}}</h1>
+                {{ end }}
