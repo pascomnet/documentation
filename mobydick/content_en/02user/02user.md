@@ -8,13 +8,14 @@ keywords:
     - Hotdesking
     - Add Users
     - Add Locations
-description: What is a mobydick user, a location and how do you quickly and efficiently setup and manage them?  
-linkde: /benutzer/benutzer-und-arbeitsplaetze/
+description: Was ist ein Users, Arbeitsplatz in mobydick und wie lassen diese sich einfach einrichten und verwalten?  
+linken: /benutzer/benutzer-und-arbeitsplaetze/
 url: /users/users-and-locations
 prev: /users/
 next: /users/add-teams/
 weight: 22
 toc: true
+
 ---
 
 ## Concept
@@ -57,7 +58,7 @@ If users switch their location, this does not change anything for the phones tha
 
 ### Adding Users
 
-To add a new user, click the //FixMe button within the User panel.
+To add a new user, click the `Add` button within the User panel.
 ![Screenshot - Adding User](../../images/user_Quick_edit.png?width=90% "Adding User")
 
 The **login name** (lower case letters only) and **password** are required by the user to log on to the mobydick Client or mobydick web interface. The numeric **PIN** can be entered easily using only the telephone touch pad and is used to access voicemail boxes or to sign in at a location etc.
@@ -77,9 +78,9 @@ A voicemail box is created for each user as default. The default setting is to n
 |Do not use it |(default) Incoming calls are not forwarded to the voicemail box.|
 |For external calls|Incoming calls from **outside of the network** are forwarded to the users' voicemail box if the person called is on the phone or does not answer the call. Accounts using the **External / After** settings will automatically be handled according to the settings applied.|
 |For internal calls|Incoming **internal** calls are forwarded to the voicemail box of the person called if the they are on the phone or not available to answer the call.  Accounts using the **Internal / After** settings will automatically be handled according to the settings applied.|
-|For all calls| **All** calls are forwarded to the voicemail box if the person called is on the phone or not answering. //FixMe Actions of the types **Internal / After** and **External / After** are automatically created to handle this scenario.|
+|For all calls| All calls are forwarded to the voicemail box if the person called is on the phone or does not answer. As a result **Internal / After** and **External / After**  actions are automatically created to handle this scenario.|
 
-Enabling the **mobydick Softphone** will mean that the user will automatically be created with a mobydick Software Telephone. This will enable the user to use the //FixMe mobydick Client exactly like a normal desktop telephone.
+Enabling the **mobydick Softphone** will mean that the user will automatically be created with a mobydick Software Telephone. This will enable the user to use the <!-- FixMe Link -->mobydick Client exactly like a normal desktop telephone.
 
 Save your changes and review the user details:
 ![Screenshot - edit user in mobydick](../../images/user_edit.png?width=90% "User edit")
@@ -103,22 +104,21 @@ As standard, only your mobydick Administrator log in to the Web UI. However, you
 
 The **Save voicemail** option allows you to choose whether voice messages should be saved to disk. If the field **Voicemail E-Mail** contains an e-mail address, new voice messages are automatically forwarded to that address.  
 
-The **Monitored voicemail box** allows you to select a user who can administer the mailbox using either the mobydick Client, Mobility Client or an IP telephone. For more details, please see //FixMe voicemail box.
+The **Monitored voicemail box** allows you to select a user who can administer the mailbox using either the mobydick Client, Mobility Client or an IP telephone. For more details, please see <!--//FixMe Link voicemail box.
 
 ### Phonebook
 
 For every user, an entry is added to the **phonebook** containing both their **display name** and **extension**, although additional details may also be added. The entry can be called up from either the mobydick Client, Mobility Client or IP telephones.
-It is also possible to **deactivate** an entry, for example should a member of the management team require that their phonebook entry not be visible to other users. For more details, please see //FixMe Maintaining the Central Telephone Book.
+It is also possible to **deactivate** an entry, for example should a member of the management team require that their phonebook entry not be visible to other users. <!--For more details, please see //FixMe Link Maintaining the Central Telephone Book.-->
 
 ### Fax devices
-You can assigned a personal fax device to a user. For more details, please see //FixMe Virtual Fax Server.
+You can assigned a personal fax device to a user. <!--For more details, please see //FixMe Link Virtual Fax Server-->.
 
 ### Assigned Devices
 You can assign personal devices to a user.
 ![Screenshot - Assigend devices in mobydick](../../images/user_devices.png?width=90% "Devices in mobydick")
 
-Any number of devices can be assigned to user. The default setting for all assigned devices is to ring simultaneously for 999 seconds. To learn more about **Waiting** and **Ringing** settings, please see the //FixMe Concept: Followme. If the call is not answered, the actions **After / External** or **After / Internal** will be applied. See the chapter on the concept of //FixMe actions for more details.
-//FixMe
+Any number of devices can be assigned to user. The default setting for all assigned devices is to ring simultaneously for 999 seconds. <!--To learn more about **Waiting** and **Ringing** settings, please see the <!--//FixMe Link Concept: Followme-->. If the call is not answered, the actions **After / External** or **After / Internal** will be applied. <!--See the chapter on the concept of <!--//FixMe Link actions for more details-->
 
 ### Location
 
@@ -127,23 +127,23 @@ A user can only use a single location at any time, however several telephones ca
 
 ### Roles
 
-Allows you to define which //FixMe roles apply to the relevant users for a particular use. For further details please see roles. //FixMe
+Allows you to define which roles apply to the relevant users for a particular use. <!--For further details please see roles /FixMe Link-->
 
 ### Actions (internal, external, before, after)
 
-Actions allow you to the manage the call flow. For more details please see //FixMe the chapter on actions and //FixMe Call Flow Management.
+Actions allow you to the manage the call flow. <!--For more details please see //FixMe Link the chapter on actions and //FixMe Link Call Flow Management -->.
 
 
 ### Creating locations (optional)
-In the menu Users > Locations, create a new location by clicking the //FixMe  button.
+In the menu Users > Locations, create a new location by clicking the `Add` button.
 ![Screenshot - location in mobydick](../../images/user_location.png?width=90% "apply location")
 The location only requires a label to allow assignment of devices to it
 
-You can now assign users although this can also be done by the users themselves by using mobydick Client, MobilityClient or by using the menu keys on the their SNOM, Aastra and Yealink telephones.
+You can now assign users although this can also be done by the users themselves by using mobydick Client, mobility client or by using the menu keys on the their Snom, Yealink, Aastra, Auerswald or OpenStage telephones.
 
 ### Importing Users and Locations
 
-If you have a relatively large amount of users, you can import the users and automatically assign telephones and locations. Please see Importing Data for details. //FixMe
+If you have a relatively large amount of users, you can import the users and automatically assign telephones and locations. <!--Please see Importing Data for details //FixMe Link-->
 
 
 ## Roles and given special rights or properties
@@ -190,7 +190,7 @@ Define a system based role for call forwarding and call forwarding groups.
 Influences: only Users.
 
 #### xmpp.group
-All Users that have been assigned a role with the role type xmpp.group, will be linked together in a XMPP //FixMe shared Group. That is to say the clients in the contact list do not have to mutually add themselves, but will be immediately visible to one another.  Should you assign the property xmpp.group to the role All Users, everyone will always see everyone in the Client.
+All Users that have been assigned a role with the role type xmpp.group, will be linked together in a `XMPP` shared group. That is to say the clients in the contact list do not have to mutually add themselves, but will be immediately visible to one another.  Should you assign the property xmpp.group to the role All Users, everyone will always see everyone in the Client.
 
 Influences: only Users.
 
