@@ -18,7 +18,7 @@ toc: true
 ## Konzept
 
 {{% notice note %}}
-Dieser Artikel betrifft nur die kommerziellen mobydick Kunden. Die mobydick Community-Version erhält immer den Update-Channel **Current** und können diesen nicht ändern.
+Dieser Artikel betrifft nur die kommerziellen mobydick Kunden. Die mobydick Community-Version erhält immer den Update-Channel **Current** und kann nicht geändert werden.
 {{% /notice %}}
 
 Für mobydick gibt es aktuell drei verschiedene Update-Cannel.
