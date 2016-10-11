@@ -3,7 +3,7 @@ title: Backup and Restore
 url: /server/backups/
 prev:  /server/cluster-setup/
 next: /server/update-and-monitoring/
-weight: 16
+weight: 17
 toc: true
 keywords:
     - Create Backups

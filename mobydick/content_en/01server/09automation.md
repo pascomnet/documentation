@@ -3,7 +3,7 @@
 title: Task Automation
 url: /server/automatation/
 prev: /server/update-and monitoring/
-weight: 18
+weight: 19
 toc: true
 linkde: /server/automasierung/
 keywords:

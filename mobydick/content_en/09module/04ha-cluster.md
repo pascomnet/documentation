@@ -3,7 +3,7 @@ title: HA Cluster Setup
 url: /server/cluster-setup/
 prev:  /server/network-configuration/
 next: /server/backup/
-weight: 15
+weight: 94
 toc: true
 keywords:
     - High Availability Cluster
@@ -13,9 +13,6 @@ description: The mobydick HA Cluster ensures continuity of telephony services
 lang: en
 linkde: /server/cluster-einrichten/
 ---
-
-
-
 
 ## Overview
 
