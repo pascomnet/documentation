@@ -1,6 +1,6 @@
 ---
 title: Benutzer und Arbeitsplätze
-keywords: 
+keywords:
     - Benutzer
     - SIP User
     - IP Arbeitsplätze
@@ -20,22 +20,31 @@ toc: true
 
 ### Benutzer
 
-Benutzer in mobydick repräsentieren eine **reale Person**. Dem Benutzer wird eine **Durchwahl** zugeteilt, nicht dem Telefon. Jeder Benutzer hat zwei **Präsenzstati**. Einen für den Telefon Status und einen **Online Status** für die Erreichbarkeit per Chat. Daran können andere Teilnehmer z.B. im mobydick Client sehen ob dieser Benutzer aktuell telefoniert, sich an seinem PC-Arbeitsplatz befindet oder am Smartphone erreichbar ist. Sind einem Benutzer mehrere Geräte zugeteilt oder nutzt er mehrere PCs oder Smartphones gleichzeitig wird der Präsenzstatus zusammengefasst.
+Benutzer in mobydick repräsentieren eine **reale Person**. Dem Benutzer wird eine **Durchwahl** zugeteilt, nicht dem Telefon. Jeder mobydick Benutzer hat zwei **Präsenzstati**:
+
+* **Telefonstatus**: zeigt an, ob dem Benutzer ein Telefon zur Verfügung steht oder an einem Arbeitsplatz angemeldet ist.
+* **Clientstatus**: zeigt die Erreichbarkeit im mobydick Client, z. B. ob der Benutzer im mobydick Client an seinem PC-Arbeitsplatz angemeldet ist, ob er telefoniert, oder gerade seinen Platz verlassen hat.
+
+Sind einem Benutzer mehrere Geräte zugeteilt oder nutzt er mehrere PCs oder Smartphones gleichzeitig wird der Präsenzstatus zusammengefasst.
+
 
 ![Illustration - Konzept der mobydick Benutzer](../../images/benutzer_uebersicht.png?width=90% "Benutzerkonzept in der mobydick")
 
 
 ### Telefone dem Benutzer direkt zuteilen
 
-Im einfachsten Fall werden die Telefone dem Benutzer direkt zugeteilt. Alle zugeteilten Telefone sind dann unter der Durchwahl des Benutzers erreichbar. In welcher Reihenfolge und wie lange diese klingeln sollten wird beim Benutzer eingestellt. Standardmäßig läuten alle zugeteilten Telefone gleichzeitig für 20 Sekunden.
+Im einfachsten Fall werden die Telefone dem Benutzer direkt zugeteilt. Alle zugeteilten Telefone sind dann unter der Durchwahl des Benutzers erreichbar. In welcher Reihenfolge und wie lange diese klingeln sollten wird beim Benutzer eingestellt.
 
 ![Illustration - Benutzer mit Endgeräten](../../images/benutzer_persoenliches_setup.png?width=50% "Benutzer und seine Endgeräte")
 
-Diese Methode ist gut wenn Ihre Benutzer jeden Tag am selben Arbeitsplatz sitzen da nur der Administrator die Zuweisung der Telefone ändern kann, nicht der Benutzer selbst. Haben Sie jedoch Benutzer die den Arbeitsplatz wechseln oder an manchen Tagen von zu Hause aus arbeiten sollten Sie Ihre Telefone nicht direkt dem Benutzer sondern **Arbeitsplätzen** zuweisen.
+Diese Methode ist gut wenn Ihre Benutzer jeden Tag am selben Arbeitsplatz sitzen da nur der Administrator die Zuweisung der Telefone ändern kann, nicht der Benutzer selbst.
+
+Haben Sie jedoch Benutzer die den Arbeitsplatz wechseln oder an manchen Tagen von zu Hause aus arbeiten sollten Sie Ihre Telefone nicht direkt dem Benutzer sondern **Arbeitsplätzen** zuweisen.
 
 ### Arbeitsplätze nutzen
 
-In diesem Fall werden die Telefone nicht direkt dem Benutzer sondern einem virtuellen **Arbeitsplatz** zugeteilt. Ein Benutzer kann selbst per mobydick Client oder per Menü am SNOM, Aastra oder Yealink Telefon entscheiden an welchem Arbeitsplatz er jetzt arbeiten möchte. Sobald sich der Benutzer an einem Arbeitsplatz angemeldet hat sind alle dem Arbeitsplatz zugeteilten Telefone unter der Durchwahl des Benutzer erreichbar.  In welcher Reihenfolge und wie lange die Telefone klingeln sollten wird beim Arbeitslatz eingestellt. Standardmäßig leuten alle zugeteilten Telefone gleichzeitig für 20 Sekunden.
+Haben Sie jedoch Benutzer die den Arbeitsplatz wechseln oder an manchen Tagen von zu Hause aus arbeiten, sollten Sie Ihre Telefone nicht direkt dem Benutzer sondern **Arbeitsplätzen** zuweisen.
+In diesem Fall werden die Telefone nicht direkt dem Benutzer sondern einem virtuellen **Arbeitsplatz** zugeteilt. Ein Benutzer kann selbst per mobydick Client oder per Menü an seinem IP-Telefon entscheiden an welchem Arbeitsplatz er jetzt arbeiten möchte. Sobald sich der Benutzer an einem Arbeitsplatz angemeldet hat sind alle dem Arbeitsplatz zugeteilten Telefone unter der Durchwahl des Benutzer erreichbar.  In welcher Reihenfolge und wie lange die Telefone klingeln sollten wird beim Arbeitslatz eingestellt.
 
 Ein Benutzer kann immer nur genau einem Arbeitsplatz zugeteilt werden. Standardmäßig kann sich jeder Benutzer auf jedem Arbeitsplatz anmelden. Möchte man dies nicht, kann man das per **Rolle** einschränken.
 
@@ -56,8 +65,26 @@ Wechselt ein Benutzer seinen Arbeitsplatz ändert dies nichts an den direkt zuge
 ## Konfiguration
 
 ### Benutzer anlegen
-Klicken Sie in der Benutzermaske auf die Schaltfläche `+Hinzufügen` um einen neuen Benutzer hinzuzufügen.
-![Screenshot - Benutzer anlegen](../../images/benutzer_hinzufuegen.png?width=90% "Benutzer anlegen")
+
+Benutzer werden in der Web-UI unter `Benutzer` > `Benutzerliste` > `Hinzufügen` angelegt.
+
+Anschließend müssen Sie das Formular zur Schnellanlage ausfüllen:
+
+|Einstellung|Beschreibung|
+|---|---|
+|**Anmeldename**|Dieser muss aus Kleinbuchstaben bestehen, er dient zur Anmeldung, z. B. im mobydick CLient.|
+|**Anzeigenamen**|Diesen Namen sehen andere Teilnehmer wenn die von diesem Benutzer angerufen werden.|
+|**Durchwahl**|Unter dieser Durchwahl ist der Benutzer intern erreichbar.|
+|**Anmeldung**|Diese Einstellung legt fest wie sich der Benutzer z. B. an seinem mobydick Client anmeldet. Zur Auswahl stehen <br>* *mobydick*, wenn das Passwort in der mobydick gespeichert wird <br>* *Extern/LDAP*, wenn die Authentifizierung über ein mobydick-fremdes System stattfindet <br>* *Keine*|
+|**Passwort**|Muss mindestens 8 Stellen haben. Das Passwort wird zur Anmeldung im Client verwendet. Der Benutzer kann es im Client ändern.|
+|**Pin**|Muss mindestens 4 Stellen haben und sollte nur Zahlen enthalten, da diese Pin für die Anmeldung am Telefon verwendet wird|
+|**Fax-Durchwahl**||
+|**EMail-Adresse**||
+|**Bevorzugte Sprache**||
+|**Voicemailbox verwenden**||
+|**mobydick Softphone aktivieren**||
+
+
 
 Der **Anmeldename** (bestehend aus Kleinbuchstaben!) und das **Passwort** werden vom Benutzer benötigt um sich am mobydick Client bzw. an der mobydick Weboberfläche anmelden zu können. Die Pin ist numerisch. Dadurch lässt sie sich einfach am Telefon eingeben und wird z.B. zur Abfrage der Voicemailbox oder zum Anmelden an einem Arbeitsplatz per Telefon usw. verwendet.
 
@@ -119,7 +146,7 @@ Teilen Sie hier dem Benutzer ein persönliches Faxgerät zu. Details siehe [Virt
 Teilen Sie dem Benutzer fix persönliche Endgeräte zu.
 ![Screenshot - Endgeräte verwalten in der mobydick](../../images/benutzer_endgeraete_verwalten.png?width=90% "Endgeräte verwalten beim Benutzer")
 
-Einem Benutzer können beliebig viele Endgeräte zugeteilt werden. Standardmäßig leuten bei einem Anruf alle zugeteilten Endgeräte gleichzeitig für 999 Sekunden. Die Bedeutung von der verschiedenen **Warten** und **Läuten** Werte können Sie unter [FollowMe Prinzip der mobydick](#followme-prinzip-der-mobydick) nachlesen. 
+Einem Benutzer können beliebig viele Endgeräte zugeteilt werden. Standardmäßig leuten bei einem Anruf alle zugeteilten Endgeräte gleichzeitig für 999 Sekunden. Die Bedeutung von der verschiedenen **Warten** und **Läuten** Werte können Sie unter [FollowMe Prinzip der mobydick](#followme-prinzip-der-mobydick) nachlesen.
 
 Wird der Anruf nicht entgegengenommen greifen die Aktionen **Extern/Nacher** oder **Intern/Nachher**. <!-- //Fix --> Me Siehe Aktionen für Details.
 
@@ -178,7 +205,7 @@ Benutzer mit dieser Rolle können Gespräche aller Benutzer managen. Wichtig fü
 Auswirkung: Benutzer
 
 #### pickup.group
-Alle direkten Mitglieder der Rolle haben das Recht, eingehende Anrufe die an ein anderes Mitglied der Gruppe gerichtet sind, heranzuholen. Dies kann dann entweder per Telefon *8<durchwahl> oder Client erfolgen.
+Alle direkten Mitglieder der Rolle haben das Recht, eingehende Anrufe die an ein anderes Mitglied der Gruppe gerichtet sind, heranzuholen. Dies kann dann entweder per Telefon * \*8<durchwahl> oder Client erfolgen.
 
 Auswirkung: Benutzer, Teams
 
@@ -198,12 +225,12 @@ Alle Identitäten die eine Rolle mit dem Rollentyp xmpp.group zugewiesen haben, 
 Auswirkung: Benutzer
 
 ## FollowMe Prinzip der mobydick
-Benutzern und Arbeitspätzen können mehrere Telefone zugewiesen werden. Die Konfiguration, welches Telefon wann und wie lange läutet, bezeichnen wir als Followme. 
+Benutzern und Arbeitspätzen können mehrere Telefone zugewiesen werden. Die Konfiguration, welches Telefon wann und wie lange läutet, bezeichnen wir als Followme.
 ![Illustration - FollowMe Prinzip mobydick](../../images/benutzer_followme.png?width=90% "Endgeräte folgen Ihnen")
 Jedem Telefon kann der Parameter **Warten** und **Läuten** in Sekunden angegeben werden.
 
 **Warten** definiert den Zeitraum zwischen einem eintreffenden Anruf und dem Zeitpunkt zu dem das Telefon zu läuten beginnen soll.  
-**Läuten** definiert wie lange das Telefon gerufen werden soll. 
+**Läuten** definiert wie lange das Telefon gerufen werden soll.
 
 Außerdem können sich Telefone bei internen anrufen anders verhalten als bei externen oder bei Anrufen die Sie als Agenten eines Teams erreichen. Daher gibt es die Parameter Warten und Läuten jeweils pro Telefon für **intern, extern** und **agent**.
 

@@ -6,9 +6,8 @@ keywords:
     - Updates
     - Installation
     - Lizenzen
-description: Erfahren Sie, wie Sie mobydick installieren und maintainen können.
+description: Erfahren Sie, wie Sie mobydick installieren und verwalten können.
 linken: /server/
-next: /server/plattformen/
 url: /server
 weight: 1
 chapter: true

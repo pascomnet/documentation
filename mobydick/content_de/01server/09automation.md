@@ -4,7 +4,6 @@ keywords:
     - Aufgaben automatisieren
     - Cronjobs
     - Jobs anlegen
-    - Pre-/Post-script
 description: Mit Cronjobs können Sie in Ihrer mobydick für einige Aufgaben Zeitpläne hinterlegen.
 linken: /server/automation/
 url: /server/automasierung/
