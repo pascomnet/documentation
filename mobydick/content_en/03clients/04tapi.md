@@ -1,257 +1,272 @@
 ---
-title: Tapi Schnittstelle
+title: TAPI interface
 keywords:
-    - Tapi Schnittstelle 
-    - TAPI Treiber
+    - Tapi Interface 
+    - TAPI Driver
     - Microsoft Telephony Application Programming Interface 
-    - Telefonie-Funktionen von Windows
+    - Telephony functionality from Windows
     - Windows Tapi Integration
-    - Click to Dial unter windows
-description: TAPI ist eine Schnittstelle zwischen den Telefonie-Funktionen von Windows und mobydick 
+    - Click to Dial under windows
+    - Windows CTI 
+    - Outlook CTI 
+    - Outlook integration
+description: TAPI is an interface between Window's telephony functions and the mobydick phone system. 
 url: /clients/tapi/
-prev: /clients/teams-im-client/
-next: /clients/mobile-hub-einrichten/
+prev: /clients/teams-in-client/
+next: /clients/mobile-hub-setup/
 weight: 34
 toc: true
 ---
 
-## Was ist die TAPI?
-Das Microsoft **T**elephony **A**pplication **P**rogramming **I**nterface ist eine in den 90er Jahren spezifizierte Schnittstelle, mit der ein beliebiges Anwendungsprogramm über eine einheitliche Schnittstelle mit Telefonanlagen bzw. Telefonen kommunizieren kann, ohne eine exakte Kenntnis von der Funktionsweise des jeweiligen Telefones zu haben. Microsoft stellt hierzu einen Satz einheitlicher Funktionen bereit, die sowohl vom Anwendungsprogramm (z. B. Outlook, Phone Suite CTI Client) als auch dem Telefonanlagen-Hersteller (mobydick TAPI Treiber) implementiert werden müssen.
 
-Der mobydick TAPI Treiber ist hierbei kein eigenständiges Programm, sondern nur eine dynamische Bibliothek (DLL), die je nach Anforderung vom Microsoft-TAPI-Server (Telefoniedienst) geladen oder wieder entladen wird.
+## What is the TAPI?
+The Microsoft **T**elephony **A**pplication **P**rogramming **I**nterface is a interface from the 1990s with which any number of applications are able to communicate with phone systems (telephones respectively) via an unified interface, without having exact knowledge relating to the functions of the connected phones. Microsoft has made a set of uniform functions available, which along with the applications (e.g. Outlook, PhoneSuite CTI Client) as well as the phone system developer (mobydick TAPI driver) will need to be implemented. 
 
-![Illustration - Tapi Konzept](../../images/tapi_treiber.png?width=70% "Was ist die TAPI")
+the mobydick TAPI driver is in this respect not a stand alone programme, but rather dynamic libary (DLL) which is either loaded or unloaded according to requests from the Microsoft-TAPI-Server (Telefoniedienst) 
+
+![Illustration - Tapi Concept](../../images/tapi_driver.png?width=70% "What is the TAPI?")
 
 
-Die mobydick TAPI kann auf allen Windows-Arbeitsstationen installiert werden. Die TAPI meldet sich am Server mit den selben Benutzerdaten wie der mobydick Client an. Die TAPI ist daher nicht direkt mit einem Telefon sondern dem Benutzer verknüpft. Sendet die TAPI eine Wahlbefehl an die mobydick sucht diese automatisch das aktuelle Telefon des Benutzers und nutzt es für den Anruf. Wechselt der Benutzer den Arbeitsplatz oder das Telefon muss die TAPI nicht umkonfiguriert werden.
+The mobydick TAPI can be installed on all windows workstations. The TAPI registers itself with the server using the same user data as the mobydick client. The TAPI is therefore not connected directly to the telephone but rather to the user. Should the TAPI send a dial command to mobydick then mobydick will automatically search for the current phone being used by the user and uses this to make the call. Should the user change work location or telephone, the TAPI does not need to be reconfigured.
 
-## TAPI und der mobydick Client
+## TAPI and the mobydick Client
 
-Der mobydick TAPI Treiber stellt eine Verbindung von der mobydick Telefonanlage zur TAPI-Schnittstelle her. Hierbei setzt der TAPI Treiber wie auch der mobydick Client auf die XMPP-Schnittstelle auf. Die beiden Programme sind aber im Hinblick auf ihren Funktionsumfang vollständig unabhängig. Das bedeutet, Sie können sowohl den mobydick Client als auch den TAPI Treiber verwenden, ohne die jeweils andere Komponente installiert zu haben. Auf der anderen Seite ist aber auch die gleichzeitige Verwendung durch einen Benutzer problemlos möglich. Ein Anruf der durch die TAPI initiiert wurde (z. B. über die entsprechende Outlook-Funktion) wird im Client angezeigt und ist dort auch kontrollierbar (Auflegen, Halten, Transferieren usw.). Ebenso wird ein Anruf der im Client initiiert wurde (soweit durch das Anwendungsprogramm, z. B. PhoneSuite Client, unterstützt) in der TAPI Schnittstelle angezeigt und ist von dort auch kontrollierbar.
+The MobyDick TAPI can be installed on any windows desktop. The TAPI will then register itself with the server using the same credentials as the //FixMe MobyDick Client, which means the TAPI is assigned to a user rather than being directly connected to a telephone. When a dial command is sent to Mobydick via TAPI, MobyDick will automatically select the current phone of the user and use this phone to make the call. If the user then changes //FixMe location or phone, the TAPI will not require any reconfiguration.
 
-### Wann verwende ich..
-#### .. den mobydick Client?
 
-* Wenn Sie eine vollständige Übersicht über die Verfügbarkeit Ihrer Kollegen haben wollen
-* Wenn Sie Chats, Faxe, Voicemails bequem verwenden wollen
-* Wenn Sie mit einem anderen Betriebssystem als Windows arbeiten
+### When to use ...
+#### .. the mobydick Client?
 
-#### .. den mobydick TAPI Treiber?
-* Wenn Sie die Telefoniefunktionen ihres ERP-Systems oder von Outlook verwenden wollen
-* Wenn Sie Ihre Anwendungssoftware mit TAPI-Support weiter verwenden wollen
+* When you want a complete overview of your colleagues presence info
+* When you want easy access to faxes and voicemails as well as using chat tools
+* When you have a different OS other than windows
 
-## Allgemeine Informationen
 
-### Unterstützte TAPI Funktionen
+#### .. the mobydick TAPI Driver?
+* When you want to use the telephone functions of your ERP systems, Outlook etc 
+* When you want to continue to use your application software with TAPI Support
 
-Die TAPI Schnittstelle spezifiziert eine Vielzahl an Anrufbezogenen Funktionen, von denen der mobydick TAPI Treiber die folgenden Unterstützt
 
-|Funktion | Kommentar|
+## General Information
+
+### Supported TAPI Functions
+
+The TAPI Interface specifies a number of call related functions, of which the following are supported by the mobydick TAPI
+
+|Function| Comments|
 |---------|----------|
-|Signalisierung von eingehenden Anrufen|	Signalisierung von Rufnummern, Rufrichtung, weiteren Details|
-|Pickup|	Pickup auf eine bestimmte Durchwahl durchführen|
-|Auflegen	|Anruf beenden|
-|Anrufen	|Anruf an eine Rufunummer initiieren|
-|Anruf annehmen|	Einen eingehenden Anruf automatisch am Telefon abheben|
+|Signalisation of incoming calls|  Signalling of phone numbers, call directions, further details|
+|Call Origination| Initiate calls to a number|
+|Hang Up   |End calls|
+|Pickup    |Complete a pick up on a certain extension|
+|Call Termination| Automatically terminate calls on the phone|
 
-### Unterstütze Betriebssystemversionen
+### Support OS versions
 | Client| Server|
 |-------|-------|
 |Windows 7 (32bit/64bit) |Windows Server 2008R2 (32bit/64bit)|
 |Windows 8 (32bit/64bit)|Windows Server 2012 (32bit/64bit)|
 |Windows 8.1 (32bit/64bit)|Windows Server 2012R2 (32bit/64bit)|
 
+
+//FixMe
 ### TAPI Versionen
 Die mobydick TAPI meldet als Mindestvorraussetzung die TAPI Version 2.1 an das jeweilige Betriebssystem. Für mehr Details siehe Microsoft MSDN. Auch Programme, die die TAPI Version 3.X einsetzen, können mit der mobydick TAPI zusammen verwendet werden, da die TAPI 3.X zu 2.X Abwärtskompatibel ist. [Mehr Infos zur TAPI Version] (https://msdn.microsoft.com/en-us/library/windows/desktop/ms734214%28v=vs.85%29.aspx "Zur TAPI Webseite").
 
 
-## Konfiguration
+## Configuration
 
 {{% notice warning %}}
-1.Bitte stellen Sie sicher das keine Anwendung läuft, die die TAPI-Schnittstelle verwendet.  
-2.Bitte stellen Sie sicher das der Telefoniedienst beendet ist. (Dieser ist aufgelistet unter Systemsteuerung > Verwaltung > Dienste)  
-3.Sie können eine Debug- anstatt der Produktiv-Version installieren, indem Sie das Setup einfach nochmals ausführen. Das selbe ist auch bei einem Wechsel von produktiv auf debug möglich.
+1.Ensure no applications are running with the TAPI Interface uses  
+2.Ensure that telephony services have been stopped. //FixMe (Dieser ist aufgelistet unter Systemsteuerung > Verwaltung > Dienste)  
+3.You can install a debug as well as productive version, in that you can easily repeat the setup. This is also possible vice versa
 {{% /notice %}}
 
 
 ### TAPI Software herunterladen
-Sie können das Installationsprogramm direkt über die Loginmaske Ihrer mobydick unter dem Reiter ***Service*** herunterladen:
+You can directly download the software by using the ***Service*** tab within the mobydick Commander login screen:
 
-![Screenshot - mobydick Service Tab](../../images/mobydick_tab_service.png?width=70% "TAPI Software herunterladen")
+![Screenshot - mobydick Service Tab](../../images/tapi_service_tab.png?width=70% "download TAPI Software")
 
 
 {{% notice note %}}
-Es gibt keine getrennten Downloads für die 32 und 64 Bit Version, das Setup installiert automatisch die jeweils benötigten Dateien.
+Please note that there are no separate downloads for 32 and 64 versions of the software. The setup process will automatically identify and install the required files.
 {{% /notice %}}
 
 
-### Installation auf einer Windows Arbeitsstation
+### Installation on a Windows computer
 {{% notice note %}}
-Das Setup benötigt Administrationsrechte auf der jeweiligen Arbeitsstation. Es wird automatisch nach einem entsprechenden Login gefragt.
+Administrative privileges are required to execute the setup on a Windows computer. From Windows Vista / 7 upwards, the system will automatically ask for the appropriate login.
 {{% /notice %}}
 
-Starten Sie das Setup indem Sie die zuvor heruntergeladene Datei ausführen:
+Start the setup procedure using the file you just downloaded:
 
-![Screenshot - EXE Datei ausführen](../../images/tapi_download.png?width=90% "heruntergeladene Datei ausführen")
-
-
-Akzeptieren Sie die Allgemeinen Geschäftsbedingungen (AGB):
-
-![Screenshot - AGB akzeptieren](../../images/tapi_agb_akzeptieren.png?width=50% "Akzeptieren Sie die ABG")
-
-Nun werden alle Komponenten in das System installiert.
-
-![Screenshot - Dateien installieren](../../images/tapi_installing.png?width=70% "Dateien installieren")
+![Screenshot - start EXE file](../../images/tapi_download.png?width=90% "start EXE file")
 
 
-Nach erfolgreicher Installation müssen Sie die Verbindung der TAPI zu mobydick konfigurieren:
+Accept the Terms and Conditions
 
-![Screenshot - TAPI konfigurieren](../../images/tapi_konfigurieren.png?width=50% " Verbindung der TAPI zu mobydick")
+![Screenshot - accept AGB](../../images/tapi_agb.png?width=50% "accept AGB")
 
-Die TAPI meldet sich am Server mit den selben Benutzerdaten wie der mobydick Client an.
+All the necessary components will now be installed
 
-|Variable| Bedeutung |
+![Screenshot - installing files](../../images/tapi_installing.png?width=70% "installing files")
+
+
+After the installation has been successfully completed, you will need to configure the connection of the TAPI to mobydick
+
+![Screenshot - configure TAPI](../../images/tapi_credentials.png?width=50% " TAPI connection to mobydick")
+
+As stated before, the TAPI will login with the same user data just like the //FixMe mobydick Client
+
+|Variable| Description |
 |---------|------------|
-|Username |Benutzername|
-|Password |Passwort des Benutzers|
-|mobydick Server| IP Nummer oder Hostname des mobydick Servers|
+|Username |username|
+|Password |users´ password|
+|mobydick Server| IP number of hostname of the mobydick Server|
 
-Bestätigen Sie den Erfolg der Installation mit einem Klick auf **Finish**:
+You can now confirm the successfull installation by clicking on **Finish**:
 
-![Screenshot - Erfolgreiche Installation](../../images/tapi_setup_erfolgreich.png?width=50% "Erfolgreiche Installation")
+![Screenshot - successful setup](../../images/tapi_setup_finished.png?width=50% "successful setup")
 
 
-### Installation auf einem Terminal Server
+### Installation on a Terminal Server
 
-#### Konfiguration der mobydick
-Wenn Sie die TAPI auf einem Termilaserver oder einem Rechner der von mehreren Personen genutzt wird installieren, müssen Sie den Benutzer, den Sie mit der TAPI verbinden die **Rolle xmpp.supervisor** zuweisen. Dies bedeutet das vom Terminal Server nur eine einzige XMPP Verbindung aufgebaut wird, über die die gesamte Kommunikation abgewickelt wird.
+#### Configuration of the mobydick
+Should you wish to install the TAPI on a Terminal Server or on a computer that is used by more than one person, then you will need assign the users, who will connect using the TAPI, with the ***xmpp.supervisor Role***. This means that only one individual XMPP connection will be constructed from the Terminal Server, over which the total communication will be transmitted.
 
+//FixMe
 ![Screenshot - Erfolgreiche Installation](../../images/tapi_terminalserver_konzept.png?width=50% "Erfolgreiche Installation")
 
 
 #### Installation
 
 {{% notice note %}}
-Das Setup benötigt Administrationsrechte auf dem jeweiligen Server. Ab Windows Server 2008 wird automatisch nach einem entsprechenden Login gefragt, bei Windows Server 2003 müssen Sie sich ggf. vorher unter einer geeigneten Kennung anmelden.
-{{% /notice %}}
-Starten Sie das Setup indem Sie die zuvor heruntergeladene Datei ausführen:
+The setup requires administrative rights for the corresponding server. From Windows Server 2008 onwards, the system will automatically ask for the appropriate login, however, if you are using Windows Server 2003 you will need to login using the appropriate identifier first.{{% /notice %}}
 
-Akzeptieren Sie die Allgemeinen Geschäftsbedingungen (AGB):
+Start the setup using the previously downloaded file:
 
-Nun werden alle Komponente in das System installiert.
+Accept the Terms and Conditions:
 
-Nach erfolgreicher Installation müssen Sie die Verbindung der TAPI zu mobydick konfigurieren:
+All the necessary components will now be installed
 
-Die TAPI meldet sich am Server mit den selben Benutzerdaten wie der mobydick Client an.
+After the installation has been successfully completed, you will need to configure the connection of the TAPI to mobydick
 
-|Variable| Bedeutung |
+As stated before, the TAPI will login with the same user data just like the //FixMe mobydick Client. 
+
+|Variable| Description |
 |---------|------------|
-|Username |Benutzername|
-|Password |Passwort des Benutzers|
-|mobydick Server| IP Nummer oder Hostname des mobydick Servers|
+|Username |username|
+|Password |users´ password|
+|mobydick Server| IP number or hostname of the mobydick Server|
 
-Es erscheint ein weiterer Dialog, in dem Sie die Benutzer auswählen können, die später in TAPI Applikationen (z. B. MS Outlook) zur Verfügung stehen sollen. Es werden hier alle in der mobydick vorhandenen Benutzer angezeigt. Um einen Benutzer auszuwählen, kann man diese doppelklicken oder die Buttons in der Mitte verwenden:
+Now a further dialogue  box will appear, in which you will be able to select the users, who should be available later within TAPI applications (e.g. MS Outlook). All the existing users will be displayed within the list. In order to choose a user, one can double click on the desired user or use the buttons in between the two list screens:
 
-Bestätigen Sie den Erfolg der Installation mit einem Klick auf **Finish**:
+You can now confirm the successful installation by clicking on **Finsih**:
 
-### Nutzungsbeispiel mit Microsoft Outlook
+### Example scenario with Microsoft Outlook
 
-Starten Sie Outlook und suchen Sie den gewünschten Kontakt. Mit der rechten Maustaste rufen Sie das Kontextmenü und die zu wählende Rufnummer auf:
+Start Outlook and select the desired contact entry. Using the right mouse button, select the number to call from the drop down menu:
 
-Nun erscheint das Anruffenster. Bestätigen Sie per **Anruf beginnen** die Nummer.
+//FixMe
+Now the New Call window will appear: confirm the number by clicking ***Start call***.
+//FixMe
+Now your telephone should make the call.
 
- Nun sollte Ihr Telefon den Anruf durchführen.
 {{% notice info %}}
- Auf Terminal-Server-Installationen muss jeder Benutzer seine "eigene" Leitung in der TAPI-Software (z. B. Outlook) auswählen, bevor er Anrufe mit seinem Telefon durchführen kann.
+On terminal server installations, every user must select their "own" line within the TAPI Software (e.g. MS Outlook), before they will be able to complete a call using their phone.
 {{% /notice %}}
 
- Mit einem Klick auf **Wähloptionen** können Sie die zu verwendende Leitung auswählen:
+By clicking **Dial Options** you can select line to be used:
 
-### Unbeaufsichtigte (Silent) Installation
+//FixMe
 
-Es ist auch möglich, die TAPI ohne eine GUI-Interaktion zu installieren. Hierzu muss das Installationsprogramm mit den folgenden Optionen aufgerufen werden:
+### Unattended (Silent) Installation
 
-    md-tapi-setup-2.
-    00.00.R.exe /S /options=username:password:server.domain.tld
+It is also possible to install the TAPI without needing any GUI interaction. In order to do this, the installations programme must be called up using the following options:
 
-    Beispiel:
+    md-tapi-setup-2.00.00.R.exe /S /options=username:password:server.domain.tld
+
+    Example:
     md-tapi-setup-2.00.00.R.exe /S /options=mmuster:123456789:mobydick.example.com
 
-Wenn dem TAPI-Benutzer die **Rolle xmpp.supervisor** hat, werden automatisch alle verfügbaren Benutzer selektiert und stehen dann in TAPI-Applikationen zur Verfügung.
+If the TAPI user has the ***xmpp.supervisor*** **Role**, all available users will be automatically selected and will then be available within the TAPI application.
 
 ## TAPI Debugging
-Wenn Sie ein Problem bei der Verwendung des TAPI-Treibers feststellen, können Sie mithilfe dieser Anleitung einen TRACE erstellen, der durch pascom analysiert werden kann um Ihr jeweiliges Problem zu lösen.
+If you uncover a problem when using the TAPI Driver, you can use this manual to start a TRACE, which can then be analysed by pascom and helping in finding a solution.
 
-### Vorbereitung
-Um den Debug-Output der TAPI aufzuzeichnen benötigen Sie das Tool DebugView von Microsoft/Sysinternals, das Sie von hier herunterladen können: https://technet.microsoft.com/en-us/library/bb896647.aspx
-Zusätzlich ist es oft auch eine gute Idee, parallel den Anrufablauf mittels des Tools "Tapi Master Line Watcher" aufzuzeichnen. Dieses Tool ist hier verfügbar: http://www.tapimaster.eu/de/leitungsbeobachter.htm
-
+### Preparation
+In order to record the TAPI debug output, you will need the DebugView tool from Microsoft/Sysinternals which can be downloaded here:
+ https://technet.microsoft.com/en-us/library/bb896647.aspx
+In addition, it is often also a good idea to record the call construction by using the tool "Tapi Master Line Watcher"( http://www.tapimaster.eu/de/leitungsbeobachter.htm) in parallel to the Debug tool
 {{% notice warning %}}
-Achtung: Sollte sich beim Einsatz des Line Watchers das Verhalten der Programme ändern, dann führen Sie das Debugging bitte **ohne** den Line Watcher durch.
+Please note: Should programme behaviour change as a result of the Line Watch tool, then complete the debugging **without** it.
 {{% /notice %}}
 
-### mobydick TAPI Treiber in der Debug-Version installieren
+### Install the mobydick TAPI Driver in the Debug-Version
 
-Um Debug-Output aufzeichnen zu können, müssen Sie die Debug-Version des mobydick TAPI Treibers installiert haben. Ob die Produktiv oder Debug-Version installiert ist, können Sie am einfachsten mithilfe des Konfigurationsdialoges prüfen.
+In order to be able to record Debug Output, the debug version of the mobydick driver must be installed. Whether you have the productive or debug version installed can be easily identified using the configurations dialog.
 
-1. Navigieren Sie zu Systemsteuerung > Telefon und Modem
-2. Navigieren Sie zum Tab "Erweitert"
+1. Go to the command panel > telephone and modem
 
-3. Wählen Sie den Eintrag "mobydick TAPI Service Provider"
+2. Go to the "Advanced" Tab
 
-![Screenshot - mobydick TAPI Service Provider](../../images/tapi_config_telefon.png?width=60% "mobydick TAPI Service Provider")
+3. Select the entry "mobydick TAPI Service Provider"
 
-4. Klicken Sie auf Konfigurieren
-5. Wenn im folgenden Dialog der Text "WARNING: DEBUG VERSION INSTALLED" erscheint, ist die Debug-Version installiert.
+![Screenshot - mobydick TAPI Service Provider](../../images/tapi_config_phone.png?width=60% "mobydick TAPI Service Provider")
+
+4. Click Configure
+5. If the in following mask, the warning "WARNING: DEBUG VERSION INSTALLED" appears, then clearly the Debug-Version is installed
 
 {{% row %}}
 {{% col md-6 %}}
-![Screenshot - Tapi anmelden](../../images/tapi_config_mtapi.png?width=70% " Tapi anmelden") 
+![Screenshot - logon tapi](../../images/tapi_config_mtapi.png?width=70% " logon tapi") 
 {{% /col %}}
 {{% col md-6 %}}
-![Screenshot Tapi anmelden Debug](../../images/tapi_config_mtapi_debug.png?width=70% " Debug Tapi anmelden")
+![Screenshot logon tapi Debug](../../images/tapi_config_mtapi_debug.png?width=70% " Logon tapi Debug")
 {{% /col %}}
 {{% /row %}}
 
-Sollten Sie sich nicht sicher sein, beenden Sie bitte alle Programme und führen das Setup erneut aus. Bitte beachten Sie dabei die Installationshinweise. Während der Installation selektieren Sie bitte "Debug" und bestätigen mit weiter.
-![Screenshot - TAPI Installationshinweise](../../images/tapi_mtapi_debug.png?width=60% "TAPI Installationshinweise")
-Sollte die Produktiv-Version bereits installiert sein wird diese nun durch die Debug-Version ersetzt.
+Should you still not be certain, then please close all programmes and run the setup again. Please take note of the installation notices and during the installation select, "Debug" and confirm this by clicking next.
+![Screenshot - TAPI installation instructions](../../images/tapi_mtapi_debug.png?width=60% "TAPI installation instructions")
+This will replace any productive versions installed with the Debug version
 
-### Debugging durchführen
+### Preforming a Debugging
 
-Nun sind alle notwendigen Komponenten heruntergeladen & Installiert.
-Nun müssen Sie die entsprechenden Tools starten und Konfigurieren
+You now have all the necessary components downloaded and installed, so start the required tools
 
-#### DebugView öffnen
+#### Open DebugView
 
-1. Starten Sie DebugView.exe bitte mit Administrator-Privilegien indem Sie rechts auf die Datei klicken und "Als Administrator ausführen" auswählen
-![Screenshot - DebugView öffnen](../../images/tapi_debugviewadmin.png?width=70% " DebugView öffnen")
-
-
-2. Im Menüpunkt "Capture" haken Sie die Option "Capture Global Win32" an. Sollten Sie das Programm nicht als Administrator gestartet haben, erhalten Sie nun eine Fehlermeldung
-![Screenshot - Capture Global Win32](../../images/tapi-debugviewglobalwin32.png?width=70% "Capture Global Win32")
+1. Start the DebugView.exe with Administrator Privileges by right clicking and selecting "Run as Administrator"
+![Screenshot - open DebugView](../../images/tapi_debug_viewadmin.png?width=70% " open DebugView")
 
 
-#### Line Watcher öffnen
+2. Under the "Capture" menu, please check the "Capture Global Win32" option. If you did not run the programme as an administrator, a error message will appear now tap
+![Screenshot - Capture Global Win32](../../images/tapi_debug_viewglobal_win32.png?width=70% "Capture Global Win32")
 
-1. Starten Sie das Programm. Es sind keine besonderen Berechtigungen erforderlich
-2. Im DropDown auf dem ersten Tab wählen sie bitte die TAPI-Leitung des
-3. Benutzers der die Probleme verursacht
-Setzen Sie einen Haken bei der Option "More Information"
+
+#### Open Line Watcher
+
+1. Start the programme - no special permissions required
+2. In the Drop Down under the first tab, select the user´s TAPI Line causing the problems
+3. Check the options box "More information"
+
 ![Screenshot - Line Watcher öffnen](../../images/tapi_linewatcher.png?width=90% "Line Watcher öffnen")
 
-Starten Sie als nächstes bitte Ihre TAPI-Software führen die Schritte aus, die zu dem Problem führen. Im Fenster von DebugView sollten Sie dabei eine große Menge Ausgaben sehen. Sobald Sie einen Anruf starten bzw. einen eingehenden Anruf bekommen, sollte auch eine Ausgabe im Line Watcher erscheinen.
-![Screenshot - Line Watcher Output öffnen](../../images/tapi_linewatcher_output.png?width=90% " Line Watcher Output öffnen")
+Next, start your TAPI software and follow those steps which lead to the problem. In the DebugView windon, a whole range of tasks should be visible. As long as you start or receive a call information should also appear in Line Watcher
+![Screenshot - open Line Watcher Output](../../images/tapi_linewatcher_output2.png?width=90% " open Line Watcher Output")
 
-Sobald Sie ihren Testablauf abgeschlossen haben, speichern Sie in beiden Anwendungen (DebugView und LineWatcher) die entstandenen Traces bitte ab.
+Once the test is finished, save both trace outputs from both applications (DebugView and LineWatcher)
 ![Screenshot - TAPI Debug Output View](../../images/tapi_debugview_output.png?width=90% "TAPI Debug Output View")
 
-#### Trace im DebugView abspeichern
-1. Klicken Sie auf File > Save as
-2. Geben Sie der Datei einen aussagekräftigen Namen
+#### Saving a DebugView Trace
+1. Click on File > Save as
+2. Give it an appropriate name
+3. Save
 
-#### Trace im LineWatcher abspeichern
-1. Klicken Sie auf den Button "Save Message Flow"
-2. Geben Sie der Datei einen Aussagekräftigen Namen
+#### Saving a LineWatcher Trace
+1. Click on "Save Message Flow"
+2. Give it an appropriate name
+3. Save
 
-Diese beiden Dateien können Sie nun zur Analyse an pascom senden.
+You can now send both files to pascom for analysis.

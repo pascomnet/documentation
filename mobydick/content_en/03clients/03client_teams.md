@@ -29,8 +29,8 @@ description: Teams group users together into manageable and productive queues. T
  
 |Symbol|Function|
 |------|--------|
-| ![Screenshot - phone](../../images/client_teams_call.png?width=200 "call team") |With the green telephone symbol you can call the selected team. The red telephone ends conversations and is only visible whilst in call (telephoning).|
-| ![Screenshot - sign in and sign out](../../images/client_teams_signin.png?width=200 "sign in and sign out") |With theses buttons, you can log yourself into and out off teams|
+|![Screenshot - phone](../../images/client_teams_call.png?width=200 "call team") |With the green telephone symbol you can call the selected team. The red telephone ends conversations and is only visible whilst in call (telephoning).|
+|![Screenshot - sign in and sign out](../../images/client_teams_signin.png?width=200 "sign in and sign out") |With theses buttons, you can log yourself into and out off teams|
 |![Screenshot - break-button ](../../images/client_teams_break.png?width=40 "break-button")    |Using the pause function will enable you to temporarily log out of the team|
 |![Screenshot - Refresh-Taste ](../../images/client_teams_refresh.png?width=40 "refresh Taste ") |The refresh button reloads the current statistics so that they are up to date.|
 
@@ -38,10 +38,10 @@ description: Teams group users together into manageable and productive queues. T
 
 //FixMe
 {{% notice warning %}}
-Die Funktion des dynamischen Ein- und Ausbuchen aus Teams ist nur möglich, wenn Sie das Recht dazu haben. Sie werden in Ihrem Client eventuell mehrere Teams sehen, in denen Sie jedoch nicht aktiv sind. Zu Fragen zu Ihren individuellen Benutzerrechten, kontaktieren Sie bitte Ihren Administrator.
+The dynamic log in / out of Teams is only possible when the agent has the appropriate permissions. Within the mobydick client, you will see multiple queues in which you may not be active. Should you have any questions regarding your individual user rights, please contact your administrator.
 {{% /notice %}}
 
-|Symbol|Funktion|
+|Symbol|Function|
 |------|--------|
 |![Screenshot - sign in and sign out](../../images/client_teams_signin(1).png?width=100 "sign in and sign out")| With this button, you can log yourself into and out off teams|
  
@@ -50,7 +50,7 @@ Additionally, the client will display whether you are currently logged in or out
 
 ![Screenshot - sign in and sign out](../../images/client_teams_loggedin.png "sign in and sign out")
 
-## SStatistics & Details
+## Statistics & Details
 
 ### Statistics (1)
 Im mobydick Client können Sie die Echtzeitdaten Ihrer Teams direkt anschauen. Außerdem sehen Sie die Daten rückwirkend bis zu 1,2,4 oder 8 Stunden. Sie können 2 unterschiedliche Diagramme ansehen.
@@ -85,10 +85,10 @@ Under the Calls Waiting menu tab, you can see all the information concerning cal
 * Their Phone number
 * How long they have been waiting
 
-## Setting Pause / Break Reasons
-In teams within which you can dynamically log in or out of, you can also set pause reasons which will temporarily log you out of the team. 
-This function can be used for evaluation purposes and is helpful when an agent requires time "Post Processing" (So Paperwork etc relating to a call etc). 
-The reasons for pausing can be predefined and rolled out by your administrator. In order to activate a pause reason, click on the pause symbol and select a reason from the drop down list.
+## User Team Pausing / Pause Reasons
+When you can dynamically log in or out of a team, you will also be able set pause reasons which will temporarily log you out of the team. 
+This function can be used for evaluation purposes and is helpful when an agent requires `Post Processing` time to allow for paperwork relating to a call etc). 
+The reasons for pausing can be predefined and rolled out by your administrator. In order to pause yourself and select a reason, click on the pause symbol and select a reason from the drop down list.
 
 
 ## Team Overviews
