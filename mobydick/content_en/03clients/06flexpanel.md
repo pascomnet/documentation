@@ -1,5 +1,8 @@
 ---
 title: FlexPanel erstellen
+keywords:
+    - 
+description: 
 url: /clients/flexpanel-erstellen/
 prev: /clients/mobile-hub-einrichten/
 weight: 36
@@ -7,11 +10,11 @@ toc: true
 ---
 
 ## Übersicht
-FlexPanel können frei an den Bedarf der Benutzer angepasst werden. Als Grundlage definiert der Admin ein beliebig großes Panel und ordnet darauf die von MobyDick bereit gestellten Widgets an. Die Widgets wiederum sind in Größe, Funktion und Erscheinungsbild parametrierbar.
+FlexPanel können frei an den Bedarf der Benutzer angepasst werden. Als Grundlage definiert der Admin ein beliebig großes Panel und ordnet darauf die von mobydick bereit gestellten Widgets an. Die Widgets wiederum sind in Größe, Funktion und Erscheinungsbild parametrierbar.
 
 Beispiel Code für dieses Panel herunterladen
 
-Ist das FlexPanel einmal definiert kann man es verschiedenen Benutzern zuteilen. Diese Benutzer starten das FlexPanel dann, je nach Einstellung, entweder manuell über ein Menü oder automatisch beim Start des MobyDick Desktop Clients. Der Benutzer kann dann sämtliche Aktionen im FlexPanel per Drag&Drop ausführen so dass das Panel auch für Touchscreens geeignet ist.
+Ist das FlexPanel einmal definiert kann man es verschiedenen Benutzern zuteilen. Diese Benutzer starten das FlexPanel dann, je nach Einstellung, entweder manuell über ein Menü oder automatisch beim Start des mobydick Desktop Clients. Der Benutzer kann dann sämtliche Aktionen im FlexPanel per Drag&Drop ausführen so dass das Panel auch für Touchscreens geeignet ist.
 
 Beispiele für den Einsatz eines FlexPanels sind Vermittlungs-, Supervisor oder Monitoringarbeitsplätze.
 
@@ -23,12 +26,12 @@ Unter dem Menüpunkt `Erweitert > Flexpanel` können Sie durch Drücken der Scha
 |Parameter| Bedeutung|
 |----------|----------|
 |Bezeichnung|	Der Name des Panels|
-|Automatisch geöffnet|	Soll dieses Panel automatisch geöffnet werden wenn der MobyDick Desktop Client gestartet wird. Dies gilt nicht für alle MobyDick Client Nutzer sondern nur für die unter dem Tab Zuordnung definierten Benutzer.|
+|Automatisch geöffnet|	Soll dieses Panel automatisch geöffnet werden wenn der mobydick Desktop Client gestartet wird. Dies gilt nicht für alle mobydick Client Nutzer sondern nur für die unter dem Tab Zuordnung definierten Benutzer.|
 |Übergeordnetes Panel|	Panels können Definition und Style voneinander erben. Das ist praktisch, wenn man nur Details eines bereis vorhandenen Panels für bestimmte Benutzer anpassen will. Wenn Sie hier ein Übergeordnetes Panel auswählen erbt das neu erstelle Panel dessen Definition und Style.|
 |Dokumentation|	Feld zur Freien Verwendung für die Dokumentation des Panels|
 
 ### Benutzer Zuordnung
-Unter dem Tab *Zuordnung* bestimmen Sie wer das Panel benutzen Darf. Sobald Sie einem Benutzer hinzufügen und ihm somit die Nutzung des Panels erlauben kann er das Panel über den MobyDick Desktop Client starten.
+Unter dem Tab *Zuordnung* bestimmen Sie wer das Panel benutzen Darf. Sobald Sie einem Benutzer hinzufügen und ihm somit die Nutzung des Panels erlauben kann er das Panel über den mobydick Desktop Client starten.
 
 Haben Sie unter *Basisdaten* **Automatisch geöffnet** auf *ja* gestellt startet das Panel bei den entsprechenden Benutzer automatisch.
 
@@ -80,9 +83,9 @@ Kopieren Sie diesen Mindestcode in die Definition und passen die Maße des Panel
 
 #### Style
 
-Standardmäßig übernimmt jedes FlexPanel das **dark** oder **light** Theme, das im MobyDick Desktop Client unter `Einstellungen > Client > Theme` eingestellt werden kann.
+Standardmäßig übernimmt jedes FlexPanel das **dark** oder **light** Theme, das im mobydick Desktop Client unter `Einstellungen > Client > Theme` eingestellt werden kann.
 
-Das gesamte Theme ist in less Programmiert. Less ist eine Metasprache aus der dann CSS Code kompiliert werden kann. Wir stellen den gesamten **less Quellcode** für das **dark** und **light** Theme zum Download bereit. Sie können diese Quellen in einem Editor Ihrer Wahl anpassen und mit einem less compiler neuen CSS Code erzeugen. Diesen Code können Sie in der MobyDick Weboberfläche unter dem FlexPanel-Reiter **Style** hochladen und übersteuern hiermit die durch das Theme vorgegebenen Einstellungen für dieses FlexPanel.
+Das gesamte Theme ist in less Programmiert. Less ist eine Metasprache aus der dann CSS Code kompiliert werden kann. Wir stellen den gesamten **less Quellcode** für das **dark** und **light** Theme zum Download bereit. Sie können diese Quellen in einem Editor Ihrer Wahl anpassen und mit einem less compiler neuen CSS Code erzeugen. Diesen Code können Sie in der mobydick Weboberfläche unter dem FlexPanel-Reiter **Style** hochladen und übersteuern hiermit die durch das Theme vorgegebenen Einstellungen für dieses FlexPanel.
 
 Ein kostenloser und unter Windows und OSX lauffähiger less compiler ist SimpLESS.
 
@@ -101,10 +104,10 @@ Installieren und starten Sie den SimpLESS compiler und ziehen Sie den gesamten a
 Danach kompilieren Sie die Datei **operatorpanel.less** neu in dem Sie auf das **"neu laden"**-Sysmbol klicken. Um schön lesbares CSS zu erhalten schalten Sie das **minify** aus (kleiner blauer Kasten rechts in der File-Zeile).
 
 ##### Neuen Style laden
-Fügen Sie jetzt den **Inhalt** der neu erzeugten Datei **operatorpanel.css** auf der MobyDick Weboberfläche in den FlexPanel-Reiter Style ein. Jetzt noch *Speichern und Anwenden*. Wenn Sie das entsprechen Panel nun über den MobyDick Client neu starten sehen Sie den veränderten Style.
+Fügen Sie jetzt den **Inhalt** der neu erzeugten Datei **operatorpanel.css** auf der mobydick Weboberfläche in den FlexPanel-Reiter Style ein. Jetzt noch *Speichern und Anwenden*. Wenn Sie das entsprechen Panel nun über den mobydick Client neu starten sehen Sie den veränderten Style.
 
 ##### Panel starten
-Nachdem diesen Einstellungen haben Sie ein leeres Panel erzeugt. Sie können das Panel nach dem Abspeichern und Anwenden über den MobyDick Desktop Client starten:
+Nachdem diesen Einstellungen haben Sie ein leeres Panel erzeugt. Sie können das Panel nach dem Abspeichern und Anwenden über den mobydick Desktop Client starten:
 
 Im rot markierten Bereich werden alle für diesen Benutzer verfügbaren Panels mit ihrer Bezeichnung angezeigt. Nach dem Start erhalten Sie ein leeres Panel in der von Ihnen definierten Größe.  Der Benutzer kann immer nur ein Panel gleichzeitig geöffnet haben.
 
@@ -154,7 +157,7 @@ Für den Benutzer mit dem Benutzernamen **jflores** am Beispiel Widget **UserIte
     jflores.relocate(10,50)
     pane.addWidget(jflores)
 
-Die XMPP-Domain wird bei der Installation einer MobyDick Anlage automatisch mit auf **mobydick** gesetzt. Mehr dazu erfahren Sie unter XMPP API.
+Die XMPP-Domain wird bei der Installation einer mobydick Anlage automatisch mit auf **mobydick** gesetzt. Mehr dazu erfahren Sie unter XMPP API.
 
 ### Verfügbare Widgets
 Eine Liste aller verfügbaren Widgets finden Sie unter FlexPanel Widgets in der Entwickler-Dokumentation.

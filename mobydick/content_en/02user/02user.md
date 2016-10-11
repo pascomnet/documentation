@@ -1,202 +1,209 @@
 ---
-title: Benutzer und Arbeitsplätze
-url: /benutzer/benutzer-und-arbeitsplaetze/
-prev: /benutzer/
-next: /benutzer/teams-bilden/
+title: Users and Locations
+keywords: 
+    - Users
+    - SIP User
+    - IP work locations
+    - Roaming User
+    - Hotdesking
+    - Add Users
+    - Add Locations
+description: Was ist ein Users, Arbeitsplatz in mobydick und wie lassen diese sich einfach einrichten und verwalten?  
+linken: /benutzer/benutzer-und-arbeitsplaetze/
+url: /users/users-and-locations
+prev: /users/
+next: /users/add-teams/
 weight: 22
 toc: true
 ---
 
-## Konzept
+## Concept
 
-### Benutzer
+### Users
 
-Benutzer in mobydick repräsentieren eine **reale Person**. Dem Benutzer wird eine **Durchwahl** zugeteilt, nicht dem Telefon. Jeder Benutzer hat zwei **Präsenzstati**. Einen für den Telefon Status und einen **Online Status** für die Erreichbarkeit per Chat. Daran können andere Teilnehmer z.B. im mobydick Client sehen ob dieser Benutzer aktuell telefoniert, sich an seinem PC-Arbeitsplatz befindet oder am Smartphone erreichbar ist. Sind einem Benutzer mehrere Geräte zugeteilt oder nutzt er mehrere PCs oder Smartphones gleichzeitig wird der Präsenzstatus zusammengefasst.
+mobydick user accounts represent **real people** and not devices. An extension is assigned to the user, not the telephone. Each user has 2 **presence statuses**, one for their **telephone** and the other their **Online Availability**. This allows other mobydick Client users to see whether a particular user is currently on the phone, working at their PC or available on their smartphone. If multiple devices are assigned to a user or they are using multiple PCs or smartphones at the same time, their presence states are aggregated.
 
-![Illustration - Konzept der mobydick Benutzer](../../images/benutzer_uebersicht.png?width=90% "Benutzerkonzept in der mobydick")
+![Illustration - Concept mobydick User](../../images/user_overview.png?width=90% "User Concept mobydick")
 
 
-### Telefone dem Benutzer direkt zuteilen
+### Directly assigning telephones to users
 
-Im einfachsten Fall werden die Telefone dem Benutzer direkt zugeteilt. Alle zugeteilten Telefone sind dann unter der Durchwahl des Benutzers erreichbar. In welcher Reihenfolge und wie lange diese klingeln sollten wird beim Benutzer eingestellt. Standardmäßig läuten alle zugeteilten Telefone gleichzeitig für 20 Sekunden.
+In the simplest scenario, telephones are directly assigned to users. All assigned devices can then be reached by dialling the user's extension. User settings control in which order devices ring and for how long each device should ring. The default setting is for all assigned phones to simultaneously ring for 20 seconds
 
-![Illustration - Benutzer mit Endgeräten](../../images/benutzer_persoenliches_setup.png?width=50% "Benutzer und seine Endgeräte")
+![Illustration - User with devices](../../images/user_desktop_personal.png?width=50% "User with devices")
 
-Diese Methode ist gut wenn Ihre Benutzer jeden Tag am selben Arbeitsplatz sitzen da nur der Administrator die Zuweisung der Telefone ändern kann, nicht der Benutzer selbst. Haben Sie jedoch Benutzer die den Arbeitsplatz wechseln oder an manchen Tagen von zu Hause aus arbeiten sollten Sie Ihre Telefone nicht direkt dem Benutzer sondern **Arbeitsplätzen** zuweisen.
+This is the preferable method to be implemented if users do not switch workplaces in the office, as only the administrator can change assignments for each of the telephones. If, however, users need to switch workplaces or if they occasionally work from their home office, it is best to assign telephones to **locations** instead of users.
 
-### Arbeitsplätze nutzen
+### Using Locations
 
-In diesem Fall werden die Telefone nicht direkt dem Benutzer sondern einem virtuellen **Arbeitsplatz** zugeteilt. Ein Benutzer kann selbst per mobydick Client oder per Menü am SNOM, Aastra oder Yealink Telefon entscheiden an welchem Arbeitsplatz er jetzt arbeiten möchte. Sobald sich der Benutzer an einem Arbeitsplatz angemeldet hat sind alle dem Arbeitsplatz zugeteilten Telefone unter der Durchwahl des Benutzer erreichbar.  In welcher Reihenfolge und wie lange die Telefone klingeln sollten wird beim Arbeitslatz eingestellt. Standardmäßig leuten alle zugeteilten Telefone gleichzeitig für 20 Sekunden.
+Phones can not only be assigned to a user, but also to a virtual location. Users can then use the mobydick Client, mobydick Mobility Client or the menus within the SNOM, Aastra or Yealink devices to select the location they want to work from. As soon as a user has signed in to one location, the user's extension can be used to call all telephones assigned to that location. The order in which the devices ring and the duration of the ringing can be configured from the individual workplaces. The default setting is for all assigned telephones to ring simultaneously for 20 seconds.
 
-Ein Benutzer kann immer nur genau einem Arbeitsplatz zugeteilt werden. Standardmäßig kann sich jeder Benutzer auf jedem Arbeitsplatz anmelden. Möchte man dies nicht, kann man das per **Rolle** einschränken.
+A user can only be assigned to a single location. In the default setting, every user can sign in to every location. If you do not want your users to sign in to arbitrary locations, you need to create restrictions using **roles**.
 
-In unserem Beispielbild haben wir zwei Arbeitsplätze für den Chef eingerichtet. Einen für das Büro und einen zu Hause.
+In the example below, we created two locations for the Manager, one location in their office, the other in their home office.
+ 
 
-![Illustration - Benutzer- und Arbeitsplatzprinzip](../../images/benutzer_arbeitsplatz_prinzip.png?width=50% "Benutzer und Arbeitsplätze")
+![Illustration - User and locations](../../images/user_desktop_public.png?width=50% "User and locations")
 
-### Mischbetrieb
+### Combining the "directly assigned" and the "location" concepts
 
-Es ist möglich, dass ein Benutzer einen Arbeitsplatz und gleichzeitig direkt zugewiesene Telefone benutzt.
+It is possible for a user to use their extension with a location and at the same time to use a phone that is directly assigned to the user.
+This would make sense for devices owned by the user that they can carry with them, e.g. mobile phones, tablets etc.
+If users switch their location, this does not change anything for the phones that are directly assigned to the user.
 
-Das ist bei Telefonen sinnvoll die dem Benutzer persönlich gehören und die man an jeden Arbeitsplatz mitführen kann, z. B. Mobiltelefone.
+![Illustration - User mixed](../../images/user_mixed.png?width=50% "User mixed")
 
-Wechselt ein Benutzer seinen Arbeitsplatz ändert dies nichts an den direkt zugewiesenen Telefonen. Diese bleiben auf jedem Fall dem jeweiligen Benutzer zugeteilt.
+## Configuration
 
-![Illustration - Benutzer- und Arbeitsplatz Mischbetrie](../../images/benutzer_arbeitsplatz_persoenlich.png?width=50% "Benutzer und Arbeitsplätze und persönliche Endgeräte")
+### Adding Users
 
-## Konfiguration
+To add a new user, click the //FixMe button within the User panel.
+![Screenshot - Adding User](../../images/user_Quick_edit.png?width=90% "Adding User")
 
-### Benutzer anlegen
-Klicken Sie in der Benutzermaske auf die Schaltfläche `+Hinzufügen` um einen neuen Benutzer hinzuzufügen.
-![Screenshot - Benutzer anlegen](../../images/benutzer_hinzufuegen.png?width=90% "Benutzer anlegen")
+The **login name** (lower case letters only) and **password** are required by the user to log on to the mobydick Client or mobydick web interface. The numeric **PIN** can be entered easily using only the telephone touch pad and is used to access voicemail boxes or to sign in at a location etc.
 
-Der **Anmeldename** (bestehend aus Kleinbuchstaben!) und das **Passwort** werden vom Benutzer benötigt um sich am mobydick Client bzw. an der mobydick Weboberfläche anmelden zu können. Die Pin ist numerisch. Dadurch lässt sie sich einfach am Telefon eingeben und wird z.B. zur Abfrage der Voicemailbox oder zum Anmelden an einem Arbeitsplatz per Telefon usw. verwendet.
+The **display name** is what other users see when they receive a call from that user.
 
-Den **Anzeigenamen** sehen andere Teilnehmer wenn sie von diesem Benutzer angerufen werden.
+**Extension** is the number under which the user is reachable internally
 
-Unter der **Durchwahl** ist dieser Benutzer intern erreichbar.
+If a number for the **fax extension** is entered, a virtual fax service will be automatically created.
 
-Gibt man unter **Fax-Durchwahl** eine Nummer an wird für diesen Benutzer automatisch ein virtuelles Faxgerät angelegt.
+**E-mail address** is used in order to to send incoming faxes and voicemails to the users e-mail.
 
-Die **EMail-Adresse** wird verwendet um dem Benutzer eingehende Faxe und Voicemails zuzusenden.
-
-Für den Benutzer kann eine **bevorzugte Sprache**, deutsch oder englisch, gewählt werden. Benachrichtigungen von Faxen oder Voicemailnachrichten werden in der eingestellten Sprache versendet. Ebenfalls hört man die Menüansagen am Telefon (z. B. Abfrage der Voicemailbox) in der eingestellten Sprache.
-
-Jedem Benutzer wird automatisch eine Voicemailbox zugeteilt. Standardmäßig existiert diese zwar, Anrufer werden aber nicht auf die Voicemailbox abgeworfen. Dieses Verhalten kann man durch setzten der Option **Voicemailbox verwenden** anpassen:
+A voicemail box is created for each user as default. The default setting is to not route an incoming call to the user's voicemail box, however this setting can be changed by using and activating the **Use voicemail box**:
 
 |Parameter | Bedeutung |
 |----------|-----------|
-|Nicht verwendet |(Standard) Bei dieser Einstellung wird kein Anrufer auf die Mailbox abgeworfen|
-|Für externe Gespräche|Eingehende **externe** Anrufer werden, falls der Benutzer telefoniert oder der Anruf nicht entgegengenommen wird, auf die Voicemailbox abgeworfen; Dazu werden automatisch Aktionen **nachher extern** angelegt|
-|Für interne Gespräche|Eingehende **interne Anrufer** werden, falls der Benutzer telefoniert oder der Anruf nicht entgegengenommen wird, auf die Voicemailbox abgeworfen; Dazu werden automatisch Aktionen **nachher intern** angelegt|
-|Für alle Gespräche| Alle Anrufer werden, falls der Benutzer telefoniert oder der Anruf nicht entgegengenommen wird, auf die Voicemailbox abgeworfen; Dazu werden automatisch Aktionen **nachher extern und intern** angelegt|
+|Do not use it |(default) Incoming calls are not forwarded to the voicemail box.|
+|For external calls|Incoming calls from **outside of the network** are forwarded to the users' voicemail box if the person called is on the phone or does not answer the call. Accounts using the **External / After** settings will automatically be handled according to the settings applied.|
+|For internal calls|Incoming **internal** calls are forwarded to the voicemail box of the person called if the they are on the phone or not available to answer the call.  Accounts using the **Internal / After** settings will automatically be handled according to the settings applied.|
+|For all calls| **All** calls are forwarded to the voicemail box if the person called is on the phone or not answering. //FixMe Actions of the types **Internal / After** and **External / After** are automatically created to handle this scenario.|
 
-Aktivieren Sie das **mobydick-Softphone** wird für diesen Benutzer automatisch ein mobydick Software Telefon mit angelegt. Dadurch kann der Benutzer den [mobydick Client](test) direkt als Telefon benutzen.
+Enabling the **mobydick Softphone** will mean that the user will automatically be created with a mobydick Software Telephone. This will enable the user to use the //FixMe mobydick Client exactly like a normal desktop telephone.
 
-Nach dem Speichern öffnet sich die Detailmaske:
-![Screenshot - Benutzer verwalten in der mobydick](../../images/benutzer_verwalten.png?width=90% "Benutzer verwalten")
+Save your changes and review the user details:
+![Screenshot - edit user in mobydick](../../images/user_edit.png?width=90% "User edit")
 
-In dieser Maske sehen Sie die selben Basisdaten wie zuvor eingegeben. Zusätzlich haben Sie die Möglichkeit eine **CID Nummer** zu definieren. Standardmäßig sieht ein interner Teilnehmer der von einem Benutzer angerufen wird dessen Durchwahl im Telefon-Display. Ist **CID Nummer** ausgefüllt, wird die Durchwahl durch diese Nummer ersetzt.
+This screen contains the basic data you have just entered in the previous step. Additionally, you can enter a **CID number**. As standard, an internal person who is being called will usually see the the caller's extension on the telephone display. If a **CID number** has been defined, this number will be displayed instead of the extension number.
 
-In unserem Beispiel kann es sein, dass Chef Max intern nicht seine eigene Durchwahl sondern die seiner Sekretärin Maria übermitteln möchte. Dann kann hier z. B. die 100 als **CID Nummer** eingetragen werden. Ruft jemand die 100 zurück landet er bei der Nebenstelle von Maria. Max bleibt weiterhin unter der Durchwahl 120 erreichbar.
+In our example, Manager Max might not want to display his own extension but that of his secretary Maria when making call. To do so, he can enter 100 as the **CID number**. If someone was to then call back at a later time dialling the extension 100, Maria will pick up the call as Max' extension is still 120.
 
-### Web-UI Rechte
+### Web-UI Permissions
 
-Standardmäßig kann nur der Administrator zur Administration der mobydick in die Weboberfläche einloggen. Zusätzlich können Sie aber an jeden beliebigen Benutzer Administrationsrechte vergeben. Aktuell stehen Ihnen fix drei Berechtigungsstufen zur Verfügung:
+As standard, only your mobydick Administrator log in to the Web UI. However, you can assign administration rights to any number of user, should you need to do so. Currently, there are 3 administration rights levels available:
 
 |Rolle | Berechtigungen |
 |------|----------------|
-|System Administrator|Die höchste Stufe. Der System Administrator hat alle verfügbare Rechte.|
-|Administrator| Wie System Administrator jedoch **ohne**: </br>- mobydick Update </br>- Full ISO Backup </br>- Reboot </br>- Netzwerk-Konfiguration</br>- Cluster Management|
-|PBX-Manager|Wie Administrator jedoch **ohne**: </br>- Verwaltung von Gateways/Erweiterungskarten/Ämter </br>- Restart von Diensten </br>- Datenbank Restore </br>- Endgeräte Firmware Rollout </br>- mobydick Connector </br>- Cronjob Verwaltung|
-|Phonebook Manager|	Der Benutzer kann das mobydick-Telefonbuch bearbeiten.|
+|System Administrator|Highest level - has all available permissions.|
+|Administrator| Like System Administrator however **without**: </br>- mobydick Update </br>- Full ISO Backup </br>- Reboot </br>- Network configuration </br>- Cluster Management|
+|PBX-Manager| Like Administrator however **without**: </br>- Gateways/Expansion Cards/Trunks </br>- Restarting of services </br>- Restoring Database </br>- End User Device Firmware rollout </br>- mobydick Connector </br>- Cronjob Management|
+|Phonebook Manager|    The user is permitted to edit the mobydick phonebook|
 
-### Voicemailbox
+### Voicemail box
 
-Hier können Sie unter **Voicemails speichern** wählen ob Voicemails auf der Festplatte gespeichert werden sollen. Sobald die eine Voicemail Email angeben werden neue Voicemails automatisch an diese Adresse versendet.
+The **Save voicemail** option allows you to choose whether voice messages should be saved to disk. If the field **Voicemail E-Mail** contains an e-mail address, new voice messages are automatically forwarded to that address.  
 
-Unter **Überwachte Voicemailbox** wählen Sie welche Mailbox der Benutzer per mobydick Client, Mobility Client und IP-Telefon verwalten soll. Details zum Konzept siehe 
-//FixMe Voicemailbox.
+The **Monitored voicemail box** allows you to select a user who can administer the mailbox using either the mobydick Client, Mobility Client or an IP telephone. For more details, please see //FixMe voicemail box.
 
-### Telefonbuch
+### Phonebook
 
-Standardmäßig erhält jeder Benutzer einen Eintrag im **Telefonbuch** mit seinem **Anzeigenamen** und seiner **Durchwahl**. Hier hat man die Möglichkeit weitere Daten einzugeben. Der Eintrag ist dann auf mobydick Client, Mobility Client und IP-Telefonen verfügbar.
+For every user, an entry is added to the **phonebook** containing both their **display name** and **extension**, although additional details may also be added. The entry can be called up from either the mobydick Client, Mobility Client or IP telephones.
+It is also possible to **deactivate** an entry, for example should a member of the management team require that their phonebook entry not be visible to other users. For more details, please see //FixMe Maintaining the Central Telephone Book.
 
-Es ist auch möglich den Telefonbucheintrag zu **deaktivieren**. Eventuell ist es gewünscht, dass der Eintrag des Chefs nicht im Telefonbuch erscheinen soll. Details siehe //FixMe Telefonbücher pflegen.
+### Fax devices
+You can assigned a personal fax device to a user. For more details, please see //FixMe Virtual Fax Server.
 
-### Faxgerät
-Teilen Sie hier dem Benutzer ein persönliches Faxgerät zu. //FixMe Details siehe Virtueller Faxserver
+### Assigned Devices
+You can assign personal devices to a user.
+![Screenshot - Assigend devices in mobydick](../../images/user_devices.png?width=90% "Devices in mobydick")
 
-### Endgerät
-Teilen Sie dem Benutzer fix persönliche Endgeräte zu.
-![Screenshot - Endgeräte verwalten in der mobydick](../../images/benutzer_endgeraete_verwalten.png?width=90% "Endgeräte verwalten beim Benutzer")
+Any number of devices can be assigned to user. The default setting for all assigned devices is to ring simultaneously for 999 seconds. To learn more about **Waiting** and **Ringing** settings, please see the //FixMe Concept: Followme. If the call is not answered, the actions **After / External** or **After / Internal** will be applied. See the chapter on the concept of //FixMe actions for more details.
+//FixMe
 
-Einem Benutzer können beliebig viele Endgeräte zugeteilt werden. Standardmäßig leuten bei einem Anruf alle zugeteilten Endgeräte gleichzeitig für 999 Sekunden. Die Bedeutung von der verschiedenen **Warten** und **Läuten** Werte können Sie unter [FollowMe Prinzip der mobydick](#followme-prinzip-der-mobydick) nachlesen. 
+### Location
 
-Wird der Anruf nicht entgegengenommen greifen die Aktionen **Extern/Nacher** oder **Intern/Nachher**. //FixMe Siehe Aktionen für Details.
+Using the location tool allows you to assign a location to the user as well as seeing the location the user is currently working from.
+A user can only use a single location at any time, however several telephones can be assigned to the location.
 
-### Arbeitsplatz
+### Roles
 
-Hier können Sie dem Benutzer einen Arbeitsplatz zuteilen bzw. sehen an welchem Arbeitsplatz der Benutzer aktuell arbeitet.
-Ein Benutzer kann immer nur einen Arbeitsplatz nutzen, dem Arbeitsplatz wiederum können aber mehrere Telefone zugeteilt werden.
+Allows you to define which //FixMe roles apply to the relevant users for a particular use. For further details please see roles. //FixMe
 
-### Rollen
+### Actions (internal, external, before, after)
 
-Definiert in welchen Rollen der jeweilige Benutzer Mitglied ist. Siehe [Rollen](#rollen-und-damit-verbundene-rechte) für Details.
-
-### Aktionen (intern, extern, voher, nachher)
-
-Mit Aktionen steuern Sie den Anruf Ablauf. //FixME Details siehe Aktionen und Anrufablauf steuern.
-
-### Arbeitsplätze anlegen (optional)
-Legen Sie unter `Benutzer > Arbeitsplätze` einen neuen Arbeitsplatz an indem Sie auf `+Hinzufügen` klicken.
-![Screenshot - Arbeitsplatz verwalten in der mobydick](../../images/benutzer_arbeitsplatz_verwalten.png?width=90% "Arbeitsplatz anlegen")
-Der Arbeitsplatz benötigt lediglich eine **Bezeichnung**. Dann können Sie Geräte zuteilen.
-
-Sie haben die Möglichkeit gleich an dieser Stelle einen Benutzer zuzuteilen allerdings kann der Benutzer selbst jederzeit diesen Arbeitsplätze per mobydick Client und Menü-Taste am SNOM, Aastra oder Yealink Telefon wechseln.
-
-### Benutzer und Arbeitsplätze importieren
-
-Haben Sie relativ viele Benutzer können Sie diese importieren und auch die Telefone und Arbeitsplätze automatisch zuweisen lassen. //FixMe Details siehe Daten importieren.
+Actions allow you to the manage the call flow. For more details please see //FixMe the chapter on actions and //FixMe Call Flow Management.
 
 
-## Rollen und damit verbundene Rechte
+### Creating locations (optional)
+In the menu Users > Locations, create a new location by clicking the //FixMe  button.
+![Screenshot - location in mobydick](../../images/user_location.png?width=90% "apply location")
+The location only requires a label to allow assignment of devices to it
 
-### Übersicht
-Benutzer, Geräte, Arbeitsplätze oder Teams können Mitglieder in einer oder mehreren Rollen sein. Der Rolle selbst können Eigenschaften und Rechte zugeteilt werden.
+You can now assign users although this can also be done by the users themselves by using mobydick Client, MobilityClient or by using the menu keys on the their SNOM, Aastra and Yealink telephones.
 
-Rollen steuern "Telefonie-Relevante" Eigenschaften und Rechte wie beispielsweise die Erlaubnis Gespräche anderer Benutzer heranzuholen, usw. und können außerdem nicht nur Benutzer sondern auch Geräte, Arbeitsplätze oder Teams als Mitglieder enthalten.
+### Importing Users and Locations
 
-### Spezielle Rolle "Alle"
-Es gibt eine spezielle Rolle mit dem Namen **All Users**. Diese Rolle ist standardmäßig allen Benutzern, Geräten, Arbeitsplätzen und Teams zugeteilt und kann auch nicht entzogen werden.
+If you have a relatively large amount of users, you can import the users and automatically assign telephones and locations. Please see Importing Data for details. //FixMe
 
-### Abteilungsweise Rollen erstellen
-Ein häufiger Anwendungsfall (und unsere Empfehlung) ist es, dass man pro Abteilung oder Team eine Rolle erstellet. Z. B. ist es häufig gewünscht, dass Benutzer nur innerhalb Ihrer Abteilung Gespräche heranholen können und sich gegenseitig im mobydick Client sehen. Dazu entziehen Sie einfach der Rolle "Alle" die Eigenschaft xmpp.group und weisen dies einer neuen Rolle z. B. Support zu in der Sie dann alle Support Benutzer zu Mitgliedern machen.  
 
-### Eigenschaften und Rechte
+## Roles and given special rights or properties
+
+### Concept
+**Users**, **Devices**, **Work Stations** or **Teams** can all be members in one or several Roles. The Role itself can allocate **properties** and **Roles**.
+Roles control the "Telephony relevant" properties and rights such as the ability to see and "pick up" conversations from other Users etc, and can also contain not only Users but also devices, workstations and teams as members.  
+
+### Special Role "All"
+There is a special **Role** called **All Users**, which as default is assigned to all Users, devices, workstations and teams and can not be removed.
+
+### Setting Roles per Department
+A very common practice (and our recommendation) is to create one Role per department or team. For example, you may wish that users can only pick up calls only from within their department and to for this to been mutually seen within the MobyDick client. In order to so this simply disable the xmpp.group properties of the "All" Role and assign a new role, e.g. Support in which you can set all the Support Users as members
+
+### Properties and Rights
 #### location.group
-In dieser Rolle können Benutzer und Arbeitsplätze hinzugefügt werden. An Arbeitsplätzen die einer Rolle mit dem Typ location.group angehören können sich nur Benutzer anmelden, die der selber Rolle angehören. Zu Beachten ist, dass sobald eine Rolle mit der Eigenschaft location.group erstellt wurde, für alle Benutzer und Arbeitsplätze eine solche Rolle existieren muss. Sonst können sich Benutzer ohne diese Rolle an keinem Arbeitsplatz anmelden.
+With this role, users and locations can be added. Only users can log themselves into locations which belong to a role type location.group. Please note, that as soon as a role with the location.group properties has been setup, a corresponding role for all users and locations must also exist. Otherwise, users without this role will not be able to log into any location. 
 
-Auswirkung: Benutzer, Arbeitsplätze
+Influences: Users, Locations
 
 #### billing.group
-Abrechnungsgruppe des Billing Moduls. Dient zur Gruppierung der Gesprächsdaten.
+Accounting groups of the Billing Modules. Services used for grouping call data.
 
-Auswirkung: Benutzer, Rufgruppen, Warteschlangen
+Influences: Users, Call Groups, Waiting lines
 
 #### xmpp.supervisor
-Benutzer mit dieser Rolle können Gespräche aller Benutzer managen. Wichtig für Flexpanel und TAPI.
+Users with this role can manage conversations pertaining to all users. This is important for the FlexPanel and TAPI
 
-Auswirkung: Benutzer
+Influences: Users
 
 #### pickup.group
-Alle direkten Mitglieder der Rolle haben das Recht, eingehende Anrufe die an ein anderes Mitglied der Gruppe gerichtet sind, heranzuholen. Dies kann dann entweder per Telefon *8<durchwahl> oder Client erfolgen.
+All direct members of the role have the right to pick up incoming calls directed to another member of the group. This can then be done either via the Telephone *8<extension> or via the Client.
 
-Auswirkung: Benutzer, Teams
+Influences: only Users
 
 #### redirect.choice
-Eine Identität mit diesem Rollentyp wird nie von einer anlagenbasierten Rufumleitung umgeleitet, sondern ruft immer das direkte Ziel.
+An User with this role type will never been diverted from a system-based call forwarding protocol, but will always call the direct target.
 
-Auswirkung: Benutzer
+Influences: User
 
 #### redirect.group
-Definition einer Anlagenbasierte Rufumleitungen und Rufumleitungsgruppen.
+Define a system based role for call forwarding and call forwarding groups.
 
-Auswirkung: Benutzer
+Influences: only Users.
 
 #### xmpp.group
-Alle Identitäten die eine Rolle mit dem Rollentyp xmpp.group zugewiesen haben, werden in eine XMPP shared Group eingebunden. D.H. in den Kontaktliste der Clients müssen sich diese Personen nicht mehr gegenseitig hinzufügen sondern sind sofort sichtbar. Falls Sie die xmpp.group der Rolle Alle Identitäten zuordnen, sieht im Client immer jeder jeden.
+All Users that have been assigned a role with the role type xmpp.group, will be linked together in a XMPP //FixMe shared Group. That is to say the clients in the contact list do not have to mutually add themselves, but will be immediately visible to one another.  Should you assign the property xmpp.group to the role All Users, everyone will always see everyone in the Client.
 
-Auswirkung: Benutzer
+Influences: only Users.
 
-## FollowMe Prinzip der mobydick
-Benutzern und Arbeitspätzen können mehrere Telefone zugewiesen werden. Die Konfiguration, welches Telefon wann und wie lange läutet, bezeichnen wir als Followme. 
-![Illustration - FollowMe Prinzip mobydick](../../images/benutzer_followme.png?width=90% "Endgeräte folgen Ihnen")
-Jedem Telefon kann der Parameter **Warten** und **Läuten** in Sekunden angegeben werden.
+## Concept: Followme
+Users and work stations can have multiple telephones assigned to them. The configuration as to which telephone rings, when and for how long is called **Followme**. 
+![Illustration - Concept Followme mobydick](../../images/user_followme.png?width=90% "Devices follow you")
 
-**Warten** definiert den Zeitraum zwischen einem eintreffenden Anruf und dem Zeitpunkt zu dem das Telefon zu läuten beginnen soll.  
-**Läuten** definiert wie lange das Telefon gerufen werden soll. 
+Every telephone can be setup with **Waiting** and **Ringing** parameters valued in seconds.
 
-Außerdem können sich Telefone bei internen anrufen anders verhalten als bei externen oder bei Anrufen die Sie als Agenten eines Teams erreichen. Daher gibt es die Parameter Warten und Läuten jeweils pro Telefon für **intern, extern** und **agent**.
+**Waiting** defines the amount of time between an incoming call and the time that that telephone should begin to ring. 
 
-Aktuell kann das Followme nur vom Administrator eingestellt werden. In zukünftigen Version soll dies auch vom Benutzer selbst in mobydick Client und Mobility Client erledigt werden können.
+**Ringing** defines how long the telephone should be called. 
+
+Additionally you can handle internal calls differently to external calls as well as calls which should reach your Team Agents. Therefore, there is the according **Waiting** and **Ringing** parameters per Telephone for **intern, extern** and per **Agent**.
+
+Currently the Followme concept can only be set by the Administrator. In future versions, this should be also possible to do by the users

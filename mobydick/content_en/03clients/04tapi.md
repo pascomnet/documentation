@@ -1,5 +1,13 @@
 ---
 title: Tapi Schnittstelle
+keywords:
+    - Tapi Schnittstelle 
+    - TAPI Treiber
+    - Microsoft Telephony Application Programming Interface 
+    - Telefonie-Funktionen von Windows
+    - Windows Tapi Integration
+    - Click to Dial unter windows
+description: TAPI ist eine Schnittstelle zwischen den Telefonie-Funktionen von Windows und mobydick 
 url: /clients/tapi/
 prev: /clients/teams-im-client/
 next: /clients/mobile-hub-einrichten/

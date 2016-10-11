@@ -1,5 +1,10 @@
 ---
 title: Mobile Hub einrichten
+keywords:
+    - Mobile Hub für Mobility Client einrichten
+    - Mobilgeräte für Mobile Hub anlegen
+    - Handy in mobydick integrieren
+description: Mit dek mobydick Mobile Hub können Sie Mobilgeräte nativ in mobydick integrieren.
 url: /clients/mobile-hub-einrichten/
 prev: /clients/tapi/
 next: /clients/flexpanel-erstellen/

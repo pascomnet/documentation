@@ -1,5 +1,12 @@
 ---
 title: Teams im Client
+keywords:
+    - Teams im Client
+    - Teamübersicht
+    - Funktionstastenübersicht
+    - Ein- und Ausbuchen von Teams
+    - Team Statitiken
+description: Teams fassen Benutzer zu Gruppen zusammen. Im mobydick Client sehen Sie, zu welchen Teams es in Ihrem Unternehmen gibt und können aktiv in einem Team arbeiten.
 url: /clients/teams-im-client/
 prev: /clients/client-nutzen/
 next: /clients/tapi/

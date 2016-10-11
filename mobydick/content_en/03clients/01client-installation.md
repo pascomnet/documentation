@@ -1,5 +1,10 @@
 ---
 title: mobydick Desktop Client installieren
+keywords: 
+    - Desktop Client
+    - Desktop Client installieren
+    - Installation mit Adminrechten auf einem Desktop
+description: mobydick Desktop Client installieren, bereitstellen und Anmeldung. 
 url: /clients/client-installieren/
 prev: /clients/
 next: /clients/client-nutzen/
@@ -46,7 +51,7 @@ Zum Updaten muss der Client erneut heruntergeladen und manuell wiederrum mit Adm
 
 Beispiel:
 
-    MobyDickClient-setup.exe /S /ISUPDATE=1 /D=C:\client
+    mobydickClient-setup.exe /S /ISUPDATE=1 /D=C:\client
 
 Parametererklärung:
 
@@ -63,24 +68,24 @@ Parametererklärung:
 * Unterstützt nur absolute Dateipfade{{% /md %}}||
 
 ### Mac
-Um den MobyDick Client unter Mac OSx zu installieren müssen Sie folgende Schritte durchführen:
+Um den mobydick Client unter Mac OSx zu installieren müssen Sie folgende Schritte durchführen:
 
-1. Laden Sie die .dmg Datei von Ihrer MobyDick Startseite herunter. Die URL (z.B. http://meinetelefonanlage.musterfirma.de oder http://10.1.1.0) wird Ihnen in der Regel von Ihrem Admin zugesendet.
+1. Laden Sie die .dmg Datei von Ihrer mobydick Startseite herunter. Die URL (z.B. http://meinetelefonanlage.musterfirma.de oder http://10.1.1.0) wird Ihnen in der Regel von Ihrem Admin zugesendet.
 2. Speichern Sie die Datei
 3. Wenn der Download fertig ist, klicken Sie auf die Datei und der Installationsvorgang wird eingeleitet
 Darauf erscheint dieses Fenster:
-4. Schieben Sie das MobyDick Icon (rot) auf den Application Ordner
+4. Schieben Sie das mobydick Icon (rot) auf den Application Ordner
 5. Sobald der Kopiervorgang abgeschlossen ist, können Sie den Client starten
 
 ### Linux
 Unter Linux bringen wir keinen klassischen Installer mit.
 
-1. Laden Sie das tar.bz2-Paket aus der MobyDick über die Service Seite herunter
+1. Laden Sie das tar.bz2-Paket aus der mobydick über die Service Seite herunter
 2. Entpacken und führen Sie über die Shell das Paket mit folgenden Befehlen aus:
 Eingabe via Terminal
 
 
-    tar xfvj MobyDickClient-x.xx.xx.tar.bz2  
+    tar xfvj mobydickClient-x.xx.xx.tar.bz2  
     ./md_client/bin/md_client
 
 

@@ -1,5 +1,12 @@
 ---
 title: Desktop Client nutzen
+keywords:
+    - Desktop Client nutzen
+    - Benutzereinstellung im Client
+    - Desktop Client Theme ändern
+    - Einstellungen des Desktop Clients
+    - mobydick Client Journal
+description: Unter "Desktop Client nutzen" erfahren Sie, wie Enduser alle Funktionen des mobydick Clients nutzen können.
 url: /clients/client-nutzen/
 prev: /clients/client-installieren/
 next: /clients/teams-im-client/
@@ -43,7 +50,14 @@ Den Name können Sie selbst unter `"Einstellungen" --> "Mein Account"` geändert
 3. **Statusnachricht:** Sie können dabei jederzeit den Text des Status selbst bestimmen und einen gewünschten Text einfügen. Der Client merkt sich dann diesen Text und Sie können diesen später erneut verwenden. 
 4. **Arbeitsplatz:** Zeigt Ihnen Ihren derzeitigen Arbeitsplatz an. Diese ist wichtig, wenn Sie z.B. immer zwischen HomeOffice und Büro wechseln. Dem Arbeitsplatz sind die Telefone zugeordnet, d.h. benutzen Sie den HomeOffice Arbeitsplatz, so klingeln die Telefone bei Ihnen im Homeoffice und nicht im Büro.
      
+### Einstellungen für Ihren Benutzer
 
+Wenn Sie auf das Zahnrad klicken, öffnet sich das Einstellungsmenü für Ihren Benutzer.
+
+Dabei können Sie aus folgenden Statis für Ihren Benutzer wählen. 
+grün: Verfügbar
+gelb: Komme gleich wieder
+rot: Ich bin beschäftigt oder Bitte nicht stören
 
 
 ## Journal

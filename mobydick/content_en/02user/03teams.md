@@ -1,213 +1,220 @@
 ---
-title: Teams bilden
-url: /benutzer/teams-bilden/
-prev: /benutzer/benutzer-und-arbeitsplaetze/
-next: /benutzer/erweiterte-team-funktionen/
+title: Add & Build Teams
+url: /users/add-teams/
+prev: /users/users-and-locations/
+<!--next: /users/advanced-team-functions/-->
 weight: 23
+keywords: 
+    - Add Teams
+    - Build teams
+    - Call Queues
+    - Hunt Groups
+    - CallGroups
+    - Roaming User
+    - Hotdesking
+    - Call Center Teams
+    - Call Routing
+description: Teams in mobydick are comparable to Call Queues. Use advanced call strategies to help manage callers more effectively and professionally. 
+linkde:/benutzer/teams-bilden/
 toc: true
 ---
 
-## Konzept
+## Concept
 
-Jeder Benutzer hat in der mobydick seine eigene Durchwahl, Geräte und Aktionen die den Anruf an diese Durchwahl steuern.
-**Zusätzlich kann** ein Benutzer Mitglied in einem Team sein.
+Each MobyDick user has their own extension, devices and //FixMe actions that control calls made to that extension. **In addition**, a user can be a member of a **team**.
 
-![Illustration - Team Konzept](../../images/team_konzept.png?width=50% "Teams und Warteschlangen in der mobydick")
+![Illustration - Team Concept](../../images/teams_basic.png?width=50% "Teams and queues in mobydick")
 
 
-Das **Team** hat eine eigene Durchwahl und eigene Aktionen. Wird die Durchwahl des Teams gerufen klingeln die Telefone der Mitglieder je nach im Team hinterlegter Strategie und Aktionen.  
+The **team** has its own **extension** and actions //FixMe assigned to it. When a call is made to the team's extension, the team members' phones will ring in the order defined in the **strategy** and actions.//FixMe
 {{% notice info %}}
-Wird ein Team gerufen gelten ausschließlich die dort hinterlegten Aktionen. Die Aktionen die bei den Benutzer hinterlegt sind werden in diesem Fall ingnoriert.
+When a call is made to a team's number, only the actions //FixMe pertaining to the team will be active. Actions pertaining to individual users will be ignored.
 {{% /notice %}}
-Somit kann man beispielsweise steuern, dass Frank auf seiner direkten Durchwahl **22** auch **außerhalb der Geschäftszeiten erreichbar bleibt** das Support Team nach 18:00 Uhr aber auf den **Anrufbeantworter** umleitet.
+This concept allows you to make use of the following example scenario:
+Frank can still be reached at his extension **22** even **outside of business hours**; however calls to the support teams will be routed to the **mailbox** after 6:00 p.m.
 
-### Teamarten
+### Types of teams
 
-Es gibt zwei verschiedene Arten von Teams die sich lediglich im Funktionsumfang unterscheiden.
+There are two types of teams that only differ in the functionality they offer.
 
-#### Rufgruppen
+#### Call Groups
 
-Rufgruppen haben **fix zugeteilte** Mitglieder und kennen nur die beiden Rufstrategien **alle** und **nacheinander**. Anrufer bekommen entweder ein Freizeichen oder Wartemusik vorgespielt.
+Call groups have **permanent members**. Only the following call strategies are used: **all** and **consecutive**. Either a ringing tone or music will be played to the caller.
 
-#### Warteschlangen
+#### Queues
 
-Warteschlangen können fixe und **dynamische Mitglieder** habe. Das bedeutet Benutzer können sich bei Bedarf an einer Warteschlange ad hoc anmelden. Außerdem kennen Warteschlangen eine **Vielzahl** verschiedener **Rufstrategien**.
+Queues can have permanent and/or **dynamic members**, i.e. users can join a queue if needed. Queues are capable of a number of call strategies. Callers are added to the queue sequentially and, if desired, can be informed of their **position in the queue** and the **average waiting time**. During the wait, either hold music or a ringing tone can be played.
 
-Anrufer werden nacheinander in der Warteschlange **eingereiht** und bekommen auf Wunsch die **Warteposition** und **durchschnittliche Wartezeit** angesagt. Während der Wartezeit kann man entweder Wartemusik oder ein Freizeichen einspielen.
+### Call Strategies
 
-### Rufstrategien
-
-|Strategie|	Asterisk Bezeichnung|	Beschreibung|Rufgruppe|Warteschlange|
+|Strategy| Internal Asterisk Name| Description| Call Group|Queue|
 |---------|---------------------|--------------|:--------:|:------------:|
-|alle| ringall|	Alle Mitglieder werden gleichzeitig gerufen.| <i class="fa fa-check-square" aria-hidden="true"></i>  |  <i class="fa fa-check-square" aria-hidden="true"></i>| 
-|nacheinander|	linear	|Die Mitglieder werden nach der Zuweisungsreihenfolge gerufen. Achtung: Dynamische Mitglieder verändern durch Ein- und Ausbuchen aus dem Team die Position.|  <i class="fa fa-check-square" aria-hidden="true"></i>| <i class="fa fa-check-square" aria-hidden="true"></i> |
-|längste zurück| lastrecent	|Das Mitglied welches am längsten keinen Anruf entgegen genommen hat kommt als nächstes dran. Achtung: Dynamische Mitglieder setzten durch Ein- und Ausbuchen aus dem Team alle Zähler zurück und sind somit nach dem Einbuchen automatisch immer derjenige der am längsten keinen Anruf bekommen hat.|  |<i class="fa fa-check-square" aria-hidden="true"></i>  |
-|wenigsten Anrufer|	fewestcalls	|Das Mitglied welches am wenigsten Anrufe angenommen hat kommt als nächstes dran. Diese Einstellung berücksichtig nicht die Anrufdauer. Wenn ein Mitglied beispielsweise 5 mal eine Minute lang telefoniert und ein anderes 2 mal eine Stunde ist trotzdem letzteres an der Reihe. Dynamische Mitglieder setzten durch Ein- und Ausbuchen aus dem Team alle Zähler zurück und sind somit nach dem Einbuchen automatisch immer derjenige der am wenigsten Anruf bekommen hat.|  | <i class="fa fa-check-square" aria-hidden="true"></i> |
-|per Zufall|	random	|Wählt zufällig einen Agenten aus.|  | <i class="fa fa-check-square" aria-hidden="true"></i> |
-|mem-nacheinander|	rrmemory	|Wie nacheinander allerdings beginnt die Reihe beim nächsten Anrufer nicht von vorne sondern nach dem der als letztes einen Anruf entgegengenommen hat.|  | <i class="fa fa-check-square" aria-hidden="true"></i> |
-|per Zufall nach Priorität| wrandom|	Wie per Zufall nur werden die Prioritäten der Agenten berücksichtigt. Erst wenn alle Agenten mit niedriger Priorität telefonieren werden die mit der nächst höheren gerufen.|  | <i class="fa fa-check-square" aria-hidden="true"></i> |
+|ring all| ringall|    Call all members simultaneously.| <i class="fa fa-check-square" aria-hidden="true"></i>  |  <i class="fa fa-check-square" aria-hidden="true"></i>| 
+|one after another|    linear |Members are called according to their assigned position. Please note: dynamic members change their position when joining or leaving a team.|  <i class="fa fa-check-square" aria-hidden="true"></i>| <i class="fa fa-check-square" aria-hidden="true"></i> |
+|longest back| lastrecent  |The member who has not received a call for the longest period of time will be the next in the list. Please note: entering and leaving a queue by dynamic team members will reset all counters. When entering a queue, dynamic members always are the ones that have not accepted a call for the longest time.|  |<i class="fa fa-check-square" aria-hidden="true"></i>  |
+|fewest calls| fewestcalls    |The member having accepted the fewest calls will be the next in queue. This setting does not consider the length of the call. A member having made five calls of one minute each will come after a member that made only two calls, although these may have lasted one hour each. Dynamic members entering and leaving a team will have all their counters reset and as a result, they will be the members with the fewest calls when entering the queue. |  | <i class="fa fa-check-square" aria-hidden="true"></i> |
+|randomly| random |Select a random agent.|  | <i class="fa fa-check-square" aria-hidden="true"></i> |
+|mem-successively| rrmemory   |  Like the "linear" strategy; however, the next caller is selected based on who has last accepted a call.|  | <i class="fa fa-check-square" aria-hidden="true"></i> |
+|randomly- ordered| wrandom|   Like the "random" strategy; however, agent priorities are taken into account. Agents with higher priority are only called when all other agents of lower priority are on the phone.|  | <i class="fa fa-check-square" aria-hidden="true"></i> |
 
-### Warteschlangen gewichten
+### Weighting queues
 
-Warteschlangen können ein unterschiedliches Gewicht haben. Desto schwerer desto wichtiger. Als Gewicht können Sei eine beliebige Zahl eintragen.
+Queues can be assigned different weights, which allows them to be ranked according to their importance. A higher weight, represented by an arbitrary number, implies higher importance.
 
-![Illustration - Warteschlangen gewichten](../../images/team_prioritaet.png?width=70% "Warteschlangen gewichten in der mobydick")
+![Illustration - Weighting queues](../../images/team_prio.png?width=70% "Weighting queues in mobydick")
 
-In unserem Beispiel sind Frank und Peter in die Warteschlange Support und VIP-Support eingebucht. Beide telefonieren. In Support warten 2 Kunden darauf bedient zu werden in VIP-Support einer. Beendet Frank oder Peter das aktuelle Gespräch wird auf jeden Fall der wartende Anrufer aus dem VIP-Support als nächstes dran kommen, egal ob dieser bereits länger oder kürzer als die anderen wartet, da diese Warteschleife mehr Gewicht hat. Es werden also solange Wartende aus der schwersten Warteschlange dran kommen bis diese leer ist.
+In our example, Frank and Peter are members the Support and VIP-Support queue. Both are currently on the phone. There are two customers waiting in the Support queue and one customer in the VIP-Support queue. When either Frank or Peter end their current call, the caller waiting in the VIP-Support queue will be put through before anyone else. It does not matter if there are callers who have been waiting longer, as the VIP-Support queue has a higher weight. Callers from the queue with the higher weight will be accepted until this queue is empty.
 {{% notice tip %}}
-A tip disclaimer
-Wenn Sie mit Gewichten arbeiten, dürfen Sie keine Warteschlangen ohne Gewicht benutzen. Diese haben dann ein Gewicht von 0 und kommen somit nie an die Reihe.
+If you use weights with your queues, all queues must use weights. Not assigning a weight to a queue will result in them having a weight of 0; therefore, such queues will never be accepted.
 {{% /notice %}}
 
-## Konfiguration
+## Configuration
 
-### Team von Typ Rufgruppe verwalten
+### Managing call group teams
 
-Wählen Sie hierzu in der mobydick Weboberfläche unter **Benutzer > Teams** den Button `+Hinzufügen` um ein neues Team zu erstellen oder markieren Sie eine bereits vorhandenes Team und wählen `Bearbeiten`.
+In the MobyDick web interface, select ***Users > Teams*** and click the "Add" //FixMe  button to create a new team or click on an existing team and use the "Edit"//FixMe button.
+Select ***call group*** from the **type** list and enter a **title** and an extension number that can be called to reach the team.
 
-Beim Hinzufügen selektieren Sie den **Typ Rufgruppe** und geben Sie eine **Bezeichnung** sowie die Durchwahl unter der das Team erreichbar sein soll ein.
 
-#### Basisdaten
-![Screenshot - Rufgruppe verwalten](../../images/team_rufgruppe_basic.png?width=90% "Rufgruppe verwalten in der mobydick")
+#### Basic data
+![Screenshot - manage call groups](../../images/team_basic.png?width=90% "manage call groups in mobydick")
 
 |Parameter| Bedeutung|
 |----------|----------|
-|Bezeichnung|Name des Teams.|
-|Durchwahl|Unter welcher Durchwahl ist das Team erreichbar.|
-|Rufstrategie|Nach welcher Strategie sollen die Mitglieder gerufen werden.|
+|Title|Name of Team.|
+|Extension|extension number for the team, e.g. Sales could have the ext. 200.|
+|Call Strategy|Which //FixMe strategy should be used when members are called.|
+|Pickup Notifications|Using this function, you can determine who can see pickup notifications for a particular call group. For more information please see //FixMe Pickup Notifications.|
+|Display Name| The text displayed on the member's telephone in addition to the caller's name and number. This allows the call attendant to see that the call is not made directly but that it was forwarded by the "SP" team.|
+|Answer Channel|Usually, if hold music or an announcement is to be played, the channel is answered immediately. This field allows you to configure a delay time (in milliseconds). In some cases, immediate answering of a call can result in the first syllable of the announcement being skipped. Using a delay avoids this problem.|
+|Music on Hold|Select the type of sound to be played. Select "dial tone" if you do not want the channel to be answered but want the caller to hear a ringing tone. This is necessary only if haven't already created some type of action to answer the channel, e.g. to play a greeting announcement.|
+
+#### Advanced
+![Screenshot - call group with advanced functions](../../images/team_advanced.png?width=90% "Rufgruppe - advanced functions")
+
+
+|Parameter| Bedeutung|
+|----------|----------|
+|Timeout external Maximum time (in seconds) that an external caller should remain as a member of the call group. After this timeout, the call is processed by //FixMe actions of the type **external / after** using the **call state** ***timeout***.|
+|Timeout internal|Maximum time (in seconds) that an internal caller should remain as a member of the call group. After this timeout, the call is processed by //FixMe actions of the type **internal / after using** the **call state** ***timeout***.|
+|Voicemail Pin|The PIN used for the voice mailbox. For more details regarding the concept, please see //FixMe Voicemail box.|
+|save Voicemails|Here you can select whether voice messages should be stored on the hard drive. For more details, please see //FixMe Voicemail box.|
+|Voicemail Email|Enter the e-mail address to which the voice messages for the team should be sent to. For more details, please see //FixMe Voicemail box.|
+
+
+##### Members
+![Screenshot - Member of a call group](../../images/team_members.png?width=90% "call group member")
+
+Allows you to add members to the group. Use the arrows to change the order of the members as the order of the members can have an effect on some //FixMe call strategies.
+
+#### Roles
+DHere, you can configure which roles should apply to a particular team. Please see the chapter on the //FixMe concept of roles for more details.
+
+#### Actions (internal, external, before, after)
+
+Actions allow you to manage the call flow. For more details, please see the chapter on //FixMe actions.
+
+### Managing Teams of the Queue type
+
+To create a new team, use the "Add" //FixMe button in the menu ***Users > Teams*** of the web interface or select an existing team and press the "Edit" //FixMe button to modify its settings.
+When adding a new team, select ***Queue*** as the type and enter a **title** as well as an extension number at which the team can be reached.
+
+#### Basic data
+![Screenshot - manage queues ](../../images/team_queue.png?width=90% "manage queue in mobydick")
+
+|Parameter| Bedeutung|
+|----------|----------|
+|**Title**|Name of the team|
+|Extension| Extension number of the team|
+|Call Strategy|Which //FixMe strategy should be used when calling team members|
 |Pickup Benachrichtigungen|Hier kann man festlegen, wer alles Pickup Benachrichtigungen einer Rufgruppe sieht. Mehr dazu unter: Pickup Benachrichtigungen|
-|Anzeigetext|Dieser Text wird dem Mitglied auf seinem Telefon-Display vor dem Namen und der Nummer des Anrufenden angezeigt. Somit kann das Mitglied nachvollziehen das es sich nicht um einen direkten Anruf sonder einen Anruf über das Team "SP" handelt.|
-|Kanal beantworten|Normalerweise wird der Kanal sofort beantwortet falls Wartemusik oder eine Ansage abgespielt werden soll. Dies kann man hier verzögern (in Millisekunden). Bei manchen Anrufern kommt es vor, dass bei einer sofortigen Beantwortung die erste Silbe der Ansage "verschluckt" wird. Durch eine Verzögerung kann dies vermieden werden.|
-|Wartemusik|Welche Wartemusik Playliste soll abgespielt werden. Wählen Sie - Freizeichen - wenn Sie nicht möchten, dass der Kanal beantwortet wird sondern der Anrufer ein Freizeichen erhält. Dies mach natürlich nur sinn wenn Sie nicht bereits in den Aktionen den Kanal beantwortet haben um z.B. eine Begrüßung abzuspielen.|
+|Displayname|This text is displayed on the called persons' phone and shows the name and number of the caller. The called party can thus see that this is not a direct call but rather a call routed through the "SP" team.|
+|Music on hold|Which playlist should be used for the //FixMe "On Hold" music . Select "- dial tone -" if you do not want this channel to be answered, but want the caller to hear a dial tone.This is necessary only if haven't already created some type of //FixMe action to answer the channel, e.g. to play a greeting announcement.|
+|Member timeout|Specify the time (in seconds) MobyDick should try to reach a member. If, for example, "one after another" is the call strategy currently employed, the first member is selected and called. After a time out (15 seconds in our example), the phone of this member stops ringing and is put back into the queue again. The next member in queue is selected and the system tries to call the member for 15 seconds.|
+|Maximum number of people waiting| Specifies the maximum number of members a queue may hold. If, from the above example where the maximum is set to 5, a **sixth** caller tries to enter the queue, this one is not added to the queue but is immediately handled by the //FixMe actions of the group **"after"**.|
 
-#### Erweitert
-![Screenshot - Rufgruppe mit Erweiterten Funktionen](../../images/team_rufgruppe_erweitert.png?width=90% "Rufgruppe - Erweiterte Funktionen")
+#### Advanced
+![Screenshot - Teams with advanced functions](../../images/team_queue_advanced.jpg?width=90% "Teams with advanced functions")
+
+|Parameter| Bedeutung|
+|----------|----------|
+|Login Code|This code, followed by corresponding extension number, allows a dynamic team member to log on to the system. Please see //FixMe Dynamic Users to learn how to handle dynamic member logins.|
+|Timeout external |Maximum time (in seconds) an external caller should be permitted to wait in the queue. After this allotted period of time has passed, the call will be handled by the //FixMe actions **External / After** and the **call state** will be ***Timeout***.|
+Timeout internal|  Maximum time (in seconds) an internal caller should be allowed to wait in the queue. After this allotted period of time has passed, the call will be handled by the //FixMe actions **Internal / After** and the **call state** will be ***Timeout***.|
+|Answer channel|   Usually, when hold music or an announcement is to be played, this channel is answered immediately. This field allows you to specify a delay (in milliseconds). In some cases, immediate answering of a call can result in the first syllable or the first second of the announcement being skipped. Using a delay avoids this problem.|
+|Weight    |Queues can be assigned different weights. A higher weight, representend by an arbitrary number, gives higher priority to a queue. Please see //FixMe Queue Weighting for more information.|
+|Prompt frequency| Specify the intervals (in seconds) between the announcements informing the caller about their position and remaining time in queue. Leave this field blank if you do not wish to make such announcements.|
+|Options|Here you can enter options the Asterisk software recognizes for queue management. You can only use one option per line. Please see this guide on options: //FixMe http://www.voip-info.org/wiki/view/Asterisk+config+queues.conf|
+|State of agents to join|  Decides whether a caller can enter the queue although it is empty. When only dynamic members are used, there may be no members currently registered with the queue. If you select no here, those callers are handled by the //FixMe actions **External** and forwarded using the **call state** ***Entry when empty***|
+|State of agents to leave| Decides whether a caller can automatically leave the queue once it is empty. When only dynamci members are used, the last member might leave the queue while there is still a caller waiting. If you select yes here, those callers are handled by the actions **After** and forwarded using the **call state** ***Leave when empty***.|
+|Voicemail PIN|    The PIN function is used for the voice mailbox. For more details on this concept, please see //FixMe Voicemailbox|
+|Save Voicemails|  Should voice messages be saved to a hard disk? For more details on the concept, please see //FixMe Voicemailbox.|
+|Voicemail Email   |Enter the E-mail address to which the voice messages for those teams should be sent to. For more details on the concept please see //FixMe Voicemailbox.|
+
+#### Members
+
+![Screenshot - members in queue](../../images/team_queue_members.png?width=90% "queue member")
+
+Under this screen you can add members to a queue. By using the setting **Flexible yes** you will set the membership as //FixMe dynamic. Members who have the setting set as **Flexible no** will always be called and cannot check themselves out of the queue. Some //FixMe call strategies can be made aware of a member's priority. You can use the arrows to change the order of the members, which can affect certain call strategies.
+
+#### Roles
+
+Here you can specify and determine Team members roles. For more details, please see the chapter on //FixMe roles.
+
+#### Actions (internal, external, before, after)
+
+Actions allow you to manage the call flow. See the chapter on //FixMe actions to learn more.
+
+#### Dynamically add and remove users in a queue
+
+In MobyDick, users can dynamically enter or leave a queue if they have been assigned as a dynamic member of that queue. To configure a user as a dynamic queue member, in the **Assigned Users** column set **Flexible Users** to **Flexible Yes**. 
+If a login code (**Queue -> Advanced**  tab **-> Login code**) exists, users can enter or leave the queue using this code if they have been assigned as a dynamic member of this team.
+Going back to our example, if you set ***80** as the login code, the user Peter, having the extension **21**, can join or leave this team by dialling ***8021**. As an alternative, no matter whether there is a login code is entered or not, you can always use the **system extension number** of the format ***99queueextenstion#userextension** to log on or off. Peter, having the extension **21**, can use ***99800#21** to log on to a queue that has the extension number **800**.
+
+The login code has several advantages over the system extension. You can assign the login code to the LED **extension number key** of an IP phone. This way, the LED will be on if a user is in the queue. It will go dark when the user logs off.
+Alternatively, a user can log themselves into our out of a Queue through the Teams display option and using the + and - symbols:
+![Screenshot - Logon and Log out](../../images/teams_logon.png?width=30% "Logon/Logout Queue")
+
+#### Breaks and Break Reasons
+
+Instead of focusing on logging in/out, it is now also possible for a member of a Queue to use the **Breaks** function. During the members break, they remain logged into the Queue but will not receive any calls. Moreover, one can also define Break Reasons within the MobyDick Web UI under the menu option Advanced > Pause Reasons.
+
+
+![Screenshot - manage break reasons](../../images/team_break.png?width=90% "manage break reasons of a queue")
 
 
 |Parameter| Bedeutung|
 |----------|----------|
-|Timeout extern |Wie lange sollen externe Anrufer maximal in der Rufgruppe bleiben (Sekunden). Nach diesem Timeout geht der Anruf weiter in die Aktionen **Extern/Nachher** mit dem **Ruf status** *Timeout*.|
-|Timeout intern|Wie lange sollen interne Anrufer maximal in der Rufgruppe bleiben (Sekunden). Nach diesem Timeout geht der Anruf weiter in die Aktionen  Intern/Nachher mit dem **Ruf status** *Timeout*.|
-|Voicemail Pin|Pin für die Voicemailbox. Details zum Konzept siehe Voicemailbox.|
-|Voicemails speichern|Wählen Sie ob Voicemails auf der Festplatte gespeichert werden sollen. Details zum Konzept siehe Voicemailbox.|
-|Voicemail Email|Tragen Sie die Email ein an die Voicemails für diese Team gesendet werden sollen. Details zum Konzept siehe Voicemailbox.|
+|Title|    The description will be displayed within MobyDick as the Break Reason.|
+|Code| 
+With the code, one can activate/deactivate the Break via Button Shortcuts on their telephones.
+***99QueuesExtension#UserExtension#BreakReasonCode**. More details can be found below. |
 
+If a member of the Queue or Team does go on a break and sets their status for a break, this will be displayed to the other members of the Team:
+![Screenshot - activate Break in mobydick Client](../../images/team_break1.png?width=90% " activate break in MobyDick Client")
 
-##### Mitglieder
-![Screenshot - Mitglieder einer Rufgruppe](../../images/team_rufgruppe_mitglieder.png?width=90% "Rufgruppenmitglieder")
+Breaking can be controlled from with the MobyDick Client under the Team tab (and team you are a member of) through using the Pause Symbol:
+![Screenshot - break reasons in mobydick Client](../../images/team_break_detail.png?width=30% " break reasons in mobydick Client")
 
-Weisen Sie hier der Gruppe Mitglieder zu.  Durch die Auf- und Abpfeile können Sie die Reihenfolge der Mitglieder ändern auch dies ist für manche  Rufstrategien von Bedeutung.
+Alternatively, you can allow the users to use the Telephone Button Shortcuts.
+The shortcut key is made up as follows: ***99QueueExtension#UserExtension#BreakCode**
+### Pickup Notifications
 
-#### Rollen
-Definiert in welchen Rollen das jeweilige Team Mitglied ist. Siehe Rollen für Details.
+Within in a team (Queue) it is possible to set which users will receive incoming call Popup Notifications within the mobydick client.
+ 
+Firstly, a Pickup role must be defined, which can consist of team members as well as individual users, that do not belong to the team. Further information regarding roles can be found under //FixMe Concept: Roles.
 
-#### Aktionen (intern, extern, voher, nachher)
+Additionally you can determine who of those within the team assigned with the Pickup role will receive notifications.
+![Screenshot - PPickup notification](../../images/team_pickup_notification.png?width=90% " Pickup notification")
 
-Mit Aktionen steuern Sie den Anruf Ablauf. Details siehe Aktionen.
-
-### Team von Typ Warteschlange verwalten
-
-Wählen Sie hierzu in der mobydick Weboberfläche unter **Benutzer > Teams** den Button `+Hinzufügen` um ein neues Team zu erstellen oder markieren Sie eine bereits vorhandenes Team und wählen `Bearbeiten`.
-Beim Hinzufügen selektieren Sie den **Typ Warteschlange** und geben Sie eine **Bezeichnung** sowie die Durchwahl unter der das Team erreichbar sein soll ein.
-
-#### Basisdaten
-![Screenshot - Warteschlangen verwalten](../../images/team_warteschlangen_basics.png?width=90% "Warteschlangen verwalten in der mobydick")
+The following setups are possible:
 
 |Parameter| Bedeutung|
 |----------|----------|
-|Bezeichnung|Name des Teams|
-|Durchwahl| Unter welcher Durchwahl ist das Team erreichbar|
-|Rufstrategie|Nach welcher Strategie sollen die Mitglieder gerufen werden|
-|Pickup Benachrichtigungen|Hier kann man festlegen, wer alles Pickup Benachrichtigungen einer Rufgruppe sieht. Mehr dazu unter: Pickup Benachrichtigungen|
-|Anzeigetext|Dieser Text wird dem Mitglied auf seinem Telefon-Display vor dem Namen und der Nummer des Anrufenden angezeigt. Somit kann das Mitglied nachvollziehen das es sich nicht um einen direkten Anruf sondern einen Anruf über das Team "SP" handelt|
-|Wartemusik|Welche Wartemusik Playliste soll abgespielt werden. Wählen Sie - Freizeichen - wenn Sie nicht möchten, dass der Kanal beantwortet wird sondern der Anrufer ein Freizeichen erhält. Dies mach natürlich nur sinn wenn Sie nicht bereits in den Aktionen den Kanal beantwortet haben um z.B. eine Begrüßung abzuspielen.|
-|Mitglied-Timeout|Wie lange soll mobydick versuchen das einzelne Mitglied zu erreichen (in Sekunden). Z.B. bei Rufstrategie nacheinander wird das erste Mitglied ausgewählt und dessen Telefon läutet. Nach dem Timeout (hier 15 Sekunden) hört das Telefon auf zu läuten, der Anrufer wird wieder in dei Warteschleife zurückgezogen. Das System ermittelt nun das nächste Mitglied in der Reihe und versucht dieses, wiederum für 15 Sekunden, zu erreichen, usw...|
-|Maximal Anzahl Wartende|Bestimmt wie viele Wartenden sich maximal in der Warteschleife befinden dürfen. Kommt im Beispiel ein sechster Anrufer herein wird dieser nicht in der Warteschleife warten sonder direkt in die Aktionen Nachher vermittelt.|
-|Call Completed Elsewhere senden|Sobald ein Anruf in der Warteschlange durch einen Mitglied angenommen wird, erhalten die noch freien Teammitglieder einen Hinweis. So wissen die Mitglieder, dass der Anruf angenommen wurde.|
-
-#### Erweitert
-![Screenshot - Warteschlangen erweiterte Funktionen](../../images/team_warteschlangen_advanced.png?width=90% "Warteschlangen mit erweiterten Funktionen")
-
-|Parameter| Bedeutung|
-|----------|----------|
-|Einbuchcode|Mit diesem Code gefolgt von seiner Durchwahl kann sich ein Benutzer, der dynamisches Mitglied in diesem Team ist, an- und abmelden. Siehe Benutzer dynamisch an- und abmelden.|
-|Timeout extern |Wie lange sollen externe Anrufer maximal in der Warteschlange bleiben (Sekunden). Nach diesem Timeout geht der Anruf weiter in die Aktionen **Extern/Nachher** mit dem **Ruf status** *Timeout*.|
-Timeout intern|	Wie lange sollen interne Anrufer maximal in der Warteschlange bleiben (Sekunden). Nach diesem Timeout geht der Anruf weiter in die Aktionen  **Intern/Nachher** mit dem Ruf status *Timeout*.|
-|Kanal beantworten|	Normalerweise wird der Kanal sofort beantwortet falls Wartemusik oder eine Ansage abgespielt werden soll. Dies kann man hier verzögern (in Millisekunden). Bei manchen Anrufern kommt es vor, dass bei einer sofortigen Beantwortung die erste Silbe der Ansage "verschluckt" wird. Durch eine Verzögerung kann dies vermieden werden.|
-|Gewichtung	|Warteschlangen können ein unterschiedliches Gewicht haben. Desto schwerer desto wichtiger. Als Gewicht können Sei eine beliebige Zahl eintragen. Siehe Warteschlangen gewichten|
-|Ansage-Frequenz|	Tragen Sie hier ein in welchen Abständen (Sekunden) der Anrufer über seine Position und Wartezeit in der Warteschleife informiert werden soll. Lassen Sie dieses Feld leer wir der Anrufer keine derartigen Ansagen hören.|
-|Optionen|Hier können Sie alle Optionen eintragen die Asterisk für Warteschleifen kennt. Eine Option pro Zeile. Siehe http://www.voip-info.org/wiki/view/Asterisk+config+queues.conf|
-|Betreten wenn leer|	Regelt ob Anrufer die Warteschlange betreten können obwohl diese leer ist. Verwendet man ausschließlich dyn. Mitglieder kann es sein, dass alle Mitglieder ausgebucht sind. Wählen Sie hier *nein* werden Anrufer in dieser Situation direkt in die Aktionen **Nachher** mit dem **Ruf status** *Beitritt bei leer* weitergeleitet.|
-|Verlassen wenn leer|	Regelt ob Anrufer die Warteschlange automatisch verlassen sobald diese leer ist. Verwendet man ausschließlich dyn. Mitglieder kann es sein, dass sich das letzte Mitglieder ausgebucht während noch ein Anrufer wartet. Wählen Sie hier ja werden Anrufer in dieser Situation direkt in die Aktionen  **Nachher** mit dem **Ruf status** *Verlassen bei leer* weitergeleitet.|
-|Voicemail Pin|	Pin für die Voicemailbox. Details zum Konzept siehe Voicemailbox.|
-|Voicemails speichern|	Wählen Sie ob Voicemails auf der Festplatte gespeichert werden sollen. Details zum Konzept siehe Voicemailbox.|
-|Voicemail Email	|Tragen Sie die Email ein an die Voicemails für diese Team gesendet werden sollen. Details zum Konzept siehe Voicemailbox.|
-
-#### Mitglieder
-
-![Screenshot - Mitglieder einer Warteschlange](../../images/team_warteschlangen_mitglieder.png?width=90% "Warteschlangenmitglieder")
-
-Weisen Sie hier der Warteschlange Mitglieder zu. Durch **Flexibel** *ja* markieren Sie dieses Mitglied als dynamisch. Mitglieder mit **Flexibel** *nein* werden immer gerufen und können sich nicht ausbuchen. Manche Rufstrategien berücksichtigen die Priorität eines Mitgliedes. Durch die Auf- und Abpfeile können Sie die Reihenfolge der Mitglieder ändern auch dies ist für manche Rufstrategien von Bedeutung.
-
-#### Rollen
-
-Definiert in welchen Rollen das jeweilige Team Mitglied ist. Siehe Rollen für Details.
-
-#### Aktionen (intern, extern, voher, nachher)
-
-Mit Aktionen steuern Sie den Anruf Ablauf. Details siehe Aktionen.
-
-#### Dynamisch an- und abmelden
-
-mobydick bietet den Benutzern die Möglichkeit sich dynamisch an Warteschlagen an- und abzumelden. Vorraussetzung hierfür ist, dass der Benutzer als flexiebles Mitglied bei der Warteschleife hinterlegt ist. Dies stellen Sie im Reiter **Tab Mitglieder** unter **Zugewiesene Benutzer** -> **Flexibel** *Ja* ein.
-
-Ist für die Warteschlange ein Einbuchcode *(Warteschlange -> Tab Erweitert -> Einbuchcode)* hinterlegt kann sich ein Benutzer,  der dynamisches Mitglied in diesem Team ist, an dieser an- und abmelden.
-
-Wenn Sie als Einbuchcode z.B. ***80** eintragen kann sich Peter, der die Durchwahl **21** hat durch Wählen von ***8021** an diesem Team an- und abmelden. **Alternativ** können Sie sich immer, egal ob etwas im Einbuchcode eingetragen ist oder nicht, per **Systemdurchwahl** ***99Warteschlangendurchwahl#Benutzerdurchwahl** an- und abmelden. Z.B. ***99800#21** wenn sich Peter mit der Durchwahl **21** an der Warteschleife mit der Durchwahl **800** anmelden möchte.
-
-Der Vorteil des Einbuchcodes im Gegensatz zur Systemdurchwahl ist, dass Sie den Einbuchcode auch auf die **LED-Nebenstellentaste** eines IP-Telefones legen können. Somit leuchtet die **LED** wenn der Benutzer in der Warteschlange angemeldet ist und erlischt sobald sich dieser abmeldet.
-
-Alternativ kann sich ein Benutzer auch per mobydick Client in der Team Anzeige durch das + und - Symbol an einem Warteschlangen Team ab- und anmelden:
-
-Auch besteht die Möglichkeit einen Benutzer aus allen Warteschleifen, in den er Mitglied ist, auf einmal an- und abzumelden. Dazu gibt es den TastenCode ***99#Benutzerdurchwahl**.
-![Screenshot - Dynamisch an- und abmelden](../../images/team_einbuchen.png?width=30% "Dynamisch an- und abmelden in Warteschlagen")
-
-#### Pausieren und Pausengründe
-
-Statt sich an- und abzumelden ist es auch möglich als Mitglied einer Warteschlange zu pausieren. In dieser Zeit bleiben Sie an der Warteschlange angemeldet erhalten aber keine Anrufe. Zusätzlich können in der mobydick Weboberfläche unter dem Menüpunkt **Erweitert > Pausengründe** Pausengründe definiert werden.
-
-![Screenshot - Pausengründe verwalten](../../images/team_pause_list.png?width=90% "Pausengründe der Warteschlagen verwalten")
-
-
-|Parameter| Bedeutung|
-|----------|----------|
-|Bezeichnung|	Die Bezeichnung wird im mobydick Client als Pausengrund angezeigt|
-|Kennung|Mit der Kennung kann man die Pause pro Mitglied per TastenCode am Telefon aktivieren/deaktivieren.**99Warteschlangendurchwahl#Benutzerdurchwahl#PausengrundKennung**. |
-
-Pausiert ein Mitglied in der Warteschleife kann das von den anderen Mitgliedern incl. Pausengrund im mobydick Client gesehen werden:
-![Screenshot - Pause aktivieren im mobydick Client](../../images/team_pause.png?width=90% " Pause aktivieren im mobydick Client")
-
-Das Pausieren kann im mobydick Client in der Team Anzeige durch das Pausensymbol gesteuert werden:
-![Screenshot - Pausengründe im mobydick Client](../../images/team_pause_detail.png?width=30% " Pausengründe im mobydick Client")
-
-Alternativ lassen Sich die Pausengründe pro Mitglied auch per Tastencode-Eingabe am Telefon steuern.
-Der Tastencode setzt sich wie folgt zusammen: ***99Warteschlangendurchwahl#Benutzerdurchwahl#PausengrundKennung**
-
-### Pickup Benachrichtigungen
-
-In einem Team ist es möglich einzustellen, welche Benutzer im mobydick Client Pickup Benachrichtigungen über eingehende Rufe erhalten.
-
-Zuerst muss eine Pickup-Rolle definiert werden. Diese kann als Mitglieder ein Team haben und auch einzelne Benutzer, die nicht zum Team gehören. Informationen zu Rollen finden Sie unter: Konzept: Rollen.
-
-Anschließend können Sie im Team, das zur angelegten Pickup-Rolle gehört festlegen wer Banchrichtigugnen erhält:
-![Screenshot - PPickup Benachrichtigungen](../../images/team_pickup_hinweis.png?width=90% " Pickup Benachrichtigungen")
-
-Folgende Einstellungen sind möglich:
-
-|Parameter| Bedeutung|
-|----------|----------|
-|Niemand|Niemand erhält Benachrichtigungen|
-|Verfügbare Agenten und Nichtmitglieder|Agenten die im Team angemeldet sind und Agenten die Nichtmitglieder im Team sind erhalten eine Benachrichtigung. Flexible Agenten die gerade nicht im Team angemeldet sind und pausierte Agenten erhalten keine Benachrichtigung.|
-|Nicht verfügbare Agenten und Nichtmitglieder|Agenten die nicht im Team angemeldet sind, Agenten die pausiert sind und Nichtmitglieder des Teams erhalten eine Benachrichtigung. Agenten die feste Mitglieder des Teams sind und flexible Agenten die gerade angemeldet sind erhalten keine Benachrichtigungen.|
-|Nur Nichtmitglieder|Nur Nichtmitglieder des Teams erhalten eine Benachrichtigung.|
-|Gesamte Pickup-Gruppe|Die gesamte Pickup-Gruppe bekommt Benachrichtigungen.|
+|Nobody|No team members will receive a incoming call notification|
+|Available team members (agents)|Agents who are currently signed into the team and agents who are not members of the team will receive a notification. 
+|& non-members Flexible agents who are not currently signed into the team and paused agents will not receive any notifications.
+|Unavailable Agents & Agents who are not logged into the team. paused agents and non members will receive a notification.
+ non-members|Agents who are fixed members and dynamic members who are currently logged in to the team will receive a notification.|
+|Only non-members|Only non team members will receive a notification.|
+|Complete Pickup Group|The whole pickup group will be notified.|
