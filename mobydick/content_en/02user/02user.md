@@ -8,8 +8,8 @@ keywords:
     - Hotdesking
     - Add Users
     - Add Locations
-description: Was ist ein Users, Arbeitsplatz in mobydick und wie lassen diese sich einfach einrichten und verwalten?  
-linken: /benutzer/benutzer-und-arbeitsplaetze/
+description: What is a mobydick user, a location and how do you quickly and efficiently setup and manage them?  
+linkde: /benutzer/benutzer-und-arbeitsplaetze/
 url: /users/users-and-locations
 prev: /users/
 next: /users/add-teams/

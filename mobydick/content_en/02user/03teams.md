@@ -2,7 +2,7 @@
 title: Add & Build Teams
 url: /users/add-teams/
 prev: /users/users-and-locations/
-<!--next: /users/advanced-team-functions/-->
+next: 
 weight: 23
 keywords: 
     - Add Teams
@@ -18,6 +18,8 @@ description: Teams in mobydick are comparable to Call Queues. Use advanced call 
 linkde:/benutzer/teams-bilden/
 toc: true
 ---
+
+<!--/users/advanced-team-functions/-->
 
 ## Concept
 
@@ -79,7 +81,7 @@ Select ***call group*** from the **type** list and enter a **title** and an exte
 #### Basic data
 ![Screenshot - manage call groups](../../images/team_basic.png?width=90% "manage call groups in mobydick")
 
-|Parameter| Bedeutung|
+|Parameter| Description|
 |----------|----------|
 |Title|Name of Team.|
 |Extension|extension number for the team, e.g. Sales could have the ext. 200.|
@@ -93,7 +95,7 @@ Select ***call group*** from the **type** list and enter a **title** and an exte
 ![Screenshot - call group with advanced functions](../../images/team_advanced.png?width=90% "Rufgruppe - advanced functions")
 
 
-|Parameter| Bedeutung|
+|Parameter| Description|
 |----------|----------|
 |Timeout external Maximum time (in seconds) that an external caller should remain as a member of the call group. After this timeout, the call is processed by //FixMe actions of the type **external / after** using the **call state** ***timeout***.|
 |Timeout internal|Maximum time (in seconds) that an internal caller should remain as a member of the call group. After this timeout, the call is processed by //FixMe actions of the type **internal / after using** the **call state** ***timeout***.|
@@ -122,7 +124,7 @@ When adding a new team, select ***Queue*** as the type and enter a **title** as 
 #### Basic data
 ![Screenshot - manage queues ](../../images/team_queue.png?width=90% "manage queue in mobydick")
 
-|Parameter| Bedeutung|
+|Parameter| Description|
 |----------|----------|
 |**Title**|Name of the team|
 |Extension| Extension number of the team|
@@ -136,7 +138,7 @@ When adding a new team, select ***Queue*** as the type and enter a **title** as 
 #### Advanced
 ![Screenshot - Teams with advanced functions](../../images/team_queue_advanced.jpg?width=90% "Teams with advanced functions")
 
-|Parameter| Bedeutung|
+|Parameter| Description|
 |----------|----------|
 |Login Code|This code, followed by corresponding extension number, allows a dynamic team member to log on to the system. Please see //FixMe Dynamic Users to learn how to handle dynamic member logins.|
 |Timeout external |Maximum time (in seconds) an external caller should be permitted to wait in the queue. After this allotted period of time has passed, the call will be handled by the //FixMe actions **External / After** and the **call state** will be ***Timeout***.|
@@ -183,7 +185,7 @@ Instead of focusing on logging in/out, it is now also possible for a member of a
 ![Screenshot - manage break reasons](../../images/team_break.png?width=90% "manage break reasons of a queue")
 
 
-|Parameter| Bedeutung|
+|Parameter| Description|
 |----------|----------|
 |Title|    The description will be displayed within MobyDick as the Break Reason.|
 |Code| 
@@ -209,7 +211,7 @@ Additionally you can determine who of those within the team assigned with the Pi
 
 The following setups are possible:
 
-|Parameter| Bedeutung|
+|Parameter| Description|
 |----------|----------|
 |Nobody|No team members will receive a incoming call notification|
 |Available team members (agents)|Agents who are currently signed into the team and agents who are not members of the team will receive a notification. 
