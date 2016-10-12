@@ -11,10 +11,11 @@ keywords:
     - Outlook CTI 
     - Outlook integration
 description: TAPI is an interface between Window's telephony functions and the mobydick phone system. 
-url: /clients/tapi/
+url: /clients/tapi-interface/
 prev: /clients/teams-in-client/
 next: /clients/mobile-hub-setup/
 weight: 34
+linkde: url: /clients/tapi/
 toc: true
 ---
 
@@ -237,7 +238,7 @@ You now have all the necessary components downloaded and installed, so start the
 
 #### Open DebugView
 
-1. Start the DebugView.exe with Administrator Privileges by right clicking and selecting "Run as Administrator"
+1. Start the DebugView.exe with Administrator Privileges by right clicking and selecting `Run as Administrator`
 ![Screenshot - open DebugView](../../images/tapi_debug_viewadmin.png?width=70% " open DebugView")
 
 
@@ -251,10 +252,10 @@ You now have all the necessary components downloaded and installed, so start the
 2. In the Drop Down under the first tab, select the user´s TAPI Line causing the problems
 3. Check the options box "More information"
 
-![Screenshot - Line Watcher öffnen](../../images/tapi_linewatcher.png?width=90% "Line Watcher öffnen")
+![Screenshot - Line Watcher öffnen](../../images/tapi_linewatcher.png?width=90% "Line Watcher open")
 
 Next, start your TAPI software and follow those steps which lead to the problem. In the DebugView windon, a whole range of tasks should be visible. As long as you start or receive a call information should also appear in Line Watcher
-![Screenshot - open Line Watcher Output](../../images/tapi_linewatcher_output2.png?width=90% " open Line Watcher Output")
+![Screenshot - open Line Watcher Output](../../images/tapi_linewatcher_output2.png?width=90% " Open Line Watcher Output")
 
 Once the test is finished, save both trace outputs from both applications (DebugView and LineWatcher)
 ![Screenshot - TAPI Debug Output View](../../images/tapi_debugview_output.png?width=90% "TAPI Debug Output View")

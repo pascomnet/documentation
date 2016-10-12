@@ -105,4 +105,4 @@ A description of the network interface will then be displayed; you will be able 
 Only virtual interfaces (VLANs) can be added manually. All available physical interfaces are listed automatically and do not need to be added.
 {{% /notice%}}
 
-To add a virtual interface, press the `Add button.
+To add a virtual interface, press the `Add` button.

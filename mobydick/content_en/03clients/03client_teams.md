@@ -2,18 +2,18 @@
 title: Teams in Client
 url: /clients/teams-in-client/
 prev: /clients/client-user-guide/
-next: /clients/tapi/
-weight: 33
-toc: true
-linkde: url: /clients/teams-im-client/
+next: /clients/tapi-interface/
+linkde:  /clients/teams-im-client/
 Keywords:
         - Teams Monitoring
         - mobydick Contact Center 
-        - Teamn Management in Client
+        - Team Management in Client
         - Live team statistics
         - Dynamic Queues
         - Agent pausing
 description: Teams group users together into manageable and productive queues. The mobydick client also provides an overview of all the temas within your organisation so that agents can operate more proactively within their team. 
+weight: 33
+toc: true
 ---
 
 

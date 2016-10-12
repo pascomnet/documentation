@@ -2,7 +2,7 @@
 title: Add and Build Teams
 url: /users/add-teams/
 prev: /users/users-and-locations/
-next: 
+next: /clients/
 weight: 23
 keywords: 
     - Add Teams
@@ -11,7 +11,7 @@ keywords:
     - Hunt Groups
     - CallGroups
     - Roaming User
-    - Hotdesking
+    - Hot desking
     - Call Center Teams
     - Call Routing
 description: Teams in mobydick are comparable to Call Queues. Use advanced call strategies to help manage callers more effectively and professionally. 

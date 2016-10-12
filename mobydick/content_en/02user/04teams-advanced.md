@@ -1,10 +1,8 @@
 ---
 title: Advanced Team Functions
-keywords: 
-description: 
 url: /user/advanced-team-functions/
 prev: /user/add-teams/
-next:
+next: /clients/client-installation/
 weight: 24
 toc: true
 draft: true
