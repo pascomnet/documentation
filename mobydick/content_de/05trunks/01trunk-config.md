@@ -86,6 +86,35 @@ Beim Bearbeiten und Speichern einer Amtsvorlage wurden bereits automatisch zwei 
 |---|---|
 |**Standard**|Durch diese Regel wird beim Anruf nach extern die Rufnummer mit der Durchwahl des Anrufers signalisiert.|
 
+<!--
 #### Eingehende Rufe
+
+|Einstellung|Beschreibung|
+|---|---|
+|**Bezeichung**|Jede Regel braucht einen eigenen Namen.|
+|**Quelle**|Ist die Nummer des Anrufers. **\*** bedeutet diese Regel gilt für jeden Anrufer|
+|**Ziel**|Das ist die Nummer die der Anrufer gewählt hat.|
+|**Durchwahl**|Zeigt an, auf welche interne Durchwahl abgeworfen werden soll.|
+|**CIDName**||
+|**CIDNummer**||
+|**Sprache**|Gibt z. B. an, in welcher Sprache der Anrufer mögliche Ansagen hören soll.|
+
 #### Ausgehende Rufe
+
+|Einstellung|Beschreibung|
+|---|---|
+|**Bezeichung**||
+|**Im Client anzeigen**||
+|****|In-Prefix|
+|****|Quelle|
+|****|Ziel|
+|****|CIDNummer|
+|****|Out-Prefix|
+|****|Verbieten|
+|**PIN**||
+|**Übertragungskapazität**||
+|**Account**||
+
+
 #### Asterisk Dialplan Pattern
+-->
