@@ -67,6 +67,6 @@ Now setup the desired user with the following command:
 
 Call up the URL `http://IP_OF_MOBYDICK/services`  
 
-![Screenshot - mobydick REST API](../../images/rest_api_doc.png "mobydick REST API")
+![Screenshot - mobydick REST API](/rest_api_doc.png "mobydick REST API")
 
 mobydick will then display the REST-API Documentation. Here you will be able to see all the available REST prompts and test them before you install the URL prompts into an application.
