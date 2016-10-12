@@ -15,11 +15,11 @@ toc: true
 ## Lizenz einspielen ##
 
 ### Wann muss eine mobydick Lizenz eingespielt werden?
-Sie müssen eine Ihre Lizenz einspielen, wenn
+Sie müssen Ihre Lizenz einspielen, wenn
 
 * Sie in einer virtuellen Maschine eine Community-Version installiert haben, und nun Ihre gekaufte Lizenz nutzen möchten,
 * Sie Ihre mobydick in eine andere virtuelle Maschine migrieren,
-* Sie Ihre mobydick auf eine neue Hardware installieren möchten oder müssen (z. B. bei einem Defekt des alten Servers),
+* Sie Ihre mobydick auf neuer Hardware installieren möchten oder müssen (z. B. bei einem Defekt des alten Servers),
 * der Software-Wartungszeitraum verlängert wurde,
 * Ihre Lizenz um weitere Benutzer oder andere lizenzierte Optionen erweitert wurde.
 
@@ -34,7 +34,7 @@ Sie erhalten Ihre Lizenz in Ihrem [my.pascom](https://my.pascom.net/ "my.pascom.
 
 * melden Sie sich an,
 * klicken Sie im linken Menü-Bereich auf **Lizenzen**,
-* klicken anschießend Sie auf Ihre Appliance, um eine Übersicht Ihrer Lizenz zu sehen,
+* klicken Sie anschießend auf Ihre Appliance, um eine Übersicht Ihrer Lizenz zu sehen,
 * klicken Sie auf dem blauen Balken **Lizenz Inhalt**
 * den Lizenzcode aus der Box können Sie kopieren und in Ihre mobydick einfügen
 ![my.pascom.net Lizenzportal](../../images/lizenz_uebersicht.png?width=80% "mobydick Lizenz in my.pascom.net")

@@ -67,7 +67,7 @@ Zunächst muss der DHCP-Server aktiviert werden, dabei gibt es folgende Möglich
 |Status|Beschreibung|
 |---|---|
 |**ja**|Es werden IP-Adressen für das ausgewählte Netzwerk vergeben|
-|**ja, nur Telefone**|Es werden IP-Adressen für das ausgewählte Netzwerk vergeben und nur für von der mobydick provisionierten IP-Endgeräte.|
+|**ja, nur Telefone**|Es werden IP-Adressen für das ausgewählte Netzwerk und nur für dir von der mobydick provisionierten IP-Endgeräte. vergeben|
 |**nein**|DHCP-Server ist deaktiviert|
 
 |Weitere Einstellungen:||
@@ -109,7 +109,7 @@ Unter Linux heißt die Option 66 tftp-server-name und die Option 67 filename. Du
 |Aastra/Mitel|http://192.168.1.1/provisioning||
 |Siemens OpenStage|http://192.168.1.1/provisioning||
 
-Ergänzen Sie in Linux DHCP-Konfig einfach folgende Zeile (hier als Beispiel für Yealink):
+Ergänzen Sie in der Linux DHCP-Konfig einfach folgende Zeile (hier als Beispiel für Yealink):
 
     option tftp-server-name "http://192.168.1.1/provisioning/";
 

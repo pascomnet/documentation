@@ -1,19 +1,20 @@
 ---
 title: Analog- und ISDN-Endgeräte anlegen
-keywords: 
-description: 
+keywords:
+description:
 url:  /endgeraete/analog-und-isdn-geraete/
-linken: 
+linken:
 next: /endgeraete/aastra-dect-system-anbinden/
 prev: /endgeraete/beliebiges-ip-geraet-einrichten/
 weight: 46
 toc: true
+draft: true
 
 ---
 
 ## Anbindung über ein Gateway oder Karte
 
-Analog- und ISDN-Endgeräte werden entweder via beroNet Gateway oder via Junghanns Karte angeschlossen. Voraussetzung dafür ist, dass Ihre Gateways korrekt vorkonfiguriert wurden. Siehe ISDN, Analog und GSM Gateways einrichten. 
+Analog- und ISDN-Endgeräte werden entweder via beroNet Gateway oder via Junghanns Karte angeschlossen. Voraussetzung dafür ist, dass Ihre Gateways korrekt vorkonfiguriert wurden. Siehe ISDN, Analog und GSM Gateways einrichten.
 
 Um ein Analog- bzw. ISDN-Endgerät anzulegen drücken Sie in der Geräteliste auf  und wählen als Gerätetyp je nach verwendetem Gateway und dort eingerichteter Anschlussart einen Eintrag Via Junghanns Karte: ISDN Endgerät oder Via beroNet Gateway: TECHNOLOGIE aus:
 

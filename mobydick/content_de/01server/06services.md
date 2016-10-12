@@ -45,13 +45,13 @@ Richten Sie hierzu auf Ihrem Mailserver ein E-Mail-Konto für mobydick ein. Dies
 
 ### Konfiguration ###
 
-Zur Konfiguraton des Mail-Server klicken Sie in der WEB-UI aus `Appliance` > `Dienste` > im Tab `EMail-Server`:
+Zur Konfiguraton des Mail-Servers klicken Sie in der WEB-UI aus `Appliance` > `Dienste` > im Tab `EMail-Server`:
 
 |Einstellungen|Beschreibung|
 |---|---|
-|Sichtbarer Domain-Name|Tragen Sie hier den Teil nach dem @-Zeichen Ihrer E-Mail-Adresse|
-|Mail-Server für Weiterleitung|mobydick sendet die E-Mails nicht direkt an den jeweiligen Zielserver sondern nutzt einen Weiterleitungs-Server (Relay) <br>Falls ein anderer Port als 25 verwendet wird, tragen Sie diesen bitte wie in folgendem Beispiel ein: 192.168.100.1**::587**|
-|SMTP-Benutzer und -Passwort|optionale Einstellung, falls eine SMTP-Authentifizierung benötigt wird|
+|Sichtbarer Domain-Name|Tragen Sie hier den Teil nach dem @-Zeichen Ihrer E-Mail-Adresse ein.|
+|Mail-Server für Weiterleitung|mobydick sendet die E-Mails nicht direkt an den jeweiligen Zielserver sondern nutzt einen Weiterleitungs-Server (Relay) <br>Falls ein anderer Port als 25 verwendet wird, tragen Sie diesen bitte wie in folgendem Beispiel ein: 192.168.100.1**::587**.|
+|SMTP-Benutzer und -Passwort|optionale Einstellung, falls eine SMTP-Authentifizierung benötigt wird.|
 
 ### Einstellungen Testen ###
 

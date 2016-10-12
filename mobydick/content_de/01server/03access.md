@@ -17,7 +17,7 @@ toc: true
 ## IP-Adresse ermitteln
 Um auf das System zugreifen zu können, benötigen Sie die IP-Adresse der Telefonanlage.
 
-Falls Sie einen vorinstalliert mobydick Server erworben haben, entnehmen Sie die IP aus dem Beiblatt oder der Beschriftung an den Netzwerkschnittstellen.
+Falls Sie einen vorinstallierten mobydick Server erworben haben, entnehmen Sie die IP aus dem Beiblatt oder der Beschriftung an den Netzwerkschnittstellen.
 
 Wenn Sie sich mit der IP-Adresse nicht sicher sind, können Sie einen Monitor an der mobydick anschließen und die IP am mobydick TUI (siehe unten) ablesen.
 
@@ -36,7 +36,7 @@ Arbeitssitzungen bleiben nach der letzten Eingabe 30 Minuten aktiv, innerhalb di
 
 ## Zugriff auf das Text User Interface (TUI)
 
-Über das TUI können Sie sehr grundsätzliche Konfigurationen, wie z. B. IP-Adresse, Netzwerkeinstellungen usw. verändern. Schließen Sie hierzu einen Monitor direkt an dem mobydick Server an oder schauen Sie auf die Console der virtuellen Maschine.
+Über das TUI können Sie sehr grundsätzliche Konfigurationen, wie z. B. IP-Adresse, Netzwerkeinstellungen usw. verändern. Schließen Sie hierzu einen Monitor direkt an den mobydick Server an oder schauen Sie auf die Console der virtuellen Maschine.
 
 ### Startseite
 
@@ -56,7 +56,7 @@ Um ins Hauptmenü des TUI zu gelangen müssen Sie die Taste **F2** drücken und 
 |Menüpunkt|Erklärung|
 |---|---|
 |Abmelden|Zurück zum TUI-Startbildschirm.|
-|Netzwerk konfigurieren|Hier können Sie Netzwerkschnittstellen Bearbeiten. Anpassungen am Netzwerk an dieser Stelle erfolgen analnog zur WEB-UI.|
+|Netzwerk konfigurieren|Hier können Sie Netzwerkschnittstellen bearbeiten. Anpassungen am Netzwerk an dieser Stelle erfolgen analnog zur WEB-UI.|
 |Herunterfahren|Hier kann das System heruntergefahren oder neugestartet werden.|
 |Shell öffnen|Öffnet eine Shell mit root Rechten.|
 |System Passwort setzen|Hier kann das Systempasswort geändert werden, dies muss durch zweimaliges Eingeben bestätigt werden. Das Systempasswort gilt für den admin und den root User.|
@@ -69,11 +69,10 @@ Falls Sie ein Terminal auf einem Unix-System verwenden loggen Sie sich ein mit
 
     ssh admin@mobydick_ip
 
-Falls Sie Windows verwenden, benötigen Sie einen SSH-Client. In diesem Fall Empfehlen wir die Benutzung von PuTTY. Informationen hierzu finden Sie unter [http://www.chiark.greenend.org.uk/~sgtatham/putty/](http://www.chiark.greenend.org.uk/~sgtatham/putty/ "Informationen zum putty").
-Loggen Sich dich hier mit dem Benutzer `admin` und dem entsprechenden Passwort ein.
+Falls Sie Windows verwenden, benötigen Sie einen SSH-Client. In diesem Fall empfehlen wir die Benutzung von PuTTY. Informationen hierzu finden Sie unter [http://www.chiark.greenend.org.uk/~sgtatham/putty/](http://www.chiark.greenend.org.uk/~sgtatham/putty/ "Informationen zum putty").
+Loggen Sie sich hier mit dem Benutzer `admin` und dem entsprechenden Passwort ein.
 
-Anschließend benötigen Sie Root-Rechte. Diese erhalten Sie mit dem Befehl **su** und der Eingabe des zuvor benutzten Passworts.  
-Anschließend benötigen Sie Root-Rechte, da der Zugriff sonst sehr eingeschränkt ist:
+Anschließend benötigen Sie Root-Rechte, da der Zugriff sonst sehr eingeschränkt ist. Diese erhalten Sie mit dem Befehl **su** und der Eingabe des zuvor benutzten Passworts.  
 
     ---
     Welcome to your asterisk PBX, admin!
@@ -83,7 +82,7 @@ Anschließend benötigen Sie Root-Rechte, da der Zugriff sonst sehr eingeschrän
     Password:
 
 ## Zugriff auf die Asterisk-CLI
-mobydick verwendet Asterisk als Telefoniesoftware. Asterisk bietet eine Command Line Interface (CLI) in der Sie das gesamte Telefonieaufkommen beobachten und debuggen können. Voraussetzung hierfür ist, dass Sie bereits per SSH auf der Anlage eingeloggt sind und über Root-Rechte verfügen. Dort geben Sie `asterisk -r` ein:
+mobydick verwendet Asterisk als Telefoniesoftware. Asterisk bietet ein Command Line Interface (CLI) in der Sie das gesamte Telefonieaufkommen beobachten und debuggen können. Voraussetzung hierfür ist, dass Sie bereits per SSH auf der Anlage eingeloggt sind und über Root-Rechte verfügen. Dort geben Sie `asterisk -r` ein:
 
      root@mobydick:/etc/admin# asterisk -r
 
