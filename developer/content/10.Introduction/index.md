@@ -22,7 +22,7 @@ In order to be able to better integrate our system into the our customers IT Env
 ## System Architecture
 In order to be able to choose the most appropriate integrations method, you must first have knowledge of complete mobydick architecture:
 
-![Illustration - mobydick System Architecture](../../images/mobydick_system_architecture.png "mobydick system architecture in details")
+![Illustration - mobydick System Architecture](/mobydick_system_architecture.png "mobydick system architecture in details")
 
 ## Available Interfaces
 One can see from the diagram above that there are currently 5 possible interfaces for mobydick. Depending on the application, you should choose the best option for your project. The following table helps you to differentiate between the possibilities:
