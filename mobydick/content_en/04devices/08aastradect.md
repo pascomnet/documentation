@@ -130,7 +130,7 @@ A list containing all entries (RFP or handset) will be displayed.
 1. Select all entries you want to add
 2. Click **Add**
 
-Die Einträge sind nun importiert.
+The data import is now finished.
 
 {{% notice warning %}}
 When you have done this import process several times, only select the new devices in step 6, otherwise the import will fail. If devices are removed, they must be removed manually in the OMM configuration interface.
