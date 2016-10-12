@@ -1,143 +1,138 @@
 ---
-title: Desktop Client nutzen
-keywords:
-    - Desktop Client nutzen
-    - Benutzereinstellung im Client
-    - Desktop Client Theme ändern
-    - Einstellungen des Desktop Clients
-    - mobydick Client Journal
-description: Unter "Desktop Client nutzen" erfahren Sie, wie Enduser alle Funktionen des mobydick Clients nutzen können.
-url: /clients/client-nutzen/
-prev: /clients/client-installieren/
-next: /clients/teams-im-client/
+title: Desktop Client User Guide
+url: /clients/client-user-guide/
+prev: /clients/client-installation/
+next: /clients/teams-in-client/
+keywords: 
+       - Desktop Client User Guide
+       - Client user settings
+       - Desktop Client Colour Schemes
+       - Desktop Clients Settings
+       - mobydick Client Journal
+       - mobydick Client Call History
+description: Discover how you as an end user can use all the features of the mobydick Clients 
 weight: 32
 toc: true
+linkde: /clients/client-nutzen/
 ---
 
-## Benutzer anmelden
-![Screenshot - mobydick Desktop Client Login](../../images/client_anmelden.png?width=50% "mobydick Desktop Client Login")
-Um sich im mobydick Client anmelden zu können, geben sie bitte folgende Daten an:
-
-* Benutzername 
-* Passwort
-* Server
-* Anmeldedaten speichern? - Wenn Sie dieses Feld bestätigen, müssen Sie nicht beim nächsten Mal diese Daten eingeben
-
-Klicken Sie auf "Anmelden"
-
-## Bereiche des Clients und Bedienelemente
-Der mobydick Client besteht aus insgesamt 4 Bereichen
-![Screenshot - Bereiche des Clients und Bedienelemente](../../images/client_uebersicht.png?width=100% "Bereiche des Clients und Bedienelemente")
-Außer dem Suchfenster besitzen alle Bereiche ein kleines Zahnrad. Über dieses Zahnrad können Einstellungen für die jeweiligen Bereiche getätigt werden.
-
-### mobydick Minimodus
-Der mobydick Client kann in 2 Ansichten genutzt werden. Zum Einen gibt es die Vollansicht und zum Anderen einen sogenannten Minimodus. Der Minimodus hilft, wenn Sie auf Ihrem Bildschirm Platz sparen möchten. Dabei wird nur die mobydick Kontaktliste angezeigt. 
-
-Sie können ganz einfach zwischen den Modi wechseln. Klicken sie dafür auf den Doppelpfeil << (neben dem Kontakt und Team Tab).
-![Screenshot - mobydick Minimodus wechseln](../../images/client_minimode.png?width=70% "mobydick Minimodus wechseln")
 
 
-## Ihr Profil
+//FixMe
+## User Login
+![Screenshot - mobydick Desktop Client Login](../../images/client_main_login.png?width=50% "mobydick Desktop Client Login")
+In order to log into the mobydick desktop client, you will be required to enter the following information:
 
-### Überblick
-![Screenshot - Ihr Profil](../../images/client_profil.png?width=80% "Ihr Profil")
+* Username
+* Password
+* Server address
+* Check the save login details box in order to save you login details for future use.
 
-In der linken oberen Ecke finden Sie Ihren Benutzer. Dabei werden Ihnen folgende Informationen angezeigt:
+Click "**Login**"
 
-1. **Durchwahl und Ihren Namen:** Die Durchwahl wird automatisch von der Telefonanlage übernommen und kann nur durch den Administrator geändert werden. 
-Den Name können Sie selbst unter `"Einstellungen" --> "Mein Account"` geändert werden.
-2. Ihr Profilbild (auch Avatar genannt) inklusive Ihrem **Benutzerstatus:** Der Benutzerstatus wird in Form  eines farbigen Rahmens um Ihr Benutzerfoto dargestellt. Dieser kann unter "Einstellungen für Ihren Benutzer" verändert werden. Das Profilbild können Sie ebenfalls selbst unter `"Einstellungen" --> "Mein Account"` ändern. Das passende HowTo finden Sie unter: Passwort, Telefon-PIN und Avatar ändern
-3. **Statusnachricht:** Sie können dabei jederzeit den Text des Status selbst bestimmen und einen gewünschten Text einfügen. Der Client merkt sich dann diesen Text und Sie können diesen später erneut verwenden. 
-4. **Arbeitsplatz:** Zeigt Ihnen Ihren derzeitigen Arbeitsplatz an. Diese ist wichtig, wenn Sie z.B. immer zwischen HomeOffice und Büro wechseln. Dem Arbeitsplatz sind die Telefone zugeordnet, d.h. benutzen Sie den HomeOffice Arbeitsplatz, so klingeln die Telefone bei Ihnen im Homeoffice und nicht im Büro.
+## Client Sections and Control Elements
+The mobydick Client consists of 4 sections:
+![Screenshot - client sections and control elements](../../images/client_main_profile.png?width=100% "client sections and control elements")
+Apart from the search area, all areas of the mobydick client can be identified by the small gear symbol. Through using the gear symbol, settings can be modified or set for the corresponding section of the mobydick  CTI Client.
+
+### mobydick Mini Mode
+The mobydick Client can now be operated using 2 different views; full mode and the so called mini-mode. Mini-mode is particularly useful when you need to save space on your desktop, as it will only display the contact list. 
+
+Switching between the 2 modes is achieved very simply through clicking the double arrow symbols << , which is located next to the contacts and teams tabs.
+
+![Screenshot - switichting to mobydick mini mode](../../images/client_main_minimode.png?width=70% "switching to mobydick mini mode")
+
+
+## Your Profile
+
+### Overview
+![Screenshot - Your Profile](../../images/client_main_profil.png?width=80% "Your Profile")
+
+In the top left corner, you will find your User Info, which will display the following Information:
+
+1. **Names & Extension** The Extension will be automatically configured according to the Telephone System and can the only be altered by the Administrator. 
+You can change your name yourself, should you want to by using the following **"Settings" ----> "My Account"**.
+2. **Your Profile Picture** (also know as an Avatar) including your **User Status**: the user status is indicated according the colour of the frame surrounding the Profile Pic. This can also be changed under "Personal User Settings". You can also change your Profile Picture under **"Settings" ----> "My Account"**. The appropriate How To can be found under: Changing User Password, Telephone PIN and Avatar
+3. **Status Indicator:** You can change your status at any time and either enter a desired text, which will then be saved for later use, or you can use one of the predetermine Stati as listed under the "Personal User Settings" menu button.  
+4. **Location:** This function displays the location where you are currently logged into mobydick. This is an important feature, should you need for example to change between HomeOffice and your actual Office. With locations, the setup is such that the telephones themselves are assigned to the Location, meaning that should you be logged into your HomOffice, your HomeOffice phone will ring and not your desk phone in the CompanyOffice.
      
-### Einstellungen für Ihren Benutzer
 
-Wenn Sie auf das Zahnrad klicken, öffnet sich das Einstellungsmenü für Ihren Benutzer.
-
-Dabei können Sie aus folgenden Statis für Ihren Benutzer wählen. 
-grün: Verfügbar
-gelb: Komme gleich wieder
-rot: Ich bin beschäftigt oder Bitte nicht stören
 
 
 ## Journal
-Das Anruferjournal des mobydick Cients erfasst alle Anrufe - eingehend wie ausgehend. 
-![Screenshot - Journal](../../images/client_journal.png?width=80% "Telefonjournal")
+The mobydick client call journal records and logs all incoming and outgoing calls 
+![Screenshot - Journal](../../images/client_main_journal.png?width=80% "phone journal")
 
-Dabei werden Ihnen folgende Informationen angezeigt:
-![Screenshot - Journal Details](../../images/client_journal_details.png?width=100% "Journal Details")
+The following information will be contained within the call journal:
+![Screenshot - Journal Details](../../images/client_main_journal_details.png?width=100% "Journal Details")
 
-Der kleine Pfeil links zeigt Ihnen:
-* ob das Gespräch eingehend war (nach links) oder ausgehend (nach rechts)
-* ob das Gespräch angenommen wurde (grün) oder verpasst bzw. nicht erreichbar war (rot)
-Der grüne Telefonhörer (rote Box) bietet Ihnen die Möglichkeit den Kontakt direkt zurückzurufen.
+The small arrow on the left oft each row illustrates:
+* whether the call was incoming (left facing) or outgoing (right facing)
+* whether the call was answered (green) or missed, including not available (red)
+The green telephone symbol (contained in the red box in the above graphic) provides with a direct call back function.
 
 
 ## Tab Einstellungen
 
-### Telefonbücher - anbinden und nutzen
-Der mobydick Client bietet Ihnen die Option, mehr als nur das firmeninterne mobydick Telefonbuch anzubinden. Dabei werden je nach gewünschter Reihenfolge zuerst die mobydick oder Ihr persönliches Apple oder Outlookadressbuch durchsucht. Sie können dabei zuerst festlegen, welches Adressbuch zuerst durchsucht werden soll. 
+### Connecting and Using Telephone Books
+The mobydick Client offers you the option of connecting more than just the internal Company Telephone Book. Moreover, depending on your wishes, the order in which the Telephone / Address books are searched and then displayed by the Client can also be altered, for example whether the mobydick Telephone Book or your personal Apple / Outlook address book should be searched first. 
 
 {{% notice note %}}
-Wenn Sie Ihr Apple oder Outlook Adressbuch anbinden, müssen Sie sich keine Sorgen machen, dass Ihre Kollege Ihre privaten Einträge sehen können. Ihre Adressbücher werden nur in Ihrem Client angezeigt.
+Should you connect either of your Apple or Outlook Address books, you do not need to worry about whether or not your colleagues can see your private entries - They can't as your address books will only be displayed within your Client.
 {{% /notice %}}
 
-#### Reihenfolge der Suche festlegen
-![Screenshot - Reihenfolge der Suche festlegen](../../images/client_einstellungen_adressbuch.png?width=60% "Reihenfolge der Suche festlegen")
+#### Setting the Search/Display Order
+![Screenshot - Setting the Search](../../images/client_address_books.png?width=60% "Setting the Search")
 
-Sie können jederzeit die Suchreihenfolge in Ihrem Client selbst bestimmen bzw. ändern. Klicken dafür auf
+You can define and set the search sequence at any time using your client. To do this click on
 
-* Einstellungen (1)
-* Adressbücher (2) 
-* Über die Steuerungspfeile (3) und  (4) können Sie die Reihenfolge festlegen.
-* Anschließend müssen Sie die Änderungen noch **speichern** (5)
+* Settings (1)
+* Address Books (2) 
+* Using the control arrows (3 & 4) you can define the order in which the address books are searched
+* Finally, you will need to **Save** (5) your changes.
  
-Wenn Sie beispielsweise zuerst das mobydick Telefonbuch ausgewählt haben, dann sieht das Suchergebnis wie folgt aus:
+For example, if you have selected the mobydick telephone book first, then the search results will appear as shown below: 
+
 ![Screenshot - Reihenfolge der Suche](../../images/client_adressbuch_mdfirst_search.png?width=60% "Reihenfolge der Suche")
 
-Würden Sie die Reihenfolge ändern, würde in unserem Beispiel das Apple Adressbuch als erstes genannt werden. 
-![Screenshot - Reihenfolge der Suche](../../images/client_adressbook_applefirst.png?width=100% "Reihenfolge der Suche")
+Should you have changed the search display so your Apple Address book is searched and displayed above other Phonebooks then the first results to appear would be from your Apple Address Book. 
+![Screenshot - Sequence of Search](../../images/client_connect_apple_adress_book.png?width=100% "Sequence of search")
 
  
-#### Apple Adressbuch anbinden
-![Screenshot - Apple Adressbuch anbinden](../../images/client_einstellungen_adressbuch_apple.png?width=50% "Apple Adressbuch anbinden")
+#### Connecting an Apple Address Book
+![Screenshot - connecting apple address book](../../images/client_connect_apple_adress_book2.png?width=50% "connecting apple address book")
 
-Greifen Sie mit dem mobydick Client auf die Kontakte in Ihrem Apple Adressbuch zu. Dafür müssen Sie folgende Schritte durchführen:
+In order to gain access to your Apple contacts directly from within the mobydick Client, you need to complete the following steps:
 
-1. Klicken Sie auf Einstellungen (1)
-2. Wählen Sie Adressbücher aus (2)
-3. Wählen Sie "Bei Telefonbuchsuche verwenden" bitte Ja
-4. Klicken Sie Speichern
-5. Eventuell - je nach Sicherheitseinstellungen - erhalten Sie einen Hinweis, dass der Client auf Ihr Adressbuch zugreifen möchte. Klicken Sie auf ja. Sollten Sie Ihr OSx Benutzerprofilpasswort eingeben müssen, können Sie das beruhigt tun. 
+1. Select the settings menu
+2. Select the Address Book option
+3. Under "Include in Phonebook Searches" select **Yes**
+4. Click on **Save**
+5. Eventually, depending on your security settings, you will receive a notification, that the client would like to access your address book. Click on yes and should your OSx User profile password be required, you can do so in the knowledge that this process is secure. 
 
-Zusätzlich können Sie folgende Filtermöglichkeiten einstellen:
-* Anrufe auflösen:
-    * Nur wenn noch kein Name bekannt ist --> Zuerst wird das mobydick Telefonbuch geprüft. Ist kein Name hinterlegt, wird der Name aus dem Apple Adressbuch angezeigt
-    * Immer, bisherigen Namen überschreiben --> Egal ob der Name im mobydick Telefonbuch vorhanden ist, der Eintrag in Ihrem Apple Adressbuch wird immer angezeigt
-    * Nie --> Apple Adressbuch wird nicht durchsucht
+Moreover, you can setup the following filter options:
+* Call Resolving:
+    * Only if no CallerID is submitted ----> mobydick will firstly check the internal Telephone Book. Should no name be stored, the name from the Apple Address book will be displayed
+    * Always override CallerID, ---> regardless of whether the name already exists in the mobydick Telephone Book, the entry within your Apple Address Book will always be displayed
+    * Never --> the Apple Address Book will never be searched
  
-#### Outlook Adressbuch anbinden
-Greifen Sie mit dem mobydick Client auf die Kontakte in Ihrem Outlook Adressbuch zu. Dafür müssen Sie folgende Schritte durchführen:
+#### Connecting an Outlook Address Book
+In order to gain access to your Outlook Address book directly from within the mobydick Client, you need to complete the following steps:
 
-1. Klicken Sie auf Einstellungen
-2. Wählen Sie das Outlook Adressbuch aus
-3. Wählen Sie "Bei Telefonbuchsuche verwenden" bitte Ja
-4. Klicken Sie **Speichern**
-
-
-Zusätzlich können Sie folgende Filtermöglichkeiten einstellen:
-* Anrufe auflösen:
-    * Nur wenn noch keine Name bekannt ist --> Zuerst wird das mobydick Telefonbuch geprüft. Ist kein Name hinterlegt, wird der Name aus dem Apple Adressbuch angezeigt
-    * Immer, bisherigen Namen überschreiben --> Egal ob der Name im mobydick Telefonbuch vorhanden ist, der Eintrag in Ihrem Apple Adressbuch wird immer angezeigt
-    * Nie --> Apple Adressbuch wird nicht durchsucht
-    
-    
-    
-    
-    
-    
+1. Select the settings menu
+2. Choose the Outlook Address book option
+3. Under "Include in Phonebook Searches" select **Yes**
+4. Click on **Save**
 
 
+Moreover, you can setup the following filter options:
+* Call Resolution:
+    *Only if no CallerID is submitted ----> mobydick will firstly check the internal Telephone Book. Should no name be stored, the name from the Apple Address book will be displayed
+    * Always overwrite CallerID, ---> regardless of whether the name already exists in the mobydick Telephone Book, the entry within your Apple Address Book will always be displayed
+    * Never --> the Apple Address Book will never be searched
+    
+    
+ien
 ### Einstellungen des Clients
 
 Sie können den mobydick Client und die Anzeige der Kontaktliste auf Ihre Bedürfnisse anpassen.  
@@ -157,15 +152,16 @@ Aktuell können Sie aus den folgenden Sprachen auswählen:
 * Arabisch
 * Französisch
 
-##### Client Theme anpassen
-Der mobydick Client kommt mit 2 unterschiedlichen Farbschemas. Hell (Light) und Dunkel (Dark)
+##### Changing the Client Colour Scheme
+As standard the mobydick client has two colour schemes available - Light and Dark.
+
 ![Screenshot - Client Themes](../../images/client_themes.jpg?width=80% "Client Themes")
 
-Sie können Ihr Theme unter folgenden Einstellungen ändern:
-![Screenshot - Client Theme anpassen](../../images/client_theme_wechseln.png?width=80% "Client Theme anpassen")
+You can change your scheme using the following settings:
+![Screenshot - change colour theme](../../images/client_changetheme.png?width=80% "change colour theme")
 
-Schritt 1: Wählen Sie das gewünschte Theme (Standardmäßig ist "Light" ausgewählt)  
-Schritt 2: Klicken Sie auf "Speichern" - der Client wird danach automatisch neustarten
+Step 1: Choose your desired theme (Default setting is "Light")  
+Step 2: Click on Save - your client will automatically restart
 
 #### Kontaktliste (Roster) 
 
@@ -177,27 +173,27 @@ Die Breite (3) kann schmal, mittel oder breit dargestellt werden, je nach Ihrem 
 ##### Weitere Einstellungen
 Ihnen stehen im Bereich Roster folgende weiteren Einstellungsoptionen zur Verfügung:
 
-* Icons anzeigen: Ja oder Nein - beschreibt ob Sie bei den Kontakten nur die Stati sehen möchten oder auch das Profilbild und das Telefon. 
-* Namensanzeige: 
-    * Nur Name
-    * (Durchwahl) Name
-    * Name (Durchwahl)
-* Sortierung:
-    * Nach Name
-    * Nach Durchwahl
-* Zuerst nach Präsenz sortieren: Ist diese Option aktiviert, dann werden Ihnen Ihre Kontakte in der folgenden Reihenfolge angezeigt:
-    * verfügbar (grün)
-    * beschäftigt oder bitte nicht stören (rot)
-    * abwesend (gelb)
-    * offline (grau)
-* Offline Kontakte ausblenden: Alle Kontakte die nicht im Client angemeldet sind, sind nicht in Ihrer Kontaktliste zu sehen
-* Arbeitsplatz anzeigen: Ist diese Option aktiviert, sehen Sie an welchem Arbeitsplatz Ihre Kollegen angemeldet sind
+* Show icons: Yes or No - Allows you decide of whether you would like to see the the statuses of your contacts or their Profile Pictures and Telephones as well. 
+* Display Names: 
+    * Names Only
+    * (Extension) Name
+    * Name (Extension)
+* Sort:
+    * By Name
+    * By Extension
+* Sort by presence first: should this option be activated, then your contacts will be displayed in the following order:
+    * Available (green)
+    * Busy or Do Not Disturb (red)
+    * Absent/Away from Client (yellow)
+    * offline (grey)
+* Hide Offline Contacts: Every contact that is currently not logged into the client will be not be displayed within your contact list
+* Show locations: should this option be enabled, your will also be able to see the location in which you colleagues are currently logged in
 
 {{% notice note %}}
-Veränderungen der Ansicht müssen immer durch klicken auf "'Speichern" bestätigt werden.
+Alterations to the view options will always be applied after confirmation via the "Save" button.
 {{% /notice %}}
 
-
+//FixMe
 #### AutoAway
 
 |Parameter|Bedeutung|
@@ -205,91 +201,89 @@ Veränderungen der Ansicht müssen immer durch klicken auf "'Speichern" bestäti
 |Sekunden bis AutoAway|Die Zeit bis der Client die automatische Statusmeldung einschaltet. Dies geschieht, wenn Sie für eine Zeit X keine Eingabe am Computer vornehmen|
 |AutoAway Text|Legen Sie einen Text fest, welcher angezeigt werden soll bie AutoAway |
 
-### Mein Account
-Unter Einstellungen (1) --> Mein Account (2) können Sie alle Änderungen vornehmen, die mit Ihrem Benutzer verknüpft sind. Dazu gehören folgende Einstellungsmöglichkeiten:
+### My Account
+Under Settings (1) --> My Account (2) you can carry out the changes which are linked to your User account that you wish to make. These include the following setting options:
 
-* Passwort
+* Password
 * PIN
 * Avatar
 
-![Screenshot - Client Einstellungen Mein Account](../../images/client_persoenliche_einstellungen.png?width=70% "Client Mein Account")
+![Screenshot - Client settings my account](../../images/client_Settings.png?width=70% "Client My Account")
  
  
-#### Passwort und Telefon-PIN ändern
-Normalerweise erhalten Sie von Ihrem Administrator ein vorgegebenes Passwort für die mobydick Clients (Desktop und Mobility Clients), sowie einen Pin für Ihr Telefon. Der PIN wird für das An- und Abmelden am Telefon benötigt.
+#### Changing your Password and Telephone PIN
+Normally you will be provided with a pre-set password from your administrator for both your mobydick Deskop and Mobile Clients, as well as a PIN for your phone which is required to log in and out of the your phone.
 
 {{% notice info %}}
 Sollten Sie Ihr Passwort vergessen haben, schreiben Sie bitte Ihrem Administrator eine Email. Er wird dann Ihr Passwort zurücksetzen.
 {{% /notice %}}
 
-##### Passwort ändern
-Um Ihr persönliches Passwort ändern zu können, klicken Sie auf den Button "Passwort ändern". Darauf öffnet sich ein kleines Fenster.
-![Screenshot - Passwort ändern](../../images/client_einstellungen_passwort_aendern.png?width=60% "Passwort ändern")
+##### Changing your Password
+In order to change your personal password, click on "Change Password" button, which will open a small pop up window in which you can make the changes.
+![Screenshot - changing password](../../images/client_password.png?width=60% "changing password")
 
-1. In dieses tragen Sie bitte zuerst Ihr aktuelles Passwort ein
-**Bemerkung:** Das initial Passwort sollten Sie von Ihrem Administrator erhalten haben. 
-2. Tragen Sie bitte nun Ihr neues Passwort ein und wiederholen Sie dieses. 
-3. Klicken Sie auf "Ändern" und Sie erhalten einen kurzen Hinweis, dass Ihr Passwort geändert wurde.
+1. First enter your existing password
+**N.B:** this password will be the one as provided by your administrator. 
+2. Enter your new password and then re-enter your password.  
+3. Click on the "Change" button  and you will then receive a confirmation notification that your password has been changed.
  
-**Passwortvorgaben**: Das Passwort für die Clients muss aus mindestens 8 Zeichen bestehen. Erlaubt sind Buchstaben, Zahlen und Sonderzeichen (!?@(){}[]\/=~$%&#*-+.,_). 
-Sie können dafür gerne einen [Passwort Generator](https://www.passwort-generator.com/ "Sicheres Passwort genenerien") verwenden oder Ihr Wunschpasswort eintragen. Wir empfehlen, dass Sie ein Passwort verwenden, welches mindestens eine Zahl und ein Sonderzeichen enthält. 
-
-##### Telefon-PIN ändern
-Um Ihre persönliche Telefon-PIN ändern zu können, klicken Sie auf den Button "Telefon-PIN ändern". Darauf öffnet sich ein kleines Fenster.
-![Screenshot - Telefon-PIN ändern](../../images/client_einstellungen_aendern_pin.png?width=60% "Telefon-PIN ändern")
-1. In dieses tragen Sie bitte zuerst Ihre aktuelles Passwort ein
-2. Tragen Sie bitte nun Ihre neue PIN ein und wiederholen Sie die Eingabe. 
-3. Klicken Sie auf "Ändern" und Sie erhalten eine kurze Bestätigung, dass Ihre PIN geändert wurde.
-
-**PIN Vorgaben:** Die Telefon-PIN darf nur aus Ziffern (0-9) bestehen und sollte eine Länge von 4 bis 12 Zeichen besitzen.
-
-#### Avatar ändern
-
-Sie können spielend Ihr Avatarbild ändern. Ein Avatar ist das kleine Profilbild das neben Ihrem Namen angezeigt wird. Dabei haben Sie die Möglichkeit entweder die vorgegebenen Bilder verwenden oder ein eigenes Bild hochzuladen.
-![Screenshot - Avatar ändern](../../images/client_avatar_aendern.png?width=60% "Avatar ändern")
-Wenn Sie ein eigenes Bild verwenden möchten, gehen Sie wie folgt vor:
-1. Klicken Sie auf den Button "**Eigenes Bild**"
-2. Darauf öffnet sich Ihr Datei-Browser Fenster
-![Screenshot - Eigenes Bild](../../images/client_settings_avatar_selectbox.png?width=60% "Eigenes Bild")
-3. Wählen Sie Ihr Bild aus (1) und klicken Sie auf "Open" (2)
-4. Anschließend klicken Sie auf `"Speichern"`
-
-
-Bei erfolgreichen Speichern wird das Bild in Ihrem Profil (links oben) automatisch aktualisiert.
-
-
-
-
-
-## Notifier / Hinweise
-Der mobydick Client zeigt Ihnen je nach Event einen kleinen Notifier an. Der Vorteil, wenn Sie bspw. in einem anderen Programm arbeiten, erhalten Sie alle notwendige Informationen trotzdem angezeigt:
-Eingehender Anruf
+**Password requirements**: The password for the clients must be at least 8 characters. You can use letters, numbers and special characters (@ () {} [] \ / = ~ $% & # * -? +, _.).
  
-Verpasster Anruf - die Nummer neben "Verpasster Anruf" zeigt Ihnen wie oft der Anrufer versuchte Sie anzurufen
+This means that you can of course use a //FixMe Password Generator or enter your desired password. We recommend using a password with a minimum of 1 number and 1 special character. 
 
-Neuer Dateiempfang empfangen
+
+##### Changing your Telephone PIN
+In order to change your personal Telephone PIN, click on "Edit your phone PIN", which will open a small pop up window in which you can change your PIN.
+![Screenshot - Changing Telephone PIN](../../images/client_PIN.png?width=60% "Change PIN")
+1. First enter your current Password 
+2. Now enter your desired new PIN and repeat it in the field below. 
+3. Click on the "Change" button  and you will then receive a confirmation notification that your PIN has been changed.
+
+**PIN Requirements:** your Telephone PIN should only contain numbers (0-9) and be of a length beetween 4 and 12 characters.
+
+#### Changing your Avatar
+
+An avatar is the small profile picture displayed next to your name, which you can change your Avatar very simply. Here you have the option of either using one of the pre-existing images or uploading your own personal image file.
+![Screenshot - changing avatar](../../images/client_avatar.png?width=60% "change avatar")
+If you would like to use your own image, then please follow the instructions below:
+1. Click on the **Custom Image** Button, which will open a new file window
+![Screenshot - own picture](../../images/client_choose_avatar.png?width=60% "own picture")
+3. Select your image (1) and click on "Open" (2)
+4. Finally click on the "Save" button within the client 
+![Screenshot - save](../../images/client_save.png?width=60% "save")
+
+
+If the image has been saved successfully, it will automatically appear in your Client (Upper Left).
+
+
+
+## Notifications
+The mobydick Client will display notifications depending on the event. This has the benefit for example of notifying you as to a important telephony related events (incoming call etc), even when you are working in another programme:
+Incoming Call
  
-## Suche
+Missed Call - the number in brackets next the "missed call" illustrates how often the person has tried to contact you
 
-### Globale Suche
-Der mobydick Client kann in allen Bereichen der mobydick suchen. Egal ob es sich um ein Chateintrag, Journal und allen zur Verfügung stehenden Telefonbüchern
-![Screenshot - Globale Suche](../../images/client_suche.png?width=80% "Globale Suche")
+New incoming file transfer
+ 
+## Search
 
-Sie können auch nur nach bestimmten Einträgen filtern. 
-![Screenshot - Globale Suche Filter](../../images/client_suche_filter.png?width=20% "Globale Suche Filter")
+### Global Searches
+The mobydick Client is able to search through every aspect of mobydick, regardless of whether it is a chat message, journal entry or any available telephone book.
+![Screenshot - Global Searches](../../images/client_search.png?width=80% "Global Searches")
 
-### Im Adressbuch suchen
-![Screenshot - Im Adressbuch suchen](../../images/client_adressbuch_suche.png?width=50% "Im Adressbuch suchen")
-Sie können alle mobydick, Apple oder Outlook Adressbucheinträge über das Suchfeld durchsuchen. Ebenso werden auch vorhanden Chatnachrichten auf passende Einträge durchsucht. 
+You can of course also filter your searches be specific entry types 
+![Screenshot - Global Search Filter](../../images/client_address_books_search.png?width=20% "global search filter")
 
-
-## Fax versenden
-* Um mit dem mobydick Client ein Fax zu versenden, klicken Sie auf das Zahnrad und wählen den Menüpunkt "Fax versenden".
-![Screenshot - Menüpunkt - Fax versenden](../../images/client_fax_menu.png?width=20% "Menüpunkt - Fax versenden")
-* Darauf öffnet sich ein Popup Fenster, in dem Sie die gewünschte PDF-Datei auswählen können. 
-![Screenshot - PDF auswählen](../../images/client_fax_datei.png?width=60% "PDF auswählen")
-* Wählen Sie die PDF aus, die Sie versenden möchten. 
-* In dem nächsten Fenster geben Sie bitte die Faxnummer des Empfängers ein. Außerdem können Sie eine Emailadresse eintragen, an die Sie Ihre Benachrichtigungsemail erhalten werden. Standardmäßig wird die in der mobydick hinterlegte E-Mailadresse verwendet. 
-![Screenshot - Fax senden](../../images/client_fax_senden.png?width=100% "Fax senden")
+### Address Books Searches
+![Screenshot - searching the address book](../../images/client_searchfiltern.png?width=50% "Searching the Address Books")
+When you have integrated either an Apple or Outlook Address Book, then you will be able to search these address book plus the mobydick Address book directly from the search box within the client. 
 
 
+## Sending Faxes
+* In order to send a fax using the mobydick Client, click on the gear symbol in the top right corner and select "Send Fax".
+![Screenshot - menu - send fax](../../images/client_sendfax.png?width=20% "menu - send fax")
+* This will open a popup window, in which you can select the desired PDF file. 
+![Screenshot - Select PDF](../../images/client_fax_file.png?width=60% "select PDF")
+* Select the PDF which you would like to send.  
+* n the next window, enter the fax recipients fax number. You can also enter an e-mail address, to which you would like to receive a notifications e-mail. As default, mobydick will use the predefined stored e-mail address for this function. 
+![Screenshot - send Fax](../../images/client_fax_send.png?width=100% "send Fax")

@@ -1,101 +1,103 @@
 ---
-title: mobydick Desktop Client installieren
+title: mobydick Desktop Client Installation
 keywords: 
     - Desktop Client
-    - Desktop Client installieren
-    - Installation mit Adminrechten auf einem Desktop
-description: mobydick Desktop Client installieren, bereitstellen und Anmeldung. 
-url: /clients/client-installieren/
+    - Desktop Client Installation
+    - mobydick Client User Guide
+    - mobydick mobile hub 
+    - mobydick mobile clients
+    - Installation on a desktop using admin rights
+description: mobydick Desktop Client installation, deployment and login. 
+url: /clients/client-installation/
 prev: /clients/
-next: /clients/client-nutzen/
+next: /clients/client-user-guide/
+linkde: /clients/client-installieren/
 weight: 31
 toc: true
 ---
 
 ## Installation
-Der mobydick Desktop-Client ist für jeden Benutzer ohne Authentifizierung vom mobydick Server herunterladbar.Die Installation kann auch ohne Administratorrechte erfolgen und somit auf Wunsch vom Benutzer selbst erledigt werden.
-![Screenshot - mobydick Desktop Client installieren](../../images/client_themes.jpg?width=70% "mobydick Desktop Client installieren")
+The installation of the client does not require administrative privileges and thus can be done by the users themselves. Moreover, the client is available for download for every user from the mobydick server without requiring additional authentication.
+![Screenshot - installation mobydick Desktop Client](../../images/client_themes.jpg?width=70% "installation mobydick Desktop Client")
 
-Surfen Sie auf die IP Ihrer mobydick und Klicken Sie auf dem Tab **Service**:
-![Screenshot - Service Tab der mobydick](../../images/client_download.png?width=70% "Service Tab der mobydick")
+Downloading the software from mobydick Server does not require authentication. Just select the **Service tab** on the mobydick **login screen**.
+![Screenshot - Service Tab mobydick](../../images/client_download.png?width=70% "Service Tab mobydick")
 
 ### Windows
-1. Zuerst laden Sie sich die .exe-Datein von Ihrem mobydick Server herunter.
-2. Speichern Sie die Datei.
-3. Anschließend gibt es je nach Anforderungen verschiedene Optionen:
+1. Firstly, download the .exe file from your mobydick server
+2. Save the file
+3. Next, there are various options available depending on your requirements:
 
-#### Standardinstallation
-* Ist der Download fertig, klicken Sie auf die Datei um die Installation einzuleiten:
+#### standard installation
+* Once the download is finished, double click the file to start the standard installation which can be completed by following the steps below: 
 
-![Screenshot - Standardinstallation](../../images/client_windows_installation.png?width=100% "Standardinstallation")
+![Screenshot - standard installation](../../images/client_install_standard.png?width=100% "standard installation")
 
-#### Installation mit Adminrechten auf einem Desktop
-* Ist der Download fertig, Rechtsklick auf die .exe-Datei, und als Administrator ausführen.
-* Nach dem Bestätigen der Lizenzbestimmungen werden Sie gefragt, ob es sich um eine Installation auf dem Terminalserver handelt -> Klick auf **Standard** und **Weiter** bis Installation abgeschlossen ist.
+#### Desktop Installation Using Admin Rights
+* Once the download is finished, right click the .exe file and select run as Administrator.
+* After accepting the licensing terms, you will be prompted as to whether the installation is intended to be done on a Terminal Server or not. **Select Standard** and then click **Next** until the installation is finished.
 
-![Screenshot - Installation mit Adminrechten](../../images/client_admin_standard.png?width=100% "Installation mit Adminrechten")
+![Screenshot - installation using admin rights](../../images/client_install_admin_standard.png?width=100% "installation using admin rights")
 
-#### Installation mit Adminrechten auf dem Terminal Server
-Am Terminal Server reicht es aus, den mobydick Client nur einmal zu installieren (um z. B. Platz zu sparen), und kann trotzdem von allen Benutzern verwendet werden
+#### Terminal Server Installation Using Admin Rights
+It is sufficient to install the mobydick client once on a terminal server (in order to save place etc) as it can nevertheless be used by all users.
 
-* Ist der Download fertig, Rechtsklick auf die .exe-Datei, und als Administrator ausführen.
-* Nach dem Bestätigen der Lizenzbestimmungen werden Sie gefragt, ob es sich um eine Installation auf dem Terminalserver handelt -> **Klick auf Terminal Server** und **Weiter** bis Installation abgeschlossen ist.
+* Once the download is finished, right click the .exe file and select run as Administrator.
+* After accepting the licensing terms, you will be prompted as to whether the installation is intended to be done on a Terminal Server or not. **Select Terminal Server** and then click **Next** until the installation is finished.
 
-![Screenshot - Installation mit Adminrechten auf dem Terminal Server](../../images/client_install_terminal.png?width=100% "Installation mit Adminrechten auf dem Terminal Server")
+![Screenshot - Terminal Server Installation Using Admin Rights](../../images/client_install_terminal.png?width=100% "Terminal Server Installation Using Admin Rights")
 
 {{% notice note %}}
-Zum Updaten muss der Client erneut heruntergeladen und manuell wiederrum mit Adminrechten installiert werden.
+To update, the client must be redownloaded and once again installed using Admin Updaten muss der Client erneut heruntergeladen und manuell wiederrum mit Adminrechten installiert werden.
 {{% /notice %}}
 
-#### Commandline Optionen
+#### Commandline Options
 
-Beispiel:
+Example:
 
-    mobydickClient-setup.exe /S /ISUPDATE=1 /D=C:\client
+    MobyDickClient-setup.exe /S /ISUPDATE=1 /D=C:\client
 
-Parametererklärung:
+Parameter Explanation
 
-|Parameter|Bedeutung|
+|Parameter|Description|
 |---------|---------|
-|/S|Ermöglicht eine Installation im Hintergrund, ohne dass Dialogfenster angezeigt werden.|
-|/ISUPDATE=1|{{% md %}}* Überspringt alle Bestätigungen und startet die Installation sofort
-* Zeigt nur das "Copy"-Fenster (in Verbindung mit /S wird das "Copy"-Fenster nicht angezeigt)
-* Der Client wird nach der Installation sofort angezeigt
-* Der Installationsordner kann mit /D angegeben werden{{% /md %}}|
-|/D=PATH|{{% md %}}* Gibt einen Installationsordner an
-* Dieser Paramter muss immer der letzte in der Befehlszeile sein
-* Darf keine Anführungzeichen oder ähnliches enthalten
-* Unterstützt nur absolute Dateipfade{{% /md %}}||
+|/S|Enables an installation in to run in the background, without displaying any dialog windows.|
+|/ISUPDATE=1|{{% md %}}* Skips all confirmations / accept options and immediately starts the installation
+* Displays only the "Copy" window (in combination with /S, the "Copy" window will not be displayed)
+* The client will be automatically opened after the installation
+* The installation folder can be defined using the /D parameter{{% /md %}}|
+|/D=PATH|{{% md %}}* Enables the defining of the installation folder, i.e path
+* Not supported when installing on a Terminal Server
+* This parameter must always be the last parameter in the command line
+* Supports only absolute file paths{{% /md %}}||
 
 ### Mac
-Um den mobydick Client unter Mac OSx zu installieren müssen Sie folgende Schritte durchführen:
+In order to download the mobydick desktop client and install it in a Mac OSx environment, please follow these steps:
 
-1. Laden Sie die .dmg Datei von Ihrer mobydick Startseite herunter. Die URL (z.B. http://meinetelefonanlage.musterfirma.de oder http://10.1.1.0) wird Ihnen in der Regel von Ihrem Admin zugesendet.
-2. Speichern Sie die Datei
-3. Wenn der Download fertig ist, klicken Sie auf die Datei und der Installationsvorgang wird eingeleitet
-Darauf erscheint dieses Fenster:
-4. Schieben Sie das mobydick Icon (rot) auf den Application Ordner
-5. Sobald der Kopiervorgang abgeschlossen ist, können Sie den Client starten
+1. Download the .dmg file from your the service tab on your mobydick server login screen. The URL (e.g.//FixMe http://myphonesystem.firmxyz.com oder http://10.1.1.0) is normally provided by your IT admin / department.
+2. Save the file
+3. Once downloaded, double click on the file and the installation process will start which then results in the following window
+4. Drag the mobydick icon (red) on to the Applications folder
+5. As soon as the copy process has been completed, you will be able to start the client
 
 ### Linux
-Unter Linux bringen wir keinen klassischen Installer mit.
+On Linux systems, we provide a classic installer.
 
-1. Laden Sie das tar.bz2-Paket aus der mobydick über die Service Seite herunter
-2. Entpacken und führen Sie über die Shell das Paket mit folgenden Befehlen aus:
-Eingabe via Terminal
+1. Download the tar.bz2 packet from the service tab found on your mobydick server login mask
+2. Unzip and run the packet by using the following Shell command:
 
 
     tar xfvj mobydickClient-x.xx.xx.tar.bz2  
     ./md_client/bin/md_client
 
 
-### Konfiguration
+### Configuration
 
-#### Im mobydick Client anmelden
-Bei der Installation der mobydick beinhaltet die Rolle All Users den Rollentyp xmpp.group. Somit kann sich jeder Benutzer mit seinem Benutzernamen und Passwort an seinem mobydick Client anmelden. Möchten Sie das einschränken, müssen Sie den Rollentyp bei All Users entfernen und eine neue Rolle erstellen.
+#### mobydick Client Login
+After installing mobydick, the default behaviour is that the //FixMe Role **All Users** contains the roll type "xmpp.group". This allows every user to log **into the mobydick client** using their **Username** and **Password**. Should you wish to restrict this behaviour, then you will need to deassign the role type from the All Users role and create a new //FixMe Role.
 
-Sie können auch mehrere Rollen erstellen, z. B. wenn sie Gruppen erstellen möchten, deren Mitglieder nur miteinander über den Client kommunizieren können.
+You are also able to create multiple roles, for example should you wish to create groups in which members can use the mobydick client to communicate only with one another.
 
-Ist ein Benutzer in mehreren Gruppen Mitglied kann er im Client zwischen den einzelnen Kontaktlisten wechseln:
+Should a user be a member of multiple groups, then they will be able to toggle through each contact list within the client as shown below:
 
-Mehr zum mobydick Client unter mobydick Desktop Client für Endbenutzer.
+More information regarding the mobydick Desktop client can be found on //FixMe mobydick Desktop Client for End Users.
