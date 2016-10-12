@@ -32,9 +32,11 @@ Um überhaupt telefonische Verbindungen zu ermöglichen benötigt ein Amt Rufreg
 
 ## Konfiguration
 
+### Amtsvorlagen
+
 Fügen Sie ein neues Amt ein unter `Gateways` > `Ämter` > `Hinzufügen`. Sie gelangen nun zur Ämter-Datenbank. Hier finden Sie Vorlagen für alle von mobydick unterstützten und von uns getesten Ämter.  
 Über den Filter können Sie direkt nach Ihrem Amt suchen und anschließend auswählen. Befüllen Sie die Vorlage mit Ihren Daten, die Sie von Ihrem Telefonanbieter erhalten haben.  
-Da verschiedene Ämter unterschiedliche Variablen benötigen finden Sie im folgendem eine Übersicht:
+Da verschiedene Ämter-Typen unterschiedliche Variablen benötigen finden Sie im folgendem eine Übersicht:
 
 |Variable|Erklärung|
 |---|---|
@@ -56,7 +58,7 @@ Da verschiedene Ämter unterschiedliche Variablen benötigen finden Sie im folge
 |**Benutzername**|Der Benutzername wird je nach Amt-Typ dazu verwendet um sich damit entweder<br> * an der Gegenstelle (der Host) zu registrieren (Typ: *User*)<br> * oder ist der Name mit dem sich eine Gegenstelle bei der mobydick registriert (Typ *Peer*).<br>Wird der Typ auf *Friend* gesetzt werden zwei Datensätze angelegt und das Passwort wird sowohl als User und Peer genutzt.|
 |**Passwort**|Ist, falls benötigt, das zum Benutzer gehörende Passwort.|
 |**Host**|Hier tragen Sie die IP-Adresse oder den Hostnamen der Gegenstelle, an der sich der Account registrieren muss.|
-|**Optionen**|Dieses Feld bietet die Möglchkeit weitere SIP-Optionen (eine Option pro Zeile), die von Asterisk verstanden werden, anzugeben. Einen Überblick über SIP-Optionen finden Sie hier: [SIP Configurations - peers and clients](http://www.voip-info.org/wiki/view/Asterisk+config+sip.conf#SIPconfigurationspeersandclients)|
+|**Optionen**|Dieses Feld bietet die Möglichkeit weitere SIP-Optionen (eine Option pro Zeile), die von Asterisk verstanden werden, anzugeben. Einen Überblick über SIP-Optionen finden Sie hier: [SIP Configurations - peers and clients](http://www.voip-info.org/wiki/view/Asterisk+config+sip.conf#SIPconfigurationspeersandclients)|
 |**Typ**|Analog zu Asterisk kennt mobydick mehrere Typen von SIP-Verbindungen. Diese werden unter [Asterisk sip type](http://www.voip-info.org/wiki/view/Asterisk+sip+type) genauer beschrieben.|
 |**Registrierung**|Wählen Sie *Ja* oder *Nein*, je nachdem ob sich die mobydick beim Host anmelden muss oder nicht.|
 |**Port**|Als Standard wird der Port *5060* verwendet. Soll ein anderer verwendet werden, können Sie diesen hier eintragen.|
@@ -65,3 +67,7 @@ Da verschiedene Ämter unterschiedliche Variablen benötigen finden Sie im folge
 
 <!-- |**CLIP Modus**||
  |**CLIR Modus**|| -->
+
+### Rufregeln
+
+Beim Bearbeiten einer Amtsvorlage wurden bereits automatisch
