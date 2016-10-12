@@ -1,42 +1,48 @@
 ---
-title: FlexPanel erstellen
+title: Creating FlexPanels
 keywords:
-    - 
-description: 
-url: /clients/flexpanel-erstellen/
-prev: /clients/mobile-hub-einrichten/
+       - Creating FlexPanels
+       - Creating Wallboards
+       - CallCenter Wallboards
+       - Switchboard dashboards
+       - Supervisor dashboards
+       - monitoring dashboards
+description: The FlexPanel Framework provides a platform for building and adapting wallboards for contactcenters, supervisory and switchboard dashboards. 
+url: /clients/create-flexpanels/
+linkde: /clients/flexpanel-einrichten/
+prev: /clients/mobile-hub-setup/
 weight: 36
 toc: true
 ---
 
-## Übersicht
-FlexPanel können frei an den Bedarf der Benutzer angepasst werden. Als Grundlage definiert der Admin ein beliebig großes Panel und ordnet darauf die von mobydick bereit gestellten Widgets an. Die Widgets wiederum sind in Größe, Funktion und Erscheinungsbild parametrierbar.
+## Overview
+The FlexPanel Framework can be completely modified to suit the intended users' needs. As a foundation, the admin can define any size of panel and then assigns Widgets which are already available from mobydick to the panel.  The widgets can then be parameterised according to size, function and appearance. 
 
-Beispiel Code für dieses Panel herunterladen
+//FixMe Download Example Code for this Panel
 
-Ist das FlexPanel einmal definiert kann man es verschiedenen Benutzern zuteilen. Diese Benutzer starten das FlexPanel dann, je nach Einstellung, entweder manuell über ein Menü oder automatisch beim Start des mobydick Desktop Clients. Der Benutzer kann dann sämtliche Aktionen im FlexPanel per Drag&Drop ausführen so dass das Panel auch für Touchscreens geeignet ist.
+Once the FlexPanel has been defined once, one can then assign it to different users.  These users can then either start the FlexPanel manually using the menu or automatically upon mobydick Desktop Client startup according to their settings. The User can then complete all their actions within the FlexPanel per Drag&Drop, meaning that the Panels are also suitable for Touch Screens.
 
-Beispiele für den Einsatz eines FlexPanels sind Vermittlungs-, Supervisor oder Monitoringarbeitsplätze.
+Example uses of the FlexPanel include the Smart Attendant (switchboard environment) Supervisory and Monitoring Solutions.
 
-## Konfiguration
+## Configuration
 
-### Neues FlexPanel anlegen
-Unter dem Menüpunkt `Erweitert > Flexpanel` können Sie durch Drücken der Schaltfläche `+Hnzufuegen` ein neues FlexPanel hinzufügen.
+### Create a New FlexPanel
+Under the menu ***Advanced > FlexPanel*** through using the `Add` button, you can add a new FlexPanel
 
-|Parameter| Bedeutung|
+|Parameter| Description|
 |----------|----------|
-|Bezeichnung|	Der Name des Panels|
-|Automatisch geöffnet|	Soll dieses Panel automatisch geöffnet werden wenn der mobydick Desktop Client gestartet wird. Dies gilt nicht für alle mobydick Client Nutzer sondern nur für die unter dem Tab Zuordnung definierten Benutzer.|
-|Übergeordnetes Panel|	Panels können Definition und Style voneinander erben. Das ist praktisch, wenn man nur Details eines bereis vorhandenen Panels für bestimmte Benutzer anpassen will. Wenn Sie hier ein Übergeordnetes Panel auswählen erbt das neu erstelle Panel dessen Definition und Style.|
-|Dokumentation|	Feld zur Freien Verwendung für die Dokumentation des Panels|
+|Title|Panel Name|
+|Open Automatically|   Should this Panel open automatically upon the mobydick Desktop Client startup. This does not apply for all mobydick Client users, rather only those which are assign under the Assignment Tab.|
+|Parent Panel| Panels can inherit definitions and styles from other panels, which is practical when, one only wants to modify the details of a pre-existing panel for a particular user. When you select a parent panel here, the child panel will inherit the definition and style of the parent.|
+|Documentation|    This field is for any documentation regarding the panel and is optional but recommended.|
 
-### Benutzer Zuordnung
-Unter dem Tab *Zuordnung* bestimmen Sie wer das Panel benutzen Darf. Sobald Sie einem Benutzer hinzufügen und ihm somit die Nutzung des Panels erlauben kann er das Panel über den mobydick Desktop Client starten.
+### User Assignment
+Using the ***Assignment*** Tab, you can decide who is allowed to use the panel. As soon as you have added a user and provide them with permissions to user the panel, they will be start the panel from the mobydick Client. 
 
-Haben Sie unter *Basisdaten* **Automatisch geöffnet** auf *ja* gestellt startet das Panel bei den entsprechenden Benutzer automatisch.
+If you have set the settings under ***Basic Data*** to **Open Automatically ---> Yes** then the panel will start automatically with the corresponding user. 
 
 ### Definition
-Der Tab Definition enthält die Programmierung des FlexPanels. Als Programmiersprache wir Grovy verwendet. Ein neues Panel erfordert folgenden Mindestcode:
+The Definition contains the programming for the FlexPanel, for which we use the programming language Grovy and a new panel will require as a minimum the following code:
 
     //
     
@@ -79,85 +85,87 @@ Der Tab Definition enthält die Programmierung des FlexPanels. Als Programmiersp
     
     // ...
 
-Kopieren Sie diesen Mindestcode in die Definition und passen die Maße des Panels (im Beispiel 1440 x 728 Pixel) Ihren Vorstellungen an.
+Simply copy these minimum coding in to the definition box and modify the size of the panel to your requirements (in our example 1440 x 728). 
 
 #### Style
 
-Standardmäßig übernimmt jedes FlexPanel das **dark** oder **light** Theme, das im mobydick Desktop Client unter `Einstellungen > Client > Theme` eingestellt werden kann.
+As standard, every FlexPanel will take on the **dark** or **light** theme, which can be set in the **mobydick Desktop Client** under ***Settings > Client > Theme***.
 
-Das gesamte Theme ist in less Programmiert. Less ist eine Metasprache aus der dann CSS Code kompiliert werden kann. Wir stellen den gesamten **less Quellcode** für das **dark** und **light** Theme zum Download bereit. Sie können diese Quellen in einem Editor Ihrer Wahl anpassen und mit einem less compiler neuen CSS Code erzeugen. Diesen Code können Sie in der mobydick Weboberfläche unter dem FlexPanel-Reiter **Style** hochladen und übersteuern hiermit die durch das Theme vorgegebenen Einstellungen für dieses FlexPanel.
+The complete has been programmed using Less, which is a Meta Language from which the CSS Code can then be compiled. We have already made the **Less source code** for the **dark** and **light** themes available to //FixMe download. You can then modify these source codes using an editor of your choice and then generate the new CSS Code using a Less compiler, which can then be uploaded in to the mobydick Web User Interface under the FlexPanel **Style** Tab which will then override the existing FlexPanel Theme. 
 
-Ein kostenloser und unter Windows und OSX lauffähiger less compiler ist SimpLESS.
+A free less compiler which is able to run on both Windows and OSX is SimpLEss.
 
-Um ein Theme anzupassen gehen Sie wie folgt vor:
+In order to modify a theme, follow the instructions below:
 
-##### Theme Quellen herunterladen
+##### Download Theme Source Code
 
-In diesem Archiv befindet sich sowohl das **dark** als auch das **light** Theme im less Format
+In this //FixMe Archive you will find both the **dark** and **light** themes in less format
 
-##### Quellen editieren
-Editieren Sie im Theme ihrer Wahl mit einem TextEditor die Datei **_colors.less** und passen die Farben nach Ihren Vorstellungen an.
+##### Edit the Source Code
+Using a TextEditor, edit the file _colors.less in the theme of your choice and modify the colours according to your requirements.
 
-##### Kompilieren
-Installieren und starten Sie den SimpLESS compiler und ziehen Sie den gesamten angepassten Theme-Ordner darauf:
+##### Compilation
+tall and start //FixMe SimpLESS compiler and and move the total modified theme folder into the compiler as shown below:
 
-Danach kompilieren Sie die Datei **operatorpanel.less** neu in dem Sie auf das **"neu laden"**-Sysmbol klicken. Um schön lesbares CSS zu erhalten schalten Sie das **minify** aus (kleiner blauer Kasten rechts in der File-Zeile).
+After that, compile the file **operatorpanel.less** again by clicking on the ***"Refresh"*** symbol. in order to get nice readable CSS, turn of the **minify** function (the small blue box on the right hand side of cell on the same row as the folder symbol).
 
-##### Neuen Style laden
-Fügen Sie jetzt den **Inhalt** der neu erzeugten Datei **operatorpanel.css** auf der mobydick Weboberfläche in den FlexPanel-Reiter Style ein. Jetzt noch *Speichern und Anwenden*. Wenn Sie das entsprechen Panel nun über den mobydick Client neu starten sehen Sie den veränderten Style.
+##### Load your New Styles
+To load your new styles, you need to add the **content** of your newly created **operatorpanel.css** file to the mobydick Web UI under the FlexPanel **Style**. Now all you need to do is ***Save and Apply***, and when you open the corresponding panel after restarting the mobydick Desktop Client, you will see the new modified Style. 
 
-##### Panel starten
-Nachdem diesen Einstellungen haben Sie ein leeres Panel erzeugt. Sie können das Panel nach dem Abspeichern und Anwenden über den mobydick Desktop Client starten:
+##### Starting Panels
+As a result of these settings, you have now created an empty panel, which you can start as soon as you completed the save and apply function(Web UI) and restarted mobydick Desktop Client:
 
-Im rot markierten Bereich werden alle für diesen Benutzer verfügbaren Panels mit ihrer Bezeichnung angezeigt. Nach dem Start erhalten Sie ein leeres Panel in der von Ihnen definierten Größe.  Der Benutzer kann immer nur ein Panel gleichzeitig geöffnet haben.
+In the area outlined in red, the panels which are available for the user will be displayed. After starting a the panel, you will be displayed an empty panel in the predefined size. A User can only have one panel open at a time. 
 
-### Widgets hinzufügen
-Bis jetzt ist das Panel leer und kann nun mit den entsprechenden Widgets gefüllt werden. Dazu tragen Sie den entsprechenden Widgetcode im Reiter *Definition* des Panels ein. Jedes Widget kann mit den folgenden drei Codezeilen erstellt, positioniert und angezeigt werden:
 
-    // Neues Widget erstellen
+### Adding Widgets
+Until now the panel that we created has had no functions added to it, but now we can fill the panel with the appropriate widgets. To do this, you need to enter the corresponding Widget Code in the panels' ***Definition*** tab. Every widget can be created, positioned and displayed with the following 3 lines of coding:
+
+
+    // Create New Widget
     WIDGET MEIN_WIDGET_NAME = new WIDGET(PARAMETER)
     
-    // X und Y Postion des Widgets auf dem Panel definieren (in Pixeln)
+    // Define X and Y Position of the Widget on the Panel (in Pixels)
     MEIN_WIDGET_NAME.relocate(X,Y)
     
-    // Widget auf dem Panel anzeigen
+    // Display Widget on the Panel
     pane.addWidget(MEIN_WIDGET_NAME)
 
-Folgende Platzhalter müssen Sie für jedes Widget ersetzen:
+The following placeholders must be replaced for every widget:
 
-|Parameter| Bedeutung|
+|Parameter| Description|
 |----------|----------|
-|WIDGET|	Geben Sie hier an welches Widget Sie erstellen wollen. Z.B. HangupWidget, UserItem, ... Alle verfügbaren Widget finden Sie weiter unten|
-|PARAMETER|	Hier übergeben Sie Parameter an das Widget. Z.B. einen Benutzer oder Teamnamen der in diesem Widget verwendet werden soll. Mache Widget haben keine Parameter wie z.B. das HangupWidget|
-|MEIN_WIDGET_NAME|	Für jedes Widget müssen Sie einen eindeutigen Namen vergeben um es später ansprechen zu können. Z.B. können Sie die Widgets nach Benutzer, Teams oder Funktionen benennen.|
-|X, Y|	Geben Sie hier die X und Y Koordinaten an denen das Widget im Panel platziert werden soll. X und Y beziehen sich auf das linke obere Eck des Widgets|
+|WIDGET|   Specify here which widget you would like to create e.g. HangupWidget, UserItem, ... All available widgets are listed below.|
+|PARAMETER|    Here you can pass on parameters to the widget, e.g. User or Team names, which should be used within this widget. Some widgets do not have any parameters, such as the HangupWidget.|
+|MY_WIDGET_NAME|   For every widget, a **unique** name must be specified in order to be able to recall it later, for example you can name widgets after users, teams or functions.|
+|X, Y| Define the X and Y coordinates on which the widget should be placed within the panel. X and Y are referenced as according the top left corner of the Widget.|
 
-Konkretes Beispiel für das HangupWidget:
+A concrete example of the HangupWidget is illustrated below:
 
-    HangupWidget auflegen = new HangupWidget()
-    auflegen.relocate(10,10)
-    pane.addWidget(auflegen)
+    HangupWidget hangup = new HangupWidget()
+    hangup.relocate(10,10)
+    pane.addWidget(hangup)
 
-### Widget Methoden
-Manche Widgets können durch weitere Methoden in ihrer Erscheinung oder Funktion verändert werden. Das UserItem kennt beispielsweise die Methode **setAppearance()**. Damit kann man das Erscheinungsbild des Widgets von der normalen Darstellung in eine Kompaktansicht umschalten. Möchte ich nun den Benutzer **jflores** in der Kompatansicht auf mein Panel einfügen ergänzt sich der Code wie folgt um eine weitere Zeile:
+### Widget Methods
+Some Widgets can be changed in terms of function and appearance through other methods. The UserItem, for example, knows the method **setAppearance()**. Meaning you can switch the appearance of the widget from normal to a compact view. Now I would like to add the user **jflores** to the compact view of the widget in my panel, and the code will now require an extra line as follows:
 
     UserItem jflores = new UserItem("jflores@mddemo")
     jflores.setAppearance(WidgetAppearance.Compact)
     jflores.relocate(10,50)
     pane.addWidget(jflores)
 
-### Benutzer richtig adressieren
-Werden einem Widget Benutzer als Parameter übergeben muss das in folgender Schreibweise geschehen:
+### Address Users Correctly
+Should a Widget User be passed on as a Parameter, this must be done using the following notation:
 
-    BENUTZERNAME@XMPP-DOMAIN
+    USERNAME@XMPP-DOMAIN
 
-Für den Benutzer mit dem Benutzernamen **jflores** am Beispiel Widget **UserItem** mit der XMPP-Domain **mobydick** sieht der Eintrag wie folgt aus:
+For the user with the user name **jflores** the example widget **UserItem** with the XMPP domain **mobydick** entry looks like this:
 
     UserItem jflores = new UserItem("jflores@mobydick")
     jflores.relocate(10,50)
     pane.addWidget(jflores)
 
-Die XMPP-Domain wird bei der Installation einer mobydick Anlage automatisch mit auf **mobydick** gesetzt. Mehr dazu erfahren Sie unter XMPP API.
+The XMPP-Domain is automatically set to **mobydick** during the installation of a mobydick system. You can find out more about this under //FixMe XMPP API.
 
-### Verfügbare Widgets
-Eine Liste aller verfügbaren Widgets finden Sie unter FlexPanel Widgets in der Entwickler-Dokumentation.
+### Available Widgets
+You can find a complete list of all the available widgets under //FixMe FlexPanel Widgets in the Developers Documentation.
