@@ -40,7 +40,7 @@ Falls Sie keine Erfahrung mit Virtualisierungslösungen haben, empfehlen wir Ihn
 
 ### Übersicht
 
-Das auf unserer Homepage heruntergeladene ISO oder ein bereits gesichertes Backup Ihrer Installation können Sie mit Hilfe eines Windows-PCs oder eines Linux-Systems (z. B. Ihre bereits vorhandene mobydick) auf einem bootbaren USB-Stick übertragen.
+Das auf unserer Homepage heruntergeladene ISO-Abbild oder ein bereits gesichertes Backup Ihrer Installation können Sie mit Hilfe eines Windows-PCs oder eines Linux-Systems (z. B. Ihre bereits vorhandene mobydick) auf einen bootbaren USB-Stick übertragen.
 Diesen können Sie dann zur Installation von mobydick benutzen.
 
 ### Installationsmedium erstellen mit Hilfe eines Windows-PCs
@@ -61,7 +61,7 @@ Starten Sie Rufus und stecken Sie den USB-Stick an.
 |Laufwerk|wählen Sie das Laufwerk unter dem der USB-Stick zu finden ist|
 |Startfähiges Laufwerk erstellen mit	|ISO-Abbild auswählen, anschließend durch Klick auf das Disk-Symbol das bereits heruntergeladene ISO-Abbild auswählen |
 
-Im nächsten Fenster "Im ISO-Abbild Modues schreiben" wählen und mit OK bestätigen:
+Im nächsten Fenster "Im ISO-Abbild Modus schreiben" wählen und mit OK bestätigen:
 ![Screenshot - Hybrides ISO-Abbild erkannt](../../images/rufus_iso.png?width=40% "Hybrides ISO-Abbild erkannt")
 
 Anschließend wird der bootbare USB-Stick erstellt.
@@ -78,7 +78,7 @@ Gehen Sie auf das USB-Laufwerk und klicken Sie auf die Datei **unattended_instal
 Es erscheit eine Maske in der Sie Ihre Einstellungen eingeben können:
 ![Screenshot - Unbeaufsichtigte Installation Einstellungen](../../images/rufus_unattended_settings.png?width=40% "Unbeaufsichtigte Installation Einstellungen")
 
-Setzen Sie das Häkchen bei **show output during installation via COM port** damit die bei der unbeaufichtigten Installation der mobydick über den COM Port die Installation überwachen können.
+Setzen Sie das Häkchen bei **show output during installation via COM port** damit Sie bei der unbeaufichtigten Installation der mobydick über den COM Port die Installation überwachen können.
 Klicken Sie zum Abschluss auf **Generate**. Nach dem Auswurf des USB-Sticks steht dieser für die Installation zur Verfügung.
 
 {{% notice note %}}
@@ -91,7 +91,7 @@ Bitte beachten Sie, dass eine unbeaufsichtigte Installation auf einer miniApplia
 #### Vorbereitung
 
 Laden Sie ein mobydick ISO-Abbild unter [https://www.pascom.net/de/download/](https://www.pascom.net/de/download/ "mobydick ISO downloaden") herunter oder verwenden Sie Ihr gesichertes Backup (appliance.iso, mindestens mobydick Version 7.01.00).
-Am einfachsten ist den USB-Stick mit Hilfe eine vorhandenen mobydick Servers zu erstellen. Sie können aber auch einen beliebigen Linux-Rechner auf dem syslinux installiert ist verwenden.
+Am einfachsten ist den USB-Stick mit Hilfe eines vorhandenen mobydick Servers zu erstellen. Sie können aber auch einen beliebigen Linux-Rechner auf dem syslinux installiert ist verwenden.
 
 Kopieren Sie das ISO-Abbild auf eine mobydick 6 oder 7 nach /etc/admin/ und loggen Sie sich per ssh ein.
 
@@ -148,7 +148,7 @@ Nun muss der USB-Stick formatiert und gemountet werden:
     mkfs.msdos -I /dev/DEVICE
     mount /dev/DEVICE /tmp/usb/
 
-Kopieren Sie die Daten auf den USB-Stick erstellen Sie die Booloader-Konfiguration:
+Kopieren Sie die Daten auf den USB-Stick und erstellen Sie die Booloader-Konfiguration:
 
     cp -arv /tmp/iso/. /tmp/usb/
     cp /tmp/usb/isolinux.cfg /tmp/usb/syslinux.cfg

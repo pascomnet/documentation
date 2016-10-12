@@ -44,9 +44,9 @@ Da verschiedene Ämter-Typen unterschiedliche Variablen benötigen finden Sie im
 |**Internationale Vorwahl**|Die Ziffer die vorangestellt werden muss um im Festnetz eine internationale Nummer (Ausland) zu erreichen. Im Normalfall ist das die *00*.|
 |**Nationale Vorwahl**|Die Ziffer die vorangestellt werden muss um im Festnetz eine nationale Nummer (Nummer mit Ortsvorwahl) zu erreichen. Im Normalfall ist das die *0*.|
 |**Länderkennung**|Geben Sie hier die Landeskennzahl für das Land an in dem sich das Amt befindet. Für Deutschland z. B. 49. Durch die IP-Ämter ist es möglich, dass sich die mobydick zwar in Deutschland befindet jedoch über das Internet ein Amt in der Schweiz nutzt. Geben Sie hier immer die Landeskennzahl an in dem sich das Amt befindet, nicht den Standort der Anlage.|
-|**Ortsnetzkennzahl**|Tragen Sie die Ortskennzahl bzw. Ortsvorwahl ohne führende 0 ein. Für München z. B. 89 statt 089.|
+|**Ortskennzahl**|Tragen Sie die Ortskennzahl bzw. Ortsvorwahl ohne führende 0 ein. Für München z. B. 89 statt 089.|
 |**Stammnummer**|Das ist die Basisnummer Ihres Telefonanschusses.|
-|**Präfix eing. Nummer**|Ist eine beliebige Ziffer, die bei eingehenden Telefonanrufen über dieses Amt vorangestellt wird. Wenn Sie hier eine 0 eingeben erscheint beispielsweise in der Anruferliste von IP-Telefonen dann nicht die 0172123123 sondern die 00172123123. Dadurch können Sie direkt aus der Anruferliste wieder über das selbe Amt zurückrufen.|
+|**Präfix eing. Nummer**|Ist eine beliebige Ziffer, die bei eingehenden Telefonanrufen über dieses Amt vorangestellt wird. Wenn Sie hier eine 0 eingeben erscheint beispielsweise in der Anruferliste von IP-Telefonen dann nicht die 0172123123 sondern die 00172123123. Dadurch können Sie direkt aus der Anruferliste wieder über das selbe Amt zurückrufen.|
 |**Anzahl der Durchwahlstellen**|Anzahl der Stellen der Benutzer-Durchwahlen. (NICHT die Anzahl der Nummern im Rufnummernblock!)|
 |**Durchwahl der Zentrale**|Geben Sie hier an, aus welche interne Durchwahl die erste Nummer Ihres Rufnummernblocks (meistens die 0) abgeworfen werden soll.|
 |**Telefonbuchabfrage**|Wählen Sie hier **Ja** wird die mobydick versuchen jeden eingehenden Anruf über dieses Amt im zentralen Telefonbuch aufzulösen und bei Erfolg den Namen des Anrufers im Telefondisplay präsentieren. Dies gilt nur für IP-Endgeräte.|
@@ -70,4 +70,22 @@ Da verschiedene Ämter-Typen unterschiedliche Variablen benötigen finden Sie im
 
 ### Rufregeln
 
-Beim Bearbeiten einer Amtsvorlage wurden bereits automatisch
+Auf der mobydick unterscheidet man Rufregeln für eingehende und ausgehende Rufe.
+
+* Die eingehenden Regeln werden für einkommende Anrufe verwendet. Sie legen fest, auf welche interne Durchwahl eine von extern erreichbare Rufnummer abgeworfen wird, z. B. bei welchem Benutzer oder bei welchem Team es klingeln soll.
+* Mit ausgehenden Regeln legt man fest, welche Rufnummer dem Angerufenen signalisiert wenn man ihn mit einer bestimmten Durchwahl anruft.
+
+Beim Bearbeiten und Speichern einer Amtsvorlage wurden bereits automatisch zwei eingehende und eine ausgehende Rufregel angelegt.
+
+|eingehende|Rufregel|
+|---|---|
+|**Zentrale**|Diese Regel gilt für die erste Nummer im Rufnummern Block. In den meisten Fällen ist dies die Zentrale|
+|**Durchwahl**|Diese Regeln gibt an, dass jede Durchwahl von extern direkt erreichbar ist.|
+
+|ausgehende|Rufregel|
+|---|---|
+|**Standard**|Durch diese Regel wird beim Anruf nach extern die Rufnummer mit der Durchwahl des Anrufers signalisiert.|
+
+#### Eingehende Rufe
+#### Ausgehende Rufe
+#### Asterisk Dialplan Pattern
