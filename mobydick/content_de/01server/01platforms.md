@@ -136,7 +136,7 @@ mobydick ist für den Betrieb in virtuellen Maschinen optimiert. Dabei fahren wi
 |   |< 10 Benutzer|< 50 Benutzer|< 250 Benutzer|< 500 Benutzer|< 1000 Benutzer|
 |---|---|---|---|---|---|
 |**CPU (x86)**|1 Core| 1 Core|1 Core| 2 Core|4 Core|
-|**RAM**|1 GB|2 GB |	4 GB            |8 GB           |16 GB          |
-|**Festplatte\***|   16 GB       |32 GB          |64 GB	            |128 GB	        |256 GB         |
+|**RAM**|1 GB|2 GB |4 GB|8 GB|16 GB|
+|**Festplatte\***|16 GB|32 GB|64 GB|128 GB|256 GB|
 
 **\*** Die Berechnung der Festplattenkapazität geht von einer durchschnittlichen Nutzung aus. Insbesondere die Mitschnitte von Gesprächen können Ihren Platzbedarf massiv beeinflussen. Rechnen Sie hier bitte mit 1 MB Platzbedarf pro 10 Minuten Gesprächsmitschnitt zusätzlich.  
