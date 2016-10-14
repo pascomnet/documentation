@@ -9,10 +9,10 @@ canonifyurls = true
 [params]
 
     # basurlde Link zur Startseite der Doku (bei der Deutschen Doku immer auf den ersten Artikel verlinken | bei der Englischen Doku immer Link ohne ersten Artikel)
-    baseurlde = "https://www.pascom.net/en/documentation/developer"
+    baseurlde = "https://www.pascom.net/en/documentation/developer/introduction/"
 
     # baseurlen Notwendig für den Umschalter in die Englische Wiki
-    baseurlen = "https://www.pascom.net/en/documentation/developer"
+    baseurlen = "https://www.pascom.net/en/documentation/developer/introduction/"
 
     # lang Variable damit der HMTL Header auch de oder en anzeigt
     lang = "en"
