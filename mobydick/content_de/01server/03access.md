@@ -9,7 +9,7 @@ description: Erfahren Sie, wie Sie Zugriff auf Ihre mobydick erhalten und die Be
 linken: /server/
 url: /server/mobydick-zugriff/
 prev: /server/server-installieren/
-next: /server/netzwerk-konfigurieren/
+next: /server/lizenzen-verwalten/
 weight: 13
 toc: true
 ---

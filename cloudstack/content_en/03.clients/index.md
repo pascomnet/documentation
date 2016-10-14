@@ -1,6 +1,6 @@
 ---
 chapter: true
-prev: /components/mobydick-instance/
+prev: /components/mobydick-instances/
 next: /mobydick-clients/general-information/
 title: mobydick Clients
 weight: 0

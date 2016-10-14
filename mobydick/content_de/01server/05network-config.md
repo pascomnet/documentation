@@ -8,7 +8,7 @@ keywords:
 description: Es gibt mehrere Möglichkeiten wie Sie mobydick in Ihr Netzwerk integrieren können.
 linken: /server/network-konfiguration/
 url:  /server/netzwerk-konfigurieren/
-prev: /server/mobydick-zugriff/
+prev: /server/lizenzen-verwalten/
 next: /server/dienste/
 weight: 15
 toc: true

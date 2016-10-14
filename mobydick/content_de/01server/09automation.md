@@ -7,7 +7,7 @@ keywords:
 description: Mit Cronjobs können Sie in Ihrer mobydick für einige Aufgaben Zeitpläne hinterlegen.
 linken: /server/automation/
 url: /server/automasierung/
-prev: /server/sicherung/
+prev: /server/update/
 weight: 19
 toc: true
 

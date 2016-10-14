@@ -4,8 +4,8 @@ keywords:
 description:
 url:  /trunks/trunk-config/
 weight: 11
-next: /trunks/trunk-fallover
 toc: true
+prev: /trunks/
 
 ---
 

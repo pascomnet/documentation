@@ -1,14 +1,14 @@
 ---
 title: aastra DECT System anbinden
-keywords: 
+keywords:
     - aastra DECT System anbinden
     - Multizellen DECT System
     - Mitel DECT System anbinden
     - VoIP DECT
-description: 
+description:
 url:  /endgeraete/aastra-dect-system-anbinden/
 linken: /devices/integrate-aastra-dect-system/
-prev: /endgeraete/analog-und-isdn-geraete/
+prev: /endgeraete/beliebiges-ip-geraet-einrichten/
 weight: 48
 toc: true
 
@@ -18,7 +18,7 @@ toc: true
 
 Ein Aastra-SIP-Dect System besteht aus mindestens einer und bis zu 254 Basisstationen. Die Basisstationen werden an das IP-Telefonnetzwerk angeschlossen und kommunizieren per SIP mit der mobydick. Zusätzlich gleichen sich die Basen per Funk (DECT) ab um ein Wechseln der Basis während des Telefonates zu ermöglichen. Dabei muss nicht jede Basis jede andere Basis per Funk erreichen können aber alle Basen müssen miteinander verkettet sein. Es dürfen keine Inseln entstehen.
 
-Eine Basis übernimmt die Verwaltung der Benutzer und die Verbindung zur mobydick. Diese Basis ist der Master. Der Master startet die Software **OpenMobility Manager** kurz **OMM**. Diese dient zur Verwaltung und hält eine Weboberfläche bereit. Fällt der Master aus kann dessen Arbeit von einer anderen, zuvor festgelegten, Failover-Basis übernommen werden. 
+Eine Basis übernimmt die Verwaltung der Benutzer und die Verbindung zur mobydick. Diese Basis ist der Master. Der Master startet die Software **OpenMobility Manager** kurz **OMM**. Diese dient zur Verwaltung und hält eine Weboberfläche bereit. Fällt der Master aus kann dessen Arbeit von einer anderen, zuvor festgelegten, Failover-Basis übernommen werden.
 
 {{% notice note %}}
 Die Basen haben kein Netzteil sondern beziehen den Strom über PowerOverEthernet (POE). Klären Sie vor der Installation ab ob Ihnen ein POE fähiger Switch zur Verfügung steht.
@@ -80,7 +80,7 @@ Dazu müssen Sie die IPEI des Gerätes eintragen. Die IPEI dient zur eindeutigen
 
 Die IPEI können Sie auf der Geräterückseite ablesen. Leider müssen Sie dazu den Akku entfernen, da die IPEI auf einem Aufkleber unter dem Akku steht. Alternativ können Sie auch im Info Menü des Telefones die IPEI abfragen.
 
-Nach diesem Schritt stehen Ihnen die Telefone, wie gewohnt, als Geräte in mobydick zur Verfügung und können den jeweiligen Benutzern bzw. Arbeitslätzen zugeteilt werden. 
+Nach diesem Schritt stehen Ihnen die Telefone, wie gewohnt, als Geräte in mobydick zur Verfügung und können den jeweiligen Benutzern bzw. Arbeitslätzen zugeteilt werden.
 
 ### Basisstationen in Betrieb nehmen
 
@@ -104,7 +104,7 @@ Anstatt die Telefone und die andere Basen per Hand im OMM anzulegen laden Sie di
 Die RFP Konfiguration enthält das Setup aller Basisstationen und kann im OMM unter dem Punkt **Radio Fixed Parts > Import** importiert werden.
 
 Die Mobilteil Konfiguration enthält alle angelegten Mobilteile und kann im OMM unter dem Punkt **Portable Parts > Import** importiert werden.
- 
+
 #### Vorgehensweise beim Importieren der Daten:
 
 Wenn man im entsprechenden Menüpunkt der OMM-Konfiguration auf Import geklickt hat, wird man zu einer neuen Maske weitergeleitet. Dort muss man folgendermaßen vorgehen:

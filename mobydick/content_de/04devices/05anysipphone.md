@@ -2,10 +2,10 @@
 url:  /endgeraete/beliebiges-ip-geraet-einrichten/
 linken: /devices/
 prev: /endgeraete/ip-tischtelefone/
-next: /endgeraete/analog-und-isdn-geraete/
+next: /endgeraete/aastra-dect-system-anbinden/
 weight: 45
 title: Beliebiges IP Endgerät einrichten
-keywords: 
+keywords:
     - Softphone integrieren
     - IP Endgerät einrichten
     - grandstream
@@ -32,5 +32,3 @@ Diesen **Benutzernamen** und **Passwort** verwenden Sie dann um das Gerät an de
 ![Screenshot - Softphone Bria anmelden](../../images/device_softphone_bria_settings.png?width=50% "Softphone Bria anmelden")
 
 Als nächstes fahren Sie mit Benutzer und Arbeitsplätze anlegen fort.
-
-

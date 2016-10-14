@@ -5,7 +5,7 @@ keywords:
 description:
 linken: /server/
 url: /server/lizenzen-verwalten/
-prev: /server/server-installieren/
+prev: /server/mobydick-zugriff/
 next: /server/netzwerk-konfigurieren/
 weight: 14
 toc: true
