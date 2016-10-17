@@ -78,69 +78,81 @@ Anschließend müssen Sie das Formular zur Schnellanlage ausfüllen:
 |**Anmeldung**|Diese Einstellung legt fest wie sich der Benutzer z. B. an seinem mobydick Client anmeldet. Zur Auswahl stehen <br>* *mobydick*, wenn das Passwort in der mobydick gespeichert wird <br>* *Extern/LDAP*, wenn die Authentifizierung über ein mobydick-fremdes System stattfindet <br>* *Keine*|
 |**Passwort**|Muss mindestens 8 Stellen haben. Das Passwort wird zur Anmeldung im Client verwendet. Der Benutzer kann es im Client ändern.|
 |**Pin**|Muss mindestens 4 Stellen haben und sollte nur Zahlen enthalten, da diese Pin für die Anmeldung am Telefon verwendet wird|
-|**Fax-Durchwahl**||
-|**EMail-Adresse**||
-|**Bevorzugte Sprache**||
-|**Voicemailbox verwenden**||
-|**mobydick Softphone aktivieren**||
+|**Fax-Durchwahl**|Gibt man hier eine Nummer an wird für diesen Benutzer automatisch ein virtuelles Faxgerät angelegt.|
+|**EMail-Adresse**|Diese E-Mail-Adresse wird verwendet um dem Benutzer eingehende Faxe und Voicemails zuzusenden.|
+|**Bevorzugte Sprache**|In dieser Sprache wird der Benutzer Systemansagen hören.|
+|**Voicemailbox verwenden**|Mit dieser Einstellung kann man dem Benutzer eine eingene Voicemailbox aktivieren und eine Aktion anlegen.<br> * *Nicht verwenden*: Es wird keine Aktion hinterlegt, die Voicemailbox kann später angelegt werden,<br> * *Für externe Gespräche*: es wird eine Aktion Extern/Nachher angelegt,<br> * *Für interne Gespräche*: es wird eine Aktion Intern/Nachher angelegt,<br>* *Für alle Gespräche*: es werden für Intern/Nachher und Extern/Nachher je eine Aktion hinterlegt.|
+|**mobydick Softphone aktivieren**|Legt dem Benutzer automatisch ein mobydick Softphone an.|
 
+Sind Sie mit dem Formular fertig, klicken Sie auf
 
+* **Speichern** um zu speichern und zur Benutzerliste zurück zu kehren.
+* **Speichern und Details** um zu speichern und den Benutzer weiter zu Bearbeiten.
+* **Speichern und nächster** um diesen Benutzer zu speichern und einen weiteren anzulegen.
 
-Der **Anmeldename** (bestehend aus Kleinbuchstaben!) und das **Passwort** werden vom Benutzer benötigt um sich am mobydick Client bzw. an der mobydick Weboberfläche anmelden zu können. Die Pin ist numerisch. Dadurch lässt sie sich einfach am Telefon eingeben und wird z.B. zur Abfrage der Voicemailbox oder zum Anmelden an einem Arbeitsplatz per Telefon usw. verwendet.
+#### Benutzer anlegen über den .xlsx-Import
 
-Den **Anzeigenamen** sehen andere Teilnehmer wenn sie von diesem Benutzer angerufen werden.
+Für die Erstinstallation eignet es sich die Benutzer aus eine .xlsx-Datei zu importiern. Die Datei mit dem Namen Benutzerimport.xmls finden Sie unter `Appliance` > `Importieren` >`Benutzerimport`. Sie könnern zuerst die Vorlage herunterladen, ausfüllen und wieder importieren. Achten Sie bitte auf die Hinweise in der Datei.
 
-Unter der **Durchwahl** ist dieser Benutzer intern erreichbar.
+Alternativ können Sie auch den *Erweiteren Import* verwenden (`Appliance` > `Importieren` >`Erweiterter Import`). Hier können Sie bereits beim Anlegen der Benutzer weitere Einstellungen vornehmen:
 
-Gibt man unter **Fax-Durchwahl** eine Nummer an wird für diesen Benutzer automatisch ein virtuelles Faxgerät angelegt.
+* IP-Telefone zuweisen
+* mobydick Soptphone zuweisen
+* Aktionsvorlagen zuweisen
+* Arbeitsplätze anlegen
+* ein globales Telefonbuch erstellen
+* Kurzwahlen definieren
 
-Die **EMail-Adresse** wird verwendet um dem Benutzer eingehende Faxe und Voicemails zuzusenden.
+Beachten Sie bitte auch hier auf die Hinweise in der Datei.
 
-Für den Benutzer kann eine **bevorzugte Sprache**, deutsch oder englisch, gewählt werden. Benachrichtigungen von Faxen oder Voicemailnachrichten werden in der eingestellten Sprache versendet. Ebenfalls hört man die Menüansagen am Telefon (z. B. Abfrage der Voicemailbox) in der eingestellten Sprache.
+{{% notice warning %}}
+Verwenden Sie den Benutzerimport nur einmalig bei der Erstkonfiguration Ihrer mobydick. Weitere Benutzer müssen Sie manuell anlegen. Erneute Verwendung des Benutzerimports überschreibt die bisher angelegten Benutzer.
+{{% /notice %}}
 
-Jedem Benutzer wird automatisch eine Voicemailbox zugeteilt. Standardmäßig existiert diese zwar, Anrufer werden aber nicht auf die Voicemailbox abgeworfen. Dieses Verhalten kann man durch setzten der Option **Voicemailbox verwenden** anpassen:
+### Benutzerrechte im Web-UI
 
-|Parameter | Bedeutung |
-|----------|-----------|
-|Nicht verwendet |(Standard) Bei dieser Einstellung wird kein Anrufer auf die Mailbox abgeworfen|
-|Für externe Gespräche|Eingehende **externe** Anrufer werden, falls der Benutzer telefoniert oder der Anruf nicht entgegengenommen wird, auf die Voicemailbox abgeworfen; Dazu werden automatisch Aktionen **nachher extern** angelegt|
-|Für interne Gespräche|Eingehende **interne Anrufer** werden, falls der Benutzer telefoniert oder der Anruf nicht entgegengenommen wird, auf die Voicemailbox abgeworfen; Dazu werden automatisch Aktionen **nachher intern** angelegt|
-|Für alle Gespräche| Alle Anrufer werden, falls der Benutzer telefoniert oder der Anruf nicht entgegengenommen wird, auf die Voicemailbox abgeworfen; Dazu werden automatisch Aktionen **nachher extern und intern** angelegt|
-
-Aktivieren Sie das **mobydick-Softphone** wird für diesen Benutzer automatisch ein mobydick Software Telefon mit angelegt. Dadurch kann der Benutzer den [mobydick Client](test) direkt als Telefon benutzen.
-
-Nach dem Speichern öffnet sich die Detailmaske:
-![Screenshot - Benutzer verwalten in der mobydick](../../images/benutzer_verwalten.png?width=90% "Benutzer verwalten")
-
-In dieser Maske sehen Sie die selben Basisdaten wie zuvor eingegeben. Zusätzlich haben Sie die Möglichkeit eine **CID Nummer** zu definieren. Standardmäßig sieht ein interner Teilnehmer der von einem Benutzer angerufen wird dessen Durchwahl im Telefon-Display. Ist **CID Nummer** ausgefüllt, wird die Durchwahl durch diese Nummer ersetzt.
-
-In unserem Beispiel kann es sein, dass Chef Max intern nicht seine eigene Durchwahl sondern die seiner Sekretärin Maria übermitteln möchte. Dann kann hier z. B. die 100 als **CID Nummer** eingetragen werden. Ruft jemand die 100 zurück landet er bei der Nebenstelle von Maria. Max bleibt weiterhin unter der Durchwahl 120 erreichbar.
-
-### Web-UI Rechte
-
-Standardmäßig kann nur der Administrator zur Administration der mobydick in die Weboberfläche einloggen. Zusätzlich können Sie aber an jeden beliebigen Benutzer Administrationsrechte vergeben. Aktuell stehen Ihnen fix drei Berechtigungsstufen zur Verfügung:
+Standardmäßig kann nur der Administrator zur Administration der mobydick in die Web-UI einloggen. Zusätzlich können Sie aber an jeden beliebigen Benutzer Administrationsrechte vergeben. Aktuell stehen Ihnen fix vier Berechtigungsstufen zur Verfügung:
 
 |Rolle | Berechtigungen |
 |------|----------------|
-|System Administrator|Die höchste Stufe. Der System Administrator hat alle verfügbare Rechte.|
-|Administrator| Wie System Administrator jedoch **ohne**: </br>- mobydick Update </br>- Full ISO Backup </br>- Reboot </br>- Netzwerk-Konfiguration</br>- Cluster Management|
-|PBX-Manager|Wie Administrator jedoch **ohne**: </br>- Verwaltung von Gateways/Erweiterungskarten/Ämter </br>- Restart von Diensten </br>- Datenbank Restore </br>- Endgeräte Firmware Rollout </br>- mobydick Connector </br>- Cronjob Verwaltung|
-|Phonebook Manager|	Der Benutzer kann das mobydick-Telefonbuch bearbeiten.|
+|System Administrator|Die höchste Rechte-Stufe. Der System Administrator hat alle verfügbaren Rechte.|
+|Administrator| Rechte wie der System-Administrator jedoch **ohne**: <br> - mobydick Update <br> - Sicherung des kompletten Systems <br> - Dienste-Einstellungen <br> - mobydick herunterfahren/neustarten <br> - Netzwerk-Konfiguration <br> - Cluster Management|
+|Telefonie Verwaltung|Rechte wie der Administrator jedoch **ohne**: <br> - Verwaltung von Gateways/Ämter <br> - Restart von Diensten <br>- Datenbank-Backup und Wiederherstellung <br> - Endgeräte-Firmware ausrollen <br> - mobydick Connector <br>- Cronjob-Verwaltung|
+|Telefonbuch Verwaltung|Der Benutzer kann das mobydick Telefonbuch bearbeiten.|
 
 ### Voicemailbox
 
-Hier können Sie unter **Voicemails speichern** wählen ob Voicemails auf der Festplatte gespeichert werden sollen. Sobald die eine Voicemail Email angeben werden neue Voicemails automatisch an diese Adresse versendet.
+Jedem Benutzer wird automatisch eine persönliche Voicemailbox zugeteilt. Standardmäßig existiert diese zwar, Anrufer werden aber noch nicht auf die Voicemailbox abgeworfen.
 
-Unter **Überwachte Voicemailbox** wählen Sie welche Mailbox der Benutzer per mobydick Client, Mobility Client und IP-Telefon verwalten soll. Details zum Konzept siehe Voicemailbox.
+Zuerst muss festgelegt werden, wie mit den Voicemails umgegangen werden soll. Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Basisdaten` finden Sie folgende Einstellungsmöglichkeiten:
+
+|Einstellung|Beschreibung|
+|---|---|
+|**Voicemails speichern**|**JA** bedeutet, die Voicmails werden nach dem Versenden oder nachdem sie abgehört werden auf der mobydick gespeichert bleiben. Durch einen Cronjob können ältere Voicemails gelöscht werden.<br>**NEIN** bedeutet, dass die Voicemails nach dem Versenden per E-Mail von der mobydick gelöscht werden. Diese Einstellung ist zu empfehlen, da Voicemails viel Speicherplatz verwenden.|
+|**Voicemail Email**|An diese E-Mail-Adresse werden die Voicmails verschickt.|
+|**Überwachte Voicemailbox**|Als Standardeinstellung wird die eigene Voicemailbox überwacht. Hier kann man die Voicemailbox eines anderen Benutzers auswählen.|
+
+Anschließend muss die Voicemailbox als Aktion hinterlegt werden, falls das nicht schon bei der Benutzerlanlage geschehen ist.
+
+### Alternative CallerID (CID Nummer)
+
+Beim Anlegen erhält der Benutzer eine eigene Durchwahl unter der er angerufen werden kann. Im Normalfall wird einem anderen Teilnehmer diese Durchwahl auch angezeigt, wenn er von dem Benutzer angerufen wird. Wird dies nicht erwünscht, so kann unter Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Basisdaten` eine alternative **CID Nummer** angegeben werden.
+
+{{% notice tip %}}
+Soll ein Benutzer bei externen Anrufen eine andere Durchwahl als seine eigene signalisieren, konfigurieren Sie das bitte im Amt unter Ausgehende Rufe.
+{{% /notice %}}
 
 ### Telefonbuch
 
 Standardmäßig erhält jeder Benutzer einen Eintrag im **Telefonbuch** mit seinem **Anzeigenamen** und seiner **Durchwahl**. Hier hat man die Möglichkeit weitere Daten einzugeben. Der Eintrag ist dann auf mobydick Client, Mobility Client und IP-Telefonen verfügbar.
 
-Es ist auch möglich den Telefonbucheintrag zu **deaktivieren**. Eventuell ist es gewünscht, dass der Eintrag des Chefs nicht im Telefonbuch erscheinen soll. Details siehe Telefonbücher pflegen. <!-- FixMe -->
+Es ist auch möglich den Telefonbucheintrag zu **deaktivieren**, falls nicht erwünscht ist, dass mache Einträge nicht für alle mobydick Benutzer sichtbar sind.
 
-### Faxgerät
-Teilen Sie hier dem Benutzer ein persönliches Faxgerät zu. Details siehe [Virtueller Faxserver]({{< ref "01faxserver.md" >}} "Virtuellen Faxserver anlagen")
+Einstellungen zum Benutzer-Telefonbucheintrag können Sie unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Telefonbuch` vornehmen.
+
+### Virtuelles Faxgerät
+
+Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Faxgerät` können Sie dem Benutzer ein virtuelles Faxgerät anlegen. Das virtuelle Faxgerät benötigt eine **E-Mail-Adresse**, über die Faxe, oder Bestätigungen über gesendete Faxe empfangen werden können und eine **Durchwahl**.
 
 ### Endgerät
 Teilen Sie dem Benutzer fix persönliche Endgeräte zu.
