@@ -62,6 +62,15 @@ phonebook.PhonebookList
           <email>markus.meyer@mobydick.local</email>
           <displayname>Markus Meyer</displayname>
           <organisation/>
+          <LabelList>
+              <Label >
+                    <id>MDC_LABEL-1</id>
+                    <displayName>VIP</displayName>
+                    <type>generic</type>
+                    <value>1</value>
+                    <visible>true</visible>
+              </Label>
+           </LabelList>
         </PhonebookEntry>
         ...
         ...

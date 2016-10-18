@@ -153,6 +153,15 @@ A normal user only gets the base.ChannelEvents which directly affect the authent
         <device>SIP xlite1 [Entwicklung1]</device>
         <fromName/>
         <fromNumber/>
+        <LabelList>
+              <Label >
+                    <id>MDC_LABEL-1</id>
+                    <displayName>VIP</displayName>
+                    <type>generic</type>
+                    <value>1</value>
+                    <visible>true</visible>
+              </Label>
+         </LabelList>
       </ChannelEvent>
     </cmd>
     </message>
