@@ -1,15 +1,15 @@
 ---
 title: Teams bilden
-keywords: 
+keywords:
     - Teams bilden
-    - Warteschlangen 
+    - Warteschlangen
     - Rufgruppen
     - Roaming User
     - Call Center Teams
-description: Teams in mobydick sind vergleichbar mit Warteschlangen. Rufstrategien helfen Ihnen Anrufe gezielt zu steuern. 
-url: /benutzer/teams-bilden/
+description: Teams in mobydick sind vergleichbar mit Warteschlangen. Rufstrategien helfen Ihnen Anrufe gezielt zu steuern.
+url: /benutzer/teams/
 prev: /benutzer/benutzer-und-arbeitsplaetze/
-<!-- next: /benutzer/erweiterte-team-funktionen/-->
+next: /benutzer/phonebook/
 weight: 23
 toc: true
 ---
@@ -45,7 +45,7 @@ Anrufer werden nacheinander in der Warteschlange **eingereiht** und bekommen auf
 
 |Strategie|	Asterisk Bezeichnung|	Beschreibung|Rufgruppe|Warteschlange|
 |---------|---------------------|--------------|:--------:|:------------:|
-|alle| ringall|	Alle Mitglieder werden gleichzeitig gerufen.| <i class="fa fa-check-square" aria-hidden="true"></i>  |  <i class="fa fa-check-square" aria-hidden="true"></i>| 
+|alle| ringall|	Alle Mitglieder werden gleichzeitig gerufen.| <i class="fa fa-check-square" aria-hidden="true"></i>  |  <i class="fa fa-check-square" aria-hidden="true"></i>|
 |nacheinander|	linear	|Die Mitglieder werden nach der Zuweisungsreihenfolge gerufen. Achtung: Dynamische Mitglieder verändern durch Ein- und Ausbuchen aus dem Team die Position.|  <i class="fa fa-check-square" aria-hidden="true"></i>| <i class="fa fa-check-square" aria-hidden="true"></i> |
 |längste zurück| lastrecent	|Das Mitglied welches am längsten keinen Anruf entgegen genommen hat kommt als nächstes dran. Achtung: Dynamische Mitglieder setzten durch Ein- und Ausbuchen aus dem Team alle Zähler zurück und sind somit nach dem Einbuchen automatisch immer derjenige der am längsten keinen Anruf bekommen hat.|  |<i class="fa fa-check-square" aria-hidden="true"></i>  |
 |wenigsten Anrufer|	fewestcalls	|Das Mitglied welches am wenigsten Anrufe angenommen hat kommt als nächstes dran. Diese Einstellung berücksichtig nicht die Anrufdauer. Wenn ein Mitglied beispielsweise 5 mal eine Minute lang telefoniert und ein anderes 2 mal eine Stunde ist trotzdem letzteres an der Reihe. Dynamische Mitglieder setzten durch Ein- und Ausbuchen aus dem Team alle Zähler zurück und sind somit nach dem Einbuchen automatisch immer derjenige der am wenigsten Anruf bekommen hat.|  | <i class="fa fa-check-square" aria-hidden="true"></i> |
@@ -169,13 +169,13 @@ mobydick bietet den Benutzern die Möglichkeit sich dynamisch an Warteschlagen a
 
 Ist für die Warteschlange ein Einbuchcode *(Warteschlange -> Tab Erweitert -> Einbuchcode)* hinterlegt kann sich ein Benutzer,  der dynamisches Mitglied in diesem Team ist, an dieser an- und abmelden.
 
-Wenn Sie als Einbuchcode z.B. ***80** eintragen kann sich Peter, der die Durchwahl **21** hat durch Wählen von ***8021** an diesem Team an- und abmelden. **Alternativ** können Sie sich immer, egal ob etwas im Einbuchcode eingetragen ist oder nicht, per **Systemdurchwahl** ***99Warteschlangendurchwahl#Benutzerdurchwahl** an- und abmelden. Z.B. ***99800#21** wenn sich Peter mit der Durchwahl **21** an der Warteschleife mit der Durchwahl **800** anmelden möchte.
+Wenn Sie als Einbuchcode z.B. \***80** eintragen kann sich Peter, der die Durchwahl **21** hat durch Wählen von \***8021** an diesem Team an- und abmelden. **Alternativ** können Sie sich immer, egal ob etwas im Einbuchcode eingetragen ist oder nicht, per **Systemdurchwahl** \***99Warteschlangendurchwahl#Benutzerdurchwahl** an- und abmelden. Z.B. \***99800#21** wenn sich Peter mit der Durchwahl **21** an der Warteschleife mit der Durchwahl **800** anmelden möchte.
 
 Der Vorteil des Einbuchcodes im Gegensatz zur Systemdurchwahl ist, dass Sie den Einbuchcode auch auf die **LED-Nebenstellentaste** eines IP-Telefones legen können. Somit leuchtet die **LED** wenn der Benutzer in der Warteschlange angemeldet ist und erlischt sobald sich dieser abmeldet.
 
 Alternativ kann sich ein Benutzer auch per mobydick Client in der Team Anzeige durch das + und - Symbol an einem Warteschlangen Team ab- und anmelden:
 
-Auch besteht die Möglichkeit einen Benutzer aus allen Warteschleifen, in den er Mitglied ist, auf einmal an- und abzumelden. Dazu gibt es den TastenCode ***99#Benutzerdurchwahl**.
+Auch besteht die Möglichkeit einen Benutzer aus allen Warteschleifen, in den er Mitglied ist, auf einmal an- und abzumelden. Dazu gibt es den TastenCode \***99#Benutzerdurchwahl**.
 ![Screenshot - Dynamisch an- und abmelden](../../images/team_einbuchen.png?width=30% "Dynamisch an- und abmelden in Warteschlagen")
 
 #### Pausieren und Pausengründe
@@ -197,7 +197,7 @@ Das Pausieren kann im mobydick Client in der Team Anzeige durch das Pausensymbol
 ![Screenshot - Pausengründe im mobydick Client](../../images/team_pause_detail.png?width=30% " Pausengründe im mobydick Client")
 
 Alternativ lassen Sich die Pausengründe pro Mitglied auch per Tastencode-Eingabe am Telefon steuern.
-Der Tastencode setzt sich wie folgt zusammen: ***99Warteschlangendurchwahl#Benutzerdurchwahl#PausengrundKennung**
+Der Tastencode setzt sich wie folgt zusammen: \***99Warteschlangendurchwahl#Benutzerdurchwahl#PausengrundKennung**
 
 ### Pickup Benachrichtigungen
 
@@ -217,3 +217,62 @@ Folgende Einstellungen sind möglich:
 |Nicht verfügbare Agenten und Nichtmitglieder|Agenten die nicht im Team angemeldet sind, Agenten die pausiert sind und Nichtmitglieder des Teams erhalten eine Benachrichtigung. Agenten die feste Mitglieder des Teams sind und flexible Agenten die gerade angemeldet sind erhalten keine Benachrichtigungen.|
 |Nur Nichtmitglieder|Nur Nichtmitglieder des Teams erhalten eine Benachrichtigung.|
 |Gesamte Pickup-Gruppe|Die gesamte Pickup-Gruppe bekommt Benachrichtigungen.|
+
+## Rollen und damit verbundene Rechte
+
+### Übersicht
+Benutzer, Geräte, Arbeitsplätze oder Teams können Mitglieder in einer oder mehreren Rollen sein. Der Rolle selbst können Eigenschaften und Rechte zugeteilt werden.
+
+Rollen steuern "Telefonie-Relevante" Eigenschaften und Rechte wie beispielsweise die Erlaubnis Gespräche anderer Benutzer heranzuholen, usw. und können außerdem nicht nur Benutzer sondern auch Geräte, Arbeitsplätze oder Teams als Mitglieder enthalten.
+
+### Spezielle Rolle "Alle"
+Es gibt eine spezielle Rolle mit dem Namen **All Users**. Diese Rolle ist standardmäßig allen Benutzern, Geräten, Arbeitsplätzen und Teams zugeteilt und kann auch nicht entzogen werden.
+
+### Abteilungsweise Rollen erstellen
+Ein häufiger Anwendungsfall (und unsere Empfehlung) ist es, dass man pro Abteilung oder Team eine Rolle erstellet. Z. B. ist es häufig gewünscht, dass Benutzer nur innerhalb Ihrer Abteilung Gespräche heranholen können und sich gegenseitig im mobydick Client sehen. Dazu entziehen Sie einfach der Rolle "Alle" die Eigenschaft xmpp.group und weisen dies einer neuen Rolle z. B. Support zu in der Sie dann alle Support Benutzer zu Mitgliedern machen.  
+
+### Eigenschaften und Rechte
+#### location.group
+In dieser Rolle können Benutzer und Arbeitsplätze hinzugefügt werden. An Arbeitsplätzen die einer Rolle mit dem Typ location.group angehören können sich nur Benutzer anmelden, die der selber Rolle angehören. Zu Beachten ist, dass sobald eine Rolle mit der Eigenschaft location.group erstellt wurde, für alle Benutzer und Arbeitsplätze eine solche Rolle existieren muss. Sonst können sich Benutzer ohne diese Rolle an keinem Arbeitsplatz anmelden.
+
+Auswirkung: Benutzer, Arbeitsplätze
+
+#### billing.group
+Abrechnungsgruppe des Billing Moduls. Dient zur Gruppierung der Gesprächsdaten.
+
+Auswirkung: Benutzer, Rufgruppen, Warteschlangen
+
+#### xmpp.supervisor
+Benutzer mit dieser Rolle können Gespräche aller Benutzer managen. Wichtig für Flexpanel und TAPI.
+
+Auswirkung: Benutzer
+
+#### pickup.group
+Alle direkten Mitglieder der Rolle haben das Recht, eingehende Anrufe die an ein anderes Mitglied der Gruppe gerichtet sind, heranzuholen. Dies kann dann entweder per Telefon * \*8<durchwahl> oder Client erfolgen.
+
+Auswirkung: Benutzer, Teams
+
+#### redirect.choice
+Eine Identität mit diesem Rollentyp wird nie von einer anlagenbasierten Rufumleitung umgeleitet, sondern ruft immer das direkte Ziel.
+
+Auswirkung: Benutzer
+
+#### redirect.group
+Definition einer Anlagenbasierte Rufumleitungen und Rufumleitungsgruppen.
+
+Auswirkung: Benutzer
+
+#### xmpp.group
+Alle Identitäten die eine Rolle mit dem Rollentyp xmpp.group zugewiesen haben, werden in eine XMPP shared Group eingebunden. D.H. in den Kontaktliste der Clients müssen sich diese Personen nicht mehr gegenseitig hinzufügen sondern sind sofort sichtbar. Falls Sie die xmpp.group der Rolle Alle Identitäten zuordnen, sieht im Client immer jeder jeden.
+
+Auswirkung: Benutzer
+
+## FollowMe Prinzip der mobydick
+Benutzern und Arbeitspätzen können mehrere Telefone zugewiesen werden. Die Konfiguration, welches Telefon wann und wie lange läutet, bezeichnen wir als Followme.
+![Illustration - FollowMe Prinzip mobydick](../../images/benutzer_followme.png?width=90% "Endgeräte folgen Ihnen")
+Jedem Telefon kann der Parameter **Warten** und **Läuten** in Sekunden angegeben werden.
+
+**Warten** definiert den Zeitraum zwischen einem eintreffenden Anruf und dem Zeitpunkt zu dem das Telefon zu läuten beginnen soll.  
+**Läuten** definiert wie lange das Telefon gerufen werden soll.
+
+Außerdem können sich Telefone bei internen anrufen anders verhalten als bei externen oder bei Anrufen die Sie als Agenten eines Teams erreichen. Daher gibt es die Parameter Warten und Läuten jeweils pro Telefon für **intern, extern** und **agent**.

@@ -16,7 +16,7 @@ Es gibt folgende Arten von Ämtern:
 
 |Amt| Beschreibung|
 |---|---|
-|**IP-basiert**|IP-basierte Ämter (SIP-Amter) können ohne weitere Vorbereitung angelegt werden.|
+|**IP-basiert**|IP-basierte Ämter (SIP-Ämter) können ohne weitere Vorbereitung angelegt werden.|
 |**ISDN**|Ein ISDN-Amt benötigt zur Anbindung ein Gateway (z. B. von Beronet oder Patton, siehe Artikel über ISDN- und Analog-Gateways)|
 |IAX|Das *InterAsterisk-eXchange*-Protokoll wird verwendet, um zwei Asterisk-Server miteinander zu verbinden.|
 |Analog|Ein Analog-Amt benötigt zur Anbindung ein Gateway (z. B. von Beronet oder Patton, siehe Artikel über ISDN- und Analog-Gateways). Analoge Ämter sind im deutschsprachigen Raum nicht üblich.|
@@ -108,12 +108,12 @@ Beim Bearbeiten und Speichern einer Amtsvorlage werden bereits automatisch zwei 
 |---|---|
 |**Bezeichung**|Jede Regel braucht einen eigenen Namen.|
 |**Im Client anzeigen**|Benutzen Sie mehrer Amtsholungen, können Sie entscheiden, ob diese im mobydick Client angezeigt werden sollen oder nicht. Stehen im Client keine Amtsholungen zur Auswahl, wird immer die Standardamtsholung verwendet|
-|**In-Prefix**|Der In-Prefix (auch Amtsholung genannt) bestimmt welche Ziffer vom internen Teilnehmer vorgewählt werden muss damit diese Regel generell zum Tragen kommt.|
+|**In-Prefix**|Der In-Prefix (auch Amtsholung genannt) bestimmt welche Ziffer vom internen Teilnehmer vorgewählt werden muss damit diese Regel generell zum Tragen kommt. Bei dem ausgehenden Anruf wird der In-Prefix abgeschnitten und nicht mitgewählt.|
 |**Quelle**|Definiert für welche interne Nebenstelle diese Regel gültig ist. **\*** bedeutet diese Regel gilt für alle internen Durchwahlen.|
 |**Ziel**|Hier wird defininiert für welches Ziel (die nach extern gewählte Nummer) gültig ist. **\*** bedeutet diese Regel gilt für jedes Ziel.|
 |**CIDNummer**|Diese Nummer wird dem Angerufenen signalisert.|
 |**Out-Prefix**|Dieser Prefix kann einer angerufenen Nummer beim Anruf vorangestellt werden.|
-|**Verbieten**|Falls diese Regel nicht gelten soll, wählen Sie hier ja. Als Defaultwert ist jede Regel beim Anlegen gültig.|
+|**Verbieten**|Wenn eine Regeln explizit verboten werden soll, kann dieser Wert auf *Ja* gesetzt werden, z. B. wenn nicht ins Ausland telefoniert werden darf.<br>Als Defaultwert ist jede Regel beim Anlegen erlaubt.|
 |**PIN**|Hier kann für die Verwendung der Regel eine PIN eintragen werden. Der Anrufer wird dann aufgefordert die PIN einzugeben, bevor der Anruf stattfindet.|
 |**Übertragungskapazität**|Zur Auswahl stehen hier *Sprache*, *Fax* und *Video*|
 |**Account**|Falls Sie in Ihrem Amt mehrer Accounts angelegt haben, können Sie hier wählen, über welchen Account der ausgehende Anruf gehen soll.|
@@ -172,16 +172,16 @@ Platzhalter werden durch einen Unterstrich eingeleitet.
 
 {{% notice note %}}
 **Regelgültigkeit** (Bestmatch)<br>
-Regeln werden nach der Genauigkeit ihrer Übereinstimmung und nicht nach der Reihenfolge in der Tabelle angewendet. Wenn ein Ruf die Kriterien mehrerer Regeln erfüllt, dann wird diejenige angewendet, deren Vorgaben die Merkmale des Rufes am eindeutigsten beschreiben. Eine Regel mit eng eingegrenzten Kriterien hat daher Vorrang vor einer allgemeineren Regel, die eher unspezifisch verfasst ist. Da die Reihenfolge in der Liste keine Bedeutung hat, sind nachträgliche Anpassungen leicht möglich.
+Regeln werden nach der Genauigkeit ihrer Übereinstimmung und nicht nach der Reihenfolge in der Tabelle angewendet. Wenn ein Ruf die Kriterien mehrerer Regeln erfüllt, dann wird diejenige angewendet, deren Vorgaben die Merkmale des Rufes am eindeutigsten beschreiben. Eine Regel mit eng eingegrenzten Kriterien hat daher Vorrang vor einer allgemeineren Regel, die eher unspezifisch verfasst ist. Da die Reihenfolge in der Liste keine Bedeutung hat, sind nachträgliche Anpassungen leicht möglich.<br>Die Reihenfolge für Bestmatch wird in folgender Reihenfolge geprüft: 1) In-Prefix > 2) Quelle > 3) Ziel.
 {{% /notice %}}
 
-Neben Platzhaltern können werden in Regeln auch Variablen verwendet. Die wichtigsten Variablen sind:
+Neben Platzhaltern können in Regeln auch Variablen verwendet werden. Die wichtigsten Variablen sind:
 
 * **${CALLERID(num)}** die eigene Nummer des Anrufers
 * **${EXTEN}** ist die ursprünglich vom Anrufer gewählte Nummer
 
 Beispielsweise soll die CIDNummer für jeden ausgehenden Anruf auf die Nebenstelle des Anrufers gesetzt werden. Hierfür könnten Sie natürlich für jeden internen Teilnehmer eine eigene Regel erstellen. Einfach ist es jedoch die Variable **${CALLERID(num)}** zu verwenden:  
-Der Anrufer hat die interne Durchwahl 11, und in der ausgehenden Rufregel ist 099112345${CALLERID(num)} hinterlegt. Somit wird dem Angerufenen die Nummer 09911234511 signalisiert.*
+Der Anrufer hat die interne Durchwahl 11, und in der ausgehenden Rufregel ist 099112345${CALLERID(num)} hinterlegt. Somit wird dem Angerufenen die Nummer 09911234511 signalisiert.
 
 Die Variable **${EXTEN}** beinhaltet immer die komplette vom Anrufer gewählte Nummer. Wählt ein externen Teilnehmer beispielsweise die Nummer 09911234511 um von extern die Nebenstelle 11 zu erreichen ist die komplette Nummer in der Variable gespeichert. Evtl. möchten Sie alle eingehenden Anrufe welche eine zweistellige Durchwahl wählen auf die entsprechende interne Rufnummer verbinden. In unsrem Beispiel wären Sie also nur an der 11 in 09911234511 interessiert.
 mobydick bietet hier eine einfache Möglichkeit Variablen zu beschneiden. Eine Variable wird aufgebaut wie folgt:

@@ -1,16 +1,17 @@
 ---
-title: Auswahl (IVR) Menüs
+title: IVR - Auswahlmenüs
 keywords:
-    - Auswahlmenü (IVR)
+    - Auswahlmenü
+    -IVR
 description: Auswahlmenüs (IVR) dienen dazu dem Anrufer durch das Drücken einer Taste durch das Telefonmenü zu lenken.
-url: /anrufverteilung/ivr-menue/
-prev: /anrufverteilung/zeiten-kalender/
-next: /anrufverteilung/skill-based-routing/
+url: /anrufverteilung/ivr/
+prev: /anrufverteilung/callrouter/
+next: /anrufverteilung/time-calendar/
 weight: 73
 toc: true
 ---
 
-## Konzept
+## Konzepty
 
 Auswahlmenüs (IVR) dienen dazu dem Anrufer durch das Drücken einer Taste durch das System zu lenken. Beispielsweise kann es sein, dass 50% der Anrufer auf der Zentrale nur entweder mit dem Vertrieb oder dem Support verbunden werden möchten. Hier kann man die Zentrale sinnvoll entlasten indem man ein Auswahlmenü vor die Zentrale schaltet.
 
@@ -69,12 +70,9 @@ Wählen Sie `+Hinzufügen` um einen neuen Eintrag hinzuzufügen.
 
 ### Aktionen zum Eintrag hinterlegen
 
-Jeder Eintrag braucht Aktionen die ausgeführt werden wenn die entsprechende Taste gedrückt wird. 
+Jeder Eintrag braucht Aktionen die ausgeführt werden wenn die entsprechende Taste gedrückt wird.
 
 Wählen Sie in der mobydick Weboberfläche `Erweitert > IVR` markieren Sie das gewünschte IVR und drücken Sie auf die Schaltfläche **Einträge**. Wählen Sie den entsprechenden Eintrag und drücken `Bearbeiten`. Im Reiter **Intern** und **Extern** finden Sie die Aktionen zum jeweiligen Eintrag:
 ![Screenshot - IVR Aktionen zum Eintrag hinterlegen](../../images/ivr_entry_detail.png?width=90% "Aktionen zum IVR Eintrag hinterlegen")
 
 In unserem Beispiel werfen wir auf die Warteschlange Support ab wenn jemand durch Drücken der entsprechenden Taste diesen Eintrag wählt. Details können Sie unter Aktionen nachlesen.
-
-
-

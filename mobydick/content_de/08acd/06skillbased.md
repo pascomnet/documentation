@@ -6,9 +6,9 @@ keywords:
     - Warteschlgen
     - Anrufverteilung
 description: Skill Based Routing - dient der Verteilung von Anrufern anhand Benutzern zugewiesenen Fähigkeiten
-url: /anrufverteilung/skill-based-routing/
-prev: /anrufverteilung/ivr-menue/
-weight: 74
+url: /anrufverteilung/skillbased/
+prev: /anrufverteilung/moh-prompts/
+weight: 76
 toc: true
 ---
 
@@ -66,7 +66,7 @@ Nun wird das vorherige Beispiel erweitert. Nach der Sprachauswahl wird die Kunde
 
 ### Konfiguration
 
-1. Nach der Sprachauswahl muss der Anrufer seine Kundennummer eingeben. Das wird mit einem **Generichen Label** realsiert: unter `Anruferverteilung -> Anruf Labels -> Hinzufügen -> Generisches Label`. 
+1. Nach der Sprachauswahl muss der Anrufer seine Kundennummer eingeben. Das wird mit einem **Generichen Label** realsiert: unter `Anruferverteilung -> Anruf Labels -> Hinzufügen -> Generisches Label`.
 ![Screenshot - Generiches Label](../../images/skill_based_routing_label_generic.png "Generiches Label")
 Das Generische Label hat eine **Kanalvariable** (in diesem Fall MDC_LABEL-9), die wir uns für die weitere Konfiguration merken müssen. Den Variablennamen erhalten wir durch markieren des Labels in der Übersicht und Klick auf Bearbeiten:
 ![Screenshot - Variablennamen](../../images/skill_based_routing_genericlabel.png "Variablennamen")
@@ -86,4 +86,3 @@ Das Generische Label hat eine **Kanalvariable** (in diesem Fall MDC_LABEL-9), di
 ![Screenshot - Aktionsbedingung](../../images/skill_based_routing_call_router_2.png "Aktionsbedingung")
 Die Geschäftszeiten-Prüfung wird ebenfalls mit einem Anrufverteiler realisiert:
 ![Screenshot - Geschäftszeiten-Prüfung](../../images/skill_based_router_call_router.png "Geschäftszeiten-Prüfung")
-

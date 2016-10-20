@@ -7,10 +7,10 @@ keywords:
     - Zeitschemas
     - Steuerung von Bürozeiten
 description: Einrichtung von Zeitschemas, Kalendern und Durchwahlschaltern zur Steuerung von Geschäftszeiten, Feiertagen und Betriebsurlaub.
-url: /anrufverteilung/zeiten-kalender/
-prev: /anrufverteilung/ansagen-und-wartemusik/
-next: /anrufverteilung/ivr-menue/
-weight: 72
+url: /anrufverteilung/time-calendar/
+prev: /anrufverteilung/ivr/
+next: /anrufverteilung/moh-prompts/
+weight: 74
 toc: true
 ---
 

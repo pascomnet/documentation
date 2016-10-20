@@ -1,16 +1,16 @@
 ---
 title: Eigene Ansagen und Wartemusik
-keywords: 
-    - Eigene Ansagen 
+keywords:
+    - Eigene Ansagen
     - Wartemusik
     - Musik on Hold
     - Ansagen per Telefon aufsprechen
     - Wartemusik verwalten
 description: Einspielen von individuellen Ansagen und Wartemusik zur Nutzung in Teams / Warteschlangen, Auswahlmenüs und Aktionen.
-url: /anrufverteilung/ansagen-und-wartemusik/
-prev: /anrufverteilung/
-next: /anrufverteilung/zeiten-kalender/
-weight: 71
+url: /anrufverteilung/moh-prompts/
+prev: /anrufverteilung/time-calendar/
+next: /anrufverteilung/skillbased/
+weight: 75
 toc: true
 ---
 
@@ -127,7 +127,7 @@ Ihnen wird auffallen, dass die Musik zum einen den Text übertönt und es zum an
 
 Um die Ansage etwas versetzt beginnen klicken Sie in der Ansagetonspur vor den Beginn der Ansage und fügen per `Erzeugen -> Stille` ... ca. 3 Sekunden Stille ein. Durch diese Maßnahme beginnt zuerst die Musik zu spielen und nach 3 Sekunden startet die Ansage.
 
-Um die Musik leiser zu machen nutzen Sie das Hüllkurvenwerkzeug. Wenn Sie mit mit dem Hüllkurvenwerkzeug in die Tonspur klicken und die Maus dabei auf und ab bewegen, werden Sie feststellen, dass Sie damit die Lautstärke der Tonspur verändern können. Wenn Sie das an mehreren Stellen wiederholen, werden alle betreffenden Stellen in Audacity mit einer Hüllkurvenlinie verbunden. Ausserdem erscheinen dort kleine weisse Punkte. 
+Um die Musik leiser zu machen nutzen Sie das Hüllkurvenwerkzeug. Wenn Sie mit mit dem Hüllkurvenwerkzeug in die Tonspur klicken und die Maus dabei auf und ab bewegen, werden Sie feststellen, dass Sie damit die Lautstärke der Tonspur verändern können. Wenn Sie das an mehreren Stellen wiederholen, werden alle betreffenden Stellen in Audacity mit einer Hüllkurvenlinie verbunden. Ausserdem erscheinen dort kleine weisse Punkte.
 ![Screenshot - Ansage mit Audacity erstellen](../../images/audacity_envelope_editing.png?width=90% "Ansage mit Audacity erstellen")
 
 Das Endergebnis sollte in etwa wie folgt aussehen:
@@ -136,4 +136,3 @@ Das Endergebnis sollte in etwa wie folgt aussehen:
 Wenn Sie mit dem Ergebnis zufrieden sind wählen Sie `Datei -> Exportieren` und erzeugen ein **WAV (Microsoft) 16-bit PCM**. Die Tonspuren werden hierbei automatisch zusammen gemischt.
 
 Falls Sie das Projekt später noch einmal weiter bearbeiten möchten empfiehlt es sich außerdem dieses ebenfalls zu speichern `Datei -> Projekt speichern`.
-
