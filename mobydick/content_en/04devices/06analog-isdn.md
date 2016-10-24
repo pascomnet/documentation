@@ -1,5 +1,5 @@
 ---
-title: Adding Analog and ISDN Device Integration
+title: Analog and ISDN Device Integration
 keywords: 
     - Adding Analog Devices
     - ISDN Device Integration

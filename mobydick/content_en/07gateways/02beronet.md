@@ -1,45 +1,44 @@
 ---
-title: beroNet Gateways einrichten
-url: /isdn-analog/beronet-gateways/
-prev: /isdn-analog/
-next: /isdn-analog/patton-gateways/
+title: beroNet Gateway Setup
+url: /analog-isdn-gateways/beronet-gateways/
+prev: /analog-isdn-gateways/
+next: /analog-isdn-gateways/patton-gateways/
 weight: 52
 toc: true
 ---
 
-## Konzept
+## Concept
 
-### Modularer Aufbau für mehr Flexibilät
-beroNet Karten und Gateways sind modular aufgebaut. Das bedeutet für Sie, dass Sie unterschiedliche Anschlüsse mit nur einem Gerät abbilden können.
+### Modular Construction for more Flexibility
+beroNet Cards and Gateways offer a modular construction, meaning you can cover different connection types with on device.
 ![Illustration - modulares Gateway](../../images/beronet_gateway_beispiel.jpg?width=90% "Modulare Gateways Lösung von beroNet")
 
-Beispiel: Sie haben 3 NTBAs (ISDN-Anschlüsse) und noch 2 Analoge Fax. Dann könnten Sie ein beroNet Gateway oder Karte mit einem 4S0 Modul und 
-
+Example: You have 3 NTBAs (ISDN Connections) as well as 2 Analog Fax, then you can use a beroNet Gateway or card with a 4S0 module in combination with a 4FXS module. 
 
 ### beroNet VoIP Gateways
-Das beroNet VoIP Gateway wird an die LAN Verkabelung angeschlossen und erhält eine IP-Adresse aus dem Telefonnetz. An die vorderen Anschlüsse der Gateway werden dann z. B. das öffentliche Telefonnetz bzw. analoge Endgeräte angeschlossen. beroNet Gateways können modular mit Modulen ausgestattet werden. Je nach Modulen sind die Ports an der Vorderseite Analog oder ISDN. Durch die Anbindung per LAN eigenen sich beroNet Gateways ideal für Umgebungen in denen mobydick in einer virtuellen Maschine betrieben wird.
+The beroNet Gateway is connected via LAN and is assigned an IP address from the telephone network. Connections to the
+public telephone network and analogue terminal devices are established using the front ports. beroNet Boxes allow for the
+installation of various modules. Depending on the module, the front ports are compatible with analogue or ISDN devices.
+Due to the LAN connection, beroNet Boxes can be easily integrated with a mobydick virtual appliance.
 
 ![Illustration - beroNet VoIP Gateway](../../images/beronet_voip_gateway.png "beroNet VoIP Gateway im Netzwerk")
 
+beroNet Gateways are available in the following specifications:
 
-Gateways stehen Ihnen in folgenden Größen zur Verfügung:
+* beroNet VoIP Gateway, 4-16 channels
+* beroNet VoIP Gateway, 16-64 channels
+* beroNet VoIP Gateway, 32-128 channels
 
-* beroNet VoIP Gateway, 4-16 Kanäle
-* beroNet VoIP Gateway, 16-64 Kanäle
-* beroNet VoIP Gateway, 32-128 Kanäle
+### beroNet Cards
+beroNet expansion cards can be mounted directly in a mobydick hardware appliance and are automatically assigned an IP address from the zero-config network range **169.254.0.0/16** during boot. With exception of this difference configuration of beroNet Gateways and expansion cards
 
-### beroNet Karten
-beroNet Karten werden in die mobydick eingebaut und erhalten beim Hochfahren der mobydick automatisch eine IP-Adresse aus dem Zero-Config-Netzwerk **169.254.0.0/16**. Bis auf diesen Unterschied lassen sich beroNet Gateways und Karten identisch konfigurieren.
+![Illustration - beroNet Cards](../../images/beronet_karten.png "beroNet VoIP Karten")
 
-![Illustration - beroNet Karten](../../images/beronet_karten.png "beroNet VoIP Karten")
+The following beroNet cards are available:
 
-Dabei stehen Ihnen folgende Karten zur Verfügung:
-
-* beroNet Baseboard PCI-Express, 4-16 Kanäle
-* beroNet Baseboard PCI-Express, 16-64 Kanäle
-* beroNet Baseboard PCI-Express, 32-128 Kanäle
-
-### beroNet Module
+* beroNet Baseboard PCI-Express, 4-16 channels
+* beroNet Baseboard PCI-Express, 16-64 channels
+* beroNet Baseboard PCI-Express, 32-128 channels
 
 
 ## ISDN und Analoge Nebenstellen
@@ -124,13 +123,13 @@ Unter `Hinzufügen` haben Sie folgende Aswahl:
 
 |Typ            |Beschreibung   |Enwendungsfall |
 |---------------|---------------|---------------|
-|Analoges Endgerät direkt   | Analoges Endgerät welches direkt auf der Berofix Hardware geroutet wird |Faxgerät, Türöffner, Feuermeldeanlage|
-|Analoges Endgerät via SIP |Analoges Endgerät welches über die MobyDick geroutet wird |Telefon  |
-|ISDN Telefon direkt |ISDN Telefon welches direkt auf der Berofix Hardware geroutet wird |Notruftelefon |
-|ISDN Fax direkt |ISDN Fax welches direkt auf der Berofix Hardware geroutet wird |Faxserver (z.B. Tobit Faxware)
-|ISDN Datenleitung direkt |ISDN Datenleitung welches direkt auf der Berofix Hardware geroutet wird |	Onlinebanking, ISDN Maschinensteuerung, Alarmanlage|
-|ISDN Telefon via SIP |ISDN Telefon welches über die MobyDick geroutet wird	|Telefon|
+|Analoges Endgerät direkt   | Analoges Endgerät welches direkt auf der beroNet Hardware geroutet wird |Faxgerät, Türöffner, Feuermeldeanlage|
+|Analoges Endgerät via SIP |Analoges Endgerät welches über die mobydick geroutet wird |Telefon  |
+|ISDN Telefon direkt |ISDN Telefon welches direkt auf der beroNet Hardware geroutet wird |Notruftelefon |
+|ISDN Fax direkt |ISDN Fax welches direkt auf der beroNet Hardware geroutet wird |Faxserver (z.B. Tobit Faxware)
+|ISDN Datenleitung direkt |ISDN Datenleitung welches direkt auf der beroNet Hardware geroutet wird |	Onlinebanking, ISDN Maschinensteuerung, Alarmanlage|
+|ISDN Telefon via SIP |ISDN Telefon welches über die mobydick geroutet wird	|Telefon|
 
 
 //FixME
-In diesem Schritt konfigurieren Sie lediglich den Anschluss auf der Berofix Hardware. Zur vollständigen Funktion fahren Sie mit Endgeraete in Betrieb nehmen fort.
+In diesem Schritt konfigurieren Sie lediglich den Anschluss auf der beroNet Hardware. Zur vollständigen Funktion fahren Sie mit Endgeraete in Betrieb nehmen fort.

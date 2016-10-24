@@ -15,7 +15,8 @@ url: /clients/tapi-interface/
 prev: /clients/teams-in-client/
 next: /clients/mobile-hub-setup/
 weight: 34
-linkde: url: /clients/tapi/
+linkde: 
+url: /clients/tapi/
 toc: true
 ---
 

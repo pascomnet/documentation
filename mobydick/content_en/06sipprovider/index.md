@@ -1,8 +1,8 @@
 ---
-title: SIP Provider
-next: /sip-provider/aemter/
-url: /sip-provider
+title: Registering SIP Providers
+next: /sip-providers/trunks/
+url: /sip-providers/
 weight: 6
-icon: <i class="fa fa-database" aria-hidden="true"></i>
-
+icon: <i class="fa fa-desktop" aria-hidden="true"></i>
+chapter: true
 ---
