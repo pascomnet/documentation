@@ -3,6 +3,14 @@ title: beroNet Gateway Setup
 url: /analog-isdn-gateways/beronet-gateways/
 prev: /analog-isdn-gateways/
 next: /analog-isdn-gateways/patton-gateways/
+linkde: /isdn-analog/beronet-gateways/
+description: beroNet Gateways are fully compatible with pascom phone systems and offer cost effective multi technology communication solutions.
+keywords: 
+    - beronet gateways
+    - gateway setup
+    - BRI gateway
+    - ISDN Gateway
+    - FXS / FXO Gateway
 weight: 52
 toc: true
 ---
@@ -41,95 +49,90 @@ The following beroNet cards are available:
 * beroNet Baseboard PCI-Express, 32-128 channels
 
 
-## ISDN und Analoge Nebenstellen
-Nebenstellen wie Faxgeräte, Faxserver, Telefone, Türöffner, etc. können entweder direkt oder via SIP angebunden werden. 
+## ISDN and analogue extensions
+Extensions such as fax devices, fax serversm telephones, door openers etc. can either be connected directly or using SIP.
 
-### Anbindung direkt
+###Direct connection
+
 ![Illustration - ISDN Anbindung direkt](../../images/beronet_direkt.png?width=90% "Anbindung direkt über ISDN Gateway")
 
-**Anrufe** werden **nicht in SIP gewandelt** und über die mobydick geschickt sondern direkt auf der beroNet geroutet. Kommt beispielsweise ein eingehender Anruf für das Faxgerät herein wird dieser direkt von der Beronet mit dem Faxgerät verbunden. 
+**Calls** will **not be converted to SIP** and sent over the phone system server, but rather they are routed directly on the beroNet device. If, for example, there is an inbound call for the fax device, the beroNet device will directly connect it to the fax device. 
 
-Der **Vorteil** dieser Methode ist, dass Verbindungen die nicht in SIP gewandelt werden. Für Faxanwendungen erzielt man dadurch wesentlich bessere Ergebnisse. Ein weitere Anwendugsfall ist die Übertragung von ISDN Daten.  
+The **advantage** of this approach is that connections are not converted to SIP, which gives superior results when a fax must be used. Direct connections can also be used if ISDN data must be transmitted. 
 
-**Nachteil** ist, dass die mobydick von diesen Anrufen nichts "mit bekommt". Dadurch kann mobydick nicht in den Anruffluss eingreifen. Z. B. den Anruf nach einem Timeout an ein anderes Ziel leiten, Geschäftszeiten prüfen, usw.. Außerdem muss sich das ISDN Amt und die betroffene Nebenstelle auf der selben beroNet Hardware befinden.
+The **disadvantage** here is that mobydick will not be made aware of those calls. Therefore, the server is not able to manage the call flow, e.g. forward the call to another device after a timeout, check for business hours, etc. In addition to that, the ISDN trunk and the extension must be connected to the same beroNet hardware.
 
-### Anbindung via SIP
+### Connecting via SIP
 
 ![Illustration - Anbindung via SIP](../../images/beronet_via_sip.png?width=90% "Anbindung via SIP über Gateway")
 
-**Via SIP** bedeutet, dass alle Rufe für die entsprechende Nebenstelle per SIP über die mobydick geroutet werden. Kommt beispielsweise ein Anruf für das Faxgerät herein wird dieser zuerst über **(1)** zur mobydick geroutet und dann weiter über **(2)** zum analogen Faxgerät.
+**Via SIP** means that all calls to the corresponding extension are routed per SIP over your telephony system. Therefore, should a call for the fax device come in, it will be firstly routed via **1** to the phone system and then further via **2** to the analog fax device.
 
-Der **Vorteil** dieser Methode ist, dass die Verbindungen über die mobydick geroutet werden. Dadurch kann mobydick in den Anruffluss eingreifen z. B. den Anruf nach einem Timeout an ein anderes Ziel leiten, Geschäftszeiten prüfen, usw.. muss die Nebenstelle nicht auf der selben Beronet Hardware wie die Amtsleitungen befinden.
+The **advantage** of this method is that connections are routed through mobydick, thus allowing mobydick to manage the call flow, e.g. forward the call to another device after a timeout, check for business hours, etc. In this case, the extension and the trunks do not have to be connected to the same Beronet hardware.
 
-**Nachteil** ist, dass z. B. Faxanwendungen in manchen Fällen nicht so stabil laufen und ISDN Datenübertragungen nicht möglich sind.
+The **downside** here is that in some cases, fax applications might not be so stable and ISDN data transmission is also not possible.
 
-## Vorbereitung
+## Preparation
 
-Als Vorbereitung müssen Gateways wie Karten mit den passenden Modulen bestückt werden. Haben Sie Ihre Hardware bei pascom bestellt sind diese Module bereits installiert. Detail hierzu wie z. B. Portbelegung, usw. entnehmen Sie bitte direkt der [Beronet Dokumentation] (http://wiki.beronet.com/index.php/Main_Page "Zur beroNet Dokumentation").
+As a first step, Beronet boxes or expansion cards each need to be equipped with suitable modules. If you ordered your hardware through pascom, the module already pre-installed. For further details such as port assignment etc. please see the [beroNet documentation] (http://wiki.beronet.com/index.php/beroNetDocuV2).
 
-PCI Karten bauen Sie einfach in den MobDick Server ein und fahren diesen hoch. mobydick wird der Karte automatisch eine IP aus dem Netzwerk **169.254.0.0/16** zuweisen.
+PCI expansion cards can be easily added to a mobydick server. The card will automatically receive an IP address from the **169.254.0.0/16** subnet.
 
-Gateways verbinden Sie mit Ihrem Switch. Schließen Sie dann das Netzteil an und lassen die Gateway booten. Die Gateway zieht sich automatisch eine IP-Adresse per DHCP. Falls Sie in diesem Netz keinen DHCP betrieben wird, ist mobydick in der Lage die Gateway auch ohne IP aufzuspüren und zu konfigurieren solange sich diese im selben Netzsegment befindet.
+Individual Beronet boxes need be connected to your switch. Next, connect the power supply and start the box. An IP address will automatically be assigned through DHCP. In case you do not have a DHCP server in your network, mobydick can still detect and configure the box. as long as it is within the same subnet.
 
 
-## Konfiguration
+## Configuration
 
-### Auffinden und Anlegen von beroNet Hardware
-Sobald Sie die beroNet Karte eingebaut oder beroNet Gateway mit dem LAN verbunden haben ist mobydick in der Lage die Hardware automatisch zu erkennen. Bei beroNet Gateways gilt dies nur solange sich die Gateway im selben Netzsegment wie die mobydick befindet.
+### Detecting and Adding beroNet Hardware
+mobydick will detect the new hardware automatically once you have connected your beroNet expansion card or Box to the LAN. Please note that beroNet Boxes need to be in the same subnet as mobydick for this to work.
 
-Wählen Sie in der mobydick Weboberfläche Gateways > Gatewayliste und drücken Sie auf die `+Hinzufügen` Schaltfläche. mobydick wird nun versuchen die beroNet Hardware zu finden:
+In the mobydick web interface, select ***Gateways > Gateway list*** and press the `+Add` button. mobydick will then try to detect your beroNet hardware:
 ![Screenshot - beroNet Gateway erkennen](../../images/beronet_gateway_erkennen.png?width=90% "Neues beroNet Gateway erkennen")
 
+If detection is unsuccessful or the beroNet Box is in a different subnet from mobydick, you can add the hardware manually by clicking the `Create manually` button.
 
-Gelingt dies nicht, oder befindet sich eine beroNet Gateway in einem anderen Netzsegment als die mobydick haben Sie im Anschluss die Möglichkeit das Gerät per Schaltfäche `Manuell anlegen` hinzuzufügen.
-
-In der Dropdownbox `Gateways` sehen sie alle vom System erkannten beroNet Gateways und Karten:
+The drop-down menu `Gateways lists all detected beroNet Boxes and expansion cards:
 ![Screenshot - beroNet Gateway anlegen](../../images/beronet_gateway_anlegen.png?width=90% "Neues beroNet Gateway anlegen")
 
-In den Felder **Benutzername** und **Passwort** geben Sie die Zugangsdaten für den auf den beroNet Geräten befindlichen Webserver an. Im Auslieferungszustand sind diese **admin** und **admin**. Eine Änderung von Benutzernamen und Passwort ist an dieser Stelle nicht möglich. 
+Enter your data in the fields `Username` and `Password to authenticate with the webserver running on the beroNet device. The default user name and password is ***admin***. You cannot change the username or password at this point yet.
 
-Bei beroNet Gateways haben Sie zusätzlich die Möglichkeit die Netzwerkkonfiguration der Gateway durch die Felder **IP Adresse, Netzwerkmaske und Gateway** zu verändern. Wollen Sie keine Änderungen am Netzwerk vornehmen lassen Sie die Felder einfach leer. Bei eingebauten PCI Karten wird das Netzwerk automatisch konfiguriert und kann nicht verändert werden.
+With beroNet Gateways it is also possible to modify the network configuration, i.e. **the IP address, netmask and gateway** settings. If you do not want to change these settings, you can just leave them blank. If you have a PCI expansion card installed, the network setting is configured automatically and cannot be changed. 
 
-Drücken Sie auf die Schaltfläche `Weiter`. In der nächsten Maske sehen Sie noch einmal eine Zusammenfassung und die Modulbestückung der beroNet Karte oder Gateway. Sie die Möglichkeit den Vorgang durch **Speichern** abzuschließen.
+To continue, press `Next` which will lead to a summary screen highlight which modules are installed on each beroNet card or Gateway. Press **Save** to store your changes. 
 
-Alternativ können Sie aber auch durch die Angabe weiterer Daten (`Amt angegen` anhaken) gleich noch ein Amt samt ein- und ausgehende Regeln anlegen.
+Alternatively, you can now add a trunk and the corresponding inbound / outbound rules by checking the **Create Trunk** entry.
 
-### ISDN Amtsleitungen anlegen
-In vielen Fällen wird beroNet Hardware dazu verwendet ISDN Amtsleitungen daran anzuschließen. Selektieren Sie hierzu das entsprechende Gateway aus der Liste aus, wählen Sie `Bearbeiten` und schalten Sie dann auf den Tab **Belegung** um. 
+### Creating ISDN trunks
+A common use case for beroNet hardware is to connect ISDN trunks to it. To do so, select the gateway you want to use from the list, click the `Edit` button and then switch to the **Allocation** tab.
 ![Screenshot - ISDN Amt hinzufügen](../../images/beronet_isdn_trunk_hinzuegen.png?width=90% "ISDN Amt per beroNet hinzufügen")
 
-Unter `Hinzuführen` können Sie entweder **BRI** oder **PRI Amtsleitungen** konfigurieren. 
-
-//FixMe Siehe Konzept: ISDN verstehen falls Sie mit den Begrifflichkeiten nicht vertraut sind. Dieser Vorgang fügt einen neuen Datensatz ein.
+Under `Add` to configure either a **BRI** or **PRI Trunk line** . 
 
 ![Screenshot - ISDN Amt hinzufügen im Detail](../../images/beronet_isdn_trunk_hinzuegen_detail.png?width=90% "ISDN Amt per beroNet hinzufügen")
 
+Double-clicking on the record `Name` field will open a more detailed view in which you select which **Ports** are allocated to the trunk. It is possible to select multiple options here as a BRI that is configured to use the PP protocol allows for several NTs to be aggregated so they form a single trunk.
 
-Klicken Sie im entsprechenden Datensatz doppelt auf das Feld `Bezeichnung`. Dadurch öffnet sich ein Detailfenster. Hier können Sie dann anhaken welcher **Port** der Karte zu diesem Amt gehört. Auch Mehrfachauswahlen sind möglich da es bei z.B. Anlagenanschlüss sein kann, dass mehrere NTs zu einem Amtsanschluss zusammengefasst werden.
+Under `Mode` and `Technology` to configure the interface tyoe. For BRI connections in PP mode, the interface should be set to **TE** and **PTP**. 
 
-Unter `Modus` und `Technologie` stellen Sie die Anschlussart ein. Bei einem Anlagenanschluss ist das z. B. **TE** und **PTP**. 
+You have now configured the interface of the beroNet hardware. For complete functionality, you should now continue with Trunks and Call Rules configuration.
 
-//FixMe  Siehe Konzept: ISDN verstehen für weitere Details.
+### Adding ISDN / Analog Endpoints
 
-In diesem Schritt konfigurieren Sie lediglich den Anschluss auf der beroNet Hardware. Zur vollständigen Funktion fahren Sie nun mit Aemter und Rufregeln anlegen fort.
 
-### ISDN oder Analoge Nebenstellen anlegen
-
-Selektieren Sie das entsprechende Gateway aus der Liste aus, wählen Sie `Bearbeiten` und schalten Sie dann auf den Tab **Belegung** um.
+Choose the required Gateway from the list and select `Edit` and go to the **Allocation** tab.
 
 ![Screenshot - Analoges Endgerät hinzufügen](../../images/beronet_analog_hinzufuegen.png?width=90% "Analoges Endgerät hinzufügen")
 
-Unter `Hinzufügen` haben Sie folgende Aswahl:
+The `Add` dropdown includes the following options:
 
-|Typ            |Beschreibung   |Enwendungsfall |
+|Type            |Description   |Uses |
 |---------------|---------------|---------------|
-|Analoges Endgerät direkt   | Analoges Endgerät welches direkt auf der beroNet Hardware geroutet wird |Faxgerät, Türöffner, Feuermeldeanlage|
-|Analoges Endgerät via SIP |Analoges Endgerät welches über die mobydick geroutet wird |Telefon  |
-|ISDN Telefon direkt |ISDN Telefon welches direkt auf der beroNet Hardware geroutet wird |Notruftelefon |
-|ISDN Fax direkt |ISDN Fax welches direkt auf der beroNet Hardware geroutet wird |Faxserver (z.B. Tobit Faxware)
-|ISDN Datenleitung direkt |ISDN Datenleitung welches direkt auf der beroNet Hardware geroutet wird |	Onlinebanking, ISDN Maschinensteuerung, Alarmanlage|
-|ISDN Telefon via SIP |ISDN Telefon welches über die mobydick geroutet wird	|Telefon|
+|Analogue terminal directly | Analogue terminal device being routed directly on beroNet hardware| Fax, door control, fire alarm system|
+|Analogue terminal via SIP| Analogue terminal device being routed on the PBX| Telephones|
+|ISDN telephony directly| ISDN telephone being routed directly on beroNet hardware| Emergency phone|
+|ISDN fax directly| ISDN fax being routed directly on beroNet hardware| Fax server (e.g. Tobit Faxware)|
+|ISDN data directly| ISDN data transmission line being routed directly on beroNet hardware| Online banking, ISDN machine control, burglar alarm|
+|ISDN telephone via SIP| ISDN telephone being routed on the PBX| Telephones|
 
 
-//FixME
-In diesem Schritt konfigurieren Sie lediglich den Anschluss auf der beroNet Hardware. Zur vollständigen Funktion fahren Sie mit Endgeraete in Betrieb nehmen fort.
+You have now configured the connection of the beroNet hardware. For complete functionality, you should now continue with Endpoint deployment.

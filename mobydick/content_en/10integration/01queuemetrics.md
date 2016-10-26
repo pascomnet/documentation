@@ -6,100 +6,100 @@ next: /integrationen/wombatdialer/
 weight: 101
 toc: true
 ---
+## Overview
 
-## Übersicht
+The QueueMetrics software is used by call centres to manage queues (teams) and their users. QueueMetrics is not installed on the same server as mobydick and stores data in a MySQL database. This database can be located either on the same server as QueueMetrics or on any other server. If needed, mobydick can write data required for reporting to the MySQL server.
 
-Queuemetrics ist eine Software für Callcenter zur Auswertung von Warteschleifen (Teams) und deren Benutzern. Queuemetrics wird auf einem separatem Server installiert und speichert seine Daten in einer MySQL Datenbank. Die MySQL Datenbank kann entweder auch auf dem Queuemetrics-  oder einen beliebigen anderen Server installiert werden. mobydick schreibt die zur Auswertung nötigen Daten ebenfalls in den MySQL Server.
+## Configuration
 
-## Konfiguration
+### Installing the QueueMetrics and MySQL server
+QueueMetrics is contact center performance analysis solution from Loway. First, you will need to download the latest version of QueueMetrics and follow the instructions to set up the server. For the setup, you will also need a MySQL server. After a default installation procedure, follow the QueueMetrics instructions to customise the database and users accordingly. It is recommended to run QueueMetrics and MySQL on the same server.
 
-### Queuemetrics- und MySQL Server aufsetzten
-Queuemetics ist ein Produkt der Firma Loway. Laden Sie sich die neueste Queuemetrics Version herunter und folgen Sie der Anleitung des Herstellers um den Server einzurichten. Für das Setup benötigen Sie auch einen MySQL Server. Machen Sie auch hier ein Standardsetup und passen die Datenbanken und Benutzer gemäß der Queuemetrics Anleitung an. Wie empfehlen Ihnen Queuemetrics und den MySQL Server auf dem selben Server zu betrieben.
-Standardmäßig liest Queuemetrics die Warteschleifen-Daten nicht aus der Datenbank sondern versucht lokal die Datei /var/log/asterisk/queues.log zu finden.
-Dises Verhalten können Sie in der Weboberfläche von Queuemetrics unter Administrative tools > Edit system parameters einstellen:
+The default setting for QueueMetrics is to not read the queues from the database but to try and find it in the local file /var/log/asterisk/queues.log
+
+This behaviour can be changed in the **QueueMetrics web interface** in the menu ***Administrative tools > Edit system parameters***:
     
     ..
     default.queue_log_file=sql:P001
     ..
 
-### MySQL Server für mobydick vorbereiten
+### Preparing the MySQL server for mobydick
 
-#### Bindings prüfen
-Damit mobydick die Warteschleifen-Daten in den MySQL Server schreiben kann benötigen wir externen Zugriff auf den MySQL Server. In manchen Installationen bindet sich der MySQL Server auf den localhost und ist daher von anderen Hosts aus nicht zugänglich. Prüfen Sie das in der Datei /etc/mysql/my.conf (Dateiname und Pfad kann je nach Setup variieren) und ändern das Binding auf 0.0.0.0.
-
+#### Check the bindings
+To enable mobydick to write queue data to the MySQL server, external access must be enabled on the MySQL server. Sometimes, MySQL binds to localhost and therefore is unreachable from other computers. To check this, see the file **/etc/mysql/my.conf** and change the binding to **0.0.0.0** (file name and path can vary depending on your system environment).
     ..
     bind-address = 0.0.0.0
     ..
-Danach müssen Sie den MySQL Server neu starten:
+Then, restart the MySQL server:
 
     /etc/init.d/mysql restart
 
-#### Benutzer anlegen
-Auch empfiehlt es sich für den Zugriff der mobydick einen eigenen Benutzer am MySQL Server anzulegen und nicht den Queuemetrics Benutzer zu verwenden. Starten Sie die MySQL Console:
+#### Adding users
+It is recommended to use a separate user for the MySQL server instead of using the QueueMetrics user. Start the MySQL console:
 
     mysql -u root -p
     
-Hier müssen Sie nun das root Passwort für den MySQL Server eingeben. Dies haben Sie in der Regel beim Setup des MySQL Servers selbst vergeben.
+Enter the root password for the MySQL server. Usually, this password is set during the installation of MySQL Server.
 
 
-Auf der MySQL Console legen Sie dann einen eigenen Benutzer für mobydick an:
+With the MySQL console, create a new user for mobydick:
 
-    mysql> grant all privileges on *.* to USERNAME@'%' identified by 'PASSWORT';
+    mysql> grant all privileges on *.* to USERNAME@'%' identified by 'PASSWORD';
 
-Ersetzen Sie USERNAME und PASSWORT mit beliebigen Werten. Dies gibt dem USERNAME alle Rechte auf alle Datenbanken des Servers. Wenn Sie, wie empfohlen, einen dedizierten MySQL Server für Queuemetrics verwenden ist das in Ordnung. Falls nicht, sollten Sie die Zugriffe an dieser Stelle einschränken.
+Replace USERNAME and PASSWORD with their respective values. This will grant USERNAME all permissions on all databases of the server. If, as advised, MySQL for QueueMetrics is run on a dedicated server, this is acceptable. Otherwise, access should be restricted.
 
-#### Verbindung prüfen
-Loggen Sie sich auf der mobydick per SSH ein und testen mit folgender Befehlszeile ob die Verbindung zur Queuemetrics Datenbank funktioniert:
+#### Checking connections
+Log on to mobydick using SSH and test the connection to the QueueMetrics database using the following command:
 
     mysql -h DB_HOST -u USERNAME --password=PASSWORT DB_NAME
 
-Ersetzen Sie USERNAME und PASSWORT mit den eben angelegten Benutzerdaten. DB_HOST ist der Host auf dem die Datenbank läuft und DB_NAME der Name der Queuemetrics Datenbank.
+Replace USERNAME and PASSWORD with their current values. DB_HOST is the host of the database, DB_NAME is the name of the QueueMetrics database.
 
-### mobydick konfigurieren
+### Configuring mobydick
 
-#### Queuemetrics Datenbank anbinden
-Loggen Sie sich auf der mobydick Weboberfläche ein und wählen Sie den Menüpunkt Erweitert > Queuemetrics:
+#### Connecting the QueueMetrics database
+Log on to the mobydick web interface and select menu ***Advanced > QueueMetrics***:
 
  
 |Parameter|Bedeutung|
 |---------|---------|
-|Queuemetrics Anbindung aktiv|	Wenn Sie hier ja wählen startet mobydick den Dienst der die Warteschleifen-Daten kontinuierlich in der Queuemetrics Datenbank speichert|
-|IP/Host Mysql Server|	Geben Sie hier den Host an auf dem der MySQL Server läuft|
-|DB Portnummer|	Tragen Sie hier den Port des MySQL Servers ein (Standard ist 3306)|
-|Datenbankname|	Der Datenbankname der Queuemetrics Datenbank|
-|DB Benutzername|	Der Name des für den mobydick-Zugriff erstellen Benutzers|
-|DB Passwort|	Das Passwort des für den mobydick-Zugriff erstellen Benutzers|
-|QueueMetrics URL|	Die URL des QueueMetrics-Servers|
-|API Benutzer|	Der API- Benutzer auf dem Queuemetrics-Server (Infos dazu entnehmen Sie bitte hier)|
-|API Passwort|	Das Passwort des API-Benutzers|
+|QueueMetrics enabled| Selecting YES here will cause mobydick to start the service and write the queue data to the QueueMetrics database|
+|IP/Host Mysql Server| Enter the address of the host of the MySQL server|
+|DB Port|  The port for the MySQL server (default is 3306)|
+|Database name|    The name of the QueueMetrics database|
+|DB user name| The mobydick username which has been granted access to the QueueMetrics database|
+|DB password|  The corresponding password|
+|QueueMetrics URL| The QueueMetrics server URL|
+|API User| The API user for the QueueMetrics server (more information can be found here) //Fixme|
+|API Password| The API user password|
 
-Speichern Sie die Konfiguration ab und wenden Sie die erzeugen Jobs an.
+Save the configuration and apply the created jobs.
 
-#### Asterisk Manager Interface konfigurieren
-Für die Kommunikation mit dem Mobydick Server benötigt man Queuemetrics Zugriff auf das Asterisk Manager Interface (AMI)
-Hierzu müssen Sie (falls noch nicht geschehen) zuerst das AMI für öffentliche Zugriffe freischalten. Dies machen Sie unter Appliance > Dienste im Tab Telefonie indem Sie Erlaubte AMI Verbindungen auf öffentlich stellen.
+#### Asterisk Manager Interface Configuration
+In order to communicate with the mobydick Server, you will need to allow QueueMetrics access via the Asterisk Manager Interface (AMI)
+To do this, you will need to (if you have not already done so) enable the AMI to allow public access which can be done via ***Appliance > Services*** and then selecting ***public*** under ***the Allowed AMI Connections*** within the **Telephony** tab as shown below:
 
- Legen Sie nun auf der mobydick einen Manager Account für Queuemetrics unter Appliance > Asterisk Managerkonten an:
+ Next you will need to create a manager account for QueueMetrics in mobydick using the menu ***Appliance > Asterisk manager*** accounts:
 
  
-Manager Account eintragen
-Den zuvor in mobydick erstellen Manager Account tragen Sie in der Queuemetrics Weboberfläche unter Administrative tools > Edit system parameters ein:
+Creating a manager account
+The manager account that you just created in mobydick must now be added to QueueMetrics. This can be done in the menu ***Administrative tools > Edit system parameters*** of the QueueMetrics web interface:
 ..
 callfile.dir=tcp:USERNAME:PASSWORT@MOBYDICK_HOST
 ..
-Ersetzten Sie USERNAME  und PASSWORT mit den Benutzerdaten des zuvor erstellten Manager Accounts. Statt MOBYDICK_HOST tragen Sie die IP-Adresse oder den Hostnamen des mobydick Servers ein.
+Replace USERNAME and PASSWORD with the values of the manager account. Instead of using the mobydick_HOST, enter the IP address or the host name of the mobydick server.
 
-## Fehleranalyse
-### Laden der Daten von mobydick zu Queuemetrics prüfen
-Um zu sehen ob die Übertragung der Daten von mobydick in die Queuemetrics Datenbank funktioniert können Sie das qloader.log einsehen:
+## Troubleshooting
+### Ensuring correct data transmission from mobydick to QueueMetrics
+To check whether that data has been correctly transferred from mobydick to the QueueMetrics database, the file qloader.log can be used:
 
     root@mobydick:/var/log/asterisk# tail /var/log/asterisk/qloader.log 
      |Tue May 14 14:52:53 2013|QueueMetrics MySQL loader - $Revision: 1.29 $
      |Tue May 14 14:52:53 2013|Partition P001 - PID 9161 - TZ offset: 0 s. - Heartbeat after 900 s.
      |Tue May 14 14:52:53 2013|Now connecting to DB queuemetrics on 10.5.6.207 as user mobydick with password queuemetrics
      |Tue May 14 14:52:53 2013|Ignoring all timestamps below 0
-### Manager Verbindung testen
-Loggen Sie sich in der Queuemetrics Weboberfläche ein. Unter dem Punkt System diagnostic tools > AMI tester können Sie die Verbindung zur mobydick testen. Das Ergebnis sollte in etwa wie folgt aussehen:
+### Testing the manager connection
+Log on to the QueueMetrics web interface. The menu ***System diagnostic tools > AMI tester*** allows you to test the connection to mobydick. The result should be similar to the example below:
 
     Status 
     AMI URL: tcp:queuemetrics:queuemetrics@10.5.6.77:5038
@@ -114,9 +114,9 @@ Loggen Sie sich in der Queuemetrics Weboberfläche ein. Unter dem Punkt System d
     ...
     Asterisk dialog was OK
     AMI Dialog took 6289 ms
-### Queuemetrics-Jobs im Commander
-Haben Sie im Commander alles richtig eingetragen und gespeichert, müssen Sie noch zwei Jobs anwenden:
+### QueueMetrics Jobs within the Commander
+Should you have entered and saved everything correctly within the mobydick Commander, then you will now need to apply two jobs
 
-Sind die Jobs erfolgreich gelaufen, sollten Sie folgende Meldung erhalten:
+If the jobs have been executed correctly, then you should receive the following message:
 
-Bei jedem Telefonie anwenden wird Queuemetrics synchronisiert:
+Upon every telephony services application, QueueMetrics will be automatically synchronised: 

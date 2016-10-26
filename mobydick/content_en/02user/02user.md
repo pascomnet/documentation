@@ -72,7 +72,7 @@ If a number for the **fax extension** is entered, a virtual fax service will be 
 
 A voicemail box is created for each user as default. The default setting is to not route an incoming call to the user's voicemail box, however this setting can be changed by using and activating the **Use voicemail box**:
 
-|Parameter | Bedeutung |
+|Parameter | Explanation |
 |----------|-----------|
 |Do not use it |(default) Incoming calls are not forwarded to the voicemail box.|
 |For external calls|Incoming calls from **outside of the network** are forwarded to the users' voicemail box if the person called is on the phone or does not answer the call. Accounts using the **External / After** settings will automatically be handled according to the settings applied.|
@@ -90,9 +90,9 @@ In our example, Manager Max might not want to display his own extension but that
 
 ### Web-UI Permissions
 
-As standard, only your mobydick Administrator log in to the Web UI. However, you can assign administration rights to any number of user, should you need to do so. Currently, there are 3 administration rights levels available:
+As standard, only your mobydick Administrator can log in to the Web UI. However, you can assign administration rights to any number of user, should you need to do so. Currently, there are 3 additional administration rights levels available:
 
-|Rolle | Berechtigungen |
+|Role | Permissions |
 |------|----------------|
 |System Administrator|Highest level - has all available permissions.|
 |Administrator| Like System Administrator however **without**: </br>- mobydick Update </br>- Full ISO Backup </br>- Reboot </br>- Network configuration </br>- Cluster Management|
@@ -115,7 +115,7 @@ You can assigned a personal fax device to a user. <!--For more details, please s
 
 ### Assigned Devices
 You can assign personal devices to a user.
-![Screenshot - Assigend devices in mobydick](../../images/user_devices.png?width=90% "Devices in mobydick")
+![Screenshot - Assigned devices in mobydick](../../images/user_devices.png?width=90% "Devices in mobydick")
 
 Any number of devices can be assigned to user. The default setting for all assigned devices is to ring simultaneously for 999 seconds. <!--To learn more about **Waiting** and **Ringing** settings, please see the <!--//FixMe Link Concept: Followme-->. If the call is not answered, the actions **After / External** or **After / Internal** will be applied. <!--See the chapter on the concept of <!--//FixMe Link actions for more details-->
 
@@ -135,7 +135,7 @@ Actions allow you to the manage the call flow. <!--For more details please see /
 
 ### Creating locations (optional)
 In the menu Users > Locations, create a new location by clicking the `Add` button.
-![Screenshot - location in mobydick](../../images/user_location.png?width=90% "apply location")
+![Screenshot - locations in mobydick](../../images/user_locations.png?width=90% "apply location")
 The location only requires a label to allow assignment of devices to it
 
 You can now assign users although this can also be done by the users themselves by using mobydick Client, mobility client or by using the menu keys on the their Snom, Yealink, Aastra, Auerswald or OpenStage telephones.

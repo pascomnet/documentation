@@ -1,70 +1,77 @@
 ---
-title: Geschaeftszeiten, Feiertage und Urlaubskalender
-url: /anrufverteilung/zeiten-kalender/
-prev: /anrufverteilung/ansagen_und_wartemusik/
-next: /anrufverteilung/ivr-menue/
+title: Business Opening Hours
+url: /call-distribution/business-hours/
+prev: /call-distribution/prompts-and-music-on-hold/
+next: /call-distribution/ivr-menus/
 weight: 72
 toc: true
 ---
 
-## Konzept
+## Concept
 
-Wie unter Aktionen beschrieben können Sie, wenn Benutzer oder Teams gerufen werden, den Anrufablauf beeinflussen. In vielen Fällen ist es sinnvoll bei einem Anruf auf der Zentrale oder div. Nebenstellen zu prüfen ob man sich innerhalb der Geschäftszeiten befindet oder es sich heute um einen Feiertag oder Betriebsurlaub handelt.
+As mentioned in the chapter on the concept of actions, the call flow can be managed in various ways depending on whether they are inbound calls for individual users or for teams. When there is an inbound call for the central office or one of the extensions, it makes sense to check whether the call is received during business hours or whether it is a public holiday or whether the business is currently closed.
 
-Dazu verwendet man Bedingungen. Bedingungen können bei jeder Aktion verwendet werden und entscheiden darüber ob diese ausgeführt wird oder nicht. Somit ist das System sehr flexiebel. Es gibt keine klassische globale "Tag/Nacht"-Schaltung sondern man kann beliebig viele Kalender, Zeitschemas und Schalter erstellen und diese als Bedingungen bei den verschiedensten Objekten verwenden. 
+To manage call flows with respect to time scheduling, certain conditions should be implemented. Conditions can be applied for each defined action, allowing for flexible decisions over whether a particular action is carried out or not. There is no global system governing the availability of telephone lines, but an arbitrary number of calendars, time frames and triggers can be used with the various objects within the telephony system.
 
-Dadurch ist es z. B. möglich bei der Supporthotline andere Geschäftszeiten zu haben als bei der Zentrale. Oder in gewissen Zeiten auf ein Notfall-Mobiltelefon weiterzuleiten.
+This allows you to assign a different set of business hours for your central office and the support hotline. You could also forward such calls to a mobile phone during certain hours in case of emergency.
 
-### Prüfreihenfolge beachten
+### Maintaining Rule Sequences
+If, for example, you want to check business hours, holidays and the vacation calendar for the central office, make sure to maintain the correct order when checking. You must first check the vacation calendar, then check for holidays, then check the business hours otherwise, the following can occur:
 
-Wenn Sie z. B. bei der Zentrale Geschäftszeiten, Feiertage und Urlaub prüfen wollen ist die Reihenfolge zu beachten. Prüfen Sie zuerst auf Urlaubskalender, dann auf Feiertage und schließlich auf Geschäftszeiten.
+A call comes in to the central office during business hours. The IVR system is activated and plays the following message: 
 
-Sonst kann folgender Effekt entstehen: 
+*"Welcome at ChaosConsulting. Your call will be transferred to the next available agent."* 
 
-Eingehender Anruf auf die Zentrale. Es ist innerhalb der Geschäftszeiten. Die Anlage teilt dem Anrufer mit *"Willkommen bei ChaosConsulting sie werden umgehend mit dem nächsten freien Mitarbeiter verbunden ...". Danach stellt die Anlage fest: Heute ist ein Feiertag und teilt dem Anrufer mit "Aufgrund des Feiertages ist unser Unternehmen heute geschlossen, vielen Dank für Ihren Anruf"* und legt auf.
+If the order is incorrect, it is possible that the system will nnow perform the calendar checks and discover that today is actually a holiday and will therefore respond to the caller with the following message: 
 
-Dies hinterlässt beim Kunden sicher keinen guten Eindruck.
+*"Due to the holiday, our company is closed today. Thank you for your call"* 
+ 
+and end the call.
+ 
+This will most definitely not make a good impression on the customer - so make sure your time and calendar checks are set in the correct order.
 
-## Konfiguration
-### Zeitschema verwalten
+## Configuration
+### Managing your Time Checks
 
-Um Ihre Geschäftszeiten abzubilden eignet sich der Bedingungstyp **Zeitschema**.
+To use your **timeframes** as the basis of a rule set, select **"time period"** when creating an action condition.
 
-Wählen Sie hierzu in der MobyDick Weboberfläche `Erweitert > Aktionsbedingungen` den Button `+Hinzufügen`  um eine neue Bedingung zu erstellen oder markieren Sie eine bereits vorhandene Bedingung und wählen `Bearbeiten`.
+In the MobyDick web interface, select **Advanced > Action conditions** and click `Add` to create a new condition. You can also select an existing condition and use the `Edit` function.
 
-Beim Hinzufügen selektieren Sie den **Typ Zeitschema** und geben Sie eine **Bezeichnung** ein. 
-![Screenshot - Zeitschema verwalten](../../images/zeiten_verwalten.png?width=90% "Zeitschema verwalten für Anrufverteilung")
+When you ceate the new condition, select ***time period*** as type and enter a **title**. 
+![Screenshot - manage timeframes](../../images/condition_time.png?width=90% "manage timeframes")
 
-Im Reiter **Zeiten** können Sie Ihre Geschäftszeiten definieren. Sie können beliebig viele Zeilen hinzufügen um komplexere Schemen abzubilden. In den Aktionen können Sie dieses Zeitschema dann als Bedingung verwenden
-
-{{% notice tip %}}
-Sie müssen kein extra Schema für "außerhalb" der Geschäftszeiten definieren da man Bedingungen in den Aktionen jederzeit negieren kann. Wenn Sie eine Bedingung wählen haben Sie immer "Name der Bedingung" und "NICHT Name der Bedingung" zur Auswahl. z. B. "Geschäftszeiten" und "NICHT Geschäftszeiten".
-{{% /notice %}}
-
-### Kalender verwalten
-
-Um **Feiertage** und **Urlaubskalender** abzubilden eignet sich der Bedingungstyp Kalender.
-
-Wählen Sie hierzu in der MobyDick Weboberfläche `Erweitert > Aktionsbedingungen` den Button `+Hinzufügen`  um eine neue Bedingung zu erstellen oder markieren Sie eine bereits vorhandene Bedingung und wählen `Bearbeiten` .
-
-Beim Hinzufügen selektieren Sie den **Typ Kalender** und geben Sie eine **Bezeichnung** ein. 
-![Screenshot - Kalender verwalten](../../images/kalender_verwalten.png?width=90% "Kalender verwalten für Anrufverteilung")
-
-Im Reiter Tage markieren Sie nun Feiertage, Urlaubstage, etc.  In den Aktionen können Sie diesen Kalende dann als Bedingung verwenden.
-
-### Durchwahlschalter nutzen
-
-Durchwahlschalter sind ein praktisches Werkzeug wenn sich **kein fester Tag oder Zeitraum** definieren lässt.
-
-Wählen Sie hierzu in der MobyDick Weboberfläche `Erweitert > Aktionsbedingungen` den Button `+Hinzufügen` um eine neue Bedingung zu erstellen oder markieren Sie eine bereits vorhandene Bedingung und wählen `Bearbeiten`.
-
-Beim Hinzufügen selektieren Sie den **Typ Durchwahlschalter** und geben Sie eine **Bezeichnung** ein. 
-![Screenshot - Durchwahlschalter verwalten](../../images/durchwahlschalter_verwalten.png?width=90% "Durchwahlschalter nutzen für Anrufverteilung")
-
-Geben Sie eine Durchwahl an. Wird dieser Durchwahl angerufen ist dieser Schalter aktiv. Durch einen erneuten Anruf wird dieser wieder inaktiv geschaltet.  In den Aktionen können Sie die Durchwahlschalter dann als Bedingung verwenden.
-
-Durchwahlschalter sind nützlich wenn Sie z. B. die Zentrale spontan auf die Ansage "Alle Mitarbeiter befinden sich derzeit in einem Meeting" schalten wollen oder falls es keine festen Geschäftszeiten gibt und der letzte der die Firma verlässt die Zentrale auf "außerhalb der Geschäftszeiten" schalten soll.
+The tab **Times** allows you to define your business hours. You can add any number of variations to build complex schedules. You can then use these settings with your actions as the basis for the conditions.
 
 {{% notice tip %}}
-Die Durchwahl eines Durchwahlschalters können Sie auf eine LED-**Nebenstellentaste** Ihres IP-Telefones legen. Somit leuchtet die LED solange der Schalter aktiv ist und erlischt bei inaktivem Schalter.
+It is not necessary to create a timeframe to handle times outside of business hours; you can simply negate the conditions used in actions. When selecting a condition, you can always choose between "name of condition" and "NOT name of condition", e.g. "Business hours" and "NOT Business hours".
 {{% /notice %}}
+
+### Managing your Calendar
+
+Conditions of the type **calendar** can be used to manage **Public Holiday Calendars** as well as employee or Business Holidays.
+
+Select **Advanced > Action conditions** in the MobyDick web interface and click the `Add` button to create a new condition. You can also select an existing condition and click the `Edit` button.
+
+When adding the condition, select ***calendar*** as the type and enter a **title**.
+![Screenshot - manage calendar](../../images/condition_calendar.png?width=90% "manage calendar")
+
+Using the Days tab you can select public holidays, vacations etc. You can then use this calendar with your actions.
+
+### Using Extension Switches
+
+**Extension switches** are a useful tool if there is **no specific day or timeframe** to use with a condition.
+
+Select **Advanced > Action conditions** in the MobyDick web interface and click the `Add` button to create a new condition. You can also select an existing condition and click the `Edit` button.
+
+When adding the condition, select extension switch as the type and enter a **title**.
+![Screenshot - manage extension switches](../../images/condition_switch.png?width=90% "manage extension switches")
+
+Enter an extension number that should be used. The switch will be activated when a call is made to this extension. Another call will deactivate the switch again. The extension switch can be used as a condition for actions.
+
+Extension switches can be used if, for example, you want to play a voice prompt such as "All staff members are currently in a meeting" as soon as there is an inbound call to the central office. Another scenario could be that you do not have regular business hours. When the last employee leaves the office, the message could be switched to indicate that the incoming call has been received "outside of business hours".
+
+{{% notice tip %}}
+You can configure your IP telephone so that it indicates an active extension switch with the LED of the key for the specified extension number. A deactivation of the switch will trigger the LED to go out.
+{{% /notice %}}
+
+

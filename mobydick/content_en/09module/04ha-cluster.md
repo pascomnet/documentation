@@ -1,8 +1,8 @@
 ---
 title: HA Cluster Setup
-url: /server/cluster-setup/
-prev:  /server/network-configuration/
-next: /server/backup/
+url: /modules/cluster-setup/
+prev:  /modules/conference-system/
+next: /modules/
 weight: 94
 toc: true
 keywords:
@@ -245,7 +245,7 @@ Monitoring provides two different types of service checks:
 
 If a faulty system component triggers a "failover check" to go wrong, all services are migrated to the slave node. The slave node then becomes the new master node. The following table gives a list of checks that trigger a failover:
 
-|                   |       |   Runs on master      | runs on slave|
+|                   |       |   Runs on Master      | Runs on Slave|
 |-------------------|-------|:-----------------------:|:----------------:|
 |Master Node Alive  | Is the master node unreachable on both network interfaces? |  | <i class="fa fa-check-square" aria-hidden="true"></i> |
 |Cluster Status     |  Does the cluster management report an error for the current master node? | <i class="fa fa-check-square" aria-hidden="true"></i> | | 
@@ -256,7 +256,7 @@ If a faulty system component triggers a "failover check" to go wrong, all servic
 If a "notify check" fails, the system administrator is informed, however, no automatic failover is triggered. The system administrator can then decide whether to initiate a manual failsafe or not. A notify event is triggered by the following checks:
 
 
-|                  |                                                                   |Läuft auf Master|Läuft auf Slave|
+|                  |                                                                   |Runs on Master|Runs on Slave|
 |-------------------|-------------------------------------------------------------------|:----:|:----:|
 |Asterisk AMI       |Is the management interface of the Asterisk server still reachable?   |<i class="fa fa-check-square" aria-hidden="true"></i> |   | 
 |Asterisk SIP      |Does the SIP stack still respond correctly?                               |<i class="fa fa-check-square" aria-hidden="true"></i> |   | 
@@ -289,8 +289,7 @@ Log on to the cluster IP and access the mobydick web interface. In the menu ***A
 
 mobydick caches the data of the slave node that was last used and will automatically suggest to use the cached data. If the node was **replaced**, the data for the new node can be entered instead. In this case, it is however necessary to first copy the SSH key to the new node. For more information, please see mobydick High Availability Cluster Configuration. When you are finished with the configuration, click the ***Apply*** button to continue:
 
-![Screenshot - Cluster Update Slave](../../images/cluster_slave-add.png?width=50% "Slave in detail")
+![Screenshot - Cluster Update Slave](../../images/cluster_slave_add.png?width=90% "Slave in detail")
 
-//FixMe
 
 Upon successful re-integration, the slave node will reboot. After the reboot, the cluster is fully restored again.

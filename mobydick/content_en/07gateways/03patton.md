@@ -1,63 +1,81 @@
 ---
-title: Patton Gateways einrichten
-url: /isdn-analog/patton-gateways/
-prev: /isdn-analog/beronet-gateways/
+title: Patton Gateways Setup
+url: /analog-isdn/patton-gateways/
+prev: /analog-isdn-gateways/beronet-gateways/
+linkde: /isdn-analog/patton-gateways/
+description: Patton Gateways are fully compatible with pascom phone systems and offer cost effective multi technology communication solutions.
+keywords: 
+    - Patton gateways
+    - gateway setup
+    - BRI gateway
+    - ISDN Gateway
+    - FXS / FXO Gateway
+weight: 52
+toc: true
 weight: 53
 toc: true
 ---
 
-## Konzept
+## Concept
 
 {{% notice note %}}
-Wir bieten Unterstützung für alle Patton-Gateways die mit SmartWare 5.3 oder höher betrieben werden.
+We support all Patton gateways running SmartWare 5.3 or higher.
 {{% /notice %}}
 
 ### Patton Gateway
 
-Das Patton Gateway wird an die LAN Verkabelung angeschlossen und erhält eine IP-Adresse aus dem Telefonnetz. An die Anschlüsse des Gateways werden dann z.B. das öffentliche Telefonnetz bzw. analoge Endgeräte angeschlossen. Durch die Anbindung per LAN eigenen sich Patton Gateways ideal für Umgebungen in denen MobyDick in einer virtuellen Maschine betrieben wird.
+Once it is connected to the LAN, the Patton gateway is assigned an IP address from the telephony network. The ports of the gateway can be connected to the public telephone network or analogue terminal devices. Due to the LAN connection, Patton gateways are idealy suited to be operated in environments where mobydick is run inside virtual machine
 
-### ISDN und Analoge Nebenstellen
-#### Anbindung via SIP
+### ISDN and analogue extensions
 
-**Via SIP** bedeutet, dass alle Rufe für die entsprechende Nebenstelle per SIP über die MobyDick geroutet werden. Kommt beispielsweise ein Anruf für das Faxgerät herein wird dieser zuerst über **(1)** zur MobyDick geroutet und dann weiter über **(2)** zum Faxgerät.
-Der **Vorteil** dieser Methode ist, dass die Verbindungen über die MobyDick geroutet werden. Dadurch kann MobyDick in den Anruffluss eingreifen z. B. den Anruf nach einem Timeout an ein anderes Ziel leiten, Geschäftszeiten prüfen, usw.. muss die Nebenstelle nicht auf der selben Patton Hardware wie die Amtsleitungen befinden.
-**Nachteil** ist, dass z. B. Faxanwendungen in manchen Fällen nicht so stabil laufen und ISDN Datenübertragungen nicht möglich sind.
+#### Connection via SIP
 
-## Vorbereitung
-Verbinden Sie das Patton Gateway mit Ihrem Switch, schließen Sie dann das Netzteil an und lassen das Gateway booten. Das Gateway zieht sich automatisch eine IP-Adresse per DHCP.
-Falls Sie kein neues Patton Gateway verwenden und mit den Netzwerkeinstellungen nicht sicher sind führen Sie einen Factory Reset durch. Dieser stellt das Gateway wieder auf DHCP-Betrieb. Drücken Sie hierzu den Rest-Knopf des Patton-Gateways, während des Betriebes, für 5 Sekunden bis die LED Run zu blinken beginnt. Warten Sie bis die LED wieder konstant leuchtet, dann ist das Patton wieder betriebsbereit.
+If the connection is established **via SIP**, this means that all calls to a particular extension are routed through mobydick using SIP. An incoming call for the fax device, for example, will first be routed through (1) to mobydick and then through(2) to the fax device.
 
-## Konfiguration
+The **advantage** of all connections being routed through mobydick is that mobydick can manage the call flow, e.g. forwad the call to another destination after a timeout. It is also possible to route the call based on pre-defined business hours. In this scenario, the extension needs not to be connected to the same Patton hardware as the trunks.
 
-### Auffinden und Anlegen von Patton Hardware
-Sobald Sie das Patton Gateway mit dem LAN verbunden haben ist MobyDick in der Lage die Hardware automatisch zu erkennen. Dies gilt nur solange sich die Gateways im selben Netzsegment wie die MobyDick befinden.
-Wählen Sie in der MobyDick Weboberfläche Gateways > Gatewayliste  und drücken Sie auf die Schaltfläche . Selektieren Sie nun den Gateway-Typ Patton Gateway. MobyDick wird versuchen das Patton Gateway zu finden:
+The **disadvantage** is that fax services may not be as stable. Also, data transmission with ISDN is not possible.
 
-Gelingt dies nicht, oder befindet sich ein Patton Gateway in einem anderen Netzsegment als die MobyDick haben Sie im Anschluss die Möglichkeit das Gerät per Schaltfäche Manuell anlegen hinzuzufügen.
-In der Dropdownbox Gateways sehen sie alle vom System erkannten Patton Gateways:
+## Preparations
+Connect the Patton gateway to your switch, then plug in the power supply and boot the gateway. The gateway will automatically request an IP address from the DHCP.
 
-In den Felder Benutzername und Passwort geben Sie die Zugangsdaten für den auf dem Patton Gateway befindlichen Webserver an. Im Auslieferungszustand sind diese administrator OHNE Passwort. Eine Änderung von Benutzernamen und Passwort ist an dieser Stelle nicht möglich. 
-Drücken Sie auf die Schaltfläche Weiter. In der nächsten Maske sehen Sie noch einmal eine Zusammenfassung und Portkonfiguration:
+If you are using a Patton gateway that might have stored older settings and you are not sure about the network settings, do a factory reset. This will configure the gateway for use with DHCP. To perform the reset, press the gateway's reset button for 5 seconds while the gateway is in operation. Hold the button until the "Run" LED starts blinking. Wait until the blinking stops and the continuous light of the LED indicates that the Patton gateway is again ready for use.
 
-Sie haben nun die Möglichkeit die Bezeichnung anzupassen und den Vorgang durch Speichern abzuschließen.
+## Configuration
 
-### ISDN Amtsleitungen anlegen
-In vielen Fällen werden Patton Gateways dazu verwendet ISDN Amtsleitungen daran anzuschließen. Selektieren Sie hierzu das entsprechende Gateway aus der Liste aus, wählen Sie  und schalten Sie dann auf den Tab Belegung um: 
+### Detecting and adding Patton gateway entries for mobydick
 
-Unter Hinzuführen können Sie entweder BRI oder PRI Amtsleitungen konfigurieren. Siehe ISDN im Allgemeinen falls Sie mit den Begrifflichkeiten nicht vertraut sind. Dieser Vorgang fügt einen neuen Datensatz ein.
+Once your Patton gateway is connected to your LAN, mobydick can automatically detect it, as long as the gateway is located in the same subnet as mobydick.
+In the mobydick web interface, select ***Gateways > Gateway*** list and press the "Add"  button. Next, select the gateway type Patton gateway. mobydick will search for the ***Patton gateway***:
 
-Klicken Sie im entsprechenden Datensatz doppelt auf das Feld Bezeichnung. Dadurch öffnet sich ein Detailfenster. Hier können Sie dann anhaken welcher Port des Gateways zu diesem Amt gehört. Auch Mehrfachauswahlen sind möglich da es bei z.B. Anlagenanschlüss sein kann, dass mehrere NTs zu einem Amtsanschluss zusammengefasst werden.
-Unter Modus und Technologie stellen Sie die Anschlussart ein. Bei einem Anlagenanschluss ist das z.B. TE und PTP. Siehe ISDN im Allgemeinen für weitere Details.
-In diesem Schritt konfigurieren Sie lediglich den Anschluss des Patton Gateways. Zur vollständigen Funktion fahren Sie nun mit Aemter und Rufregeln anlegen fort.
+If detection is unsuccessful or the Patton gateway is in a different subnet than mobydick, you can add the hardware manually by clicking the ***"Create manually"*** button.
 
-### ISDN oder Analoge Nebenstellen anlegen
-Selektieren Sie das entsprechende Gateway aus der Liste aus, wählen Sie  und schalten Sie dann auf den Tab Belegung um.
+The drop-down menu Gateways lists all detected Patton gateways:
 
-Unter Hinzufügen haben Sie folgende Auswahl:
+Enter your data in the fields **User** name and **Password** to authenticate with the webserver running on the Patton devices. The default user name is administrator. No default password is set. You cannot change the user name or password at this point yet.
+Press Next and review the summary and port configuration displayed in this screen:
 
-| Typ | Beschreibung |Anwendungsfall|
+You can now customize the **name** and **save** your changes.
+
+### Creating ISDN trunks
+A common use case for Patton gateways is to connect ISDN trunks to it. To do so, select the gateway you want to use from the list, click the `Edit` button and then switch to the Allocation tab.
+
+The Add button allows you to configure either BRI or PRI trunks and will create a new data record. Please see Configuring ISDN, Analogue and GSM Gateways#ISDNinanutshell if you need help with ISDN technology.
+
+Double-clicking on the **name** field of a record will open a detailed view. ou can then select which port belongs to that trunk. AMultiple selections are possible, as a BRI that is configured to use the PP protocol allows for several NTs to be aggregated so they form a single trunk.
+
+Use **Mode** and **Technology** menus to configure the interface type. For a BRI that is configured to work in PP mode, the interface type must be set to **TE** and **PTP**. For more details, please see Configuring ISDN, Analogue and GSM Gateways#ISDNinanutshell.
+
+You have now configured the interface of the Patton gateway and should continue with the next step, the Creating trunks and call rules chapter.
+
+### Creating ISDN or analogue extensions
+Select the gateway from the list, click the `Edit` button and go to the Allocation tab.
+
+The Add menu allows you to add the following extensions:
+
+| Typ | Description |Use case|
 |-----|--------------|--------------|
-|Analoges Endgerät via SIP|	Analoges Endgerät welches über die MobyDick geroutet wird	|Telefon|
-|ISDN Telefon via SIP|	ISDN Telefon welches über die MobyDick geroutet wird	|Telefon|
+|Analogue terminal via SIP|    Analogue terminal device being routed on mobydick  |telephone|
+|ISDN telephone via SIP|   ISDN telephone being routed directly on mobydick   |telephone|
 
-In diesem Schritt konfigurieren Sie lediglich den Anschluss des Patton Gateways. Zur vollständigen Funktion fahren Sie mit Endgeraete in Betrieb nehmen fort.
+The interface of the Patton gateway is now configured. You can proceed with Preparing Devices for Operation.

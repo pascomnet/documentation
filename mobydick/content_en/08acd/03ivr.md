@@ -1,77 +1,91 @@
 ---
-title: Auswahl (IVR) Menüs
-url: /anrufverteilung/ivr-menue/
-prev: /anrufverteilung/zeiten-kalender/
-next: /anrufverteilung/skill-based-routing/
+title: Interactive Voice Response Menus
+url: /call-distribution/ivr-menus
+linkde: /anrufverteilung/ivr-menue/
+prev: /call-distribution/business-hours/
+next: /call-distribution/skills-based-routing/
+description: Interactive Voice Response (IVR) menus are useful tools for ensuring that callers are routed more effectively and more quickly to the right agent, department or contact by providing callers with a set of options to choose from to qualify the reason for their call.
+Keywords: 
+    - IVR
+    - Interactive Voice Response Menu
+    - Options Menus
+    - ACD
+    - Call Routing Menus
 weight: 73
 toc: true
 ---
 
-## Konzept
 
-Auswahlmenüs (IVR) dienen dazu dem Anrufer durch das Drücken einer Taste durch das System zu lenken. Beispielsweise kann es sein, dass 50% der Anrufer auf der Zentrale nur entweder mit dem Vertrieb oder dem Support verbunden werden möchten. Hier kann man die Zentrale sinnvoll entlasten indem man ein Auswahlmenü vor die Zentrale schaltet.
+## Concept
 
-Dies kann dem Anrufer dann anbieten:
+IVRs are used to route a caller through the system by pressing keys. For example, 50 % of all calls to the central office might actually be intended for the marketing or support department. In this case, using an IVR at the central office could be beneficial in taking some load of off the central office.
 
-*"Drücken Sie die **1** für den **Vertrieb** die **2** für den **Support**. Treffen Sie **keine Auswahl** werden Sie automatisch mit der **Telefonzentrale** verbunden ..."*
+The IVR could then offer the following options to the user:
 
-### Ablauf eines Auswahlmenüs
+*"Press 1 to talk to the sales department or 2 if you wish to talk to our support staff. If you would like to be directed to the central office, please hold ..."*
 
-Wird ein IVR Menü gerufen findet folgender Ablauf statt:
+### Process flow of an IVR
+
+When a IVR menu is entered, the following procedures are executed:
+
 ![Illustration - Ablauf eines Auswahlmenüs](../../images/ivr_ablauf.png?width=90% "Ablauf eines Auswahlmenüs")
 
-Zuerst spielt ein IVR Menü eine Ansage Ihrer Wahl ab. Wie man eigene Ansagen aufsprechen können Sie unter Eigene Ansagen und Wartemusik nachlesen. Diese Ansage beinhaltet beispielsweise den Text: *"Drücken Sie die **1** für den **Vertrieb** die **2** für den **Support**. Treffen Sie **keine Auswahl** werden Sie automatisch mit der **Telefonzentrale** verbunden ..."*.
+As the first step of the IVR flow, an announcement you choose is played. To learn how to record your own announcements, please see Custom Prompts and Music On Hold. Your announcement could be structured similar to this example:
+ 
+ "Press 1 for sales department or 2 for the support department. If you do not select any option, you will automatically be directed to the central office..."
 
-Danach wartet das System den von Ihnen im IVR Menü definierten **Timeout** lang auf einen Tastendruck des Anrufers. Ein 5 Sekunden Timeout hat sich hier als praktikabel erwiesen.
+After the announcement, the system waits for the user to press a key for as long for a specified amount of time which you can set using the **timeout** function in the IVR menu. In our experience, a 5 second timeout is usually enough.
 
-Hat der Anrufer eine Taste gedrückt, für die ein **Eintrag vorhanden** ist, werden die Aktionen ausgeführt die dort hinterlegt sind.
+If the caller presses a button with a corresponding **entry**, the associated actions will then be carried out.
 
-Drückt der Anrufer eine Taste für die **kein Eintrag vorhanden** ist wird automatisch der Eintrag mit der Sondernummer i (für Invalid) gerufen. In den hier hinterlegten Aktionen ist es sinnvoll den Anrufer darauf hinzuweisen, dass er eine falsche Taste gedrückt hat und ihn wieder auf das selbe IVR abzuwerfen um ihm erneut die Auswahlmöglichkeiten vorzulesen.
+If the caller presses a button with **no corresponding entry**, the entry with the special number i (as in Invalid) is called. Actions associated with this number should make the caller aware of the invalid key that was pressed and should offer the IVR menu to the caller again.
 
-Drückt der Anrufer innerhalb des Timeouts **keine Taste** wird automatisch der Eintrag mit der Sondernummer t (für Timeout) gerufen. In den hier hinterlegten Aktionen ist es entweder sinnvoll den Anrufer darauf hinzuweisen, dass er keine Taste gedrückt hat und ihn wieder auf das selbe IVR abzuwerfen um ihm erneut die Auswahlmöglichkeiten vorzulesen oder den Anrufer z.B. auf die Zentrale abzuwerfen.
+If the caller **doesn't press any button** during the **timeout**, the entry with the special number t (as in Timeout) is called. Actions associated with this number should make the caller aware that no key was pressed and should offer the IVR menu to the caller again or the caller should be put through to the central office.
 
-### Mehrstufige Auswahlmenüs
+### Multi-stage IVRs
 
-In machen Fällen ist es sinnvoll mehrere Fragen hintereinander zu stellen um den Anrufer mit dem gewünschten Ziel zu verbinden. Beispielsweise können Sie einen Anrufer zuerst fragen ob er mit dem Support verbunden werden will und danach eine Supportkategorie (Probleme mit Windows, Linux, usw..) abfragen um ihn mit den richtigen Ansprechpartnern zu verbinden.
+In many scenarios it makes sense to ask several questions in a row to put callers through to their desired destination. Firstly, you could ask the callers if they wished to be put through to the support department and then ask for a more specific support category (problems concering Windows, Linux, etc.) to select the appropriate staff member they can then talk to.
 
-Hier können Sie einfach beliebig viele IVRs anlegen und einfach von einem in ein andres abwerfen. Somit ist eine beliebige Verschachtelung möglich.
+To create multi-stage IVRs, you can create any number of IVRs and forward calls from one IVR to another. This way, an arbitrary number of IVRs can be implemented.
 
 {{% notice tip %}}
-Vermeiden Sie wenn möglich mehr als zwei Ebenen. Stark verschachtelte Abfragemenüs werden i.d.R. vom Anrufer nicht akzeptiert.
+Preferably, you should not create nested IVRs that are deeper than two levels. Higher complexity leads to confusion and this is usually frustrating for the caller and therefore is not desirable.
 {{% /notice %}}
 
-## Konfiguration
-### IVR verwalten
+## Configuration
 
-Wählen Sie in der MobyDick Weboberfläche `Erweitert > IVR`. Wenn Sie ein neues IVR hinzufügen möchten drücken Sie `+Hinzufügen`. Falls Sie ein bestehendes IVR bearbeiten wollen markieren Sie dies in der Liste und wählen `Bearbeiten`.
-![Screenshot - IVR hinzufügen](../../images/ivr_hinzufuegen.png?width=90% "IVR hinzufügen")
-|Parameter|Bedeutung|
+### Maintaining IVRs
+
+In the MobyDick web interface, select **Advanced > IVR**. To add a new IVR, press "Add" //FixMe . To modify an existing IVR, select it from the list and press "Edit" //FixMe.
+
+![Screenshot - add IVR](../../images/ivr_add.png?width=90% "add IVR")
+|Parameter|Explanation|
 |---------|---------|
-|Bezeichnung|Allgemeine Bezeichnung des IVR Menüs.
-|Kanal beantworten|Normalerweise wird der Kanal sofort beantwortet falls Wartemusik oder eine Ansage abgespielt werden soll. Dies kann man hier verzögern (in Millisekunden). Bei manchen Anrufern kommt es vor, dass bei einer sofortigen Beantwortung die erste Silbe der Ansage "verschluckt" wird. Durch eine Verzögerung kann dies vermieden werden.|
-|Timeout|Wie lange wartet MobyDick auf einem Tastendruck des Anrufers nachdem die Ansage vorgelesen wurde in Sekunden.
-|Durchwahl|Die Durchwahl unter der dieses IVR erreichbar ist.|
-|Ansage vorschalten|Diese Ansage wird beim Betreten des Menüs vorgelesen und sollte Text wie "Drücken Sie die 1 um ..., die 2 um ..., usw." enthalten. Wie Sie eigene Ansagen aufnehmen können entnehmen Sie Eigene Ansagen und Wartemusik.|
+|Title|The title of the IVR menu.
+|Answer channel|Usually, the channel is answered immediately if there is hold music to be played or an announcement to be made. This option allows you to configure a delay (in milliseconds). In some cases, immediate answering of a call leads to the first syllable being skipped. The delay time mitigates this problem..|
+|Timeout|The time in seconds that MobyDick waits for the caller to press a key after playing the announcements.
+|Extension|The extension number for this IVR menu.|
+|Upstream prompt|This announcement is played when the menu is entered and should contain text similiar to "Press 1 to ..., 2 for ..., etc". To learn how to record your own announcements, please see Custom Prompts and Music On Hold.|
 
-### Einträge erstellen
+### Creating entries
 
-Wählen Sie in der MobyDick Weboberfläche Erweitert > IVR markieren Sie das gewünschte IVR und drücken Sie auf die Schaltfläche Einträge. Hier können Sie definieren was bei welchem Tastendruck passieren soll:
+In the MobyDick web interface, select ***Advanced > IVR***. Select the IVR you want to add entries to and press the Entries button. Here, you can define what should happen for each key pressed:
 
-Wählen Sie `+Hinzufügen` um einen neuen Eintrag hinzuzufügen.
-![Screenshot - IVR Einträge erstellen](../../images/ivr_eintrage.png?width=90% "IVR Einträge erstellen")
-|Parameter|Bedeutung|
+Press the "Add" //FixMe  button to create a new entry.
+![Screenshot - create IVR entries](../../images/ivr_entries.png?width=90% "create IVR entries")
+|Parameter|Explanation|
 |---------|---------|
-|Bezeichnung|Allgemeine Bezeichnung des Eintrages.|
-|Nummer| Die Nummer die vom Anrufer per Telefontaste gedrückt wurde. Gültige Werte sind beliebige **Ziffern** oder **Ziffernfolgen**. <br/>Die Sondernummern **t** für Timeout und **i** für ungültige Taste sind schon vordefiniert.<br/> Um Überlappungen zu vermeiden verwenden Sie entweder einstellige, zweistellige, dreistellige, ... Nummern und mischen diese nicht.|
+|Title|General title for the entry.|
+|Number| The key pressed by the caller. Valid keys are arbitrary **numbers** or **sequences of numbers**. Special numbers are t for timeout and i to signal that an invalid key was pressed (note that these two are characters and not numbers). To avoid overlapping keys either use single, double or triple digit combinations and avoid mixing these numbers.|
 
-### Aktionen zum Eintrag hinterlegen
+### Adding actions to an entry
 
-Jeder Eintrag braucht Aktionen die ausgeführt werden wenn die entsprechende Taste gedrückt wird. 
+For each entry, corresponding actions must exist that are to be carried out if and when a certain button is pressed. 
 
-Wählen Sie in der MobyDick Weboberfläche `Erweitert > IVR` markieren Sie das gewünschte IVR und drücken Sie auf die Schaltfläche **Einträge**. Wählen Sie den entsprechenden Eintrag und drücken `Bearbeiten`. Im Reiter **Intern** und **Extern** finden Sie die Aktionen zum jeweiligen Eintrag:
-![Screenshot - IVR Aktionen zum Eintrag hinterlegen](../../images/ivr_entry_detail.png?width=90% "Aktionen zum IVR Eintrag hinterlegen")
+In the MobyDick web interface, select ***Advanced > IVR***, select the desired IVR and click the **Entries** button. Select the entry you want to modify and press the "Edit" //FixMe  button. Actions pertaining to the entry can be found in the **Intern and **Extern** tabs:
+![Screenshot - create IVR actions to entries ](../../images/ivr_entry_detail.png?width=90% "create actions for IVR menu")
 
-In unserem Beispiel werfen wir auf die Warteschlange Support ab wenn jemand durch Drücken der entsprechenden Taste diesen Eintrag wählt. Details können Sie unter Aktionen nachlesen.
+In our example, callers are forwarded to the support queue if they press the corresponding key. For more details, please see the chapter on actions.
 
 
 

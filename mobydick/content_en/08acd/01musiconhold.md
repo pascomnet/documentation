@@ -1,132 +1,132 @@
 ---
-title: Eigene Ansagen und Wartemusik
-url: /anrufverteilung/ansagen_und_wartemusik/
-prev: /anrufverteilung/
-next: /anrufverteilung/geschaeftszeiten/
+title: Custom Prompts & Music on Hold
+url: /call-distribution/prompts-and-music-on-hold/
+linkde: /anrufverteilung/ansagen_und_wartemusik/
+prev: /call-distribution/
+next: /call-distribution/business-hours/
 weight: 71
 toc: true
 ---
 
-## Konzept
+## Concept
 
-An vielen Stellen haben Sie die Möglichkeit dem Anrufer Ansagen (siehe Konzept: Aktionen) oder Wartemusik vorzuspielen. mobydick liefert bereits eine große Anzahl an vorgefertigten Ansagen in deutsch englisch und spanisch mit. Allerdings ist es fast immer sinnvoll eigene Ansagen z. B. zur Begrüßung Ihrer Kunden oder zur Ansage der Geschäftszeiten zu erstellen.   
+During a telephone call, there are numerous situations where you could use prompts (please see The Concept of Actions) or music on hold. mobydick already comes with a number of prompt templates in both German and English. However it might make sense to create your own voice prompts to welcome your customers or inform them about your business hours.    
 
 {{% notice tip %}}
-Wollen Sie Ihre Ansagen lieber von einem Tonstudio mit professionellem Sprecher erstellen lassen? Unser Vertrieb hilft Ihnen gerne weiter.
+If you prefer to create your announcements in a recording studio with the help of professional voice actors, please contact our sales department. They will be glad to help you.
 {{% /notice %}}
 
+## Configuration
 
+### Adding Voice Prompts 
 
-## Konfiguration
-
-### Ansagen anlegen und hochladen
-
-Zum Anlegen einer neuen Ansage wählen Sie in der mobydick Weboberfläche `Erweitert > Ansagen` und klicken Sie auf `+Hinzufügen`. Möchten die eine bereits bestehende Ansage bearbeiten, markieren Sie diese und klicken Sie auf `Bearbeiten`.
+In order to add a new prompt to mobydick, select **Advanced > Prompts**  in the web mobydick Web UI and click `Add`. Should you wish to edit an existing prompt, then select the prompt and click `Edit`.
 
 {{% notice note %}}
-Wir empfehlen Ihnen einen Präfig für Ihre eingenen Ansagen zu verwenden um eine bessere Übersicht zu haben und um die eigenen Ansagen später leichter zu finden. (Z. B. CC-gescheaftszeiten, wobei hier CC für die Firma ChaosConsulting steht)
+We recommend using a prefix when naming your custom prompts in order to maintain a good overview and being able to find them more easily later. This prefix could be something like CC-businesshours, where the CC stands for the company ChaosConsulting.
 {{% /notice %}}
-![Screenshot - Ansagen verwalten](../../images/ansagen_hinzufuegen.png?width=90% "Telefonansagen verwalten in der mobydick")
+![Screenshot - manage prompts](../../images/prompts_add.png?width=90% "manage voice prompts in mobydick")
 
-Im Tab **Ansagen** finden wir jeweis eine angelegte Ansage für jede Sprachen die bereits auf der mobydick vorhanden ist.
+Under the ***Prompts*** tab, you will be able to find the already added prompts for any language that is pre configured in your mobydick system. 
 
-Jetzt haben Sie die Möglichkeit in der Spalte **Hochladen** eine Ansage hochzuladen.
-![Screenshot - Ansagen hochladen](../../images/ansagen_hochladen.png?width=90% "Telefonansagen hochladen in der mobydick")
+In the Upload column, you also have the option of uploading a custom prompt. 
+![Screenshot - upload voice prompts](../../images/prompts_custom.png?width=90% "upload voice prompts to mobydick")
 
+After the successful uploading and saving of the prompt, the play back symbol () will appear in the Play column which enables you to listen to the prompt. Should you want to, you can also create a backup copy of this prompt, you can download to your PC using the download link in the promptfile column. 
 
-Nach erfolgereichem Hochladen und Speichern erscheint in der Spalte Abspielen das Abspielsysmbol und Sie können die Ansage anhören. Falls Sie die Ansage sichern möchten können Sie diese in der Spalte Ansagedatei auf Ihren PC herungerladen.
+#### Further Actions
+![Screenshot - action prompts](../../images/prompts_actions.png?width=90% "actions for prompts")
+You can download all your prompts in a .tar.gz-packet by clicking on the ***Actions*** button within the prompts overview menu and selecting ***Export custom prompt files***. Should you have an archive of existing prompts, you can upload these in one go using the ***Import an archive with promptfiles*** option. However, these prompts must also be packed as a .tar.gz-archive. 
 
-#### Weitere Aktionen
-![Screenshot - Ansagen Aktionen](../../images/ansagen_aktionen.png?width=90% "Aktionen für Ansagen")
-Sie können alle eigenen Ansagen in einem .tar.gz-Paket herunterladen indem Sie in der Ansagen-Übersicht auf **Aktion** klicken und anschließend auf **Eigene Ansagedateien exportieren**. Unter **Archiv mit Ansagedateien** importieren können Sie bereits bestehende Ansagen auf einmal hochladen. Diese müssen allerdings auch als .tar.gz-Archiv gepackt sein.
+Should you require additional prompt languages, these can be added using the ***Action - > Language: edit*** option (see below for more info). 
 
-Ist ein Bedarf an weiteren Sprachen, können diese unter `Aktion -> Sprache: verwalten angelegt werden (siehe unten).`
+### Creating Prompts using a Telephone
 
-### Ansagen per Telefon aufsprechen
+Should you wish to, it is also possible to overwrite an existing prompt using your phone as the recording device. 
 
-Angelegte Ansagen können Sie über Ihr Telefon aufsprechen.
+In order to be able to do this, you must first ensure that the prompt has been "shared" by clicking on ***Share*** in the ***Shared*** column. Once this is done, a six figure Prompt ID will appear. 
+![Screenshot - sharing prompts](../../images/prompts_sharing.png?width=90% "sharing prompts")
 
-Dazu muss die Ansage freigeschaltet werden. Klicken Sie in der Spalte **Freigegeben** auf **Freigeben**. Nun erscheint eine sechstellige Ansagen-ID.
-![Screenshot - Ansagen teilen](../../images/ansagen_teilen.png?width=90% "Teilen von Ansagen")
-
-Wählen Sie an Ihrem Telefon ***50** um in das mobydick Ansagesystem zu gelanden. Durch das Drücken der 1 können Sie eine Ansage Aufnehmen. Sie werden nach der Ansage-ID gefragt. geben Sie diese ein und nach dem **Beep** können Sie die Ansage aufsprechen.
+Now dial ***50** in order to call the mobydick Prompt System. By pressing 1, you will now be able to record a voice prompt. You will then be prompted to enter the prompt ID. After the **beep** you can start recording your voice prompt. 
 
 {{% notice note %}}
-Wenn Sie die Ansage fertig aufgesprochen haben legen Sie nicht auf sonder drücken Sie die #-Taste um die Ansage zu speichern. Wenn Sie einfach auflegen wir die Ansage auch gespeichert, allerdings wird die Geräuschkulissedes Auflegens auch mit aufgenommen, was meistens unerwünscht ist.
+Once you have finished reading out your voice prompt, do not hangup but rather press the **hash / pound (#) key** in order to save your voice prompt.
+If you hangup, your prompt will still be saved but you will also record the sound of hanging up the receiver/handset, which is obviously not advisable.
 {{% /notice %}}
 
-Sie können die gerade aufgesprochene Ansage anhören, indem Sie erneut mit der ***50** in das Ansagesystem gehen. Durch drücken einer beliebigen Taste am Telefon (statt der 1) und nach Eingabe der Ansagen-ID wird die Ansage abgespielt.
-![Screenshot - Ansagen angepasst](../../images/ansagen_shared.png?width=90% "Ansagen shared")
+You can playback your recorded voice prompt by once again dialling ***50** to enter the prompt system and instead of pressing 1, simply press any other key. You will now need to enter the prompt ID and the corresponding prompt will be played back. 
+![Screenshot - customized prompts](../../images/prompts_sharing_custom.png?width=90% "shared prompts")
 
-In der mobydick können Sie die Ansage ebenfalls abspielen oder herunterladen. Muss die Ansage nicht mehr geändert werden, kann sie durch klicken den roten X links neben der Ansagen-ID wieder gesperrt werden. Daduch verschwindet die Ansagen-ID. Beim erneuten Freigeben wird eine neue ID generiert.
+You can also listen to and download your Voice Prompts by using the mobydick commander web UI. If the voice prompt is fit for purpose and no longer needs to be edited (re-recorded), click on the red X on the left of the prompt ID which will lock the prompt meaning it cannot be overwritten using the telephone function. By clicking the X, the prompt ID will disappear and should it be shared again in the future, a new ID will be generated. 
 
-### Weitere Sprachen hinzufügen
+### Adding Additional Languages
 
-Wie bereits schon erwähnt, sind bei der Installation auf der mobydick die Sprachen Deutsch, Englisch und Spanisch verfügbar. Bei Bedarf können weitere Sprachen hinzugefügt werden, unter dem Menüpunkt `Erweitert -> Sprachen`, dann `+Hinzufügen`.
+As has already been described, English and German are currently available as the installation languages. However, further languages can be added according to your needs, through using the menu tab ***Advanced > Languages*** and clicking on the //FixMe  button. 
 
-![Screenshot - Weitere Sprachen hinzufügen](../../images/sprachen_hinzufuegen.png?width=90% "Weitere Sprachen hinzufügen")
+![Screenshot - add additional languages](../../images/prompts_add_language.jpg?width=90% "add additional languages")
 
-Nach dem Spreichern sehen Sie die neu angelegt Sprache in der Übersicht.
-![Screenshot - Übersicht Sprachen](../../images/sprachen_uebersicht.png?width=90% "angelegte Sprachen in der Übersicht")
+Upon saving, your new language will appear in the Languages overview list. 
+![Screenshot - languages overview](../../images/prompts_languages_overview.jpg?width=90% "created languages overview")
 
-### Wartemusik verwalten
+### Managing Music on Hold
 
-Die Wartemusik finden Sie unter `Erweitert -> Wartemusik` in der mobydick Weboberfläche.
+The recordings used for your music on hold can be managed in the **Advanced > Music on Hold** menu of the mobydick web interface.
 {{% notice warning %}}
-Klären Sie immer die Vermarktungsrechte der von Ihnen verwendeten Musik. Wählen Sie entweder GEMA-freie Musikstücke (z. B. die mitgelieferten) oder entrichten Sie die entsprechenden Gebühren. Da diese Musik öffentlich von jedem Anrufer hörbar ist gehen Sie sonst die Gefahr einer Abmahnung ein.
+Always make sure you do not violate any intellectual property rights when using a particular song for your music on hold. Either use music by artists not covered by collecting societies (such as the German musical performance and reproductions rights protection society: GEMA) or pay the royalties. As the music you will be using is made publicly available by playing it to the caller, not paying the royalties incurs the risk of legal action against you.
 {{% /notice %}}
 {{% notice tip %}}
-Eine große Auswahl an lizenzierbarer Wartemusik gibt es unter [http://www.musicfox.com](http://www.musicfox.com "Zur musicfox Webseite")
+http://www.musicfox.com has an excellent selection of Music on Hold which can be licenced for telephony purposes.
 {{% /notice %}}
 
-![Screenshot - Übersicht Wartemusik](../../images/wartemusik_uebersicht.png?width=90% "Wartemusik verwalten")
+![Screenshot - music on hold overview](../../images/musiconhold_overview.png?width=90% "manage music on hold")
+
+With mobydick, you should select whole playlists and not individual songs which should be played. mobydick comes with the playlist (class) called **"default"**. It includes song snippets created by Asterisk developers and can be used without having to pay any royalties to GEMA.
+
+Once you have selected a playlist, **Action > Display music** allows you to display or remove individual songs within the playlist.
+
+Compatible formats are **WAV** and **MP3** files.
+
+By pressing the //FixMe button you can create additional playlists to suit your needs. Which playlist is played can be adapted for several scenarios, e.g.under Team and selecting waiting music. This way, you could use specific background music referring to your ticket system for your support team or you can also advertise the latest promotional deals on your sales hotline.
+
+Putting a caller on **HOLD** will always cause the **default** playlist to be used.
+
+### Creating uploading prompts with your PC
+
+In order to ensure the best possible recording quality, we recommend you to use a PC for the recording and then uploading the file to your mobydick. You can use almost any input format, as mobydick will convert your audio file to its required format after uploading; we observed the best results when using a standard **WAV file** as the source.
 
 
-In mobydick wählen Sie nicht einzelne Musikstücke aus die abgespielt werden sollen sondern ganze Playliste. Im Lieferumfang ist die Playliste (Klasse) **default** enthalten. Diese beinhaltet drei Melodien welche von den Asterisk Entwicklern frei gegeben wurden und somit GEMA-frei sind.
+#### Creating Prompts with Audacity
+Audacity is a good, platform-independent and free program you can use to create your voice prompts.
 
-Wenn Sie eine Playliste anhaken können Sie unter `Aktion -> Musikstücke` anzeigen die einzelnen Musikstücke anzeigen bzw. löschen. Möchten Sie neue Musikstücke für diese Playliste hochladen wählen Sie `Aktion -> Musikstück` hochladen.
+![Screenshot - create prompt with audacity](../../images/audacity.png?width=90% "create prompt with audacity")
 
-Kompatible Formate sind **WAV** und **MP3** Dateien.
-
-Sie können per `+Hinzufügen` auch eigene, weitere Playlisten anlegen. Welche Playliste dann gespeilt wird können Sie z. B. im Team unter Wartemusik auswählen. So können Sie im Support eine Wartemusik abspielen die auf Ihr Ticketsystem hinweist und im Vertrieb können Sie möglicherweise die neuesten Aktionen präsentieren.
-
-Legen Sie einen Anrufer per Telefon auf Hold wird immer die default Playlist gespielt.
-
-### Ansagen und Wartemusik am PC erstellen und hochladen
-
-Für eine bestmögliche Aufnahmequalität empfehlen wir die Aufnahme der Ansage an einem PC zu erstellen und anschließend auf die mobydick hochzuladen. Das Format der Audiodatei ist nahezu beliebig da mobydick diese nach dem Hochladen automatisch in die passenden Zielformate konvertieren wird. Beste Ergebnisse haben wir durch die Verwendung einer standard WAV Datei als Quelle erhalten.
-
-
-#### Ansage mit Audacity erstellen
-
-Ein gutes, kostenloses und plattformunabhängiges Programm zur Erstellung von Ansagen ist [Audacity](https://sourceforge.net/projects/audacity/ "Audacity download").
-
-![Screenshot - Ansage mit Audacity erstellen](../../images/audacity.png?width=90% "Ansage mit Audacity erstellen")
-
-Die Verwendung ist recht simpel. Das passende Microfon wählen (siehe Screenshot "Built-in Microphone"), Lautstärke einstellen und Aufnahme durch den roten Record-Knopf starten.
+Using it is quite simple. Select your microphone (see drop-down menu "Built-in Microphone" in the screenshot), adjust the volume and press the red button to start recording.
 
 {{% notice tip %}}
-Keine Hektik. Drücken Sie den Record-Knopf und sprechen Sie die Ansage u. U. mehr mals hintereinander auf. Sie können die Ansage hinterher einfach durch Markieren der Tonspur und anschließendem Drücken der ENTF Taste zurechtschneiden.
+Don't worry if the recording is not perfect on the first try. Simply press the record button and repeat your text several times in a row. You can cut the recording later by marking the soundtrack at the desired points and pressing the DEL key.
 {{% /notice %}}
 
-Wenn Sie mit dem Ergebnis zufrieden sind wählen Sie `Datei -> Exportieren` und erzeugen ein **WAV (Microsoft) 16-bit PCM**. Falls Sie das Projekt später noch einmal weiter bearbeiten möchten empfiehlt es sich außerdem dieses ebenfalls zu speichern `Datei -> Projekt speichern`.
-Ansagen mit Musik hinterlegen
+Once you are satisfied with the output, select **File -> Export** and create a **WAV (Microsoft 16-bit PCM** file.
+If you want to edit your file later, you should save the project file as well by selecting **File -> Save project**.
 
-Beispielsweise bei Weihnachtsansagen usw. ist es beliebt diese mit Musik zu hinterlegen. Audacity ist in der Lage mehrere Tonspuren zu verwalten.
+#### Including Background Music
 
-Sprechen Sie Ihre Ansage wie bereits beschrieben auf und wählen Sie dann `Datei -> Importieren -> Audio`. Wählen Sie ein Musikstück und importieren dieses. Darauf hin legt Audacity eine zweite Tonspur an. Wenn Sie jetzt auf **Play** drücken hören Sie sowohl die aufgesprochene Ansage als auch die Musik.
+You can also add background music to the prompts, such as a suitable jingle during the Christmas season etc. Audacity can handle several sound tracks at once.
 
-Ihnen wird auffallen, dass die Musik zum einen den Text übertönt und es zum anderen nicht schön ist, dass Musik und Ansage gleichzeitige beginnen.
+Record your prompts as described above. Then select **File -> Import -> Audio**. Choose the file that contains the desired music and import it. Audacity will then create a second sound track. If you press **Play**, both the recorded voice prompt and the song will be played.
 
-Um die Ansage etwas versetzt beginnen klicken Sie in der Ansagetonspur vor den Beginn der Ansage und fügen per `Erzeugen -> Stille` ... ca. 3 Sekunden Stille ein. Durch diese Maßnahme beginnt zuerst die Musik zu spielen und nach 3 Sekunden startet die Ansage.
+You will be able to hear that the music is so loud it drowns out the the voice prompt. In addition, it might not be desirable for the music and the prompt to start at the same time.
 
-Um die Musik leiser zu machen nutzen Sie das Hüllkurvenwerkzeug. Wenn Sie mit mit dem Hüllkurvenwerkzeug in die Tonspur klicken und die Maus dabei auf und ab bewegen, werden Sie feststellen, dass Sie damit die Lautstärke der Tonspur verändern können. Wenn Sie das an mehreren Stellen wiederholen, werden alle betreffenden Stellen in Audacity mit einer Hüllkurvenlinie verbunden. Ausserdem erscheinen dort kleine weisse Punkte. 
-![Screenshot - Ansage mit Audacity erstellen](../../images/audacity_envelope_editing.png?width=90% "Ansage mit Audacity erstellen")
+To start the voice prompt a bit later than the background music, position the cursor at the beginning of the voice prompt's sound track and add about three seconds of silence by clicking **Generate -> Silence**. This way, the background music will start about three seconds before the voice prompt.
 
-Das Endergebnis sollte in etwa wie folgt aussehen:
-![Screenshot - Ansage mit Audacity](../../images/audacity_music.png?width=90% "Ansage mit Audacity")
+To reduce the loudness of the background music, use the envelope tool. When the envelope tool is activated while you position your cursor in the sound track and move your mouse up and down, you will notice you an change the volume of the sound track. Repeating this process in several more parts along the sound track will cause Audacity to create an envelope from all the selected positions, indicated by small white dots. 
+![Screenshot - create prompt with audacity](../../images/audacity_envelope_editing.png?width=90% "create prompts with audacity")
 
-Wenn Sie mit dem Ergebnis zufrieden sind wählen Sie `Datei -> Exportieren` und erzeugen ein **WAV (Microsoft) 16-bit PCM**. Die Tonspuren werden hierbei automatisch zusammen gemischt.
+The result should like this:
+![Screenshot - prompt with audacity](../../images/audacity_music.png?width=90% "prompt with audacity")
 
-Falls Sie das Projekt später noch einmal weiter bearbeiten möchten empfiehlt es sich außerdem dieses ebenfalls zu speichern `Datei -> Projekt speichern`.
+If you like the result, select **File -> Export** and create a **WAV (Microsoft) 16-bit PCM** file. The sound tracks will be merged automatically.
+
+If you want to edit your file later, you should save the project file as well by selecting File **-> Save project**.
+
 

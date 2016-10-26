@@ -6,35 +6,35 @@ next: /integrationen/wombatdialer/
 weight: 101
 toc: true
 ---
+## Overview
+WombatDialer is a predictive dialer developed by Loway. The WombatDialer automates the telephone call origination process, thus eliminating the cumbersome, time consuming manual dialling. This enables you to achieve greater, more efficient CallCenter agent utilisation for example during Telemarketing Campaigns. Further applicable usages are outlined on the Wombat Dialer Homepage.<!--//FixMe Homepage link-->
 
-## Übersicht
-WombatDialer ist ein PredictiveDialer der Firma Loway. WombatDialer automatisiert den Aufbau von Telefonverbindungen und ersetzt die umständliche, zeitaufwendige manuelle Anwahl. Somit erreichen Sie z. B. bei Telefonkampagnen eine bessere Auslastung Ihrer Callcenter Agenten. Weitere Anwendungsszenarien können Sie auf der WombatDialer Homepage nachlesen.
-
-![Illustration - WombatDialer Konzept mit mobydick](../../images/wombatdialer_overview.png?width=90% "WombatDialer Konzept mit mobydick")
+![Illustration - WombatDialer Concept with mobydick](../../images/wombat_overview.jpg?width=90% "WombatDialer Concept with mobydick")
 
 
-Der WombatDialer wird auf einem separaten Server (nicht direkt auf der mobydick) installiert. Zur Kommunikation mit der mobydick baut der WombatDialer eine Verbindung per Asterisk Manager Interface auf. Auf dem WombatDialer wird eine Liste mit anzurufenden Telefonnummer hinterlegt. Diese werden dann nach Start der Kampagne automatisiert angerufen (1) und, sobald ein Ruf beantwortet wird,  (2) mit einem beliebigen Ziel auf der mobydick verbunden. Als Ziele eigenen sich z. B. Teams, einzelne User, IVR-Menüs oder Skripte.
+The WombatDialer is installed on a separate server (not directly on the mobydick server). In order to communicate with mobydick, the WombatDialer establishes a connection via the Asterisk Manager Interface. Next, a list of the desired phone numbers which are to be called must be stored within the WombatDialer which upon starting the campaign (1) will be called and as soon as the call is answered (2) be connected to any desired point of contact within mobydick, such as Teams, Users, IVR menus or scripts.
 
-## Konfiguration
+## Configuration
 
-### mobydick vorbereiten
+### Preparing mobydick
 
-#### Asterisk Manager Interface konfigurieren
-Für die Kommunikation mit dem mobydick Server benötigt WombatDialer Zugriff auf das Asterisk Manager Interface (AMI).
+#### Asterisk Manager Interface Configuration
+In order to communicate with the mobydick server, the WombatDialer requires access to the Asterisk Manager Interface (AMI).
 
-Hierzu müssen Sie (insofern noch nicht geschehen) zuerst das AMI für öffentliche Zugriffe freischalten. Dies machen Sie unter `Appliance > Dienste` indem Sie **Erlaubte AMI Verbindungen** auf **öffentlich** stellen:
-![Screenshot - WombatDialer Konzept mit mobydick](../../images/ami_public.png?width=70% "WombatDialer Konzept mit mobydick")
+To do this, you will need to (if you have not already done so) enable the AMI to allow public access which can be done via ***Appliance > Services*** and then selecting ***public*** under the ***Allowed AMI Connections*** within the **Basic Data** tab as shown below:
+![Screenshot - WombatDialer Concept with mobydick](../../images/wombat_allow_AMI.jpg?width=90% "WombatDialer Concept with mobydick")
 
-Nun legen Sie auf der mobydick einen Manager Account für WombatDialer unter `Appliance > Asterisk` Managerkonten an:
-![Screenshot - Manager Account für WombatDialer](../../images/wombatdialer_ami_account.png?width=70% "Manager Account für WombatDialer")
+The next step is to create a manager account for the WombatDialer using the menu options ***Appliance > Asterisk Manager accounts***:
+![Screenshot - Manager Account for WombatDialer](../../images/wombat_AMI_manager_account.jpg?width=90% "Manager Account for WombatDialer")
 
-Bei **Erlaubt.Netz** können Sie die IP Adresse des WombatDialer-Servers angeben und die **Erlaubt.Mask** auf 255.255.255.255 stellen. Dadurch ist es nur von IP-Adresse des WombatDialers aus möglich auf die mobydick zuzugreifen. Dies erhöht die Sicherheit beträchtlich und ist daher zu empfehlen.
+Under ***Enabled net*** you can enter the IP address of the WombatDialer server and set the ***Enabled Mask*** to 255.255.255.255. This will ensure that only the WombatDialer's IP address will be able to gain access to mobydick server, this increases security significantly and is therefore recommended.
 
-#### Skript zur WombatDialer-Integration erstellen
-Zur Integration benötigen Sie ein Skript auf der mobydick. Bei neueren Versionen ist das Skript bereits auf der mobydick vorinstalliert und heißt wombat. Sollte das Skript bei Ihrer mobydick Version noch nicht vorhanden sein legen Sie es bitte unter `Erweitert > Skripte` wie folgt an:
-![Screenshot - WombatDialer-Integration erstellen](../../images/wombatdialer_skript_basic.png?width=70% "WombatDialer-Integration erstellen")
+#### Creating a WombatDialer Intergration Script
+In order to integrate the WombatDialer, a script within the mobydick is required. With future mobydick versions this script will already preinstalled and will be named **wombat**. Should the script not be preinstalled within your mobydick version, you can add it using the ***Advanced > Scripts*** menu:
 
-Jetzt fügen Sie im Reiter Skript noch folgendes Skript ein:
+![Screenshot - create WombatDialer-Integration](../../images/wombat_script_integration.jpg?width=90% "create WombatDialer-Integration")
+
+Using the Script tab, enter the following script:
 
     exten => _X.,1,NoOp(WombatDialer)
     same => n,Wait(0.25)
@@ -47,20 +47,19 @@ Jetzt fügen Sie im Reiter Skript noch folgendes Skript ein:
     same => n,Set(CHANNEL(language)=de)
     same => n,Goto(mdc_external,${EXTEN},1)
     
-Optional können Sie in diesem Skript noch folgende Variablen anpassen:
+Additionally, you can modify the following script variables (optional): 
 
-|Variable|Bedeutung|
-|CHANNEL(language)|Setzt die Sprache des Kanals für alle Ansagen die Sie später verwenden möchten. Mögliche Werte entnehmen Sie dem Menü Erweitert > Ansagen und dort unter der Schaltfläche Aktion > Sprachen:Verwalten. Sie können alle Werte in der Tabellenspalte Sprachkürzel für die Variable CHANNEL(language) verwenden.|
-|MDC_NUMPREFIX_TRUNK|	Falls Sie mobydick so konfiguriert haben, dass Sie ein Prefix (z. B. die 0) für Ihr Standardamt vorwählen müssen, tragen Sie dieses Prefix auch in der Variable MDC_NUMPREFIX_TRUNK ein.|
+|Variable|Meaning|
+|CHANNEL(language)|Sets the channel language for all announcements that you may wish to use later on. Possible values can be found under the ***Advanced > Prompts*** menu options and then via the selection button ***Action > Language: edit***. You will be able to use any of the values found within the table column **Language Abbreviations** with the CHANNEL(language) variable.|
+|MDC_NUMPREFIX_TRUNK|  Should you have configured your mobydick so that you have to dial a prefix (e.g. 0) in order to select your standard trunk, then enter this prefix within the MDC_NUMPREFIX_TRUNK variable.|
 {{% notice note %}}
-Vergessen Sie bitte nicht jetzt alle vorgeschlagenen Jobs in der mobydick anzuwenden damit die Konfiguration aktiv wird.
+Please don't forget that you will need to Apply all of the above modifications (jobs) in order to activate the configurations set.
 {{% /notice %}}
 
-#### Internen Namen des Amtes herausfinden
-WombatDialer benötigt ein Amt um externe Teilne
-hmer anrufen zu können. Dazu müssen Sie später in WombatDialer den internen mobydick Namen des Amtes kennen. Leider ist dieser nicht über die mobydick Weboberfläche zu ermitteln.  Um den Namen zu ermitteln loggen Sie sich bitte in die Asterisk CLI ein (siehe Zugriff auf MobyDick).
+#### Finding the Internal Trunk Name
+The WombatDialer requires access to a Trunk in order to able to call external parties, which means that you will need to provider the WombatDialer with the internal mobydick name for your desired trunk. Unfortunately, it is not possible to determine the internal trunk name via the mobydick interface. In order to find out what the internal trunk name is, please login into the Asterisk CLI (see Accessing MobyDick //FixMe).
 
-Geben Sie hier den Befehl sip show peers ein. Dann erhalten Sie folgende Ausgabe:
+Enter the command **sip show peers** which will provide you with the following output info:
 
     mobydick*CLI> sip show peers
     Name/username             Host                                    Dyn Forcerport ACL Port     Status      Description
@@ -69,45 +68,45 @@ Geben Sie hier den Befehl sip show peers ein. Dann erhalten Sie folgende Ausgabe
     2 sip peers [Monitored: 2 online, 0 offline Unmonitored: 0 online, 0 offline]
     mobydick*CLI>
 
-Alle internen Namen für Ämter beginnen mit mdc_trunk_conf- (in unserem Fall mdc_trunk_conf-1). Anhand des Usernamen (in unserem Fall dev-test) und der Host Adresse (in unserem Fall 172.16.214.10) können Sie in den meisten Fällen ermitteln welcher interne Name zu welchem Amt gehört. 
+All internal trunk names begin with **mdc_trunk_conf-** (in our example, **mdc_trunk_conf-1**). Using the username (in this example **dev-test**+) and the host address (in this scenario **+172.16.214.10**) you should be able to identify which internal name belongs to which trunk, in the majority of cases. 
 
-### WombatDialer installieren
-Setzen Sie WombatDialer gemäß der [Anleitung des Herstellers](https://www.wombatdialer.com/ "Zur Herstellerseite") auf einem separaten Server auf.
+### WombatDialer Installation
+In accordance with Loway's Instructions //FixMe you should setup the WombatDialer on a separate server.
 {{% notice note %}}
-Installieren Sie bitte in keinem Fall den WombatDialer direkt auf dem mobydick Server sondern verwenden Sie dazu immer eine eigene Linux-Installation wie Ubuntu, Debian, CentOS, etc. auf einem separaten Server oder einer separaten virtuellen Maschines!
+Please Note: Under no circumstances should you install the WombatDialer directly on the mobydick server, rather you should always use another Linux Installation such as Ubuntu, Debian, CentOS, etc. on a separate server or separate virtual machine!
 {{% /notice %}}
 
 
-### WombatDialer konfigurieren
-Nach der Installation des WombatDialer loggen Sie sich bitte auf diesem ein. Hier müssen Sie zuerst unter Edit basic settings die Verbindung zur mobydick konfigurieren:
-![Screenshot - WombatDialer konfigurieren](../../images/wombatdialer_basic_settings.png?width=70% "WombatDialer konfigurieren")
+### WombatDialer Configuration
+Once the WombatDialer installation has been completed, login into the application. Under Edit Basic Settings you will need to configure the connection to mobydick: 
+![Screenshot - configure WombatDialer](../../images/wombat_basic_settings.png?width=70% "configure WombatDialer")
 
 #### Asterisk servers
-Tragen Sie hier die mobydick IP-Adresse als Server address ein. Benutzen Sie als Login und Passwort die Daten des zuvor auf der mobydick erstellen Asterisk Manager Accounts.
+Enter your mobydick IP address as the **Server address**. As **Login** and **Password** use the user data you entered when creating your Asterisk Manager Account
 
 #### Trunks
-Hier geben Sie an welches mobydick Amt WombatDialer für seine Arbeit benutzen soll. Hierzu müssen Sie den zuvor ermittelten internen Namen des Amtes in den **Dial string** eintragen. Heißt Ihr Amt z. B. **mdc_trunk_conf-1** ist der Dial String:
+Here you will need to define which mobydick trunk the WombatDialer should use to be able to do its job. This is where you will need to enter the internal trunk name we found earlier and enter it in the ***Dial String*** field. Which means if your trunk is called e.g. **mdc_trunk_conf-1** the Dial String will look like:
 
     SIP/mdc_trunk_conf-1/${num}
-${num} wird von WombatDialer später immer durch die anzurufende Telefonnummer ersetzt.
+${num} will always be replaced by the called telephone number later on.
 
 #### End Points
-Ein End Point ist das Ziel in der mobydick mit dem der zuvor über den Trunk angerufene externe Teilnehmer verbunden wird. Hierzu eigenen sich z. B. mobydick Teams, Benutzer, IVR oder Skripte. Es gibt zwei verschiedene Endpointtypen:
+An End Point is the desired destination within the mobydick with those external parties who have been called over the trunk will be connected with. These end points could be for example mobydick teams, users, IVRs or scripts. There are two forms of end points available within the WombatDialer:
 
 |Parameter|Bedeutung|
-|QUEUE|	Wollen Sie die Zielrufnummer mit einem mobydick Team verbinden nutzen Sie diesen Endpointtyp. Dadurch überwacht WombatDialer auch die Verfügbarkeit der Agenten, etc.|
-|PHONE|	Bei allen anderen Endpoints wie Benutzer, IVR-Menüs oder Skripten nutzen Sie diesen Endponttyp|
+|QUEUE|       Should you like the destination phone numbers to be connected with a mobydick team, then you should use this end point form as this will mean that the WombatDialer monitors the availability of your agents etc.|
+|PHONE|    All other End Points, such as Users, IVR menus or scripts require you to use this end point type|
 
-Weitere Parameter die Sie bei einem Endpoint einstellen müssen:
+Further parameters which you will need to setup within an End Point include:
 
-|Queue name / Phone|	Name des Endpoint. Wenn Sie den Endpointtyp QUEUE benutzen muss der Name mit dem Namen des Teams in mobydick exact übereinstimmen. Ansonsten ist dieser frei wählbar|
-|Located at: Extension	|Die Durchwahl des Teams, Benuter, IVR, Skript, ...|
-|Located at: Context	|Ist immer wombat. Dadurch wird für den Einstieg in den mobydick Dialplan immer das weiter oben angelegte Skript benutzt.|
+|Queue name / Phone|   End point name. If you use the QUEUE end point type, then the name must match exactly the name of the that team within mobydick, Otherwise this is completely up to you|
+|Located at: Extension |The extension number of the team, user, IVR or script etc, ...|
+|Located at: Context   |Is always **wombat**. This ensures that the script we added above, will always be used as the initiate point into the mobydick dialplan.|
 
-#### Dialer starten
-Jetzt gehen Sie zurück auf das Home Tab des WombatDialer und starten den Dialer durch drücken auf den **Play-Button** unter **Dialer status**.
-Nun ist die Integration zwischen mobydick und WombatDialer abgeschlossen. Weiter Details entnehmen Sie bitte der WombatDialer [Anleitung des Herstellers](https://www.wombatdialer.com/ "Zur Herstellerseite") oder dem hier in der Dokumentation folgenden Praxisbeispiel-Video
+#### Startint the Dialer
+To start the dialer, navigate back to the **Home** Tab within the WombatDialer and start the dialer by click on the **Play Button** under ***Dialer status***.
+That's it, the integration between mobydick and the WombatDialer is done. Further details can be found either in Loway's instructions manual //FixMe or in our example video documentary below.
 
-## Praxisbeispiel
+## Practical Example
 
 {{< youtube G3rWJDqxTWg >}}
