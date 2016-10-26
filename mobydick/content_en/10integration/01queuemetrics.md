@@ -1,14 +1,14 @@
 ---
-title: Queuemetrics
-next: /integrationen/queuemetrics/
-prev: /integrationen/
-next: /integrationen/wombatdialer/
+title: QueueMetrics
+url: /integration/queuemetrics/
+prev: /integration/
+next: /integration/wombatdialer/
 weight: 101
 toc: true
 ---
 ## Overview
 
-The QueueMetrics software is used by call centres to manage queues (teams) and their users. QueueMetrics is not installed on the same server as mobydick and stores data in a MySQL database. This database can be located either on the same server as QueueMetrics or on any other server. If needed, mobydick can write data required for reporting to the MySQL server.
+The QueueMetrics software is used by call centres to manage queues (teams) and their users. QueueMetrics is not installed on the same server as mobydick and stores data in a MySQL database. This database can be located either on the same server as QueueMetrics or on any other server. If needed, mobydick can write the data required for reporting to the MySQL server.
 
 ## Configuration
 
@@ -70,7 +70,7 @@ Log on to the mobydick web interface and select menu ***Advanced > QueueMetrics*
 |DB user name| The mobydick username which has been granted access to the QueueMetrics database|
 |DB password|  The corresponding password|
 |QueueMetrics URL| The QueueMetrics server URL|
-|API User| The API user for the QueueMetrics server (more information can be found here) //Fixme|
+|API User| The API user for the QueueMetrics server|
 |API Password| The API user password|
 
 Save the configuration and apply the created jobs.
