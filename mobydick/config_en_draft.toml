@@ -5,15 +5,15 @@ contentdir= "content_en"
 
 title = "mobydick Documentation"
 theme= "doc-pascom"
-
+author = "pascom Netzwerktechnik GmbH & Co. KG"
 
 [params]
 
     # basurlde Link zur Startseite der Doku (bei der Deutschen Doku immer auf den ersten Artikel verlinken | bei der Englischen Doku immer Link ohne ersten Artikel)
-    baseurlde = "https://www.pascom.net/de/dokumentation/mobydick"
+    baseurlde = "https://www.pascom.net/de/dokumentation/mobydick/server/"
 
     # baseurlen Notwendig für den Umschalter in die Englische Wiki
-    baseurlen = "https://www.pascom.net/en/documentation/mobydick"
+    baseurlen = "https://www.pascom.net/en/documentation/mobydick/server/"
 
     # lang Variable damit der HMTL Header auch de oder en anzeigt
     lang = "en"
@@ -28,8 +28,8 @@ theme= "doc-pascom"
 
     # Wir haben ein Menü links, welches auf bestimmte Theme verweist. Die Inhalte der Variablen müssen dann auch immer entsprechend der Sprache angepasst werden.
     impressumtext = "Legal Notice"
-    impressumurl = "https://www.pascom.net/en/legal-notice//"
-    impressumtitle = "pascom Legal Notice/"
+    impressumurl = "https://www.pascom.net/en/legal-notice/"
+    impressumtitle = "pascom Legal Notice"
 
 
     mypascomurl = "https://my.pascom.net/"
@@ -45,6 +45,6 @@ theme= "doc-pascom"
     # docuname gibt den Namen der jeweiligen Dokumentation an
     docuname = "mobydick Documentation"
 
-    searchfield = "Search in mobydick docs (shortcut 's')"
+    searchfield = "Search our documentation (shortcut 's')"
 
     algoliaindex = "doc-mobydick-en"

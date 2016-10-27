@@ -14,9 +14,10 @@ Keywords:
 weight: 73
 toc: true
 ---
-<!--//fixME replace screenshots-->
+
 
 ## Concept
+<!--//fixME replace screenshots-->
 
 IVRs are used to route a caller through the system by pressing keys. For example, 50 % of all calls to the central office might actually be intended for the marketing or support department. In this case, using an IVR at the central office could be beneficial in taking some load of off the central office.
 
