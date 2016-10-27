@@ -1,6 +1,6 @@
 ---
 title: Interactive Voice Response Menus
-url: /call-distribution/ivr-menus
+url: /call-distribution/ivr-menus/
 linkde: /anrufverteilung/ivr-menue/
 prev: /call-distribution/business-hours/
 next: /call-distribution/skills-based-routing/
