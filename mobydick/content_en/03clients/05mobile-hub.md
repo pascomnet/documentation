@@ -19,9 +19,9 @@ toc: true
 
 If a number is dialled in the Mobility Client either manually or from the phone book, the software is able to make the call using the mobydick Server. This way, the call recipient will see the users business phone number instead of their mobile phone number. The Mobile Hub option can also be useful to minimise phone bills, for example, if a call needs to be made to an international number.
 
-//FixMe
+<!--//FixMe
 ![Illustration - Mobile Hub Konzept](../../images/mobile_hub_konzept.png?width=70% "Mobile Hub Konzept in der mobydick")
-
+-->
 
 ## Configuration
 
@@ -35,7 +35,7 @@ To automatically create the corresponding **rule**, enter the **destination** nu
 
 ### Adding mobile devices for Mobile Hub
 After the Mobile Hub has been configured, the smartphones which are to utilise it need to be added and assigned to the corresponding users.
-
+<!--//FixMe screenshot replace-->
 ![Screenshot - add mobile devices for Mobile Hub](../../images/client_mobile_hub_add.png?width=70% "add mobile devices for Mobile Hub")
 In the mobydick web interface, select Devices > Device list and press the "Add" //FixMe  button.
 

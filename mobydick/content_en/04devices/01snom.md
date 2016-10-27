@@ -34,13 +34,13 @@ When modifiying Default Settings, ensure you make a copy of the original and edi
 
 Connect the IP phone the your network and, should you not be using Power over Ethernet (PoE), connect the power supply to the phone. The phone will now boot and acquires an IP address and the corresponding Basic Configurations via **DHCP**. After this process is completed, mobydick will **automatically** add the device to the device list as well as adding the appropriate SIP peer:
 
-![Screenshot - mobydick Engeräteliste mit Snom](../../images/Snom_devicelist.png?width=90% "mobydick Engeräteliste mit Snom")
+![Screenshot - mobydick Device List with Snom](../../images/Snom_devicelist.png?width=90% "mobydick Device List with Snom")
 As mentioned above, for every device mobydick will also automatically add a SIP peer. In addition, the device username and password will also be automatically generated. The username consists of a randomly generated string followed by the last six digits of the device's MAC address (15 digits in total). As the IP phones are automatically provisioned, you will not be required to enter this data manually and it is not possible to modifiy the user data. This is designed to considerably increase security against SIP Brute Force attacks. 
 
-![Screenshot - Snom Endgerätekonfiguration](../../images/Snom_endgeraet_details.png?width=90% "Snom Endgerätekonfiguration in mobydick")
+![Screenshot - Snom Endpoint Configuration](../../images/Snom_endpoint_details.png?width=90% "Snom Endpoint Configuration in mobydick")
 
 The telephone type followed by the MAC address willl be automatically used as the Device Name. On most IP phones, the MAC address is noted on the device housing, allowing phones to be more simply deployed on site in the correct locations. Should you wish you to, you can modify the device name at this point so that the name also reflects a room number or specific user etc.:
-![Screenshot - Snom MAC-Adresse](../../images/Snom_endgeraet_label.png?width=90% "Snom MAC-Adresse in mobydick")
+![Screenshot - Snom MAC-Address](../../images/Snom_endpoint_label.png?width=90% "Snom MAC-Address in mobydick")
 
 After a successful provisioning, the IP phone display should show to correct language, time as well as the text `Emergency Only` as until now the phone does not have an user assigned and therefore is in `Emergency Mode` allowing you dial emergency numbers. Assignikng a user directly on the phone can be done using the `*88UserExtensionNumber`, e.g. *88123
 

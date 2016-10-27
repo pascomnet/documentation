@@ -1,6 +1,6 @@
 ---
 title: Patton Gateways Setup
-url: /analog-isdn/patton-gateways/
+url: /analog-isdn-gateways/patton-gateways/
 prev: /analog-isdn-gateways/beronet-gateways/
 linkde: /isdn-analog/patton-gateways/
 description: Patton Gateways are fully compatible with pascom phone systems and offer cost effective multi technology communication solutions.

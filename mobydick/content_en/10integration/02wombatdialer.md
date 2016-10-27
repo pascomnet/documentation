@@ -1,8 +1,7 @@
 ---
 title: WombatDialer
-next: /integrationen/wombatdialer/
-prev: /integrationen/queuemetrics/
-next: /integrationen/wombatdialer/
+url: /integration/wombatdialer/
+prev: /integration/queuemetrics/
 weight: 101
 toc: true
 ---

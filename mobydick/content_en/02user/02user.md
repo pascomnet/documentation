@@ -9,7 +9,7 @@ keywords:
     - Add Users
     - Add Locations
 description: What is an user and what is a location in mobydick and how can you add and manage them quickly and efficiently?
-linken: /benutzer/benutzer-und-arbeitsplaetze/
+linkde: /benutzer/benutzer-und-arbeitsplaetze/
 url: /users/users-and-locations/
 prev: /users/
 next: /users/add-teams/
@@ -79,7 +79,7 @@ A voicemail box is created for each user as default. The default setting is to n
 |For internal calls|Incoming **internal** calls are forwarded to the voicemail box of the person called if the they are on the phone or not available to answer the call.  Accounts using the **Internal / After** settings will automatically be handled according to the settings applied.|
 |For all calls| All calls are forwarded to the voicemail box if the person called is on the phone or does not answer. As a result **Internal / After** and **External / After**  actions are automatically created to handle this scenario.|
 
-Enabling the **mobydick Softphone** will mean that the user will automatically be created with a mobydick Software Telephone. This will enable the user to use the <!-- FixMe Link -->mobydick Client exactly like a normal desktop telephone.
+Enabling the **mobydick Softphone** will mean that the user will automatically be created with a mobydick Software Telephone. This will enable the user to use the mobydick Client exactly like a normal desktop telephone.
 
 Save your changes and review the user details:
 ![Screenshot - edit user in mobydick](../../images/user_edit.png?width=90% "User edit")
@@ -103,7 +103,7 @@ As standard, only your mobydick Administrator can log in to the Web UI. However,
 
 The **Save voicemail** option allows you to choose whether voice messages should be saved to disk. If the field **Voicemail E-Mail** contains an e-mail address, new voice messages are automatically forwarded to that address.  
 
-The **Monitored voicemail box** allows you to select a user who can administer the mailbox using either the mobydick Client, Mobility Client or an IP telephone. For more details, please see <!--//FixMe Link voicemail box.
+The **Monitored voicemail box** allows you to select a user who can administer the mailbox using either the mobydick Client, Mobility Client or an IP telephone. For more details, please see <!--//FixMe Link voicemail box.-->
 
 ### Phonebook
 
@@ -205,4 +205,4 @@ Every telephone can be setup with **Waiting** and **Ringing** parameters valued 
 
 Additionally you can handle internal calls differently to external calls as well as calls which should reach your Team Agents. Therefore, there is the according **Waiting** and **Ringing** parameters per Telephone for **intern, extern** and per **Agent**.
 
-Currently the Followme concept can only be set by the Administrator. In future versions, this should be also possible to do by the users
+Currently the Followme concept can only be set by your system Administrator. However, in future versions it will be possible for individual users to configure the FollowMe setup that suits their work flow.

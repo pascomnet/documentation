@@ -19,9 +19,9 @@ toc: true
 
 ### Modular Construction for more Flexibility
 beroNet Cards and Gateways offer a modular construction, meaning you can cover different connection types with on device.
-![Illustration - modulares Gateway](../../images/beronet_gateway_beispiel.jpg?width=90% "Modulare Gateways Lösung von beroNet")
+<!--//FixMe![Illustration - modular Gateway](../../images/beronet_gateway_beispiel.jpg?width=90% "Modular Gateways Solutions from beroNet")-->
 
-Example: You have 3 NTBAs (ISDN Connections) as well as 2 Analog Fax, then you can use a beroNet Gateway or card with a 4S0 module in combination with a 4FXS module. 
+For example: you could have 3 NTBAs (ISDN Connections) as well as 2 Analog Faxes, then you can use a beroNet Gateway or card with a 4S0 module in combination with a 4FXS module.
 
 ### beroNet VoIP Gateways
 The beroNet Gateway is connected via LAN and is assigned an IP address from the telephone network. Connections to the
@@ -29,7 +29,7 @@ public telephone network and analogue terminal devices are established using the
 installation of various modules. Depending on the module, the front ports are compatible with analogue or ISDN devices.
 Due to the LAN connection, beroNet Boxes can be easily integrated with a mobydick virtual appliance.
 
-![Illustration - beroNet VoIP Gateway](../../images/beronet_voip_gateway.png "beroNet VoIP Gateway im Netzwerk")
+![Illustration - beroNet VoIP Gateway](../../images/beronet_voip_gateway.png?width=90% "beroNet VoIP Gateway Network Setup")
 
 beroNet Gateways are available in the following specifications:
 
@@ -40,7 +40,7 @@ beroNet Gateways are available in the following specifications:
 ### beroNet Cards
 beroNet expansion cards can be mounted directly in a mobydick hardware appliance and are automatically assigned an IP address from the zero-config network range **169.254.0.0/16** during boot. With exception of this difference configuration of beroNet Gateways and expansion cards
 
-![Illustration - beroNet Cards](../../images/beronet_karten.png "beroNet VoIP Karten")
+![Illustration - beroNet Cards](../../images/beronet_card.png "beroNet VoIP Cards")
 
 The following beroNet cards are available:
 
@@ -49,12 +49,12 @@ The following beroNet cards are available:
 * beroNet Baseboard PCI-Express, 32-128 channels
 
 
-## ISDN and analogue extensions
+## ISDN and Analog Extensions
 Extensions such as fax devices, fax serversm telephones, door openers etc. can either be connected directly or using SIP.
 
-###Direct connection
+### Direct connection
 
-![Illustration - ISDN Anbindung direkt](../../images/beronet_direkt.png?width=90% "Anbindung direkt über ISDN Gateway")
+![Illustration - ISDN Direct Connection](../../images/beronet_direct.png?width=90% "Direct Connection over ISDN Gateway")
 
 **Calls** will **not be converted to SIP** and sent over the phone system server, but rather they are routed directly on the beroNet device. If, for example, there is an inbound call for the fax device, the beroNet device will directly connect it to the fax device. 
 
@@ -64,7 +64,7 @@ The **disadvantage** here is that mobydick will not be made aware of those calls
 
 ### Connecting via SIP
 
-![Illustration - Anbindung via SIP](../../images/beronet_via_sip.png?width=90% "Anbindung via SIP über Gateway")
+![Illustration - Connection via SIP](../../images/beronet_via_sip.png?width=90% "Anbindung via SIP over Gateway")
 
 **Via SIP** means that all calls to the corresponding extension are routed per SIP over your telephony system. Therefore, should a call for the fax device come in, it will be firstly routed via **1** to the phone system and then further via **2** to the analog fax device.
 
@@ -87,12 +87,12 @@ Individual Beronet boxes need be connected to your switch. Next, connect the pow
 mobydick will detect the new hardware automatically once you have connected your beroNet expansion card or Box to the LAN. Please note that beroNet Boxes need to be in the same subnet as mobydick for this to work.
 
 In the mobydick web interface, select ***Gateways > Gateway list*** and press the `+Add` button. mobydick will then try to detect your beroNet hardware:
-![Screenshot - beroNet Gateway erkennen](../../images/beronet_gateway_erkennen.png?width=90% "Neues beroNet Gateway erkennen")
+![Screenshot - beroNet Gateway detection](../../images/beronet_detect.png?width=60% "Detect new beroNet Gateway")
 
 If detection is unsuccessful or the beroNet Box is in a different subnet from mobydick, you can add the hardware manually by clicking the `Create manually` button.
 
 The drop-down menu `Gateways lists all detected beroNet Boxes and expansion cards:
-![Screenshot - beroNet Gateway anlegen](../../images/beronet_gateway_anlegen.png?width=90% "Neues beroNet Gateway anlegen")
+![Screenshot - Add beroNet Gateway](../../images/new_beronet_gateway.png?width=90% "Add new beroNet Gateway")
 
 Enter your data in the fields `Username` and `Password to authenticate with the webserver running on the beroNet device. The default user name and password is ***admin***. You cannot change the username or password at this point yet.
 
@@ -104,11 +104,11 @@ Alternatively, you can now add a trunk and the corresponding inbound / outbound 
 
 ### Creating ISDN trunks
 A common use case for beroNet hardware is to connect ISDN trunks to it. To do so, select the gateway you want to use from the list, click the `Edit` button and then switch to the **Allocation** tab.
-![Screenshot - ISDN Amt hinzufügen](../../images/beronet_isdn_trunk_hinzuegen.png?width=90% "ISDN Amt per beroNet hinzufügen")
+![Screenshot - Add ISDN Trunk](../../images/beronet_isdn_trunk_add.png?width=90% "ISDN Trunk via beroNet add")
 
 Under `Add` to configure either a **BRI** or **PRI Trunk line** . 
 
-![Screenshot - ISDN Amt hinzufügen im Detail](../../images/beronet_isdn_trunk_hinzuegen_detail.png?width=90% "ISDN Amt per beroNet hinzufügen")
+![Screenshot - Add ISDN Trunk Detailed](../../images/beronet_isdn_trunk_add_detail.png?width=90% "Add ISDN trunk via beroNet Gateway")
 
 Double-clicking on the record `Name` field will open a more detailed view in which you select which **Ports** are allocated to the trunk. It is possible to select multiple options here as a BRI that is configured to use the PP protocol allows for several NTs to be aggregated so they form a single trunk.
 
@@ -121,7 +121,7 @@ You have now configured the interface of the beroNet hardware. For complete func
 
 Choose the required Gateway from the list and select `Edit` and go to the **Allocation** tab.
 
-![Screenshot - Analoges Endgerät hinzufügen](../../images/beronet_analog_hinzufuegen.png?width=90% "Analoges Endgerät hinzufügen")
+![Screenshot - beroNet Analog Endpoint](../../images/beronet_analog_add.png?width=90% "Add Analog Endpoint via beroNet")
 
 The `Add` dropdown includes the following options:
 

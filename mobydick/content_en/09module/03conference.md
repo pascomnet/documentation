@@ -2,7 +2,7 @@
 title: Conference Room System
 url: /modules/conference-system/
 prev: /modules/call-recording/
-next: /module/
+next: /modules/cluster-setup/
 weight: 93
 toc: true
 ---
@@ -14,7 +14,7 @@ A conference room is reachable under an extension number and in order to enter t
 
 If the extension number belongs to block of numbers (otherwise known as DIDs - Direct Inward Dial) from a voice Trunk, then the conference room will also be externally accessible.
 //FixMe
-![Illustratiom - VoIP Konferenzraumsystem](../../images/meetme.png?width=60% "VoIP Konferenzraumsystem")
+![Illustratiom - VoIP Conference Rooms](../../images/conference_meetme.png?width=90% "VoIP Conference Room System")
 
 ## Configuration
 In the mobydick Commander web User Interface, select Users > Conference room and press the "Add"//FixMe button.

@@ -13,7 +13,7 @@ description: Configuration of mobydick, Windows, Linux or other DHCP Servers to 
 linkde: /server/dienste/
 url:  /server/services/
 prev: /server/network-configuration/
-next: /server/backup/
+next: /server/backups/
 weight: 16
 toc: true
 ---

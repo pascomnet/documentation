@@ -2,7 +2,6 @@
 title: HA Cluster Setup
 url: /modules/cluster-setup/
 prev:  /modules/conference-system/
-next: /modules/
 weight: 94
 toc: true
 keywords:
@@ -67,11 +66,11 @@ This is the example configuration for the first node:
 
 ![Illustration - Network Node 1](../../images/cluster_net_node1.png?width=90% "Network Node 1")
 
-Die Beispiel-Konfiguration auf der zweiten Node:
+The following is an example configuration for the second node:
 
-![Illustration - Netwerk Node 2](../../images/cluster_netzwerk_node2.png?width=90% "Netzwerk der Node 1")
+![Illustration - Network Node 2](../../images/cluster_net_node2.png?width=90% "Network Node 2")
 
-For more details, please see Configuring the Network
+For more details, please see [Network Configuration] ({{< ref "05network-config.md" >}} "mobydick Network Configuration")
 
 ### Configuring the host name on both nodes
 
@@ -93,7 +92,7 @@ Make sure the following services are configured and working on the master node:
 * E-Mail server
 * Fax server (a basic configuration is required, even if the fax server is not going to be used)
 
-For more details, please see Configuring the Network and Virtual Fax Server.
+For more details, please see [Network Configuration] ({{< ref "05network-config.md" >}} "mobydick Network Configuration") and the [Virtual Fax Server]({{< ref "01faxserver.md">}} "mobydick fax server").
 
 The services only need to be configured on the master node; the configuration is synchronised between the master and the node.
 
@@ -121,10 +120,10 @@ Log on to the master node's mobydick web interface, select ***Appliance > Cluste
 | E-mail for notification |Information regarding the cluster is sent to this address. Information is included on failover events or the failure and migration of services.|
 
 When you have entered the required information, press the ***Configure*** button::
-![Screenshot - Configuring Cluster Master](../../images/cluster_master_config.wait.png "Configuring Master")
+![Screenshot - Configuring Cluster Master](../../images/cluster_master_config_wait.png?width=60% "Configuring Master")
 
 If the configuration was successful, the mobydick server will reboot and display the following information:
-![Screenshot - Cluster Master reboot ](../../images/cluster_master_config_reboot.png?width=90% "reboot master cluster")
+![Screenshot - Cluster Master reboot ](../../images/cluster_master_config_reboot.png? "reboot master cluster")
 
 
 When the node is available again, log on to the mobydick web interface at the cluster IP and select the menu Appliance > Cluster Administration. The status displayed should be similar to the example below:
@@ -145,7 +144,7 @@ Log on the IP of the node which you have **initially** set to operate in slave m
 Insert the public SSH key you just copied from the master and press "Save".
 This can take a short amount of time, so please wait while the slave is being configured:
 
-![Screenshot - Cluster integration](../../images/cluster_slave_add_wait.png "mobydick Cluster integration")
+![Screenshot - Cluster integration](../../images/cluster_slave_add_wait.png?width=80% "mobydick Cluster integration")
 
 After a successful configuration, the status of the slave should be shown as illustrated below:
 
@@ -168,7 +167,7 @@ Log on to the **cluster IP of the current master node**. In the mobydick web int
 
 Enter the data and click the "apply" button:
 
-![illustration- add slave Cluster Slave](../../images/cluster_slave_add_wait.png?width=90% "mobydick Cluster hinzufügen")
+![illustration- add slave Cluster Slave](../../images/cluster_slave_add_wait.png?width=80% "mobydick Cluster hinzufügen")
 
 The slave is now part of the cluster and initial data synchronisation will be performed.
 
@@ -229,7 +228,7 @@ By clicking the ***Add Again button***, the slave node will be re-integrated int
 
 
 mobydick caches the data of the slave node that was last used and will automatically suggest to use the cached data. Click the ***apply*** button:
-![Screenshot - Cluster Update Slave](../../images/cluster_slave_add.png?width=50% "Slave in Detail")
+![Screenshot - Cluster Update Slave](../../images/cluster_slave_add.png?width=90% "Slave in Detail")
 The slave node will perform a reboot on successful re-integration. After the reboot, the cluster will be fully functional again.
  
 ## Failover und Monitoring

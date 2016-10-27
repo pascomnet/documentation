@@ -2,7 +2,7 @@
 url:  /endpoints/generic-ip-endpoints/
 linkde: /endgeraete/beliebiges-ip-geraet-einrichten/
 prev: /endpoints/snom-ip-telephones/
-next: /endpoints/analog-and-isdn-devices/
+next: /endpoints/integrate-aastra-dect-system/
 weight: 45
 title: Generic IP Endpoints
 keywords: 
@@ -22,7 +22,7 @@ mobydick offers Out-of-the-Box telephony thanks to incorporating a fully integra
 mobydick is designed to be compatible with every SIP enabled device. Compared to devices from the vendors Snom, Yealink, Auerswald, Aastra and OpenStage, all other SIP devices are not automatically provisioned by mobydick. Therefore, all other SIP devices will not be automatically added to the device list and a SIP peer will not be automatically added.
 
 In order to register a softphone or another IP telephone with mobydick, press `+Add` in the device list and choose **IP telephone: any manufacturer or softphone** as the device type:
-![Screenshot - IP telephone: any manufacturer or softphone Menu](../../images/device_add_softphone.png?width=30% "IP telephone: any manufacturer or softphone Menu")
+![Screenshot - IP telephone: any manufacturer or softphone Menu](../../images/device_add_softphone.png?width=80% "IP telephone: any manufacturer or softphone Menu")
 
 Next, setup a **Username** and **Password** for the device:
 ![Screenshot - IP telephone: any manufacturer or softphone Menu](../../images/device_softphone_detail.png?width=100% "IP telephone: any manufacturer or softphone Menu")

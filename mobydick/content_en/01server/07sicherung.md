@@ -1,8 +1,8 @@
 ---
 title: Backup and Restore
 url: /server/backups/
-prev:  /server/cluster-setup/
-next: /server/update-and-monitoring/
+prev:  /server/services/
+next: /server/update/
 weight: 17
 toc: true
 keywords:
@@ -41,7 +41,7 @@ Database backups will be automatically deleted should the predefined number of g
 #### Manually creating a backup
 To create a backup using the web interface, select ***Appliance > Backup > Entire system***:
 
-![Screenshot - mobydick Backup in Detail](../../images/backup_system-entire.png?width=90% "Manual Backup in detail")
+![Screenshot - mobydick Backup in Detail](../../images/backup_system_entire.png?width=90% "Manual Backup in detail")
 
 To avoid an overly large ISO file, individual components can be excluded from the backup:
 

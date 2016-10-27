@@ -11,5 +11,8 @@ keywords:
     - Call Queues
     - Call Groups and Queues
     - Advanced Team Functions
-description: Was ist ein Users, Arbeitsplatz in mobydick und wie lassen diese sich einfach einrichten und verwalten?
+description: What is an user and what is a location in mobydick and how can you add and manage them quickly and efficiently?
+chapter: true
 ---
+
+# User Management

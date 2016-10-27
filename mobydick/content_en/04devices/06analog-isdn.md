@@ -12,6 +12,7 @@ next: /endpoints/integrate-aastra-dect-system/
 prev: /endpoints/generic-ip-endpoints/
 weight: 46
 toc: true
+draft:true
 ---
 
 ## Device Integration via a Gateway

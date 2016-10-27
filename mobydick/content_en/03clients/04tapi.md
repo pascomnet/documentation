@@ -16,7 +16,7 @@ prev: /clients/teams-in-client/
 next: /clients/mobile-hub-setup/
 weight: 34
 linkde: 
-url: /clients/tapi/
+url: /clients/tapi-interface/
 toc: true
 ---
 
@@ -53,7 +53,7 @@ The MobyDick TAPI can be installed on any windows desktop. The TAPI will then re
 
 ### Supported TAPI Functions
 
-The TAPI Interface specifies a number of call related functions, of which the following are supported by the mobydick TAPI
+The TAPI Interface specifies a number of call related functions, of which the following are supported by the mobydick TAPI:
 
 |Function| Comments|
 |---------|----------|
@@ -71,21 +71,20 @@ The TAPI Interface specifies a number of call related functions, of which the fo
 |Windows 8.1 (32bit/64bit)|Windows Server 2012R2 (32bit/64bit)|
 
 
-//FixMe
-### TAPI Versionen
-Die mobydick TAPI meldet als Mindestvorraussetzung die TAPI Version 2.1 an das jeweilige Betriebssystem. Für mehr Details siehe Microsoft MSDN. Auch Programme, die die TAPI Version 3.X einsetzen, können mit der mobydick TAPI zusammen verwendet werden, da die TAPI 3.X zu 2.X Abwärtskompatibel ist. [Mehr Infos zur TAPI Version] (https://msdn.microsoft.com/en-us/library/windows/desktop/ms734214%28v=vs.85%29.aspx "Zur TAPI Webseite").
+### TAPI Versions
+The mobydick TAPI requires TAPI version 2.1 to be configured within the corresponding operating system. Programs that utilise the TAPI version 3.X can be used in combination with mobydick as TAPI 3.X includes backward compatibility to TAPU 2.X. For more information, [please refer to the Microsoft MSDN] (https://msdn.microsoft.com/en-us/library/windows/desktop/ms734214%28v=vs.85%29.aspx "TAPI Website").
 
 
 ## Configuration
 
 {{% notice warning %}}
-1.Ensure no applications are running with the TAPI Interface uses  
-2.Ensure that telephony services have been stopped. //FixMe (Dieser ist aufgelistet unter Systemsteuerung > Verwaltung > Dienste)  
+1.Ensure no applications are running which the TAPI Interface uses  
+2.Ensure that telephony services have been stopped.  
 3.You can install a debug as well as productive version, in that you can easily repeat the setup. This is also possible vice versa
 {{% /notice %}}
 
 
-### TAPI Software herunterladen
+### TAPI Software Download
 You can directly download the software by using the ***Service*** tab within the mobydick Commander login screen:
 
 ![Screenshot - mobydick Service Tab](../../images/tapi_service_tab.png?width=70% "download TAPI Software")
@@ -137,8 +136,7 @@ You can now confirm the successfull installation by clicking on **Finish**:
 #### Configuration of the mobydick
 Should you wish to install the TAPI on a Terminal Server or on a computer that is used by more than one person, then you will need assign the users, who will connect using the TAPI, with the ***xmpp.supervisor Role***. This means that only one individual XMPP connection will be constructed from the Terminal Server, over which the total communication will be transmitted.
 
-//FixMe
-![Screenshot - Erfolgreiche Installation](../../images/tapi_terminalserver_konzept.png?width=50% "Erfolgreiche Installation")
+![Screenshot - Successful Installation](../../images/tapi_terminalserver_concept.png?width=50% "Successful TAPI installation")
 
 
 #### Installation
@@ -164,15 +162,14 @@ As stated before, the TAPI will login with the same user data just like the //Fi
 
 Now a further dialogue  box will appear, in which you will be able to select the users, who should be available later within TAPI applications (e.g. MS Outlook). All the existing users will be displayed within the list. In order to choose a user, one can double click on the desired user or use the buttons in between the two list screens:
 
-You can now confirm the successful installation by clicking on **Finsih**:
+You can now confirm the successful installation by clicking on **Finish**:
 
 ### Example scenario with Microsoft Outlook
 
-Start Outlook and select the desired contact entry. Using the right mouse button, select the number to call from the drop down menu:
+Start Outlook and select the desired contact entry. Using the right mouse button, select the number to call from the drop down menu:  
 
-//FixMe
-Now the New Call window will appear: confirm the number by clicking ***Start call***.
-//FixMe
+Now the New Call window will appear: confirm the number by clicking ***Start call***.  
+
 Now your telephone should make the call.
 
 {{% notice info %}}
@@ -181,7 +178,6 @@ On terminal server installations, every user must select their "own" line within
 
 By clicking **Dial Options** you can select line to be used:
 
-//FixMe
 
 ### Unattended (Silent) Installation
 
@@ -222,10 +218,10 @@ In order to be able to record Debug Output, the debug version of the mobydick dr
 
 {{% row %}}
 {{% col md-6 %}}
-![Screenshot - logon tapi](../../images/tapi_config_mtapi.png?width=70% " logon tapi") 
+![Screenshot - logon tapi](../../images/tapi_config_mtapi.PNG?width=70% " logon tapi") 
 {{% /col %}}
 {{% col md-6 %}}
-![Screenshot logon tapi Debug](../../images/tapi_config_mtapi_debug.png?width=70% " Logon tapi Debug")
+![Screenshot logon tapi Debug](../../images/tapi_config_mtapi_debug.PNG?width=70% " Logon tapi Debug")
 {{% /col %}}
 {{% /row %}}
 
@@ -238,7 +234,7 @@ This will replace any productive versions installed with the Debug version
 You now have all the necessary components downloaded and installed, so start the required tools
 
 #### Open DebugView
-
+<!--//FixME Run As Admin Image EN-->
 1. Start the DebugView.exe with Administrator Privileges by right clicking and selecting `Run as Administrator`
 ![Screenshot - open DebugView](../../images/tapi_debug_viewadmin.png?width=70% " open DebugView")
 
@@ -256,7 +252,7 @@ You now have all the necessary components downloaded and installed, so start the
 ![Screenshot - Line Watcher öffnen](../../images/tapi_linewatcher.png?width=90% "Line Watcher open")
 
 Next, start your TAPI software and follow those steps which lead to the problem. In the DebugView windon, a whole range of tasks should be visible. As long as you start or receive a call information should also appear in Line Watcher
-![Screenshot - open Line Watcher Output](../../images/tapi_linewatcher_output2.png?width=90% " Open Line Watcher Output")
+![Screenshot - open Line Watcher Output](../../images/tapi_linewatcher_output.png?width=90% " Open Line Watcher Output")
 
 Once the test is finished, save both trace outputs from both applications (DebugView and LineWatcher)
 ![Screenshot - TAPI Debug Output View](../../images/tapi_debugview_output.png?width=90% "TAPI Debug Output View")

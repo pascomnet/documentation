@@ -38,7 +38,7 @@ The caller selects their preferred language using an IVR menu and will then be f
 ### Configuration
 
 1. The first step is to define the required skills, which in the example above is languages. To do this, select ***ACD (Automatic Call Distribution)- > Call Labels -> Add*** -> Skill.
-![Screenshot - Skill Based Routing Labels](../../images/skill_based_routing_labels.png "Skill Based Routing Labels")
+![Screenshot - Skill Based Routing Labels](../../images/skill_based_routing_call_labels.png "Skill Based Routing Labels")
 
 2. Next the skills must be assigned to your users which can be done by following: ***Users - > User List ->*** Select required user(s) ***-> Edit -> Skills Tab***. 
 ![Screenshot - editing skills](../../images/skill_based_routing_user_skills.png "editing skills")
@@ -80,9 +80,9 @@ This example scenario expands on the example above. After the language IVR, the 
 ### Configuration
 
 1. After selecting their language, a caller must be prompted to enter their customer number. This is achieved by using a **Generic Label** which can be configured under ***ACD - > Call Labels -> Add -> Generic Label***.
-![Screenshot - Generic Label](../../images/skill_based_routing_label_generic.png "Generic Label")
+![Screenshot - Generic Label](../../images/skill_based_routing_call_labels_generic.png "Generic Label")
 The generic label has a **Channel Variable** (in this case MDC_LABEL-9) which we need to make note off for further configurations. The variable name can be found by selecting the label in the overview and clicking on Edit: 
-![Screenshot - variable names](../../images/skill_based_routing_label_condition.png "variable names")
+![Screenshot - variable names](../../images/skill_based_routing_call_label_condition.png "variable names")
 
 
 2. To differentiate between VIP and non VIP customers, we need to use a **Generic Label with Action Conditions**: ***ACD -> Call Labels -> Add -> Generic Label*** and set the ***Create Action Condition*** to **yes**. 
@@ -90,7 +90,7 @@ The generic label has a **Channel Variable** (in this case MDC_LABEL-9) which we
 
 
 3. Now the IVR options will no longer distribute calls directly to the Support queue, as we want to also ask for the customer number. This functionality is performed by using a Call Router:
-![Screenshot - IVR with Skill based Routing](../../images/skill_based_routing_ivr_edit.png "IVR")
+![Screenshot - IVR with Skill based Routing](../../images/skill_based_routing_IVR_Edit.png "IVR")
 
 
 4. In general, the **Call Router** is used in order to determine whether conditions and actions have been fulfilled. 
@@ -98,4 +98,4 @@ The first step is to use an **Inline Script** in which the customer number can b
 With help from, for example a script, it is possible to verify the entered customer number in order to apply either the VIP or non VIP customer label to the call. A caller which has the VIP call label ( and associated action conditions) attached, will then be connected directly to the support team, while calls which have the non VIP customer label attached will then be submitted to out of business hours time checks before being connected / not connected to the support team.
 ![Screenshot - action condition](../../images/skill_based_routing_call_router_Customer_Number.png "action condition")
 The checking of business hours will also be performed using a Call Router as shown below: 
-![Screenshot - business hours check](../../images/skill_based_router_call_router_business_hours.png "check business hours")
+![Screenshot - business hours check](../../images/skill_based_routing_call_router_business_hours.png "check business hours")

@@ -14,7 +14,7 @@ Keywords:
 weight: 73
 toc: true
 ---
-
+<!--//fixME replace screenshots-->
 
 ## Concept
 
@@ -28,7 +28,7 @@ The IVR could then offer the following options to the user:
 
 When a IVR menu is entered, the following procedures are executed:
 
-![Illustration - Ablauf eines Auswahlmenüs](../../images/ivr_ablauf.png?width=90% "Ablauf eines Auswahlmenüs")
+![Illustration - IVR menu process](../../images/ivr_call_flow.png?width=90% "IVR menu call flow")
 
 As the first step of the IVR flow, an announcement you choose is played. To learn how to record your own announcements, please see Custom Prompts and Music On Hold. Your announcement could be structured similar to this example:
  
