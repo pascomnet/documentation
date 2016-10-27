@@ -157,7 +157,7 @@ Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab
 |ausgehende Faxkennung|Diese Nummer steht auf dem versendeten Fax.|
 |Format|Gibt das Foramat an, in dem der Benutzer eingehende Faxe per E-Mail erhält.|
 
-### Endgerät
+### Endgeräte
 
 Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Geräte` können Sie dem Benutzer Telefone zuweisen.  
 Aus der linken Seite ist eine Übersicht über alle verfügbaren Telefone. Über den blauen Pfeil können Sie das gewünschte Telefon wählen und auf die rechte Seite ziehen zu den zugewiesenen Geräten. Benötigen Sie ein Telefon nicht mehr, dann ziehen Sie es über den blauen Pfeil (Richtung nach links) zurück auf die linke Seite.  
@@ -189,7 +189,7 @@ Im Tab `Benutzerzuordnung` können Sie Benutzer zuweisen. Der Arbeitsplatz kann 
 Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Arbeitsplatz` können Sie auch dem Benutzer einen Arbeitsplatz zuteilen bzw. sehen an welchem Arbeitsplatz der Benutzer aktuell arbeitet.
 
 {{% notice note %}}
-**FollowMe Prinzip der mobydick**<br>
+**Das FollowMe Prinzip der mobydick**<br>
 Benutzern und Arbeitspätzen können mehrere Telefone zugewiesen werden. Die Konfiguration, welches Telefon wann und wie lange läutet, bezeichnen wir als FollowMe.
 ![Illustration - FollowMe Prinzip mobydick](../../images/benutzer_followme.png?width=90% "Endgeräte folgen Ihnen")
 {{% /notice %}}
@@ -213,7 +213,6 @@ Aktionen sind in der mobydick ein wichtiges Werkzeug um den Anrufablauf zu steue
 * und vieles mehr.
 
 Lesen Sie dazu bitte den Artikel über [Aktionen](../anrufverteilung/actions/).
-
 
 ### Rollen
 

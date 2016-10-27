@@ -22,9 +22,11 @@ Jeder Benutzer hat in der mobydick seine eigene Durchwahl, Geräte und Aktionen 
 
 
 Das **Team** hat eine eigene Durchwahl und eigene Aktionen. Wird die Durchwahl des Teams gerufen klingeln die Telefone der Mitglieder je nach im Team hinterlegter Strategie und Aktionen.  
+
 {{% notice info %}}
-Wird ein Team gerufen gelten ausschließlich die dort hinterlegten Aktionen. Die Aktionen die bei den Benutzer hinterlegt sind werden in diesem Fall ingnoriert.
+Wird ein Team gerufen gelten ausschließlich die dort hinterlegten Aktionen. Die Aktionen die bei den Benutzer hinterlegt sind werden in diesem Fall ignoriert.
 {{% /notice %}}
+
 Somit kann man beispielsweise steuern, dass Frank auf seiner direkten Durchwahl **22** auch **außerhalb der Geschäftszeiten erreichbar bleibt** das Support Team nach 18:00 Uhr aber auf den **Anrufbeantworter** umleitet.
 
 ### Teamarten
@@ -41,21 +43,90 @@ Warteschlangen können fixe und **dynamische Mitglieder** habe. Das bedeutet Ben
 
 Anrufer werden nacheinander in der Warteschlange **eingereiht** und bekommen auf Wunsch die **Warteposition** und **durchschnittliche Wartezeit** angesagt. Während der Wartezeit kann man entweder Wartemusik oder ein Freizeichen einspielen.
 
-### Rufstrategien
+Warteschlangen können ein unterschiedliches Gewicht haben. Je höher die Gewichtung, desto wichtiger die Warteschlange.
 
-|Strategie|	Asterisk Bezeichnung|	Beschreibung|Rufgruppe|Warteschlange|
-|---------|---------------------|--------------|:--------:|:------------:|
-|alle| ringall|	Alle Mitglieder werden gleichzeitig gerufen.| <i class="fa fa-check-square" aria-hidden="true"></i>  |  <i class="fa fa-check-square" aria-hidden="true"></i>|
-|nacheinander|	linear	|Die Mitglieder werden nach der Zuweisungsreihenfolge gerufen. Achtung: Dynamische Mitglieder verändern durch Ein- und Ausbuchen aus dem Team die Position.|  <i class="fa fa-check-square" aria-hidden="true"></i>| <i class="fa fa-check-square" aria-hidden="true"></i> |
-|längste zurück| lastrecent	|Das Mitglied welches am längsten keinen Anruf entgegen genommen hat kommt als nächstes dran. Achtung: Dynamische Mitglieder setzten durch Ein- und Ausbuchen aus dem Team alle Zähler zurück und sind somit nach dem Einbuchen automatisch immer derjenige der am längsten keinen Anruf bekommen hat.|  |<i class="fa fa-check-square" aria-hidden="true"></i>  |
-|wenigsten Anrufer|	fewestcalls	|Das Mitglied welches am wenigsten Anrufe angenommen hat kommt als nächstes dran. Diese Einstellung berücksichtig nicht die Anrufdauer. Wenn ein Mitglied beispielsweise 5 mal eine Minute lang telefoniert und ein anderes 2 mal eine Stunde ist trotzdem letzteres an der Reihe. Dynamische Mitglieder setzten durch Ein- und Ausbuchen aus dem Team alle Zähler zurück und sind somit nach dem Einbuchen automatisch immer derjenige der am wenigsten Anruf bekommen hat.|  | <i class="fa fa-check-square" aria-hidden="true"></i> |
-|per Zufall|	random	|Wählt zufällig einen Agenten aus.|  | <i class="fa fa-check-square" aria-hidden="true"></i> |
-|mem-nacheinander|	rrmemory	|Wie nacheinander allerdings beginnt die Reihe beim nächsten Anrufer nicht von vorne sondern nach dem der als letztes einen Anruf entgegengenommen hat.|  | <i class="fa fa-check-square" aria-hidden="true"></i> |
-|per Zufall nach Priorität| wrandom|	Wie per Zufall nur werden die Prioritäten der Agenten berücksichtigt. Erst wenn alle Agenten mit niedriger Priorität telefonieren werden die mit der nächst höheren gerufen.|  | <i class="fa fa-check-square" aria-hidden="true"></i> |
+![Illustration - Warteschlangen gewichten](../../images/team_prioritaet.png?width=70% "Warteschlangen gewichten in der mobydick")
 
-### Warteschlangen gewichten
+In unserem Beispiel sind Frank und Peter in die Warteschlange Support und VIP-Support eingebucht. Beide telefonieren. In Support warten 2 Kunden darauf bedient zu werden in VIP-Support einer. Beendet Frank oder Peter das aktuelle Gespräch wird auf jeden Fall der wartende Anrufer aus dem VIP-Support als nächstes dran kommen, egal ob dieser bereits länger oder kürzer als die anderen wartet, da diese Warteschleife mehr Gewicht hat. Es werden also so lange Wartende aus der schwersten Warteschlange dran kommen bis diese leer ist.
 
-Warteschlangen können ein unterschiedliches Gewicht haben. Desto schwerer desto wichtiger. Als Gewicht können Sei eine beliebige Zahl eintragen.
+## Konfiguration
+
+### Warteschlangen Erstellen
+
+Zum Erstellen eines Teams klicken Sie in der Web-UI auf `Benutzer` > `Teams`. Hier wählen Sie **Warteschlange** und geben Sie der Team einen Namen und eine Durchwahl und Klicken Sie auf `Weiter`.
+
+Folgende Einstellungen sind nun möglich:
+
+#### Rufstrategien
+
+|Strategie|Beschreibung|
+|---|---|
+|**alle anklingeln**|Alle Mitglieder werden gleichzeitig gerufen.|
+|**nacheinander**|Die Mitglieder werden nach der Zuweisungsreihenfolge gerufen. Achtung: Dynamische Mitglieder verändern durch Ein- und Ausbuchen aus dem Team die Position.|
+|**längste zurück**|Das Mitglied welches am längsten keinen Anruf entgegen genommen hat kommt als nächstes dran.<br>**Achtung**: Dynamische Mitglieder setzten durch Ein- und Ausbuchen aus dem Team alle Zähler zurück und sind somit nach dem Einbuchen automatisch immer derjenige der am längsten keinen Anruf bekommen hat.|
+|**wenigsten Anrufe**|Das Mitglied welches am wenigsten Anrufe angenommen hat kommt als nächstes dran. Diese Einstellung berücksichtig nicht die Anrufdauer. Wenn ein Mitglied beispielsweise 5 mal eine Minute lang telefoniert und ein anderes 2 mal eine Stunde ist trotzdem letzteres an der Reihe. Dynamische Mitglieder setzten durch Ein- und Ausbuchen aus dem Team alle Zähler zurück und sind somit nach dem Einbuchen automatisch immer derjenige der am wenigsten Anruf bekommen hat.|
+|**per Zufall**|Wählt zufällig einen Agenten aus.|
+|**mem-nacheinander**|Wie nacheinander allerdings beginnt die Reihe beim nächsten Anrufer nicht von vorne sondern nach dem der als letztes einen Anruf entgegengenommen hat.|
+|**mem-nacheinander - sortiert**||
+|**per Zufall - gewichtet**|Wie per Zufall nur werden die Prioritäten der Agenten berücksichtigt. Erst wenn alle Agenten mit niedriger Priorität telefonieren werden die mit der nächst höheren gerufen.|
+
+#### Routing Skript
+
+Hier kann ein Routing-Skript ausgewählt werden. Mehr dazu unter [Skill Based Routing](../../anrufverteilung/skillbased/)
+
+#### Pickup-Benachrichtigungen
+
+In einem Team ist es möglich einzustellen, welche Benutzer im mobydick Client Pickup-Benachrichtigungen über eingehende Rufe erhalten.
+
+Zuerst muss eine Pickup-Rolle definiert werden. Diese kann als Mitglieder ein Team haben und auch einzelne Benutzer, die nicht zum Team gehören. Informationen zu Rollen finden Sie unter [Rollen](../benutzer-und-arbeitsplaetze/#rollen)
+
+Anschließend können Sie im Team, das zur angelegten Pickup-Rolle gehört festlegen wer Banchrichtigugnen erhält.
+
+Folgende Einstellungen sind möglich:
+
+|Parameter| Bedeutung|
+|----------|----------|
+|**Niemand**|Niemand erhält Benachrichtigungen|
+|**Verfügbare Agenten und Nichtmitglieder**|Agenten die im Team angemeldet sind und Agenten die Nichtmitglieder im Team sind erhalten eine Benachrichtigung. Flexible Agenten die gerade nicht im Team angemeldet sind und pausierte Agenten erhalten keine Benachrichtigung.|
+|**Nicht verfügbare Agenten und Nichtmitglieder**|Agenten die nicht im Team angemeldet sind, Agenten die pausiert sind und Nichtmitglieder des Teams erhalten eine Benachrichtigung. Agenten die feste Mitglieder des Teams sind und flexible Agenten die gerade angemeldet sind erhalten keine Benachrichtigungen.|
+|**Nur Nichtmitglieder**|Nur Nichtmitglieder des Teams erhalten eine Benachrichtigung.|
+|**Gesamte Pickup-Gruppe**|Die gesamte Pickup-Gruppe bekommt Benachrichtigungen.|
+
+#### Anzeigetext
+
+#### Wartemusik
+
+#### Timeouts
+
+|Einstellung|Beschreibung|
+|---|---|
+|**Mitglied-Timeout**||
+|**Timeout extern**||
+|**Timeout intern**||
+
+#### Einstellungen zu Anrufern
+
+|Einstellung|Beschreibung|
+|---|---|
+|**Maximale Anzahl Wartende**||
+|**Betreten wenn leer**||
+|**Verlassen wenn leer**||
+
+#### Voicemailbox
+
+|Einstellung|Beschreibung|
+|---|---|
+|**Voicemail Pin**||
+|**Voicemail speichern**||
+|**Voicemail Email**||
+
+#### Team-Mitglieder
+
+
+
+#### Warteschlangen gewichten
+
+Warteschlangen können ein unterschiedliches Gewicht haben. Desto schwerer desto wichtiger. Als Gewicht können Sie eine beliebige Zahl eintragen.
 
 ![Illustration - Warteschlangen gewichten](../../images/team_prioritaet.png?width=70% "Warteschlangen gewichten in der mobydick")
 
@@ -64,6 +135,12 @@ In unserem Beispiel sind Frank und Peter in die Warteschlange Support und VIP-Su
 A tip disclaimer
 Wenn Sie mit Gewichten arbeiten, dürfen Sie keine Warteschlangen ohne Gewicht benutzen. Diese haben dann ein Gewicht von 0 und kommen somit nie an die Reihe.
 {{% /notice %}}
+
+####
+
+
+______________________________________
+
 
 ## Konfiguration
 
@@ -266,13 +343,3 @@ Auswirkung: Benutzer
 Alle Identitäten die eine Rolle mit dem Rollentyp xmpp.group zugewiesen haben, werden in eine XMPP shared Group eingebunden. D.H. in den Kontaktliste der Clients müssen sich diese Personen nicht mehr gegenseitig hinzufügen sondern sind sofort sichtbar. Falls Sie die xmpp.group der Rolle Alle Identitäten zuordnen, sieht im Client immer jeder jeden.
 
 Auswirkung: Benutzer
-
-## FollowMe Prinzip der mobydick
-Benutzern und Arbeitspätzen können mehrere Telefone zugewiesen werden. Die Konfiguration, welches Telefon wann und wie lange läutet, bezeichnen wir als Followme.
-![Illustration - FollowMe Prinzip mobydick](../../images/benutzer_followme.png?width=90% "Endgeräte folgen Ihnen")
-Jedem Telefon kann der Parameter **Warten** und **Läuten** in Sekunden angegeben werden.
-
-**Warten** definiert den Zeitraum zwischen einem eintreffenden Anruf und dem Zeitpunkt zu dem das Telefon zu läuten beginnen soll.  
-**Läuten** definiert wie lange das Telefon gerufen werden soll.
-
-Außerdem können sich Telefone bei internen anrufen anders verhalten als bei externen oder bei Anrufen die Sie als Agenten eines Teams erreichen. Daher gibt es die Parameter Warten und Läuten jeweils pro Telefon für **intern, extern** und **agent**.

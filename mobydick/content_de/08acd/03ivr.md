@@ -1,17 +1,17 @@
 ---
 title: IVR - Auswahlmenüs
+url: /anrufverteilung/ivr/
 keywords:
     - Auswahlmenü
-    -IVR
+    - IVR
 description: Auswahlmenüs (IVR) dienen dazu dem Anrufer durch das Drücken einer Taste durch das Telefonmenü zu lenken.
-url: /anrufverteilung/ivr/
 prev: /anrufverteilung/callrouter/
 next: /anrufverteilung/time-calendar/
 weight: 73
 toc: true
 ---
 
-## Konzepty
+## Konzept
 
 Auswahlmenüs (IVR) dienen dazu dem Anrufer durch das Drücken einer Taste durch das System zu lenken. Beispielsweise kann es sein, dass 50% der Anrufer auf der Zentrale nur entweder mit dem Vertrieb oder dem Support verbunden werden möchten. Hier kann man die Zentrale sinnvoll entlasten indem man ein Auswahlmenü vor die Zentrale schaltet.
 
