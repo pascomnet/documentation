@@ -56,7 +56,7 @@ Please don't forget that you will need to Apply all of the above modifications (
 {{% /notice %}}
 
 #### Finding the Internal Trunk Name
-The WombatDialer requires access to a Trunk in order to able to call external parties, which means that you will need to provider the WombatDialer with the internal mobydick name for your desired trunk. Unfortunately, it is not possible to determine the internal trunk name via the mobydick interface. In order to find out what the internal trunk name is, please login into the Asterisk CLI (see Accessing MobyDick //FixMe).
+The WombatDialer requires access to a Trunk in order to able to call external parties, which means that you will need to provider the WombatDialer with the internal mobydick name for your desired trunk. Unfortunately, it is not possible to determine the internal trunk name via the mobydick interface. In order to find out what the internal trunk name is, please login into the Asterisk CLI (see Accessing mobydick.
 
 Enter the command **sip show peers** which will provide you with the following output info:
 

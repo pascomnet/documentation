@@ -103,7 +103,7 @@ As standard, only your mobydick Administrator can log in to the Web UI. However,
 
 The **Save voicemail** option allows you to choose whether voice messages should be saved to disk. If the field **Voicemail E-Mail** contains an e-mail address, new voice messages are automatically forwarded to that address.  
 
-The **Monitored voicemail box** allows you to select a user who can administer the mailbox using either the mobydick Client, Mobility Client or an IP telephone. For more details, please see <!--//FixMe Link voicemail box.-->
+The **Monitored voicemail box** allows you to select a user who can administer the mailbox using either the mobydick Client, Mobility Client or an IP telephone. <!--For more details, please see //FixMe Link voicemail box.-->
 
 ### Phonebook
 
@@ -117,7 +117,7 @@ You can assigned a personal fax device to a user. <!--For more details, please s
 You can assign personal devices to a user.
 ![Screenshot - Assigned devices in mobydick](../../images/user_devices.png?width=90% "Devices in mobydick")
 
-Any number of devices can be assigned to user. The default setting for all assigned devices is to ring simultaneously for 999 seconds. <!--To learn more about **Waiting** and **Ringing** settings, please see the <!--//FixMe Link Concept: Followme-->. If the call is not answered, the actions **After / External** or **After / Internal** will be applied. <!--See the chapter on the concept of <!--//FixMe Link actions for more details-->
+Any number of devices can be assigned to user. The default setting for all assigned devices is to ring simultaneously for 999 seconds. <!--To learn more about **Waiting** and **Ringing** settings, please see the //FixMe Link Concept: Followme-->. If the call is not answered, the actions **After / External** or **After / Internal** will be applied. <!--See the chapter on the concept of //FixMe Link actions for more details-->
 
 ### Location
 
@@ -130,7 +130,7 @@ Allows you to define which roles apply to the relevant users for a particular us
 
 ### Actions (internal, external, before, after)
 
-Actions allow you to the manage the call flow. <!--For more details please see //FixMe Link the chapter on actions and //FixMe Link Call Flow Management -->.
+Actions allow you to the manage the call flow. <!--For more details please see //FixMe Link the chapter on actions and //FixMe Link Call Flow Management -->
 
 
 ### Creating locations (optional)
@@ -155,7 +155,7 @@ Roles control the "Telephony relevant" properties and rights such as the ability
 There is a special **Role** called **All Users**, which as default is assigned to all Users, devices, workstations and teams and can not be removed.
 
 ### Setting Roles per Department
-A very common practice (and our recommendation) is to create one Role per department or team. For example, you may wish that users can only pick up calls only from within their department and to for this to been mutually seen within the MobyDick client. In order to so this simply disable the xmpp.group properties of the "All" Role and assign a new role, e.g. Support in which you can set all the Support Users as members
+A very common practice (and our recommendation) is to create one Role per department or team. For example, you may wish that users can only pick up calls only from within their department and to for this to been mutually seen within the mobydick client. In order to so this simply disable the xmpp.group properties of the "All" Role and assign a new role, e.g. Support in which you can set all the Support Users as members
 
 ### Properties and Rights
 #### location.group

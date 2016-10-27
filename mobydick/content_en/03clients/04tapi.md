@@ -33,7 +33,7 @@ The mobydick TAPI can be installed on all windows workstations. The TAPI registe
 
 ## TAPI and the mobydick Client
 
-The MobyDick TAPI can be installed on any windows desktop. The TAPI will then register itself with the server using the same credentials as the //FixMe MobyDick Client, which means the TAPI is assigned to a user rather than being directly connected to a telephone. When a dial command is sent to Mobydick via TAPI, MobyDick will automatically select the current phone of the user and use this phone to make the call. If the user then changes //FixMe location or phone, the TAPI will not require any reconfiguration.
+The mobydick TAPI can be installed on any windows desktop. The TAPI will then register itself with the server using the same credentials as the mobydick Client, which means the TAPI is assigned to a user rather than being directly connected to a telephone. When a dial command is sent to Mobydick via TAPI, mobydick will automatically select the current phone of the user and use this phone to make the call. If the user then changes their location or phone, the TAPI will not require any reconfiguration.
 
 
 ### When to use ...
@@ -118,7 +118,7 @@ After the installation has been successfully completed, you will need to configu
 
 ![Screenshot - configure TAPI](../../images/tapi_credentials.png?width=50% " TAPI connection to mobydick")
 
-As stated before, the TAPI will login with the same user data just like the //FixMe mobydick Client
+As stated before, the TAPI will login with the same user data just like the mobydick Client
 
 |Variable| Description |
 |---------|------------|
@@ -152,7 +152,7 @@ All the necessary components will now be installed
 
 After the installation has been successfully completed, you will need to configure the connection of the TAPI to mobydick
 
-As stated before, the TAPI will login with the same user data just like the //FixMe mobydick Client. 
+As stated before, the TAPI will login with the same user data just like the mobydick Client. 
 
 |Variable| Description |
 |---------|------------|

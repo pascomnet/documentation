@@ -21,12 +21,12 @@ toc: true
 
 ## Concept
 
-Each mobydick user has their own extension, devices and //FixMe actions that control calls made to that extension. **In addition**, a user can be a member of a **team**.
+Each mobydick user has their own extension, devices and actions that control calls made to that extension. In addition, a user can be a member of a **team**.
 ![Screenshot - Team Concept](../../images/team_basic.png?width=90% "Teams and queues in mobydick")
 
-The **team** has its own **extension** and actions //FixMe assigned to it. When a call is made to the team's extension, the team members' phones will ring in the order defined in the **strategy** and actions.//FixMe
+The **team** has its own extension and actions assigned to it. When a call is made to the team's extension, the team members' phones will ring in the order defined in the strategy and actions.
 {{% notice info %}}
-When a call is made to a team's number, only the actions //FixMe pertaining to the team will be active. Actions pertaining to individual users will be ignored.
+When a call is made to a team's number, only the actions pertaining to the team will be activated. Actions pertaining to individual users will be ignored.
 {{% /notice %}}
 This concept allows you to make use of the following example scenario:
 Frank can still be reached at his extension **22** even **outside of business hours**; however calls to the support teams will be routed to the **mailbox** after 6:00 p.m.

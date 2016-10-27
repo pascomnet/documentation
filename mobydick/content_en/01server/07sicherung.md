@@ -20,8 +20,6 @@ linkde: /server/sicherung/
 
 ## Concept
 
-//FixMe
-
 mobydick can perform a full system backup while the system is running. Mobydick first creates a snapshot of the file system and then uses it to create a bootable ISO file.
 
 ![Illustration - mobydick Backup](../../images/backup_iso.png "ISO Backup mobydick")
@@ -95,7 +93,7 @@ Copy the ISO file onto a CD / DVD or mount it as a boot drive in a virtual machi
 In order to create a database backup, go to the mobydick Commander (web UI) and select the following menu options:
 ***Appliance > Backup > Database Backup***.
 
-Click on the //FixMe to create a new database backup.
+Click on the `Create` button to create a new database backup.
 
 There, you have the option of including additional file data from recordings, faxes and voicemails.
 

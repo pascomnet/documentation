@@ -35,7 +35,7 @@ This will most definitely not make a good impression on the customer - so make s
 
 To use your **timeframes** as the basis of a rule set, select **"time period"** when creating an action condition.
 
-In the MobyDick web interface, select **Advanced > Action conditions** and click `Add` to create a new condition. You can also select an existing condition and use the `Edit` function.
+In the mobydick web interface, select **Advanced > Action conditions** and click `Add` to create a new condition. You can also select an existing condition and use the `Edit` function.
 
 When you ceate the new condition, select ***time period*** as type and enter a **title**. 
 ![Screenshot - manage timeframes](../../images/condition_time.png?width=90% "manage timeframes")
@@ -50,7 +50,7 @@ It is not necessary to create a timeframe to handle times outside of business ho
 
 Conditions of the type **calendar** can be used to manage **Public Holiday Calendars** as well as employee or Business Holidays.
 
-Select **Advanced > Action conditions** in the MobyDick web interface and click the `Add` button to create a new condition. You can also select an existing condition and click the `Edit` button.
+Select **Advanced > Action conditions** in the mobydick web interface and click the `Add` button to create a new condition. You can also select an existing condition and click the `Edit` button.
 
 When adding the condition, select ***calendar*** as the type and enter a **title**.
 ![Screenshot - manage calendar](../../images/condition_calendar.png?width=90% "manage calendar")
@@ -61,7 +61,7 @@ Using the Days tab you can select public holidays, vacations etc. You can then u
 
 **Extension switches** are a useful tool if there is **no specific day or timeframe** to use with a condition.
 
-Select **Advanced > Action conditions** in the MobyDick web interface and click the `Add` button to create a new condition. You can also select an existing condition and click the `Edit` button.
+Select **Advanced > Action conditions** in the mobydick web interface and click the `Add` button to create a new condition. You can also select an existing condition and click the `Edit` button.
 
 When adding the condition, select extension switch as the type and enter a **title**.
 ![Screenshot - manage extension switches](../../images/condition_switch.png?width=90% "manage extension switches")

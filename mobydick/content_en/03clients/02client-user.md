@@ -222,7 +222,7 @@ In order to change your personal password, click on "Change Password" button, wh
  
 **Password Requirements**: The password for the clients must be at least 8 characters. You can use letters, numbers and special characters (@ () {} [] \ / = ~ $% & # * -? +, _.).
  
-This means that you can of course use a //FixMe Password Generator or enter your desired password. We recommend using a password with a minimum of 1 number and 1 special character. 
+This means that you can of course use a [Password Generator](https://www.passwort-generator.com/ "secure password generation") or enter your desired password. We recommend using a password with a minimum of 1 number and 1 special character. 
 
 
 ##### Changing your Telephone PIN

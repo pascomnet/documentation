@@ -31,13 +31,13 @@ To configure the mobydick Mobile Hub, select **Appliance > Services > Mobile Hub
 
 In the **Number** field, enter the telephone number where mobydick **Mobile Hub** can be reached. Enter the number together with an extension. In our example, the extension number is **99**. The smartphone will then use this number to call the Mobile Hub. Make sure you use the **international numbering plan** so the mobile hub can also be accessible from abroad.
 
-To automatically create the corresponding **rule**, enter the **destination** number. Please be aware that the required format here can vary depending on the provider. For more details, please see //FixMe Configuring Trunks and Call Rules.
+To automatically create the corresponding **rule**, enter the **destination** number. Please be aware that the required format here can vary depending on the provider. <!--For more details, please see //FixMe Configuring Trunks and Call Rules.-->
 
 ### Adding mobile devices for Mobile Hub
 After the Mobile Hub has been configured, the smartphones which are to utilise it need to be added and assigned to the corresponding users.
 <!--//FixMe screenshot replace-->
 ![Screenshot - add mobile devices for Mobile Hub](../../images/client_mobile_hub_add.png?width=70% "add mobile devices for Mobile Hub")
-In the mobydick web interface, select Devices > Device list and press the "Add" //FixMe  button.
+In the mobydick web interface, select Devices > Device list and press the `Add` button.
 
 From the list, select ***Via Mobile hub: Integrated mobile phone***:
 

@@ -74,7 +74,7 @@ Parameter Explanation
 ### Mac
 In order to download the mobydick desktop client and install it in a Mac OSx environment, please follow these steps:
 
-1. Download the .dmg file from your the service tab on your mobydick server login screen. The URL (e.g.//FixMe http://myphonesystem.firmxyz.com oder http://10.1.1.0) is normally provided by your IT admin / department.
+1. Download the .dmg file from your the service tab on your mobydick server login screen. The URL (e.g. http://myphonesystem.firmxyz.com or http://10.1.1.0) is normally provided by your IT admin / department.
 2. Save the file
 3. Once downloaded, double click on the file and the installation process will start which then results in the following window
 4. Drag the mobydick icon (red) on to the Applications folder
@@ -94,10 +94,10 @@ On Linux systems, we provide a classic installer.
 ### Configuration
 
 #### mobydick Client Login
-After installing mobydick, the default behaviour is that the //FixMe Role **All Users** contains the roll type "xmpp.group". This allows every user to log **into the mobydick client** using their **Username** and **Password**. Should you wish to restrict this behaviour, then you will need to deassign the role type from the All Users role and create a new //FixMe Role.
+After installing mobydick, the Role **All Users** contains the roll type "xmpp.group" as standard. This allows every user to log into the mobydick client using their **Username** and **Password**. Should you wish to restrict this behaviour, then you will need to remove access to the role type All Users and create a new role.
 
 You are also able to create multiple roles, for example should you wish to create groups in which members can use the mobydick client to communicate only with one another.
 
 Should a user be a member of multiple groups, then they will be able to toggle through each contact list within the client as shown below:
 
-More information regarding the mobydick Desktop client can be found on //FixMe mobydick Desktop Client for End Users.
+More information regarding the mobydick Desktop client can be found on mobydick Desktop Client for End Users.
