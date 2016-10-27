@@ -3,7 +3,7 @@ title: mobydick Fax Server
 url: /modules/fax-server/
 linkde: /module/fax-server/
 prev: /modules/
-next: /module/call-recording/
+next: /modules/call-recording/
 weight: 91
 toc: true
 ---
@@ -24,7 +24,7 @@ The integrated fax server offers a number of functions, which are described in t
 * Sending faxes as files using the mobydick Client.
 * Displaying sent and received faxes in the web interface.
 * Maintaining the fax queues and log files
-![Illustration - mobydick VoIP Fax Server Konzept](../../images/fax_illustration.png?width=90% "mobydick VoIP Fax Server Concept")
+![Illustration - mobydick VoIP Fax Server Concept](../../images/fax_illustration.png?width=90% "mobydick VoIP Fax Server Concept")
 
 
 ## Basic configuration of the fax server
@@ -37,7 +37,7 @@ After saving the configuration of the fax server, it still must be applied so th
 
 In order to use the e-mail gateway, sending and receiving e-mails must work properly. To check the corresponding settings that regulate e-mail services of the telephony appliance, go to ***Appliance > Services > E-mail Server*** and enter the mail server and domain name that should be used in the forwarding process. When finished, the changes to the network configuration need to be applied.
 
-![Illustration - basic configuration fax server](../../images/fax_mailserver.png?width=100% "basic configuration fax server")
+![Illustration - basic configuration fax server](../../images/fax_mailserver.jpg?width=100% "basic configuration fax server")
 {{% notice tip %}}
 More information can be found in the chapter Configuring the Network.
 {{% /notice %}}
@@ -224,7 +224,6 @@ Regular expression matching the priority in the document. The first pair of brac
 |sys.fax.configure.<br/>faxprint.usermangle.search|    If the usernames on the desktop workstations or in the print system differ from the user names on the telephony appliance, a regular expression can be specified for the selection of a user name. |(empty)|  /^(\w+)\..*/ |
 |sys.fax.configure.<br/>faxprint.usermangle.replace    |Specifies the value used to replace the original user name. The "search" and "replace" values must be specified. In the example, the Windows user name is truncated at the first point.|  (empty)|   $1|
 
-//FixMe
 ## Setup Fax Printer Driver
 {{% notice info%}}
 This is another platform-independent way of sending faxes. However, virtual printers need to be configured for each computer that uses this method. Please refer to the setup guides for your operating system as found below. 
