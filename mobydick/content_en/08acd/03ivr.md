@@ -56,7 +56,7 @@ Preferably, you should not create nested IVRs that are deeper than two levels. H
 
 ### Maintaining IVRs
 
-In the MobyDick web interface, select **Advanced > IVR**. To add a new IVR, press "Add" //FixMe . To modify an existing IVR, select it from the list and press "Edit" //FixMe.
+In the mobydick web interface, select **Advanced > IVR**. To add a new IVR, press `Add`. To modify an existing IVR, select it from the list and press `Edit`.
 
 ![Screenshot - add IVR](../../images/ivr_add.png?width=90% "add IVR")
 |Parameter|Explanation|
