@@ -49,7 +49,7 @@ Warteschlangen können ein unterschiedliches Gewicht haben. Je höher die Gewich
 
 In unserem Beispiel sind Frank und Peter in die Warteschlange Support und VIP-Support eingebucht. Beide telefonieren. In Support warten 2 Kunden darauf bedient zu werden in VIP-Support einer. Beendet Frank oder Peter das aktuelle Gespräch wird auf jeden Fall der wartende Anrufer aus dem VIP-Support als nächstes dran kommen, egal ob dieser bereits länger oder kürzer als die anderen wartet, da diese Warteschleife mehr Gewicht hat. Es werden also so lange Wartende aus der schwersten Warteschlange dran kommen bis diese leer ist.
 
-## Konfiguration
+<!-- ## Konfiguration
 
 ### Warteschlangen Erstellen
 
@@ -80,13 +80,13 @@ In einem Team ist es möglich einzustellen, welche Benutzer im mobydick Client P
 
 Zuerst muss eine Pickup-Rolle definiert werden. Diese kann als Mitglieder ein Team haben und auch einzelne Benutzer, die nicht zum Team gehören. Informationen zu Rollen finden Sie unter [Rollen](../benutzer-und-arbeitsplaetze/#rollen)
 
-Anschließend können Sie im Team, das zur angelegten Pickup-Rolle gehört festlegen wer Banchrichtigugnen erhält.
+Anschließend können Sie im Team, das zur angelegten Pickup-Rolle gehört festlegen wer Benchrichtigugnen erhält.
 
 Folgende Einstellungen sind möglich:
 
-|Parameter| Bedeutung|
-|----------|----------|
-|**Niemand**|Niemand erhält Benachrichtigungen|
+|Parameter|Bedeutung|
+|---|---|
+|**Niemand**|Niemand erhält Benachrichtigungen.|
 |**Verfügbare Agenten und Nichtmitglieder**|Agenten die im Team angemeldet sind und Agenten die Nichtmitglieder im Team sind erhalten eine Benachrichtigung. Flexible Agenten die gerade nicht im Team angemeldet sind und pausierte Agenten erhalten keine Benachrichtigung.|
 |**Nicht verfügbare Agenten und Nichtmitglieder**|Agenten die nicht im Team angemeldet sind, Agenten die pausiert sind und Nichtmitglieder des Teams erhalten eine Benachrichtigung. Agenten die feste Mitglieder des Teams sind und flexible Agenten die gerade angemeldet sind erhalten keine Benachrichtigungen.|
 |**Nur Nichtmitglieder**|Nur Nichtmitglieder des Teams erhalten eine Benachrichtigung.|
@@ -94,7 +94,11 @@ Folgende Einstellungen sind möglich:
 
 #### Anzeigetext
 
+Dieser Text wird dem Benutzer bei einem Anruf über das Team vor der Rufnummer des Anrufers angezeigt. Damit weiß das Team-Mitglied, dass der nicht direkt sondern über die Durchwahl des Teams angerufen wird.
+
 #### Wartemusik
+
+Zur Auswahl stehen **Freizeichen** und **Wartemusik: "default"**. Möchten Sie eigene Wartemusik verwenden, lesen Sie den Artikel über Wartemusik.
 
 #### Timeouts
 
@@ -140,7 +144,7 @@ Wenn Sie mit Gewichten arbeiten, dürfen Sie keine Warteschlangen ohne Gewicht b
 
 
 ______________________________________
-
+-->
 
 ## Konfiguration
 
