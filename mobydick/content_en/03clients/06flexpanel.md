@@ -165,7 +165,7 @@ For the user with the user name **jflores** the example widget **UserItem** with
     jflores.relocate(10,50)
     pane.addWidget(jflores)
 
-The XMPP-Domain is automatically set to **mobydick** during the installation of a mobydick system. <!--You can find out more about this under //FixMe XMPP API.-->
+The XMPP-Domain is automatically set to **mobydick** during the installation of a mobydick system. For more information, please refer to our [XMPP API Developer Documentation] (https://www.pascom.net/en/documentation/developer/xmpp-api/ "Developer Documentation").
 
 ### Available Widgets
 You can find a complete list of all the available widgets under FlexPanel Widgets in the Developers Documentation.

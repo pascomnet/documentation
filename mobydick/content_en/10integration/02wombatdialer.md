@@ -6,7 +6,7 @@ weight: 101
 toc: true
 ---
 ## Overview
-WombatDialer is a predictive dialer developed by Loway. The WombatDialer automates the telephone call origination process, thus eliminating the cumbersome, time consuming manual dialling. This enables you to achieve greater, more efficient CallCenter agent utilisation for example during Telemarketing Campaigns. Further applicable usages are outlined on the Wombat Dialer Homepage.<!--//FixMe Homepage link-->
+WombatDialer is a predictive dialer developed by Loway. The WombatDialer automates the telephone call origination process, thus eliminating the cumbersome, time consuming manual dialling. This enables you to achieve greater, more efficient CallCenter agent utilisation for example during Telemarketing Campaigns. Further applicable usages are outlined on the [WombatDialer Homepage] (https://www.wombatdialer.com/ "WombatDialer.com").
 
 ![Illustration - WombatDialer Concept with mobydick](../../images/wombat_overview.jpg?width=90% "WombatDialer Concept with mobydick")
 
