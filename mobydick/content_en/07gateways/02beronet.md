@@ -74,7 +74,7 @@ The **downside** here is that in some cases, fax applications might not be so st
 
 ## Preparation
 
-As a first step, Beronet boxes or expansion cards each need to be equipped with suitable modules. If you ordered your hardware through pascom, the module already pre-installed. For further details such as port assignment etc. please see the [beroNet documentation] (http://wiki.beronet.com/index.php/beroNetDocuV2).
+As a first step, Beronet boxes or expansion cards each need to be equipped with suitable modules. If you ordered your hardware through pascom, the module already pre-installed. For further details such as port assignment etc. <!--please see the [beroNet documentation] (http://wiki.beronet.com/index.php/beroNetDocuV2)//fixme-->.
 
 PCI expansion cards can be easily added to a mobydick server. The card will automatically receive an IP address from the **169.254.0.0/16** subnet.
 

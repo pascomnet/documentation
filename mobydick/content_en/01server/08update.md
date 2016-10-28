@@ -9,7 +9,7 @@ keywords:
 description:
 linkde: /server/update-und-ueberwachung/
 url: /server/update/
-prev:  /server/backup/
+prev:  /server/backups/
 next: /server/automation/
 weight: 18
 toc: true

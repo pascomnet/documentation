@@ -214,14 +214,14 @@ In order to be able to record Debug Output, the debug version of the mobydick dr
 ![Screenshot - mobydick TAPI Service Provider](../../images/tapi_config_phone.png?width=60% "mobydick TAPI Service Provider")
 
 4. Click Configure
-5. If the in following mask, the warning "WARNING: DEBUG VERSION INSTALLED" appears, then clearly the Debug-Version is installed
+5. If in the following mask, the warning "WARNING: DEBUG VERSION INSTALLED" appears, then clearly the Debug-Version is installed
 
 {{% row %}}
 {{% col md-6 %}}
 ![Screenshot - logon tapi](../../images/tapi_config_mtapi.PNG?width=70% " logon tapi") 
 {{% /col %}}
 {{% col md-6 %}}
-![Screenshot logon tapi Debug](../../images/tapi_config_mtapi_debug.PNG?width=70% " Logon tapi Debug")
+![Screenshot logon tapi Debug](../../images/tapi_config_mtapi_debug.png?width=70% " Logon tapi Debug")
 {{% /col %}}
 {{% /row %}}
 

@@ -204,7 +204,7 @@ Within in a team (Queue) it is possible to set which users will receive incoming
 Firstly, a Pickup role must be defined, which can consist of team members as well as individual users, that do not belong to the team.
 
 Additionally you can determine who of those within the team assigned with the Pickup role will receive notifications.
-![Screenshot - PPickup notification](../../images/team_pickup_notification.png?width=90% " Pickup notification")
+![Screenshot - Pickup notification](../../images/team_pickup_notifications.jpg?width=90% " Pickup notification")
 
 The following setups are possible:
 
