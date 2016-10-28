@@ -63,7 +63,7 @@ In order to access the main menu, you will need to press the **F2** kex and ende
 
 ### Configure Network
 {{% notice note %}}
-Changes to the network are implemented using the same process as when using the web interface. See [Network Configuration]({{< relref "04network-config.md" >}}).
+Changes to the network are implemented using the same process as when using the web interface. See [Network Configuration]({{< relref "05network-config.md" >}}).
 {{% /notice %}}
 he system will show all available network cardstui:
 ![Screenshot - TUI Network Settings](../../images/tui_netzwerk.png?width=90% "mobydick TUI Network Settings")
