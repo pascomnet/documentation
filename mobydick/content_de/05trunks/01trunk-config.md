@@ -62,11 +62,12 @@ Da verschiedene Ämter-Typen unterschiedliche Variablen benötigen finden Sie im
 |**Typ**|Analog zu Asterisk kennt mobydick mehrere Typen von SIP-Verbindungen. Diese werden unter [Asterisk sip type](http://www.voip-info.org/wiki/view/Asterisk+sip+type) genauer beschrieben.|
 |**Registrierung**|Wählen Sie *Ja* oder *Nein*, je nachdem ob sich die mobydick beim Host anmelden muss oder nicht.|
 |**Port**|Als Standard wird der Port *5060* verwendet. Soll ein anderer verwendet werden, können Sie diesen hier eintragen.|
-|**Durchwahl reg.**|Hier teilen Sie dem Host mit welche Durchwahl ein eingehender Anruf auf Ihrer Seite rufen soll. Dies ist notwendig wenn der Benutzer-SIP-Account genau eine Nummer zur Verfügung stellt. Nutzen Sie jedoch einen SIP-Anlagenanschluss (z. B: sipgate trunking) geben Sie hier nichts an da die gerufene Durchwahl jeweils separat übermittelt wird.|
-|**Ext. aus Header**|Standardmäßig wird die Zielrufnummer aus dem SIP-INVITE ermittelt. Setzt man diese Option auf *ja* wird die Zielrufnummer alternativ aus dem SIP-Header gelesen. Dies wird häufig bei SIP-Anlagenanschlüssen benötigt.|
+|**Durchwahl reg.**|Hier teilen Sie dem Host mit welche Durchwahl ein eingehender Anruf auf Ihrer Seite rufen soll. Dies ist notwendig wenn der Benutzer-SIP-Account genau eine Nummer zur Verfügung stellt. Nutzen Sie jedoch einen SIP-Anlagenanschluss (z. B: sipgate trunking) geben Sie hier nichts an da die gerufene Durchwahl jeweils separat übermittelt wird.|
+|**Ext. aus Header**|Standardmäßig wird die Zielrufnummer aus dem SIP-INVITE ermittelt. Setzt man diese Option auf *ja* wird die Zielrufnummer alternativ aus dem SIP-Header gelesen. Dies wird häufig bei SIP-Anlagenanschlüssen benötigt.|
+|**CLIP Modus**|*CLIP* ist ein Leistungsmerkmal, welches die Übermittlung von Rufnummern bei ausgehenden Rufen ermöglicht. Mögleiche Eintellungen:<br> * *Number*<br> * *Name+Number*<br> * *SIP Header*|
+|**CLIR Modus**|*CLIR* ist ein Leistungsmerkmal, welches die Unterdrückung von Rufnummern bei ausgehenden Rufen ermöglicht. Mögliche Einstellungen:<br> *  *Name+Number*<br> * *SIP Header*|
 
-<!-- |**CLIP Modus**||
- |**CLIR Modus**|| -->
+
 
 ### Rufregeln
 
@@ -97,9 +98,10 @@ Beim Bearbeiten und Speichern einer Amtsvorlage werden bereits automatisch zwei 
 |**Durchwahl**|Zeigt an, auf welche interne Durchwahl abgeworfen werden soll.|
 |**Sprache**|Gibt z. B. an, in welcher Sprache der Anrufer mögliche Ansagen hören soll.|
 
-<!-- |**CIDName**|| -->
-<!-- |**CIDNummer**|| -->
-
+<!--
+|**CIDName**||
+|**CIDNummer**||
+-->
 
 
 #### Ausgehende Rufe
@@ -194,3 +196,8 @@ mobydick bietet hier eine einfache Möglichkeit Variablen zu beschneiden. Eine V
 
 Um in unserem vorherigen Beispiel die 11 aus 09911234511 zu entnehmen, kann man **${EXTEN:9:2}** angeben.
 Der Cursor springt zuerst neun Stellen in die Variable und schneidet dann zwei Stellen, also die 11 aus. Nutzt man **${EXTEN:9}** passiert das Selbe, da beim Weglassen der Länge automatisch bis zum Ende der Variable geschnitten wird. Am Einfachsten kann man **${EXTEN:-2}** angeben. Der Cursor springt in die Variable zwei Stellen von hinten vor die 11 und schneidet diese, da keine Länge angegeben ist, bis an das Ende der Variable aus.
+
+
+{{% notice info %}}
+**CLIP no screening** ist ein Leistungsmerkmal für ausgehende Rufe, welches es ermöglicht eine Rufnummer zu übermittlen, die nicht zum eigenen Telefonanschluss gehört. In der mobydick wird es z. B.  benutzt um bei einer Rufumleitung nach extern (z. B. auf ein Mobiltelefon) die Nummer des ursprünglichen Anrufers zu signalisieren.<br>Möchten Sie diese Funktion nutzen, informieren Sie sich bitte bei Ihrem Telefonanbieter ob *Clip no screening* für Sie freigeschaltet ist oder werden kann.<br> Anschließend muss hierfür eine ausgehende Regel konfiguriert werden.<br>Beispiel:<br>*Quelle*: \_XXXXXX. (die Quelle die anruft hat mindestens 6 Stellen, kann also keine intene Durchwahl sein)<br>*CIDNummer*: ${CALLERID(num)} (ist die Nummer des Anrufers)
+{{% /notice %}}

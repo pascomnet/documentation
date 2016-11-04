@@ -9,9 +9,9 @@ keywords:
     - Arbeitsplätze anlegen
 description: Was ist ein Benutzer, Arbeitsplatz in mobydick und wie lassen diese sich einfach einrichten und verwalten?  
 linken: /server/automation/
-url: /benutzer/benutzer-und-arbeitsplaetze/
-prev: /benutzer/
-next: /benutzer/teams/
+url: /user/user/
+prev: /user/
+next: /user/teams/
 weight: 22
 toc: true
 ---
@@ -125,7 +125,7 @@ Zuerst muss festgelegt werden, wie mit den Voicemails umgegangen werden soll. Un
 |Einstellung|Beschreibung|
 |---|---|
 |**Voicemails speichern**|**JA** bedeutet, die Voicmails werden nach dem Versenden oder nachdem sie abgehört werden auf der mobydick gespeichert bleiben. Durch einen Cronjob können ältere Voicemails gelöscht werden.<br>**NEIN** bedeutet, dass die Voicemails nach dem Versenden per E-Mail von der mobydick gelöscht werden. Diese Einstellung ist zu empfehlen, da Voicemails viel Speicherplatz verwenden.|
-|**Voicemail Email**|An diese E-Mail-Adresse werden die Voicmails verschickt.|
+|**Voicemail Email**|An diese E-Mail-Adresse werden die Voicemails verschickt.|
 |**Überwachte Voicemailbox**|Als Standardeinstellung wird die eigene Voicemailbox überwacht. Hier kann man die Voicemailbox eines anderen Benutzers auswählen.|
 
 Anschließend muss die Voicemailbox als Aktion hinterlegt werden, falls das nicht schon bei der Benutzerlanlage geschehen ist.
@@ -209,7 +209,7 @@ Aktionen sind in der mobydick ein wichtiges Werkzeug um den Anrufablauf zu steue
 
 * dem Anrufer Ansagen vorzuspielen,
 * außerhalb der Geschäftzeiten den Anrufer auf eine Voicemailbox umzuleiten,
-* einen Anrufen auf einen anderen Benutzer abzuwerfen, falls der eigentlich Angerufenen im Gespräch,
+* einen Anrufen auf einen anderen Benutzer oder Team abzuwerfen, falls der eigentlich Angerufene im Gespräch,
 * und vieles mehr.
 
 Lesen Sie dazu bitte den Artikel über [Aktionen](../anrufverteilung/actions/).
