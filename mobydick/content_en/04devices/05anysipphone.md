@@ -34,7 +34,7 @@ Use this **Device Login** and **Password** to register the device with the mobyd
 In this example, we are using the Bria softphone from CounterPath:
 ![Screenshot - Softphone Bria Login ](../../images/device_softphone_bria_settings.png?width=50% "Softphone Bria Login")
 
-<!--### Zoiper Mobile Softphone
+### Zoiper Mobile Softphone
 
 Zoiper is another excellent softphone that provides mobile softphone integration. The setup is relatively straight forward. 
 
@@ -57,7 +57,7 @@ Next you will need to configure your Zoiper **Network Settings**
 Finally, under **Encryption Settings**, enable `SRTP` and save your configuration.  For this you may require Zoiper Gold.
 
 
-#### iOS Setup
+<!--#### iOS Setup
 
 ### CSipSimple
 
