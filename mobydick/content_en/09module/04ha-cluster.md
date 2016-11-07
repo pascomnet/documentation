@@ -70,7 +70,7 @@ The following is an example configuration for the second node:
 
 ![Illustration - Network Node 2](../../images/cluster_net_node2.png?width=90% "Network Node 2")
 
-For more details, please see [Network Configuration] ({{< ref "05network-config.md" >}} "mobydick Network Configuration")
+For more details, please see [Network Configuration] ({{< relref "05network-config.md" >}} "mobydick Network Configuration")
 
 ### Configuring the host name on both nodes
 
@@ -92,7 +92,7 @@ Make sure the following services are configured and working on the master node:
 * E-Mail server
 * Fax server (a basic configuration is required, even if the fax server is not going to be used)
 
-For more details, please see [Network Configuration] ({{< ref "05network-config.md" >}} "mobydick Network Configuration") and the [Virtual Fax Server]({{< ref "01faxserver.md">}} "mobydick fax server").
+For more details, please see [Network Configuration] ({{< relref "05network-config.md" >}} "mobydick Network Configuration") and the [Virtual Fax Server]({{< relref "01faxserver.md">}} "mobydick fax server").
 
 The services only need to be configured on the master node; the configuration is synchronised between the master and the node.
 

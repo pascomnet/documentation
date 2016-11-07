@@ -268,7 +268,7 @@ You can of course also filter your searches be specific entry types
 ![Screenshot - Global Search Filter](../../images/client_address_books_search.png?width=20% "global search filter")
 
 ### Address Books Searches
-![Screenshot - searching the address book](../../images/client_searchfiltern.png?width=50% "Searching the Address Books")
+![Screenshot - searching the address book](../../images/client_searchfiltern.png?width=20% "Searching the Address Books")
 When you have integrated either an Apple or Outlook Address Book, then you will be able to search these address book plus the mobydick Address book directly from the search box within the client. 
 
 

@@ -50,7 +50,8 @@ An update section is available within the mobydick UI. There are a few options t
 
 * Via the web UI by clicking on the `Service` tab before logging on and then on `Softwareupdate`.
 * If you are alreadly logged on, then select the `Appliance` menu and open the updater via `Firmare/Softeware Update`.
-* Alternatively, you can open the updater via the URL https://mobydick_ip/update.
+* Alternatively, you can open the updater via the URL:
+~~~~ https://mobydick_ip/update ~~~~.
 
 Finally, log in using your Admin user.
 After logging in, you will see an overview of the different packets which are all assigned with a status.
