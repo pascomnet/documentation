@@ -1,11 +1,102 @@
 ---
-title: Telefonbuch
+title: Connector
 keywords:
 description:
 url: /user/connector/
 prev: /user/phonebook/
-weight: 24
+weight: 25
 toc: true
 draft: true
 
 ---
+## Konzept
+
+Der mobydick Connector synchronisiert externe Datenquellen in die mobydick. mobydick ist in der Lage eine Vielzahl von Objekten wie z. B. Telefonbücher, Benutzer, Kurzwahlen usw. zu importieren. Diese können entweder aus einer CSV-Textdatei, LDAP-Quellen oder einem anderen mobydick Server importiert werden.
+
+{{% notice info %}}
+Wir empfehlen, den Connector zu verwenden, um regelmäßig Daten automatisiert zu importieren. Wenn Sie nur einmalig Daten importieren wollen können Sie dies einfacher über *Daten importieren per xlsx-Datei* erledigen.
+{{% /notice %}}
+
+## Konfiguration
+
+Den Connector finden Sie unter: `Erweitert` > `Connector`. Fügen Sie neue Connector-Profile ein mit einem Klick auf `Hinzufügen`.
+
+Anschließend erhalten Sie eine Übersicht über die Connector-Vorlagen:
+
+* **Benutzer aus USC**
+* **Benutzer aus AD**
+* **Benutzer aus LDAP**
+* **Benutzer aus CSV**
+* **Telefonbuch aus AD**
+* **Telefonbuch aus CSV**
+* **Telefonbuch aus LDAP**
+* **Kurzwahlen aus AD**
+* **Kurzwahlen aus CSV**
+* **Kurzwahlen aus LDAP**
+* **mobydick Telefonbuch**
+
+Nachfolgend werden gängige Profile näher erklärt. Benutzen Sie bitte für den Einstieg die passende Connector-Vorlage.
+
+### Telefonbuch aus CSV
+
+|Variablen|Beschreibung|
+|---|---|
+|**Bezeichung**|Bezeichnung des Profiles|
+|**Pfad zur CSV-Datei**|Die zu importierende Datei. Diese Angabe bezieht sich auf das Dateisystem der mobydick und nicht auf Ihr lokales Dateisystem.|
+|**Zeichensatz der CSV-Datei**|Gibt an in welchem Format die CSV-Datei vorliegt. Wie empfehlen Ihnen UTF-8 zu verwenden.|
+|**Trennzeichen**|Mit welchem Trennzeichen wurden die Felder separiert.|
+|**Zeilenende**|Ob die CSV-Datei unter Windows oder Mac/Linux erstellt worden ist, unterscheidet sich das Zeilendende.|
+|**Feldeinfassung**|Wir empfehlen die einzelnen Felder mit Zeichen einzufassen, z. B. "Max Muster"|
+
+CSV-Quelle aus Freigabe laden:
+
+|Variablen|Beschreibung|
+|---|---|
+|**Pfad zur CSV-Datei**|Bezieht sich nun relativ zur Freigabe.<br>*Beispiel*: Befindet sich in der Freigabe \\192.168.100.10\mobydick der Unterordner test mit der Datei address.csv tragen Sie hier test\address.csv ein.|
+|**CIFS/SMB Freigabe verwenden**|Wählen Sie **JA** um eine CSV-Quelle aus einer Freigabe zu laden|
+|**CIFS/SMB Freigabe**|UNC-Pfad zur Freigabe im Format **\\<servername** oder **ip>\<freigabe>**<br>*Beispiel*: \\192.168.100.10\mobydick|
+|**CIFS/SMB Benutzer**|Benutzer mit der Berechtigung auf diese Freigabe lesend zuzugreifen.|
+|**CIFS/SMB Passwort**|Zugehöriges Passwort.|
+
+Nach dem Speichern kann der Importmodus noch eingestellt werden. Hier wird definiert, Wie der Connector mit bereis vorhandenen Datensätzen umgehen soll. Folgenden Möglichkeiten stehen zur Verfügung:
+
+* Neue Sätze importieren und geänderte abgleichen
+* Neue Sätze importieren, geänderte abgleichen und früher importierte Datensätze entfernen.
+
+Im Tab `Variablen` sehen Sie welche Felder imporiert werden können. Hier ein Beispiel für eine CSV-Datei:
+
+    "displayname","phone","givenname","surname","organisation","email","mobile","homephone","fax"
+    "Max Muster - pascom [30000]","+4999112345","Max","Muster","pascom","","","","+4999112399"
+
+
+### Benutzer aus AD
+
+|Variable|Beschreibung|
+|---|---|
+|**Bezeichung**|Bezeichnung des Profiles|
+|**AD Domäne**|-|
+|**AD Server**|-|
+|**Benutzername**|-|
+|**Passwort**|-|
+|**Authentifizierung konfigurieren**|siehe [Authentifizierung](../connector#authentifizierung)|
+
+Nach dem Speichern sehen Sie die Übersicht über die Einstellungen.
+
+|Variable|Beschreibung|
+|---|---|
+|**Modus**|Hier definieren Sie wie der Connector mit bereits vorhanden Datensätzen umgehen soll|
+|**URI**|Die LDAP-URI unter welcher der LDAP Server erreichbar ist. Standardmäßig **ldap://SERVER:389**, für SSL Verbindungen **ldaps://SERVER:636**|
+|**Basis DN**|Definiert von welchem Startpunkt aus der LDAP-Baum durchsucht werden soll|
+|****||
+|****||
+
+
+
+### Benutzer aus UCS
+
+
+
+
+
+
+## Authentifizierung
