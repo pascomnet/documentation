@@ -4,7 +4,7 @@ keywords:
 description:
 url: /user/phonebook/
 prev: /user/teams/
-next: /user/connector/
+<!-- next: /user/connector/ -->
 weight: 24
 toc: true
 draft: false
