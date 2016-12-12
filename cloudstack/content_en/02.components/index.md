@@ -5,7 +5,7 @@ prev: /installation/setup-for-hosters/
 next: /components/overview
 title: Components
 weight: 0
-url: components
+url: /components/
 icon: <i class="fa fa-cubes" aria-hidden="true"></i>
 ---
 
