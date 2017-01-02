@@ -1,8 +1,16 @@
 ---
-title: Registering SIP Providers
-next: /sip-providers/trunks/
-url: /sip-providers/
+title: SIP Providers
+next: /sip-provider/database/
+url: /sip-provider/
 weight: 6
-icon: <i class="fa fa-desktop" aria-hidden="true"></i>
+keywords:
+    - Trunk Setup
+    - SIP Trunk Registration
+    - SIP Provider Database
+description: How to add and register your pascom PBX with a Voice Trunk.
+icon: <i class="fa fa-phone-square" aria-hidden="true"></i>
 chapter: true
 ---
+
+
+# SIP Providers

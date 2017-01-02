@@ -1,11 +1,12 @@
 ---
-title: Trunks
+title: Voice Trunks
 keywords:
     - Trunk Setup
-description: Erfahren Sie, wie Sie in der mobydick ein Amt einrichten
+    - SIP Trunk Registration
+description: How to add and register your pascom PBX with a Voice Trunk.
 linkde: /trunks/
 url: /trunks/
-weight: 10
+weight: 5
 next: /trunks/trunk-configuration/
 icon: <i class="fa fa-phone-square" aria-hidden="true"></i>
 chapter: true
