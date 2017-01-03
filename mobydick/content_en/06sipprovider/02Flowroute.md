@@ -1,6 +1,11 @@
-title: Registering SIP Trunks
-next: /sip-provider/
-url: /sip-providers/trunks/
-weight: 5
-icon: <i class="fa fa-database" aria-hidden="true"></i>
 ---
+title: SIP Provider Database
+url: /sip-provider/flowroute/
+next: /sip-provider/Gradwell/
+weight: 6
+keywords:
+description:
+toc: true
+lang: en
+---
+
