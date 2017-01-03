@@ -1,5 +1,14 @@
 ---
 title: Service Codes Overview
+keywords:
+    - feature codes
+    - Service Activation Codes
+    - Function Codes
+    - Service Codes
+    - Star Codes
+    - Shortcodes
+    - Shortkeys
+description: Overview of pascom IP PBX Function Codes / Service Codes
 url: /howto/service-codes/
 linkde: /howto/funktionscodes/
 prev: /howto/harddisk-expansion/
