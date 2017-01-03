@@ -64,7 +64,7 @@ The **disadvantage** here is that mobydick will not be made aware of those calls
 
 ### Connecting via SIP
 
-![Illustration - Connection via SIP](../../images/beronet_via_sip.png?width=90% "Anbindung via SIP over Gateway")
+![Illustration - Connection via SIP](../../images/beronet_via_sip.png?width=90% "Connection via SIP over Gateway")
 
 **Via SIP** means that all calls to the corresponding extension are routed per SIP over your telephony system. Therefore, should a call for the fax device come in, it will be firstly routed via **1** to the phone system and then further via **2** to the analog fax device.
 
