@@ -1,10 +1,15 @@
 ---
 title: Snom VoIP Phones
 keywords: 
-    - Snom 715, 720 and 760 Telephones
-    - Snom D705, D715, D725 and D765 Telephones
-    - Snom 300
-description: All Snom models are supported by mobydick and here is how to integrate your Snom VoIP Desktop Phone.
+    - Snom 
+    - Desktop Phones
+    - provisioning
+    - 300, 320, 360, 370, 710,715, 720, 760
+    - D705, D715, D725, D765
+    - Snom BLF Key
+    - Busy Lamp Field
+    - Snom Firmware
+description: All Snom IP telephone models are supported by mobydick and here is how to integrate your Snom VoIP Desktop Phone.
 url:  /endpoints/snom-ip-telephones/
 prev: /endpoints/
 next: /endpoints/generic-ip-endpoints/
