@@ -1,7 +1,7 @@
 ---
 title: SIP Providers
-next: /sip-provider/database/
-url: /sip-provider/
+next: /sip-providers/database/
+url: /sip-providers/
 weight: 6
 keywords:
     - Trunk Setup
