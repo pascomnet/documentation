@@ -39,6 +39,7 @@ icon: <i class="fa fa-file-text-o" aria-hidden="true"></i>
 
 |Version|Release Type|Veröffentlichung|
 |-------|------------|---------------:|
+|[Release 7.11.07]({{< relref "07.11.07.md">}})| Bugfix Release | 20.01.2017 |
 |[Release 7.11.06]({{< relref "07.11.06.md">}})| Bugfix Release | 10.08.2016 |
 |[Release 7.11.05]({{< relref "07.11.05.md">}})| Bugfix Release | 16.06.2016 |
 |[Release 7.11.04]({{< relref "07.11.04.md">}})| Bugfix Release | 07.04.2016 |
