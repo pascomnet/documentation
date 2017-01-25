@@ -5,7 +5,7 @@ canonifyurls = true
 
 title = "mobydick Dokumentation"
 theme= "doc-pascom"
-author = "pascom Netzwerktechnik GmbH & Co. KG"
+author = "pascom GmbH & Co. KG"
 
 [params]
 

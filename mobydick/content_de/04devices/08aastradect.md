@@ -7,7 +7,6 @@ keywords:
     - VoIP DECT
 description:
 url:  /endgeraete/aastra-dect-system-anbinden/
-linken: /devices/integrate-aastra-dect-system/
 prev: /endgeraete/beliebiges-ip-geraet-einrichten/
 weight: 48
 toc: true

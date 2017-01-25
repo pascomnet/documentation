@@ -7,7 +7,6 @@ keywords:
     - mobydick Systemvoraussetzungen
 description: mobydick lässt sich in wenigen Minuten sowohl in virtuellen Umgebungen als auch auf Servern installieren.
 url:  /server/server-installieren/
-linken: /server/server-installation/
 prev:  /server/plattformen/
 next:  /server/mobydick-zugriff/
 weight: 12

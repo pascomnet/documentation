@@ -1,6 +1,5 @@
 ---
 url: /server/plattformen/
-linked: /server/
 prev:  /server/
 next:   /server/server-installieren/
 weight: 11
@@ -13,7 +12,6 @@ keywords:
     - mobydick vorinstalliert
 description: mobydick unterstützt eine Vielzahl an unterschiedlichen Servern / Appliances für jede Betriebsgröße
 toc: true
-lang: de
 
 ---
 

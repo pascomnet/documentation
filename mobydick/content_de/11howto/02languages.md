@@ -2,8 +2,8 @@
 title: Mehrere Sprachen Nutzen
 keywords:
 description:
-url: /howto/languages/
-prev: /howto/extenstions/
+url: /howto/sprachen/
+prev: /howto/durchwahlen/
 next: /howto/homeoffice/
 weight: 121
 toc: false

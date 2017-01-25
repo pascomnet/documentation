@@ -7,7 +7,6 @@ keywords:
     - Installation
     - Lizenzen
 description: Erfahren Sie, wie Sie mobydick installieren und verwalten können.
-linken: /server/
 url: /server
 weight: 1
 chapter: true

@@ -7,9 +7,9 @@ keywords:
     - Roaming User
     - Call Center Teams
 description: Teams in mobydick sind vergleichbar mit Warteschlangen. Rufstrategien helfen Ihnen Anrufe gezielt zu steuern.
-url: /user/teams/
-prev: /user/user/
-next: /user/phonebook/
+url: /benutzer/teams/
+prev: /benutzer/benutzer-arbeitsplaetze/
+next: /benutzer/telefonbuch/
 weight: 23
 toc: true
 ---

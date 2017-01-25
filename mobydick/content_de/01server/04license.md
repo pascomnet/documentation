@@ -3,9 +3,8 @@ title: Lizenzen verwalten
 keywords:
     - mobydick Lizenz
 description:
-linken: /server/
 url: /server/lizenzen-verwalten/
-prev: /server/mobydick-zugriff/
+prev: /server/zugriff/
 next: /server/netzwerk-konfigurieren/
 weight: 14
 toc: true

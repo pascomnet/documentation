@@ -3,7 +3,6 @@ title: Analog- und ISDN-Endgeräte anlegen
 keywords:
 description:
 url:  /endgeraete/analog-und-isdn-geraete/
-linken:
 next: /endgeraete/aastra-dect-system-anbinden/
 prev: /endgeraete/beliebiges-ip-geraet-einrichten/
 weight: 46

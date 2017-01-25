@@ -2,11 +2,10 @@
 title: Connector
 keywords:
 description:
-url: /user/connector/
-prev: /user/phonebook/
+url: /benutzer/connector/
+prev: /benutzer/telefonbuch/
 weight: 25
 toc: true
-draft: true
 
 ---
 ## Konzept
@@ -58,7 +57,7 @@ CSV-Quelle aus Freigabe laden:
 |**CIFS/SMB Benutzer**|Benutzer mit der Berechtigung auf diese Freigabe lesend zuzugreifen.|
 |**CIFS/SMB Passwort**|Zugehöriges Passwort.|
 
-Nach dem Speichern kann der Importmodus noch eingestellt werden. Hier wird definiert, Wie der Connector mit bereis vorhandenen Datensätzen umgehen soll. Folgenden Möglichkeiten stehen zur Verfügung:
+Nach dem Speichern kann der Importmodus noch eingestellt werden. Hier wird definiert, Wie der Connector mit bereis vorhandenen Datensätzen umgehen soll. Folgende Möglichkeiten stehen zur Verfügung:
 
 * Neue Sätze importieren und geänderte abgleichen
 * Neue Sätze importieren, geänderte abgleichen und früher importierte Datensätze entfernen.
@@ -68,7 +67,7 @@ Im Tab `Variablen` sehen Sie welche Felder imporiert werden können. Hier ein Be
     "displayname","phone","givenname","surname","organisation","email","mobile","homephone","fax"
     "Max Muster - pascom [30000]","+4999112345","Max","Muster","pascom","","","","+4999112399"
 
-
+<!--  
 ### Benutzer aus AD
 
 |Variable|Beschreibung|
@@ -90,13 +89,41 @@ Nach dem Speichern sehen Sie die Übersicht über die Einstellungen.
 |****||
 |****||
 
-
-
+-->
+<!--  
 ### Benutzer aus UCS
+-->
 
 
+## Authentifizierung gegen externe Systemen
 
+mobydick bietet die Möglichkeit die Authentifizierung auf externe LDAP-Server auszulagern. Der Benutzer gibt dabei in der Loginmaske des mobydick Clients seinen Benutzernamen und sein Passwort ein. In der Benutzerdatenbank der mobydick wird geprüft ob der Benutzer existiert, anschließend wird die Anfrage an den LDAP-Server weitergegeben. Da wird dann das eingegebene Passwort zur Authentifizierung geprüft. Ist das Passwort richtig, kann der Client verbunden werden.
 
+### Benutzerdaten
 
+Der Import der Benutzerdaten und die Authentifizierung sind zwar miteinander kombinierbar aber nicht zwingend gleichzeitig notwendig. Sie können z. B. die Benutzer manuell anlegen und dann nur die Authentifizierung auf ein externes System umschalten. Die externe Authentifizierung scheitert jedoch wenn der Benutzer auf der mobydick nicht existiert. Den vollen Komfort entfaltet mobydick wenn Sie Authentifizierung und den automatischen Benutzerimport miteinander kombinieren.
 
-## Authentifizierung
+### Konfiguration
+
+**Authentifizierung einrichten**
+
+Unter `Appliance` > `Dienste` > `Authentifizierung` kann die LDAP-Authentifizierung aktiviert werden.
+
+|Einstellung|Beschreibung|
+|---|---|
+|**LDAP Host**|Tragen Sie hier die LDAP URL für Ihren Host ein.<br>Z. B. ldap://192.168.100.10 oder ldaps://192.168.100.10 für LDAPs Verbindungen|
+|**LDAP Bind User**|Als Bind-User tragen Sie den *Distinguished Name* (DN) Ihrer Benutzer ein. Den Benutzername ersetzen Sie durch ein %-Zeichen. mobydick ersetzt das %-Zeichen durch den Benutzernamen der sich gerade am System authentifizieren will.|
+
+Pro Benutzer kann entschlieden werden ob die Authentifizierung über LDAP erfolgt oder weiterhin die interne mobydick Authentifizierungverwendet werden soll.
+
+{{% notice info %}}
+Für **UCS** und **Active Directory** können Sie Connector-Vorlagen benutzen. Diese richten auf Wunsch die Authentifizierung automatisch mit ein.
+{{% /notice %}}
+
+**Authentifizierung testen**
+
+Mit der Schaltfläche `Anmeldung Testen` können Sie ausprobieren ob Ihre zuvor getätigten Angaben funktionieren.
+
+**Authentifizierung pro Benutzer einstellen**
+
+Unter `Benutzer` > `Benutzerliste` > `Bearbeiten` im Tab `Basisdaten` im Feld `Anmeldung` stellen Sie die Art der Authentifizierung ein.

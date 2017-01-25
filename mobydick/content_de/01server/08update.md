@@ -6,10 +6,9 @@ keywords:
     - mobydick auf Hardware installieren
     - mobydick Systemvoraussetzungen
 description:
-linken: /server/
 url: /server/update/
 prev:  /server/sicherung/
-next: /server/automasierung/
+next: /server/automatisierung/
 weight: 18
 toc: true
 

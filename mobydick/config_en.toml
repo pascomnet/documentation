@@ -5,7 +5,7 @@ contentdir= "content_en"
 
 title = "mobydick Documentation"
 theme= "doc-pascom"
-author = "pascom Netzwerktechnik GmbH & Co. KG"
+author = "pascom GmbH & Co. KG"
 
 [params]
 

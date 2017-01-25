@@ -6,8 +6,7 @@ keywords:
     - Zugriff auf die mobydick TUI
     - Zugriff per SSH
 description: Erfahren Sie, wie Sie Zugriff auf Ihre mobydick erhalten und die Bedienoberfläche nutzen
-linken: /server/
-url: /server/mobydick-zugriff/
+url: /server/zugriff/
 prev: /server/server-installieren/
 next: /server/lizenzen-verwalten/
 weight: 13
