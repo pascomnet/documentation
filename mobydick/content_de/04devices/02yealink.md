@@ -14,3 +14,5 @@ weight: 42
 toc: true
 draft: true
 ---
+
+![Yealink T46G](/yealink-t4-series1.jpg?width=400px)

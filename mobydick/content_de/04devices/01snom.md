@@ -19,6 +19,17 @@ toc: true
 
 ---
 
+{{% row %}}
+{{% col md-6 %}}
+![snom 300 serie](/snom-300-series1.png?width=500px)
+{{% /col %}}
+{{% col md-6 %}}
+![snom 700 serie](/snom-700-series1.png?width=300px)
+{{% /col %}}
+{{% /row %}}
+
+
+
 ## Kompatibilität
 
 |Provisionierung|Firmware-Verwaltung|Fernsteuerung über Desktop Client|pascom Menü|

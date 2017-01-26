@@ -36,7 +36,7 @@ Die mobydick miniAppliance ist eine reine VoIP-Appliance, kann jedoch per extern
 {{% /col %}}
 
 {{% col md-6 %}}
-![mobydick miniAppliance](../../images/mobydick_mini_appliance_front.png "mobydick miniAppliance Frontansicht")
+![mobydick miniAppliance](/mobydick_mini_appliance_front.png?width=200px)
 {{% /col%}}
 {{% /row %}}
 
@@ -61,7 +61,7 @@ Empfohlene Benutzeranzahl: max. 100
 {{% /col %}}
 
 {{% col md-6 %}}
-![mobydick Appliance](../../images/mobydick_appliance.jpg "mobydick Appliance von beronet")
+![mobydick Appliance](/mobydick_appliance.jpg)
 
 {{% /col%}}
 {{% /row %}}
@@ -81,7 +81,7 @@ Empfohlene Benutzeranzahl: max. 250
 
 {{% /col %}}
 {{% col md-6 %}}
-![Patton SNOGA Appliance](../../images/mobydick_snoga.gif "mobydick Appliance von Patton")
+![Patton SNOGA Appliance](/mobydick_snoga.gif)
 {{% /col%}}
 {{% /row %}}
 
@@ -109,22 +109,22 @@ mobydick ist für den Betrieb in virtuellen Maschinen optimiert. Dabei fahren wi
 
 {{% row %}}
 {{% col md-3 %}}
-![vmware Logo](../../images/vm_vmware.jpg "vmware Virtualisierung")
+![vmware Logo](/vm_vmware.jpg)
 {{% /col %}}
 {{% col md-2 %}}
-![hyperV Logo](../../images/vm_hyperv.png "hyperV Virtualisierung")
+![hyperV Logo](/vm_hyperv.png)
 {{% /col %}}
 {{% col md-1 %}}
-![Virtualbox Logo](../../images/vm_virtualbox.png "Virtualbox Virtualisierung")
+![Virtualbox Logo](/vm_virtualbox.png)
 {{% /col %}}
 {{% col md-2 %}}
-![kvm Logo](../../images/vm_kvm.png "kvm Virtualisierung")
+![kvm Logo](/vm_kvm.png)
 {{% /col %}}
 {{% col md-2 %}}
-![xen Logo](../../images/vm_xen.png "xen Virtualisierung")
+![xen Logo](/vm_xen.png)
 {{% /col %}}
 {{% col md-2 %}}
-![proxmox Logo](../../images/vm_proxmox.png "proxmox Virtualisierung")
+![proxmox Logo](/vm_proxmox.png)
 {{% /col %}}
 {{% /row %}}
 

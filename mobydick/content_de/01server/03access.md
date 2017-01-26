@@ -40,7 +40,7 @@ Arbeitssitzungen bleiben nach der letzten Eingabe 30 Minuten aktiv, innerhalb di
 ### Startseite
 
 Die Startseite gibt Ihnen Informationen über die verfügbaren Netzwerkschnittstellen.
-![Screenshot - TUI der mobydick](../../images/tui_start.jpg?width=90% "mobydick TUI Startseite")
+![Screenshot - TUI der mobydick](/tui_start.jpg?width=80%)
 
 Sie können hier die IP-Adresse der mobydick ablesen und anschließend in einem Browser mit der eigentlichen Konfiguration der Telefonanlage fortfahren.
 
