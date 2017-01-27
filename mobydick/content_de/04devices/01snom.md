@@ -21,10 +21,10 @@ toc: true
 
 {{% row %}}
 {{% col md-6 %}}
-![snom 300 serie](/snom-300-series1.png?width=500px)
+![snom 700 serie](/snom-700-series1.png?width=300px)
 {{% /col %}}
 {{% col md-6 %}}
-![snom 700 serie](/snom-700-series1.png?width=300px)
+![snom 300 serie](/snom-300-series1.png)
 {{% /col %}}
 {{% /row %}}
 
@@ -147,9 +147,9 @@ Neben Benutzer-Durchwahlen können auch Einbuchcodes für Warteschlangen oder Du
 |**Direktwahl**|Hier kann eine Telefonnummer hinterlegt werden.|
 |**DTMF**|Hier können DTMF-Zeichen hinterlegt werden.|
 
-### Basis-Konfiguration
+<!-- ### Basis-Konfiguration
 
-Wie bereits erwählt, werden Snom IP-Telefone  mit Hilfe der Basis-Konfiguration provisioniert.
+Wie bereits erwählt, werden Snom IP-Telefone  mit Hilfe der Basis-Konfiguration provisioniert. -->
 
 
 

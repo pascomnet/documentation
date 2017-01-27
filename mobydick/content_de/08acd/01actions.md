@@ -67,7 +67,7 @@ angelegt werden.
 |---|---|
 |**Ansagen**|Spielt eine Ansage vor. Diese kann hinzugefügt werden unter `Erweitert` > `Ansagen`.|
 |**Voicemailbox**|Verbindet den Anrufer mit einer Voicemailbox. Es kann die eigenen sein, die eines anderen Benutzers oder die eines Teams. Zusätzlich kann bei der Voicemailbox *Hinweis* (dass Benutzer nicht erreichbar oder belegt ist) und *Handhabung* (Ansage, dass der Anrufer eine Nachricht hinterlassen kann) gesetzt werden.|
-|**Auflegen**|Legt den Anruf aus. Diese Aktion z. B. zu empfehlen, wenn dem Anrufer nur eine Ansage vorgespielt wird.|
+|**Auflegen**|Legt den Anruf auf. Diese Aktion z. B. zu empfehlen, wenn dem Anrufer nur eine Ansage vorgespielt wird.|
 |**Skript**|Führt ein Skript aus, das zuvor unter dem Menüpunkt `Erweitert` > `Skripte` erstellt wurde.|
 |**Inline-Script**|Einzeiliges Skript das hier eingetragen werden kann|
 |**Label Setzen**|Labels werden unter `Anrufverteilung` > `Anruf Labels` erstellt und können hier hizugefügt werden. Labels werden dem mobydick Benutzer als Information im Client angezeigt. Es können beliebig viele Labels pro Anrufer gesetzt werden.|
@@ -82,7 +82,7 @@ Weitere Aktionen sind:
 
 ### Reihenfolge und Aktionsbedingungen
 
-Werden in einem Aktions-Tab mehrere Aktionen angelegt, werden diese von oben nach unter abgearbeitet. Die Reihenfolge kann mit den blauen Pfeilen um je eine Position nach oben oder nach unten verschoben werden.
+Werden in einem Aktions-Tab mehrere Aktionen angelegt, werden diese von oben nach unten abgearbeitet. Die Reihenfolge kann mit den blauen Pfeilen um je eine Position nach oben oder nach unten verschoben werden.
 
 {{% notice tip%}}
 Bitte achten Sie auch auf eine sinnvolle Reihenfolge der Bedingungen. Z. B. sollten zuerst die Urlaubszeiten geprüft werden, und anschließend Geschäftszeiten, da abhängig von der Konfiguration während der Urlaubszeiten die Geschäftszeiten gar nicht mehr geprüft werden müssen.
