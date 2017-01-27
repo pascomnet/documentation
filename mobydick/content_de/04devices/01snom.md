@@ -73,8 +73,7 @@ Nach der Provisionierung des IP-Telefons wird von mobydick der Admin-User neu ge
 <br>Passwort: *0000*
 {{% /notice %}}
 
-<!--
-FIXME: hinweis wo man pin ändern kann -->
+Das Passwort des Admin-Users am IP-Telefon kann über die Systemeinstellungen im Web-UI geändert werden. Suchen Sie in dem Suchfeld nach dem Parameter *sys.peripherals.access.password*. Geben Sie Ihren gewünschten Wert ein. Anschließend müssen Sie manuell die Telefonie-Konfiguration anwenden und die Endgeräte neustarten.
 
 ### Benutzer zuweisen
 
@@ -147,10 +146,20 @@ Neben Benutzer-Durchwahlen können auch Einbuchcodes für Warteschlangen oder Du
 |**Direktwahl**|Hier kann eine Telefonnummer hinterlegt werden.|
 |**DTMF**|Hier können DTMF-Zeichen hinterlegt werden.|
 
-<!-- ### Basis-Konfiguration
+### Basis-Konfiguration
 
-Wie bereits erwählt, werden Snom IP-Telefone  mit Hilfe der Basis-Konfiguration provisioniert. -->
+Wie bereits erwählt, werden Snom IP-Telefone  mit Hilfe der Basis-Konfiguration provisioniert. Die Basis-Konfigurationen ist unter `Endgeräte` > `Basis-Konfiguration` zu finden.
 
+Bevor Sie die die Basis-Konfiguration ändern sollten Sie diese `Duplizieren`, damit Sie im Falle einer Fehl-Konfiguration die "mobydick Werkseinstellungen" zum Vergleich haben.
+
+Ebenfalls können Sie eine schon bearbeitete Basis-Konfiguration als `Standard setzten`. Somit erhalten neu angelegte IP-Telefone automatisch die angepasste Basis-Konfiguration.
+
+**Zuweisung einer Basis-Konfiguration**
+
+Eine Basis-Konfiguration kann auf mehreren Wegen zugewiesen werden:
+
++ Über `Endgeräte` > `Basis-Konfiguration` > Basis-Konfiguration auswählen und Bearbeiten im Tab `Geräte` können gleich mehrere IP-Telefone hinzugefügt werden.
++ Über `Endgeräte` > `Geräteliste` > IP-Telefon auswählen und Bearbeiten im Tab `Basisdaten`.
 
 
 ### Firmwareupdate
