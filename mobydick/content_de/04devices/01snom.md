@@ -119,6 +119,10 @@ Tippen Sie die Taste **?** bzw. **Help** um die IP-Adresse Ihres Telefon anzuzei
 
 Loggen Sie sich in das Web-UI der mobydick ein. Klicken Sie auf `Endgeräte` > `Geräteliste`. Nun sehen Sie eine ÜBersicht über alle verfügbaren Geräte. Links von jedem Eintrag finden Sie ein *Info*-Symbol. Klicken Sie es an, erhalten Sie eine Übersicht über das provisionierte Telefon, unter anderem auch die IP-Adresse.
 
+**Admin-Rechte**
+
+Um Zugriff zu einigen Menüpunkten in der Web-UI des Snom Telefons zu haben benötigen Sie Admin-Rechte. Klicken Sie hierfür auf den Menüpunkt **Erweitert**. Nun geben Sie das Admin-Passwort ein.
+
 ### Tasten belegen
 
 KLicken Sie in der Menüliste auf der linken Seite auf Funktionstasten.
@@ -150,7 +154,9 @@ Neben Benutzer-Durchwahlen können auch Einbuchcodes für Warteschlangen oder Du
 
 Wie bereits erwählt, werden Snom IP-Telefone  mit Hilfe der Basis-Konfiguration provisioniert. Die Basis-Konfigurationen ist unter `Endgeräte` > `Basis-Konfiguration` zu finden.
 
-Bevor Sie die die Basis-Konfiguration ändern sollten Sie diese `Duplizieren`, damit Sie im Falle einer Fehl-Konfiguration die "mobydick Werkseinstellungen" zum Vergleich haben.
+{{% notice note %}}
+Bevor Sie die Basis-Konfiguration ändern, sollten Sie diese `Duplizieren`, damit Sie im Falle einer Fehl-Konfiguration die "mobydick Werkseinstellungen" zum Vergleich haben.
+{{% /notice %}}
 
 Ebenfalls können Sie eine schon bearbeitete Basis-Konfiguration als `Standard setzten`. Somit erhalten neu angelegte IP-Telefone automatisch die angepasste Basis-Konfiguration.
 
@@ -161,6 +167,21 @@ Eine Basis-Konfiguration kann auf mehreren Wegen zugewiesen werden:
 + Über `Endgeräte` > `Basis-Konfiguration` > Basis-Konfiguration auswählen und Bearbeiten im Tab `Geräte` können gleich mehrere IP-Telefone hinzugefügt werden.
 + Über `Endgeräte` > `Geräteliste` > IP-Telefon auswählen und Bearbeiten im Tab `Basisdaten`.
 
+**BLF-Tasten konfigurieren über die Basis-Konfiguration**
+
+Im Tab `Konfiguration` können Sie die vorhandene Basis-Konfiguration anpassen.<br>
+Im Bereich **keys** finden Sie bereits vorkonfigurierte Funktionstasten, an denen Sie dich orientieren können.
+
+Surfen Sie auf das Web-UI Ihres Snom Telefons und belegen Sie unter *Funktionstasten* als Beispiel die Taste **P1**. Wählen Sie als Typ **Nebenstelle**, als Nummer **123** und als Label **Musterbenutzer**. Übernehmen Sie die Einstellungen.
+
+Klicken Sie auf den Menüpunkt *Einstellungen*. Falls Sie den Menüpunkt noch nicht sehen, benötigen Sie [Admin-Rechte](../snom-tischtelefone-300-700-serie/#auf-die-snom-weboberfläche-zugreifen).<br>
+Suchen Sie nach *fkey0* und *fkey_label0*. Die gefundenen Zeilen tragen Sie anschließend in der Basis-Konfiguration über das Web-UI der mobydick ein:
+
+    {{!-- keys --}}
+    fkey0: dest <sip:123@192.168.100.1>
+    fkey_label0: Zentrale
+
+Weisen Sie diese Basis-Konfiguration über den Tab `Geräte` den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und Speichern Sie nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
 
 ### Firmwareupdate
 
