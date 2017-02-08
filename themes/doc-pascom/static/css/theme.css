@@ -1214,6 +1214,7 @@ select[multiple=multiple]:focus {
 }
 #body-inner {
   margin-bottom: 5rem;
+  overflow-anchor: none;
 }
 #chapter {
   display: flex;
