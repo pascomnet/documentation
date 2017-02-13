@@ -1,4 +1,3 @@
-
 ---
 url: /server/platforms/
 linkde: /server/plattformen/
@@ -15,7 +14,6 @@ keywords:
 description: mobydick supports a wide range of servers / appliances making it the ideal solution for businesses of all sizes.
 toc: true
 lang: en
-
 ---
 
 ## mobydick Servers

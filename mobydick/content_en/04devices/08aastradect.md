@@ -9,12 +9,12 @@ keywords:
 description: How to integrate an Aastra MultiCell DECT system with the mobydick phone system.
 url:  /endpoints/integrate-aastra-dect-system/
 linkde: /endgeraete/aastra-dect-system-anbinden/
-prev: /endpoints/analog-and-isdn-devices/
+prev: /endpoints/generic-ip-endpoints/
 weight: 48
 toc: true
 ---
 
-## Überblick
+## Overview
 
 An Aastra SIP-DECT system can have any number from 1 to 254 base stations. The base stations are connected to the IP telephone network and communicate with mobydick using the SIP protocol. The base stations also communicate with one another using DECT to allow for switching between base stations during a call. A single base station does not have to connect to every other base station, but all base stations must be able to form a chain. Isolated groups of base stations should not be used. 
 
@@ -24,7 +24,7 @@ One base station takes care of the user management and the connection to mobydic
 The base stations do not have a power supply but are powered using Power over Ethernet (PoE) technology. Availability of a PoE-compatible switches must be ensured prior to installation.
 {{% /notice %}}
 
-## Base Station Boot Process
+### Base Station Boot Process
 
 All base stations use identical hardware, whether they are used as a master or not. When booting, the base station will send a DHCP request to the mobydick system. mobydick checks in its database whether this base station's MAC address is supposed to have master configurations applied. If so, the DHCP server will, along with the IP address and an URL for the firmware, pass additional information to the base station, instructing it to boot with a master configuration. You should plan which roles the base stations should serve, which is the master, which is the failover and which run as normal base stations before deploying them by using the mobydick web interface.
 
@@ -41,7 +41,6 @@ The TFTP server can be activated in the mobydick web interface in the Appliance 
 {{% notice note%}}
 Please note: when simultaneously operating RFP32 and RFP 34, 35 or higher, make sure to declare base stations as master that are of the type RFP 34, 35 or higher. As of firmware version 3.0, RFP 32 base stations cannot act as a master anymore
 {{% /notice %}}
-
 
 Under `Gateways > Gateway list` click the `+Add` button and select the **Add Aastra DECT Gateway** option:
 
@@ -73,7 +72,6 @@ Here, the master is already present in the Access Points tab. By pressing the "A
 |Failover|	This base station is used as a failover. Only one base station can be used as a failover.|
 |Reflective Environment |	If this option is set to **Yes**, the base station will halve its channel capacities. Each handset will then use two channels and switch to the better one. This option is especially helpful in environments with lots of interference.|
 
-
 ### Adding Mobile Handsets
 
 Under the tab `Handsets` you can now add Aastra DECT mobile devices. 
@@ -104,8 +102,7 @@ Quick instructions (other firmware versions might require different steps):
 ### mobydick OMM Data Imports
 
 Instead of manually adding the handsets and base stations in the OMM, download the required configuration files using
-the MobyDick web interface:
-
+the mobydick web interface:
 
 
 The RFP configuration contains the setup data for all base stations and can be imported in the OMM using the menu **Radio Fixed Parts > Import**.

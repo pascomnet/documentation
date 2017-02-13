@@ -10,7 +10,6 @@ keywords:
     -  Linux DHCP-Server nutzen
     -  Weitere DHCP-Server nutzen
 description: Konfiguration des mobydick, Windows, Linux oder anderen DHCP-Servern zur Verteilung von IP-Adresse und Konfigurationsserver an die IP-Telefone
-linken: /server/dienste/
 url:  /server/dienste/
 prev: /server/netzwerk-konfigurieren/
 next: /server/sicherung/

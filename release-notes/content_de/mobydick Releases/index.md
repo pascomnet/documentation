@@ -20,6 +20,8 @@ icon: <i class="fa fa-file-text-o" aria-hidden="true"></i>
 
 |Version|Release Type|Veröffentlichung|
 |-------|------------|---------------:|
+|[Release 7.13.03]({{< relref "07.13.03.md" >}})| Bugfix Release | 09.02.2017 |
+|[Release 7.13.02]({{< relref "07.13.02.md" >}})| Bugfix Release | 02.12.2016 |
 |[Release 7.13.01]({{< relref "07.13.01.md" >}})| Bugfix Release | 29.09.2016 |
 |[Release 7.13.00]({{< relref "07.13.00.md" >}})| Feature Release | 06.09.2016 |
 
@@ -27,6 +29,8 @@ icon: <i class="fa fa-file-text-o" aria-hidden="true"></i>
 
 |Version|Release Type|Veröffentlichung|
 |-------|------------|---------------:|
+|[Release 7.12.06]({{< relref "07.12.06.md">}})| Bugfix Release | 26.01.2017 |
+|[Release 7.12.05]({{< relref "07.12.05.md">}})| Bugfix Release | 11.11.2016 |
 |[Release 7.12.04]({{< relref "07.12.04.md">}})| Bugfix Release | 20.09.2016 |
 |[Release 7.12.03]({{< relref "07.12.03.md">}})| Bugfix Release | 22.08.2016 |
 |[Release 7.12.02]({{< relref "07.12.02.md" >}})| Bugfix Release | 24.05.2016 |
@@ -37,6 +41,7 @@ icon: <i class="fa fa-file-text-o" aria-hidden="true"></i>
 
 |Version|Release Type|Veröffentlichung|
 |-------|------------|---------------:|
+|[Release 7.11.07]({{< relref "07.11.07.md">}})| Bugfix Release | 20.01.2017 |
 |[Release 7.11.06]({{< relref "07.11.06.md">}})| Bugfix Release | 10.08.2016 |
 |[Release 7.11.05]({{< relref "07.11.05.md">}})| Bugfix Release | 16.06.2016 |
 |[Release 7.11.04]({{< relref "07.11.04.md">}})| Bugfix Release | 07.04.2016 |

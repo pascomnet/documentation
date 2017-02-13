@@ -8,10 +8,9 @@ keywords:
     - Benutzer anlegen
     - Arbeitsplätze anlegen
 description: Was ist ein Benutzer, Arbeitsplatz in mobydick und wie lassen diese sich einfach einrichten und verwalten?  
-linken: /server/automation/
-url: /benutzer/benutzer-und-arbeitsplaetze/
+url: /benutzer/benutzer-arbeitsplaetze/
 prev: /benutzer/
-next: /benutzer/teams-bilden/
+next: /benutzer/teams/
 weight: 22
 toc: true
 ---
@@ -27,9 +26,7 @@ Benutzer in mobydick repräsentieren eine **reale Person**. Dem Benutzer wird ei
 
 Sind einem Benutzer mehrere Geräte zugeteilt oder nutzt er mehrere PCs oder Smartphones gleichzeitig wird der Präsenzstatus zusammengefasst.
 
-
 ![Illustration - Konzept der mobydick Benutzer](../../images/benutzer_uebersicht.png?width=90% "Benutzerkonzept in der mobydick")
-
 
 ### Telefone dem Benutzer direkt zuteilen
 
@@ -38,8 +35,6 @@ Im einfachsten Fall werden die Telefone dem Benutzer direkt zugeteilt. Alle zuge
 ![Illustration - Benutzer mit Endgeräten](../../images/benutzer_persoenliches_setup.png?width=50% "Benutzer und seine Endgeräte")
 
 Diese Methode ist gut wenn Ihre Benutzer jeden Tag am selben Arbeitsplatz sitzen da nur der Administrator die Zuweisung der Telefone ändern kann, nicht der Benutzer selbst.
-
-Haben Sie jedoch Benutzer die den Arbeitsplatz wechseln oder an manchen Tagen von zu Hause aus arbeiten sollten Sie Ihre Telefone nicht direkt dem Benutzer sondern **Arbeitsplätzen** zuweisen.
 
 ### Arbeitsplätze nutzen
 
@@ -115,10 +110,10 @@ Standardmäßig kann nur der Administrator zur Administration der mobydick in di
 
 |Rolle | Berechtigungen |
 |------|----------------|
-|System Administrator|Die höchste Rechte-Stufe. Der System Administrator hat alle verfügbaren Rechte.|
-|Administrator| Rechte wie der System-Administrator jedoch **ohne**: <br> - mobydick Update <br> - Sicherung des kompletten Systems <br> - Dienste-Einstellungen <br> - mobydick herunterfahren/neustarten <br> - Netzwerk-Konfiguration <br> - Cluster Management|
-|Telefonie Verwaltung|Rechte wie der Administrator jedoch **ohne**: <br> - Verwaltung von Gateways/Ämter <br> - Restart von Diensten <br>- Datenbank-Backup und Wiederherstellung <br> - Endgeräte-Firmware ausrollen <br> - mobydick Connector <br>- Cronjob-Verwaltung|
-|Telefonbuch Verwaltung|Der Benutzer kann das mobydick Telefonbuch bearbeiten.|
+|**System Administrator**|Die höchste Rechte-Stufe. Der System Administrator hat alle verfügbaren Rechte.|
+|**Administrator**| Rechte wie der System-Administrator jedoch **ohne**:<br> - mobydick Update<br> - Sicherung des kompletten Systems<br> - Dienste-Einstellungen<br> - mobydick herunterfahren/neustarten<br> - Netzwerk-Konfiguration<br> - Cluster Management|
+|**Telefonie Verwaltung**|Rechte wie der Administrator jedoch **ohne**:<br> - Verwaltung von Gateways/Ämter<br> - Restart von Diensten<br> - Datenbank-Backup und Wiederherstellung<br> - Endgeräte-Firmware ausrollen<br> - mobydick Connector<br> - Cronjob-Verwaltung|
+|**Telefonbuch Verwaltung**|Der Benutzer kann das mobydick Telefonbuch bearbeiten.|
 
 ### Voicemailbox
 
@@ -129,7 +124,7 @@ Zuerst muss festgelegt werden, wie mit den Voicemails umgegangen werden soll. Un
 |Einstellung|Beschreibung|
 |---|---|
 |**Voicemails speichern**|**JA** bedeutet, die Voicmails werden nach dem Versenden oder nachdem sie abgehört werden auf der mobydick gespeichert bleiben. Durch einen Cronjob können ältere Voicemails gelöscht werden.<br>**NEIN** bedeutet, dass die Voicemails nach dem Versenden per E-Mail von der mobydick gelöscht werden. Diese Einstellung ist zu empfehlen, da Voicemails viel Speicherplatz verwenden.|
-|**Voicemail Email**|An diese E-Mail-Adresse werden die Voicmails verschickt.|
+|**Voicemail Email**|An diese E-Mail-Adresse werden die Voicemails verschickt.|
 |**Überwachte Voicemailbox**|Als Standardeinstellung wird die eigene Voicemailbox überwacht. Hier kann man die Voicemailbox eines anderen Benutzers auswählen.|
 
 Anschließend muss die Voicemailbox als Aktion hinterlegt werden, falls das nicht schon bei der Benutzerlanlage geschehen ist.
@@ -146,104 +141,95 @@ Soll ein Benutzer bei externen Anrufen eine andere Durchwahl als seine eigene si
 
 Standardmäßig erhält jeder Benutzer einen Eintrag im **Telefonbuch** mit seinem **Anzeigenamen** und seiner **Durchwahl**. Hier hat man die Möglichkeit weitere Daten einzugeben. Der Eintrag ist dann auf mobydick Client, Mobility Client und IP-Telefonen verfügbar.
 
-Es ist auch möglich den Telefonbucheintrag zu **deaktivieren**, falls nicht erwünscht ist, dass mache Einträge nicht für alle mobydick Benutzer sichtbar sind.
+Es ist auch möglich den Telefonbucheintrag zu **deaktivieren**, falls nicht erwünscht ist, dass mache Einträge für alle mobydick Benutzer sichtbar sind.
 
 Einstellungen zum Benutzer-Telefonbucheintrag können Sie unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Telefonbuch` vornehmen.
 
 ### Virtuelles Faxgerät
 
-Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Faxgerät` können Sie dem Benutzer ein virtuelles Faxgerät anlegen. Das virtuelle Faxgerät benötigt eine **E-Mail-Adresse**, über die Faxe, oder Bestätigungen über gesendete Faxe empfangen werden können und eine **Durchwahl**.
+Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Faxgerät` können Sie dem Benutzer ein virtuelles Faxgerät anlegen:
 
-### Endgerät
-Teilen Sie dem Benutzer fix persönliche Endgeräte zu.
-![Screenshot - Endgeräte verwalten in der mobydick](../../images/benutzer_endgeraete_verwalten.png?width=90% "Endgeräte verwalten beim Benutzer")
+|Einstellung|Beschreibung|
+|---|---|
+|E-Mail|Diese E-Mail-Adresse wird verwendet, um Faxe zu empfangen und Benachrichtigungen über die virtuell versendeten Faxe zu erhalten.|
+|Durchwahl|Die Durchwahl, unter der die Faxnummer erreichbar ist.|
+|ausgehende Faxkennung|Diese Nummer steht auf dem versendeten Fax.|
+|Format|Gibt das Foramat an, in dem der Benutzer eingehende Faxe per E-Mail erhält.|
 
-Einem Benutzer können beliebig viele Endgeräte zugeteilt werden. Standardmäßig leuten bei einem Anruf alle zugeteilten Endgeräte gleichzeitig für 999 Sekunden. Die Bedeutung von der verschiedenen **Warten** und **Läuten** Werte können Sie unter [FollowMe Prinzip der mobydick](#followme-prinzip-der-mobydick) nachlesen.
+### Endgeräte
 
-Wird der Anruf nicht entgegengenommen greifen die Aktionen **Extern/Nacher** oder **Intern/Nachher**. <!-- //Fix --> Me Siehe Aktionen für Details.
+Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Geräte` können Sie dem Benutzer Telefone zuweisen.  
+Aus der linken Seite ist eine Übersicht über alle verfügbaren Telefone. Über den blauen Pfeil können Sie das gewünschte Telefon wählen und auf die rechte Seite ziehen zu den zugewiesenen Geräten. Benötigen Sie ein Telefon nicht mehr, dann ziehen Sie es über den blauen Pfeil (Richtung nach links) zurück auf die linke Seite.  
+Einem Benutzer können mehrere Endgeräte zugewiesen werden. Welches Endgerät für ausgehende Rufe verwendet wird, kann über den mobydick Client gewählt werden.
+
+Für die zugewiesenen Geräte können Sie Timeouts einstellen:
+
+|Timeouts|Beschreibung|
+|---|---|
+|**Warten Intern**|Nach wie viel Sekunden soll das Telefon bei internen Rufen klingeln.|
+|**Läuten Intern**|Wie viele Sekunden soll das Telefon klingeln, bevor der Anrufer in eine Aktion  Intern/Nachher übergeht.|
+|**Warten Extern**|Nach wie viel Sekunden soll das Telefon bei internen Rufen klingeln.|
+|**Läuten Intern**|Wie viele Sekunden soll das Telefon klingeln, bevor der Anrufer in eine Aktion  Extern/Nachher übergeht.|
+|**Warten Agent**|Nach wie viel Sekunden soll das Telefon klingeln, wenn der Benutzer als Agent einen Anruf über ein Team bekommt.|
+|**Läuten Agent**|Wie viele Sekunden soll das Telefon klingeln, wenn der Benutzer über ein Team angerufen wird. Dieser Timeout überschreibt den Timeout, der beim Team eingestellt ist.|
+
+Benutzer-Timeouts müssen pro Gerät und pro Benutzer eingestellt werden.
 
 ### Arbeitsplatz
 
-Hier können Sie dem Benutzer einen Arbeitsplatz zuteilen bzw. sehen an welchem Arbeitsplatz der Benutzer aktuell arbeitet.
-Ein Benutzer kann immer nur einen Arbeitsplatz nutzen, dem Arbeitsplatz wiederum können aber mehrere Telefone zugeteilt werden.
+Unter `Benutzer` > `Arbeitsplätze` > `Hinzufügen` können Sie Arbeitsplätze anlegen. Im Tab `Geräte` können Sie die Telefone zuweisen. Ein Arbeitsplatz kann mehrere Geräte haben.  
+Im Tab `Benutzerzuordnung` können Sie Benutzer zuweisen. Der Arbeitsplatz kann aber bei der Erstellung auch erstmal leer bleiben. Benutzer können sich über ihr Telefon oder dem mobydick Client selber am Arbeitsplatz anmelden.
+
+|Am Arbeitsplatz anmelden:||
+|---|---|
+|**über den mobydick Client**|Rechts neben dem Profilbild können Sie den Arbeitsplatz auswählen.<br>Falls Sie öfters die gleichen Arbeitsplätze verwenden, sehen Sie diese gleich beim Klick auf den Pfeil. Ansonsten wählen Sie *Weitere Arbeitsplätz*.<br>Möchten Sie sich von dem Arbeitsplatz abmelden, wählen Sie *Kein Arbeitsplatz*|
+|**über das IP-Telefon**|IP-Telefone, die von der mobydick provisioniert werden haben eine mobydick Menütaste. Drüken Sie diese und wählen Sie *Anmelden*. Nun geben Sie Ihre Durchwahl ein und Ihre PIN.<br>Zum Abmelden Drücken Sie ebenfalls die mobydick Menütaste und wählen Sie *Abmelden*|
+
+Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Arbeitsplatz` können Sie auch dem Benutzer einen Arbeitsplatz zuteilen bzw. sehen an welchem Arbeitsplatz der Benutzer aktuell arbeitet.
+
+{{% notice note %}}
+**Das FollowMe Prinzip der mobydick**<br>
+Benutzern und Arbeitspätzen können mehrere Telefone zugewiesen werden. Die Konfiguration, welches Telefon wann und wie lange läutet, bezeichnen wir als FollowMe.
+![Illustration - FollowMe Prinzip mobydick](../../images/benutzer_followme.png?width=90% "Endgeräte folgen Ihnen")
+{{% /notice %}}
+
+### Rufumleitungen (anlagenbasiert)
+
+Eine Übersicht über Rufumleitungen finden Sie unter `Benutzer` > `Rufumleitung`. Hier sehen Sie die von den Benutzern angelegten Rufumleitungen, ob sie aktiv oder inaktiv sind, und Sie können hier auch neue Rufumleitungen setzen.
+
+{{% notice warning %}}
+Richten Sie bitte nur Rufumleitungen über die mobydick ein (über den mobydick Client oder der mobydick-Menütaste Ihres IP-Telefons). Damit vermeiden Sie unkontrollierte Umleitungs-Endlosschleifen.
+{{% /notice %}}
+
+
+### Aktionen
+
+Aktionen sind in der mobydick ein wichtiges Werkzeug um den Anrufablauf zu steuern. Aktionen ermöglichen es
+
+* dem Anrufer Ansagen vorzuspielen,
+* außerhalb der Geschäftzeiten den Anrufer auf eine Voicemailbox umzuleiten,
+* einen Anrufen auf einen anderen Benutzer oder Team abzuwerfen, falls der eigentlich Angerufene im Gespräch,
+* und vieles mehr.
+
+Lesen Sie dazu bitte den Artikel über [Aktionen](../../anrufverteilung/aktionen/).
 
 ### Rollen
 
-Definiert in welchen Rollen der jeweilige Benutzer Mitglied ist. Siehe [Rollen](#rollen-und-damit-verbundene-rechte) für Details.
+Benutzer ebenso wie Geräte, Arbeitsplätze oder Teams können Mitglieder in einer oder mehreren Rollen sein. Der Rolle selbst können Eigenschaften und Rechte zugeteilt werden. Sie steuern telefonie-relevante Eigenschaften und Rechte wie bsw. die Erlaubnis Gespräche anderer Benutzer heranzuholen.
 
-### Aktionen (intern, extern, voher, nachher)
+Rollen können eingerichtet werden unter `Benutzer` > `Rollen`.
 
-Mit Aktionen steuern Sie den Anruf Ablauf. <!-- //FixME --> Details siehe Aktionen und Anrufablauf steuern.
-
-### Arbeitsplätze anlegen (optional)
-Legen Sie unter `Benutzer > Arbeitsplätze` einen neuen Arbeitsplatz an indem Sie auf `+Hinzufügen` klicken.
-![Screenshot - Arbeitsplatz verwalten in der mobydick](../../images/benutzer_arbeitsplatz_verwalten.png?width=90% "Arbeitsplatz anlegen")
-Der Arbeitsplatz benötigt lediglich eine **Bezeichnung**. Dann können Sie Geräte zuteilen.
-
-Sie haben die Möglichkeit gleich an dieser Stelle einen Benutzer zuzuteilen allerdings kann der Benutzer selbst jederzeit diesen Arbeitsplätze per mobydick Client und Menü-Taste am SNOM, Aastra oder Yealink Telefon wechseln.
-
-### Benutzer und Arbeitsplätze importieren
-
-Haben Sie relativ viele Benutzer können Sie diese importieren und auch die Telefone und Arbeitsplätze automatisch zuweisen lassen. <!--//FixMe -->Details siehe Daten importieren.
-
-
-## Rollen und damit verbundene Rechte
-
-### Übersicht
-Benutzer, Geräte, Arbeitsplätze oder Teams können Mitglieder in einer oder mehreren Rollen sein. Der Rolle selbst können Eigenschaften und Rechte zugeteilt werden.
-
-Rollen steuern "Telefonie-Relevante" Eigenschaften und Rechte wie beispielsweise die Erlaubnis Gespräche anderer Benutzer heranzuholen, usw. und können außerdem nicht nur Benutzer sondern auch Geräte, Arbeitsplätze oder Teams als Mitglieder enthalten.
-
-### Spezielle Rolle "Alle"
 Es gibt eine spezielle Rolle mit dem Namen **All Users**. Diese Rolle ist standardmäßig allen Benutzern, Geräten, Arbeitsplätzen und Teams zugeteilt und kann auch nicht entzogen werden.
 
-### Abteilungsweise Rollen erstellen
-Ein häufiger Anwendungsfall (und unsere Empfehlung) ist es, dass man pro Abteilung oder Team eine Rolle erstellet. Z. B. ist es häufig gewünscht, dass Benutzer nur innerhalb Ihrer Abteilung Gespräche heranholen können und sich gegenseitig im mobydick Client sehen. Dazu entziehen Sie einfach der Rolle "Alle" die Eigenschaft xmpp.group und weisen dies einer neuen Rolle z. B. Support zu in der Sie dann alle Support Benutzer zu Mitgliedern machen.  
+Ein häufiger Anwendungsfall (und unsere Empfehlung) ist es, dass man pro Abteilung oder Team eine Rolle erstellt. Z. B. ist es häufig gewünscht, dass Benutzer nur innerhalb Ihrer Abteilung Gespräche heranholen können und sich gegenseitig im mobydick Client sehen. Dazu entziehen Sie einfach der Rolle *All Users* die Eigenschaft *xmpp.group* und weisen dies einer neuen Rolle z. B. Support zu in der Sie dann alle Support-Benutzer zu Mitgliedern machen.  
 
-### Eigenschaften und Rechte
-#### location.group
-In dieser Rolle können Benutzer und Arbeitsplätze hinzugefügt werden. An Arbeitsplätzen die einer Rolle mit dem Typ location.group angehören können sich nur Benutzer anmelden, die der selber Rolle angehören. Zu Beachten ist, dass sobald eine Rolle mit der Eigenschaft location.group erstellt wurde, für alle Benutzer und Arbeitsplätze eine solche Rolle existieren muss. Sonst können sich Benutzer ohne diese Rolle an keinem Arbeitsplatz anmelden.
+|Rollentype|Beschreibung|Auswirkung|
+|---|---|---|
+|**billing.group**|Abrechnungsgruppe des Billing-Moduls. Dient zur Gruppierung der Gesprächsdaten.|Benutzer, Rufgruppen, Warteschlangen|
+|**xmpp.supervisor**|Benutzer mit dieser Rolle können Gespräche aller Benutzer managen. Wichtig für Flexpanel und TAPI.|Benutzer|
+|**location.group**|Diese Rolle legt fest, welche Benutzer sich an Arbeitsplätzen anmelden können. Wird diese Rolle nicht konfiguriert, können sich Benutzer an allen Arbeitsplätzen anmelden. Wird eine solche Rolle angelegt, können sich Benutzer die nicht in einer Rolle *location.group* Mitglieder sind, nicht mehr an Arbeitsplätzen anmelden.|Benutzer, Arbeitsplätze|
+|**pickup.group**|Alle Mitglieder der Rolle haben das Recht, eingehende Anrufe die an ein anderes Mitglied der Gruppe gerichtet sind, heranzuholen. Dies kann dann entweder per Telefon \*8<Durchwahl> oder Client erfolgen.|Benutzer, Rufgruppen, Warteschlangen|
+|**redirect.choice**|Eine Identität mit diesem Rollentyp wird nie von einer anlagenbasierten Rufumleitung umgeleitet, sondern ruft immer das direkte Ziel.|Benutzer|
+|**xmpp.group**|Alle Identitäten die eine Rolle mit dem Rollentyp *xmpp.group* zugewiesen haben, werden in eine *XMPP shared Group* eingebunden. D. h. in den Kontaktliste der Clients müssen sich diese Personen nicht mehr gegenseitig hinzufügen sondern sind sofort sichtbar. Falls Sie die *xmpp.group* der Rolle allen Identitäten zuordnen, sieht im Client immer jeder jeden.|Benutzer|
 
-Auswirkung: Benutzer, Arbeitsplätze
-
-#### billing.group
-Abrechnungsgruppe des Billing Moduls. Dient zur Gruppierung der Gesprächsdaten.
-
-Auswirkung: Benutzer, Rufgruppen, Warteschlangen
-
-#### xmpp.supervisor
-Benutzer mit dieser Rolle können Gespräche aller Benutzer managen. Wichtig für Flexpanel und TAPI.
-
-Auswirkung: Benutzer
-
-#### pickup.group
-Alle direkten Mitglieder der Rolle haben das Recht, eingehende Anrufe die an ein anderes Mitglied der Gruppe gerichtet sind, heranzuholen. Dies kann dann entweder per Telefon * \*8<durchwahl> oder Client erfolgen.
-
-Auswirkung: Benutzer, Teams
-
-#### redirect.choice
-Eine Identität mit diesem Rollentyp wird nie von einer anlagenbasierten Rufumleitung umgeleitet, sondern ruft immer das direkte Ziel.
-
-Auswirkung: Benutzer
-
-#### redirect.group
-Definition einer Anlagenbasierte Rufumleitungen und Rufumleitungsgruppen.
-
-Auswirkung: Benutzer
-
-#### xmpp.group
-Alle Identitäten die eine Rolle mit dem Rollentyp xmpp.group zugewiesen haben, werden in eine XMPP shared Group eingebunden. D.H. in den Kontaktliste der Clients müssen sich diese Personen nicht mehr gegenseitig hinzufügen sondern sind sofort sichtbar. Falls Sie die xmpp.group der Rolle Alle Identitäten zuordnen, sieht im Client immer jeder jeden.
-
-Auswirkung: Benutzer
-
-## FollowMe Prinzip der mobydick
-Benutzern und Arbeitspätzen können mehrere Telefone zugewiesen werden. Die Konfiguration, welches Telefon wann und wie lange läutet, bezeichnen wir als Followme.
-![Illustration - FollowMe Prinzip mobydick](../../images/benutzer_followme.png?width=90% "Endgeräte folgen Ihnen")
-Jedem Telefon kann der Parameter **Warten** und **Läuten** in Sekunden angegeben werden.
-
-**Warten** definiert den Zeitraum zwischen einem eintreffenden Anruf und dem Zeitpunkt zu dem das Telefon zu läuten beginnen soll.  
-**Läuten** definiert wie lange das Telefon gerufen werden soll.
-
-Außerdem können sich Telefone bei internen anrufen anders verhalten als bei externen oder bei Anrufen die Sie als Agenten eines Teams erreichen. Daher gibt es die Parameter Warten und Läuten jeweils pro Telefon für **intern, extern** und **agent**.
-
-Aktuell kann das Followme nur vom Administrator eingestellt werden. In zukünftigen Version soll dies auch vom Benutzer selbst in mobydick Client und Mobility Client erledigt werden können.
+<!-- |**redirect.group**|Definition einer anlagenbasierten Rufumleitungen und Rufumleitungsgruppen.|Benutzer| FIXME - was ist das???-->

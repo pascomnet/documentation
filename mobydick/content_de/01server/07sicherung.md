@@ -7,7 +7,6 @@ keywords:
     - Datenbank Backup
     - Backup Automatisierung
 description: "Lernen Sie wie einfach eine Komplettsicherung Ihres mobydick Systems während der Laufzeit oder ein Datenbank Backup erstellen können."
-linken: /server/
 url: /server/sicherung/
 prev:  /server/dienste/
 next: /server/update/

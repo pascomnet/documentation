@@ -2,10 +2,11 @@
 title: Ämter konfigurieren
 keywords:
 description:
-url:  /trunks/trunk-config/
+url:  /aemter/aemter-konfigurieren/
 weight: 11
 toc: true
-prev: /trunks/
+prev: /aemter/
+next: /aemter/aemter-kette/
 
 ---
 
@@ -16,7 +17,7 @@ Es gibt folgende Arten von Ämtern:
 
 |Amt| Beschreibung|
 |---|---|
-|**IP-basiert**|IP-basierte Ämter (SIP-Amter) können ohne weitere Vorbereitung angelegt werden.|
+|**IP-basiert**|IP-basierte Ämter (SIP-Ämter) können ohne weitere Vorbereitung angelegt werden.|
 |**ISDN**|Ein ISDN-Amt benötigt zur Anbindung ein Gateway (z. B. von Beronet oder Patton, siehe Artikel über ISDN- und Analog-Gateways)|
 |IAX|Das *InterAsterisk-eXchange*-Protokoll wird verwendet, um zwei Asterisk-Server miteinander zu verbinden.|
 |Analog|Ein Analog-Amt benötigt zur Anbindung ein Gateway (z. B. von Beronet oder Patton, siehe Artikel über ISDN- und Analog-Gateways). Analoge Ämter sind im deutschsprachigen Raum nicht üblich.|
@@ -62,11 +63,12 @@ Da verschiedene Ämter-Typen unterschiedliche Variablen benötigen finden Sie im
 |**Typ**|Analog zu Asterisk kennt mobydick mehrere Typen von SIP-Verbindungen. Diese werden unter [Asterisk sip type](http://www.voip-info.org/wiki/view/Asterisk+sip+type) genauer beschrieben.|
 |**Registrierung**|Wählen Sie *Ja* oder *Nein*, je nachdem ob sich die mobydick beim Host anmelden muss oder nicht.|
 |**Port**|Als Standard wird der Port *5060* verwendet. Soll ein anderer verwendet werden, können Sie diesen hier eintragen.|
-|**Durchwahl reg.**|Hier teilen Sie dem Host mit welche Durchwahl ein eingehender Anruf auf Ihrer Seite rufen soll. Dies ist notwendig wenn der Benutzer-SIP-Account genau eine Nummer zur Verfügung stellt. Nutzen Sie jedoch einen SIP-Anlagenanschluss (z. B: sipgate trunking) geben Sie hier nichts an da die gerufene Durchwahl jeweils separat übermittelt wird.|
-|**Ext. aus Header**|Standardmäßig wird die Zielrufnummer aus dem SIP-INVITE ermittelt. Setzt man diese Option auf *ja* wird die Zielrufnummer alternativ aus dem SIP-Header gelesen. Dies wird häufig bei SIP-Anlagenanschlüssen benötigt.|
+|**Durchwahl reg.**|Hier teilen Sie dem Host mit welche Durchwahl ein eingehender Anruf auf Ihrer Seite rufen soll. Dies ist notwendig wenn der Benutzer-SIP-Account genau eine Nummer zur Verfügung stellt. Nutzen Sie jedoch einen SIP-Anlagenanschluss (z. B: sipgate trunking) geben Sie hier nichts an da die gerufene Durchwahl jeweils separat übermittelt wird.|
+|**Ext. aus Header**|Standardmäßig wird die Zielrufnummer aus dem SIP-INVITE ermittelt. Setzt man diese Option auf *ja* wird die Zielrufnummer alternativ aus dem SIP-Header gelesen. Dies wird häufig bei SIP-Anlagenanschlüssen benötigt.|
+|**CLIP Modus**|*CLIP* ist ein Leistungsmerkmal, welches die Übermittlung von Rufnummern bei ausgehenden Rufen ermöglicht. Mögleiche Eintellungen:<br> * *Number*<br> * *Name+Number*<br> * *SIP Header*|
+|**CLIR Modus**|*CLIR* ist ein Leistungsmerkmal, welches die Unterdrückung von Rufnummern bei ausgehenden Rufen ermöglicht. Mögliche Einstellungen:<br> *  *Name+Number*<br> * *SIP Header*|
 
-<!-- |**CLIP Modus**||
- |**CLIR Modus**|| -->
+
 
 ### Rufregeln
 
@@ -97,9 +99,10 @@ Beim Bearbeiten und Speichern einer Amtsvorlage werden bereits automatisch zwei 
 |**Durchwahl**|Zeigt an, auf welche interne Durchwahl abgeworfen werden soll.|
 |**Sprache**|Gibt z. B. an, in welcher Sprache der Anrufer mögliche Ansagen hören soll.|
 
-<!-- |**CIDName**|| -->
-<!-- |**CIDNummer**|| -->
-
+<!--
+|**CIDName**||
+|**CIDNummer**||
+-->
 
 
 #### Ausgehende Rufe
@@ -108,12 +111,12 @@ Beim Bearbeiten und Speichern einer Amtsvorlage werden bereits automatisch zwei 
 |---|---|
 |**Bezeichung**|Jede Regel braucht einen eigenen Namen.|
 |**Im Client anzeigen**|Benutzen Sie mehrer Amtsholungen, können Sie entscheiden, ob diese im mobydick Client angezeigt werden sollen oder nicht. Stehen im Client keine Amtsholungen zur Auswahl, wird immer die Standardamtsholung verwendet|
-|**In-Prefix**|Der In-Prefix (auch Amtsholung genannt) bestimmt welche Ziffer vom internen Teilnehmer vorgewählt werden muss damit diese Regel generell zum Tragen kommt.|
+|**In-Prefix**|Der In-Prefix (auch Amtsholung genannt) bestimmt welche Ziffer vom internen Teilnehmer vorgewählt werden muss damit diese Regel generell zum Tragen kommt. Bei dem ausgehenden Anruf wird der In-Prefix abgeschnitten und nicht mitgewählt.|
 |**Quelle**|Definiert für welche interne Nebenstelle diese Regel gültig ist. **\*** bedeutet diese Regel gilt für alle internen Durchwahlen.|
 |**Ziel**|Hier wird defininiert für welches Ziel (die nach extern gewählte Nummer) gültig ist. **\*** bedeutet diese Regel gilt für jedes Ziel.|
 |**CIDNummer**|Diese Nummer wird dem Angerufenen signalisert.|
 |**Out-Prefix**|Dieser Prefix kann einer angerufenen Nummer beim Anruf vorangestellt werden.|
-|**Verbieten**|Falls diese Regel nicht gelten soll, wählen Sie hier ja. Als Defaultwert ist jede Regel beim Anlegen gültig.|
+|**Verbieten**|Wenn eine Regeln explizit verboten werden soll, kann dieser Wert auf *Ja* gesetzt werden, z. B. wenn nicht ins Ausland telefoniert werden darf.<br>Als Defaultwert ist jede Regel beim Anlegen erlaubt.|
 |**PIN**|Hier kann für die Verwendung der Regel eine PIN eintragen werden. Der Anrufer wird dann aufgefordert die PIN einzugeben, bevor der Anruf stattfindet.|
 |**Übertragungskapazität**|Zur Auswahl stehen hier *Sprache*, *Fax* und *Video*|
 |**Account**|Falls Sie in Ihrem Amt mehrer Accounts angelegt haben, können Sie hier wählen, über welchen Account der ausgehende Anruf gehen soll.|
@@ -172,16 +175,16 @@ Platzhalter werden durch einen Unterstrich eingeleitet.
 
 {{% notice note %}}
 **Regelgültigkeit** (Bestmatch)<br>
-Regeln werden nach der Genauigkeit ihrer Übereinstimmung und nicht nach der Reihenfolge in der Tabelle angewendet. Wenn ein Ruf die Kriterien mehrerer Regeln erfüllt, dann wird diejenige angewendet, deren Vorgaben die Merkmale des Rufes am eindeutigsten beschreiben. Eine Regel mit eng eingegrenzten Kriterien hat daher Vorrang vor einer allgemeineren Regel, die eher unspezifisch verfasst ist. Da die Reihenfolge in der Liste keine Bedeutung hat, sind nachträgliche Anpassungen leicht möglich.
+Regeln werden nach der Genauigkeit ihrer Übereinstimmung und nicht nach der Reihenfolge in der Tabelle angewendet. Wenn ein Ruf die Kriterien mehrerer Regeln erfüllt, dann wird diejenige angewendet, deren Vorgaben die Merkmale des Rufes am eindeutigsten beschreiben. Eine Regel mit eng eingegrenzten Kriterien hat daher Vorrang vor einer allgemeineren Regel, die eher unspezifisch verfasst ist. Da die Reihenfolge in der Liste keine Bedeutung hat, sind nachträgliche Anpassungen leicht möglich.<br>Die Reihenfolge für Bestmatch wird in folgender Reihenfolge geprüft: 1) In-Prefix > 2) Quelle > 3) Ziel.
 {{% /notice %}}
 
-Neben Platzhaltern können werden in Regeln auch Variablen verwendet. Die wichtigsten Variablen sind:
+Neben Platzhaltern können in Regeln auch Variablen verwendet werden. Die wichtigsten Variablen sind:
 
 * **${CALLERID(num)}** die eigene Nummer des Anrufers
 * **${EXTEN}** ist die ursprünglich vom Anrufer gewählte Nummer
 
 Beispielsweise soll die CIDNummer für jeden ausgehenden Anruf auf die Nebenstelle des Anrufers gesetzt werden. Hierfür könnten Sie natürlich für jeden internen Teilnehmer eine eigene Regel erstellen. Einfach ist es jedoch die Variable **${CALLERID(num)}** zu verwenden:  
-Der Anrufer hat die interne Durchwahl 11, und in der ausgehenden Rufregel ist 099112345${CALLERID(num)} hinterlegt. Somit wird dem Angerufenen die Nummer 09911234511 signalisiert.*
+Der Anrufer hat die interne Durchwahl 11, und in der ausgehenden Rufregel ist 099112345${CALLERID(num)} hinterlegt. Somit wird dem Angerufenen die Nummer 09911234511 signalisiert.
 
 Die Variable **${EXTEN}** beinhaltet immer die komplette vom Anrufer gewählte Nummer. Wählt ein externen Teilnehmer beispielsweise die Nummer 09911234511 um von extern die Nebenstelle 11 zu erreichen ist die komplette Nummer in der Variable gespeichert. Evtl. möchten Sie alle eingehenden Anrufe welche eine zweistellige Durchwahl wählen auf die entsprechende interne Rufnummer verbinden. In unsrem Beispiel wären Sie also nur an der 11 in 09911234511 interessiert.
 mobydick bietet hier eine einfache Möglichkeit Variablen zu beschneiden. Eine Variable wird aufgebaut wie folgt:
@@ -194,3 +197,8 @@ mobydick bietet hier eine einfache Möglichkeit Variablen zu beschneiden. Eine V
 
 Um in unserem vorherigen Beispiel die 11 aus 09911234511 zu entnehmen, kann man **${EXTEN:9:2}** angeben.
 Der Cursor springt zuerst neun Stellen in die Variable und schneidet dann zwei Stellen, also die 11 aus. Nutzt man **${EXTEN:9}** passiert das Selbe, da beim Weglassen der Länge automatisch bis zum Ende der Variable geschnitten wird. Am Einfachsten kann man **${EXTEN:-2}** angeben. Der Cursor springt in die Variable zwei Stellen von hinten vor die 11 und schneidet diese, da keine Länge angegeben ist, bis an das Ende der Variable aus.
+
+
+{{% notice info %}}
+**CLIP no screening** ist ein Leistungsmerkmal für ausgehende Rufe, welches es ermöglicht eine Rufnummer zu übermittlen, die nicht zum eigenen Telefonanschluss gehört. In der mobydick wird es z. B.  benutzt um bei einer Rufumleitung nach extern (z. B. auf ein Mobiltelefon) die Nummer des ursprünglichen Anrufers zu signalisieren.<br>Möchten Sie diese Funktion nutzen, informieren Sie sich bitte bei Ihrem Telefonanbieter ob *Clip no screening* für Sie freigeschaltet ist oder werden kann.<br> Anschließend muss hierfür eine ausgehende Regel konfiguriert werden.<br>Beispiel:<br>*Quelle*: \_XXXXXX. (die Quelle die anruft hat mindestens 6 Stellen, kann also keine interne Durchwahl sein)<br>*CIDNummer*: ${CALLERID(num)} (ist die Nummer des Anrufers)
+{{% /notice %}}

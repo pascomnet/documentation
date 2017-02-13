@@ -18,7 +18,7 @@ toc: true
 ## Overview
 The FlexPanel Framework can be completely modified to suit the intended users' needs. As a foundation, the admin can define any size of panel and then assigns Widgets which are already available from mobydick to the panel.  The widgets can then be parameterised according to size, function and appearance. 
 
-//FixMe Download Example Code for this Panel
+<!--//FixMe Download Example Code for this Panel-->
 
 Once the FlexPanel has been defined once, one can then assign it to different users.  These users can then either start the FlexPanel manually using the menu or automatically upon mobydick Desktop Client startup according to their settings. The User can then complete all their actions within the FlexPanel per Drag&Drop, meaning that the Panels are also suitable for Touch Screens.
 
@@ -91,7 +91,7 @@ Simply copy these minimum coding in to the definition box and modify the size of
 
 As standard, every FlexPanel will take on the **dark** or **light** theme, which can be set in the **mobydick Desktop Client** under ***Settings > Client > Theme***.
 
-The complete has been programmed using Less, which is a Meta Language from which the CSS Code can then be compiled. We have already made the **Less source code** for the **dark** and **light** themes available to //FixMe download. You can then modify these source codes using an editor of your choice and then generate the new CSS Code using a Less compiler, which can then be uploaded in to the mobydick Web User Interface under the FlexPanel **Style** Tab which will then override the existing FlexPanel Theme. 
+The complete has been programmed using Less, which is a Meta Language from which the CSS Code can then be compiled. We have already made the **Less source code** for the **dark** and **light** themes available to download. You can then modify these source codes using an editor of your choice and then generate the new CSS Code using a Less compiler, which can then be uploaded in to the mobydick Web User Interface under the FlexPanel **Style** Tab which will then override the existing FlexPanel Theme. 
 
 A free less compiler which is able to run on both Windows and OSX is SimpLEss.
 
@@ -99,13 +99,13 @@ In order to modify a theme, follow the instructions below:
 
 ##### Download Theme Source Code
 
-In this //FixMe Archive you will find both the **dark** and **light** themes in less format
+In the archive you will find both the **dark** and **light** themes in less format
 
 ##### Edit the Source Code
 Using a TextEditor, edit the file _colors.less in the theme of your choice and modify the colours according to your requirements.
 
 ##### Compilation
-tall and start //FixMe SimpLESS compiler and and move the total modified theme folder into the compiler as shown below:
+Install and start the SimpLESS compiler and move the total modified theme folder into the compiler as shown below:
 
 After that, compile the file **operatorpanel.less** again by clicking on the ***"Refresh"*** symbol. in order to get nice readable CSS, turn of the **minify** function (the small blue box on the right hand side of cell on the same row as the folder symbol).
 
@@ -165,7 +165,7 @@ For the user with the user name **jflores** the example widget **UserItem** with
     jflores.relocate(10,50)
     pane.addWidget(jflores)
 
-The XMPP-Domain is automatically set to **mobydick** during the installation of a mobydick system. You can find out more about this under //FixMe XMPP API.
+The XMPP-Domain is automatically set to **mobydick** during the installation of a mobydick system. For more information, please refer to our [XMPP API Developer Documentation] (https://www.pascom.net/en/documentation/developer/xmpp-api/ "Developer Documentation").
 
 ### Available Widgets
-You can find a complete list of all the available widgets under //FixMe FlexPanel Widgets in the Developers Documentation.
+You can find a complete list of all the available widgets under FlexPanel Widgets in the Developers Documentation.

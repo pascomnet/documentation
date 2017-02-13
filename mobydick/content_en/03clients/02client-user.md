@@ -17,10 +17,8 @@ linkde: /clients/client-nutzen/
 ---
 
 
-
-//FixMe
 ## User Login
-![Screenshot - mobydick Desktop Client Login](../../images/client_main_login.png?width=50% "mobydick Desktop Client Login")
+![Screenshot - mobydick Desktop Client Login](../../images/client_main_login.png?width=70% "mobydick Desktop Client Login")
 In order to log into the mobydick desktop client, you will be required to enter the following information:
 
 * Username
@@ -32,7 +30,7 @@ Click "**Login**"
 
 ## Client Sections and Control Elements
 The mobydick Client consists of 4 sections:
-![Screenshot - client sections and control elements](../../images/client_main_profile.png?width=100% "client sections and control elements")
+![Screenshot - client sections and control elements](../../images/client_main.png?width=100% "client sections and control elements")
 Apart from the search area, all areas of the mobydick client can be identified by the small gear symbol. Through using the gear symbol, settings can be modified or set for the corresponding section of the mobydick  CTI Client.
 
 ### mobydick Mini Mode
@@ -46,7 +44,7 @@ Switching between the 2 modes is achieved very simply through clicking the doubl
 ## Your Profile
 
 ### Overview
-![Screenshot - Your Profile](../../images/client_main_profil.png?width=80% "Your Profile")
+![Screenshot - Your Profile](../../images/client_main_profile.png?width=80% "Your Profile")
 
 In the top left corner, you will find your User Info, which will display the following Information:
 
@@ -64,7 +62,7 @@ The mobydick client call journal records and logs all incoming and outgoing call
 ![Screenshot - Journal](../../images/client_main_journal.png?width=80% "phone journal")
 
 The following information will be contained within the call journal:
-![Screenshot - Journal Details](../../images/client_main_journal_details.png?width=100% "Journal Details")
+![Screenshot - Journal Details](../../images/client_main_journal_detail.png?width=100% "Journal Details")
 
 The small arrow on the left oft each row illustrates:
 * whether the call was incoming (left facing) or outgoing (right facing)
@@ -72,7 +70,7 @@ The small arrow on the left oft each row illustrates:
 The green telephone symbol (contained in the red box in the above graphic) provides with a direct call back function.
 
 
-## Tab Einstellungen
+## Settings Tab
 
 ### Connecting and Using Telephone Books
 The mobydick Client offers you the option of connecting more than just the internal Company Telephone Book. Moreover, depending on your wishes, the order in which the Telephone / Address books are searched and then displayed by the Client can also be altered, for example whether the mobydick Telephone Book or your personal Apple / Outlook address book should be searched first. 
@@ -93,14 +91,13 @@ You can define and set the search sequence at any time using your client. To do 
  
 For example, if you have selected the mobydick telephone book first, then the search results will appear as shown below: 
 
-![Screenshot - Reihenfolge der Suche](../../images/client_adressbuch_mdfirst_search.png?width=60% "Reihenfolge der Suche")
+![Screenshot - Reihenfolge der Suche](../../images/client_address_books_search.png?width=60% "Sequence of search")
 
 Should you have changed the search display so your Apple Address book is searched and displayed above other Phonebooks then the first results to appear would be from your Apple Address Book. 
-![Screenshot - Sequence of Search](../../images/client_connect_apple_adress_book.png?width=100% "Sequence of search")
 
  
 #### Connecting an Apple Address Book
-![Screenshot - connecting apple address book](../../images/client_connect_apple_adress_book2.png?width=50% "connecting apple address book")
+![Screenshot - connecting apple address book](../../images/client_connect_apple_address_book2.png?width=50% "connecting apple address book")
 
 In order to gain access to your Apple contacts directly from within the mobydick Client, you need to complete the following steps:
 
@@ -131,26 +128,24 @@ Moreover, you can setup the following filter options:
     * Always overwrite CallerID, ---> regardless of whether the name already exists in the mobydick Telephone Book, the entry within your Apple Address Book will always be displayed
     * Never --> the Apple Address Book will never be searched
     
-    
-ien
-### Einstellungen des Clients
+### Client Settings
 
-Sie können den mobydick Client und die Anzeige der Kontaktliste auf Ihre Bedürfnisse anpassen.  
-Schritt 1: Klicken Sie auf den Tab "Einstellungen"  
-Schritt 2: Wählen Sie den Menüpunkt "Client  
+It is possible to personalise the desktop client and contact list to match your needs:  
+Step 1: Click on the `Settings` tab  
+Step 2: Select the `Client` option which will open the following settings menus: 
 
-#### Allgemein
+#### General
 
-##### Sprache
+##### Languages
 
-Aktuell können Sie aus den folgenden Sprachen auswählen:
+The desktop client is currently available in the following languages:
 
-* Deutsch
-* Englisch
-* Spanisch
-* Serbisch
-* Arabisch
-* Französisch
+* German
+* English
+* Spanish
+* Serbian
+* Arabic
+* French
 
 ##### Changing the Client Colour Scheme
 As standard the mobydick client has two colour schemes available - Light and Dark.
@@ -163,15 +158,13 @@ You can change your scheme using the following settings:
 Step 1: Choose your desired theme (Default setting is "Light")  
 Step 2: Click on Save - your client will automatically restart
 
-#### Kontaktliste (Roster) 
+#### Contact List (Roster) 
 
-##### Breite festlegen
-Sie können die Breite der Kontaktliste in 3 unterschiedlichen Breiten darstellen. Um die Breite ändern zu können gehen Sie bitte auf: 
-Die Breite (3) kann schmal, mittel oder breit dargestellt werden, je nach Ihrem Geschmack
-![Screenshot - Kontaktlisten Breite festlegen](../../images/client_einstellungen_roster.png?width=80% "Kontaktlisten Breite festlegen")
+##### Adjust Width
+It is possible to adjust the width of your contact list. To change the width, from within the client settings, choose from the 3 different options available; narrow, medium or wide depending on your requirements
 
-##### Weitere Einstellungen
-Ihnen stehen im Bereich Roster folgende weiteren Einstellungsoptionen zur Verfügung:
+##### Additional Settings
+Under the roster settings, a few additional settings can also be modified:
 
 * Show icons: Yes or No - Allows you decide of whether you would like to see the the statuses of your contacts or their Profile Pictures and Telephones as well. 
 * Display Names: 
@@ -193,13 +186,13 @@ Ihnen stehen im Bereich Roster folgende weiteren Einstellungsoptionen zur Verfü
 Alterations to the view options will always be applied after confirmation via the "Save" button.
 {{% /notice %}}
 
-//FixMe
+
 #### AutoAway
 
-|Parameter|Bedeutung|
+|Parameter|Description|
 |---------|---------|
-|Sekunden bis AutoAway|Die Zeit bis der Client die automatische Statusmeldung einschaltet. Dies geschieht, wenn Sie für eine Zeit X keine Eingabe am Computer vornehmen|
-|AutoAway Text|Legen Sie einen Text fest, welcher angezeigt werden soll bie AutoAway |
+|AutoAway Seconds|The lenght of time of inactivity (on a users' workstation - not in the client) before the client automatically sets the users' status to away.|
+|AutoAway Text|Enter a text that should be displayed when AutoAway is activated |
 
 ### My Account
 Under Settings (1) --> My Account (2) you can carry out the changes which are linked to your User account that you wish to make. These include the following setting options:
@@ -215,7 +208,7 @@ Under Settings (1) --> My Account (2) you can carry out the changes which are li
 Normally you will be provided with a pre-set password from your administrator for both your mobydick Deskop and Mobile Clients, as well as a PIN for your phone which is required to log in and out of the your phone.
 
 {{% notice info %}}
-Sollten Sie Ihr Passwort vergessen haben, schreiben Sie bitte Ihrem Administrator eine Email. Er wird dann Ihr Passwort zurücksetzen.
+If you have forgotten you password, contact you system administrator who can then reset your password.
 {{% /notice %}}
 
 ##### Changing your Password
@@ -227,13 +220,13 @@ In order to change your personal password, click on "Change Password" button, wh
 2. Enter your new password and then re-enter your password.  
 3. Click on the "Change" button  and you will then receive a confirmation notification that your password has been changed.
  
-**Password requirements**: The password for the clients must be at least 8 characters. You can use letters, numbers and special characters (@ () {} [] \ / = ~ $% & # * -? +, _.).
+**Password Requirements**: The password for the clients must be at least 8 characters. You can use letters, numbers and special characters (@ () {} [] \ / = ~ $% & # * -? +, _.).
  
-This means that you can of course use a //FixMe Password Generator or enter your desired password. We recommend using a password with a minimum of 1 number and 1 special character. 
+This means that you can of course use a [Password Generator](https://www.passwort-generator.com/ "secure password generation") or enter your desired password. We recommend using a password with a minimum of 1 number and 1 special character. 
 
 
 ##### Changing your Telephone PIN
-In order to change your personal Telephone PIN, click on "Edit your phone PIN", which will open a small pop up window in which you can change your PIN.
+In order to change your personal Telephone PIN, click on **Edit your phone PIN**, which will open a small pop up window in which you can change your PIN.
 ![Screenshot - Changing Telephone PIN](../../images/client_PIN.png?width=60% "Change PIN")
 1. First enter your current Password 
 2. Now enter your desired new PIN and repeat it in the field below. 
@@ -248,9 +241,9 @@ An avatar is the small profile picture displayed next to your name, which you ca
 If you would like to use your own image, then please follow the instructions below:
 1. Click on the **Custom Image** Button, which will open a new file window
 ![Screenshot - own picture](../../images/client_choose_avatar.png?width=60% "own picture")
-3. Select your image (1) and click on "Open" (2)
-4. Finally click on the "Save" button within the client 
-![Screenshot - save](../../images/client_save.png?width=60% "save")
+3. Select your image (1) and click on `Open` (2)
+4. Finally click on the `Save` buttonwithin the client 
+![Screenshot - save](../../images/client_save.png?width=40% "save")
 
 
 If the image has been saved successfully, it will automatically appear in your Client (Upper Left).
@@ -275,7 +268,7 @@ You can of course also filter your searches be specific entry types
 ![Screenshot - Global Search Filter](../../images/client_address_books_search.png?width=20% "global search filter")
 
 ### Address Books Searches
-![Screenshot - searching the address book](../../images/client_searchfiltern.png?width=50% "Searching the Address Books")
+![Screenshot - searching the address book](../../images/client_searchfiltern.png?width=20% "Searching the Address Books")
 When you have integrated either an Apple or Outlook Address Book, then you will be able to search these address book plus the mobydick Address book directly from the search box within the client. 
 
 

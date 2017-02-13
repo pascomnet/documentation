@@ -1,98 +1,107 @@
 ---
 title: mobydick Fax Server
-url: /module/fax-server/
-prev: /module/
-next: /module/mitschnitt/
+url: /modules/fax-server/
+linkde: /module/fax-server/
+prev: /modules/
+next: /modules/call-recording/
 weight: 91
 toc: true
 ---
 
-## Übersicht
-
-Unsere Integration bietet Ihnen eine ganze Reihe von Funktionen, welche dieses Howto näher beschreibt:
-
-* Einrichten des Faxservers und Definition der Modems
-* Faxempfang und Mail-Weiterleitung mit virtuellen Faxgeräten. Inbound fax-to-mail Gateway.
-* Senden von Faxen per EMail-Weiterleitung. Outbound mail-to-fax Gateway.
-* Senden von Faxen mit Steueranweisungen per virtuellem Drucker. Outbound print-to-fax Gateway.
-* Senden von Faxen ohne Steueranweisungen per virtuellem Drucker und Client
-* Senden von Faxen per Filetransfer im Client.
-* Anzeigen von gesendeten/empfangenen Faxen in der Weboberfläche.
-* Pflege der Fax-Warteschlangen/Logdateien
-
-![Illustration - mobydick VoIP Fax Server Konzept](../../images/voip_fax_server_illustration.png?width=90% "mobydick VoIP Fax Server Konzept")
-
-
-## Grundeinrichtung des Faxservers
-
-Bevor der Faxserver arbeiten kann, müssen einige Eckdaten festgelegt werden. Diese hinterlegen Sie per Menüpunkt Appliance > Dienste > Faxserver. Wichtig ist hierbei die Anzahl der Faxleitungen vernünftig festzulegen, sie definiert die Menge an virtuellen Modems und somit die maximale Anzahl paralleler Faxvorgänge. In der Praxis haben sich hier 4 Modems gut bewährt.
-![Illustration - Grundeinrichtung des Faxservers](../../images/faxserver_config.png?width=100% "Grundeinrichtung des Faxservers")
-{{% notice info %}}
-Nach dem Speichern ist unbedingt die Faxserver Konfiguration anzuwenden, damit die Änderung ans Betriebssystem übergeben werden.
-{{% /notice %}}
-Für das EMail Gateway muss natürlich auch der EMail Versand und Empfang klappen. Konfigurieren bzw. prüfen Sie hierzu die EMail Anbindung Ihres Telefonieservers per Appliance > Dienste > EMail-Server und geben Sie dort den Mail-Server für die Weiterleitung nebst Domain Name an. Wenden Sie nach Änderungen die Netzwerkkonfiguration an.
-![Illustration - Grundeinrichtung des Faxservers](../../images/faxserver_config.png?width=100% "Grundeinrichtung des Faxservers")
 {{% notice tip %}}
-Weitere Informationen finden Sie auch unter Netzwerk einrichten.
+pascom VoIP phone systems come with a fully integrated fax server.
+The included fax server is HylaFax (http://www.hylafax.org/), which is connected to the Asterisk telephony server via virtual IAX modems.
 {{% /notice %}}
-## Anzeigen der gesendeten/empfangenen Faxe
+## Overview
 
-Die Liste der empfangene Faxe (inkl. Downloads) und gesendete Faxe können Sie  bequem per Weboberfläche einsehen. Gehen Sie hierzu über das Menü Informationen > Faxserver zu den gewünschten Listen.
+The integrated fax server offers a number of functions, which are described in this how-to:
 
-## Pflege der Warteschlangen/Logdateien
+* Setting up the fax server and defining the modems
+* Receiving faxes and forwarding them using e-mail and virtual fax devices. Inbound fax-to-mail Gateway.
+* Sending faxes using e-mail. Outbound mail-to-fax Gateway.
+* Sending faxes using a virtual printer and printer commands. Outbound print-to-fax Gateway.
+* Sending faxes without printer commands using a virtual printer and client
+* Sending faxes as files using the mobydick Client.
+* Displaying sent and received faxes in the web interface.
+* Maintaining the fax queues and log files
+![Illustration - mobydick VoIP Fax Server Concept](../../images/fax_illustration.png?width=90% "mobydick VoIP Fax Server Concept")
 
-Alle ein- und ausgehenden Dokumente werden vom Faxserver zusammen mit Logdateien in verschiedenen Verzeichnissen unterhalb von /var/spool/hylafax aufbewahrt. Um die Performance und den Platzbedarf des Faxsystems konstant zu halten, werden diese Dateien durch einen Cronjob einmal wöchentlich bereinigt. Im Auslieferzustand der Anlage beträgt die Aufbewahrungszeit für die Dokumente 30 Tage.
 
-Sie können den Zeitraum jederzeit verändern, in dem Sie zu Appliance > Cronjobs gehen und hier den Job mit der Bezeichnung "Faxserver bereinigen" bearbeiten. Sie können aber auch den Faxserver manuell bereinigen, indem sie den Menüpunkt Anwenden > Faxserver bereinigen benutzen.
+## Basic configuration of the fax server
 
-## Persönliches Faxgerät anlegen
-
-Als Nächstes legen Sie ein persönliches Faxgerät an, um die Durchwahl und die EMail Weiterleitung des Faxes festzulegen. Sie können ein virtuelles Fax für einen Benuzter oder einem Team anlegen, im Tab Faxgerät.
-Sie benötigen:
-* die E-Mail-Adresse für Benachrichtigungen und eingehende Faxe
-* die Durchwahl des Faxgerätes
-* das Format des Anhangs, i.d.R. wird dies PDF sein.
+Before the fax server can be used, a few settings need to be adjusted. This can be done in the menu ***Appliance > Services > Fax server***. It is important to configure a reasonable number of fax lines, which defines the number of virtual modems and thus the number of parallel faxes that can be sent and received. In practice, four modems is a reasonable setting to use.
+![Illustration - basic configuration of the fax server](../../images/faxserver_config.jpg?width=100% "basic configuration of the fax server")
 {{% notice info %}}
+After saving the configuration of the fax server, it still must be applied so the operating system becomes aware of the changes.
+{{% /notice %}}
 
-Nachdem Sie alle Faxgeräte angelegt haben, müsen Sie noch die Telefonie anwenden, damit die Änderung ans Betriebssystem übergeben werden.
+In order to use the e-mail gateway, sending and receiving e-mails must work properly. To check the corresponding settings that regulate e-mail services of the telephony appliance, go to ***Appliance > Services > E-mail Server*** and enter the mail server and domain name that should be used in the forwarding process. When finished, the changes to the network configuration need to be applied.
+
+![Illustration - basic configuration fax server](../../images/fax_mailserver.jpg?width=100% "basic configuration fax server")
+{{% notice tip %}}
+More information can be found in the chapter Configuring the Network.
+{{% /notice %}}
+## Displaying sent and received faxes
+
+Since version 6.07.00, it is possible to display and also download the list of received and sent faxes in the web interface. The lists can be found in the menu ***Information > Fax server***.
+
+## Maintaining the queues and log files
+
+All sent and received faxes, together with log files, are stored by the fax server in various directories in /var/spool/hylafax. To maintain a consistent performance level and to save space on the file system, a cronjob will delete those files once a week. The default setting of the appliance is to keep the documents for 30 days.
+
+This duration can be adjusted at any time in the menu ***Appliance > Cronjobs*** by editing the job "Clean up fax server". The fax server can be maintained manually as well. This can be done in the menu ***Apply > Clean up fax server***.
+
+## Creating and assigning fax machines for users
+
+Next, the user's personal fax device must be set up. The extension number and e-mail forwarding must be configured. Different steps must be taken depending on whether the fax machine is intended for personal use by an individual or for shared use by a group of employees.
+All screens only require three values to create a fax device:
+
+ * the e-mail address the fax is forwarded to
+ * the extension number for the fax machine
+ * the file format of the extension; default is PDF
+ 
+{{% notice info %}}
+After creating the fax machines, apply the telephony settings to enable the changes with the operating system.
 {{% /notice %}}
 
 
-## Versenden von Faxen per EMail Gateway
-Serverseitig sind jedoch einige Vorarbeiten zu leisten. Auf dem Telefonieserver muss, wie oben bereits erwähnt, die EMail Konfiguration erfolgt sein. Damit die EMails Ihrer Clients auch zum Faxserver gelangen, muss auch der EMail Server Ihres Unternehmens angepasst werden. Sie müssen dort dafür sorgen, das alle EMails an die Domain " *.fax" per smtp zu Ihrem Telefonieserver weitergeleitet werden. Der Einrichtungsvorgang unterscheidet sich je nach EMailsystem.
+## Sending Faxes via the E-mail Gateway
+On the server, however, several changes need to be made before it can be used as an E-mail-to-fax gateway. The telephony's E-mail system must be working. Your company's E-mail server must be configured in a way so that e-mail from your clients can be sent to the fax server. The configuration must also be set up to ensure that E-mails sent to the domain "*.fax" are forwarded via SMTP to your telephony server. Depending on the E-mail being used, the steps necessary can differ
 
-Um nach der Einrichtung ein Fax zu versenden, versenden Sie einfach ein EMail mit folgendem Aufbau:
-|Feld|Beispiel|Beschreibung|
+To send a fax after the configuration is done, simply send an E-mail using the following structure:
+
+|Field|Example|Description|
 |----|--------|------------|
-|An|empfaenger@009912700619.fax|Dabei wird die Nummer ausgewertet und der Teil vor dem "@" Zeichen wird auf einem eventuellen Fax-Deckblatt als Empfänger eingetragen. (Standardmäßig sind Fax-Deckblätter deaktiviert)|
-|Betreff und Text der Mail| |Werden in Postscript konvertiert und standardmäßig als erste Faxseite versendet.|
-|Anhang| |Das eigentliche Fax als pdf oder tif Datei|
+|To|recipient@009912700619.fax|The number is evaluated and the part to the left of the "@" sign is used as the recipient on the cover page of a fax. (the default is to disable cover pages for fax).|
+|Subject and body| |Converted to PostScript and used as the first page of the fax.|
+|Attachment| |The actual fax as PDF or TIF file.|
 
-### Anpassungsmöglichkeiten
-Aktuell kann das Verhalten des email-to-fax Gateways teilweise nur direkt in den Konfigurationsdateien angepasst werden. Hierzu müssen Sie sich auf der mobydick per SSH einloggen und benötigen root-Rechte.
+### Customisation options
+In this version, the gateway's behaviour can in part only be changed by changing the configuration files. This requires logging in to mobydick using SSH and having root user permissions.
 
-#### Format der Benachrichtigungs-EMails anpassen
-Im Auslieferzustand erhalten Sie eine Plain-Text Mail sobald es eine Veränderung an einem Fax Auftrag gibt (besetzt, fehlgeschlagen, erfolgreich etc.). Sie können stattdessen ein alternatives Format setzen. Bei diesem wird eine HTML Mail mit eingebetteter erster Seite nebst pdf Anhang generiert. Das Format entspricht somit einem empfangenen Fax an ein virtuelles Faxgerät welches mit Format="inlinegif" konfiguriert wurde.
-* öffnen Sie die Datei /etc/hylafax/FaxNotify mit einem Editor
-* entfernen Sie den "#" Kommentar der Zeile INLINE=true
-* starten Sie das Faxsystem per Weboberfläche oder mit _ /etc/init.d/hylafax restart _ neu
+#### Customising the format of notification E-mails
+The default setting is to send out a plain-text e-mail whenever there is a change in a fax job (busy, failed, successful, etc.). This setting can be changed to use an alternative format. With the alternative format, an HTML E-mail will be used that has the first page of the fax embedded. The fax itself will be sent as an attachment in PDF format. This format is the same as the one used when a fax is received by a virtual fax machine configured to use the format="inlinegif" option.
+
+* open the file /etc/hylafax/FaxNotify in a text editor
+* remove the "#" comment in the line INLINE=true
+* restart in the fax system using the web interface or the  _ /etc/init.d/hylafax restart _ command
 
 {{% notice tip %}}
-Dies verändert auch das Benachrichtigungsformat bei print-to-fax Aufträgen.
+changes made to the format of notification e-mails will also affect the format of print-to-fax jobs.
  {{% /notice %}}
 
-#### Mail-to-fax Adressierung anpassen
-Wenn Sie nun z. B. das Adressformat auf 009912700619@meinedomain.de setzen möchten, können Sie wie folgt vorgehen:
+#### Customising the mail-to-fax address format
+If you would like to change the address format to 009912700619@mydomain.de, follow these steps below:
 
-* Zuerst benutzen Sie die Systemeinstellungen der Weboberfläche um den Eintrag sys.fax.configure.faxmail.matcher.fax zu ergänzen. In diesem tragen Sie für obiges Beispiel folgenden Wert ein:
+* First, use the system settings in the web interface to modify the sys.fax.configure.faxmail.matcher.fax entry. Use this value with the above example:
 
 
         /||(\d+)@.*/
 
 
-* Aktivieren Sie diese  Änderung per "Manuell anwenden-Netzwerk" und setzen einen Haken bei "Mailserver einbeziehen".
+* Apply this modification by clicking "Apply > Network services".
 
-* Die Standard Adressierung lautet wie oben erwähnt z. B. empfaenger@009912700619.fax. Sie können das Adressformat verändern, in dem Sie die Datei /etc/exim4/exim4.conf.mdc editieren.
+* as mentioned above, the default address format is recipient@009912700619.fax. The format can be changed by editing the  **/etc/exim4/exim4.conf.mdc** file.
 
     {{% md %}}
     fax:  
@@ -102,168 +111,171 @@ Wenn Sie nun z. B. das Adressformat auf 009912700619@meinedomain.de setzen möch
     {{% /md %}}
 
 
-Wenn Sie nun z. B. das Adressformat auf 009912700619@meinedomain.de setzen möchten, so ist folgende Anpassung nötig:
+To change the address format to the example 009912700619@mydomain.de, the following modification is necessary:
 
-    route_list = "meinedomain.de"
+    route_list = "mydomain.de"
     
-Um die Änderung zu komplettieren, müssen Sie zusätzlich noch die Datei /etc/exim4/update-exim4.conf.conf bearbeiten:
+To complete the changes, the file **/etc/exim4/update-exim4.conf.conf** needs to be edited:
 
-    dc_other_hostnames='localhost.localdomain;meinedomain.de'
+    dc_other_hostnames='localhost.localdomain;mydomain.de'
  
-**Wichtig:**
+**Please note:**
 {{% notice note %}}
-Abschließend müssen Sie unter "Grundkonfiguration", "Netzwerk" den Haken "EMail-Server" entfernen, die angepassten Dateien werden sonst überschrieben.
+Finally you need to uncheck the "EMail-Server" option under Basic Configurations > Network, otherwise the customised files will be overwritten.
 {{% /notice %}}
  
-#### Mail-to-fax Fileformat/Anhang anpassen
-Per Setting kann sys.fax.configure.faxmail.mode konfiguriert werden, welche Bestandteile der EMail bei einem email-to-fax Vorgang verschickt werden:
+#### Customizing the Mail-to-fax file format / attachment
+It is possible to use the setting sys.fax.configure.faxmail.mode to specify which parts of an e-mail are sent when it is converted to a fax:
 
-* 0 (default) Alle Bestandteile der Mail werden konvertiert und verschickt (auch der Mail-Text)
-* 1 Nur der Anhang wird gefaxt
+* 0 (default): the entire e-mail is converted and sent as a fax (including the text of the e-mail)
+* 1: only the attachment is sent via fax
 
-#### Konvertierung der Mail Bestandteile anpassen
-Unter /var/spool/hylafax/mimetype liegen die Konverterskripte. Diese zerlegen die eingehende EMail, je nach mimetype, in ihre Bestandteile und konvertieren diese dann zu einer Faxnachricht. Liegt für einen mimetype kein Skript vor wir dieser Teil der EMail einfach ignoriert und nicht in das Fax mit eingebunden.
-Folgende Skripte existieren:
+#### Custom conversion of e-mail parts
+The directory /var/spool/hylafax/mimetype holds the scripts for the conversion process. The scripts will take an e-mail and split it into its individual parts, depending on the MIME type, and then convert the e-mail to a fax message. If there is a MIME type for which no script exists, the corresponding part in the e-mail is simply ignored and will not be included as part of the fax message.
+Below is a list of all scripts:
 
-|Skript|Beschreibung|
+|Script|Description|
 |------|------------|
-|application/pdf|Konvertiert einen PDF Anhang in ein Fax|
-|image/tiff|Konvertiert einen TIFF oder TIF Anhang in ein Fax|
-|text/plain|Konvertiert den Plaintext Body einer EMail in ein Fax|
-|text/html|Konvertiert den HTML Body einer EMail in ein Fax|
+|application/pdf|converts a PDF attachment to a fax message|
+|image/tiff|converts a TIF or TIFF attachment to a fax message|
+|text/plain|converts a plain-text e-mail message body to a fax message|
+|text/html|converts an HTML e-mail message body to a fax message|
 
-### Beispieleinstellungen für einen Exchangeserver
+### Example settings for an Exchange server
 
-Um einen Exchangeserver so einzurichten, dass dieser alle *.fax EMails an die mobydick weiter leitet sind folgende Schritte notwendig:
+The following steps are needed to make an Exchange Server forward all *.fax e-mails to mobydick:
 
-* Exchange System Manager öffnen
-* Wechseln nach: Administrative Gruppen / Routinggruppen / erste Routinggruppe /Connectors
-* Im Fenster Connectros rechte Maustaste -> Neu -> SMTP Connectors
-* Im Reiter Allgemein folgende Einträge machen:
-    * Name = Name des Connectors (beliebig)
-    * "Gesamte Mail über diesen Connector an diesen Smarthost weiterleiten" aktivieren
-    * Im Feld darunter die IP (in eckigen Klammern) der mobydick eintragen
-    * Lokale Bridgeheads: = Hinzufügen klicken und Exchangeserver auswählen
-    * Im Reiter Adressraum *.fax
-* Speichern und fertig
+* open Exchange System Manager
+* Select: Administrative Groups / Routing groups / first routing group / Connectors
+* In the Connectors window:  right click -> New -> SMTP Connectors
+* create the following entries in the General tab:
+    * Name = Name of the Connector (can be anything)
+    * activate "Route entire mail through smarthost using this connector"
+    * in the field below, enter the IP of the mobydick server (in square brackets)
+    * Local Bridgeheads: = click "Add" and select Exchange Server
+    * in the tab "adress space" *.fax
+* Save the changes
 
-## Versenden von Faxen per Print Gateway
+## Sending Faxes with the Print to Fax Gateway
 
-### Betriebsart festlegen
-Das print-to-fax Gateway kann sowohl für den automatischen Dokumentenversand aus z. B. ERP Systemen als auch für Dialogbasierte Aufträge mit dem Desktop Client für Endbenutzer genutzt werden. 
+### Choosing the operating mode
+The print-to-fax gateway can be used to automatically send documents from ERP systems; documents can also be sent manually using the desktop client.
 
-Die Systemeinstellung sys.fax.configure.faxprint.mode bestimmt hierbei die Betriebsart des Gateways:
+For system versions 6.12.01 or above, the system setting sys.fax.configure.faxprint.mode controls the gateway's operating mode:
 
-|Wert|Bedeutung|Standard|
+
+|Value|Description|Default|
 |:--:|---------|--------|
-|1|	Es werden keine Steuerfelder gesucht und der Auftrag wird direkt an den Client durchgereicht.|Bei Neuinstallation ab Version 6.12.01|
-|2|	Steuerfelder für Automatikversand werden gesucht. Fehlen diese wird abgebrochen.| |
-|3|	Zuerst werden Steuerfelder gesucht, falls keine gefunden wurden wird der Auftrag an den Client weitergegeben.|	Anlagen die bereits vor Version 6.12.01 installiert wurden|
+|1|    Do not search for control fields and directly pass the job to the client.|For new installations from version 6.12.01 or newer|
+|2|    Control fields for automatic dispatch are looked up. By errors this process will be stopped.| |
+|3|    Firstly the control fields will be searched. If none are found, the order will be sent to the client.| Appliances before version 6.12.01|
 
 {{% notice tip %}}
-Falls Sie den automatik Modus mit Steuerzeichen nicht benötigen, empfehlen wir Ihnen aus Performance Gründen den Modus 1, da hierbei das Dokument nicht zerlegt und durchsucht werden muss.
+If automatic mode with control fields is **not** needed, mode 1 is recommended for performance reasons. Using this mode, the document does not have to be split and searched.
 {{% /notice %}}
 
-### Steuerfelder einfügen
-Damit das Faxsystem die Zielnummer und eventuell weitere Informationen aus dem Druckauftrag ermitteln kann, muss das zu faxende Dokument mit Steuerfeldern ausgezeichnet werden. Da diese i. d. R. nicht mit an den Empfänger übermittelt werden sollen, können Sie diese im produktiven Betrieb z. B. auch weiß einfärben.
+### Inserting control fields
+To enable the fax system to extract the destination number and other information from the print job, the document to be sent via fax must contain control fields. As those fields are usually not transmitted to the recipient, they can also be coloured in white.
 
-Derzeit kennt das Faxsystem folgende Auszeichnungen:
+The fax system can use the following expressions:
 
-|Ausdruck|Bedeutung|
+|Expression|Description|
 |--------|---------|
-|@@+FAX:0991....@@|Die Rufnummer des Empfängers. Dies ist das einzige Pflichtfeld!|
-|@@+TAG:Bestellung 12345@@|Individuelle Jobkennung, wird in Listen und Benachrichtigungen angezeigt|
-|@@+NOTIFY:mustermann@pascom.net@@|Über den Fortschritt zu benachrichtigender User. Details s. u.|
-|@@+PRIO:100@@|Priorität des Auftrags (0-255). Aufträge mit niedriger Priorität werden bevorzugt verschickt. Default ist 200. Prioritäten verwenden Sie in Zusammenhang mit lange andauernden großvolumigen Batchaufträgen, welche dann i.d.R eine Priorität von z. B. 250 bekommen. Ansonsten müssten alle manuellen Faxvorgänge warten, bis der Batchjob abgeschlossen ist.
+|@@+FAX:0991....@@|The recipient's fax number. This is the only mandatory field!|
+|@@+TAG:Bestellung 12345@@|Individual job description, displayed in lists and notifications.|
+|@@+PRIO:100@@|Job priority (0-255). Jobs with a lower number are dispatched before others. Default priority is 200. Priorities that you should use in relation to time-consuming, large-volume batch jobs, will usually be assigned a priority of 250, otherwise all manually started jobs would have to wait for the batch job to finish.|
 
-### Benachrichtigungen
-Über das notify Steuerfeld können Sie eine individuelle EMail Adresse übergeben, an die alle Status-Meldungen die diesen Faxjob betreffen, geschickt werden. Fehlt das notfiy Steuerfeld, können Sie zwischen 2 Abhandlungen auswählen:
+### Notifications
+The **notify** control field accepts an e-mail address where all status reports concerning a certain fax job can be sent to. If the notify field is not present, there are two options:
 
-* alle Benachrichtigungen gehen an faxmaster@ihredomain (Auslieferzustand!)
-* die Benachrichtigung geht an username@ihredomain wobei der Username des angemeldeten Users verwendet wird, der den Druckjob abgesetzt hat.
+* all notifications are sent to faxmaster@yourdomain (default)
+* the notification is sent to username@yourdomain, where username is the user name of the user currently logged in when dispatching the print job.
 
-Sie definieren die Benachrichtigungsart und andere Einstellungen per Systemeinstellungen im Bereich `sys.fax.configure.faxprint`. Die Benachrichtigungsart legt dabei der Key `sys.fax.configure.faxprint.notify` mit dem Inhalt "faxmaster" oder "user" fest.
+The type of notification and other settings can be adjusted using the system settings at sys.fax.configure. The faxprint. sys.fax.configure.faxprint.notify key controls the type of notification used. The values accepted for this key are "faxmaster" or "user".
 
-### Mögliche Probleme
-Damit das System die Steuerzeichen auswerten kann, muss der Druckauftrag zunächst in ein Textformat gewandelt werden. Je nach Komplexität des Druckauftrags, verwendeten Schriftarten und Art des Druckertreibers kann es an dieser Stelle Komplikationen geben.
+### Troubleshooting
+Before the system can evaluate the control fields, the print job must be converted to text format. Depending on the complexity of the print job, the fonts being used and the type of printer driver, complications can arise.
 
-Folgende Punkte sollten Sie beachten:
+Please bear in mind the following:
 
-* halten Sie sich an die empfohlene Treibereinrichtung (s. o.)
-* versuchen Sie bei Problemen die Steuerzeichen in einer Standardschriftart wie etwa Arial 10 einzutragen.
+* configure the drivers as advised (see above)
+* if you experience problems, try to enter the control characters using a standard font such as Arial 10pt.
 
-Einige Details zum Verlauf der Druckjobs können Sie in der Logatei `/var/log/mobydick/sendfax.log` einsehen.
 
-### Einstellungen anpassen
+Some details on the print job can be viewed in the log file /var/log/mobydick/sendfax.log.
 
-Um Ihnen den Umstieg von einem anderen Faxsystem zu erleichtern, können Sie eine Reihe von Einstellungen des Gateways anpassen. 
+### Adjusting Settings
 
-Alle Werte in der folgenden Tabelle werden in den Systemeinstellungen abgelegt. Die meisten Werte müssen bei Bedarf erst in den Systemeinstellungen hinzugefügt werden.
+To facilitate the migration from another fax system, a number of settings of the gateway can be adjusted. 
 
-|Schlüssel|Bedeutung|Standardwert|Beispiel|
+All values in the table below are saved in the system settings. Most values only need be added to the system settings only when they are needed.
+
+
+|Key|Description|Default Value|Example|
 |---------|---------|------------|--------|
-|sys.fax.configure.<br/>faxprint.matcher.fax	|Regulärer Ausdruck der die Faxnummer im Dokument sucht. Das erste Klammernpaar gibt dabei die Position der Nummer an.|	/@@\+FAX:<br/>\s*(.*?)\s*@@/	 | |
-|sys.fax.configure.<br/>faxprint.matcher.jobtag|	Regulärer Ausdruck der den benutzerdefinierten Jobnamen im Dokument sucht. Das erste Klammernpaar gibt dabei die Position des Feldes an.|	/@@\+TAG:<br/>\s*(.*?)\s*@@/	 | |
-|sys.fax.configure.<br/>faxprint.matcher.priority|	Regulärer Ausdruck der die Priorität im Dokument sucht. Das erste Klammernpaar gibt dabei die Position der Zahl an.|	/@@\+PRIO:<br/>\s*(\d+?)\s*@@/	 | |
-|sys.fax.configure.<br/>faxprint.matcher.notify|	Regulärer Ausdruck der die EMail-Adress im Dokument sucht. Das erste Klammerpaar gibt dabei die Position der Adresse an.|	/@@\+NOTIFY:<br/>\s*(.*?@.*?)\s*@@/	| |
-|sys.fax.configure.<br/>faxprint.priority|	Standardpriorität der Faxaufträge wenn keine Priorität im Dokument enthalten ist.|	200	 | |
-|sys.fax.configure.<br/>faxprint.tries	|Anzahl Faxversuche pro Dokument.|	3	 | |
-|sys.fax.configure.<br/>faxprint.notify|	Durch "faxmaster" oder "user" legen Sie fest, wer bei Jobänderungen zu benachrichtigen ist falls im Job keine EMail Adresse mitgegeben wurde.|	faxmaster|	user|
-|sys.fax.configure.<br/>faxprint.usermangle.search|	Falls die Benutzernamen am Desktop bzw. Drucksystem und ihrer Telefonanlage abweichen, kann hier ein regulärer Ausdruck zur Selektion des Usernamens hinterlegt weden.	|(leer)|	/^(\w+)\..*/ |
-|sys.fax.configure.<br/>faxprint.usermangle.replace	|Gibt den Ersetzungswert für das Username-Mangling an. Hierzu muss "search" und "replace" angegeben sein. Im Beispiel wird der Windows Username beim ersten Punkt abgeschnitten.|	(leer)|	$1|
+|sys.fax.configure.<br/>faxprint.matcher.fax   |Regular expression matching the fax number in the document. The first pair of brackets indicates the position of the number.| /@@\+FAX:<br/>\s*(.*?)\s*@@/    | |
+|sys.fax.configure.<br/>faxprint.matcher.jobtag|   Regular expression matching the user-specified job name in the document. The first pair of brackets indicates the position of the corresponding field.|    /@@\+TAG:<br/>\s*(.*?)\s*@@/    | |
+|sys.fax.configure.<br/>faxprint.matcher.priority|    
+Regular expression matching the priority in the document. The first pair of brackets indicates the position of the priority number|    /@@\+PRIO:<br/>\s*(\d+?)\s*@@/  | |
+|sys.fax.configure.<br/>faxprint.matcher.notify|   Regular expression matching the E-mail address in the document. The first pair of brackets indicates the position of the address.| /@@\+NOTIFY:<br/>\s*(.*?@.*?)\s*@@/    | |
+|sys.fax.configure.<br/>faxprint.priority|Default priority for fax jobs if no priority is specified in the document.|  200     | |
+|sys.fax.configure.<br/>faxprint.tries |Number of tries to fax the document.| 3   | |
+|sys.fax.configure.<br/>faxprint.notify|   If no e-mail address is specified in the job, the "faxmaster" and "user" values specify who is to be contacted when there are changes in a job.|   faxmaster| user|
+|sys.fax.configure.<br/>faxprint.usermangle.search|    If the usernames on the desktop workstations or in the print system differ from the user names on the telephony appliance, a regular expression can be specified for the selection of a user name. |(empty)|  /^(\w+)\..*/ |
+|sys.fax.configure.<br/>faxprint.usermangle.replace    |Specifies the value used to replace the original user name. The "search" and "replace" values must be specified. In the example, the Windows user name is truncated at the first point.|  (empty)|   $1|
 
-## Fax Druckertreiber einrichten
+## Setup Fax Printer Driver
 {{% notice info%}}
-Auch dieser Versandweg ist plattformunabhängig, sie müssen jedoch auf den Arbeitsstationen einen virtuellen Drucker einrichten. Richten Sie sich bitte je nach Betriebssystem nach folgenden Anleitungen. 
-Zusätzlich gibt es für größere Umgebungen auch die Möglichkeit, den Drucker per ActiveDirectory an die Arbeitsplätze zu verteilen.
-Neben normalen Einzelaufträgen ermöglicht Ihnen das print-to-fax Gateway auch die Anbindung von ERP Systemen oder beispielsweise das automatisierte Faxen von Rundschreiben.
+This is another platform-independent way of sending faxes. However, virtual printers need to be configured for each computer that uses this method. Please refer to the setup guides for your operating system as found below. 
+For larger system environments, the printer can be connected to the individual computers using ActiveDirectory.
+Apart from single fax jobs, the print-to-fax gateway can be connected to an ERP system and be used to automatically send out newsletters etc.
 {{% /notice %}}
-### unter MacOS X 
+### on MacOS X 
 
-1. Beginnen Sie die Installation in den Systemeinstellungen / Drucken und Faxen
-![Screenshot - Installation per Systemsteuerung ](../../images/sendfaxmac1.png?width=60% "Installation per Systemsteuerung")
-2. Klicken Sie auf "+" um einen Drucker hinzuzufügen
-![Screenshot - Netzwerkdrucker ](../../images/sendfaxmac2.png?width=60% "Netzwerkdrucker auswählen")
-3. Geben Sie die Druckerdetails ein
-![Screenshot - Mac Druckerdetails](../../images/sendfaxmac3.png?width=60% "Druckerdetails")
-4. Installation abschließen
-Klicken Sie auf "hinzufügen" und bestätigen Sie den nachfolgenden Dialog.
-Der Faxdrucker ist nun fertig eingerichtet.
+1. Start the installation in the System Preferences / Print and fax menu
+![Screenshot - installation via system preferences](../../images/sendfaxmac1.png?width=60% "installation via system preferences")
+2. Click "+" to add a printer
+![Screenshot - network printer](../../images/sendfaxmac2.png?width=60% "select network printer")
+3. Enter the details of the printer
+![Screenshot - details of printer mac](../../images/sendfaxmac3.png?width=60% "details of printer")
+4. Finish installation
+Click "Add" and confirm the next dialogue. 
+The fax printer is now ready for use.
 
-### unter Windows 7
+### on Windows 7
 
-1. Beginnen Sie die Installation per Systemsteuerung / Drucker und Faxgeräte.
-![Screenshot - Installation per Systemsteuerung ](../../images/sendfaxw7_1.png?width=60% "Installation per Systemsteuerung")
-2. Wählen Sie "Netzwerkdrucker" aus
-![Screenshot - Netzwerkdrucker ](../../images/sendfaxw7_2.png?width=60% "Netzwerkdrucker auswählen")
-3. Überspringen Sie die automatische Suche
-![Screenshot - automatische Suche](../../images/sendfaxw7_3.png?width=60% "automatische Suche")
-4. Geben Sie die Drucker-URL ein
-Hierzu verwenden Sie die IP-Nummer oder den DNS Namen Ihrer Anlage: http://ihreanlage:631/printers/sendfax
-![Screenshot - IP-Nummer oder den DNS Namen verwenden](../../images/sendfaxw7_4.png?width=60% "IP-Nummer oder den DNS Namen verwenden")
-5. Treiber auswählen
-![Screenshot - Druckertreiber ](../../images/sendfaxw7_5.png?width=60% "Druckertreiber")
-Als Druckertreiber wählen Sie den Xerox 6120PS aus.
-6. Installation abschließen
-![Screenshot - Installation abschließen ](../../images/sendfaxw7_6.png?width=60% "Installation abschließen")
-Nach einer weiteren Bestätigung ist die Installation abgeschlossen.
+1. Start the installation in the System Preferences / Print and fax menu
+![Screenshot - installation via system preferences ](../../images/sendfaxw7_1.png?width=60% "installation via system preferences")
+2. Add Printer
+![Screenshot - network printer](../../images/sendfaxw7_2.png?width=60% "select network printer")
+3. Skip Automatic Discovery
+![Screenshot - automatic discovery](../../images/sendfaxw7_3.png?width=60% "automatic discovery")
+4. Enter the Printer URL
+Use the IP address or the DNS name of your appliance: http://yourappliance:631/printers/sendfax
+![Screenshot - use IP or DNS Name ](../../images/sendfaxw7_4.png?width=60% "use IP or DNS Name")
+5. Select Driver
+![Screenshot - driver of printer ](../../images/sendfaxw7_5.png?width=60% "driver of printer")
+Select the Xerox 6120PS as the printer driver.
+6.  Finish Installation
+![Screenshot - finisch installation ](../../images/sendfaxw7_6.png?width=60% "finish installation")
+The installation is finished after the final confirmation. 
 
 
+### on Windows XP
 
-### unter Windows XP
-
-1. Beginnen Sie die Installation per Systemsteuerung / Drucker und Faxgeräte.
+1. Start the installation in the System Preferences / Print and fax menu
 ![Screenshot - Installation per Systemsteuerung ](../../images/sendfaxxp1.jpg?width=70% "Installation per Systemsteuerung")
-2. Wählen Sie "Netzwerkdrucker" aus
-![Screenshot - Netzwerkdrucker ](../../images/sendfaxxp2.jpg?width=70% "Netzwerkdrucker auswählen")
-3. Geben Sie die Drucker-URL ein
-Hierzu verwenden Sie die IP-Nummer oder den DNS Namen Ihrer Anlage: http://ihreanlage:631/printers/sendfax
-![Screenshot - IP-Nummer oder den DNS Namen verwenden](../../images/sendfaxxp3.jpg?width=70% "IP-Nummer oder den DNS Namen verwenden")
-4. Treiber auswählen
-Als Druckertreiber wählen Sie den Apple LaserWriter 12 / 640 PS aus.
-![Screenshot - Druckertreiber ](../../images/sendfaxxp4.jpg?width=70% "Druckertreiber")
-5. Installation abschließen
-Nach einer weiteren Bestätigung ist die Installation abgeschlossen.
-![Screenshot - Installation abschließen ](../../images/sendfaxxp5.jpg?width=70% "Installation abschließen")
+2. Select "Network printer"
+![Screenshot - Network printer](../../images/sendfaxxp2.jpg?width=70% "select Network printer")
+3. Enter the printer URL
+Use the IP address or the DNS name of your appliance: http://ihreanlage:631/printers/sendfax
+![Screenshot - use IP or DNS Name](../../images/sendfaxxp3.jpg?width=70% "use IP or DNS Name")
+4.  Select driver
+Select Apple LaserWriter 12/640 PS as your printer driver.
+![Screenshot - driver of printer](../../images/sendfaxxp4.jpg?width=70% "Driver of printer")
+5. Finish installation
+The installation is finished after one more confirmation.
+![Screenshot - finish installation](../../images/sendfaxxp5.jpg?width=70% "finish installation")
+
 
 

@@ -7,7 +7,6 @@ keywords:
     - mobydick Systemvoraussetzungen
 description: mobydick lässt sich in wenigen Minuten sowohl in virtuellen Umgebungen als auch auf Servern installieren.
 url:  /server/server-installieren/
-linken: /server/server-installation/
 prev:  /server/plattformen/
 next:  /server/mobydick-zugriff/
 weight: 12
@@ -54,29 +53,22 @@ Laden Sie das Programm [Rufus](https://rufus.akeo.ie/ "Erstelle bootbare USB-Lau
 #### Bootbaren USB-Stick erstellen
 
 Starten Sie Rufus und stecken Sie den USB-Stick an.
-![Screenshot - Bootbaren USB-Stick erstellen mit Rufus](../../images/rufus_start.png?width=40% "Bootbaren USB-Stick erstellen mit Rufus")
+![Screenshot - Bootbaren USB-Stick erstellen mit Rufus](/rufus_start_de.png?width=40%)
 
 |Parameter|Bedeutung|
 |---|---|
 |Laufwerk|wählen Sie das Laufwerk unter dem der USB-Stick zu finden ist|
 |Startfähiges Laufwerk erstellen mit	|ISO-Abbild auswählen, anschließend durch Klick auf das Disk-Symbol das bereits heruntergeladene ISO-Abbild auswählen |
 
-Im nächsten Fenster "Im ISO-Abbild Modus schreiben" wählen und mit OK bestätigen:
-![Screenshot - Hybrides ISO-Abbild erkannt](../../images/rufus_iso.png?width=40% "Hybrides ISO-Abbild erkannt")
-
-Anschließend wird der bootbare USB-Stick erstellt.
+Im nächsten Fenster "Im ISO-Abbild Modus schreiben" wählen und mit OK bestätigen. Anschließend wird der bootbare USB-Stick erstellt.
 
 #### Unbeaufsichtigte Installation
 
 Eine unbeaufsichtigte Installation benötigen Sie z. B. bei der miniAppliance, bei der Sie nicht die Möglichkeit haben durch Tastatureingabe bei der Installation zu interagieren (z. B. Netzwerkeinstellungen, Admin-Passwort eingeben...)
 
 Nachdem Sie den bootbaren USB-Stick mit dem Programm Rufus erstellt haben müssen für die unbeaufsichtigte Installation der mobydick noch einige Einstellungen vorgenommen werden.
-Gehen Sie auf das USB-Laufwerk und klicken Sie auf die Datei **unattended_install**
-![Screenshot - Unbeaufsichtigte Installation](../../images/rufus_unattended_transfer.png?width=70% "Unbeaufsichtigte Installation")
-
-
-Es erscheit eine Maske in der Sie Ihre Einstellungen eingeben können:
-![Screenshot - Unbeaufsichtigte Installation Einstellungen](../../images/rufus_unattended_settings.png?width=40% "Unbeaufsichtigte Installation Einstellungen")
+Gehen Sie auf das USB-Laufwerk und klicken Sie auf die Datei **unattended-install**. Es erscheint eine Maske in der Sie Ihre Einstellungen eingeben können:
+![Screenshot - Unbeaufsichtigte Installation Einstellungen](/rufus_unattended_settings_de.png?width=40%)
 
 Setzen Sie das Häkchen bei **show output during installation via COM port** damit Sie bei der unbeaufichtigten Installation der mobydick über den COM Port die Installation überwachen können.
 Klicken Sie zum Abschluss auf **Generate**. Nach dem Auswurf des USB-Sticks steht dieser für die Installation zur Verfügung.

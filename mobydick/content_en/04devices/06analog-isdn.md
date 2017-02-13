@@ -1,6 +1,6 @@
 ---
-title: Adding Analog and ISDN Device Integration
-keywords: 
+title: Analog and ISDN Device Integration
+keywords:
     - Adding Analog Devices
     - ISDN Device Integration
     - Device Integration via Gateway
@@ -12,11 +12,12 @@ next: /endpoints/integrate-aastra-dect-system/
 prev: /endpoints/generic-ip-endpoints/
 weight: 46
 toc: true
+draft: true
 ---
 
 ## Device Integration via a Gateway
 
-Analogue and ISDN devices can be connected to mobydick using a beroNet gateway or a Patton Gateway. To use this ption, your gateways will need to be configured correctly. 
+Analogue and ISDN devices can be connected to mobydick using a beroNet gateway or a Patton Gateway. To use this ption, your gateways will need to be configured correctly.
 
 To add analogue or ISDN devices, press the `Add` button in the device list and choose from either via **Patton gateway: (TECHNOLOGY TYPE)** or via **beroNet gateway: (TECHNOLOGY TYPE)** for the device type,
 depending on the gateway used and the configuration of the ISDN interface:

@@ -1,28 +1,30 @@
 ---
-title: Konferenzraum System
-url: /module/konferenzsystem/
-prev: /module/mitschnitt/
-next: /module//
+title: Conference Room System
+url: /modules/conference-system/
+prev: /modules/call-recording/
+next: /modules/cluster-setup/
 weight: 93
 toc: true
 ---
 
-## Konzept
-Wollen sich mehr als drei Personen gleichzeitig unterhalten kann man dies durch Konferenzräume realisieren.
+## Concept
+If more than three people want to communicate with each other simultaneously, virtual conference rooms can be used.
 
-Ein Konferenzraum ist unter einer Durchwahl erreichbar. Um diesen zu betreten muss man die Durchwahl wählen und PIN eingeben.
-Gehört die Durchwahl zum Rufnummernblock des Amts, so ist der Konferenzraum auch von extern erreichbar.
-![Illustratiom - VoIP Konferenzraumsystem](../../images/meetme.png?width=60% "VoIP Konferenzraumsystem")
+A conference room is reachable under an extension number and in order to enter the conference room, simply dial the extension number and enter the required PIN number. 
 
-## Konfiguration
-Wählen Sie in der mobydick Weboberfläche `Benutzer > Konferenzraum` und drücken Sie auf `Hinzufügen`.
-![Screenshot - Konferenzraumsystem in der mobydick konfigurieren](../../images/meetme_mobydick.png?width=90% "Konferenzraumsystem konfigurieren")
+If the extension number belongs to block of numbers (otherwise known as DIDs - Direct Inward Dial) from a voice Trunk, then the conference room will also be externally accessible.
+//FixMe
+![Illustratiom - VoIP Conference Rooms](../../images/conference_meetme.png?width=90% "VoIP Conference Room System")
 
-|Parameter|Bedeutung|
+## Configuration
+In the mobydick Commander web User Interface, select Users > Conference room and press the "Add"//FixMe button.
+![Screenshot - configure conference room in mobydick](../../images/conference_meetme.png?width=90% "configure conference room")
+
+|Parameter|Description|
 |---------|---------|
-|Bezeichnung|Eine Bezeichnung für den festen Konferenzraum.|
-|Durchwahl|	Die Durchwahl unter der dieser Konferenzraum erreichbar ist.
-|Mitteilung	|Bestimmt ob der Konferenzteilnehmer seinen Namen aufsprechen muss bevor er den Konferenzraum betreten darf. Allen aderen wird der Name des Teilnehmers angesagt sobald dieser den Konferenzraum betritt oder verlässt. Dies ist besonders bei größeren Konferenzen sinnvoll um den Überblick zu behalten.|
-|Wartemusik	|Ist nur ein Teilnehmer in der Konferenz kann dieser mit Wartemusik unterhalten werden. Wie Sie eigene Playliste erstellen können lesen Sie unter Eigene Ansagen und Wartemusik nach.|
-|Passwort	|Die PIN um diesen Konferenzraum zu betreten. Beim Anlegen des Konferenzraumes wird automatisch eine PIN generiert, diese kann vom Administrator geändert werden. Das Passwort kann mit dem Button "Passwort anzeigen/verbergen" angezeigt oder verborgen werden.|
-|Optionen|	Hier können Confbridge-Optionen hinzugefügt werden.|
+|Title|Conference room name|
+|Extension|    The extension for the conference room|
+|Message   |Whether a conference attendee has to speak their name before entering the room. The name will be announced to all other attendees as soon as that person enters or leaves the room. This helps to keep track especially in larger conference rooms.|
+|Music on hold|If there is only a single attendee, music on hold can be played to that person. To learn how to create your own playlist, please see Custom Prompts and Music On Hold.|
+|Password  |The PIN that is necessary to enter the room. //FixMeBeim Anlegen des Konferenzraumes wird automatisch eine PIN generiert, diese kann vom Administrator geändert werden. Das Passwort kann mit dem Button "Passwort anzeigen/verbergen" angezeigt oder verborgen werden.|
+|Options| The Confbridge Options can be added here|

@@ -9,7 +9,7 @@ keywords:
     - Add Users
     - Add Locations
 description: What is an user and what is a location in mobydick and how can you add and manage them quickly and efficiently?
-linken: /benutzer/benutzer-und-arbeitsplaetze/
+linkde: /benutzer/benutzer-und-arbeitsplaetze/
 url: /users/users-and-locations/
 prev: /users/
 next: /users/add-teams/
@@ -72,14 +72,14 @@ If a number for the **fax extension** is entered, a virtual fax service will be 
 
 A voicemail box is created for each user as default. The default setting is to not route an incoming call to the user's voicemail box, however this setting can be changed by using and activating the **Use voicemail box**:
 
-|Parameter | Bedeutung |
+|Parameter | Explanation |
 |----------|-----------|
 |Do not use it |(default) Incoming calls are not forwarded to the voicemail box.|
 |For external calls|Incoming calls from **outside of the network** are forwarded to the users' voicemail box if the person called is on the phone or does not answer the call. Accounts using the **External / After** settings will automatically be handled according to the settings applied.|
 |For internal calls|Incoming **internal** calls are forwarded to the voicemail box of the person called if the they are on the phone or not available to answer the call.  Accounts using the **Internal / After** settings will automatically be handled according to the settings applied.|
 |For all calls| All calls are forwarded to the voicemail box if the person called is on the phone or does not answer. As a result **Internal / After** and **External / After**  actions are automatically created to handle this scenario.|
 
-Enabling the **mobydick Softphone** will mean that the user will automatically be created with a mobydick Software Telephone. This will enable the user to use the <!-- FixMe Link -->mobydick Client exactly like a normal desktop telephone.
+Enabling the **mobydick Softphone** will mean that the user will automatically be created with a mobydick Software Telephone. This will enable the user to use the mobydick Client exactly like a normal desktop telephone.
 
 Save your changes and review the user details:
 ![Screenshot - edit user in mobydick](../../images/user_edit.png?width=90% "User edit")
@@ -90,9 +90,9 @@ In our example, Manager Max might not want to display his own extension but that
 
 ### Web-UI Permissions
 
-As standard, only your mobydick Administrator log in to the Web UI. However, you can assign administration rights to any number of user, should you need to do so. Currently, there are 3 administration rights levels available:
+As standard, only your mobydick Administrator can log in to the Web UI. However, you can assign administration rights to any number of user, should you need to do so. Currently, there are 3 additional administration rights levels available:
 
-|Rolle | Berechtigungen |
+|Role | Permissions |
 |------|----------------|
 |System Administrator|Highest level - has all available permissions.|
 |Administrator| Like System Administrator however **without**: </br>- mobydick Update </br>- Full ISO Backup </br>- Reboot </br>- Network configuration </br>- Cluster Management|
@@ -103,7 +103,7 @@ As standard, only your mobydick Administrator log in to the Web UI. However, you
 
 The **Save voicemail** option allows you to choose whether voice messages should be saved to disk. If the field **Voicemail E-Mail** contains an e-mail address, new voice messages are automatically forwarded to that address.  
 
-The **Monitored voicemail box** allows you to select a user who can administer the mailbox using either the mobydick Client, Mobility Client or an IP telephone. For more details, please see <!--//FixMe Link voicemail box.
+The **Monitored voicemail box** allows you to select a user who can administer the mailbox using either the mobydick Client, Mobility Client or an IP telephone. <!--For more details, please see //FixMe Link voicemail box.-->
 
 ### Phonebook
 
@@ -115,9 +115,9 @@ You can assigned a personal fax device to a user. <!--For more details, please s
 
 ### Assigned Devices
 You can assign personal devices to a user.
-![Screenshot - Assigend devices in mobydick](../../images/user_devices.png?width=90% "Devices in mobydick")
+![Screenshot - Assigned devices in mobydick](../../images/user_devices.png?width=90% "Devices in mobydick")
 
-Any number of devices can be assigned to user. The default setting for all assigned devices is to ring simultaneously for 999 seconds. <!--To learn more about **Waiting** and **Ringing** settings, please see the <!--//FixMe Link Concept: Followme-->. If the call is not answered, the actions **After / External** or **After / Internal** will be applied. <!--See the chapter on the concept of <!--//FixMe Link actions for more details-->
+Any number of devices can be assigned to user. The default setting for all assigned devices is to ring simultaneously for 999 seconds. <!--To learn more about **Waiting** and **Ringing** settings, please see the //FixMe Link Concept: Followme-->. If the call is not answered, the actions **After / External** or **After / Internal** will be applied. <!--See the chapter on the concept of //FixMe Link actions for more details-->
 
 ### Location
 
@@ -130,12 +130,12 @@ Allows you to define which roles apply to the relevant users for a particular us
 
 ### Actions (internal, external, before, after)
 
-Actions allow you to the manage the call flow. <!--For more details please see //FixMe Link the chapter on actions and //FixMe Link Call Flow Management -->.
+Actions allow you to the manage the call flow. <!--For more details please see //FixMe Link the chapter on actions and //FixMe Link Call Flow Management -->
 
 
 ### Creating locations (optional)
 In the menu Users > Locations, create a new location by clicking the `Add` button.
-![Screenshot - location in mobydick](../../images/user_location.png?width=90% "apply location")
+![Screenshot - locations in mobydick](../../images/user_locations.png?width=90% "apply location")
 The location only requires a label to allow assignment of devices to it
 
 You can now assign users although this can also be done by the users themselves by using mobydick Client, mobility client or by using the menu keys on the their Snom, Yealink, Aastra, Auerswald or OpenStage telephones.
@@ -155,7 +155,7 @@ Roles control the "Telephony relevant" properties and rights such as the ability
 There is a special **Role** called **All Users**, which as default is assigned to all Users, devices, workstations and teams and can not be removed.
 
 ### Setting Roles per Department
-A very common practice (and our recommendation) is to create one Role per department or team. For example, you may wish that users can only pick up calls only from within their department and to for this to been mutually seen within the MobyDick client. In order to so this simply disable the xmpp.group properties of the "All" Role and assign a new role, e.g. Support in which you can set all the Support Users as members
+A very common practice (and our recommendation) is to create one Role per department or team. For example, you may wish that users can only pick up calls only from within their department and to for this to been mutually seen within the mobydick client. In order to so this simply disable the xmpp.group properties of the "All" Role and assign a new role, e.g. Support in which you can set all the Support Users as members
 
 ### Properties and Rights
 #### location.group
@@ -205,4 +205,4 @@ Every telephone can be setup with **Waiting** and **Ringing** parameters valued 
 
 Additionally you can handle internal calls differently to external calls as well as calls which should reach your Team Agents. Therefore, there is the according **Waiting** and **Ringing** parameters per Telephone for **intern, extern** and per **Agent**.
 
-Currently the Followme concept can only be set by the Administrator. In future versions, this should be also possible to do by the users
+Currently the Followme concept can only be set by your system Administrator. However, in future versions it will be possible for individual users to configure the FollowMe setup that suits their work flow.

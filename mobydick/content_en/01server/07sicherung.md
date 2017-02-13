@@ -1,8 +1,8 @@
 ---
 title: Backup and Restore
 url: /server/backups/
-prev:  /server/cluster-setup/
-next: /server/update-and-monitoring/
+prev:  /server/services/
+next: /server/update/
 weight: 17
 toc: true
 keywords:
@@ -19,8 +19,6 @@ linkde: /server/sicherung/
 
 
 ## Concept
-
-//FixMe
 
 mobydick can perform a full system backup while the system is running. Mobydick first creates a snapshot of the file system and then uses it to create a bootable ISO file.
 
@@ -41,7 +39,7 @@ Database backups will be automatically deleted should the predefined number of g
 #### Manually creating a backup
 To create a backup using the web interface, select ***Appliance > Backup > Entire system***:
 
-![Screenshot - mobydick Backup in Detail](../../images/backup_system-entire.png?width=90% "Manual Backup in detail")
+![Screenshot - mobydick Backup in Detail](../../images/backup_system_entire.png?width=90% "Manual Backup in detail")
 
 To avoid an overly large ISO file, individual components can be excluded from the backup:
 
@@ -95,7 +93,7 @@ Copy the ISO file onto a CD / DVD or mount it as a boot drive in a virtual machi
 In order to create a database backup, go to the mobydick Commander (web UI) and select the following menu options:
 ***Appliance > Backup > Database Backup***.
 
-Click on the //FixMe to create a new database backup.
+Click on the `Create` button to create a new database backup.
 
 There, you have the option of including additional file data from recordings, faxes and voicemails.
 

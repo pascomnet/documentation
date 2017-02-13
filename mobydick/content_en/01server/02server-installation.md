@@ -96,7 +96,7 @@ Please note that unattended installations on a mini appliance can take upto 15 -
 #### Preparation
 Download a mobydick setup file (version 7.01.00 or higher) from [https://www.pascom.net/en/download/](https://www.pascom.net/en/download/ "mobydick ISO download") or use the file appliance.iso from a backup (version 7.1 as a minimum).
 The easiest method to create the USB Installation Disk is to use your mobydick server or any Linux system that has syslinux installed.
-If you want to use your mobydick system, copy the ISO file to the folder /etc/admin/ on a mobydick 6 or 7 system and log on to the system using SSH. Further information can be found in [Accessing mobydick]({{< ref "03access.md" >}}).
+If you want to use your mobydick system, copy the ISO file to the folder /etc/admin/ on a mobydick 6 or 7 system and log on to the system using SSH. Further information can be found in Accessing mobydick.
 
 #### Creating a bootable USB stick
 

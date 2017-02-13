@@ -3,9 +3,8 @@ title: Lizenzen verwalten
 keywords:
     - mobydick Lizenz
 description:
-linken: /server/
 url: /server/lizenzen-verwalten/
-prev: /server/mobydick-zugriff/
+prev: /server/zugriff/
 next: /server/netzwerk-konfigurieren/
 weight: 14
 toc: true
@@ -30,14 +29,15 @@ Sie müssen Ihre Lizenz einspielen, wenn
 Sollten Sie noch keinen Zugriff auf my.pascom haben, können Sie sich als pascom-Kunde jederzeit kostenfrei über [my.pascom](https://my.pascom.net/#/buy/product) ein neues Konto erstellen. Dazu benötigen Sie Ihre E-Mail-Adresse und die System-ID Ihrer mobydick.
 {{% /notice %}}
 
-Sie erhalten Ihre Lizenz in Ihrem [my.pascom](https://my.pascom.net/ "my.pascom.net Lizenzportal")-Marktplatz:
+Sie erhalten Ihre Lizenz in Ihrem [my.pascom](https://my.pascom.net/)-Marktplatz:
 
 * melden Sie sich an,
 * klicken Sie im linken Menü-Bereich auf **Lizenzen**,
 * klicken Sie anschießend auf Ihre Appliance, um eine Übersicht Ihrer Lizenz zu sehen,
 * klicken Sie auf dem blauen Balken **Lizenz Inhalt**
 * den Lizenzcode aus der Box können Sie kopieren und in Ihre mobydick einfügen
-![my.pascom.net Lizenzportal](../../images/lizenz_uebersicht.png?width=80% "mobydick Lizenz in my.pascom.net")
+
+![my.pascom.net Lizenzportal](/license_overview_de.png?width=80%)
 
 {{% notice warning %}}
 Bitte beachten Sie, dass die Lizenz in Form des Lizenzcodes erst ab der Version 7.12.00 verfügbar ist. Lizenzen in Form eines Installations-Pakets (xxxxx.deb) dürfen nur bis zur Version 7.11.XX installiert werden.
@@ -46,7 +46,7 @@ Passen Sie bitte entsprechend Ihren Update-Channel an, um die für Sie passende 
 
 ### Wo kann man die mobydick Lizenz einspielen?
 Surfen Sie auf Ihre mobydick und melden Sie sich an. Im Home-Bereich klicken Sie links unten auf dem Menüpunkt **Lizenzübersicht**.
-![mobydick Startseite](../../images/lizenz_mobydick.png?width=80% "mobydick Lizenzübersicht")
+![mobydick Startseite](/license_mobydick_de.png?width=80%)
 
 Hier erhalten Sie Informationen über Ihre mobydick Installation bezüglich der Lizenz:
 

@@ -2,9 +2,9 @@
 title: Ämterketten einrichten
 keywords:
 description:
-url:  /trunks/trunk-fallover/
+url:  /aemter/aemter-kette/
 weight: 13
 toc: true
-prev: /trunks/trunk-config
+prev: /aemter/aemter-konfigurieren/
 draft: true
 ---

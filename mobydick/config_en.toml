@@ -1,0 +1,50 @@
+baseurl = "/"
+canonifyurls = true
+languageCode = "en-US"
+contentdir= "content_en"
+
+title = "mobydick Documentation"
+theme= "doc-pascom"
+author = "pascom GmbH & Co. KG"
+
+[params]
+
+    # basurlde Link zur Startseite der Doku (bei der Deutschen Doku immer auf den ersten Artikel verlinken | bei der Englischen Doku immer Link ohne ersten Artikel)
+    baseurlde = "https://www.pascom.net/de/dokumentation/mobydick/server/"
+
+    # baseurlen Notwendig für den Umschalter in die Englische Wiki
+    baseurlen = "https://www.pascom.net/en/documentation/mobydick/server/"
+
+    # lang Variable damit der HMTL Header auch de oder en anzeigt
+    lang = "en"
+
+    # wikiurl Ist die BaseUrl der Wiki und muss entweder nach de oder en umgestellt werden. Kann auch später auf andere Sprachen umschalten
+    wikiurl= "https://www.pascom.net/en/documentation/"
+    wikiname ="Documentation"
+
+    # handbook* definiert die Doku e.g. mobydick Handbuch, cloudstack, release notes,...
+    handbookurl="mobydick"
+    handbookname ="mobydick"
+
+    # Wir haben ein Menü links, welches auf bestimmte Theme verweist. Die Inhalte der Variablen müssen dann auch immer entsprechend der Sprache angepasst werden.
+    impressumtext = "Legal Notice"
+    impressumurl = "https://www.pascom.net/en/legal-notice/"
+    impressumtitle = "pascom Legal Notice"
+
+
+    mypascomurl = "https://my.pascom.net/"
+    mypascomtext = "my.pascom.net"
+    mypascomtitle = "To the my.pascom Portal"
+
+    # URL pascom.net
+    pascomurl = "https://www.pascom.net/en/"
+
+    # URL community
+    communityurl = "http://community.pascom.net/forum.php?langid=6"
+
+    # docuname gibt den Namen der jeweiligen Dokumentation an
+    docuname = "mobydick Documentation"
+
+    searchfield = "Search our documentation (shortcut 's')"
+
+    algoliaindex = "doc-mobydick-en"

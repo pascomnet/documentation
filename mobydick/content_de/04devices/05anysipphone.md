@@ -1,6 +1,5 @@
 ---
 url:  /endgeraete/beliebiges-ip-geraet-einrichten/
-linken: /devices/
 prev: /endgeraete/ip-tischtelefone/
 next: /endgeraete/aastra-dect-system-anbinden/
 weight: 45

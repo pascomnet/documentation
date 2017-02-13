@@ -2,7 +2,7 @@
 title: Network Configuration
 url:  /server/network-configuration/
 prev: /server/accessing-mobydick/
-next: /server/cluster-setup/
+next: /server/services/
 weight: 15
 toc: true
 keywords:

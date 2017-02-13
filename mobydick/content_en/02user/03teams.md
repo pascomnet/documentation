@@ -2,7 +2,7 @@
 title: Add and Build Teams
 url: /users/add-teams/
 prev: /users/users-and-locations/
-next: /clients/
+next: 
 weight: 23
 keywords: 
     - Add Teams
@@ -21,14 +21,12 @@ toc: true
 
 ## Concept
 
-Each mobydick user has their own extension, devices and //FixMe actions that control calls made to that extension. **In addition**, a user can be a member of a **team**.
+Each mobydick user has their own extension, devices and actions that control calls made to that extension. In addition, a user can be a member of a **team**.
+![Screenshot - Team Concept](../../images/team_basic.png?width=90% "Teams and queues in mobydick")
 
-![Illustration - Team Concept](../../images/teams_basic.png?width=50% "Teams and queues in mobydick")
-
-
-The **team** has its own **extension** and actions //FixMe assigned to it. When a call is made to the team's extension, the team members' phones will ring in the order defined in the **strategy** and actions.//FixMe
+The **team** has its own extension and actions assigned to it. When a call is made to the team's extension, the team members' phones will ring in the order defined in the strategy and actions.
 {{% notice info %}}
-When a call is made to a team's number, only the actions //FixMe pertaining to the team will be active. Actions pertaining to individual users will be ignored.
+When a call is made to a team's number, only the actions pertaining to the team will be activated. Actions pertaining to individual users will be ignored.
 {{% /notice %}}
 This concept allows you to make use of the following example scenario:
 Frank can still be reached at his extension **22** even **outside of business hours**; however calls to the support teams will be routed to the **mailbox** after 6:00 p.m.
@@ -77,7 +75,8 @@ Select ***call group*** from the **type** list and enter a **title** and an exte
 
 
 #### Basic data
-![Screenshot - manage call groups](../../images/team_basic.png?width=90% "manage call groups in mobydick")
+
+!<!--//Fixme Call Group Screen Shots-->[Screenshot - manage call groups](../../images/team_queue.jpg?width=90% "manage call groups in mobydick")
 
 |Parameter| Description|
 |----------|----------|
@@ -90,7 +89,7 @@ Select ***call group*** from the **type** list and enter a **title** and an exte
 |Music on Hold|Select the type of sound to be played. Select "dial tone" if you do not want the channel to be answered but want the caller to hear a ringing tone. This is necessary only if haven't already created some type of action to answer the channel, e.g. to play a greeting announcement.|
 
 #### Advanced
-![Screenshot - call group with advanced functions](../../images/team_advanced.png?width=90% "Rufgruppe - advanced functions")
+<!--//Fixme Call Group Screen Shots-->![Screenshot - call group with advanced functions](../../images/team_queue_advanced.jpg?width=90% "Rufgruppe - advanced functions")
 
 
 |Parameter| Description|
@@ -103,7 +102,7 @@ Select ***call group*** from the **type** list and enter a **title** and an exte
 
 
 ##### Members
-![Screenshot - Member of a call group](../../images/team_members.png?width=90% "call group member")
+<!--//Fixme Call Group Screen Shots-->![Screenshot - Member of a call group](../../images/team_queue_members.jpg?width=90% "call group member")
 
 Allows you to add members to the group. Use the up down arrows to change the order of the members as this can have an effect on some call strategies.
 
@@ -119,7 +118,7 @@ Actions allow you to manage the call flow.
 To create a new team, use the `+Add` button in the menu **Users > Teams** of the web interface or select an existing team and press the `Edit` button to modify its settings. When adding a new team, select **Queue** as the type and enter a **title** as well as an extension number on which the team can be reached.
 
 #### Basic data
-![Screenshot - manage queues ](../../images/team_queue.png?width=90% "manage queue in mobydick")
+![Screenshot - manage queues ](../../images/team_queue.jpg?width=90% "manage queue in mobydick")
 
 |Parameter| Description|
 |----------|----------|
@@ -153,7 +152,7 @@ Timeout internal|  Maximum time (in seconds) an internal caller should be allowe
 
 #### Members
 
-![Screenshot - members in queue](../../images/team_queue_members.png?width=90% "queue member")
+![Screenshot - members in queue](../../images/team_queue_members.jpg?width=90% "queue member")
 
 In this screen you can add members to a queue. By using the setting **Flexible** ***yes*** you will set the team member to dynamic. Members who are set as **Flexible** ***no*** will always be a member and therefore always called and cannot log themselves out of the queue. Some call strategies consider a member agent's priority. You can use the up done arrows to change the agent member order, which then impact how agents are called when using certain call strategies.
 
@@ -205,7 +204,7 @@ Within in a team (Queue) it is possible to set which users will receive incoming
 Firstly, a Pickup role must be defined, which can consist of team members as well as individual users, that do not belong to the team.
 
 Additionally you can determine who of those within the team assigned with the Pickup role will receive notifications.
-![Screenshot - PPickup notification](../../images/team_pickup_notification.png?width=90% " Pickup notification")
+![Screenshot - Pickup notification](../../images/team_pickup_notifications.jpg?width=90% " Pickup notification")
 
 The following setups are possible:
 

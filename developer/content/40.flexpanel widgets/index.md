@@ -43,7 +43,7 @@ This widget represents one user from the roster. It shows the user's current sta
 Compact (w:200,h:30), DefaultAppearance (w:200,h:50);
 
 ### PhonebookItem
-This widget represents one user from the phonebook. It's not read from MobyDick database. You can put custom name and phone number in this widget
+This widget represents one user from the phonebook. It's not read from mobydick database. You can put custom name and phone number in this widget
 
 #### Available constructors
 * PhonebookItem(name,phoneNumber) - example PhonebookItem phonebookItem1 = new PhonebookItem("Stefan Tosic","123123");
