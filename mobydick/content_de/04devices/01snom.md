@@ -11,24 +11,16 @@ keywords:
     - busylampfield
     - firmware
 description: Integrieren Sie Ihre Snom IP-Tischtelefone in die mobydick.
-url:  /endgeraete/snom-tischtelefone-300-700-serie/
 prev: /endgeraete/
-next: /endgeraete/beliebiges-ip-geraet-einrichten/
+url:  /endgeraete/snom-tischtelefone-300-700-serie/
+next: /endgeraete/beliebiges-ip-geraet/
 weight: 41
 toc: true
 
 ---
 
-{{% row %}}
-{{% col md-6 %}}
-![snom 700 serie](/snom-700-series1.png?width=300px)
-{{% /col %}}
-{{% col md-6 %}}
-![snom 300 serie](/snom-300-series1.png)
-{{% /col %}}
-{{% /row %}}
 
-
+![snom 300/700 serie](/snom-series.png)
 
 ## Kompatibilität
 
@@ -36,7 +28,7 @@ toc: true
 |---|---|---|---|
 |ja|ja|ja|ja|
 
-**Provisionierung**: Das IP-telefon wird über die mobydick verwaltet.<br>
+**Provisionierung**: Das IP-Telefon wird über die mobydick verwaltet.<br>
 **Firmware-Verwaltung**: Die Firmware kann über mobydick aktualisiert werden.<br>
 **Fernsteuerung über Desktop-Client**: Gespräche können über den Desktop Client gestartet werden.<br>
 **pascom Menü**: An einer Taste am Telefon wird das pascom Menü hinterlegt.
@@ -53,7 +45,7 @@ Bei Neuinstallationen sollten Sie den Provisionierungsvorgang zuerst mit einem T
 ### Vorbereitung
 
 Für die automatische Inbetriebnahme ist ein funktionierender DHCP-Server zwingend erforderlich. Lesen Sie dazu
-[Netzwerk planen und konfigurieren](/../server/netzwerk-konfigurieren/).
+[Netzwerk planen und konfigurieren](../../server/netzwerk-konfigurieren/).
 
 ### Inbetriebnahme
 
@@ -77,27 +69,30 @@ Das Passwort des Admin-Users am IP-Telefon kann über die Systemeinstellungen im
 
 ### Benutzer zuweisen
 
-Nachdem das IP-Telefon in der Geräteliste erscheint kann es bearbeitet werden. Klicken Sie hierzu auf `Bearbeiten`. Im Tab `Zuweisung` kann dem Telefon ein [Benutzer (oder Arbeitsplatz)](/../benutzer/benutzer-arbeitsplaetze/) zugewiesen werden.
+Nachdem das IP-Telefon in der Geräteliste erscheint kann es bearbeitet werden. Klicken Sie hierzu auf `Bearbeiten`. Im Tab `Zuweisung` kann dem Telefon ein [Benutzer (oder Arbeitsplatz)](../../benutzer/benutzer-arbeitsplaetze/) zugewiesen werden.
 
 Nach dem Speichern und Anwenden der Telefoniekonfiguration werden die neu zugewiesenen IP-Telefone neugestartet.
 
 ### Funktion testen
 
-Am einfachsten kann man die erfolgreiche Inbetriebnahme testen, indem man mit \*100 die einene Voicemailbox anruft. Daraufhin sollte die Ansage "" zu hören sein.
+Am einfachsten kann man die erfolgreiche Inbetriebnahme testen, indem man mit **\*100** die eigene Voicemailbox anruft. Daraufhin sollte die Ansage Ihrer Voicemailbox zu hören sein.
 
 ### pascom Menütaste
 
-Nach der Provisionierung entspricht die **Menü**-Taste am Snom IP-Telefon nicht mehr dem Telefon-Menü, sondern ruft das telefonspezifische mobydick Menü auf. Hier sind mobydick Funktionen hinterlegt:
+Nach der Provisionierung entspricht die **Menü**-Taste am Snom IP-Telefon nicht mehr dem Telefon-Menü, sondern ruft das telefonspezifische pascom Menü auf. Hier sind pascom Funktionen hinterlegt:
 
 |Funktion|Beschreibung|
 |---|---|
-|Telefonbuch|Ruft dads mobydick Telefonbuch auf.|
+|Telefonbuch|Ruft das pascom Telefonbuch auf.|
 |Journal|Zeigt verpasste, angenommene und gewählte Anrufer an|
 |Rufumleitung|Setzt eine Rufumleitung, aktiviert/ändert schon eine gesetzt Rufumleitung oder deaktiviert eine aktiver Rufumleitung.|
 |Voicmailbox|Voicemailbox-Menü zum Einschalten/Ausschalten und Abhören der eigenen Voicemailbox|
 |Anmelden|Hier kann ein Benutzer sich an dem Arbeitsplatz anmelden.|
 |Abmelden [*benutzername*]|Der bereits angemeldete Benutzer kann sich an dem Arbeitsplatz abmelden.|
-|Warteschlagen|Dient zur Verwaltung der Warteschlagen (anmelden, abmelden, pausieren...).|
+|Warteschlagen|Dient zur Verwaltung der Warteschlagen (anmelden, abmelden, pausieren...), je nach Konfiguration der Warteschangen.|
+
+<!--FIXME pascom menütaste wenn menü-taste am snom nicht vorhanden-->
+
 
 {{% notice tip%}}
 Setzten Sie Rufumleitungen nur über das mobydick Menü, da diese Rufumleitungen über die mobydick Verwaltet werden können.
@@ -117,7 +112,7 @@ Tippen Sie die Taste **?** bzw. **Help** um die IP-Adresse Ihres Telefon anzuzei
 
 **IP-Adresse über die Geräteliste ermitteln**
 
-Loggen Sie sich in das Web-UI der mobydick ein. Klicken Sie auf `Endgeräte` > `Geräteliste`. Nun sehen Sie eine ÜBersicht über alle verfügbaren Geräte. Links von jedem Eintrag finden Sie ein *Info*-Symbol. Klicken Sie es an, erhalten Sie eine Übersicht über das provisionierte Telefon, unter anderem auch die IP-Adresse.
+Loggen Sie sich in das Web-UI der mobydick ein. Klicken Sie auf `Endgeräte` > `Geräteliste`. Nun sehen Sie eine Übersicht über alle verfügbaren Geräte. Links von jedem Eintrag finden Sie ein *Info*-Symbol. Klicken Sie es an, erhalten Sie eine Übersicht über das provisionierte Telefon, unter anderem auch die IP-Adresse.
 
 **Admin-Rechte**
 
@@ -125,25 +120,28 @@ Um Zugriff zu einigen Menüpunkten in der Web-UI des Snom Telefons zu haben ben�
 
 ### Tasten belegen
 
-KLicken Sie in der Menüliste auf der linken Seite auf Funktionstasten.
+Klicken Sie in der Menüliste auf der linken Seite auf Funktionstasten.
 Funktionstasten können am Snom IP-Telefon über die Web-UI eingerichtet werden.
 
 **IP-Adresse des Telefons anzeigen**
 
 Tippen Sie die Taste **?** bzw. **Help** um die IP-Adresse Ihres Telefon anzuzeigen, anschließend wird diese am Display angezeigt. Geben Sie die I-Addesse in der Adresszeile Ihres Webbrowsers ein. Sie sehen nun die Konfigurationsoberfläche. KLicken Sie in der Menüliste auf der linken Seite auf Funktionstasten.
 
-**Andere Nebenstellen überwachen mit BLFs**
+**Andere Benutzer (Nebenstellen) überwachen mit BLFs**
+
+<!--FIXME status des benutzers sehen(telefoniert?), pickupmöglichkeit/heranholen -->
 
 Hier können Sie Funktionstasten einrichten, um andere Nebenstellen zu überwachen.
 
 |Kontext|Typ|Nummer|Kurzform|
 |---|---|---|---|
-|Account wählen|**Nebenstelle**|Die zu überwachende Durchwahl (z. B. 123) in der Form <sip:123@192.168.100.1>.|Besitzt das Telefon ein zweites Display, können hier die Tasten beschriftet werden.|
+|Account wählen|**Nebenstelle**|Die zu überwachende Durchwahl (z. B. 123) in der Form <sip:123@192.168.100.1>.|Besitzt das Telefon statt des Papier-Beschriftungsstreifens ein zweites Display, können hier die Tasten beschriftet werden.|
 
 Die BLF-Taste (Besetztlampenfeld oder Busy Lamp Field) gibt Informationen über den Status der überwachten Durchwahl.
 Neben Benutzer-Durchwahlen können auch Einbuchcodes für Warteschlangen oder Durchwahlschalter konfiguriert werden.
+<!--FIXME Links zu dw-schalter, warteschlangen  -->
 
-**Weitere Funktionstasten**
+**Weitere nützliche Funktionstasten**
 
 |Funktionstaste|Beschreibung|
 |---|---|
@@ -155,7 +153,7 @@ Neben Benutzer-Durchwahlen können auch Einbuchcodes für Warteschlangen oder Du
 Wie bereits erwählt, werden Snom IP-Telefone  mit Hilfe der Basis-Konfiguration provisioniert. Die Basis-Konfigurationen ist unter `Endgeräte` > `Basis-Konfiguration` zu finden.
 
 {{% notice note %}}
-Bevor Sie die Basis-Konfiguration ändern, sollten Sie diese `Duplizieren`, damit Sie im Falle einer Fehl-Konfiguration die "mobydick Werkseinstellungen" zum Vergleich haben.
+Bevor Sie die Basis-Konfiguration ändern, müssen Sie diese `Duplizieren`.
 {{% /notice %}}
 
 Ebenfalls können Sie eine schon bearbeitete Basis-Konfiguration als `Standard setzten`. Somit erhalten neu angelegte IP-Telefone automatisch die angepasste Basis-Konfiguration.
@@ -169,8 +167,7 @@ Eine Basis-Konfiguration kann auf mehreren Wegen zugewiesen werden:
 
 **BLF-Tasten konfigurieren über die Basis-Konfiguration**
 
-Im Tab `Konfiguration` können Sie die vorhandene Basis-Konfiguration anpassen.<br>
-Im Bereich **keys** finden Sie bereits vorkonfigurierte Funktionstasten, an denen Sie dich orientieren können.
+Im Tab `Konfiguration` können Sie die vorhandene Basis-Konfiguration anpassen. Im Bereich **keys** finden Sie bereits vorkonfigurierte Funktionstasten, an denen Sie dich orientieren können.
 
 Surfen Sie auf das Web-UI Ihres Snom Telefons und belegen Sie unter *Funktionstasten* als Beispiel die Taste **P1**. Wählen Sie als Typ **Nebenstelle**, als Nummer **123** und als Label **Musterbenutzer**. Übernehmen Sie die Einstellungen.
 
@@ -184,6 +181,8 @@ Suchen Sie nach *fkey0* und *fkey_label0*. Die gefundenen Zeilen tragen Sie ansc
 Weisen Sie diese Basis-Konfiguration über den Tab `Geräte` den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und Speichern Sie nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
 
 ### Firmwareupdate
+
+<!--FIXME 7.14, keine mitgelieferte firmware, verweis auf download hersteller, EMPFOHLENE Firmware  -->
 
 mobydick kann IP-Telefone mit passender Firmware versorgen. Unter `Endgeräte` > `Geräte Firmware` finden Sie für jedes unterstütze Modell die von uns empfohlene Firmware.
 
