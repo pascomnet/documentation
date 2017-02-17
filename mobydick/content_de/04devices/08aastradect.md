@@ -6,7 +6,7 @@ keywords:
     - Mitel DECT System anbinden
     - VoIP DECT
 description:
-url:  /endgeraete/aastra-dect-system-anbinden/
+url:  /endgeraete/aastra-dect/
 prev: /endgeraete/beliebiges-ip-geraet-einrichten/
 weight: 48
 toc: true

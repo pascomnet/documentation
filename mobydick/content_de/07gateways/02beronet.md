@@ -1,7 +1,7 @@
 ---
 title: beroNet Gateways einrichten
 url: /isdn-analog/beronet-gateways/
-prev: /isdn-analog/
+prev: /isdn-analog/grandstream-ata-ht-serie/
 next: /isdn-analog/patton-gateways/
 weight: 52
 toc: true
@@ -13,7 +13,7 @@ toc: true
 beroNet Karten und Gateways sind modular aufgebaut. Das bedeutet für Sie, dass Sie unterschiedliche Anschlüsse mit nur einem Gerät abbilden können.
 ![Illustration - modulares Gateway](../../images/beronet_gateway_beispiel.jpg?width=90% "Modulare Gateways Lösung von beroNet")
 
-Beispiel: Sie haben 3 NTBAs (ISDN-Anschlüsse) und noch 2 Analoge Fax. Dann könnten Sie ein beroNet Gateway oder Karte mit einem 4S0 Modul und 
+Beispiel: Sie haben 3 NTBAs (ISDN-Anschlüsse) und noch 2 Analoge Fax. Dann könnten Sie ein beroNet Gateway oder Karte mit einem 4S0 Modul und
 
 
 ### beroNet VoIP Gateways
@@ -43,12 +43,12 @@ Dabei stehen Ihnen folgende Karten zur Verfügung:
 
 
 ## ISDN und Analoge Nebenstellen
-Nebenstellen wie Faxgeräte, Faxserver, Telefone, Türöffner, etc. können entweder direkt oder via SIP angebunden werden. 
+Nebenstellen wie Faxgeräte, Faxserver, Telefone, Türöffner, etc. können entweder direkt oder via SIP angebunden werden.
 
 ### Anbindung direkt
 ![Illustration - ISDN Anbindung direkt](../../images/beronet_direkt.png?width=90% "Anbindung direkt über ISDN Gateway")
 
-**Anrufe** werden **nicht in SIP gewandelt** und über die mobydick geschickt sondern direkt auf der beroNet geroutet. Kommt beispielsweise ein eingehender Anruf für das Faxgerät herein wird dieser direkt von der Beronet mit dem Faxgerät verbunden. 
+**Anrufe** werden **nicht in SIP gewandelt** und über die mobydick geschickt sondern direkt auf der beroNet geroutet. Kommt beispielsweise ein eingehender Anruf für das Faxgerät herein wird dieser direkt von der Beronet mit dem Faxgerät verbunden.
 
 Der **Vorteil** dieser Methode ist, dass Verbindungen die nicht in SIP gewandelt werden. Für Faxanwendungen erzielt man dadurch wesentlich bessere Ergebnisse. Ein weitere Anwendugsfall ist die Übertragung von ISDN Daten.  
 
@@ -87,7 +87,7 @@ Gelingt dies nicht, oder befindet sich eine beroNet Gateway in einem anderen Net
 In der Dropdownbox `Gateways` sehen sie alle vom System erkannten beroNet Gateways und Karten:
 ![Screenshot - beroNet Gateway anlegen](../../images/beronet_gateway_anlegen.png?width=90% "Neues beroNet Gateway anlegen")
 
-In den Felder **Benutzername** und **Passwort** geben Sie die Zugangsdaten für den auf den beroNet Geräten befindlichen Webserver an. Im Auslieferungszustand sind diese **admin** und **admin**. Eine Änderung von Benutzernamen und Passwort ist an dieser Stelle nicht möglich. 
+In den Felder **Benutzername** und **Passwort** geben Sie die Zugangsdaten für den auf den beroNet Geräten befindlichen Webserver an. Im Auslieferungszustand sind diese **admin** und **admin**. Eine Änderung von Benutzernamen und Passwort ist an dieser Stelle nicht möglich.
 
 Bei beroNet Gateways haben Sie zusätzlich die Möglichkeit die Netzwerkkonfiguration der Gateway durch die Felder **IP Adresse, Netzwerkmaske und Gateway** zu verändern. Wollen Sie keine Änderungen am Netzwerk vornehmen lassen Sie die Felder einfach leer. Bei eingebauten PCI Karten wird das Netzwerk automatisch konfiguriert und kann nicht verändert werden.
 
@@ -96,10 +96,10 @@ Drücken Sie auf die Schaltfläche `Weiter`. In der nächsten Maske sehen Sie no
 Alternativ können Sie aber auch durch die Angabe weiterer Daten (`Amt angegen` anhaken) gleich noch ein Amt samt ein- und ausgehende Regeln anlegen.
 
 ### ISDN Amtsleitungen anlegen
-In vielen Fällen wird beroNet Hardware dazu verwendet ISDN Amtsleitungen daran anzuschließen. Selektieren Sie hierzu das entsprechende Gateway aus der Liste aus, wählen Sie `Bearbeiten` und schalten Sie dann auf den Tab **Belegung** um. 
+In vielen Fällen wird beroNet Hardware dazu verwendet ISDN Amtsleitungen daran anzuschließen. Selektieren Sie hierzu das entsprechende Gateway aus der Liste aus, wählen Sie `Bearbeiten` und schalten Sie dann auf den Tab **Belegung** um.
 ![Screenshot - ISDN Amt hinzufügen](../../images/beronet_isdn_trunk_hinzuegen.png?width=90% "ISDN Amt per beroNet hinzufügen")
 
-Unter `Hinzuführen` können Sie entweder **BRI** oder **PRI Amtsleitungen** konfigurieren. 
+Unter `Hinzuführen` können Sie entweder **BRI** oder **PRI Amtsleitungen** konfigurieren.
 
 //FixMe Siehe Konzept: ISDN verstehen falls Sie mit den Begrifflichkeiten nicht vertraut sind. Dieser Vorgang fügt einen neuen Datensatz ein.
 
@@ -108,9 +108,9 @@ Unter `Hinzuführen` können Sie entweder **BRI** oder **PRI Amtsleitungen** kon
 
 Klicken Sie im entsprechenden Datensatz doppelt auf das Feld `Bezeichnung`. Dadurch öffnet sich ein Detailfenster. Hier können Sie dann anhaken welcher **Port** der Karte zu diesem Amt gehört. Auch Mehrfachauswahlen sind möglich da es bei z.B. Anlagenanschlüss sein kann, dass mehrere NTs zu einem Amtsanschluss zusammengefasst werden.
 
-Unter `Modus` und `Technologie` stellen Sie die Anschlussart ein. Bei einem Anlagenanschluss ist das z. B. **TE** und **PTP**. 
+Unter `Modus` und `Technologie` stellen Sie die Anschlussart ein. Bei einem Anlagenanschluss ist das z. B. **TE** und **PTP**.
 
-//FixMe  Siehe Konzept: ISDN verstehen für weitere Details.
+<!-- //FixMe  Siehe Konzept: ISDN verstehen für weitere Details. -->
 
 In diesem Schritt konfigurieren Sie lediglich den Anschluss auf der beroNet Hardware. Zur vollständigen Funktion fahren Sie nun mit Aemter und Rufregeln anlegen fort.
 
