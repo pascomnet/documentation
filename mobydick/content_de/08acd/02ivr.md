@@ -5,7 +5,7 @@ keywords:
     - Auswahlmenü
     - IVR
 description: Auswahlmenüs (IVR) dienen dazu dem Anrufer durch das Drücken einer Taste durch das Telefonmenü zu lenken.
-prev: /anrufverteilung/callrouter/
+prev: /anrufverteilung/aktionen/
 next: /anrufverteilung/time-calendar/
 weight: 73
 toc: true

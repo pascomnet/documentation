@@ -8,10 +8,9 @@ keywords:
     - Benutzer anlegen
     - Arbeitsplätze anlegen
 description: Was ist ein Benutzer, Arbeitsplatz in mobydick und wie lassen diese sich einfach einrichten und verwalten?  
-linken: /server/automation/
-url: /user/user/
-prev: /user/
-next: /user/teams/
+url: /benutzer/benutzer-arbeitsplaetze/
+prev: /benutzer/
+next: /benutzer/teams/
 weight: 22
 toc: true
 ---
@@ -212,7 +211,7 @@ Aktionen sind in der mobydick ein wichtiges Werkzeug um den Anrufablauf zu steue
 * einen Anrufen auf einen anderen Benutzer oder Team abzuwerfen, falls der eigentlich Angerufene im Gespräch,
 * und vieles mehr.
 
-Lesen Sie dazu bitte den Artikel über [Aktionen](../anrufverteilung/actions/).
+Lesen Sie dazu bitte den Artikel über [Aktionen](../../anrufverteilung/aktionen/).
 
 ### Rollen
 

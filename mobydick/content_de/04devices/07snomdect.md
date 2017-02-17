@@ -1,9 +1,8 @@
 ---
 title: snom SIP Dect einrichten
-keywords: 
-description: 
+keywords:
+description:
 url:  /endgeraete/snom-dect-system-anbindent/
-linken: /devices/integrate-aastra-dect-system/
 prev: /endgeraete/openstage-ip-tischtelefone/
 next: /endgeraete/softphone-einrichten/
 weight: 47
@@ -39,7 +38,7 @@ darauf hin können Sie die Details für dieses Handset festlegen und einen Benut
 
 
 Angeschlossen an	Wählen Sie hier ein Gateway aus. Beim Multizellenbetrieb werden alle Gateways die als Repeater markiert wurden automatisch ausgeblendet.
-IPEI Nummer	
+IPEI Nummer
 Geben Sie hier die IPEI Nummer des Handsets an. Diese können vom Display des Handsets unter Einstellungen > Status abrufen:
 
 Es genügt erste Zeile der IPEI, auf die : kann bei der Eingabe verzichtet werden.

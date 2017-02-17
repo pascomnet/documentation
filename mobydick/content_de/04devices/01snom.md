@@ -19,11 +19,27 @@ toc: true
 
 ---
 
+{{% row %}}
+{{% col md-6 %}}
+![snom 700 serie](/snom-700-series1.png?width=300px)
+{{% /col %}}
+{{% col md-6 %}}
+![snom 300 serie](/snom-300-series1.png)
+{{% /col %}}
+{{% /row %}}
+
+
+
 ## Kompatibilität
 
-|Sichere Provisionierung|Firmware-Verwaltung|Fernsteuerung|TLS|SRTP|
-|---|---|---|---|---|
-|ja|ja|ja|ja|ja|
+|Provisionierung|Firmware-Verwaltung|Fernsteuerung über Desktop Client|pascom Menü|
+|---|---|---|---|
+|ja|ja|ja|ja|
+
+**Provisionierung**: Das IP-telefon wird über die mobydick verwaltet.<br>
+**Firmware-Verwaltung**: Die Firmware kann über mobydick aktualisiert werden.<br>
+**Fernsteuerung über Desktop-Client**: Gespräche können über den Desktop Client gestartet werden.<br>
+**pascom Menü**: An einer Taste am Telefon wird das pascom Menü hinterlegt.
 
 
 ## Konfiguration
@@ -57,40 +73,19 @@ Nach der Provisionierung des IP-Telefons wird von mobydick der Admin-User neu ge
 <br>Passwort: *0000*
 {{% /notice %}}
 
+Das Passwort des Admin-Users am IP-Telefon kann über die Systemeinstellungen im Web-UI geändert werden. Suchen Sie in dem Suchfeld nach dem Parameter *sys.peripherals.access.password*. Geben Sie Ihren gewünschten Wert ein. Anschließend müssen Sie manuell die Telefonie-Konfiguration anwenden und die Endgeräte neustarten.
+
 ### Benutzer zuweisen
 
 Nachdem das IP-Telefon in der Geräteliste erscheint kann es bearbeitet werden. Klicken Sie hierzu auf `Bearbeiten`. Im Tab `Zuweisung` kann dem Telefon ein [Benutzer (oder Arbeitsplatz)](/../benutzer/benutzer-arbeitsplaetze/) zugewiesen werden.
 
 Nach dem Speichern und Anwenden der Telefoniekonfiguration werden die neu zugewiesenen IP-Telefone neugestartet.
 
-<!-- **Schnelle Geräteinbetriebnahme (bis mobydick Version 7.12)** -->
+### Funktion testen
 
-### Provisioniereung testen
+Am einfachsten kann man die erfolgreiche Inbetriebnahme testen, indem man mit \*100 die einene Voicemailbox anruft. Daraufhin sollte die Ansage "" zu hören sein.
 
-Am einfachsten kann man die erfolgreiche Provisionierung testen, indem man intern von einem IP-Telefon auf ein anderes anruft.
-
-Sie können sich auch auf die mobydick per SSH einloggen und über die Asterisk-CLI die Anmeldung prüfen.
-
-     root@mobydick:/etc/admin# asterisk  -r
-     Asterisk certified/11.6-cert15, Copyright (C) 1999 - 2013 Digium, Inc. and others.
-     Created by Mark Spencer <markster@digium.com>
-     Asterisk comes with ABSOLUTELY NO WARRANTY; type 'core show warranty' for details.
-     This is free software, with components licensed under the GNU General Public
-     License version 2 and other licenses; you are welcome to redistribute it under
-     certain conditions. Type 'core show license' for details.
-     =========================================================================
-     Connected to Asterisk certified/11.6-cert15 currently running on mobydick (pid = 7412)
-     mobydick*CLI> sip show peers
-     Name/username             Host                       Dyn Forcerport ACL Port     Status      Description
-     ag1O4pCWU283f91/ag1O4pCWU 10.1.3.128                  D   a             5060     OK (27 ms)
-     VanGtc1Nw750314/VanGtc1Nw 10.1.3.141                  D   a             5060     OK (12 ms)
-     dFMz2RFMH2734e1/dFMz2RFMH 10.1.3.85                   D   a             5060     OK (21 ms)
-     3 sip peers [Monitored: 3 online, 0 offline Unmonitored: 0 online, 0 offline]
-     mobydick*CLI>
-
-Konnte sich ein IP-Gerät ordnungsgemäß anmelden, sehen Sie den Status **OK**. Der Wert in den Klammern zeigt an wie lange es dauert bis das IP-Gerät auf ein SIP-Paket antwortet.
-
-### mobydick Menütaste
+### pascom Menütaste
 
 Nach der Provisionierung entspricht die **Menü**-Taste am Snom IP-Telefon nicht mehr dem Telefon-Menü, sondern ruft das telefonspezifische mobydick Menü auf. Hier sind mobydick Funktionen hinterlegt:
 
@@ -112,8 +107,25 @@ Setzten Sie Rufumleitungen nur über das mobydick Menü, da diese Rufumleitungen
 Die Verwendung der DND-Taste (*do not disturb*) am Snom hat zur Folge, dass die Durchwahl am Telefon nicht erreichbar ist. Der DND-Hinweis erscheint nur am Telefon und hat für die mobydick (z. B. Desktop Client) keine weitere Bedeutung.
 {{% /notice %}}
 
+### Auf die Snom-Weboberfläche zugreifen
+
+Um auf die Weboberfläche Ihres IP-Telefons zu gelangen benötigen Sie die IP-Adresse. Im Folgenden sind Möglichkeiten beschreiben, um diese in Erfahrung zu bringen:
+
+**IP-Adresse am Telefons anzeigen**
+
+Tippen Sie die Taste **?** bzw. **Help** um die IP-Adresse Ihres Telefon anzuzeigen, anschließend wird diese am Display angezeigt.
+
+**IP-Adresse über die Geräteliste ermitteln**
+
+Loggen Sie sich in das Web-UI der mobydick ein. Klicken Sie auf `Endgeräte` > `Geräteliste`. Nun sehen Sie eine ÜBersicht über alle verfügbaren Geräte. Links von jedem Eintrag finden Sie ein *Info*-Symbol. Klicken Sie es an, erhalten Sie eine Übersicht über das provisionierte Telefon, unter anderem auch die IP-Adresse.
+
+**Admin-Rechte**
+
+Um Zugriff zu einigen Menüpunkten in der Web-UI des Snom Telefons zu haben benötigen Sie Admin-Rechte. Klicken Sie hierfür auf den Menüpunkt **Erweitert**. Nun geben Sie das Admin-Passwort ein.
+
 ### Tasten belegen
 
+KLicken Sie in der Menüliste auf der linken Seite auf Funktionstasten.
 Funktionstasten können am Snom IP-Telefon über die Web-UI eingerichtet werden.
 
 **IP-Adresse des Telefons anzeigen**
@@ -138,6 +150,51 @@ Neben Benutzer-Durchwahlen können auch Einbuchcodes für Warteschlangen oder Du
 |**Direktwahl**|Hier kann eine Telefonnummer hinterlegt werden.|
 |**DTMF**|Hier können DTMF-Zeichen hinterlegt werden.|
 
-<!-- ### Basis-Konfiguration
+### Basis-Konfiguration
 
-### Firmwareupdate -->
+Wie bereits erwählt, werden Snom IP-Telefone  mit Hilfe der Basis-Konfiguration provisioniert. Die Basis-Konfigurationen ist unter `Endgeräte` > `Basis-Konfiguration` zu finden.
+
+{{% notice note %}}
+Bevor Sie die Basis-Konfiguration ändern, sollten Sie diese `Duplizieren`, damit Sie im Falle einer Fehl-Konfiguration die "mobydick Werkseinstellungen" zum Vergleich haben.
+{{% /notice %}}
+
+Ebenfalls können Sie eine schon bearbeitete Basis-Konfiguration als `Standard setzten`. Somit erhalten neu angelegte IP-Telefone automatisch die angepasste Basis-Konfiguration.
+
+**Zuweisung einer Basis-Konfiguration**
+
+Eine Basis-Konfiguration kann auf mehreren Wegen zugewiesen werden:
+
++ Über `Endgeräte` > `Basis-Konfiguration` > Basis-Konfiguration auswählen und Bearbeiten im Tab `Geräte` können gleich mehrere IP-Telefone hinzugefügt werden.
++ Über `Endgeräte` > `Geräteliste` > IP-Telefon auswählen und Bearbeiten im Tab `Basisdaten`.
+
+**BLF-Tasten konfigurieren über die Basis-Konfiguration**
+
+Im Tab `Konfiguration` können Sie die vorhandene Basis-Konfiguration anpassen.<br>
+Im Bereich **keys** finden Sie bereits vorkonfigurierte Funktionstasten, an denen Sie dich orientieren können.
+
+Surfen Sie auf das Web-UI Ihres Snom Telefons und belegen Sie unter *Funktionstasten* als Beispiel die Taste **P1**. Wählen Sie als Typ **Nebenstelle**, als Nummer **123** und als Label **Musterbenutzer**. Übernehmen Sie die Einstellungen.
+
+Klicken Sie auf den Menüpunkt *Einstellungen*. Falls Sie den Menüpunkt noch nicht sehen, benötigen Sie [Admin-Rechte](../snom-tischtelefone-300-700-serie/#auf-die-snom-weboberfläche-zugreifen).<br>
+Suchen Sie nach *fkey0* und *fkey_label0*. Die gefundenen Zeilen tragen Sie anschließend in der Basis-Konfiguration über das Web-UI der mobydick ein:
+
+    {{!-- keys --}}
+    fkey0: dest <sip:123@192.168.100.1>
+    fkey_label0: Zentrale
+
+Weisen Sie diese Basis-Konfiguration über den Tab `Geräte` den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und Speichern Sie nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
+
+### Firmwareupdate
+
+mobydick kann IP-Telefone mit passender Firmware versorgen. Unter `Endgeräte` > `Geräte Firmware` finden Sie für jedes unterstütze Modell die von uns empfohlene Firmware.
+
+**Firmware ausrollen**
+
+Die Firmware kann über `Endgeräte` > `Geräteliste` aktualisiert werden. Wählen Sie die Zielgeräte in der Geräteliste mit Häkchen aus und klicken Sie auf `Aktion` > `Firmeware ausrollen`. Nun erhalten Sie eine Übersicht der gewählen Geräte, in der Sie die Zielfirmware auswählen können. Anschließend klicken Sie auf `Firmware update` um die gewählte Firmware auszurollen.
+
+**Firmware hinzufügen**
+
+Sollte Ihre gewünschte Firmware nicht zur Auswahl stehen, können Sie diese unter `Endgeräte` > `Firmware` hinzufügen.
+
+{{% notice note %}}
+Beachten Sie bitte, dass das Ausrollen einer Firmware, die nicht mit der mobydick geliefert wurde, bestimmte mobydick Funtionen nicht mehr unterstützt.
+{{% /notice %}}

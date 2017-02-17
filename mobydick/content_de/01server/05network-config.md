@@ -6,7 +6,6 @@ keywords:
     - Netzwerkinfrastruktur
     - Telefon- und Firmennetzwerken
 description: Es gibt mehrere Möglichkeiten wie Sie mobydick in Ihr Netzwerk integrieren können.
-linken: /server/network-konfiguration/
 url:  /server/netzwerk-konfigurieren/
 prev: /server/lizenzen-verwalten/
 next: /server/dienste/

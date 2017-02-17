@@ -2,10 +2,11 @@
 title: Ämter konfigurieren
 keywords:
 description:
-url:  /trunks/trunk-config/
+url:  /aemter/aemter-konfigurieren/
 weight: 11
 toc: true
-prev: /trunks/
+prev: /aemter/
+next: /aemter/aemter-kette/
 
 ---
 

@@ -27,7 +27,9 @@ Um den Mobile Hub zu konfigurieren wählen Sie `Appliance > Dienste > Mobile Hub
 
 Unter **Nummer** tragen Sie die Nummer ein. unter welcher der mobydick **Mobile Hub** erreichbar ist. Geben Sie hier Ihre Rufnummer an und wählen Sie eine freie Durchwahl. Hier z.B. **99**. Das Smartphone verwendet dann diese Nummer um den Mobile Hub zu erreichen. Geben Sie diese Nummer unbendigt im **internationalen Format** an damit der Mobile Hub auch im Ausland erreichbar ist.
 
-Wenn Sie möchten legt mobydick auch gleich die passende eingehende **Regel** an. Geben Sie hierzu das **Ziel** an. Leider kann das Ziel von Provider zu Provider im Format variieren. //FixME Details siehe Aemter und Rufregeln anlegen.
+Wenn Sie möchten legt mobydick auch gleich die passende eingehende **Regel** an. Geben Sie hierzu das **Ziel** an. Leider kann das Ziel von Provider zu Provider im Format variieren.
+
+<!-- //FixME Details siehe Aemter und Rufregeln anlegen. -->
 
 ### Mobilgeräte für Mobile Hub anlegen
 Nachdem der Mobile Hub eingerichtet ist, müssen noch die zur Nutzung des Mobile Hub berechtigen Mobilgeräte angelegt und den entsprechenden Benutzern zugeteilt werden.
@@ -50,4 +52,3 @@ Unter `Benutzer > Benutzerliste` wählen Sie nun den entpsrechenden Benutzer aus
 mobydick Desktop Client und mobydick Mobility Client verwenden den TCP Port 5222 um mit dem mobydick Server zu kommunizieren. Möchten Sie diesen Service für Ihre Mobilgeräte auch über das Internet nutzen tragen Sie für den **TCP Port 5222** ein Forwarding auf den mobydick Server ein bzw. erstellen Sie eine entsprechnende Zugriffsregel in Ihrer Firewall falls sich der mobydick Server in Ihrer DMZ befindet.
 
 Der Port 5222 ist so voreingestellt, dass er **ausschließlich SSL** Verbindungen akzeptiert.
-

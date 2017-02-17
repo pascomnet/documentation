@@ -6,7 +6,7 @@ keywords:
     - Jobs anlegen
 description: Mit Cronjobs können Sie in Ihrer mobydick für einige Aufgaben Zeitpläne hinterlegen.
 linken: /server/automation/
-url: /server/automasierung/
+url: /server/automatisierung/
 prev: /server/update/
 weight: 19
 toc: true

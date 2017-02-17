@@ -2,9 +2,9 @@
 title: Telefonbuch
 keywords:
 description:
-url: /user/phonebook/
-prev: /user/teams/
-<!-- next: /user/connector/ -->
+url: /benutzer/telefonbuch/
+prev: /benutzer/teams/
+next: /benutzer/connector/
 weight: 24
 toc: true
 draft: false
