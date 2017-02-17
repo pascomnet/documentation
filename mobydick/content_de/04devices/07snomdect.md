@@ -2,12 +2,12 @@
 title: snom SIP Dect einrichten
 keywords:
 description:
-url:  /endgeraete/snom-dect-system-anbindent/
-prev: /endgeraete/openstage-ip-tischtelefone/
-next: /endgeraete/softphone-einrichten/
+prev: /endgeraete/beliebiges-ip-geraet/
+url:  /endgeraete/snom-dect/
+next: /endgeraete/aastra-dect/
 weight: 47
 toc: true
-draft: true
+draft: false
 ---
 
 
@@ -21,7 +21,7 @@ Für die automatische Inbetriebnahme des snom DECT Systems ist ein funktionieren
 {{% /notice %}}
 
 ### Basisstationen anschließen
-Schließen Sie jetzt alle Basisstationen, die Sie verwenden wollen, an das Netzwerk an. Diese werden nach dem Bootvorgang automatisch in der Liste der Gateways (Gateways > Gatewayliste`) erscheinen:
+Schließen Sie jetzt alle Basisstationen, die Sie verwenden wollen, an das Netzwerk an. Diese werden nach dem Bootvorgang automatisch in der Liste der Gateways ('Gateways' > 'Gatewayliste') erscheinen:
 
 
 Das Feld **Status** hat aktuell keine Aussagekraft. Die Warnung mit dem "Steckersymbol" ist normal.
@@ -32,7 +32,7 @@ Falls Sie mehrere Gateways zum Multizellenbetrieb vernetzen möchten markieren S
 Wählen Sie für eines der Gateways unter Multi Cell den Wert Baisisstation aus, auf allen anderen Gateways Repeater aus. Durch die Pfeilschaltfläche können Sie durch alle zuvor markierten Gateways navigieren und die Änderungen entsprechend vornehmen.
 
 ### Handsets anlegen und zuweisen
-Wählen Sie unter `Endgeräte > Geräteliste > Hinzufügen` den Eintrag Via snom DECT Gateway: Mobilteil aus:
+Wählen Sie unter `Endgeräte` > `Geräteliste` > `Hinzufügen` den Eintrag Via snom DECT Gateway: Mobilteil aus:
 
 darauf hin können Sie die Details für dieses Handset festlegen und einen Benutzer oder Arbeitsplatz zuweisen:
 
