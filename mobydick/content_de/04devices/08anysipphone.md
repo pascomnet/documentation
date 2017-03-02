@@ -1,8 +1,7 @@
 ---
 prev: /endgeraete/snom-tischtelefone-300-700-serie/
 url:  /endgeraete/beliebiges-ip-geraet/
-next: /endgeraete/snom-dect/
-weight: 45
+weight: 48
 title: Beliebiges IP Endgerät einrichten
 keywords:
     - Softphone integrieren

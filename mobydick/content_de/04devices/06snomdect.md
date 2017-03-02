@@ -5,7 +5,7 @@ description:
 prev: /endgeraete/beliebiges-ip-geraet/
 url:  /endgeraete/snom-dect/
 next: /endgeraete/aastra-dect/
-weight: 47
+weight: 46
 toc: true
 draft: false
 ---

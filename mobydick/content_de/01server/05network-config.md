@@ -80,8 +80,9 @@ Beim Windows DHCP-Server oder anderen DHCP Servern die diesem Optionsschema folg
 
 |Telefonhersteller|Option 66|Option 67|
 |---|---|---|
-|Yealink|http://192.168.1.1/provisioning||
 |Snom|http://192.168.1.1/provisioning/{mac}||
+|Yealink|http://192.168.1.1/provisioning||
+|Grandstream|http://192.168.1.1/provisioning||
 |Auerswald|http://192.168.1.1/provisioning|\<MACADR\>|
 |Aastra/Mitel|http://192.168.1.1/provisioning||
 |Siemens OpenStage|http://192.168.1.1/provisioning||
@@ -90,9 +91,10 @@ Es ist auch möglich den mobydick DHCP und den Windows DHCP im selben Netz zu be
 
 |Telefonhersteller|MAC-Adresse|
 |---|---|
-|SNOM|00-04-13-\*-\*-\*|
-|Aastra|00-08-5D-\*-\*-\*|
+|Snom|00-04-13-\*-\*-\*|
 |Yealink|00-15-65-\*-\*-\*|
+|Grandstream|00-0B-82-\*-\*-\*|
+|Aastra|00-08-5D-\*-\*-\*|
 |Auerswald|00-09-52-\*-\*-\*|
 |Siemens OpenStage|00-01-E3-\*-\*-\* <br> 00-1A-E8-\*-\*-\*|
 
@@ -102,8 +104,9 @@ Unter Linux heißt die Option 66 tftp-server-name und die Option 67 filename. Du
 
 |Telefonhersteller|tftp-server-name|filename|
 |---|---|---|
-|Yealink|http://192.168.1.1/provisioning||
 |Snom|http://192.168.1.1/provisioning/{mac}||
+|Yealink|http://192.168.1.1/provisioning||
+|Grandstream|http://192.168.1.1/provisioning||
 |Auerswald|http://192.168.1.1/provisioning|\<MACADR\>|
 |Aastra/Mitel|http://192.168.1.1/provisioning||
 |Siemens OpenStage|http://192.168.1.1/provisioning||

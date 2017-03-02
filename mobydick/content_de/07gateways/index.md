@@ -1,5 +1,5 @@
 ---
-title: ISDN & Analog Schnittstellen
+title: Analog- und ISDN-Gateways
 next: /isdn-analog/grandstream-ata-ht-serie/
 url: /isdn-analog/
 weight: 7
@@ -8,4 +8,4 @@ chapter: true
 
 ---
 
-# ISDN & Analog Schnittstellen
+# Analog- und ISDN-Gateways

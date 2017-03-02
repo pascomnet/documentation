@@ -5,7 +5,7 @@ description:
 url:  /endgeraete/analog-und-isdn-geraete/
 next: /endgeraete/aastra-dect-system-anbinden/
 prev: /endgeraete/beliebiges-ip-geraet-einrichten/
-weight: 46
+weight: 49
 toc: true
 draft: true
 

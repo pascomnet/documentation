@@ -13,7 +13,7 @@ keywords:
 description: Integrieren Sie Ihre Snom IP-Tischtelefone in die mobydick.
 prev: /endgeraete/
 url:  /endgeraete/snom-tischtelefone-300-700-serie/
-next: /endgeraete/beliebiges-ip-geraet/
+next: /endgeraete/grandstream-tischtelefone-gxv-gxp-serie/
 weight: 41
 toc: true
 
@@ -24,13 +24,13 @@ toc: true
 
 ## Kompatibilität
 
-|Provisionierung|Firmware-Verwaltung|Fernsteuerung über Desktop Client|pascom Menü|
+|Provisionierung|Firmware-Verwaltung|Fernsteuerung über Desktop-Client|pascom Menü|
 |---|---|---|---|
 |ja|ja|ja|ja|
 
 **Provisionierung**: Das IP-Telefon wird über die mobydick verwaltet.<br>
 **Firmware-Verwaltung**: Die Firmware kann über mobydick aktualisiert werden.<br>
-**Fernsteuerung über Desktop-Client**: Gespräche können über den Desktop Client gestartet werden.<br>
+**Fernsteuerung über Desktop-Client**: Gespräche können über den Desktop-Client gestartet werden.<br>
 **pascom Menü**: An einer Taste am Telefon wird das pascom Menü hinterlegt.
 
 
@@ -63,7 +63,7 @@ Nach der erfolgreichen Provisionierung sollte das IP-Telefon am Display die rich
 Nach der Provisionierung des IP-Telefons wird von mobydick der Admin-User neu gesetzt.
 <br>Username: *admin*
 <br>Passwort: *0000*
-{{% /notice %}}
+{{% /notice  %}}
 
 Das Passwort des Admin-Users am IP-Telefon kann über die Systemeinstellungen im Web-UI geändert werden. Suchen Sie in dem Suchfeld nach dem Parameter *sys.peripherals.access.password*. Geben Sie Ihren gewünschten Wert ein. Anschließend müssen Sie manuell die Telefonie-Konfiguration anwenden und die Endgeräte neustarten.
 
@@ -91,8 +91,7 @@ Nach der Provisionierung entspricht die **Menü**-Taste am Snom IP-Telefon nicht
 |Abmelden [*benutzername*]|Der bereits angemeldete Benutzer kann sich an dem Arbeitsplatz abmelden.|
 |Warteschlagen|Dient zur Verwaltung der Warteschlagen (anmelden, abmelden, pausieren...), je nach Konfiguration der Warteschangen.|
 
-<!--FIXME pascom menütaste wenn menü-taste am snom nicht vorhanden-->
-
+Besitzt das Snom IP-Telefon keine Menütaste (z. B. Snom 300, 710, D715) wird die zweite Funktionstaste mit dem pascom Menü belegt.
 
 {{% notice tip%}}
 Setzten Sie Rufumleitungen nur über das mobydick Menü, da diese Rufumleitungen über die mobydick Verwaltet werden können.
@@ -118,26 +117,18 @@ Loggen Sie sich in das Web-UI der mobydick ein. Klicken Sie auf `Endgeräte` > `
 
 Um Zugriff zu einigen Menüpunkten in der Web-UI des Snom Telefons zu haben benötigen Sie Admin-Rechte. Klicken Sie hierfür auf den Menüpunkt **Erweitert**. Nun geben Sie das Admin-Passwort ein.
 
-### Tasten belegen
+### Tasten belegen über das Web-UI
 
 Klicken Sie in der Menüliste auf der linken Seite auf Funktionstasten.
-Funktionstasten können am Snom IP-Telefon über die Web-UI eingerichtet werden.
-
-**IP-Adresse des Telefons anzeigen**
-
-Tippen Sie die Taste **?** bzw. **Help** um die IP-Adresse Ihres Telefon anzuzeigen, anschließend wird diese am Display angezeigt. Geben Sie die I-Addesse in der Adresszeile Ihres Webbrowsers ein. Sie sehen nun die Konfigurationsoberfläche. KLicken Sie in der Menüliste auf der linken Seite auf Funktionstasten.
 
 **Andere Benutzer (Nebenstellen) überwachen mit BLFs**
 
-<!--FIXME status des benutzers sehen(telefoniert?), pickupmöglichkeit/heranholen -->
-
-Hier können Sie Funktionstasten einrichten, um andere Nebenstellen zu überwachen.
+Hier können Sie Funktionstasten einrichten, um andere Nebenstellen zu überwachen. Die BLF-Taste (Besetztlampenfeld oder Busy Lamp Field) gibt Informationen über den Status der überwachten Durchwahl. Überwachen bedeutet in diesem Fall zu sehen ob ein Benutzer telefoniert, angerufen wird und ggf. sein Gespräch heranzuholen (Pickup).
 
 |Kontext|Typ|Nummer|Kurzform|
 |---|---|---|---|
 |Account wählen|**Nebenstelle**|Die zu überwachende Durchwahl (z. B. 123) in der Form <sip:123@192.168.100.1>.|Besitzt das Telefon statt des Papier-Beschriftungsstreifens ein zweites Display, können hier die Tasten beschriftet werden.|
 
-Die BLF-Taste (Besetztlampenfeld oder Busy Lamp Field) gibt Informationen über den Status der überwachten Durchwahl.
 Neben Benutzer-Durchwahlen können auch Einbuchcodes für Warteschlangen oder Durchwahlschalter konfiguriert werden.
 <!--FIXME Links zu dw-schalter, warteschlangen  -->
 
@@ -182,9 +173,34 @@ Weisen Sie diese Basis-Konfiguration über den Tab `Geräte` den IP-Telefonen zu
 
 ### Firmwareupdate
 
+**Firmware hinzufügen**
+
+Die gewünschte Firmware kann hinzugefügt werden unter `Endgeräte` > `Firmware`:
+
+|Einstellung|Beschreibung|
+|---|---|
+|Firmware-Datei|Laden Sie hier die Firware hoch. Diese finden Sie auf der [Wiki-Seite von Snom](http://wiki.snom.com/Category:Firmware).|
+|Model|Modellbezeichung des Snom-Telefons|
+|Version|Firmware-Version|
+|Dokumentation|Optionales Feld für Notizen|
+
+
+
+**Firmware ausrollen**
+
+Die Firmware kann über `Endgeräte` > `Geräteliste` aktualisiert werden. Wählen Sie die Zielgeräte in der Geräteliste mit Häkchen aus und klicken Sie auf `Aktion` > `Firmware ausrollen`. Nun erhalten Sie eine Übersicht der gewählen Geräte, in der Sie die Zielfirmware auswählen können. Anschließend klicken Sie auf `Firmware update` um die gewählte Firmware auszurollen.
+
+<!-- **Empfohlene Firmware**
+
+|Model|Firmware|
+|---|---|
+|Snom 300|8.7.3.25.5|
+ -->
+
+
 <!--FIXME 7.14, keine mitgelieferte firmware, verweis auf download hersteller, EMPFOHLENE Firmware  -->
 
-mobydick kann IP-Telefone mit passender Firmware versorgen. Unter `Endgeräte` > `Geräte Firmware` finden Sie für jedes unterstütze Modell die von uns empfohlene Firmware.
+<!-- mobydick kann IP-Telefone mit passender Firmware versorgen. Unter `Endgeräte` > `Geräte Firmware` finden Sie für jedes unterstütze Modell die von uns empfohlene Firmware.
 
 **Firmware ausrollen**
 
@@ -196,4 +212,4 @@ Sollte Ihre gewünschte Firmware nicht zur Auswahl stehen, können Sie diese unt
 
 {{% notice note %}}
 Beachten Sie bitte, dass das Ausrollen einer Firmware, die nicht mit der mobydick geliefert wurde, bestimmte mobydick Funtionen nicht mehr unterstützt.
-{{% /notice %}}
+{{% /notice %}} -->

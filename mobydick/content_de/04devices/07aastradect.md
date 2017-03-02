@@ -5,10 +5,10 @@ keywords:
     - Multizellen DECT System
     - Mitel DECT System anbinden
     - VoIP DECT
-description:
-url:  /endgeraete/aastra-dect/
 prev: /endgeraete/beliebiges-ip-geraet-einrichten/
-weight: 48
+url:  /endgeraete/aastra-dect/
+next: /endgeraete/beliebiges-ip-geraet/
+weight: 47
 toc: true
 
 ---
