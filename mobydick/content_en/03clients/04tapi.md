@@ -22,9 +22,9 @@ toc: true
 
 
 ## What is the TAPI?
-The Microsoft **T**elephony **A**pplication **P**rogramming **I**nterface is a interface from the 1990s with which any number of applications are able to communicate with phone systems (telephones respectively) via an unified interface, without having exact knowledge relating to the functions of the connected phones. Microsoft has made a set of uniform functions available, which along with the applications (e.g. Outlook, PhoneSuite CTI Client) as well as the phone system developer (mobydick TAPI driver) will need to be implemented. 
+The Microsoft **T**elephony **A**pplication **P**rogramming **I**nterface is a interface from the 1990s with which any number of applications are able to communicate with phone systems (telephones respectively) via an unified interface, without having exact knowledge relating to the functions of the connected phones. Microsoft has made a set of uniform functions available, which along with the applications (e.g. Outlook, PhoneSuite CTI Client) as well as the phone system developer (pascom TAPI driver) will need to be implemented. 
 
-the mobydick TAPI driver is in this respect not a stand alone programme, but rather dynamic libary (DLL) which is either loaded or unloaded according to requests from the Microsoft-TAPI-Server (Telefoniedienst) 
+The [pascom VoIP Phone System] (https://www.pascom.net/en/mobydick-voip/ "pascom VoIP phone systems") TAPI driver is in this respect not a stand alone programme, but rather dynamic libary (DLL) which is either loaded or unloaded according to requests from the Microsoft-TAPI-Server (Telefoniedienst) 
 
 ![Illustration - Tapi Concept](../../images/tapi_driver.png?width=70% "What is the TAPI?")
 
