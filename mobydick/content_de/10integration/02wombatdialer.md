@@ -5,7 +5,7 @@ keywords:
     - Prdeictive Dialer
     - Loway
     - Automatischer Anwahl
-description: Integration eines Predictive Dialers in mobydick. 
+description: Integration eines Predictive Dialers in mobydick.
 url: /integrationen/wombatdialer/
 prev: /integrationen/queuemetrics/
 weight: 102
@@ -51,10 +51,11 @@ Jetzt fügen Sie im Reiter Skript noch folgendes Skript ein:
     same => n,Set(MDC_NUMPREFIX_TRUNK=0)
     same => n,Set(CHANNEL(language)=de)
     same => n,Goto(mdc_external,${EXTEN},1)
-    
+
 Optional können Sie in diesem Skript noch folgende Variablen anpassen:
 
 |Variable|Bedeutung|
+|---|---|
 |CHANNEL(language)|Setzt die Sprache des Kanals für alle Ansagen die Sie später verwenden möchten. Mögliche Werte entnehmen Sie dem Menü Erweitert > Ansagen und dort unter der Schaltfläche Aktion > Sprachen:Verwalten. Sie können alle Werte in der Tabellenspalte Sprachkürzel für die Variable CHANNEL(language) verwenden.|
 |MDC_NUMPREFIX_TRUNK|	Falls Sie mobydick so konfiguriert haben, dass Sie ein Prefix (z. B. die 0) für Ihr Standardamt vorwählen müssen, tragen Sie dieses Prefix auch in der Variable MDC_NUMPREFIX_TRUNK ein.|
 {{% notice note %}}
@@ -74,7 +75,7 @@ Geben Sie hier den Befehl sip show peers ein. Dann erhalten Sie folgende Ausgabe
     2 sip peers [Monitored: 2 online, 0 offline Unmonitored: 0 online, 0 offline]
     mobydick*CLI>
 
-Alle internen Namen für Ämter beginnen mit mdc_trunk_conf- (in unserem Fall mdc_trunk_conf-1). Anhand des Usernamen (in unserem Fall dev-test) und der Host Adresse (in unserem Fall 172.16.214.10) können Sie in den meisten Fällen ermitteln welcher interne Name zu welchem Amt gehört. 
+Alle internen Namen für Ämter beginnen mit mdc_trunk_conf- (in unserem Fall mdc_trunk_conf-1). Anhand des Usernamen (in unserem Fall dev-test) und der Host Adresse (in unserem Fall 172.16.214.10) können Sie in den meisten Fällen ermitteln welcher interne Name zu welchem Amt gehört.
 
 ### WombatDialer installieren
 Setzen Sie WombatDialer gemäß der [Anleitung des Herstellers](https://www.wombatdialer.com/ "Zur Herstellerseite") auf einem separaten Server auf.

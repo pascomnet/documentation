@@ -91,3 +91,6 @@ mobydick verwendet Asterisk als Telefoniesoftware. Asterisk bietet ein Command L
      mobydick*CLI>
 
 Weitere Details zur Asterisk-CLI finden Sie unter [http://www.voip-info.org/wiki/view/Asterisk+CLI](http://www.voip-info.org/wiki/view/Asterisk+CLI "Details zu Asterisk CLI")
+
+
+<!--FIXME zugriff miniappl.  -->
