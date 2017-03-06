@@ -1,13 +1,13 @@
 ---
 title: mobydick Desktop Client Installation
-keywords: 
+keywords:
     - Desktop Client
     - Desktop Client Installation
     - mobydick Client User Guide
-    - mobydick mobile hub 
+    - mobydick mobile hub
     - mobydick mobile clients
     - Installation on a desktop using admin rights
-description: mobydick Desktop Client installation, deployment and login. 
+description: mobydick Desktop Client installation, deployment and login.
 url: /clients/client-installation/
 prev: /clients/
 next: /clients/client-user-guide/
@@ -17,7 +17,7 @@ toc: true
 ---
 
 ## Installation
-The installation of the client does not require administrative privileges and thus can be done by the users themselves. Moreover, the client is available to download for every user from your pascom VoIP software server. For more information about our [our VoIP Software solutions] (https://www.pascom.net/en/mobydick-voip/ "pascom VoIP phone systems"), please visit our website. 
+The installation of the client does not require administrative privileges and thus can be done by the users themselves. Moreover, the client is available to download for every user from your pascom VoIP software server. For more information about [our VoIP Software solutions] (https://www.pascom.net/en/mobydick-voip/ "pascom VoIP phone systems"), please visit our website. 
 ![Screenshot - installation mobydick Desktop Client](../../images/client_themes.jpg?width=70% "installation mobydick Desktop Client")
 
 Downloading the software from the pascom VoIP phone system server does not require authentication. Just select the **Service tab** on the mobydick **login screen**.
@@ -29,7 +29,7 @@ Downloading the software from the pascom VoIP phone system server does not requi
 3. Next, there are various options available depending on your requirements:
 
 #### Standard Installation
-* Once the download is finished, double click the file to start the standard installation which can be completed by following the steps below: 
+* Once the download is finished, double click the file to start the standard installation which can be completed by following the steps below:
 
 ![Screenshot - standard installation](../../images/client_install_standard.png?width=100% "standard installation")
 

@@ -20,7 +20,7 @@ toc: true
 
 ## mobydick Basisdaten ##
 
-Bevor die mobydick in Betrieb genommen werden kann, müssen noch einige Basisdaten eingegeben werden. Klicken Sie in der Web-UI auf `Appliance` > `Dienste` und bleiben Sie vorerst im Tab `Basisdaten`:
+Bevor die [unsere VoIP Software](https://www.pascom.net/de/mobydick-voip/ "pascom VoIP Software") in Betrieb genommen werden kann, müssen noch einige Basisdaten eingegeben werden. Klicken Sie in der Web-UI auf `Appliance` > `Dienste` und bleiben Sie vorerst im Tab `Basisdaten`:
 
 |Einstellung|Beschreibung|
 |---|---|

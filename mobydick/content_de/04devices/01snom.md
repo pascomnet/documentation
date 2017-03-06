@@ -24,6 +24,8 @@ toc: true
 
 ## Kompatibilität
 
+[Unsere VoIP Telefonanlage](https://www.pascom.net/de/mobydick-voip/ "unsere VoIP Telefonanalge") unterstützt eine große Auswahl an IP-Telefonen des Herstellers Snom.
+
 |Provisionierung|Firmware-Verwaltung|Fernsteuerung über Desktop Client|pascom Menü|
 |---|---|---|---|
 |ja|ja|ja|ja|

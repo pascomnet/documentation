@@ -14,7 +14,7 @@ Wir bieten Unterstützung für alle Patton-Gateways die mit SmartWare 5.3 oder h
 
 ### Patton Gateway
 
-Das Patton Gateway wird an die LAN Verkabelung angeschlossen und erhält eine IP-Adresse aus dem Telefonnetz. An die Anschlüsse des Gateways werden dann z.B. das öffentliche Telefonnetz bzw. analoge Endgeräte angeschlossen. Durch die Anbindung per LAN eigenen sich Patton Gateways ideal für Umgebungen in denen mobydick in einer virtuellen Maschine betrieben wird.
+Das Patton Gateway wird an die LAN Verkabelung angeschlossen und erhält eine IP-Adresse aus dem Telefonnetz. An die Anschlüsse des Gateways werden dann z.B. das öffentliche Telefonnetz bzw. analoge Endgeräte angeschlossen. Durch die Anbindung per LAN eigenen sich Patton Gateways ideal für Umgebungen in denen mobydick [in einer virtuellen Maschine](https://www.pascom.net/de/mobydick-virtuell/ "in einer virtuellen Maschine") betrieben wird.
 
 ### ISDN und Analoge Nebenstellen
 #### Anbindung via SIP
@@ -36,13 +36,13 @@ Wählen Sie in der mobydick Weboberfläche Gateways > Gatewayliste  und drücken
 Gelingt dies nicht, oder befindet sich ein Patton Gateway in einem anderen Netzsegment als die mobydick haben Sie im Anschluss die Möglichkeit das Gerät per Schaltfäche Manuell anlegen hinzuzufügen.
 In der Dropdownbox Gateways sehen sie alle vom System erkannten Patton Gateways:
 
-In den Felder Benutzername und Passwort geben Sie die Zugangsdaten für den auf dem Patton Gateway befindlichen Webserver an. Im Auslieferungszustand sind diese administrator OHNE Passwort. Eine Änderung von Benutzernamen und Passwort ist an dieser Stelle nicht möglich. 
+In den Felder Benutzername und Passwort geben Sie die Zugangsdaten für den auf dem Patton Gateway befindlichen Webserver an. Im Auslieferungszustand sind diese administrator OHNE Passwort. Eine Änderung von Benutzernamen und Passwort ist an dieser Stelle nicht möglich.
 Drücken Sie auf die Schaltfläche Weiter. In der nächsten Maske sehen Sie noch einmal eine Zusammenfassung und Portkonfiguration:
 
 Sie haben nun die Möglichkeit die Bezeichnung anzupassen und den Vorgang durch Speichern abzuschließen.
 
 ### ISDN Amtsleitungen anlegen
-In vielen Fällen werden Patton Gateways dazu verwendet ISDN Amtsleitungen daran anzuschließen. Selektieren Sie hierzu das entsprechende Gateway aus der Liste aus, wählen Sie  und schalten Sie dann auf den Tab Belegung um: 
+In vielen Fällen werden Patton Gateways dazu verwendet ISDN Amtsleitungen daran anzuschließen. Selektieren Sie hierzu das entsprechende Gateway aus der Liste aus, wählen Sie  und schalten Sie dann auf den Tab Belegung um:
 
 Unter Hinzuführen können Sie entweder BRI oder PRI Amtsleitungen konfigurieren. Siehe ISDN im Allgemeinen falls Sie mit den Begrifflichkeiten nicht vertraut sind. Dieser Vorgang fügt einen neuen Datensatz ein.
 
