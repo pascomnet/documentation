@@ -24,7 +24,7 @@ We support all Patton gateways running SmartWare 5.3 or higher.
 
 ### Patton Gateway
 
-Once it is connected to the LAN, the Patton gateway is assigned an IP address from the telephony network. The ports of the gateway can be connected to the public telephone network or analogue terminal devices. Due to the LAN connection, Patton gateways are idealy suited to be operated in environments where mobydick is run inside virtual machine
+Once it is connected to the LAN, the Patton gateway is assigned an IP address from the telephony network. The ports of the gateway can be connected to the public telephone network or analogue terminal devices. Due to the LAN connection, Patton gateways are idealy suited to be operated in environments where mobydick is operated and managed inside [in a virtual machine] (https://www.pascom.net/en/mobydick-virtual/ "pascom VoIP phone systems").
 
 ### ISDN and analogue extensions
 

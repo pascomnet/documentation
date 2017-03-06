@@ -49,6 +49,7 @@ Vermeiden Sie wenn möglich mehr als zwei Ebenen. Stark verschachtelte Abfrageme
 
 Wählen Sie in der mobydick Weboberfläche `Erweitert > IVR`. Wenn Sie ein neues IVR hinzufügen möchten drücken Sie `+Hinzufügen`. Falls Sie ein bestehendes IVR bearbeiten wollen markieren Sie dies in der Liste und wählen `Bearbeiten`.
 ![Screenshot - IVR hinzufügen](../../images/ivr_hinzufuegen.png?width=90% "IVR hinzufügen")
+
 |Parameter|Bedeutung|
 |---------|---------|
 |Bezeichnung|Allgemeine Bezeichnung des IVR Menüs.
@@ -63,6 +64,7 @@ Wählen Sie in der mobydick Weboberfläche Erweitert > IVR markieren Sie das gew
 
 Wählen Sie `+Hinzufügen` um einen neuen Eintrag hinzuzufügen.
 ![Screenshot - IVR Einträge erstellen](../../images/ivr_eintrage.png?width=90% "IVR Einträge erstellen")
+
 |Parameter|Bedeutung|
 |---------|---------|
 |Bezeichnung|Allgemeine Bezeichnung des Eintrages.|

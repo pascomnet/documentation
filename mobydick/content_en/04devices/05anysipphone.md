@@ -17,7 +17,7 @@ toc: true
 ## Setup IP Phones & Softphones - Generic Vendors
 
 {{% notice tip %}}
-mobydick offers Out-of-the-Box telephony thanks to incorporating a fully integrated softphone Windows, MacOSx and Linux. The softphone is automatically deployed with the mobydick desktop client. More information can be found under mobydick [Desktop Client User Guide]({{< relref "02client-user.md" >}})
+Our [VoIP Software] (https://www.pascom.net/en/mobydick-voip/ "pascom VoIP phone systems") provides businesses with an Out-of-the-Box telephony solution thanks to incorporating a fully integrated softphone for Windows, MacOSx and Linux. The softphone is automatically deployed with the mobydick desktop client. More information can be found under mobydick [Desktop Client User Guide]({{< relref "02client-user.md" >}})
 {{% /notice %}}
 mobydick is designed to be compatible with every SIP enabled device. Compared to devices from the vendors Snom, Yealink, Auerswald, Aastra and OpenStage, all other SIP devices are not automatically provisioned by mobydick. Therefore, all other SIP devices will not be automatically added to the device list and a SIP peer will not be automatically added.
 

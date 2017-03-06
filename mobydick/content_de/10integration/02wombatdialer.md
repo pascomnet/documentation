@@ -55,8 +55,10 @@ Jetzt fügen Sie im Reiter Skript noch folgendes Skript ein:
 Optional können Sie in diesem Skript noch folgende Variablen anpassen:
 
 |Variable|Bedeutung|
+|---------|---------|
 |CHANNEL(language)|Setzt die Sprache des Kanals für alle Ansagen die Sie später verwenden möchten. Mögliche Werte entnehmen Sie dem Menü Erweitert > Ansagen und dort unter der Schaltfläche Aktion > Sprachen:Verwalten. Sie können alle Werte in der Tabellenspalte Sprachkürzel für die Variable CHANNEL(language) verwenden.|
 |MDC_NUMPREFIX_TRUNK|	Falls Sie mobydick so konfiguriert haben, dass Sie ein Prefix (z. B. die 0) für Ihr Standardamt vorwählen müssen, tragen Sie dieses Prefix auch in der Variable MDC_NUMPREFIX_TRUNK ein.|
+
 {{% notice note %}}
 Vergessen Sie bitte nicht jetzt alle vorgeschlagenen Jobs in der mobydick anzuwenden damit die Konfiguration aktiv wird.
 {{% /notice %}}
@@ -100,11 +102,14 @@ ${num} wird von WombatDialer später immer durch die anzurufende Telefonnummer e
 Ein End Point ist das Ziel in der mobydick mit dem der zuvor über den Trunk angerufene externe Teilnehmer verbunden wird. Hierzu eigenen sich z. B. mobydick Teams, Benutzer, IVR oder Skripte. Es gibt zwei verschiedene Endpointtypen:
 
 |Parameter|Bedeutung|
+|---------|---------|
 |QUEUE|	Wollen Sie die Zielrufnummer mit einem mobydick Team verbinden nutzen Sie diesen Endpointtyp. Dadurch überwacht WombatDialer auch die Verfügbarkeit der Agenten, etc.|
 |PHONE|	Bei allen anderen Endpoints wie Benutzer, IVR-Menüs oder Skripten nutzen Sie diesen Endponttyp|
 
 Weitere Parameter die Sie bei einem Endpoint einstellen müssen:
 
+|Parameter|Bedeutung|
+|---------|---------|
 |Queue name / Phone|	Name des Endpoint. Wenn Sie den Endpointtyp QUEUE benutzen muss der Name mit dem Namen des Teams in mobydick exact übereinstimmen. Ansonsten ist dieser frei wählbar|
 |Located at: Extension	|Die Durchwahl des Teams, Benuter, IVR, Skript, ...|
 |Located at: Context	|Ist immer wombat. Dadurch wird für den Einstieg in den mobydick Dialplan immer das weiter oben angelegte Skript benutzt.|
