@@ -19,7 +19,7 @@ toc: true
 
 Das Microsoft Telephony Application Programming Interface (**TAPI**) ist eine in den 90er Jahren spezifizierte Schnittstelle, mit der ein beliebiges Anwendungsprogramm über eine einheitliche Schnittstelle mit Telefonanlagen bzw. Telefonen kommunizieren kann, ohne eine exakte Kenntnis von der Funktionsweise des jeweiligen Telefones zu haben. Microsoft stellt hierzu einen Satz einheitlicher Funktionen bereit, die sowohl vom Anwendungsprogramm (z. B. Outlook, Phone Suite CTI Client) als auch dem Telefonanlagen-Hersteller (mobydick TAPI Treiber) implementiert werden müssen.
 
-Der TAPI-Treiber der [pascom VoIP Telefonanlage] (https://www.pascom.net/en/mobydick-voip/ "pascom VoIP Telefonanlage") ist hierbei kein eigenständiges Programm, sondern nur eine dynamische Bibliothek (DLL), die je nach Anforderung vom Microsoft-TAPI-Server (Telefoniedienst) geladen oder wieder entladen wird.
+Der TAPI-Treiber der [pascom VoIP Telefonanlage] (https://www.pascom.net/de/mobydick-voip/ "pascom VoIP Telefonanlage") ist hierbei kein eigenständiges Programm, sondern nur eine dynamische Bibliothek (DLL), die je nach Anforderung vom Microsoft-TAPI-Server (Telefoniedienst) geladen oder wieder entladen wird.
 
 ![Illustration - Tapi Konzept](../../images/tapi_treiber.png?width=70% "Was ist die TAPI")
 
