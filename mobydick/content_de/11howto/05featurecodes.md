@@ -5,7 +5,6 @@ keywords:
     - funktionscodes
     - sternchencodes
 description: Zusammenfassung der mobydick Funktionscodes
-prev: /howto/festplatte-erweitern/
 url: /howto/funktionscodes/
 weight: 125
 toc: true

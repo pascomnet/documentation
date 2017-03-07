@@ -11,7 +11,6 @@ keywords:
 description: Overview of pascom IP PBX Function Codes / Service Codes
 url: /howto/service-codes/
 linkde: /howto/funktionscodes/
-prev: /howto/harddisk-expansion/
 weight: 125
 toc: true
 ---
