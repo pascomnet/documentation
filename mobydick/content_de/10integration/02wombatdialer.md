@@ -5,7 +5,7 @@ keywords:
     - Prdeictive Dialer
     - Loway
     - Automatischer Anwahl
-description: Integration eines Predictive Dialers in mobydick. 
+description: Integration eines Predictive Dialers in mobydick.
 url: /integrationen/wombatdialer/
 prev: /integrationen/queuemetrics/
 weight: 102
@@ -13,12 +13,15 @@ toc: true
 ---
 
 ## Übersicht
-WombatDialer ist ein Predictive Dialer der Firma Loway. WombatDialer automatisiert den Aufbau von Telefonverbindungen und ersetzt die umständliche, zeitaufwendige manuelle Anwahl. Somit erreichen Sie z. B. bei Telefonkampagnen eine bessere Auslastung Ihrer Callcenter Agenten. Weitere Anwendungsszenarien können Sie auf der WombatDialer Homepage nachlesen.
+
+WombatDialer ist ein Predictive Dialer der Firma Loway. WombatDialer automatisiert den Aufbau von Telefonverbindungen und ersetzt die umständliche, zeitaufwendige manuelle Anwahl. Somit erreichen Sie z. B. bei Telefonkampagnen eine bessere Auslastung Ihrer Callcenter Agenten. Weitere Anwendungsszenarien können Sie auf der WombatDialer Homepage nachlesen oder besuchen Sie unsere Webseite um [mehr über Callcenter Funktionen](https://www.pascom.net/de/contact-call-center/ mehr über Callcenter Funktionen) zu erfahren.
 
 ![Illustration - WombatDialer Konzept mit mobydick](../../images/wombatdialer_overview.png?width=90% "WombatDialer Konzept mit mobydick")
 
 
-Der WombatDialer wird auf einem separaten Server (nicht direkt auf der mobydick) installiert. Zur Kommunikation mit der mobydick baut der WombatDialer eine Verbindung per Asterisk Manager Interface auf. Auf dem WombatDialer wird eine Liste mit anzurufenden Telefonnummer hinterlegt. Diese werden dann nach Start der Kampagne automatisiert angerufen (1) und, sobald ein Ruf beantwortet wird,  (2) mit einem beliebigen Ziel auf der mobydick verbunden. Als Ziele eigenen sich z. B. Teams, einzelne User, IVR-Menüs oder Skripte.
+Der WombatDialer wird auf einem separaten Server (nicht direkt auf der mobydick) installiert. Zur Kommunikation mit der mobydick baut der WombatDialer eine Verbindung per Asterisk Manager Interface auf. Auf dem WombatDialer wird eine Liste mit anzurufenden Telefonnummer hinterlegt. Diese werden dann nach Start der Kampagne automatisiert angerufen (1) und, sobald ein Ruf beantwortet wird, (2) mit einem beliebigen Ziel auf der mobydick verbunden. Als Ziele eigenen sich z. B. Teams, einzelne User, IVR-Menüs oder Skripte.
+
+
 
 ## Konfiguration
 
@@ -41,7 +44,7 @@ Zur Integration benötigen Sie ein Skript auf der mobydick. Bei neueren Versione
 
 Jetzt fügen Sie im Reiter Skript noch folgendes Skript ein:
 
-    exten => _X.,1,NoOp(WombatDialer)
+    exten => _ X.,1,NoOp(WombatDialer)
     same => n,Wait(0.25)
     same => n,Set(MDC_CALLER_NUM_TRUNK=${CALLERID(num)})
     same => n,Set(MDC_CALLER_NUM_INTERNAT=${CALLERID(num)})
@@ -51,7 +54,7 @@ Jetzt fügen Sie im Reiter Skript noch folgendes Skript ein:
     same => n,Set(MDC_NUMPREFIX_TRUNK=0)
     same => n,Set(CHANNEL(language)=de)
     same => n,Goto(mdc_external,${EXTEN},1)
-    
+
 Optional können Sie in diesem Skript noch folgende Variablen anpassen:
 
 |Variable|Bedeutung|
@@ -76,7 +79,7 @@ Geben Sie hier den Befehl sip show peers ein. Dann erhalten Sie folgende Ausgabe
     2 sip peers [Monitored: 2 online, 0 offline Unmonitored: 0 online, 0 offline]
     mobydick*CLI>
 
-Alle internen Namen für Ämter beginnen mit mdc_trunk_conf- (in unserem Fall mdc_trunk_conf-1). Anhand des Usernamen (in unserem Fall dev-test) und der Host Adresse (in unserem Fall 172.16.214.10) können Sie in den meisten Fällen ermitteln welcher interne Name zu welchem Amt gehört. 
+Alle internen Namen für Ämter beginnen mit mdc_trunk_conf- (in unserem Fall mdc_trunk_conf-1). Anhand des Usernamen (in unserem Fall dev-test) und der Host Adresse (in unserem Fall 172.16.214.10) können Sie in den meisten Fällen ermitteln welcher interne Name zu welchem Amt gehört.
 
 ### WombatDialer installieren
 Setzen Sie WombatDialer gemäß der [Anleitung des Herstellers](https://www.wombatdialer.com/ "Zur Herstellerseite") auf einem separaten Server auf.
