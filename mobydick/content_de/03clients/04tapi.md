@@ -1,13 +1,13 @@
 ---
 title: Tapi Schnittstelle
 keywords:
-    - Tapi Schnittstelle 
+    - Tapi Schnittstelle
     - TAPI Treiber
-    - Microsoft Telephony Application Programming Interface 
+    - Microsoft Telephony Application Programming Interface
     - Telefonie-Funktionen von Windows
     - Windows Tapi Integration
     - Click to Dial unter windows
-description: TAPI ist eine Schnittstelle zwischen den Telefonie-Funktionen von Windows und mobydick 
+description: TAPI ist eine Schnittstelle zwischen den Telefonie-Funktionen von Windows und mobydick
 url: /clients/tapi/
 prev: /clients/teams-im-client/
 next: /clients/mobile-hub-einrichten/
@@ -16,9 +16,10 @@ toc: true
 ---
 
 ## Was ist die TAPI?
-Das Microsoft **T**elephony **A**pplication **P**rogramming **I**nterface ist eine in den 90er Jahren spezifizierte Schnittstelle, mit der ein beliebiges Anwendungsprogramm über eine einheitliche Schnittstelle mit Telefonanlagen bzw. Telefonen kommunizieren kann, ohne eine exakte Kenntnis von der Funktionsweise des jeweiligen Telefones zu haben. Microsoft stellt hierzu einen Satz einheitlicher Funktionen bereit, die sowohl vom Anwendungsprogramm (z. B. Outlook, Phone Suite CTI Client) als auch dem Telefonanlagen-Hersteller (mobydick TAPI Treiber) implementiert werden müssen.
 
-Der mobydick TAPI Treiber ist hierbei kein eigenständiges Programm, sondern nur eine dynamische Bibliothek (DLL), die je nach Anforderung vom Microsoft-TAPI-Server (Telefoniedienst) geladen oder wieder entladen wird.
+Das Microsoft Telephony Application Programming Interface (**TAPI**) ist eine in den 90er Jahren spezifizierte Schnittstelle, mit der ein beliebiges Anwendungsprogramm über eine einheitliche Schnittstelle mit Telefonanlagen bzw. Telefonen kommunizieren kann, ohne eine exakte Kenntnis von der Funktionsweise des jeweiligen Telefones zu haben. Microsoft stellt hierzu einen Satz einheitlicher Funktionen bereit, die sowohl vom Anwendungsprogramm (z. B. Outlook, Phone Suite CTI Client) als auch dem Telefonanlagen-Hersteller (mobydick TAPI Treiber) implementiert werden müssen.
+
+Der TAPI-Treiber der [pascom VoIP Telefonanlage] (https://www.pascom.net/en/mobydick-voip/ "pascom VoIP Telefonanlage") ist hierbei kein eigenständiges Programm, sondern nur eine dynamische Bibliothek (DLL), die je nach Anforderung vom Microsoft-TAPI-Server (Telefoniedienst) geladen oder wieder entladen wird.
 
 ![Illustration - Tapi Konzept](../../images/tapi_treiber.png?width=70% "Was ist die TAPI")
 
@@ -206,7 +207,7 @@ Um Debug-Output aufzeichnen zu können, müssen Sie die Debug-Version des mobydi
 
 {{% row %}}
 {{% col md-6 %}}
-![Screenshot - Tapi anmelden](../../images/tapi_config_mtapi.png?width=70% " Tapi anmelden") 
+![Screenshot - Tapi anmelden](../../images/tapi_config_mtapi.png?width=70% " Tapi anmelden")
 {{% /col %}}
 {{% col md-6 %}}
 ![Screenshot Tapi anmelden Debug](../../images/tapi_config_mtapi_debug.png?width=70% " Debug Tapi anmelden")

@@ -17,6 +17,7 @@ linkde: /server/netzwerk-konfigurieren/
 ---
 
 ## Network Infrastructure
+
 There are several possibilities to integrate mobydick into your network. The below documentation applies to both [our virtual phone systems] (https://www.pascom.net/en/mobydick-virtual/ "virtual pascom VoIP phone systems") as well as our hardware based PBX solutions.
 
 

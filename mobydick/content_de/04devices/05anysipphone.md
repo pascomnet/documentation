@@ -17,8 +17,9 @@ toc: true
 ## IP-Telefone anderer Hersteller & Softphones einrichten
 
 {{% notice tip %}}
-mobydick kommt Out-of-the-Box mit einem vollintegrieten Softphone für Windows, Linux und MacOSx. Dieser wird automatisch mit dem mobydick Client ausgerollt. Alle Informationen unter mobydick [Desktop Client nutzen]({{< relref "02client-user.md" >}})
+Die pascom [VoIP Software](https://www.pascom.net/de/mobydick-voip/ "VoIP Software") kommt Out-of-the-Box mit einem vollintegrieten Softphone für Windows, Linux und MacOS. Dieser wird automatisch mit dem mobydick Client ausgerollt. Alle Informationen unter mobydick [Desktop Client nutzen]({{< relref "02client-user.md" >}})
 {{% /notice %}}
+
 mobydick ist prinzipiell zu jedem SIP-Fähigen Endgerät kompatibel. Im Unterschied zu den Hardware IP-Telefonen von snom, Yealink, Auerswald und openstage werden alle anderen SIP Endgeräte nicht von mobydick provisioniert. Das bedeutet diese erscheinen nicht automatisch in der Geräteliste und mobydick legt hierfür auch kein automatik SIP-Peer an.
 
 Um ein sonstiges IP-Telefon in die mobydick einzubuchen drücken Sie in der Geräteliste auf `Hinzufügen` und wählen als Gerätetyp IP-Telefon: **Hersteller beliebig oder Softphone** aus:
