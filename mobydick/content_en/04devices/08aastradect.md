@@ -9,7 +9,7 @@ keywords:
 description: How to integrate an Aastra MultiCell DECT system with the mobydick phone system.
 url:  /endpoints/integrate-aastra-dect-system/
 linkde: /endgeraete/aastra-dect-system-anbinden/
-prev: /endpoints/generic-ip-endpoints/
+prev: /endpoints/snom-dect-system-setup/
 weight: 48
 toc: true
 ---

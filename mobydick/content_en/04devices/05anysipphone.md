@@ -2,7 +2,7 @@
 url:  /endpoints/generic-ip-endpoints/
 linkde: /endgeraete/beliebiges-ip-geraet-einrichten/
 prev: /endpoints/snom-ip-telephones/
-next: /endpoints/integrate-aastra-dect-system/
+next: /endpoints/snom-dect-system-setup/
 weight: 45
 title: Generic IP Endpoints
 keywords: 
