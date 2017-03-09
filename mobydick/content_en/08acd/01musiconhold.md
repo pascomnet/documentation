@@ -6,14 +6,20 @@ prev: /call-distribution/
 next: /call-distribution/business-hours/
 weight: 71
 toc: true
+description: How to configure Music on Hold (MoH) in your pascom phone system setup. 
+Keywords:
+        - Music on Hold
+        - Custom Prompts
+        - Voice Prompts
+        - Professional Call Distribution and Teams
 ---
 
 ## Concept
 
-During a telephone call, there are numerous situations where you could use prompts (please see The Concept of Actions) or music on hold. mobydick already comes with a number of prompt templates in both German and English. However it might make sense to create your own voice prompts to welcome your customers or inform them about your business hours.    
+During a telephone call, there are numerous situations where you could use prompts (please see The Concept of Actions) or music on hold. pascom phone systems already come with a number of prompt templates in both German and English. However, it might make sense to create your own voice prompts or Music on Hold to welcome and guide your customers or inform them about your business hours.     
 
 {{% notice tip %}}
-If you prefer to create your announcements in a recording studio with the help of professional voice actors, please contact our sales department. They will be glad to help you.
+If you prefer to create your announcements in a recording studio with the help of professional voice actors, please contact our [sales department] (/en/contact/ "contact pascom sales team"). They will be glad to help you.
 {{% /notice %}}
 
 ## Configuration
@@ -86,7 +92,7 @@ Once you have selected a playlist, **Action > Display music** allows you to disp
 
 Compatible formats are **WAV** and **MP3** files.
 
-By pressing the //FixMe button you can create additional playlists to suit your needs. Which playlist is played can be adapted for several scenarios, e.g.under Team and selecting waiting music. This way, you could use specific background music referring to your ticket system for your support team or you can also advertise the latest promotional deals on your sales hotline.
+By pressing the `Add` button you can create additional playlists to suit your needs. Which playlist is played can be adapted for several scenarios, e.g.under Team and selecting waiting music. This way, you could use specific background music referring to your ticket system for your support team or you can also advertise the latest promotional deals on your sales hotline.
 
 Putting a caller on **HOLD** will always cause the **default** playlist to be used.
 

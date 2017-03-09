@@ -7,7 +7,7 @@ keywords:
     - VoIP DECT
 description:
 url:  /endgeraete/aastra-dect/
-prev: /endgeraete/beliebiges-ip-geraet-einrichten/
+prev: /endgeraete/snom-dect/
 weight: 48
 toc: true
 
