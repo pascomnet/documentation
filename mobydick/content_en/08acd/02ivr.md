@@ -2,8 +2,8 @@
 title: Interactive Voice Response Menus
 url: /call-distribution/ivr-menus/
 linkde: /anrufverteilung/ivr-menue/
-prev: /call-distribution/business-hours/
-next: /call-distribution/skills-based-routing/
+prev: /call-distribution/actions/
+next: /call-distribution/business-hours/
 description: Interactive Voice Response (IVR) menus are useful tools for ensuring that callers are routed more effectively and more quickly to the right agent, department or contact by providing callers with a set of options to choose from to qualify the reason for their call.
 Keywords: 
     - IVR
@@ -11,7 +11,7 @@ Keywords:
     - Options Menus
     - ACD
     - Call Routing Menus
-weight: 73
+weight: 72
 toc: true
 ---
 

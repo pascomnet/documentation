@@ -4,7 +4,7 @@ url: /call-distribution/prompts-and-music-on-hold/
 linkde: /anrufverteilung/ansagen_und_wartemusik/
 prev: /call-distribution/
 next: /call-distribution/business-hours/
-weight: 71
+weight: 74
 toc: true
 description: How to configure Music on Hold (MoH) in your pascom phone system setup. 
 Keywords:
@@ -16,10 +16,10 @@ Keywords:
 
 ## Concept
 
-During a telephone call, there are numerous situations where you could use prompts (please see The Concept of Actions) or music on hold. pascom phone systems already come with a number of prompt templates in both German and English. However, it might make sense to create your own voice prompts or Music on Hold to welcome and guide your customers or inform them about your business hours.     
+During a telephone call, there are numerous situations where you could use prompts (please see The Concept of Actions) or music on hold. pascom phone systems already come with a number of prompt templates in both German and English. However, it might make sense to create your own voice prompts or Music on Hold to welcome and guide your customers or inform them about your business hours. This is particularly useful for creating a professional impression and welcoming [callers to your Call Center] (/en/contact-call-center "pascom Contact Center solutions").
 
 {{% notice tip %}}
-If you prefer to create your announcements in a recording studio with the help of professional voice actors, please contact our [sales department] (/en/contact/ "contact pascom sales team"). They will be glad to help you.
+If you prefer to create your announcements in a recording studio with the help of professional voice actors, please contact our [sales department] (/en/consultancy/ "contact pascom sales team"). They will be glad to help you.
 {{% /notice %}}
 
 ## Configuration

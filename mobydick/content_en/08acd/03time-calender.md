@@ -1,9 +1,9 @@
 ---
 title: Business Opening Hours
 url: /call-distribution/business-hours/
-prev: /call-distribution/prompts-and-music-on-hold/
-next: /call-distribution/ivr-menus/
-weight: 72
+prev: /call-distribution/ivr-menus/
+next: /call-distribution/prompts-and-music-on-hold/
+weight: 73
 toc: true
 ---
 
