@@ -2,8 +2,8 @@
 title: Custom Prompts & Music on Hold
 url: /call-distribution/prompts-and-music-on-hold/
 linkde: /anrufverteilung/ansagen_und_wartemusik/
-prev: /call-distribution/
-next: /call-distribution/business-hours/
+prev: /call-distribution/business-hours/
+next: /call-distribution/skills-based-routing/
 weight: 74
 toc: true
 description: How to configure Music on Hold (MoH) in your pascom phone system setup. 

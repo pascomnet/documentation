@@ -9,10 +9,10 @@ description:
 url: /call-distribution/actions/
 linkde: /anrufverteilung/aktionen/
 prev: /call-distribution/
-next: /call-distribution/ivr/
+next: /call-distribution/ivr-menus/
 weight: 71
 toc: true
-draft: true
+draft: false
 ---
 
 ## Concept
@@ -50,95 +50,90 @@ To determine which action set is appropriate, the call origin will be checked fo
 ## Configuration
 
 {{% notice info%}}
-Standardmäßig sind bei neu angelegten Objekten keine Aktionen hinterlegt.
+Per default, we do add any actions for newly added objects.
 {{% /notice %}}
 
-Aktionen werden direkt beim zugehörigen Objekt konfiguriert.
+Actions are directly configured within the objects to which they belong.
 
-### Aktionen am Beispiel-Objekt Benutzer
+### Example Scenario: User Actions
 
-Über `Benutzerliste` > `Benutzer` Benutzer anklicken und `Bearbeiten` können in den entsprechenden Tabs Aktionen
+Select the required user via the menu `Users` > `User list` and press `Edit`. Within the corresponding menu taps, you will be able to configure the actions
 
-+ **Intern/Vorher**
-+ **Intern/Nachher**
-+ **Extern/Vorher**
-+ **Extern/Nachher**
++ **Internal/Before**
++ **Internal/After**
++ **External/Before**
++ **External/After**
 
-angelegt werden.
-
-|Aktions-Typen|Beschreibung|
+|Action Types|Description|
 |---|---|
-|**Ansagen**|Spielt eine Ansage vor. Diese kann hinzugefügt werden unter `Erweitert` > `Ansagen`.|
-|**Voicemailbox**|Verbindet den Anrufer mit einer Voicemailbox. Es kann die eigenen sein, die eines anderen Benutzers oder die eines Teams. Zusätzlich kann bei der Voicemailbox *Hinweis* (dass Benutzer nicht erreichbar oder belegt ist) und *Handhabung* (Ansage, dass der Anrufer eine Nachricht hinterlassen kann) gesetzt werden.|
-|**Auflegen**|Legt den Anruf auf. Diese Aktion z. B. zu empfehlen, wenn dem Anrufer nur eine Ansage vorgespielt wird.|
-|**Skript**|Führt ein Skript aus, das zuvor unter dem Menüpunkt `Erweitert` > `Skripte` erstellt wurde.|
-|**Inline-Script**|Einzeiliges Skript das hier eingetragen werden kann|
-|**Label Setzen**|Labels werden unter `Anrufverteilung` > `Anruf Labels` erstellt und können hier hizugefügt werden. Labels werden dem mobydick Benutzer als Information im Client angezeigt. Es können beliebig viele Labels pro Anrufer gesetzt werden.|
+|**Prompt**|(For versions before & including 7.13.04 - announcement) Plays a prompt which can be added under `Advanced` > `Prompts`.|
+|**Voicemailbox**|Connects the call to a voicemail box. The VM box can be for the user themselves, that of another user or a team. In addition, it is possible to set *Hint* (user not available or busy) as well as a *Handling* (Prompt that the caller can leave a message).|
+|**Hang up**|Hangs up the call. This action is recommended for example when the caller is only play a prompt.|
+|**Script**|Executes a script which has been created under the `Advanced` > `Scripts` menu.|
+|**Inline-Script**|Single line script which can be entered here.|
+|**Set Label**|Labels are configured under `ACD` > `Call Labels` and can be added as an action. Labels are displayed to desktop clients users as additional information regarding the caller and it is possible to set as many labels per caller as you wish. Please note a call label must be configured before you can add them as actions.|
 
-Weitere Aktionen sind:
+Additional Actions:
 
-+ Abwurf auf ein Team (Warteschlage oder Rufgruppe)
-+ Abwurf auf ein IVR
-+ Abwurf auf einen Anrufverteiler
-+ Manueller Abwurf (z. B. aus eine andere Nebenstelle oder eine externe Nummer)
++ Drop on to a team (Queue or Call Group)
++ Drop on to an IVR menu
++ Drop on to a Call Router
++ Add manual dropping (i.e. on to an different extension or on to an external number)
 
 
-### Reihenfolge und Aktionsbedingungen
+### Action Sequencing and Actions Conditions
 
-Werden in einem Aktions-Tab mehrere Aktionen angelegt, werden diese von oben nach unten abgearbeitet. Die Reihenfolge kann mit den blauen Pfeilen um je eine Position nach oben oder nach unten verschoben werden.
+Should you added multiple actions under either the `Internal Before` or `External Before` action tabs, then these will be processed in order from top to bottom. The sequence can be altered using the blue arrow keys to push an action either a position upwards or downwards.
 
 {{% notice tip%}}
-Bitte achten Sie auch auf eine sinnvolle Reihenfolge der Bedingungen. Z. B. sollten zuerst die Urlaubszeiten geprüft werden, und anschließend Geschäftszeiten, da abhängig von der Konfiguration während der Urlaubszeiten die Geschäftszeiten gar nicht mehr geprüft werden müssen.
+Consideration should be paid to a sensible sequencing of conditions, e.g. should the national holiday calendar be checked first before checking business hours as if it is a national holiday, the business hours may not actually need to be checked.
 {{% /notice %}}
 
-Um eine Aktion auszuführen wird eine Bedingung geprüft. Wird bei einer Aktion keine Bedingung ausgewählt, wird die Aktion in jedem Fall ausgeführt.
+In order to perform an action, the condition will be checked. Action lines with **-no-** condition set will be automatically performed by every call setup. Action lines with a condition set will only be performed should the condition be is met. It is also possible to use the same action condition in multiple lines. In this scenario, the actions are performed sequentially. 
 
-Bedingungen werden angelegt unter `Anrufverteilung` > `Aktionsbedingungen`.
+Conditions can be added under `ACD` > `Action Condiditions`.
 
-Zeilen bei denen **keine Bedingung** ausgewählt wird werden immer ausgeführt. Zeilen mit einer bestimmten Bedingung wird nur dann ausgeführt, wenn diese Bedingung tatsächlich zutrifft. Es ist auch möglich, dass mehrere Zeilen die selbe Bedingung zugeteilt bekommen. Dann werden die Aktionen der Reihe nach ausgeführt.
+### Call Status
 
-### Rufstatus
-
-Bei Aktionen Nachher kann zusätzlich zu einer Bedingung auch ein Rufstatus geprüft werden. mobydick merkt sich wieso ein Anrufer nicht zum gewünschten Ziel durchgestellt werden konnte, und führt für den Fall die entsprechende Aktion aus.
+pascom phone systems are able to identify when a caller has not be able to reach their desired contact / team or destination in the call flow and in such scenarios can perform additonal actions - known as `Actions After`. Therefore, in addition to conditions, it is also possible to add a `Call Status` (dial status) to **Actions After**, meaning the state of the call (unavailable or busy) can be checked and different actions can be performed according to the call state.
 
 
-|Rufstatus|Beschreibung|Betrifft Benutzer|Betrifft Warteschlangen|
+|Call Status|Description|Applies to Users|Applies to Queues|
 |---|---|---|---|
-|**-nicht gesetzt-**|Es wird kein Rufstatus geprüft.|*ja*|*ja*|
-|**nicht erreichbar**|Kein zugewiesenes Endgerät ist verfügbar.|*ja*||
-|**keine Antwort**|Der gesetzte Timeout wurde erreicht.|*ja*|*ja*|
-|**belegt**|Benutzer telefoniert.|*ja*||
-|**Warteschlange Voll**|Die maximale Anzahl der Wartenden ist überschritten||*ja*|
-|**Beitritt bei leer**|Aktion wird ausgeführt, wenn der Anrufer die Warteschlage betritt, obwohl kein Agent angemeldet ist.||*ja*|
-|**Verlassen bei leer**|Aktion wird ausgeführt, bevor der Anrufer die Warteschlage verläßt, da kein Agent angemeldet ist.||*ja*|
+|**-not set-**|Call status will not be checked.|*yes*|*yes*|
+|**Not available**|No assigned endpoint is available.|*yes*||
+|**No answer**|Timeout period is exceeded.|*yes*|*yes*|
+|**Busy**|User is busy.|*yes*||
+|**Queue full**|Maximum waiting callers in the queue has been reached.||*yes*|
+|**Entered empty**|Performed when the caller enters a queue even though no agents are currently logged in.||*yes*|
+|**Exit empty**|Performed before the caller leaves a queue with no agents logged in.||*yes*|
 
-<!-- |**Beitritt nicht möglich**|||*ja*|
-|**Verlassen nicht möglich**|||*ja*| -->
+<!-- |**Entry not possible**|||*yes*|
+|**Exit not possible**|||*yes*| -->
 
 
-## Aktionsvorlagen
+## Action Templates 
 
-Für den Fall, dass eine Reihe von Aktionen für mehrere Objekte gelten sollen, können Aktionsvorlagen erstellt werden.
-Eine Aktionsvorlage kann einmal erstellt werden und anschließend auf mehrere Objekte ausgerollt werden.
+In scenarios when a selection of actions could be applied to multilple objects, it is possible to create an action template and apply this template to all objects where it applies.
 
-Legen Sie eine Aktionsvorlage an unter `Anrufverteilung` > `Aktionsvorlagen` > `Hinzufügen`.
+Top add an action template, navigate to `ACD` > `Action templates` > `Add`.
 
-|Einstellung|Beschreibung|
+|Setting|Description|
 |---|---|
-|**Vorlage**|Wählen Sie einen Namen für die Aktionsvorlage|
-|**Objektart**|Benutzer, Team oder IVR|
-|**Rufposition**|Aktion Vorher oder Aktion Nachher|
+|**Template**|Enter a template name|
+|**Object type**|User, Team or IVR menu|
+|**Call position**|Action Before or Action After|
 
-Nach dem `Speichern` können im Tab `Aktionen` diese angelegt werden.
+After clicking `Save` it will then be possible to select the template under the corresponding object and call position via the `Templates` button.
 
-Um Aktionen auf die entsprechende Objekte auszurollen, gehen Sie zurück zur Übersicht (`Anrufverteilung` > `Aktionsvorlagen`), setzten Sie bei der gewünschten Vorlage ein Häkchen und klicken Sie auf `Vorlage ausrollen`.
+In order to distribute actions to the corresponding objects, go back to the `ACD` > `Action templates` overview and select (via checkbox) the desired template and click the `Roll out template` button.
 
-Im ersten Tab stellen Sie noch `Optionen` für die Vorlage ein:
+Under `Options` you can configure the template roll out setup:
 
-|Einstellung|Beschreibung|
+|Setting|Description|
 |---|---|
-|**Modus**|Legt fest, wie mit bereits vorhandenen Aktionen umgegangen wird.|
-|**Wiederholtes zuweisen**|Legt fest, was passiert, wenn Aktionen aus der Vorlage bereits beim Objekt vorhanden sind.|
-|**Anruf Herkunft**|Aktionen gelten für Anrufe von extern oder intern.|
-|**Dialstatus**|siehe [Rufstatus](../aktionen/#rufstatus)|
-|**Bedingung verwenden**|siehe [Aktionsbedingungen](../aktionen/#reihenfolge-und-aktionsbedingungen)|
+|**Mode**|Determines how to deal with existing actions.|
+|**Repeated assign**|Determines what happens when should actions contained within the template already exist by an object.|
+|**Call origin**|Actions apply for Internal or External Calls.|
+|**Call Status**|See [Call Status](..//actions/#call-status)|
+|**Use condition**|See [Action Conditions](../actions/#action-sequencing-and-actions-conditions)|
