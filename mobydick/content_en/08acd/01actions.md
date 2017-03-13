@@ -5,7 +5,7 @@ keywords:
     - callflow
     - Call Distribution
     - pascom PBX ACD
-description:
+description: Actions are used to make call flows and setup throughout your pascom phones system according to destination and call events
 url: /call-distribution/actions/
 linkde: /anrufverteilung/aktionen/
 prev: /call-distribution/
