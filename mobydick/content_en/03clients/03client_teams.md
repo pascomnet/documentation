@@ -17,7 +17,7 @@ toc: true
 ---
 ## Concept
 
-Teams are an essential form of customer engagement and employee collaboration which is why [our VoIP phone system] solutions provide desktop client users with the perfect platform from which to manage their team activities.
+Teams are an essential form of customer engagement and employee collaboration which is why [our VoIP phone system] (https://www.pascom.net/en/mobydick-voip/ "our software based phone system")solutions provide desktop client users with the perfect platform from which to manage their team activities.
 
 ## Team Overviews
 ![Screenshot - Teams in Client](../../images/client_teams.png?width=90% "Teams in Client- Overview")
