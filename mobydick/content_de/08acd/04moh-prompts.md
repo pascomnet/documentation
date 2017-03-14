@@ -31,7 +31,7 @@ Wollen Sie Ihre Ansagen lieber von einem Tonstudio mit professionellem Sprecher 
 Zum Anlegen einer neuen Ansage wählen Sie in der mobydick Weboberfläche `Erweitert > Ansagen` und klicken Sie auf `+Hinzufügen`. Möchten die eine bereits bestehende Ansage bearbeiten, markieren Sie diese und klicken Sie auf `Bearbeiten`.
 
 {{% notice note %}}
-Wir empfehlen Ihnen einen Präfig für Ihre eingenen Ansagen zu verwenden um eine bessere Übersicht zu haben und um die eigenen Ansagen später leichter zu finden. (Z. B. CC-gescheaftszeiten, wobei hier CC für die Firma ChaosConsulting steht)
+Wir empfehlen Ihnen einen Präfix für Ihre eingenen Ansagen zu verwenden um eine bessere Übersicht zu haben und um die eigenen Ansagen später leichter zu finden. (Z. B. CC-gescheaftszeiten, wobei hier CC für die Firma ChaosConsulting steht)
 {{% /notice %}}
 ![Screenshot - Ansagen verwalten](../../images/ansagen_hinzufuegen.png?width=90% "Telefonansagen verwalten in der mobydick")
 

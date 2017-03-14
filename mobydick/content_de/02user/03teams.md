@@ -128,7 +128,7 @@ Zur Auswahl stehen **Freizeichen** und **Wartemusik: "default"**. Möchten Sie e
 
 In diesem Tab können Mitglieder zur Warteschlage hinzugefügt werden. Klicken Sie auf den blauen Pfeil in Richtung rechts um einen Benutzer zuzuweisen. Möchten Sie den Benutzer aus dem Team entfernen, klicken Sie auf den Pfeil in Richtung links.
 
-Wie bereits erwähnt können Benutzer feste oder flexible Agenten in einer Warteschlange sein. Per default ist ein Agent nicht flexibel. Dies können Sie ändern mit einem einem Klick auf das *Flexibel*-Feld. Wählen Sie *Ja*.  
+Wie bereits erwähnt können Benutzer feste oder flexible Agenten in einer Warteschlange sein. Per default ist ein Agent nicht flexibel. Dies können Sie ändern mit einem Klick auf das *Flexibel*-Feld. Wählen Sie *Ja*.  
 Damit sich flexibel Agenten in die Warteschlagen Einbuchen können benötigen Sie einen Einbuchcode. Dieser kann in Tab `Erweitert` definiert werden.
 
 *Beispiel:*<br>

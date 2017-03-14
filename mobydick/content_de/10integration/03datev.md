@@ -1,5 +1,5 @@
 ---
-title: Datev Telefonie-Integration
+title: DATEV Telefonie-Integration
 keywords:
     - datev
     - telefonie basis
@@ -10,7 +10,6 @@ prev: /integrationen/wombatdialer/
 url: /integrationen/datev-telefonie-integration/
 weight: 103
 toc: true
-draft: false
 ---
 
 ## Konzept
@@ -56,7 +55,10 @@ Im mobydick Client können unter `Einstellungen` -> `Adressbücher` Einstellunge
 |Automatische Datenweitergabe|Hier können Sie einstellen, ob Anrufdaten erst nach dem DATEV-Klick oder automatisch in die DATEV-Stammdaten übertragen werden sollen.|
 
 
+### Ausgehender Anruf
 
+Bei Ausgehenden Anrufen werden folgende Funktionen unterstützt:
 
-
-<!-- ### Ausgehender Anruf -->
+* Wird eine Nummer über den moydick Client oder einem Hardware-Telefon gestartet, erscheint in der Gesprächs-Notification der DATEV-Klick. Über den Klick können die Gesprächs-Daten an die DATEV-Software übertragen werden. Ist das Gespräch beendet, können die Daten über den DATEV-Klick aus dem Journal heraus übertragen werden.
+* Wird im  Client-Telefonbuch nach einem Kontakt gesucht, wird auch das DATEV-Telefonbuch durchsucht.
+* Aus der Kontaktliste in der *DATEV Arbeitsplatz pro* kann ebenfalls ein Kontakt angerufen werden.

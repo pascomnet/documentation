@@ -20,18 +20,18 @@ toc: true
 * Drücken Sie auf den Knopf "Teams" (1), um in die Übersicht Ihrer Teams im Unternehmen zu wechseln. Wenn Sie wieder Ihre Kontakte sehen möchten, dann drücken Sie auf den Knopf "Kontakte" direkt neben "Teams"
 * Sie sehen als erstes in der linken Spalte (2) alle vorhanden Teams Ihrer Kontakte. Sie sind in alle Teams angemeldet, welche einen grünen Rahmen besitzen. Grau bedeutet, Sie sind kein aktives Mitglied in der Warteschlage.
 * In dem oberen Bereich (3)  Sehen Sie alle Aktionen, die Sie im Team durchführen können
-* In der zentralen Übersicht (4) haben Sie alle Statistiken Ihres Teams auf einem Blick. 
+* In der zentralen Übersicht (4) haben Sie alle Statistiken Ihres Teams auf einem Blick.
 
- 
+
 ## Funktionstastenübersicht
- 
+
 |Symbol|Funktion|
 |------|--------|
 | ![Screenshot - Hörer](../../images/client_team_phone.png?width=200 "Team anrufen") |Mit dem grünen Telefonhörer können Sie direkt das Team anrufen. Der rote Hörer beendet das Gespräch und ist nur sichtbar, wenn Sie telefonieren|
 | ![Screenshot - Ein und Ausbuchen](../../images/client_team_login.png?width=200 "Ein und Ausbuchen") |Mit dieser Taste können Sie sich aus einem Team an- bzw. abmelden|
 |![Screenshot - Pause-Taste ](../../images/client_team_break.png?width=40 "Pause-Taste ")	|Die Pause-Taste ermöglicht es Ihnen sich temporär aus einem Team auszubuchen.|
 |![Screenshot - Refresh-Taste ](../../images/client_team_refresh.png?width=40 "refresh Taste ")	|Mit der Refresh-Taste können Sie die Statistiken direkt aktualisieren.|
- 
+
 ## Ein- und Ausbuchen von Teams
 
 {{% notice warning %}}
@@ -40,8 +40,8 @@ Die Funktion des dynamischen Ein- und Ausbuchen aus Teams ist nur möglich, wenn
 
 |Symbol|Funktion|
 |------|--------|
-|![Screenshot - Ein und Ausbuchen](../../images/client_team_login.png?width=100 "Ein und Ausbuchen")| Mit dieser Taste können Sie sich in einer Teams an- bzw. abmelden|
- 
+|![Screenshot - Ein und Ausbuchen](../../images/client_team_login.png?width=100 "Ein und Ausbuchen")| Mit dieser Taste können Sie sich in einem Teams an- bzw. abmelden|
+
 Wenn Sie sich aus Teams an- bzw. abmelden erhalten Sie ein Ansage "Agent ist angemeldet" bzw. "Agent ist abgemeldet.
 Zusätzlich wird Ihnen jederzeit angezeigt, ob Sie eingebucht sind oder nicht.
 
@@ -56,7 +56,7 @@ Im mobydick Client können Sie die Echtzeitdaten Ihrer Teams direkt anschauen. A
 
 ![Screenshot - Diagramm für Agenten](../../images/client_team_agenten_statistiks.png?width=80% "Diagramm für Agenten")
 
-Sie können im Diagramm sehen, wann Agenten besetzt bzw. frei sind. So können Sie jederzeit sehen, wenn Ihr Team ausgelastet ist und Sie sich eventuell mit einbuchen sollten. 
+Sie können im Diagramm sehen, wann Agenten besetzt bzw. frei sind. So können Sie jederzeit sehen, wenn Ihr Team ausgelastet ist und Sie sich eventuell mit einbuchen sollten.
 
 #### Diagramm für Wartende
 
@@ -85,8 +85,8 @@ Unter dem Tab Wartende sehen Sie alle Anrufer, die sich in der Warteschlange bef
 * die Wartezeit
 
 ## Setzen von Pausengründen
-Teams in denen Sie sich dynamisch ein- und ausbuchen können, haben Sie ebenfalls die Möglichkeit, sich temporär abzumelden. 
-Das Setzen von Pausengründen dient zur Auswertung von Statistiken und hilft Ihnen, wenn Sie beispielsweise Zeit für die Nachbearbeitung benötigen. 
-Die Pausengründe werden von Ihrem Administrator vorgegeben. Um einen Pausengrund zu aktivieren, klicken Sie auf das Pause Symbol. 
+Teams in denen Sie sich dynamisch ein- und ausbuchen können, haben Sie ebenfalls die Möglichkeit, sich temporär abzumelden.
+Das Setzen von Pausengründen dient zur Auswertung von Statistiken und hilft Ihnen, wenn Sie beispielsweise Zeit für die Nachbearbeitung benötigen.
+Die Pausengründe werden von Ihrem Administrator vorgegeben. Um einen Pausengrund zu aktivieren, klicken Sie auf das Pause Symbol.
 
-Anschließend können Sie einen beliebigen Pausengrund setzen. 
+Anschließend können Sie einen beliebigen Pausengrund setzen.

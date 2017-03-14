@@ -7,6 +7,7 @@ keywords:
 description: Zusammenfassung der mobydick Funktionscodes
 prev: /howto/festplatte-erweitern/
 url: /howto/funktionscodes/
+next: /howto/ende-32bit-support/
 weight: 125
 toc: true
 draft: false

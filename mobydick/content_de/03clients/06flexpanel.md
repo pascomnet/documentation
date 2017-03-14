@@ -1,8 +1,8 @@
 ---
 title: FlexPanel erstellen
 keywords:
-    - 
-description: 
+    -
+description:
 url: /clients/flexpanel-erstellen/
 prev: /clients/mobile-hub-einrichten/
 weight: 36
@@ -36,14 +36,14 @@ Unter dem Tab *Zuordnung* bestimmen Sie wer das Panel benutzen Darf. Sobald Sie 
 Haben Sie unter *Basisdaten* **Automatisch geöffnet** auf *ja* gestellt startet das Panel bei den entsprechenden Benutzer automatisch.
 
 ### Definition
-Der Tab Definition enthält die Programmierung des FlexPanels. Als Programmiersprache wir Grovy verwendet. Ein neues Panel erfordert folgenden Mindestcode:
+Der Tab Definition enthält die Programmierung des FlexPanels. Als Programmiersprache wird Grovy verwendet. Ein neues Panel erfordert folgenden Mindestcode:
 
     //
-    
+
     // Notwendige Imports
-    
+
     //
-    
+
     import net.pascom.ahab.op.widgets.*
     import net.pascom.ahab.client.services.*
     import net.pascom.ahab.client.serviceimpl.*
@@ -57,26 +57,26 @@ Der Tab Definition enthält die Programmierung des FlexPanels. Als Programmiersp
     import javafx.scene.input.KeyCode;
     import javafx.scene.input.KeyCodeCombination;
     import javafx.scene.input.KeyCombination;
-    
+
     //
-    
+
     // Definition des Panels
-    
+
     //
-    
+
     frame.setShortcut(new KeyCodeCombination(KeyCode.F, KeyCombination.SHORTCUT_DOWN));
     OpPane pane = frame.getMainPane()
-    
+
     // Breite des gesamten Panels in Pixel
     frame.setWidth(1440)
-    
+
     // Hoehe des gesamten Panels in Pixel
     frame.setHeight(728)
-    
+
     //
-    
+
     // Ab hier fuegen Sie die Widgets ein
-    
+
     // ...
 
 Kopieren Sie diesen Mindestcode in die Definition und passen die Maße des Panels (im Beispiel 1440 x 728 Pixel) Ihren Vorstellungen an.
@@ -116,10 +116,10 @@ Bis jetzt ist das Panel leer und kann nun mit den entsprechenden Widgets gefüll
 
     // Neues Widget erstellen
     WIDGET MEIN_WIDGET_NAME = new WIDGET(PARAMETER)
-    
+
     // X und Y Postion des Widgets auf dem Panel definieren (in Pixeln)
     MEIN_WIDGET_NAME.relocate(X,Y)
-    
+
     // Widget auf dem Panel anzeigen
     pane.addWidget(MEIN_WIDGET_NAME)
 
