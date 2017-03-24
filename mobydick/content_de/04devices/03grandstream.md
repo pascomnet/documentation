@@ -111,7 +111,7 @@ Um die Einstellungen der Tasten zurückzusetzten klichen Sie auf `Neustart` und 
 
 **Multi-Purpose Keys**
 
-Das sind je nach IP-Telefon-Model zusätzliche  programmierbare Tasten.
+Das sind je nach IP-Telefon-Model zusätzliche programmierbare Tasten.
 In der Übersicht sieht man die verfügbaren Multi-Funktionstasten die nun Konfiguriert werden können:
 
 |Modus|Konten|Beschreibung|Wert|
@@ -124,10 +124,73 @@ Beenden Sie die Konfiguration mit `Sichern und ausführen`, damit alle Änderung
 Um die Einstellungen der Tasten zurückzusetzten klichen Sie auf `Neustart` und anschließend auf `Sichern und ausführen`.
 {{% /notice %}}
 
+
+
+
 ### Basis-Konfiguration
 
+Wie bereits erwählt, werden Grandstream IP-Telefone  mit Hilfe der Basis-Konfiguration provisioniert. Die Basis-Konfigurationen ist unter `Endgeräte` > `Basis-Konfiguration` zu finden.
+
+{{% notice note %}}
+Bevor Sie die Basis-Konfiguration ändern, müssen Sie diese `Duplizieren`.
+{{% /notice %}}
+
+Ebenfalls können Sie eine schon bearbeitete Basis-Konfiguration als `Standard setzten`. Somit erhalten neu angelegte IP-Telefone automatisch die angepasste Basis-Konfiguration.
+
+**Zuweisung einer Basis-Konfiguration**
+
+Eine Basis-Konfiguration kann auf mehreren Wegen zugewiesen werden:
+
++ Über `Endgeräte` > `Basis-Konfiguration` > Basis-Konfiguration auswählen und Bearbeiten im Tab `Geräte` können gleich mehrere IP-Telefone hinzugefügt werden.
++ Über `Endgeräte` > `Geräteliste` > IP-Telefon auswählen und Bearbeiten im Tab `Basisdaten`.
 
 
+**BLF-Tasten konfigurieren über die Basis-Konfiguration**
 
-<!--
-### Firmwareupdate -->
+Im Tab `Konfiguration` können Sie die vorhandene Basis-Konfiguration anpassen.
+<!-- Im Bereich **keys** finden Sie bereits vorkonfigurierte Funktionstasten, an denen Sie dich orientieren können. -->
+
+<!--FIXME PDF einfügen  -->
+
+Im Bereich **</config>** können Sie Ihre Wunschtasten einfügen. Folgendes Beispiel zeigt die Konfiguration der ersten *Virtual-Multi-Purpose-Taste*:
+
+    <P1363>11</P1363>
+    <P1364>0</P1364>
+    <P1465>Max</P1465>
+    <P1466>103</P1466>
+
+*Erklärung*: **11** ist der Code für die BLF-Taste; **0** ist er erste Account auf dem Telefon; **Max** erscheit am Telefon-Display als Bezeichung der Taste; **103** ist die Nebenstelle die überwacht wird.
+
+Weitere Informationen entnehmen Sie bitte der Grandstream-Tasten-Dokumentation. <!--FIXME PDF einfügen  -->
+
+Weisen Sie diese Basis-Konfiguration über den Tab `Geräte` den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und Speichern Sie nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
+
+### Firmwareupdate
+
+Ab der mobydick Version 7.14 wird die Firmware für IP-Endgeräte nicht mehr mitgeliefert. Sollte eine andere als auf dem IP-Endgerät installierte Firmware benötigt werden, muss diese selber heruntergeladen und in die mobydick Firware-Verwaltung hochgeladen werden.
+
+**Firmware hinzufügen**
+
+Die gewünschte Firmware kann hinzugefügt werden unter `Endgeräte` > `Firmware`:
+
+|Einstellung|Beschreibung|
+|---|---|
+|Firmware-Datei|Laden Sie hier die Firmware hoch.|
+|Model|Modellbezeichung des Telefons|
+|Version|Firmware-Version|
+|Dokumentation|Optionales Feld für Notizen|
+
+**Firmware ausrollen**
+
+Die Firmware kann aus den IP-Endgeräten über `Endgeräte` > `Geräteliste` aktualisiert werden. Wählen Sie die Zielgeräte in der Geräteliste mit Häkchen aus und klicken Sie auf `Aktion` > `Firmware ausrollen`. Nun erhalten Sie eine Übersicht der gewählen Geräte, in der Sie die Zielfirmware auswählen können. Anschließend klicken Sie auf `Firmware update` um die gewählte Firmware auszurollen.
+
+
+<!-- **Empfohlene Firmware**
+
+Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es uns leider nicht möglich jede zu testen, so dass es sein kann, dass manche Firmware-Versionen mobydick Funktionen nicht unterstützen. Daher finden Sie hier eine Liste der Firmwares die von uns bereits getestet wurde:
+
+|Modell|Empfohlene Firmware|
+|---|---|
+||| -->
+
+<!--FIXME firware bei dev nachfragen! -->

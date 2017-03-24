@@ -11,7 +11,7 @@ description: TAPI ist eine Schnittstelle zwischen den Telefonie-Funktionen von W
 url: /clients/tapi/
 prev: /clients/teams-im-client/
 next: /clients/mobile-hub-einrichten/
-weight: 34
+weight: 35
 toc: true
 ---
 

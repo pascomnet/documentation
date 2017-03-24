@@ -4,7 +4,7 @@ keywords:
 description:
 prev: /howto/funktionscodes/
 url: /howto/ende-32bit-support/
-weight: 125
+weight: 126
 toc: true
 draft: false
 ---
@@ -23,7 +23,7 @@ Bei dem Versuch auf eine mobydick ab Version 7.14 zu installieren erhalten Sie e
 
 ### Was ist zu tun?
 
-Verwenden Sie eine 32bit-Appliance benötigen Sie eine neue. Wenden Sie sich bitte an unserem Vertrieb (Tel. +49 991 29691200).
+Verwenden Sie eine 32bit-Appliance benötigen Sie eine neue Hardware. Wenden Sie sich bitte an unserem Vertrieb (Tel. +49 991 29691200).
 
 Betreiben Sie die mobydick TK-Anlage in einer Virtualisierungsumgebung mit einem 32bit Host muss die mobydick auf einem 64bit Host neu aufgesetzt werden.
 

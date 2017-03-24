@@ -10,7 +10,7 @@ description: Teams fassen Benutzer zu Gruppen zusammen. Im mobydick Client sehen
 url: /clients/teams-im-client/
 prev: /clients/client-nutzen/
 next: /clients/tapi/
-weight: 33
+weight: 34
 toc: true
 ---
 

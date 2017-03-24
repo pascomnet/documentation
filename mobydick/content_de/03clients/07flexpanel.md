@@ -5,7 +5,7 @@ keywords:
 description:
 url: /clients/flexpanel-erstellen/
 prev: /clients/mobile-hub-einrichten/
-weight: 36
+weight: 37
 toc: true
 ---
 

@@ -22,6 +22,10 @@ Zur Vorbereitung muss zunächst ein *Generisches Label* angelegt werden. Klicken
 
 Anschließend ist die DATEV-Schnittstelle automatisch aktiv sobald Sie neben *DATEV Arbeitsplatz pro* den mobydick Client installieren.
 
+Sollte das Label nicht angelegt sein, erscheint bei Start des mobydick Clients folgende Meldung:
+
+![Kein DATEV-Label konfiguriert](/datev-no-label.PNG?width=250px)
+
 ## Bedienung
 
 ### Eingehender Anruf

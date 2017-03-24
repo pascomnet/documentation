@@ -15,7 +15,6 @@ toc: true
 ## Konzept
 <!--FIXME reihenfolge: beispiel zuerst als konzept  -->
 
-
 Aktionen sind in der mobydick ein mächtiges Werkzeug. Mit ihrer Hilfe kann der Ablauf eines Anrufs (Callflow) gesteuert werden.
 
 Aktionen sind für folgende Objekte verfügbar:

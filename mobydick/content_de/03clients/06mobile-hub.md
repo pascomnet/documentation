@@ -8,7 +8,7 @@ description: Mit dek mobydick Mobile Hub können Sie Mobilgeräte nativ in mobyd
 url: /clients/mobile-hub-einrichten/
 prev: /clients/tapi/
 next: /clients/flexpanel-erstellen/
-weight: 35
+weight: 36
 toc: true
 ---
 

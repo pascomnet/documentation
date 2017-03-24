@@ -173,6 +173,8 @@ Weisen Sie diese Basis-Konfiguration über den Tab `Geräte` den IP-Telefonen zu
 
 ### Firmwareupdate
 
+Ab der mobydick Version 7.14 wird die Firmware für IP-Endgeräte nicht mehr mitgeliefert. Sollte eine andere als auf dem IP-Endgerät installierte Firmware benötigt werden, muss diese selber heruntergeladen und in die mobydick Firware-Verwaltung hochgeladen werden.
+
 **Firmware hinzufügen**
 
 Die gewünschte Firmware kann hinzugefügt werden unter `Endgeräte` > `Firmware`:
@@ -184,32 +186,14 @@ Die gewünschte Firmware kann hinzugefügt werden unter `Endgeräte` > `Firmware
 |Version|Firmware-Version|
 |Dokumentation|Optionales Feld für Notizen|
 
-
-
 **Firmware ausrollen**
 
 Die Firmware kann über `Endgeräte` > `Geräteliste` aktualisiert werden. Wählen Sie die Zielgeräte in der Geräteliste mit Häkchen aus und klicken Sie auf `Aktion` > `Firmware ausrollen`. Nun erhalten Sie eine Übersicht der gewählen Geräte, in der Sie die Zielfirmware auswählen können. Anschließend klicken Sie auf `Firmware update` um die gewählte Firmware auszurollen.
 
-<!-- **Empfohlene Firmware**
+**Empfohlene Firmware**
+^
+Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es uns leider nicht möglich jede zu testen, so dass es sein kann, dass manche Firmware-Versionen mobydick Funktionen nicht unterstützen. Daher finden Sie hier eine Liste der Firmwares die von uns bereits getestet wurde:
 
-|Model|Firmware|
+|Modell|Firmware|
 |---|---|
 |Snom 300|8.7.3.25.5|
- -->
-
-
-<!--FIXME 7.14, keine mitgelieferte firmware, verweis auf download hersteller, EMPFOHLENE Firmware  -->
-
-<!-- mobydick kann IP-Telefone mit passender Firmware versorgen. Unter `Endgeräte` > `Geräte Firmware` finden Sie für jedes unterstütze Modell die von uns empfohlene Firmware.
-
-**Firmware ausrollen**
-
-Die Firmware kann über `Endgeräte` > `Geräteliste` aktualisiert werden. Wählen Sie die Zielgeräte in der Geräteliste mit Häkchen aus und klicken Sie auf `Aktion` > `Firmeware ausrollen`. Nun erhalten Sie eine Übersicht der gewählen Geräte, in der Sie die Zielfirmware auswählen können. Anschließend klicken Sie auf `Firmware update` um die gewählte Firmware auszurollen.
-
-**Firmware hinzufügen**
-
-Sollte Ihre gewünschte Firmware nicht zur Auswahl stehen, können Sie diese unter `Endgeräte` > `Firmware` hinzufügen.
-
-{{% notice note %}}
-Beachten Sie bitte, dass das Ausrollen einer Firmware, die nicht mit der mobydick geliefert wurde, bestimmte mobydick Funtionen nicht mehr unterstützt.
-{{% /notice %}} -->
