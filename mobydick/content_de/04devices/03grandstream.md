@@ -148,9 +148,6 @@ Eine Basis-Konfiguration kann auf mehreren Wegen zugewiesen werden:
 **BLF-Tasten konfigurieren über die Basis-Konfiguration**
 
 Im Tab `Konfiguration` können Sie die vorhandene Basis-Konfiguration anpassen.
-<!-- Im Bereich **keys** finden Sie bereits vorkonfigurierte Funktionstasten, an denen Sie dich orientieren können. -->
-
-<!--FIXME PDF einfügen  -->
 
 Im Bereich **</config>** können Sie Ihre Wunschtasten einfügen. Folgendes Beispiel zeigt die Konfiguration der ersten *Virtual-Multi-Purpose-Taste*:
 
@@ -161,7 +158,7 @@ Im Bereich **</config>** können Sie Ihre Wunschtasten einfügen. Folgendes Beis
 
 *Erklärung*: **11** ist der Code für die BLF-Taste; **0** ist er erste Account auf dem Telefon; **Max** erscheit am Telefon-Display als Bezeichung der Taste; **103** ist die Nebenstelle die überwacht wird.
 
-Weitere Informationen entnehmen Sie bitte der Grandstream-Tasten-Dokumentation. <!--FIXME PDF einfügen  -->
+Weitere Informationen entnehmen Sie bitte der ![Grandstream-Tasten-Dokumentation](/grandstream_key_configuration.pdf).
 
 Weisen Sie diese Basis-Konfiguration über den Tab `Geräte` den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und Speichern Sie nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
 
