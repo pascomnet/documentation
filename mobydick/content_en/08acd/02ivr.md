@@ -2,8 +2,8 @@
 title: Interactive Voice Response Menus
 url: /call-distribution/ivr-menus/
 linkde: /anrufverteilung/ivr-menue/
-prev: /call-distribution/business-hours/
-next: /call-distribution/skills-based-routing/
+prev: /call-distribution/actions/
+next: /call-distribution/business-hours/
 description: Interactive Voice Response (IVR) menus are useful tools for ensuring that callers are routed more effectively and more quickly to the right agent, department or contact by providing callers with a set of options to choose from to qualify the reason for their call.
 Keywords: 
     - IVR
@@ -11,7 +11,7 @@ Keywords:
     - Options Menus
     - ACD
     - Call Routing Menus
-weight: 73
+weight: 72
 toc: true
 ---
 
@@ -19,7 +19,7 @@ toc: true
 ## Concept
 <!--//fixME replace screenshots-->
 
-IVRs are used to route a caller through the system by pressing keys. For example, 50 % of all calls to the central office might actually be intended for the marketing or support department. In this case, using an IVR at the central office could be beneficial in taking some load of off the central office.
+IVRs (Interactive Voice Response Menus) are used to route a caller through the phone system by selecting menu options via their telephone keypad. For example, 50 % of all calls to the central switchboard might actually be intended for the marketing or support department. In this case, using an IVR to direct calls to the relevant department directly could be beneficial in taking some load of off the [central switchboard] (https://www.pascom.net/en/contact-call-center/ "pascom ContactCenter Tools"). 
 
 The IVR could then offer the following options to the user:
 
@@ -43,7 +43,7 @@ If the caller presses a button with **no corresponding entry**, the entry with t
 
 If the caller **doesn't press any button** during the **timeout**, the entry with the special number t (as in Timeout) is called. Actions associated with this number should make the caller aware that no key was pressed and should offer the IVR menu to the caller again or the caller should be put through to the central office.
 
-### Multi-stage IVRs
+### Multi-Stage IVRs
 
 In many scenarios it makes sense to ask several questions in a row to put callers through to their desired destination. Firstly, you could ask the callers if they wished to be put through to the support department and then ask for a more specific support category (problems concering Windows, Linux, etc.) to select the appropriate staff member they can then talk to.
 
@@ -59,7 +59,8 @@ Preferably, you should not create nested IVRs that are deeper than two levels. H
 
 In the mobydick web interface, select **Advanced > IVR**. To add a new IVR, press `Add`. To modify an existing IVR, select it from the list and press `Edit`.
 
-![Screenshot - add IVR](../../images/ivr_add.png?width=90% "add IVR")
+![Screenshot - add IVR](../../images/ivr_add.png?width=100% "add IVR")
+
 |Parameter|Explanation|
 |---------|---------|
 |Title|The title of the IVR menu.
@@ -70,21 +71,22 @@ In the mobydick web interface, select **Advanced > IVR**. To add a new IVR, pres
 
 ### Creating entries
 
-In the MobyDick web interface, select ***Advanced > IVR***. Select the IVR you want to add entries to and press the Entries button. Here, you can define what should happen for each key pressed:
+In the mobydick web interface, select ***Advanced > IVR***. Select the IVR you wish to `config / edit options for to and press the **Entries** button. Here, you can define the available options (and configure the corresponding key) and how they should be handled once selected by the caller:
 
-Press the "Add" //FixMe  button to create a new entry.
-![Screenshot - create IVR entries](../../images/ivr_entries.png?width=90% "create IVR entries")
+Press the `Add` button to create a new entry.
+![Screenshot - create IVR entries](../../images/ivr_entries.png?width=100% "create IVR entries")
+
 |Parameter|Explanation|
 |---------|---------|
 |Title|General title for the entry.|
 |Number| The key pressed by the caller. Valid keys are arbitrary **numbers** or **sequences of numbers**. Special numbers are t for timeout and i to signal that an invalid key was pressed (note that these two are characters and not numbers). To avoid overlapping keys either use single, double or triple digit combinations and avoid mixing these numbers.|
 
-### Adding actions to an entry
+### Adding Actions to an Entry
 
 For each entry, corresponding actions must exist that are to be carried out if and when a certain button is pressed. 
 
-In the MobyDick web interface, select ***Advanced > IVR***, select the desired IVR and click the **Entries** button. Select the entry you want to modify and press the "Edit" //FixMe  button. Actions pertaining to the entry can be found in the **Intern and **Extern** tabs:
-![Screenshot - create IVR actions to entries ](../../images/ivr_entry_detail.png?width=90% "create actions for IVR menu")
+In the MobyDick web interface, select ***Advanced > IVR***, select the desired IVR and click the **Entries** button. Select the entry you want to modify and press the `Edit` button. Actions pertaining to the entry can be found in the **Intern** and **Extern** tabs:
+![Screenshot - create IVR actions to entries ](../../images/ivr_entry_detail.png?width=100% "create actions for IVR menu")
 
 In our example, callers are forwarded to the support queue if they press the corresponding key. For more details, please see the chapter on actions.
 

@@ -11,11 +11,13 @@ Keywords:
         - Live team statistics
         - Dynamic Queues
         - Agent pausing
-description: Teams group users together into manageable and productive queues. The mobydick client also provides an overview of all the temas within your organisation so that agents can operate more proactively within their team. 
+description: Teams group users together into manageable and productive queues. The desktop client also provides an overview of all the teams within your organisation so that agents can operate more proactively within their team. 
 weight: 33
 toc: true
 ---
+## Concept
 
+Teams are an essential form of customer engagement and employee collaboration which is why [our VoIP phone system] (https://www.pascom.net/en/mobydick-voip/ "our software based phone system")solutions provide desktop client users with the perfect platform from which to manage their team activities.
 
 ## Team Overviews
 ![Screenshot - Teams in Client](../../images/client_teams.png?width=90% "Teams in Client- Overview")
@@ -25,7 +27,7 @@ toc: true
 * Towards the top of the client (3), all the actions that you can perform within this team will be displayed.
 * Within the central window of the client (4), the statistics from the team you are viewing will be displayed.
  
-## Function keys overview
+## Function Keys Overview
 
 <!--//FixMe Icons & Graphics resize and update--> 
  

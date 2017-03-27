@@ -9,14 +9,14 @@ keywords:
 description: How to integrate an Aastra MultiCell DECT system with the mobydick phone system.
 url:  /endpoints/integrate-aastra-dect-system/
 linkde: /endgeraete/aastra-dect-system-anbinden/
-prev: /endpoints/generic-ip-endpoints/
+prev: /endpoints/snom-dect-system-setup/
 weight: 48
 toc: true
 ---
 
 ## Overview
 
-An Aastra SIP-DECT system can have any number from 1 to 254 base stations. The base stations are connected to the IP telephone network and communicate with mobydick using the SIP protocol. The base stations also communicate with one another using DECT to allow for switching between base stations during a call. A single base station does not have to connect to every other base station, but all base stations must be able to form a chain. Isolated groups of base stations should not be used. 
+An Aastra SIP-DECT system can have any number from 1 to 254 base stations. The base stations are connected to the IP telephone network and communicate with your [pascom VoIP Software] (https://www.pascom.net/en/mobydick-voip/ "pascom VoIP phone systems") solution using the SIP protocol. The base stations also communicate with one another using DECT to allow for switching between base stations during a call. A single base station does not have to connect to every other base station, but all base stations must be able to form a chain. Isolated groups of base stations should not be used. 
 
 One base station takes care of the user management and the connection to mobydick. The master starts the **OpenMobility Manager (OMM)**. This software is used for management tasks and comes with a web interface. If a master base station fails, another base station that was previously specified can take over the role of the master.
 

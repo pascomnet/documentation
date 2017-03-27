@@ -65,7 +65,7 @@ Download the application Rufus which contains a tool with which to create a boot
 Start Rufus and connect a USB stick
 ![Screenshot - Create bootable USB Stick](../../images/rufus_start.png?width=40% "Create bootable USB Stick")
 
-Parameter|Meaning|
+|Parameter|Meaning|
 |---------|---------|
 |Device|Select the USB stick volume name from the device drop down list|
 |Create a bootable disk using |ISO Image and then by clicking on the disk symbol, select the previously downloaded ISO file|

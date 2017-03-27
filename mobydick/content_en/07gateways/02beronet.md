@@ -17,6 +17,8 @@ toc: true
 
 ## Concept
 
+beroNet are a German Gateway vendor and their modular construction make them a popular choice as [VoIP Gateways for our Hardware] (https://www.pascom.net/en/mobydick-classic/ "pascom VoIP hardware") and virtualized IP PBX solutions.
+
 ### Modular Construction for more Flexibility
 beroNet Cards and Gateways offer a modular construction, meaning you can cover different connection types with on device.
 <!--//FixMe![Illustration - modular Gateway](../../images/beronet_gateway_beispiel.jpg?width=90% "Modular Gateways Solutions from beroNet")-->
@@ -27,7 +29,7 @@ For example: you could have 3 NTBAs (ISDN Connections) as well as 2 Analog Faxes
 The beroNet Gateway is connected via LAN and is assigned an IP address from the telephone network. Connections to the
 public telephone network and analogue terminal devices are established using the front ports. beroNet Boxes allow for the
 installation of various modules. Depending on the module, the front ports are compatible with analogue or ISDN devices.
-Due to the LAN connection, beroNet Boxes can be easily integrated with a mobydick virtual appliance.
+Due to the LAN connection, beroNet Boxes can be easily integrated with a pascom virtual appliance.
 
 ![Illustration - beroNet VoIP Gateway](../../images/beronet_voip_gateway.png?width=90% "beroNet VoIP Gateway Network Setup")
 
@@ -38,7 +40,7 @@ beroNet Gateways are available in the following specifications:
 * beroNet VoIP Gateway, 32-128 channels
 
 ### beroNet Cards
-beroNet expansion cards can be mounted directly in a mobydick hardware appliance and are automatically assigned an IP address from the zero-config network range **169.254.0.0/16** during boot. With exception of this difference configuration of beroNet Gateways and expansion cards
+beroNet expansion cards can be mounted directly in a pascom hardware appliance and are automatically assigned an IP address from the zero-config network range **169.254.0.0/16** during boot. With exception of this difference configuration of beroNet Gateways and expansion cards
 
 ![Illustration - beroNet Cards](../../images/beronet_card.png "beroNet VoIP Cards")
 
@@ -60,7 +62,7 @@ Extensions such as fax devices, fax serversm telephones, door openers etc. can e
 
 The **advantage** of this approach is that connections are not converted to SIP, which gives superior results when a fax must be used. Direct connections can also be used if ISDN data must be transmitted. 
 
-The **disadvantage** here is that mobydick will not be made aware of those calls. Therefore, the server is not able to manage the call flow, e.g. forward the call to another device after a timeout, check for business hours, etc. In addition to that, the ISDN trunk and the extension must be connected to the same beroNet hardware.
+The **disadvantage** here is that the PBX will not be made aware of those calls. Therefore, the server is not able to manage the call flow, e.g. forward the call to another device after a timeout, check for business hours, etc. In addition to that, the ISDN trunk and the extension must be connected to the same beroNet hardware.
 
 ### Connecting via SIP
 
@@ -68,7 +70,7 @@ The **disadvantage** here is that mobydick will not be made aware of those calls
 
 **Via SIP** means that all calls to the corresponding extension are routed per SIP over your telephony system. Therefore, should a call for the fax device come in, it will be firstly routed via **1** to the phone system and then further via **2** to the analog fax device.
 
-The **advantage** of this method is that connections are routed through mobydick, thus allowing mobydick to manage the call flow, e.g. forward the call to another device after a timeout, check for business hours, etc. In this case, the extension and the trunks do not have to be connected to the same Beronet hardware.
+The **advantage** of this method is that connections are routed through the PBX, thus allowing the pascom PBX to manage the call flow, e.g. forward the call to another device after a timeout, check for business hours, etc. In this case, the extension and the trunks do not have to be connected to the same Beronet hardware.
 
 The **downside** here is that in some cases, fax applications might not be so stable and ISDN data transmission is also not possible.
 
@@ -76,20 +78,20 @@ The **downside** here is that in some cases, fax applications might not be so st
 
 As a first step, Beronet boxes or expansion cards each need to be equipped with suitable modules. If you ordered your hardware through pascom, the module already pre-installed. For further details such as port assignment etc. <!--please see the [beroNet documentation] (http://wiki.beronet.com/index.php/beroNetDocuV2)//fixme-->.
 
-PCI expansion cards can be easily added to a mobydick server. The card will automatically receive an IP address from the **169.254.0.0/16** subnet.
+PCI expansion cards can be easily added to a pascom server. The card will automatically receive an IP address from the **169.254.0.0/16** subnet.
 
-Individual Beronet boxes need be connected to your switch. Next, connect the power supply and start the box. An IP address will automatically be assigned through DHCP. In case you do not have a DHCP server in your network, mobydick can still detect and configure the box. as long as it is within the same subnet.
+Individual Beronet boxes need be connected to your switch. Next, connect the power supply and start the box. An IP address will automatically be assigned through DHCP. In case you do not have a DHCP server in your network, the phone system can still detect and configure the box as long as it is within the same subnet.
 
 
 ## Configuration
 
 ### Detecting and Adding beroNet Hardware
-mobydick will detect the new hardware automatically once you have connected your beroNet expansion card or Box to the LAN. Please note that beroNet Boxes need to be in the same subnet as mobydick for this to work.
+pascom phone systems will detect the new hardware automatically once you have connected your beroNet expansion card or Box to the LAN. Please note that beroNet Boxes need to be in the same subnet as the PBX for this to work.
 
-In the mobydick web interface, select ***Gateways > Gateway list*** and press the `+Add` button. mobydick will then try to detect your beroNet hardware:
+In the pascom web interface, select ***Gateways > Gateway list*** and press the `+Add` button. The phone system will then try to detect your beroNet hardware:
 ![Screenshot - beroNet Gateway detection](../../images/beronet_detect.png?width=60% "Detect new beroNet Gateway")
 
-If detection is unsuccessful or the beroNet Box is in a different subnet from mobydick, you can add the hardware manually by clicking the `Create manually` button.
+If detection is unsuccessful or the beroNet Box is in a different subnet from the PBX, you can add the hardware manually by clicking the `Create manually` button.
 
 The drop-down menu `Gateways lists all detected beroNet Boxes and expansion cards:
 ![Screenshot - Add beroNet Gateway](../../images/new_beronet_gateway.png?width=90% "Add new beroNet Gateway")

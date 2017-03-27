@@ -1,10 +1,15 @@
 ---
 title: Snom VoIP Phones
 keywords: 
-    - Snom 715, 720 and 760 Telephones
-    - Snom D705, D715, D725 and D765 Telephones
-    - Snom 300
-description: All Snom models are supported by mobydick and here is how to integrate your Snom VoIP Desktop Phone.
+    - Snom 
+    - Desktop Phones
+    - provisioning
+    - 300, 320, 360, 370, 710,715, 720, 760
+    - D705, D715, D725, D765
+    - Snom BLF Key
+    - Busy Lamp Field
+    - Snom Firmware
+description: All Snom IP telephone models are supported by mobydick and here is how to integrate your Snom VoIP Desktop Phone.
 url:  /endpoints/snom-ip-telephones/
 prev: /endpoints/
 next: /endpoints/generic-ip-endpoints/
@@ -26,7 +31,7 @@ In order to automatically deploy (AutoProvision) telephones from Snom, Yealink, 
 By new installations, you should first test the provisionings process with a telephone. Should this be successful then you will be able to deploy further telephones.
 {{% /notice %}}
 
-mobydick currently supports Snom, Yealink, Auerswald, Aastra and OpenStage telephones enabling you to automatically configure these devices centrally. This process is know as `Provisioning`. For each supported endpoint vendor, the mobydick phone system includes a Default Configuration (`Devices > Basic Configuration`). For most deployment scenarios, these standard settings are sufficiently pre parametered. However, in some cases, the settings may need to be modified.
+[Our VoIP Software] (https://www.pascom.net/en/mobydick-voip/ "pascom VoIP phone systems") currently supports Snom, Yealink, Auerswald, Aastra and OpenStage telephones enabling you to automatically configure these devices centrally. This process is know as `Provisioning`. For each supported endpoint vendor, the mobydick phone system includes a Default Configuration (`Devices > Basic Configuration`). For most deployment scenarios, these standard settings are sufficiently pre parametered. However, in some cases, the settings may need to be modified.
 
 {{% notice tip%}}
 When modifiying Default Settings, ensure you make a copy of the original and edit only the copy. 
