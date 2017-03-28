@@ -7,4 +7,4 @@ icon: <i class="fa fa-phone" aria-hidden="true"></i>
 chapter: true
 ---
 
-# Endgeräte Integration
+# Endgeräte

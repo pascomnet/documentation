@@ -13,7 +13,7 @@ keywords:
 description: Integrieren Sie Ihre Snom IP-Tischtelefone in die mobydick.
 prev: /endgeraete/
 url:  /endgeraete/snom-tischtelefone-300-700-serie/
-next: /endgeraete/grandstream-tischtelefone-gxv-gxp-serie/
+next: /endgeraete/grandstream-tischtelefone-gxp-gxv-serie/
 weight: 41
 toc: true
 
@@ -197,3 +197,10 @@ Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es
 |Modell|Firmware|
 |---|---|
 |Snom 300|8.7.3.25.5|
+|Snom 320|8.7.3.25.5|
+|Snom 360|8.7.3.25.5|
+|Snom 370|8.7.3.25.5|
+|Snom 710|8.7.3.25.5|
+|Snom 715|8.7.8.8.2|
+|Snom 720|8.7.3.25.5|
+|Snom 760|8.7.3.25.5|

@@ -8,7 +8,7 @@ keywords:
     - Team Statitiken
 description: Teams fassen Benutzer zu Gruppen zusammen. Im mobydick Client sehen Sie, zu welchen Teams es in Ihrem Unternehmen gibt und können aktiv in einem Team arbeiten.
 url: /clients/teams-im-client/
-prev: /clients/client-nutzen/
+prev: /clients/followme/
 next: /clients/tapi/
 weight: 34
 toc: true
@@ -26,7 +26,7 @@ toc: true
 ## Funktionstastenübersicht
 
 |Symbol|Funktion|
-|------|--------|
+|---|---|
 | ![Screenshot - Hörer](../../images/client_team_phone.png?width=200 "Team anrufen") |Mit dem grünen Telefonhörer können Sie direkt das Team anrufen. Der rote Hörer beendet das Gespräch und ist nur sichtbar, wenn Sie telefonieren|
 | ![Screenshot - Ein und Ausbuchen](../../images/client_team_login.png?width=200 "Ein und Ausbuchen") |Mit dieser Taste können Sie sich aus einem Team an- bzw. abmelden|
 |![Screenshot - Pause-Taste ](../../images/client_team_break.png?width=40 "Pause-Taste ")	|Die Pause-Taste ermöglicht es Ihnen sich temporär aus einem Team auszubuchen.|
