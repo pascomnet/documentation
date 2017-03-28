@@ -8,7 +8,7 @@ toc: true
 keywords:
 - Integration in existing company network
     - Network Configuration konfigurieren
-    - Network Infractructure
+    - Network Infrastructure
     - Telephony and Corporate Networks
     - Enterprise Networks & VoIP
 description: There are multiple options for integrating mobydick into your network.

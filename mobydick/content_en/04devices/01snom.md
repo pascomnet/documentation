@@ -17,6 +17,7 @@ weight: 41
 toc: true
 ---
 
+![snom 300/700 series](/snom-series.png)
 
 {{% notice warning%}}
 Necessary Requirements  
@@ -28,13 +29,13 @@ In order to automatically deploy (AutoProvision) telephones from Snom, Yealink, 
 ### AutoProvisioning Snom IP Telephones
 
 {{% notice tip%}}
-By new installations, you should first test the provisionings process with a telephone. Should this be successful then you will be able to deploy further telephones.
+By new installations, you should first test the provisioning process with a telephone. Should this be successful then you will be able to deploy further telephones.
 {{% /notice %}}
 
 [Our VoIP Software] (https://www.pascom.net/en/mobydick-voip/ "pascom VoIP phone systems") currently supports Snom, Yealink, Auerswald, Aastra and OpenStage telephones enabling you to automatically configure these devices centrally. This process is know as `Provisioning`. For each supported endpoint vendor, the mobydick phone system includes a Default Configuration (`Devices > Basic Configuration`). For most deployment scenarios, these standard settings are sufficiently pre parametered. However, in some cases, the settings may need to be modified.
 
 {{% notice tip%}}
-When modifiying Default Settings, ensure you make a copy of the original and edit only the copy. 
+When modifying Default Settings, ensure you make a copy of the original and edit only the copy. 
 {{% /notice %}}
 
 Connect the IP phone the your network and, should you not be using Power over Ethernet (PoE), connect the power supply to the phone. The phone will now boot and acquires an IP address and the corresponding Basic Configurations via **DHCP**. After this process is completed, mobydick will **automatically** add the device to the device list as well as adding the appropriate SIP peer:
@@ -44,12 +45,13 @@ As mentioned above, for every device mobydick will also automatically add a SIP 
 
 ![Screenshot - Snom Endpoint Configuration](../../images/Snom_endpoint_details.png?width=90% "Snom Endpoint Configuration in mobydick")
 
-The telephone type followed by the MAC address willl be automatically used as the Device Name. On most IP phones, the MAC address is noted on the device housing, allowing phones to be more simply deployed on site in the correct locations. Should you wish you to, you can modify the device name at this point so that the name also reflects a room number or specific user etc.:
+The telephone type followed by the MAC address will be automatically used as the Device Name. On most IP phones, the MAC address is noted on the device housing, allowing phones to be more simply deployed on site in the correct locations. Should you wish you to, you can modify the device name at this point so that the name also reflects a room number or specific user etc.:
 ![Screenshot - Snom MAC-Address](../../images/Snom_endpoint_label.png?width=90% "Snom MAC-Address in mobydick")
 
 After a successful provisioning, the IP phone display should show to correct language, time as well as the text `Emergency Only` as until now the phone does not have an user assigned and therefore is in `Emergency Mode` allowing you dial emergency numbers. Assignikng a user directly on the phone can be done using the `*88UserExtensionNumber`, e.g. *88123
 
-A few examples:
+A few examples:  
+
 Snom 3xx Series
 	
 Snom 7xx Series
