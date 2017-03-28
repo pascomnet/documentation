@@ -7,7 +7,7 @@ keywords:
        - Switchboard dashboards
        - Supervisor dashboards
        - monitoring dashboards
-description: The FlexPanel Framework provides a platform for building and adapting wallboards for contactcenters, supervisory and switchboard dashboards. 
+description: The FlexPanel Framework provides a platform for building and adapting Contact Center wallboards, Supervisor and switchboard dashboards. 
 url: /clients/create-flexpanels/
 linkde: /clients/flexpanel-einrichten/
 prev: /clients/mobile-hub-setup/
@@ -16,11 +16,14 @@ toc: true
 ---
 
 ## Overview
-The FlexPanel Framework can be completely modified to suit the intended users' needs. As a foundation, the admin can define any size of panel and then assigns Widgets which are already available from mobydick to the panel.  The widgets can then be parameterised according to size, function and appearance. 
+
+The pascom FlexPanel Framework lends itself perfectly for the creation of [ContactCenter Wallboards] (https://www.pascom.net/en/contact-call-center/ "pascom Contact Center Phone Systems") and switchboard call distribution panels. That said, the flexibility of the framework also ensures that FlexPanels can be created for any number of scenarios suited for any business size from SMB to large Enterprise, which is why the FlexPanel Framework is included as standard in all our VoIP phone systems. 
+
+The FlexPanel Framework can be completely modified to suit the intended users' needs. As a foundation, the admin can define any size of panel and then assign widgets which are already available from mobydick to the panel. The widgets can then be parametrized according to size, function and appearance. 
 
 <!--//FixMe Download Example Code for this Panel-->
 
-Once the FlexPanel has been defined once, one can then assign it to different users.  These users can then either start the FlexPanel manually using the menu or automatically upon mobydick Desktop Client startup according to their settings. The User can then complete all their actions within the FlexPanel per Drag&Drop, meaning that the Panels are also suitable for Touch Screens.
+Once the FlexPanel has been defined once, one can then assign it to different users. These users can then either start the FlexPanel manually using the menu or automatically upon mobydick Desktop Client startup according to their settings. The User can then complete all their actions within the FlexPanel per Drag&Drop, meaning that the Panels are also suitable for Touch Screens.
 
 Example uses of the FlexPanel include the Smart Attendant (switchboard environment) Supervisory and Monitoring Solutions.
 
@@ -46,7 +49,7 @@ The Definition contains the programming for the FlexPanel, for which we use the 
 
     //
     
-    // Notwendige Imports
+    // Neccessary Imports
     
     //
     
@@ -66,22 +69,22 @@ The Definition contains the programming for the FlexPanel, for which we use the 
     
     //
     
-    // Definition des Panels
+    // Panel Definition
     
     //
     
     frame.setShortcut(new KeyCodeCombination(KeyCode.F, KeyCombination.SHORTCUT_DOWN));
     OpPane pane = frame.getMainPane()
     
-    // Breite des gesamten Panels in Pixel
+    // Whole Panel Width (Pixels)
     frame.setWidth(1440)
     
-    // Hoehe des gesamten Panels in Pixel
+    // Whole Panel Height (Pixels)
     frame.setHeight(728)
     
     //
     
-    // Ab hier fuegen Sie die Widgets ein
+    // Add Widgets from here Onwards
     
     // ...
 

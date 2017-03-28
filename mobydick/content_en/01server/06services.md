@@ -20,7 +20,7 @@ toc: true
 
 ## mobydick Default Settings ##
 
-Before mobydick can be put into operation, a few default settings must be entered. Within the web UI click on `Appliance` > `Services` and for now remain in the tab `Basic Data`:
+Before [our VoIP Software] (https://www.pascom.net/en/mobydick-voip/ "pascom VoIP phone systems") can be put into operation, it is necessary to configure a few default settings. Within the web UI, click on `Appliance` > `Services` and for now remain in the tab `Basic Data`:
 
 |Setting|Description|
 |---|---|

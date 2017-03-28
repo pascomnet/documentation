@@ -6,7 +6,7 @@ weight: 101
 toc: true
 ---
 ## Overview
-WombatDialer is a predictive dialer developed by Loway. The WombatDialer automates the telephone call origination process, thus eliminating the cumbersome, time consuming manual dialling. This enables you to achieve greater, more efficient CallCenter agent utilisation for example during Telemarketing Campaigns. Further applicable usages are outlined on the [WombatDialer Homepage] (https://www.wombatdialer.com/ "WombatDialer.com").
+WombatDialer is a predictive dialer developed by Loway. The WombatDialer automates the telephone call origination process, thus eliminating the cumbersome, time consuming manual dialling. This enables you to achieve greater, more efficient CallCenter agent utilisation for example during Telemarketing Campaigns. Further applicable usages are outlined on the [WombatDialer Homepage] (https://www.wombatdialer.com/ "WombatDialer.com") or visit our website for [more information about our CallCenter solutions] (https://www.pascom.net/en/contact-call-center/ "pascom CallCenter phone systems").
 
 ![Illustration - WombatDialer Concept with mobydick](../../images/wombat_overview.jpg?width=90% "WombatDialer Concept with mobydick")
 
@@ -49,6 +49,7 @@ Using the Script tab, enter the following script:
 Additionally, you can modify the following script variables (optional): 
 
 |Variable|Meaning|
+|-----------|---------------|
 |CHANNEL(language)|Sets the channel language for all announcements that you may wish to use later on. Possible values can be found under the ***Advanced > Prompts*** menu options and then via the selection button ***Action > Language: edit***. You will be able to use any of the values found within the table column **Language Abbreviations** with the CHANNEL(language) variable.|
 |MDC_NUMPREFIX_TRUNK|  Should you have configured your mobydick so that you have to dial a prefix (e.g. 0) in order to select your standard trunk, then enter this prefix within the MDC_NUMPREFIX_TRUNK variable.|
 {{% notice note %}}
@@ -70,7 +71,7 @@ Enter the command **sip show peers** which will provide you with the following o
 All internal trunk names begin with **mdc_trunk_conf-** (in our example, **mdc_trunk_conf-1**). Using the username (in this example **dev-test**+) and the host address (in this scenario **+172.16.214.10**) you should be able to identify which internal name belongs to which trunk, in the majority of cases. 
 
 ### WombatDialer Installation
-In accordance with Loway's Instructions //FixMe you should setup the WombatDialer on a separate server.
+In accordance with Loway's Instructions you should setup the WombatDialer on a separate server.
 {{% notice note %}}
 Please Note: Under no circumstances should you install the WombatDialer directly on the mobydick server, rather you should always use another Linux Installation such as Ubuntu, Debian, CentOS, etc. on a separate server or separate virtual machine!
 {{% /notice %}}
@@ -92,12 +93,15 @@ ${num} will always be replaced by the called telephone number later on.
 #### End Points
 An End Point is the desired destination within the mobydick with those external parties who have been called over the trunk will be connected with. These end points could be for example mobydick teams, users, IVRs or scripts. There are two forms of end points available within the WombatDialer:
 
-|Parameter|Bedeutung|
+|Parameter|Description|
+|-----------|---------------|
 |QUEUE|       Should you like the destination phone numbers to be connected with a mobydick team, then you should use this end point form as this will mean that the WombatDialer monitors the availability of your agents etc.|
 |PHONE|    All other End Points, such as Users, IVR menus or scripts require you to use this end point type|
 
 Further parameters which you will need to setup within an End Point include:
 
+|Parameter|Description|
+|-----------|---------------|
 |Queue name / Phone|   End point name. If you use the QUEUE end point type, then the name must match exactly the name of the that team within mobydick, Otherwise this is completely up to you|
 |Located at: Extension |The extension number of the team, user, IVR or script etc, ...|
 |Located at: Context   |Is always **wombat**. This ensures that the script we added above, will always be used as the initiate point into the mobydick dialplan.|

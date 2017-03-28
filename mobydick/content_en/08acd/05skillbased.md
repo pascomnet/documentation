@@ -3,7 +3,7 @@ title: Skills Based Routing
 url: /call-distribution/skills-based-routing/
 linkde: /anrufverteilung/skill-based-routing/
 prev: /call-distribution/ivr-menus/
-prev: /call-distribution/
+prev: /call-distribution/prompts-and-music-on-hold/
 description: Skills Based Routing is an advanced routing strategy that routes calls to contact center agents who are best qualified (skilled) to fulfill the incoming callers requirements. Skills Based Routing also has the additional benefit of significantly simplifying Queue Management and Analysis in larger contact center Environments.
 keywords: 
     - Skills Based Routing
@@ -12,7 +12,7 @@ keywords:
     - Advanced Call Center ACD
     - CallCenter Solutions
     - ContactCenter IP telephony
-weight: 74
+weight: 75
 toc: true
 ---
 

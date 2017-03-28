@@ -1,6 +1,6 @@
 ---
 title: Automatic Call Distribution (ACD)
-next: /call-distribution/prompts-and-music-on-hold/
+next: /call-distribution/actions/
 url: /call-distribution/
 linkde: /anrufverteilung/
 description: Automatic Call Distribution or ACD is a key component of VoIP phone systems that automates how calls are routed and is used by businesses to create more professional, customer orientated call experiences with features including advanced features such as custom prompts, Music on Hold (MoH), Interactive Voice Response Menus (IVR) and Skills Based Routing. 
