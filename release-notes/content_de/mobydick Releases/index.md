@@ -1,7 +1,7 @@
 ---
 url: /mobydick/
 linken: /mobydick/
-next: /mobydick/release-7.13.04/
+next: /mobydick/release-7.14.00/
 weight: 0
 title: mobydick Release Notes
 keywords:
@@ -20,23 +20,17 @@ icon: <i class="fa fa-file-text-o" aria-hidden="true"></i>
 
 |Version|Release Type|Veröffentlichung|
 |-------|------------|---------------:|
-|[Release 7.13.04]({{< relref "07.13.04.md" >}})| Bugfix Release | 02.03.2017 |
-|[Release 7.13.03]({{< relref "07.13.03.md" >}})| Bugfix Release | 09.02.2017 |
-|[Release 7.13.02]({{< relref "07.13.02.md" >}})| Bugfix Release | 02.12.2016 |
-|[Release 7.13.01]({{< relref "07.13.01.md" >}})| Bugfix Release | 29.09.2016 |
-|[Release 7.13.00]({{< relref "07.13.00.md" >}})| Feature Release | 06.09.2016 |
+|[Release 7.14.00]({{< relref "07.14.00.md" >}})| Feature Release | 06.04.2017 |
 
 ## Stable Version
 
 |Version|Release Type|Veröffentlichung|
 |-------|------------|---------------:|
-|[Release 7.12.06]({{< relref "07.12.06.md">}})| Bugfix Release | 26.01.2017 |
-|[Release 7.12.05]({{< relref "07.12.05.md">}})| Bugfix Release | 11.11.2016 |
-|[Release 7.12.04]({{< relref "07.12.04.md">}})| Bugfix Release | 20.09.2016 |
-|[Release 7.12.03]({{< relref "07.12.03.md">}})| Bugfix Release | 22.08.2016 |
-|[Release 7.12.02]({{< relref "07.12.02.md" >}})| Bugfix Release | 24.05.2016 |
-|[Release 7.12.01]({{< relref "07.12.01.md" >}})| Bugfix Release | 14.04.2016 |
-|[Release 7.12.00]({{< relref "07.12.00.md" >}})| Feature Release | 07.04.2016 |
+|[Release 7.13.04]({{< relref "07.13.04.md" >}})| Bugfix Release | 02.03.2017 |
+|[Release 7.13.03]({{< relref "07.13.03.md" >}})| Bugfix Release | 09.02.2017 |
+|[Release 7.13.02]({{< relref "07.13.02.md" >}})| Bugfix Release | 02.12.2016 |
+|[Release 7.13.01]({{< relref "07.13.01.md" >}})| Bugfix Release | 29.09.2016 |
+|[Release 7.13.00]({{< relref "07.13.00.md" >}})| Feature Release | 06.09.2016 |
 
 ## LTS Version
 
@@ -55,6 +49,13 @@ icon: <i class="fa fa-file-text-o" aria-hidden="true"></i>
 
 |Version|Release Type|Veröffentlichung|
 |-------|------------|---------------:|
+|[Release 7.12.06]({{< relref "07.12.06.md">}})| Bugfix Release | 26.01.2017 |
+|[Release 7.12.05]({{< relref "07.12.05.md">}})| Bugfix Release | 11.11.2016 |
+|[Release 7.12.04]({{< relref "07.12.04.md">}})| Bugfix Release | 20.09.2016 |
+|[Release 7.12.03]({{< relref "07.12.03.md">}})| Bugfix Release | 22.08.2016 |
+|[Release 7.12.02]({{< relref "07.12.02.md" >}})| Bugfix Release | 24.05.2016 |
+|[Release 7.12.01]({{< relref "07.12.01.md" >}})| Bugfix Release | 14.04.2016 |
+|[Release 7.12.00]({{< relref "07.12.00.md" >}})| Feature Release | 07.04.2016 |
 |[Release 7.10.08]({{< relref "07.10.08.md">}})| Bugfix Release | 18.03.2016 |
 |[Release 7.10.07]({{< relref "07.10.07.md" >}})| Bugfix Release | 01.02.2016 |
 |[Release 7.10.06]({{< relref "07.10.06.md" >}})| Bugfix Release | 02.12.2015 |
