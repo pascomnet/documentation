@@ -13,7 +13,7 @@ keywords:
     - busylampfield
     - firmware
 description: Integrieren Sie Ihre Grandstream IP-Tischtelefone in die mobydick.
-prev: /endgeraete/yealink-ip-tischtelefone/
+prev: /endgeraete/snom-tischtelefone-300-700-serie/
 url:  /endgeraete/grandstream-tischtelefone-gxp-gxv-serie/
 next: /endgeraete/snom-dect/
 weight: 43
@@ -156,15 +156,15 @@ Im Bereich **</config>** können Sie Ihre Wunschtasten einfügen. Folgendes Beis
     <P1465>Max</P1465>
     <P1466>103</P1466>
 
-*Erklärung*: **11** ist der Code für die BLF-Taste; **0** ist er erste Account auf dem Telefon; **Max** erscheit am Telefon-Display als Bezeichung der Taste; **103** ist die Nebenstelle die überwacht wird.
+*Erklärung*: **11** ist der Code für die BLF-Taste; **0** ist er erste Account auf dem Telefon; **Max** erscheint am Telefon-Display als Bezeichung der Taste; **103** ist die Nebenstelle die überwacht wird.
 
-Weitere Informationen entnehmen Sie bitte der ![Grandstream-Tasten-Dokumentation](/grandstream_key_configuration.pdf).
+Weitere Informationen entnehmen Sie bitte der [Grandstream-Tasten-Dokumentation](/grandstream_key_configuration.pdf).
 
 Weisen Sie diese Basis-Konfiguration über den Tab `Geräte` den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und Speichern Sie nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
 
 ### Firmwareupdate
 
-Ab der mobydick Version 7.14 wird die Firmware für IP-Endgeräte nicht mehr mitgeliefert. Sollte eine andere als auf dem IP-Endgerät installierte Firmware benötigt werden, muss diese selber heruntergeladen und in die mobydick Firware-Verwaltung hochgeladen werden.
+Ab der mobydick Version 7.14 wird die Firmware für IP-Endgeräte nicht mehr mitgeliefert. Sollte eine andere als auf dem IP-Endgerät installierte Firmware benötigt werden, muss diese selber heruntergeladen und in die mobydick Firmware-Verwaltung hochgeladen werden.
 
 **Firmware hinzufügen**
 
@@ -182,12 +182,8 @@ Die gewünschte Firmware kann hinzugefügt werden unter `Endgeräte` > `Firmware
 Die Firmware kann aus den IP-Endgeräten über `Endgeräte` > `Geräteliste` aktualisiert werden. Wählen Sie die Zielgeräte in der Geräteliste mit Häkchen aus und klicken Sie auf `Aktion` > `Firmware ausrollen`. Nun erhalten Sie eine Übersicht der gewählen Geräte, in der Sie die Zielfirmware auswählen können. Anschließend klicken Sie auf `Firmware update` um die gewählte Firmware auszurollen.
 
 
-<!-- **Empfohlene Firmware**
-
 Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es uns leider nicht möglich jede zu testen, so dass es sein kann, dass manche Firmware-Versionen mobydick Funktionen nicht unterstützen. Daher finden Sie hier eine Liste der Firmwares die von uns bereits getestet wurde:
 
 |Modell|Empfohlene Firmware|
 |---|---|
-||| -->
-
-<!--FIXME firware bei dev nachfragen! -->
+|GXP2160|1.0.7.97|

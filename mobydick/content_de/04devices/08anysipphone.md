@@ -1,5 +1,5 @@
 ---
-prev: /endgeraete/snom-tischtelefone-300-700-serie/
+prev: /endgeraete/aastra-dect/
 url:  /endgeraete/beliebiges-ip-geraet/
 weight: 48
 title: Beliebiges IP Endgerät einrichten

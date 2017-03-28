@@ -1,11 +1,11 @@
 ---
-title: aastra DECT System anbinden
+title: Aastra DECT-System
 keywords:
     - aastra DECT System anbinden
     - Multizellen DECT System
     - Mitel DECT System anbinden
     - VoIP DECT
-prev: /endgeraete/beliebiges-ip-geraet-einrichten/
+prev: /endgeraete/snom-dect/
 url:  /endgeraete/aastra-dect/
 next: /endgeraete/beliebiges-ip-geraet/
 weight: 47

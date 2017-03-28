@@ -9,7 +9,7 @@ keywords:
 description: Unter "Desktop Client nutzen" erfahren Sie, wie Enduser alle Funktionen des mobydick Clients nutzen können.
 url: /clients/client-nutzen/
 prev: /clients/client-installieren/
-next: /clients/teams-im-client/
+next: /clients/followme/
 weight: 32
 toc: true
 ---

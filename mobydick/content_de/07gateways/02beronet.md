@@ -13,8 +13,6 @@ toc: true
 beroNet Karten und Gateways sind modular aufgebaut. Das bedeutet für Sie, dass Sie unterschiedliche Anschlüsse mit nur einem Gerät abbilden können.
 ![Illustration - modulares Gateway](../../images/beronet_gateway_beispiel.jpg?width=90% "Modulare Gateways Lösung von beroNet")
 
-Beispiel: Sie haben 3 NTBAs (ISDN-Anschlüsse) und noch 2 Analoge Fax. Dann könnten Sie ein beroNet Gateway oder Karte mit einem 4S0 Modul und
-
 
 ### beroNet VoIP Gateways
 Das beroNet VoIP Gateway wird an die LAN Verkabelung angeschlossen und erhält eine IP-Adresse aus dem Telefonnetz. An die vorderen Anschlüsse der Gateway werden dann z. B. das öffentliche Telefonnetz bzw. analoge Endgeräte angeschlossen. beroNet Gateways können modular mit Modulen ausgestattet werden. Je nach Modulen sind die Ports an der Vorderseite Analog oder ISDN. Durch die Anbindung per LAN eigenen sich beroNet Gateways ideal für Umgebungen in denen mobydick in einer virtuellen Maschine betrieben wird.
@@ -132,5 +130,5 @@ Unter `Hinzufügen` haben Sie folgende Aswahl:
 |ISDN Telefon via SIP |ISDN Telefon welches über die mobydick geroutet wird	|Telefon|
 
 
-//FixME
+<!-- FIXME -->
 In diesem Schritt konfigurieren Sie lediglich den Anschluss auf der Berofix Hardware. Zur vollständigen Funktion fahren Sie mit Endgeraete in Betrieb nehmen fort.

@@ -1,12 +1,9 @@
 ---
 title: Ämter konfigurieren
-keywords:
-description:
-url:  /aemter/aemter-konfigurieren/
 weight: 11
 toc: true
 prev: /aemter/
-next: /aemter/aemter-kette/
+url:  /aemter/aemter-konfigurieren/
 
 ---
 
@@ -67,7 +64,6 @@ Da verschiedene Ämter-Typen unterschiedliche Variablen benötigen finden Sie im
 |**Ext. aus Header**|Standardmäßig wird die Zielrufnummer aus dem SIP-INVITE ermittelt. Setzt man diese Option auf *ja* wird die Zielrufnummer alternativ aus dem SIP-Header gelesen. Dies wird häufig bei SIP-Anlagenanschlüssen benötigt.|
 |**CLIP Modus**|*CLIP* ist ein Leistungsmerkmal, welches die Übermittlung von Rufnummern bei ausgehenden Rufen ermöglicht. Mögleiche Eintellungen:<br> * *Number*<br> * *Name+Number*<br> * *SIP Header*|
 |**CLIR Modus**|*CLIR* ist ein Leistungsmerkmal, welches die Unterdrückung von Rufnummern bei ausgehenden Rufen ermöglicht. Mögliche Einstellungen:<br> *  *Name+Number*<br> * *SIP Header*|
-
 
 
 ### Rufregeln
