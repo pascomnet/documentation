@@ -12,7 +12,7 @@ toc: true
 
 ## Konzept
 
-Benutzern und Arbeitsplätzen können mehrere Endgeräte zugewiesen werden. Die Konfiguration welches Endgerät wann, wie lange und ob überhaupt klingelt bezeichten man als **FollowMe**.
+Benutzern und Arbeitsplätzen können mehrere Endgeräte zugewiesen werden. Die Konfiguration welches Endgerät wann, wie lange und ob überhaupt klingelt bezeichnet man als **FollowMe**.
 
 ![FollowMe](/followme.png)
 
@@ -29,7 +29,7 @@ Klicken Sie im Web-UI zunächst auf `Benutzer` > `Benutzerliste` > Benuzter ausw
 |---|---|
 |Vom Benutzer konfigurierbar|**Ja/Nein**: Der Admin kann entscheiden ob der Benutzer FollowMe-Einstellungen zu diesem Gerät über seinen Client vornehmen kann.|
 |Aktiviert|**Ja/Nein**: Das Endgerät läutet bei einem eingehenden Anruf mit oder nicht.|
-|Warten|Zeit in Sekunden, wie lange das Gerät wartet bis es mitklingelt bei einem eingehen Anruf|
+|Warten|Zeit in Sekunden, wie lange das Gerät wartet bis es mitklingelt bei einem eingehenden Anruf|
 |Timeout|Zeit in Sekunden, wie lange das Gerät klingelt|
 
 Die Einstellungen erfolgen für
@@ -53,7 +53,7 @@ Der Benutzer kann Einstellungen vornehmen für Anrufe von intern und extern und 
 |Einstellungen|Beschreibung|
 |---|---|
 |**Client kontrolliert**|Über dieses Auswahlmenü kann gewählt werden welches Telefon, falls mehrere vorhanden, über den Desktop Client kontrolliert wird.|
-|**Meine Geräte**|Hier sind alle Telefone des Benutzers gelistet. Telefone zu denen der Benutzer keine FollowMe-Einstellungen vornehmen darf sind ausgegraut.<br>Der Benutzer kann Geräte aktivieren/deaktivieren, also entscheiden ob ein Telefon mitläutet oder nicht. Ebenfalls kann eine **Verzögerung** (Telefon wartet bis es mitläutet) und Dauer des **Läuten**s eingestellt werden|
+|**Meine Geräte**|Hier sind alle Telefone des Benutzers gelistet. Telefone zu denen der Benutzer keine FollowMe-Einstellungen vornehmen darf sind ausgegraut.<br>Der Benutzer kann Geräte aktivieren/deaktivieren, also entscheiden ob ein Telefon mitläutet oder nicht. Ebenfalls kann eine **Verzögerung** (Telefon wartet bis es mitläutet) und Dauer des **Läuten**s eingestellt werden.|
 
 Zur Übersicht über die FollowMe-Einstellungen sieht man in der rechten Spalte eine grafische Übersicht über die Geräte und deren Zeiten.
 
