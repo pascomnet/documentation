@@ -7,7 +7,7 @@ keywords:
     - Yealink T48P integration
     - Yealink IP Desktop Phones 
 description: How to integrate Yealink IP endpoints in your pascom PBX, including the T40P, T41P, T42G, T46G and T48G
-url:  /endpoints/yealink-ip-telephones/
+url:  /endpoints/yealink-ip-telephones-t4-series/
 linkde: /endgeraete/yealink-ip-tischtelefone/
 prev: /endpoints/snom-ip-telephones/
 next: /endpoints/auerswald-ip-telephones/
@@ -57,47 +57,47 @@ The IP phone will now boot and will be The phone will now boot and acquires an I
 
 As mentioned above, for every device mobydick will also automatically add a SIP peer. In addition, the device username and password will also be automatically generated. The username consists of a randomly generated string followed by the last six digits of the device’s MAC address (15 digits in total). As the IP phones are automatically provisioned, you will not be required to enter this data manually and it is not possible to modifiy the user data. This is designed to considerably increase security against SIP Brute Force attacks.
 
-The Device Name will be automatically added as signified by the vendor (Snom) and the MAC Address. On most IP phones, the MAC address is noted on the device housing, allowing phones to be more simply deployed on site in the correct locations.
+The Device Name will be automatically added as signified by the vendor (Yealink) and the MAC Address. On most IP phones, the MAC address is noted on the device housing, allowing phones to be more simply deployed on site in the correct locations.
 
 After a successful provisioning, the IP phone display should show to correct language and time as well as the text `Emergency Only`
 
 {{% notice info%}}
-After the successful phone provisioning, the admin user will be reset by the PBX with the following credentials:.
+After the successful phone provisioning, the admin user will be reset by the PBX with the following credentials:  
 <br>Username: *admin*
 <br>Password: *0000*
 {{% /notice  %}}
 
-Das Passwort des Admin-Users am IP-Telefon kann über die Systemeinstellungen im Web-UI geändert werden. Suchen Sie in dem Suchfeld nach dem Parameter *sys.peripherals.access.password*. Geben Sie Ihren gewünschten Wert ein. Anschließend müssen Sie manuell die Telefonie-Konfiguration anwenden und die Endgeräte neustarten.
+The Telephone Admin User Password can be changed within the Web UI under system settings. Use the search box and search for the parameter *sys.peripherals.access.password* and enter your desired password. Finally, you will be required to manually apply the Telephony Configurations and restart the endpoint.
 
-### Benutzer zuweisen
+### Assigning Users
 
-Nachdem das IP-Telefon in der Geräteliste erscheint kann es bearbeitet werden. Klicken Sie hierzu auf `Bearbeiten`. Im Tab `Zuweisung` kann dem Telefon ein [Benutzer (oder Arbeitsplatz)](../../benutzer/benutzer-arbeitsplaetze/) zugewiesen werden.
+As soon as the IP phone has appeared in the Device List, it can be edited via the `Edit` button. Under the `Assign` tab, the phone can be assigned to a [user (or location)](../../users/users-and-locations/). 
 
-Nach dem Speichern und Anwenden der Telefoniekonfiguration werden die neu zugewiesenen IP-Telefone neugestartet.
+After saving your assignments and reapplying the telephony configurations, all affected IP phones will restart.
 
-### Funktion testen
+### Function Testing
 
-Am einfachsten kann man die erfolgreiche Inbetriebnahme testen, indem man mit **\*100** die eigene Voicemailbox anruft. Daraufhin sollte die Ansage Ihrer Voicemailbox zu hören sein.
+The simplest method of testing whether a device has been successfully deployed is to call ones Voicemail box via **\*100**. On successfully provisioned phones, you should now hear your Voicemail box prompts.
 
-### pascom Menütaste
+### pascom Menu Key
 
 <!--FIXME Menütaste  -->
 
-<!-- Nach der Provisionierung entspricht die **Menü**-Taste am Yealink IP-Telefon nicht mehr dem Telefon-Menü, sondern ruft das telefonspezifische pascom Menü auf. Hier sind pascom Funktionen hinterlegt: -->
+<!-- After the provisioning process, the **Menu** button on Yealink phones is no longer assigned to the Telephone Menu, but rather to a telephone specific pascom Menu making the following functions available: -->
 
-|Funktion|Beschreibung|
+|Function|Description|
 |---|---|
-|Telefonbuch|Ruft das pascom Telefonbuch auf.|
-|Journal|Zeigt verpasste, angenommene und gewählte Anrufer an|
-|Rufumleitung|Setzt eine Rufumleitung, aktiviert/ändert schon eine gesetzt Rufumleitung oder deaktiviert eine aktiver Rufumleitung.|
-|Voicmailbox|Voicemailbox-Menü zum Einschalten/Ausschalten und Abhören der eigenen Voicemailbox|
-|Anmelden|Hier kann ein Benutzer sich an dem Arbeitsplatz anmelden.|
-|Abmelden [*benutzername*]|Der bereits angemeldete Benutzer kann sich an dem Arbeitsplatz abmelden.|
-|Warteschlagen|Dient zur Verwaltung der Warteschlagen (anmelden, abmelden, pausieren...), je nach Konfiguration der Warteschangen.|
+|Telephone Book|Opens up the central PBX phonebook.|
+|Journal|Displays answered, dialled and missed calls|
+|Call Forwarding|Sets a call forwarding, activates / updates a previously configured call forwarding or deactivates an active call forwarding.|
+|Voicmail Box|Voicemail box menu for activating/deactivating your mail box, plus message play backs|
+|Login|Enables a user to log into the location where the phone is (Hotdesking / roaming users).|
+|Logout [*username*]|Logs out the current user from this location.|
+|Teams (Queues)<!--FIXME-->|Is used for agent management within a queue (login, logout, pause..) according the configuration of the queue.|
 
 
 {{% notice tip%}}
-Setzten Sie Rufumleitungen nur über das mobydick Menü, da diese Rufumleitungen über die mobydick Verwaltet werden können.
+Only set Call Forwardings via the pascom menu as they can then be managed by the PBX.
 {{% /notice %}}
 
 {{% notice info%}}
