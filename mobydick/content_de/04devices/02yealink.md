@@ -1,10 +1,10 @@
 ---
-title: Yealink IP Tischtelefone
+title: Yealink Tischtelefone T4-Serie
 keywords:
-    - T40P, T42G, T46G, T48P
-prev: /endgeraete/-tischtelefone-300-700-serie/
-url:  /endgeraete/yealink-ip-tischtelefone/
-next: /endgeraete/grandstream-tischtelefone-gxp-gxv-serie/
+    - t40p, t42g, t46g, t48p
+prev: /endgeraete/snom-tischtelefone-300-700-serie/
+url:  /endgeraete/yealink-ip-tischtelefone-t4-serie/
+next: /endgeraete/grandstream-ip-tischtelefone-gxp-gxv-serie/
 weight: 42
 toc: true
 draft: false
@@ -70,9 +70,7 @@ Am einfachsten kann man die erfolgreiche Inbetriebnahme testen, indem man mit **
 
 ### pascom Menütaste
 
-<!--FIXME Menütaste  -->
-
-<!-- Nach der Provisionierung entspricht die **Menü**-Taste am Yealink IP-Telefon nicht mehr dem Telefon-Menü, sondern ruft das telefonspezifische pascom Menü auf. Hier sind pascom Funktionen hinterlegt: -->
+Nach der Provisionierung ist auf der zweiten Funktionstaste am Display das pascom Menü zu finden. Hier sind pascom Funktionen hinterlegt:
 
 |Funktion|Beschreibung|
 |---|---|
@@ -86,11 +84,11 @@ Am einfachsten kann man die erfolgreiche Inbetriebnahme testen, indem man mit **
 
 
 {{% notice tip%}}
-Setzten Sie Rufumleitungen nur über das mobydick Menü, da diese Rufumleitungen über die mobydick Verwaltet werden können.
+Setzen Sie Rufumleitungen nur über das mobydick Menü, da diese Rufumleitungen über die mobydick Verwaltet werden können.
 {{% /notice %}}
 
 {{% notice info%}}
-Die Verwendung der DND-Taste (*do not disturb*) am Yealink hat zur Folge, dass die Durchwahl am Telefon nicht erreichbar ist. Der DND-Hinweis erscheint nur am Telefon und hat für die mobydick (z. B. Desktop Client) keine weitere Bedeutung.
+Die Verwendung der DND-Taste (*do not disturb*) oder Ruhe-Taste am Yealink hat zur Folge, dass die Durchwahl am Telefon nicht erreichbar ist. Der DND-Hinweis erscheint nur am Telefon und hat für die mobydick (z. B. Desktop Client) keine weitere Bedeutung.
 {{% /notice %}}
 
 ### Auf die Yealink-Weboberfläche zugreifen
@@ -98,9 +96,8 @@ Die Verwendung der DND-Taste (*do not disturb*) am Yealink hat zur Folge, dass d
 <!--FIXME Zugriff Web-UI  -->
 Um auf die Weboberfläche Ihres IP-Telefons zu gelangen benötigen Sie die IP-Adresse. Im Folgenden sind Möglichkeiten beschreiben, um diese in Erfahrung zu bringen:
 
-<!-- **IP-Adresse am Telefons anzeigen**
+Drücken Sie die Yealink-Menütaste des Telefons (die linke Taste unter dem Telefon-Display), anschließend wählen Sie den Menüpunkt *Aktiv*. Nun können Sie die IPv4-Adresse des Telefons ablesen.
 
-Tippen Sie die Taste **?** bzw. **Help** um die IP-Adresse Ihres Telefon anzuzeigen, anschließend wird diese am Display angezeigt. -->
 
 **IP-Adresse über die Geräteliste ermitteln**
 
@@ -108,7 +105,7 @@ Loggen Sie sich in das Web-UI der mobydick ein. Klicken Sie auf `Endgeräte` > `
 
 ### Tasten belegen über das Web-UI
 
-Klicken Sie in der Menüliste auf der linken Seite auf Funktionstasten.
+<!-- Klicken Sie in der Menüliste auf der linken Seite auf Funktionstasten. -->
 
 <!-- **Andere Benutzer (Nebenstellen) überwachen mit BLFs**
 

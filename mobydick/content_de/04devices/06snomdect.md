@@ -2,7 +2,7 @@
 title: Snom DECT-System
 keywords:
 description:
-prev: /endgeraete/grandstream-tischtelefone-gxp-gxv-serie/
+prev: /endgeraete/grandstream-ip-tischtelefone-gxp-gxv-serie/
 url:  /endgeraete/snom-dect/
 next: /endgeraete/aastra-dect/
 weight: 46

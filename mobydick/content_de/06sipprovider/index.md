@@ -1,8 +1,11 @@
 ---
-title: SIP Provider
+title: SIP-Provider
 next: /sip-provider/aemter/
 url: /sip-provider/
 weight: 5
 icon: <i class="fa fa-database" aria-hidden="true"></i>
-draft: true
+draft: false
+chapter: true
 ---
+
+# SIP-Provider

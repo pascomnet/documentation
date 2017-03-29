@@ -13,7 +13,7 @@ keywords:
 description: Integrieren Sie Ihre Snom IP-Tischtelefone in die mobydick.
 prev: /endgeraete/
 url:  /endgeraete/snom-tischtelefone-300-700-serie/
-next: /endgeraete/grandstream-tischtelefone-gxp-gxv-serie/
+next: /endgeraete/yealink-ip-tischtelefone-t4-serie/
 weight: 41
 toc: true
 
@@ -96,7 +96,7 @@ Nach der Provisionierung entspricht die **Menü**-Taste am Snom IP-Telefon nicht
 Besitzt das Snom IP-Telefon keine Menütaste (z. B. Snom 300, 710, D715) wird die zweite Funktionstaste mit dem pascom Menü belegt.
 
 {{% notice tip%}}
-Setzten Sie Rufumleitungen nur über das mobydick Menü, da diese Rufumleitungen über die mobydick Verwaltet werden können.
+Setzen Sie Rufumleitungen nur über das mobydick Menü, da diese Rufumleitungen über die mobydick Verwaltet werden können.
 {{% /notice %}}
 
 {{% notice info%}}

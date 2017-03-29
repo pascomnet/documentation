@@ -13,8 +13,8 @@ keywords:
     - busylampfield
     - firmware
 description: Integrieren Sie Ihre Grandstream IP-Tischtelefone in die mobydick.
-prev: /endgeraete/snom-tischtelefone-300-700-serie/
-url:  /endgeraete/grandstream-tischtelefone-gxp-gxv-serie/
+prev: /endgeraete/yealink-ip-tischtelefone-t4-serie/
+url:  /endgeraete/grandstream-ip-tischtelefone-gxp-gxv-serie/
 next: /endgeraete/snom-dect/
 weight: 43
 toc: true
