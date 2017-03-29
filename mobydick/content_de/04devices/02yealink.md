@@ -1,17 +1,10 @@
 ---
 title: Yealink Tischtelefone T4-Serie
 keywords:
-<<<<<<< HEAD
-    - t40p, t42g, t46g, t48p
-prev: /endgeraete/snom-tischtelefone-300-700-serie/
-url:  /endgeraete/yealink-ip-tischtelefone-t4-serie/
-next: /endgeraete/grandstream-ip-tischtelefone-gxp-gxv-serie/
-=======
     - T40P, T42G, T46G, T48P
 prev: /endgeraete/snom-tischtelefone-300-700-serie/
 url:  /endgeraete/yealink-ip-tischtelefone/
 next: /endgeraete/grandstream-tischtelefone-gxp-gxv-serie/
->>>>>>> 5fd2d6b69ca79e6c78369daa4233fad5b9286c45
 weight: 42
 toc: true
 draft: false
