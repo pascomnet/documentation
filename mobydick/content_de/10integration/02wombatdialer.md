@@ -8,6 +8,7 @@ keywords:
 description: Integration eines Predictive Dialers in mobydick.
 url: /integrationen/wombatdialer/
 prev: /integrationen/queuemetrics/
+next: /integrationen/datev-telefonie-integration/
 weight: 102
 toc: true
 ---
