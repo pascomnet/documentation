@@ -2,7 +2,7 @@
 title: Yealink IP Tischtelefone
 keywords:
     - T40P, T42G, T46G, T48P
-prev: /endgeraete/-tischtelefone-300-700-serie/
+prev: /endgeraete/snom-tischtelefone-300-700-serie/
 url:  /endgeraete/yealink-ip-tischtelefone/
 next: /endgeraete/grandstream-tischtelefone-gxp-gxv-serie/
 weight: 42

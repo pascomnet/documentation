@@ -21,7 +21,7 @@ Benutzern und Arbeitsplätzen können mehrere Endgeräte zugewiesen werden. Die 
 
 Voraussetzung für die Konfiguration ist, dass bereits  [Benutzer](../../benutzer/benutzer-arbeitsplaetze/) angelegt sind und Ihnen mindestens ein Endgerät zugewiesen wurde.
 
-Klicken Sie im Web-UI zunächst auf `Benutzer` > `Benutzerliste` > Benuzter auswählen > im Tab `Geräte`. In der rechten Spalte erhalten Sie die Übersicht der direkt zugewiesenen Geräte mit den FollowMe-Einstellungen. Klicken Sie nun auf die FolloMe-Einstelung:
+Klicken Sie im Web-UI zunächst auf `Benutzer` > `Benutzerliste` > Benuzter auswählen > im Tab `Geräte`. In der rechten Spalte erhalten Sie die Übersicht der direkt zugewiesenen Geräte mit den FollowMe-Einstellungen. Klicken Sie nun auf die FolloMe-Einstellung:
 
 ![FollowMe](/followme_einstellungen_commander.png?width=50%)
 
@@ -48,7 +48,7 @@ Darf der Benutzer (je nach Berechtigung) selber seine FollowMe-Einstellungen ver
 
 ![FollowMe](/followme_einstellungen_client.png?width=100%)
 
-Der Benutzer kann Einstellungen vornehmen für Anrufe von intern und extern und für Anrufe die aus einer Warteschlagen kommen. Dafür wechselt er zwischen dem Tabs `Extern`, `Intern` und `Teams`.
+Der Benutzer kann Einstellungen vornehmen für Anrufe von intern und extern und für Anrufe die aus einer Warteschlange kommen. Dafür wechselt er zwischen dem Tabs `Extern`, `Intern` und `Teams`.
 
 |Einstellungen|Beschreibung|
 |---|---|

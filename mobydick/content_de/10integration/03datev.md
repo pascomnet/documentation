@@ -30,13 +30,13 @@ Sollte das Label nicht angelegt sein, erscheint bei Start des mobydick Clients f
 
 ### Eingehender Anruf
 
-Bei einem eingehenen Anruf werden die DATEV-Stammdaten abgefragt und Treffer in der Anruf-Notification angezeigt.
+Bei einem eingehenden Anruf werden die DATEV-Stammdaten abgefragt und Treffer in der Anruf-Notification angezeigt.
 
 ![DATEV Notification](/datev_notification.PNG)
 
 Schon während des Läutens ist es möglich über den DATEV-Klick die Telefonie-Daten in die Telefonliste Ihres *DATEV Arbeitsplatz pro* zu übertragen.
 
-Nach einem Anruf können die Daten über den DATEV-Klick aus dem Journal zu übertragen werden.
+Nach einem Anruf können die Daten über den DATEV-Klick aus dem Journal übertragen werden.
 
 ![DATEV Journal](/datev_journal.PNG)
 
@@ -46,7 +46,7 @@ Sollten zu einer Telefonnummer mehrere Einträge in den DATEV-Stammdaten zu find
 
 **DATEV-Einstellungen im Client**
 
-Im mobydick Client können unter `Einstellungen` -> `Adressbücher` Einstellungen Vorgenommen werden:
+Im mobydick Client können unter `Einstellungen` -> `Adressbücher` Einstellungen vorgenommen werden:
 
 ![DATEV Einstellungen](/datev_automatisch.PNG)
 
@@ -54,8 +54,8 @@ Im mobydick Client können unter `Einstellungen` -> `Adressbücher` Einstellunge
 |---|---|
 |Reihenfolge der Telefonbücher|Verwenden Sie den mobydick Client auf einer Arbeitsstation auf dem auch *DATEV Arbeitsplatz pro* installiert ist, wird immer als erstes das DATEV-Telefonbuch abgefragt.|
 |DATEV-Integration ist aktiviert|Hier kann die Verwendung der DATEV-Schnittstelle deaktiviert/aktiviert werden.|
-|Bei Telefonbuch-Suche verwenden|Hier kann angegeben werden, ob bei einem einkommenen Anruf das DATEV-Telefonbuch durchsucht werden soll.|
-|Cache aktualsieren|Wenn Sie in den DATEV-Stammdaten Änderungen vornehmen, kann es bis zu 2 Stunden dauern, bis diese synchronisiert werden. Möchten Sie die Änderungen sofort synchronisieren, klicken Sie hier auf `Aktualsieren`|
+|Bei Telefonbuch-Suche verwenden|Hier kann angegeben werden, ob bei einem einkommenden Anruf das DATEV-Telefonbuch durchsucht werden soll.|
+|Cache aktualisieren|Wenn Sie in den DATEV-Stammdaten Änderungen vornehmen, kann es bis zu 2 Stunden dauern, bis diese synchronisiert werden. Möchten Sie die Änderungen sofort synchronisieren, klicken Sie hier auf `Aktualisieren`|
 |Automatische Datenweitergabe|Hier können Sie einstellen, ob Anrufdaten erst nach dem DATEV-Klick oder automatisch in die DATEV-Stammdaten übertragen werden sollen.|
 
 
