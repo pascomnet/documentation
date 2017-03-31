@@ -118,9 +118,9 @@ Press the **OK** key when the phone idle screen is active and the phone IP addre
 
 Alternatively, it is possible to call up the IP address via the phone **menu** key and selecting the status option. 
 
-**IP-Adresse über die Geräteliste ermitteln**
+**Finding the IP-Address via the Web UI Device List**
 
-Loggen Sie sich in das Web-UI der mobydick ein. Klicken Sie auf `Endgeräte` > `Geräteliste`. Nun sehen Sie eine Übersicht über alle verfügbaren Geräte. Links von jedem Eintrag finden Sie ein *Info*-Symbol. Klicken Sie es an, erhalten Sie eine Übersicht über das provisionierte Telefon, unter anderem auch die IP-Adresse.
+Log into the PBX Web UI and select the `Devices` > `Device list`. Nun sehen Sie eine Übersicht über alle verfügbaren Geräte. Links von jedem Eintrag finden Sie ein *Info*-Symbol. Klicken Sie es an, erhalten Sie eine Übersicht über das provisionierte Telefon, unter anderem auch die IP-Adresse.
 
 ### Tasten belegen über das Web-UI
 
