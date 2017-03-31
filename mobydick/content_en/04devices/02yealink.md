@@ -8,7 +8,7 @@ keywords:
     - Yealink IP Desktop Phones 
 description: How to integrate Yealink IP endpoints in your pascom PBX, including the T40P, T41P, T42G, T46G and T48G
 url:  /endpoints/yealink-ip-telephones-t4-series/
-linkde: /endgeraete/yealink-ip-tischtelefone/
+linkde: /endgeraete/yealink-ip-tischtelefone-t4-serie/
 prev: /endpoints/snom-ip-telephones/
 next: /endpoints/auerswald-ip-telephones/
 weight: 42
@@ -29,8 +29,11 @@ draft: false
 **Provisioning**: The IP phone is manageable via the PBX web UI.<br>
 **Firmware Management**: Firmware can be managed and updated via the PBX web UI.<br>
 **Desktop Client CTI Control**: The desktop UC client can remotely control the phone, i.e. to start calls.<br>
-**pascom Menu**: A phone touch key will be assigned to access the pascom Menu.
+**pascom Menu**: A phone touch key will be assigned to access the pascom Menu. 
 
+{{% notice tip%}}
+Yealink phones have an additional menu key for the phone options.  
+{{% /notice %}}
 
 ## Configuration
 
@@ -83,7 +86,7 @@ The simplest method of testing whether a device has been successfully deployed i
 
 <!--FIXME Menütaste  -->
 
-<!-- After the provisioning process, the **Menu** button on Yealink phones is no longer assigned to the Telephone Menu, but rather to a telephone specific pascom Menu making the following functions available: -->
+<!--After the provisioning process, the **Menu** button on Yealink phones is no longer assigned to the Telephone Menu, but rather to a telephone specific pascom Menu making the following functions available:-->
 
 |Function|Description|
 |---|---|
@@ -101,17 +104,19 @@ Only set Call Forwardings via the pascom menu as they can then be managed by the
 {{% /notice %}}
 
 {{% notice info%}}
-Die Verwendung der DND-Taste (*do not disturb*) am Yealink hat zur Folge, dass die Durchwahl am Telefon nicht erreichbar ist. Der DND-Hinweis erscheint nur am Telefon und hat für die mobydick (z. B. Desktop Client) keine weitere Bedeutung.
+ Using the DND key (*do not disturb*) directly on your Yealink phone, ensures that the assigned user extension cannot be reached on the phone. The DND notice will appear only on the telephone itself and will have no impact on other endpoints or the Desktop UC client (softphone).
 {{% /notice %}}
 
-### Auf die Yealink-Weboberfläche zugreifen
+### Accessing the Yealink Web UI
 
 <!--FIXME Zugriff Web-UI  -->
-Um auf die Weboberfläche Ihres IP-Telefons zu gelangen benötigen Sie die IP-Adresse. Im Folgenden sind Möglichkeiten beschreiben, um diese in Erfahrung zu bringen:
+In order to access your telephone's web UI, you will need to know the phone's IP address. The following outlines the different methods of discovering the phone IP Address:
 
-<!-- **IP-Adresse am Telefons anzeigen**
+**Finding the IP-Address on the Telephone**
 
-Tippen Sie die Taste **?** bzw. **Help** um die IP-Adresse Ihres Telefon anzuzeigen, anschließend wird diese am Display angezeigt. -->
+Press the **OK** key when the phone idle screen is active and the phone IP address, MAC Address and firmware will be displayed.
+
+Alternatively, it is possible to call up the IP address via the phone **menu** key and selecting the status option. 
 
 **IP-Adresse über die Geräteliste ermitteln**
 
