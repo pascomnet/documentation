@@ -38,10 +38,6 @@ Die Einstellungen erfolgen für
 * **Extern**: wenn der Anruf über das Amt kommt,
 * **Team**: wenn der Benutzer als Agent in einem Team angerufen wird.
 
-{{% notice note %}}
-Für Endgeräte die einem Arbeitsplatz zugewiesen sind können keine FollowMe-Einstellungen vorgenommen werden.
-{{% /notice %}}
-
 ### FollowMe über den Client steuern
 
 Darf der Benutzer (je nach Berechtigung) selber seine FollowMe-Einstellungen verwalten, kann er dies über seinen mobydick Desktop Client (`Einstellungen` > `FollowMe`) tun.

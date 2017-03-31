@@ -3,7 +3,7 @@ title: Yealink Tischtelefone T4-Serie
 keywords:
     - T40P, T42G, T46G, T48P
 prev: /endgeraete/snom-tischtelefone-300-700-serie/
-url:  /endgeraete/yealink-ip-tischtelefone/
+url:  /endgeraete/yealink-ip-tischtelefone-t4-serie/
 next: /endgeraete/grandstream-tischtelefone-gxp-gxv-serie/
 weight: 42
 toc: true
@@ -44,9 +44,9 @@ Stecken Sie das IP-Telefon an das Netzwerk. Das Telefon enthält einen eingebaut
 
 Das IP-Telefon bootet nun, zieht sich vom DHCP eine IP-Adresse und die passende Basis-Konfiguration. Nach diesem Vorgang trägt mobydick das IP-Telefon automatisch in die Geräteliste unter `Endgeräte` > `Geräteliste` ein und legt ein entsprechendes SIP-Peer an.
 
-Das SIP-Peer wird automatisch angelegt. Benutzername und Passwort werden automatisch generiert. Der Benutzername besteht aus einer zufälligen Zeichenfolg und den letzten sechs Stellen der Geräte-MAC-Adresse und hat insgesammt 15 Stellen. Das Passwort ist ebenfalls 15-stellig. Da die IP-Telefone automatisch provisioniert werden, müssen Sie die Daten niemals manuell eingeben. Es ist auch nicht möglich die Benutzerdaten zu ändern. Dies erhöht die Sicherheit gegen SIP-Brute-Force-Attacken beträchtlich.
+Das SIP-Peer wird automatisch angelegt. Benutzername und Passwort werden automatisch generiert. Der Benutzername besteht aus einer zufälligen Zeichenfolge und den letzten sechs Stellen der Geräte-MAC-Adresse und hat insgesammt 15 Stellen. Das Passwort ist ebenfalls 15-stellig. Da die IP-Telefone automatisch provisioniert werden, müssen Sie die Daten niemals manuell eingeben. Es ist auch nicht möglich die Benutzerdaten zu ändern. Dies erhöht die Sicherheit gegen SIP-Brute-Force-Attacken beträchtlich.
 
-Als Bezeichung des Telefons wird automatisch die Herstellerbezeichung gefolgt von der MAC-Adresse vergeben. Da auf dem Telefongehäuse die MAC-Adresse vermerkt ist, lässt sich vor Ort das IP-Telefon  einfach zuordnen.
+Als Bezeichung des Telefons wird automatisch die Herstellerbezeichung gefolgt von der MAC-Adresse vergeben. Da auf dem Telefongehäuse die MAC-Adresse vermerkt ist, lässt sich vor Ort das IP-Telefon einfach zuordnen.
 
 Nach der erfolgreichen Provisionierung sollte das IP-Telefon am Display die richtige Sprache, die richtige Zeit und den Text *Nur Notrufe* (oder *Emergency only*) anzeigen.
 
@@ -93,36 +93,55 @@ Die Verwendung der DND-Taste (*do not disturb*) oder Ruhe-Taste am Yealink hat z
 
 ### Auf die Yealink-Weboberfläche zugreifen
 
-<!--FIXME Zugriff Web-UI  -->
 Um auf die Weboberfläche Ihres IP-Telefons zu gelangen benötigen Sie die IP-Adresse. Im Folgenden sind Möglichkeiten beschreiben, um diese in Erfahrung zu bringen:
 
-Drücken Sie die Yealink-Menütaste des Telefons (die linke Taste unter dem Telefon-Display), anschließend wählen Sie den Menüpunkt *Aktiv*. Nun können Sie die IPv4-Adresse des Telefons ablesen.
+**IP-Adresse am Telefon anzeigen**
+
+Drücken Sie die **OK**-Taste auf Ihrem Yealink IP-Telefon. Nun können Sie die IPv4-Adresse des Telefons ablesen.
 
 
 **IP-Adresse über die Geräteliste ermitteln**
 
 Loggen Sie sich in das Web-UI der mobydick ein. Klicken Sie auf `Endgeräte` > `Geräteliste`. Nun sehen Sie eine Übersicht über alle verfügbaren Geräte. Links von jedem Eintrag finden Sie ein *Info*-Symbol. Klicken Sie es an, erhalten Sie eine Übersicht über das provisionierte Telefon, unter anderem auch die IP-Adresse.
 
-### Tasten belegen über das Web-UI
+### Funktionstasten
 
-<!-- Klicken Sie in der Menüliste auf der linken Seite auf Funktionstasten. -->
+Die Funktionstasten rechts und links vom Display sind dreifach belegbar. Ist die erste Seite vollständig belegt, wird die letzte Taste am Display zum "umblättern" verwendet.
 
-<!-- **Andere Benutzer (Nebenstellen) überwachen mit BLFs**
+**Andere Benutzer (Nebenstellen) überwachen**
 
-Hier können Sie Funktionstasten einrichten, um andere Nebenstellen zu überwachen. Die BLF-Taste (Besetztlampenfeld oder Busy Lamp Field) gibt Informationen über den Status der überwachten Durchwahl. Überwachen bedeutet in diesem Fall zu sehen ob ein Benutzer telefoniert, angerufen wird und ggf. sein Gespräch heranzuholen (Pickup).
+Zur Überwachung anderer Benutzer oder Nebenstellen können Funktionstasten eingerichtet werden. Dazu eignen sich BLF-Tasten (Besetztlampenfeld oder Busy Lamp Field). Diese geben Informationen über den Status der überwachten Durchwahl. Überwachen bedeutet in diesem Fall zu sehen ob ein Benutzer telefoniert, angerufen wird und ggf. sein Gespräch heranzuholen (Pickup).
 
-|Kontext|Typ|Nummer|Kurzform|
+Tasten können auf verschiedenen Wegen konfiguriert werden.
+
+**Tasten belegen direkt am Telefon**
+
+Drücken Sie auf Ihrem Telefon ca. 5 Sekunden lang auf die Taste die Sie belegen möchten. Nun können Sie Ihre Taste (z. B. BLF-Taste) belegen.
+
+|Einstellungen|Belegung|
+|---|---|
+|Typ|BLF|
+|Konto ID|Leitung 1|
+|Kontoname|Geben Sie hier eine Bezeichnung für die Taste.|
+|Wert|Die zu überwachende Durchwahl, z. B. 123 für die Durchwahl 123|
+
+Drücken Sie zum Bestätigen auf *Speichern*.
+
+**Tasten belegen über das Web-UI**
+
+Im Tab `Speicher-Tasten` können die verschiedenen Tasten, z. B. BLF-Tasten am Telefon belegt werden:
+
+|Typ|Wert|Name|Konto|
 |---|---|---|---|
-|Account wählen|**Nebenstelle**|Die zu überwachende Durchwahl (z. B. 123) in der Form <sip:123@192.168.100.1>.|Besitzt das Telefon statt des Papier-Beschriftungsstreifens ein zweites Display, können hier die Tasten beschriftet werden.|
+|BLF|Die zu überwachende Durchwahl, z. B. 123 für die Durchwahl 123|Geben Sie hier eine Bezeichnung für die Taste.|Leitung 1|
 
 Neben Benutzer-Durchwahlen können auch Einbuchcodes für Warteschlangen oder Durchwahlschalter konfiguriert werden.
-<!--FIXME Links zu dw-schalter, warteschlangen  -->
 
-<!-- **Weitere nützliche Funktionstasten**
+**Weitere nützliche Funktionstasten**
 
 |Funktionstaste|Beschreibung|
 |---|---|
-|**Direktwahl**|Hier kann eine Telefonnummer hinterlegt werden.|
+|**Speed Dial**|Hier kann eine Telefonnummer hinterlegt werden.|
 |**DTMF**|Hier können DTMF-Zeichen hinterlegt werden.| -->
 
 ### Basis-Konfiguration
@@ -139,23 +158,28 @@ Ebenfalls können Sie eine schon bearbeitete Basis-Konfiguration als `Standard s
 
 Eine Basis-Konfiguration kann auf mehreren Wegen zugewiesen werden:
 
-+ Über `Endgeräte` > `Basis-Konfiguration` > Basis-Konfiguration auswählen und Bearbeiten im Tab `Geräte` können gleich mehrere IP-Telefone hinzugefügt werden.
++ Über `Endgeräte` > `Basis-Konfiguration` > Basis-Konfiguration auswählen und Bearbeiten, im Tab `Geräte` können gleich mehrere IP-Telefone hinzugefügt werden.
 + Über `Endgeräte` > `Geräteliste` > IP-Telefon auswählen und Bearbeiten im Tab `Basisdaten`.
 
 **BLF-Tasten konfigurieren über die Basis-Konfiguration**
 
-Im Tab `Konfiguration` können Sie die vorhandene Basis-Konfiguration anpassen. Im Bereich **keys** finden Sie bereits vorkonfigurierte Funktionstasten, an denen Sie dich orientieren können.
+Im Tab `Konfiguration` können Sie die vorhandene Basis-Konfiguration anpassen. Im Bereich **keys** finden Sie bereits vorkonfigurierte Funktionstasten, an denen Sie sich orientieren können.
 
-Surfen Sie auf das Web-UI Ihres Yealink Telefons und belegen Sie unter *Funktionstasten* als Beispiel die Taste **P1**. Wählen Sie als Typ **Nebenstelle**, als Nummer **123** und als Label **Musterbenutzer**. Übernehmen Sie die Einstellungen.
-
-Klicken Sie auf den Menüpunkt *Einstellungen*. Falls Sie den Menüpunkt noch nicht sehen, benötigen Sie [Admin-Rechte](../snom-tischtelefone-300-700-serie/#auf-die-snom-weboberfläche-zugreifen).<br>
-Suchen Sie nach *fkey0* und *fkey_label0*. Die gefundenen Zeilen tragen Sie anschließend in der Basis-Konfiguration über das Web-UI der mobydick ein:
+BLF-Tasten lassen sich wie folgt einrichten:
 
     {{!-- keys --}}
-    fkey0: dest <sip:123@192.168.100.1>
-    fkey_label0: Zentrale
+    linekey.3.type = 16
+    linekey.3.value = 123
+    linekey.3.label = Max
 
-Weisen Sie diese Basis-Konfiguration über den Tab `Geräte` den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und Speichern Sie nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
+Die belegte Taste (in diesem Fall Linekey) besteht aus drei Parametern:
+
++ *type*: der Typ der Taste, 16 steht für BLF,
++ *value*: der Wert, das ist hier die Nebenstelle,
++ *label*: das Label, das ist die Bezeichung, die am Display angezeigt wird.
+
+Weisen Sie diese Basis-Konfiguration über den Tab `Geräte` den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und Speichern Sie. Nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
+
 
 ### Firmwareupdate
 

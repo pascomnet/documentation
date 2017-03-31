@@ -13,7 +13,7 @@ keywords:
     - busylampfield
     - firmware
 description: Integrieren Sie Ihre Grandstream IP-Tischtelefone in die mobydick.
-prev: /endgeraete/yealink-ip-tischtelefone/
+prev: /endgeraete/yealink-ip-tischtelefone-t4-serie/
 url:  /endgeraete/grandstream-tischtelefone-gxp-gxv-serie/
 next: /endgeraete/snom-dect/
 weight: 43
@@ -55,7 +55,7 @@ Das IP-Telefon bootet nun, zieht sich vom DHCP eine IP-Adresse und die passende 
 
 Das SIP-Peer wird automatisch angelegt. Benutzername und Passwort werden automatisch generiert. Der Benutzername besteht aus einer zufälligen Zeichenfolge und den letzten sechs Stellen der Geräte-MAC-Adresse und hat insgesamt 15 Stellen. Das Passwort ist ebenfalls 15-stellig. Da die IP-Telefone automatisch provisioniert werden, müssen Sie die Daten niemals manuell eingeben. Es ist auch nicht möglich die Benutzerdaten zu ändern. Dies erhöht die Sicherheit gegen SIP-Brute-Force-Attacken beträchtlich.
 
-Als Bezeichnung des Telefons wird automatisch die Herstellerbezeichnung gefolgt von der MAC-Adresse vergeben. Da auf dem Telefongehäuse die MAC-Adresse vermerkt ist, lässt sich vor Ort das IP-Telefon  einfach zuordnen.
+Als Bezeichnung des Telefons wird automatisch die Herstellerbezeichnung gefolgt von der MAC-Adresse vergeben. Da auf dem Telefongehäuse die MAC-Adresse vermerkt ist, lässt sich vor Ort das IP-Telefon einfach zuordnen.
 
 Nach der erfolgreichen Provisionierung sollte das IP-Telefon am Display die richtige Sprache, die richtige Zeit und den Text *Nur Notrufe* (oder *Emergency only*) anzeigen.
 
@@ -141,7 +141,7 @@ Ebenfalls können Sie eine schon bearbeitete Basis-Konfiguration als `Standard s
 
 Eine Basis-Konfiguration kann auf mehreren Wegen zugewiesen werden:
 
-+ Über `Endgeräte` > `Basis-Konfigurationen` > Basis-Konfiguration auswählen und Bearbeiten im Tab `Geräte` können gleich mehrere IP-Telefone hinzugefügt werden.
++ Über `Endgeräte` > `Basis-Konfigurationen` > Basis-Konfiguration auswählen und Bearbeiten, im Tab `Geräte` können gleich mehrere IP-Telefone hinzugefügt werden.
 + Über `Endgeräte` > `Geräteliste` > IP-Telefon auswählen und Bearbeiten im Tab `Basisdaten`.
 
 
