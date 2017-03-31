@@ -120,13 +120,13 @@ Alternatively, it is possible to call up the IP address via the phone **menu** k
 
 **Finding the IP-Address via the Web UI Device List**
 
-Log into the PBX Web UI and select the `Devices` > `Device list`. Nun sehen Sie eine Übersicht über alle verfügbaren Geräte. Links von jedem Eintrag finden Sie ein *Info*-Symbol. Klicken Sie es an, erhalten Sie eine Übersicht über das provisionierte Telefon, unter anderem auch die IP-Adresse.
+Log into the PBX Web UI and select the `Devices` > `Device list`, which provides you an overview of all available devices. To the left of each entry is an *Info* symbol which when clicked will open an overview of the provisioned telephone including the IP address.
 
-### Tasten belegen über das Web-UI
+### Assigning Function Keys via the Phone Web UI.
 
-Klicken Sie in der Menüliste auf der linken Seite auf Funktionstasten.
+In the menu of the left, click on the option Function Keys.
 
-<!-- **Andere Benutzer (Nebenstellen) überwachen mit BLFs**
+**BLF Key User / Extension Monitoring**
 
 Hier können Sie Funktionstasten einrichten, um andere Nebenstellen zu überwachen. Die BLF-Taste (Besetztlampenfeld oder Busy Lamp Field) gibt Informationen über den Status der überwachten Durchwahl. Überwachen bedeutet in diesem Fall zu sehen ob ein Benutzer telefoniert, angerufen wird und ggf. sein Gespräch heranzuholen (Pickup).
 
