@@ -42,7 +42,7 @@ Schließen Sie den Grandstream ATA  an das Netzwerk an. Dieser wird nach dem Boo
 
 <!--FIXME steckersymbol, status?-->
 
-### Endgerät über SIP angelegen
+### Endgerät über SIP anlegen
 
 Wählen Sie unter `Endgeräte` > `Geräteliste` > `Hinzufügen` > den Eintrag **Via Grandstream Gateway: Analoges Endgerät per SIP**.
 Im Tab `Basisdaten` wählen Sie den Port am Gateway, an dem das Endgerät angeschlossen werden soll. Anschließend weisen Sie das Gerät über den Tab `Zuweisung` einem Benutzer zu.

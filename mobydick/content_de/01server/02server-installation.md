@@ -8,7 +8,7 @@ keywords:
 description: mobydick lässt sich in wenigen Minuten sowohl in virtuellen Umgebungen als auch auf Servern installieren.
 url:  /server/server-installieren/
 prev:  /server/plattformen/
-next:  /server/zugriff/
+next:  /server/mobydick-zugriff/
 weight: 12
 toc: true
 
