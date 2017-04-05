@@ -148,7 +148,7 @@ Under the tab `DSSKeys` it is possible to assign the various telephone keys as B
 
 |Type|Value|Label|Line|Extension|
 |---|---|---|---|
-|BLF|Die zu überwachende Durchwahl, z. B. 123 für die Durchwahl 123|Geben Sie hier eine Bezeichnung für die Taste an.|Leitung 1|
+|BLF|The extension to be monitored, e.g. 123 for extension 123|Enter an label / name for the key.|Line 1|The extension number, i.e. 123|
 
 Neben Benutzer-Durchwahlen können auch Einbuchcodes für Warteschlangen oder Durchwahlschalter konfiguriert werden.
 
