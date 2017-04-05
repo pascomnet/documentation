@@ -175,7 +175,7 @@ Weisen Sie diese Basis-Konfiguration über den Tab `Geräte` den IP-Telefonen zu
 
 ### Firmwareupdate
 
-Ab der mobydick Version 7.14 wird die Firmware für IP-Endgeräte nicht mehr mitgeliefert. Sollte eine andere als auf dem IP-Endgerät installierte Firmware benötigt werden, muss diese selber heruntergeladen und in die mobydick Firware-Verwaltung hochgeladen werden.
+Ab der mobydick Version 7.14 wird die Firmware für IP-Endgeräte nicht mehr mitgeliefert. Sollte eine andere als auf dem IP-Endgerät installierte Firmware benötigt werden, muss diese selber heruntergeladen und in die mobydick Firmware-Verwaltung hochgeladen werden.
 
 **Firmware hinzufügen**
 

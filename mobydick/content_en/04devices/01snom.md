@@ -13,7 +13,7 @@ description: All Snom IP telephone models are supported by mobydick and here is 
 url:  /endpoints/snom-ip-telephones-300-700-series/
 linkde: /endgeraete/snom-tischtelefone-300-700-serie/
 prev: /endpoints/
-next: /endpoints/grandstream-ip-telephones-gxp-gxv-series/
+next: /endpoints/yealink-ip-telephones-t4-series/
 weight: 41
 toc: true
 ---
@@ -21,6 +21,8 @@ toc: true
 ![snom 300/700 series](/snom-series.png)
 
 ## Compatability
+
+With [our VoIP Software] (https://www.pascom.net/en/mobydick-voip/ "pascom VoIP phone systems") it is possible to centrally and automatically configure Snom IP Telephones, both 3xx and 7xx series.
 
 |Provisioning|Firmware Management|Desktop Client CTI Control|pascom Menu|
 |---|---|---|---|
@@ -38,11 +40,7 @@ In order to automatically deploy (AutoProvision) Snom IP Telephones, a functioni
 
 ## Configuration
 
-With [our VoIP Software] (https://www.pascom.net/en/mobydick-voip/ "pascom VoIP phone systems") it is possible to centrally and automatically configure Snom IP Telephones, both 3xx and 7xx series. This process is know as `Provisioning`. For this purpose, pascom phone systems include a Default Configuration (`Devices > Basic Configuration`). For most deployment scenarios, these standard settings provide a sufficient set of parameters. However, in some cases, the settings may need to be modified.
-
-{{% notice tip%}}
-When modifying the default configuration settings, ensure you make a copy of the original and edit only the copy. 
-{{% /notice %}}
+The configurations process is know as `Provisioning`. For this purpose, pascom phone systems include a Default Configuration (`Devices > Basic Configuration`). For most deployment scenarios, these standard settings provide a sufficient set of parameters. However, in some cases, the settings may need to be modified.
 
 {{% notice tip%}}
 By new installations, you should first test the provisioning process with a telephone. Should this be successful then you will be able to deploy further telephones.
@@ -55,9 +53,9 @@ In order to automatically deploy (AutoProvision) Yealink Telephones, a functioni
 
 ### Device Commissioning
 
-Connect the phone to your network. Yealink IP phones come with a built in switch, allowing you to connect the phone directly via the Ethernet port labelled as **Internet**. Should you not have a **PoE** option available, connect the phone to a power supply.
+Connect the phone to your network. Yealink IP phones come with a built in switch, allowing you to connect the phone directly via the Ethernet port labelled as **NET**. Should you not have a **PoE** option available, connect the phone to a power supply.
 
-The IP phone will now boot and will be The phone will now boot and acquires an IP address and the corresponding Basic Configurations via **DHCP**. After this process is completed, the PBX will **automatically** add the device to the `device list as well as adding the appropriate SIP peer.
+The Snom IP phone will now boot and will be The phone will now boot and acquires an IP address and the corresponding Basic Configurations via DHCP. After this process is completed, the device will automatically** appear under `device` > `device list` as well as adding the appropriate SIP peer.
 
 As mentioned above, for every device mobydick will also automatically add a SIP peer. In addition, the device username and password will also be automatically generated. The username consists of a randomly generated string followed by the last six digits of the device’s MAC address (15 digits in total). As the IP phones are automatically provisioned, you will not be required to enter this data manually and it is not possible to modifiy the user data. This is designed to considerably increase security against SIP Brute Force attacks.
 
@@ -123,7 +121,7 @@ Log into the PBX Web UI and select the `Devices` > `Device list`, which provides
 
 In order to access certain menu options with the Snom Telephone web UI, you will require admin rights. To do this simply go the **Advanced** menu point and now enter the Admin Password. 
 
-### Assigning Function Keys via the Phone Web UI.
+### Function Keys
 
 In the menu of the left, click on the `Function Keys` option.
 
@@ -148,7 +146,7 @@ Alongside user extension, it is also possible to to configure keys as login / ou
 
 As previously stated, Snom IP phones are provisioned using the default configurations which can be found under `Devices`> `Basic Configurations`.
 
-{{% notice tip%}}
+{{% notice note%}}
 When modifying the default configuration settings, ensure you make a duplicate copy of the original using the `Duplicate`tool. 
 {{% /notice %}}
 
@@ -167,39 +165,39 @@ Under the `Configuration` tab, it is possible to modify the existing basic confi
 
 Navigate the the Snom Telephone web UI and under *Function Keys* configure the **P1** button as an example. As type, select **Extension**, and as number **123** and **ExampleUser** as the short text. Once done, apply the settings.
 
-Next, click on the *Settings* menu optuon. Should this option not be visible, you will require [admin rights](../snom-tischtelefone-300-700-serie/#auf-die-snom-weboberfläche-zugreifen).<br>
-Suchen Sie nach *fkey0* und *fkey_label0*. Die gefundenen Zeilen tragen Sie anschließend in der Basis-Konfiguration über das Web-UI der mobydick ein:
+Next, click on the *Settings* menu optuon. Should this option not be visible, you will require [admin rights](../snom-ip-telephones-300-700-series/#accessing-the-snom-telephone-web-ui).<br>
+Search for *fkey0* and *fkey_label0*. Next copy and paste the search result lines into the phone system web UI:
 
     {{!-- keys --}}
     fkey0: dest <sip:123@192.168.100.1>
-    fkey_label0: Zentrale
+    fkey_label0: Switchboard
 
-Weisen Sie diese Basis-Konfiguration über den Tab `Geräte` den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und Speichern Sie nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
+Via the menu tab `devices`, assign these default configurations to the telephones which should have this BLF configuration. Save and apply your changes and once the phones have restarted, the changes will have taken affect.
 
-### Firmwareupdate
+### Firmware Updates
 
-Ab der mobydick Version 7.14 wird die Firmware für IP-Endgeräte nicht mehr mitgeliefert. Sollte eine andere als auf dem IP-Endgerät installierte Firmware benötigt werden, muss diese selber heruntergeladen und in die mobydick Firware-Verwaltung hochgeladen werden.
+From mobydick version 7.14 onwards, IP endpoint firmware will no longer be included as standard. Should a firmware version (other than the version pre-installed on the phone) be required, this must be externally sourced and per hand uploaded to the phone system firmware management tool.
 
-**Firmware hinzufügen**
+**Upload New Firmware**
 
-Die gewünschte Firmware kann hinzugefügt werden unter `Endgeräte` > `Firmware`:
+The desired firmware can be uploaded via the the `Devices`> `Device firmware`:
 
-|Einstellung|Beschreibung|
+|Settings|Description|
 |---|---|
-|Firmware-Datei|Laden Sie hier die Firware hoch. Diese finden Sie auf der [Wiki-Seite von Snom](http://wiki.snom.com/Category:Firmware).|
-|Model|Modellbezeichung des Snom-Telefons|
-|Version|Firmware-Version|
-|Dokumentation|Optionales Feld für Notizen|
+|Firmware Files|Upload the firmware files here. Firmware can be found here: [Snom Support Wiki](http://wiki.snom.com/Category:Firmware).|
+|Model|Snom Telephone model name|
+|Version|Firmware Version|
+|Comments|Optional field for notes|
 
-**Firmware ausrollen**
+**Firmware Roll Outs**
 
-Die Firmware kann über `Endgeräte` > `Geräteliste` aktualisiert werden. Wählen Sie die Zielgeräte in der Geräteliste mit Häkchen aus und klicken Sie auf `Aktion` > `Firmware ausrollen`. Nun erhalten Sie eine Übersicht der gewählen Geräte, in der Sie die Zielfirmware auswählen können. Anschließend klicken Sie auf `Firmware update` um die gewählte Firmware auszurollen.
+Firmware updates can be roll out via the `Devices` > `Device list` menu. Simply select the desired Snom Endpoints from the list via the check boxes and under `Actions` > `Roll out firmware`. This will open an overview of all selected devices to which the new firmware version should be roll out to. Click `Firmware Upate` to roll out the desired firmware version.
 
-**Empfohlene Firmware**
+**Recommended Firmware**
 
-Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es uns leider nicht möglich jede zu testen, so dass es sein kann, dass manche Firmware-Versionen mobydick Funktionen nicht unterstützen. Daher finden Sie hier eine Liste der Firmwares die von uns bereits getestet wurde:
+As there are numerous Firmware versions available for the varying IP endpoint models, it is unfortunately not possible to test them all. Therefore, it is possible that some firmware versions may not support all phone sytem functions. If in doubt, please refer to below list of already tested firmware versions:
 
-|Modell|Firmware|
+|Model|Firmware|
 |---|---|
 |Snom 300|8.7.3.25.5|
 |Snom 320|8.7.3.25.5|
