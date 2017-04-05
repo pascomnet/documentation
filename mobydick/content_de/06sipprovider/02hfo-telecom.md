@@ -20,19 +20,19 @@ Für mehr Information besuchen Sie bitte [HFO Telecom](http://www.hfo-telecom.de
 + *Ortsvorwahl*: 0991
 + *Stammnummer*: 9881499
 + *Rufnummernblock*: 0-99, daraus ergeben sich 2-stellige Durchwahlen (Nebenstellen)
-+ *Die Registrierung-Daten für Ihr Amt*, bestehend aus Benutzername und Passwort (aus Datenschutzgründen hier mit Sternchen dargestellt).
++ *Die Registrierungs-Daten für Ihr Amt*, bestehend aus Benutzername und Passwort (aus Datenschutzgründen hier mit Sternchen dargestellt).
 
 ## Einrichtung
 
-Fügen Sie ein neues HFO-Amt ein unter `Gateways` > `Ämter` > `Hinzufügen`. Sie gelangen nun zur Ämter-Datenbank. Über den Filter können Sie direkt nach *HFO* suchen und die Vorlage anschließend auswählen. Befüllen Sie die Vorlage mit den erhaltene Account-Daten.
+Fügen Sie ein neues HFO-Amt ein unter `Gateways` > `Ämter` > `Hinzufügen`. Sie gelangen nun zur Ämter-Datenbank. Über den Filter können Sie direkt nach *HFO* suchen und die Vorlage anschließend auswählen. Befüllen Sie die Vorlage mit den erhaltenen Account-Daten.
 
 |Variable|Beschreibung|
 |---|---|
-|**Bezeichung**|Geben Sie Ihrem Amt einen Namen, dieser taucht dann in der Ämterliste auf.|
+|**Bezeichnung**|Geben Sie Ihrem Amt einen Namen, dieser taucht dann in der Ämterliste auf.|
 |**Benutzername**|Entnehmen Sie den Benutzernamen aus Ihren Zugangsdaten.|
 |**Passwort**|Tragen Sie hier das dazu gehörige Passwort ein.|
 |**Ortskennzahl**|Tragen Sie die Ortskennzahl bzw. Ortsvorwahl ohne führende 0 ein. In unserem Beispiel *991*.|
-|**Stammnummer**|Basisnummer des Telefonanschusses ohne Nebenstellen. In unserem Beispiel *9881499*.|
+|**Stammnummer**|Basisnummer des Telefonanschlusses ohne Nebenstellen. In unserem Beispiel *9881499*.|
 |**Präfix eing. Nummer**|Ist eine beliebige Ziffer, die bei eingehenden Telefonanrufen über dieses Amt vorangestellt wird. Wenn Sie hier eine 0 eingeben erscheint beispielsweise in der Anruferliste von IP-Telefonen dann nicht die 0172123123 sondern die 00172123123. Dadurch können Sie direkt aus der Anruferliste wieder über das selbe Amt zurückrufen.|
 |**Anzahl der Durchwahlstellen**|Anzahl der Stellen der Benutzer-Durchwahlen. (NICHT die Anzahl der Nummern im Rufnummernblock!)|
 |**Durchwahl Zentrale**|Geben Sie hier an, auf welche interne Durchwahl die erste Nummer Ihres Rufnummernblocks (meistens die 0) abgeworfen werden soll.|
@@ -43,7 +43,7 @@ Nach dem `Speichern` wird das Amt angelegt. Dabei werden automatisch Rufregeln a
 
 ### Passwort ändern
 
-Klicken Sie auf `Gateways` > `Ämter`, wählen Sie Ihr Amt zum `Bearbeiten`. Im Tab `Account` in der Spalte `Passwort` können Sie mit einem Doppelklick auf das gewünschte Feld das Passwort ändern. Bestätigen Sie zunächst die Änderung mit `Ok` und wenden Sie sie an mit `Speichern` und anschließendem Anwenden der Telefonie-Konfiguration.
+Klicken Sie auf `Gateways` > `Ämter`, wählen Sie Ihr Amt zum `Bearbeiten`. Im Tab `Account` in der Spalte `Passwort` können Sie mit einem Doppelklick auf das gewünschte Feld das Passwort ändern. Bestätigen Sie zunächst die Änderung mit `Ok` und wenden Sie sie mit `Speichern` und anschließendem Anwenden der Telefonie-Konfiguration an.
 
 ### Einen weiteren HFO-Account hinzufügen
 

@@ -10,7 +10,7 @@ next:  /sip-provider/hfo-telecom/
 
 ## Konzept
 
-Die pascom SIP-Provider-Datenbank beinhaltet eine Sammlung von Ämter-Vorlagen verschiedener bereits getesteten SIP-Trunks.
+Die pascom SIP-Provider-Datenbank beinhaltet eine Sammlung von Ämter-Vorlagen verschiedener bereits getesteter SIP-Trunks.
 
 Darin sind folgende SIP-Trunks zu finden:
 
