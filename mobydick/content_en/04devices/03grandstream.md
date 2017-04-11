@@ -1,21 +1,22 @@
 ---
-title: Grandstream Tischtelefone GXP- und GXV-Serie
+title: Grandstream GXP and GXV Series VoIP Phones
 keywords:
     - grandstream
     - gxp2170, gxp2160, gxp2140, gxp2135, gxp2130
     - gxp1630, gxp1628, gxp1620, gxp1625, gxp1610, gxp1615
     - gxp1780, gxp1782, gxp1760
     - gxv3275, gxv3240
-    - tischtelefon
-    - provisionieren
+    - Desktop phones
+    - provisioning
     - blf
-    - besetztlampenfeld
-    - busylampfield
+    - busy lamp fields
+    - IP telephones
     - firmware
-description: Integrieren Sie Ihre Grandstream IP-Tischtelefone in die mobydick.
-prev: /endgeraete/yealink-ip-tischtelefone-t4-serie/
-url:  /endgeraete/grandstream-tischtelefone-gxp-gxv-serie/
-next: /endgeraete/snom-dect/
+description: Integrate your Grandstream IP telephones within your mobydick.
+prev: /endpoints/yealink-ip-telephones-t4-series/
+url:  /endpoints/grandstream-ip-telephones-gxp-gxv-series/
+next: /endpoints/snom-dect/
+linkde: /endgeraete/grandstream-tischtelefone-gxp-gxv-serie/
 weight: 43
 toc: true
 draft: false
@@ -23,167 +24,170 @@ draft: false
 
 ![Grandstream GXP2160](/grandstream_GXP2160.jpg)
 
-## Kompatibilität
 
-|Provisionierung|Firmware-Verwaltung|Fernsteuerung über Desktop-Client|pascom Menü|
+## Compatibility
+
+|Provisioning|Firmware Management|Desktop Client CTI Control|pascom Menu|
 |---|---|---|---|
-|ja|ja|ja|nein|
+|yes|yes|yes|nein|
 
-**Provisionierung**: Das IP-Telefon wird über die mobydick verwaltet.<br>
-**Firmware-Verwaltung**: Die Firmware kann über mobydick aktualisiert werden.<br>
-**Fernsteuerung über Desktop-Client**: Gespräche können über den Desktop-Client gestartet werden.<br>
-**pascom Menü**: Das pascom Menü ist nicht auf dem IP-Telefon hinterlegt.
+**Provisioning**: The IP phone is manageable via the PBX web UI.<br>
+**Firmware Management**: Firmware can be managed and updated via the PBX web UI.<br>
+**Desktop Client CTI Control**: The desktop UC client can remotely control the phone, i.e. to start calls.<br>
+**pascom Menu**: A phone touch key will be assigned to access the pascom Menu. 
 
-## Konfiguration
+## Configuration
 
-mobydick ist in der Lage IP-Telefone des Herstellers Grandstream automatisch und zentral zu konfigurieren. Diesen Vorgang nennt man Provisionierung. Dazu stellt mobydick eine Basis-Konfiguration (`Endgeräte` > `Basis-Konfigurationen`) zur Verfügung. Diese ist ausreichend vorparametriert und muss nur in manchen Fällen angepasst werden.
+With [our VoIP Software] (https://www.pascom.net/en/mobydick-voip/ "pascom VoIP phone systems") it is possible to centrally and automatically configure the majority of Grandstream IP Telephones. This process is know as `Provisioning`. For this purpose, pascom phone systems include a Default Configuration (`Devices > Basic Configuration`). For most deployment scenarios, these standard settings provide a sufficient set of parameters. However, in some cases, the settings may need to be modified.
 
 {{% notice tip%}}
-Bei Neuinstallationen sollten Sie den Provisionierungsvorgang zuerst mit einem Telefon testen. War dies erfolgreich können Sie alle weiteren IP-Telefone in Betrieb nehmen.
+By new installations, you should first test the provisioning process with a telephone. Should this be successful then you will be able to deploy further telephones.
 {{% /notice %}}
 
-### Vorbereitung
+### Preparation
 
-Für die automatische Inbetriebnahme ist ein funktionierender DHCP-Server zwingend erforderlich. Lesen Sie dazu
-[Netzwerk planen und konfigurieren](../../server/netzwerk-konfigurieren/).
+In order to automatically deploy (AutoProvision) Grandstream Telephones, a functioning DHCP server is required.
+[Network Planning and Configuration](../../server/network-configuration/).
 
-### Inbetriebnahme
+### Device Commissioning
 
-Stecken Sie das IP-Telefon an das Netzwerk. Das Telefon enthält einen eingebauten Switch, benutzen Sie den Ethernet-Port mit der Bezeichnung **LAN**. Falls Sie kein **PoE** (Power over Ethernet) verwenden, stecken Sie das Telefon an den Netzstrom.
+Connect the phone to your network. Grandstream IP phones come with a built in switch, allowing you to connect the phone directly via the Ethernet port labelled as **LAN**. Should you not have a **PoE** option available, connect the phone to a power supply.
 
-Das IP-Telefon bootet nun, zieht sich vom DHCP eine IP-Adresse und die passende Basis-Konfiguration. Nach diesem Vorgang trägt mobydick das IP-Telefon automatisch in die Geräteliste unter `Endgeräte` > `Geräteliste` ein und legt ein entsprechendes SIP-Peer an.
+The Grandstream IP phone will now boot and acquires an IP address and the corresponding Basic Configurations via DHCP. After this process is completed, the device will automatically appear under `device` > `device list` as well as adding the appropriate SIP peer.
 
-Das SIP-Peer wird automatisch angelegt. Benutzername und Passwort werden automatisch generiert. Der Benutzername besteht aus einer zufälligen Zeichenfolge und den letzten sechs Stellen der Geräte-MAC-Adresse und hat insgesamt 15 Stellen. Das Passwort ist ebenfalls 15-stellig. Da die IP-Telefone automatisch provisioniert werden, müssen Sie die Daten niemals manuell eingeben. Es ist auch nicht möglich die Benutzerdaten zu ändern. Dies erhöht die Sicherheit gegen SIP-Brute-Force-Attacken beträchtlich.
+As mentioned above, for every device mobydick will also automatically add a SIP peer. In addition, the device username and password will also be automatically generated. The username consists of a randomly generated string followed by the last six digits of the device’s MAC address (15 digits in total). As the IP phones are automatically provisioned, you will not be required to enter this data manually and it is not possible to modifiy the user data. This is designed to considerably increase security against SIP Brute Force attacks.
 
-Als Bezeichnung des Telefons wird automatisch die Herstellerbezeichnung gefolgt von der MAC-Adresse vergeben. Da auf dem Telefongehäuse die MAC-Adresse vermerkt ist, lässt sich vor Ort das IP-Telefon einfach zuordnen.
+The Device Name will be automatically added as signified by the vendor (Grandstream) and the MAC Address. On most IP phones, the MAC address is noted on the device housing, allowing phones to be more simply deployed on site in the correct locations.
 
-Nach der erfolgreichen Provisionierung sollte das IP-Telefon am Display die richtige Sprache, die richtige Zeit und den Text *Nur Notrufe* (oder *Emergency only*) anzeigen.
+After a successful provisioning, the IP phone display should show to correct language and time as well as the text `Emergency Only`
 
 {{% notice info%}}
-Nach der Provisionierung des IP-Telefons wird von mobydick der Admin-User neu gesetzt.
+After the successful phone provisioning, the admin user will be reset by the PBX with the following credentials:  
 <br>Username: *admin*
-<br>Passwort: *0000*
-{{% /notice %}}
+<br>Password: *0000*
+{{% /notice  %}}
 
-Das Passwort des Admin-Users am IP-Telefon kann über die Systemeinstellungen im Web-UI geändert werden. Suchen Sie in dem Suchfeld nach dem Parameter *sys.peripherals.access.password*. Geben Sie Ihren gewünschten Wert ein. Anschließend müssen Sie manuell die Telefonie-Konfiguration anwenden und die Endgeräte neustarten.
+The Telephone Admin User Password can be changed within the Web UI under system settings. Use the search box and search for the parameter *sys.peripherals.access.password* and enter your desired password. Finally, you will be required to manually apply the Telephony Configurations and restart the endpoint.
 
-### Benutzer zuweisen
+### Assigning Users
 
-Nachdem das IP-Telefon in der Geräteliste erscheint kann es bearbeitet werden. Klicken Sie hierzu auf `Bearbeiten`. Im Tab `Zuweisung` kann dem Telefon ein [Benutzer (oder Arbeitsplatz)](../../benutzer/benutzer-arbeitsplaetze/) zugewiesen werden.
+As soon as the IP phone has appeared in the Device List, it can be edited via the `Edit` button. Under the `Assign` tab, the phone can be assigned to a [user (or location)](../../users/users-and-locations/). 
 
-Nach dem Speichern und Anwenden der Telefoniekonfiguration werden die neu zugewiesenen IP-Telefone neugestartet.
+After saving your assignments and reapplying the telephony configurations, all affected IP phones will restart.
 
-### Funktion testen
+### Function Testing
 
-Am einfachsten kann man die erfolgreiche Inbetriebnahme testen, indem man mit **\*100** die eigene Voicemailbox anruft. Daraufhin sollte die Ansage Ihrer Voicemailbox zu hören sein.
+The simplest method of testing whether a device has been successfully deployed is to call ones Voicemail box via **\*100**. On successfully provisioned phones, you should now hear your Voicemail box prompts.
 
+### Accessing the Grandstream Web UI
 
-### Auf die Grandstream-Weboberfläche zugreifen
+In order to access your telephone's web UI, you will need to know the phone's IP address. The following outlines the different methods of discovering the phone IP Address:
 
-Um auf die Weboberfläche Ihres IP-Telefons zu gelangen benötigen Sie die IP-Adresse. Im Folgenden sind Möglichkeiten beschrieben, um diese in Erfahrung zu bringen:
+**Finding the IP-Address on the Telephone**
 
-**IP-Adresse am Telefon anzeigen**
+Press the round **OK** key in the center of the arrow keys. You can find the IP address via the `Status` > `Network Status` menu options.
 
-Drücken Sie die runde Taste im Pfeil-Feld des Telefons. Über `Status` > `Netzwerkstatus` erhalten Sie die IP-Adresse Ihres Telefons.
+**Finding the IP-Address via the Web UI Device List**
 
-**IP-Adresse über die Geräteliste ermitteln**
+Log into the PBX Web UI and select the `Devices` > `Device list`, which provides you an overview of all available devices. To the left of each entry is an *Info* symbol which when clicked will open an overview of the provisioned telephone including the IP address.
 
-Loggen Sie sich in das Web-UI der mobydick ein. Klicken Sie auf `Endgeräte` > `Geräteliste`. Nun sehen Sie eine Übersicht über alle verfügbaren Geräte. Links von jedem Eintrag finden Sie ein *Info*-Symbol. Klicken Sie es an, erhalten Sie eine Übersicht über das provisionierte Telefon, unter anderem auch die IP-Adresse.
+### Programmable Keys
 
-### Tasten belegen
-
-Über das Web-UI können am Grandstream IP-Telefon Tasten belegt werden. Klicken Sie auf `Einstellungen` > `Programmierbare Tasten`. Es stehen zwei Arten von Tasten zur Verfügung:
+Via the Grandstream telephone's Web UI, it is possible to assign programmable function keys. Click on `Settings` > `Programmable Keys` and you will be able to configure the two types of keys available:
 
 **Virtual Multi-Purpose Keys**
 
-Diese Tasten erscheinen auf dem Haupt-Display. Um diese Tasten zu konfigurieren klicken sie auf `Edit VPK`:
+As programmable "soft keys", these keys appear on the phone's main display. In order to configure this key, click `Edit VPK`:
 
-|Modus|Konten|Beschreibung|Wert|
+|Mode|Accounts|Description|Value|
 |---|---|---|---|
-|Besetztlampen Feld (BLF)|Konto 1|Bezeichnung für die Taste|Durchwahl der Nebenstelle|
+|Busy Lamp Field (BLF)|Account 1|Key label / name|Extension number|
 
-Zum Speichern klicken Sie auf `Sichern`. Die Einstellungen werden mit einem Klicke auf `Save VPK` wirksam.
+To save your settings, simply click `Save`. The settings will then come into effect after clicking `Save VPK`.
 
 {{% notice info%}}
-Um die Einstellungen der Tasten zurückzusetzten klichen Sie auf `Neustart` und anschließend auf `Save VPK`.
+In order to reset the key settings, click on `Reset` and then finally `Save VPK`.
 {{% /notice %}}
 
 
 **Multi-Purpose Keys**
 
-Das sind je nach IP-Telefon-Model zusätzliche programmierbare Tasten.
-In der Übersicht sieht man die verfügbaren Multi-Funktionstasten die nun Konfiguriert werden können:
+Depending on the IP telephone model, these keys are additional programmable "hard keys".
+Within the overview screen, you will see all the available multi-function keys which can be configured:
 
-|Modus|Konten|Beschreibung|Wert|
+|Mode|Accounts|Description|Value|
 |---|---|---|---|
-|Besetztlampen Feld (BLF)|Konto 1|Bezeichnung für die Taste|Durchwahl der Nebenstelle|
+|Busy Lamp Field (BLF)|Account 1|Key label / name|Extension number|
 
-Beenden Sie die Konfiguration mit `Sichern und ausführen`, damit alle Änderungen aktiv sind.
+To finish your configuration, click on `Save and Apply`, which will activate all your modifications.
 
 {{% notice info%}}
-Um die Einstellungen der Tasten zurückzusetzten klichen Sie auf `Neustart` und anschließend auf `Sichern und ausführen`.
+In order to reset the key settings, click on `Reset` and then finally `Save and apply`.
 {{% /notice %}}
 
+### Default Configuration
 
+As previously stated, Grandstream IP phones are provisioned using the default configurations which can be found under `Devices`> `Basic Configurations`.
 
-
-### Basis-Konfiguration
-
-Wie bereits erwähnt, werden Grandstream IP-Telefone  mit Hilfe der Basis-Konfiguration provisioniert. Die Basis-Konfiguration ist unter `Endgeräte` > `Basis-Konfigurationen` zu finden.
-
-{{% notice note %}}
-Bevor Sie die Basis-Konfiguration ändern, müssen Sie diese `Duplizieren`.
+{{% notice note%}}
+When modifying the default configuration settings, ensure you make a duplicate copy of the original using the `Duplicate`tool. 
 {{% /notice %}}
 
-Ebenfalls können Sie eine schon bearbeitete Basis-Konfiguration als `Standard setzten`. Somit erhalten neu angelegte IP-Telefone automatisch die angepasste Basis-Konfiguration.
+In addition, you can set an already edited default configurations as the `standard settings`. Doing so ensures that all newly added IP telephones will automatically be provisioned with these default configurations.
 
-**Zuweisung einer Basis-Konfiguration**
+**Assigning a Default Configuration**
 
-Eine Basis-Konfiguration kann auf mehreren Wegen zugewiesen werden:
+A default configuration can be assigned using multiple methods:
 
-+ Über `Endgeräte` > `Basis-Konfigurationen` > Basis-Konfiguration auswählen und Bearbeiten, im Tab `Geräte` können gleich mehrere IP-Telefone hinzugefügt werden.
-+ Über `Endgeräte` > `Geräteliste` > IP-Telefon auswählen und Bearbeiten im Tab `Basisdaten`.
++ Via `Devices`> `Basic Configurations` > Choose your Basic configuration set and press `Edit` Under the `Devices` tab, it is possible to add multiple IP telephones.
++ Via `Devices`> `Device list` > Select and edit the IP Telephone and under the tab `Basic Data` choose the correct **Basic configuration** option. 
 
 
-**BLF-Tasten konfigurieren über die Basis-Konfiguration**
+**Automatic BLF Key Configuration via Basic Configurations**
 
-Im Tab `Konfiguration` können Sie die vorhandene Basis-Konfiguration anpassen.
+Under the `Configuration` tab, it is possible to modify the existing basic configuration.
 
-Im Bereich **</config>** können Sie Ihre Wunschtasten einfügen. Folgendes Beispiel zeigt die Konfiguration der ersten *Virtual-Multi-Purpose-Taste*:
+Within the **</config>** section, you can add your desired keys. The following example highlights how to add the first *Virtual-Multi-Purpose-Key*:
 
     <P1363>11</P1363>
     <P1364>0</P1364>
     <P1465>Max</P1465>
     <P1466>103</P1466>
 
-*Erklärung*: **11** ist der Code für die BLF-Taste; **0** ist er erste Account auf dem Telefon; **Max** erscheint am Telefon-Display als Bezeichnung der Taste; **103** ist die Nebenstelle die überwacht wird.
+**Explanation**:
 
-Weitere Informationen entnehmen Sie bitte der [Grandstream-Tasten-Dokumentation](/grandstream_key_configuration.pdf).
+**11** is the BLF key code
+**0** is the first account on the telephone
+**Max** is the label which should appear on the telephone screen
+**103** is the extension to be watched. 
 
-Weisen Sie diese Basis-Konfiguration über den Tab `Geräte` den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und speichern Sie, nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
+For more information, please refer to our [Grandstream Key Documentation](/grandstream_key_configuration.pdf).
 
-### Firmwareupdate
+Via the menu tab `devices`, assign these default configurations to the telephones which should have this BLF configuration. Save and apply your changes and once the phones have restarted, the changes will have taken affect.
 
-Ab der mobydick Version 7.14 wird die Firmware für IP-Endgeräte nicht mehr mitgeliefert. Sollte eine andere als auf dem IP-Endgerät installierte Firmware benötigt werden, muss diese selber heruntergeladen und in die mobydick Firmware-Verwaltung hochgeladen werden.
+## Firmware Updates
 
-**Firmware hinzufügen**
+From mobydick version 7.14 onwards, IP endpoint firmware will no longer be included as standard. Should a firmware version (other than the version pre-installed on the phone) be required, this must be externally sourced and per hand uploaded to the phone system firmware management tool.
 
-Die gewünschte Firmware kann hinzugefügt werden unter `Endgeräte` > `Firmware`:
+**Upload New Firmware**
 
-|Einstellung|Beschreibung|
+The desired firmware can be uploaded via the the `Devices`> `Device firmware`:
+
+|Settings|Description|
 |---|---|
-|Firmware-Datei|Laden Sie hier die Firmware hoch.|
-|Model|Modellbezeichnung des Telefons|
-|Version|Firmware-Version|
-|Dokumentation|Optionales Feld für Notizen|
+|Firmware Files|Upload the firmware files here.|
+|Model|Grandstream Telephone model name|
+|Version|Firmware Version|
+|Comments|Optional field for notes|
 
-**Firmware ausrollen**
+**Firmware Roll Outs**
 
-Die Firmware kann aus den IP-Endgeräten über `Endgeräte` > `Geräteliste` aktualisiert werden. Wählen Sie die Zielgeräte in der Geräteliste mit Häkchen aus und klicken Sie auf `Aktion` > `Firmware ausrollen`. Nun erhalten Sie eine Übersicht der gewählten Geräte, in der Sie die Zielfirmware auswählen können. Anschließend klicken Sie auf `Firmware update` um die gewählte Firmware auszurollen.
+Firmware updates can be roll out via the `Devices` > `Device list` menu. Simply select the desired Grandstream Endpoints from the list via the check boxes and under `Actions` > `Roll out firmware`. This will open an overview of all selected devices to which the new firmware version should be roll out to. Click `Firmware Upate` to roll out the desired firmware version.
 
+**Recommended Firmware**
 
-Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es uns leider nicht möglich jede zu testen, so dass es sein kann, dass manche Firmware-Versionen mobydick Funktionen nicht unterstützen. Daher finden Sie hier eine Liste der Firmwares die von uns bereits getestet wurden:
+As there are numerous Firmware versions available for the varying IP endpoint models, it is unfortunately not possible to test them all. Therefore, it is possible that some firmware versions may not support all phone sytem functions. If in doubt, please refer to below list of already tested firmware versions:
 
-|Modell|Empfohlene Firmware|
+|Model|Recommended Firmware|
 |---|---|
 |GXP2160|1.0.7.97|
