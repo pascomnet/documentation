@@ -17,7 +17,6 @@ icon: <i class="fa fa-file-text-o" aria-hidden="true"></i>
 ---
 
 
-|[Release 7.13.04]({{< relref "07.13.04.md" >}})| Bugfix Release | 02.03.2017 |
 ## Current Version
 
 |Version|Release Type|Published|
