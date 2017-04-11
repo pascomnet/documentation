@@ -9,9 +9,9 @@ keywords:
 description: Setup guide to configuring Snom DECT systems with the pascom PBX solution
 url:  /endpoints/snom-dect-system-setup/
 linkde: /endgeraete/snom-dect/
-prev: /endpoints/generic-ip-endpoints/
+prev: /endpoints/grandstream-ip-telephones-gxp-gxv-series/
 next: /endpoints/integrate-aastra-dect-system/
-weight: 47
+weight: 46
 toc: true
 draft: false
 ---

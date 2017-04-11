@@ -15,7 +15,7 @@ keywords:
 description: Integrate your Grandstream IP telephones within your mobydick.
 prev: /endpoints/yealink-ip-telephones-t4-series/
 url:  /endpoints/grandstream-ip-telephones-gxp-gxv-series/
-next: /endpoints/snom-dect/
+next: /endpoints/snom-dect-system-setup/
 linkde: /endgeraete/grandstream-tischtelefone-gxp-gxv-serie/
 weight: 43
 toc: true

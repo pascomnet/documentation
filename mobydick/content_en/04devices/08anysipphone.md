@@ -1,9 +1,9 @@
 ---
 url:  /endpoints/generic-ip-endpoints/
 linkde: /endgeraete/beliebiges-ip-geraet-einrichten/
-prev: /endpoints/snom-ip-telephones/
-next: /endpoints/snom-dect-system-setup/
-weight: 45
+prev: /endpoints/integrate-aastra-dect-system/
+next: 
+weight: 48
 title: Generic IP Endpoints
 keywords: 
     - Softphone Integration
