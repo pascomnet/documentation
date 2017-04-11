@@ -10,6 +10,7 @@ keywords:
     - Shortkeys
 description: Overview of pascom IP PBX Function Codes / Service Codes
 url: /howto/service-codes/
+prev: /howto/
 linkde: /howto/funktionscodes/
 weight: 125
 toc: true

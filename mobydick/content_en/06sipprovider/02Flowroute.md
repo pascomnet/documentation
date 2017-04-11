@@ -1,7 +1,7 @@
 ---
 title: Flowroute Setup
-url: /sip-provider/flowroute/
-next: 
+url: /sip-providers/flowroute/
+prev: /sip-providers/database/
 weight: 8
 keywords:
 description:
@@ -11,18 +11,18 @@ lang: en
 
 ## Configuring Flowroute SIP Services with mobydick
 
-Should you require voice over IP services in North America (USA & Canada), you can benefit from using mobydick's Flowroute SIP provider template. Alternatively, if you are a Flowroute customer looking to switch to the mobydick phone system - this template will ensure interoperability between Flowroute and your phone system. 
+Should you require voice over IP services in North America (USA & Canada), you can benefit from using mobydick's Flowroute SIP provider template. Alternatively, if you are a Flowroute customer looking to switch to the mobydick phone system - this template will ensure interoperability between Flowroute and your phone system.
 
 ### Finding Your Flowroute Credentials
 
-In order proceed you will require your Flowroute account credentials, the previously purchased desired DID number as well as knowing which internal extension calls should be mapped to. 
+In order proceed you will require your Flowroute account credentials, the previously purchased desired DID number as well as knowing which internal extension calls should be mapped to.
 Therefore, if you do not know your Flowroute Credentials, please login to your Flowroute account via https://manage.flowroute.com/accounts/login/ and navigate to the Interconnection menu for your account username and password. For your DID and Network Prefix information, please use the DIDs menu:
 
 ![Screenshot - Flowroute SIP Provider Credentials](../../images/Flowroute_Configs.png?width=90% "Flowroute Credentials")
 
 ### Using the Flowroute Template
 
-In order to add Flowroute SIP services to your mobydick, navigate "Add Trunk" menu via Gateways > Trunks > Add and use the filter to search for Flowroute as shown below: 
+In order to add Flowroute SIP services to your mobydick, navigate "Add Trunk" menu via Gateways > Trunks > Add and use the filter to search for Flowroute as shown below:
 
 ![Screenshot - Add Flowroute Trunk via SIP Provider Template](../../images/Add_Flowroute_Trunk.png?width=90% "Flowroute SIP Provider Database Template")
 
@@ -50,8 +50,8 @@ The next step is to apply your new telephony configurations. Once applied, your 
 ### Editing Flowroute Trunks
 
 In order to edit your Flowroute trunk, navigate to the trunk editor via ***Gateways > Trunks*** and select your Flowroute account from the Trunks list and click `Edit Button
- as shown below: 
- 
+ as shown below:
+
 ![Screenshot - Edit Flowroute Trunk Setup](../../images/flowroute_trunk_edit.png?width=90% "Edit Flowroute Trunk")
 
 This will open the trunk editor in which you will be able to modify not only your basic account information (basic data & account information) but also your inbound and outbound call rules via the various menu tabs:
@@ -60,7 +60,7 @@ This will open the trunk editor in which you will be able to modify not only you
 
 ### Modifying Flowroute Call Rules
 
-Should the standard template call rules which are automatically generated upon the first template save not match your requirements, it is of course possible the modify them. To do so, simply follow the process above and select the Inbound or Outbound Calls menu tabs depending on which you wish to edit. 
+Should the standard template call rules which are automatically generated upon the first template save not match your requirements, it is of course possible the modify them. To do so, simply follow the process above and select the Inbound or Outbound Calls menu tabs depending on which you wish to edit.
 
 #### Flowroute Inbound Call Rules
 Per default, a standard inbound call rule is generated that routes all incoming calls to the extension number specified in the initial setup.
@@ -77,16 +77,16 @@ Per default, a standard inbound call rule is generated that routes all incoming 
 |CIDnumber|	Relates to caller ID information|
 |Language|	Sets the channel language. For example, it is possible add a new rule and adapt the source to detect incoming calls from Quebec City which can then have the channel language set to French using **best match call routing**|
 
-However, it is possible to modify this call rule to better suit your needs for example updating the extension mapping you can do so in the above screen by double clicking the extension field and adding a new value. If for example, you would like to route the call onto an IVR menu, the IVR menu must first be configured and assigned an extension number which can be added in the Flowroute Inbound Call Rules Extension field. 
+However, it is possible to modify this call rule to better suit your needs for example updating the extension mapping you can do so in the above screen by double clicking the extension field and adding a new value. If for example, you would like to route the call onto an IVR menu, the IVR menu must first be configured and assigned an extension number which can be added in the Flowroute Inbound Call Rules Extension field.
 
-By pressing the `Add` button button, a dropdown list of additional options will appear which can be used for **best match call routing** and configuring switchboards etc. In our example, we use pattern matching to change the channel language to French for callers from Quebec City: 
+By pressing the `Add` button button, a dropdown list of additional options will appear which can be used for **best match call routing** and configuring switchboards etc. In our example, we use pattern matching to change the channel language to French for callers from Quebec City:
 
 ![Screenshot – Flowroute Inbound Call Rules Advanced](../../images/flowroute_inbound_profile.png?width=90% "Advanced Flowroute Inbound Call Rules")
 
 Once you have made the required changes, click `Save` and then `Apply` your new telephony settings. Once the apply process is finished your new / modified call rules will be up and running.
 
 #### Flowroute Outbound Call Rules
-In order to edit the standard Flowroute outbound call rules, simply select the Outbound Calls in the trunk editing mask and the following screen will appear: 
+In order to edit the standard Flowroute outbound call rules, simply select the Outbound Calls in the trunk editing mask and the following screen will appear:
 
 ![Screenshot – Flowroute Outbound Call Rules](../../images/Flowroute_outbound_edit.png?width=90% "Add Flowroute Outbound Call Rules")
 
@@ -112,7 +112,7 @@ In our example, we added a new outbound rule which requires users to enter a PIN
 
 ![Screenshot – Flowroute Outbound International Call Rules Setup](../../images/flowroute_add_international_outbound_rule.png?width=90% "Add Flowroute International Call Rules")
 
-As now CIDnumber has been added, international calls will be made as private numbers. The PIN number is automatically generated and can be changed by double clicking on the value within the column. 
+As now CIDnumber has been added, international calls will be made as private numbers. The PIN number is automatically generated and can be changed by double clicking on the value within the column.
 
 Once you have made the required changes, click `Save` and then `Apply` your new telephony settings. Once the apply process is finished your new / modified call rules will be up and running.
 
@@ -123,7 +123,7 @@ Should you need to modify your Flowroute account settings for any reason, e.g. a
 
 #### Changing Your Flowroute Password
 If for whatever reason, you need to change your Flowroute account password, this must be done using "Reset Password" button under **Interconnection** in the Flowroute Web UI (see top of this back). Once the password has been reset, you will now need to update your account settings in mobydick. To do this go to the ***Gateways > Trunks*** menu and select your Flowroute account from the Trunks list and click `Edit` as described above.
-Under the `Password` column, double click on the value (shown above as *****) and enter the new password. 
- 
+Under the `Password` column, double click on the value (shown above as *****) and enter the new password.
+
 ![Screenshot - Update Flowroute Password](../../images/flowroute_password_update.png?width=90% "Change Flowroute Account Password")
 Once you have updated the password, click `Save` and then `Apply` your new telephony settings. Once the apply process is finished your account info will have been updated.

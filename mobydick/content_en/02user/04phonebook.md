@@ -1,14 +1,13 @@
 ---
 title: Telephone Book
-keywords: 
+keywords:
     - pascom PBX phonebook
     - phonebook
-    - 
-description: Teams in mobydick are comparable to Call Queues. Use advanced call strategies to help manage callers more effectively and professionally. 
+    -
+description: Teams in mobydick are comparable to Call Queues. Use advanced call strategies to help manage callers more effectively and professionally.
 linkde: /benutzer/telefonbuch/
 url: /users/phonebooks/
-prev: /users/teams/
-next: /users/connector/
+prev: /users/add-teams/
 weight: 24
 toc: true
 draft: false
@@ -37,13 +36,13 @@ pascom phone systems use the telephone books in order to resolve inbound and out
 
 * Each pascom phone system user has read only access to the global phone book.
 * The global telephone book can be edited by system users you have at least `Phonebook Manager permissions (see
-[Web UI Permissions](../users/#web-ui-permissions)). 
+[Web UI Permissions](../users/#web-ui-permissions)).
 * Each phone system user has read / write access to their individual private phone and not those of other users.
 
 ### Telephone Book Prioritization for Inbound Calls
 
-* BY inbound calls, the number is searched for firstly in the private phone book before searching the global phone book. If a number is stored in the private phone book, this number will be the number displayed. 
-* Should a queue be called and only one agent has the number stored in their private phone book, then only this agent will see this entry in the display dialog. 
+* BY inbound calls, the number is searched for firstly in the private phone book before searching the global phone book. If a number is stored in the private phone book, this number will be the number displayed.
+* Should a queue be called and only one agent has the number stored in their private phone book, then only this agent will see this entry in the display dialog.
 
 ## User and Team Telephone Book Entries
 
