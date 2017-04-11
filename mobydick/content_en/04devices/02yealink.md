@@ -144,80 +144,80 @@ To confirm, press *Save*.
 
 **Via the Web UI**
 
-Under the tab `DSSKeys` it is possible to assign the various telephone keys as BLF keys for example:
+Under the tab `DSSKey` it is possible to assign the various telephone keys as BLF keys for example:
 
 |Type|Value|Label|Line|Extension|
 |---|---|---|---|
 |BLF|The extension to be monitored, e.g. 123 for extension 123|Enter an label / name for the key.|Line 1|The extension number, i.e. 123|
 
-Neben Benutzer-Durchwahlen können auch Einbuchcodes für Warteschlangen oder Durchwahlschalter konfiguriert werden.
+As well as user extensions, it is also possible to configure a BLF key with login codes or extensions switches.
 
-**Weitere nützliche Funktionstasten**
+**Additional Useful Function Keys**
 
-|Funktionstaste|Beschreibung|
+|Function Key|Description|
 |---|---|
-|**Speed Dial**|Hier kann eine Telefonnummer hinterlegt werden.|
-|**DTMF**|Hier können DTMF-Zeichen hinterlegt werden.| -->
+|**Speed Dial**| Can be assigned with a telephone number.|
+|**DTMF**|Can be assigned with DTMF characters.|
 
-### Basis-Konfiguration
+### Default Configuration
 
-Wie bereits erwähnt, werden Yealink IP-Telefone  mit Hilfe der Basis-Konfiguration provisioniert. Die Basis-Konfiguration ist unter `Endgeräte` > `Basis-Konfigurationen` zu finden.
+As previously stated, Yealink IP phones are provisioned using the default configurations which can be found under `Devices`> `Basic Configurations`.
 
-{{% notice note %}}
-Bevor Sie die Basis-Konfiguration ändern, müssen Sie diese `Duplizieren`.
+{{% notice note%}}
+When modifying the default configuration settings, ensure you make a duplicate copy of the original using the `Duplicate`tool. 
 {{% /notice %}}
 
-Ebenfalls können Sie eine schon bearbeitete Basis-Konfiguration als `Standard setzten`. Somit erhalten neu angelegte IP-Telefone automatisch die angepasste Basis-Konfiguration.
+In addition, you can set an already edited default configurations as the `standard settings`. Doing so ensures that all newly added IP telephones will automatically be provisioned with these default configurations.
 
-**Zuweisung einer Basis-Konfiguration**
+**Assigning a Default Configuration**
 
-Eine Basis-Konfiguration kann auf mehreren Wegen zugewiesen werden:
+A default configuration can be assigned using multiple methods:
 
-+ Über `Endgeräte` > `Basis-Konfigurationen` > Basis-Konfiguration auswählen und Bearbeiten, im Tab `Geräte` können gleich mehrere IP-Telefone hinzugefügt werden.
-+ Über `Endgeräte` > `Geräteliste` > IP-Telefon auswählen und Bearbeiten im Tab `Basisdaten`.
++ Via `Devices`> `Basic Configurations` > Choose your Basic configuration set and press `Edit` Under the `Devices` tab, it is possible to add multiple IP telephones.
++ Via `Devices`> `Device list` > Select and edit the IP Telephone and under the tab `Basic Data` choose the correct **Basic configuration** option. 
 
-**BLF-Tasten konfigurieren über die Basis-Konfiguration**
+**Automatic BLF Key Configuration via Basic Configurations**
 
-Im Tab `Konfiguration` können Sie die vorhandene Basis-Konfiguration anpassen. Im Bereich **keys** finden Sie bereits vorkonfigurierte Funktionstasten, an denen Sie sich orientieren können.
+Under the `Configuration` tab, it is possible to modify the existing basic configuration. Under the **Keys** section you will find the already pre-configured function keys which provide a useful guideline to work with.
 
-BLF-Tasten lassen sich wie folgt einrichten:
+BLF Keys can be setup as follows: 
 
     {{!-- keys --}}
     linekey.3.type = 16
     linekey.3.value = 123
     linekey.3.label = Max
 
-Die belegte Taste (in diesem Fall Linekey 3) besteht aus drei Parametern:
+The assigned key (in this cas, line key 3) consists of three parameters:
 
-+ *type*: der Typ der Taste, 16 steht für BLF,
-+ *value*: der Wert, das ist hier die Nebenstelle,
-+ *label*: das Label, das ist die Bezeichnung, die am Display angezeigt wird.
++ *type*: The key type, 16 stands for BLF,
++ *value*: the value, in this case the extension number,
++ *label*: the label, which is to be displayed on the phone's screen Label, das ist die Bezeichnung, die am Display angezeigt wird.
 
-Weisen Sie diese Basis-Konfiguration über den Tab `Geräte` den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und speichern Sie. Nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
+Via the menu tab `devices`, assign these default configurations to the telephones which should have this BLF configuration. Save and apply your changes and once the phones have restarted, the changes will have taken affect.
 
 
-### Firmware Update
+## Firmware Updates
 
-Ab der mobydick Version 7.14 wird die Firmware für IP-Endgeräte nicht mehr mitgeliefert. Sollte eine andere als auf dem IP-Endgerät installierte Firmware benötigt werden, muss diese selber heruntergeladen und in die mobydick Firware-Verwaltung hochgeladen werden.
+From mobydick version 7.14 onwards, IP endpoint firmware will no longer be included as standard. Should a firmware version (other than the version pre-installed on the phone) be required, this must be externally sourced and per hand uploaded to the phone system firmware management tool.
 
-**Firmware hinzufügen**
+**Upload New Firmware**
 
-Die gewünschte Firmware kann hinzugefügt werden unter `Endgeräte` > `Firmware`:
+The desired firmware can be uploaded via the the `Devices`> `Device firmware`:
 
-|Einstellung|Beschreibung|
+|Settings|Description|
 |---|---|
-|Firmware-Datei|Laden Sie hier die Firware hoch. Diese finden Sie auf der [Download-Seite von Yealink](http://support.yealink.com/documentFront/forwardToDocumentFrontDisplayPage).|
-|Model|Modellbezeichnung des Yealink-Telefons|
-|Version|Firmware-Version|
-|Dokumentation|Optionales Feld für Notizen|
+|Firmware Files|Upload the firmware files here. Firmware can be found here: [Yealink support download page](http://support.yealink.com/documentFront/forwardToDocumentFrontDisplayPage).|
+|Model|Yealink Telephone model name|
+|Version|Firmware Version|
+|Comments|Optional field for notes|
 
 **Firmware Roll Outs**
 
-Die Firmware kann über `Endgeräte` > `Geräteliste` aktualisiert werden. Wählen Sie die Zielgeräte in der Geräteliste mit Häkchen aus und klicken Sie auf `Aktion` > `Firmware ausrollen`. Nun erhalten Sie eine Übersicht der gewählen Geräte, in der Sie die Zielfirmware auswählen können. Anschließend klicken Sie auf `Firmware update` um die gewählte Firmware auszurollen.
+Firmware updates can be roll out via the `Devices` > `Device list` menu. Simply select the desired Yealink Endpoints from the list via the check boxes and under `Actions` > `Roll out firmware`. This will open an overview of all selected devices to which the new firmware version should be roll out to. Click `Firmware Upate` to roll out the desired firmware version.
 
 **Recommended Firmware**
 
-Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es uns leider nicht möglich jede zu testen, so dass es sein kann, dass manche Firmware-Versionen mobydick Funktionen nicht unterstützen. Daher finden Sie hier eine Liste der Firmwares die von uns bereits getestet wurden:
+As there are numerous Firmware versions available for the varying IP endpoint models, it is unfortunately not possible to test them all. Therefore, it is possible that some firmware versions may not support all phone sytem functions. If in doubt, please refer to below list of already tested firmware versions:
 
-|Modell|Firmware|
+|Model|Firmware|
 |---|---|
