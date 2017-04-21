@@ -9,9 +9,11 @@ url:  /sip-provider/hfo-telecom/
 
 ## Übersicht
 
-Für mehr Information besuchen Sie bitte [HFO Telecom](http://www.hfo-telecom.de/).
+Informationen über Leistungsmerkale und Tarife finden Sie hier: [HFO Telecom](http://www.hfo-telecom.de/).
 
 ## Ihr Account
+
+Nach dem Erwerb und der Freischaltung Ihres HFO SIP-Trunks erhalten Sie eine Bestätigung mit Ihren Accountdaten:
 
 ![Ihr HFO Telecom Account](/hfo-account.png)
 

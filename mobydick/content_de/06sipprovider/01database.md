@@ -1,5 +1,5 @@
 ---
-title: SIP-Provider Datenbank
+title: Übersicht
 weight: 11
 toc: true
 prev: /sip-provider/
@@ -12,8 +12,15 @@ next:  /sip-provider/hfo-telecom/
 
 Die pascom SIP-Provider-Datenbank beinhaltet eine Sammlung von Ämter-Vorlagen verschiedener bereits getesteter SIP-Trunks.
 
+{{% notice info %}}
+Wenn Sie ein ISDN- oder Analoges Amt verwenden, benötigen Sie ein entsprechenes Gateway. Dies muss vor der Verwendung der Ämter-Vorlage konfiguriert werden (siehe [Gateways](/isdn-analog/)).
+{{% /notice %}}
+
 Darin sind folgende SIP-Trunks zu finden:
 
+
+{{% row %}}
+{{% col md-6 %}}
 + HFO Telecom
 + sipgate
 + QSC
@@ -37,8 +44,15 @@ Darin sind folgende SIP-Trunks zu finden:
 + comingolstadt
 + sipcall.ch
 + equada
+{{% /col %}}
+{{% col md-6 %}}
 
 
-{{% notice info %}}
-Für SIP-Trunks die nicht in der Datenbank zu finden ist, können Sie die Vorlage **Manuell SIP** verwenden. Wenn Sie bei der Inbetriebnahme Hilfe benötigen, wenden Sie sich an die [Community](http://community.pascom.net/) oder an unseren pascom Vertrieb (+49 991 29691-200).
+
+{{% notice note %}}
+Für SIP-Trunks die nicht in der Datenbank zu finden ist, können Sie die Vorlage **Manuell SIP** verwenden. Wenn Sie bei der Inbetriebnahme Hilfe benötigen, wenden Sie sich bitte an die [Community](http://community.pascom.net/).<br>Um die Erstellung einer Vorlage zu beauftragen, kontaktieren Sie bitte den pascom Vertrieb (+49 991 29691-200).
 {{% /notice %}}
+
+
+{{% /col%}}
+{{% /row %}}

@@ -2,7 +2,7 @@
 title: Patton Gateways einrichten
 url: /isdn-analog/patton-gateways/
 prev: /isdn-analog/beronet-gateways/
-weight: 53
+weight: 54
 toc: true
 ---
 
