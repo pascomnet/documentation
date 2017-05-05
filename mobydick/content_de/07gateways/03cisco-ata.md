@@ -38,4 +38,4 @@ Schließen Sie den Cisco SPA112  an das Netzwerk an. Dieser wird nach dem Bootvo
 Wählen Sie unter `Endgeräte` > `Geräteliste` > `Hinzufügen` > den Eintrag **Via Cisco Gateway: Analoges Endgerät per SIP**.
 Im Tab `Basisdaten` wählen Sie den Port am Gateway, an dem das Endgerät angeschlossen werden soll. Anschließend weisen Sie das Gerät über den Tab `Zuweisung` einem Benutzer zu.
 
-Nach dem Speichern startet das Gateway neu. Nach dem Neustart wird der Cisco SPA112 von der mobydick provisioniert.
+Nach dem Speichern startet das Gateway neu. anschließend wird der Cisco SPA112 von der mobydick provisioniert.
