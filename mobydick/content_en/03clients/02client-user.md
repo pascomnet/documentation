@@ -2,7 +2,7 @@
 title: Desktop Client User Guide
 url: /clients/client-user-guide/
 prev: /clients/client-installation/
-next: /clients/teams-in-client/
+next: /clients/followme/
 keywords: 
        - Desktop Client User Guide
        - Client user settings
