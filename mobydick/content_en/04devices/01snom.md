@@ -95,7 +95,7 @@ After the provisioning process, the **Menu** button on Snom phones is no longer 
 |Logout [*username*]|Logs out the current user from this location.|
 |Teams (Queues)<!--FIXME-->|Is used for agent management within a queue (login, logout, pause..) according the configuration of the queue.|
 
-Should the Snom IP telephone not have a menu key (i.e. Snom 300, 710 or D715), then the second functions key be assigned with the pascom menu function.
+Should the Snom IP telephone not have a menu key (i.e. Snom 300, 710 or D715), then the second function key will be assigned with the pascom menu function.
 
 {{% notice tip%}}
 Only set Call Forwardings via the pascom menu as they can then be managed by the PBX and reflected within the desktop UC client etc.
