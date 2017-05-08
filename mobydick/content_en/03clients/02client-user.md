@@ -8,9 +8,9 @@ keywords:
        - Client user settings
        - Desktop Client Colour Schemes
        - Desktop Clients Settings
-       - mobydick Client Journal
-       - mobydick Client Call History
-description: Discover how you as an end user can use all the features of the mobydick Clients 
+       - pascom Client Journal
+       - pascom Client Call History
+description: Discover how you as an end user can use all the features of the pascom Clients 
 weight: 32
 toc: true
 linkde: /clients/client-nutzen/
@@ -18,8 +18,8 @@ linkde: /clients/client-nutzen/
 
 
 ## User Login
-![Screenshot - mobydick Desktop Client Login](../../images/client_main_login.png?width=70% "mobydick Desktop Client Login")
-In order to log into the mobydick desktop client, you will be required to enter the following information:
+![Screenshot - mobydick Desktop Client Login](../../images/client_main_login.png?width=70% "pascom Desktop Client Login")
+In order to log into the pascom desktop client, you will be required to enter the following information:
 
 * Username
 * Password
@@ -29,16 +29,17 @@ In order to log into the mobydick desktop client, you will be required to enter 
 Click "**Login**"
 
 ## Client Sections and Control Elements
-The mobydick Client consists of 4 sections:
+The pascom Client consists of 4 sections:
 ![Screenshot - client sections and control elements](../../images/client_main.png?width=100% "client sections and control elements")
-Apart from the search area, all areas of the mobydick client can be identified by the small gear symbol. Through using the gear symbol, settings can be modified or set for the corresponding section of the mobydick  CTI Client.
+Apart from the search area, all areas of the pascom client can be identified by the small gear symbol. Through using the gear symbol, settings can be modified or set for the corresponding section of the pascom CTI Client.
 
-### mobydick Mini Mode
-The mobydick Client can now be operated using 2 different views; full mode and the so called mini-mode. Mini-mode is particularly useful when you need to save space on your desktop, as it will only display the contact list. 
+### Client Mini Mode
+
+The pascom Client can now be operated using 2 different views; full mode and the so called mini-mode. Mini-mode is particularly useful when you need to save space on your desktop, as it will only display the contact list. 
 
 Switching between the 2 modes is achieved very simply through clicking the double arrow symbols << , which is located next to the contacts and teams tabs.
 
-![Screenshot - switichting to mobydick mini mode](../../images/client_main_minimode.png?width=70% "switching to mobydick mini mode")
+![Screenshot - switichting to pascom mini mode](../../images/client_main_minimode.png?width=70% "switching to pascom mini mode")
 
 
 ## Your Profile
@@ -52,13 +53,13 @@ In the top left corner, you will find your User Info, which will display the fol
 You can change your name yourself, should you want to by using the following **"Settings" ----> "My Account"**.
 2. **Your Profile Picture** (also know as an Avatar) including your **User Status**: the user status is indicated according the colour of the frame surrounding the Profile Pic. This can also be changed under "Personal User Settings". You can also change your Profile Picture under **"Settings" ----> "My Account"**. The appropriate How To can be found under: Changing User Password, Telephone PIN and Avatar
 3. **Status Indicator:** You can change your status at any time and either enter a desired text, which will then be saved for later use, or you can use one of the predetermine Stati as listed under the "Personal User Settings" menu button.  
-4. **Location:** This function displays the location where you are currently logged into mobydick. This is an important feature, should you need for example to change between HomeOffice and your actual Office. With locations, the setup is such that the telephones themselves are assigned to the Location, meaning that should you be logged into your HomOffice, your HomeOffice phone will ring and not your desk phone in the CompanyOffice.
+4. **Location:** This function displays the location where you are currently logged into the phone system. This is an important feature, should you need for example to change between HomeOffice and your actual Office. With locations, the setup is such that the telephones themselves are assigned to the Location, meaning that should you be logged into your HomOffice, your HomeOffice phone will ring and not your desk phone in the CompanyOffice.
      
 
 
 
 ## Journal
-The mobydick client call journal records and logs all incoming and outgoing calls 
+The pascom client call journal records and logs all incoming and outgoing calls 
 ![Screenshot - Journal](../../images/client_main_journal.png?width=80% "phone journal")
 
 The following information will be contained within the call journal:
@@ -73,7 +74,7 @@ The green telephone symbol (contained in the red box in the above graphic) provi
 ## Settings Tab
 
 ### Connecting and Using Telephone Books
-The mobydick Client offers you the option of connecting more than just the internal Company Telephone Book. Moreover, depending on your wishes, the order in which the Telephone / Address books are searched and then displayed by the Client can also be altered, for example whether the mobydick Telephone Book or your personal Apple / Outlook address book should be searched first. 
+The pascom Client offers you the option of connecting more than just the internal Company Telephone Book. Moreover, depending on your wishes, the order in which the Telephone / Address books are searched and then displayed by the Client can also be altered, for example whether the pascom Telephone Book or your personal Apple / Outlook address book should be searched first. 
 
 {{% notice note %}}
 Should you connect either of your Apple or Outlook Address books, you do not need to worry about whether or not your colleagues can see your private entries - They can't as your address books will only be displayed within your Client.
@@ -89,7 +90,7 @@ You can define and set the search sequence at any time using your client. To do 
 * Using the control arrows (3 & 4) you can define the order in which the address books are searched
 * Finally, you will need to **Save** (5) your changes.
  
-For example, if you have selected the mobydick telephone book first, then the search results will appear as shown below: 
+For example, if you have selected the pascom telephone book first, then the search results will appear as shown below: 
 
 ![Screenshot - Reihenfolge der Suche](../../images/client_address_books_search.png?width=60% "Sequence of search")
 
@@ -99,7 +100,7 @@ Should you have changed the search display so your Apple Address book is searche
 #### Connecting an Apple Address Book
 ![Screenshot - connecting apple address book](../../images/client_connect_apple_address_book2.png?width=50% "connecting apple address book")
 
-In order to gain access to your Apple contacts directly from within the mobydick Client, you need to complete the following steps:
+In order to gain access to your Apple contacts directly from within the pascom Client, you need to complete the following steps:
 
 1. Select the settings menu
 2. Select the Address Book option
@@ -109,12 +110,12 @@ In order to gain access to your Apple contacts directly from within the mobydick
 
 Moreover, you can setup the following filter options:
 * Call Resolving:
-    * Only if no CallerID is submitted ----> mobydick will firstly check the internal Telephone Book. Should no name be stored, the name from the Apple Address book will be displayed
-    * Always override CallerID, ---> regardless of whether the name already exists in the mobydick Telephone Book, the entry within your Apple Address Book will always be displayed
+    * Only if no CallerID is submitted ----> the PBX will firstly check the internal Telephone Book. Should no name be stored, the name from the Apple Address book will be displayed
+    * Always override CallerID, ---> regardless of whether the name already exists in the pascom Telephone Book, the entry within your Apple Address Book will always be displayed
     * Never --> the Apple Address Book will never be searched
  
 #### Connecting an Outlook Address Book
-In order to gain access to your Outlook Address book directly from within the mobydick Client, you need to complete the following steps:
+In order to gain access to your Outlook Address book directly from within the pascom Client, you need to complete the following steps:
 
 1. Select the settings menu
 2. Choose the Outlook Address book option
@@ -124,8 +125,8 @@ In order to gain access to your Outlook Address book directly from within the mo
 
 Moreover, you can setup the following filter options:
 * Call Resolution:
-    *Only if no CallerID is submitted ----> mobydick will firstly check the internal Telephone Book. Should no name be stored, the name from the Apple Address book will be displayed
-    * Always overwrite CallerID, ---> regardless of whether the name already exists in the mobydick Telephone Book, the entry within your Apple Address Book will always be displayed
+    *Only if no CallerID is submitted ----> The PBX will firstly check the internal Telephone Book. Should no name be stored, the name from the Apple Address book will be displayed
+    * Always overwrite CallerID, ---> regardless of whether the name already exists in the pascom Telephone Book, the entry within your Apple Address Book will always be displayed
     * Never --> the Apple Address Book will never be searched
     
 ### Client Settings
@@ -148,7 +149,7 @@ The desktop client is currently available in the following languages:
 * French
 
 ##### Changing the Client Colour Scheme
-As standard the mobydick client has two colour schemes available - Light and Dark.
+As standard the pascom client has two colour schemes available - Light and Dark.
 
 ![Screenshot - Client Themes](../../images/client_themes.jpg?width=80% "Client Themes")
 
@@ -205,7 +206,7 @@ Under Settings (1) --> My Account (2) you can carry out the changes which are li
  
  
 #### Changing your Password and Telephone PIN
-Normally you will be provided with a pre-set password from your administrator for both your mobydick Deskop and Mobile Clients, as well as a PIN for your phone which is required to log in and out of the your phone.
+Normally you will be provided with a pre-set password from your administrator for both your pascom Deskop and Mobile Clients, as well as a PIN for your phone which is required to log in and out of the your phone.
 
 {{% notice info %}}
 If you have forgotten you password, contact you system administrator who can then reset your password.
@@ -248,10 +249,8 @@ If you would like to use your own image, then please follow the instructions bel
 
 If the image has been saved successfully, it will automatically appear in your Client (Upper Left).
 
-
-
 ## Notifications
-The mobydick Client will display notifications depending on the event. This has the benefit for example of notifying you as to a important telephony related events (incoming call etc), even when you are working in another programme:
+The pascom Client will display notifications depending on the event. This has the benefit for example of notifying you as to a important telephony related events (incoming call etc), even when you are working in another programme:
 Incoming Call
  
 Missed Call - the number in brackets next the "missed call" illustrates how often the person has tried to contact you
@@ -261,7 +260,7 @@ New incoming file transfer
 ## Search
 
 ### Global Searches
-The mobydick Client is able to search through every aspect of mobydick, regardless of whether it is a chat message, journal entry or any available telephone book.
+The desktop Client is able to search through every aspect of the pascom phone system, regardless of whether it is a chat message, journal entry or any available telephone book.
 ![Screenshot - Global Searches](../../images/client_search.png?width=80% "Global Searches")
 
 You can of course also filter your searches be specific entry types 

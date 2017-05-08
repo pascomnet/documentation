@@ -1,6 +1,9 @@
 ---
 title: Connector
 keywords:
+    - pascom Connector
+    - Address book connector
+    - phonebook synchronisation
 description:
 url: /users/connector/
 prev: /users/phonebooks/
@@ -8,80 +11,80 @@ weight: 25
 toc: true
 draft: true
 ---
-## Konzept
+## Concept
 
-Der mobydick Connector synchronisiert externe Datenquellen in die mobydick. mobydick ist in der Lage eine Vielzahl von Objekten wie z. B. Telefonbücher, Benutzer, Kurzwahlen usw. zu importieren. Diese können entweder aus einer CSV-Textdatei, LDAP-Quellen oder einem anderen mobydick Server importiert werden.
+The pascom connector synchronises external data sources with the pascom phone system. pascom phone systems can import and automatically sync numerous objects such as phonebooks, users, speed dials etc. These objects can be imported from CSV text files, LDAP sources or another pascom PBX server.
 
 {{% notice info %}}
-Wir empfehlen, den Connector zu verwenden, um regelmäßig Daten automatisiert zu importieren. Wenn Sie nur einmalig Daten importieren wollen können Sie dies einfacher über *Daten importieren per xlsx-Datei* erledigen.
+We recommend using the connector to regularly import and automatically synchronise data. If you only need to perform an **One-Off** data import, this is more simply achieved via the *Data import per xlsx file*.
 {{% /notice %}}
 
-## Konfiguration
+## Configuration
 
-Den Connector finden Sie unter: `Erweitert` > `Connector`. Fügen Sie neue Connector-Profile ein mit einem Klick auf `Hinzufügen`.
+To use the connector, navigate to `Advanced` > `Connector`. Add a new Connector Profile by clicking on the `Add` button.
 
-Anschließend erhalten Sie eine Übersicht über die Connector-Vorlagen:
+This will provide an overview of all available Connector Templates:
 
-* **Benutzer aus USC**
-* **Benutzer aus AD**
-* **Benutzer aus LDAP**
-* **Benutzer aus CSV**
-* **Telefonbuch aus AD**
-* **Telefonbuch aus CSV**
-* **Telefonbuch aus LDAP**
-* **Kurzwahlen aus AD**
-* **Kurzwahlen aus CSV**
-* **Kurzwahlen aus LDAP**
-* **mobydick Telefonbuch**
+* **USC User Sync**
+* **AD User Sync**
+* **LDAP User Sync**
+* **CSV User Sync**
+* **AD Phonebook Sync**
+* **CSV Phonebook Sync**
+* **LDAP Phonebook Sync**
+* **AD Speeddial Sync**
+* **CSV Speeddial Sync**
+* **LDAP Speeddial Sync**
+* **mobydick Phonebook**
 
-Nachfolgend werden gängige Profile näher erklärt. Benutzen Sie bitte für den Einstieg die passende Connector-Vorlage.
+In the following below, the main Connector Profiles are explained in more detail. To get started, please use a suitable Connector Template.
 
-### Telefonbuch aus CSV
+### CSV
 
-|Variablen|Beschreibung|
+|Variables|Description|
 |---|---|
-|**Bezeichung**|Bezeichnung des Profiles|
-|**Pfad zur CSV-Datei**|Die zu importierende Datei. Diese Angabe bezieht sich auf das Dateisystem der mobydick und nicht auf Ihr lokales Dateisystem.|
-|**Zeichensatz der CSV-Datei**|Gibt an in welchem Format die CSV-Datei vorliegt. Wie empfehlen Ihnen UTF-8 zu verwenden.|
-|**Trennzeichen**|Mit welchem Trennzeichen wurden die Felder separiert.|
-|**Zeilenende**|Ob die CSV-Datei unter Windows oder Mac/Linux erstellt worden ist, unterscheidet sich das Zeilendende.|
-|**Feldeinfassung**|Wir empfehlen die einzelnen Felder mit Zeichen einzufassen, z. B. "Max Muster"|
+|**Name**|Profile name|
+|**Path to CSV File**|The file to be imported. This refers to the mobydick file system and NOT to your local file system.|
+|**CSV File Encoding**|File format of the CSV file. We recommend using UTF8.|
+|**Delimiter**|The separating symbol with which the fields are separated.|
+|**Line Separator**|Depending on the OS (Windows or Mac/Linux) under which the CSV file was created, the line endings will differ.|
+|**Field Enclosure**|We recommend single fields enclosed by characters e.g. "Max Muster"|
 
-CSV-Quelle aus Freigabe laden:
+Load CSV Sources from a Share:
 
-|Variablen|Beschreibung|
+|Variables|Description|
 |---|---|
-|**Pfad zur CSV-Datei**|Bezieht sich nun relativ zur Freigabe.<br>*Beispiel*: Befindet sich in der Freigabe \\192.168.100.10\mobydick der Unterordner test mit der Datei address.csv tragen Sie hier test\address.csv ein.|
-|**CIFS/SMB Freigabe verwenden**|Wählen Sie **JA** um eine CSV-Quelle aus einer Freigabe zu laden|
-|**CIFS/SMB Freigabe**|UNC-Pfad zur Freigabe im Format **\\<servername** oder **ip>\<freigabe>**<br>*Beispiel*: \\192.168.100.10\mobydick|
-|**CIFS/SMB Benutzer**|Benutzer mit der Berechtigung auf diese Freigabe lesend zuzugreifen.|
-|**CIFS/SMB Passwort**|Zugehöriges Passwort.|
+|**Path to CSV File**|The file to be imported. This refers to the share.<br>*Example*: If the share is located on \\192.168.100.10\mobydick in the subfolder **test** with the file **address.csv** enter test\address.csv.|
+|**Use CIFS/SMB share**|Select **Yes** in order to load a CSV source file from within a share|
+|**CIFS/SMB Share**|UNC path to the Share in the formate **\\<servername** oder **ip>\<share>**<br>*example*: \\192.168.100.10\mobydick|
+|**CIFS/SMB Username**|User assigned with read permissions for accessing the share.|
+|**CIFS/SMB Password**|Corresponding password.|
 
-Nach dem Speichern kann der Importmodus noch eingestellt werden. Hier wird definiert, Wie der Connector mit bereis vorhandenen Datensätzen umgehen soll. Folgende Möglichkeiten stehen zur Verfügung:
+After saving, the import mode can be set. Setting the mode defines how the connector handles existing data as follows:
 
-* Neue Sätze importieren und geänderte abgleichen
-* Neue Sätze importieren, geänderte abgleichen und früher importierte Datensätze entfernen.
+* Create and update records.
+* Create and update records. Remove missing data from previous imports
 
-Im Tab `Variablen` sehen Sie welche Felder imporiert werden können. Hier ein Beispiel für eine CSV-Datei:
+Under the `Variables` tab, the fields which can be imported are listed, such as this example CSV file import: 
 
     "displayname","phone","givenname","surname","organisation","email","mobile","homephone","fax"
     "Max Muster - pascom [30000]","+4999112345","Max","Muster","pascom","","","","+4999112399"
 
 <!--  
-### Benutzer aus AD
+###  AD
 
-|Variable|Beschreibung|
+|Variable|Description|
 |---|---|
-|**Bezeichung**|Bezeichnung des Profiles|
-|**AD Domäne**|-|
+|**Name**|Bezeichnung des Profiles|
+|**AD Domain**|-|
 |**AD Server**|-|
-|**Benutzername**|-|
-|**Passwort**|-|
-|**Authentifizierung konfigurieren**|siehe [Authentifizierung](../connector#authentifizierung)|
+|**Username**|-|
+|**Password**|-|
+|**Configure Authentication**|see [Authentication](../connector#authentication)|
 
 Nach dem Speichern sehen Sie die Übersicht über die Einstellungen.
 
-|Variable|Beschreibung|
+|Variable|Description|
 |---|---|
 |**Modus**|Hier definieren Sie wie der Connector mit bereits vorhanden Datensätzen umgehen soll|
 |**URI**|Die LDAP-URI unter welcher der LDAP Server erreichbar ist. Standardmäßig **ldap://SERVER:389**, für SSL Verbindungen **ldaps://SERVER:636**|
@@ -91,13 +94,13 @@ Nach dem Speichern sehen Sie die Übersicht über die Einstellungen.
 
 -->
 <!--  
-### Benutzer aus UCS
+###  UCS
 -->
 
 
-## Authentifizierung gegen externe Systemen
+## Authentication Against External Systems
 
-mobydick bietet die Möglichkeit die Authentifizierung auf externe LDAP-Server auszulagern. Der Benutzer gibt dabei in der Loginmaske des mobydick Clients seinen Benutzernamen und sein Passwort ein. In der Benutzerdatenbank der mobydick wird geprüft ob der Benutzer existiert, anschließend wird die Anfrage an den LDAP-Server weitergegeben. Da wird dann das eingegebene Passwort zur Authentifizierung geprüft. Ist das Passwort richtig, kann der Client verbunden werden.
+pascom phone systems make it possible to  authenticate users against extneral LDAP server. Users enter their username and password within the pascom client  login screener Benutzer gibt dabei in der Loginmaske des mobydick Clients seinen Benutzernamen und sein Passwort ein. In der Benutzerdatenbank der mobydick wird geprüft ob der Benutzer existiert, anschließend wird die Anfrage an den LDAP-Server weitergegeben. Da wird dann das eingegebene Passwort zur Authentifizierung geprüft. Ist das Passwort richtig, kann der Client verbunden werden.
 
 ### Benutzerdaten
 
@@ -109,7 +112,7 @@ Der Import der Benutzerdaten und die Authentifizierung sind zwar miteinander kom
 
 Unter `Appliance` > `Dienste` > `Authentifizierung` kann die LDAP-Authentifizierung aktiviert werden.
 
-|Einstellung|Beschreibung|
+|Einstellung|Description|
 |---|---|
 |**LDAP Host**|Tragen Sie hier die LDAP URL für Ihren Host ein.<br>Z. B. ldap://192.168.100.10 oder ldaps://192.168.100.10 für LDAPs Verbindungen|
 |**LDAP Bind User**|Als Bind-User tragen Sie den *Distinguished Name* (DN) Ihrer Benutzer ein. Den Benutzername ersetzen Sie durch ein %-Zeichen. mobydick ersetzt das %-Zeichen durch den Benutzernamen der sich gerade am System authentifizieren will.|

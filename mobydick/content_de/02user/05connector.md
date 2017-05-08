@@ -57,7 +57,7 @@ CSV-Quelle aus Freigabe laden:
 |**CIFS/SMB Benutzer**|Benutzer mit der Berechtigung auf diese Freigabe lesend zuzugreifen.|
 |**CIFS/SMB Passwort**|Zugehöriges Passwort.|
 
-Nach dem Speichern kann der Importmodus noch eingestellt werden. Hier wird definiert, wie der Connector mit bereis vorhandenen Datensätzen umgehen soll. Folgende Möglichkeiten stehen zur Verfügung:
+Nach dem Speichern kann der Importmodus noch eingestellt werden. Hier wird definiert, wie der Connector mit bereits vorhandenen Datensätzen umgehen soll. Folgende Möglichkeiten stehen zur Verfügung:
 
 * Neue Sätze importieren und geänderte abgleichen
 * Neue Sätze importieren, geänderte abgleichen und früher importierte Datensätze entfernen.
