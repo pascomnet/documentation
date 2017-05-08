@@ -8,7 +8,7 @@ next: /clients/teams-in-client/
 Linkde: /clients/followme/
 weight: 33
 toc: true
-draft: true
+draft: false
 ---
 
 
@@ -29,31 +29,31 @@ Within the Web UI, click on `User` > `Userlist` > select user > and go to the `D
 
 |Setting|Description|
 |---|---|
-|Vom Benutzer konfigurierbar|**Ja/Nein**: Der Admin kann entscheiden ob der Benutzer FollowMe-Einstellungen zu diesem Gerät über seinen Client vornehmen kann.|
-|Aktiviert|**Ja/Nein**: Das Endgerät läutet bei einem eingehenden Anruf mit oder nicht.|
-|Warten|Zeit in Sekunden, wie lange das Gerät wartet bis es mitklingelt bei einem eingehenden Anruf|
-|Timeout|Zeit in Sekunden, wie lange das Gerät klingelt|
+|User Configurable|**Yes/No**: Admins can define whether a user is able to change FollowMe settings on each assigned device.|
+|Enabled|**Yes/No**: Whether the endpoint should ring or not for inbound calls.|
+|Delay|Time in seconds before the device should start ringing for inbound calls.|
+|Timeout|Time in seconds that the device should ring for.|
 
-Die Einstellungen erfolgen für
+FollowMe settings can be configured for
 
-* **Intern**: wenn der Anruf mobydick-intern erfolgt,
-* **Extern**: wenn der Anruf über das Amt kommt,
-* **Team**: wenn der Benutzer als Agent in einem Team angerufen wird.
+* **Internal**: for internal calls, i.e. from phone system users,
+* **External**: Inbound calls via a Trunk, i.e. originating outside the phone system
+* **Queue**: Inbound queue calls to users logged in as a queue agent.
 
-### FollowMe über den Client steuern
+### FollowMe UC Client Set up
 
-Darf der Benutzer (je nach Berechtigung) selber seine FollowMe-Einstellungen verwalten, kann er dies über seinen mobydick Desktop Client (`Einstellungen` > `FollowMe`) tun.
+If a user is permitted to manage their FollowMe settings, this can be done via their pascom Desktop UC client (`Settings` > `FollowMe`).
 
-![FollowMe](/followme_einstellungen_client.png?width=100%)
+![FollowMe](/followme_settings_client.png?width=100%)
 
-Der Benutzer kann Einstellungen vornehmen für Anrufe von intern und extern und für Anrufe die aus einer Warteschlange kommen. Dafür wechselt er zwischen dem Tabs `Extern`, `Intern` und `Teams`.
+Users can configure individual FollowMe settings for interna and external calls as well as calls originating via a queue / team. To do so, the user must simply toggle between the `External`, `Internal` and `Teams` tabs.
 
-|Einstellungen|Beschreibung|
+|Settings|Description|
 |---|---|
-|**Client kontrolliert**|Über dieses Auswahlmenü kann gewählt werden welches Telefon, falls mehrere vorhanden, über den Desktop Client kontrolliert wird.|
-|**Meine Geräte**|Hier sind alle Telefone des Benutzers gelistet. Telefone zu denen der Benutzer keine FollowMe-Einstellungen vornehmen darf sind ausgegraut.<br>Der Benutzer kann Geräte aktivieren/deaktivieren, also entscheiden ob ein Telefon mitläutet oder nicht. Ebenfalls kann eine **Verzögerung** (Telefon wartet bis es mitläutet) und Dauer des **Läuten**s eingestellt werden.|
+|**Client controls**|Should a user be assigned with multiple devices, with this drop down menu, it is possible to set up which endpoint (device) the desktop client can control.|
+|**My Devices**|List of all devices assigned to the user. Telephones which the user is not permitted to configure FollowMe settings are greyed out.<br>The user can activate / deactivate devices and define whether a phone should ring or not as well as defining a device specific **Delay** and **Timeout**.|
 
-Zur Übersicht über die FollowMe-Einstellungen sieht man in der rechten Spalte eine grafische Übersicht über die Geräte und deren Zeiten.
+A graphical overview of the user defined FollowMe settings is available in the column on the left showing device specific delays and timeouts.
 
 <!--FIXME wenn Client fertig übersetzt ist Felder nochmal prüfen -->
 
