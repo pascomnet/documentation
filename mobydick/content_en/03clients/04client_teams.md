@@ -1,7 +1,7 @@
 ---
 title: Teams in Client
 url: /clients/teams-in-client/
-prev: /clients/client-user-guide/
+prev: /clients/followme/
 next: /clients/tapi-interface/
 linkde:  /clients/teams-im-client/
 Keywords:

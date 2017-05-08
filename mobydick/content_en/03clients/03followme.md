@@ -21,7 +21,7 @@ draft: false
 
 Users and workspaces (locations) can be assigned with multiple Endpoints. The configuration setup regarding which endpoint rings, when and for how long is know as **FollowMe**.
 
-![FollowMe](/followme_en.png)
+![FollowMe](../../images/followme_en.png "pascom FollowMe Concept")
 
 
 ## Configuration
@@ -30,7 +30,7 @@ A prerequisite for the configuration is that [users](../..//users/users-and-loca
 
 Within the Web UI, click on `User` > `Userlist` > select user > and go to the `Devices` tab. In the right hand column, you will see an overview of the directly assigned devices with the corresponding FollowMe settings. Next, click on the FollowMe setting: 
 
-![FollowMe](/followme_webui_settings.png?width=50%)
+![FollowMe](../../images/followme_webui_settings.png?width=50% "FollowMe pascom Web UI")
 
 |Setting|Description|
 |---|---|
@@ -49,7 +49,7 @@ FollowMe settings can be configured for
 
 If a user is permitted to manage their FollowMe settings, this can be done via their pascom Desktop UC client (`Settings` > `FollowMe`).
 
-![FollowMe](/followme_settings_client.png?width=100%)
+![FollowMe](../../images/followme_settings_client.png?width=100% "User Defined FollowMe")
 
 Users can configure individual FollowMe settings for interna and external calls as well as calls originating via a queue / team. To do so, the user must simply toggle between the `External`, `Internal` and `Teams` tabs.
 
