@@ -1,7 +1,12 @@
 ---
 title: FollowMe
 keywords:
-description:
+    - FindMe FollowMe
+    - Desktop Roaming
+    - Mobile VoIP
+    - Follow Me
+    - Hotdesking
+description: pascom's user defined followMe system enables greater endpoint control and mobility for End Users
 prev: /clients/client-user-guide/
 url: /clients/followme/
 next: /clients/teams-in-client/
