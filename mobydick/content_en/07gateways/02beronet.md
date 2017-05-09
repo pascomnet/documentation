@@ -1,8 +1,8 @@
 ---
 title: beroNet Gateway Setup
 url: /analog-isdn-gateways/beronet-gateways/
-prev: /analog-isdn-gateways/
-next: /analog-isdn-gateways/patton-gateways/
+prev: /analog-isdn-gateways/grandstream-ata-ht-series/
+next: /analog-isdn-gateways/cisco-spa112/
 linkde: /isdn-analog/beronet-gateways/
 description: beroNet Gateways are fully compatible with pascom phone systems and offer cost effective multi technology communication solutions.
 keywords: 

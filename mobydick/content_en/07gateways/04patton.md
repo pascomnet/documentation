@@ -10,9 +10,8 @@ keywords:
     - BRI gateway
     - ISDN Gateway
     - FXS / FXO Gateway
-weight: 52
 toc: true
-weight: 53
+weight: 54
 toc: true
 ---
 
