@@ -1,5 +1,5 @@
 ---
-title: Call Distribution using Actions
+title: Call Actions
 keywords:
     - actions
     - callflow
@@ -43,7 +43,7 @@ Before the call setup, each call is processed according the **Actions Before**. 
 
 An user extension is called - the caller will then go through the following sequence:
 
-![Actions](../../images/actions_example_en.png?width=1000px)
+![Actions](../../images/actions_example_en.png?width=1000px "pascom Call Actions Example Call Flow")
 
 To determine which action set is appropriate, the call origin will be checked for internal vs external origination and will then go through the **Actions Before** before the call is setup. At this point the call is constructed (setup) and directed to the correct user extension. Should the call not be answered, the call flow is then processed according the **Actions After**. At this point the call origin will be checked once again to ensure the correct action set is processed.
 
