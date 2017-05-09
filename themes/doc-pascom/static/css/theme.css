@@ -764,6 +764,24 @@
   margin: 2px 0 -2px 0;
 }
 @font-face {
+  font-family: 'SourceSansProBold';
+  src: url('../fonts/SourceSansPro-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'YanoneKaffeesatz';
+  src: url("../fonts/YanoneKaffeesatz-Bold.ttf") format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
   font-family: 'Novacento Sans Wide';
   src: url("../fonts/Novecentosanswide-UltraLight-webfont.eot");
   src: url("../fonts/Novecentosanswide-UltraLight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Novecentosanswide-UltraLight-webfont.woff2") format("woff2"), url("../fonts/Novecentosanswide-UltraLight-webfont.woff") format("woff"), url("../fonts/Novecentosanswide-UltraLight-webfont.ttf") format("truetype"), url("../fonts/Novecentosanswide-UltraLight-webfont.svg#novecento_sans_wideultralight") format("svg");
@@ -1242,35 +1260,38 @@ select[multiple=multiple]:focus {
 }
 #footer {
   padding: 3rem 1rem;
-  color: #b3b3b3;
+  color: #282828;
   font-size: 13px;
 }
 #footer p {
+  color: #d20134;
   margin: 0;
 }
 body {
-  font-family: "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-  font-weight: 300;
+  font-family: "SourceSansPro", sans-serif;
   line-height: 1.6;
   font-size: 18px !important;
 }
-h2,
-h3,
 h4,
 h5,
 h6 {
-  font-family: "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: "SourceSansProBold", sans-serif;
   text-rendering: optimizeLegibility;
-  color: #5e5e5e;
-  font-weight: 400;
-  letter-spacing: -1px;
+  color: #fontgrey;
+}
+h2,
+h3 {
+  font-family: "SourceSansProBold", sans-serif;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+  color: #fontgrey;
 }
 h1 {
-  font-family: "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: "YanoneKaffeesatz", sans-serif;
   text-align: center;
   text-transform: uppercase;
-  color: #222;
-  font-weight: 200;
+  color: #fontgrey;
+  letter-spacing: 2.5px;
 }
 blockquote {
   border-left: 10px solid #F0F2F4;
@@ -1864,7 +1885,7 @@ pre .copy-to-clipboard:hover {
   padding: 5px 4px;
 }
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
-  background-color: #b90715;
+  background-color: #d20134;
   color: #F6F6F6;
 }
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
@@ -1903,11 +1924,11 @@ pre .copy-to-clipboard:hover {
   font-size: 1.35em;
   right: 0.6em;
   top: 0.3em;
-  color: #b90715;
+  color: #d20134;
 }
 #header {
-  background: #080808;
-  border-bottom: 4px solid #000000;
+  background: #F6F6F6;
+  border-bottom: 4px solid #282828;
 }
 #body .nav:hover {
   background: #F6F6F6;
@@ -1925,38 +1946,47 @@ pre .copy-to-clipboard:hover {
   line-height: 1.5rem;
   font-size: 1.0rem;
 }
+#sidebar ul.topics > li > a:hover {
+  color: #d20134;
+}
 #sidebar ul li a span {
   white-space: normal;
 }
 #sidebar {
-  background-color: #222222;
+  background-color: #F6F6F6;
+  border-right: 2px solid #bababa;
 }
 #sidebar ul.topics > li.parent {
-  background-color: #323232;
+  background-color: #ffffff;
 }
 #sidebar a {
-  color: #F6F6F6;
+  color: #282828;
 }
 #sidebar a:hover {
-  color: #b90715;
+  color: #d20134;
 }
 #sidebar ul li li {
   padding-left: 1rem;
   text-indent: 0;
 }
 #sidebar ul li.active > a {
-  color: #b90715;
-  background: #323232;
-  border-bottom: 1px solid #b90715;
+  color: #F6F6F6;
+  background: #d20134;
+  border-bottom: 1px solid #d20134;
+}
+#sidebar ul li.parent > a {
+  color: #d20134;
+  background: #ffffff;
+  border-bottom: 1px solid #d20134;
 }
 #top-bar {
   background-color: #F6F6F6;
 }
 a {
-  color: #b90715;
+  color: #d20134;
 }
 a:hover {
-  color: #b90715;
+  color: #d20134;
 }
 .pc-video-container {
   position: relative;
@@ -2023,5 +2053,6 @@ code {
 #docuname {
   padding: 10px 0 5px 0;
   font-size: 18px;
+  color: #282828;
 }
 /* End */
