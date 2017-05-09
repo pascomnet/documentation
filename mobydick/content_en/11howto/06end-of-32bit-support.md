@@ -1,12 +1,12 @@
 ---
 title: 32bit System Support
-keywords: 
+keywords:
     - 32bit mobydick phone system
     - 32bit Support
 description: End of Life Support for 32bit mobydick phone systems
 prev: /howto/service-codes/
 url: /howto/end-32bit-support/
-linkde: url: /howto/ende-32bit-support/
+linkde: /howto/ende-32bit-support/
 weight: 126
 toc: true
 draft: false
@@ -34,4 +34,4 @@ Should your mobydick phone system be installed in a virtual environment with a 3
 
 Create a database backup via `Appliance` > `Backup` > `Database Backup`
 
-Download the latest [mobydick Community Version](https://www.pascom.net/de/download/ "pascom / mobydick ISO download") (min. Version 7.14) and install this on your new 64bit compatible hardware / host. Upload and restore your database backup by following these steps: `Appliance` > `Backup` > `Database backup` > `Action` > `Upload and Restore`. 
+Download the latest [mobydick Community Version](https://www.pascom.net/de/download/ "pascom / mobydick ISO download") (min. Version 7.14) and install this on your new 64bit compatible hardware / host. Upload and restore your database backup by following these steps: `Appliance` > `Backup` > `Database backup` > `Action` > `Upload and Restore`.
