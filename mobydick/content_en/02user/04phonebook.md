@@ -3,11 +3,12 @@ title: Telephone Book
 keywords:
     - pascom PBX phonebook
     - phonebook
-    -
-description: Teams in mobydick are comparable to Call Queues. Use advanced call strategies to help manage callers more effectively and professionally.
+    - 
+description: pascom Phone Systems come with an integrated central phone book, simplifying contact management and phonebook admin.
 linkde: /benutzer/telefonbuch/
 url: /users/phonebooks/
 prev: /users/add-teams/
+next: /users/connector/
 weight: 24
 toc: true
 draft: false
