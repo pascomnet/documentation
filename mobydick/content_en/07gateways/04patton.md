@@ -4,7 +4,7 @@ url: /analog-isdn-gateways/patton-gateways/
 prev: /analog-isdn-gateways/beronet-gateways/
 linkde: /isdn-analog/patton-gateways/
 description: Patton Gateways are fully compatible with pascom phone systems and offer cost effective multi technology communication solutions.
-keywords: 
+keywords:
     - Patton gateways
     - gateway setup
     - BRI gateway
@@ -12,7 +12,6 @@ keywords:
     - FXS / FXO Gateway
 toc: true
 weight: 54
-toc: true
 ---
 
 ## Concept
