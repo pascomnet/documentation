@@ -4,12 +4,17 @@ keywords:
     - pascom Connector
     - Address book connector
     - phonebook synchronisation
+    - CSV phonebooks
+    - CSV import
+    - Univention Corporate Server
+    - Active Directory
+    - User Import
+    - User Authentication
 description:
 url: /users/connector/
 prev: /users/phonebooks/
 weight: 25
 toc: true
-draft: true
 ---
 ## Concept
 
@@ -75,20 +80,20 @@ Under the `Variables` tab, the fields which can be imported are listed, such as 
 
 |Variable|Description|
 |---|---|
-|**Name**|Bezeichnung des Profiles|
-|**AD Domain**|-|
-|**AD Server**|-|
+|**Name**|Profile name|
+|**AD Domain**|The Active Directory Domain Name|
+|**AD Server**|The Active Directory Server Address|
 |**Username**|-|
 |**Password**|-|
 |**Configure Authentication**|see [Authentication](../connector#authentication)|
 
-Nach dem Speichern sehen Sie die Übersicht über die Einstellungen.
+After saving, you will directed a settings overview.
 
 |Variable|Description|
 |---|---|
-|**Modus**|Hier definieren Sie wie der Connector mit bereits vorhanden Datensätzen umgehen soll|
-|**URI**|Die LDAP-URI unter welcher der LDAP Server erreichbar ist. Standardmäßig **ldap://SERVER:389**, für SSL Verbindungen **ldaps://SERVER:636**|
-|**Basis DN**|Definiert von welchem Startpunkt aus der LDAP-Baum durchsucht werden soll|
+|**Mode**|The mode defines how the connector handles existing data.|
+|**URI**|The LDAP URI under which the LDAP server is reachable. Normally **ldap://SERVER:389**, for SSL connections please use **ldaps://SERVER:636**|
+|**Basis DN**|Defines LDAP Tree search start point, i.e. the point from which searches should begin|
 |****||
 |****||
 
@@ -100,33 +105,33 @@ Nach dem Speichern sehen Sie die Übersicht über die Einstellungen.
 
 ## Authentication Against External Systems
 
-pascom phone systems make it possible to  authenticate users against extneral LDAP server. Users enter their username and password within the pascom client  login screener Benutzer gibt dabei in der Loginmaske des mobydick Clients seinen Benutzernamen und sein Passwort ein. In der Benutzerdatenbank der mobydick wird geprüft ob der Benutzer existiert, anschließend wird die Anfrage an den LDAP-Server weitergegeben. Da wird dann das eingegebene Passwort zur Authentifizierung geprüft. Ist das Passwort richtig, kann der Client verbunden werden.
+pascom phone systems make it possible to authenticate users against external LDAP server. Users enter their username and password within the pascom client login screens. Within the user database, the phone system will now check whether the user exists and then forwarf the request to the LDAP-Server which will then authenticate whether the entered password is the correct password for this user. If so, then the client can be connected.
 
-### Benutzerdaten
+### User Data
 
-Der Import der Benutzerdaten und die Authentifizierung sind zwar miteinander kombinierbar aber nicht zwingend gleichzeitig notwendig. Sie können z. B. die Benutzer manuell anlegen und dann nur die Authentifizierung auf ein externes System umschalten. Die externe Authentifizierung scheitert jedoch wenn der Benutzer auf der mobydick nicht existiert. Den vollen Komfort entfaltet mobydick wenn Sie Authentifizierung und den automatischen Benutzerimport miteinander kombinieren.
+Importing user data and the user authentication process can be combined with one another but it is not necessary to configure both simultaneously. For example, you can manually add a user and then later set the authentication to an external system. However, the external authentication process will fail if the user does not exist within the phone system user Database - meaning users must be added to the phone system first. Obviously, this makes the configuration more straight forward when the authentication and automatic user import are combined together.
 
-### Konfiguration
+### Configuration
 
-**Authentifizierung einrichten**
+**Authentication Setup**
 
-Unter `Appliance` > `Dienste` > `Authentifizierung` kann die LDAP-Authentifizierung aktiviert werden.
+The LDAP authentication can be configured under `Appliance` > `Services` > `Authentication`.
 
-|Einstellung|Description|
+|Setting|Description|
 |---|---|
-|**LDAP Host**|Tragen Sie hier die LDAP URL für Ihren Host ein.<br>Z. B. ldap://192.168.100.10 oder ldaps://192.168.100.10 für LDAPs Verbindungen|
-|**LDAP Bind User**|Als Bind-User tragen Sie den *Distinguished Name* (DN) Ihrer Benutzer ein. Den Benutzername ersetzen Sie durch ein %-Zeichen. mobydick ersetzt das %-Zeichen durch den Benutzernamen der sich gerade am System authentifizieren will.|
+|**LDAP Host**|Enter the LDAP URL<br>e.g. ldap://192.168.100.10 or ldaps://192.168.100.10 for LDAPs connections|
+|**LDAP Bind User**|As the Bind-User enter the user's *Distinguished Name* (DN). Replace the username with a % character and the phone system will replace the % character with the username who is trying to authenticate on the system.|
 
-Pro Benutzer kann entschlieden werden ob die Authentifizierung über LDAP erfolgt oder weiterhin die interne mobydick Authentifizierungverwendet werden soll.
+Authentication protocols can be decided on a per user basis, in that a mix operation is possible whereby some users are authenticated against the LDAP and others against the internal pascom Authentication tools.
 
 {{% notice info %}}
-Für **UCS** und **Active Directory** können Sie Connector-Vorlagen benutzen. Diese richten auf Wunsch die Authentifizierung automatisch mit ein.
+For **UCS** and **Active Directory** setups, you can use the corresponding connector templates. These can be configured to set up the authentication protocoll automatically. 
 {{% /notice %}}
 
-**Authentifizierung testen**
+**Authentication Tests**
 
-Mit der Schaltfläche `Anmeldung Testen` können Sie ausprobieren ob Ihre zuvor getätigten Angaben funktionieren.
+Via the `Test Authentication` button you are able to test whether your authentication configuration has been set up correctly.
 
-**Authentifizierung pro Benutzer einstellen**
+**Authentication per User Setup**
 
-Unter `Benutzer` > `Benutzerliste` > `Bearbeiten` im Tab `Basisdaten` im Feld `Anmeldung` stellen Sie die Art der Authentifizierung ein.
+Navigate to `User` > `User list` > `Edit` and under the `Basic Data` tab set the `Authentication` field to the desired Authentication protocoll.
