@@ -18,7 +18,7 @@ draft: false
 ## Concept
 <!--FIXME reihenfolge: beispiel zuerst als konzept  -->
 
-Actions are an important and useful pascom phone system tool. Through using actions, the process of each individual call flow can be controlled. 
+Actions are an important and useful pascom phone system tool for SMBs, ContactCenters and larger [CallCenter](https://www.pascom.net/en/call-center "pascom CallCenter solutions"). Through using actions, the process of each individual call flow can be controlled.
 
 Actions are available with the following objects:
 

@@ -17,14 +17,13 @@ draft: false
 ---
 
 
-
 ## Overview
 
-[Snom M700] (https://www.snom.com/telephones/workplace-mobility/m700-multi-radio-base-station/ "Snom DECT Workplace mobility solutions") base stations can be operated in both Single Cell and Multi-Cell deployments and is ideally suited for organisations that require additional [work place mobility] (https://www.pascom.net/en/features/ "pascom workplace mobility features") over multi floors or across larger company buildings.
+[Snom M700] (https://www.snom.com/telephones/workplace-mobility/m700-multi-radio-base-station/ "Snom DECT Workplace mobility solutions") base stations can be operated in both Single Cell and Multi-Cell deployments and are compatible with pascom cloud, hardware and [virtual phone systems](https://www.pascom.net/en/mobydick-virtual/). As such the Snom M700 is ideally suited for organisations that require additional [work place mobility] (https://www.pascom.net/en/features/ "pascom workplace mobility features") over multiple floors or across larger company buildings.
 
 ## Configuration
 {{% notice warning %}}
-For the automatic commissioning of Snom DECT systems, a functioning DHCP server is required. For more information, please refer to [DHCP Server Configuration] (https://www.pascom.net/en/documentation/mobydick/server/network-configuration/#dhcp-server-configuration "DCHP Server Configuration").
+For the automatic commissioning of Snom DECT systems, a functioning DHCP server is required. For more information, please refer to [DHCP Server Configuration](https://www.pascom.net/en/documentation/mobydick/server/network-configuration/#dhcp-server-configuration "DCHP Server Configuration").
 {{% /notice %}}
 
 ### Connecting Snom Base Stations
@@ -35,7 +34,7 @@ The **Status** field currently has no relevance and the "plug symbol" warning is
 ### Configuring Multi-Cell Operation (optional)
 Should you wish to network multiple Gateways into a multicell DECT system, simply mark and select all the desired Gateways and click **Edit**. By using the arrow buttons, you can navigate through all your selected Gateways and then edit them as follows. 
 
-Under the `Mutli Cell` option, selec the value `Base Station` for one of the Gateways and for all other Gateways, select the option `Repeater`.
+Under the `Mutli Cell` option, select the value `Base Station` for one of the Gateways and for all other Gateways, select the option `Repeater`.
 
 ### Add and Assign Handsets
 Under`Devices` > `Device List` > `Add`, select the option `Via snom DECT Gateway: handset

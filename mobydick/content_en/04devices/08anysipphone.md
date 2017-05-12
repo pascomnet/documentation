@@ -1,6 +1,6 @@
 ---
 url:  /endpoints/generic-ip-endpoints/
-linkde: /endgeraete/beliebiges-ip-geraet-einrichten/
+linkde: /endgeraete/beliebiges-ip-geraet/
 prev: /endpoints/integrate-aastra-dect-system/
 next: 
 weight: 48
