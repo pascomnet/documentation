@@ -19,13 +19,13 @@ draft: false
 
 ### Global Telephone Book
 
-As standard, pascom phone systems provide every user with a central telephone book, which can be accessed via the desktop client on Windows, Mac and Linux operating systems as well as via the mobility client for Android and iOS smartphones and devices. In addition, pascom supported IP phones which have been provisioned by the phone system are also able to call up the central telephone book.
+As standard, pascom phone systems provide every user with a central telephone book, which can be accessed via the desktop client on Windows, Mac and Linux operating systems as well as via the mobility client for Android and iOS smartphones and devices. In addition, pascom [VoIP Software](https://www.pascom.net/en/mobydick-voip/ "pascom VoIP phone system software") supported IP phones which have been provisioned by the phone system are also able to call up the central telephone book.
 
 ### Private Telephone Book
 Each desktop client user has access to a private Phonebook for storing user specific contact information:
 
 * Allows new phone book entries to be added via the desktop client.
-* Should an unkown caller call, the entry can be stored in the private phone book.
+* Should an unknown caller call, the entry can be stored in the private phone book.
 * Entries from the global telephone book can be copied into the private and then edited.
 
 

@@ -17,7 +17,7 @@ toc: true
 
 
 ## Concept
-Automated Call Distribution strategy to route inbound callers to the agent(s) who are best qualified (skilled) to fulfill the callers requirements.
+Skills Based Routing is an Automated Call Distribution strategy often deployed in [Call Centers]() [central switchboard] (https://www.pascom.net/en/call-center/ "pascom ContactCenter Tools") to route inbound callers to the agent(s) who are best qualified (skilled) to fulfill the callers requirements.
 
 Functions:
 

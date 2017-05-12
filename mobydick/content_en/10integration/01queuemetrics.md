@@ -8,7 +8,7 @@ toc: true
 ---
 ## Overview
 
-QueueMetrics is a [Call Center Software] (https://www.pascom.net/en/contact-call-center/ "pascom Contact Center Solutions") Queues and Agents reporting tool. QueueMetrics should be installed on a separate server to your pascom phone system. QueueMetrics stores data in a MySQL database which can be located either on the same server as QueueMetrics or on any other server. If needed, your pascom PBX can write the data required for reporting to the MySQL server.
+QueueMetrics is a Contact Center Queues and Agents reporting tool as is a powerful addition to pascom's [Call Center Software] (https://www.pascom.net/en/call-center/ "pascom Contact Center Solutions"). QueueMetrics should be installed on a separate server to your pascom phone system. QueueMetrics stores data in a MySQL database which can be located either on the same server as QueueMetrics or on any other server. If needed, your pascom PBX can write the data required for reporting to the MySQL server.
 
 ## Configuration
 

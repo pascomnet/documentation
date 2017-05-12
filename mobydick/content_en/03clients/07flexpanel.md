@@ -17,7 +17,7 @@ toc: true
 
 ## Overview
 
-The pascom FlexPanel Framework lends itself perfectly for the creation of [ContactCenter Wallboards] (https://www.pascom.net/en/contact-call-center/ "pascom Contact Center Phone Systems") and switchboard call distribution panels. That said, the flexibility of the framework also ensures that FlexPanels can be created for any number of scenarios suited for any business size from SMB to large Enterprise, which is why the FlexPanel Framework is included as standard in all our VoIP phone systems. 
+The pascom FlexPanel Framework lends itself perfectly for the creation of [ContactCenter Wallboards] (https://www.pascom.net/en/call-center/ "pascom Contact Center Phone Systems") and switchboard call distribution panels. That said, the flexibility of the framework also ensures that FlexPanels can be created for any number of scenarios suited for any business size from SMB to large Enterprise, which is why the FlexPanel Framework is included as standard in all our VoIP phone systems. 
 
 The FlexPanel Framework can be completely modified to suit the intended users' needs. As a foundation, the admin can define any size of panel and then assign widgets which are already available from mobydick to the panel. The widgets can then be parametrized according to size, function and appearance. 
 

@@ -37,7 +37,7 @@ With the exception of Call Routers, Actions distinguish the caller origin. This 
 
 ### Before/After Actions
 
-Before the call setup, each call is processed according the **Actions Before**. To fulfil certain conditions or requirements, it is also possible to configure and **Actions After**. This can be used for example to send the caller to a feedback IVR for your [Contact Center Team] (/en/contact-call-center/ "pascom Contact Center solutions"). 
+Before the call setup, each call is processed according the **Actions Before**. To fulfil certain conditions or requirements, it is also possible to configure and **Actions After**. This can be used for example to send the caller to a feedback IVR for your [Contact Center Team] (/en/call-center/ "pascom Contact Center solutions"). 
 
 ### Example Scenario
 

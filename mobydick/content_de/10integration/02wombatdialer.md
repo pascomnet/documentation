@@ -15,7 +15,7 @@ toc: true
 
 ## Übersicht
 
-WombatDialer ist ein Predictive Dialer der Firma Loway. WombatDialer automatisiert den Aufbau von Telefonverbindungen und ersetzt die umständliche, zeitaufwendige manuelle Anwahl. Somit erreichen Sie z. B. bei Telefonkampagnen eine bessere Auslastung Ihrer Callcenter Agenten. Weitere Anwendungsszenarien können Sie auf der WombatDialer Homepage nachlesen oder besuchen Sie unsere Webseite um [mehr über Callcenter Funktionen](https://www.pascom.net/de/contact-call-center/ "Callcenter") zu erfahren.
+WombatDialer ist ein Predictive Dialer der Firma Loway. WombatDialer automatisiert den Aufbau von Telefonverbindungen und ersetzt die umständliche, zeitaufwendige manuelle Anwahl. Somit erreichen Sie z. B. bei Telefonkampagnen eine bessere Auslastung Ihrer Callcenter Agenten. Weitere Anwendungsszenarien können Sie auf der WombatDialer Homepage nachlesen oder besuchen Sie unsere Webseite um [mehr über Callcenter Funktionen](https://www.pascom.net/de/call-center/ "Callcenter") zu erfahren.
 
 ![Illustration - WombatDialer Konzept mit mobydick](../../images/wombatdialer_overview.png?width=90% "WombatDialer Konzept mit mobydick")
 

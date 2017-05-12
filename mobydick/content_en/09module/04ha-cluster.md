@@ -15,7 +15,7 @@ linkde: /server/cluster-einrichten/
 
 ## Concept
 
-Telephony service downtime is damaging to any business, particularly in the day and age of 24 / 7 on-demand customer care. Therefore, ensuring maximum uptime is essential to business success and even though pascom phone systems offer incredible stability, particular scenarios require that extra layer of redundancy. This this where our High Avaibility cluster comes to the fore and is ideally suited for organisations with particularly high call volumes such as [contact and call center environments] (https://www.pascom.net/en/contact-call-center/ "pascom HA Contact Center Solutions"). 
+Telephony service downtime is damaging to any business, particularly in the day and age of 24 / 7 on-demand customer care. Therefore, ensuring maximum uptime is essential to business success and even though pascom phone systems offer incredible stability, particular scenarios require that extra layer of redundancy. This this where our High Avaibility cluster comes to the fore and is ideally suited for organisations with particularly high call volumes such as [contact and call center environments] (https://www.pascom.net/en/call-center/ "pascom HA Contact Center Solutions"). 
 
 ## Overview
 

@@ -16,7 +16,7 @@ Keywords:
 
 ## Concept
 
-During a telephone call, there are numerous situations where you could use prompts (please see The Concept of Actions) or music on hold. pascom phone systems already come with a number of prompt templates in both German and English. However, it might make sense to create your own voice prompts or Music on Hold to welcome and guide your customers or inform them about your business hours. This is particularly useful for creating a professional impression and welcoming [callers to your Call Center] (/en/contact-call-center/ "pascom Contact Center solutions").
+During a telephone call, there are numerous situations where you could use prompts (please see The Concept of Actions) or music on hold. pascom phone systems already come with a number of prompt templates in both German and English. However, it might make sense to create your own voice prompts or Music on Hold to welcome and guide your customers or inform them about your business hours. This is particularly useful for creating a professional impression and welcoming [callers to your Call Center] (/en/call-center/ "pascom Contact Center solutions").
 
 {{% notice tip %}}
 If you prefer to create your announcements in a recording studio with the help of professional voice actors, please contact our [sales department] (/en/consultancy/ "contact pascom sales team"). They will be glad to help you.

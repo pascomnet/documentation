@@ -19,7 +19,7 @@ toc: true
 ## Concept
 <!--//fixME replace screenshots-->
 
-IVRs (Interactive Voice Response Menus) are used to route a caller through the phone system by selecting menu options via their telephone keypad. For example, 50 % of all calls to the central switchboard might actually be intended for the marketing or support department. In this case, using an IVR to direct calls to the relevant department directly could be beneficial in taking some load of off the [central switchboard] (https://www.pascom.net/en/contact-call-center/ "pascom ContactCenter Tools"). 
+IVRs (Interactive Voice Response Menus) are used to route a caller through the phone system by selecting menu options via their telephone keypad. For example, 50 % of all calls to the central switchboard might actually be intended for the marketing or support department. In this case, using an IVR to direct calls to the relevant department directly could be beneficial in taking some load of off the [central switchboard] (https://www.pascom.net/en/call-center/ "pascom ContactCenter Tools"). 
 
 The IVR could then offer the following options to the user:
 
