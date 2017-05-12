@@ -38,15 +38,17 @@ draft: false
 
 Folgende IP-Telefone werden unterstützt:
 
-+ Grandstream GXP 1610 / 1615
-+ Grandstream GXP 1620 / 1625
++ Grandstream GXP 1610
++ Grandstream GXP 1615
++ Grandstream GXP 1620
++ Grandstream GXP 1625
 + Grandstream GXP 1628
 + Grandstream GXP 1630
 + Grandstream GXP 2130
 + Grandstream GXP 2135	 
 + Grandstream GXP 2160
-+ Grankdstream GXP2170	 
-+ Grandstream GXV3240
++ Grandstream GXP 2170	 
++ Grandstream GXV 3240
 
 
 ## Konfiguration
