@@ -1,5 +1,5 @@
 ---
-title: mobydick Desktop Client Installation
+title: Desktop Client Installation
 keywords:
     - Desktop Client
     - Desktop Client Installation
