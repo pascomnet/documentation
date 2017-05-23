@@ -21,7 +21,7 @@ toc: true
 draft: false
 ---
 
-![Grandstream GXP2160](/grandstream_GXP2160.jpg)
+![Grandstream GXP2160](/grandstream_GXP2160.jpg?width=400px)
 
 ## Kompatibilität
 
@@ -33,6 +33,23 @@ draft: false
 **Firmware-Verwaltung**: Die Firmware kann über mobydick aktualisiert werden.<br>
 **Fernsteuerung über Desktop-Client**: Gespräche können über den Desktop-Client gestartet werden.<br>
 **pascom Menü**: Das pascom Menü ist nicht auf dem IP-Telefon hinterlegt.
+
+## Unterstütze IP-Telefone
+
+Folgende IP-Telefone werden unterstützt:
+
++ Grandstream GXP 1610
++ Grandstream GXP 1615
++ Grandstream GXP 1620
++ Grandstream GXP 1625
++ Grandstream GXP 1628
++ Grandstream GXP 1630
++ Grandstream GXP 2130
++ Grandstream GXP 2135	 
++ Grandstream GXP 2160
++ Grandstream GXP 2170	 
++ Grandstream GXV 3240
+
 
 ## Konfiguration
 
@@ -51,7 +68,7 @@ Für die automatische Inbetriebnahme ist ein funktionierender DHCP-Server zwinge
 
 Stecken Sie das IP-Telefon an das Netzwerk. Das Telefon enthält einen eingebauten Switch, benutzen Sie den Ethernet-Port mit der Bezeichnung **LAN**. Falls Sie kein **PoE** (Power over Ethernet) verwenden, stecken Sie das Telefon an den Netzstrom.
 
-Das IP-Telefon bootet nun, zieht sich vom DHCP eine IP-Adresse und die passende Basis-Konfiguration. Nach diesem Vorgang trägt mobydick das IP-Telefon automatisch in die Geräteliste unter `Endgeräte` > `Geräteliste` ein und legt ein entsprechendes SIP-Peer an.
+Das IP-Telefon bootet nun, zieht sich vom DHCP-Server eine IP-Adresse und die passende Basis-Konfiguration. Nach diesem Vorgang trägt mobydick das IP-Telefon automatisch in die Geräteliste unter `Endgeräte` > `Geräteliste` ein und legt ein entsprechendes SIP-Peer an.
 
 Das SIP-Peer wird automatisch angelegt. Benutzername und Passwort werden automatisch generiert. Der Benutzername besteht aus einer zufälligen Zeichenfolge und den letzten sechs Stellen der Geräte-MAC-Adresse und hat insgesamt 15 Stellen. Das Passwort ist ebenfalls 15-stellig. Da die IP-Telefone automatisch provisioniert werden, müssen Sie die Daten niemals manuell eingeben. Es ist auch nicht möglich die Benutzerdaten zu ändern. Dies erhöht die Sicherheit gegen SIP-Brute-Force-Attacken beträchtlich.
 
@@ -123,8 +140,6 @@ Beenden Sie die Konfiguration mit `Sichern und ausführen`, damit alle Änderung
 {{% notice info%}}
 Um die Einstellungen der Tasten zurückzusetzten klichen Sie auf `Neustart` und anschließend auf `Sichern und ausführen`.
 {{% /notice %}}
-
-
 
 
 ### Basis-Konfiguration
