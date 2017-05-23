@@ -7,7 +7,7 @@ weight: 53
 toc: true
 ---
 
-![Grandstream HT802](/cisco_spa112.jpg?width=300px)
+![Cisco SPA112](/cisco_spa112.jpg?width=300px)
 
 ## Kompatibilität
 

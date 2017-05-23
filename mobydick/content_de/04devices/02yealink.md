@@ -42,7 +42,7 @@ Für die automatische Inbetriebnahme ist ein funktionierender DHCP-Server zwinge
 
 Stecken Sie das IP-Telefon an das Netzwerk. Das Telefon enthält einen eingebauten Switch, benutzen Sie den Ethernet-Port mit der Bezeichnung **Internet**. Falls Sie kein **PoE** (Power over Ethernet) verwenden, stecken Sie das Telefon an den Netzstrom.
 
-Das IP-Telefon bootet nun, zieht sich vom DHCP eine IP-Adresse und die passende Basis-Konfiguration. Nach diesem Vorgang trägt mobydick das IP-Telefon automatisch in die Geräteliste unter `Endgeräte` > `Geräteliste` ein und legt ein entsprechendes SIP-Peer an.
+Das IP-Telefon bootet nun, zieht sich vom DHCP-Server eine IP-Adresse und die passende Basis-Konfiguration. Nach diesem Vorgang trägt mobydick das IP-Telefon automatisch in die Geräteliste unter `Endgeräte` > `Geräteliste` ein und legt ein entsprechendes SIP-Peer an.
 
 Das SIP-Peer wird automatisch angelegt. Benutzername und Passwort werden automatisch generiert. Der Benutzername besteht aus einer zufälligen Zeichenfolge und den letzten sechs Stellen der Geräte-MAC-Adresse und hat insgesamt 15 Stellen. Das Passwort ist ebenfalls 15-stellig. Da die IP-Telefone automatisch provisioniert werden, müssen Sie die Daten niemals manuell eingeben. Es ist auch nicht möglich die Benutzerdaten zu ändern. Dies erhöht die Sicherheit gegen SIP-Brute-Force-Attacken beträchtlich.
 
@@ -84,7 +84,7 @@ Nach der Provisionierung ist auf der zweiten Funktionstaste am Display das pasco
 
 
 {{% notice tip%}}
-Setzen Sie Rufumleitungen nur über das mobydick Menü, da diese Rufumleitungen über die mobydick verwaltet werden können.
+Setzen Sie Rufumleitungen nur über das pascom Menü, da diese Rufumleitungen über die mobydick verwaltet werden können.
 {{% /notice %}}
 
 {{% notice info%}}
@@ -95,12 +95,12 @@ Die Verwendung der DND-Taste (*do not disturb*) oder Ruhe-Taste am Yealink hat z
 
 Um auf die Weboberfläche Ihres IP-Telefons zu gelangen benötigen Sie die IP-Adresse. Im Folgenden sind Möglichkeiten beschrieben, um diese in Erfahrung zu bringen:
 
-**IP-Adresse am Telefon anzeigen**
+#### IP-Adresse am Telefon anzeigen
 
 Drücken Sie die **OK**-Taste auf Ihrem Yealink IP-Telefon. Nun können Sie die IPv4-Adresse des Telefons ablesen.
 
 
-**IP-Adresse über die Geräteliste ermitteln**
+#### IP-Adresse über die Geräteliste ermitteln
 
 Loggen Sie sich in das Web-UI der mobydick ein. Klicken Sie auf `Endgeräte` > `Geräteliste`. Nun sehen Sie eine Übersicht über alle verfügbaren Geräte. Links von jedem Eintrag finden Sie ein *Info*-Symbol. Klicken Sie es an, erhalten Sie eine Übersicht über das provisionierte Telefon, unter anderem auch die IP-Adresse.
 
@@ -108,13 +108,13 @@ Loggen Sie sich in das Web-UI der mobydick ein. Klicken Sie auf `Endgeräte` > `
 
 Die Funktionstasten rechts und links vom Display sind dreifach belegbar. Ist die erste Seite vollständig belegt, wird die letzte Taste am Display zum "umblättern" verwendet.
 
-**Andere Benutzer (Nebenstellen) überwachen**
+#### Andere Benutzer (Nebenstellen) überwachen
 
 Zur Überwachung anderer Benutzer oder Nebenstellen können Funktionstasten eingerichtet werden. Dazu eignen sich BLF-Tasten (Besetztlampenfeld oder Busy Lamp Field). Diese geben Informationen über den Status der überwachten Durchwahl. Überwachen bedeutet in diesem Fall zu sehen ob ein Benutzer telefoniert, angerufen wird und ggf. sein Gespräch heranzuholen (Pickup).
 
 Tasten können auf verschiedenen Wegen konfiguriert werden.
 
-**Tasten belegen direkt am Telefon**
+#### Tasten belegen direkt am Telefon
 
 Drücken Sie auf Ihrem Telefon ca. 5 Sekunden lang auf die Taste die Sie belegen möchten. Nun können Sie Ihre Taste (z. B. BLF-Taste) belegen.
 
@@ -127,7 +127,7 @@ Drücken Sie auf Ihrem Telefon ca. 5 Sekunden lang auf die Taste die Sie belegen
 
 Drücken Sie zum Bestätigen auf *Speichern*.
 
-**Tasten belegen über das Web-UI**
+#### Tasten belegen über das Web-UI
 
 Im Tab `Speicher-Tasten` können die verschiedenen Tasten, z. B. BLF-Tasten am Telefon belegt werden:
 
@@ -137,7 +137,7 @@ Im Tab `Speicher-Tasten` können die verschiedenen Tasten, z. B. BLF-Tasten am T
 
 Neben Benutzer-Durchwahlen können auch Einbuchcodes für Warteschlangen oder Durchwahlschalter konfiguriert werden.
 
-**Weitere nützliche Funktionstasten**
+#### Weitere nützliche Funktionstasten
 
 |Funktionstaste|Beschreibung|
 |---|---|
@@ -154,14 +154,14 @@ Bevor Sie die Basis-Konfiguration ändern, müssen Sie diese `Duplizieren`.
 
 Ebenfalls können Sie eine schon bearbeitete Basis-Konfiguration als `Standard setzten`. Somit erhalten neu angelegte IP-Telefone automatisch die angepasste Basis-Konfiguration.
 
-**Zuweisung einer Basis-Konfiguration**
+#### Zuweisung einer Basis-Konfiguration
 
 Eine Basis-Konfiguration kann auf mehreren Wegen zugewiesen werden:
 
 + Über `Endgeräte` > `Basis-Konfigurationen` > Basis-Konfiguration auswählen und Bearbeiten, im Tab `Geräte` können gleich mehrere IP-Telefone hinzugefügt werden.
 + Über `Endgeräte` > `Geräteliste` > IP-Telefon auswählen und Bearbeiten im Tab `Basisdaten`.
 
-**BLF-Tasten konfigurieren über die Basis-Konfiguration**
+#### BLF-Tasten konfigurieren über die Basis-Konfiguration
 
 Im Tab `Konfiguration` können Sie die vorhandene Basis-Konfiguration anpassen. Im Bereich **keys** finden Sie bereits vorkonfigurierte Funktionstasten, an denen Sie sich orientieren können.
 
@@ -185,7 +185,7 @@ Weisen Sie diese Basis-Konfiguration über den Tab `Geräte` den IP-Telefonen zu
 
 Ab der mobydick Version 7.14 wird die Firmware für IP-Endgeräte nicht mehr mitgeliefert. Sollte eine andere als auf dem IP-Endgerät installierte Firmware benötigt werden, muss diese selber heruntergeladen und in die mobydick Firware-Verwaltung hochgeladen werden.
 
-**Firmware hinzufügen**
+#### Firmware hinzufügen
 
 Die gewünschte Firmware kann hinzugefügt werden unter `Endgeräte` > `Firmware`:
 
@@ -196,13 +196,13 @@ Die gewünschte Firmware kann hinzugefügt werden unter `Endgeräte` > `Firmware
 |Version|Firmware-Version|
 |Dokumentation|Optionales Feld für Notizen|
 
-**Firmware ausrollen**
+#### Firmware ausrollen
 
 Die Firmware kann über `Endgeräte` > `Geräteliste` aktualisiert werden. Wählen Sie die Zielgeräte in der Geräteliste mit Häkchen aus und klicken Sie auf `Aktion` > `Firmware ausrollen`. Nun erhalten Sie eine Übersicht der gewählen Geräte, in der Sie die Zielfirmware auswählen können. Anschließend klicken Sie auf `Firmware update` um die gewählte Firmware auszurollen.
 
-**Empfohlene Firmware**
+#### Empfohlene Firmware
 
 Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es uns leider nicht möglich jede zu testen, so dass es sein kann, dass manche Firmware-Versionen mobydick Funktionen nicht unterstützen. Daher finden Sie hier eine Liste der Firmwares die von uns bereits getestet wurden:
 
-|Modell|Firmware|
-|---|---|
+<!-- |Modell|Firmware|
+|---|---| -->
