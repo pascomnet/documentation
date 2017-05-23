@@ -28,6 +28,7 @@ icon: <i class="fa fa-file-text-o" aria-hidden="true"></i>
 
 |Version|Release Type|Published|
 |-------|------------|----------:|
+|[Release 7.13.05]({{< relref "07.13.05.md" >}})| Bugfix Release | TODO: DATUM |
 |[Release 7.13.04]({{< relref "07.13.04.md" >}})| Bugfix Release | 02.03.2017 |
 |[Release 7.13.02]({{< relref "07.13.02.md" >}})| Bugfix Release | 02.12.2016 |
 |[Release 7.13.01]({{< relref "07.13.01.md" >}})| Bugfix Release | 29.09.2016 |
