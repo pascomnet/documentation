@@ -81,12 +81,10 @@ Darauf erscheint dieses Fenster:
 ### Linux
 Unter Linux bringen wir keinen klassischen Installer mit.
 
-1. Laden Sie das tar.bz2-Paket aus der mobydick über die Service Seite herunter
-2. Entpacken und führen Sie über die Shell das Paket mit folgenden Befehlen aus:
-Eingabe via Terminal
-
+Laden Sie das tar.bz2-Paket aus der mobydick über die Service Seite herunter, entpacken und führen Sie über die Shell das Paket mit folgenden Befehlen aus:
 
     tar xfvj mobydickClient-x.xx.xx.tar.bz2  
+    
     ./md_client/bin/md_client
 
 

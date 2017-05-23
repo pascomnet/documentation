@@ -99,7 +99,7 @@ mobydick basiert auf einem aktuellen Standard-Linux-Kernel und ist daher zu alle
 
 *Allgemeine Systemvoraussetzungen:*
 
-|  |< 10 Benutzer	|< 50 Benutzer	|< 250 Benutzer     |< 500 Benutzer |< 1000 Benutzer|
+|Benutzer:|< 10|< 50|< 250|< 500|< 1000|
 |---|----|---|---|---|---|
 |**CPU(x86)**|AMD G series|Intel Atom|Intel Celeron|Intel XEON|2x Intel XEON|
 |**RAM** |1 GB |2 GB|	4 GB |8 GB |16 GB|

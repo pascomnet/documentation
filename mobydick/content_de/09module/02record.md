@@ -3,7 +3,7 @@ title: Mitschnittsystem
 keywords:
     - Mitschnitt
     - Mitschnitt eines Gespräches
-description: Nehmen Sie Gespräche als Vertragswerkzeug oder zu Trainingszwecken auf. 
+description: Nehmen Sie Gespräche als Vertragswerkzeug oder zu Trainingszwecken auf.
 url: /module/mitschnitt/
 prev: /module/fax-server/
 next: /module/konferenzsystem/
@@ -15,15 +15,15 @@ toc: true
 ## Übersicht
 
 {{% notice warning %}}
-Das Mitschneiden von Gesprächen kann rechtlich problematisch, in speziellen Fällen sogar strafbar sein. Es müssen je nach Szenario bestimme Rahmenbedingungen, Datenschutzrichtlinien und Hinweispflichten erfüllt werden. Bitte lassen Sie sich im Zweifel vor der Verwendung dieser Funktion durch einen Rechtsbeistand beraten.
+Das Mitschneiden von Gesprächen kann rechtlich problematisch, in speziellen Fällen sogar strafbar sein. Es müssen je nach Szenario bestimmte Rahmenbedingungen, Datenschutzrichtlinien und Hinweispflichten erfüllt werden. Bitte lassen Sie sich im Zweifel vor der Verwendung dieser Funktion durch einen Rechtsbeistand beraten.
 {{% /notice %}}
 
-Das Mitschnitt System basiert auf einem in der mobydick hinterlegtem Regelwerk. Dieses Regelwerk veranlasst mobydick entweder dazu ein bestimmtes Gespräch automatisch mitzuschneiden oder dem Benutzer einen manuellen Mitschnitt zu erlauben. Ist der Benutzer durch das Regelwerk berechtig einen manuellen Mitschnitt zu veranlassen wird ihm sowohl im mobydick Client als auch auf IP-Telefonen, welche diese Funktion unterstützen, ein Aufnahme-Symbol zum Starten und Stoppen des Mitschnittes angezeigt. 
+Das Mitschnitt System basiert auf einem in der mobydick hinterlegtem Regelwerk. Dieses Regelwerk veranlasst mobydick entweder dazu ein bestimmtes Gespräch automatisch mitzuschneiden oder dem Benutzer einen manuellen Mitschnitt zu erlauben. Ist der Benutzer durch das Regelwerk berechtig einen manuellen Mitschnitt zu veranlassen wird ihm sowohl im mobydick Client als auch auf IP-Telefonen, welche diese Funktion unterstützen, ein Aufnahme-Symbol zum Starten und Stoppen des Mitschnittes angezeigt.
 
 ![Illustration - mobydick Mitschnitt System](../../images/mitschnitt_konzept.png?width=100% "mobydick Mitschnitt System")
 
 
-Egal ob manuell oder automatisch initiiert werden die Mitschnitte auf der Festplatte der mobydick abgelegt und können bei berechtigten Personen im mobydick Client angezeigt werden. Optional können Mitschnitte per Regelwerk an beliebige E-Mail Empfänger versendet oder per Skript auf beliebige Ziele kopiert werden.
+Egal ob sie manuell oder automatisch erfolgen, die Mitschnitte werden auf der Festplatte der mobydick abgelegt und können bei berechtigten Personen im mobydick Client angezeigt werden. Optional können Mitschnitte per Regelwerk an beliebige E-Mail-Empfänger versendet oder per Skript auf beliebige Ziele kopiert werden.
 
 ## Konfiguration
 
@@ -66,7 +66,7 @@ Um das Überlaufen der Festplatte zu verhindern heben wir alle Mitschnitte stand
 ### Mitschnitt per Variable steuern
 Zusätzlich bietet mobydick die Möglichkeit das Mitschnittsystem dynamisch per Dialplan Variablen ein- und auszuschalten bzw. bestehende Regeln zu übergeben.
 
-Beispielsweise kann es der Fall sein, dass Sie Ihrem Anrufer ein IVR Menü anbieten wollen in dem er selbst entscheiden kann ob er mit einem Mitschnitt zur Qualitätssicherung einverstanden ist oder nicht. 
+Beispielsweise kann es der Fall sein, dass Sie Ihrem Anrufer ein IVR Menü anbieten wollen in dem er selbst entscheiden kann ob er mit einem Mitschnitt zur Qualitätssicherung einverstanden ist oder nicht.
 
 Vom Dialplan aus kann man das Mitschnittsystem bei Bedarf durch die Variable **MDC_MON_MODE** beeinflussen:
 
@@ -78,7 +78,7 @@ Vom Dialplan aus kann man das Mitschnittsystem bei Bedarf durch die Variable **M
 
 Ein Beispielskript zum Abschalten des Recordings kann so aussehen:
 
-    exten => s,1,Set(__MDC_MON_MODE=deny)
+    exten => s,1,Set(\__MDC_MON_MODE=deny)
     exten => s,n,Return()
 
 Dieses Skript kann dann in ein IVR Menü eingebunden werden und den Mitschnitt deaktivieren.
