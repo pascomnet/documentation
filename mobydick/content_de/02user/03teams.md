@@ -16,7 +16,7 @@ toc: true
 
 ## Konzept
 
-Jeder Benutzer hat in der mobydick seine eigene Durchwahl, Geräte und Aktionen die den Anruf an diese Durchwahl steuern. **Zusätzlich kann** ein Benutzer Mitglied in einem Team sein.
+Jeder Benutzer hat in der [VoIP Telefonalage](https://www.pascom.net/de/mobydick-voip/) seine eigene Durchwahl, Geräte und Aktionen die den Anruf an diese Durchwahl steuern. **Zusätzlich kann** ein Benutzer Mitglied in einem Team sein.
 
 ![Illustration - Team Konzept](../../images/team_konzept.png?width=50% "Teams und Warteschlangen in der mobydick")
 

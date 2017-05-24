@@ -16,7 +16,7 @@ draft: false
 
 ### Globales Telefonbuch
 
-mobydick stellt allen Benutzer zentral ein Telefonbuch bereit. Dieses Telefonbuch ist unter Windows, Linux und OSX per mobydick Client sowie am Mobility Client auf Android- und iOS-Smartphones abrufbar. Außerdem sind die von mobydick provisionierten IP-Telefone in der Lage direkt auf dieses Telefonbuch zuzugreifen.
+[Die VoIP Software](https://www.pascom.net/de/mobydick-voip/) stellt allen Benutzer zentral ein Telefonbuch bereit. Dieses Telefonbuch ist unter Windows, Linux und OSX per mobydick Client sowie am Mobility Client auf Android- und iOS-Smartphones abrufbar. Außerdem sind die von mobydick provisionierten IP-Telefone in der Lage direkt auf dieses Telefonbuch zuzugreifen.
 
 ### Privates Telefonbuch
 Jeder mobydick Client-Benutzer kann ein eigenes privates Telefonbuch anlegen und pflegen:
