@@ -173,6 +173,7 @@ Suchen Sie nach *fkey0* und *fkey_label0*. Die gefundenen Zeilen tragen Sie ansc
 
 Weisen Sie diese Basis-Konfiguration über den Tab `Geräte` den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und speichern Sie. Nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
 
+
 ### Firmwareupdate
 
 Ab der mobydick Version 7.14 wird die Firmware für IP-Endgeräte nicht mehr mitgeliefert. Sollte eine andere als auf dem IP-Endgerät installierte Firmware benötigt werden, muss diese selber heruntergeladen und in die mobydick Firmware-Verwaltung hochgeladen werden.

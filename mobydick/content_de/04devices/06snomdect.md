@@ -3,7 +3,7 @@ title: Snom M700 DECT-System
 keywords:
 description:
 prev: /endgeraete/grandstream-tischtelefone-gxp-gxv-serie/
-url:  /endgeraete/snom-dect/
+url:  /endgeraete/snom-m700-dect/
 next: /endgeraete/aastra-dect/
 weight: 46
 toc: true

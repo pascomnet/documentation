@@ -24,8 +24,9 @@ beroNet Karten werden in die mobydick eingebaut und erhalten beim Hochfahren der
 ![Illustration - beroNet Karten](../../images/beronet_karten.png "beroNet VoIP Karten")
 
 
-### beroNet Module
+### beroNet Module - Beispiel
 
+![Illustration - beroNet Module](../../images/beronet_karten_beispiel.jpg)
 
 ## ISDN und Analoge Nebenstellen
 Nebenstellen wie Faxgeräte, Faxserver, Telefone, Türöffner, etc. können entweder direkt oder via SIP angebunden werden.
