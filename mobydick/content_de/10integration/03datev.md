@@ -8,6 +8,7 @@ keywords:
 description: Integrieren Sie Datev in Ihre mobydick.
 prev: /integrationen/wombatdialer/
 url: /integrationen/datev-telefonie-integration/
+next: /integrationen/microsoft-exchange-server-integration/
 weight: 103
 toc: true
 ---
