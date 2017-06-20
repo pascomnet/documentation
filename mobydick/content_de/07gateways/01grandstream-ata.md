@@ -12,13 +12,13 @@ toc: true
 **Grandstream HT701**
 
 - Ein FXS-Anschluss für ein analoges Endgerät
-![Grandstream HT701](/grandstream_ht701.jpg)
+![Grandstream HT701](/grandstream_ht701.jpg?width=300px)
 
 
 **Grandstream HT802**
 
 - Zwei FXS-Anschlüsse für zwei analoge Endgeräte
-![Grandstream HT802](/grandstream_ht802.png)
+![Grandstream HT802](/grandstream_ht802.png?width=300px)
 
 
 |Provisionierung|Firmware-Verwaltung|
@@ -42,7 +42,7 @@ Schließen Sie den Grandstream ATA  an das Netzwerk an. Dieser wird nach dem Boo
 
 <!--FIXME steckersymbol, status?-->
 
-### Endgerät über SIP angelegen
+### Endgerät über SIP anlegen
 
 Wählen Sie unter `Endgeräte` > `Geräteliste` > `Hinzufügen` > den Eintrag **Via Grandstream Gateway: Analoges Endgerät per SIP**.
 Im Tab `Basisdaten` wählen Sie den Port am Gateway, an dem das Endgerät angeschlossen werden soll. Anschließend weisen Sie das Gerät über den Tab `Zuweisung` einem Benutzer zu.

@@ -5,8 +5,9 @@ keywords:
     - funktionscodes
     - sternchencodes
 description: Zusammenfassung der mobydick Funktionscodes
-prev: /howto/festplatte-erweitern/
+prev: /howto/
 url: /howto/funktionscodes/
+next: /howto/ende-32bit-support/
 weight: 125
 toc: true
 draft: false
@@ -46,7 +47,7 @@ Hier finden Sie eine Zusammenfassung über die mobydick Funktionscodes (Sternche
 |---|---|
 |**\*100**|Eigene Voicemailbox aufrufen.|
 |**\*101**|Aufrufen der Voicemailbox eines anderen Benutzers. (PIN-Authentifizierung wird benötigt)|
-|**\*102**|Weiterleitung auf die eigene Voicemailbox setzten.|
+|**\*102**|Weiterleitung auf die eigene Voicemailbox setzen.|
 |**\*104**|Überwachte Voicemailbox aufrufen.|
 
 ## Ansagesystem

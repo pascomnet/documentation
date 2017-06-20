@@ -57,7 +57,7 @@ CSV-Quelle aus Freigabe laden:
 |**CIFS/SMB Benutzer**|Benutzer mit der Berechtigung auf diese Freigabe lesend zuzugreifen.|
 |**CIFS/SMB Passwort**|Zugehöriges Passwort.|
 
-Nach dem Speichern kann der Importmodus noch eingestellt werden. Hier wird definiert, Wie der Connector mit bereis vorhandenen Datensätzen umgehen soll. Folgende Möglichkeiten stehen zur Verfügung:
+Nach dem Speichern kann der Importmodus noch eingestellt werden. Hier wird definiert, wie der Connector mit bereits vorhandenen Datensätzen umgehen soll. Folgende Möglichkeiten stehen zur Verfügung:
 
 * Neue Sätze importieren und geänderte abgleichen
 * Neue Sätze importieren, geänderte abgleichen und früher importierte Datensätze entfernen.
@@ -114,7 +114,7 @@ Unter `Appliance` > `Dienste` > `Authentifizierung` kann die LDAP-Authentifizier
 |**LDAP Host**|Tragen Sie hier die LDAP URL für Ihren Host ein.<br>Z. B. ldap://192.168.100.10 oder ldaps://192.168.100.10 für LDAPs Verbindungen|
 |**LDAP Bind User**|Als Bind-User tragen Sie den *Distinguished Name* (DN) Ihrer Benutzer ein. Den Benutzername ersetzen Sie durch ein %-Zeichen. mobydick ersetzt das %-Zeichen durch den Benutzernamen der sich gerade am System authentifizieren will.|
 
-Pro Benutzer kann entschlieden werden ob die Authentifizierung über LDAP erfolgt oder weiterhin die interne mobydick Authentifizierungverwendet werden soll.
+Pro Benutzer kann entschieden werden ob die Authentifizierung über LDAP erfolgt oder weiterhin die interne mobydick Authentifizierungverwendet werden soll.
 
 {{% notice info %}}
 Für **UCS** und **Active Directory** können Sie Connector-Vorlagen benutzen. Diese richten auf Wunsch die Authentifizierung automatisch mit ein.

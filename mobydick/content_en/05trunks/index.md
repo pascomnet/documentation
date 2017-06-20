@@ -1,5 +1,5 @@
 ---
-title: SIP Trunks
+title: Trunks
 keywords:
     - Trunk Setup
     - SIP Trunk Registration

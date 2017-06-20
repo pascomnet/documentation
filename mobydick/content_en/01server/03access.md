@@ -14,9 +14,10 @@ description: Discover how to access you mobydick system and use the various admi
 lang: en
 linkde: /server/mobydick-zugriff/
 ---
+<!--New URL /server/phone-system-access/-->
 
 ## Finding your System's IP Address
-In order to access the system, you will require the IP address of the telephone system. The default IP address for the mobydick Appliance, miniAppliance and mobydick Servers is 192.168.100.1 on the port as highlighted in the accompanying info sheet or labelled. If you are not sure about system's IP address, you can find it through using the mobydick text user interface TUI.
+In order to access the system, you will require the IP address of the telephone system. The default IP address for a [pre-installed IP phone system](https://www.pascom.net/en/mobydick-classic/ "pascom VoIP phone systems"), (SOHO, SMB & Enterprise Servers) is 192.168.100.1 on the port as highlighted in the accompanying info sheet or labelled. If you are not sure about system's IP address, you can find it through using the mobydick text user interface TUI.
 
 ## Accessing the Web Interface
 1. Use any web browser and access the system's interface by entering **https://[mobydick_IP_Address]** as the URL. Should you not use https, a warning will appear that informs you that the network connection is not encrypted.

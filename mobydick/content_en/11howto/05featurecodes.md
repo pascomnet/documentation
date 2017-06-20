@@ -10,11 +10,11 @@ keywords:
     - Shortkeys
 description: Overview of pascom IP PBX Function Codes / Service Codes
 url: /howto/service-codes/
+prev: /howto/
+next: /howto/end-32bit-support/
 linkde: /howto/funktionscodes/
-prev: /howto/harddisk-expansion/
 weight: 125
 toc: true
-draft: true
 ---
 
 Asterisk Star (*) codes are officially known as **Asterisk vertical service activation codes**, but are also often referred to as Function Codes, Shortcodes or Shortkeys and are used to activate / deactivate certain services directly from a telephones keypad.

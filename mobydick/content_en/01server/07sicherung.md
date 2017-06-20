@@ -10,7 +10,7 @@ keywords:
     - Full System Backups
     - Database Backups
     - System Restore
-description: How to create and restore mobydick phone system backups
+description: How to create and restore pascom phone system backups
 lang: en
 linkde: /server/sicherung/
 ---
@@ -20,15 +20,15 @@ linkde: /server/sicherung/
 
 ## Concept
 
-mobydick can perform a full system backup while the system is running. Mobydick first creates a snapshot of the file system and then uses it to create a bootable ISO file.
+[Our VoIP Software](https://www.pascom.net/en/mobydick-voip/ "pascom VoIP software IP PBX") can perform a full system backup while the system is running. The pascom IP PBX first creates a snapshot of the file system and then uses it to create a bootable ISO file.
 
-![Illustration - mobydick Backup](../../images/backup_iso.png "ISO Backup mobydick")
+![Illustration - mobydick Backup](../../images/backup_iso.png "ISO Backup pascom")
 
 This file can then be copied to another system either automatically or manually. If a system needs to be restored in case of disaster, the ISO can be burned onto a CD/DVD or saved onto a USB stick, which can be booted. Alternatively, the ISO can directly be mounted and booted in a virtual machine. The backup allows the user to either use a live disc or to recover a system by copying it to the hard disk.
-The most recently created ISO will always remain available on the mobydick system. The boot menu allows you to start from the normal hard disk as well as directly from the backup ISO image, which can be used to as a restore. This can be useful if, for example, all user accounts were accidentally deleted and a working system is needed again.
+The most recently created ISO will always remain available on the pascom system. The boot menu allows you to start from the normal hard disk as well as directly from the backup ISO image, which can be used to as a restore. This can be useful if, for example, all user accounts were accidentally deleted and a working system is needed again.
 
 ### Database Backups
-In addition, mobydick can also periodically perform a database backup allowing you to maintain multiple generations of backups of your local storage disks. This backup can be used for restore purposes directly via mobydick Web UI as well as being downloaded and later imported into a different (or the same) Appliance.
+In addition, pascom phone systems can also periodically perform a database backup allowing you to maintain multiple generations of backups of your local storage disks. This backup can be used for restore purposes directly via the pascom Web UI as well as being downloaded and later imported into a different (or the same) Appliance.
 
 Database backups will be automatically deleted should the predefined number of generations, per default 100, is reached. However, you can create any number of specifically named backups and therefore create a permanent backup history. 
 
@@ -48,12 +48,12 @@ To avoid an overly large ISO file, individual components can be excluded from th
 |exclude voicemail| All voice messages stored on the system will not be saved. In most cases, voice messages are sent via e-mail anyway and only a copy remains on the system.|
 |exclude records| All records, whether created manually or automatically, will not be saved.|
 |exclude received faxes| All fax messages stored on the system will not be saved. In most cases, faxes are sent via e-mail anyway and only a copy remains on the system.|
-|exclude log files| All log files produced by mobydick will not be saved. This can also apply to log files that are needed for historical analysis. This selection does not apply to journal entries and chat archives..|
+|exclude log files| All log files produced by the pascom PBX will not be saved. This can also apply to log files that are needed for historical analysis. This selection does not apply to journal entries and chat archives..|
 
-Now select **Start backup**. mobydick will create a task and execute it. When the task is completed successfully, the backup ISO can be found in the file **/BACKUP/appliance.iso**.
+Now select **Start backup** and the pascom PBX will create a task and execute it. When the task is completed successfully, the backup ISO can be found in the file **/BACKUP/appliance.iso**.
 
 #### Automating the backup process
-You can setup mobydick so that the system automatically creates periodic backups. Prepare the backup using the same steps as if manually **creating a backup** and then press **Automate**:
+You can setup your pascom phone system so that the system automatically creates periodic backups. Prepare the backup using the same steps as if manually **creating a backup** and then press **Automate**:
 ![Screenshot - Cronjobs](../../images/backup_cronjob.png?width=90% "automation with cronjobs")
 
 The system will suggest both a suitable **title** as well as recommended **parameters**. In addition, the following settings can be adjusted (following the crontab logic)::
@@ -74,7 +74,7 @@ The **Proposals** button gives some examples that could be used.
 |Script after| This command will be executed after the backup. Bash Syntax. Useful if the backup should be copied to an FTP server.|
 
 #### Retrieving a backup from the server
-The most recently created backup is stored in /BACKUP/appliance.iso on the mobydick Server.
+The most recently created backup is stored in /BACKUP/appliance.iso on the pascom Server.
 
 If the system you want to copy the backup to, has the **scp** command, you can use the following command
 
@@ -90,7 +90,7 @@ Copy the ISO file onto a CD / DVD or mount it as a boot drive in a virtual machi
 ### Database Backups
 #### Manually Create a Database Backup
 
-In order to create a database backup, go to the mobydick Commander (web UI) and select the following menu options:
+In order to create a database backup, go to the pascom Commander (web UI) and select the following menu options:
 ***Appliance > Backup > Database Backup***.
 
 Click on the `Create` button to create a new database backup.
@@ -103,14 +103,14 @@ From mobydick version 7.12 onwards, customised prompts and music on hold are aut
 
 Should you wish to store this database backup long-term, then you can enter a specific name for the backup (optional). 
 
-Click on **perform action**  and mobydick will immediately start creating the database backup.
+Click on **perform action** and the PBX will immediately start creating the database backup.
 As soon as the **create database** backup job has been successfully completed, then a new entry in the backup list will appear.
 
 #### Automated Database Backups
-For automated database backups, a predefined backup was set up during the mobydick system installation and is performed daily at 23.47 per cronjob. Should you wish to modify these timings, your can do so under **Appliance > Crobjobs**.
+For automated database backups, a predefined backup was set up during the phone system installation and is performed daily at 23.47 per cronjob. Should you wish to modify these timings, your can do so under **Appliance > Crobjobs**.
 
 #### Changing the number of Backup Generations
-Using the mobydick commander search box, search for the term maxbackups. This will take you the system settings and will enable you to automatically edits the sys.mdc.backup.db.maxgenerations setting. Per default the maximum value is set to 100, but this can be altered by double clicking on the number 100 in the value column and entering a new maximum. 
+Using the pascom commander search box, search for the term maxbackups. This will take you the system settings and will enable you to automatically edits the sys.mdc.backup.db.maxgenerations setting. Per default the maximum value is set to 100, but this can be altered by double clicking on the number 100 in the value column and entering a new maximum. 
 By the next database backup, the new max. number of backups will be taken into account.
 
 #### Renaming Database Backups
@@ -122,14 +122,14 @@ From within the Database Backups list, it is possible to download any backup usi
 #### Restoring Backups
 To restore a backup, simply go to the backups list, select the desired backup and via the Action > Restore function, the backup restore mask will be opened:
 
-In order to actually restore this backup, then the ***Really restore database backup?*** check box will need to be ticked. To start the restore process, simply click on the **Restore** button. mobydick will now create a job and will log you out of the web UI after a second or two, however you will be able to immediately log back in and the restore process will have completed. As standard, the actual system stand is backed up before the restore process.
+In order to actually restore this backup, then the ***Really restore database backup?*** check box will need to be ticked. To start the restore process, simply click on the **Restore** button. The management UI will now create a job and will log you out of the web UI after a second or two, however you will be able to immediately log back in and the restore process will have completed. As standard, the actual system stand is backed up before the restore process.
 
 #### Importing & Restoring from a Downloaded Backup Files 
 
-A previously downloaded database backup file can be imported into the same or a new mobydick Appliance. Should the
-mobydick version between the source and destination systems differ, an automatic migrations process will start when the
-destination system is a newer mobydick version. Importing into an older mobydick version is not possible.
+A previously downloaded database backup file can be imported into the same or a new pascom Appliance. Should the
+mobydick / pascom version between the source and destination systems differ, an automatic migrations process will start when the
+destination system is a newer mobydick / pascom version. Importing into an older mobydick version is not possible.
 
-If you would like to restore mobydick from a downloaded backup file, simply go to the ***Appliance > Import`*** menu and select Restore Database.
+If you would like to restore your phone system from a downloaded backup file, simply go to the ***Appliance > Import`*** menu and select Restore Database.
 
 Select your desired database backup and press Upload. 

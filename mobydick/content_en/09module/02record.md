@@ -15,9 +15,7 @@ toc: true
 The recording of calls can be legally problematic, and in certain cases even a criminal offence. Depending on the scenario certain criteria must be fulfilled, such as Framework Conditions, Data Protection/Privacy Policies and Notification Obligations. In case of uncertainty and doubt, please seek legal counsel before using this service.
 {{% /notice %}}
 
-The recording system is based on one of the background rule framework from within mobydick. This framework enables mobydick to either automatically record a particular call or to allow an user to manually start a recording. Should the user be permitted by the framework to manually make recordings, then a recording symbol for starting and stopping recordings will be displayed within the mobydick Client as well as on any IP-Telephones which support this function.
-
-//FixMe
+The recording system is based one of the many frameworks existing within pascom phone systems. This framework enables your PBX to automatically record calls making pascom phone system solutions ideal for [Call Centers](https://www.pascom.net/en/call-center/ "pascom CallCenter Call Recording"). Alternatively, it is possible to allow an user to manually start a recording. Should the user be permitted by the framework to manually make recordings, then a recording symbol for starting and stopping recordings will be displayed within the Desktop UC Client as well as on any IP-Telephones which support this function.
 
 ![Illustration - mobydick callrecording System](../../images/callrecording_wiki.png?width=100% "mobydick callrecording System")
 

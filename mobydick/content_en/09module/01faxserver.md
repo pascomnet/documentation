@@ -1,5 +1,5 @@
 ---
-title: mobydick Fax Server
+title: Fax Server
 url: /modules/fax-server/
 linkde: /module/fax-server/
 prev: /modules/
@@ -9,8 +9,8 @@ toc: true
 ---
 
 {{% notice tip %}}
-pascom VoIP phone systems come with a fully integrated fax server.
-The included fax server is HylaFax (http://www.hylafax.org/), which is connected to the Asterisk telephony server via virtual IAX modems.
+[Our VoIP phone system software] (https://www.pascom.net/en/mobydick-voip/ "pascom IP phone system software") comes with a fully integrated fax server as standard.
+The included fax server is HylaFax (http://www.hylafax.org/ "pascom Integrated HylaFax Server"), which is connected to the Asterisk telephony server via virtual IAX modems.
 {{% /notice %}}
 ## Overview
 

@@ -16,10 +16,11 @@ toc: true
 lang: en
 ---
 
-## mobydick Servers
+## pascom Servers
 
+pascom phone systems are software based and as such are available as a [VoIP hardware solution] (https://www.pascom.net/en/mobydick-classic/ "pascom VoIP Hardware solutions"), virtual phone system or as a cloud PBX solution. 
 
-### mobydick miniAppliance
+### miniAppliance
 
 {{% row %}}
 {{% col md-6 %}}
@@ -32,7 +33,7 @@ Recommended Max. Users: 15
 * 3 Network cards
 * Fanless
 
-The mobydick miniAppliance is a VoIP only appliance how you can boost connectivity options via an external Gateway to include ISDN / Analog and GSM connectivity.
+The miniAppliance is a VoIP only appliance how you can boost connectivity options via an external Gateway to include ISDN / Analog and GSM connectivity.
 
 {{% /col %}}
 
@@ -42,7 +43,7 @@ The mobydick miniAppliance is a VoIP only appliance how you can boost connectivi
 {{% /row %}}
 
 
-### mobydick Appliance
+### Appliance
 
 {{% row %}}
 {{% col md-6 %}}
@@ -90,7 +91,7 @@ Recommended Max. Users: 250
 
 ## Standard Server Hardware
 
-mobydick is based on a current standard Linux Kernel and is therefore compatible with all current x86 servers. It could be the case that on systems with for example non-native Raid Controllers, that mobydick will not install. If in doubt, please download the installation media from our website and test the setup of your desired hardware. 100% compatibility is only guaranteed on the following tested by us server hardware.
+pascom phone systems are based on a current standard Linux Kernel and is therefore compatible with all current x86 servers. It could be the case that on systems with for example non-native Raid Controllers, that the PBX will not install. If in doubt, please download the installation media from our website and test the setup of your desired hardware. 100% compatibility is only guaranteed on the following tested by us server hardware.
 
 *Standard System Requirements:*
 

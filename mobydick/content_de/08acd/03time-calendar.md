@@ -16,7 +16,7 @@ toc: true
 
 ## Konzept
 
-Wie unter Aktionen beschrieben können Sie, wenn Benutzer oder Teams gerufen werden, den Anrufablauf beeinflussen. In vielen Fällen ist es sinnvoll bei einem Anruf auf der Zentrale oder div. Nebenstellen zu prüfen ob man sich innerhalb der Geschäftszeiten befindet oder es sich heute um einen Feiertag oder Betriebsurlaub handelt.
+Wie unter Aktionen beschrieben können Sie, wenn Benutzer oder Teams gerufen werden, den Anrufablauf beeinflussen. In vielen Fällen, z. B. [in Ihrem Call Center](https://www.pascom.net/de/call-center/) ist es sinnvoll bei einem Anruf auf der Zentrale oder div. Nebenstellen zu prüfen ob man sich innerhalb der Geschäftszeiten befindet oder es sich heute um einen Feiertag oder Betriebsurlaub handelt.
 
 Dazu verwendet man Bedingungen. Bedingungen können bei jeder Aktion verwendet werden und entscheiden darüber ob diese ausgeführt wird oder nicht. Somit ist das System sehr flexiebel. Es gibt keine klassische globale "Tag/Nacht"-Schaltung sondern man kann beliebig viele Kalender, Zeitschemas und Schalter erstellen und diese als Bedingungen bei den verschiedensten Objekten verwenden.
 

@@ -2,7 +2,7 @@
 title: Add and Build Teams
 url: /users/add-teams/
 prev: /users/users-and-locations/
-next: 
+next: /users/phonebooks/
 weight: 23
 keywords: 
     - Add Teams
@@ -14,14 +14,14 @@ keywords:
     - Hot desking
     - Call Center Teams
     - Call Routing
-description: Teams in mobydick are comparable to Call Queues. Use advanced call strategies to help manage callers more effectively and professionally. 
+description: Teams in mobydick / pascom phone systems are comparable to Call Queues. Use advanced call strategies to help manage callers more effectively and professionally. 
 linkde: /benutzer/teams-bilden/
 toc: true
 ---
 
 ## Concept
 
-Each mobydick user has their own extension, devices and actions that control calls made to that extension. In addition, a user can be a member of a **team**.
+Each [mobydick / pascom VoIP phone system](https://www.pascom.net/en/mobydick-voip/ "pascom IP PBX software") user has their own extension, devices and actions that control calls made to that extension. In addition, a user can be a member of a **team**.
 ![Screenshot - Team Concept](../../images/team_basic.png?width=90% "Teams and queues in mobydick")
 
 The **team** has its own extension and actions assigned to it. When a call is made to the team's extension, the team members' phones will ring in the order defined in the strategy and actions.

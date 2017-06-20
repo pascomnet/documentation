@@ -20,7 +20,7 @@ toc: true
 ![mobydick Cluster Konzept](../../images/cluster_uebersicht.png?width=90% "mobydick Cluster Konzept - Übersicht")
 
 
-Das mobydick Cluster Modul beherrscht aktuell einen **zwei Node Cluster**. Es handelt sich um einen **Failover-Cluster**, nicht um einen LoadBalancer. Dies dedeutet, dass im Normalfall alle mobydick Services auf der aktuellen Master Node laufen und im Fehlerfall in einem Rutsch auf die Slave Node migriert werden.
+Zu den [Services unserer VoIP Software](https://www.pascom.net/de/mobydick-voip/) gehört auch das HA Cluster Modul. Es besteht aus einen **zwei Node Cluster**. Es handelt sich dabei um einen **Failover-Cluster**, nicht um einen LoadBalancer. Dies dedeutet, dass im Normalfall alle mobydick Services auf der aktuellen Master Node laufen und im Fehlerfall in einem Rutsch auf die Slave Node migriert werden.
 Dieser Umschaltvorgang dauert nur **wenige Sekunden**, allerdings werden alle aktiven Gespräche unterbrochen.
 
 ### Gleichberechtigte Nodes

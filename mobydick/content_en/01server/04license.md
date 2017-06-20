@@ -2,7 +2,9 @@
 title: License Management
 keywords:
     - mobydick Licenses
-description: How to manage and update your mobydick phone system licences
+    - pascom PBX licences
+    - pascom IP PBX User licences
+description: How to manage and update your mobydick / pascom phone system licences
 linkde: /server/lizenzen-verwalten/
 url: /server/license-management/
 prev: /server/accessing-mobydick/
@@ -13,11 +15,11 @@ toc: true
 
 ## Add Licence
 
-### When is a mobydick Licence Required?
+### When is a pascom Licence Required?
 You will need to import your licence when:
 
-* You would like to upgrade your Virtual mobydick Community Version to include your purchased mobydick licences
-* You are migrating your mobydick to a new VM or new hardware based server
+* You would like to upgrade your Virtual Community Edition to include your purchased phone system licences
+* You are migrating your phone system to a new [Virtual Machine](https://www.pascom.net/en/mobydick-virtual "pascom Virtual phone system") or new hardware based server
 * The software maintenance period has been extended
 * You have purchased additional user licences or additional licensed options.
 

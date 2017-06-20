@@ -71,6 +71,7 @@ You can control which io plugin is used by specifying "modulname" or "modulenena
 |io_outboundrules|	Outbound Rules for Trunks|	outboundrules|	outboundrules	|025outbound|
 |io_peer|	Peers of SIP Trunks	|trunk|	trunk.peer	|048peer|
 |io_phonebook|	Phonebook Entries|	phonebook|	phonebook|	28phonebook
+|io_phonebooklabel| Assign Labels to Phonebook Entries| phonebook | phonebook.phonebooklabel| 028050pholab | 
 |io_speeddial|	Speeddial Numbers|	speeddial|	speeddial|	042speeddial, 009extension
 |io_trunk|	Trunks|	trunk|	trunk|	022trunk|
 |io_identity|	Users|	identity|	identity|	003user, 011account, 009extension|
