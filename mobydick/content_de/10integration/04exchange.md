@@ -12,19 +12,17 @@ weight: 104
 toc: true
 ---
 
-![microsoft exchange](/connector_microsoft_exchange.png)
+![microsoft exchange](/connector_microsoft_exchange.png?width=50%)
 
 ## Konzept
 
 Mit dem pascom Connector für Microsoft Exchange haben Sie die Möglichkeit
-öffentliche, persönliche und freigegebene Exchange Adressbücher mit den pascom Telefonbüchern
-serverseitig zu synchronisieren.
+öffentliche, persönliche und freigegebene Exchange Adressbücher mit den pascom Telefonbüchern serverseitig zu synchronisieren.
 
 ### Öffentlicher Adressbücher
 
 pascom verbindet sich zum Exchange Server mit einem eigens dafür angelegten Benutzer.
-Der Connector durchsuch rekursiv alle öffentlichen Ordner nach Adressbüchern und synchronisiert
-diese automatisch mit dem pascom Firmentelefonbuch.  
+Der Connector durchsucht rekursiv alle öffentlichen Ordner nach Adressbüchern und synchronisiert diese automatisch mit dem pascom Firmentelefonbuch.  
 
 Möchten Sie bestimme öffenltiche Adressbücher nicht synchronisieren, entziehen Sie
 dem pascom Exchange Benutzer ensprechend die Leserechte auf dieses Adressbuch.
@@ -37,19 +35,18 @@ freigegeben hat.
 
 ### Persönlicher Adressbücher
 
-Der Connector sucht nach persönlichen Adressbüchern der Exchange Benutzer und synchronisiert
-diese mit dem jeweiligen persönlichen Adressbuch des pascom Benutzers.
+Der Connector sucht nach persönlichen Adressbüchern der Exchange Benutzer und synchronisiert diese mit dem jeweiligen persönlichen Adressbuch des pascom Benutzers.
 
 Diese Funktion hat zwei Vorraussetzungen:
 
-* Benutzername in pascom und Exchange müssen identisch sein
-* Der pascom Exchange Benutzer muss das Recht "Impersonation" besitzen
+* Benutzername in pascom und Exchange müssen identisch sein.
+* Der pascom Exchange Benutzer muss das Recht *Impersonation* besitzen.
 
 ### Standard Feldzuordnung
 
 Die Feldzuordnung kann belibig angepasst werden und ist wie folgt voreingestellt:
 
-| pascom | Exchange |
+|pascom|Exchange|
 |---|---|
 |Anzeigename|Name|
 |Telefon|Telefonnummern > Geschäftlich|
@@ -66,40 +63,38 @@ Die Feldzuordnung kann belibig angepasst werden und ist wie folgt voreingestellt
 ### Microsoft Exchange
 
 Wie oben erwähnt benötigt der Connector einen eigenen Exchange Benutzer. Fügen
-Sie hierzu einen neuen Benutzer mit (beispielswise) dem Namen **pascom** hinzu.
+Sie hierzu einen neuen Benutzer mit (beispielsweise) dem Namen **pascom** hinzu.
 
 Sorgen Sie dafür, dass der pascom Benutzer Leserechte auf alle relevanten
 öffentlichen Ordner hat.
 
 Falls Sie auch persönliche Adressbücher synchronisieren wollen weisen Sie dem
-pascom Benutzer noch die Rolle "Impersonation" (Identitätswechsel) zu. Eine
-Anleitung hierzu finden Sie unter [hier](https://www.codetwo.com/kb/how-to-set-impersonation-rights-manually/).
+pascom Benutzer noch die Rolle *Impersonation* (Identitätswechsel) zu. Eine
+Anleitung hierzu finden Sie [hier](https://www.codetwo.com/kb/how-to-set-impersonation-rights-manually/).
 
 
 ### Connector Profil erstellen
 
-Erstellen Sie ein neues Connector Profil indem Sie in der pascom Web-UI unter dem
-Menüpunkt `Erweitert`>`Connector` auf `Hinzufügen` klicken.
+Erstellen Sie ein neues Connector-Profil indem Sie in der pascom Web-UI unter dem
+Menüpunkt `Erweitert` > `Connector` auf `Hinzufügen` klicken.
 
 Suchen Sie Vorlage `Exchange Kontakte` und klicken Sie auf `Auswählen`.
 Folgende Daten werden für die Vorlage benötigt:
 
-| Feld | Beschreibung |
+|Feld|Beschreibung|
 |---|---|
-| Bezeichnung* | Bezeichnung des Connector Profiles |
-| E-Mail* | E-Mail-Adresse des zuvor angelegten pascom Exchange Benutzers z.B. pascom@meinefirma.de |
-| Passwort* | Passwort des zuvor angelegten pascom Exchange Benutzers|
+| **Bezeichnung*** | Bezeichnung des Connector Profiles |
+| **E-Mail*** | E-Mail-Adresse des zuvor angelegten pascom Exchange Benutzers z. B. pascom@meinefirma.de |
+| **Passwort*** | Passwort des zuvor angelegten pascom Exchange Benutzers|
 
-pascom versucht anhand der E-Mail-Adresse des Exchange Benutzers Domain und URL
-automatisch zu ermitteln. Dies funktioniert nur bei korrekt eingerichtetem DNS-Server und
-Domain Struktur (z.B. bei office365.com).
+pascom versucht anhand der E-Mail-Adresse des Exchange-Benutzers Domain und URL automatisch zu ermitteln. Dies funktioniert nur wenn DNS-Server und Domain-Struktur (z. B. bei office365.com) korrekt eingerichtet sind.
 
 Falls die Ermittlung fehlschlägt können Sie Domain und URL manuell ergänzen:
 
-| Feld | Beschreibung |
+|Feld|Beschreibung|
 |---|---|
-| Domain | Der Active Direcory Domain Name |
-| URL | Die URL der EWS Schnittstelle z.B. https://exchange.meinefirma.de/ews/exchange.asmx |
+| **Domain** | Der Active Direcory Domain-Name |
+| **URL** | Die URL der EWS-Schnittstelle z. B. https://exchange.meinefirma.de/ews/exchange.asmx |
 
 ### Import simulieren & Automatisieren
 
@@ -108,34 +103,30 @@ die ersten 500 Datensätze angezeigt. Ist die letze Spalte `local_id` mit einem 
 gefüllt wird dieser Datensatz einem persönlichen Adressbuch zugeordnet. Alle andren Datensätze
 werden mit dem pascom Firmentelefonbuch synchronisiert.
 
-Wenn Sie mit dem Ergebnis zufreiden sind können Sie unter `Automatisieren` eine regelmäßinte
-Synchronisierung aktivieren. Die Voreinstellung hierfür ist "Einmal täglich, 12:00 Uhr mittags".
+Wenn Sie mit dem Ergebnis zufrieden sind können Sie unter `Automatisieren` eine regelmäßinte
+Synchronisierung aktivieren. Die Voreinstellung hierfür ist *Einmal täglich, 12:00 Uhr mittags*.
 
 ### (Optional) Feldzuordnung anpassen
 
-Im Connector Profil können Sie im Reiter `Variablen` und `Struktur` die Feldzuordnung pascom > Exchange
-an Ihre Bedürfnisse anpassen.
+Im Connector Profil können Sie im Reiter `Variablen` und `Struktur` die Feldzuordnung pascom > Exchange an Ihre Bedürfnisse anpassen.
 
-Als Beispiel möchten wir die Exchange Kontakt Webseitenadresse im Notiz Feld des pascom Telefonbuches speichern.
+Als Beispiel möchten wir die Exchange Kontakt-Webseitenadresse im Notizfeld des pascom Telefonbuches speichern.
 
 Fügen Sie hierzu im Reiter `Variablen` folgende Zeile durch `Hinzufügen` ein:
 
-```
-Variable                        Quelle
 
-BusinessHomePage                return $row["BusinessHomePage"];
-```
+|Variable|Quelle|
+|---|---|
+|BusinessHomePage|return $row["BusinessHomePage"];|
 
 {{% notice info%}}
-Im Gegensatz zu anderen Connector Profilen muss der Name der Variablen und
+Im Gegensatz zu anderen Connector-Profilen muss der Name der Variablen und
 der Name des Quellfeldes (hier "BusinessHomePage") identisch sein.
 {{% /notice  %}}
 
-Durch diese Zeile speichert der Connector den Inhalt des Exchange Feldes "BusinessHomePage" in
-der gleichnamigen Variable "BusinessHomePage" ab.
+Durch diese Zeile speichert der Connector den Inhalt des Exchange Feldes "BusinessHomePage" in der gleichnamigen Variable "BusinessHomePage" ab.
 
 Diese Variable muss nun unter `Struktur` einem pascom Feld zugeordnet werden.
-
 Ergänzen Sie hierzu die Zeile:
 
 ```
@@ -166,6 +157,55 @@ Dadurch wird der Wert der Variablen **BusinessHomePage** dem pascom Telefonbuch 
 
 #### Liste der verfügbaren Exchange Felder
 
+{{% row %}}
+{{% col md-4 %}}
++ DisplayName
++ Initials
++ GivenName
++ Surname
++ MiddleName
++ NickName
++ CompleteName
++ Birthday
++ Generation
++ CompanyName
++ JobTitle
++ Department
++ OfficeLocation
++ BusinessHomePage
++ PostalAddressIndex
++ SpouseName
++ WeddingAnniversary
++ FileAs
++ FileAsMapping
++ PhoneNumbers_AssistantPhone
++ PhoneNumbers_BusinessFax
+{{% /col %}}
+{{% col md-5 %}}
++ PhoneNumbers_BusinessPhone
++ PhoneNumbers_BusinessPhone2
++ PhoneNumbers_CompanyMainPhone
++ PhoneNumbers_HomeFax
++ PhoneNumbers_HomePhone
++ PhoneNumbers_HomePhone2
++ PhoneNumbers_MobilePhone
++ PhoneNumbers_OtherFax
++ PhoneNumbers_OtherTelephone
++ PhoneNumbers_Pager
++ PhoneNumbers_RadioPhone
++ EmailAddresses_EmailAddress1
++ EmailAddresses_EmailAddress2
++ EmailAddresses_EmailAddress3
++ PhysicalAddresses_Home
++ PhysicalAddresses_Business
++ PhysicalAddresses_Other
++ ImAddresses_ImAddress1
++ ImAddresses_ImAddress2
++ ImAddresses_ImAddress3
+{{% /col%}}
+{{% /row %}}
+
+<!--
 |Verfügbare Exchange Felder||
 |---|---|
 |DisplayName|PhoneNumbers_BusinessPhone|
@@ -189,7 +229,7 @@ Dadurch wird der Wert der Variablen **BusinessHomePage** dem pascom Telefonbuch 
 |FileAsMapping|ImAddresses_ImAddress2|
 |PhoneNumbers_AssistantPhone|ImAddresses_ImAddress3|
 |PhoneNumbers_BusinessFax||
-
+ -->
 
 #### Liste ver verfügbaren pascom Felder
 
@@ -212,12 +252,11 @@ pascom Labels lassen sich auch dazu nutzen zusätzliche Informationen aus Exchan
 mit im pascom Firmentelefonbuch anzuzeigen.
 
 In diese Beispiel möchten wir die Abteilung des Exchange Kontakts im Label **Abteilung**
-abspeichern. Dieses Label ist dann nicht nur im Telefonbuch sondern auch in Journaleinträgen oder
-diversen Anruferinformationen sichtbar.
+abspeichern. Dieses Label ist dann nicht nur im Telefonbuch sondern auch in Journaleinträgen oder diversen Anruferinformationen sichtbar.
 
 #### Label anlegen
 
-Labels legen Sie im Menü `Anrufverteilung`>`Anruf Labels` durch Klicken auf die
+Labels legen Sie im Menü `Anrufverteilung` > `Anruf Labels` durch Klicken auf die
 Schaltfläche `Hinzufügen` an.
 
 Wählen Sie `Generisches Label`, vergeben Sie den Namen **Abteilung** und klicken
@@ -229,14 +268,12 @@ Wenden Sie ausstehende Jobs an um das Label anzulegen.
 
 Fügen Sie hierzu im Reiter `Variablen` folgende Zeile durch `Hinzufügen` ein:
 
-```
-Variable                        Quelle
-
-Department                      return $row["Department"];
-```
+|Variable|Quelle|
+|---|---|
+|Department|return $row["Department"];|
 
 {{% notice info%}}
-Im gegensatz zu anderen Connector Profilen muss der Name der Variablen und
+Im Gegensatz zu anderen Connector-Profilen muss der Name der Variablen und
 der Name des Quellfeldes (hier "Department") identisch sein.
 {{% /notice  %}}
 
@@ -290,13 +327,13 @@ in der Struktur:
 Dadurch wird jedem Kontakt mit eingetragener Abteilung das Label **Abteilung** mit
 dem entsprechnden Wert zugeteilt.
 
-#### Ergebnis Prüfen
+#### Ergebnis prüfen
 
 {{% notice info%}}
-Label Zuordnungen werden NICHT unter "Speichern und Simulieren" mit angezeigt
+Label-Zuordnungen werden NICHT unter "Speichern und Simulieren" mit angezeigt
 {{% /notice  %}}
 
-Prüfen Sie die erfolgreiche Zuordnung des Labels in der pascom Web-UI unter `Benutzer`>
+Prüfen Sie die erfolgreiche Zuordnung des Labels in der pascom Web-UI unter `Benutzer` >
 `Telefonbuch` indem Sie einen ensprechenden Kontakt `Bearbeiten` und die Zuordnung
 im Reiter `Labels` prüfen. Alternativ können Sie auch das Firmentelefonbuch im
 pascom Client einsehen.

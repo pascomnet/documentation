@@ -26,8 +26,9 @@ Anschließend erhalten Sie eine Übersicht über die Connector-Vorlagen:
 * **Benutzer aus AD**
 * **Benutzer aus LDAP**
 * **Benutzer aus CSV**
+* [**Exchange Kontakte**](/integrationen/microsoft-exchange-server-integration/)
 * **Telefonbuch aus AD**
-* **Telefonbuch aus CSV**
+* [**Telefonbuch aus CSV**](http://localhost:1313/benutzer/connector/#telefonbuch-aus-csv)
 * **Telefonbuch aus LDAP**
 * **Kurzwahlen aus AD**
 * **Kurzwahlen aus CSV**

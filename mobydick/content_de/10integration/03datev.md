@@ -15,11 +15,11 @@ toc: true
 
 ## Konzept
 
-Die DATEV-Schnittstelle ermöglicht es bei einem eingehenden Anruf die Anrufdaten in Ihre *DATEV Arbeitsplatz pro*-Software zu übertragen. Ebenso können Sie aus dem DATEV-Telefonbuch Gespräche starten.
+Die DATEV-Schnittstelle ermöglicht es ab der **mobydick Version 7.14** bei einem eingehenden Anruf die Anrufdaten in Ihre *DATEV Arbeitsplatz pro*-Software zu übertragen. Ebenso können Sie aus dem DATEV-Telefonbuch Gespräche starten.
 
 ## Konfiguration
 
-Zur Vorbereitung muss zunächst ein *Generisches Label* angelegt werden. Klicken Sie hierfür auf `Anrufverteilung` -> `Anruf Labels` ->`Hinzufügen`. Wählen Sie `Generisches Label` und tragen Sie als *Label Name* **DATEV** ein. *Im Client anzeigen* sollten Sie auf *NEIN* setzen.
+Zur Vorbereitung muss zunächst ein *Generisches Label* angelegt werden. Klicken Sie hierfür auf `Anrufverteilung` > `Anruf Labels` >`Hinzufügen`. Wählen Sie `Generisches Label` und tragen Sie als *Label Name* **DATEV** ein. *Im Client anzeigen* sollten Sie auf *NEIN* setzen.
 
 Anschließend ist die DATEV-Schnittstelle automatisch aktiv sobald Sie neben *DATEV Arbeitsplatz pro* mit Telefoniemodul den mobydick Client installieren.
 
@@ -47,7 +47,7 @@ Sollten zu einer Telefonnummer mehrere Einträge in den DATEV-Stammdaten zu find
 
 **DATEV-Einstellungen im Client**
 
-Im mobydick Client können unter `Einstellungen` -> `Adressbücher` Einstellungen vorgenommen werden:
+Im mobydick Client können unter `Einstellungen` > `Adressbücher` Einstellungen vorgenommen werden:
 
 ![DATEV Einstellungen](/datev_automatisch.PNG)
 
