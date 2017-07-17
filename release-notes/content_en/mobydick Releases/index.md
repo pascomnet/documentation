@@ -21,7 +21,7 @@ icon: <i class="fa fa-file-text-o" aria-hidden="true"></i>
 
 |Version|Release Type|Published|
 |-------|------------|----------:|
-|[Release 7.14.00]({{< relref "07.14.00.md" >}})| Feature Release | 06.04.2017 |
+|[Release 15.00]({{< relref "15.00.md" >}})| Feature Release | 28.06.2017 |
 
 
 ## Stable Version
@@ -47,10 +47,11 @@ icon: <i class="fa fa-file-text-o" aria-hidden="true"></i>
 |[Release 7.11.01]({{< relref "07.11.01.md" >}})| Bugfix Release | 19.10.2015  |
 |[Release 7.11.00]({{< relref "07.11.00.md" >}})| Feature Release | 15.10.2015 |
 
-## Previous Version
+## Previous Versions
 
 |Version|Release Type|Published|
 |-------|------------|----------:|
+|[Release 7.14.00]({{< relref "07.14.00.md" >}})| Feature Release | 06.04.2017 |
 |[Release 7.12.06]({{< relref "07.12.06.md" >}})| Bugfix Release | 26.01.2017 |
 |[Release 7.12.05]({{< relref "07.12.05.md">}})| Bugfix Release | 11.11.2016 |
 |[Release 7.12.04]({{< relref "07.12.04.md">}})| Bugfix Release | 20.09.2016 |
