@@ -17,7 +17,7 @@ toc: true
 
 ## Konzept
 
-mobydick ist in der Lage eine **Komplettsicherung** des Systems während der Laufzeit zu erstellen. Dabei erzeugt mobydick zunächst einen Snapshot des Filesystem und speichert diesen Stand dann in einer bootfähigen ISO-Datei ab.
+[Unsere VoIP Software](https://www.pascom.net/de/dokumentation/mobydick/server/sicherung/) ist in der Lage eine **Komplettsicherung** des Systems während der Laufzeit zu erstellen. Dabei erzeugt mobydick zunächst einen Snapshot des Filesystem und speichert diesen Stand dann in einer bootfähigen ISO-Datei ab.
 ![Illustration - mobydick Backup](../../images/backup_iso.png "ISO Backup der mobydick")
 
 Diese Datei kann dann manuell oder automatisiert auf ein anderes System kopiert werden. Im Desasterfall brennt man das ISO-Abbild auf DVD, erstellt einen USB-Stick und bootet davon oder stellt das ISO-Abbild direkt als Bootmedium einer virtuellen Maschine ein. Das Backup bietet dem Benutzer dann die Möglichkeit das System als LiveDisk zu betrieben oder wieder auf Festplatte herzustellen.

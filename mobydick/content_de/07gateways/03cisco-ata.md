@@ -18,7 +18,7 @@ toc: true
 **Provisionierung**: Das Gateway wird über die mobydick verwaltet.<br>
 **Firmware-Verwaltung**: Die Firmware kann nicht über mobydick aktualisiert werden.<br>
 
-Das Cisco-SPA112-Gateway besitzt zwei FXS-Anschlüsse für zwei analoge Endgeräte
+Das Cisco-SPA112-Gateway besitzt zwei FXS-Anschlüsse für zwei analoge Endgeräte.
 
 ## Konfiguration
 

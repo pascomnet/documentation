@@ -11,13 +11,13 @@ toc: true
 
 **Grandstream HT701**
 
-- Ein FXS-Anschluss für ein analoges Endgerät
+- Ein FXS-Anschluss für ein analoges Endgerät.
 ![Grandstream HT701](/grandstream_ht701.jpg?width=300px)
 
 
 **Grandstream HT802**
 
-- Zwei FXS-Anschlüsse für zwei analoge Endgeräte
+- Zwei FXS-Anschlüsse für zwei analoge Endgeräte.
 ![Grandstream HT802](/grandstream_ht802.png?width=300px)
 
 

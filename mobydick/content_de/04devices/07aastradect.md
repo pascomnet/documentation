@@ -5,7 +5,7 @@ keywords:
     - Multizellen DECT System
     - Mitel DECT System anbinden
     - VoIP DECT
-prev: /endgeraete/snom-dect/
+prev: /endgeraete/snom-m700-dect/
 url:  /endgeraete/aastra-dect/
 next: /endgeraete/beliebiges-ip-geraet/
 weight: 47

@@ -16,7 +16,7 @@ toc: true
 ### Wann muss eine mobydick Lizenz eingespielt werden?
 Sie müssen Ihre Lizenz einspielen, wenn
 
-* Sie in einer virtuellen Maschine eine Community-Version installiert haben, und nun Ihre gekaufte Lizenz nutzen möchten,
+* Sie in einer [virtuellen Maschine](https://www.pascom.net/de/mobydick-virtuell/) eine Community-Version installiert haben, und nun Ihre gekaufte Lizenz nutzen möchten,
 * Sie Ihre mobydick in eine andere virtuelle Maschine migrieren,
 * Sie Ihre mobydick auf neuer Hardware installieren möchten oder müssen (z. B. bei einem Defekt des alten Servers),
 * der Software-Wartungszeitraum verlängert wurde,

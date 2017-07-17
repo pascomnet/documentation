@@ -20,7 +20,7 @@ toc: true
 Dieser Artikel betrifft nur die kommerziellen mobydick Kunden. Die mobydick Community-Version erhält immer den Update-Channel **Current** und kann nicht geändert werden.
 {{% /notice %}}
 
-Für mobydick gibt es aktuell drei verschiedene Update-Cannel.
+[Für alle unsere VoIP Software Lösungem](https://www.pascom.net/de/mobydick-voip/) gibt es aktuell drei verschiedene Update-Cannel.
 
 |Update-Cannel|Beschreibung|
 |---|---|

@@ -16,7 +16,7 @@ toc: true
 ## IP-Adresse ermitteln
 Um auf das System zugreifen zu können, benötigen Sie die IP-Adresse der Telefonanlage.
 
-Falls Sie einen vorinstallierten mobydick Server erworben haben, entnehmen Sie die IP aus dem Beiblatt oder der Beschriftung an den Netzwerkschnittstellen.
+Falls Sie einen [vorinstallierte IP Telefonanlage](https://www.pascom.net/de/mobydick-classic/) erworben haben, entnehmen Sie die IP aus dem Beiblatt oder der Beschriftung an den Netzwerkschnittstellen.
 
 Wenn Sie sich mit der IP-Adresse nicht sicher sind, können Sie einen Monitor an der mobydick anschließen und die IP am mobydick TUI (siehe unten) ablesen.
 

@@ -12,7 +12,8 @@ toc: true
 ![FlexPanel Demo](/flexpanel_demo.png)
 
 ## Übersicht
-FlexPanel können frei an den Bedarf der Benutzer angepasst werden. Als Grundlage definiert der Admin ein beliebig großes Panel und ordnet darauf die von mobydick bereit gestellten Widgets an. Die Widgets wiederum sind in Größe, Funktion und Erscheinungsbild parametrierbar.
+
+[Für alle unsere VoIP Telefonanlagen](https://www.pascom.net/de/mobydick-voip/) können FlexPanel erstellt werden, die frei an den Bedarf der Benutzer angepasst werden. Als Grundlage definiert der Admin ein beliebig großes Panel und ordnet darauf die von mobydick bereit gestellten Widgets an. Die Widgets wiederum sind in Größe, Funktion und Erscheinungsbild parametrierbar.
 
 Ist das FlexPanel einmal definiert kann man es verschiedenen Benutzern zuteilen. Diese Benutzer starten das FlexPanel dann, je nach Einstellung, entweder manuell über ein Menü oder automatisch beim Start des mobydick Desktop Clients. Der Benutzer kann dann sämtliche Aktionen im FlexPanel per Drag&Drop ausführen so dass das Panel auch für Touchscreens geeignet ist.
 

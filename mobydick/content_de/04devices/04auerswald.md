@@ -4,7 +4,7 @@ keywords:
 description:
 url:  /endgeraete/auerswald-ip-tischtelefone/
 prev: /endgeraete/yealink-ip-tischtelefone/
-next: /endgeraete/openstage-ip-tischtelefone/
+next: /endgeraete/snom-m700-dect/
 weight: 44
 toc: true
 
@@ -85,9 +85,9 @@ Nach der Provisionierung ist auf der ersten Funktionstaste rechts das pascom Men
 Setzen Sie Rufumleitungen nur über das pascom Menü, da diese Rufumleitungen über die mobydick verwaltet werden können.
 {{% /notice %}}
 
-{{% notice info%}}
-Die Verwendung der DND-Taste (*do not disturb*) oder Ruhe-Taste am Yealink hat zur Folge, dass die Durchwahl am Telefon nicht erreichbar ist. Der DND-Hinweis erscheint nur am Telefon und hat für die mobydick (z. B. Desktop Client) keine weitere Bedeutung.
-{{% /notice %}}
+<!-- {{% notice info%}}
+Die Verwendung der DND-Taste (*do not disturb*) oder Ruhe-Taste am Telefon hat zur Folge, dass die Durchwahl am Telefon nicht erreichbar ist. Der DND-Hinweis erscheint nur am Telefon und hat für die mobydick (z. B. Desktop Client) keine weitere Bedeutung.
+{{% /notice %}} -->
 
 
 ### Auf die Auerswald-Weboberfläche zugreifen
@@ -121,3 +121,26 @@ Drücken Sie lange auf die Taste die Sie belegen möchten. Wählen Sie *Ebene 1*
 #### Tasten belegen über das Web-UI
 
 Loggen Sie sich auf das Web-UI des IP-Telefons ein. In der linken Menüleiste finden Sie den Menüpunkt `Apps` > `Funktionstasten`. Klicken Sie die Taste die Sie konfigurieren möchten und wählen Sie in der Dropdown-Liste *Pick-up*. Geben Sie unter *Pick-up Ziel* die Rufnummer der Nebenstelle ein. Klicken Sie auf *Speichern*.
+
+
+### Basis-Konfiguration
+
+Wie bereits erwähnt, werden Snom IP-Telefone mit Hilfe der Basis-Konfiguration provisioniert. Die Basis-Konfiguration ist unter Endgeräte > Basis-Konfigurationen zu finden.
+
+{{% notice note %}}
+Bevor Sie die Basis-Konfiguration ändern, müssen Sie diese `Duplizieren`.
+{{% /notice %}}
+
+Ebenfalls können Sie eine schon bearbeitete Basis-Konfiguration als `Standard setzten`. Somit erhalten neu angelegte IP-Telefone automatisch die angepasste Basis-Konfiguration.
+
+#### Zuweisung einer Basis-Konfiguration
+
+Eine Basis-Konfiguration kann auf mehreren Wegen zugewiesen werden:
+
++ Über `Endgeräte` > `Basis-Konfigurationen` > Basis-Konfiguration auswählen und Bearbeiten, im Tab `Geräte` können gleich mehrere IP-Telefone hinzugefügt werden.
++ Über `Endgeräte` > `Geräteliste` > IP-Telefon auswählen und Bearbeiten im Tab `Basisdaten`.
+
+
+#### BLF-Tasten konfigurieren über die Basis-Konfiguration
+
+Im Tab Konfiguration können Sie die vorhandene Basis-Konfiguration anpassen. Im Bereich keys finden Sie bereits vorkonfigurierte Funktionstasten, an denen Sie sich orientieren können.

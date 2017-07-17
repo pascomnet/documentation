@@ -834,7 +834,7 @@ b,
 strong,
 label,
 th {
-  font-weight: 600;
+  font-family: SourceSansProBold;
 }
 .default-animation,
 #header #logo-svg,
@@ -1145,6 +1145,7 @@ select[multiple=multiple]:focus {
   position: relative;
   margin-left: 300px;
   min-height: 100%;
+  overflow-anchor: none;
 }
 #body img,
 #body .video-container {
@@ -2003,6 +2004,7 @@ a:hover {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  overflow-anchor: none;
 }
 #top-bar {
   max-width: 1030px;
