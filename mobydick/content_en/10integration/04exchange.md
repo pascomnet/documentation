@@ -22,13 +22,13 @@ The pascom Microsoft Exchange Connector provides you with the option for synchro
 ### Public Address Books
 
 pascom phone systems connect to the Exchange Server via a pascom Exchange User specially created for this purpose. 
-The Connector recursively searches through all public folders for address books which it then automatically synchronises with the pascom PBX company phone book.  
+The Connector recursively searches through all public folders for address books, which it then automatically synchronises with the pascom PBX company phone book.  
 
 Should you wish to not sync specific address books, simply revoke the pascom Exchange user's read permissions for these address books.
 
 ### Shared Address Books
 
-Similar to public address books, the pascom Exchange Connector can also synchronise all phone books which an Exchange user has shared with the pascom Exchange User. 
+Similar to public address books, the pascom Exchange Connector can also synchronise all phone books, which an Exchange user has shared with the pascom Exchange User. 
 
 ### Personal Address Books
 
@@ -236,7 +236,7 @@ This will assign the variable **BusinessHomePage** to the pascom Telephone Book 
 
 pascom Labels can be used to display additional information from the Exchange within the pascom Company Phonebook.
 
-In this example, we will save Exchange contact's work department using the label **Department**. This label label will then not only be visible in the telephone book, but also in the call history logs as well as various additional caller information masks.
+In this example, we will save Exchange contact's work department using the label **Department**. This label will then not only be visible in the telephone book, but also in the call history logs as well as various additional caller information masks.
 
 #### Add Labels
 
