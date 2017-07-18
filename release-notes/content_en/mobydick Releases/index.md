@@ -3,9 +3,9 @@ url: /mobydick/
 linkde: /mobydick/
 next: /mobydick/release-7.14.00/
 weight: 0
-title: mobydick Release Notes
+title: pascom Release Notes
 keywords:
-    - mobydick Release Notes
+    - pascom Release Notes
     - Bugfix
     - Feature Releases
     - Minor Release
