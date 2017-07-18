@@ -312,4 +312,4 @@ This will assign all Exchange contacts with an entered department value with the
 Label assignments will NOT be displayed when using the "Save and Simulate" tool. 
 {{% /notice  %}}
 
-To check whether the label assignment has been successful, go to the pascom PBX Web-UI menu options `Users` > `Phonebool`. Select and `Edit` an appropriate user and check whether the assignment was successful under the `Labels` tab. Alternatively, you can check your results by accessing the Company Phonebook via the pascom Desktop Client.
+To check whether the label assignment has been successful, go to the pascom PBX Web-UI menu options `Users` > `Phonebook`. Select and `Edit` an appropriate user and check whether the assignment was successful under the `Labels` tab. Alternatively, you can check your results by accessing the Company Phonebook via the pascom Desktop Client.
