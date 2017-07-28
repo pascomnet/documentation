@@ -30,7 +30,7 @@ Das Feld **Status** hat keine Aussagekraft. Die Warnung mit dem "Steckersymbol" 
 
 ### Multizellenbetrieb konfigurieren
 
-Falls Sie mehrere Gateways zum Multizellenbetrieb vernetzen möchten markieren Sie alle betroffenen Gateways und klicken dann auf `Bearbeiten`. Wählen Sie für eines der Gateways unter *Multi Cell* den Wert **Baisisstation** aus, auf allen anderen Gateways **Repeater** aus. Durch die Pfeilschaltfläche können Sie durch alle zuvor markierten Gateways navigieren und die Änderungen entsprechend vornehmen.
+Falls Sie mehrere Gateways zum Multizellenbetrieb vernetzen möchten markieren Sie alle betroffenen Gateways und klicken dann auf `Bearbeiten`. Wählen Sie für eines der Gateways unter *Multi Cell* den Wert **Basisstation** aus, auf allen anderen Gateways **Repeater** aus. Durch die Pfeilschaltfläche können Sie durch alle zuvor markierten Gateways navigieren und die Änderungen entsprechend vornehmen.
 
 ### Handsets anlegen und zuweisen
 
@@ -42,3 +42,10 @@ Wählen Sie unter `Endgeräte` > `Geräteliste` > `Hinzufügen` den Eintrag *Via
 |IPEI Nummer|Geben Sie hier die IPEI-Nummer des Handsets ein.|
 |SIP Optionen|Optional können Sie hier asterisk-spezifische Sip-Optionen eintragen.|
 |Zuweisung|In diesem Reiter können Sie einen Benutzer zuweisen.|
+
+### Verfügbare Kanäle
+
+||Snom M700 - Einzelle|Snom M700 - Multizelle|
+|----|----|----|
+|Schmalband (g711, g729, g726)|10|8|
+|Breitband (g722), SRTP aktiviert (g722, g711, g729, g726)|5|4|

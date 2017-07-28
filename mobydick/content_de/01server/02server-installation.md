@@ -150,3 +150,5 @@ Kopieren Sie die Daten auf den USB-Stick und erstellen Sie die Booloader-Konfigu
 Bootloader auf USB-Stick installieren:
 
     syslinux /dev/DEVICE
+
+## Installationsvorgang
