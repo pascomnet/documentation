@@ -22,8 +22,8 @@ Den Connector finden Sie unter: `Erweitert` > `Connector`. Fügen Sie neue Conne
 
 Anschließend erhalten Sie eine Übersicht über die Connector-Vorlagen:
 
-* **Benutzer aus USC**
-* **Benutzer aus AD**
+* [**Benutzer aus USC**](/integrationen/univention-integration/)
+* [**Benutzer aus AD**](/integrationen/microsoft-active-directory-integration/)
 * **Benutzer aus LDAP**
 * **Benutzer aus CSV**
 * [**Exchange Kontakte**](/integrationen/microsoft-exchange-server-integration/)

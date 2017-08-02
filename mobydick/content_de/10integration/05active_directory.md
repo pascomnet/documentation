@@ -39,7 +39,7 @@ Wählen Sie die Vorlage *Benutzer aus AD* und tragen Sie folgende Daten ein:
 |---|---|
 |**Bezeichung**|Name des Connectors|
 |**AD Domäne**|Active Directory Domain Name|
-|**AD Server**|Server IP oder Host|
+|**AD Server**|Server IP oder DNS-Name des Hosts|
 |**Benutzername** und **Passwort**|Der zuvor im AD angelegte pascom Benutzer zur Authentifizierung|
 |**Authentifizierung konfigurieren**|**NEIN**: Benutzer werden nur importiert und authentifizieren sich gegen die pascom<br>**JA**: Benutzer werden importiert und können sich gegen den AD authentifizieren. In diesem Fall wird die Authentifizierung eingerichtet und Sie können unter `Appliance` > `Dienste` im Reiter `Authentifizierung` bei Bedarf anpassen.|
 
@@ -49,7 +49,7 @@ Nach dem Speichern kann die Vorlage im Reiter `Basisdaten` bei Bedarf angepasst 
 
 Im Standard importiert die Vorlage alle Benutzer bis auf den Benutzer *mobydick* aus dem AD. Über den Reiter `Pre Filter` können Sie den Import eine Gruppe von Benutzern, z. B. *pascom-user*, einschränken. Fügen Sie dazu folgenden Code ein:
 
-    if (strpos($row['memberOf'],'mobydick-users') !== false) {
+    if (strpos($row['memberOf'],'pascom-users') !== false) {
     return true;
     }
     return false;
@@ -80,8 +80,8 @@ Nachdem Sie die Konfiguration abgeschlossen haben, können Sie durch die Schalt
 Haben Sie in der Vorlage *Authentifizierung konfigurieren* auf *JA* gesetzt können Sie nun unter `Appliance` > `Dienste`
 im Reiter `Authentifizierung` mit der Schaltfläche `Anmeldung Testen` testen ob die Authentifizierung Ihrer Benutzer funktioniert.
 
-
-<!--### Connector-Profil "Telefonbuch aus AD"
-### Connector-Profil "Kurzwahlen aus AD"
-hat es Sinn das zu dokumentieren? haben die Vorlagen überhaupt Sinn? jedenfalls funktioniert der Telefonbuch import nicht richtig ohne Suchfilter-Anpassungen.
- -->
+<!-- ## Optional
+weitere anpassungen
+telefonzuweisung
+... eva fragen
+-->

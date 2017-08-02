@@ -1,5 +1,5 @@
 ---
-title: Univention (USC)
+title: Univention (UCS)
 keywords:
     - univention
     - ucs
@@ -52,7 +52,7 @@ Wählen Sie die Vorlage *Benutzer aus UCS* und tragen Sie folgende Daten ein:
 |---|---|
 |**Bezeichung**|Name des Connectors|
 |**AD Domäne**|UCS Domain z.B. mydomain.intranet|
-|**AD Server**|Server IP oder Host|
+|**AD Server**|Server IP oder DNS-Name des Hosts|
 |**Benutzername** und **Passwort**|Der zuvor angelegte mobydick Rechner und das dazugehörige Passwort|
 |**Authentifizierung konfigurieren**|**NEIN**: Benutzer werden nur importiert und authentifizieren sich gegen die pascom<br>**JA**: Benutzer werden importiert und können sich gegen USC authentifizieren. In diesem Fall wird die Authentifizierung eingerichtet und Sie können unter `Appliance` > `Dienste` im Reiter `Authentifizierung` bei Bedarf anpassen.|
 

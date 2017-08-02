@@ -17,6 +17,13 @@ draft: false
 
 Die Basisstation M700 lässt sich sowohl einzeln als auch als Multizellenkonfiguration betreiben. Sie ist ideal für Unternehmen geeignet, die eine Funkabdeckung über mehrere Etagen oder in großen Bürogebäuden benötigen.
 
+### Verfügbare Kanäle
+
+||Snom M700 - Einzelle|Snom M700 - Multizelle|
+|----|----|----|
+|Schmalband (g711, g729, g726)|10|8|
+|Breitband (g722), SRTP aktiviert (g722, g711, g729, g726)|5|4|
+
 ### Vorbereitung
 
 Für die automatische Inbetriebnahme ist ein funktionierender DHCP-Server zwingend erforderlich. Lesen Sie dazu
@@ -42,10 +49,3 @@ Wählen Sie unter `Endgeräte` > `Geräteliste` > `Hinzufügen` den Eintrag *Via
 |IPEI Nummer|Geben Sie hier die IPEI-Nummer des Handsets ein.|
 |SIP Optionen|Optional können Sie hier asterisk-spezifische Sip-Optionen eintragen.|
 |Zuweisung|In diesem Reiter können Sie einen Benutzer zuweisen.|
-
-### Verfügbare Kanäle
-
-||Snom M700 - Einzelle|Snom M700 - Multizelle|
-|----|----|----|
-|Schmalband (g711, g729, g726)|10|8|
-|Breitband (g722), SRTP aktiviert (g722, g711, g729, g726)|5|4|
