@@ -21,6 +21,7 @@ icon: <i class="fa fa-file-text-o" aria-hidden="true"></i>
 
 |Version|Release Type|Published|
 |-------|------------|----------:|
+|[Release 15.01]({{< relref "15.01.md" >}})| Bugfix Release | 03.08.2017 |
 |[Release 15.00]({{< relref "15.00.md" >}})| Feature Release | 28.06.2017 |
 
 
