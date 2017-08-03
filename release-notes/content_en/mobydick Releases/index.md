@@ -1,7 +1,7 @@
 ---
 url: /mobydick/
 linkde: /mobydick/
-next: /mobydick/release-7.14.00/
+next: /mobydick/release-15.01/
 weight: 0
 title: pascom Release Notes
 keywords:
