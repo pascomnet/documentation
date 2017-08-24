@@ -1,5 +1,5 @@
 ---
-title: Durchwahlen
+title: Durchwahlen vergeben
 keywords:
 description:
 url: /howto/durchwahlen/

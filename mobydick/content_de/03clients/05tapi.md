@@ -14,13 +14,6 @@ weight: 35
 toc: true
 ---
 
-<!--
-
-## Konzept
-- eigenständiges Programm
-- terminalserverfähig
-
- -->
 ## Konzept
 
 ![Tapi Konzept](/tapi_treiber.png)
