@@ -231,5 +231,3 @@ Ein häufiger Anwendungsfall (und unsere Empfehlung) ist es, dass man pro Abteil
 |**pickup.group**|Alle Mitglieder der Rolle haben das Recht, eingehende Anrufe die an ein anderes Mitglied der Gruppe gerichtet sind, heranzuholen. Dies kann dann entweder per Telefon \*8<Durchwahl> oder Client erfolgen.|Benutzer, Rufgruppen, Warteschlangen|
 |**redirect.choice**|Eine Identität mit diesem Rollentyp wird nie von einer anlagenbasierten Rufumleitung umgeleitet, sondern ruft immer das direkte Ziel.|Benutzer|
 |**xmpp.group**|Alle Identitäten die eine Rolle mit dem Rollentyp *xmpp.group* zugewiesen haben, werden in eine *XMPP shared Group* eingebunden. D. h. in den Kontaktliste der Clients müssen sich diese Personen nicht mehr gegenseitig hinzufügen sondern sind sofort sichtbar. Falls Sie die *xmpp.group* der Rolle allen Identitäten zuordnen, sieht im Client immer jeder jeden.|Benutzer|
-
-<!-- |**redirect.group**|Definition einer anlagenbasierten Rufumleitungen und Rufumleitungsgruppen.|Benutzer| FIXME - was ist das???-->

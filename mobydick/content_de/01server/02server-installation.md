@@ -1,11 +1,11 @@
 ---
 title: Server installieren
 keywords:
-    - mobydick installieren
+    - pascom installieren
     - Virtuelle Maschine installieren
-    - mobydick auf Hardware installieren
-    - mobydick Systemvoraussetzungen
-description: mobydick lässt sich in wenigen Minuten sowohl in virtuellen Umgebungen als auch auf Servern installieren.
+    - pascom auf Hardware installieren
+    - pascom Systemvoraussetzungen
+description: pascom lässt sich in wenigen Minuten sowohl in virtuellen Umgebungen als auch auf Servern installieren.
 url:  /server/server-installieren/
 prev:  /server/plattformen/
 next:  /server/zugriff/
@@ -16,22 +16,22 @@ toc: true
 
 ## Sicherheitshinweis
 {{% notice warning %}}
-Wir raten Ihnen dringend davon ab mobydick ohne jede weitere Schutzmaßnahmen eine öffentliche IP Adresse zuzuteilen.  
-Insbesondere für den von mobydick verwendeten Asterisk SIP-Stack kursieren zahlreiche automatisierte Angriffe im Internet.  
-Selbstverständlich stellen wir Ihnen im mobydick Update-Center stets die neueste, sicherheitsgepatchte Software zur Verfügung. Trotzdem bleibt ein nicht unerhebliches Restrisiko.
+Wir raten Ihnen dringend davon ab pascom ohne jede weitere Schutzmaßnahmen eine öffentliche IP Adresse zuzuteilen.  
+Insbesondere für den von pascom verwendeten Asterisk SIP-Stack kursieren zahlreiche automatisierte Angriffe im Internet.  
+Selbstverständlich stellen wir Ihnen im pascom Update-Center stets die neueste, sicherheitsgepatchte Software zur Verfügung. Trotzdem bleibt ein nicht unerhebliches Restrisiko.
 {{% /notice %}}
 
 
 ## Installations-Medien beschaffen
 
-Das mobydick Community Installationsmedium steht Ihnen unter [https://www.pascom.net/de/download/](https://www.pascom.net/de/download/ "mobydick ISO downloaden") im Downloadbereich zur Verfügung.
+Das pascom Community Installationsmedium steht Ihnen unter [https://www.pascom.net/de/download/](https://www.pascom.net/de/download/ "mobydick ISO downloaden") im Downloadbereich zur Verfügung.
 
 {{% notice note %}}
-Eine mobydick Community kann jederzeit nachträglich durch den Erwerb einer Lizenz upgegradet werden. Sie können also zum Testen gerne die Community-Version verwenden und später durch ein Upgrade alle Daten übernehmen und Ihrer Lizenz entsprechend erweitern.
+Eine pascom Community-Versionkann jederzeit nachträglich durch den Erwerb einer Lizenz upgegradet werden. Sie können also zum Testen gerne die Community-Version verwenden und später durch ein Upgrade alle Daten übernehmen und Ihrer Lizenz entsprechend erweitern.
 {{% /notice %}}
 
 ## Installation einer virtuellen Maschine
-Das mobydick ISO-Abbild ist ein herkömmliches Installationsmedium. Sie müssen eine virtuelle Maschine einrichten und anschließend das ISO-Abbild als Bootmedium verwenden um die mobydick Installation durchzuführen.
+Das pascom ISO-Abbild ist ein herkömmliches Installationsmedium. Sie müssen eine virtuelle Maschine einrichten und anschließend das ISO-Abbild als Bootmedium verwenden um die pascom Installation durchzuführen.
 
 Falls Sie keine Erfahrung mit Virtualisierungslösungen haben, empfehlen wir Ihnen die Nutzung des kostenlosen [VMWare Players] (http://www.vmware.com/products/player.html "Zur VMWare Seite") für Windows bzw. Linux. Alternativ können Sie auch Oracles [Virtual Box] (https://www.virtualbox.org/ "Zur Virtualbox Webseite") verwenden.
 
@@ -39,14 +39,14 @@ Falls Sie keine Erfahrung mit Virtualisierungslösungen haben, empfehlen wir Ihn
 
 ### Übersicht
 
-Das auf unserer Homepage heruntergeladene ISO-Abbild oder ein bereits gesichertes Backup Ihrer Installation können Sie mit Hilfe eines Windows-PCs oder eines Linux-Systems (z. B. Ihre bereits vorhandene mobydick) auf einen bootbaren USB-Stick übertragen.
-Diesen können Sie dann zur Installation von mobydick benutzen.
+Das auf unserer Homepage heruntergeladene ISO-Abbild oder ein bereits gesichertes Backup Ihrer Installation können Sie mit Hilfe eines Windows-PCs oder eines Linux-Systems (z. B. Ihre bereits vorhandene pascom) auf einen bootbaren USB-Stick übertragen.
+Diesen können Sie dann zur Installation von pascom benutzen.
 
 ### Installationsmedium erstellen mit Hilfe eines Windows-PCs
 
 #### Vorbereitung
 
-Laden Sie ein mobydick ISO-Abbild unter [https://www.pascom.net/de/download/](https://www.pascom.net/de/download/ "mobydick ISO downloaden") herunter oder verwenden Sie Ihr gesichertes Backup (appliance.iso, ab einschl. mobydick Version 7.11.03).
+Laden Sie ein pascom ISO-Abbild unter [pascom.net](https://www.pascom.net/de/download/ "mobydick ISO downloaden") herunter oder verwenden Sie Ihr gesichertes Backup (appliance.iso, ab einschließlich pascom Version 7.11.03).
 
 Laden Sie das Programm [Rufus](https://rufus.akeo.ie/ "Erstelle bootbare USB-Laufwerke auf einfache Art und Weise") herunter. Dabei handelt es sich um ein Tool mit dem man bootbare USB-Laufwerke erstellen kann.
 
@@ -66,11 +66,11 @@ Im nächsten Fenster "Im ISO-Abbild Modus schreiben" wählen und mit OK bestäti
 
 Eine unbeaufsichtigte Installation benötigen Sie z. B. bei der miniAppliance, bei der Sie nicht die Möglichkeit haben durch Tastatureingabe bei der Installation zu interagieren (z. B. Netzwerkeinstellungen, Admin-Passwort eingeben...)
 
-Nachdem Sie den bootbaren USB-Stick mit dem Programm Rufus erstellt haben müssen für die unbeaufsichtigte Installation der mobydick noch einige Einstellungen vorgenommen werden.
+Nachdem Sie den bootbaren USB-Stick mit dem Programm Rufus erstellt haben müssen für die unbeaufsichtigte Installation der pascom noch einige Einstellungen vorgenommen werden.
 Gehen Sie auf das USB-Laufwerk und klicken Sie auf die Datei **unattended-install**. Es erscheint eine Maske in der Sie Ihre Einstellungen eingeben können:
 ![Screenshot - Unbeaufsichtigte Installation Einstellungen](/rufus_unattended_settings_de.png?width=40%)
 
-Setzen Sie das Häkchen bei **show output during installation via COM port** damit Sie bei der unbeaufichtigten Installation der mobydick über den COM Port die Installation überwachen können.
+Setzen Sie das Häkchen bei **show output during installation via COM port** damit Sie bei der unbeaufichtigten Installation der pascom über den COM Port die Installation überwachen können.
 Klicken Sie zum Abschluss auf **Generate**. Nach dem Auswurf des USB-Sticks steht dieser für die Installation zur Verfügung.
 
 {{% notice note %}}
@@ -82,20 +82,20 @@ Bitte beachten Sie, dass eine unbeaufsichtigte Installation auf einer miniApplia
 
 #### Vorbereitung
 
-Laden Sie ein mobydick ISO-Abbild unter [https://www.pascom.net/de/download/](https://www.pascom.net/de/download/ "mobydick ISO downloaden") herunter oder verwenden Sie Ihr gesichertes Backup (appliance.iso, mindestens mobydick Version 7.01.00).
-Am einfachsten ist den USB-Stick mit Hilfe eines vorhandenen mobydick Servers zu erstellen. Sie können aber auch einen beliebigen Linux-Rechner auf dem syslinux installiert ist verwenden.
+Laden Sie ein pascom ISO-Abbild unter [pascom.net](https://www.pascom.net/de/download/ "mobydick ISO downloaden") herunter oder verwenden Sie Ihr gesichertes Backup (appliance.iso, mindestens pascom Version 7.01.00).
+Am einfachsten ist den USB-Stick mit Hilfe eines vorhandenen pascom Servers zu erstellen. Sie können aber auch einen beliebigen Linux-Rechner auf dem syslinux installiert ist verwenden.
 
-Kopieren Sie das ISO-Abbild auf eine mobydick 6 oder 7 nach /etc/admin/ und loggen Sie sich per ssh ein.
+Kopieren Sie das ISO-Abbild auf eine pascom 6 oder 7 nach /etc/admin/ und loggen Sie sich per ssh ein.
 
 #### Bootbaren USB-Stick erstellen
 
-Sie sind nun als admin auf der mobydick eingeloggt und das ISO-Abbild liegt unter /etc/admin.
+Sie sind nun als admin auf der pascom eingeloggt und das ISO-Abbild liegt unter /etc/admin.
 
 **Werden Sie root:**
 
     su
 
-USB-Stick an den mobydick Server anstecken und prüfen ob dieser erkannt wurde:
+USB-Stick an den pascom Server anstecken und prüfen ob dieser erkannt wurde:
 
     dmesg
 
@@ -121,19 +121,17 @@ In der Ausgabe sehen Sie als welches Gerät der USB-Stick registriert wurde (im 
     sd 3:0:0:0: Attached scsi generic sg1 type 0
     usb-storage: device scan complete
 
-{{% notice warning %}}
-Im folgenden bitte DEVICE durch das ermittelte USB-Gerät ersetzen (hier z. B. sdb)
-{{% /notice %}}
+Im folgenden bitte *DEVICE* durch das ermittelte USB-Gerät ersetzen (hier z. B. sdb).
 
 Erstellen Sie Verzeichnisse für das ISO-Abbild und den USB-Stick und mounten Sie das ISO-Abbild:
 
     mkdir /tmp/iso
     mkdir /tmp/usb
-    mount -o loop /etc/admin/mobydick.iso /tmp/iso/
+    mount -o loop /etc/admin/appliance.iso /tmp/iso/
 
-{{% notice warning %}}
-Bitte mobydick.iso durch den Namen Ihres ISO-Abbilds ersetzen.
-{{% /notice %}}
+
+Bitte *appliance.iso* durch den Namen Ihres ISO-Abbilds ersetzen!
+
 
 Nun muss der USB-Stick formatiert und gemountet werden:
 
@@ -151,4 +149,4 @@ Bootloader auf USB-Stick installieren:
 
     syslinux /dev/DEVICE
 
-## Installationsvorgang
+<!-- ## Installationsvorgang -->

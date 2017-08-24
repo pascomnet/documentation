@@ -115,7 +115,7 @@ Akzeptieren Sie die Allgemeinen Geschäftsbedingungen (AGB), anschließend werde
 
 Nach erfolgreicher Installation müssen Sie die Verbindung der TAPI zu pascom konfigurieren:
 
-![TAPI konfigurieren](/tapi_konfigurieren.png?width=50%)
+![TAPI konfigurieren](/tapi_konfigurieren.png?width=30%)
 
 Die TAPI meldet sich am Server mit den selben Benutzerdaten wie der pascom Client an.
 
@@ -145,7 +145,7 @@ Starten Sie das Setup indem Sie die zuvor heruntergeladene Datei ausführen. Akz
 
 Nach erfolgreicher Installation müssen Sie die Verbindung der TAPI zu pascom konfigurieren:
 
-![TAPI konfigurieren](/tapi_konfigurieren.png?width=50%)
+![TAPI konfigurieren](/tapi_konfigurieren.png?width=30%)
 
 Die TAPI meldet sich am Server mit den selben Benutzerdaten wie der pascom Client an.
 
@@ -157,7 +157,7 @@ Die TAPI meldet sich am Server mit den selben Benutzerdaten wie der pascom Clien
 
 Es erscheint ein weiterer Dialog, in dem Sie die Benutzer auswählen können, die später in TAPI Applikationen (z. B. MS Outlook) zur Verfügung stehen sollen. Es werden hier alle in der pascom vorhandenen Benutzer angezeigt. Um einen Benutzer auszuwählen, kann man diese doppelklicken oder die Buttons in der Mitte verwenden:
 
-![TAPI Benutzer wählen](/tapi_benutzer_waehlen.png?width=70%)
+![TAPI Benutzer wählen](/tapi_benutzer_waehlen.png?width=50%)
 
 Bestätigen Sie den Erfolg der Installation mit einem Klick auf **Finish**.
 
@@ -168,7 +168,7 @@ Starten Sie Outlook und suchen Sie den gewünschten Kontakt. Mit der rechten Mau
 ![TAPI Outlook](/tapi_outlook_dial.png)
 
 Nun erscheint das Anruffenster. Bestätigen Sie per **Anruf beginnen** die Nummer:
-![TAPI Outlook](/tapi_outlook_dial2.png?width=50%)
+![TAPI Outlook](/tapi_outlook_dial2.png?width=40%)
 
  Nun sollte Ihr Telefon den Anruf durchführen.
 {{% notice info %}}
@@ -177,7 +177,7 @@ Nun erscheint das Anruffenster. Bestätigen Sie per **Anruf beginnen** die Numme
 
  Mit einem Klick auf **Wähloptionen** können Sie die zu verwendende Leitung auswählen:
 
- ![TAPI Outlook](/tapi_outlook_leitung.png?width=70%)
+ ![TAPI Outlook](/tapi_outlook_leitung.png?width=50%)
 
 ### Unbeaufsichtigte (Silent) Installation
 
@@ -212,17 +212,17 @@ Um Debug-Output aufzeichnen zu können, müssen Sie die Debug-Version des pascom
 
 3. Wählen Sie den Eintrag "pascom TAPI Service Provider"
 
-![TAPI Service Provider](/tapi_config_telefon.png?width=60%)
+![TAPI Service Provider](/tapi_config_telefon.png?width=50%)
 
 4. Klicken Sie auf Konfigurieren
 5. Wenn im folgenden Dialog der Text "WARNING: DEBUG VERSION INSTALLED" erscheint, ist die Debug-Version installiert.
 
 {{% row %}}
 {{% col md-6 %}}
-![Tapi anmelden](/tapi_config_mtapi.png?width=70%)
+![Tapi anmelden](/tapi_config_mtapi.png?width=60%)
 {{% /col %}}
 {{% col md-6 %}}
-![Tapi anmelden Debug](/tapi_config_mtapi_debug.png?width=70% )
+![Tapi anmelden Debug](/tapi_config_mtapi_debug.png?width=60% )
 {{% /col %}}
 {{% /row %}}
 

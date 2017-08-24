@@ -1,12 +1,12 @@
 ---
-title: mobydick Server
+title: pascom Server
 keywords:
     - Server
     - Virtuelle Maschine
     - Updates
     - Installation
     - Lizenzen
-description: Erfahren Sie, wie Sie mobydick installieren und verwalten können.
+description: Erfahren Sie, wie Sie pascom installieren und verwalten können.
 url: /server
 weight: 1
 chapter: true
