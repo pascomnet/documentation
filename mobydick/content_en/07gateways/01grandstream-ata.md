@@ -10,6 +10,7 @@ Keywords:
     - Grandstream HT series
     - HT701
     - HT802
+    - Analog adapters
 description: Grandstream ATA Adapters provide a cost effective solution to integrating Analog technology such as Fax / Door Intercom systems etc. 
 weight: 51
 toc: true

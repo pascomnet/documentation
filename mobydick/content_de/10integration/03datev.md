@@ -1,5 +1,5 @@
 ---
-title: DATEV Telefonie-Integration
+title: DATEV Telefonie
 keywords:
     - datev
     - telefonie basis
@@ -15,7 +15,7 @@ toc: true
 
 ## Konzept
 
-Die DATEV-Schnittstelle ermöglicht es ab der **mobydick Version 7.14** bei einem eingehenden Anruf die Anrufdaten in Ihre *DATEV Arbeitsplatz pro*-Software zu übertragen. Ebenso können Sie aus dem DATEV-Telefonbuch Gespräche starten.
+Die DATEV-Schnittstelle ermöglicht es ab der **mobydick Version 7.14** bei einem eingehenden Anruf die Anrufdaten in Ihre *DATEV Arbeitsplatz pro*-Software zu übertragen. Ebenso können Sie aus dem DATEV-Telefonbuch Gespräche starten. Voraussetzung ist die Verwendung von *DATEV Arbeitsplatz pro* mit dem *Telefoniemodul*
 
 ## Konfiguration
 

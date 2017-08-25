@@ -1,11 +1,11 @@
 ---
 url: /mobydick/
 linkde: /mobydick/
-next: /mobydick/release-7.14.00/
+next: /mobydick/release-15.01/
 weight: 0
-title: mobydick Release Notes
+title: pascom Release Notes
 keywords:
-    - mobydick Release Notes
+    - pascom Release Notes
     - Bugfix
     - Feature Releases
     - Minor Release
@@ -21,14 +21,15 @@ icon: <i class="fa fa-file-text-o" aria-hidden="true"></i>
 
 |Version|Release Type|Published|
 |-------|------------|----------:|
+|[Release 15.01]({{< relref "15.01.md" >}})| Bugfix Release | 03.08.2017 |
 |[Release 15.00]({{< relref "15.00.md" >}})| Feature Release | 28.06.2017 |
-
 
 
 ## Stable Version
 
 |Version|Release Type|Published|
 |-------|------------|----------:|
+|[Release 7.13.06]({{< relref "07.13.06.md" >}})| Bugfix Release | 24.08.2017 |
 |[Release 7.13.05]({{< relref "07.13.05.md" >}})| Bugfix Release | 23.05.2017|
 |[Release 7.13.04]({{< relref "07.13.04.md" >}})| Bugfix Release | 02.03.2017 |
 |[Release 7.13.02]({{< relref "07.13.02.md" >}})| Bugfix Release | 02.12.2016 |

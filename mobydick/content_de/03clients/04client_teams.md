@@ -8,7 +8,7 @@ keywords:
     - Team Statitiken
 description: Teams fassen Benutzer zu Gruppen zusammen. Im mobydick Client sehen Sie, zu welchen Teams es in Ihrem Unternehmen gibt und können aktiv in einem Team arbeiten.
 url: /clients/teams-im-client/
-prev: /clients/followme/
+prev: /clients/client-nutzen/
 next: /clients/tapi/
 weight: 34
 toc: true

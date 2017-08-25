@@ -50,6 +50,7 @@ Da verschiedene Ämter-Typen unterschiedliche Variablen benötigen finden Sie im
 |**Telefonbuchabfrage**|Wählen Sie hier **Ja** wird die mobydick versuchen jeden eingehenden Anruf über dieses Amt im zentralen Telefonbuch aufzulösen und bei Erfolg den Namen des Anrufers im Telefondisplay präsentieren. Dies gilt nur für IP-Endgeräte.|
 |**Fallback Durchwahl**|Falls für eine Durchwahl die angerufen wird keine Rufregel existiert, wird der Anrufer auf diese Durchwahl abgeworfen.|
 |**Skript ausgehende Regel**|Diese Einstellung kann für ausgehende Rufe ein Skript einbinden.|
+|**Direkte Weiterleitung**|Diese Einstellung legt fest, wie Rufumleitungen, die von extern kommen und die Anlage wieder verlassen abgehandelt werden. Dazu gibt es 3 Möglichkeiten:<br>*- Anruf im System behalten*<br>*- Anruf annehmen und im System behalten*<br>*- Anruf über Provider weiterleiten (Call Deflection)*|
 
 |Variablen beim SIP-Amt|Erklärung|
 |---|---|

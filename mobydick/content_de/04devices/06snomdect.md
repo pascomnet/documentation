@@ -17,6 +17,13 @@ draft: false
 
 Die Basisstation M700 lässt sich sowohl einzeln als auch als Multizellenkonfiguration betreiben. Sie ist ideal für Unternehmen geeignet, die eine Funkabdeckung über mehrere Etagen oder in großen Bürogebäuden benötigen.
 
+### Verfügbare Kanäle
+
+||Snom M700 - Einzelle|Snom M700 - Multizelle|
+|----|----|----|
+|Schmalband (g711, g729, g726)|10|8|
+|Breitband (g722), SRTP aktiviert (g722, g711, g729, g726)|5|4|
+
 ### Vorbereitung
 
 Für die automatische Inbetriebnahme ist ein funktionierender DHCP-Server zwingend erforderlich. Lesen Sie dazu
@@ -30,7 +37,7 @@ Das Feld **Status** hat keine Aussagekraft. Die Warnung mit dem "Steckersymbol" 
 
 ### Multizellenbetrieb konfigurieren
 
-Falls Sie mehrere Gateways zum Multizellenbetrieb vernetzen möchten markieren Sie alle betroffenen Gateways und klicken dann auf `Bearbeiten`. Wählen Sie für eines der Gateways unter *Multi Cell* den Wert **Baisisstation** aus, auf allen anderen Gateways **Repeater** aus. Durch die Pfeilschaltfläche können Sie durch alle zuvor markierten Gateways navigieren und die Änderungen entsprechend vornehmen.
+Falls Sie mehrere Gateways zum Multizellenbetrieb vernetzen möchten markieren Sie alle betroffenen Gateways und klicken dann auf `Bearbeiten`. Wählen Sie für eines der Gateways unter *Multi Cell* den Wert **Basisstation** aus, auf allen anderen Gateways **Repeater** aus. Durch die Pfeilschaltfläche können Sie durch alle zuvor markierten Gateways navigieren und die Änderungen entsprechend vornehmen.
 
 ### Handsets anlegen und zuweisen
 

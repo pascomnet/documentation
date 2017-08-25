@@ -1,5 +1,5 @@
 ---
-title: Microsoft Exchange Integration
+title: Microsoft Exchange
 keywords:
     - microsoft
     - exchange
@@ -8,6 +8,7 @@ keywords:
 description: Integrieren Sie Microsoft Exchange / Office365 in Ihre pascom.
 prev: /integrationen/datev-telefonie-integration/
 url: /integrationen/microsoft-exchange-server-integration/
+next: /integrationen/microsoft-active-directory-integration/
 weight: 104
 toc: true
 ---
@@ -16,10 +17,15 @@ toc: true
 
 ## Konzept
 
+
 Mit dem pascom Connector für Microsoft Exchange haben Sie die Möglichkeit
 öffentliche, persönliche und freigegebene Exchange Adressbücher mit den pascom Telefonbüchern serverseitig zu synchronisieren.
 
-### Öffentlicher Adressbücher
+Microsoft Exchange wird auch unterstützt bei Verwendung des gehosteten Office 365.
+
+
+
+### Öffentliche Adressbücher
 
 pascom verbindet sich zum Exchange Server mit einem eigens dafür angelegten Benutzer.
 Der Connector durchsucht rekursiv alle öffentlichen Ordner nach Adressbüchern und synchronisiert diese automatisch mit dem pascom Firmentelefonbuch.  
@@ -205,31 +211,6 @@ Dadurch wird der Wert der Variablen **BusinessHomePage** dem pascom Telefonbuch 
 {{% /col%}}
 {{% /row %}}
 
-<!--
-|Verfügbare Exchange Felder||
-|---|---|
-|DisplayName|PhoneNumbers_BusinessPhone|
-|Initials|PhoneNumbers_BusinessPhone2|
-|GivenName|PhoneNumbers_CompanyMainPhone|
-|Surname|PhoneNumbers_HomeFax|
-|MiddleName|PhoneNumbers_HomePhone|
-|NickName|PhoneNumbers_HomePhone2|
-|CompleteName|PhoneNumbers_MobilePhone|
-|Birthday|PhoneNumbers_OtherFax|
-|Generation|PhoneNumbers_OtherTelephone|
-|CompanyName|PhoneNumbers_Pager|
-|JobTitle|PhoneNumbers_RadioPhone|
-|Department|EmailAddresses_EmailAddress1|
-|OfficeLocation|EmailAddresses_EmailAddress2|
-|BusinessHomePage|EmailAddresses_EmailAddress3|
-|PostalAddressIndex|PhysicalAddresses_Home|
-|SpouseName|PhysicalAddresses_Business|
-|WeddingAnniversary|PhysicalAddresses_Other|
-|FileAs|ImAddresses_ImAddress1|
-|FileAsMapping|ImAddresses_ImAddress2|
-|PhoneNumbers_AssistantPhone|ImAddresses_ImAddress3|
-|PhoneNumbers_BusinessFax||
- -->
 
 #### Liste ver verfügbaren pascom Felder
 
@@ -319,7 +300,6 @@ in der Struktur:
                 }
             ]
     }
-
   }]
 }
 ```
