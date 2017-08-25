@@ -51,6 +51,7 @@ As different Trunk types require different variables, please refer to the overvi
 |**Query Phonebook**|If you set this option to **Yes**, mobydick will try to look up every incoming call in the central phonebook and, if successful, display the caller's name on the telephone screen. This option only applies to IP telephones as the desktop Client always try to find and display corresponding phonebook entries for incoming calls.|
 |**Fallback Extension**|Should no call rules exist for an extension, the caller will be routed to this extension.|
 |**Outbound Script**|This setting can integrate a script for outbound calls.|
+|**Direct Forwarding**|This setting determines how call redirection / forwards which come from external sources and then leave the PBX again should be handled. There are 3 options: <br>*- Keep calls in the system*<br>*-Answer calls and keep them in the system*<br>*-Forward calls via the Provider (Call Deflection)*|
 
 |SIP Trunk Variables|Description|
 |---|---|
