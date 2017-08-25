@@ -20,7 +20,7 @@ toc: true
 Dieser Artikel betrifft nur die kommerziellen mobydick Kunden. Die mobydick Community-Version erhält immer den Update-Channel **Current** und kann nicht geändert werden.
 {{% /notice %}}
 
-Für mobydick gibt es aktuell drei verschiedene Update-Cannel.
+[Für alle unsere VoIP Software Lösungem](https://www.pascom.net/de/mobydick-voip/) gibt es aktuell drei verschiedene Update-Cannel.
 
 |Update-Cannel|Beschreibung|
 |---|---|
@@ -62,8 +62,7 @@ Nach dem Login sehen Sie eine Übersicht über verschiedene Pakete die mit einem
 
 {{% notice note %}}
 Falls Sie keine Informationen über neueste Pakete erhalten ist es möglich, dass die mobydick keinen Zugang zum Update-Pool hat. Prüfen Sie in diesem Fall die Netzwerkverbindungen zum Update-Pool:  
-**Community Version:** community.pascom.net per Port TCP 80  
-**Lizensierte Version:** https://my.pascom.net Port TCP 443
+https://my.pascom.net Port TCP 443
 {{% /notice %}}
 
 ## Updatevorgang

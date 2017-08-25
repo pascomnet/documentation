@@ -7,13 +7,9 @@ weight: 52
 toc: true
 ---
 
-## Konzept
+## Übersicht
 
-### Modularer Aufbau für mehr Flexibilät
-beroNet Karten und Gateways sind modular aufgebaut. Das bedeutet für Sie, dass Sie unterschiedliche Anschlüsse mit nur einem Gerät abbilden können.
-![Illustration - modulares Gateway](../../images/beronet_gateway_beispiel.jpg?width=90% "Modulare Gateways Lösung von beroNet")
-
-Beispiel: Sie haben 3 NTBAs (ISDN-Anschlüsse) und noch 2 Analoge Fax. Dann könnten Sie ein beroNet Gateway oder Karte mit einem 4S0 Modul und
+beroNet Karten und Gateways sind modular aufgebaut. Das bedeutet für Sie, dass Sie unterschiedliche Anschlüsse mit nur einem Gerät abbilden können. Mehr über Gateways für unsere VoIP Hardware Lösung finden Sie [hier](https://www.pascom.net/de/mobydick-classic/).
 
 
 ### beroNet VoIP Gateways
@@ -22,25 +18,15 @@ Das beroNet VoIP Gateway wird an die LAN Verkabelung angeschlossen und erhält e
 ![Illustration - beroNet VoIP Gateway](../../images/beronet_voip_gateway.png "beroNet VoIP Gateway im Netzwerk")
 
 
-Gateways stehen Ihnen in folgenden Größen zur Verfügung:
-
-* beroNet VoIP Gateway, 4-16 Kanäle
-* beroNet VoIP Gateway, 16-64 Kanäle
-* beroNet VoIP Gateway, 32-128 Kanäle
-
 ### beroNet Karten
 beroNet Karten werden in die mobydick eingebaut und erhalten beim Hochfahren der mobydick automatisch eine IP-Adresse aus dem Zero-Config-Netzwerk **169.254.0.0/16**. Bis auf diesen Unterschied lassen sich beroNet Gateways und Karten identisch konfigurieren.
 
 ![Illustration - beroNet Karten](../../images/beronet_karten.png "beroNet VoIP Karten")
 
-Dabei stehen Ihnen folgende Karten zur Verfügung:
 
-* beroNet Baseboard PCI-Express, 4-16 Kanäle
-* beroNet Baseboard PCI-Express, 16-64 Kanäle
-* beroNet Baseboard PCI-Express, 32-128 Kanäle
+### beroNet Module - Beispiel
 
-### beroNet Module
-
+![Illustration - beroNet Module](../../images/beronet_karten_beispiel.jpg)
 
 ## ISDN und Analoge Nebenstellen
 Nebenstellen wie Faxgeräte, Faxserver, Telefone, Türöffner, etc. können entweder direkt oder via SIP angebunden werden.
@@ -101,7 +87,7 @@ In vielen Fällen wird beroNet Hardware dazu verwendet ISDN Amtsleitungen daran 
 
 Unter `Hinzuführen` können Sie entweder **BRI** oder **PRI Amtsleitungen** konfigurieren.
 
-//FixMe Siehe Konzept: ISDN verstehen falls Sie mit den Begrifflichkeiten nicht vertraut sind. Dieser Vorgang fügt einen neuen Datensatz ein.
+<!-- //FixMe Siehe Konzept: ISDN verstehen falls Sie mit den Begrifflichkeiten nicht vertraut sind. Dieser Vorgang fügt einen neuen Datensatz ein. -->
 
 ![Screenshot - ISDN Amt hinzufügen im Detail](../../images/beronet_isdn_trunk_hinzuegen_detail.png?width=90% "ISDN Amt per beroNet hinzufügen")
 
@@ -120,17 +106,17 @@ Selektieren Sie das entsprechende Gateway aus der Liste aus, wählen Sie `Bearbe
 
 ![Screenshot - Analoges Endgerät hinzufügen](../../images/beronet_analog_hinzufuegen.png?width=90% "Analoges Endgerät hinzufügen")
 
-Unter `Hinzufügen` haben Sie folgende Aswahl:
+Unter `Hinzufügen` haben Sie folgende Auswahl:
 
-|Typ            |Beschreibung   |Enwendungsfall |
-|---------------|---------------|---------------|
-|Analoges Endgerät direkt   | Analoges Endgerät welches direkt auf der Berofix Hardware geroutet wird |Faxgerät, Türöffner, Feuermeldeanlage|
-|Analoges Endgerät via SIP |Analoges Endgerät welches über die mobydick geroutet wird |Telefon  |
-|ISDN Telefon direkt |ISDN Telefon welches direkt auf der Berofix Hardware geroutet wird |Notruftelefon |
-|ISDN Fax direkt |ISDN Fax welches direkt auf der Berofix Hardware geroutet wird |Faxserver (z.B. Tobit Faxware)
-|ISDN Datenleitung direkt |ISDN Datenleitung welches direkt auf der Berofix Hardware geroutet wird |	Onlinebanking, ISDN Maschinensteuerung, Alarmanlage|
-|ISDN Telefon via SIP |ISDN Telefon welches über die mobydick geroutet wird	|Telefon|
+|Typ|Beschreibung|Anwendungsfall|
+|---|---|---|
+|Analoges Endgerät direkt|Analoges Endgerät welches direkt auf der Berofix Hardware geroutet wird|Faxgerät, Türöffner, Feuermeldeanlage|
+|Analoges Endgerät via SIP|Analoges Endgerät welches über die mobydick geroutet wird|Telefon|
+|ISDN Telefon direkt|ISDN Telefon welches direkt auf der Berofix Hardware geroutet wird |Notruftelefon|
+|ISDN Fax direkt|ISDN Fax welches direkt auf der Berofix Hardware geroutet wird |Faxserver (z. B. Tobit Faxware)|
+|ISDN Datenleitung direkt|ISDN Datenleitung welches direkt auf der Berofix Hardware geroutet wird|Onlinebanking, ISDN Maschinensteuerung, Alarmanlage|
+|ISDN Telefon via SIP|ISDN Telefon welches über die mobydick geroutet wird|Telefon|
 
 
-//FixME
+<!-- FIXME -->
 In diesem Schritt konfigurieren Sie lediglich den Anschluss auf der Berofix Hardware. Zur vollständigen Funktion fahren Sie mit Endgeraete in Betrieb nehmen fort.

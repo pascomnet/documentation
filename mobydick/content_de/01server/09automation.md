@@ -16,10 +16,10 @@ toc: true
 
 ## Konzept
 Einige administrative Aufgaben sind regelmäßig durchzuführen. Mit Cronjobs können Sie für einige Aufgaben Zeitpläne hinterlegen, die den jeweiligen Job dem Daemon regelmäßig zur Ausführung übergibt.
-Als Scheduler für die Zeitpläne nutzt die mobydick den Cron-Dienst der Debian Linux Distribution. Sie müssen jedoch die Cron-Dateien nicht manuell bearbeiten, sondern können die Weboberfläche des Systems zur Verwaltung nutzen. Den zentralen Anlaufpunkt bildet hierzu die Liste der Cronjobs. Die hinterlegten Zeitpläne werden durch das Anwenden der Cron Jobs im System aktualisiert und sind dann sofort aktiv.
+Als Scheduler für die Zeitpläne nutzt die [pascom VoIP Software](https://www.pascom.net/de/mobydick-voip/) den Cron-Dienst der Debian Linux Distribution. Sie müssen jedoch die Cron-Dateien nicht manuell bearbeiten, sondern können die Weboberfläche des Systems zur Verwaltung nutzen. Den zentralen Anlaufpunkt bildet hierzu die Liste der Cronjobs. Die hinterlegten Zeitpläne werden durch das Anwenden der Cron Jobs im System aktualisiert und sind dann sofort aktiv.
 
 ## Übersicht der Cronjobs
-Die Liste der Cronjobs finden Sie unter `Applinace` > `Cronjobs`.
+Die Liste der Cronjobs finden Sie unter `Appliance` > `Cronjobs`.
 Bei der Intstallation der mobydick sind schon einige Cronjobs angelegt:
 
 |Cronjob|Beschreibung|Einstellung der Lebensdauer|

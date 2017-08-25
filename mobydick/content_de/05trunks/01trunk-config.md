@@ -1,12 +1,9 @@
 ---
 title: Ämter konfigurieren
-keywords:
-description:
-url:  /aemter/aemter-konfigurieren/
 weight: 11
 toc: true
 prev: /aemter/
-next: /aemter/aemter-kette/
+url:  /aemter/aemter-konfigurieren/
 
 ---
 
@@ -67,7 +64,6 @@ Da verschiedene Ämter-Typen unterschiedliche Variablen benötigen finden Sie im
 |**Ext. aus Header**|Standardmäßig wird die Zielrufnummer aus dem SIP-INVITE ermittelt. Setzt man diese Option auf *ja* wird die Zielrufnummer alternativ aus dem SIP-Header gelesen. Dies wird häufig bei SIP-Anlagenanschlüssen benötigt.|
 |**CLIP Modus**|*CLIP* ist ein Leistungsmerkmal, welches die Übermittlung von Rufnummern bei ausgehenden Rufen ermöglicht. Mögleiche Eintellungen:<br> * *Number*<br> * *Name+Number*<br> * *SIP Header*|
 |**CLIR Modus**|*CLIR* ist ein Leistungsmerkmal, welches die Unterdrückung von Rufnummern bei ausgehenden Rufen ermöglicht. Mögliche Einstellungen:<br> *  *Name+Number*<br> * *SIP Header*|
-
 
 
 ### Rufregeln
@@ -199,6 +195,17 @@ Um in unserem vorherigen Beispiel die 11 aus 09911234511 zu entnehmen, kann man 
 Der Cursor springt zuerst neun Stellen in die Variable und schneidet dann zwei Stellen, also die 11 aus. Nutzt man **${EXTEN:9}** passiert das Selbe, da beim Weglassen der Länge automatisch bis zum Ende der Variable geschnitten wird. Am Einfachsten kann man **${EXTEN:-2}** angeben. Der Cursor springt in die Variable zwei Stellen von hinten vor die 11 und schneidet diese, da keine Länge angegeben ist, bis an das Ende der Variable aus.
 
 
+#### Clip no screening
+
+**CLIP no screening** ist ein Leistungsmerkmal für ausgehende Rufe, welches es ermöglicht eine Rufnummer zu übermittlen, die nicht zum eigenen Telefonanschluss gehört. In der mobydick wird es z. B.  benutzt um bei einer Rufumleitung nach extern (z. B. auf ein Mobiltelefon) die Nummer des ursprünglichen Anrufers zu signalisieren.
+
 {{% notice info %}}
-**CLIP no screening** ist ein Leistungsmerkmal für ausgehende Rufe, welches es ermöglicht eine Rufnummer zu übermittlen, die nicht zum eigenen Telefonanschluss gehört. In der mobydick wird es z. B.  benutzt um bei einer Rufumleitung nach extern (z. B. auf ein Mobiltelefon) die Nummer des ursprünglichen Anrufers zu signalisieren.<br>Möchten Sie diese Funktion nutzen, informieren Sie sich bitte bei Ihrem Telefonanbieter ob *Clip no screening* für Sie freigeschaltet ist oder werden kann.<br> Anschließend muss hierfür eine ausgehende Regel konfiguriert werden.<br>Beispiel:<br>*Quelle*: \_XXXXXX. (die Quelle die anruft hat mindestens 6 Stellen, kann also keine interne Durchwahl sein)<br>*CIDNummer*: ${CALLERID(num)} (ist die Nummer des Anrufers)
+Möchten Sie diese *Clip no screening* nutzen, informieren Sie sich bitte bei Ihrem Telefonanbieter ob diese Funktion für Sie freigeschaltet ist oder werden kann.
 {{% /notice %}}
+
+Anschließend muss hierfür eine *ausgehende Regel* konfiguriert werden:
+
+|Bespiel-Einstellung||Beschreibung|
+|---|---|---|
+|**Quelle**|\_XXXXX.|Die Quelle die anruft hat mindestens 5 Stellen, kann also keine interne Durchwahl sein.|
+|**CIDNummer**|${CALLERID(num)}|Das ist die Nummer des ursprünglichen Anrufers|

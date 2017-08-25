@@ -3,7 +3,7 @@ title: mobydick Fax Server
 keywords:
     - Fax Server
     - Virtueller Fax Server
-    - Fax to Mail 
+    - Fax to Mail
     - Fax to Print
     - Faxe vom Client versehen
     - Mail to Fax
@@ -17,7 +17,7 @@ toc: true
 
 ## Übersicht
 
-Unsere Integration bietet Ihnen eine ganze Reihe von Funktionen, welche dieses Howto näher beschreibt:
+[In unsere VoIP Software](https://www.pascom.net/de/mobydick-voip/) sind eine ganze Reihe von Funktionen zu finden, welche dieses Howto näher beschreibt:
 
 * Einrichten des Faxservers und Definition der Modems
 * Faxempfang und Mail-Weiterleitung mit virtuellen Faxgeräten. Inbound fax-to-mail Gateway.
@@ -113,16 +113,16 @@ Wenn Sie nun z. B. das Adressformat auf 009912700619@meinedomain.de setzen möch
 Wenn Sie nun z. B. das Adressformat auf 009912700619@meinedomain.de setzen möchten, so ist folgende Anpassung nötig:
 
     route_list = "meinedomain.de"
-    
+
 Um die Änderung zu komplettieren, müssen Sie zusätzlich noch die Datei /etc/exim4/update-exim4.conf.conf bearbeiten:
 
     dc_other_hostnames='localhost.localdomain;meinedomain.de'
- 
+
 **Wichtig:**
 {{% notice note %}}
 Abschließend müssen Sie unter "Grundkonfiguration", "Netzwerk" den Haken "EMail-Server" entfernen, die angepassten Dateien werden sonst überschrieben.
 {{% /notice %}}
- 
+
 #### Mail-to-fax Fileformat/Anhang anpassen
 Per Setting kann sys.fax.configure.faxmail.mode konfiguriert werden, welche Bestandteile der EMail bei einem email-to-fax Vorgang verschickt werden:
 
@@ -158,7 +158,7 @@ Um einen Exchangeserver so einzurichten, dass dieser alle *.fax EMails an die mo
 ## Versenden von Faxen per Print Gateway
 
 ### Betriebsart festlegen
-Das print-to-fax Gateway kann sowohl für den automatischen Dokumentenversand aus z. B. ERP Systemen als auch für Dialogbasierte Aufträge mit dem Desktop Client für Endbenutzer genutzt werden. 
+Das print-to-fax Gateway kann sowohl für den automatischen Dokumentenversand aus z. B. ERP Systemen als auch für Dialogbasierte Aufträge mit dem Desktop Client für Endbenutzer genutzt werden.
 
 Die Systemeinstellung sys.fax.configure.faxprint.mode bestimmt hierbei die Betriebsart des Gateways:
 
@@ -204,7 +204,7 @@ Einige Details zum Verlauf der Druckjobs können Sie in der Logatei `/var/log/mo
 
 ### Einstellungen anpassen
 
-Um Ihnen den Umstieg von einem anderen Faxsystem zu erleichtern, können Sie eine Reihe von Einstellungen des Gateways anpassen. 
+Um Ihnen den Umstieg von einem anderen Faxsystem zu erleichtern, können Sie eine Reihe von Einstellungen des Gateways anpassen.
 
 Alle Werte in der folgenden Tabelle werden in den Systemeinstellungen abgelegt. Die meisten Werte müssen bei Bedarf erst in den Systemeinstellungen hinzugefügt werden.
 
@@ -222,11 +222,11 @@ Alle Werte in der folgenden Tabelle werden in den Systemeinstellungen abgelegt. 
 
 ## Fax Druckertreiber einrichten
 {{% notice info%}}
-Auch dieser Versandweg ist plattformunabhängig, sie müssen jedoch auf den Arbeitsstationen einen virtuellen Drucker einrichten. Richten Sie sich bitte je nach Betriebssystem nach folgenden Anleitungen. 
+Auch dieser Versandweg ist plattformunabhängig, sie müssen jedoch auf den Arbeitsstationen einen virtuellen Drucker einrichten. Richten Sie sich bitte je nach Betriebssystem nach folgenden Anleitungen.
 Zusätzlich gibt es für größere Umgebungen auch die Möglichkeit, den Drucker per ActiveDirectory an die Arbeitsplätze zu verteilen.
 Neben normalen Einzelaufträgen ermöglicht Ihnen das print-to-fax Gateway auch die Anbindung von ERP Systemen oder beispielsweise das automatisierte Faxen von Rundschreiben.
 {{% /notice %}}
-### unter MacOS X 
+### unter MacOS X
 
 1. Beginnen Sie die Installation in den Systemeinstellungen / Drucken und Faxen
 ![Screenshot - Installation per Systemsteuerung ](../../images/sendfaxmac1.png?width=60% "Installation per Systemsteuerung")
@@ -273,5 +273,3 @@ Als Druckertreiber wählen Sie den Apple LaserWriter 12 / 640 PS aus.
 5. Installation abschließen
 Nach einer weiteren Bestätigung ist die Installation abgeschlossen.
 ![Screenshot - Installation abschließen ](../../images/sendfaxxp5.jpg?width=70% "Installation abschließen")
-
-

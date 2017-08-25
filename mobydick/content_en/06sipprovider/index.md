@@ -8,7 +8,7 @@ keywords:
     - SIP Trunk Registration
     - SIP Provider Database
 description: How to add and register your pascom PBX with a Voice Trunk.
-icon: <i class="fa fa-phone-square" aria-hidden="true"></i>
+icon: <i class="fa fa-database" aria-hidden="true"></i>
 chapter: true
 ---
 

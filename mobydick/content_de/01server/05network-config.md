@@ -16,7 +16,8 @@ toc: true
 
 ## Netzwerkinfrastruktur planen ##
 
-Bevor Sie mobydick in Betrieb nehmen und Telefone anschließen sollte Sie sich Gedanken darüber machen, wie mobydick in Ihrem schon bestehenden Netzwerk eingebunden werden soll. Dabei stehen folgende Möglichkeiten zur Verfügung:
+Bevor Sie mobydick in Betrieb nehmen und Telefone anschließen sollte Sie sich Gedanken darüber machen, wie mobydick in Ihrem schon bestehenden Netzwerk eingebunden werden soll. Sowohl für [unsere virtuelle Telefonanlage](https://www.pascom.net/de/mobydick-virtuell/ "unsere virtuelle Telefonanlage") als auch für die Hardware Lösung stehen Ihnen folgende Möglichkeiten zur Verfügung:
+
 
 ### Integration der mobydick in das bestehende Firmennetzwerk ###
 

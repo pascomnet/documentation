@@ -166,11 +166,11 @@ Für die zugewiesenen Geräte können Sie Timeouts einstellen:
 
 |Timeouts|Beschreibung|
 |---|---|
-|**Warten Intern**|Nach wie viel Sekunden soll das Telefon bei internen Rufen klingeln.|
+|**Warten Intern**|Nach wie vielen  Sekunden soll das Telefon bei internen Rufen klingeln.|
 |**Läuten Intern**|Wie viele Sekunden soll das Telefon klingeln, bevor der Anrufer in eine Aktion  Intern/Nachher übergeht.|
-|**Warten Extern**|Nach wie viel Sekunden soll das Telefon bei internen Rufen klingeln.|
+|**Warten Extern**|Nach wie vielen Sekunden soll das Telefon bei internen Rufen klingeln.|
 |**Läuten Intern**|Wie viele Sekunden soll das Telefon klingeln, bevor der Anrufer in eine Aktion  Extern/Nachher übergeht.|
-|**Warten Agent**|Nach wie viel Sekunden soll das Telefon klingeln, wenn der Benutzer als Agent einen Anruf über ein Team bekommt.|
+|**Warten Agent**|Nach wie vielen Sekunden soll das Telefon klingeln, wenn der Benutzer als Agent einen Anruf über ein Team bekommt.|
 |**Läuten Agent**|Wie viele Sekunden soll das Telefon klingeln, wenn der Benutzer über ein Team angerufen wird. Dieser Timeout überschreibt den Timeout, der beim Team eingestellt ist.|
 
 Benutzer-Timeouts müssen pro Gerät und pro Benutzer eingestellt werden.
@@ -207,7 +207,7 @@ Richten Sie bitte nur Rufumleitungen über die mobydick ein (über den mobydick 
 Aktionen sind in der mobydick ein wichtiges Werkzeug um den Anrufablauf zu steuern. Aktionen ermöglichen es
 
 * dem Anrufer Ansagen vorzuspielen,
-* außerhalb der Geschäftzeiten den Anrufer auf eine Voicemailbox umzuleiten,
+* außerhalb der Geschäftszeiten den Anrufer auf eine Voicemailbox umzuleiten,
 * einen Anrufen auf einen anderen Benutzer oder Team abzuwerfen, falls der eigentlich Angerufene im Gespräch,
 * und vieles mehr.
 

@@ -7,8 +7,8 @@
 @import "_algolia-search";
 
 #header {
-  background: #080808;
-  border-bottom: 4px solid @black;
+  background: @almostwhite;
+  border-bottom: 4px solid @fontgrey;
 }
 
 #body {
@@ -30,6 +30,10 @@
 #sidebar ul.topics > li > a {
   line-height: 1.5rem;
   font-size: 1.0rem;
+  &:hover {
+    color: @red;
+    //border-bottom: 1px solid @red;
+  }
 }
 
 #sidebar ul li a span {
@@ -37,16 +41,18 @@
 }
 
 #sidebar {
-  background-color: @almostblack;
+  background-color: @almostwhite;
+  border-right: 2px solid @grey-medium;
 
   ul.topics > li.parent {
-    background-color: #323232;
+    background-color: #ffffff;
   }
 
   a {
-    color: @almostwhite;
+    color: @fontgrey;
     &:hover {
       color: @red;
+      //background-color: @fontgrey;
     }
   }
   ul li li {
@@ -55,9 +61,15 @@
   }
 
   ul li.active > a {
+    color: @almostwhite;
+    background: @red;
+    border-bottom: 1px solid @red;
+  }
+
+  ul li.parent > a {
     color: @red;
     //background: @almostwhite;
-    background: #323232;
+    background: #ffffff;
     border-bottom: 1px solid @red;
   }
 }
@@ -90,6 +102,7 @@ a {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  overflow-anchor: none;
 }
 
 #top-bar {
@@ -144,6 +157,7 @@ code {
 #docuname {
   padding: 10px 0 5px 0;
   font-size:18px;
+  color: @fontgrey;
 }
 
 /* End */

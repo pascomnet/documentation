@@ -1,5 +1,5 @@
 ---
-title: mobydick Clients
+title: pascom UC Clients
 url: /clients/
 linkde: /clients/
 next: /clients/client-installation/
@@ -15,4 +15,4 @@ keywords:
     - Flexpanels
 ---
 
-# mobydick Clients
+# pascom UC Clients

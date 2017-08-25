@@ -16,12 +16,12 @@ draft: false
 
 ### Globales Telefonbuch
 
-mobydick stellt allen Benutzer zentral ein Telefonbuch bereit. Dieses Telefonbuch ist unter Windows, Linux und OSX per mobydick Client sowie am Mobility Client auf Android- und iOS-Smartphones abrufbar. Außerdem sind die von mobydick provisionierten IP-Telefone in der Lage direkt auf dieses Telefonbuch zuzugreifen.
+[Die VoIP Software](https://www.pascom.net/de/mobydick-voip/) stellt allen Benutzer zentral ein Telefonbuch bereit. Dieses Telefonbuch ist unter Windows, Linux und OSX per mobydick Client sowie am Mobility Client auf Android- und iOS-Smartphones abrufbar. Außerdem sind die von mobydick provisionierten IP-Telefone in der Lage direkt auf dieses Telefonbuch zuzugreifen.
 
 ### Privates Telefonbuch
 Jeder mobydick Client-Benutzer kann ein eigenes privates Telefonbuch anlegen und pflegen:
 
-* Es können über den Client neue Telefonbucheintäge angelegt werden.
+* Es können über den Client neue Telefonbucheinträge angelegt werden.
 * Ruft ein unbekannter Anrufer an, kann ein Eintrag im privaten Telefonbuch hinterlegt werden.
 * Einträge aus dem globalen Telefonbuch können ins private Telefonbuch übernommen abgeändert werden.
 
@@ -39,7 +39,7 @@ Behandlung der verschiedenen Telefonbücher:
 
 Priorisierung der Telefonbücher bei eingehenden Anrufen:
 
-* Bei eingehnden Anrufen, wird immer zuerst das eigene private und anschließend das globale Telefonbuch nach der Nummer durchsucht, folglich wird, wenn im privaten Telefonbuch ein Eintrag vorhanden ist, dieser im Display angezeigt.
+* Bei eingehenden Anrufen, wird immer zuerst das eigene private und anschließend das globale Telefonbuch nach der Nummer durchsucht, folglich wird, wenn im privaten Telefonbuch ein Eintrag vorhanden ist, dieser im Display angezeigt.
 * Wird auf eine Queue angerufen, und nur ein Agent hat in seinem privaten Telefonbuch einen Eintrag zu dieser Nummer, sieht nur er den Namen im Display.
 
 ## Telefonbucheinträge von Benutzern und Teams

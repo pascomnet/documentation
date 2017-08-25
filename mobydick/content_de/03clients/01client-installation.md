@@ -1,10 +1,10 @@
 ---
 title: mobydick Desktop Client installieren
-keywords: 
+keywords:
     - Desktop Client
     - Desktop Client installieren
     - Installation mit Adminrechten auf einem Desktop
-description: mobydick Desktop Client installieren, bereitstellen und Anmeldung. 
+description: mobydick Desktop Client installieren, bereitstellen und Anmeldung.
 url: /clients/client-installieren/
 prev: /clients/
 next: /clients/client-nutzen/
@@ -13,7 +13,8 @@ toc: true
 ---
 
 ## Installation
-Der mobydick Desktop-Client ist für jeden Benutzer ohne Authentifizierung vom mobydick Server herunterladbar.Die Installation kann auch ohne Administratorrechte erfolgen und somit auf Wunsch vom Benutzer selbst erledigt werden.
+
+[Unsere VOIP Software Lösungen](https://www.pascom.net/de/mobydick-voip/ "Unsere VOIP Software Lösungen") bieten einen Desktop-Client, der für jeden Benutzer ohne Authentifizierung vom pascom Server heruntergeladen werden kann. Die Installation kann auch ohne Administratorrechte erfolgen und somit auf Wunsch vom Benutzer selbst erledigt werden.
 ![Screenshot - mobydick Desktop Client installieren](../../images/client_themes.jpg?width=70% "mobydick Desktop Client installieren")
 
 Surfen Sie auf die IP Ihrer mobydick und Klicken Sie auf dem Tab **Service**:
@@ -80,12 +81,10 @@ Darauf erscheint dieses Fenster:
 ### Linux
 Unter Linux bringen wir keinen klassischen Installer mit.
 
-1. Laden Sie das tar.bz2-Paket aus der mobydick über die Service Seite herunter
-2. Entpacken und führen Sie über die Shell das Paket mit folgenden Befehlen aus:
-Eingabe via Terminal
-
+Laden Sie das tar.bz2-Paket aus der mobydick über die Service Seite herunter, entpacken und führen Sie über die Shell das Paket mit folgenden Befehlen aus:
 
     tar xfvj mobydickClient-x.xx.xx.tar.bz2  
+    
     ./md_client/bin/md_client
 
 

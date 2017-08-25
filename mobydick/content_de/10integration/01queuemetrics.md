@@ -4,7 +4,7 @@ keywords:
     - Queuemetrics Intregraton
     - Auswertung von Warteschleifen (Teams) und deren Agenten
     - Loway
-description: Queuemetrics ist eine Software für Callcenter zur Auswertung von Warteschleifen (Teams) und deren Benutzern. 
+description: Queuemetrics ist eine Software für Callcenter zur Auswertung von Warteschleifen (Teams) und deren Benutzern.
 url: /integrationen/queuemetrics/
 prev: /integrationen/
 next: /integrationen/wombatdialer/
@@ -14,7 +14,7 @@ toc: true
 
 ## Übersicht
 
-Queuemetrics ist eine Software für Callcenter zur Auswertung von Warteschleifen (Teams) und deren Benutzern. Queuemetrics wird auf einem separatem Server installiert und speichert seine Daten in einer MySQL Datenbank. Die MySQL Datenbank kann entweder auch auf dem Queuemetrics-  oder einen beliebigen anderen Server installiert werden. mobydick schreibt die zur Auswertung nötigen Daten ebenfalls in den MySQL Server.
+Queuemetrics ist eine [Software für Callcenter](https://www.pascom.net/de/call-center/) zur Auswertung von Warteschleifen (Teams) und deren Benutzern. Queuemetrics wird auf einem separatem Server installiert und speichert seine Daten in einer MySQL Datenbank. Die MySQL Datenbank kann entweder auch auf dem Queuemetrics-  oder einen beliebigen anderen Server installiert werden. mobydick schreibt die zur Auswertung nötigen Daten ebenfalls in den MySQL Server.
 
 ## Konfiguration
 
@@ -22,7 +22,7 @@ Queuemetrics ist eine Software für Callcenter zur Auswertung von Warteschleifen
 Queuemetics ist ein Produkt der Firma Loway. Laden Sie sich die neueste Queuemetrics Version herunter und folgen Sie der Anleitung des Herstellers um den Server einzurichten. Für das Setup benötigen Sie auch einen MySQL Server. Machen Sie auch hier ein Standardsetup und passen die Datenbanken und Benutzer gemäß der Queuemetrics Anleitung an. Wie empfehlen Ihnen Queuemetrics und den MySQL Server auf dem selben Server zu betrieben.
 Standardmäßig liest Queuemetrics die Warteschleifen-Daten nicht aus der Datenbank sondern versucht lokal die Datei /var/log/asterisk/queues.log zu finden.
 Dises Verhalten können Sie in der Weboberfläche von Queuemetrics unter Administrative tools > Edit system parameters einstellen:
-    
+
     ..
     default.queue_log_file=sql:P001
     ..
@@ -43,7 +43,7 @@ Danach müssen Sie den MySQL Server neu starten:
 Auch empfiehlt es sich für den Zugriff der mobydick einen eigenen Benutzer am MySQL Server anzulegen und nicht den Queuemetrics Benutzer zu verwenden. Starten Sie die MySQL Console:
 
     mysql -u root -p
-    
+
 Hier müssen Sie nun das root Passwort für den MySQL Server eingeben. Dies haben Sie in der Regel beim Setup des MySQL Servers selbst vergeben.
 
 
@@ -65,7 +65,7 @@ Ersetzen Sie USERNAME und PASSWORT mit den eben angelegten Benutzerdaten. DB_HOS
 #### Queuemetrics Datenbank anbinden
 Loggen Sie sich auf der mobydick Weboberfläche ein und wählen Sie den Menüpunkt Erweitert > Queuemetrics:
 
- 
+
 |Parameter|Bedeutung|
 |---------|---------|
 |Queuemetrics Anbindung aktiv|	Wenn Sie hier ja wählen startet mobydick den Dienst der die Warteschleifen-Daten kontinuierlich in der Queuemetrics Datenbank speichert|
@@ -86,7 +86,7 @@ Hierzu müssen Sie (falls noch nicht geschehen) zuerst das AMI für öffentliche
 
  Legen Sie nun auf der mobydick einen Manager Account für Queuemetrics unter Appliance > Asterisk Managerkonten an:
 
- 
+
 Manager Account eintragen
 Den zuvor in mobydick erstellen Manager Account tragen Sie in der Queuemetrics Weboberfläche unter Administrative tools > Edit system parameters ein:
 ..
@@ -98,7 +98,7 @@ Ersetzten Sie USERNAME  und PASSWORT mit den Benutzerdaten des zuvor erstellten 
 ### Laden der Daten von mobydick zu Queuemetrics prüfen
 Um zu sehen ob die Übertragung der Daten von mobydick in die Queuemetrics Datenbank funktioniert können Sie das qloader.log einsehen:
 
-    root@mobydick:/var/log/asterisk# tail /var/log/asterisk/qloader.log 
+    root@mobydick:/var/log/asterisk# tail /var/log/asterisk/qloader.log
      |Tue May 14 14:52:53 2013|QueueMetrics MySQL loader - $Revision: 1.29 $
      |Tue May 14 14:52:53 2013|Partition P001 - PID 9161 - TZ offset: 0 s. - Heartbeat after 900 s.
      |Tue May 14 14:52:53 2013|Now connecting to DB queuemetrics on 10.5.6.207 as user mobydick with password queuemetrics
@@ -106,7 +106,7 @@ Um zu sehen ob die Übertragung der Daten von mobydick in die Queuemetrics Daten
 ### Manager Verbindung testen
 Loggen Sie sich in der Queuemetrics Weboberfläche ein. Unter dem Punkt System diagnostic tools > AMI tester können Sie die Verbindung zur mobydick testen. Das Ergebnis sollte in etwa wie folgt aussehen:
 
-    Status 
+    Status
     AMI URL: tcp:queuemetrics:queuemetrics@10.5.6.77:5038
     callfile.agentremovemember_ht is OK
     callfile.agentaddmember_ht is OK
