@@ -7,9 +7,9 @@ keywords:
     - Telefonie-Funktionen von Windows
     - Windows Tapi Integration
     - Click to Dial unter windows
+prev: /clients/mobile-hub-einrichten/
 url: /clients/tapi/
-prev: /clients/teams-im-client/
-next: /clients/mobile-hub-einrichten/
+next: /clients/flexpanel-erstellen/
 weight: 35
 toc: true
 ---
@@ -53,8 +53,8 @@ Die TAPI Schnittstelle spezifiziert eine Vielzahl an anrufbezogenen Funktionen, 
 
 ## Unterstütze Betriebssystemversionen
 
-| Client| Server|
-|-------|-------|
+|Client|Server|
+|---|---|
 |Windows 7 (32bit/64bit) |Windows Server 2008R2 (32bit/64bit)|
 |Windows 8 (32bit/64bit)|Windows Server 2012 (32bit/64bit)|
 |Windows 8.1 (32bit/64bit)|Windows Server 2012R2 (32bit/64bit)|

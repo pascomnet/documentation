@@ -1,15 +1,16 @@
 ---
 title: FlexPanel
 keywords:
-    -
-description:
+    - Flexpanel
+prev: /clients/tapi/
 url: /clients/flexpanel-erstellen/
-prev: /clients/mobile-hub-einrichten/
-weight: 37
+weight: 36
 toc: true
 ---
 
 ![FlexPanel Demo](/flexpanel_demo.png)
+
+<!--FIXME nutzbar mit pascom classic client -->
 
 ## Übersicht
 

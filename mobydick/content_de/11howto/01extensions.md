@@ -14,9 +14,10 @@ draft: false
 
 Eine Durchwahl ist der Teil einer Rufnummer mit dem man einen Benutzer oder ein Team direkt erreichen kann. Durchwahlen werden in der pascom auch für Faxe oder Kurzwahlnummern (wenn man z. B. eine externe Mobilrufnummer über eine Durchwahl anruft) verwendet, oder als Durchwahl-Schalter um bestimmt Aktionen zu aktivieren oder zu deaktivieren.
 
-## Extentionpool
+## Durchwahl-Pool
+<!-- FIXME extension-pool ersetzen -->
 
-Haben Sie sich über Durchwahlen, die Sie vergeben möchten, noch keine Gedanken gemacht, können Sie sich aus dem Extensionpool bedienen.
+Haben Sie sich über Durchwahlen, die Sie vergeben möchten, noch keine Gedanken gemacht, können Sie sich aus dem Durchwahl-Poolpool bedienen.
 In den Systemeinstellungen sind Default-Startwerte definiert. Diese Startwerte können auch angepasst werden. Durchwahlen aus dem Extensionpool werden inkrementell ab dem Startwert vergeben. Wurden schon Durchwahlen manuell vergeben, werden diese übersprungen.
 
 In den Systemeinstellungen können Sie die Startwerte anpassen. Suchen Sie in der Web-UI über das Suchfeld nach *extensionpool*:
@@ -35,13 +36,14 @@ Durchwahlen benutzen. Bitte passen Sie diese auf Ihre Rufummern an.
 ## Verteilung der Durchwahlen
 
 Ob zwei, drei oder vierstellige Durchwahlen hängt natürlich von der Benutzeranzahl und dem vom Provider erhaltenen Rufnummernblock ab.
-Generell kann man sagen das die Anzahl der Durchwahlstellen sich bei bedarf leichter erhöhen als verkleinern lässt.
+Generell kann man sagen das die Anzahl der Durchwahlstellen sich bei Bedarf leichter erhöhen als verkleinern lässt.
 Alles was von intern und extern direkt unter der gleichen Rufnummer/Durchwahl erreichbar sein soll, muss natürlich im Rufnummernblock des Providers angesiedelt sein.
 
 {{% notice info %}}
 **Bitte beachten Sie folgendes bei der Vergabe von Durchwahlen:**<br>
 - Die Durchwahl 0 darf intern nicht vergeben werden.<br>
 - Interne Durchwahlen dürfen nicht mit 0 anfangen.<br>
+- Einstellige Durchwahlen dürfen nicht vergeben werden.<br>
 - Die Durchwahlen 110 und 112 dürfen nicht vergeben werden, da es sich hierbei um Notrufnummern handelt.
 {{% /notice %}}
 
@@ -55,18 +57,18 @@ Ortsvorwahl + Stammnummer: 099112345.
 
 Es stehen der Rufnummerblock von -0 bis -999 zur Verfügung.
 
-Es werden 3-stellige Duchwahlen für Benutzer verwendet und jeder Benutzer hat ein virtuelles Faxgerät mit eingener intern erreichbaren Fax-Durchwahl. Nach extern wird die Firmenfaxnummer 999 signalisert.
+Es werden 3-stellige Duchwahlen für Benutzer verwendet und jeder Benutzer hat ein virtuelles Faxgerät mit eigener intern erreichbaren Fax-Durchwahl. Nach extern wird die Firmenfaxnummer 999 signalisert.
 
 **Zentrale:**
 
-* Die Zentrale, die nach außen hin meistens die -0 wird intern als eine Warteschlange mit der Durchwahl 100 angelegt.
-* An der Zentrale kann das virtuelle Firmenfax 999 angehängt werden.
+* Die Zentrale, die nach außen hin meistens über die -0 erreichbar ist, wird intern als eine Warteschlange mit der Durchwahl 100 angelegt.
+* An das Team der Zentrale kann das virtuelle Firmenfax 999 angehängt werden.
 * Mitarbeiter in der Zentrale erhalten die Durchwahlen 101 - 199.
 
 **Vertrieb:**
 
 * Die Durchwahl der Vertriebs-Warteschlange ist die 200.
-* Mitarbeiter in des Vertriebs erhalten die Durchwahlen 201 - 299.
+* Mitarbeiter im Vertriebs erhalten die Durchwahlen 201 - 299.
 
 **Technik:**
 
@@ -75,7 +77,7 @@ Es werden 3-stellige Duchwahlen für Benutzer verwendet und jeder Benutzer hat e
 
 
 {{% notice note %}}
-Durch die blockweise Verteilung der Duchwahlen, können durch ausgehende Regeln im [Amt](/aemter/aemter-konfigurieren/#rufregeln) die eigenen Durchwahlen hinter Abteilungsservicenummern maskiert werden, d. h. der Angerufenen sieht nicht die eigenen Durchwahl, sondern die Durchwahl der Abteilung.
+Durch die blockweise Verteilung der Duchwahlen, können durch ausgehende Regeln im [Amt](/aemter/aemter-konfigurieren/#rufregeln) die eigenen Durchwahlen hinter Abteilungsservicenummern maskiert werden, d. h. der Angerufene sieht nicht die interne Durchwahl, sondern die Durchwahl der Abteilung.
 <br><br>**Beispiel:** Alle Benutzer der Zentrale signalieren nach extern die -0<br>
 *Quelle: _1XX.*<br>
 *CIDNummer: 0991123450*
