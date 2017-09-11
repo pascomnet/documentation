@@ -60,7 +60,7 @@ Das System Schlägt bereits eine Einstellung vor, entsprechend Ihrer Auswahl bei
 Der Zeitpunkt der Sicherung wird in **crontab**-Syntax angegeben. Sollten Sie damit nicht vertraut sein, können Sie auf Vorschläge klicken und sich danach orientieren.
 {{% /notice %}}
 
-#### Backup vom Server kopieren ####
+#### Backup vom Server kopieren
 Das zuletzt erstellte Backup liegt unter /BACKUP/appliance.iso am mobydick Server. Am bequemsten nutzen Sie die Weboberfläche um das jeweils letzte Backup herunter zu laden.
 
 {{% notice info %}}

@@ -13,40 +13,34 @@ beroNet Karten und Gateways sind modular aufgebaut. Das bedeutet für Sie, dass 
 
 
 ### beroNet VoIP Gateways
-Das beroNet VoIP Gateway wird an die LAN Verkabelung angeschlossen und erhält eine IP-Adresse aus dem Telefonnetz. An die vorderen Anschlüsse der Gateway werden dann z. B. das öffentliche Telefonnetz bzw. analoge Endgeräte angeschlossen. beroNet Gateways können modular mit Modulen ausgestattet werden. Je nach Modulen sind die Ports an der Vorderseite Analog oder ISDN. Durch die Anbindung per LAN eigenen sich beroNet Gateways ideal für Umgebungen in denen mobydick in einer virtuellen Maschine betrieben wird.
+Das beroNet VoIP Gateway wird an die LAN Verkabelung angeschlossen und erhält eine IP-Adresse aus dem Telefonnetz. An die vorderen Anschlüsse der Gateway werden dann z. B. das öffentliche Telefonnetz bzw. analoge Endgeräte angeschlossen. beroNet Gateways können modular mit Modulen ausgestattet werden. Je nach Modulen sind die Ports an der Vorderseite Analog oder ISDN. Durch die Anbindung per LAN eigenen sich beroNet Gateways ideal für Umgebungen in denen pascom in einer virtuellen Maschine betrieben wird.
 
-![Illustration - beroNet VoIP Gateway](../../images/beronet_voip_gateway.png "beroNet VoIP Gateway im Netzwerk")
-
+![beroNet Gateway](/beronet_voip_gateway.png)
 
 ### beroNet Karten
-beroNet Karten werden in die mobydick eingebaut und erhalten beim Hochfahren der mobydick automatisch eine IP-Adresse aus dem Zero-Config-Netzwerk **169.254.0.0/16**. Bis auf diesen Unterschied lassen sich beroNet Gateways und Karten identisch konfigurieren.
+beroNet Karten werden in die pascom eingebaut und erhalten beim Hochfahren der pascom automatisch eine IP-Adresse aus dem Zero-Config-Netzwerk **169.254.0.0/16**. Bis auf diesen Unterschied lassen sich beroNet Gateways und Karten identisch konfigurieren.
 
-![Illustration - beroNet Karten](../../images/beronet_karten.png "beroNet VoIP Karten")
-
-
-### beroNet Module - Beispiel
-
-![Illustration - beroNet Module](../../images/beronet_karten_beispiel.jpg)
 
 ## ISDN und Analoge Nebenstellen
 Nebenstellen wie Faxgeräte, Faxserver, Telefone, Türöffner, etc. können entweder direkt oder via SIP angebunden werden.
 
 ### Anbindung direkt
-![Illustration - ISDN Anbindung direkt](../../images/beronet_direkt.png?width=90% "Anbindung direkt über ISDN Gateway")
 
-**Anrufe** werden **nicht in SIP gewandelt** und über die mobydick geschickt sondern direkt auf der beroNet geroutet. Kommt beispielsweise ein eingehender Anruf für das Faxgerät herein wird dieser direkt von der Beronet mit dem Faxgerät verbunden.
+![beroNet direkt](/beronet_direkt.png)
+
+**Anrufe** werden **nicht in SIP gewandelt** und über die pascom geschickt sondern direkt auf der beroNet geroutet. Kommt beispielsweise ein eingehender Anruf für das Faxgerät herein wird dieser direkt von der Beronet mit dem Faxgerät verbunden.
 
 Der **Vorteil** dieser Methode ist, dass Verbindungen die nicht in SIP gewandelt werden. Für Faxanwendungen erzielt man dadurch wesentlich bessere Ergebnisse. Ein weitere Anwendugsfall ist die Übertragung von ISDN Daten.  
 
-**Nachteil** ist, dass die mobydick von diesen Anrufen nichts "mit bekommt". Dadurch kann mobydick nicht in den Anruffluss eingreifen. Z. B. den Anruf nach einem Timeout an ein anderes Ziel leiten, Geschäftszeiten prüfen, usw.. Außerdem muss sich das ISDN Amt und die betroffene Nebenstelle auf der selben beroNet Hardware befinden.
+**Nachteil** ist, dass die pascom von diesen Anrufen nichts "mit bekommt". Dadurch kann pascom nicht in den Anruffluss eingreifen. Z. B. den Anruf nach einem Timeout an ein anderes Ziel leiten, Geschäftszeiten prüfen, usw.. Außerdem muss sich das ISDN Amt und die betroffene Nebenstelle auf der selben beroNet Hardware befinden.
 
 ### Anbindung via SIP
 
-![Illustration - Anbindung via SIP](../../images/beronet_via_sip.png?width=90% "Anbindung via SIP über Gateway")
+![beroNet über SIP](/beronet_ueber_sip.png)
 
-**Via SIP** bedeutet, dass alle Rufe für die entsprechende Nebenstelle per SIP über die mobydick geroutet werden. Kommt beispielsweise ein Anruf für das Faxgerät herein wird dieser zuerst über **(1)** zur mobydick geroutet und dann weiter über **(2)** zum analogen Faxgerät.
+**Via SIP** bedeutet, dass alle Rufe für die entsprechende Nebenstelle per SIP über die pascom geroutet werden. Kommt beispielsweise ein Anruf für das Faxgerät herein wird dieser zuerst über **(1)** zur pascom geroutet und dann weiter über **(2)** zum analogen Faxgerät.
 
-Der **Vorteil** dieser Methode ist, dass die Verbindungen über die mobydick geroutet werden. Dadurch kann mobydick in den Anruffluss eingreifen z. B. den Anruf nach einem Timeout an ein anderes Ziel leiten, Geschäftszeiten prüfen, usw.. muss die Nebenstelle nicht auf der selben Beronet Hardware wie die Amtsleitungen befinden.
+Der **Vorteil** dieser Methode ist, dass die Verbindungen über die pascom geroutet werden. Dadurch kann pascom in den Anruffluss eingreifen z. B. den Anruf nach einem Timeout an ein anderes Ziel leiten, Geschäftszeiten prüfen, usw.. muss die Nebenstelle nicht auf der selben Beronet Hardware wie die Amtsleitungen befinden.
 
 **Nachteil** ist, dass z. B. Faxanwendungen in manchen Fällen nicht so stabil laufen und ISDN Datenübertragungen nicht möglich sind.
 
@@ -54,21 +48,21 @@ Der **Vorteil** dieser Methode ist, dass die Verbindungen über die mobydick ger
 
 Als Vorbereitung müssen Gateways wie Karten mit den passenden Modulen bestückt werden. Haben Sie Ihre Hardware bei pascom bestellt sind diese Module bereits installiert. Detail hierzu wie z. B. Portbelegung, usw. entnehmen Sie bitte direkt der [Beronet Dokumentation] (http://wiki.beronet.com/index.php/Main_Page "Zur beroNet Dokumentation").
 
-PCI Karten bauen Sie einfach in den MobDick Server ein und fahren diesen hoch. mobydick wird der Karte automatisch eine IP aus dem Netzwerk **169.254.0.0/16** zuweisen.
+PCI Karten bauen Sie einfach in den MobDick Server ein und fahren diesen hoch. pascom wird der Karte automatisch eine IP aus dem Netzwerk **169.254.0.0/16** zuweisen.
 
-Gateways verbinden Sie mit Ihrem Switch. Schließen Sie dann das Netzteil an und lassen die Gateway booten. Die Gateway zieht sich automatisch eine IP-Adresse per DHCP. Falls Sie in diesem Netz keinen DHCP betrieben wird, ist mobydick in der Lage die Gateway auch ohne IP aufzuspüren und zu konfigurieren solange sich diese im selben Netzsegment befindet.
+Gateways verbinden Sie mit Ihrem Switch. Schließen Sie dann das Netzteil an und lassen die Gateway booten. Die Gateway zieht sich automatisch eine IP-Adresse per DHCP. Falls Sie in diesem Netz keinen DHCP betrieben wird, ist pascom in der Lage die Gateway auch ohne IP aufzuspüren und zu konfigurieren solange sich diese im selben Netzsegment befindet.
 
 
 ## Konfiguration
 
 ### Auffinden und Anlegen von beroNet Hardware
-Sobald Sie die beroNet Karte eingebaut oder beroNet Gateway mit dem LAN verbunden haben ist mobydick in der Lage die Hardware automatisch zu erkennen. Bei beroNet Gateways gilt dies nur solange sich die Gateway im selben Netzsegment wie die mobydick befindet.
+Sobald Sie die beroNet Karte eingebaut oder beroNet Gateway mit dem LAN verbunden haben ist pascom in der Lage die Hardware automatisch zu erkennen. Bei beroNet Gateways gilt dies nur solange sich die Gateway im selben Netzsegment wie die pascom befindet.
 
-Wählen Sie in der mobydick Weboberfläche Gateways > Gatewayliste und drücken Sie auf die `+Hinzufügen` Schaltfläche. mobydick wird nun versuchen die beroNet Hardware zu finden:
+Wählen Sie in der pascom Weboberfläche Gateways > Gatewayliste und drücken Sie auf die `+Hinzufügen` Schaltfläche. pascom wird nun versuchen die beroNet Hardware zu finden:
 ![Screenshot - beroNet Gateway erkennen](../../images/beronet_gateway_erkennen.png?width=90% "Neues beroNet Gateway erkennen")
 
 
-Gelingt dies nicht, oder befindet sich eine beroNet Gateway in einem anderen Netzsegment als die mobydick haben Sie im Anschluss die Möglichkeit das Gerät per Schaltfäche `Manuell anlegen` hinzuzufügen.
+Gelingt dies nicht, oder befindet sich eine beroNet Gateway in einem anderen Netzsegment als die pascom haben Sie im Anschluss die Möglichkeit das Gerät per Schaltfäche `Manuell anlegen` hinzuzufügen.
 
 In der Dropdownbox `Gateways` sehen sie alle vom System erkannten beroNet Gateways und Karten:
 ![Screenshot - beroNet Gateway anlegen](../../images/beronet_gateway_anlegen.png?width=90% "Neues beroNet Gateway anlegen")
@@ -111,11 +105,11 @@ Unter `Hinzufügen` haben Sie folgende Auswahl:
 |Typ|Beschreibung|Anwendungsfall|
 |---|---|---|
 |Analoges Endgerät direkt|Analoges Endgerät welches direkt auf der Berofix Hardware geroutet wird|Faxgerät, Türöffner, Feuermeldeanlage|
-|Analoges Endgerät via SIP|Analoges Endgerät welches über die mobydick geroutet wird|Telefon|
+|Analoges Endgerät via SIP|Analoges Endgerät welches über die pascom geroutet wird|Telefon|
 |ISDN Telefon direkt|ISDN Telefon welches direkt auf der Berofix Hardware geroutet wird |Notruftelefon|
 |ISDN Fax direkt|ISDN Fax welches direkt auf der Berofix Hardware geroutet wird |Faxserver (z. B. Tobit Faxware)|
 |ISDN Datenleitung direkt|ISDN Datenleitung welches direkt auf der Berofix Hardware geroutet wird|Onlinebanking, ISDN Maschinensteuerung, Alarmanlage|
-|ISDN Telefon via SIP|ISDN Telefon welches über die mobydick geroutet wird|Telefon|
+|ISDN Telefon via SIP|ISDN Telefon welches über die pascom geroutet wird|Telefon|
 
 
 <!-- FIXME -->

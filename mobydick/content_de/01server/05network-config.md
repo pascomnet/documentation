@@ -14,12 +14,12 @@ toc: true
 
 ---
 
-## Netzwerkinfrastruktur planen ##
+## Netzwerkinfrastruktur planen
 
 Bevor Sie mobydick in Betrieb nehmen und Telefone anschließen sollte Sie sich Gedanken darüber machen, wie mobydick in Ihrem schon bestehenden Netzwerk eingebunden werden soll. Sowohl für [unsere virtuelle Telefonanlage](https://www.pascom.net/de/mobydick-virtuell/ "unsere virtuelle Telefonanlage") als auch für die Hardware Lösung stehen Ihnen folgende Möglichkeiten zur Verfügung:
 
 
-### Integration der mobydick in das bestehende Firmennetzwerk ###
+### Integration der mobydick in das bestehende Firmennetzwerk
 
 Vor allem in kleineren und mittleren Netzwerken kann mobydick direkt in die bestehende Netzwerkstruktur integriert werden. Dadurch sind nur geringe Anpassungen der vorhandenen IT-Umgebung erforderlich. Ein vorhandener DHCP-Server kann hierbei von mobydick und den angeschlossenen Endgeräten mitbenutzt werden (siehe DHCP-Server-Konfiguration). Alternativ konfigurieren Sie mobydick als DHCP-Server für das gesamte Netzwerk.
 
@@ -27,7 +27,7 @@ Vor allem in kleineren und mittleren Netzwerken kann mobydick direkt in die best
 Nahezu alle von der mobydick unterstützen IP-Telefone haben einen eingebauten Switch. Um Steckplätze an Ihrem Switch und Verkabelung zu sparen, kann daran ein Arbeitsplatzrechner oder ein weiteres IP-Endgerät angeschlossen werden. Lesen Sie dazu die Herstellerspezifikation Ihrer IP-Endgeräte.
 {{% /notice %}}
 
-### Trennung von Telefon- und Firmennetz ###
+### Trennung von Telefon- und Firmennetz
 
 Für größtmögliche Flexibilität und Betriebssicherheit wird mobydick in einem vom Firmennetzwerk getrennten Telefonnetzwerk betrieben. Diese Netzwerkarchitektur bring zahlreiche Vorteile mit sich:
 
@@ -40,20 +40,20 @@ Für größtmögliche Flexibilität und Betriebssicherheit wird mobydick in eine
 Zu administrativen Zwecken sollte ein Zugriff auf das Telefonnetzwerk ermöglicht werden, um sowohl mobydick als auch ggf. die angeschlossenen Endgeräte über das Netzwerk konfigurieren zu können.
 {{% /notice %}}
 
-#### Trennung über Schnittstellen der mobydick ####
+#### Trennung über Schnittstellen der mobydick
 
 Zur Trennung des Firmen- und Telefonnetz können zwei Netzwerkschnittstellen der mobydick konfiguriert werden. Die Telefonanlage erhält in beiden Netzten je eine IP-Adresse und kann dadurch gleichermaßen mit den Telefonen im Telefonnetz sowie mit den Arbeitsstationen (z. B. zur Verwendung des mobydick Clients) im Firmennetz kommunizieren.  
 Als DHCP-Server im Telefonnetz wird der mobydick eigene verwendet.
 
-#### Trennung über ein Gateway ####
+#### Trennung über ein Gateway
 Alternativ können Sie ein bereits vorhandenes Sicherheitsgateway benutzen, um das Telefonnetzwerk anzubinden. Alle Aufgaben des Routings und der Filterung übernimmt in diesem Fall Ihre vorhandene Firewall.
 
 
-## Konfiguration des DHCP-Servers ##
+## Konfiguration des DHCP-Servers
 
 mobydick benötigt einen DHCP-Server um an die angeschlossenen IP-Telefone IP-Adressen und eine Provisionierungs-URL zu verteilen. Hierzu können Sie den in der mobydick integrierten DHCP-Server verwenden oder Ihren bereits vorhandenen DHCP-Server weiterhin nutzen.
 
-### mobydick DHCP-Server ###
+### mobydick DHCP-Server
 
 Die Nutzung des mobydick DHCP-Server hat mehrere Vorteile:
 
@@ -75,7 +75,7 @@ Zunächst muss der DHCP-Server aktiviert werden, dabei gibt es folgende Möglich
 |von Bereich... bis Bereich|Definieren den Pool an IP-Adressen der an die Geräte vergeben wird. Der DHCP Server beginnt dabei mit der letzten IP-Adresse des Pools.|
 |Domain-Name, Domain-Name-Server, Gateway |Parameter die an das anfragende Gerät weitergegeben werden.|
 
-### Windows DHCP-Server nutzen###
+### Windows DHCP-Server nutzen
 
 Beim Windows DHCP-Server oder anderen DHCP Servern die diesem Optionsschema folgen müssen Sie die DHCP-Option 66 und ggf. die Option 67 setzen, wobei Sie bitte 192.168.1.1 im Folgenden durch die IP-Adresse Ihrer mobydick ersetzen.
 
@@ -99,7 +99,7 @@ Es ist auch möglich den mobydick DHCP und den Windows DHCP im selben Netz zu be
 |Auerswald|00-09-52-\*-\*-\*|
 |Siemens OpenStage|00-01-E3-\*-\*-\* <br> 00-1A-E8-\*-\*-\*|
 
-### Linux DHCP-Server nutzen###
+### Linux DHCP-Server nutzen
 
 Unter Linux heißt die Option 66 tftp-server-name und die Option 67 filename. Durch diese Option wird dem anfragendem Telefon mitgeteilt wo es sich seine Konfiguration herunterladen soll. Entnehmen Sie die Werte aus Folgender Tabelle, wobei Sie bitte 192.168.1.1 durch die IP-Adresse Ihrer mobydick ersetzen.
 
@@ -117,12 +117,12 @@ Ergänzen Sie in der Linux DHCP-Konfig einfach folgende Zeile (hier als Beispiel
     option tftp-server-name "http://192.168.1.1/provisioning/";
 
 
-## Konfiguration der Netzwerkschnittstellen ##
+## Konfiguration der Netzwerkschnittstellen
 
 Die Netzwerkkonfiguration befindet sich unter `Appliance` > `Netzwerkschnittstellen`.
 Diese Liste gibt eine Übersicht über alle vorhandenen Netzwerkschnittstellen, egal ob diese bereits konfiguriert wurden oder nicht.
 
-### Konfiguration einer Netzwerkschnittstelle ändern ###
+### Konfiguration einer Netzwerkschnittstelle ändern
 
 Markieren Sie die gewünschte Netzwerkschnittstelle mit einem Häkchen (Mehrfachauswahl ist auch möglich) und klicken Sie auf `Bearbeiten`. Folgende Modi stehen hier zur Verfügung:
 
@@ -136,7 +136,7 @@ Markieren Sie die gewünschte Netzwerkschnittstelle mit einem Häkchen (Mehrfach
 Änderungen an den Netzwerkeinstellungen führen nach Anwenden der Konfiguration zum Abbruch aller aktiven Gespräche.
 {{% /notice %}}
 
-### Virtuelle Schnittstelle hinzufügen ###
+### Virtuelle Schnittstelle hinzufügen
 
 {{% notice note %}}
 Es können nur virtuelle Schnittstellen (VLANs) hinzugefügt werden. Alle vorhandenen physikalischen Schnittstellen werden automatisch aufgelistet und müssen somit nicht hinzugefügt werden.

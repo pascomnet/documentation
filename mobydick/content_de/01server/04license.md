@@ -11,7 +11,7 @@ toc: true
 ---
 
 
-## Lizenz einspielen ##
+## Lizenz einspielen
 
 ### Wann muss eine mobydick Lizenz eingespielt werden?
 Sie müssen Ihre Lizenz einspielen, wenn

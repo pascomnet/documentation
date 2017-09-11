@@ -3,9 +3,9 @@ title: Zugriff und Nutzung der Bedienoberflächen
 keywords:
     - IP-Adresse ermitteln
     - Zugriff auf die Weboberfläche
-    - Zugriff auf die mobydick TUI
+    - Zugriff auf die pascom TUI
     - Zugriff per SSH
-description: Erfahren Sie, wie Sie Zugriff auf Ihre mobydick erhalten und die Bedienoberfläche nutzen
+description: Erfahren Sie, wie Sie Zugriff auf Ihre pascom erhalten und die Bedienoberfläche nutzen
 url: /server/zugriff/
 prev: /server/server-installieren/
 next: /server/lizenzen-verwalten/
@@ -18,36 +18,36 @@ Um auf das System zugreifen zu können, benötigen Sie die IP-Adresse der Telefo
 
 Falls Sie einen [vorinstallierte IP Telefonanlage](https://www.pascom.net/de/mobydick-classic/) erworben haben, entnehmen Sie die IP aus dem Beiblatt oder der Beschriftung an den Netzwerkschnittstellen.
 
-Wenn Sie sich mit der IP-Adresse nicht sicher sind, können Sie einen Monitor an der mobydick anschließen und die IP am mobydick TUI (siehe unten) ablesen.
+Wenn Sie sich mit der IP-Adresse nicht sicher sind, können Sie einen Monitor an der pascom anschließen und die IP am pascom TUI (siehe unten) ablesen.
 
 
 ## Zugriff auf die Weboberfläche
 
-Starten Sie einen beliebigen Browser und geben Sie als URL **https://[IP_der_mobydick]** ein. Anschließend müssen Sie einem selbstsigniertem Zertifikat zustimmen.
+Starten Sie einen beliebigen Browser und geben Sie als URL **https://[IP_der_pascom]** ein. Anschließend müssen Sie einem selbstsigniertem Zertifikat zustimmen.
 
 Sollten Sie nicht https benutzen, kommt eine Meldung, die Sie darauf hinweist, dass die Netzwerkverbindung nicht verschlüsselt ist.
 
 Loggen Sie sich im Tab Anmeldung mit dem Benutzer `admin` und dem Standardpasswort `mobydick` ein, insofern Sie nicht beim Setup ein anderes Passwort vergeben haben.
 
 {{% notice note %}}
-Arbeitssitzungen bleiben nach der letzten Eingabe 30 Minuten aktiv, innerhalb dieser Zeit ist keine Neuanmeldung erforderlich. Falls Sie an einem öffentlich zugänglichen Rechner arbeiten, sollten Sie sich daher nach Beendigung der Konfigurationen an der mobydick Benutzeroberfläche abmelden, um den Zugriff durch andere Personen zu unterbinden. Klicken Sie dazu die Schaltfläche `Abmelden`.
+Arbeitssitzungen bleiben nach der letzten Eingabe 30 Minuten aktiv, innerhalb dieser Zeit ist keine Neuanmeldung erforderlich. Falls Sie an einem öffentlich zugänglichen Rechner arbeiten, sollten Sie sich daher nach Beendigung der Konfigurationen an der pascom Benutzeroberfläche abmelden, um den Zugriff durch andere Personen zu unterbinden. Klicken Sie dazu die Schaltfläche `Abmelden`.
 {{% /notice %}}
 
 ## Zugriff auf das Text User Interface (TUI)
 
-Über das TUI können Sie sehr grundsätzliche Konfigurationen, wie z. B. IP-Adresse, Netzwerkeinstellungen usw. verändern. Schließen Sie hierzu einen Monitor direkt an den mobydick Server an oder schauen Sie auf die Console der virtuellen Maschine.
+Über das TUI können Sie sehr grundsätzliche Konfigurationen, wie z. B. IP-Adresse, Netzwerkeinstellungen usw. verändern. Schließen Sie hierzu einen Monitor direkt an den pascom Server an oder schauen Sie auf die Console der virtuellen Maschine.
 
 ### Startseite
 
 Die Startseite gibt Ihnen Informationen über die verfügbaren Netzwerkschnittstellen.
-![Screenshot - TUI der mobydick](/tui_start.jpg?width=80%)
+![TUI der pascom](/tui_start.jpg?width=80%)
 
-Sie können hier die IP-Adresse der mobydick ablesen und anschließend in einem Browser mit der eigentlichen Konfiguration der Telefonanlage fortfahren.
+Sie können hier die IP-Adresse der pascom ablesen und anschließend in einem Browser mit der eigentlichen Konfiguration der Telefonanlage fortfahren.
 
 ### Hauptmenü
 
 {{% notice note %}}
-Das TUI wird zur Installation verwendet oder falls Sie über die WEB-UI oder SSH keinen Zufriff auf die mobydick mehr haben.
+Das TUI wird zur Installation verwendet oder falls Sie über die WEB-UI oder SSH keinen Zufriff auf die pascom mehr haben.
 {{% /notice %}}
 
 Um ins Hauptmenü des TUI zu gelangen müssen Sie die Taste **F2** drücken und das Systempasswort (Admin-Passwort) eingeben. Im folgenden werden die wichtigsten Menüpunkte erklärt:
@@ -66,7 +66,7 @@ Um ins Hauptmenü des TUI zu gelangen müssen Sie die Taste **F2** drücken und 
 
 Falls Sie ein Terminal auf einem Unix-System verwenden loggen Sie sich ein mit
 
-    ssh admin@mobydick_ip
+    ssh admin@pascom_ip
 
 Falls Sie Windows verwenden, benötigen Sie einen SSH-Client. In diesem Fall empfehlen wir die Benutzung von PuTTY. Informationen hierzu finden Sie unter [http://www.chiark.greenend.org.uk/~sgtatham/putty/](http://www.chiark.greenend.org.uk/~sgtatham/putty/ "Informationen zum putty").
 Loggen Sie sich hier mit dem Benutzer `admin` und dem entsprechenden Passwort ein.
@@ -77,18 +77,18 @@ Anschließend benötigen Sie Root-Rechte, da der Zugriff sonst sehr eingeschrän
     Welcome to your asterisk PBX, admin!
     You may need to use sudo or su to become root...
     ---
-    admin@mobydick:~$ su
+    admin@pascom:~$ su
     Password:
 
 ## Zugriff auf die Asterisk-CLI
-mobydick verwendet Asterisk als Telefoniesoftware. Asterisk bietet ein Command Line Interface (CLI) in der Sie das gesamte Telefonieaufkommen beobachten und debuggen können. Voraussetzung hierfür ist, dass Sie bereits per SSH auf der Anlage eingeloggt sind und über Root-Rechte verfügen. Dort geben Sie `asterisk -r` ein:
+pascom verwendet Asterisk als Telefoniesoftware. Asterisk bietet ein Command Line Interface (CLI) in der Sie das gesamte Telefonieaufkommen beobachten und debuggen können. Voraussetzung hierfür ist, dass Sie bereits per SSH auf der Anlage eingeloggt sind und über Root-Rechte verfügen. Dort geben Sie `asterisk -r` ein:
 
-     root@mobydick:/etc/admin# asterisk -r
+     root@pascom:/etc/admin# asterisk -r
 
 
      =========================================================================
-     Connected to Asterisk certified/11.6-cert13 currently running on mobydick (pid = 2851)
-     mobydick*CLI>
+     Connected to Asterisk certified/11.6-cert13 currently running on pascom (pid = 2851)
+     pascom*CLI>
 
 Weitere Details zur Asterisk-CLI finden Sie unter [http://www.voip-info.org/wiki/view/Asterisk+CLI](http://www.voip-info.org/wiki/view/Asterisk+CLI "Details zu Asterisk CLI")
 

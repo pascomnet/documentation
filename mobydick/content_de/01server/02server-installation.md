@@ -24,7 +24,7 @@ Selbstverständlich stellen wir Ihnen im pascom Update-Center stets die neueste,
 
 ## Installations-Medien beschaffen
 
-Das pascom Community Installationsmedium steht Ihnen unter [https://www.pascom.net/de/download/](https://www.pascom.net/de/download/ "mobydick ISO downloaden") im Downloadbereich zur Verfügung.
+Das pascom Community Installationsmedium steht Ihnen unter [https://www.pascom.net/de/download/](https://www.pascom.net/de/download/ "pascom ISO downloaden") im Downloadbereich zur Verfügung.
 
 {{% notice note %}}
 Eine pascom Community-Versionkann jederzeit nachträglich durch den Erwerb einer Lizenz upgegradet werden. Sie können also zum Testen gerne die Community-Version verwenden und später durch ein Upgrade alle Daten übernehmen und Ihrer Lizenz entsprechend erweitern.
@@ -46,7 +46,7 @@ Diesen können Sie dann zur Installation von pascom benutzen.
 
 #### Vorbereitung
 
-Laden Sie ein pascom ISO-Abbild unter [pascom.net](https://www.pascom.net/de/download/ "mobydick ISO downloaden") herunter oder verwenden Sie Ihr gesichertes Backup (appliance.iso, ab einschließlich pascom Version 7.11.03).
+Laden Sie ein pascom ISO-Abbild unter [pascom.net](https://www.pascom.net/de/download/ "pascom ISO downloaden") herunter oder verwenden Sie Ihr gesichertes Backup (appliance.iso, ab einschließlich pascom Version 7.11.03).
 
 Laden Sie das Programm [Rufus](https://rufus.akeo.ie/ "Erstelle bootbare USB-Laufwerke auf einfache Art und Weise") herunter. Dabei handelt es sich um ein Tool mit dem man bootbare USB-Laufwerke erstellen kann.
 
@@ -82,7 +82,7 @@ Bitte beachten Sie, dass eine unbeaufsichtigte Installation auf einer miniApplia
 
 #### Vorbereitung
 
-Laden Sie ein pascom ISO-Abbild unter [pascom.net](https://www.pascom.net/de/download/ "mobydick ISO downloaden") herunter oder verwenden Sie Ihr gesichertes Backup (appliance.iso, mindestens pascom Version 7.01.00).
+Laden Sie ein pascom ISO-Abbild unter [pascom.net](https://www.pascom.net/de/download/ "pascom ISO downloaden") herunter oder verwenden Sie Ihr gesichertes Backup (appliance.iso, mindestens pascom Version 7.01.00).
 Am einfachsten ist den USB-Stick mit Hilfe eines vorhandenen pascom Servers zu erstellen. Sie können aber auch einen beliebigen Linux-Rechner auf dem syslinux installiert ist verwenden.
 
 Kopieren Sie das ISO-Abbild auf eine pascom 6 oder 7 nach /etc/admin/ und loggen Sie sich per ssh ein.

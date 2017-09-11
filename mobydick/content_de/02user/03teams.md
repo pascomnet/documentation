@@ -6,7 +6,7 @@ keywords:
     - Rufgruppen
     - Roaming User
     - Call Center Teams
-description: Teams in mobydick sind vergleichbar mit Warteschlangen. Rufstrategien helfen Ihnen Anrufe gezielt zu steuern.
+description: Teams in pascom sind vergleichbar mit Warteschlangen. Rufstrategien helfen Ihnen Anrufe gezielt zu steuern.
 url: /benutzer/teams/
 prev: /benutzer/benutzer-arbeitsplaetze/
 next: /benutzer/telefonbuch/
@@ -18,7 +18,7 @@ toc: true
 
 Jeder Benutzer hat in der [VoIP Telefonalage](https://www.pascom.net/de/mobydick-voip/) seine eigene Durchwahl, Geräte und Aktionen die den Anruf an diese Durchwahl steuern. **Zusätzlich kann** ein Benutzer Mitglied in einem Team sein.
 
-![Illustration - Team Konzept](../../images/team_konzept.png?width=50% "Teams und Warteschlangen in der mobydick")
+![IllustratioTeam Konzept](/team_konzept.png?width=60%)
 
 
 Das **Team** hat eine eigene Durchwahl und eigene Aktionen. Wird die Durchwahl des Teams gerufen klingeln die Telefone der Mitglieder je nach im Team hinterlegter Strategie und Aktionen.  
@@ -44,10 +44,6 @@ Warteschlangen können **fixe** und **dynamische Mitglieder** habe. Das bedeutet
 Anrufer werden nacheinander in der Warteschlange **eingereiht** und bekommen auf Wunsch die **Warteposition** und **durchschnittliche Wartezeit** angesagt. Während der Wartezeit kann man entweder Wartemusik oder ein Freizeichen einspielen.
 
 Warteschlangen können ein unterschiedliches Gewicht haben. Je höher die Gewichtung, desto wichtiger die Warteschlange.
-
-![Illustration - Warteschlangen gewichten](../../images/team_prioritaet.png?width=70% "Warteschlangen gewichten in der mobydick")
-
-In unserem Beispiel sind Frank und Peter in die Warteschlange Support und VIP-Support eingebucht. Beide telefonieren. In Support warten 2 Kunden darauf bedient zu werden in VIP-Support einer. Beendet Frank oder Peter das aktuelle Gespräch wird auf jeden Fall der wartende Anrufer aus dem VIP-Support als nächstes dran kommen, egal ob dieser bereits länger oder kürzer als die anderen wartet, da diese Warteschleife mehr Gewicht hat. Es werden also so lange Wartende aus der schwersten Warteschlange dran kommen bis diese leer ist.
 
 ## Konfiguration
 
@@ -77,7 +73,7 @@ Hier kann ein Routing-Skript ausgewählt werden. Mehr dazu unter [Skill Based Ro
 
 #### Pickup-Benachrichtigungen
 
-In einem Team ist es möglich einzustellen, welche Benutzer im mobydick Client Pickup-Benachrichtigungen über eingehende Rufe erhalten.
+In einem Team ist es möglich einzustellen, welche Benutzer im pascom Client Pickup-Benachrichtigungen über eingehende Rufe erhalten.
 
 Zuerst muss eine Pickup-Rolle definiert werden. Diese kann als Mitglieder ein Team haben und auch einzelne Benutzer, die nicht zum Team gehören. Informationen zu Rollen finden Sie unter [Rollen](../user/#rollen)
 
@@ -122,7 +118,7 @@ Zur Auswahl stehen **Freizeichen** und **Wartemusik: "default"**. Möchten Sie e
 |Einstellung|Beschreibung|
 |---|---|
 |**Voicemail Pin**||
-|**Voicemail speichern**|**JA** bedeutet, die Voicmails werden nach dem Versenden oder nachdem sie abgehört werden auf der mobydick gespeichert bleiben. Durch einen Cronjob können ältere Voicemails gelöscht werden.<br>**NEIN** bedeutet, dass die Voicemails nach dem Versenden per E-Mail von der mobydick gelöscht werden. Diese Einstellung ist zu empfehlen, da Voicemails viel Speicherplatz verwenden.|
+|**Voicemail speichern**|**JA** bedeutet, die Voicmails werden nach dem Versenden oder nachdem sie abgehört werden auf der pascom gespeichert bleiben. Durch einen Cronjob können ältere Voicemails gelöscht werden.<br>**NEIN** bedeutet, dass die Voicemails nach dem Versenden per E-Mail von der pascom gelöscht werden. Diese Einstellung ist zu empfehlen, da Voicemails viel Speicherplatz verwenden.|
 |**Voicemail Email**|An diese E-Mail-Adresse werden die Voicemails verschickt.|
 
 #### Team-Mitglieder
@@ -136,7 +132,7 @@ Damit sich flexibel Agenten in die Warteschlagen Einbuchen können benötigen Si
 Der Einbuchcode lautet **\*90** und der Agent hat die Durchwahl **13**. Der Agent muss dabei **\*9013**  wählen um sich in der Warteschlagen anzumelden. Zum Abmelden muss ebenfalls **\*9013** gewählt werden. Beim An- oder Abmelden hört der Agent jeweils eine Meldung über den nun aktuellen Status.
 
 {{% notice note %}}
-Damit der Einbuchcode von der mobydick richtig erkannt und bearbeitet wird, muss die mobydick wissen, wie viele Stellen eine Benutzerduchwahl hat. Dies muss in den Systemeinstellungen festgelegt werden. Suchen Sie in dem Suchfeld nach *sys.asterisk.dialplan.global.alias.digit.value*. Der Defaultwert ist hier *3*. Passen Sie das entsprechend an.<br>
+Damit der Einbuchcode von der pascom richtig erkannt und bearbeitet wird, muss die pascom wissen, wie viele Stellen eine Benutzerduchwahl hat. Dies muss in den Systemeinstellungen festgelegt werden. Suchen Sie in dem Suchfeld nach *sys.asterisk.dialplan.global.alias.digit.value*. Der Defaultwert ist hier *3*. Passen Sie das entsprechend an.<br>
 Wir raten davon ab, bei Benutzern Durchwahlen zu verwenden mit unterschiedlichen Druchwahlstellen.
 {{% /notice %}}
 
@@ -145,7 +141,7 @@ Wir raten davon ab, bei Benutzern Durchwahlen zu verwenden mit unterschiedlichen
 Verwendet der Benutzer ein IP-Telefon, kann eine LED-Nebenstellentaste (meistens Typ BLF) mit dem Einbuchcode konfiguriert werden. Lesen Sie dazu die Herstellerspezifikation Ihres IP-Telefons.
 {{% /notice %}}
 
-Alternativ kann sich ein Benutzer auch per mobydick Client in der Team Anzeige durch das + und - Symbol an einem Warteschlangen Team ab- und anmelden.
+Alternativ kann sich ein Benutzer auch per pascom Client in der Team Anzeige durch das + und - Symbol an einem Warteschlangen Team ab- und anmelden.
 
 
 #### Pausieren und Pausegründe
@@ -155,7 +151,7 @@ Pausegründe können unter `Benutzer` > `Pausegründe` einstellt werden.
 
 |Parameter|Beschreibung|
 |---|---|
-|**Bezeichung**|Die Bezeichnung wird im mobydick Client als Pausengrund angezeigt.|
+|**Bezeichung**|Die Bezeichnung wird im pascom Client als Pausengrund angezeigt.|
 |**Kennung**|Mit der Kennung kann man die Pause pro Mitglied am Telefon-Tastenfeld aktivieren/deaktivieren.|
 
 <!-- *Beispiel:*<br>
@@ -164,29 +160,30 @@ Benutzerdurchwahl: 13<br>
 Kennung: 111<br>
 Somit kann die Pause aktiviert/deaktiviert werden mit: **\*99100#13#111**
 
-Pausiert ein Mitglied in der Warteschleife kann das von den anderen Mitgliedern incl. Pausengrund im mobydick Client gesehen werden:
-![Screenshot - Pause aktivieren im mobydick Client](../../images/team_pause.png?width=90% " Pause aktivieren im mobydick Client")
+Pausiert ein Mitglied in der Warteschleife kann das von den anderen Mitgliedern incl. Pausengrund im pascom Client gesehen werden:
+![Screenshot - Pause aktivieren im pascom Client](../../images/team_pause.png?width=90% " Pause aktivieren im pascom Client")
 
-Das Pausieren kann im mobydick Client in der Team Anzeige durch das Pausensymbol gesteuert werden:
-![Screenshot - Pausengründe im mobydick Client](../../images/team_pause_detail.png?width=30% " Pausengründe im mobydick Client")
+Das Pausieren kann im pascom Client in der Team Anzeige durch das Pausensymbol gesteuert werden:
+![Screenshot - Pausengründe im pascom Client](../../images/team_pause_detail.png?width=30% " Pausengründe im pascom Client")
 -->
 
 #### Warteschlangen gewichten
 
 Warteschlangen können ein unterschiedliches Gewicht haben. Desto schwerer desto wichtiger. Als Gewicht können Sie eine beliebige Zahl eintragen.
 
-![Illustration - Warteschlangen gewichten](../../images/team_prioritaet.png?width=70% "Warteschlangen gewichten in der mobydick")
+![Warteschlangen gewichten](/team_prio.png?width=80%)
 
-In unserem Beispiel sind Frank und Peter in die Warteschlange Support und VIP-Support eingebucht. Beide telefonieren. In Support warten 2 Kunden darauf bedient zu werden in VIP-Support einer. Beendet Frank oder Peter das aktuelle Gespräch wird auf jeden Fall der wartende Anrufer aus dem VIP-Support als nächstes dran kommen, egal ob dieser bereits länger oder kürzer als die anderen wartet, da diese Warteschleife mehr Gewicht hat. Es werden also solange Wartende aus der schwersten Warteschlange dran kommen bis diese leer ist.
+In unserem Beispiel sind Frank und Peter in die Warteschlange Support und VIP-Support eingebucht. Beide telefonieren. In Support warten zwei Kunden darauf bedient zu werden in VIP-Support einer. Beendet Frank oder Peter das aktuelle Gespräch wird auf jeden Fall der wartende Anrufer aus dem VIP-Support als nächstes dran kommen, egal ob dieser bereits länger oder kürzer als die anderen wartet, da diese Warteschleife mehr Gewicht hat. Es werden also solange Wartende aus der schwersten Warteschlange dran kommen bis diese leer ist.
 
 {{% notice tip %}}
 Wenn Sie mit Gewichten arbeiten, dürfen Sie keine Warteschlangen ohne Gewicht benutzen. Diese haben dann ein Gewicht von 0 und kommen somit nie an die Reihe.
 {{% /notice %}}
 
+Stellen Sie die Gewichtung ein unter `Benutzer` > `Teams` > wählen Sie das Team aus > im Tab `Erweitert` das Feld **Gewichtung**.
 
 #### Aktionen
 
-Aktionen sind in der mobydick ein wichtiges Werkzeug um den Anrufablauf zu steuern. Aktionen ermöglichen es
+Aktionen sind in der pascom ein wichtiges Werkzeug um den Anrufablauf zu steuern. Aktionen ermöglichen es
 
 * dem Anrufer Ansagen vorzuspielen,
 * außerhalb der Geschäftzeiten den Anrufer auf eine Voicemailbox umzuleiten,
