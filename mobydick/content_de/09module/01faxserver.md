@@ -200,7 +200,7 @@ Folgende Punkte sollten Sie beachten:
 * halten Sie sich an die empfohlene Treibereinrichtung (s. o.)
 * versuchen Sie bei Problemen die Steuerzeichen in einer Standardschriftart wie etwa Arial 10 einzutragen.
 
-Einige Details zum Verlauf der Druckjobs können Sie in der Logatei `/var/log/mobydick/sendfax.log` einsehen.
+Einige Details zum Verlauf der Druckjobs können Sie in der Logatei `/var/log/pascom/sendfax.log` einsehen.
 
 ### Einstellungen anpassen
 

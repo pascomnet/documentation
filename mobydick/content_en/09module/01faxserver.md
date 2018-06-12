@@ -202,7 +202,7 @@ Please bear in mind the following:
 * if you experience problems, try to enter the control characters using a standard font such as Arial 10pt.
 
 
-Some details on the print job can be viewed in the log file /var/log/mobydick/sendfax.log.
+Some details on the print job can be viewed in the log file /var/log/pascom/sendfax.log.
 
 ### Adjusting Settings
 
