@@ -19,16 +19,6 @@ Control a supported phone device remotely.
 You can remotely control several features on supported phones without the having the burden of manufacturer/model low level access.
 
 ## Commands
-### phone.Hangup
-Send a hangup/decline/cancel keypress to the given phone. Answered by a base.Success or base.Failure response.
-
-#### Example
-    <iq id="7Eefr-85" type="get">
-     <cmd xmlns="http://www.pascom.net/mobydick" module="phone">
-      <Hangup device="Snom 000413260a1b [Sales]"/>
-     </cmd>
-    </iq>
-
 ### phone.Hold
 Send a hold keypress to the given phone. Answered by a base.Success or base.Failure response.
 On most phones this can also unhold a call. You need to track the base.ChannelEvent state if you want to implement a hold/unhold logic.
