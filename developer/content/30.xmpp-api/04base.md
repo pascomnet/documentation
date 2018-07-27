@@ -66,7 +66,6 @@ Each user has the permission to end their phone calls. A supervisor can addition
 #### Usage
 * the channel id is optional for non-supervisor users. You'll hangup the most recent call if this attribute is omitted.
 * If you have multiple concurrent calls (one is put on hold for example): use the channel id from a previously received base.ChannelEvent
-* alternatively you can send a phone.Hangup if the call is active on a device with hangup capability.
 
 ### base.Transfer
 Each user has the permission to transfer an active phone call to another target. A supervisor can additionally transfer arbitrary channels in the whole system.  As a response, they will receive either of:  base.success or base.failure.
