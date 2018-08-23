@@ -3,9 +3,9 @@ pipeline {
         dockerfile true 
     }
     stages {
-        stage('Test') {
+        stage('Export generated site') {
             steps {
-                sh 'ls -la'
+                sh 'cp -a /usr/share/nginx/html .'
             }
         }
     }
