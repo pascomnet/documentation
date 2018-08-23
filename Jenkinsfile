@@ -1,8 +1,9 @@
 pipeline {
     agent {
-        label 'docker'
-        dockerfile true 
-        }
+        dockerfile {
+            label 'docker'
+        }  
+    }
     stages {
         stage('Test') {
             steps {
