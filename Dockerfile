@@ -1,1 +1,1 @@
-FROM publysher/hugo 
+FROM monachus/hugo 
