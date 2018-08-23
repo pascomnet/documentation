@@ -1,0 +1,22 @@
+baseURL = "https://www.pascom.net/doc"
+theme = "hugo-theme-learn"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+ignoreFiles = [ "\\.inc.md$" ]
+
+[params]
+themeVariant = "red"
+
+[Languages]
+[Languages.en]
+title = "Documentaion"
+weight = 1
+languageName = "English"
+languageCode = "en"
+
+[Languages.de]
+title = "Dokumentation"
+weight = 2
+languageName = "Deutsch"
+languageCode = "de"
+

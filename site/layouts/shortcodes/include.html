@@ -1,0 +1,5 @@
+{{$page := .Get 0}}
+{{$lang := $.Page.Site.Params.languagecode }}
+
+{{$file := printf "/_include/%s.%s.inc.md" $page $lang }}
+{{ readFile $file | markdownify }}
