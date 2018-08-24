@@ -10,7 +10,7 @@ node('docker') {
             break
     }
 
-    sh "sed -i ''s/^baseurl.*/baseurl = ${baseUrl}/'' ./site/config.toml"
+    sh "sed -i \'s/^baseurl.*/baseurl = ${baseUrl}/\' ./site/config.toml"
 
     stage('Checkout') {
         checkout scm
