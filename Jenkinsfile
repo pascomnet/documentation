@@ -11,7 +11,7 @@ node('docker') {
     }
 
     withAnt {
-        replaceregexp(file: './site/config.toml', match: '^baseURL = .*$', replace: "baseURL = \"${baseURL}\"")
+        replaceregexp(file: './site/config.toml', match: '^baseURL = .*$', replace: "baseURL = \"${baseUrl}\"")
     }
 
     stage('Checkout') {
