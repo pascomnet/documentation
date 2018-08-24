@@ -8,7 +8,7 @@ node('docker') {
         def hugo = docker.build("hugo:${env.BUILD_ID}")
 
         hugo.inside {
-            sh 'cp -a /usr/share/nginx/html .'
+            sh 'cp -a /usr/share/nginx/html ./doc-container/'
         }
     }
 
