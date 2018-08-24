@@ -3,16 +3,14 @@ node('docker') {
     def version = "${env.DOC_VERSION}"
     def target = "${env.DOC_TARGET}"
     def baseUrl
-    def ant = new AntBuilder() 
-
+    
     switch (target) {
         case 'dev':
             baseUrl = 'https://dev.in.pascom.net/doc'
             break
     }
-
-    ant.replaceregexp(file: './site/config.toml', match: '^baseURL = .*$', replace: "baseURL = \"${baseUrl}\"")
-    
+       
+    sh "sed -i \"s/^baseurl.*$/baseurl = \"${baseUrl}\"/\" ./site/config.toml"
 
     stage('Checkout') {
         checkout scm
