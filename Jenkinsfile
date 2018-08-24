@@ -13,12 +13,14 @@ node('docker') {
     }
 
     stage('Build container') {
-        def homepage = docker.build("doc:${env.BRANCH}", "./doc-container")
+        def version = "${env.BRANCH}"
+        version.replace("/origin","")
+        def homepage = docker.build(version, "./doc-container")
         stage('Push container') {
             docker.withRegistry('https://docker-registry.in.pascom.net', '6495aa9c-a076-4ac9-89eb-a29f622667f6') {
 
                 homepage.push()
-                
+
             }
         }
 
