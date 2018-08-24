@@ -7,11 +7,11 @@ node('docker') {
     
     switch (target) {
         case 'dev':
-            baseUrl = 'https:\/\/www.dev.pascom.net\/doc'
+            baseUrl = 'https://www.dev.pascom.net/doc'
             break
     }
 
-    sh "sed -i s/baseurl.*/baseurl = \"${baseUrl}\"/ ./site/config.toml"
+    sh "sed -i s#baseurl.*#baseurl = \"${baseUrl}\"# ./site/config.toml"
 
     stage('Checkout') {
         checkout scm
