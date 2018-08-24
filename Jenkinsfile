@@ -3,6 +3,7 @@ node('docker') {
     def version = "${env.DOC_VERSION}"
     def target = "${env.DOC_TARGET}"
     def baseUrl
+    def ant = new AntBuilder() 
 
     switch (target) {
         case 'dev':
@@ -10,9 +11,8 @@ node('docker') {
             break
     }
 
-    withAnt {
-        replaceregexp(file: './site/config.toml', match: '^baseURL = .*$', replace: "baseURL = \"${baseUrl}\"")
-    }
+    ant.replaceregexp(file: './site/config.toml', match: '^baseURL = .*$', replace: "baseURL = \"${baseUrl}\"")
+    
 
     stage('Checkout') {
         checkout scm
