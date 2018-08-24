@@ -5,7 +5,7 @@ node('docker') {
     }
 
     stage('Build doc with hugo') {
-        def hugo = docker.build("hugo:${env.BUILD_ID}", "./hugo-container")
+        def hugo = docker.build("hugo:${env.BUILD_ID}")
 
         hugo.inside {
             sh 'cp -a /usr/share/nginx/html .'
