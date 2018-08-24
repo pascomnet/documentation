@@ -1,12 +1,11 @@
-pipeline {
-    agent {
-        dockerfile true 
+node {
+
+    checkout scm
+
+    def hugo = docker.build()
+
+    hugo.inside {
+        sh 'cp -a /usr/share/nginx/html .'
     }
-    stages {
-        stage('Export generated site') {
-            steps {
-                sh 'cp -a /usr/share/nginx/html .'
-            }
-        }
-    }
+
 }
