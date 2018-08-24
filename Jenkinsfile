@@ -3,14 +3,16 @@ node('docker') {
     def version = "${env.DOC_VERSION}"
     def target = "${env.DOC_TARGET}"
     def baseUrl
+    def sedCmd
     
     switch (target) {
         case 'dev':
             baseUrl = '"https://dev.in.pascom.net/doc"'
+            sedCmd = "'s/^baseurl.*/baseurl = ${baseUrl}/'"
             break
     }
 
-    sh "sed -i \'s/^baseurl.*/baseurl = ${baseUrl}/\' ./site/config.toml"
+    sh "sed -i ${sedCmd} ./site/config.toml"
 
     stage('Checkout') {
         checkout scm
