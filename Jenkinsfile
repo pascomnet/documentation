@@ -11,11 +11,11 @@ node('docker') {
             break
     }
 
-    sh "sed -i 's#baseURL.*#baseURL = \"${baseUrl}\"#' ./site/config.toml"
-
     stage('Checkout') {
         checkout scm
     }
+
+    sh "sed -i 's#baseURL.*#baseURL = \"${baseUrl}\"#' ./site/config.toml"
 
     stage('Build doc') {
         def hugo = docker.build("hugo:${env.BUILD_ID}")
