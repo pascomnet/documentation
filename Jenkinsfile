@@ -28,11 +28,13 @@ node('docker') {
     stage('Build container') {
    
         version = version.replaceAll('origin/','')
-        def homepage = docker.build("doc/${target}:${version}", "./doc-container")
+        def doc = docker.build("doc/${target}:${version}", "./doc-container")
         stage('Push container') {
             docker.withRegistry('https://docker-registry.in.pascom.net', '6495aa9c-a076-4ac9-89eb-a29f622667f6') {
 
-                homepage.push()
+                doc.push()
+
+                doc.push('latest')
 
             }
         }
