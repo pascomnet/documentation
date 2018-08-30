@@ -39,13 +39,13 @@ Der USB-Stick muss nach dem Flashen ein **FAT-Dateisystem** enthalten da Sie die
 {{% /notice %}}
 
 
-Verbinden Sie den USB-Stick mit Ihrem Computer und starten Sie das Tool Rufus. Wählen Sie nun das pascom Server ISO unter {{< ui-button "Select image" >}}, wählen Sie den USB-Stick via {{< ui-button "Select drive" >}} und klicken Sie im Anschluss auf {{< ui-button "Flash" >}}:
+Verbinden Sie den USB-Stick mit Ihrem Computer und starten Sie das Tool Rufus. Wählen Sie nun das pascom Server ISO unter {{< ui-button "SELECT" >}}, wählen Sie den USB-Stick via {{< ui-button "Device" >}} und klicken Sie im Anschluss auf {{< ui-button "START" >}}:
 
-![Etcher](etcher.png "Etcher")
+![Rufus](rufus.png?width=300px "Rufus")
 
 ### Automatik Setup vorbereiten
 
-Da der pascom SOHO Server keine Monitoranschluss hat müssen Sie auf dem USB-Stick noch eine Datei mit dem Namen setup.json anlegen und mit Ihren Netzwerkeisntellungen vorbelegen. Dadurch bootet das System automatisch und konfiguriert das Netzwerk entsprechen. Somit können Sie direkt nach dem Systemstart mit dem Webbasierten Setup fortfahren.
+Da der pascom SOHO Server keine Monitoranschluss hat müssen Sie auf dem USB-Stick noch eine Datei mit dem Namen **setup.json** anlegen und mit Ihren Netzwerkeisntellungen vorbelegen. Dadurch bootet das System automatisch und konfiguriert das Netzwerk entsprechen. Somit können Sie direkt nach dem Systemstart mit dem Webbasierten Setup fortfahren.
 
 ```json
 {
@@ -59,7 +59,7 @@ Da der pascom SOHO Server keine Monitoranschluss hat müssen Sie auf dem USB-Sti
         "mode": "static",
         "ip": "192.168.0.1",
         "netmask": "255.255.255.0",
-        "gateway": "10.5.6.254",
+        "gateway": "192.168.0.254",
         "dns1": "192.168.0.254"
     }
 }
@@ -68,11 +68,11 @@ Da der pascom SOHO Server keine Monitoranschluss hat müssen Sie auf dem USB-Sti
 
 ### USB-Stick anstecken
 
-Den so vorbereiteten USB-Stick können Sie nun direkt an den USB3 Port (Rückseite, blauer Port) anstecken.
+Den so vorbereiteten USB-Stick können Sie nun direkt an den USB Port des Servers anstecken.
 
 ## Appliance anschließen
 
-* Schließen Sie das Netzwerk and die linke der drei Netzwerkbuchsen an
+* Schließen Sie das Netzwerk and die **linke** der drei Netzwerkbuchsen an
 * Verbinden Sie das Netzteil
 * Der Server beginnt automatisch zu starten
 
