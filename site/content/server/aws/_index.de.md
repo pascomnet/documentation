@@ -82,6 +82,11 @@ Der pascom Server benötigt **kein** SSH Key Pair der AWS. Wählen Sie deshalbt 
 
 ![pascom Server Management](management.png)
 
+## Domainnamen einrichten
+
+Da nur auf Domainnamen und nicht auf IP-Adressen gültige Zertifikate erstellt werden können müssen Sie zunächst einen Domainnamen für die externe AWS IP-Adresse einrichten.
+
+Sollte Ihnen kein eigener, externer DNS Server zu verfügung stehen bietet [no-ip](https://www.noip.com/) eine einfache Möglichkeit  Domainnamen einzurichten.
 
 ## Let's encrypt aktivieren
 
