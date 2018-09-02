@@ -4,7 +4,7 @@ description: Hier finden Sie eine Zusammenfassung über die pascom Funktionscode
 weight: 125
 ---
 
-{{< doctype "cloud" >}}
+{{< doctype "both" >}}
  
 {{< description >}}
 
