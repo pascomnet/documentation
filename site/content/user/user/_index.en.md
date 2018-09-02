@@ -1,6 +1,6 @@
 ---
-title: Users and Locations
-description: What is an user and what is a location in pascom phone systems and how can you add and manage them quickly and efficiently?
+title: Adding Users
+description: Add new users and understand the most important settings.
 weight: 22
 ---
 
@@ -8,51 +8,11 @@ weight: 22
 
 {{< description >}}
 
-## Concept
+**Good to Know**
+ 
+ * [User and Locations]({{< ref "concept/user" >}})
 
-### Users
-
-pascom user accounts represent **real people** and not devices. An extension is assigned to the user, not the telephone. Each user has 2 **presence statuses**:
-
-* **Telephone status**: displays the user's telephone status, whether it is available, ringing or in call..
-* **Online / client status**: displays a user's online status i.e. whether they are available, away or in DND.  Also indicate in which location a user is logged in and whether they are on a PC or mobile device
-
-If multiple devices are assigned to a user or they are using multiple PCs or smartphones at the same time, their presence states are aggregated.
-<!--Image update-->
-![Illustration - Concept pascom User](user_overview.en.png?width=90% "pascom User Concept")
-
-
-### Directly Assigning Telephones to Users
-
-In the simplest scenario, telephones are directly assigned to users. All assigned devices can then be reached by dialing the user's extension. The order in which and for how long assigned user devices should ring is defined using the [FollowMe]({{< relref "#follow-me">}}) settings.
-<!--Image update-->
-![Illustration - User with devices](user_desktop_personal.en.png?width=50% "User with devices")
-
-This is the recommended option should users not switch workplaces in the office, as only the administrator can change telephone assignments and not the users themselves.
-
-### Using Locations
-
-However, should you have users who regularly switch workplaces (hotdesking) or work from home office, it is best to assign telephones to **locations** instead of users. Phones can not only be assigned to a user, but also to a virtual location. Users can then use the pascom Client, pascom Mobility Client or the menus on their desktop IP phone to select the location they want to work from. As soon as a user has signed in to a location, all telephones assigned to that location will become reachable under the user's extension. The order in which & for how long the devices ring can be configured for the individual work location.
-
-A user can only be logged into to a single location at any given time. In the default setting, every user can sign in to every location. If you do not want your users to sign in to arbitrary locations, you need to create restrictions using **roles**.
-
-In the example below, we created two locations for the Manager, one location in their office, the other in their home office.
-
-<!--Image update-->
-![Illustration - User and locations](user_desktop_public.en.png?width=50% "User and locations")
-
-### Combining the "directly assigned" and the "location" concepts
-
-It is possible for a user to use simultaneously use a work location and directly assigned telephone, i.e. a mobile phone / device.
-
-If users switches their location, the directly assigned user device is not affected and continues to be reachable.
-
-<!--Image update-->
-![Illustration - User mixed](user_desktop_mixed.en.png?width=50% "User mixed")
-
-## Configuration
-
-### Adding Users
+## Adding Users
 
 To add a new user, login into the admin Web UI and go to `Users` > `User list` and click `Add`
 
@@ -79,7 +39,7 @@ Once finished with adding users, simply click on the following:
 * **Save and Details** in order to save your changes and edit additional details.  
 * **Save and Next** in order to save user changes and start adding the next user.   
 
-#### Add Users Using the .xlsx Import
+### Add Users Using the .xlsx Import
 
 For the purposes of the initial installation, importing users via a .xlsx file is a very good option. The file *UserImport* can be found under `Appliance` > `Import` >`User Import`. Simply download the template, fill it out and upload it. Please take note of the instructions within the file.
 
@@ -98,7 +58,7 @@ As with the user import, please note the instructions contained within the file.
 Only use the user import option once during the initial setup of your pascom phone system. Additional users must be added manually. Further user imports using the user import options will overwrite the already added users.
 {{% /notice %}}
 
-### Web-UI Permissions
+## Web-UI Permissions
 
 As standard, only your pascom Administrator can log in to the Web UI. However, you can assign administration rights to any number of user, should you need to do so. Currently, there are 3 additional administration rights levels available:
 
@@ -109,7 +69,7 @@ As standard, only your pascom Administrator can log in to the Web UI. However, y
 |**PBX-Manager**| Like Administrator however **without**: </br>- Gateways/Expansion Cards/Trunks </br>- Restarting of services </br>- Restoring Database </br>- End User Device Firmware rollout </br>- pascom Connector </br>- Cronjob Management|
 |**Phonebook Manager**|    The user is permitted to edit the pascom phonebook|
 
-### Voicemail Box
+## Voicemail Box
 
 Each user is automatically configured with a voicemail box. Per default, the voicemail box exists, but callers will not be transferred to it.
 
@@ -123,7 +83,7 @@ Firstly, voicemail handling must be configured. Under `Users` > `User List` > se
 
 Finally, a Voicemail box action must be added should this not have already been done during the add user stage.
 
-### Alternative CallerID (CID Number)
+## Alternative CallerID (CID Number)
 
 When adding a user, the user will be assigned with their individual extension under which they can be called. Normally this extension number will also be displayed to other system users. Should your requirements differ, it is possible to configure an alternative caller ID / CID number under `Users` > `User List` > select the required user and click `Edit` and under the `Basic Data` tab enter the alternative **CID Number**.
 
@@ -131,7 +91,7 @@ When adding a user, the user will be assigned with their individual extension un
 Should a user use /signal a different extension for external calls, please configure this in the trunks menu under outbound calls.
 {{% /notice %}}
 
-### Phonebook
+## Phonebook
 
 For each user, a **phonebook** entry is added containing both their **display name** and **extension**, although additional details may also be added. The entry can be called up from either the pascom Client, Mobility Client or IP telephones.  
 
@@ -141,7 +101,7 @@ User phone book entry settings can be found and modified under `Users` > `User L
 
 <!--For more details, please see //FixMe Link Maintaining the Central Telephone Book.-->
 
-### Virtual Fax Devices
+## Virtual Fax Devices
 
 Under `Users` > `User List` > select the required user and click `Edit` and then the `Fax Device` tab, it is possible to add and assign a virtual fax device for this user.
 
@@ -152,7 +112,7 @@ Under `Users` > `User List` > select the required user and click `Edit` and then
 |Outgoing Fax ID|Fax ID number printed on the sent fax.|
 |Format|Enter the format in which the user should receive the fax per e-mail.|
 
-### Endpoints / Devices
+## Endpoints / Devices
 
 Under `Users`> `User List` select the required user and click `Edit` and then the `Devices` tab, it is possible to assign devices to the selected user. On the left hand side of the screen, an overview of all available devices will be displayed. Using the blue arrows, it is possible to select the desired telephone and add it to the assigned device list (the right hand column).  If the device is no longer required by the user, use the left arrow to move the device back to the available devices column on the left.
 
@@ -171,7 +131,7 @@ Assigned devices can be assigned with timeouts / FollowMe settings as follows:
 
 User timeouts must be set per device and per user.
 
-### Locations
+## Locations
 
 Under `Users`> `Locations` > `Add` it is possible to add a location (i.e. HomeOffice, Office Location, specific workstation etc). Under the `Devices` tab it is possible to assign devices to the location (multiple devices can be assigned to a location).
 
@@ -184,7 +144,7 @@ Under the `User Assignment` tab, you can assign the location to users. The locat
 
 Under `Users`> `User List` select the required user and click `Edit`. Under the `Locations` you can then assign Locations to users plus seeing in which locations users actually work.
 
-### Call Forwarding (Server Based)
+## Call Forwarding (Server Based)
 
 An overview of call forwarding can be found under `Users`> `Call forwarding`, which will display all call forwards which have been setup by your users, regardless of whether they are currently active or inactive. It is also possible to add new call forwards via this menu option.
 
@@ -192,7 +152,7 @@ An overview of call forwarding can be found under `Users`> `Call forwarding`, wh
 Call Forwarding should be setup using your pascom phone system (i.e. pascom client or the pascom menu key on your IP phone). Doing so will avoid uncontrolled, never ending forwarding loops.
 {{% /notice %}}
 
-### Actions
+## Actions
 
 Actions are an important pascom phone system component which help control call flows. Actions ensure that it is possible to:
 
@@ -203,7 +163,7 @@ Actions are an important pascom phone system component which help control call f
 
 For more information, please refer to the [Actions article]({{< ref "acd/actions" >}}).
 
-### Roles
+## Roles
 
 Users, devices, locations and teams can all be members of one or more role groups. The role itself can be assigned with settings and permissions, making it possible for example to manage telephony relevant settings such as allowing call pickups from other users.
 
@@ -223,14 +183,14 @@ A very common practice (and our recommendation) is to create one role per depart
 |**xmpp.group**|All Users that have been assigned a role with the role type *xmpp.group*, will be linked together in a *XMPP shared group*. That is to say the clients in the contact list do not have to mutually add themselves, but will be immediately visible to one another. Should you assign the property *xmpp.group* to the role All Users, everyone will always see everyone in the Client..|Users|
 
 
-### Follow Me
+## Follow Me
 
 Users and workspaces (locations) can be assigned with multiple Endpoints. The configuration setup regarding which endpoint rings, when and for how long is know as **FollowMe**.
 
 ![FollowMe](followme.en.png "pascom FollowMe Concept")
 
 
-## Configuration
+### Configuration
 
 A prerequisite for the configuration is that users have already been added and that a minimum of one endpoint has been assigned.
 

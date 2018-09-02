@@ -1,6 +1,6 @@
 ---
-title: Benutzer und Arbeitsplätze
-description: Was ist ein Benutzer, Arbeitsplatz in pascom und wie lassen diese sich einfach einrichten und verwalten?
+title: Benutzer anlegen
+description: So legen Sie einen Benutzer manuell an und nehmen die wichtigsten Einstellungen vor
 weight: 10
 ---
 
@@ -8,49 +8,11 @@ weight: 10
 
 {{< description >}}
 
-## Konzept
+**Nützliches Vorwissen**
+ 
+ * [Benutzer und Arbeitsplätze]({{< ref "concept/user" >}})
 
-### Benutzer
-
-Benutzer in pascom repräsentieren eine **reale Person**. Dem Benutzer wird eine **Durchwahl** zugeteilt, nicht dem Telefon. Jeder pascom Benutzer hat zwei **Präsenzstati**:
-
-* **Telefonstatus**: zeigt an, ob dem Benutzer ein Telefon zur Verfügung steht oder an einem Arbeitsplatz angemeldet ist.
-* **Clientstatus**: zeigt die Erreichbarkeit im pascom Client, z. B. ob der Benutzer im pascom Client an seinem PC-Arbeitsplatz angemeldet ist, ob er telefoniert, oder gerade seinen Platz verlassen hat.
-
-![Konzept der pascom Benutzer](user_overview.de.png?width=80%)
-
-Sind einem Benutzer mehrere Geräte zugeteilt oder nutzt er mehrere PCs oder Smartphones gleichzeitig wird der Präsenzstatus zusammengefasst.
-
-### Telefone dem Benutzer direkt zuteilen
-
-Im einfachsten Fall werden die Telefone dem Benutzer direkt zugeteilt. Alle zugeteilten Telefone sind dann unter der Durchwahl des Benutzers erreichbar. In welcher Reihenfolge und wie lange diese klingeln sollten wird durch [FollowMe]({{< relref "#followme">}}) eingestellt.
-
-![Illustration - Benutzer mit Endgeräten](user_desktop_personal.de.png?width=35%)
-
-Diese Methode ist gut wenn Ihre Benutzer jeden Tag am selben Arbeitsplatz sitzen, da nur der Administrator die Zuweisung der Telefone ändern kann, nicht der Benutzer selbst.
-
-### Arbeitsplätze nutzen
-
-Haben Sie jedoch Benutzer die den Arbeitsplatz wechseln oder an manchen Tagen von zu Hause aus arbeiten, sollten Sie Ihre Telefone nicht direkt dem Benutzer sondern **Arbeitsplätzen** zuweisen.
-In diesem Fall werden die Telefone nicht direkt dem Benutzer sondern einem virtuellen **Arbeitsplatz** zugeteilt. Ein Benutzer kann selbst per pascom Client oder per Menü an seinem IP-Telefon entscheiden an welchem Arbeitsplatz er jetzt arbeiten möchte. Sobald sich der Benutzer an einem Arbeitsplatz angemeldet hat sind alle dem Arbeitsplatz zugeteilten Telefone unter der Durchwahl des Benutzer erreichbar.  In welcher Reihenfolge und wie lange die Telefone klingeln sollten wird beim Arbeitslatz eingestellt.
-
-Ein Benutzer kann immer nur genau einem Arbeitsplatz zugeteilt werden. Standardmäßig kann sich jeder Benutzer auf jedem Arbeitsplatz anmelden. Möchte man dies nicht, kann man das per **Rolle** einschränken.
-
-In unserem Beispielbild haben wir zwei Arbeitsplätze für den Chef eingerichtet. Einen für das Büro und einen zu Hause.
-
-![Benutzer- und Arbeitsplatzprinzip](user_desktop_public.de.png?width=50% )
-
-### Mischbetrieb
-
-Es ist möglich, dass ein Benutzer einen Arbeitsplatz und gleichzeitig direkt zugewiesene Telefone benutzt.
-
-Wechselt ein Benutzer seinen Arbeitsplatz ändert dies nichts an den direkt zugewiesenen Telefonen. Diese bleiben auf jedem Fall dem jeweiligen Benutzer zugeteilt.
-
-![Benutzer- und Arbeitsplatz Mischbetrie](user_desktop_mixed.de.png?width=50% )
-
-## Konfiguration
-
-### Benutzer anlegen
+## Benutzer anlegen
 
 Benutzer werden in der Web-UI unter `Benutzer` > `Benutzerliste` > `Hinzufügen` angelegt.
 
@@ -77,7 +39,7 @@ Sind Sie mit dem Formular fertig, klicken Sie auf
 * **Speichern und Details** um zu speichern und den Benutzer weiter zu Bearbeiten.
 * **Speichern und nächster** um diesen Benutzer zu speichern und einen weiteren anzulegen.
 
-#### Benutzer anlegen über den .xlsx-Import
+### Benutzer anlegen über den .xlsx-Import
 
 Für die Erstinstallation eignet es sich die Benutzer aus eine .xlsx-Datei zu importiern. Die Datei mit dem Namen Benutzerimport.xmls finden Sie unter `Appliance` > `Importieren` >`Benutzerimport`. Sie könnern zuerst die Vorlage herunterladen, ausfüllen und wieder importieren. Achten Sie bitte auf die Hinweise in der Datei.
 
@@ -96,7 +58,7 @@ Beachten Sie bitte auch hier auf die Hinweise in der Datei.
 Verwenden Sie den Benutzerimport nur einmalig bei der Erstkonfiguration Ihrer pascom. Weitere Benutzer müssen Sie manuell anlegen. Erneute Verwendung des Benutzerimports überschreibt die bisher angelegten Benutzer.
 {{% /notice %}}
 
-### Benutzerrechte im Web-UI
+## Benutzerrechte im Web-UI
 
 Standardmäßig kann nur der Administrator zur Administration der pascom in die Web-UI einloggen. Zusätzlich können Sie aber an jeden beliebigen Benutzer Administrationsrechte vergeben. Aktuell stehen Ihnen fix vier Berechtigungsstufen zur Verfügung:
 
@@ -107,7 +69,7 @@ Standardmäßig kann nur der Administrator zur Administration der pascom in die 
 |**Telefonie Verwaltung**|Rechte wie der Administrator jedoch **ohne**:<br> - Verwaltung von Gateways/Ämter<br> - Restart von Diensten<br> - Datenbank-Backup und Wiederherstellung<br> - Endgeräte-Firmware ausrollen<br> - pascom Connector<br> - Cronjob-Verwaltung|
 |**Telefonbuch Verwaltung**|Der Benutzer kann das pascom Telefonbuch bearbeiten.|
 
-### Voicemailbox
+## Voicemailbox
 
 Jedem Benutzer wird automatisch eine persönliche Voicemailbox zugeteilt. Standardmäßig existiert diese zwar, Anrufer werden aber noch nicht auf die Voicemailbox abgeworfen.
 
@@ -121,7 +83,7 @@ Zuerst muss festgelegt werden, wie mit den Voicemails umgegangen werden soll. Un
 
 Anschließend muss die Voicemailbox als Aktion hinterlegt werden, falls das nicht schon bei der Benutzeranlage geschehen ist.
 
-### Alternative CallerID (CID Nummer)
+## Alternative CallerID (CID Nummer)
 
 Beim Anlegen erhält der Benutzer eine eigene Durchwahl unter der er angerufen werden kann. Im Normalfall wird einem anderen Teilnehmer diese Durchwahl auch angezeigt, wenn er von dem Benutzer angerufen wird. Wird dies nicht erwünscht, so kann unter Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Basisdaten` eine alternative **CID Nummer** angegeben werden.
 
@@ -129,7 +91,7 @@ Beim Anlegen erhält der Benutzer eine eigene Durchwahl unter der er angerufen w
 Soll ein Benutzer bei externen Anrufen eine andere Durchwahl als seine eigene signalisieren, konfigurieren Sie das bitte im Amt unter Ausgehende Rufe.
 {{% /notice %}}
 
-### Telefonbuch
+## Telefonbuch
 
 Standardmäßig erhält jeder Benutzer einen Eintrag im **Telefonbuch** mit seinem **Anzeigenamen** und seiner **Durchwahl**. Hier hat man die Möglichkeit weitere Daten einzugeben. Der Eintrag ist dann auf pascom Client, Mobility Client und IP-Telefonen verfügbar.
 
@@ -137,7 +99,7 @@ Es ist auch möglich den Telefonbucheintrag zu **deaktivieren**, falls nicht erw
 
 Einstellungen zum Benutzer-Telefonbucheintrag können Sie unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Telefonbuch` vornehmen.
 
-### Virtuelles Faxgerät
+## Virtuelles Faxgerät
 
 Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Faxgerät` können Sie dem Benutzer ein virtuelles Faxgerät anlegen:
 
@@ -148,7 +110,7 @@ Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab
 |ausgehende Faxkennung|Diese Nummer steht auf dem versendeten Fax.|
 |Format|Gibt das Format an, in dem der Benutzer eingehende Faxe per E-Mail erhält.|
 
-### Endgeräte
+## Endgeräte
 
 Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Geräte` können Sie dem Benutzer Telefone zuweisen.  
 Aus der linken Seite ist eine Übersicht über alle verfügbaren Telefone. Über den blauen Pfeil können Sie das gewünschte Telefon wählen und auf die rechte Seite ziehen zu den zugewiesenen Geräten. Benötigen Sie ein Telefon nicht mehr, dann ziehen Sie es über den blauen Pfeil (Richtung nach links) zurück auf die linke Seite.  
@@ -167,7 +129,7 @@ Für die zugewiesenen Geräte können Sie Timeouts einstellen:
 
 Benutzer-Timeouts müssen pro Gerät und pro Benutzer eingestellt werden.
 
-### Arbeitsplatz
+## Arbeitsplatz
 
 Unter `Benutzer` > `Arbeitsplätze` > `Hinzufügen` können Sie Arbeitsplätze anlegen. Im Tab `Geräte` können Sie die Telefone zuweisen. Ein Arbeitsplatz kann mehrere Geräte haben.  
 Im Tab `Benutzerzuordnung` können Sie Benutzer zuweisen. Der Arbeitsplatz kann aber bei der Erstellung auch erstmal leer bleiben. Benutzer können sich über ihr Telefon oder dem pascom Client selber am Arbeitsplatz anmelden.
@@ -180,7 +142,7 @@ Im Tab `Benutzerzuordnung` können Sie Benutzer zuweisen. Der Arbeitsplatz kann 
 Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Arbeitsplatz` können Sie auch dem Benutzer einen Arbeitsplatz zuteilen bzw. sehen an welchem Arbeitsplatz der Benutzer aktuell arbeitet.
 
 
-### Rufumleitungen (anlagenbasiert)
+## Rufumleitungen (anlagenbasiert)
 
 Eine Übersicht über Rufumleitungen finden Sie unter `Benutzer` > `Rufumleitung`. Hier sehen Sie die von den Benutzern angelegten Rufumleitungen, ob sie aktiv oder inaktiv sind, und Sie können hier auch neue Rufumleitungen setzen.
 
@@ -189,7 +151,7 @@ Richten Sie bitte nur Rufumleitungen über die pascom ein (über den pascom Clie
 {{% /notice %}}
 
 
-### Aktionen
+## Aktionen
 
 Aktionen sind in der pascom ein wichtiges Werkzeug um den Anrufablauf zu steuern. Aktionen ermöglichen es
 
@@ -200,7 +162,7 @@ Aktionen sind in der pascom ein wichtiges Werkzeug um den Anrufablauf zu steuern
 
 Lesen Sie dazu bitte den Artikel über [Aktionen]({{< ref "acd/actions" >}}).
 
-### Rollen
+## Rollen
 
 Benutzer ebenso wie Geräte, Arbeitsplätze oder Teams können Mitglieder in einer oder mehreren Rollen sein. Der Rolle selbst können Eigenschaften und Rechte zugeteilt werden. Sie steuern telefonie-relevante Eigenschaften und Rechte wie bsw. die Erlaubnis Gespräche anderer Benutzer heranzuholen.
 
@@ -222,7 +184,7 @@ Ein häufiger Anwendungsfall (und unsere Empfehlung) ist es, dass man pro Abteil
 
 
 
-### FollowMe
+## FollowMe
 
 Benutzern und Arbeitsplätzen können mehrere Endgeräte zugewiesen werden. Die Konfiguration welches Endgerät wann, wie lange und ob überhaupt klingelt bezeichnet man als **FollowMe**.
 
