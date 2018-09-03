@@ -12,7 +12,7 @@ weight: 70
 Ist eine Lizenz auf pascom 18 oder höher migriert kann diese nicht mehr für ältere Systeme verwendet werden. Möchte Sie für das alte System beispielsweise mehr Benutzer kaufen ist dies ohne ein gleichzeitiges Upgrade nicht mehr möglich.
 {{% /notice %}}
 
-Bevor Sie das Upgade durchführen können **kontaktieren** Sie bitte unseren **Vertrieb** um Ihre Lizenz auf pascom 18 oder höher umzustellen. Dieser Vorgang ist selbstverständlich kostenlos.
+Bevor Sie das Upgrade durchführen können **kontaktieren** Sie bitte unseren **Vertrieb** um Ihre Lizenz auf pascom 18 oder höher umzustellen. Dieser Vorgang ist selbstverständlich kostenlos.
 
 Für die Migration **benötigen** Sie außerdem einen **my.pascom.net Zugang**. Sollten Sie noch keinen Zugriff auf my.pascom.net haben ist Ihnen unser Team gerne behilflich.
 
@@ -41,22 +41,37 @@ pascom setzt ab Version 18 eine vollständig neue Basistechnologie ein. Daher ka
 
 Sie benötigen mindestens mobydick 7.11 (LTS) als Migrationsbasis. Falls Sie noch ein älteres System nutzen updaten Sie es bitte mindestens auf Version mobydick 7.11 (LTS). 
 
-### Backup erstellen
+### Datenbank Backup erstellen
 
-Erstellen Sie nun auf Ihrem vorhandenen System ein Backup. Melden Sie sich hierzu an Ihren pascom / mobydick Server an und klicken unter
+Erstellen Sie nun auf Ihrem vorhandenen System ein Datenbank Backup. Melden Sie sich hierzu an Ihren pascom / mobydick Server an und klicken unter
 {{< ui-button "Appliance" >}}>{{< ui-button "Sicherung" >}}>{{< ui-button "Datenbanksicherung" >}} auf {{< ui-button "Erstellen" >}}.
 
 Vergeben Sie einen Namen und schließen Sie ggf. Mitschnitte, Faxe und Voicemails in Ihr Backup mit ein.
 
-Klicken Sie auf {{< ui-button "Ausführen" >}} und laden das so eben erstelle Backup auf Ihren Computer herunter.
+Klicken Sie auf {{< ui-button "Ausführen" >}} und **laden** das so eben erstelle **Backup** 
+**auf Ihren Computer herunter**.
+
+### Backup Komplettsystem erstellen
+
+{{% notice info %}}
+Dieses Backup benötigen Sie im **Fehlerfall** um das ursprüngliche System **wiederherstellen** zu können. Bitte lassen Sie diesen Schritt in keinem Fall aus.
+{{% /notice %}}
+
+Klicken Sie auf {{< ui-button "Appliance" >}}>{{< ui-button "Sicherung" >}}>{{< ui-button "Komplettes System" >}} auf {{< ui-button "Erstellen" >}}.
+
+Klicken Sie auf {{< ui-button "Sicherung starten" >}} und **laden** das so eben erstelle **Backup** 
+**auf Ihren Computer herunter**.
+
 
 ### Neuinstallation pascom Server
 
-Installieren Sie nun pascom Server Version 18 oder neuer. Folgen Sie hierzu, je nach verwendetem System, einer unserer [Server Installations Anleitungen]({{< ref "server" >}}).
+Installieren Sie nun pascom Server Version 18 oder neuer. 
 
 Falls Sie eine virtuelle Maschine verwenden empfiehlt es sich eine neue VM zu erstellen und das alte System vorest nur abzuschalten.
 
 Nutzen Sie die pascom Appliance, SOHO oder SMB Server installieren Sie das System bitte neu.
+
+Folgen Sie hierzu, je nach verwendetem System, einer unserer [Server Installations Anleitungen]({{< ref "server" >}}).
 
 ### Einspielen des Backups
 

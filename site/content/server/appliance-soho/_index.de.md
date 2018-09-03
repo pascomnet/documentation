@@ -55,13 +55,14 @@ Da der pascom SOHO Server keine Monitoranschluss hat müssen Sie auf dem USB-Sti
     "hostname": "pascom-server",
     "skipNetwork": true,
     "network": {
-        "interface": "ens160",
+        "interface": "enp1s0",
         "mode": "static",
-        "ip": "192.168.0.1",
+        "ip": "192.168.0.5",
         "netmask": "255.255.255.0",
-        "gateway": "192.168.0.254",
-        "dns1": "192.168.0.254"
-    }
+        "gateway": "192.168.0.1",
+        "dns1": "192.168.0.1" ,
+		"dns2": ""
+   }
 }
 ```
 
@@ -82,7 +83,13 @@ Nach kurzer Zeit steht das System entweder unter der Standard-IP-Adresse **192.1
 
 ## Setup Wizard starten
 
-Öffnen Sie einen Brwoser und surfen auf die so eben konfigurierte IP-Adresse Ihres pascom Servers. Folgen Sie den Anweisungen bis Sie sich am Management Interface anmelden können:
+Öffnen Sie einen Browser und surfen auf die so eben konfigurierte IP-Adresse Ihres pascom Servers. Folgen Sie den Anweisungen bis Sie zum Reboot des Systems aufgefordert werden:
+
+{{% notice warning %}}
+Falls Sie das System neu aufsetzen und von **USB-Stick** gebootet haben **ENTFERNEN** Sie diesen **VOR DEM REBOOT**. Andernfalls wiederholt sich das initiale Setup.
+{{% /notice %}}
+
+Nach erfolgreichem Reboot sehen Sie die Anmelde-Maske:
 
 ![pascom Server Management](management.png)
 
