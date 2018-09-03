@@ -9,6 +9,10 @@ node('docker') {
         case 'dev':
             baseUrl = 'https://www.dev.pascom.net/doc'
             break
+        
+        case 'test':
+            baseUrl = 'https://www.test.pascom.net/doc'
+            break
     }
 
     stage('Checkout') {
