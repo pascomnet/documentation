@@ -1,31 +1,38 @@
 ---
-title: pascom Desktop Client installieren
-description: Den pascom Desktop Client installieren und updaten
-weight: 31
-
+title: Desktop Client Installation
+description: So installieren Sie den pascom Desktop Client auf den Plattformen Windows, macOS und Linux
+weight: 10
 ---
 
-
-## Desktop-Client herunterladen
-
-Die aktuelle Version des pascom Desktop Client für Windows, MacOS und Linux können Sie direkt von unserer [Homepage](https://www.pascom.net/de/mobydick-voip/) herunterladen. 
-
+{{< description >}}
 
 ## Windows Installation
 
+{{% notice tip %}}
+Systemvoraussetzung **Windows 7 64bit** oder höher
+{{% /notice %}}
+
 Die Windows Installation benötigt keine Administratorrechte und erfolgt automatisch in das Home-Directory des aktuell angemeldeten Benutzers:
 
- * Windows Desktop Client herunterladen
- * pascom-client-setup.exe ausführen
+ * [Windows Desktop Client](https://my.pascom.net/update/client/stable/windows) herunterladen
+ * **pascom-client-setup.exe** ausführen
  * Installationanweisungen folgen
 
 ## Terminalserver Installation
+
+{{% notice tip %}}
+Systemvoraussetzung **Windows Server 2012 R2 64bit** oder höher
+{{% /notice %}}
+
+{{% notice info %}}
+Bei dieser Installationsart werden die automatischen pascom Desktop Client Updates, auch ohne das explizite setzten der Kommandozeilen Option --noUpdate, deaktiviert und Sie müssen neue Versionen selbst herunterladen und ausrollen.
+{{% /notice %}}
 
 Am Microsoft Terminal Server können Sie den pascom Desktop Client optional statt in das jeweilige Home-Directory der Benutzer direkt in das Programme Verzeichnis installieren. 
 
 Der Nachteil dieser Installationsart ist, dass Sie sich selbst um das Update des Desktop Clients kümmern müssen da dieses Administrator Rechte Benötigt. Als Vorteil sparen Sie ca. 100 MB Plattenplatz pro Benutzer.
 
-* Windows Desktop Client herunterladen
+* [Windows Desktop Client](https://my.pascom.net/update/client/stable/windows)
 * Öffnen Sie die Eingabeaufforderung als Administrator
 * Starten Sie das Setup und geben Sie das Zielverzeichnis an 
 
@@ -35,32 +42,40 @@ Beispiel
 pascomClient-setup.exe /D=C:\Program Files (x86)\pascom Client
 ```
 
-## MacOS Installation
+## macOS Installation
 
-* MacOS Desktop Client herunterladen
-* pascom Client.dmg ausführen
+{{% notice tip %}}
+Systemvoraussetzung **macOS Sierra 10.12** oder höher
+{{% /notice %}}
+
+* [macOS Desktop Client](https://my.pascom.net/update/client/stable/macos) herunterladen
+* **pascom Client.dmg** ausführen
 * Schieben Sie das pascom Icon auf den Application Ordner
 * Sobald der Kopiervorgang abgeschlossen ist, können Sie den Client starten
 
 ## Linux Installation
 
-Unter Linux bringen wir keinen Installer mit:
+{{% notice tip %}}
+Systemvoraussetzung **Ubuntu 14.04 LTS** oder höher. Andere Linux Distributionen können funktionieren, werden aber von pascom weder aktiv getestet noch offiziell unterstützt. 
+{{% /notice %}}
 
-* Linux Desktop Client herunterladen
-* pascom_Client.tar.bz2 entpacken
-* Client starten
+* [Linux Desktop Client](https://my.pascom.net/update/client/stable/linux) herunterladen
+* **pascom_Client.tar.bz2** im Home-Directory entpacken
+* Ubuntu Application Icon mit **create-starter.sh** erstellen
+* Client über Application Icon starten
 
 Beispiel
-```
-tar xvjf pascom_Client-7.17.10.R.tar.bz2
-./md_client/bin/md_client
+
+```bash
+tar jxvf ./Downloads/pascom_Client-7.17.10.R.tar.bz2
+./pascom_Client/create-starter.sh 
 ```
 
 ## Windows Installer Kommandozeilen Parameter
 
 |Parameter|Bedeutung|
 |---------|---------|
-|/S|Ermöglicht eine Installation im Hintergrund, ohne dass Dialogfenster angezeigt werden.|
+|/S|Ermöglicht eine Installation im Hintergrund, ohne dass Dialogfenster angezeigt werden. Nützlich bei automatischer Softwareverteilung|
 |/D=PATH| Gibt einen Installationsordner an. Dieser Parameter muss immer der letzte in der Befehlszeile sein, darf keine Anführungzeichen enthalten und unterstützt nur absolute Dateipfade|
 
 
@@ -74,9 +89,9 @@ Welche Parameter und Umgebungsvariablen von Ihrer Version unterstützt werden k�
 Der Desktop Client darf nicht gestartet sein um die Hilfe auszugeben.
 {{% /notice %}}
 
-Beispielausgabe:
+Beispiel
 
-```
+```text
 pascom Client 7.18.00.D3667_267a0cd
 Environment variables without corresponding commandline parameter:
 - PC_SCALE_FACTOR=<value>: Set this environment variable to override automatic DPI Scaling value. Useful if you have a Setup with multiple Monitors and non-integer scaling factors. Value is a real, e. g. 1, 0.75, 1.5, and applies as second factor to the Scaling Value QT Calculated. Example: Your screen is at 150% scaling, QT would calculate a factor of 2. So VALUE needs to be 0.75 to get to the correct real scaling of 1.5
