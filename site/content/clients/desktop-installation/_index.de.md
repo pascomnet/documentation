@@ -9,7 +9,7 @@ weight: 10
 ## Windows Installation
 
 {{% notice tip %}}
-Systemvoraussetzung **Windows 7 64bit** oder höher
+Systemvoraussetzung **Windows 7, 8.1 oder 10 (32 und 64bit)**. Jeweils das neueste Patchlevel. 
 {{% /notice %}}
 
 Die Windows Installation benötigt keine Administratorrechte und erfolgt automatisch in das Home-Directory des aktuell angemeldeten Benutzers:
@@ -21,7 +21,7 @@ Die Windows Installation benötigt keine Administratorrechte und erfolgt automat
 ## Terminalserver Installation
 
 {{% notice tip %}}
-Systemvoraussetzung **Windows Server 2012 R2 64bit** oder höher
+Systemvoraussetzung **Windows Server 2008 R2 64bit** oder höher
 {{% /notice %}}
 
 {{% notice info %}}
@@ -56,7 +56,7 @@ Systemvoraussetzung **macOS Sierra 10.12** oder höher
 ## Linux Installation
 
 {{% notice tip %}}
-Systemvoraussetzung **Ubuntu 14.04 LTS** oder höher. Andere Linux Distributionen können funktionieren, werden aber von pascom weder aktiv getestet noch offiziell unterstützt. 
+Systemvoraussetzung **Ubuntu 16.04 LTS** oder höher. Andere Linux Distributionen können funktionieren, werden aber von pascom weder aktiv getestet noch offiziell unterstützt. 
 {{% /notice %}}
 
 * [Linux Desktop Client](https://my.pascom.net/update/client/stable/linux) herunterladen
