@@ -18,7 +18,7 @@ Dieser kann vom [Administrator]({{< ref "/clients/mobile-installation#via-pascom
 
 ### Pairing-Vorgang
 
-* Starten Sie den [pascom Desktop Client]({{< ref "">}}) und wählen Sie unter `Einstellungen` > `Meine Geräte` bei Ihrem zugeordneten Mobiltelefon die Schaltfläche **Pair** um den Pairing-Vorgang anzustoßen.
+* Starten Sie den [pascom Desktop Client]({{< ref "/clients/desktop-userguide">}}) und wählen Sie unter `Einstellungen` > `Meine Geräte` bei Ihrem zugeordneten Mobiltelefon die Schaltfläche **Pair** um den Pairing-Vorgang anzustoßen.
 
 * Geben Sie Ihr Benutzerpasswort für den pascom Desktop Client ein und klicken Sie auf **Weiter**. Jetzt werden Ihnen weitere Anweisungen und ein QR-Code angezeigt. Jeder QR-Code ist 5 Minuten gültig und erneuert sich nach Ablauf der Zeit automatisch oder kann mit einem Klick auf **Erneut generieren** manuell neu generiert werden.
 
@@ -28,7 +28,7 @@ Dieser kann vom [Administrator]({{< ref "/clients/mobile-installation#via-pascom
 Folgende Anweisungen werden Ihnen direkt im pascom Desktop Client angezeigt.
 {{% /notice %}}
 
-3. Laden Sie sich den pascom Mobile Client aus dem [AppStore](https://itunes.apple.com/de/app/pascom-client/id1253954942?mt=8) für iOS-Geräte bzw. [PlayStore](https://play.google.com/store/apps/details?id=net.pascom.client.android&hl=de) für Android-Geräte auf Ihr Mobiltelefon herunter.
+3. Laden Sie sich den pascom Mobile Client aus dem [AppStore](https://www.pascom.net/appstore) für iOS-Geräte bzw. [PlayStore](https://www.pascom.net/playstore) für Android-Geräte auf Ihr Mobiltelefon herunter.
 
 4. Sobald die Installation abgeschlossen ist starten Sie den pascom Mobile Client auf Ihrem Mobiltelefon und klicken Sie auf **Start**.
 
@@ -41,7 +41,7 @@ Folgende Anweisungen werden Ihnen direkt im pascom Desktop Client angezeigt.
 ![Pairing-Vorgang](pairing.de.png)
 
 {{% notice info %}}
-Sobald der pascom Mobile Client angemeldet wurde, kann dieser unabhängig vom [pascom Desktop Client]({{< relref "">}}) genutzt werden. Ein Simultanbetrieb ist **NICHT** notwendig.
+Sobald der pascom Mobile Client angemeldet wurde, kann dieser unabhängig vom [pascom Desktop Client]({{< ref "/clients/desktop-userguide">}}) genutzt werden. Ein Simultanbetrieb ist **NICHT** notwendig.
 {{% /notice %}}
 
 ## Übersicht
@@ -72,7 +72,7 @@ Funktionen in der Kontaktliste:
 
 |Funktion|Beschreibung|
 |---|---|
-|Filter für Kontaktliste|Hier können Sie über Filter nur bestimme Kontakte anzeigen lassen. Drei Filter sind standardmäßig schon vorhanden, *Client-User*, *Favoriten* und *Team*. Die Favoriten können Sie selber definieren, mit einem Klick auf das Sternchen neben dem Hörer-Symbol. Weitere Filter werden von Ihrem Administrator über [Rollen]({{< relref "">}}) festgelegt.|
+|Filter für Kontaktliste|Hier können Sie über Filter nur bestimme Kontakte anzeigen lassen. Drei Filter sind standardmäßig schon vorhanden, *Client-User*, *Favoriten* und *Team*. Die Favoriten können Sie selber definieren, mit einem Klick auf das Sternchen neben dem Hörer-Symbol. Weitere Filter werden von Ihrem Administrator über Rollen festgelegt.|
 |Client-User|Hier erhalten Sie Informationen über Ihre [Kontakte]({{< relref "#kontakte">}}).|
 |Favoriten|Hier finden Sie Ihre favorisierten Kontakte, die sowohl Benutzer als auch Telefonbuch-Kontakte sein können.|
 |Teams|Hier sehen Sie die [Teams]({{< relref "#teams">}}) in denen Sie festes oder flexibles Mitglied sind. Der Status *Verfügbar* oder *Offline* bezieht sich in diesem Fall darauf, ob Sie eingebucht sind oder nicht.|

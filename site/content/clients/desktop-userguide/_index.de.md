@@ -50,7 +50,7 @@ Funktionen in der Kontaktliste:
 |Profil- und Kontaktlisten-Einstellungen|Hier können Sie sich am Client abmelden und weitere Einstellungen vornehmen (siehe unten).|
 |Verfügbarkeits-Status|Es stehen zur Auswahl:<br>- *grün* > Verfügbar<br>- *gelb* > Bin gleich zurück<br>- *rot* > Bitte nicht stören (Diese Einstellung hat keine DND-Funktionalität.)<br>Die Status-Texte können Sie nach Bedarf ändern.|
 |Umschalter der Kontaktliste|Mit diesem Umschalter können Sie die Ansicht der Kontakte einstellen, *breit* mit Profil-Bild oder *schmal* ohne Profil-Bild.|
-|Filter für Kontaktliste|Hier können Sie über Filter nur bestimme Kontakte anzeigen lassen. Zwei Filter sind standardmäßig schon vorhanden, *Favoriten* und *Team*. Die Favoriten können Sie selber definieren, mit einem Klick auf das Sternchen neben dem Hörer-Symbol. Weitere Filter werden von Ihrem Administrator über [Rollen]({{< relref "">}}) festgelegt.|
+|Filter für Kontaktliste|Hier können Sie über Filter nur bestimme Kontakte anzeigen lassen. Zwei Filter sind standardmäßig schon vorhanden, *Favoriten* und *Team*. Die Favoriten können Sie selber definieren, mit einem Klick auf das Sternchen neben dem Hörer-Symbol. Weitere Filter werden von Ihrem Administrator über Rollen festgelegt.|
 |Kontakte|Hier erhalten Sie Informationen über Ihre [Kontakte]({{< relref "#kontakte">}}).|
 |Teams|Hier sehen Sie die [Teams]({{< relref "#teams">}}) in denen Sie fester oder flexibler Mitglied sind. Der Status *Verfügbar* oder *Offline* bezieht sich in diesem Fall darauf, ob Sie eingebucht sind oder nicht.|
 

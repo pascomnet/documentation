@@ -15,7 +15,7 @@ Der pascom Client bezieht seine Updates via HTTPS über [my.pascom.net](https://
 
 ## Manuelle Updates
 
-Sie können die automatischen Updates auch durch die Kommandozeilen Option `--noUpdate` unterbinden und Ihre Updates selbst verteilen oder manuell installieren. Der aktuellste Desktop Client steht auf unserer [Homepage](https://www.dev.pascom.net/de/downloads) zum Download zur Verfügung.
+Sie können die automatischen Updates auch durch die Kommandozeilen Option `--noUpdate` unterbinden und Ihre Updates selbst verteilen oder manuell installieren. Der aktuellste Desktop Client steht auf unserer [Homepage](https://www.pascom.net/de/downloads/#clients) zum Download zur Verfügung.
 
 Automatische Updates werden, auch ohne Angabe des `--noUpdate` Parameter, im Falle einer [Terminalserver Installation]({{< ref "/clients/desktop-installation#terminalserver-installation" >}}) deaktiviert.
 
@@ -24,7 +24,7 @@ Automatische Updates werden, auch ohne Angabe des `--noUpdate` Parameter, im Fal
 Ihnen stehen unterschiedliche Update-Channels zur Verfügung.
 Diese finden Sie in Ihrem Desktop-Client unter `Einstellungen` > `Über pascom client` > `Channel`. 
 
-Standardmäßig ist hier der `Stable` Channel ausgewählt - dieser enthält die selbe Version, die Sie auch über unsere [Homepage](https://www.pascom.net/de/downloads) erhalten können.
+Standardmäßig ist hier der `Stable` Channel ausgewählt - dieser enthält die selbe Version, die Sie auch über unsere [Homepage](https://www.pascom.net/de/downloads/#clients) erhalten können.
 
 ### Beta Programm
 

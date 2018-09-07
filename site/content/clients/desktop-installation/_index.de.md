@@ -34,7 +34,7 @@ Am Microsoft Terminal Server können Sie den pascom Desktop Client optional stat
 
 Der Nachteil dieser Installationsart ist, dass Sie sich selbst um das Update des Desktop Clients kümmern müssen da dieses Administrator Rechte Benötigt. Als Vorteil sparen Sie ca. 100 MB Plattenplatz pro Benutzer.
 
-* [Windows Desktop Client](https://my.pascom.net/update/client/stable/windows)
+* [Windows Desktop Client](https://my.pascom.net/update/client/stable/windows) herunterladen
 * Öffnen Sie die Eingabeaufforderung als Administrator
 * Starten Sie das Setup und geben Sie das Zielverzeichnis an 
 
