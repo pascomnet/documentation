@@ -1,7 +1,7 @@
 ---
 title: Mobile Client Installation
 description: Installieren Sie die pascom Mobile Clients via App- bzw. Playstore und pairen ihn via Bardcode mit dem pascom Server
-weight: 30
+weight: 40
 ---
 
 {{< doctype "both" >}}
