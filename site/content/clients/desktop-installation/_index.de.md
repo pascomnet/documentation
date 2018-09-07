@@ -4,6 +4,8 @@ description: So installieren Sie den pascom Desktop Client auf den Plattformen W
 weight: 10
 ---
 
+{{< doctype "both" >}}
+ 
 {{< description >}}
 
 ## Windows Installation

@@ -4,6 +4,11 @@ description: Diese Benutzerhandbuch richtet sich an Endanwender und erklärt den
 weight: 30
 ---
 
+
+{{< doctype "both" >}}
+ 
+{{< description >}}
+
 <!-- FIXME - bilder nur mit hellem theme! -->
 
 <!--FIXME

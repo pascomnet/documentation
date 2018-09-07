@@ -5,6 +5,8 @@ weight: 20
 
 ---
 
+{{< doctype "both" >}}
+ 
 {{< description >}}
 
 ## Automatik Updates
