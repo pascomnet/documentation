@@ -1,5 +1,5 @@
 ---
-title: TAPI Client
+title: TAPI Client Installation
 weight: 70
 description: Nutzen Sie den pascom TAPI Client für Windows um TAPI-Fähige Software wie ERP, CRM-Systeme, etc. in den pascom Server einzubinden
 ---
@@ -11,23 +11,10 @@ description: Nutzen Sie den pascom TAPI Client für Windows um TAPI-Fähige Soft
 ## Konzept
 
 Die TAPI meldet sich am Server mit den selben Benutzerdaten wie der pascom Client an und ist daher nicht direkt mit einem Telefon sondern dem Benutzer verknüpft.
+
 Sendet die TAPI ein Wahlbefehl an die pascom sucht diese automatisch das aktuelle Telefon des Benutzers und nutzt es für den Anruf. Wechselt der Benutzer den Arbeitsplatz oder das Telefon muss die TAPI nicht umkonfiguriert werden.
 
-Die pascom TAPI funktioniert unabhänging vom pascom Client.
-
-
-### Wann verwende ich..
-
-**.. den pascom Client?**
-
-* Wenn Sie eine vollständige Übersicht über die Verfügbarkeit Ihrer Kollegen haben wollen
-* Wenn Sie Chats, Faxe, Voicemails bequem verwenden wollen
-* Wenn Sie mit einem anderen Betriebssystem als Windows arbeiten
-
-**.. den pascom TAPI-Treiber?**
-
-* Wenn Sie die Telefoniefunktionen ihres ERP-Systems oder von Outlook verwenden wollen
-* Wenn Sie Ihre Anwendungssoftware mit TAPI-Support weiter verwenden wollen
+Die pascom TAPI funktioniert unabhängig vom pascom Desktop Client.
 
 ## Unterstützte TAPI-Funktionen
 
@@ -41,28 +28,21 @@ Die TAPI Schnittstelle spezifiziert eine Vielzahl an anrufbezogenen Funktionen, 
 |**Anrufen**|Anruf an eine Rufunummer initiieren|.
 |**Anruf annehmen**|Einen eingehenden Anruf automatisch am Telefon abheben.|
 
-## Unterstütze Betriebssystemversionen
-
-|Client|Server|
-|---|---|
-|Windows 7 (32bit/64bit) |Windows Server 2008R2 (32bit/64bit)|
-|Windows 8 (32bit/64bit)|Windows Server 2012 (32bit/64bit)|
-|Windows 8.1 (32bit/64bit)|Windows Server 2012R2 (32bit/64bit)|
-|Windows 10 (32bit/64bit)|Windows Server 2016 (64bit)|
-\* Empfohlen werden Versionen mit dem neuesten Feature-Update.
-
-
-### Amtskennziffer bei der TAPI konfigurieren
+## Amtskennziffer bei der TAPI konfigurieren
 
 
 Bei der Konfiguration bzw. der ersten Verwendung der TAPI-Schnittstelle werden Sie nach den zu verwendenden Wähleinstellungen gefragt. Allerdings erfolgt die Rufnummernbehandlung (Setzen einer 0 für ausgehende Gespräche, Internationale Formattierung, ...) ausschließlich im pascom Server, so dass die in Windows hinterlegten Einstellungen ignoriert werden.
 
 Die Ortskennzahl ist ein Pflichtfeld. Geben Sie hier bitte Ihre Ortskennzahl (Vorwahl) ohne führende Null ein. Alle anderen Felder sollten nicht gefüllt sein. Erreichbar ist dieser Dialog unter `Systemsteuerung` > `Telefon und Modem` > `Wählregeln (Eigener Standort)` > `Bearbeiten`.
 
-![Standort einstellen](/tapi_standort_bearbeiten.png?width=50%)
+![Standort einstellen](location.de.png?width=50%)
 
 
-## Konfiguration
+## TAPI Client Installation
+
+{{% notice tip %}}
+Systemvoraussetzung **Windows 7 (32 und 64bit)** oder höher und **Windows Server 2008 R2 (32 und 64bit)** oder höher . Jeweils das neueste Patchlevel. 
+{{% /notice %}}
 
 {{% notice warning %}}
 Bitte stellen Sie sicher, dass keine Anwendung läuft, die die TAPI-Schnittstelle verwendet. <br> <br>
@@ -73,13 +53,7 @@ Sie können eine Debug- anstatt der Produktiv-Version installieren, indem Sie da
 
 ### TAPI Software herunterladen
 
-Sie können das Installationsprogramm direkt über die Loginmaske Ihrer pascom unter dem Reiter `Service` herunterladen:
-
-![TAPI-Download](/pascom_service_tab.png?width=70%)
-
-{{% notice note %}}
-Es gibt keine getrennten Downloads für die 32 und 64 Bit Version, das Setup installiert automatisch die jeweils benötigten Dateien.
-{{% /notice %}}
+Den aktuellen pascom TAPI Client finden Sie im [Downloadbereich](https://www.dev.pascom.net/de/downloads/#clients) der pascom Homepage.
 
 
 ### Installation auf einer Windows Arbeitsstation
@@ -93,7 +67,7 @@ Akzeptieren Sie die Allgemeinen Geschäftsbedingungen (AGB), anschließend werde
 
 Nach erfolgreicher Installation müssen Sie die Verbindung der TAPI zu pascom konfigurieren:
 
-![TAPI konfigurieren](/tapi_konfigurieren.png?width=30%)
+![TAPI konfigurieren](config_credentials.en.png?width=30%)
 
 Die TAPI meldet sich am Server mit den selben Benutzerdaten wie der pascom Client an.
 
@@ -111,7 +85,7 @@ Bestätigen Sie den Erfolg der Installation mit einem Klick auf **Finish**.
 
 Wenn Sie die TAPI auf einem Termial-Server oder einem Rechner der von mehreren Personen genutzt wird installieren, müssen Sie den Benutzer, den Sie mit der TAPI verbinden die **Rolle xmpp.supervisor** zuweisen. Dies bedeutet das vom Terminal Server nur eine einzige XMPP-Verbindung aufgebaut wird, über die die gesamte Kommunikation abgewickelt wird.
 
-![Konzept](/tapi_terminalserver_konzept.png?width=60%)
+![Konzept](terminalserver_concept.png?width=60%)
 
 
 #### Installation
@@ -123,7 +97,7 @@ Starten Sie das Setup indem Sie die zuvor heruntergeladene Datei ausführen. Akz
 
 Nach erfolgreicher Installation müssen Sie die Verbindung der TAPI zu pascom konfigurieren:
 
-![TAPI konfigurieren](/tapi_konfigurieren.png?width=30%)
+![TAPI konfigurieren](config_credentials.en.png?width=30%)
 
 Die TAPI meldet sich am Server mit den selben Benutzerdaten wie der pascom Client an.
 
@@ -135,7 +109,7 @@ Die TAPI meldet sich am Server mit den selben Benutzerdaten wie der pascom Clien
 
 Es erscheint ein weiterer Dialog, in dem Sie die Benutzer auswählen können, die später in TAPI Applikationen (z. B. MS Outlook) zur Verfügung stehen sollen. Es werden hier alle in der pascom vorhandenen Benutzer angezeigt. Um einen Benutzer auszuwählen, kann man diese doppelklicken oder die Buttons in der Mitte verwenden:
 
-![TAPI Benutzer wählen](/tapi_benutzer_waehlen.png?width=50%)
+![TAPI Benutzer wählen](config_select_users.en.png?width=50%)
 
 Bestätigen Sie den Erfolg der Installation mit einem Klick auf **Finish**.
 
@@ -143,10 +117,10 @@ Bestätigen Sie den Erfolg der Installation mit einem Klick auf **Finish**.
 
 Starten Sie Outlook und suchen Sie den gewünschten Kontakt. Mit der rechten Maustaste rufen Sie das Kontextmenü und die zu wählende Rufnummer auf:
 
-![TAPI Outlook](/tapi_outlook_dial.png)
+![TAPI Outlook](outlook_dial_1.de.png)
 
 Nun erscheint das Anruffenster. Bestätigen Sie per **Anruf beginnen** die Nummer:
-![TAPI Outlook](/tapi_outlook_dial2.png?width=40%)
+![TAPI Outlook](outlook_dial_2.de.png?width=40%)
 
  Nun sollte Ihr Telefon den Anruf durchführen.
 {{% notice info %}}
@@ -155,7 +129,7 @@ Nun erscheint das Anruffenster. Bestätigen Sie per **Anruf beginnen** die Numme
 
  Mit einem Klick auf **Wähloptionen** können Sie die zu verwendende Leitung auswählen:
 
- ![TAPI Outlook](/tapi_outlook_leitung.png?width=50%)
+ ![TAPI Outlook](outlook_line.de.png?width=50%)
 
 ### Unbeaufsichtigte (Silent) Installation
 
@@ -190,22 +164,18 @@ Um Debug-Output aufzeichnen zu können, müssen Sie die Debug-Version des pascom
 
 3. Wählen Sie den Eintrag "pascom TAPI Service Provider"
 
-![TAPI Service Provider](/tapi_config_telefon.png?width=50%)
+![TAPI Service Provider](debug_phone_and_modem.de.png?width=50%)
 
 4. Klicken Sie auf Konfigurieren
 5. Wenn im folgenden Dialog der Text "WARNING: DEBUG VERSION INSTALLED" erscheint, ist die Debug-Version installiert.
 
-
-![Tapi anmelden](/tapi_config_mtapi.png?width=60%)
-
-
-![Tapi anmelden Debug](/tapi_config_mtapi_debug.png?width=60% )
+![Tapi anmelden Debug](debug_credentials.en.png?width=50% )
 
 
 
 Sollten Sie sich nicht sicher sein, beenden Sie bitte alle Programme und führen das Setup erneut aus. Bitte beachten Sie dabei die Installationshinweise. Während der Installation selektieren Sie bitte "Debug" und bestätigen mit weiter.
 
-![TAPI Installationshinweise](/tapi_mtapi_debug.png?width=60% )
+![TAPI Installationshinweise](debug.en.png?width=60% )
 
 Sollte die Produktiv-Version bereits installiert sein wird diese nun durch die Debug-Version ersetzt.
 
@@ -217,11 +187,11 @@ Nun müssen Sie die entsprechenden Tools starten und Konfigurieren
 **DebugView öffnen**
 
 1. Starten Sie DebugView.exe bitte mit Administrator-Privilegien indem Sie rechts auf die Datei klicken und "Als Administrator ausführen" auswählen
-![DebugView öffnen](/tapi_debugviewadmin.png?width=70%)
+![DebugView öffnen](debug_viewadmin.de.png?width=70%)
 
 
 2. Im Menüpunkt "Capture" haken Sie die Option "Capture Global Win32" an. Sollten Sie das Programm nicht als Administrator gestartet haben, erhalten Sie nun eine Fehlermeldung
-![Capture Global Win32](/tapi-debugviewglobalwin32.png?width=70%)
+![Capture Global Win32](debug_viewglobal_win32.en.png?width=70%)
 
 
 **Line Watcher öffnen**
@@ -230,13 +200,13 @@ Nun müssen Sie die entsprechenden Tools starten und Konfigurieren
 2. Im DropDown auf dem ersten Tab wählen sie bitte die TAPI-Leitung des
 3. Benutzers der die Probleme verursacht
 Setzen Sie einen Haken bei der Option "More Information"
-![Line Watcher öffnen](/tapi_linewatcher.png?width=70%)
+![Line Watcher öffnen](debug_linewatcher.en.png?width=70%)
 
 Starten Sie als nächstes bitte Ihre TAPI-Software führen die Schritte aus, die zu dem Problem führen. Im Fenster von DebugView sollten Sie dabei eine große Menge Ausgaben sehen. Sobald Sie einen Anruf starten bzw. einen eingehenden Anruf bekommen, sollte auch eine Ausgabe im Line Watcher erscheinen.
-![Line Watcher Output öffnen](/tapi_linewatcher_output.png?width=70%)
+![Line Watcher Output öffnen](debug_linewatcher_output.en.png?width=70%)
 
 Sobald Sie ihren Testablauf abgeschlossen haben, speichern Sie in beiden Anwendungen (DebugView und LineWatcher) die entstandenen Traces bitte ab.
-![TAPI Debug Output View](/tapi_debugview_output.png?width=70% "TAPI Debug Output View")
+![TAPI Debug Output View](debug_view_output.en.png?width=70% "TAPI Debug Output View")
 
 **Trace im DebugView abspeichern**
 
