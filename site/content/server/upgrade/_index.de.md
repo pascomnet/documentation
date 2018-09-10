@@ -22,6 +22,8 @@ Für die Migration **benötigen** Sie außerdem einen **my.pascom.net Zugang**. 
 Bitte beachten Sie folgende Checkliste **BEVOR** Sie mit dem Upgrade beginnen
 
 * [ ] Ich verwende keine Siemens Telefone
+* [ ] Ich verwende keine Auerswald Telefone (Unterstützung noch in Arbeit)
+* [ ] Ich verwende keine Aastra Tischtelefone (Unterstützung noch in Arbeit)
 * [ ] Ich verwende keine Patton Gateways
 * [ ] Die Hardware oder Virtuelle Maschine die ich verwende hat min 2 GB RAM
 * [ ] Ich verwende keine 32Bit Hardware oder 32Bit Virtuelle Maschine

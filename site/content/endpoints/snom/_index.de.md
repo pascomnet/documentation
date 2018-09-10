@@ -1,7 +1,7 @@
 ---
 title: Snom Tischtelefone 300er und 700er Serie
 description: Integrieren Sie Ihre Snom IP-Tischtelefone in die pascom
-weight: 41
+weight: 10
 ---
 
 {{< doctype "both" >}}
