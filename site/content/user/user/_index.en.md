@@ -1,6 +1,6 @@
 ---
 title: Adding Users
-description: Add new users and understand the most important settings.
+description: Add new users and configure the most important settings.
 weight: 22
 ---
 
@@ -8,7 +8,7 @@ weight: 22
 
 {{< description >}}
 
-**Good to Know**
+**Useful Knowledge**
  
  * [User and Locations]({{< ref "concept/user" >}})
 

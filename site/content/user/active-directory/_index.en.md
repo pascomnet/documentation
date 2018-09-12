@@ -1,6 +1,6 @@
 ---
 title: Microsoft Active Directory Integration
-description: Synchronisieren und Authentifizieren Sie Ihre Benutzer gegen das Microsoft Active Directory
+description: User Synchronisation and Authentication with Microsoft Active Directory
 weight: 30
 ---
 
@@ -12,16 +12,16 @@ weight: 30
 
 ## Microsoft Active Directory
 
-Um die Daten aus dem Active Directory auslesen zu dürfen brauchen Sie einen Benutzer mit entsprechender Berechtigung. Natürlich könnten Sie dazu den Active Directory Administrator verwenden. Da pascom die Zugangsdaten für den wiederholten Import abspeichern muss und der Administrator mit wesentlich mehr als den benötigten Rechten ausgestattet ist, bietet es sich an einen eigenen Benutzer für pascom anzulegen:
+In order to be able to read data from Active Directoy, you require a user with the appropriate permissions. You could use the Active Directory Administrator for this purpose. However, as the pascom phone system needs to save the access credentials for the automated future imports and the the administrator as significantly more than the required permissions, it is advisable to create a user account for the pascom PBX:
 
-Wenn Sie *mobydick* als Benutzernamen verwenden wird dieser beim Import durch den LDAP-Filter erkannt und nicht automatisch als Benutzer auf der Telefonanlage mit angelegt.
+If yous use *mobydick* as the username, this will be automatically detected by the LDAP filter during the import process and will not be automatically added as a pascom phone system user. 
 
-Vergeben Sie für den pascom Benutzer ein Passwort und markieren Sie *Kennwort läuft nie ab*. pascom authentifiziert sich am Active Directory bei jedem Connector-Lauf. Wenn Sie das Passwort ändern möchten müssen Sie das sowohl in Active Directory als auch im pascom Connector machen:
+Assign a password for the pascom user and select *password never expires*. The pascom PBX can then authenticate itself by the Active Directory with every execution of the connector sync. If you wish to change this password, you must change the password in both Active Directory and within the pascom connector profile:
 
-## Connector-Profil "Benutzer aus AD"
+## "Users from AD" Connector Profile
 
-Erstellen Sie ein neues Connector-Profil indem Sie in der pascom Web-UI unter dem
-Menüpunkt `Erweitert` > `Connector` auf `Hinzufügen` klicken.
+Create a new connector profile by using the following steps in the pascom phone system Web UI:
+Click on the menu option `Advanced` > `Connector` and then click `Add`.
 
 Wählen Sie die Vorlage *Benutzer aus AD* und tragen Sie folgende Daten ein:
 

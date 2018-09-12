@@ -1,6 +1,6 @@
 ---
 title: Import Users via XLSX
-description: Import users for the initial installation via XLSX file (Excle, Open Office, Libreoffice, etc)
+description: Import users for the initial installation via XLSX file (Excel, Open Office, Libreoffice, etc)
 weight: 22
 ---
 
@@ -8,7 +8,7 @@ weight: 22
 
 {{< description >}}
 
-**Good to Know**
+**Useful Knowledge**
  
  * [User and Locations]({{< ref "concept/user" >}})
 

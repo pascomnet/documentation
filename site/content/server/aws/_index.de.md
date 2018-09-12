@@ -74,11 +74,11 @@ In dieser Beispielkonfiguration nehmen wir eine fixe Quell-IP-Adresse von **1.2.
 
 ### AWS SSH Key Pair
 
-Der pascom Server benötigt **kein** SSH Key Pair der AWS. Wählen Sie deshalbt **Proceed without a key pair** und starten die Instanz. Die Passwörter können Sie im Anschluss über das pascom Server Management festlegen.
+Der pascom Server benötigt **kein** SSH Key Pair der AWS. Wählen Sie deshalb **Proceed without a key pair** und starten die Instanz. Die Passwörter können Sie im Anschluss über das pascom Server Management festlegen.
 
 ## pascom Setup Wizard starten
 
-Öffnen Sie einen Brwoser und surfen auf die AWS IP-Adresse Ihres pascom Servers. Folgen Sie den Anweisungen bis Sie sich am Management Interface anmelden können:
+Öffnen Sie einen Browser und surfen auf die AWS IP-Adresse Ihres pascom Servers. Folgen Sie den Anweisungen bis Sie sich am Management Interface anmelden können:
 
 ![pascom Server Management](management.png)
 
