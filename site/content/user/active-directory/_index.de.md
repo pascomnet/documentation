@@ -46,7 +46,7 @@ Im Standard importiert die Vorlage alle Benutzer bis auf den Benutzer *mobydick*
 
 ### Benutzerfelder im AD
 
-|Active Directory|pascom|Bescheibung|
+|Active Directory|pascom|Beschreibung|
 |---|---|---|
 |Konto > Benutzeranmeldename|Anmeldename|Der Anmeldename wird für sämtliche Anmeldung verwendet und darf nur Kleinbuchstaben enthalten. Pflichtfeld.|
 |Allgemein > Anzeigename|Anzeigename |Der Anzeigename erscheint auf allen Telefondisplays und im pascom Client. Pflichtfeld.|

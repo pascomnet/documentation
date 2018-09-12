@@ -23,75 +23,74 @@ Assign a password for the pascom user and select *password never expires*. The p
 Create a new connector profile by using the following steps in the pascom phone system Web UI:
 Click on the menu option `Advanced` > `Connector` and then click `Add`.
 
-Wählen Sie die Vorlage *Benutzer aus AD* und tragen Sie folgende Daten ein:
+Within the template, select *AD User Sync** and enter the following data:
 
-|Feld|Beschreibung|
+|Field|Description|
 |---|---|
-|**Bezeichung**|Name des Connectors|
-|**AD Domäne**|Active Directory Domain Name|
-|**AD Server**|Server IP oder DNS-Name des Hosts|
-|**Benutzername** und **Passwort**|Der zuvor im AD angelegte pascom Benutzer zur Authentifizierung|
-|**Authentifizierung konfigurieren**|**NEIN**: Benutzer werden nur importiert und authentifizieren sich gegen die pascom<br>**JA**: Benutzer werden importiert und können sich gegen den AD authentifizieren. In diesem Fall wird die Authentifizierung eingerichtet und Sie können unter `Appliance` > `Dienste` im Reiter `Authentifizierung` bei Bedarf anpassen.|
+|**Name**|Connector Profile Name|
+|**AD Domain**|Active Directory Domain Name|
+|**AD Server**|Server IP or Host DNS Name|
+|**Username** and **Password**|Credentials of the previously added pascom User for authentication|
+|**Configure authentication**|**NO**: Users will only be imported. Authentication will be performed by the pascom phone system. <br>**YES**: Users will be imported and the can be authenticated against the AD. In this case, the authentification will be setup and you can modify this according to your needs under `Appliance` > `Services` under the tab `Authentification`.|
 
-Nach dem Speichern kann die Vorlage im Reiter `Basisdaten` bei Bedarf angepasst werden.
+After saving, the template can be modified according to requirements under the tab `Basic Data`.
 
 ### Pre Filter
 
-Im Standard importiert die Vorlage alle Benutzer bis auf den Benutzer *mobydick* aus dem AD. Über den Reiter `Pre Filter` können Sie den Import einer Gruppe von Benutzern, z. B. *pascom-user*, einschränken. Fügen Sie dazu folgenden Code ein:
+Per default, the template will import all users from the AD except for the user *mobydick*. Using the `Pre Filter` tab you can restrict the import to groups of users e.g. *pascom-user*. Simply enter the following code: 
 
     if (strpos($row['memberOf'],'pascom-user') !== false) {
     return true;
     }
     return false;
 
-### Benutzerfelder im AD
+### User Fields in AD
 
-|Active Directory|pascom|Bescheibung|
+|Active Directory|pascom|Description|
 |---|---|---|
-|Konto > Benutzeranmeldename|Anmeldename|Der Anmeldename wird für sämtliche Anmeldung verwendet und darf nur Kleinbuchstaben enthalten. Pflichtfeld.|
-|Allgemein > Anzeigename|Anzeigename |Der Anzeigename erscheint auf allen Telefondisplays und im pascom Client. Pflichtfeld.|
-|Allgemein > Vorname|Vorname|Vorname des Benutzers für den pascom Telefonbucheintrag.|
-|Allgemein > Nachname|Nachname|Nachname des Benutzers für den pascom Telefonbucheintrag.|
-|Allgemein > Rufnummer|Durchwahl|Die interne Durchwahl des Benutzers. Wird diese nicht im AD gepflegt, vergibt pascom automatisch die nächste freie Durchwahl aus dem Telefonnummernpool.|
-|Allgemein > E-Mail|EMail|E-Mail Adresse des Benutzers. Wird für den Versand von Voicemails und Faxen benötigt.|
-|Organisation > Firma|Organisation|Firma des Benutzers für den Telefonbucheintrag in pascom.|
-|Rufnummern > Privat|Telefon privat|Private Telefonnummer des Benutzers für den pascom Telefonbucheintrag.|
-|Rufnummern > Mobil|Handy|Mobilnummer des Benutzers für den pascom Telefonbucheintrag.|
-|Rufnummer > Fax|Fax|Interne Faxnummer des Benutzers. Legt automatisch ein virtuelles pascom Faxgerät für den Benutzer mit an. Voraussetzung hierfür ist ein konfigurierter Faxserver auf der pascom.|
+|Account > sAMAccountName|username|The login name is used for all logins and can only contain lowercase letters. Required field.|
+|General > displayName |displayname |The display name is displayed on telephone displays and within the pascom desktop and mobile clients. Required field.|
+|General > givenName|givenname|First name of the user used for the pascom telephone book entry.|
+|General > sn|surname|Last name of the user used for the pascom telephone book entry.|
+|General > telephoneNumber|phone|The user's internal extension number. If this is not managed in AD, pascom will automatically assign the next available extension from the number pool.|
+|General > mail|email|User's e-mail address. Used for sending voicemails and faxes.|
+|Organisation > company|organisation|Company to be entered in the user's pascom telephone book entry.|
+|Phone numbers > homePhone|homephone|User's private / home telephone number for the pascom telephone book entry.|
+|Phone numbers > mobile|mobile|User's mobile phone number to be added to the pascom telephone book entry.|
+|Phone numbers > facsimileTelephoneNumber|Fax|Internal fax number assigned to the user. Automatically also adds a virtual pascom fax machine assigned to the user. A pre-requirement here is that the pascom fax server is already configured.|
 
-Die Felder sind lediglich ein Vorschlag der Vorlage. Sie können Felder hinzufügen und entfernen bzw. die gesamte Import-Struktur beliebig anpassen.
+These fields are just template suggestions. You can add and remove fields or even modify the complete structure to match your requirements.
 
-### Importlauf testen und aktivieren
+### Test and Activate the Import Process
 
-Nachdem Sie die Konfiguration abgeschlossen haben, können Sie durch die Schaltfläche `Speichern und Simulieren` testen welche Datensätze importiert werden würden. Wenn Sie mit dem Ergebnis zufrieden sind können Sie den Import entweder einmalig unter `Aktion` > `Import jetzt durchführen` ausführen oder durch die Schaltfläche `Automatisieren` eine regelmäßige Durchführung des Importes einrichten.
+After you have finalised your configuration, you can test the connector profile to determine which datasets will be imported using the `Save and Simulate` button. Once you are satisfied with the results, it is possible to either perform a one off import using the `Action` > `Import Now` option or automate the import to be performed at regular intervals by clicking the `Automate` button.
 
-### Authentifizierung testen
+### Authentication Tests
 
-Haben Sie in der Vorlage *Authentifizierung konfigurieren* auf *JA* gesetzt können Sie nun unter `Appliance` > `Dienste`
-im Reiter `Authentifizierung` mit der Schaltfläche `Anmeldung Testen` testen ob die Authentifizierung Ihrer Benutzer funktioniert.
+If you have configured the template using the *Configure authentication* *YES* option, it is now possible to test the user authentication process using the following menu options `Appliance` > `Services`
+under the `Authentification` tab and finally using the `Test Authentication` button.
 
 
-## Optionale Einstellungen
+## Optional Settings
 
-### Feldzuordnung anpassen
+### Modify Field Assignments
 
-Im Connector Profil können Sie im Reiter Variablen und Struktur die Feldzuordnung ActiveDirectory > pascom an Ihre Bedürfnisse anpassen.
+Within the Connector Profile under the tabs Variables and Structure it is possible to modify the field assignments from Active Directory > pascom according to your requirements.
 
-Als Beispiel möchten wir die Berufsbezeichnung des Benutzers im Notizfeld des pascom Telefonbuches speichern.
-Fügen Sie hierzu im Reiter `Variablen` folgende Zeile durch `Hinzufügen` ein:
+For example, should you wish to save the Job Title of a user in the pascom telephone book notes field, simply go to the `Variables` tab and click `Add`:
 
-|Variable|Quelle|
+|Variable|Source|
 |----|----|
 |Job|return $row["Job"];|
 
-Durch diese Zeile speichert der Connector den Inhalt des ActiveDirectory Feldes "Job" in der gleichnamigen Variable "Job" ab.
-Diese Variable muss nun unter `Struktur` dem Notiz pascom-Telefonbuch Feld zugeordnet werden.
+Through this row, the connector saves the content of the Active Directory "Job" field under the variable of the same name "Job". 
+This Variable must now be assigned to the pascom telephone book notes field under the `Structure` tab.
 
-Ergänzen Sie hierzu die Zeilen:
+To do this add the lines:
 
           "028pho_notes" :        "{{{Job}}}"
 
-**in der Struktur:**
+**to the structure as follows:**
 
         {
           "identity": [{
@@ -120,21 +119,21 @@ Ergänzen Sie hierzu die Zeilen:
         }
 
 
-Dadurch wird der Wert der Variablen Job dem **Notiz** pascom Telefonbuch Feld zugewiesen.
+This will result in the Job variable being assigned to the notes field in the pascom telephone book.
 
 
-### Rollenzuweisung
+### Role Assignment
 
-Um Benutzer direkt beim Import einer Rolle zuweisen zu können muss die Struktur um die Rollenzuweisung erweitert werden.
+In order to assign roles to users directly upon importing, the structure must be expanded to include role assignments.
 
-Fügen Sie hierzu im Reiter `Variablen` folgende Zeile durch `Hinzufügen` ein:
+Under the `Variables` tab add the following lines by clicking `Add`:
 
-**Variable:** rollen
+**Variable:** roles
 
-**Quelle:**
+**Source:**
 
           //Fill in the roles you want to filter (rolesToFilter) like this:
-          //array('Rolle1', 'Rolle2');          
+          //array('Role1', 'Role2');          
 
           $rolesToFilter=array();          
           $output=array();
@@ -159,16 +158,17 @@ Fügen Sie hierzu im Reiter `Variablen` folgende Zeile durch `Hinzufügen` ein:
 
           return $output;
 
-Das Feld "rollen" entspricht einer Liste an Rollen, denen der Benutzer zugeordnet werden soll.
-Über die Mitgliedszuweisung im ActiveDirectory können Sie die Rollen in pascom bestimmen.
-Durch diese Zeile kann der Connector die Mitgliedszuweisung aus dem ActiveDirectory auslesen und in dem Benutzerrollen pascom Feld zuordnen.
+The field "roles" corresponds to a list of roles which should be assigned to the user. 
+You can use the member assignment in Active Directory to determine the pascom phone system roles. 
+By using this coding, the Connector can read the Active Directory member assignments and assign them to the pascom field User Roles.
 
 {{% notice note%}}
-Tragen Sie in der PHP-Variable `rolesToFilter`im Code des `Quelle` Feldes, die Rollenbezeichnungen ein, nach denen der Connector im ActiveDirectory suchen soll. Alle anderen ActiveDirectory Mitgliedszuweisungen werden ignoriert.
-Beispiel: **array('Rolle1', 'Rolle2');**
+In the PHP-Variable `rolesToFilter`, enter the `source` field code and role name for which the connector should search for in the Active Directory. All other Active Directory member assignments will be ignored. 
+
+Example: **array('Role1', 'Role2');**
 {{% /notice%}}
 
-Ergänzen Sie hierzu die Zeilen:
+To do this, expand the following lines so: 
 
         {{#if rollen}}
           ,"user_roles": [
@@ -179,7 +179,7 @@ Ergänzen Sie hierzu die Zeilen:
           ],
         {{/if}}
 
-**in der Struktur:**
+**to the structure as follows:**
 
           {
             "identity": [{
@@ -210,41 +210,41 @@ Ergänzen Sie hierzu die Zeilen:
           }
 
 
-### Softphone oder IP-Telefone zuweisen
+### Assign a Softphone or IP Telephone
 
-Sie können aus dem ActiveDirectory heraus einem Benutzer direkt ein IP-Telefon oder Softphone zuweisen.
+From within the Active Directory, it is possible to directly assign a user with a Softphone or IP telephone. 
 
-**IP-Telefon via MAC zuweisen:**
+**Assign IP Telephones via MAC Address:**
 
-Fügen Sie hierzu im Reiter `Variablen` folgende Zeile durch `Hinzufügen` ein:
+Under the `Variables` tab add the following lines by clicking `Add`:
 
-|Variable|Quelle|
+|Variable|Source|
 |----|----|
 |mac|return $row["ipphone"];|
 
-Durch diese Zeile speichert der Connector den Inhalt des ActiveDirectory Feldes "ipphone" in der Variable "mac" ab.
-"mac" entspricht der MAC-Adresse des IP-Telefons das zugewiesen werden soll.
-Diese Variable muss nun unter `Struktur` dem IP-Telefon pascom Feld zugeordnet werden.
+This line instructs the Connector to save the content of the Active Directory field "ipphone" to the variable "mac".
+"mac" corresponds to the MAC Address of the IP phone which should be assigned to the user.
+This variable now be assigned to the pascom field IP Telephone within the `Structure`.
 
-Ergänzen Sie hierzu die Zeilen:
+To do this, expand the following lines so: 
 
       ,"ipphone“: [{
             "010dev_bez": "{{username}}_sipdevice“,
             „071ipp_mac“: „{{{mac}}}“
         }],
 
-**Softphone zuweisen:**
+**Softphone Assignment:**
 
-Wenn Sie dem Benutzer ein pascom-Softphone zuweisen möchten, muss keine zusätzliche Variable angelegt werden.
+If you want to assign users with a pascom softphone, it is not necessary to add an additional varialble.
 
-Es genügt, wenn Sie unter `Struktur` folgende Zeilen ergänzen:
+Expanding the `Structure` coding with the following is sufficient:
 
       "ipdevice.mdsoftphone": [{
             "010dev_bez": "{{{username}}}_sipdevice"
         }]
 
 
-**in der Struktur:**
+**to the structure as follows:**
 
           {
             "identity": [{

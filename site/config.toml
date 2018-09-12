@@ -9,7 +9,7 @@ themeVariant = "red"
 
 [Languages]
 [Languages.en]
-title = "Documentaion"
+title = "Documentation"
 weight = 1
 languageName = "English"
 languageCode = "en"
