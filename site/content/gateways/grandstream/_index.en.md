@@ -30,7 +30,7 @@ weight: 20
 
 ### Preparation
 
-For automatic device commissioning, a functioning DHCP server is essential. Please refer to [Network planning & configuration]({{< relref "server/05network-config.md">}}) for more information.
+For automatic device commissioning, a functioning DHCP server is essential.
 
 ### Device Commissioning
 
