@@ -57,7 +57,7 @@ To use the telephony and instant messaging services, open these ports for unrest
 #### Optional Services
 
 {{% notice tip %}}
-Give the following ports unrestricted access via the Internet only when you actually use the following services. 
+Provide the following ports unrestricted access via the Internet only when you actually use the following services. 
 {{% /notice %}}
 
 | Port | Description |

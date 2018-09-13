@@ -38,7 +38,7 @@ Jeder Anruf durchläuft vor dem Rufaufbau die **Aktion Vorher**. Für bestimmte 
 
 Es wird eine Durchwahl gerufen, die zu einem Benutzer gehört. Der Anrufer durchläuft folgenden Ablauf:
 
-![Aktionen](/actions_example_de.png?width=1000px)
+![Aktionen](actions_example_de.png?width=1000px)
 
 Der Anruf durchläuft vor dem Rufaufbau die Aktion(en) Vorher. Dabei wird die Herkunft des Anrufs geprüft (intern oder extern). Anschließend kommt es zu dem eigentlichen Rufaufbau. Wird der Anruf nicht entgegengenommen durchläuft er die Aktion(en) Nachher, wobei erneut die Herkunft geprüft wird.
 

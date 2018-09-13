@@ -1,6 +1,6 @@
 ---
-title: Mobilzugriffe via Internet einrichten
-description: Dieser Schritt ist notwending falls Sie Ihren lokalen pascom Server auch von unterwegs per pascom mobile Client (iOS/Android App) oder Desktopclient nutzen möchten
+title: Setup Mobile Access via the Internet
+description: This step is necessary if you want users to be able access your local on-premise pascom phone system when they are "on the move" via the pascom mobile app (Android & iOS) or the pascom desktop client
 weight: 10
 ---
  
@@ -8,114 +8,114 @@ weight: 10
  
 {{< description >}}
 
-## (Variante 1) Externe IP-Adresse ohne Zertifikat
+## (Option 1) External IP Address without a Certificate
 
-In dieser Variante nutzen Sie Ihre feste, externe IP-Adresse direkt, ohne die Einrichtung eines Domainnames oder Zertifikaten. 
+This options uses your fixed external IP address, without needing to setup a domain name or certificates.
 
-**Voraussetzung**
+**Requirements**
 
- * Feste, externe IP-Adresse
+ * Fixed, external IP Address
 
-**Vorteil**
+**Pros**
 
- * Einfacher einzurichten
+ * Simple to setup 
 
-**Nachteil**
+**Cons**
 
- * Geringere Sicherheit, da "Self Signed" Zertifikat
- * Ihre Benutzer müssen eine IP-Adresse statt eines eingängigen Domainnamens für die Ersteinrichtung des pascom Desktop Clients kennen
+ * Less security, "Self Signed" certificate
+ * Your users must know the IP address for the initial setup of the pascom desktop client as opposed to an easier to remember domain name
  
-### Ihre Firewall anpassen
+### Update Your Firewall Settings
 
-Um den Zugriff auf Ihren pascom Server aus dem Internet einzurichten ist es notwendig ein Forwarding auf die IP-Adresse des pascom Server für folgende Ports einzurichten:
+In order to enable pascom server access from the Internet, it is necessary to setup a Port Forwarding on to the IP address of the pascom server as follows: 
 
-#### Telefonieren und Chatten
+#### Telephony and Instant Messaging
 
-| Port | Beschreibung |
+| Port | Description |
 | ---- | ------------ |
-| TCP **5061** | SIP-TLS - sichere SIP-Kommunikation |
-| TCP **5222** | pascom Desktop- und Mobile-Client Zugriffe |
-| UDP **30000 - 35000** | SRTP - verschlüsselte Sprachdaten |
+| TCP **5061** | SIP-TLS - secure SIP communication |
+| TCP **5222** | pascom Desktop and Mobile client access |
+| UDP **30000 - 35000** | SRTP - encrypted Voice Data |
 
-#### Optionale Dienste
 
-| Port | Beschreibung |
+#### Optional Services
+
+| Port | Description |
 | ---- | ------------ |
-| TCP **636** | LDAPS für Telefonbuchzugriffe via LDAP |
-| TCP **8884**  | Provisionierung von IP-Hardware-Telefonen |
-| TCP **8885**  | VPN Tunnel direkt zur Telefonanlage |
+| TCP **636** | LDAPS for telephone book access via LDAP |
+| TCP **8884**  | Provisioning of Desktop IP Phones (hardware telephones) |
+| TCP **8885**  | VPN Tunnel direct to the phone system |
 
+### pascom Server Interface Update
 
-### pascom Server Interface anpassen
+Having updated your Firewall settings, you must now enter your external IP Address on the pascom Server Interface: 
 
-Nachdem Sie Ihre Firewall angepasst haben müssen Sie Ihre externe IP-Adresse am pascom Server Interface eintragen:
+* Using an admin account, login to the pascom server in your browser
+* Click {{< ui-button "Interface" >}}
+* Click {{< ui-button "Edit" >}} on the interface used by you
+* Under {{< ui-field "Interface DNS Name" >}} enter your external IP Address
+* Press {{< ui-button "Save" >}} to apply the configuration
 
-* Melden Sie sich per Browser am pascom Server als admin an
-* Klicken Sie auf {{< ui-button "Interface" >}}
-* Klicken Sie auf {{< ui-button "Edit" >}} bei dem von Ihnen verwendeten Interface
-* Tragen Sie unter {{< ui-field "Interface DNS Name" >}} Ihre externe IP-Adresse ein
-* Durch {{< ui-button "Save" >}} wenden Sie die Konfiguration an
-
-Das Interface startet nun neu. Jetzt können Sie mit der Einrichtung Ihrer Telefonanlage fortfahren.
+The Interface will now restart. Now you can continue with the setup of your pascom phone system.
  
 
-## (Variante 2) Eigener, externer Domainname
+## (Option 2) Your External Domain Name
 
-In dieser Variante haben Sie einen eigenen, extern erreichbaren Domainnamen der auf die externe IP-Adresse Ihres Routers zeigt.
+This option you will have your own externally accessible domain name which points to the external IP Address of your router.
 
-**Voraussetzung**
+**Requirements**
 
- * Feste, externe IP-Adresse
- * Domainname der auf die externe IP-Adresse verweist
+ * Fixed External IP Address
+ * Domain name that points to your external IP address
 
-**Vorteil**
+**Pros**
 
- * Mehr Sicherheit
- * Vollautomatische Verwendung von Let's Encrypt möglich
- * Ihre Benutzer sehen nur den eingängigen Domainnamen statt einer IP-Adresse
+ * More security
+ * Fully automated use of Let's Encrypt is possible
+ * Your users only see your more memorable domain name instead of an IP address
 
-**Nachteil**
+**Cons**
 
- * Einrichtung ist ein wenig komplizierter
+ * Setup is a bit more complicated
  
-### Ihre Firewall anpassen
+### Update Your Firewall Settings
 
-Um den Zugriff auf Ihren pascom Server aus dem Internet einzurichten ist es notwendig ein Forwarding auf die IP-Adresse des pascom Server für folgende Ports einzurichten:
+In order to enable pascom server access from the Internet, it is necessary to setup a Port Forwarding on to the IP address of the pascom server as follows: 
 
-#### Telefonieren und Chatten
+#### Telephony and Instant Messaging
 
-| Port | Beschreibung |
+| Port | Description |
 | ---- | ------------ |
-| TCP **80**/**443** | Webinterface der Telefonanlage - wichtig für Let's Encrypt Zertifikat |
-| TCP **5061** | SIP-TLS - sichere SIP-Kommunikation |
-| TCP **5222** | pascom Desktop- und Mobile-Client Zugriffe |
-| UDP **30000 - 35000** | SRTP - verschlüsselte Sprachdaten |
+| TCP **80**/**443** | Phone system Web Interface - Important for Let's Encrypt certificates |
+| TCP **5061** | SIP-TLS - secure SIP communication |
+| TCP **5222** | pascom Desktop and Mobile client access |
+| UDP **30000 - 35000** | SRTP - encrypted Voice Data |
 
-#### Optionale Dienste
+#### Optional Services
 
-| Port | Beschreibung |
+| Port | Description |
 | ---- | ------------ |
-| TCP **636** | LDAPS für Telefonbuchzugriffe via LDAP |
-| TCP **8884**  | Provisionierung von IP-Hardware-Telefonen |
-| TCP **8885**  | VPN Tunnel direkt zur Telefonanlage |
+| TCP **636** | LDAPS for telephone book access via LDAP |
+| TCP **8884**  | Provisioning of Desktop IP Phones (hardware telephones) |
+| TCP **8885**  | VPN Tunnel direct to the phone system |
 
-### Domainnamen einrichten
+## Domain Name Setup
 
-Da nur auf Domainnamen und nicht auf IP-Adressen gültige Zertifikate erstellt werden können müssen Sie zunächst einen Domainnamen für die externe IP-Adresse Ihres Internetzuganges einrichten.
+As valid certificates can only be created using the domain name and not IP addresses, you will now need to setup a domain name for the external AWS IP address.
 
-Sollte Ihnen kein eigener, externer DNS Server zu verfügung stehen bietet [no-ip](https://www.noip.com/) eine einfache Möglichkeit auf Ihrem Router (Fritzbox, etc) einen extern erreichbaren Domainnamen einzurichten.
+Should you not have your own, external DNS server available,[no-ip](https://www.noip.com/) offers an easy way to setup externally accessible domain names on your router (Fritzbox, etc).
 
-### Let's encrypt aktivieren
+## Activate Let's Encrypt 
 
-Nachdem Sie Ihre Firewall angepasst und einen Domainnamen eingerichtet haben ist der pascom Server in der Lage vollautomatisiert ein Let's Encrypt Zertifikat für diesen Domainnamen einzurichten. Hierzu sind folgende Schritte notwendig:
+Now your have modified your firewall and setup up a domain name, your pascom phone system server has the capability to fully and automatically setup a Let's Encrypt certificate for these domain names. Simply follow these steps:
 
-* Melden Sie sich per Browser am pascom Server als admin an
-* Klicken Sie auf {{< ui-button "Interface" >}}
-* Klicken Sie auf {{< ui-button "Edit" >}} bei dem von Ihnen verwendeten Interface
-* Tragen Sie unter {{< ui-field "Interface DNS Name" >}} den zuvor eingerichteten {{< ui-input "Domainname" >}} ein
-* Schalten Sie den {{< ui-field "Certificate mode" >}} auf {{< ui-input "Let's Encrypt" >}}
-* Durch {{< ui-button "Save" >}} wenden Sie die Konfiguration an
+* Using an admin account, login to the pascom server via your browser
+* Click {{< ui-button "Interface" >}}
+* Click {{< ui-button "Edit" >}} on the interface used by you
+* Under {{< ui-field "Interface DNS Name" >}} enter the previously setup {{< ui-input "Domain Name" >}}
+* Switch the the {{< ui-field "Certificate mode" >}} to {{< ui-input "Let's Encrypt" >}}
+* Press {{< ui-button "Save" >}} to apply the configuration
 
-Das Interface startet nun neu und bezieht automatisch das Let's Encrypt Zertifikat. Sollte der Start des Interfaces fehl schlagen prüfen Sie bitte Ihre Firewall-Einstellungen, insbesondere Port TCP 443, und Ihren Domainnamen erneut.
+The Interface will now restart and automatically applies the Let's Encrypt Certificate. Should the interface restart encounter errors, please check your Firewall Settings, in particular Port TCP 443 and your domain name.
 
-Jetzt können Sie mit der Einrichtung Ihrer Telefonanlage fortfahren.
+You can now continue with the setup of your phone system.
