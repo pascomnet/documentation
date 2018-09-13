@@ -26,14 +26,14 @@ The pascom appliance is delivered with the pascom phone system server software a
 ### Requirements
 
 * USB stick with a minimum capacity of 8GB
-* Free of charge Flash Tool [Etcher](https://etcher.io/) (available for Windows, Linux and MacOS)
+* Free of charge Flash Tool [Rufus](https://rufus.akeo.ie/) (only for Windows)
 * pascom Server Software [ISO File](https://www.pascom.net/en/download/)
  
 ### Flash the USB Stick
 
-Connect the USB stick to your computer and start the Etcher tool. Now select the pascom Server ISO file under {{< ui-button "Select image" >}}, select the USB stick via {{< ui-button "Select drive" >}} and finally click the {{< ui-button "Flash" >}}:
+Connect the USB stick to your compute and start Rufus. Now select the pascom Server ISO file under {{< ui-button "Select image" >}}, select the USB stick via {{< ui-button "Select drive" >}} and finally click the {{< ui-button "START" >}}:
 
-![Etcher](etcher.png "Etcher")
+![Rufus](rufus.png?width=300px "Rufus")
 
 ### Connect the USB Stick
 

@@ -26,14 +26,14 @@ Im Auslieferungszustand ist der pascom Server bereits vorinstalliert. Führen Si
 ### Vorraussetzungen
 
 * USB-Stick mit mindestes 8 GB Kapazität
-* Kostenlosen Flash Tool [Etcher](https://etcher.io/) (erhältich für Windows, Linux und MacOS)
+* Kostenlosen Flash Tool [Rufus](https://rufus.akeo.ie/) (nur für Windows)
 * pascom Server [ISO-Dateien](https://www.pascom.net/de/download/)
  
 ### USB-Stick flashen
 
-Verbinden Sie den USB-Stick mit Ihrem Computer und starten Sie das Tool Etcher. Wählen Sie nun das pascom Server ISO unter {{< ui-button "Select image" >}}, wählen Sie den USB-Stick via {{< ui-button "Select drive" >}} und klicken Sie im Anschluss auf {{< ui-button "Flash" >}}:
+Verbinden Sie den USB-Stick mit Ihrem Computer und starten Sie das Tool Rufus. Wählen Sie nun das pascom Server ISO unter {{< ui-button "SELECT" >}}, wählen Sie den USB-Stick via {{< ui-button "Device" >}} und klicken Sie im Anschluss auf {{< ui-button "START" >}}:
 
-![Etcher](etcher.png "Etcher")
+![Rufus](rufus.png?width=300px "Rufus")
 
 ### USB-Stick anstecken
 
