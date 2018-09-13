@@ -36,189 +36,177 @@ For pascom on-premise phone system installations, it is possible to perform full
 
 ## Device Onboarding 
 {{% notice tip %}}
-Das Telefon benötigt einen DHCP-Server um eine IP-Adresse zu erhalten
+The telephone requires a DHCP server in order to receive an IP Address.
 {{% /notice %}}
 
 {{% notice tip %}}
-Handelt es sich nicht um ein fabrikneues Telefon setzen Sie es in jedem
-Fall auf **Werkseinstellungen** zurück. Wählen Sie hierzu am Telefon, im eingeschalteten
-Zusatand, `**##` und halten anschließend `#` gedrückt bis nach dem Reboot ein Menü
-erscheint. Wählen Sie `1` für Werkseinstellungen.
+Should the telephone not be factory new, ensure you perform a **factory reset**. In order to do this on the phone, power up the phone and then press`**##` holding the final `#` until after the phone has restarted and a menu has appeared. Select option `1` for factory settings. 
 {{% /notice %}}
 
-### Telefon anschließen
+### Connect the Phone
 
-Stecken Sie das IP-Telefon an das Netzwerk. Das Telefon enthält einen eingebauten Switch, benutzen Sie den Ethernet-Port mit der Bezeichnung **NET**. Falls Sie kein **PoE** (Power over Ethernet) verwenden, stecken Sie das Telefon an den Netzstrom.
+Connect the phone to your network. Snom IP phones come with a built in switch, allowing you to connect the phone directly via the Ethernet port labelled as **NET**. Should you not have a **PoE** option available, connect the phone to a power supply.
 
-Während des Boot-Vorganges steht wiederholt die IP-Adresse des Telefones im
-Display. Notieren Sie sich diese.
+The Snom IP phone will now boot and acquires an IP address which is displayed on the screen during the boot process. Please take a note of this address.
 
-Nach dem Booten bleibt das Telefon bei der Länderauswahl stehen.
+After booting, the phone will stop at the country selection screen.
 
-### MAC-Adresse ermitteln
+### Determine the MAC Address
 
-Die MAC-Adresse steht auf der Rückseite des Telefones.
+MAC addresses can be found on the rear underside of the telephone.
 
-Alternativ surfen Sie nun mit Ihrem Browser auf die zuvor notierte IP-Adresse des Telefones.
+Alternatively, using your browser, surf to the previously noted telephone's IP address.
 
-Unter `System Information > MAC-Address` notieren Sie sich die MAC-Adresse des
-Telefones.
+Under `System Information > MAC-Address` please take a note of the phone's IP address.
 
-### Endgerät anlegen
+### Add Phones / Endpoints
 
-Loggen Sie sich in Ihrer Telefonanlage ein und fügen unter `Endgeräte > Geräteliste` ein
-neues Gerät vom Typ **IP-Telefon: Hersteller Snom** hinzu.
+Log into your pascom phone system and under `Devices > Device list` and press `Add` and select the option **IP Telephone: Manufacturer Snom**.
 
-Tragen Sie im Feld **Mac-Adresse** die zuvor ermittelte MAC-Adresse des Telefones
-ein.
+Under the corresponding field, enter the **Mac-Address** that you have just found and noted. 
 
-### Jobs Anwenden
+### Apply Jobs
 
-Nach dem Speichern von Änderungen erscheint in der Job-Box (oben) ein
-entsprechender Eintrag die Telefonie anzuwenden. Starten Sie den Job durch
-einen Klick auf den `grünen Haken`.
+After saving your phone setup configurations, a corresponding prompt to apply telephony configs will appear in the job box (top of the screen). Simply start the job by clicking on the `green tick`.
 
-### Provisionierung-URL ermitteln
+### Finding the Provisioning URL
 
-Haken Sie das Telefon in der Geräte-Liste an und wählen `Aktion > Provisioning URL`. Kopieren Sie die
-**URL** in die Zwischenablage.
+Select the desired telephone from the device list and under `Action` select the option `Provisioning URL`. Copy the **URL** to your clipboard.
 
-### Provisionierung-URL am Telefon eintragen
+### Enter the Provisioning URL on the Telephone
 
-Zurück auf der Web-UI des Telefones tragen Sie unter `Advanced Settings > Update > Setting URL`
-die eben kopierte Provisionierung-URL ein.
+Go back to the telephone Web UI and under `Advanced Settings > Update > Setting URL` paste the copied Provisioning URL.
 
-Klicken Sie auf `Apply` und anschließend auf `Reboot`.
+Click on `Apply` and finally `Reboot`.
 
-### Benutzer zuweisen
+### Assigning Users
 
-Nachdem das Telefon neu gestartet ist und erfolgreich provisioniert wurde können Sie einen Benutzer oder Arbeitsplatz zuweisen. Klicken Sie hierzu auf `Bearbeiten`. Im Tab `Zuweisung` kann dem Telefon ein [Benutzer (oder Arbeitsplatz)]({{< ref "concept/user">}}) zugewiesen werden.
+As soon as the IP phone has appeared in the Device List, it can be edited via the `Edit` button. Under the `Assign` tab, the phone can be assigned to a [user (or location)]({{< ref "concept/user">}}).
 
-Nach dem Speichern und Anwenden der Telefoniekonfiguration wird das Telefon neu gestartet.
+After saving and once again apply the telephony configuration, the telephone will restart.
 
-### Funktion testen
+### Function Testing
 
-Am einfachsten kann man die erfolgreiche Inbetriebnahme testen, indem man mit **\*100** die eigene Voicemailbox anruft. Daraufhin sollte die Ansage Ihrer Voicemailbox zu hören sein.
+The simplest method of testing whether a device has been successfully deployed is to call ones Voicemail box via **\*100**. On successfully provisioned phones, you should now hear your Voicemail box prompts.
 
-### pascom Menütaste
+### pascom Menu Key
 
-Nach der Provisionierung entspricht die **Menü**-Taste am Snom IP-Telefon nicht mehr dem Telefon-Menü, sondern ruft das telefonspezifische pascom Menü auf. Hier sind pascom Funktionen hinterlegt:
+After the provisioning process, the **Menu** button on Snom phones is no longer assigned to the Telephone Menu, but rather to a telephone specific pascom Menu making the following pascom phone system functions available:
 
-|Funktion|Beschreibung|
+|Function|Description|
 |---|---|
-|Telefonbuch|Ruft das pascom Telefonbuch auf.|
-|Journal|Zeigt verpasste, angenommene und gewählte Anrufe an|
-|Rufumleitung|Setzt eine Rufumleitung, aktiviert/ändert eine schon gesetzte Rufumleitung oder deaktiviert eine aktive Rufumleitung.|
-|Voicmailbox|Voicemailbox-Menü zum Einschalten/Ausschalten und Abhören der eigenen Voicemailbox|
-|Anmelden|Hier kann sich ein Benutzer an dem Arbeitsplatz anmelden.|
-|Abmelden [*benutzername*]|Der bereits angemeldete Benutzer kann sich an dem Arbeitsplatz abmelden.|
-|Warteschlangen|Dient zur Verwaltung der Warteschlangen (anmelden, abmelden, pausieren...), je nach Konfiguration der Warteschlangen.|
+|Telephone Book|Opens up the central PBX phonebook.|
+|Journal|Displays answered, dialed and missed calls|
+|Call Forwarding|Sets a call forwarding, activates / updates a previously configured call forwarding or deactivates an active call forwarding.|
+|Voicemail Box|Voicemail box menu for activating/deactivating your mail box, plus message play backs|
+|Login|Enables a user to log into the location where the phone is (Hotdesking / roaming users).|
+|Logout [*username*]|Logs out the current user from this location.|
+|Teams (Queues)<!--FIXME-->|Is used for agent management within a queue (login, logout, pause..) according the configuration of the queue.|
 
-Besitzt das Snom IP-Telefon keine Menütaste (z. B. Snom 300, 710, D715) wird die zweite Funktionstaste mit dem pascom Menü belegt.
+Should the Snom IP telephone not have a menu key (i.e. Snom 300, 710 or D715), then the second function key will be assigned with the pascom menu function.
 
 {{% notice tip%}}
-Setzen Sie Rufumleitungen nur über das pascom Menü, da diese Rufumleitungen über die pascom verwaltet werden können.
+Only set Call Forwardings via the pascom menu as they can then be managed by the PBX and reflected within the desktop UC client etc.
 {{% /notice %}}
 
 {{% notice info%}}
-Die Verwendung der DND-Taste (*do not disturb*) am Snom hat zur Folge, dass die Durchwahl am Telefon nicht erreichbar ist. Der DND-Hinweis erscheint nur am Telefon und hat für die pascom (z. B. Desktop Client) keine weitere Bedeutung.
+ Using the DND key (*do not disturb*) directly on your Snom phone, ensures that the assigned user extension cannot be reached on the phone. The DND notice will appear only on the telephone itself and will have no impact on other endpoints or the Desktop UC client (softphone).
 {{% /notice %}}
 
-### Auf die Snom-Weboberfläche zugreifen
+### Accessing the Snom Telephone Web UI
 
-Um auf die Weboberfläche Ihres IP-Telefons zu gelangen benötigen Sie die IP-Adresse. Im Folgenden sind Möglichkeiten beschrieben, um diese in Erfahrung zu bringen:
+In order to access your telephone's web UI, you will need to know the phone's IP address. The following outlines the different methods of discovering the phone IP Address:
 
-#### IP-Adresse am Telefon anzeigen
+#### Finding the IP-Address on the Telephone
 
-Tippen Sie die Taste **?** bzw. **Help** um die IP-Adresse Ihres Telefon anzuzeigen, anschließend wird diese am Display angezeigt.
+Press the **?** (i.e. the **help**) in order to call up the phone IP address.
 
-#### IP-Adresse über die Geräteliste ermitteln
+#### Finding the IP-Address via the Web UI Device List
 
-Loggen Sie sich in das Web-UI der pascom ein. Klicken Sie auf `Endgeräte` > `Geräteliste`. Nun sehen Sie eine Übersicht über alle verfügbaren Geräte. Links von jedem Eintrag finden Sie ein *Info*-Symbol. Klicken Sie es an, erhalten Sie eine Übersicht über das provisionierte Telefon, unter anderem auch die IP-Adresse.
+Log into the PBX Web UI and select the `Devices` > `Device list`, which provides you an overview of all available devices. To the left of each entry is an *Info* symbol which when clicked will open an overview of the provisioned telephone including the IP address.
 
-#### Admin-Rechte
+#### Admin Rights
 
-Um Zugriff zu einigen Menüpunkten in der Web-UI des Snom Telefons zu haben benötigen Sie Admin-Rechte. Klicken Sie hierfür auf den Menüpunkt **Erweitert**. Nun geben Sie das Admin-Passwort ein.
+In order to access certain menu options with the Snom Telephone web UI, you will require admin rights. To do this simply go the **Advanced** menu point and now enter the Admin Password.
 
-### Tasten belegen über das Web-UI
+### Function Keys
 
-Klicken Sie in der Menüliste auf der linken Seite auf Funktionstasten.
+In the menu of the left, click on the `Function Keys` option.
 
-#### Andere Benutzer (Nebenstellen) überwachen mit BLFs
+#### User / Extension Monitoring with BLF Keys
 
-Hier können Sie Funktionstasten einrichten, um andere Nebenstellen zu überwachen. Die BLF-Taste (Besetztlampenfeld oder Busy Lamp Field) gibt Informationen über den Status der überwachten Durchwahl. Überwachen bedeutet in diesem Fall zu sehen ob ein Benutzer telefoniert, angerufen wird und ggf. sein Gespräch heranzuholen (Pickup).
+Using the function keys, it is possible to monitor other extensions (i.e. users). The BLF keys (Busy Lamp Field) can be used to provide status information relating to the monitored extension. In this scenario, monitoring means watching the extension to see if the user is currently on the phone, being called or to answer calls intended for this extension (call pickup).
 
-|Kontext|Typ|Nummer|Kurzform|
+|Context|Type|Number|Short Text|
 |---|---|---|---|
-|Account wählen|**Nebenstelle**|Die zu überwachende Durchwahl (z. B. 123) in der Form <sip:123@192.168.100.1>.|Besitzt das Telefon statt des Papier-Beschriftungsstreifens ein zweites Display, können hier die Tasten beschriftet werden.|
+|Select Account / Identity|**Extension**|The extension to be monitored (e.g. 123) in the following format <sip:123@192.168.100.1>|Should the telephone have a second display for paperless keys, then the keys labels can be entered here.|
 
-Neben Benutzer-Durchwahlen können auch Einbuchcodes für Warteschlangen oder Durchwahlschalter konfiguriert werden.
+Alongside user extensions, it is also possible to configure keys as login / out codes for queues or to configure them as an extension switch.
 <!--FIXME Links zu dw-schalter, warteschlangen  -->
 
-#### Weitere nützliche Funktionstasten
-
-|Funktionstaste|Beschreibung|
+#### Additional Useful Function Keys
+     
+|Function Key|Description|
 |---|---|
-|**Direktwahl**|Hier kann eine Telefonnummer hinterlegt werden.|
-|**DTMF**|Hier können DTMF-Zeichen hinterlegt werden.|
+|**Speed Dial**| Can be assigned with a telephone number.|
+|**DTMF**|Can be assigned with DTMF characters.|
 
-### Basis-Konfiguration
+### Default Configuration
 
-Wie bereits erwähnt, werden Snom IP-Telefone  mit Hilfe der Basis-Konfiguration provisioniert. Die Basis-Konfiguration ist unter `Endgeräte` > `Basis-Konfigurationen` zu finden.
+As previously stated, Snom IP phones are provisioned using the default configurations which can be found under `Devices`> `Basic Configurations`.
 
-{{% notice note %}}
-Bevor Sie die Basis-Konfiguration ändern, müssen Sie diese `Duplizieren`.
+{{% notice note%}}
+When modifying the default configuration settings, ensure you make a duplicate copy of the original using the `Duplicate`tool.
 {{% /notice %}}
 
-Ebenfalls können Sie eine schon bearbeitete Basis-Konfiguration als `Standard setzten`. Somit erhalten neu angelegte IP-Telefone automatisch die angepasste Basis-Konfiguration.
+In addition, you can set an already edited default configurations as the `standard settings`. Doing so ensures that all newly added IP telephones will automatically be provisioned with these default configurations.
 
-#### Zuweisung einer Basis-Konfiguration
+#### Assigning a Default Configuration
 
-Eine Basis-Konfiguration kann auf mehreren Wegen zugewiesen werden:
+A default configuration can be assigned using multiple methods:
 
-+ Über `Endgeräte` > `Basis-Konfigurationen` > Basis-Konfiguration auswählen und Bearbeiten, im Tab `Geräte` können gleich mehrere IP-Telefone hinzugefügt werden.
-+ Über `Endgeräte` > `Geräteliste` > IP-Telefon auswählen und Bearbeiten im Tab `Basisdaten`.
++ Via `Devices`> `Basic Configurations` > Choose your Basic configuration set and press `Edit` Under the `Devices` tab, it is possible to add multiple IP telephones.
++ Via `Devices`> `Device list` > Select and edit the IP Telephone and under the tab `Basic Data` choose the correct **Basic configuration** option.
 
-#### BLF-Tasten konfigurieren über die Basis-Konfiguration
+#### Automatic BLF Key Configuration via Basic Configurations
 
-Im Tab `Konfiguration` können Sie die vorhandene Basis-Konfiguration anpassen. Im Bereich **keys** finden Sie bereits vorkonfigurierte Funktionstasten, an denen Sie sich orientieren können.
+Under the `Configuration` tab, it is possible to modify the existing basic configuration. Under the **Keys** section you will find the already pre-configured function keys which provide a useful guideline to work with.
 
-Surfen Sie auf das Web-UI Ihres Snom Telefons und belegen Sie unter *Funktionstasten* als Beispiel die Taste **P1**. Wählen Sie als Typ **Nebenstelle**, als Nummer **123** und als Label **Musterbenutzer**. Übernehmen Sie die Einstellungen.
+Navigate to the Snom Telephone web UI and under *Function Keys* configure the **P1** button as an example. As type, select **Extension**, and as number **123** and **ExampleUser** as the short text. Once done, apply the settings.
 
-Klicken Sie auf den Menüpunkt *Einstellungen*. Falls Sie den Menüpunkt noch nicht sehen, benötigen Sie [Admin-Rechte]({{< relref "#auf-die-snom-weboberfläche-zugreifen">}}).<br>
-Suchen Sie nach *fkey0* und *fkey_label0*. Die gefundenen Zeilen tragen Sie anschließend in der Basis-Konfiguration über das Web-UI der pascom ein:
+Next, click on the *Settings* menu option. Should this option not be visible, you will require [admin rights]({{< relref "#accessing-the-snom-telephone-web-ui">}}).<br>
+Search for *fkey0* and *fkey_label0*. Next copy and paste the search result lines into the phone system web UI:
 
     {{!-- keys --}}
     fkey0: dest <sip:123@192.168.100.1>
-    fkey_label0: Zentrale
+    fkey_label0: Switchboard
 
-Weisen Sie diese Basis-Konfiguration über den Tab `Geräte` den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und speichern Sie. Nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
+Via the menu tab `devices`, assign these default configurations to the telephones which should have this BLF configuration. Save and apply your changes and once the phones have restarted, the changes will have taken affect.
 
+### Firmware Updates
 
-### Firmwareupdate
+From mobydick version 7.14 onwards, IP endpoint firmware will no longer be included as standard. Should a firmware version (other than the version pre-installed on the phone) be required, this must be externally sourced and per hand uploaded to the phone system firmware management tool.
 
-Ab der mobydick Version 7.14 wird die Firmware für IP-Endgeräte nicht mehr mitgeliefert. Sollte eine andere als auf dem IP-Endgerät installierte Firmware benötigt werden, muss diese selber heruntergeladen und in die pascom Firmware-Verwaltung hochgeladen werden.
+#### Upload New Firmware
 
-#### Firmware hinzufügen
+The desired firmware can be uploaded via the the `Devices`> `Device firmware`:
 
-Die gewünschte Firmware kann hinzugefügt werden unter `Endgeräte` > `Firmware`:
-
-|Einstellung|Beschreibung|
+|Settings|Description|
 |---|---|
-|Firmware-Datei|Laden Sie hier die Firmware hoch. Diese finden Sie auf der [Wiki-Seite von Snom](http://wiki.snom.com/Category:Firmware).|
-|Model|Modellbezeichnung des Snom-Telefons|
-|Version|Firmware-Version|
-|Dokumentation|Optionales Feld für Notizen|
+|Firmware Files|Upload the firmware files here. Firmware can be found here: [Snom Support Wiki](http://wiki.snom.com/Category:Firmware).|
+|Model|Snom Telephone model name|
+|Version|Firmware Version|
+|Comments|Optional field for notes|
 
-#### Firmware ausrollen
+#### Firmware Roll Outs
 
-Die Firmware kann über `Endgeräte` > `Geräteliste` aktualisiert werden. Wählen Sie die Zielgeräte in der Geräteliste mit Häkchen aus und klicken Sie auf `Aktion` > `Firmware ausrollen`. Nun erhalten Sie eine Übersicht der gewählten Geräte, in der Sie die Zielfirmware auswählen können. Anschließend klicken Sie auf `Firmware update` um die gewählte Firmware auszurollen.
+Firmware updates can be rolled out via the `Devices` > `Device list` menu. Simply select the desired Snom Endpoints from the list via the check boxes and click `Actions` > `Roll out firmware`. This will open an overview of all selected devices to which the new firmware version should be rolled out to. Click `Firmware Update` to roll out the desired firmware version.
 
-#### Empfohlene Firmware
+#### Recommended Firmware
 
-Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es uns leider nicht möglich jede zu testen, so dass es sein kann, dass manche Firmware-Versionen pascom Funktionen nicht unterstützen. Daher finden Sie hier eine Liste der Firmwares die von uns bereits getestet wurden:
+As there are numerous Firmware versions available for the varying IP endpoint models, it is unfortunately not possible to test them all. Therefore, it is possible that some firmware versions may not support all phone system functions. If in doubt, please refer to below list of already tested firmware versions:
 
-|Modell|Firmware|
+|Model|Firmware|
 |---|---|
 |Snom 300|8.7.3.25.5|
 |Snom 320|8.7.3.25.5|
