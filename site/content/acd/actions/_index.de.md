@@ -1,7 +1,7 @@
 ---
 title: Anrufverteilung mit Aktionen
 description: Konfigurieren Sie mit Aktionen die Anrufverteilung in pascom
-weight: 71
+weight: 10
 ---
 
 {{< doctype "both" >}}

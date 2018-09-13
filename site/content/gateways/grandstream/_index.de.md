@@ -4,6 +4,10 @@ description: Integrieren Sie Ihre Analog- und ISDN-Endgeräte mithilfe des Grand
 weight: 20
 ---
 
+{{< doctype "both"  >}}
+
+{{< description >}}
+
 ## Kompatibilität
 
 **Grandstream HT701**

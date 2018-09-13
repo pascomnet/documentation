@@ -4,6 +4,10 @@ description: Integrieren Sie Ihre Analog- und ISDN-Endgeräte mithilfe von beroN
 weight: 10
 ---
 
+{{< doctype "both"  >}}
+
+{{< description >}}
+
 ## Übersicht
 
 beroNet Karten und Gateways sind modular aufgebaut. Das bedeutet für Sie, dass Sie unterschiedliche Anschlüsse mit nur einem Gerät abbilden können. Mehr über Gateways für unsere VoIP Hardware Lösung finden Sie [hier](https://www.pascom.net/de/mobydick-classic/).

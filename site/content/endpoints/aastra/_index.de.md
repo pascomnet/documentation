@@ -4,6 +4,10 @@ description: Integrieren Sie Ihre Aastra IP-Tischtelefone in die pascom.
 weight: 70
 ---
 
+{{< doctype "both"  >}}
+
+{{< description >}}
+
 ## Kompatibilität
 
 {{%notice warning%}}

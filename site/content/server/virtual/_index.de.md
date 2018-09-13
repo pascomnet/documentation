@@ -3,6 +3,7 @@ title: Virtuelle Maschine
 description: Installieren Sie den pascom Server als virtuelle Machine in ihrem favorisierten Hypervisor.
 weight: 40
 ---
+{{< doctype "self"  >}}
 
 {{< description >}}
 

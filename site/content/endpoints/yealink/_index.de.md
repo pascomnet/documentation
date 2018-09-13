@@ -4,6 +4,11 @@ description: Integrieren Sie Ihre Yealink IP-Tischtelefone in die pascom.
 weight: 30
 ---
 
+
+{{< doctype "both"  >}}
+
+{{< description >}}
+
 ![Yealink T46G](yealink-t4-series1.jpg?width=400px)
 
 

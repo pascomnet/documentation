@@ -4,6 +4,8 @@ description: Integrieren Sie Ihre Grandstream IP-Tischtelefone in die pascom.
 weight: 50
 ---
 
+{{< doctype "both"  >}}
+
 ![Grandstream GXP2160](grandstream_GXP2160.jpg?width=400px)
 
 ## Kompatibilität

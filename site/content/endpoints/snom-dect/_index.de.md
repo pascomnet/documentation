@@ -4,6 +4,11 @@ description: Integrieren Sie Ihr Snom DECT-System in die pascom.
 weight: 20
 ---
 
+
+{{< doctype "both"  >}}
+
+{{< description >}}
+
 ![Snom M700](snom_m700_dect.png?width=600px)
 
 

@@ -6,11 +6,13 @@ weight: 30
 
 {{< doctype "self"  >}}
 
+{{< description >}}
+
 {{% notice warning %}}
 **ABGEKÜNDIGT** - Der pascom SOHO Server wird weiterhin unterstütz jedoch nicht mehr neu verkauft. Er wurde durch die [pascom Appliance]({{< ref "server/appliance" >}}) ersetzt.
 {{% /notice %}}
 
-{{< description >}}
+
  
 **Nützliches Vorwissen**
  

@@ -5,4 +5,6 @@ weight: 80
 pre: <i class="fa fa-map-signs" aria-hidden="true"></i>&nbsp;
 ---
 
+{{< description >}}
+
 {{%children description="true" %}}

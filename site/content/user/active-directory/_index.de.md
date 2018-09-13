@@ -1,7 +1,7 @@
 ---
 title: Microsoft Active Directory Integration
 description: Synchronisieren und Authentifizieren Sie Ihre Benutzer gegen das Microsoft Active Directory
-weight: 30
+weight: 50
 ---
 
 {{< doctype "both" >}}

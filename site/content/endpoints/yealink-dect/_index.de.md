@@ -4,6 +4,10 @@ description: Integrieren Sie Ihr Yealink DECT-System in die pascom.
 weight: 40
 ---
 
+{{< doctype "both"  >}}
+
+{{< description >}}
+
 ![Yealink W52P](yealink_w52p_dect.png?width=300px)
 
 

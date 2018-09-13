@@ -4,6 +4,10 @@ description: Integrieren Sie Ihre Auerswald IP-Tischtelefone in die pascom.
 weight: 80
 ---
 
+{{< doctype "both"  >}}
+
+{{< description >}}
+
 ![Auerswald IP-Telefon](auerwald_comfortel_3600.png?width=450px)
 
 ## Kompatibilität

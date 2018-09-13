@@ -1,6 +1,6 @@
 ---
 title: Gateways
-description: pascom ist zu einer Vielzahl an Hardware IP-Telefonen kompatibel. An dieser Stelle erfahren Sie wie diese automatisch und sicher eingebunden werden können.
+description: Nutzen Sie Gateways für die Integration von ISDN- und Analoger-Technologien wie Fax-Geräte oder ISDN-Anschlüsse
 weight: 50
 pre: <i class="fa fa-hdd" aria-hidden="true"></i>&nbsp;
 ---

@@ -3,7 +3,8 @@ title: pascom Server Systemaufbau
 description: Überblick Systemaufbau des pascom Servers
 weight: 10
 ---
- 
+
+{{< doctype "self" >}}
  
 {{< description >}}
  

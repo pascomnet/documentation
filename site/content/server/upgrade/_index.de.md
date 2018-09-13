@@ -6,6 +6,8 @@ weight: 70
 
 {{< doctype "self" >}}
 
+{{< description >}}
+
 ## Lizenz Upgraden
 
 {{% notice tip%}}

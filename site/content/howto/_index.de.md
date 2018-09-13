@@ -1,15 +1,11 @@
 ---
 title: Howtos
-description: Short description about the content
-weight: 90
+description: Usere Howtos helfen Ihnen bei der Konfiguration spezieller Themen
+weight: 100
 pre: <i class="fa fa-wrench" aria-hidden="true"></i>&nbsp;
 ---
  
- 
 {{< description >}}
+
+{{%children description="true" %}}
  
- 
-## First Headline
- 
- 
-## See also

@@ -4,6 +4,10 @@ description: Integrieren Sie Ihr Mitel/Aastra DECT-System in die pascom.
 weight: 60
 ---
 
+{{< doctype "both"  >}}
+
+{{< description >}}
+
 ![Aastra/ Mitel DECT RFPs](Aastra-Mitel-DECT-System.png?width=50%)
 
 ## Überblick
