@@ -1,4 +1,4 @@
-FROM npm
+FROM node
 CMD npm install webpack atomic-algolia
 CMD ALGOLIA_APP_ID=GEETCE1DI1 \
     ALGOLIA_ADMIN_KEY=***REMOVED*** \
