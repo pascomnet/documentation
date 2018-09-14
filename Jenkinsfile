@@ -26,8 +26,21 @@ node('docker') {
 
         hugo.inside {
             sh 'cp -a /usr/share/nginx/html ./doc-container/'
+            sh 'cp /usr/share/nginx/html/de/index.json ./algolia-container/index.de.json'
+            sh 'cp /usr/share/nginx/html/en/index.json ./algolia-container/index.en.json'
         }
     }
+
+    stage('Push Algolia Index') {
+        def algolia = docker.build("algolia:${env.BUILD_ID}", "./algolia-container")
+
+        algolia.inside {
+            
+            sh ''
+
+        }
+    }
+
 
     stage('Build container') {
    
