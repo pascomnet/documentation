@@ -2,12 +2,12 @@
 {{- if ne $page.Type "json" -}}
 {{- if and $index (gt $index 0) -}},{{- end }}
 {
-	"objectID": "{{ .UniqueID }}"
+	"objectID": "{{ .UniqueID }}",
 	"url": "{{ $page.Permalink }}",
 	"title": "{{ htmlEscape $page.Title}}",
 	"description": "{{ htmlEscape .Description}}",
-	"text": {{$page.Plain | jsonify}},
-	"icon": {{ if $page.Params.pre }} "{{ $page.Params.pre }}" {{ else if $page.Parent }} "{{ $page.Parent.Params.pre }}" {{ end }} 
+	"text": {{ substr $page.Plain 0 19000 | jsonify}},
+	"icon": {{ if $page.Params.pre }} {{ $page.Params.pre | jsonify }} {{ else if $page.Parent }} {{ $page.Parent.Params.pre | jsonify }} {{else}} "" {{ end }} 
 }
 {{- end -}}
 {{- end -}}]
