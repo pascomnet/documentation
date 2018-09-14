@@ -1,5 +1,5 @@
 ---
-title:  Snom 3xx 7xx Series Desktop VoIP Phones
+title:  Snom 3xx 7xx Series Desktop Phones
 description: Integrate your Snom VoIP phones into your pascom business phone system
 weight: 10
 ---
@@ -22,7 +22,6 @@ With [our VoIP Software] (https://www.pascom.net/en/mobydick-voip/ "pascom VoIP 
 **Firmware Management**: Firmware can be managed and updated via the PBX web UI.<br>
 **Desktop Client CTI Control**: The desktop UC client can remotely control the phone, i.e. to start calls.<br>
 **pascom Menu**: A phone touch key will be assigned to access the pascom Menu.
-
 
 ## Snom Provisioning
 
@@ -121,7 +120,7 @@ In order to access your telephone's web UI, you will need to know the phone's IP
 
 Press the **?** (i.e. the **help**) in order to call up the phone IP address.
 
-#### Finding the IP-Address via the Web UI Device List
+#### Finding the IP-Address via the pascom Web UI Device List
 
 Log into the PBX Web UI and select the `Devices` > `Device list`, which provides you an overview of all available devices. To the left of each entry is an *Info* symbol which when clicked will open an overview of the provisioned telephone including the IP address.
 
