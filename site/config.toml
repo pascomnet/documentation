@@ -20,3 +20,5 @@ weight = 2
 languageName = "Deutsch"
 languageCode = "de"
 
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
