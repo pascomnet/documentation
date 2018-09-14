@@ -1,6 +1,8 @@
 FROM node
 ARG TARGET
 COPY package.json /package.json
+COPY index.de.json /index.de.json
+COPY index.en.json /index.en.json
 RUN npm install webpack atomic-algolia
 RUN ALGOLIA_APP_ID=GEETCE1DI1 \
     ALGOLIA_ADMIN_KEY=***REMOVED*** \
