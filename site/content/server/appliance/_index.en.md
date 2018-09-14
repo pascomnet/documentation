@@ -1,5 +1,5 @@
 ---
-title: pascom Appliance
+title: pascom Appliance TEST
 description: The pascom appliance is a pre-installed Server for on-premise installations
 weight: 30
 ---
