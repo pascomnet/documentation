@@ -103,7 +103,6 @@ Environment variables without corresponding commandline parameter:
 - PC_QSG_RENDER_LOOP=<VALUE>: Change the used opengl render loop by setting `QSG_RENDER_LOOP` internally. Defaults to 'basic' if not set. Possible Values are: basic, windows, threaded
 
 
-
 Options:
   --userDir <userDir>      Set user directory. Via Environment: Set PC_USERDIR
                            to desired value
