@@ -32,7 +32,7 @@ node('docker') {
     }
 
     stage('Push Algolia Index') {
-        def algolia = docker.build("algolia:${env.BUILD_ID}", "-no-cache --build-arg TARGET=${target} ./algolia-container")
+        def algolia = docker.build("algolia:${env.BUILD_ID}", "--no-cache --build-arg TARGET=${target} ./algolia-container")
 
         algolia.inside {
             
