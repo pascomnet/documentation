@@ -30,7 +30,7 @@ Es können bis zu 5 Handsets an einer Basisstation registriert werden.
 
 Wählen Sie unter `Endgeräte` > `Geräteliste` > `Hinzufügen` den Eintrag *Via yealink DECT Gateway: Mobilteil* aus. Folgende Einstellungen müssen Sie vornehmen:
 
-|Einstellunge|Beschreibung|
+|Einstellung|Beschreibung|
 |---|---|
 |Angeschlossen an|Wählen Sie hier den DECT-Sender.|
 |Zuweisung|In diesem Reiter können Sie einen Benutzer zuweisen.|
