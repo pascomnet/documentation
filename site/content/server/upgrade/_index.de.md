@@ -87,20 +87,11 @@ Während des Installationsprozesses bietet Ihnen der Setup Wizard die Möglichke
 
 Den DHCP Server wurde von der Telefonanlagen Oberfläche in die Management Oberfläche verschoben. Somit ist die Konfiguration des DHCP-Servers auch nicht Bestandteil des von Ihnen zuvor eingespielten Backups.
 
-Falls Sie den pascom DHCP Server in der Vergangenheit genutzt haben müssen Sie diesen im Management wieder aktivieren.
-
-Klicken Sie hierzu im Management auf `Schnittstellen` > `Bearbeiten` und aktivieren dort den `DHCP-Server`. Ergänzen Sie die Einstellungen des DHCP-Servers entsprechen und klicken anschließend auf `Speichern`.
+Falls Sie den pascom DHCP Server in der Vergangenheit genutzt haben müssen Sie diesen im Management wieder aktivieren und konfigurieren. Details können Sie dem Howto [Telefon-Provisionierung via DHCP]({{< ref "/howto/dhcp-provisioning" >}}) entnehmen.
 
 ### (Optional) Ihren DHCP Server anpassen
 
-Verweden Sie Ihren eigenen DHCP-Server für das Provisioning müssen Sie nun die DHCP-Option 66 anpassen da sich diese für das Provisioning geringfügig geändert hat.
-
-TBD
-
-**Bisher**
-
-**Neu**
-
+Verweden Sie Ihren eigenen DHCP-Server für das Provisioning müssen Sie nun die DHCP-Option 66 anpassen da sich diese für das Provisioning geringfügig geändert hat. Details können Sie dem Howto [Telefon-Provisionierung via DHCP]({{< ref "/howto/dhcp-provisioning" >}}) entnehmen.
 
 ### Neuprovisionierung aller Telefone
 
