@@ -5,7 +5,7 @@ weight: 30
 ---
 
 
-{{< doctype "both"  >}}
+{{< doctype "both" >}}
 
 {{< description >}}
 
@@ -24,41 +24,76 @@ weight: 30
 **pascom Menü**: An einer Taste am Telefon wird das pascom Menü hinterlegt.
 
 
-## Konfiguration
+## Provisionierung
+
+{{% notice tip %}}
+Für lokale Installationen des pascom Servers ist es möglich Endgeräte per DHCP-Server massenweise und vollautomatisch in Betrieb zu nehmen.
+Details können Sie dem Howto [Telefon-Provisionierung via DHCP]({{< ref "/howto/dhcp-provisioning" >}}) entnehmen.
+{{% /notice %}}
 
 pascom ist in der Lage IP-Telefone des Herstellers Yealink automatisch und zentral zu konfigurieren. Diesen Vorgang nennt man Provisionierung. Dazu stellt pascom eine Basis-Konfiguration (`Endgeräte` > `Basis-Konfigurationen`) zur Verfügung. Diese ist ausreichend vorparametriert und muss nur in manchen Fällen angepasst werden.
 
-{{% notice tip%}}
-Bei Neuinstallationen sollten Sie den Provisionierungsvorgang zuerst mit einem Telefon testen. War dies erfolgreich können Sie alle weiteren IP-Telefone in Betrieb nehmen.
+## Neues Telefon hinzufügen
+
+{{% notice tip %}}
+Handelt es sich nicht um ein fabrikneues Telefon setzen Sie es in jedem
+Fall auf **Werkseinstellungen** zurück. Drücken Sie die `OK`-Taste des Telefons,
+im eingeschalteten Zustand, so lange bis **Factory Reset** im Display erscheint.
+Bestätigen Sie nochmals mit der `OK`-Taste.
 {{% /notice %}}
 
-### Vorbereitung
+Stecken Sie das Yealink-Telefon an das Netzwerk. Das Telefon enthält einen eingebauten Switch, benutzen Sie den Ethernet-Port mit der Bezeichnung **Internet**. Falls Sie kein **PoE** (Power over Ethernet) verwenden, stecken Sie das Telefon an den Netzstrom.
 
-Für die automatische Inbetriebnahme ist ein funktionierender DHCP-Server zwingend erforderlich.
+Nach dem Boot-Vorgang drücken Sie die `OK`-Taste des Telefons und notieren Sie
+sich die IP-Adresse.
 
-### Inbetriebnahme
+### MAC-Adresse ermitteln
 
-Stecken Sie das IP-Telefon an das Netzwerk. Das Telefon enthält einen eingebauten Switch, benutzen Sie den Ethernet-Port mit der Bezeichnung **Internet**. Falls Sie kein **PoE** (Power over Ethernet) verwenden, stecken Sie das Telefon an den Netzstrom.
+Die MAC-Adresse steht auf der Rückseite des Telefones.
 
-Das IP-Telefon bootet nun, zieht sich vom DHCP-Server eine IP-Adresse und die passende Basis-Konfiguration. Nach diesem Vorgang trägt pascom das IP-Telefon automatisch in die Geräteliste unter `Endgeräte` > `Geräteliste` ein und legt ein entsprechendes SIP-Peer an.
+Alternativ surfen Sie nun mit Ihrem Browser auf die zuvor notierte IP-Adresse des Telefones.
+Loggen Sie sich mit Benutzer und Passwort `admin`, `admin` ein.
+Unter `Status > MAC Address` notieren Sie sich die MAC-Adresse des
+Telefons. 
 
-Das SIP-Peer wird automatisch angelegt. Benutzername und Passwort werden automatisch generiert. Der Benutzername besteht aus einer zufälligen Zeichenfolge und den letzten sechs Stellen der Geräte-MAC-Adresse und hat insgesamt 15 Stellen. Das Passwort ist ebenfalls 15-stellig. Da die IP-Telefone automatisch provisioniert werden, müssen Sie die Daten niemals manuell eingeben. Es ist auch nicht möglich die Benutzerdaten zu ändern. Dies erhöht die Sicherheit gegen SIP-Brute-Force-Attacken beträchtlich.
+### Endgerät anlegen
 
-Als Bezeichnung des Telefons wird automatisch die Herstellerbezeichnung gefolgt von der MAC-Adresse vergeben. Da auf dem Telefongehäuse die MAC-Adresse vermerkt ist, lässt sich vor Ort das IP-Telefon einfach zuordnen.
+Loggen Sie sich in Ihrer Telefonanlage ein und fügen unter `Endgeräte > Geräteliste` ein
+neues Gerät vom Typ **IP-Telefon: Hersteller Yealink** hinzu.
 
-Nach der erfolgreichen Provisionierung sollte das IP-Telefon am Display die richtige Sprache, die richtige Zeit und den Text *Nur Notrufe* (oder *Emergency only*) anzeigen.
+Tragen Sie im Feld **Mac-Adresse** die zuvor ermittelte MAC-Adresse des Telefons
+ein.
 
-{{% notice info%}}
-Nach der Provisionierung des IP-Telefons wird von pascom der Admin-User neu gesetzt.
-<br>Username: *admin*
-<br>Passwort: *0000*
-{{% /notice  %}}
+### Jobs Anwenden
 
-Das Passwort des Admin-Users am IP-Telefon kann über die Systemeinstellungen im Web-UI geändert werden. Suchen Sie in dem Suchfeld nach dem Parameter *sys.peripherals.access.password*. Geben Sie Ihren gewünschten Wert ein. Anschließend müssen Sie manuell die Telefonie-Konfiguration anwenden und die Endgeräte neustarten.
+Nach dem Speichern von Änderungen erscheint in der Job-Box (oben) ein
+entsprechender Eintrag die Telefonie anzuwenden. Starten Sie den Job durch
+einen Klick auf den `grünen Haken`.
+
+### Provisionierung-URL ermitteln
+
+Haken Sie das Telefon in der Geräte-Liste an und wählen `Aktion > Provisioning URL`.
+Für jeden verfügbaren Proxy erscheint ein Eintrag in der Liste. Kopieren Sie die
+**URL** in die Zwischenablage.
+
+### Provisionierung-URL eintragen
+
+{{% notice tip %}}
+Sollte Sie **kein offizielles Zertifikat** auf Ihrem Proxy installiert
+haben müssen Sie auf der Web-UI des Telefons ***Only Accept Trusted Certificates***
+unter `Security > Trusted Certificates` auf **Disabled** stellen
+{{% /notice %}}
+
+Zurück auf der Web-UI des Telefons tragen Sie unter `Settings > Auto Provision > Server URL`
+die eben kopierte Provisionierung-URL ein.
+
+Klicken Sie auf `Confirm` und anschließend auf `Autprovision Now`.
+
+Das Telefon startet neu.
 
 ### Benutzer zuweisen
 
-Nachdem das IP-Telefon in der Geräteliste erscheint kann es bearbeitet werden. Klicken Sie hierzu auf `Bearbeiten`. Im Tab `Zuweisung` kann dem Telefon ein [Benutzer (oder Arbeitsplatz)]({{< ref "/user/user">}}) zugewiesen werden.
+Nachdem das IP-Telefon neu gestartet ist kann es in der Geräteliste bearbeitet werden. Klicken Sie hierzu auf `Bearbeiten`. Im Tab `Zuweisung` kann dem Telefon ein [Benutzer]({{< ref "/user/user">}}) zugewiesen werden.
 
 Nach dem Speichern und Anwenden der Telefoniekonfiguration werden die neu zugewiesenen IP-Telefone neugestartet.
 
@@ -66,7 +101,7 @@ Nach dem Speichern und Anwenden der Telefoniekonfiguration werden die neu zugewi
 
 Am einfachsten kann man die erfolgreiche Inbetriebnahme testen, indem man mit **\*100** die eigene Voicemailbox anruft. Daraufhin sollte die Ansage Ihrer Voicemailbox zu hören sein.
 
-### pascom Menütaste
+## pascom Menütaste
 
 Nach der Provisionierung ist auf der zweiten Funktionstaste am Display das pascom Menü zu finden. Hier sind pascom Funktionen hinterlegt:
 
@@ -89,16 +124,16 @@ Setzen Sie Rufumleitungen nur über das pascom Menü, da diese Rufumleitungen ü
 Die Verwendung der DND-Taste (*do not disturb*) oder Ruhe-Taste am Yealink hat zur Folge, dass die Durchwahl am Telefon nicht erreichbar ist. Der DND-Hinweis erscheint nur am Telefon und hat für die pascom (z. B. Desktop Client) keine weitere Bedeutung.
 {{% /notice %}}
 
-### Auf die Yealink-Weboberfläche zugreifen
+## Auf die Yealink-Weboberfläche zugreifen
 
 Um auf die Weboberfläche Ihres IP-Telefons zu gelangen benötigen Sie die IP-Adresse. Im Folgenden sind Möglichkeiten beschrieben, um diese in Erfahrung zu bringen:
 
-#### IP-Adresse am Telefon anzeigen
+### IP-Adresse am Telefon anzeigen
 
 Drücken Sie die **OK**-Taste auf Ihrem Yealink IP-Telefon. Nun können Sie die IPv4-Adresse des Telefons ablesen.
 
 
-#### IP-Adresse über die Geräteliste ermitteln
+### IP-Adresse über die Geräteliste ermitteln
 
 Loggen Sie sich in das Web-UI der pascom ein. Klicken Sie auf `Endgeräte` > `Geräteliste`. Nun sehen Sie eine Übersicht über alle verfügbaren Geräte. Links von jedem Eintrag finden Sie ein *Info*-Symbol. Klicken Sie es an, erhalten Sie eine Übersicht über das provisionierte Telefon, unter anderem auch die IP-Adresse.
 
@@ -106,13 +141,13 @@ Loggen Sie sich in das Web-UI der pascom ein. Klicken Sie auf `Endgeräte` > `Ge
 
 Die Funktionstasten rechts und links vom Display sind dreifach belegbar. Ist die erste Seite vollständig belegt, wird die letzte Taste am Display zum "umblättern" verwendet.
 
-#### Andere Benutzer (Nebenstellen) überwachen
+### Andere Benutzer (Nebenstellen) überwachen
 
 Zur Überwachung anderer Benutzer oder Nebenstellen können Funktionstasten eingerichtet werden. Dazu eignen sich BLF-Tasten (Besetztlampenfeld oder Busy Lamp Field). Diese geben Informationen über den Status der überwachten Durchwahl. Überwachen bedeutet in diesem Fall zu sehen ob ein Benutzer telefoniert, angerufen wird und ggf. sein Gespräch heranzuholen (Pickup).
 
 Tasten können auf verschiedenen Wegen konfiguriert werden.
 
-#### Tasten belegen direkt am Telefon
+### Tasten belegen direkt am Telefon
 
 Drücken Sie auf Ihrem Telefon ca. 5 Sekunden lang auf die Taste die Sie belegen möchten. Nun können Sie Ihre Taste (z. B. BLF-Taste) belegen.
 
@@ -125,7 +160,7 @@ Drücken Sie auf Ihrem Telefon ca. 5 Sekunden lang auf die Taste die Sie belegen
 
 Drücken Sie zum Bestätigen auf *Speichern*.
 
-#### Tasten belegen über das Web-UI
+### Tasten belegen über das Web-UI
 
 Im Tab `Speicher-Tasten` können die verschiedenen Tasten, z. B. BLF-Tasten am Telefon belegt werden:
 
@@ -135,14 +170,14 @@ Im Tab `Speicher-Tasten` können die verschiedenen Tasten, z. B. BLF-Tasten am T
 
 Neben Benutzer-Durchwahlen können auch Einbuchcodes für Warteschlangen oder Durchwahlschalter konfiguriert werden.
 
-#### Weitere nützliche Funktionstasten
+### Weitere nützliche Funktionstasten
 
 |Funktionstaste|Beschreibung|
 |---|---|
 |**Speed Dial**|Hier kann eine Telefonnummer hinterlegt werden.|
 |**DTMF**|Hier können DTMF-Zeichen hinterlegt werden.| -->
 
-### Basis-Konfiguration
+## Basis-Konfiguration
 
 Wie bereits erwähnt, werden Yealink IP-Telefone  mit Hilfe der Basis-Konfiguration provisioniert. Die Basis-Konfiguration ist unter `Endgeräte` > `Basis-Konfigurationen` zu finden.
 
@@ -152,14 +187,14 @@ Bevor Sie die Basis-Konfiguration ändern, müssen Sie diese `Duplizieren`.
 
 Ebenfalls können Sie eine schon bearbeitete Basis-Konfiguration als `Standard setzten`. Somit erhalten neu angelegte IP-Telefone automatisch die angepasste Basis-Konfiguration.
 
-#### Zuweisung einer Basis-Konfiguration
+### Zuweisung einer Basis-Konfiguration
 
 Eine Basis-Konfiguration kann auf mehreren Wegen zugewiesen werden:
 
 + Über `Endgeräte` > `Basis-Konfigurationen` > Basis-Konfiguration auswählen und Bearbeiten, im Tab `Geräte` können gleich mehrere IP-Telefone hinzugefügt werden.
 + Über `Endgeräte` > `Geräteliste` > IP-Telefon auswählen und Bearbeiten im Tab `Basisdaten`.
 
-#### BLF-Tasten konfigurieren über die Basis-Konfiguration
+### BLF-Tasten konfigurieren über die Basis-Konfiguration
 
 Im Tab `Konfiguration` können Sie die vorhandene Basis-Konfiguration anpassen. Im Bereich **keys** finden Sie bereits vorkonfigurierte Funktionstasten, an denen Sie sich orientieren können.
 
@@ -179,11 +214,11 @@ Die belegte Taste (in diesem Fall Linekey 3) besteht aus drei Parametern:
 Weisen Sie diese Basis-Konfiguration über den Tab `Geräte` den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und speichern Sie. Nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
 
 
-### Firmwareupdate
+## Firmwareupdate
 
 Ab der mobydick Version 7.14 wird die Firmware für IP-Endgeräte nicht mehr mitgeliefert. Sollte eine andere als auf dem IP-Endgerät installierte Firmware benötigt werden, muss diese selber heruntergeladen und in die pascom Firmware-Verwaltung hochgeladen werden.
 
-#### Firmware hinzufügen
+### Firmware hinzufügen
 
 Die gewünschte Firmware kann hinzugefügt werden unter `Endgeräte` > `Firmware`:
 
@@ -194,11 +229,11 @@ Die gewünschte Firmware kann hinzugefügt werden unter `Endgeräte` > `Firmware
 |Version|Firmware-Version|
 |Dokumentation|Optionales Feld für Notizen|
 
-#### Firmware ausrollen
+### Firmware ausrollen
 
 Die Firmware kann über `Endgeräte` > `Geräteliste` aktualisiert werden. Wählen Sie die Zielgeräte in der Geräteliste mit Häkchen aus und klicken Sie auf `Aktion` > `Firmware ausrollen`. Nun erhalten Sie eine Übersicht der gewählen Geräte, in der Sie die Zielfirmware auswählen können. Anschließend klicken Sie auf `Firmware update` um die gewählte Firmware auszurollen.
 
-#### Empfohlene Firmware
+### Empfohlene Firmware
 
 Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es uns leider nicht möglich jede zu testen, so dass es sein kann, dass manche Firmware-Versionen pascom Funktionen nicht unterstützen. Daher finden Sie hier eine Liste der Firmwares die von uns bereits getestet wurden:
 

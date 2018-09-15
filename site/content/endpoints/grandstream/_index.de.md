@@ -36,37 +36,45 @@ Folgende IP-Telefone werden unterstützt:
 + Grandstream GXV 3240
 
 
-## Konfiguration
+## Provisionierung
 
-pascom ist in der Lage IP-Telefone des Herstellers Grandstream automatisch und zentral zu konfigurieren. Diesen Vorgang nennt man Provisionierung. Dazu stellt pascom eine Basis-Konfiguration (`Endgeräte` > `Basis-Konfigurationen`) zur Verfügung. Diese ist ausreichend vorparametriert und muss nur in manchen Fällen angepasst werden.
-
-{{% notice tip%}}
-Bei Neuinstallationen sollten Sie den Provisionierungsvorgang zuerst mit einem Telefon testen. War dies erfolgreich können Sie alle weiteren IP-Telefone in Betrieb nehmen.
+{{% notice tip %}}
+Für lokale Installationen des pascom Servers ist es möglich Endgeräte per DHCP-Server massenweise und vollautomatisch in Betrieb zu nehmen.
+Details können Sie dem Howto [Telefon-Provisionierung via DHCP]({{< ref "/howto/dhcp-provisioning" >}}) entnehmen.
 {{% /notice %}}
 
-### Vorbereitung
+pascom ist in der Lage IP-Telefone des Herstellers Snom automatisch und zentral zu konfigurieren. Diesen Vorgang nennt man Provisionierung. Dazu stellt pascom eine Basis-Konfiguration (`Endgeräte` > `Basis-Konfigurationen`) zur Verfügung. Diese ist ausreichend vorparametriert und muss nur in manchen Fällen angepasst werden.
 
-Für die automatische Inbetriebnahme ist ein funktionierender DHCP-Server zwingend erforderlich.
-
-### Inbetriebnahme
+## Neues Telefone hinzufügen
 
 Stecken Sie das IP-Telefon an das Netzwerk. Das Telefon enthält einen eingebauten Switch, benutzen Sie den Ethernet-Port mit der Bezeichnung **LAN**. Falls Sie kein **PoE** (Power over Ethernet) verwenden, stecken Sie das Telefon an den Netzstrom.
 
-Das IP-Telefon bootet nun, zieht sich vom DHCP-Server eine IP-Adresse und die passende Basis-Konfiguration. Nach diesem Vorgang trägt pascom das IP-Telefon automatisch in die Geräteliste unter `Endgeräte` > `Geräteliste` ein und legt ein entsprechendes SIP-Peer an.
+### MAC-Adresse ermitteln
 
-Das SIP-Peer wird automatisch angelegt. Benutzername und Passwort werden automatisch generiert. Der Benutzername besteht aus einer zufälligen Zeichenfolge und den letzten sechs Stellen der Geräte-MAC-Adresse und hat insgesamt 15 Stellen. Das Passwort ist ebenfalls 15-stellig. Da die IP-Telefone automatisch provisioniert werden, müssen Sie die Daten niemals manuell eingeben. Es ist auch nicht möglich die Benutzerdaten zu ändern. Dies erhöht die Sicherheit gegen SIP-Brute-Force-Attacken beträchtlich.
+Die MAC-Adresse steht auf der Rückseite des Telefones.
 
-Als Bezeichnung des Telefons wird automatisch die Herstellerbezeichnung gefolgt von der MAC-Adresse vergeben. Da auf dem Telefongehäuse die MAC-Adresse vermerkt ist, lässt sich vor Ort das IP-Telefon einfach zuordnen.
+### Endgerät anlegen
 
-Nach der erfolgreichen Provisionierung sollte das IP-Telefon am Display die richtige Sprache, die richtige Zeit und den Text *Nur Notrufe* (oder *Emergency only*) anzeigen.
+Loggen Sie sich in Ihrer Telefonanlage ein und fügen unter `Endgeräte > Geräteliste` ein
+neues Gerät vom Typ **IP-Telefon: Hersteller Grandstream** hinzu.
 
-{{% notice info%}}
-Nach der Provisionierung des IP-Telefons wird von pascom der Admin-User neu gesetzt.
-<br>Username: *admin*
-<br>Passwort: *0000*
-{{% /notice %}}
+Tragen Sie im Feld **Mac-Adresse** die zuvor ermittelte MAC-Adresse des Telefones
+ein.
 
-Das Passwort des Admin-Users am IP-Telefon kann über die Systemeinstellungen im Web-UI geändert werden. Suchen Sie in dem Suchfeld nach dem Parameter *sys.peripherals.access.password*. Geben Sie Ihren gewünschten Wert ein. Anschließend müssen Sie manuell die Telefonie-Konfiguration anwenden und die Endgeräte neustarten.
+### Jobs Anwenden
+
+Nach dem Speichern von Änderungen erscheint in der Job-Box (oben) ein
+entsprechender Eintrag die Telefonie anzuwenden. Starten Sie den Job durch
+einen Klick auf den `grünen Haken`.
+
+### Provisionierung-URL ermitteln
+
+Haken Sie das Telefon in der Geräte-Liste an und wählen `Aktion > Provisioning URL`. Kopieren Sie die
+**URL** in die Zwischenablage.
+
+### Provisionierung-URL am Telefon eintragen
+
+Zurück auf der Web-UI des Telefones tragen Sie die Provisionierung-URL ein und starten das Telefon neu.
 
 ### Benutzer zuweisen
 
@@ -79,7 +87,7 @@ Nach dem Speichern und Anwenden der Telefoniekonfiguration werden die neu zugewi
 Am einfachsten kann man die erfolgreiche Inbetriebnahme testen, indem man mit **\*100** die eigene Voicemailbox anruft. Daraufhin sollte die Ansage Ihrer Voicemailbox zu hören sein.
 
 
-### Auf die Grandstream-Weboberfläche zugreifen
+## Auf die Grandstream-Weboberfläche zugreifen
 
 Um auf die Weboberfläche Ihres IP-Telefons zu gelangen benötigen Sie die IP-Adresse. Im Folgenden sind Möglichkeiten beschrieben, um diese in Erfahrung zu bringen:
 
@@ -126,7 +134,7 @@ Um die Einstellungen der Tasten zurückzusetzten klichen Sie auf `Neustart` und 
 {{% /notice %}}
 
 
-### Basis-Konfiguration
+## Basis-Konfiguration
 
 Wie bereits erwähnt, werden Grandstream IP-Telefone  mit Hilfe der Basis-Konfiguration provisioniert. Die Basis-Konfiguration ist unter `Endgeräte` > `Basis-Konfigurationen` zu finden.
 
@@ -161,7 +169,7 @@ Weitere Informationen entnehmen Sie bitte der [Grandstream-Tasten-Dokumentation]
 
 Weisen Sie diese Basis-Konfiguration über den Tab `Geräte` den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und speichern Sie, nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
 
-### Firmwareupdate
+## Firmwareupdate
 
 Ab der mobydick Version 7.14 wird die Firmware für IP-Endgeräte nicht mehr mitgeliefert. Sollte eine andere als auf dem IP-Endgerät installierte Firmware benötigt werden, muss diese selber heruntergeladen und in die pascom Firmware-Verwaltung hochgeladen werden.
 

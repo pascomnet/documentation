@@ -63,7 +63,7 @@ Da der pascom SOHO Server keine Monitoranschluss hat müssen Sie auf dem USB-Sti
         "netmask": "255.255.255.0",
         "gateway": "192.168.0.1",
         "dns1": "192.168.0.1" ,
-		"dns2": ""
+        "dns2": ""
    }
 }
 ```
