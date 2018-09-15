@@ -1,5 +1,5 @@
 ---
-title: pascom Appliance TEST
+title: pascom Appliance
 description: Die pascom Appliance ist ein vorinstallierter Server zur vor Ort Installation
 weight: 30
 ---
