@@ -1,6 +1,6 @@
 ---
-title: Telefon-Provisonierung via DHCP
-description: Statt jedes einzelne Hardware Telefon mit dem pascom Server per URL zu pairen können Sie Provisionierungs-URLs auch per DHCP automatisiert übergeben
+title: Telephone Provisioning via DHCP
+description: Instead of coupling each individual desktop phone with the pascom phone system via provisioning URLs, you can also automatically distribute the provisioning URLs via DHCP
 ---
  
 {{< doctype "self" >}} 
@@ -8,38 +8,37 @@ description: Statt jedes einzelne Hardware Telefon mit dem pascom Server per URL
 {{< description >}}
 
 {{% notice warning %}}
-Die DHCP Provisionierung ist nur möglich wenn sich die Telefone und der pascom Server im gleichen, lokalen Netzwerk befinden!
+DHCP provisioning is only possible when the desktop phones AND the pascom server are both located in the same local network!
 {{% /notice %}}
 
-## Eigenen DHCP-Server verwenden (empfohlen)
+## Using your Own DHCP Server (Recommended)
 
-Da in fast allen, lokalen Netzwerken bereits ein DHCP-Server vorhanden ist empfiehlt es sich diesen anzupassen um die Provisionierungs-URLs an die Telefone zu übergeben.
+As a DHCP servers are already available in almost ever local network, it is recommended to update this DHCP server to deliver the provisioning URLs to the desktop phones.
 
-### DHCP Provisionierung am pascom Server erlauben
+### Allow DHCP Provisioning on the pascom Server
 
-Standardmäßig ist die lokale DHCP Provisionierung aktiviert. 
+Per default, the local DHCP provisioning is activated. 
 
-Haben Sie diese in der Vergangenheit deaktiviert, loggen Sie sich in das Management des pascom Servers ein, wählen unter `Schnittstellen` die entsprechende Netzwerkkarte aus und klicken auf `Bearbeiten`. Aktivieren Sie die Option `Lokale DHCP Provisionierung erlauben` und speichern Sie die Konfiguration ab.
+Should you have deactivated this function in the past, log into the pascom Management UI (not the phone system) and under `Interfaces` sekect the corresponding network card and click `Edit`. Activate the option `Allow local DHCP provisionioning` and save your new configuration.
 
-### DHCP-Server konfigurieren
+### Configure the DHCP Server
 {{% notice tip %}}
-Beim Windows DHCP-Server (oder anderen DHCP Servern die diesem Optionsschema folgen) müssen Sie die **DHCP-Option** **66** und ggf. 
-die  **67** setzen. Bei Linux/Unix DHCP-Servern heißen die Optionen **tftp-server-name** und **filename**.
+On Windows DHCP servers (or DHCP servers which follow this options schema), you will now need to set the **DHCP Option** **66** and possibly **67**. With Linux/Unix DHCP servers these options are known as **tftp-server-name** and **filename**.
 {{% /notice  %}}
-Je nach verwendeten Telefonen unterscheiden sich die Provisionierungs-URLs.
 
-**Ersetzen** Sie folgedem Beispiel **[pascom_Server]** mit der IP-Adresse oder DNS-Namen des pascom Servers und **[Telefonanlagenname]** mit dem Namen Ihrer Telefonanlage:
+The provisioning URLs differ depending on the telephones to be deployed.
 
-|Telefonhersteller|Option 66 (tftp-server-name) |Option 67 (filename) |
+In the following example, please **replace** **[pascom_Server]** with the IP address or DNS name of your pascom server and **[phonesystemname]** with the name of your pascom phone system:
+
+|Phone Manufacturer|Option 66 (tftp-server-name) |Option 67 (filename) |
 |---|---|---|
-|Snom|https://[pascom_Server]:8884/p/[Telefonanlagenname]/{mac}||
-|Yealink, Grandstream, Aastra, Mitel|https://[pascom_Server]:8884/p/[Telefonanlagenname]/||
-|Auerswald|https://[pascom_Server]:8884/p/[Telefonanlagenname]/|\<MACADR\>|
+|Snom|https://[pascom_Server]:8884/p/[phonesystemname]/{mac}||
+|Yealink, Grandstream, Aastra, Mitel|https://[pascom_Server]:8884/p/[phonesystemname]/||
+|Auerswald|https://[pascom_Server]:8884/p/[phonesystemname]/|\<MACADR\>|
 
-Falls Sie diese Optionen ausschließlich an Telefone versenden möchten können Sie die Vergabe dieser Option auf den von Ihnen 
-verwendeten Hersteller einschränken:
+Should you only wish to send these options exclusively to telephones, then you can restrict the use of the option to the manufactures used by you:
 
-|Telefonhersteller|MAC-Adresse|
+|Phone Manufacturer|MAC address|
 |---|---|
 |Snom|00-04-13-\*-\*-\*|
 |Yealink|00-15-65-\*-\*-\*|
