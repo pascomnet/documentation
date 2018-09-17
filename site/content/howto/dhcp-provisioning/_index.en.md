@@ -46,31 +46,31 @@ Should you only wish to send these options exclusively to telephones, then you c
 |Aastra|00-08-5D-\*-\*-\*|
 |Auerswald|00-09-52-\*-\*-\*|
 
-### Provisionierung testen
+### Test the Provisioning
 
-Setzen Sie ein Hardware Telefon auf Werkseinstellungen zurück. Funktioniert der DHCP-Server mit den Optionen korrekt konfiguriert sich das Telefon nun automatisch. War das provisionieren erfolgreich sehen Sie im Display des Telefones "Nur Notrufe" oder den Namen des zugewiesenen Benutzers oder Arbeitsplatzes.
+Reset your Desktop phones to factory settings. Should the DHCP function with the correct options, the desktop phone will be configured automatically. If the provisioning process was succesful, you will now see "Emergency Only" or a username or location name in the telephone display.
 
-## pascom DHCP-Server verwenden
+## Using the pascom DHCP Server
 
-Alternativ können Sie auch den DHCP-Server der pascom nutzen.
+Alternatively, you can also use the pascom DHCP server. 
 
-Loggen Sie sich hierzu in das Management des pascom Servers ein, wählen unter `Schnittstellen` die entsprechende Netzwerkkarte aus und klicken auf `Bearbeiten`.
+Log into the pascom Server Management UI and under `Interfaces` select the corresponding network card and click `Edit`.
 
-Aktivieren Sie die Optionen `Lokale DHCP Provisionierung erlauben` und `DHCP-Server`.
+Activate the options `Allow Local DHCP Provisioning` and `DHCP Server`.
 
-Konfigurieren Sie den DHCP-Server:
+Configure the DHCP Server:
 
-|Option|Beschreibung|Beispiel|
+|Option|Description|Example|
 |---|---|---|
-|DHCP-Modus|**Alle Anfragen:** Alle DHCP Anfragen beantworten <br> **Nur unterstützte Telefone:** Nur IP-Adressen an unterstützte Telefone verteilen ||
-|DHCP Bereich von|Erste IP-Adresse die vom DHCP vergeben werden soll|192.168.1.100|
-|DHCP Bereich bis|Letzte IP-Adresse die vom DHCP vergeben werden soll|192.168.1.150|
-|DHCP Gateway|Gateway des Netzwerks|192.168.1.1|
+|DHCP Mode|**All Requests:** Answer all DHCP requests<br> **Only supported telephones:** Only distribute IP address to supported telephones||
+|DHCP range from|The first IP address to be assigned by the DHCP server |192.168.1.100|
+|DHCP range to|The last IP address that the DHCP server should assign|192.168.1.150|
+|DHCP Gateway|Network Gateway|192.168.1.1|
 |DHCP DNS|DNS Server|192.168.1.1|
-|Telefonanfragen zu dieser Telefonanlage weiterleiten|pascom|Name der Telefonanlage an die Provisionierungs-Anfragen weiter gegeben werden sollen|
+|Forward phone request to this phone system|pascom|pascom phone system name to which provisioning requests should be forwarded|
 
-Speichern Sie die Konfiguration ab.
+Save your configurations.
 
-### Provisionierung testen
+### Test the Provisioning
 
-Setzen Sie ein Hardware Telefon auf Werkseinstellungen zurück. Funktioniert der DHCP-Server mit den Optionen korrekt konfiguriert sich das Telefon nun automatisch. War das provisionieren erfolgreich sehen Sie im Display des Telefones "Nur Notrufe" oder den Namen des zugewiesenen Benutzers oder Arbeitsplatzes.
+Reset your Desktop phones to factory settings. Should the DHCP function with the correct options, the desktop phone will be configured automatically. If the provisioning process was succesful, you will now see "Emergency Only" or a username or location name in the telephone display.

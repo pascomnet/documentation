@@ -1,6 +1,6 @@
 ---
-title: Funktionscodes Überblick
-description: Hier finden Sie eine Zusammenfassung über die pascom Funktionscodes (Sternchencodes).
+title: Function / Service Codes
+description: HOverview of pascom IP PBX Function Codes / Service Codes.
 weight: 125
 ---
 
