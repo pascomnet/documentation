@@ -75,16 +75,50 @@ To do so, please follow the instructions according to your solution as described
 
 During the installation process, the pascom setup wizard provides you with the option to **register** the installation via **my.pascom.net** and to use your newly created **backup** as he basis for the new installation.
 
-### Activate DHCP Server
+### Activate DHCP Server (Optional)
+
+The DHCP server has been moved from the pascom phone system web UI to the pascom Management UI. As such, the configuration of the DHCP server is not a component of previously imported backup.
+
+Should you have used the pascom DHCP server in the past, you will need to activate and configure the DHCP server via the pascom Management UI. Details on how to do this can be found in the HowTo [Telephone Provisioning via DHCP]({{< ref "/howto/dhcp-provisioning" >}}).
+
+### Update your DHCP Server (Optional)
+
+Should you use your own DHCP Server for provisioning, you will need to update the DHCP option 66 as this has changed slighty in terms of provisioning. Details on how to do this can be found in the HowTo [Telephone Provisioning via DHCP]({{< ref "/howto/dhcp-provisioning" >}}).
+
+### New Provisioning of All Endpoints and Gateways
+
+{{% notice tip %}}
+Should you power all your hardware telephones centrally using PoE, then simply disconnecting and reconnecting your PoE switch from the network is sufficient to restart all the phones.
+{{% /notice %}}
+
+All hardware phones must switched from SIP-UDP and RTP to SIP-TLS and SRTP (encryption). Once you have prepared the DHCP server, you will only need to restart all the telephones. This process must be done manually as rebooting via the pascom Server without previously having performed this Provisioning switch is not possible. 
+
+### Neuprovisionierung Beronet PCI-Karte
 
 
-### New Provisioning of all Endpoints and Gateways
+### Neuprovisionierung Beronet Box
 
-### Print to Fax
+### pascom Desktop Client Updates
 
-### QueueMetrics Uni Loader
+Should you use a pascom desktop client version older than 17.10 then you will need to manually reinstall all the desktop clients.
 
-### Manual Client Rollout < 17.10
+To do this please follow the [pascom Dekstop Client Installation]({{< ref "/clients/desktop-installation" >}}) guide.
+
+Why:  pascom desktop client versions older than 17.10 update themselves via the pascom Server. From pascom 18 onwards, the server will no longer be responsible for client updates as this role will be performed by a specifically established, centralised pascom update service. 
+
+### Changes to the Fax Server
+
+The pascom Server no longer supports Print-to-Fax.
+
+In addition, using Fax-to-Mail has also changed. The pascom server now retrieves the faxes from a POP/IMAP inbox instead of receiving the E-mail directly via SMTP.
+
+Please update your configuration accordingly.
+
+### Changes to QueueMetrics
+
+The QueueMetrics Interface now transfers data between the pascom Server and QueueMetrics via Uniloader. Uniloader replaces the previous Qloader. The Uniloader is also able to receive commands from QueueMetrics via HTTPS and pass these commands on to the Asterisk AMI.
+
+Further Information can be found in the [Uniloader Documentation](http://manuals.loway.ch/Uniloader-chunked/)
 
 ### Manual File System Modifications are Lost
 
