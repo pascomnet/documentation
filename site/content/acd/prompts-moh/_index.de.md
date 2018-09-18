@@ -95,7 +95,8 @@ Keine Hektik. Drücken Sie den Record-Knopf und sprechen Sie die Ansage u. U. me
 {{% /notice %}}
 
 Wenn Sie mit dem Ergebnis zufrieden sind wählen Sie `Datei` > `Exportieren` und erzeugen ein **WAV (Microsoft) 16-bit PCM**. Falls Sie das Projekt später noch einmal weiter bearbeiten möchten empfiehlt es sich außerdem dieses ebenfalls zu speichern `Datei` > `Projekt speichern`.
-Ansagen mit Musik hinterlegen
+
+#### Ansagen mit Musik hinterlegen
 
 Beispielsweise bei Weihnachtsansagen usw. ist es beliebt diese mit Musik zu hinterlegen. Audacity ist in der Lage mehrere Tonspuren zu verwalten.
 
