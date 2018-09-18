@@ -4,21 +4,30 @@ defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 ignoreFiles = [ "\\.inc.md$" ]
 
-[params]
-themeVariant = "red"
-
 [Languages]
-[Languages.en]
-title = "Documentation"
-weight = 1
-languageName = "English"
-languageCode = "en"
+    [Languages.en]
+    title = "Documentation"
+    weight = 1
+    languageName = "English"
+    languageCode = "en"
+        [Languages.en.params]
+        algoliaindex = "doc-productive-en"
+        legalnoticeUrl = "legal-notice"
 
-[Languages.de]
-title = "Dokumentation"
-weight = 2
-languageName = "Deutsch"
-languageCode = "de"
+    [Languages.de]
+    title = "Dokumentation"
+    weight = 2
+    languageName = "Deutsch"
+    languageCode = "de"
+        [Languages.de.params]
+        algoliaindex = "doc-productive-de"
+        legalnoticeUrl = "datenschutz"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
+
+[params]
+themeVariant = "red"
+forumUrl = "forum"
+homepageUrl = "https://www.pascom.net/"
+mypascom = "https://my.pascom.net/"

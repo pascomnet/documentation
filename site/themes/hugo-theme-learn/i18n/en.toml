@@ -1,5 +1,5 @@
 [Search-placeholder]
-other = "Search..."
+other = "Search our documentation (shortcut 's')"
 
 [Clear-History]
 other = "Clear History"
@@ -24,3 +24,9 @@ other = "More"
 
 [Expand-title]
 other = "Expand me..."
+
+[Usefull-links]
+other = "Usefull links"
+
+[Legal-notice]
+other = "Legal Notice"
