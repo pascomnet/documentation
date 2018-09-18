@@ -71,6 +71,10 @@ Klicken Sie auf {{< ui-button "Sicherung starten" >}} und **laden** das so eben 
 
 ### Neuinstallation pascom Server
 
+{{% notice tip %}}
+Da Sie den neuen Server höchst wahrscheinlich mit der zuvor genutzten IP-Adresse aufsetzen werden leitet Sie Ihr Browser beim ansurfen der IP-Adresse immer wieder auf **/mobydickcmd/** weiter da diese Weiterleitung im **Cache** des **Browsers** gespeichert ist. Nutzen Sie in diesem Fall einfach "HTTPS" (z.B: https://192.168.0.1) um auf das System zuzugreifen.
+{{% /notice %}}
+
 Installieren Sie nun pascom Server Version 18 oder neuer. 
 
 Falls Sie eine virtuelle Maschine verwenden empfiehlt es sich eine neue VM zu erstellen und das alte System vorest nur abzuschalten.
@@ -83,13 +87,13 @@ Folgen Sie hierzu, je nach verwendetem System, einer unserer [Server Installatio
 
 Während des Installationsprozesses bietet Ihnen der Setup Wizard die Möglichkeit das zuvor erstellte **Backup** als Basis für die Neuinstallation zu nutzen.
 
-### (Optional) pascom DHCP-Server aktivieren
+### (Variante 1) pascom DHCP-Server aktivieren
 
 Den DHCP Server wurde von der Telefonanlagen Oberfläche in die Management Oberfläche verschoben. Somit ist die Konfiguration des DHCP-Servers auch nicht Bestandteil des von Ihnen zuvor eingespielten Backups.
 
 Falls Sie den pascom DHCP Server in der Vergangenheit genutzt haben müssen Sie diesen im Management wieder aktivieren und konfigurieren. Details können Sie dem Howto [Telefon-Provisionierung via DHCP]({{< ref "/howto/dhcp-provisioning" >}}) entnehmen.
 
-### (Optional) Ihren DHCP Server anpassen
+### (Variante 2) Ihren DHCP Server anpassen
 
 Verweden Sie Ihren eigenen DHCP-Server für das Provisioning müssen Sie nun die DHCP-Option 66 anpassen da sich diese für das Provisioning geringfügig geändert hat. Details können Sie dem Howto [Telefon-Provisionierung via DHCP]({{< ref "/howto/dhcp-provisioning" >}}) entnehmen.
 
@@ -103,9 +107,42 @@ Alle Hardware Telefone müssen nun von SIP-UDP und RTP auf SIP-TLS und SRTP (Ver
 
 ### Neuprovisionierung Beronet PCI-Karte
 
+Interne Beronet PCI-Karten können weiterhin vollautomatisch provisioniert werden. Das kopieren einer Provisionierungs-URL entfällt. Gehen Sie wie folgt vor: 
+
+#### Beronet Firmware überprüfen
+
+Loggen Sie sich auf der Weboberfläche der Beronet Box ein und stellen Sie zunächst unter **Management** > **Info** sicher, dass Sie appfs **16 oder neuer** verwenden. Falls nicht updaten Sie die Box jetzt.
+
+#### Provisionierung durchführen
+
+Melden Sie sich an der Telefonanlagen Weboberfläche an. Markieren Sie unter **Gateways** > **Gatewayliste** Ihr beronet Gateway und klicken auf **Aktionen** > **Provisionierung**. Die PCI-Karte startet automatisch neu und übernimmt, wie gewohnt, die Konfiguration des pascom Servers.
 
 ### Neuprovisionierung Beronet Box
 
+Da Beronet Boxen ab jetz auch über die pascom.cloud verwendet werden können ist hier ein Pairing via Provisioning-URL notwendig. Gegen Sie dazu wie folgt vor:
+
+#### Beronet Firmware überprüfen
+
+Loggen Sie sich auf der Weboberfläche der Beronet Box ein und stellen Sie zunächst unter **Management** > **Info** sicher, dass Sie appfs **16 oder neuer** verwenden. Falls nicht updaten Sie die Box jetzt.
+
+#### Provisioning URL ermitteln
+
+Melden Sie sich an der Telefonanlagen Weboberfläche an. Markieren Sie unter **Gateways** > **Gatewayliste** Ihr beronet Gateway und klicken auf **Aktionen** > **Provisioning URL**. Kopieren Sie die URL in die Zwischenablage.
+
+#### Provisioning URL auf Beronet eintragen
+
+Loggen Sie sich auf der Weboberfläche der Beronet Box ein und stellen Sie zunächst unter **GUI Mode** sicher, dass Sie **Advanced** gewählt haben.
+
+Tragen Sie nun unter **Preferences** > **Provisioning** folgende Werte ein:
+
+|Feld|Wert|
+|---|---|
+|Manual Config| aktivieren|
+|Provisioning on Boot:|**always**|
+|Provisioning-URL|Die zuvor kopierte Provisioning-URL|
+|Polling Interval (min.)|Leer lassen|
+
+Speichern Sie die Änderung. Die Beronet Box startet neu.
 
 ### pascom Desktop Client updaten
 
