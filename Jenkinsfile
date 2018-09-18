@@ -8,10 +8,16 @@ node('docker') {
     switch (target) {
         case 'dev':
             baseUrl = 'https://www.dev.pascom.net/doc'
+            mypascom = 'https://my.dev.pascom.net'
+            homepage = 'https://www.dev.pascom.net'
+            doc = 'doc-dev'
             break
         
         case 'test':
             baseUrl = 'https://www.test.pascom.net/doc'
+            mypascom = 'https://my.test.pascom.net'
+            homepage = 'https://www.test.pascom.net'
+            doc = 'doc-test'
             break
     }
 
@@ -20,6 +26,9 @@ node('docker') {
     }
 
     sh "sed -i 's#baseURL.*#baseURL = \"${baseUrl}\"#' ./site/config.toml"
+    sh "sed -i 's/doc-productive/${doc}/g' ./site/config.toml"
+    sh "sed -i 's#https://my.pascom.net#${mypascom}#g' ./site/config.toml"
+    sh "sed -i 's#https://www.pascom.net#${homepage}#g' ./site/config.toml"
 
     stage('Build doc') {
         def hugo = docker.build("hugo:${env.BUILD_ID}")
