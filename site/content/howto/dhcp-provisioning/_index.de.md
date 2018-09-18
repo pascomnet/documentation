@@ -28,7 +28,7 @@ die  **67** setzen. Bei Linux/Unix DHCP-Servern heißen die Optionen **tftp-serv
 {{% /notice  %}}
 Je nach verwendeten Telefonen unterscheiden sich die Provisionierungs-URLs.
 
-**Ersetzen** Sin folgedem Beispiel **[pascom_Server]** mit der IP-Adresse oder DNS-Namen des pascom Servers und **[Telefonanlagenname]** mit dem Namen Ihrer Telefonanlage:
+**Ersetzen** Sie folgedem Beispiel **[pascom_Server]** mit der IP-Adresse oder DNS-Namen des pascom Servers und **[Telefonanlagenname]** mit dem Namen Ihrer Telefonanlage:
 
 |Telefonhersteller|Option 66 (tftp-server-name) |Option 67 (filename) |
 |---|---|---|

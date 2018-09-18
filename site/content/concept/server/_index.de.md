@@ -28,7 +28,7 @@ Das pascom Server Management liegt direkt via **Port 8443** am Interface an. Hab
 
 ### Session Border Controller
 
-Zugriffe auf die Telefonalage können ausschließlich via Session Border Controler erfolgen. Dieser sichert das System ab und lässt in der Standard-Konfiguration ausschließlich verschlüsselte Verbindugen zu. Über den Session Border Controller stehen folgede Dienste der Telefonalge am Interface zur Verfügung:
+Zugriffe auf die Telefonanlage können ausschließlich via Session Border Controller erfolgen. Dieser sichert das System ab und lässt in der Standard-Konfiguration ausschließlich verschlüsselte Verbindugen zu. Über den Session Border Controller stehen folgede Dienste der Telefonanlage am Interface zur Verfügung:
 
 #### Aktiviert (Standard)
 | Port | Beschreibung |

@@ -7,53 +7,53 @@ weight: 10
  
 {{< description >}}
  
-## Systemaufbau
+## System Structure
 
-![pascom Server Zugriff](server-access.png)
+![pascom Server Access](server-access.png)
 
 ### Interface
 
-Das Interface ist die Netzwerk-Schnittstelle des pascom Servers. Befinden sich am Server mehrere physikalische oder virtuelle Ethernet-Schnittstellen werden die Interfaces analog dazu erstellt.
+The interface is the pascom server network interface. Should multiple physical or virtual ethernet interfaces be found on the server, they will be created accordingly.
 
 ### Management
 
-Das pascom Server Management liegt direkt via **Port 8443** am Interface an. Haben Sie mehrere Interfaces können Sie sich aussuchen an welchem das Management verfügbar sein soll. Die Aufgaben des Management umfassen:
+The pascom Server Management is connected directly to the interface via **Port 8443**. Should you have several interfaces, you can choose on which interface the server management should be available. Management tasks include: 
 
-* Verwaltung der Interfaces
-* Anlegen der Telefonanlage
-* Update des Gesamtsystem 
-* Backup/Restore Operationen
-* Überwachung und Anlayse des Gesamtsystems
+* Interface Management
+* Creating the pascom phone system
+* Updating the entire system 
+* Backup/Restore operations
+* Monitoring and analysis of the entire system
 
 ### Session Border Controller
 
-Zugriffe auf die Telefonalage können ausschließlich via Session Border Controler erfolgen. Dieser sichert das System ab und lässt in der Standard-Konfiguration ausschließlich verschlüsselte Verbindugen zu. Über den Session Border Controller stehen folgede Dienste der Telefonalge am Interface zur Verfügung:
+Access to the pascom phone system can only be made via the Session Border Controller (SBC). The SBC secures the system and per default only allows enrypted connections. The following phone system services are available on the interface via the Session Border Controller: 
 
-#### Aktiviert (Standard)
-| Port | Beschreibung |
+#### Activated (Standard)
+| Port | Description |
 | ---- | ------------ |
-| TCP **443** | Webinterface der Telefonanlage |
-| TCP **636** | LDAPS für Telefonbuchzugriffe via LDAP |
-| TCP **5061** | SIP-TLS - sichere SIP-Kommunikation |
-| TCP **5222** | pascom Desktop- und Mobile-Client Zugriffe |
-| TCP **8884**  | Provisionierung von IP-Hardware-Telefonen |
-| UDP **30000 - 35000** | SRTP - verschlüsselte Sprachdaten |
+| TCP **443** | phone system web UI|
+| TCP **636** | LDAPS for phone hook access via LDAP |
+| TCP **5061** | SIP TLS - secure SIP communication |
+| TCP **5222** | pascom Desktop and Mobile client access |
+| TCP **8884**  | Provisioning of IP desktop phones |
+| UDP **30000 - 35000** | SRTP - encrypted Voice data |
 
-#### Deaktiviert (Standard)
-| Port | Beschreibung |
+#### Deactivated (Standard)
+| Port | Description |
 | ---- | ------------ |
-| TCP **5060** | SIP - SIP-Kommunikation |
-| TCP **8885**  | VPN Tunnel direkt zur Telefonanlage |
+| TCP **5060** | SIP - SIP communication |
+| TCP **8885**  | VPN Tunnel direct to the phone system |
 
 ### SSH
 
-Direkt am Interface steht via **Port 22** der SSH-Server zur Verfügung. Dort können Sie sich, wie an den Webinterfaces, per admin anmelden um das System zu verwalten. Zugriffe per SSH empfehlen sich nur für Anwender mit Linux-Erfahrung. 
+The SSH server is available via **Port 22** directly on the interface. Just like with the pascom web UI, it is possible to log in via SSH using the admin login credentials and manage the pascom IP PBX. Access via SSH is only recommended for users with Linux experience. 
 
 ### Phone System
 
-Ist die eigentliche Telefonanlage. Auf diese kann, aus Sicherheitsgründen, ausschließlich per Session Border Controller zugegriffen werden. Es ist auch möglich mehrere Telefonanlagen auf einem pascom Sever gleichzeitig zu betreiben. Dies ist jedoch unseren Cloud Service Provider Partnern vorbehalten.
+The phone system itself. For security reasonse, the pascom phone systems can only be accessed via the Session Border Controller. It is also possible to operate several pascom phone systems simultaneously on the pascom server. However, this functionality is reserved for our pascom Cloud Service Provider (CSP) partners.
 
-Um nicht immer über das Management auf die Weboberfläche der Telefonanlage zugreifen zu müssen steht diese auch direkt, durch angabe des Telefonanlgen Names, zur Verfügung:
+In order to ensure that access to the phone system does not always have to be obtained via the pascom Management UI, it is also possible to access the phone system web UI using the following URL structure: 
 
 ```
 https://pascom-server/my-company
