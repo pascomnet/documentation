@@ -10,10 +10,6 @@ weight: 70
 
 ## Lizenz Upgraden
 
-{{% notice tip%}}
-Ist eine Lizenz auf pascom 18 oder höher migriert kann diese nicht mehr für ältere Systeme verwendet werden. Möchte Sie für das alte System beispielsweise mehr Benutzer kaufen ist dies ohne ein gleichzeitiges Upgrade nicht mehr möglich.
-{{% /notice %}}
-
 Bevor Sie das Upgrade durchführen können **kontaktieren** Sie bitte unseren **Vertrieb** um Ihre Lizenz auf pascom 18 oder höher umzustellen. Dieser Vorgang ist selbstverständlich kostenlos.
 
 Für die Migration **benötigen** Sie außerdem einen **my.pascom.net Zugang**. Sollten Sie noch keinen Zugriff auf my.pascom.net haben ist Ihnen unser Team gerne behilflich.
@@ -27,13 +23,13 @@ Bitte beachten Sie folgende Checkliste **BEVOR** Sie mit dem Upgrade beginnen
 * [ ] Ich verwende keine Auerswald Telefone (Unterstützung noch in Arbeit)
 * [ ] Ich verwende keine Aastra Tischtelefone (Unterstützung noch in Arbeit)
 * [ ] Ich verwende keine Patton Gateways
-* [ ] Ich verwende keinen pascom Classic Client oder FlexPanels
+* [ ] Ich verwende keine FlexPanels
 * [ ] Ich verwende kein Print To Fax
+* [ ] Ich verwende kein SIP-Amt ohne Registrierung (z.B. Vodafone)
 * [ ] Die Hardware oder Virtuelle Maschine die ich verwende hat min 2 GB RAM
 * [ ] Ich verwende keine 32Bit Hardware oder 32Bit Virtuelle Maschine
-* [ ] Mein Beronet Gateway hat mindestens Firmware Verison 16
-* [ ] Ich verwende keinen pascom Cluster bzw. möchste diesen auflösen
-* [ ] Ich verwende eine virtuelle Maschine und habe einen Snapshot erzeugt
+* [ ] Mein Beronet Gateway hat mindestens Firmware Version 16
+* [ ] Ich verwende keinen pascom Cluster bzw. möchte diesen auflösen
 * [ ] Ich habe meine Lizenz vom pascom Vertriebs Team upgraden lassen
 * [ ] Ich habe einen mit meiner Firma verknüpften my.pascom.net Zugang
 
@@ -95,7 +91,7 @@ Falls Sie den pascom DHCP Server in der Vergangenheit genutzt haben müssen Sie 
 
 ### (Variante 2) Ihren DHCP Server anpassen
 
-Verweden Sie Ihren eigenen DHCP-Server für das Provisioning müssen Sie nun die DHCP-Option 66 anpassen da sich diese für das Provisioning geringfügig geändert hat. Details können Sie dem Howto [Telefon-Provisionierung via DHCP]({{< ref "/howto/dhcp-provisioning" >}}) entnehmen.
+Verwenden Sie Ihren eigenen DHCP-Server für das Provisioning müssen Sie nun die DHCP-Option 66 anpassen da sich diese für das Provisioning geringfügig geändert hat. Details können Sie dem Howto [Telefon-Provisionierung via DHCP]({{< ref "/howto/dhcp-provisioning" >}}) entnehmen.
 
 ### Neuprovisionierung aller Telefone
 
@@ -111,7 +107,11 @@ Interne Beronet PCI-Karten können weiterhin vollautomatisch provisioniert werde
 
 #### Beronet Firmware überprüfen
 
-Loggen Sie sich auf der Weboberfläche der Beronet Box ein und stellen Sie zunächst unter **Management** > **Info** sicher, dass Sie appfs **16 oder neuer** verwenden. Falls nicht updaten Sie die Box jetzt.
+Loggen Sie sich auf der Weboberfläche der Beronet Karte ein und stellen Sie zunächst unter **Management** > **Info** sicher, dass Sie appfs **16 oder neuer** verwenden. Falls nicht updaten Sie die Box jetzt:
+
+* Download der [Firmware 16.X](https://beronet.atlassian.net/wiki/spaces/PUB/pages/61210659/Tools+and+Downloads) (Abschnitt: beroNet OS)
+* Setzen Sie die beroNet unter **Management** > **Firmwareupdate** in den Updatemodus
+* Laden Sie die Firmware 16.X nach dem Reboot hoch und starten Sie das Update
 
 #### Provisionierung durchführen
 
@@ -119,11 +119,16 @@ Melden Sie sich an der Telefonanlagen Weboberfläche an. Markieren Sie unter **G
 
 ### Neuprovisionierung Beronet Box
 
-Da Beronet Boxen ab jetz auch über die pascom.cloud verwendet werden können ist hier ein Pairing via Provisioning-URL notwendig. Gegen Sie dazu wie folgt vor:
+Da Beronet Boxen ab jetzt auch über die pascom.cloud verwendet werden können ist hier ein Pairing via Provisioning-URL notwendig. Gegen Sie dazu wie folgt vor:
 
 #### Beronet Firmware überprüfen
 
-Loggen Sie sich auf der Weboberfläche der Beronet Box ein und stellen Sie zunächst unter **Management** > **Info** sicher, dass Sie appfs **16 oder neuer** verwenden. Falls nicht updaten Sie die Box jetzt.
+Loggen Sie sich auf der Weboberfläche der Beronet Box ein und stellen Sie zunächst unter **Management** > **Info** sicher, dass Sie appfs **16 oder neuer** verwenden. Falls nicht updaten Sie die Box jetzt:
+
+* Download der [Firmware 16.X](https://beronet.atlassian.net/wiki/spaces/PUB/pages/61210659/Tools+and+Downloads) (Abschnitt: beroNet OS)
+* Setzen Sie die beroNet unter **Management** > **Firmwareupdate** in den Updatemodus
+* Laden Sie die Firmware 16.X nach dem Reboot hoch und starten Sie das Update
+
 
 #### Provisioning URL ermitteln
 
@@ -146,9 +151,9 @@ Speichern Sie die Änderung. Die Beronet Box startet neu.
 
 ### pascom Desktop Client updaten
 
-Nutzen Sie den pascom Desktop Client < 17.10 müssen Sie den Desktop Client manuell neu installieren.
+Nutzen Sie den pascom Desktop Client < 17.10 oder den pascom Classic Client, müssen Sie den Desktop Client manuell neu installieren.
 
-Folgen Sie hierzu der Anleitung [pascom Dekstop Client Installation]({{< ref "/clients/desktop-installation" >}})
+Folgen Sie hierzu der Anleitung [pascom Desktop Client Installation]({{< ref "/clients/desktop-installation" >}})
 
 Der Grund hierfür: pascom Desktop Clients < 17.10 updaten sich über den pascom Server. Ab pascom 18 macht der Server keine Client-Updates mehr. Hierzu haben wir nun einen zentralen Updateservice etabliert.
 
