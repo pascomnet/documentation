@@ -6,6 +6,6 @@ weight: 996
 
 ## Grundlegende Änderungen
 
-Mit pascom 18 gibt es grundlegende Änderungen die Sie vor einem Update überprüfen bzw. nach dem Update anpassen müssen. Wir stellen hierzu auch eine Checkliste in einer detaillierten [Upgrade-Anleitung]({{ ref "/server/upgrade" }}) zur Verfügung.
+Mit pascom 18 gibt es grundlegende Änderungen die Sie vor einem Update überprüfen bzw. nach dem Update anpassen müssen. Wir stellen hierzu auch eine Checkliste in einer detaillierten [Upgrade-Anleitung]({{< ref "/server/upgrade" >}}) zur Verfügung.
 
 
