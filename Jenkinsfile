@@ -25,11 +25,14 @@ node('docker') {
         checkout scm
     }
 
-    sh "sed -i 's#baseURL.*#baseURL = \"${baseUrl}\"#' ./site/config.toml"
-    sh "sed -i 's/doc-productive/${doc}/g' ./site/config.toml"
-    sh "sed -i 's#https://my.pascom.net#${mypascom}#g' ./site/config.toml"
-    sh "sed -i 's#https://www.pascom.net#${homepage}#g' ./site/config.toml"
+    if (doc != null){
+        
+        sh "sed -i 's#baseURL.*#baseURL = \"${baseUrl}\"#' ./site/config.toml"
+        sh "sed -i 's/doc-productive/${doc}/g' ./site/config.toml"
+        sh "sed -i 's#https://my.pascom.net#${mypascom}#g' ./site/config.toml"
+        sh "sed -i 's#https://www.pascom.net#${homepage}#g' ./site/config.toml"
 
+    }
     stage('Build doc') {
         def hugo = docker.build("hugo:${env.BUILD_ID}")
 
