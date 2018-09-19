@@ -1,4 +1,5 @@
-title: Desktop Client Installation
+---
+title: pascom Desktop Client Installation
 description: How to install the pascom desktop UC client on Windows, macOS and Linux. 
 weight: 10
 ---
