@@ -14,7 +14,7 @@ weight: 40
 Systemvoraussetzung **Android 5.1** oder höher
 {{% /notice %}}
 
-Den aktuellen pascom Mobile Client installieren Sie direkt auf Ihrem Android Smartphone via [Google Palystore](https://www.pascom.net/playstore).
+Den aktuellen pascom Mobile Client installieren Sie direkt auf Ihrem Android Smartphone via [Google Playstore](https://www.pascom.net/playstore).
 
 ## iOS Installation
 
@@ -22,7 +22,7 @@ Den aktuellen pascom Mobile Client installieren Sie direkt auf Ihrem Android Sma
 Systemvoraussetzung **iOS 10 (64bit)** oder höher
 {{% /notice %}}
 
-Den aktuellen pascom Mobile Client installieren Sie direkt auf Ihrem Android Smartphone via [Apple Appstore](https://www.pascom.net/appstore).
+Den aktuellen pascom Mobile Client installieren Sie direkt auf Ihrem Apple Smartphone via [Apple Appstore](https://www.pascom.net/appstore).
 
 ## (Optional) Mobilgerät am Server anlegen
 

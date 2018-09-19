@@ -94,8 +94,9 @@ Die Verwendung ist recht simpel. Das passende Microfon wählen (siehe Screenshot
 Keine Hektik. Drücken Sie den Record-Knopf und sprechen Sie die Ansage u. U. mehr mals hintereinander auf. Sie können die Ansage hinterher einfach durch Markieren der Tonspur und anschließendem Drücken der ENTF Taste zurechtschneiden.
 {{% /notice %}}
 
-Wenn Sie mit dem Ergebnis zufrieden sind wählen Sie {{< ui-button "Datei" >}} > {{< ui-button "Exportieren" >}} und erzeugen ein **WAV (Microsoft) 16-bit PCM**. Falls Sie das Projekt später noch einmal weiter bearbeiten möchten empfiehlt es sich außerdem dieses ebenfalls zu speichern {{< ui-button "Datei" >}} > {{< ui-button "Projekt speichern" >}}.
-Ansagen mit Musik hinterlegen
+Wenn Sie mit dem Ergebnis zufrieden sind wählen Sie {{< ui-button "Datei" >}} > {{< ui-button "Exportieren" >}} und erzeugen ein **WAV (Microsoft) 16-bit PCM**. Falls Sie das Projekt später noch einmal weiter bearbeiten möchten empfiehlt es sich außerdem dieses ebenfalls zu speichern {{< ui-button "Datei" >}} > {{< ui-button "Projekt speichern" >}}.     
+    
+#### Ansagen mit Musik hinterlegen
 
 Beispielsweise bei Weihnachtsansagen usw. ist es beliebt diese mit Musik zu hinterlegen. Audacity ist in der Lage mehrere Tonspuren zu verwalten.
 

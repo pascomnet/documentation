@@ -1,6 +1,6 @@
 ---
 title: Skill Based Routing
-description: kill Based Routing - dient der Verteilung von Anrufern anhand Benutzern zugewiesenen Fähigkeiten
+description: Skill Based Routing - dient der Verteilung von Anrufern anhand Benutzern zugewiesenen Fähigkeiten
 weight: 50
 ---
 
@@ -61,7 +61,7 @@ Die Verwendung von Fähigkeiten hat den Vorteil, dass z. B. nur eine Warteschlan
 Für die Sprachauswahl erstellen wir ein [IVR-Menü]({{< ref "/acd/ivr">}}): {{< ui-button "Anrufverteilung" >}} > {{< ui-button "IVR" >}} > {{< ui-button "Hinzufügen" >}}.
 Ist das IVR angelegt, müssen noch die Einträge angelegt werden und für diese: das gerade angelegte IVR markieren und auf {{< ui-button "Einträge" >}} klicken.
 
-Legen Sie am besten drei weitere Einträge an: Nummer **1** für *deutsch*, Nummer **2** für *englisch*, Nummer **3** für *französisch*.<br>**i** für *invald* (Ungültige Eingabe) und **t** für *timeout* (Zeit ist abgelaufen) sind bereits angelegt und müssen nur noch bearbeitet werden.
+Legen Sie am besten drei weitere Einträge an: Nummer **1** für *deutsch*, Nummer **2** für *englisch*, Nummer **3** für *französisch*.<br>**i** für *invalid* (Ungültige Eingabe) und **t** für *timeout* (Zeit ist abgelaufen) sind bereits angelegt und müssen nur noch bearbeitet werden.
 
 Nun müssen die Einträge bearbeitet und mit Aktionen befüllt werden. Als Beispiel sehen wir hier den Eintrag *deutsch*:
 
