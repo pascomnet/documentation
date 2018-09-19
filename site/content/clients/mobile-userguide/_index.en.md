@@ -13,7 +13,7 @@ weight: 50
 
 {{% notice info %}}
 Before logging in to the pascom mobile VoIP client for the first time, the mobile app pairing process needs to completed.
-This can be done either by your [System Administrator]({{< relref "01client-installation.md#pascom-mobile-client">}}) or by the end user, providing they have the required pascom phone system permissions.
+This can be done either by your [System Administrator]({{< ref "">}}) or by the end user, providing they have the required pascom phone system permissions.
 {{% /notice %}}
 
 ### Pairing Process
@@ -41,7 +41,7 @@ The following instructions will be displayed within the pascom desktop client.
 ![pascom mobile app pairing process](pairing.en.png)
 
 {{% notice info %}}
-As soon as the pascom mobile app has been setup and logged into, it can now be used independantly of the [pascom Desktop Client]({{< relref "02client.md">}}). A simultaneous, parallel operation is **NOT** required.
+As soon as the pascom mobile app has been setup and logged into, it can now be used independantly of the [pascom Desktop Client]({{< relref "">}}). A simultaneous, parallel operation is **NOT** required.
 {{% /notice %}}
 
 ## Overview

@@ -5,6 +5,8 @@ node('docker') {
     def baseUrl
     def sedCmd
     
+    doc = null
+    
     switch (target) {
         case 'dev':
             baseUrl = 'https://www.dev.pascom.net/doc'
