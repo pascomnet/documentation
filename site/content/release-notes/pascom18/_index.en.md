@@ -6,6 +6,6 @@ weight: 996
 
 ## Core Changes
 
-With pascom 18 there are a number of core changed that will need to check before updating and modify once updated. Please use our check list in our detailed [Upgrade Guide]({{< ref "/server/upgrade" > }}).
+With pascom 18 there are a number of core changed that will need to check before updating and modify once updated. Please use our check list in our detailed [Upgrade Guide]({{< ref "/server/upgrade" >}}).
 
 
