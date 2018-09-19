@@ -52,7 +52,7 @@ Aktionen werden direkt beim zugehörigen Objekt konfiguriert.
 
 ### Aktionen am Beispiel-Objekt Benutzer
 
-Über `Benutzerliste` > `Benutzer` Benutzer anklicken und `Bearbeiten` können in den entsprechenden Tabs Aktionen
+Über {{< ui-button "Benutzerliste" >}} > {{< ui-button "Benutzer" >}} Benutzer anklicken und {{< ui-button "Bearbeiten" >}} können in den entsprechenden Tabs Aktionen
 
 + **Intern/Vorher**
 + **Intern/Nachher**
@@ -63,12 +63,12 @@ angelegt werden.
 
 |Aktions-Typen|Beschreibung|
 |---|---|
-|**Ansagen**|Spielt eine Ansage vor. Diese kann hinzugefügt werden unter `Erweitert` > `Ansagen`.|
+|**Ansagen**|Spielt eine Ansage vor. Diese kann hinzugefügt werden unter {{< ui-button "Erweitert" >}} > {{< ui-button "Ansagen" >}}.|
 |**Voicemailbox**|Verbindet den Anrufer mit einer Voicemailbox. Es kann die eigenen sein, die eines anderen Benutzers oder die eines Teams. Zusätzlich kann bei der Voicemailbox *Hinweis* (dass Benutzer nicht erreichbar oder belegt ist) und *Handhabung* (Ansage, dass der Anrufer eine Nachricht hinterlassen kann) gesetzt werden.|
 |**Auflegen**|Legt den Anruf auf. Diese Aktion z. B. zu empfehlen, wenn dem Anrufer nur eine Ansage vorgespielt wird.|
-|**Skript**|Führt ein Skript aus, das zuvor unter dem Menüpunkt `Erweitert` > `Skripte` erstellt wurde.|
+|**Skript**|Führt ein Skript aus, das zuvor unter dem Menüpunkt {{< ui-button "Erweitert" >}} > {{< ui-button "Skripte" >}} erstellt wurde.|
 |**Inline-Script**|Einzeiliges Skript das hier eingetragen werden kann|
-|**Label Setzen**|Labels werden unter `Anrufverteilung` > `Anruf Labels` erstellt und können hier hizugefügt werden. Labels werden dem pascom Benutzer als Information im Client angezeigt. Es können beliebig viele Labels pro Anrufer gesetzt werden.|
+|**Label Setzen**|Labels werden unter {{< ui-button "Anrufverteilung" >}} > {{< ui-button "Anruf Labels" >}} erstellt und können hier hizugefügt werden. Labels werden dem pascom Benutzer als Information im Client angezeigt. Es können beliebig viele Labels pro Anrufer gesetzt werden.|
 
 Weitere Aktionen sind:
 
@@ -88,7 +88,7 @@ Bitte achten Sie auch auf eine sinnvolle Reihenfolge der Bedingungen. Z. B. soll
 
 Um eine Aktion auszuführen wird eine Bedingung geprüft. Wird bei einer Aktion keine Bedingung ausgewählt, wird die Aktion in jedem Fall ausgeführt.
 
-Bedingungen werden angelegt unter `Anrufverteilung` > `Aktionsbedingungen`.
+Bedingungen werden angelegt unter {{< ui-button "Anrufverteilung" >}} > {{< ui-button "Aktionsbedingungen" >}}.
 
 Zeilen bei denen **keine Bedingung** ausgewählt wird werden immer ausgeführt. Zeilen mit einer bestimmten Bedingung wird nur dann ausgeführt, wenn diese Bedingung tatsächlich zutrifft. Es ist auch möglich, dass mehrere Zeilen die selbe Bedingung zugeteilt bekommen. Dann werden die Aktionen der Reihe nach ausgeführt.
 
@@ -116,7 +116,7 @@ Bei Aktionen Nachher kann zusätzlich zu einer Bedingung auch ein Rufstatus gepr
 Für den Fall, dass eine Reihe von Aktionen für mehrere Objekte gelten sollen, können Aktionsvorlagen erstellt werden.
 Eine Aktionsvorlage kann einmal erstellt werden und anschließend auf mehrere Objekte ausgerollt werden.
 
-Legen Sie eine Aktionsvorlage an unter `Anrufverteilung` > `Aktionsvorlagen` > `Hinzufügen`.
+Legen Sie eine Aktionsvorlage an unter {{< ui-button "Anrufverteilung" >}} > {{< ui-button "Aktionsvorlagen" >}} > {{< ui-button "Hinzufügen" >}}.
 
 |Einstellung|Beschreibung|
 |---|---|
@@ -124,11 +124,11 @@ Legen Sie eine Aktionsvorlage an unter `Anrufverteilung` > `Aktionsvorlagen` > `
 |**Objektart**|Benutzer, Team oder IVR|
 |**Rufposition**|Aktion Vorher oder Aktion Nachher|
 
-Nach dem `Speichern` können im Tab `Aktionen` diese angelegt werden.
+Nach dem {{< ui-button "Speichern" >}} können im Tab {{< ui-button "Aktionen" >}} diese angelegt werden.
 
-Um Aktionen auf die entsprechende Objekte auszurollen, gehen Sie zurück zur Übersicht (`Anrufverteilung` > `Aktionsvorlagen`), setzten Sie bei der gewünschten Vorlage ein Häkchen und klicken Sie auf `Vorlage ausrollen`.
+Um Aktionen auf die entsprechende Objekte auszurollen, gehen Sie zurück zur Übersicht ({{< ui-button "Anrufverteilung" >}} > {{< ui-button "Aktionsvorlagen" >}}), setzten Sie bei der gewünschten Vorlage ein Häkchen und klicken Sie auf {{< ui-button "Vorlage ausrollen" >}}.
 
-Im ersten Tab stellen Sie noch `Optionen` für die Vorlage ein:
+Im ersten Tab stellen Sie noch {{< ui-button "Optionen" >}} für die Vorlage ein:
 
 |Einstellung|Beschreibung|
 |---|---|

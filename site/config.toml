@@ -1,5 +1,5 @@
 baseURL = "https://www.pascom.net/doc"
-theme = "hugo-theme-learn"
+theme = "pascom-theme"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 ignoreFiles = [ "\\.inc.md$" ]

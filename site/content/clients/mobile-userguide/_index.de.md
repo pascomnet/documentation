@@ -18,7 +18,7 @@ Dieser kann vom [Administrator]({{< ref "/clients/mobile-installation#via-pascom
 
 ### Pairing-Vorgang
 
-* Starten Sie den [pascom Desktop Client]({{< ref "/clients/desktop-userguide">}}) und wählen Sie unter `Einstellungen` > `Meine Geräte` bei Ihrem zugeordneten Mobiltelefon die Schaltfläche **Pair** um den Pairing-Vorgang anzustoßen.
+* Starten Sie den [pascom Desktop Client]({{< ref "/clients/desktop-userguide">}}) und wählen Sie unter {{< ui-button "Einstellungen" >}} > {{< ui-button "Meine Geräte" >}} bei Ihrem zugeordneten Mobiltelefon die Schaltfläche **Pair** um den Pairing-Vorgang anzustoßen.
 
 * Geben Sie Ihr Benutzerpasswort für den pascom Desktop Client ein und klicken Sie auf **Weiter**. Jetzt werden Ihnen weitere Anweisungen und ein QR-Code angezeigt. Jeder QR-Code ist 5 Minuten gültig und erneuert sich nach Ablauf der Zeit automatisch oder kann mit einem Klick auf **Erneut generieren** manuell neu generiert werden.
 

@@ -46,7 +46,7 @@ Vermeiden Sie wenn möglich mehr als zwei Ebenen. Stark verschachtelte Abfrageme
 ## Konfiguration
 ### IVR verwalten
 
-Wählen Sie in der pascom Weboberfläche `Erweitert` > `IVR`. Wenn Sie ein neues IVR hinzufügen möchten drücken Sie `Hinzufügen`. Falls Sie ein bestehendes IVR bearbeiten wollen markieren Sie dies in der Liste und wählen `Bearbeiten`.
+Wählen Sie in der pascom Weboberfläche {{< ui-button "Erweitert" >}} > {{< ui-button "IVR" >}}. Wenn Sie ein neues IVR hinzufügen möchten drücken Sie {{< ui-button "Hinzufügen" >}}. Falls Sie ein bestehendes IVR bearbeiten wollen markieren Sie dies in der Liste und wählen {{< ui-button "Bearbeiten" >}}.
 
 |Parameter|Beschreibung|
 |---|---|
@@ -58,7 +58,7 @@ Wählen Sie in der pascom Weboberfläche `Erweitert` > `IVR`. Wenn Sie ein neues
 
 ### Einträge erstellen
 
-Wählen Sie in der pascom Weboberfläche `Erweitert` > `IVR` markieren Sie das gewünschte IVR und drücken Sie auf die Schaltfläche `Einträge`. Hier können Sie definieren was bei welchem Tastendruck passieren soll. Wählen Sie `Hinzufügen` um einen neuen Eintrag zu erstellen.
+Wählen Sie in der pascom Weboberfläche {{< ui-button "Erweitert" >}} > {{< ui-button "IVR" >}} markieren Sie das gewünschte IVR und drücken Sie auf die Schaltfläche {{< ui-button "Einträge" >}}. Hier können Sie definieren was bei welchem Tastendruck passieren soll. Wählen Sie {{< ui-button "Hinzufügen" >}} um einen neuen Eintrag zu erstellen.
 
 |Parameter|Bedeutung|
 |---|---|
@@ -69,4 +69,4 @@ Wählen Sie in der pascom Weboberfläche `Erweitert` > `IVR` markieren Sie das g
 
 Jeder Eintrag braucht Aktionen die ausgeführt werden wenn die entsprechende Taste gedrückt wird.
 
-Wählen Sie in der pascom Weboberfläche `Erweitert > IVR` markieren Sie das gewünschte IVR und drücken Sie auf die Schaltfläche `Einträge`. Wählen Sie den entsprechenden Eintrag und drücken `Bearbeiten`. Im Reiter **Intern** und **Extern** finden Sie die Aktionen zum jeweiligen Eintrag.
+Wählen Sie in der pascom Weboberfläche {{< ui-button "Erweitert > IVR" >}} markieren Sie das gewünschte IVR und drücken Sie auf die Schaltfläche {{< ui-button "Einträge" >}}. Wählen Sie den entsprechenden Eintrag und drücken {{< ui-button "Bearbeiten" >}}. Im Reiter **Intern** und **Extern** finden Sie die Aktionen zum jeweiligen Eintrag.

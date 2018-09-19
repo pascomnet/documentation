@@ -20,7 +20,7 @@ Wollen Sie Ihre Ansagen lieber von einem Tonstudio mit professionellem Sprecher 
 
 ### Ansagen anlegen und hochladen
 
-Zum Anlegen einer neuen Ansage wählen Sie in der pascom Weboberfläche `Erweitert` > `Ansagen`. Möchten die eine bereits bestehende Ansage bearbeiten, markieren Sie diese und klicken Sie auf `Bearbeiten`. Um eine neue Ansage zu erstellen klicken Sie auf `Hinzufügen`.
+Zum Anlegen einer neuen Ansage wählen Sie in der pascom Weboberfläche {{< ui-button "Erweitert" >}} > {{< ui-button "Ansagen" >}}. Möchten die eine bereits bestehende Ansage bearbeiten, markieren Sie diese und klicken Sie auf {{< ui-button "Bearbeiten" >}}. Um eine neue Ansage zu erstellen klicken Sie auf {{< ui-button "Hinzufügen" >}}.
 
 {{% notice note %}}
 Wir empfehlen Ihnen einen Präfix für Ihre eingenen Ansagen zu verwenden um eine bessere Übersicht zu haben und um die eigenen Ansagen später leichter zu finden.<br>Z. B. *CC-gescheaftszeiten*, wobei hier CC für die Firma ChaosConsulting steht.
@@ -33,7 +33,7 @@ Nach erfolgereichem Hochladen und Speichern erscheint in der Spalte Abspielen da
 
 ### Eigene Ansagen Sichern
 
-Sie können alle eigenen Ansagen in einem .tar.gz-Paket herunterladen indem Sie in der Ansagen-Übersicht auf `Aktion` klicken und anschließend auf `Eigene Ansagedateien exportieren`. Unter `Archiv mit Ansagedateien` importieren können Sie bereits bestehende Ansagen auf einmal hochladen. Diese müssen allerdings auch als .tar.gz-Archiv gepackt sein.
+Sie können alle eigenen Ansagen in einem .tar.gz-Paket herunterladen indem Sie in der Ansagen-Übersicht auf {{< ui-button "Aktion" >}} klicken und anschließend auf {{< ui-button "Eigene Ansagedateien exportieren" >}}. Unter {{< ui-button "Archiv mit Ansagedateien" >}} importieren können Sie bereits bestehende Ansagen auf einmal hochladen. Diese müssen allerdings auch als .tar.gz-Archiv gepackt sein.
 
 ### Ansagen per Telefon aufsprechen
 
@@ -53,13 +53,13 @@ In der pascom können Sie die Ansage ebenfalls abspielen oder herunterladen. Mus
 
 ### Weitere Sprachen hinzufügen
 
-Wie bereits schon erwähnt, sind bei der Installation auf der pascom die Sprachen Deutsch, Englisch und Spanisch verfügbar. Bei Bedarf können weitere Sprachen hinzugefügt werden, unter dem Menüpunkt `Erweitert` > `Sprachen`, dann `Hinzufügen`. Benennen Sie die Sprache und geben Sie eine Abkürzung an.
+Wie bereits schon erwähnt, sind bei der Installation auf der pascom die Sprachen Deutsch, Englisch und Spanisch verfügbar. Bei Bedarf können weitere Sprachen hinzugefügt werden, unter dem Menüpunkt {{< ui-button "Erweitert" >}} > {{< ui-button "Sprachen" >}}, dann {{< ui-button "Hinzufügen" >}}. Benennen Sie die Sprache und geben Sie eine Abkürzung an.
 
 Nach dem Spreichern sehen Sie die neu angelegt Sprache in der Übersicht.
 
 ### Wartemusik verwalten
 
-Die Wartemusik finden Sie unter `Erweitert` > `Wartemusik` in der pascom Weboberfläche.
+Die Wartemusik finden Sie unter {{< ui-button "Erweitert" >}} > {{< ui-button "Wartemusik" >}} in der pascom Weboberfläche.
 {{% notice warning %}}
 Klären Sie immer die Vermarktungsrechte der von Ihnen verwendeten Musik. Wählen Sie entweder GEMA-freie Musikstücke (z. B. die mitgelieferten) oder entrichten Sie die entsprechenden Gebühren. Da diese Musik öffentlich von jedem Anrufer hörbar ist gehen Sie sonst die Gefahr einer Abmahnung ein.
 {{% /notice %}}
@@ -69,11 +69,11 @@ Eine große Auswahl an lizenzierbarer Wartemusik gibt es unter [http://www.music
 
 In pascom wählen Sie nicht einzelne Musikstücke aus die abgespielt werden sollen sondern ganze Playliste. Im Lieferumfang ist die Playliste (Klasse) **default** enthalten. Diese beinhaltet drei Melodien welche von den Asterisk Entwicklern frei gegeben wurden und somit GEMA-frei sind.
 
-Wenn Sie eine Playliste anhaken können Sie unter `Aktion` > `Musikstücke` anzeigen die einzelnen Musikstücke anzeigen bzw. löschen. Möchten Sie neue Musikstücke für diese Playliste hochladen wählen Sie `Aktion` > `Musikstück` hochladen.
+Wenn Sie eine Playliste anhaken können Sie unter {{< ui-button "Aktion" >}} > {{< ui-button "Musikstücke" >}} anzeigen die einzelnen Musikstücke anzeigen bzw. löschen. Möchten Sie neue Musikstücke für diese Playliste hochladen wählen Sie {{< ui-button "Aktion" >}} > {{< ui-button "Musikstück" >}} hochladen.
 
 Kompatible Formate sind **WAV** und **MP3** Dateien.
 
-Sie können per `Hinzufügen` auch eigene, weitere Playlisten anlegen. Welche Playliste dann gespeilt wird können Sie z. B. im Team unter Wartemusik auswählen. So können Sie im Support eine Wartemusik abspielen die auf Ihr Ticketsystem hinweist und im Vertrieb können Sie möglicherweise die neuesten Aktionen präsentieren.
+Sie können per {{< ui-button "Hinzufügen" >}} auch eigene, weitere Playlisten anlegen. Welche Playliste dann gespeilt wird können Sie z. B. im Team unter Wartemusik auswählen. So können Sie im Support eine Wartemusik abspielen die auf Ihr Ticketsystem hinweist und im Vertrieb können Sie möglicherweise die neuesten Aktionen präsentieren.
 
 Legen Sie einen Anrufer per Telefon auf Hold wird immer die default Playlist gespielt.
 
@@ -94,16 +94,16 @@ Die Verwendung ist recht simpel. Das passende Microfon wählen (siehe Screenshot
 Keine Hektik. Drücken Sie den Record-Knopf und sprechen Sie die Ansage u. U. mehr mals hintereinander auf. Sie können die Ansage hinterher einfach durch Markieren der Tonspur und anschließendem Drücken der ENTF Taste zurechtschneiden.
 {{% /notice %}}
 
-Wenn Sie mit dem Ergebnis zufrieden sind wählen Sie `Datei` > `Exportieren` und erzeugen ein **WAV (Microsoft) 16-bit PCM**. Falls Sie das Projekt später noch einmal weiter bearbeiten möchten empfiehlt es sich außerdem dieses ebenfalls zu speichern `Datei` > `Projekt speichern`.
+Wenn Sie mit dem Ergebnis zufrieden sind wählen Sie {{< ui-button "Datei" >}} > {{< ui-button "Exportieren" >}} und erzeugen ein **WAV (Microsoft) 16-bit PCM**. Falls Sie das Projekt später noch einmal weiter bearbeiten möchten empfiehlt es sich außerdem dieses ebenfalls zu speichern {{< ui-button "Datei" >}} > {{< ui-button "Projekt speichern" >}}.
 Ansagen mit Musik hinterlegen
 
 Beispielsweise bei Weihnachtsansagen usw. ist es beliebt diese mit Musik zu hinterlegen. Audacity ist in der Lage mehrere Tonspuren zu verwalten.
 
-Sprechen Sie Ihre Ansage wie bereits beschrieben auf und wählen Sie dann `Datei` > `Importieren` > `Audio`. Wählen Sie ein Musikstück und importieren dieses. Darauf hin legt Audacity eine zweite Tonspur an. Wenn Sie jetzt auf **Play** drücken hören Sie sowohl die aufgesprochene Ansage als auch die Musik.
+Sprechen Sie Ihre Ansage wie bereits beschrieben auf und wählen Sie dann {{< ui-button "Datei" >}} > {{< ui-button "Importieren" >}} > {{< ui-button "Audio" >}}. Wählen Sie ein Musikstück und importieren dieses. Darauf hin legt Audacity eine zweite Tonspur an. Wenn Sie jetzt auf **Play** drücken hören Sie sowohl die aufgesprochene Ansage als auch die Musik.
 
 Ihnen wird auffallen, dass die Musik zum einen den Text übertönt und es zum anderen nicht schön ist, dass Musik und Ansage gleichzeitige beginnen.
 
-Um die Ansage etwas versetzt beginnen klicken Sie in der Ansagetonspur vor den Beginn der Ansage und fügen per `Erzeugen` > `Stille` ... ca. 3 Sekunden Stille ein. Durch diese Maßnahme beginnt zuerst die Musik zu spielen und nach 3 Sekunden startet die Ansage.
+Um die Ansage etwas versetzt beginnen klicken Sie in der Ansagetonspur vor den Beginn der Ansage und fügen per {{< ui-button "Erzeugen" >}} > {{< ui-button "Stille" >}} ... ca. 3 Sekunden Stille ein. Durch diese Maßnahme beginnt zuerst die Musik zu spielen und nach 3 Sekunden startet die Ansage.
 
 Um die Musik leiser zu machen nutzen Sie das Hüllkurvenwerkzeug. Wenn Sie mit mit dem Hüllkurvenwerkzeug in die Tonspur klicken und die Maus dabei auf und ab bewegen, werden Sie feststellen, dass Sie damit die Lautstärke der Tonspur verändern können. Wenn Sie das an mehreren Stellen wiederholen, werden alle betreffenden Stellen in Audacity mit einer Hüllkurvenlinie verbunden. Ausserdem erscheinen dort kleine weisse Punkte.
 ![Ansage mit Audacity erstellen](audacity_envelope_editing.png?width=35%)
@@ -111,6 +111,6 @@ Um die Musik leiser zu machen nutzen Sie das Hüllkurvenwerkzeug. Wenn Sie mit m
 Das Endergebnis sollte in etwa wie folgt aussehen:
 ![Ansage mit Audacity](audacity_music.de.png?width=90%)
 
-Wenn Sie mit dem Ergebnis zufrieden sind wählen Sie `Datei` > `Exportieren` und erzeugen ein **WAV (Microsoft) 16-bit PCM**. Die Tonspuren werden hierbei automatisch zusammen gemischt.
+Wenn Sie mit dem Ergebnis zufrieden sind wählen Sie {{< ui-button "Datei" >}} > {{< ui-button "Exportieren" >}} und erzeugen ein **WAV (Microsoft) 16-bit PCM**. Die Tonspuren werden hierbei automatisch zusammen gemischt.
 
-Falls Sie das Projekt später noch einmal weiter bearbeiten möchten empfiehlt es sich außerdem dieses ebenfalls zu speichern `Datei` > `Projekt speichern`.
+Falls Sie das Projekt später noch einmal weiter bearbeiten möchten empfiehlt es sich außerdem dieses ebenfalls zu speichern {{< ui-button "Datei" >}} > {{< ui-button "Projekt speichern" >}}.

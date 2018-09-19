@@ -32,7 +32,7 @@ Um die automatische Provisionierung der pascom nutzen zu können ist auf den DEC
 
 2) Starten Sie den **OpenMobility Configurator**, der mit der Firmware mitgeliefert wird auf einem Rechner, der sich im selben Netzwerk befindet
 
-3) Klicken Sie auf `Scan` und suchen Sie nach der MAC-Adresse der Basisstation, die Sie konfigurieren möchten und tragen Sie die Login-Daten der DECT-Sender ein. Die MAC-Adresse finden Sie auf der Rückseite des DECT-Senders. Der Benutzername und das Passwort sind im Auslieferungszustand jeweils **omm**.
+3) Klicken Sie auf {{< ui-button "Scan" >}} und suchen Sie nach der MAC-Adresse der Basisstation, die Sie konfigurieren möchten und tragen Sie die Login-Daten der DECT-Sender ein. Die MAC-Adresse finden Sie auf der Rückseite des DECT-Senders. Der Benutzername und das Passwort sind im Auslieferungszustand jeweils **omm**.
 
 {{% notice note %}}
 Wiederholen Sie **Schritt 3**, bis Sie alle DECT-Sender in Ihrem Netzwerk gefunden haben.
@@ -42,21 +42,21 @@ Wiederholen Sie **Schritt 3**, bis Sie alle DECT-Sender in Ihrem Netzwerk gefund
 
 4) Wählen Sie einen DECT-Sender in der Liste aus
 
-5) Klicken Sie auf `Edit configuration` und stellen Sie unter `General` ein welche IP-Adresse der DECT-Sender in Ihrem Telefonie-Netzwerk der pascom Telefonanlage erhalten soll.
+5) Klicken Sie auf {{< ui-button "Edit configuration" >}} und stellen Sie unter {{< ui-button "General" >}} ein welche IP-Adresse der DECT-Sender in Ihrem Telefonie-Netzwerk der pascom Telefonanlage erhalten soll.
 
-6) Als `Router` verwenden Sie die IP der pascom Telefonanlage und setzen Sie den Haken bei `Local Config`.
+6) Als {{< ui-button "Router" >}} verwenden Sie die IP der pascom Telefonanlage und setzen Sie den Haken bei {{< ui-button "Local Config" >}}.
 
 ![Basisstation konfigurieren](omm_configurator_edit1.en.png?width=90%)
 
-7) Stellen Sie unter `OpenMobility` unter `OMM-address` die IP des DECT-Senders ein, der als Master dienen soll. Beim Master selbst ist hier die eigene IP-Adresse des DECT-Senders anzugeben.
+7) Stellen Sie unter {{< ui-button "OpenMobility" >}} unter {{< ui-button "OMM-address" >}} die IP des DECT-Senders ein, der als Master dienen soll. Beim Master selbst ist hier die eigene IP-Adresse des DECT-Senders anzugeben.
 
-8) Tragen Sie unter `TFTP server address` die IP-Adresse der pascom Telefonanlage oder Ihren TFTP Server ein.
+8) Tragen Sie unter {{< ui-button "TFTP server address" >}} die IP-Adresse der pascom Telefonanlage oder Ihren TFTP Server ein.
 
-9) Tragen Sie unter `TFTP file name` den Wert "*ip.cfg*" bzw. den Namen der Firmwareversion "*iprfp3G.dnld*" (RFP35 oder höher) bzw. "*iprfp2G.tftp*" (RFP34 oder niedriger) ein.
+9) Tragen Sie unter {{< ui-button "TFTP file name" >}} den Wert "*ip.cfg*" bzw. den Namen der Firmwareversion "*iprfp3G.dnld*" (RFP35 oder höher) bzw. "*iprfp2G.tftp*" (RFP34 oder niedriger) ein.
 
 ![Basisstation konfigurieren](omm_configurator_edit2.en.png?width=90%)
 
-10) Sobald Sie alle Einstellungen vorgenommen haben klicken Sie auf `Send Configuration` um die Änderungen an die ausgewählten Sender zu schicken.
+10) Sobald Sie alle Einstellungen vorgenommen haben klicken Sie auf {{< ui-button "Send Configuration" >}} um die Änderungen an die ausgewählten Sender zu schicken.
 
 {{% notice note %}}
 Wiederholen Sie **Schritt 4** bis **10**, bis alle DECT-Sender konfiguriert wurden.
@@ -73,7 +73,7 @@ Bitte beachten Sie, dass Sie bei einem Mischtbetrieb von RFP32 und RFP 34, 35 od
 {{% /notice %}}
 
 
-Fügen Sie unter `Gateways > Gatewayliste` durch Drücken der Schaltfläche `+Hinzufügen` ein **Aastra Dect** hinzu:
+Fügen Sie unter {{< ui-button "Gateways" >}} > {{< ui-button "Gatewayliste" >}} durch Drücken der Schaltfläche {{< ui-button "+Hinzufügen" >}} ein **Aastra Dect** hinzu:
 
 |Parameter|Bedeutung|
 |---------|---------|
@@ -86,14 +86,14 @@ Eine weitere Konfiguration des Aastra DECT-Gateways ist an dieser Stelle nicht n
 
 ### Mobilteile anlegen
 
-Fügen Sie auf der WebUI Ihrer pascom Telefonanlage unter `Endgeräte > Geräteliste` durch Drücken der Schaltfläche `+Hinzufügen` ein **Via Aastra Dect Gateway: Mobilteil** hinzu:
+Fügen Sie auf der WebUI Ihrer pascom Telefonanlage unter {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} durch Drücken der Schaltfläche {{< ui-button "+Hinzufügen" >}} ein **Via Aastra Dect Gateway: Mobilteil** hinzu:
 
 |Parameter|Bedeutung|
 |---------|---------|
 |Angeschlossen an|Wählen Sie hier den DECT-Sender aus, der als Master definiert wurde|
 |Anmelden mit|Anmelde-ID: Der Code zur manuellen Anmeldung des Mobilteils ohne IPEI;           IPEI: Die IPEI dient zur eindeutigen Identifikation eines Mobilteils|
-|Anmelde-ID|Hier wird eine Anmelde-ID generiert, wenn Sie bei `Anmelden mit` Anmelde-ID ausgewählt haben|
-|IPEI|Tragen Sie hier die IPEI des Mobilteis ein, wenn Sie bei `Anmelden mit` IPEI ausgewählt haben. Die IPEI können Sie auf der Geräterückseite ablesen. Leider müssen Sie dazu den Akku entfernen, da die IPEI auf einem Aufkleber unter dem Akku steht. Alternativ können Sie auch im Info Menü des Mobilteils die IPEI abfragen|
+|Anmelde-ID|Hier wird eine Anmelde-ID generiert, wenn Sie bei {{< ui-button "Anmelden mit" >}} Anmelde-ID ausgewählt haben|
+|IPEI|Tragen Sie hier die IPEI des Mobilteis ein, wenn Sie bei {{< ui-button "Anmelden mit" >}} IPEI ausgewählt haben. Die IPEI können Sie auf der Geräterückseite ablesen. Leider müssen Sie dazu den Akku entfernen, da die IPEI auf einem Aufkleber unter dem Akku steht. Alternativ können Sie auch im Info Menü des Mobilteils die IPEI abfragen|
 
 Anschließend können Sie das Mobilgerät wie gewohnt einem [Benutzer (oder Arbeitsplatz)]({{< ref "/user/user">}}) zuweisen.
 
@@ -109,7 +109,7 @@ Führen Sie folgende Einstellungen durch:
 
 ![Konfiguration senden](omm_aastra_password.en.png?width=90%)
 
-* **System > Systemeinstellungen** den PARK eintragen, der auf der mitgelieferten Aastra CD aufgedruckt ist oder den PARK direkt via `Online PARK-Abruf` generieren. Beachten Sie, das hierzu der DECT-Sender eine Internetverbindung aufbauen können muss.
+* **System > Systemeinstellungen** den PARK eintragen, der auf der mitgelieferten Aastra CD aufgedruckt ist oder den PARK direkt via {{< ui-button "Online PARK-Abruf" >}} generieren. Beachten Sie, das hierzu der DECT-Sender eine Internetverbindung aufbauen können muss.
 * Die Uhrzeit anpassen
 * Speichern. Das System bootet jetzt neu.
 
@@ -117,11 +117,11 @@ Führen Sie folgende Einstellungen durch:
 
 Abschließend ist nur noch folgender Schritt notwendig:
 
-Markieren Sie den Master DECT-Sender unter `Gateways > Gatewayliste` in der Weboberfläche Ihrer pascom Telefonanlage und wählen Sie unter `Aktion` die Option `Provisioning URL` aus.
+Markieren Sie den Master DECT-Sender unter {{< ui-button "Gateways" >}} > {{< ui-button "Gatewayliste" >}} in der Weboberfläche Ihrer pascom Telefonanlage und wählen Sie unter {{< ui-button "Aktion" >}} die Option {{< ui-button "Provisioning URL" >}} aus.
 Kopieren Sie den relativen Provisioning-Pfad heraus, da dieser im nächsten Schritt benötigt wird.
 
 Surfen Sie auf die Weboberfläche des Master DECT-Senders und loggen Sie sich ein.
-Fügen Sie unter `System > Provisionierung` in dem Feld `Server` die IP der Telefonanlage ein. Unter `Pfad` können Sie den zuvor kopierten Provisioning-Pfad einfügen. Achten Sie darauf, dass das korrekte `Protokoll` (HTTP oder HTTPS) ausgewählt ist.
+Fügen Sie unter {{< ui-button "System" >}} > {{< ui-button "Provisionierung" >}} in dem Feld {{< ui-button "Server" >}} die IP der Telefonanlage ein. Unter {{< ui-button "Pfad" >}} können Sie den zuvor kopierten Provisioning-Pfad einfügen. Achten Sie darauf, dass das korrekte {{< ui-button "Protokoll" >}} (HTTP oder HTTPS) ausgewählt ist.
 
 Bestätigen Sie die Einstellungen mit **OK**
 
@@ -132,15 +132,15 @@ Bestätigen Sie die Einstellungen mit **OK**
 
 Anstatt die Telefone per Hand im OMM anzulegen laden Sie die nötige Konfigurationsdatei aus der pascom Weboberfläche herunter:
 
-Wählen Sie unter `Gateways` > `Gatewayliste` den Aastra DECT-Sender aus, den Sie als Master definiert haben und drücken Sie `Bearbeiten`.
-Unter `Konfigurationsdateien` finden Sie einen Download-Link mit der benötigten Mobilteil-Konfiguration.
+Wählen Sie unter {{< ui-button "Gateways" >}} > {{< ui-button "Gatewayliste" >}} den Aastra DECT-Sender aus, den Sie als Master definiert haben und drücken Sie {{< ui-button "Bearbeiten" >}}.
+Unter {{< ui-button "Konfigurationsdateien" >}} finden Sie einen Download-Link mit der benötigten Mobilteil-Konfiguration.
 Die Mobilteil Konfiguration enthält alle angelegten Mobilteile und kann im OMM unter dem Punkt **DECT-Endgeräte** importiert werden.
 
 #### Vorgehensweise beim Importieren der Daten:
 
-Wenn man im entsprechenden Menüpunkt der OMM-Konfiguration auf `DECT-Endgeräte` > `Importieren` geklickt hat, öffnet sich eine neue Maske. Dort muss man folgendermaßen vorgehen:
+Wenn man im entsprechenden Menüpunkt der OMM-Konfiguration auf {{< ui-button "DECT-Endgeräte" >}} > {{< ui-button "Importieren" >}} geklickt hat, öffnet sich eine neue Maske. Dort muss man folgendermaßen vorgehen:
 
-1) Unter `Registerungsdaten importieren` den Menüpunkt Durchsuchen bzw. Select File anklicken
+1) Unter {{< ui-button "Registerungsdaten importieren" >}} den Menüpunkt Durchsuchen bzw. Select File anklicken
 
 2) Die Datei hochladen
 
@@ -166,10 +166,10 @@ Je nachdem, welche Verbindungsart Sie am beim Anlegen der Mobilteile ausgewählt
 
 #### Additional ID
 
-1. Notieren Sie sich den `Handset Registrierungs-PIN` aus den Einstellungen Ihres Master DECT Senders unter `Gateways` > `Gatewayliste`
-2. Notieren Sie sich die `Additional ID` aus den Einstellungen Ihres Mobilteils unter `Endgeräte` > `Geräteliste`
-3. Drücken Sie die Menütaste Ihres Mobilteils und wählen Sie `System` > `Neues System`
-4. Geben Sie jetzt die zuvor notierte Registrierungs-PIN, den Buchstaben **R** und dann die Additional ID ein und bestätigen Sie Ihre Eingabe mit `Anmelden`, danach wird sich das Mobilteil automatisch mit Ihrem DECT-Sender verbinden.
+1. Notieren Sie sich den {{< ui-button "Handset Registrierungs-PIN" >}} aus den Einstellungen Ihres Master DECT Senders unter {{< ui-button "Gateways" >}} > {{< ui-button "Gatewayliste" >}}
+2. Notieren Sie sich die {{< ui-button "Additional ID" >}} aus den Einstellungen Ihres Mobilteils unter {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}}
+3. Drücken Sie die Menütaste Ihres Mobilteils und wählen Sie {{< ui-button "System" >}} > {{< ui-button "Neues System" >}}
+4. Geben Sie jetzt die zuvor notierte Registrierungs-PIN, den Buchstaben **R** und dann die Additional ID ein und bestätigen Sie Ihre Eingabe mit {{< ui-button "Anmelden" >}}, danach wird sich das Mobilteil automatisch mit Ihrem DECT-Sender verbinden.
 
 Beispiel:
 
@@ -178,7 +178,7 @@ Beispiel:
 
 #### IPEI
 
-1. Notieren Sie sich den `Handset Registrierungs-PIN` aus den Einstellungen Ihres Master DECT Senders unter `Gateways` > `Gatewayliste`
-2. Drücken Sie die Menütaste Ihres Mobilteils und wählen Sie `System` > `Neues System`
+1. Notieren Sie sich den {{< ui-button "Handset Registrierungs-PIN" >}} aus den Einstellungen Ihres Master DECT Senders unter {{< ui-button "Gateways" >}} > {{< ui-button "Gatewayliste" >}}
+2. Drücken Sie die Menütaste Ihres Mobilteils und wählen Sie {{< ui-button "System" >}} > {{< ui-button "Neues System" >}}
 3. Geben Sie als Zugangscode den Handset Registrierungs-PIN ein
-4. Bestätigen Sie Ihre Eingabe mit `Anmelden`, danach wird sich das Mobilteil automatisch mit Ihrem DECT-Sender verbinden.
+4. Bestätigen Sie Ihre Eingabe mit {{< ui-button "Anmelden" >}}, danach wird sich das Mobilteil automatisch mit Ihrem DECT-Sender verbinden.

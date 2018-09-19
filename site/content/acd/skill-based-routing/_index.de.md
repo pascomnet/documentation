@@ -31,7 +31,7 @@ Der Anrufer muss über ein IVR-Menü die Sprache auswählen, anschließend gelan
 
 #### 1. Fähigkeiten anlegen
 
-Als erstes müssen Fähigkeiten für die Sprachen definieren werden: `Anruferverteilung` > `Anruf Labels` > `Hinzufügen`. Als Label wählen Sie *Fähigkeit*:
+Als erstes müssen Fähigkeiten für die Sprachen definieren werden: {{< ui-button "Anruferverteilung" >}} > {{< ui-button "Anruf Labels" >}} > {{< ui-button "Hinzufügen" >}}. Als Label wählen Sie *Fähigkeit*:
 
 |Parameter|Beschreibung|
 |---|---|
@@ -41,16 +41,16 @@ Als erstes müssen Fähigkeiten für die Sprachen definieren werden: `Anruferver
 
 #### 2. Benutzer zuweisen
 
-Im Tab `Benutzerfähigkeiten` kann das neu angelegte Label Benutzern zugewiesen werden.
+Im Tab {{< ui-button "Benutzerfähigkeiten" >}} kann das neu angelegte Label Benutzern zugewiesen werden.
 
-Die Fähigkeiten können auch über die Benutzerverwaltung zugewiesen werden: `Benutzer` > `Benutzerliste` > `Benutzer auswählen` > `Bearbeiten` im Tab `Fähigkeiten`.
+Die Fähigkeiten können auch über die Benutzerverwaltung zugewiesen werden: {{< ui-button "Benutzer" >}} > {{< ui-button "Benutzerliste" >}} > {{< ui-button "Benutzer auswählen" >}} > {{< ui-button "Bearbeiten" >}} im Tab {{< ui-button "Fähigkeiten" >}}.
 
 Werden an einem Benutzern Fähigkeiten verteilt, muss auch ein Level angegeben werden.
 
 *In unserem Beispiel bieten alle drei Agenten Support für deutsch-sprachige Anrufer. Aber nur Agent 1 hat als einzige Fähigkeit deutsch, die beiden anderen Agenten haben noch eine weitere Fähigkeit.
 So macht es Sinn dem Agenten 1 ein höheres Level für die Fähigkeit deutsch zu geben, damit ein deutschsprachiger Anrufer bevorzugt zu ihm durchgestellt wird.*
 
-Damit in einem Team Fähigkeiten berücksichtigt werden, muss beim Anlegen des Teams das schon vorhandene Skript "Skill based routing" ausgewählt werden: `Benutzer` > `Teams` > `Warteschlange auswählen` > `Bearbeiten` -> im Tab `Basisdaten`, das vierte Auswahlfeld "Routing Skript".
+Damit in einem Team Fähigkeiten berücksichtigt werden, muss beim Anlegen des Teams das schon vorhandene Skript "Skill based routing" ausgewählt werden: {{< ui-button "Benutzer" >}} > {{< ui-button "Teams" >}} > {{< ui-button "Warteschlange auswählen" >}} > {{< ui-button "Bearbeiten" >}} -> im Tab {{< ui-button "Basisdaten" >}}, das vierte Auswahlfeld "Routing Skript".
 
 {{% notice note%}}
 Die Verwendung von Fähigkeiten hat den Vorteil, dass z. B. nur eine Warteschlange angelegt werden muss, obwohl man Anrufer hat, die verschiedene Sprachen sprechen. Es werden nur die Agenten angeklingelt, die die benötigte Fähigkeit haben.
@@ -58,8 +58,8 @@ Die Verwendung von Fähigkeiten hat den Vorteil, dass z. B. nur eine Warteschlan
 
 #### 3. IVR für Sprachauswahl
 
-Für die Sprachauswahl erstellen wir ein [IVR-Menü]({{< ref "/acd/ivr">}}): `Anrufverteilung` > `IVR` > `Hinzufügen`.
-Ist das IVR angelegt, müssen noch die Einträge angelegt werden und für diese: das gerade angelegte IVR markieren und auf `Einträge` klicken.
+Für die Sprachauswahl erstellen wir ein [IVR-Menü]({{< ref "/acd/ivr">}}): {{< ui-button "Anrufverteilung" >}} > {{< ui-button "IVR" >}} > {{< ui-button "Hinzufügen" >}}.
+Ist das IVR angelegt, müssen noch die Einträge angelegt werden und für diese: das gerade angelegte IVR markieren und auf {{< ui-button "Einträge" >}} klicken.
 
 Legen Sie am besten drei weitere Einträge an: Nummer **1** für *deutsch*, Nummer **2** für *englisch*, Nummer **3** für *französisch*.<br>**i** für *invald* (Ungültige Eingabe) und **t** für *timeout* (Zeit ist abgelaufen) sind bereits angelegt und müssen nur noch bearbeitet werden.
 
@@ -67,7 +67,7 @@ Nun müssen die Einträge bearbeitet und mit Aktionen befüllt werden. Als Beisp
 
 ![IVR-Einträge Aktionen konfigurieren](ivr-entry.de.png?width=80%)
 
-Zuerst wird das Label gesetzt: `Hinzufügen` > `Label setzen`:
+Zuerst wird das Label gesetzt: {{< ui-button "Hinzufügen" >}} > {{< ui-button "Label setzen" >}}:
 Als Name wählen Sie die Fähigkeit *deutsch*. Der Ausdruck gibt das kleine Level an, dass der Agent, der den Anruf bekommt, haben soll.
 
 Sie können eine Channel-Sprache angeben, damit der Anrufer sonstige Ansagen in seiner ausgewählten Sprache hört.
@@ -89,7 +89,7 @@ Nun wird das vorherige Beispiel erweitert. Nach der Sprachauswahl wird die Kunde
 ### Konfiguration
 
 #### 1. Generisches Label für Kundennummer
-Nach der Sprachauswahl muss der Anrufer seine Kundennummer eingeben. Das wird mit einem *Generichen Label* realsiert: unter `Anruferverteilung` > `Anruf Labels` > `Hinzufügen` > `Generisches Label`.
+Nach der Sprachauswahl muss der Anrufer seine Kundennummer eingeben. Das wird mit einem *Generichen Label* realsiert: unter {{< ui-button "Anruferverteilung" >}} > {{< ui-button "Anruf Labels" >}} > {{< ui-button "Hinzufügen" >}} > {{< ui-button "Generisches Label" >}}.
 
 ![Generiches Label](label-generic.de.png?width=80%)
 
@@ -98,7 +98,7 @@ Das *Generische Label* hat eine **Kanalvariable** (in diesem Fall MDC_LABEL-9), 
 
 #### 2. Aktionsbedingung VIP-Kunde
 
-Zur Unterscheidung von VIP- und Nicht-VIP-Kunden verwenden wir ein Generisches Label mit Aktionsbedingung: `Anruferverteilung` > `Anruf Labels` > `Hinzufügen` > `Generisches Label` > Aktionsbedingung anlegen auf JA setzten.
+Zur Unterscheidung von VIP- und Nicht-VIP-Kunden verwenden wir ein Generisches Label mit Aktionsbedingung: {{< ui-button "Anruferverteilung" >}} > {{< ui-button "Anruf Labels" >}} > {{< ui-button "Hinzufügen" >}} > {{< ui-button "Generisches Label" >}} > Aktionsbedingung anlegen auf JA setzten.
 ![Aktionsbedingung](label-condition.de.png?width=80%)
 
 #### 3. Kundennummer abfragen

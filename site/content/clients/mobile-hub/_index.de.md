@@ -20,7 +20,7 @@ Dazu baut der pascom Mobile Client zuerst ein Gespräch zum pascom Server auf. D
 
 ### Mobile Hub für Mobility Client einrichten
 
-Um den Mobile Hub zu konfigurieren wählen Sie `Appliance` > `Dienste` > und den Tab `Mobile Hub`.
+Um den Mobile Hub zu konfigurieren wählen Sie {{< ui-button "Appliance" >}} > {{< ui-button "Dienste" >}} > und den Tab {{< ui-button "Mobile Hub" >}}.
 
 Tragen Sie hier die **Externe Nummer** ein, unter welcher der Mobile Hub erreichbar ist. Wählen Sie eine Nummer aus Ihrem Rufnummernblock die noch frei ist. Wenn ein Anruf über den Mobile Hub getätigt wird, ruft das Mobiltelefon diese Nummer an. Geben Sie diese Nummer zwingend im *internationalen Format* an damit der Mobile Hub auch im Ausland erreichbar ist.
 

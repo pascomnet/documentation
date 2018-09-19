@@ -33,7 +33,7 @@ Die TAPI Schnittstelle spezifiziert eine Vielzahl an anrufbezogenen Funktionen, 
 
 Bei der Konfiguration bzw. der ersten Verwendung der TAPI-Schnittstelle werden Sie nach den zu verwendenden Wähleinstellungen gefragt. Allerdings erfolgt die Rufnummernbehandlung (Setzen einer 0 für ausgehende Gespräche, Internationale Formattierung, ...) ausschließlich im pascom Server, so dass die in Windows hinterlegten Einstellungen ignoriert werden.
 
-Die Ortskennzahl ist ein Pflichtfeld. Geben Sie hier bitte Ihre Ortskennzahl (Vorwahl) ohne führende Null ein. Alle anderen Felder sollten nicht gefüllt sein. Erreichbar ist dieser Dialog unter `Systemsteuerung` > `Telefon und Modem` > `Wählregeln (Eigener Standort)` > `Bearbeiten`.
+Die Ortskennzahl ist ein Pflichtfeld. Geben Sie hier bitte Ihre Ortskennzahl (Vorwahl) ohne führende Null ein. Alle anderen Felder sollten nicht gefüllt sein. Erreichbar ist dieser Dialog unter {{< ui-button "Systemsteuerung" >}} > {{< ui-button "Telefon und Modem" >}} > {{< ui-button "Wählregeln (Eigener Standort)" >}} > {{< ui-button "Bearbeiten" >}}.
 
 ![Standort einstellen](location.de.png?width=50%)
 

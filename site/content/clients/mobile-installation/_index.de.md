@@ -27,15 +27,15 @@ Den aktuellen pascom Mobile Client installieren Sie direkt auf Ihrem Android Sma
 ## (Optional) Mobilgerät am Server anlegen
 
 {{% notice tip %}}
-Wenn Sie einen neuen Benutzer anlegen wird für diesen Benutzer **automatisch** auch ein **Mobiltelefon** angelegt. Haben Sie jedoch bei der Anlage des Benutzers `Hat ein Mobilstelefon` `nein` gewählt, das Gerät **gelöscht** oder hat der Benutzer **mehrere Mobiltelefone** müssen Sie es vor dem Pairing Vorgang **zuerst anlegen**.
+Wenn Sie einen neuen Benutzer anlegen wird für diesen Benutzer **automatisch** auch ein **Mobiltelefon** angelegt. Haben Sie jedoch bei der Anlage des Benutzers **Hat ein Mobiltelefon : nein** gewählt, das Gerät **gelöscht** oder hat der Benutzer **mehrere Mobiltelefone** müssen Sie es vor dem Pairing Vorgang **zuerst anlegen**.
 {{% /notice %}}
 
 Gehen Sie zur Anlage eines Mobiltelefones wie folgt vor:
 
  * Melden Sie sich an der Weboberfläche des pascom Servers an
- * Fügen Sie ein neues Gerät hinzu: `Endgeräte` > `Geräteliste` > `Hinzufügen` > **Via Mobile Hub: Integriertes Mobiltelefon**
+ * Fügen Sie ein neues Gerät hinzu: {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} > {{< ui-button "Hinzufügen" >}} > **Via Mobile Hub: Integriertes Mobiltelefon**
  * **(Optional)** Tragen Sie die Mobilfunknummer des Benutzer im Internationalen Format ein (z.B: 0049172123123). Dies brauchen Sie nur wenn Sie den GSM Fallback via Mobile-Hub nutzen möchten. Wenn Sie die Nummer leer lassen kann man diese auch in der App beim Pairing Vorgang angeben.
- * Weisen Sie das Gerät dem Benutzer im Tab `Zuweisung` zu
+ * Weisen Sie das Gerät dem Benutzer im Tab {{< ui-button "Zuweisung" >}} zu
  * Speichern Sie nun und wenden den Job in der Jobbox an
 
 ## Mobile Client mit pascom Server pairen
@@ -47,9 +47,9 @@ Es gibt zwei Möglichkeiten den pascom Mobile Client mit dem pascom Server zu pa
 Möchten Sie als Administrator den Pairing Vorgang für Ihre Benutzer übernehmen können Sie den Prozess direkt auf der pascom Server Weboberfläche starten:
 
  * Melden Sie sich an der Weboberfläche des pascom Servers an
- * Suchen Sie in unter `Endgeräte` > `Geräteliste` das Entsprechende Mobiltelefon
- * Klicken Sie auf `Bearbeiten` und dort auf `Pair`
- * Starten Sie die App auf dem zu Pairenden Smartphone und wählen `Start`
+ * Suchen Sie in unter {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} das Entsprechende Mobiltelefon
+ * Klicken Sie auf {{< ui-button "Bearbeiten" >}} und dort auf {{< ui-button "Pair" >}}
+ * Starten Sie die App auf dem zu Pairenden Smartphone und wählen {{< ui-button "Start" >}}
  * Scannen Sie mit der App den Barcode
  * **(Optional)** Wenn Sie den GSM Fallback via Mobile-Hub nutzen möchten tragen Sie die Mobilfunknummer ein oder bestätigen die bei der Anlage des Gerätes bereits vergeben Mobilfunknummer.
 

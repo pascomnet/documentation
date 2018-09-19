@@ -22,18 +22,18 @@ Automatische Updates werden, auch ohne Angabe des `--noUpdate` Parameter, im Fal
 ## Update-Channels
 
 Ihnen stehen unterschiedliche Update-Channels zur Verfügung.
-Diese finden Sie in Ihrem Desktop-Client unter `Einstellungen` > `Über pascom client` > `Channel`. 
+Diese finden Sie in Ihrem Desktop-Client unter {{< ui-button "Einstellungen" >}} > {{< ui-button "Über pascom client" >}} > {{< ui-button "Channel" >}}. 
 
-Standardmäßig ist hier der `Stable` Channel ausgewählt - dieser enthält die selbe Version, die Sie auch über unsere [Homepage](https://www.pascom.net/de/downloads/#clients) erhalten können.
+Standardmäßig ist hier der *Stable* Channel ausgewählt - dieser enthält die selbe Version, die Sie auch über unsere [Homepage](https://www.pascom.net/de/downloads/#clients) erhalten können.
 
 ### Beta Programm
 
-Sie können jederzeit den Update-Channel auf den `Beta` Channel umstellen und an unserem Beta Programm teilnehmen. 
+Sie können jederzeit den Update-Channel auf den *Beta* Channel umstellen und an unserem Beta Programm teilnehmen. 
 
 Ihre Mithilfe ist uns sehr willkommen und wir freuen uns über Ihr Feedback in unserem [Forum](https://www.pascom.net/forum/)
 
 {{% notice warning %}}
-Wenn Sie von einem eigenen Update-Channel oder dem `Beta` Channel auf `Stable` zurück wechseln möchten, werden alle Benutzerprofile gelöscht, da es sich hierbei in der Regel um einen Downgrade handelt. In Ihrem Benutzerprofil sind Einstellungen wie das verwendete Desktop Theme oder Sortierreihenfolgen gespeichert. Diese Einstellungen müssen Sie dann erneut vornehmen. 
+Wenn Sie von einem eigenen Update-Channel oder dem *Beta* Channel auf *Stable* zurück wechseln möchten, werden alle Benutzerprofile gelöscht, da es sich hierbei in der Regel um einen Downgrade handelt. In Ihrem Benutzerprofil sind Einstellungen wie das verwendete Desktop Theme oder Sortierreihenfolgen gespeichert. Diese Einstellungen müssen Sie dann erneut vornehmen. 
 {{% /notice %}}
 
 ### Feature Channels

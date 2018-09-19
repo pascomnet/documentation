@@ -43,7 +43,7 @@ Für lokale Installationen des pascom Servers ist es möglich Endgeräte per DHC
 Details können Sie dem Howto [Telefon-Provisionierung via DHCP]({{< ref "/howto/dhcp-provisioning" >}}) entnehmen.
 {{% /notice %}}
 
-pascom ist in der Lage IP-Telefone des Herstellers Snom automatisch und zentral zu konfigurieren. Diesen Vorgang nennt man Provisionierung. Dazu stellt pascom eine Basis-Konfiguration (`Endgeräte` > `Basis-Konfigurationen`) zur Verfügung. Diese ist ausreichend vorparametriert und muss nur in manchen Fällen angepasst werden.
+pascom ist in der Lage IP-Telefone des Herstellers Snom automatisch und zentral zu konfigurieren. Diesen Vorgang nennt man Provisionierung. Dazu stellt pascom eine Basis-Konfiguration ({{< ui-button "Endgeräte" >}} > {{< ui-button "Basis-Konfigurationen" >}}) zur Verfügung. Diese ist ausreichend vorparametriert und muss nur in manchen Fällen angepasst werden.
 
 ## Neues Telefone hinzufügen
 
@@ -55,7 +55,7 @@ Die MAC-Adresse steht auf der Rückseite des Telefones.
 
 ### Endgerät anlegen
 
-Loggen Sie sich in Ihrer Telefonanlage ein und fügen unter `Endgeräte > Geräteliste` ein
+Loggen Sie sich in Ihrer Telefonanlage ein und fügen unter {{< ui-button "Endgeräte > Geräteliste" >}} ein
 neues Gerät vom Typ **IP-Telefon: Hersteller Grandstream** hinzu.
 
 Tragen Sie im Feld **Mac-Adresse** die zuvor ermittelte MAC-Adresse des Telefones
@@ -65,11 +65,11 @@ ein.
 
 Nach dem Speichern von Änderungen erscheint in der Job-Box (oben) ein
 entsprechender Eintrag die Telefonie anzuwenden. Starten Sie den Job durch
-einen Klick auf den `grünen Haken`.
+einen Klick auf den {{< ui-button "grünen Haken" >}}.
 
 ### Provisionierung-URL ermitteln
 
-Haken Sie das Telefon in der Geräte-Liste an und wählen `Aktion > Provisioning URL`. Kopieren Sie die
+Haken Sie das Telefon in der Geräte-Liste an und wählen {{< ui-button "Aktion > Provisioning URL" >}}. Kopieren Sie die
 **URL** in die Zwischenablage.
 
 ### Provisionierung-URL am Telefon eintragen
@@ -78,7 +78,7 @@ Zurück auf der Web-UI des Telefones tragen Sie die Provisionierung-URL ein und 
 
 ### Benutzer zuweisen
 
-Nachdem das IP-Telefon in der Geräteliste erscheint kann es bearbeitet werden. Klicken Sie hierzu auf `Bearbeiten`. Im Tab `Zuweisung` kann dem Telefon ein [Benutzer (oder Arbeitsplatz)]({{< ref "/user/user">}}) zugewiesen werden.
+Nachdem das IP-Telefon in der Geräteliste erscheint kann es bearbeitet werden. Klicken Sie hierzu auf {{< ui-button "Bearbeiten" >}}. Im Tab {{< ui-button "Zuweisung" >}} kann dem Telefon ein [Benutzer (oder Arbeitsplatz)]({{< ref "/user/user">}}) zugewiesen werden.
 
 Nach dem Speichern und Anwenden der Telefoniekonfiguration werden die neu zugewiesenen IP-Telefone neugestartet.
 
@@ -93,28 +93,28 @@ Um auf die Weboberfläche Ihres IP-Telefons zu gelangen benötigen Sie die IP-Ad
 
 **IP-Adresse am Telefon anzeigen**
 
-Drücken Sie die runde Taste im Pfeil-Feld des Telefons. Über `Status` > `Netzwerkstatus` erhalten Sie die IP-Adresse Ihres Telefons.
+Drücken Sie die runde Taste im Pfeil-Feld des Telefons. Über {{< ui-button "Status" >}} > {{< ui-button "Netzwerkstatus" >}} erhalten Sie die IP-Adresse Ihres Telefons.
 
 **IP-Adresse über die Geräteliste ermitteln**
 
-Loggen Sie sich in das Web-UI der pascom ein. Klicken Sie auf `Endgeräte` > `Geräteliste`. Nun sehen Sie eine Übersicht über alle verfügbaren Geräte. Links von jedem Eintrag finden Sie ein *Info*-Symbol. Klicken Sie es an, erhalten Sie eine Übersicht über das provisionierte Telefon, unter anderem auch die IP-Adresse.
+Loggen Sie sich in das Web-UI der pascom ein. Klicken Sie auf {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}}. Nun sehen Sie eine Übersicht über alle verfügbaren Geräte. Links von jedem Eintrag finden Sie ein *Info*-Symbol. Klicken Sie es an, erhalten Sie eine Übersicht über das provisionierte Telefon, unter anderem auch die IP-Adresse.
 
 ### Tasten belegen
 
-Über das Web-UI können am Grandstream IP-Telefon Tasten belegt werden. Klicken Sie auf `Einstellungen` > `Programmierbare Tasten`. Es stehen zwei Arten von Tasten zur Verfügung:
+Über das Web-UI können am Grandstream IP-Telefon Tasten belegt werden. Klicken Sie auf {{< ui-button "Einstellungen" >}} > {{< ui-button "Programmierbare Tasten" >}}. Es stehen zwei Arten von Tasten zur Verfügung:
 
 **Virtual Multi-Purpose Keys**
 
-Diese Tasten erscheinen auf dem Haupt-Display. Um diese Tasten zu konfigurieren klicken sie auf `Edit VPK`:
+Diese Tasten erscheinen auf dem Haupt-Display. Um diese Tasten zu konfigurieren klicken sie auf {{< ui-button "Edit VPK" >}}:
 
 |Modus|Konten|Beschreibung|Wert|
 |---|---|---|---|
 |Besetztlampen Feld (BLF)|Konto 1|Bezeichnung für die Taste|Durchwahl der Nebenstelle|
 
-Zum Speichern klicken Sie auf `Sichern`. Die Einstellungen werden mit einem Klicke auf `Save VPK` wirksam.
+Zum Speichern klicken Sie auf {{< ui-button "Sichern" >}}. Die Einstellungen werden mit einem Klicke auf {{< ui-button "Save VPK" >}} wirksam.
 
 {{% notice info%}}
-Um die Einstellungen der Tasten zurückzusetzten klichen Sie auf `Neustart` und anschließend auf `Save VPK`.
+Um die Einstellungen der Tasten zurückzusetzten klichen Sie auf {{< ui-button "Neustart" >}} und anschließend auf {{< ui-button "Save VPK" >}}.
 {{% /notice %}}
 
 
@@ -127,34 +127,34 @@ In der Übersicht sieht man die verfügbaren Multi-Funktionstasten die nun Konfi
 |---|---|---|---|
 |Besetztlampen Feld (BLF)|Konto 1|Bezeichnung für die Taste|Durchwahl der Nebenstelle|
 
-Beenden Sie die Konfiguration mit `Sichern und ausführen`, damit alle Änderungen aktiv sind.
+Beenden Sie die Konfiguration mit {{< ui-button "Sichern und ausführen" >}}, damit alle Änderungen aktiv sind.
 
 {{% notice info%}}
-Um die Einstellungen der Tasten zurückzusetzten klichen Sie auf `Neustart` und anschließend auf `Sichern und ausführen`.
+Um die Einstellungen der Tasten zurückzusetzten klichen Sie auf {{< ui-button "Neustart" >}} und anschließend auf {{< ui-button "Sichern und ausführen" >}}.
 {{% /notice %}}
 
 
 ## Basis-Konfiguration
 
-Wie bereits erwähnt, werden Grandstream IP-Telefone  mit Hilfe der Basis-Konfiguration provisioniert. Die Basis-Konfiguration ist unter `Endgeräte` > `Basis-Konfigurationen` zu finden.
+Wie bereits erwähnt, werden Grandstream IP-Telefone  mit Hilfe der Basis-Konfiguration provisioniert. Die Basis-Konfiguration ist unter {{< ui-button "Endgeräte" >}} > {{< ui-button "Basis-Konfigurationen" >}} zu finden.
 
 {{% notice note %}}
-Bevor Sie die Basis-Konfiguration ändern, müssen Sie diese `Duplizieren`.
+Bevor Sie die Basis-Konfiguration ändern, müssen Sie diese {{< ui-button "Duplizieren" >}}.
 {{% /notice %}}
 
-Ebenfalls können Sie eine schon bearbeitete Basis-Konfiguration als `Standard setzten`. Somit erhalten neu angelegte IP-Telefone automatisch die angepasste Basis-Konfiguration.
+Ebenfalls können Sie eine schon bearbeitete Basis-Konfiguration als {{< ui-button "Standard setzten" >}}. Somit erhalten neu angelegte IP-Telefone automatisch die angepasste Basis-Konfiguration.
 
 **Zuweisung einer Basis-Konfiguration**
 
 Eine Basis-Konfiguration kann auf mehreren Wegen zugewiesen werden:
 
-+ Über `Endgeräte` > `Basis-Konfigurationen` > Basis-Konfiguration auswählen und Bearbeiten, im Tab `Geräte` können gleich mehrere IP-Telefone hinzugefügt werden.
-+ Über `Endgeräte` > `Geräteliste` > IP-Telefon auswählen und Bearbeiten im Tab `Basisdaten`.
++ Über {{< ui-button "Endgeräte" >}} > {{< ui-button "Basis-Konfigurationen" >}} > Basis-Konfiguration auswählen und Bearbeiten, im Tab {{< ui-button "Geräte" >}} können gleich mehrere IP-Telefone hinzugefügt werden.
++ Über {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} > IP-Telefon auswählen und Bearbeiten im Tab {{< ui-button "Basisdaten" >}}.
 
 
 **BLF-Tasten konfigurieren über die Basis-Konfiguration**
 
-Im Tab `Konfiguration` können Sie die vorhandene Basis-Konfiguration anpassen.
+Im Tab {{< ui-button "Konfiguration" >}} können Sie die vorhandene Basis-Konfiguration anpassen.
 
 Im Bereich **</config>** können Sie Ihre Wunschtasten einfügen. Folgendes Beispiel zeigt die Konfiguration der ersten *Virtual-Multi-Purpose-Taste*:
 
@@ -167,7 +167,7 @@ Im Bereich **</config>** können Sie Ihre Wunschtasten einfügen. Folgendes Beis
 
 Weitere Informationen entnehmen Sie bitte der [Grandstream-Tasten-Dokumentation](/grandstream_key_configuration.pdf).
 
-Weisen Sie diese Basis-Konfiguration über den Tab `Geräte` den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und speichern Sie, nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
+Weisen Sie diese Basis-Konfiguration über den Tab {{< ui-button "Geräte" >}} den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und speichern Sie, nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
 
 ## Firmwareupdate
 
@@ -175,7 +175,7 @@ Ab der mobydick Version 7.14 wird die Firmware für IP-Endgeräte nicht mehr mit
 
 **Firmware hinzufügen**
 
-Die gewünschte Firmware kann hinzugefügt werden unter `Endgeräte` > `Firmware`:
+Die gewünschte Firmware kann hinzugefügt werden unter {{< ui-button "Endgeräte" >}} > {{< ui-button "Firmware" >}}:
 
 |Einstellung|Beschreibung|
 |---|---|
@@ -186,7 +186,7 @@ Die gewünschte Firmware kann hinzugefügt werden unter `Endgeräte` > `Firmware
 
 **Firmware ausrollen**
 
-Die Firmware kann aus den IP-Endgeräten über `Endgeräte` > `Geräteliste` aktualisiert werden. Wählen Sie die Zielgeräte in der Geräteliste mit Häkchen aus und klicken Sie auf `Aktion` > `Firmware ausrollen`. Nun erhalten Sie eine Übersicht der gewählten Geräte, in der Sie die Zielfirmware auswählen können. Anschließend klicken Sie auf `Firmware update` um die gewählte Firmware auszurollen.
+Die Firmware kann aus den IP-Endgeräten über {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} aktualisiert werden. Wählen Sie die Zielgeräte in der Geräteliste mit Häkchen aus und klicken Sie auf {{< ui-button "Aktion" >}} > {{< ui-button "Firmware ausrollen" >}}. Nun erhalten Sie eine Übersicht der gewählten Geräte, in der Sie die Zielfirmware auswählen können. Anschließend klicken Sie auf {{< ui-button "Firmware update" >}} um die gewählte Firmware auszurollen.
 
 
 Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es uns leider nicht möglich jede zu testen, so dass es sein kann, dass manche Firmware-Versionen pascom Funktionen nicht unterstützen. Daher finden Sie hier eine Liste der Firmwares die von uns bereits getestet wurden:
