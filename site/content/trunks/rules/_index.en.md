@@ -67,7 +67,7 @@ Unfortunately, not all providers transmit (signal) the called phone numbers usin
 * outbound calls result the desired number not being signalised to the called party.
 
 **Inbound Calls:**  
-If you want to test what exactly your provider is transmitting, simply enter * as your rules' source and destination. This will accept all calls. Log on to the Asterisk CLI (see [Accessing mobydick] ({{< relref "03access.md">}} "Accessing mobydick")) and initiate an incoming call. You can end the call as soon as see messages appearing on the Asterisk console, including many debug-related messages. Stop the Asterisk CLI by entering `CTRL+C` and scroll upwards. towards the top of the log stream, where you will find the following lines:
+If you want to test what exactly your provider is transmitting, simply enter * as your rules' source and destination. This will accept all calls. Log on to the Asterisk CLI (see [Accessing mobydick] ({{< ref "">}} "Accessing mobydick")) and initiate an incoming call. You can end the call as soon as see messages appearing on the Asterisk console, including many debug-related messages. Stop the Asterisk CLI by entering `CTRL+C` and scroll upwards. towards the top of the log stream, where you will find the following lines:
 
     Verbose("SIP/0991270060-00001cda", "1,destination 0991123456789 is determined")
     ...
