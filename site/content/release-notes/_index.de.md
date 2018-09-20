@@ -11,6 +11,12 @@ pre: <i class="fa fa-file-alt" aria-hidden="true"></i>&nbsp;
 
 |Version|Release Type|Veröffentlichung|
 |-------|------------|---------------:|
+|[Release 18.00]({{< ref "/release-notes/pascom18" >}})| Feature Release | 20.09.2018 |
+
+## Stable Version
+
+|Version|Release Type|Veröffentlichung|
+|-------|------------|---------------:|
 |[Release 17.10]({{< ref "/release-notes/pascom17" >}})| Bugfix Release | 19.06.2018 |
 |[Release 17.09]({{< ref "/release-notes/pascom17#release-17-09-24-05-2018" >}})| Bugfix Release | 24.05.2018 |
 |[Release 17.08]({{< ref "/release-notes/pascom17#release-17-08-23-04-2018" >}})| Bugfix Release | 23.04.2018 |
@@ -23,8 +29,7 @@ pre: <i class="fa fa-file-alt" aria-hidden="true"></i>&nbsp;
 |[Release 17.01]({{< ref "/release-notes/pascom17#release-17-01-08-01-2018" >}})| Bugfix Release | 08.01.2018 |
 |[Release 17.00]({{< ref "/release-notes/pascom17#release-17-00-14-12-2017" >}})| Feature Release | 14.12.2017 |
 
-## Stable Version
-
+<!-- 
 |Version|Release Type|Veröffentlichung|
 |-------|------------|---------------:|
 |[Release 15.12]({{< ref "/release-notes/pascom15" >}})| Bugfix Release | 04.07.2018
@@ -40,7 +45,7 @@ pre: <i class="fa fa-file-alt" aria-hidden="true"></i>&nbsp;
 |[Release 15.02]({{< ref "/release-notes/pascom15#release-15-02-12-10-2017" >}})| Bugfix Release | 12.10.2017 |
 |[Release 15.01]({{< ref "/release-notes/pascom15#release-15-01-03-08-2017" >}})| Bugfix Release | 03.08.2017 |
 |[Release 15.00]({{< ref "/release-notes/pascom15#release-15-00-28-06-2017" >}})| Feature Release | 28.06.2017 |
-
+ -->
 
 ## LTS Version
 
