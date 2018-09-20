@@ -24,7 +24,7 @@ Egal ob sie manuell oder automatisch erfolgen, die Mitschnitte werden auf der Fe
 ## Konfiguration
 
 ### Regelwerk
-Um das Mitschnitt System zu aktivieren müssen Sie mindestens eine Regel anlegen die entweder bestimmte Gespräche automatisch mitschneidet oder einem gewissen Nutzerkreis erlaubt manuell einen Mitschnitt anzustoßen. Gegen Sie hierzu in der pascom Weboberfläche in das Menü `Erweitert > Mitschnitte` und fügen dort durch Drücken der Schaltfläche `+Hinzufügen`  eine neue Regel ein:
+Um das Mitschnitt System zu aktivieren müssen Sie mindestens eine Regel anlegen die entweder bestimmte Gespräche automatisch mitschneidet oder einem gewissen Nutzerkreis erlaubt manuell einen Mitschnitt anzustoßen. Gegen Sie hierzu in der pascom Weboberfläche in das Menü {{< ui-button "Erweitert" >}} > {{< ui-button "Mitschnitte" >}} und fügen dort durch Drücken der Schaltfläche {{< ui-button "+Hinzufügen" >}}  eine neue Regel ein:
 ![Screenshot - Mitschnitt Regeln](rules.de.png?width=100% "Mitschnitt Regeln verwalten")
 
 |Parameter|Bedeutung|
@@ -51,20 +51,20 @@ Für den Versand der Mitschnitte per E-Mail oder Skript und das Bereinigen der F
 
 Dies gilt wirklich nur für den Versand der Mitschnitte per E-Mail oder Skript. Im Classic Client werden die Mitschnitte sofort nach Fertigstellung der Aufnahme angezeigt.
 
-Möchten Sie den Intervall des Cronjobs erhöhen, z.B. alle 15 Minuten die Mitschnitte per E-Mail versenden, können Sie dies unter `Erweitert > Mitschnitte > Aktionen > Versand Automatisieren`  bzw. `Appliance > Cronjobs > Mitschnitte` verarbeiten anpassen.
+Möchten Sie den Intervall des Cronjobs erhöhen, z.B. alle 15 Minuten die Mitschnitte per E-Mail versenden, können Sie dies unter {{< ui-button "Erweitert" >}} > {{< ui-button "Mitschnitte" >}} > {{< ui-button "Aktionen" >}} > {{< ui-button "Versand Automatisieren" >}}  bzw. {{< ui-button "Appliance" >}} > {{< ui-button "Cronjobs" >}} > {{< ui-button "Mitschnitte" >}} verarbeiten anpassen.
 
 
 ### Festplattenspeicher verwalten
 Alle Mitschnitte, ob manuell oder automatisch, werden in jedem Fall zentral auf der Festplatte der pascom gespeichert. Für eine Minute Mitschnitt wird auf der Festplatte ca. 1 Megabyte belegt. Wenn Sie beispielsweise das Supportteam aus Trainingszwecken permanent mitschneiden wollen und in dieser Abteilung 4 Personen ca. jeweils 3 Stunden am Tag telefonieren wächst der Festplattenbedarf pro Tag um 720 Megabyte an. Dimensionieren Sie also den verfügbaren Festplattenspeicher entsprechend.
 
-Um das Überlaufen der Festplatte zu verhindern heben wir alle Mitschnitte standardmäßig nur 90 Tage auf. Die Einstellung können Sie in der pascom Weboberfläche unter `Appliance > Systemeinstellungen` anpassen. In der Baumstruktur finden Sie unter **sys.monitor.configure.monitorcron** den Parameter expiration. Dieser ist auf 90 Tage gesetzt und kann beliebig angepasst werden.
+Um das Überlaufen der Festplatte zu verhindern heben wir alle Mitschnitte standardmäßig nur 90 Tage auf. Die Einstellung können Sie in der pascom Weboberfläche unter {{< ui-button "Appliance" >}} > {{< ui-button "Systemeinstellungen" >}} anpassen. In der Baumstruktur finden Sie unter `sys.monitor.configure.monitorcron` den Parameter **expiration**. Dieser ist auf 90 Tage gesetzt und kann beliebig angepasst werden.
 
 ### Mitschnitt per Variable steuern
 Zusätzlich bietet pascom die Möglichkeit das Mitschnittsystem dynamisch per Dialplan Variablen ein- und auszuschalten bzw. bestehende Regeln zu übergeben.
 
 Beispielsweise kann es der Fall sein, dass Sie Ihrem Anrufer ein IVR Menü anbieten wollen in dem er selbst entscheiden kann ob er mit einem Mitschnitt zur Qualitätssicherung einverstanden ist oder nicht.
 
-Vom Dialplan aus kann man das Mitschnittsystem bei Bedarf durch die Variable **MDC_MON_MODE** beeinflussen:
+Vom Dialplan aus kann man das Mitschnittsystem bei Bedarf durch die Variable `MDC_MON_MODE` beeinflussen:
 
 #### Beim Rufaufbau **MDC_MON_MODE** setzen
 * MDC_MON_MODE nicht definiert oder Wert=auto: Regelwerk greift, s.u. **DEFAULT**

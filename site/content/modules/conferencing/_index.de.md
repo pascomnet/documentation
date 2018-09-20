@@ -16,7 +16,7 @@ Gehört die Durchwahl zum Rufnummernblock des Amts, so ist der Konferenzraum auc
 ![Illustratiom - VoIP Konferenzraumsystem](meetme.de.png?width=60% "VoIP Konferenzraumsystem")
 
 ## Konfiguration
-Wählen Sie in der pascom Weboberfläche `Benutzer > Konferenzraum` und drücken Sie auf `Hinzufügen`.
+Wählen Sie in der pascom Weboberfläche {{< ui-button "Benutzer" >}} > {{< ui-button "Konferenzraum" >}} und drücken Sie auf {{< ui-button "Hinzufügen" >}}.
 ![Screenshot - Konferenzraumsystem in der pascom konfigurieren](meetme_server.de.png?width=90% "Konferenzraumsystem konfigurieren")
 
 |Parameter|Bedeutung|

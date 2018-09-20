@@ -59,37 +59,37 @@ Gateways verbinden Sie mit Ihrem Switch. Schließen Sie dann das Netzteil an und
 ### Auffinden und Anlegen von beroNet Hardware
 Sobald Sie die beroNet Karte eingebaut oder beroNet Gateway mit dem LAN verbunden haben ist pascom in der Lage die Hardware automatisch zu erkennen. Bei beroNet Gateways gilt dies nur solange sich die Gateway im selben Netzsegment wie die pascom befindet.
 
-Wählen Sie in der pascom Weboberfläche Gateways > Gatewayliste und drücken Sie auf die `+Hinzufügen` Schaltfläche. pascom wird nun versuchen die beroNet Hardware zu finden:
+Wählen Sie in der pascom Weboberfläche Gateways > Gatewayliste und drücken Sie auf die {{< ui-button "+Hinzufügen" >}} Schaltfläche. pascom wird nun versuchen die beroNet Hardware zu finden:
 ![Screenshot - beroNet Gateway erkennen](detect.de.png?width=90% "Neues beroNet Gateway erkennen")
 
 
-Gelingt dies nicht, oder befindet sich eine beroNet Gateway in einem anderen Netzsegment als die pascom haben Sie im Anschluss die Möglichkeit das Gerät per Schaltfäche `Manuell anlegen` hinzuzufügen.
+Gelingt dies nicht, oder befindet sich eine beroNet Gateway in einem anderen Netzsegment als die pascom haben Sie im Anschluss die Möglichkeit das Gerät per Schaltfäche {{< ui-button "Manuell anlegen" >}} hinzuzufügen.
 
-In der Dropdownbox `Gateways` sehen sie alle vom System erkannten beroNet Gateways und Karten:
+In der Dropdownbox {{< ui-button "Gateways" >}} sehen sie alle vom System erkannten beroNet Gateways und Karten:
 ![Screenshot - beroNet Gateway anlegen](add.de.png?width=90% "Neues beroNet Gateway anlegen")
 
 In den Felder **Benutzername** und **Passwort** geben Sie die Zugangsdaten für den auf den beroNet Geräten befindlichen Webserver an. Im Auslieferungszustand sind diese **admin** und **admin**. Eine Änderung von Benutzernamen und Passwort ist an dieser Stelle nicht möglich.
 
 Bei beroNet Gateways haben Sie zusätzlich die Möglichkeit die Netzwerkkonfiguration der Gateway durch die Felder **IP Adresse, Netzwerkmaske und Gateway** zu verändern. Wollen Sie keine Änderungen am Netzwerk vornehmen lassen Sie die Felder einfach leer. Bei eingebauten PCI Karten wird das Netzwerk automatisch konfiguriert und kann nicht verändert werden.
 
-Drücken Sie auf die Schaltfläche `Weiter`. In der nächsten Maske sehen Sie noch einmal eine Zusammenfassung und die Modulbestückung der beroNet Karte oder Gateway. Sie die Möglichkeit den Vorgang durch **Speichern** abzuschließen.
+Drücken Sie auf die Schaltfläche {{< ui-button "Weiter" >}}. In der nächsten Maske sehen Sie noch einmal eine Zusammenfassung und die Modulbestückung der beroNet Karte oder Gateway. Sie die Möglichkeit den Vorgang durch **Speichern** abzuschließen.
 
-Alternativ können Sie aber auch durch die Angabe weiterer Daten (`Amt angegen` anhaken) gleich noch ein Amt samt ein- und ausgehende Regeln anlegen.
+Alternativ können Sie aber auch durch die Angabe weiterer Daten ({{< ui-button "Amt angegen" >}} anhaken) gleich noch ein Amt samt ein- und ausgehende Regeln anlegen.
 
 ### ISDN Amtsleitungen anlegen
-In vielen Fällen wird beroNet Hardware dazu verwendet ISDN Amtsleitungen daran anzuschließen. Selektieren Sie hierzu das entsprechende Gateway aus der Liste aus, wählen Sie `Bearbeiten` und schalten Sie dann auf den Tab **Belegung** um.
+In vielen Fällen wird beroNet Hardware dazu verwendet ISDN Amtsleitungen daran anzuschließen. Selektieren Sie hierzu das entsprechende Gateway aus der Liste aus, wählen Sie {{< ui-button "Bearbeiten" >}} und schalten Sie dann auf den Tab **Belegung** um.
 ![Screenshot - ISDN Amt hinzufügen](isdn_trunk_add.de.png?width=90% "ISDN Amt per beroNet hinzufügen")
 
-Unter `Hinzuführen` können Sie entweder **BRI** oder **PRI Amtsleitungen** konfigurieren.
+Unter {{< ui-button "Hinzufügen" >}} können Sie entweder **BRI** oder **PRI Amtsleitungen** konfigurieren.
 
 <!-- //FixMe Siehe Konzept: ISDN verstehen falls Sie mit den Begrifflichkeiten nicht vertraut sind. Dieser Vorgang fügt einen neuen Datensatz ein. -->
 
 ![Screenshot - ISDN Amt hinzufügen im Detail](isdn_trunk_add_detail.de.png?width=90% "ISDN Amt per beroNet hinzufügen")
 
 
-Klicken Sie im entsprechenden Datensatz doppelt auf das Feld `Bezeichnung`. Dadurch öffnet sich ein Detailfenster. Hier können Sie dann anhaken welcher **Port** der Karte zu diesem Amt gehört. Auch Mehrfachauswahlen sind möglich da es bei z.B. Anlagenanschlüss sein kann, dass mehrere NTs zu einem Amtsanschluss zusammengefasst werden.
+Klicken Sie im entsprechenden Datensatz doppelt auf das Feld {{< ui-button "Bezeichnung" >}}. Dadurch öffnet sich ein Detailfenster. Hier können Sie dann anhaken welcher **Port** der Karte zu diesem Amt gehört. Auch Mehrfachauswahlen sind möglich da es bei z.B. Anlagenanschlüss sein kann, dass mehrere NTs zu einem Amtsanschluss zusammengefasst werden.
 
-Unter `Modus` und `Technologie` stellen Sie die Anschlussart ein. Bei einem Anlagenanschluss ist das z. B. **TE** und **PTP**.
+Unter {{< ui-button "Modus" >}} und {{< ui-button "Technologie" >}} stellen Sie die Anschlussart ein. Bei einem Anlagenanschluss ist das z. B. **TE** und **PTP**.
 
 <!-- //FixMe  Siehe Konzept: ISDN verstehen für weitere Details. -->
 
@@ -97,11 +97,11 @@ In diesem Schritt konfigurieren Sie lediglich den Anschluss auf der beroNet Hard
 
 ### ISDN oder Analoge Nebenstellen anlegen
 
-Selektieren Sie das entsprechende Gateway aus der Liste aus, wählen Sie `Bearbeiten` und schalten Sie dann auf den Tab **Belegung** um.
+Selektieren Sie das entsprechende Gateway aus der Liste aus, wählen Sie {{< ui-button "Bearbeiten" >}} und schalten Sie dann auf den Tab **Belegung** um.
 
 ![Screenshot - Analoges Endgerät hinzufügen](analog_add.de.png?width=90% "Analoges Endgerät hinzufügen")
 
-Unter `Hinzufügen` haben Sie folgende Auswahl:
+Unter {{< ui-button "Hinzufügen" >}} haben Sie folgende Auswahl:
 
 |Typ|Beschreibung|Anwendungsfall|
 |---|---|---|

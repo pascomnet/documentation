@@ -64,7 +64,7 @@ Ersetzen Sie USERNAME und PASSWORT mit den eben angelegten Benutzerdaten. DB_HOS
 
 #### Queuemetrics Datenbank anbinden
 
-Loggen Sie sich auf der pascom Weboberfläche ein und wählen Sie den Menüpunkt `Erweitert` > `Queuemetrics`:
+Loggen Sie sich auf der pascom Weboberfläche ein und wählen Sie den Menüpunkt {{< ui-button "Erweitert" >}} > {{< ui-button "Queuemetrics" >}}:
 
 
 |Parameter|Bedeutung|
@@ -84,9 +84,9 @@ Speichern Sie die Konfiguration ab und wenden Sie die erzeugen Jobs an.
 #### Asterisk Manager Interface konfigurieren
 
 Für die Kommunikation mit dem pascom Server benötigt man Queuemetrics Zugriff auf das Asterisk Manager Interface (AMI)
-Hierzu müssen Sie (falls noch nicht geschehen) zuerst das AMI für öffentliche Zugriffe freischalten. Dies machen Sie unter `Appliance` > `Dienste` im Tab `Telefonie` indem Sie Erlaubte AMI Verbindungen auf öffentlich stellen.
+Hierzu müssen Sie (falls noch nicht geschehen) zuerst das AMI für öffentliche Zugriffe freischalten. Dies machen Sie unter {{< ui-button "Appliance" >}} > {{< ui-button "Dienste" >}} im Tab {{< ui-button "Telefonie" >}} indem Sie Erlaubte AMI Verbindungen auf öffentlich stellen.
 
- Legen Sie nun auf der pascom einen Manager Account für Queuemetrics unter `Appliance` > `Asterisk Managerkonten` an:
+ Legen Sie nun auf der pascom einen Manager Account für Queuemetrics unter {{< ui-button "Appliance" >}} > {{< ui-button "Asterisk Managerkonten" >}} an:
 
 
 Manager Account eintragen

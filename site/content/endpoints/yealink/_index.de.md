@@ -31,20 +31,20 @@ Für lokale Installationen des pascom Servers ist es möglich Endgeräte per DHC
 Details können Sie dem Howto [Telefon-Provisionierung via DHCP]({{< ref "/howto/dhcp-provisioning" >}}) entnehmen.
 {{% /notice %}}
 
-pascom ist in der Lage IP-Telefone des Herstellers Yealink automatisch und zentral zu konfigurieren. Diesen Vorgang nennt man Provisionierung. Dazu stellt pascom eine Basis-Konfiguration (`Endgeräte` > `Basis-Konfigurationen`) zur Verfügung. Diese ist ausreichend vorparametriert und muss nur in manchen Fällen angepasst werden.
+pascom ist in der Lage IP-Telefone des Herstellers Yealink automatisch und zentral zu konfigurieren. Diesen Vorgang nennt man Provisionierung. Dazu stellt pascom eine Basis-Konfiguration ({{< ui-button "Endgeräte" >}} > {{< ui-button "Basis-Konfigurationen" >}}) zur Verfügung. Diese ist ausreichend vorparametriert und muss nur in manchen Fällen angepasst werden.
 
 ## Neues Telefon hinzufügen
 
 {{% notice tip %}}
 Handelt es sich nicht um ein fabrikneues Telefon setzen Sie es in jedem
-Fall auf **Werkseinstellungen** zurück. Drücken Sie die `OK`-Taste des Telefons,
+Fall auf **Werkseinstellungen** zurück. Drücken Sie die {{< ui-button "OK" >}}-Taste des Telefons,
 im eingeschalteten Zustand, so lange bis **Factory Reset** im Display erscheint.
-Bestätigen Sie nochmals mit der `OK`-Taste.
+Bestätigen Sie nochmals mit der {{< ui-button "OK" >}}-Taste.
 {{% /notice %}}
 
 Stecken Sie das Yealink-Telefon an das Netzwerk. Das Telefon enthält einen eingebauten Switch, benutzen Sie den Ethernet-Port mit der Bezeichnung **Internet**. Falls Sie kein **PoE** (Power over Ethernet) verwenden, stecken Sie das Telefon an den Netzstrom.
 
-Nach dem Boot-Vorgang drücken Sie die `OK`-Taste des Telefons und notieren Sie
+Nach dem Boot-Vorgang drücken Sie die {{< ui-button "OK" >}}-Taste des Telefons und notieren Sie
 sich die IP-Adresse.
 
 ### MAC-Adresse ermitteln
@@ -52,13 +52,13 @@ sich die IP-Adresse.
 Die MAC-Adresse steht auf der Rückseite des Telefones.
 
 Alternativ surfen Sie nun mit Ihrem Browser auf die zuvor notierte IP-Adresse des Telefones.
-Loggen Sie sich mit Benutzer und Passwort `admin`, `admin` ein.
-Unter `Status > MAC Address` notieren Sie sich die MAC-Adresse des
+Loggen Sie sich mit Benutzer und Passwort **admin**, **admin** ein.
+Unter {{< ui-button "Status" >}} > {{< ui-button "MAC Address" >}} notieren Sie sich die MAC-Adresse des
 Telefons. 
 
 ### Endgerät anlegen
 
-Loggen Sie sich in Ihrer Telefonanlage ein und fügen unter `Endgeräte > Geräteliste` ein
+Loggen Sie sich in Ihrer Telefonanlage ein und fügen unter {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} ein
 neues Gerät vom Typ **IP-Telefon: Hersteller Yealink** hinzu.
 
 Tragen Sie im Feld **Mac-Adresse** die zuvor ermittelte MAC-Adresse des Telefons
@@ -68,11 +68,11 @@ ein.
 
 Nach dem Speichern von Änderungen erscheint in der Job-Box (oben) ein
 entsprechender Eintrag die Telefonie anzuwenden. Starten Sie den Job durch
-einen Klick auf den `grünen Haken`.
+einen Klick auf den {{< ui-button "grünen Haken" >}}.
 
 ### Provisionierung-URL ermitteln
 
-Haken Sie das Telefon in der Geräte-Liste an und wählen `Aktion > Provisioning URL`.
+Haken Sie das Telefon in der Geräte-Liste an und wählen {{< ui-button "Aktion" >}} > {{< ui-button "Provisioning URL" >}}.
 Für jeden verfügbaren Proxy erscheint ein Eintrag in der Liste. Kopieren Sie die
 **URL** in die Zwischenablage.
 
@@ -81,19 +81,19 @@ Für jeden verfügbaren Proxy erscheint ein Eintrag in der Liste. Kopieren Sie d
 {{% notice tip %}}
 Sollte Sie **kein offizielles Zertifikat** auf Ihrem Proxy installiert
 haben müssen Sie auf der Web-UI des Telefons ***Only Accept Trusted Certificates***
-unter `Security > Trusted Certificates` auf **Disabled** stellen
+unter {{< ui-button "Security" >}} > {{< ui-button "Trusted Certificates" >}} auf **Disabled** stellen
 {{% /notice %}}
 
-Zurück auf der Web-UI des Telefons tragen Sie unter `Settings > Auto Provision > Server URL`
+Zurück auf der Web-UI des Telefons tragen Sie unter {{< ui-button "Settings" >}} > {{< ui-button "Auto Provision" >}} > {{< ui-button "Server URL" >}}
 die eben kopierte Provisionierung-URL ein.
 
-Klicken Sie auf `Confirm` und anschließend auf `Autprovision Now`.
+Klicken Sie auf {{< ui-button "Confirm" >}} und anschließend auf {{< ui-button "Autprovision Now" >}}.
 
 Das Telefon startet neu.
 
 ### Benutzer zuweisen
 
-Nachdem das IP-Telefon neu gestartet ist kann es in der Geräteliste bearbeitet werden. Klicken Sie hierzu auf `Bearbeiten`. Im Tab `Zuweisung` kann dem Telefon ein [Benutzer]({{< ref "/user/user">}}) zugewiesen werden.
+Nachdem das IP-Telefon neu gestartet ist kann es in der Geräteliste bearbeitet werden. Klicken Sie hierzu auf {{< ui-button "Bearbeiten" >}}. Im Tab {{< ui-button "Zuweisung" >}} kann dem Telefon ein [Benutzer]({{< ref "/user/user">}}) zugewiesen werden.
 
 Nach dem Speichern und Anwenden der Telefoniekonfiguration werden die neu zugewiesenen IP-Telefone neugestartet.
 
@@ -135,7 +135,7 @@ Drücken Sie die **OK**-Taste auf Ihrem Yealink IP-Telefon. Nun können Sie die 
 
 ### IP-Adresse über die Geräteliste ermitteln
 
-Loggen Sie sich in das Web-UI der pascom ein. Klicken Sie auf `Endgeräte` > `Geräteliste`. Nun sehen Sie eine Übersicht über alle verfügbaren Geräte. Links von jedem Eintrag finden Sie ein *Info*-Symbol. Klicken Sie es an, erhalten Sie eine Übersicht über das provisionierte Telefon, unter anderem auch die IP-Adresse.
+Loggen Sie sich in das Web-UI der pascom ein. Klicken Sie auf {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}}. Nun sehen Sie eine Übersicht über alle verfügbaren Geräte. Links von jedem Eintrag finden Sie ein *Info*-Symbol. Klicken Sie es an, erhalten Sie eine Übersicht über das provisionierte Telefon, unter anderem auch die IP-Adresse.
 
 ### Funktionstasten
 
@@ -162,7 +162,7 @@ Drücken Sie zum Bestätigen auf *Speichern*.
 
 ### Tasten belegen über das Web-UI
 
-Im Tab `Speicher-Tasten` können die verschiedenen Tasten, z. B. BLF-Tasten am Telefon belegt werden:
+Im Tab {{< ui-button "Speicher-Tasten" >}} können die verschiedenen Tasten, z. B. BLF-Tasten am Telefon belegt werden:
 
 |Typ|Wert|Name|Konto|
 |---|---|---|---|
@@ -179,24 +179,24 @@ Neben Benutzer-Durchwahlen können auch Einbuchcodes für Warteschlangen oder Du
 
 ## Basis-Konfiguration
 
-Wie bereits erwähnt, werden Yealink IP-Telefone  mit Hilfe der Basis-Konfiguration provisioniert. Die Basis-Konfiguration ist unter `Endgeräte` > `Basis-Konfigurationen` zu finden.
+Wie bereits erwähnt, werden Yealink IP-Telefone  mit Hilfe der Basis-Konfiguration provisioniert. Die Basis-Konfiguration ist unter {{< ui-button "Endgeräte" >}} > {{< ui-button "Basis-Konfigurationen" >}} zu finden.
 
 {{% notice note %}}
-Bevor Sie die Basis-Konfiguration ändern, müssen Sie diese `Duplizieren`.
+Bevor Sie die Basis-Konfiguration ändern, müssen Sie diese {{< ui-button "Duplizieren" >}}.
 {{% /notice %}}
 
-Ebenfalls können Sie eine schon bearbeitete Basis-Konfiguration als `Standard setzten`. Somit erhalten neu angelegte IP-Telefone automatisch die angepasste Basis-Konfiguration.
+Ebenfalls können Sie eine schon bearbeitete Basis-Konfiguration als {{< ui-button "Standard setzten" >}}. Somit erhalten neu angelegte IP-Telefone automatisch die angepasste Basis-Konfiguration.
 
 ### Zuweisung einer Basis-Konfiguration
 
 Eine Basis-Konfiguration kann auf mehreren Wegen zugewiesen werden:
 
-+ Über `Endgeräte` > `Basis-Konfigurationen` > Basis-Konfiguration auswählen und Bearbeiten, im Tab `Geräte` können gleich mehrere IP-Telefone hinzugefügt werden.
-+ Über `Endgeräte` > `Geräteliste` > IP-Telefon auswählen und Bearbeiten im Tab `Basisdaten`.
++ Über {{< ui-button "Endgeräte" >}} > {{< ui-button "Basis-Konfigurationen" >}} > Basis-Konfiguration auswählen und Bearbeiten, im Tab {{< ui-button "Geräte" >}} können gleich mehrere IP-Telefone hinzugefügt werden.
++ Über {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} > IP-Telefon auswählen und Bearbeiten im Tab {{< ui-button "Basisdaten" >}}.
 
 ### BLF-Tasten konfigurieren über die Basis-Konfiguration
 
-Im Tab `Konfiguration` können Sie die vorhandene Basis-Konfiguration anpassen. Im Bereich **keys** finden Sie bereits vorkonfigurierte Funktionstasten, an denen Sie sich orientieren können.
+Im Tab {{< ui-button "Konfiguration" >}} können Sie die vorhandene Basis-Konfiguration anpassen. Im Bereich **keys** finden Sie bereits vorkonfigurierte Funktionstasten, an denen Sie sich orientieren können.
 
 BLF-Tasten lassen sich wie folgt einrichten:
 
@@ -211,7 +211,7 @@ Die belegte Taste (in diesem Fall Linekey 3) besteht aus drei Parametern:
 + *value*: der Wert, das ist hier die Nebenstelle,
 + *label*: das Label, das ist die Bezeichnung, die am Display angezeigt wird.
 
-Weisen Sie diese Basis-Konfiguration über den Tab `Geräte` den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und speichern Sie. Nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
+Weisen Sie diese Basis-Konfiguration über den Tab {{< ui-button "Geräte" >}} den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und speichern Sie. Nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
 
 
 ## Firmwareupdate
@@ -220,7 +220,7 @@ Ab der mobydick Version 7.14 wird die Firmware für IP-Endgeräte nicht mehr mit
 
 ### Firmware hinzufügen
 
-Die gewünschte Firmware kann hinzugefügt werden unter `Endgeräte` > `Firmware`:
+Die gewünschte Firmware kann hinzugefügt werden unter {{< ui-button "Endgeräte" >}} > {{< ui-button "Firmware" >}}:
 
 |Einstellung|Beschreibung|
 |---|---|
@@ -231,7 +231,7 @@ Die gewünschte Firmware kann hinzugefügt werden unter `Endgeräte` > `Firmware
 
 ### Firmware ausrollen
 
-Die Firmware kann über `Endgeräte` > `Geräteliste` aktualisiert werden. Wählen Sie die Zielgeräte in der Geräteliste mit Häkchen aus und klicken Sie auf `Aktion` > `Firmware ausrollen`. Nun erhalten Sie eine Übersicht der gewählen Geräte, in der Sie die Zielfirmware auswählen können. Anschließend klicken Sie auf `Firmware update` um die gewählte Firmware auszurollen.
+Die Firmware kann über {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} aktualisiert werden. Wählen Sie die Zielgeräte in der Geräteliste mit Häkchen aus und klicken Sie auf {{< ui-button "Aktion" >}} > {{< ui-button "Firmware ausrollen" >}}. Nun erhalten Sie eine Übersicht der gewählen Geräte, in der Sie die Zielfirmware auswählen können. Anschließend klicken Sie auf {{< ui-button "Firmware update" >}} um die gewählte Firmware auszurollen.
 
 ### Empfohlene Firmware
 

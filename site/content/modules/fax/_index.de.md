@@ -22,7 +22,7 @@ Dabei stehen Ihnen folgende Fax-Möglichkeiten zur Verfügung:
 
 ## Fax-Server Konfigurieren
 
-Unter `Dienste` > `Faxserver` muss zunächst der Fax-Server aktiviert und eingerichtet werden:
+Unter {{< ui-button "Dienste" >}} > {{< ui-button "Faxserver" >}} muss zunächst der Fax-Server aktiviert und eingerichtet werden:
 
 |Einstellung|Beschreibung|
 |---|---|
@@ -41,9 +41,9 @@ Unter `Dienste` > `Faxserver` muss zunächst der Fax-Server aktiviert und einger
 
 ### Übersicht der gesendeten/empfangenen Faxe
 
-Unter `Information` > `Faxserver` haben Sie eine Übersicht über die gesendeten und empfangenen Faxe. Die Liste der empfangenen Faxe bietet auch die Möglichkeit die Fax-Dokumente herunterzuladen.
+Unter {{< ui-button "Information" >}} > {{< ui-button "Faxserver" >}} haben Sie eine Übersicht über die gesendeten und empfangenen Faxe. Die Liste der empfangenen Faxe bietet auch die Möglichkeit die Fax-Dokumente herunterzuladen.
 
-Über `Anwenden` > `Faxserver bereinigen` können Sie einstellen, dass ältere Faxe aus dem System gelöscht werden. Der Default-Wert hierfür ist 30 Tage. Das bedeutet, dass beim Bereinigungs-Prozess, alle Faxe, die älter sind als 30 Tage gelöscht werden. Über den Button `Automatisieren` kann ein Cronjob eingerichtet werden, der automatisiert bereinigt.
+Über {{< ui-button "Anwenden" >}} > {{< ui-button "Faxserver bereinigen" >}} können Sie einstellen, dass ältere Faxe aus dem System gelöscht werden. Der Default-Wert hierfür ist 30 Tage. Das bedeutet, dass beim Bereinigungs-Prozess, alle Faxe, die älter sind als 30 Tage gelöscht werden. Über den Button {{< ui-button "Automatisieren" >}} kann ein Cronjob eingerichtet werden, der automatisiert bereinigt.
 
 
 
@@ -53,7 +53,7 @@ Virtuelle Faxe können für einen [Benutzer]({{< ref "/user/user">}}) oder für 
 
 #### Virtuelles Benutzerfax
 
-Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Faxgerät` kann für einen schon bestehenden Benutzer ein Faxgerät angelegt werden. Setzen Sie das Häckchen bei *Persönliches Fax konfigurieren*:
+Unter {{< ui-button "Benutzer" >}} > {{< ui-button "Benutzerliste" >}} > Benutzer auswählen und {{< ui-button "Bearbeiten" >}} im Tab {{< ui-button "Faxgerät" >}} kann für einen schon bestehenden Benutzer ein Faxgerät angelegt werden. Setzen Sie das Häckchen bei *Persönliches Fax konfigurieren*:
 
 |Einstellung|Beschreibung|
 |---|---|
@@ -64,7 +64,7 @@ Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab
 
 #### Virtuelles Teamfax
 
-Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Faxgerät` kann für einen schon bestehenden Benutzer ein Faxgerät angelegt werden. Setzen Sie das Häckchen bei *Team Fax konfigurieren*:
+Unter {{< ui-button "Benutzer" >}} > {{< ui-button "Benutzerliste" >}} > Benutzer auswählen und {{< ui-button "Bearbeiten" >}} im Tab {{< ui-button "Faxgerät" >}} kann für einen schon bestehenden Benutzer ein Faxgerät angelegt werden. Setzen Sie das Häckchen bei *Team Fax konfigurieren*:
 
 |Einstellung|Beschreibung|
 |---|---|
@@ -119,9 +119,9 @@ Dies verändert auch das Benachrichtigungsformat bei Print-to-Fax-Aufträgen.
 Wenn Sie nun z. B. das Adressformat auf 009912700619@meinedomain.de setzen möchten, können Sie wie folgt
 vorgehen:
 
-* Erweitern Sie über das Web-UI die Systemeinstellungen (`Appliance` > `Systemeinstellungen`) um den Eintrag *sys.fax.configure.faxmail.matcher.fax*.
+* Erweitern Sie über das Web-UI die Systemeinstellungen ({{< ui-button "Appliance" >}} > {{< ui-button "Systemeinstellungen" >}}) um den Eintrag *sys.fax.configure.faxmail.matcher.fax*.
 * Tragen Sie hier als Wert **/||(\d+)@.\*/** ein.
-* Diese Änderung aktivieren Sie mit Speichern und manuellem Anwenden der Netzwerk-Dienste (`Anwenden` > `Netzwerk Dienste`)
+* Diese Änderung aktivieren Sie mit Speichern und manuellem Anwenden der Netzwerk-Dienste ({{< ui-button "Anwenden" >}} > {{< ui-button "Netzwerk Dienste" >}})
 
 <!--FIXME eigentlich müßte hier der Mail-Server neugestartet werden, aber das taucht nicht auf... bitte prüfen/nachfragen ob das hier so passt-->
 
@@ -169,8 +169,8 @@ Folgende Skripte existieren:
 
 Das Print-to-Fax-Gateway kann sowohl für den automatischen Dokumentenversand aus z. B. ERP Systemen als auch für dialogbasierte Aufträge mit dem Desktop-Client genutzt werden.
 
-{{% notice info %}}
-Print-to-Fax wird im Cloudstack nicht unterstützt.
+{{% notice warning %}}
+Print-to-Fax wird im Cloudstack und in pascom 18 nicht unterstützt.
 {{% /notice %}}
 
 #### Betriebsart festlegen
@@ -203,9 +203,9 @@ Folgende Punkte sollten Sie beachten:
 
 #### Mac
 
-* Gehen Sie in die Systemeinstellungen Ihres Macs zu `Drucken und Faxen`.
-* Fügen Sie über `+` einen neuen Drucker hinzu.
-* Geben Sie nun folgende Optionen im Tab `IP` ein:
+* Gehen Sie in die Systemeinstellungen Ihres Macs zu {{< ui-button "Drucken und Faxen" >}}.
+* Fügen Sie über {{< ui-button "+" >}} einen neuen Drucker hinzu.
+* Geben Sie nun folgende Optionen im Tab {{< ui-button "IP" >}} ein:
 
 |Option|Einstellung|
 |---|---|
@@ -215,7 +215,7 @@ Folgende Punkte sollten Sie beachten:
 
 #### Windows
 
-* Fügen Sie unter `Systemsteuerung` > `Drucker und Faxgeräte` einen neuen Netzwerkdrucker ein.
+* Fügen Sie unter {{< ui-button "Systemsteuerung" >}} > {{< ui-button "Drucker und Faxgeräte" >}} einen neuen Netzwerkdrucker ein.
 * Überspringen Sie die automatische Suche.
 * Wählen Sie *Freigegebenen Drucker über den Namen auswählen* und geben Sie hier folgendes ein: *http://ihreAnlage:631/printers/sendfax*
 * Wählen Sie den geeigneten Druckertreiber aus:

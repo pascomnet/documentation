@@ -63,7 +63,7 @@ weight: 125
 |**\*99{Team}#{Durchwahl}#{Pausencode}**|Pausieren/unpausieren eines Agenten aus einem bestimmten Team.|Pausieren/unpausieren des Agenten mit der Durchwahl 123 aus dem Team 1100 unter Verwendung des Pausencodes 10:<br>*\*99110#123#10*|Kann als *BLF*-Taste am IP-Tischtelefon hinterlegt werden.|
 
 {{% notice info %}}
-Funktionscodes kann man in der Web-UI unter `Appliance`>`Systemeinstellungen`> `asterisk.dialplan.global` zu finden. Bei Bedarf können diese hier angepasst werden.
+Funktionscodes kann man in der Web-UI unter {{< ui-button "Appliance" >}} > {{< ui-button "Systemeinstellungen" >}} > `asterisk.dialplan.global` zu finden. Bei Bedarf können diese hier angepasst werden.
 
 Sollten Sie Funktionscodes verwenden, prüfen Sie den Paramater **asterisk.dialplan.alias.global**. Dieser sollte als Wert die Anzahl der Durchwahlstellen der Benutzer haben. Als Default-Wert ist 3 eingestellt.<br>
 Wir raten davon ab Benutzern Durchwahlen mit unterschiedlicher Anzahl der Durchwahlstellen zu vergeben, da in diesem Fall bestimmte Funktionscodes nicht mehr richtig verwendet werden können.

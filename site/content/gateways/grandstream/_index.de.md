@@ -38,14 +38,14 @@ Für die automatische Inbetriebnahme ist ein funktionierender DHCP-Server zwinge
 
 ### Inbetriebnahme
 
-Schließen Sie den Grandstream ATA  an das Netzwerk an. Dieser wird nach dem Bootvorgang automatisch in der Liste der Gateways unter `Gateways` > `Gatewayliste` erscheinen.
+Schließen Sie den Grandstream ATA  an das Netzwerk an. Dieser wird nach dem Bootvorgang automatisch in der Liste der Gateways unter {{< ui-button "Gateways" >}} > {{< ui-button "Gatewayliste" >}} erscheinen.
 
 <!--FIXME steckersymbol, status?-->
 
 ### Endgerät über SIP anlegen
 
-Wählen Sie unter `Endgeräte` > `Geräteliste` > `Hinzufügen` > den Eintrag **Via Grandstream Gateway: Analoges Endgerät per SIP**.
-Im Tab `Basisdaten` wählen Sie den Port am Gateway, an dem das Endgerät angeschlossen werden soll. Anschließend weisen Sie das Gerät über den Tab `Zuweisung` einem Benutzer zu.
+Wählen Sie unter {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} > {{< ui-button "Hinzufügen" >}} > den Eintrag **Via Grandstream Gateway: Analoges Endgerät per SIP**.
+Im Tab {{< ui-button "Basisdaten" >}} wählen Sie den Port am Gateway, an dem das Endgerät angeschlossen werden soll. Anschließend weisen Sie das Gerät über den Tab {{< ui-button "Zuweisung" >}} einem Benutzer zu.
 
 
 {{% notice note%}}

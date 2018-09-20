@@ -19,7 +19,7 @@ Da in fast allen, lokalen Netzwerken bereits ein DHCP-Server vorhanden ist empfi
 
 Standardmäßig ist die lokale DHCP Provisionierung aktiviert. 
 
-Haben Sie diese in der Vergangenheit deaktiviert, loggen Sie sich in das Management des pascom Servers ein, wählen unter `Schnittstellen` die entsprechende Netzwerkkarte aus und klicken auf `Bearbeiten`. Aktivieren Sie die Option `Lokale DHCP Provisionierung erlauben` und speichern Sie die Konfiguration ab.
+Haben Sie diese in der Vergangenheit deaktiviert, loggen Sie sich in das Management des pascom Servers ein, wählen unter {{< ui-button "Schnittstellen" >}} die entsprechende Netzwerkkarte aus und klicken auf {{< ui-button "Bearbeiten" >}}. Aktivieren Sie die Option {{< ui-button "Lokale DHCP Provisionierung erlauben" >}} und speichern Sie die Konfiguration ab.
 
 ### DHCP-Server konfigurieren
 {{% notice tip %}}
@@ -55,9 +55,9 @@ Setzen Sie ein Hardware Telefon auf Werkseinstellungen zurück. Funktioniert der
 
 Alternativ können Sie auch den DHCP-Server der pascom nutzen.
 
-Loggen Sie sich hierzu in das Management des pascom Servers ein, wählen unter `Schnittstellen` die entsprechende Netzwerkkarte aus und klicken auf `Bearbeiten`.
+Loggen Sie sich hierzu in das Management des pascom Servers ein, wählen unter {{< ui-button "Schnittstellen" >}} die entsprechende Netzwerkkarte aus und klicken auf {{< ui-button "Bearbeiten" >}}.
 
-Aktivieren Sie die Optionen `Lokale DHCP Provisionierung erlauben` und `DHCP-Server`.
+Aktivieren Sie die Optionen {{< ui-button "Lokale DHCP Provisionierung erlauben" >}} und {{< ui-button "DHCP-Server" >}}.
 
 Konfigurieren Sie den DHCP-Server:
 

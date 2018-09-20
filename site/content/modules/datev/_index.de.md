@@ -14,7 +14,7 @@ Die DATEV-Schnittstelle ermöglicht es bei einem eingehenden Anruf die Anrufdate
 
 ## Konfiguration
 
-Zur Vorbereitung muss zunächst ein *Generisches Label* angelegt werden. Klicken Sie hierfür auf `Anrufverteilung` > `Anruf Labels` >`Hinzufügen`. Wählen Sie `Generisches Label` und tragen Sie als *Label Name* **DATEV** ein. *Im Client anzeigen* sollten Sie auf *NEIN* setzen.
+Zur Vorbereitung muss zunächst ein *Generisches Label* angelegt werden. Klicken Sie hierfür auf {{< ui-button "Anrufverteilung" >}} > {{< ui-button "Anruf Labels" >}} > {{< ui-button "Hinzufügen" >}}. Wählen Sie {{< ui-button "Generisches Label" >}} und tragen Sie als *Label Name* **DATEV** ein. *Im Client anzeigen* sollten Sie auf *NEIN* setzen.
 
 Anschließend ist die DATEV-Schnittstelle automatisch aktiv sobald Sie neben *DATEV Arbeitsplatz pro* mit Telefoniemodul den [pascom Client]({{< relref "clients/desktop-installation">}}) installieren.
 
@@ -42,7 +42,7 @@ Sollten zu einer Telefonnummer mehrere Einträge in den DATEV-Stammdaten zu find
 
 **DATEV-Einstellungen im Classic Client**
 
-Im Classic Client können unter `Einstellungen` > `Adressbücher` Einstellungen vorgenommen werden:
+Im Classic Client können unter {{< ui-button "Einstellungen" >}} > {{< ui-button "Adressbücher" >}} Einstellungen vorgenommen werden:
 
 ![DATEV Einstellungen](full-auto.de.png)
 
@@ -51,7 +51,7 @@ Im Classic Client können unter `Einstellungen` > `Adressbücher` Einstellungen 
 |Reihenfolge der Telefonbücher|Verwenden Sie den Classic Client auf einer Arbeitsstation auf dem auch *DATEV Arbeitsplatz pro* installiert ist, wird immer als erstes das DATEV-Telefonbuch abgefragt.|
 |DATEV-Integration ist aktiviert|Hier kann die Verwendung der DATEV-Schnittstelle deaktiviert/aktiviert werden.|
 |Bei Telefonbuch-Suche verwenden|Hier kann angegeben werden, ob bei einem einkommenden Anruf das DATEV-Telefonbuch durchsucht werden soll.|
-|Cache aktualisieren|Wenn Sie in den DATEV-Stammdaten Änderungen vornehmen, kann es bis zu 2 Stunden dauern, bis diese synchronisiert werden. Möchten Sie die Änderungen sofort synchronisieren, klicken Sie hier auf `Aktualisieren`|
+|Cache aktualisieren|Wenn Sie in den DATEV-Stammdaten Änderungen vornehmen, kann es bis zu 2 Stunden dauern, bis diese synchronisiert werden. Möchten Sie die Änderungen sofort synchronisieren, klicken Sie hier auf {{< ui-button "Aktualisieren" >}}|
 |Automatische Datenweitergabe|Hier können Sie einstellen, ob Anrufdaten erst nach dem DATEV-Klick oder automatisch in die DATEV-Stammdaten übertragen werden sollen.|
 
 

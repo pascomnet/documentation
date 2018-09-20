@@ -29,7 +29,7 @@ Folgende Anleitung wurde unter Verwendung der *Fritz!Box Fon WLAN 7390* mit der 
 Zuerst müssen Sie auf der Fritz!Box Accounts anlegen, mit denen sich die pascom bei der Fritzbox registrieren kann.
 
 1. Surfen Sie auf Ihre Fritz!Box.
-2. Unter `Telefonie` > `Telefoniegeräte` klicken Sie auf `Neues Gerät einrichten`.
+2. Unter {{< ui-button "Telefonie" >}} > {{< ui-button "Telefoniegeräte" >}} klicken Sie auf {{< ui-button "Neues Gerät einrichten" >}}.
 3. Wählen Sie *Telefon (mit oder ohne Anrufbeantworter)*.
 4. Wählen Sie im nächsten Schritt *LAN/WLAN (IP-Telefon)* und vergeben Sie einen Namen.
 5. Anschließend geben Sie einen *Benutzernamen* und ein *Kennwort* ein. Diese müssen Sie sich merken, da Sie in der pascom benötigt werden.
@@ -43,7 +43,7 @@ Zuerst müssen Sie auf der Fritz!Box Accounts anlegen, mit denen sich die pascom
 
 ### Amt-Vorlage befüllen
 
-Fügen Sie ein neues Fritz!Box-Amt ein unter `Gateways` > `Ämter` > `Hinzufügen`. Sie gelangen nun zur Ämter-Datenbank. Über den Filter können Sie direkt nach *fritz* suchen und die Vorlage anschließend auswählen. Befüllen Sie die Vorlage mit den auf der Fritz!Box eingestellten Account-Daten.
+Fügen Sie ein neues Fritz!Box-Amt ein unter {{< ui-button "Gateways" >}} > {{< ui-button "Ämter" >}} > {{< ui-button "Hinzufügen" >}}. Sie gelangen nun zur Ämter-Datenbank. Über den Filter können Sie direkt nach *fritz* suchen und die Vorlage anschließend auswählen. Befüllen Sie die Vorlage mit den auf der Fritz!Box eingestellten Account-Daten.
 
 ![Fritz!Box Account](fritzbox_account.de.png?width=80%)
 
@@ -65,7 +65,7 @@ Fügen Sie ein neues Fritz!Box-Amt ein unter `Gateways` > `Ämter` > `Hinzufüge
 
 ### Rufregeln Anpassen
 
-Die Vorlage geht davon aus, dass die Durchwahlen auf der Fritz!Box mit den Durchwahlen auf der pascom übereinstimmen. Sollte das nicht der Fall sein, müssen Sie dies unter `Gateways` > `Ämter` > Amt auswählen >`Bearbeiten` in den Tabs `Eingehende Rufe` und `Ausgehende Rufe` anpassen.
+Die Vorlage geht davon aus, dass die Durchwahlen auf der Fritz!Box mit den Durchwahlen auf der pascom übereinstimmen. Sollte das nicht der Fall sein, müssen Sie dies unter {{< ui-button "Gateways" >}} > {{< ui-button "Ämter" >}} > Amt auswählen > {{< ui-button "Bearbeiten" >}} in den Tabs {{< ui-button "Eingehende Rufe" >}} und {{< ui-button "Ausgehende Rufe" >}} anpassen.
 
 |Eingehende Rufe||
 |---|---|
@@ -81,6 +81,6 @@ Die Vorlage geht davon aus, dass die Durchwahlen auf der Fritz!Box mit den Durch
 
 ### Weitere Accounts einrichten
 
-Möchten Sie eine weitere Fritz!Box-Nummer anlegen fügen Sie diese unter dem aktuellen Amt im Tab `Accounts` ein. Da die grundsätzlichen Einstellungen die gleichen sind, können Sie den schon angelegten Account verwenden. Markieren Sie diesen mit einem Klick und klicken Sie anschließend auf den Button `Duplizieren`. In der neuen Account-Zeile können Sie nun die Felder *Benutzername*, *Passwort*, und *Durchwahl reg.* anpassen.
+Möchten Sie eine weitere Fritz!Box-Nummer anlegen fügen Sie diese unter dem aktuellen Amt im Tab {{< ui-button "Accounts" >}} ein. Da die grundsätzlichen Einstellungen die gleichen sind, können Sie den schon angelegten Account verwenden. Markieren Sie diesen mit einem Klick und klicken Sie anschließend auf den Button {{< ui-button "Duplizieren" >}}. In der neuen Account-Zeile können Sie nun die Felder *Benutzername*, *Passwort*, und *Durchwahl reg.* anpassen.
 
-Legen Sie anschließend unter `Gateways` > `Ämter` > Amt auswählen >`Bearbeiten` in den Tabs `Eingehende Rufe` und `Ausgehende Rufe` [entsprechende Regeln]({{< ref "/trunks/rules">}}) für den neuen Account an.
+Legen Sie anschließend unter {{< ui-button "Gateways" >}} > {{< ui-button "Ämter" >}} > Amt auswählen > {{< ui-button "Bearbeiten" >}} in den Tabs {{< ui-button "Eingehende Rufe" >}} und {{< ui-button "Ausgehende Rufe" >}} [entsprechende Regeln]({{< ref "/trunks/rules">}}) für den neuen Account an.

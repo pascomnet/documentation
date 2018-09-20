@@ -43,7 +43,7 @@ Warteschlangen können ein unterschiedliches Gewicht haben. Je höher die Gewich
 
 ### Warteschlangen erstellen
 
-Zum Erstellen eines Teams klicken Sie in der Web-UI auf `Benutzer` > `Teams`. Hier wählen Sie **Warteschlange** und geben Sie der Team einen Namen und eine Durchwahl und Klicken Sie auf `Weiter`.
+Zum Erstellen eines Teams klicken Sie in der Web-UI auf {{< ui-button "Benutzer" >}} > {{< ui-button "Teams" >}}. Hier wählen Sie **Warteschlange** und geben Sie der Team einen Namen und eine Durchwahl und Klicken Sie auf {{< ui-button "Weiter" >}}.
 
 Folgende Einstellungen sind nun möglich:
 
@@ -120,7 +120,7 @@ Zur Auswahl stehen **Freizeichen** und **Wartemusik: "default"**. Möchten Sie e
 In diesem Tab können Mitglieder zur Warteschlage hinzugefügt werden. Klicken Sie auf den blauen Pfeil in Richtung rechts um einen Benutzer zuzuweisen. Möchten Sie den Benutzer aus dem Team entfernen, klicken Sie auf den Pfeil in Richtung links.
 
 Wie bereits erwähnt können Benutzer feste oder flexible Agenten in einer Warteschlange sein. Per default ist ein Agent nicht flexibel. Dies können Sie ändern mit einem Klick auf das *Flexibel*-Feld. Wählen Sie *Ja*.  
-Damit sich flexibel Agenten in die Warteschlagen Einbuchen können benötigen Sie einen Einbuchcode. Dieser kann in Tab `Erweitert` definiert werden.
+Damit sich flexibel Agenten in die Warteschlagen Einbuchen können benötigen Sie einen Einbuchcode. Dieser kann in Tab {{< ui-button "Erweitert" >}} definiert werden.
 
 *Beispiel:*<br>
 Der Einbuchcode lautet **\*90** und der Agent hat die Durchwahl **13**. Der Agent muss dabei **\*9013**  wählen um sich in der Warteschlagen anzumelden. Zum Abmelden muss ebenfalls **\*9013** gewählt werden. Beim An- oder Abmelden hört der Agent jeweils eine Meldung über den nun aktuellen Status.
@@ -141,7 +141,7 @@ Alternativ kann sich ein Benutzer auch per pascom Client in der Team Anzeige dur
 #### Pausieren und Pausegründe
 
 Statt sich an- und abzumelden ist es auch möglich als Mitglied einer Warteschlange zu pausieren. In dieser Zeit bleiben Sie an der Warteschlange angemeldet erhalten aber keine Anrufe.  
-Pausegründe können unter `Benutzer` > `Pausegründe` einstellt werden.
+Pausegründe können unter {{< ui-button "Benutzer" >}} > {{< ui-button "Pausegründe" >}} einstellt werden.
 
 |Parameter|Beschreibung|
 |---|---|
@@ -173,7 +173,7 @@ In unserem Beispiel sind Frank und Peter in die Warteschlange Support und VIP-Su
 Wenn Sie mit Gewichten arbeiten, dürfen Sie keine Warteschlangen ohne Gewicht benutzen. Diese haben dann ein Gewicht von 0 und kommen somit nie an die Reihe.
 {{% /notice %}}
 
-Stellen Sie die Gewichtung ein unter `Benutzer` > `Teams` > wählen Sie das Team aus > im Tab `Erweitert` das Feld **Gewichtung**.
+Stellen Sie die Gewichtung ein unter {{< ui-button "Benutzer" >}} > {{< ui-button "Teams" >}} > wählen Sie das Team aus > im Tab {{< ui-button "Erweitert" >}} das Feld **Gewichtung**.
 
 #### Aktionen
 

@@ -76,9 +76,9 @@ Anleitung hierzu finden Sie [hier](https://www.codetwo.com/kb/how-to-set-imperso
 ### Connector Profil erstellen
 
 Erstellen Sie ein neues Connector-Profil indem Sie in der pascom Web-UI unter dem
-Menüpunkt `Erweitert` > `Connector` auf `Hinzufügen` klicken.
+Menüpunkt {{< ui-button "Erweitert" >}} > {{< ui-button "Connector" >}} auf {{< ui-button "Hinzufügen" >}} klicken.
 
-Suchen Sie Vorlage `Exchange Kontakte` und klicken Sie auf `Auswählen`.
+Suchen Sie Vorlage {{< ui-button "Exchange Kontakte" >}} und klicken Sie auf {{< ui-button "Auswählen" >}}.
 Folgende Daten werden für die Vorlage benötigt:
 
 |Feld|Beschreibung|
@@ -98,21 +98,21 @@ Falls die Ermittlung fehlschlägt können Sie Domain und URL manuell ergänzen:
 
 ### Import simulieren & Automatisieren
 
-Durch Klicken auf `Speichern und Simulieren` starten Sie einen Probeimport und bekommen
-die ersten 500 Datensätze angezeigt. Ist die letze Spalte `local_id` mit einem Wert
+Durch Klicken auf {{< ui-button "Speichern und Simulieren" >}} starten Sie einen Probeimport und bekommen
+die ersten 500 Datensätze angezeigt. Ist die letze Spalte {{< ui-button "local_id" >}} mit einem Wert
 gefüllt wird dieser Datensatz einem persönlichen Adressbuch zugeordnet. Alle andren Datensätze
 werden mit dem pascom Firmentelefonbuch synchronisiert.
 
-Wenn Sie mit dem Ergebnis zufrieden sind können Sie unter `Automatisieren` eine regelmäßinte
+Wenn Sie mit dem Ergebnis zufrieden sind können Sie unter {{< ui-button "Automatisieren" >}} eine regelmäßinte
 Synchronisierung aktivieren. Die Voreinstellung hierfür ist *Einmal täglich, 12:00 Uhr mittags*.
 
 ### (Optional) Feldzuordnung anpassen
 
-Im Connector Profil können Sie im Reiter `Variablen` und `Struktur` die Feldzuordnung pascom > Exchange an Ihre Bedürfnisse anpassen.
+Im Connector Profil können Sie im Reiter {{< ui-button "Variablen" >}} und {{< ui-button "Struktur" >}} die Feldzuordnung pascom > Exchange an Ihre Bedürfnisse anpassen.
 
 Als Beispiel möchten wir die Exchange Kontakt-Webseitenadresse im Notizfeld des pascom Telefonbuches speichern.
 
-Fügen Sie hierzu im Reiter `Variablen` folgende Zeile durch `Hinzufügen` ein:
+Fügen Sie hierzu im Reiter {{< ui-button "Variablen" >}} folgende Zeile durch {{< ui-button "Hinzufügen" >}} ein:
 
 
 |Variable|Quelle|
@@ -126,7 +126,7 @@ der Name des Quellfeldes (hier "BusinessHomePage") identisch sein.
 
 Durch diese Zeile speichert der Connector den Inhalt des Exchange Feldes "BusinessHomePage" in der gleichnamigen Variable "BusinessHomePage" ab.
 
-Diese Variable muss nun unter `Struktur` einem pascom Feld zugeordnet werden.
+Diese Variable muss nun unter {{< ui-button "Struktur" >}} einem pascom Feld zugeordnet werden.
 Ergänzen Sie hierzu die Zeile:
 
 ```
@@ -224,17 +224,17 @@ abspeichern. Dieses Label ist dann nicht nur im Telefonbuch sondern auch in Jour
 
 #### Label anlegen
 
-Labels legen Sie im Menü `Anrufverteilung` > `Anruf Labels` durch Klicken auf die
-Schaltfläche `Hinzufügen` an.
+Labels legen Sie im Menü {{< ui-button "Anrufverteilung" >}} > {{< ui-button "Anruf Labels" >}} durch Klicken auf die
+Schaltfläche {{< ui-button "Hinzufügen" >}} an.
 
-Wählen Sie `Generisches Label`, vergeben Sie den Namen **Abteilung** und klicken
-auf `Speichern`.
+Wählen Sie {{< ui-button "Generisches Label" >}}, vergeben Sie den Namen **Abteilung** und klicken
+auf {{< ui-button "Speichern" >}}.
 
 Wenden Sie ausstehende Jobs an um das Label anzulegen.
 
 #### Connector Profil anpassen
 
-Fügen Sie hierzu im Reiter `Variablen` folgende Zeile durch `Hinzufügen` ein:
+Fügen Sie hierzu im Reiter {{< ui-button "Variablen" >}} folgende Zeile durch {{< ui-button "Hinzufügen" >}} ein:
 
 |Variable|Quelle|
 |---|---|
@@ -248,7 +248,7 @@ der Name des Quellfeldes (hier "Department") identisch sein.
 Durch diese Zeile speichert der Connector den Inhalt des Exchange Feldes "Department" in
 der gleichnamigen Variable "Department" ab.
 
-Diese Variable muss nun unter `Struktur` dem Label **Abteilung** pascom Feld zugeordnet werden.
+Diese Variable muss nun unter {{< ui-button "Struktur" >}} dem Label **Abteilung** pascom Feld zugeordnet werden.
 
 Ergänzen Sie hierzu die Zeilen:
 
@@ -300,7 +300,7 @@ dem entsprechenden Wert zugeteilt.
 Label-Zuordnungen werden NICHT unter "Speichern und Simulieren" mit angezeigt
 {{% /notice  %}}
 
-Prüfen Sie die erfolgreiche Zuordnung des Labels in der pascom Web-UI unter `Benutzer` >
-`Telefonbuch` indem Sie einen ensprechenden Kontakt `Bearbeiten` und die Zuordnung
-im Reiter `Labels` prüfen. Alternativ können Sie auch das Firmentelefonbuch im
+Prüfen Sie die erfolgreiche Zuordnung des Labels in der pascom Web-UI unter {{< ui-button "Benutzer" >}} >
+{{< ui-button "Telefonbuch" >}} indem Sie einen ensprechenden Kontakt {{< ui-button "Bearbeiten" >}} und die Zuordnung
+im Reiter {{< ui-button "Labels" >}} prüfen. Alternativ können Sie auch das Firmentelefonbuch im
 pascom Client einsehen.

@@ -21,7 +21,7 @@ Vergeben Sie für den pascom Benutzer ein Passwort und markieren Sie *Kennwort l
 ## Connector-Profil "Benutzer aus AD"
 
 Erstellen Sie ein neues Connector-Profil indem Sie in der pascom Web-UI unter dem
-Menüpunkt `Erweitert` > `Connector` auf `Hinzufügen` klicken.
+Menüpunkt {{< ui-button "Erweitert" >}} > {{< ui-button "Connector" >}} auf {{< ui-button "Hinzufügen" >}} klicken.
 
 Wählen Sie die Vorlage *Benutzer aus AD* und tragen Sie folgende Daten ein:
 
@@ -31,13 +31,13 @@ Wählen Sie die Vorlage *Benutzer aus AD* und tragen Sie folgende Daten ein:
 |**AD Domäne**|Active Directory Domain Name|
 |**AD Server**|Server IP oder DNS-Name des Hosts|
 |**Benutzername** und **Passwort**|Der zuvor im AD angelegte pascom Benutzer zur Authentifizierung|
-|**Authentifizierung konfigurieren**|**NEIN**: Benutzer werden nur importiert und authentifizieren sich gegen die pascom<br>**JA**: Benutzer werden importiert und können sich gegen den AD authentifizieren. In diesem Fall wird die Authentifizierung eingerichtet und Sie können unter `Appliance` > `Dienste` im Reiter `Authentifizierung` bei Bedarf anpassen.|
+|**Authentifizierung konfigurieren**|**NEIN**: Benutzer werden nur importiert und authentifizieren sich gegen die pascom<br>**JA**: Benutzer werden importiert und können sich gegen den AD authentifizieren. In diesem Fall wird die Authentifizierung eingerichtet und Sie können unter {{< ui-button "Appliance" >}} > {{< ui-button "Dienste" >}} im Reiter {{< ui-button "Authentifizierung" >}} bei Bedarf anpassen.|
 
-Nach dem Speichern kann die Vorlage im Reiter `Basisdaten` bei Bedarf angepasst werden.
+Nach dem Speichern kann die Vorlage im Reiter {{< ui-button "Basisdaten" >}} bei Bedarf angepasst werden.
 
 ### Pre Filter
 
-Im Standard importiert die Vorlage alle Benutzer bis auf den Benutzer *mobydick* aus dem AD. Über den Reiter `Pre Filter` können Sie den Import einer Gruppe von Benutzern, z. B. *pascom-user*, einschränken. Fügen Sie dazu folgenden Code ein:
+Im Standard importiert die Vorlage alle Benutzer bis auf den Benutzer *mobydick* aus dem AD. Über den Reiter {{< ui-button "Pre Filter" >}} können Sie den Import einer Gruppe von Benutzern, z. B. *pascom-user*, einschränken. Fügen Sie dazu folgenden Code ein:
 
     if (strpos($row['memberOf'],'pascom-user') !== false) {
     return true;
@@ -63,12 +63,12 @@ Die Felder sind lediglich ein Vorschlag der Vorlage. Sie können Felder hinzufu
 
 ### Importlauf testen und aktivieren
 
-Nachdem Sie die Konfiguration abgeschlossen haben, können Sie durch die Schaltfläche `Speichern und Simulieren` testen welche Datensätze importiert werden würden. Wenn Sie mit dem Ergebnis zufrieden sind können Sie den Import entweder einmalig unter `Aktion` > `Import jetzt durchführen` ausführen oder durch die Schaltfläche `Automatisieren` eine regelmäßige Durchführung des Importes einrichten.
+Nachdem Sie die Konfiguration abgeschlossen haben, können Sie durch die Schaltfläche {{< ui-button "Speichern und Simulieren" >}} testen welche Datensätze importiert werden würden. Wenn Sie mit dem Ergebnis zufrieden sind können Sie den Import entweder einmalig unter {{< ui-button "Aktion" >}} > {{< ui-button "Import jetzt durchführen" >}} ausführen oder durch die Schaltfläche {{< ui-button "Automatisieren" >}} eine regelmäßige Durchführung des Importes einrichten.
 
 ### Authentifizierung testen
 
-Haben Sie in der Vorlage *Authentifizierung konfigurieren* auf *JA* gesetzt können Sie nun unter `Appliance` > `Dienste`
-im Reiter `Authentifizierung` mit der Schaltfläche `Anmeldung Testen` testen ob die Authentifizierung Ihrer Benutzer funktioniert.
+Haben Sie in der Vorlage *Authentifizierung konfigurieren* auf *JA* gesetzt können Sie nun unter {{< ui-button "Appliance" >}} > {{< ui-button "Dienste" >}}
+im Reiter {{< ui-button "Authentifizierung" >}} mit der Schaltfläche {{< ui-button "Anmeldung Testen" >}} testen ob die Authentifizierung Ihrer Benutzer funktioniert.
 
 
 ## Optionale Einstellungen
@@ -78,14 +78,14 @@ im Reiter `Authentifizierung` mit der Schaltfläche `Anmeldung Testen` testen o
 Im Connector Profil können Sie im Reiter Variablen und Struktur die Feldzuordnung ActiveDirectory > pascom an Ihre Bedürfnisse anpassen.
 
 Als Beispiel möchten wir die Berufsbezeichnung des Benutzers im Notizfeld des pascom Telefonbuches speichern.
-Fügen Sie hierzu im Reiter `Variablen` folgende Zeile durch `Hinzufügen` ein:
+Fügen Sie hierzu im Reiter {{< ui-button "Variablen" >}} folgende Zeile durch {{< ui-button "Hinzufügen" >}} ein:
 
 |Variable|Quelle|
 |----|----|
 |Job|return $row["Job"];|
 
 Durch diese Zeile speichert der Connector den Inhalt des ActiveDirectory Feldes "Job" in der gleichnamigen Variable "Job" ab.
-Diese Variable muss nun unter `Struktur` dem Notiz pascom-Telefonbuch Feld zugeordnet werden.
+Diese Variable muss nun unter {{< ui-button "Struktur" >}} dem Notiz pascom-Telefonbuch Feld zugeordnet werden.
 
 Ergänzen Sie hierzu die Zeilen:
 
@@ -127,7 +127,7 @@ Dadurch wird der Wert der Variablen Job dem **Notiz** pascom Telefonbuch Feld zu
 
 Um Benutzer direkt beim Import einer Rolle zuweisen zu können muss die Struktur um die Rollenzuweisung erweitert werden.
 
-Fügen Sie hierzu im Reiter `Variablen` folgende Zeile durch `Hinzufügen` ein:
+Fügen Sie hierzu im Reiter {{< ui-button "Variablen" >}} folgende Zeile durch {{< ui-button "Hinzufügen" >}} ein:
 
 **Variable:** rollen
 
@@ -164,7 +164,7 @@ Das Feld "rollen" entspricht einer Liste an Rollen, denen der Benutzer zugeordne
 Durch diese Zeile kann der Connector die Mitgliedszuweisung aus dem ActiveDirectory auslesen und in dem Benutzerrollen pascom Feld zuordnen.
 
 {{% notice note%}}
-Tragen Sie in der PHP-Variable `rolesToFilter`im Code des `Quelle` Feldes, die Rollenbezeichnungen ein, nach denen der Connector im ActiveDirectory suchen soll. Alle anderen ActiveDirectory Mitgliedszuweisungen werden ignoriert.
+Tragen Sie in der PHP-Variable `rolesToFilter` im Code des *Quelle* Feldes, die Rollenbezeichnungen ein, nach denen der Connector im ActiveDirectory suchen soll. Alle anderen ActiveDirectory Mitgliedszuweisungen werden ignoriert.
 Beispiel: **array('Rolle1', 'Rolle2');**
 {{% /notice%}}
 
@@ -216,7 +216,7 @@ Sie können aus dem ActiveDirectory heraus einem Benutzer direkt ein IP-Telefon 
 
 **IP-Telefon via MAC zuweisen:**
 
-Fügen Sie hierzu im Reiter `Variablen` folgende Zeile durch `Hinzufügen` ein:
+Fügen Sie hierzu im Reiter {{< ui-button "Variablen" >}} folgende Zeile durch {{< ui-button "Hinzufügen" >}} ein:
 
 |Variable|Quelle|
 |----|----|
@@ -224,7 +224,7 @@ Fügen Sie hierzu im Reiter `Variablen` folgende Zeile durch `Hinzufügen` ein:
 
 Durch diese Zeile speichert der Connector den Inhalt des ActiveDirectory Feldes "ipphone" in der Variable "mac" ab.
 "mac" entspricht der MAC-Adresse des IP-Telefons das zugewiesen werden soll.
-Diese Variable muss nun unter `Struktur` dem IP-Telefon pascom Feld zugeordnet werden.
+Diese Variable muss nun unter {{< ui-button "Struktur" >}} dem IP-Telefon pascom Feld zugeordnet werden.
 
 Ergänzen Sie hierzu die Zeilen:
 
@@ -237,7 +237,7 @@ Ergänzen Sie hierzu die Zeilen:
 
 Wenn Sie dem Benutzer ein pascom-Softphone zuweisen möchten, muss keine zusätzliche Variable angelegt werden.
 
-Es genügt, wenn Sie unter `Struktur` folgende Zeilen ergänzen:
+Es genügt, wenn Sie unter {{< ui-button "Struktur" >}} folgende Zeilen ergänzen:
 
       "ipdevice.mdsoftphone": [{
             "010dev_bez": "{{{username}}}_sipdevice"

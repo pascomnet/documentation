@@ -9,7 +9,7 @@ Should you have any questions please use the [Community Forum](http://www.pascom
 {{% /notice %}}
 
 {{% notice warning %}}
-![Aastra/ Mitel DECT RFPs](/Aastra-Mitel-DECT-System.png?width=18%&classes=left)
+![Aastra/ Mitel DECT RFPs](aastra-mitel-dect-system.png?width=18%&classes=left)
 The update will break an environment with Aastra or Mitel DECT RFPs                           
 Ensure to do the following before the update to this version:<br><br>
   - Update your Aastra DECT RFP to firmware 7.0SP1 or greater.                                              

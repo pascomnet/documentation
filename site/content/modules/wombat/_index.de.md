@@ -24,16 +24,16 @@ Der WombatDialer wird auf einem separaten Server (nicht direkt auf der pascom) i
 #### Asterisk Manager Interface konfigurieren
 Für die Kommunikation mit dem pascom Server benötigt WombatDialer Zugriff auf das Asterisk Manager Interface (AMI).
 
-Hierzu müssen Sie (insofern noch nicht geschehen) zuerst das AMI für öffentliche Zugriffe freischalten. Dies machen Sie unter `Appliance` > `Dienste` indem Sie *Erlaubte AMI Verbindungen* auf *öffentlich* stellen:
+Hierzu müssen Sie (insofern noch nicht geschehen) zuerst das AMI für öffentliche Zugriffe freischalten. Dies machen Sie unter {{< ui-button "Appliance" >}} > {{< ui-button "Dienste" >}} indem Sie *Erlaubte AMI Verbindungen* auf *öffentlich* stellen:
 
 
-Nun legen Sie auf der pascom einen Manager Account für WombatDialer unter `Appliance > Asterisk` Managerkonten an:
+Nun legen Sie auf der pascom einen Manager Account für WombatDialer unter {{< ui-button "Appliance" >}} > {{< ui-button "Asterisk" >}} Managerkonten an:
 ![Manager Account für WombatDialer](manager_account.de.png?width=80%)
 
 Bei *Erlaubt.Netz* können Sie die IP Adresse des WombatDialer-Servers angeben und die *Erlaubt.Mask* auf 255.255.255.255 stellen. Dadurch ist es nur von IP-Adresse des WombatDialers aus möglich auf die pascom zuzugreifen. Dies erhöht die Sicherheit beträchtlich und ist daher zu empfehlen.
 
 #### Skript zur WombatDialer-Integration erstellen
-Zur Integration benötigen Sie ein Skript auf der pascom. Bei neueren Versionen ist das Skript bereits auf der pascom vorinstalliert und heißt wombat. Sollte das Skript bei Ihrer pascom Version noch nicht vorhanden sein legen Sie es bitte unter `Erweitert` > `Skripte` an:
+Zur Integration benötigen Sie ein Skript auf der pascom. Bei neueren Versionen ist das Skript bereits auf der pascom vorinstalliert und heißt wombat. Sollte das Skript bei Ihrer pascom Version noch nicht vorhanden sein legen Sie es bitte unter {{< ui-button "Erweitert" >}} > {{< ui-button "Skripte" >}} an:
 
     exten => _ X.,1,NoOp(WombatDialer)
     same => n,Wait(0.25)
@@ -50,8 +50,8 @@ Optional können Sie in diesem Skript noch folgende Variablen anpassen:
 
 |Variable|Bedeutung|
 |---|---|
-|CHANNEL(language)|Setzt die Sprache des Kanals für alle Ansagen die Sie später verwenden möchten. Mögliche Werte entnehmen Sie dem Menü `Erweitert` > `Ansagen` und dort unter der Schaltfläche `Aktion` > Sprachen:Verwalten. Sie können alle Werte in der Tabellenspalte Sprachkürzel für die Variable CHANNEL(language) verwenden.|
-|MDC_NUMPREFIX_TRUNK|	Falls Sie pascom so konfiguriert haben, dass Sie ein Prefix (z. B. die 0) für Ihr Standardamt vorwählen müssen, tragen Sie dieses Prefix auch in der Variable MDC_NUMPREFIX_TRUNK ein.|
+|CHANNEL(language)|Setzt die Sprache des Kanals für alle Ansagen die Sie später verwenden möchten. Mögliche Werte entnehmen Sie dem Menü {{< ui-button "Erweitert" >}} > {{< ui-button "Ansagen" >}} und dort unter der Schaltfläche {{< ui-button "Aktion" >}} > Sprachen:Verwalten. Sie können alle Werte in der Tabellenspalte Sprachkürzel für die Variable CHANNEL(language) verwenden.|
+|MDC_NUMPREFIX_TRUNK|	Falls Sie pascom so konfiguriert haben, dass Sie ein Prefix (z. B. die 0) für Ihr Standardamt vorwählen müssen, tragen Sie dieses Prefix auch in der Variable `MDC_NUMPREFIX_TRUNK` ein.|
 
 {{% notice note %}}
 Vergessen Sie bitte nicht jetzt alle vorgeschlagenen Jobs in der pascom anzuwenden damit die Konfiguration aktiv wird.

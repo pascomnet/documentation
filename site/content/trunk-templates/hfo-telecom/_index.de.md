@@ -26,7 +26,7 @@ Nach dem Erwerb und der Freischaltung Ihres HFO SIP-Trunks erhalten Sie eine Bes
 
 ## Einrichtung
 
-Fügen Sie ein neues HFO-Amt ein unter `Gateways` > `Ämter` > `Hinzufügen`. Sie gelangen nun zur Ämter-Datenbank. Über den Filter können Sie direkt nach *HFO* suchen und die Vorlage anschließend auswählen. Befüllen Sie die Vorlage mit den erhaltenen Account-Daten.
+Fügen Sie ein neues HFO-Amt ein unter {{< ui-button "Gateways" >}} > {{< ui-button "Ämter" >}} > {{< ui-button "Hinzufügen" >}}. Sie gelangen nun zur Ämter-Datenbank. Über den Filter können Sie direkt nach *HFO* suchen und die Vorlage anschließend auswählen. Befüllen Sie die Vorlage mit den erhaltenen Account-Daten.
 
 |Variable|Beschreibung|
 |---|---|
@@ -39,17 +39,17 @@ Fügen Sie ein neues HFO-Amt ein unter `Gateways` > `Ämter` > `Hinzufügen`. Si
 |**Anzahl der Durchwahlstellen**|Anzahl der Stellen der Benutzer-Durchwahlen. (NICHT die Anzahl der Nummern im Rufnummernblock!)|
 |**Durchwahl Zentrale**|Geben Sie hier an, auf welche interne Durchwahl die erste Nummer Ihres Rufnummernblocks (meistens die 0) abgeworfen werden soll.|
 
-Nach dem `Speichern` wird das Amt angelegt. Dabei werden automatisch Rufregeln angelegt. Diese können Sie gemäß Ihren Anforderungen und Wünschen konfigurieren. Lesen Sie dazu den Artikel über [Rufregeln]({{< ref "trunks/rules">}}).
+Nach dem {{< ui-button "Speichern" >}} wird das Amt angelegt. Dabei werden automatisch Rufregeln angelegt. Diese können Sie gemäß Ihren Anforderungen und Wünschen konfigurieren. Lesen Sie dazu den Artikel über [Rufregeln]({{< ref "trunks/rules">}}).
 
 ## Änderungen im Amt vornehmen
 
 ### Passwort ändern
 
-Klicken Sie auf `Gateways` > `Ämter`, wählen Sie Ihr Amt aus und klicken Sie auf `Bearbeiten`. Im Tab `Account` in der Spalte `Passwort` können Sie mit einem Doppelklick auf das gewünschte Feld das Passwort ändern. Bestätigen Sie zunächst die Änderung mit `Ok` und wenden Sie sie mit `Speichern` und anschließendem Anwenden der Telefonie-Konfiguration an.
+Klicken Sie auf {{< ui-button "Gateways" >}} > {{< ui-button "Ämter" >}}, wählen Sie Ihr Amt aus und klicken Sie auf {{< ui-button "Bearbeiten" >}}. Im Tab {{< ui-button "Account" >}} in der Spalte {{< ui-button "Passwort" >}} können Sie mit einem Doppelklick auf das gewünschte Feld das Passwort ändern. Bestätigen Sie zunächst die Änderung mit {{< ui-button "Ok" >}} und wenden Sie sie mit {{< ui-button "Speichern" >}} und anschließendem Anwenden der Telefonie-Konfiguration an.
 
 ### Einen weiteren HFO-Account hinzufügen
 
-Möchten Sie Ihren HFO-Anschluss um einen weiteren Account erweitern, fügen Sie diesen unter dem aktuellen Amt im Tab `Accounts` ein. Da die grundsätzlichen Einstellungen die gleichen sind, können Sie den schon angelegten Account verwenden. Markieren Sie diesen mit einem Klick und klicken Sie anschließend auf den Button `Duplizieren`.
+Möchten Sie Ihren HFO-Anschluss um einen weiteren Account erweitern, fügen Sie diesen unter dem aktuellen Amt im Tab {{< ui-button "Accounts" >}} ein. Da die grundsätzlichen Einstellungen die gleichen sind, können Sie den schon angelegten Account verwenden. Markieren Sie diesen mit einem Klick und klicken Sie anschließend auf den Button {{< ui-button "Duplizieren" >}}.
 In der neuen Account-Zeile können Sie nun **Benutzername** und **Passwort** und bei Bedarf weitere Felder anpassen.
 
-Nun müssen [eingehende und ausgehende Rufregeln]({{< ref "trunks/rules">}}) angepasst werden. Bei den ausgehenden Regeln müssen Sie nun auswählen welcher Account pro Regel verwendet werden soll. Scrollen Sie hierfür nach rechts und wählen in der Spalte `Account` den entsprechenden aus.
+Nun müssen [eingehende und ausgehende Rufregeln]({{< ref "trunks/rules">}}) angepasst werden. Bei den ausgehenden Regeln müssen Sie nun auswählen welcher Account pro Regel verwendet werden soll. Scrollen Sie hierfür nach rechts und wählen in der Spalte {{< ui-button "Account" >}} den entsprechenden aus.

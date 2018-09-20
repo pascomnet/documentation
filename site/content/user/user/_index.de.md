@@ -14,7 +14,7 @@ weight: 10
 
 ## Benutzer anlegen
 
-Benutzer werden in der Web-UI unter `Benutzer` > `Benutzerliste` > `Hinzufügen` angelegt.
+Benutzer werden in der Web-UI unter {{< ui-button "Benutzer" >}} > {{< ui-button "Benutzerliste" >}} > {{< ui-button "Hinzufügen" >}} angelegt.
 
 Anschließend müssen Sie das Formular zur Schnellanlage ausfüllen:
 
@@ -41,9 +41,9 @@ Sind Sie mit dem Formular fertig, klicken Sie auf
 
 ### Benutzer anlegen über den .xlsx-Import
 
-Für die Erstinstallation eignet es sich die Benutzer aus eine .xlsx-Datei zu importiern. Die Datei mit dem Namen Benutzerimport.xmls finden Sie unter `Appliance` > `Importieren` >`Benutzerimport`. Sie könnern zuerst die Vorlage herunterladen, ausfüllen und wieder importieren. Achten Sie bitte auf die Hinweise in der Datei.
+Für die Erstinstallation eignet es sich die Benutzer aus eine .xlsx-Datei zu importiern. Die Datei mit dem Namen Benutzerimport.xmls finden Sie unter {{< ui-button "Appliance" >}} > {{< ui-button "Importieren" >}} > {{< ui-button "Benutzerimport" >}}. Sie könnern zuerst die Vorlage herunterladen, ausfüllen und wieder importieren. Achten Sie bitte auf die Hinweise in der Datei.
 
-Alternativ können Sie auch den *Erweiteren Import* verwenden (`Appliance` > `Importieren` >`Erweiterter Import`). Hier können Sie bereits beim Anlegen der Benutzer weitere Einstellungen vornehmen:
+Alternativ können Sie auch den *Erweiteren Import* verwenden ({{< ui-button "Appliance" >}} > {{< ui-button "Importieren" >}} > {{< ui-button "Erweiterter Import" >}}). Hier können Sie bereits beim Anlegen der Benutzer weitere Einstellungen vornehmen:
 
 * IP-Telefone zuweisen
 * pascom Softphone zuweisen
@@ -73,7 +73,7 @@ Standardmäßig kann nur der Administrator zur Administration der pascom in die 
 
 Jedem Benutzer wird automatisch eine persönliche Voicemailbox zugeteilt. Standardmäßig existiert diese zwar, Anrufer werden aber noch nicht auf die Voicemailbox abgeworfen.
 
-Zuerst muss festgelegt werden, wie mit den Voicemails umgegangen werden soll. Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Basisdaten` finden Sie folgende Einstellungsmöglichkeiten:
+Zuerst muss festgelegt werden, wie mit den Voicemails umgegangen werden soll. Unter {{< ui-button "Benutzer" >}} > {{< ui-button "Benutzerliste" >}} > Benutzer auswählen und {{< ui-button "Bearbeiten" >}} im Tab {{< ui-button "Basisdaten" >}} finden Sie folgende Einstellungsmöglichkeiten:
 
 |Einstellung|Beschreibung|
 |---|---|
@@ -85,7 +85,7 @@ Anschließend muss die Voicemailbox als Aktion hinterlegt werden, falls das nich
 
 ## Alternative CallerID (CID Nummer)
 
-Beim Anlegen erhält der Benutzer eine eigene Durchwahl unter der er angerufen werden kann. Im Normalfall wird einem anderen Teilnehmer diese Durchwahl auch angezeigt, wenn er von dem Benutzer angerufen wird. Wird dies nicht erwünscht, so kann unter Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Basisdaten` eine alternative **CID Nummer** angegeben werden.
+Beim Anlegen erhält der Benutzer eine eigene Durchwahl unter der er angerufen werden kann. Im Normalfall wird einem anderen Teilnehmer diese Durchwahl auch angezeigt, wenn er von dem Benutzer angerufen wird. Wird dies nicht erwünscht, so kann unter Unter {{< ui-button "Benutzer" >}} > {{< ui-button "Benutzerliste" >}} > Benutzer auswählen und {{< ui-button "Bearbeiten" >}} im Tab {{< ui-button "Basisdaten" >}} eine alternative **CID Nummer** angegeben werden.
 
 {{% notice tip %}}
 Soll ein Benutzer bei externen Anrufen eine andere Durchwahl als seine eigene signalisieren, konfigurieren Sie das bitte im Amt unter Ausgehende Rufe.
@@ -97,11 +97,11 @@ Standardmäßig erhält jeder Benutzer einen Eintrag im **Telefonbuch** mit sein
 
 Es ist auch möglich den Telefonbucheintrag zu **deaktivieren**, falls nicht erwünscht ist, dass mache Einträge für alle pascom Benutzer sichtbar sind.
 
-Einstellungen zum Benutzer-Telefonbucheintrag können Sie unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Telefonbuch` vornehmen.
+Einstellungen zum Benutzer-Telefonbucheintrag können Sie unter {{< ui-button "Benutzer" >}} > {{< ui-button "Benutzerliste" >}} > Benutzer auswählen und {{< ui-button "Bearbeiten" >}} im Tab {{< ui-button "Telefonbuch" >}} vornehmen.
 
 ## Virtuelles Faxgerät
 
-Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Faxgerät` können Sie dem Benutzer ein virtuelles Faxgerät anlegen:
+Unter {{< ui-button "Benutzer" >}} > {{< ui-button "Benutzerliste" >}} > Benutzer auswählen und {{< ui-button "Bearbeiten" >}} im Tab {{< ui-button "Faxgerät" >}} können Sie dem Benutzer ein virtuelles Faxgerät anlegen:
 
 |Einstellung|Beschreibung|
 |---|---|
@@ -112,7 +112,7 @@ Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab
 
 ## Endgeräte
 
-Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Geräte` können Sie dem Benutzer Telefone zuweisen.  
+Unter {{< ui-button "Benutzer" >}} > {{< ui-button "Benutzerliste" >}} > Benutzer auswählen und {{< ui-button "Bearbeiten" >}} im Tab {{< ui-button "Geräte" >}} können Sie dem Benutzer Telefone zuweisen.  
 Aus der linken Seite ist eine Übersicht über alle verfügbaren Telefone. Über den blauen Pfeil können Sie das gewünschte Telefon wählen und auf die rechte Seite ziehen zu den zugewiesenen Geräten. Benötigen Sie ein Telefon nicht mehr, dann ziehen Sie es über den blauen Pfeil (Richtung nach links) zurück auf die linke Seite.  
 Einem Benutzer können mehrere Endgeräte zugewiesen werden. Welches Endgerät für ausgehende Rufe verwendet wird, kann über den pascom Client gewählt werden.
 
@@ -131,20 +131,20 @@ Benutzer-Timeouts müssen pro Gerät und pro Benutzer eingestellt werden.
 
 ## Arbeitsplatz
 
-Unter `Benutzer` > `Arbeitsplätze` > `Hinzufügen` können Sie Arbeitsplätze anlegen. Im Tab `Geräte` können Sie die Telefone zuweisen. Ein Arbeitsplatz kann mehrere Geräte haben.  
-Im Tab `Benutzerzuordnung` können Sie Benutzer zuweisen. Der Arbeitsplatz kann aber bei der Erstellung auch erstmal leer bleiben. Benutzer können sich über ihr Telefon oder dem pascom Client selber am Arbeitsplatz anmelden.
+Unter {{< ui-button "Benutzer" >}} > {{< ui-button "Arbeitsplätze" >}} > {{< ui-button "Hinzufügen" >}} können Sie Arbeitsplätze anlegen. Im Tab {{< ui-button "Geräte" >}} können Sie die Telefone zuweisen. Ein Arbeitsplatz kann mehrere Geräte haben.  
+Im Tab {{< ui-button "Benutzerzuordnung" >}} können Sie Benutzer zuweisen. Der Arbeitsplatz kann aber bei der Erstellung auch erstmal leer bleiben. Benutzer können sich über ihr Telefon oder dem pascom Client selber am Arbeitsplatz anmelden.
 
 |Am Arbeitsplatz anmelden:||
 |---|---|
 |**über den pascom Client**|Rechts neben dem Profilbild können Sie den Arbeitsplatz auswählen.<br>Falls Sie öfters die gleichen Arbeitsplätze verwenden, sehen Sie diese gleich beim Klick auf den Pfeil. Ansonsten wählen Sie *Weitere Arbeitsplätze*.<br>Möchten Sie sich von dem Arbeitsplatz abmelden, wählen Sie *Kein Arbeitsplatz*|
 |**über das IP-Telefon**|IP-Telefone, die von der pascom provisioniert werden haben eine pascom Menütaste. Drücken Sie diese und wählen Sie *Anmelden*. Nun geben Sie Ihre Durchwahl ein und Ihre PIN.<br>Zum Abmelden Drücken Sie ebenfalls die pascom Menütaste und wählen Sie *Abmelden*|
 
-Unter `Benutzer` > `Benutzerliste` > Benutzer auswählen und `Bearbeiten` im Tab `Arbeitsplatz` können Sie auch dem Benutzer einen Arbeitsplatz zuteilen bzw. sehen an welchem Arbeitsplatz der Benutzer aktuell arbeitet.
+Unter {{< ui-button "Benutzer" >}} > {{< ui-button "Benutzerliste" >}} > Benutzer auswählen und {{< ui-button "Bearbeiten" >}} im Tab {{< ui-button "Arbeitsplatz" >}} können Sie auch dem Benutzer einen Arbeitsplatz zuteilen bzw. sehen an welchem Arbeitsplatz der Benutzer aktuell arbeitet.
 
 
 ## Rufumleitungen (anlagenbasiert)
 
-Eine Übersicht über Rufumleitungen finden Sie unter `Benutzer` > `Rufumleitung`. Hier sehen Sie die von den Benutzern angelegten Rufumleitungen, ob sie aktiv oder inaktiv sind, und Sie können hier auch neue Rufumleitungen setzen.
+Eine Übersicht über Rufumleitungen finden Sie unter {{< ui-button "Benutzer" >}} > {{< ui-button "Rufumleitung" >}}. Hier sehen Sie die von den Benutzern angelegten Rufumleitungen, ob sie aktiv oder inaktiv sind, und Sie können hier auch neue Rufumleitungen setzen.
 
 {{% notice warning %}}
 Richten Sie bitte nur Rufumleitungen über die pascom ein (über den pascom Client oder der pascom-Menütaste Ihres IP-Telefons). Damit vermeiden Sie unkontrollierte Umleitungs-Endlosschleifen.
@@ -166,7 +166,7 @@ Lesen Sie dazu bitte den Artikel über [Aktionen]({{< ref "acd/actions" >}}).
 
 Benutzer ebenso wie Geräte, Arbeitsplätze oder Teams können Mitglieder in einer oder mehreren Rollen sein. Der Rolle selbst können Eigenschaften und Rechte zugeteilt werden. Sie steuern telefonie-relevante Eigenschaften und Rechte wie bsw. die Erlaubnis Gespräche anderer Benutzer heranzuholen.
 
-Rollen können eingerichtet werden unter `Benutzer` > `Rollen`.
+Rollen können eingerichtet werden unter {{< ui-button "Benutzer" >}} > {{< ui-button "Rollen" >}}.
 
 Es gibt eine spezielle Rolle mit dem Namen **All Users**. Diese Rolle ist standardmäßig allen Benutzern, Geräten, Arbeitsplätzen und Teams zugeteilt und kann auch nicht entzogen werden.
 
@@ -190,7 +190,7 @@ Benutzern und Arbeitsplätzen können mehrere Endgeräte zugewiesen werden. Die 
 
 ![FollowMe](followme.de.png)
 
-Klicken Sie im Web-UI zunächst auf `Benutzer` > `Benutzerliste` > Benuzter auswählen > im Tab `Geräte`. In der rechten Spalte erhalten Sie die Übersicht der direkt zugewiesenen Geräte mit den FollowMe-Einstellungen. Klicken Sie nun auf die FolloMe-Einstellung:
+Klicken Sie im Web-UI zunächst auf {{< ui-button "Benutzer" >}} > {{< ui-button "Benutzerliste" >}} > Benuzter auswählen > im Tab {{< ui-button "Geräte" >}}. In der rechten Spalte erhalten Sie die Übersicht der direkt zugewiesenen Geräte mit den FollowMe-Einstellungen. Klicken Sie nun auf die FolloMe-Einstellung:
 
 ![FollowMe](followme_webui_settings.de.png?width=50%)
 
@@ -209,11 +209,11 @@ Die Einstellungen erfolgen für
 
 **FollowMe über den Client steuern**
 
-Darf der Benutzer (je nach Berechtigung) selber seine FollowMe-Einstellungen verwalten, kann er dies über seinen pascom Desktop Client (`Einstellungen` > `FollowMe`) tun.
+Darf der Benutzer (je nach Berechtigung) selber seine FollowMe-Einstellungen verwalten, kann er dies über seinen pascom Desktop Client ({{< ui-button "Einstellungen" >}} > {{< ui-button "FollowMe" >}}) tun.
 
 ![FollowMe](followme_settings_client.de.png?width=100%)
 
-Der Benutzer kann Einstellungen vornehmen für Anrufe von intern und extern und für Anrufe die aus einer Warteschlange kommen. Dafür wechselt er zwischen dem Tabs `Extern`, `Intern` und `Teams`.
+Der Benutzer kann Einstellungen vornehmen für Anrufe von intern und extern und für Anrufe die aus einer Warteschlange kommen. Dafür wechselt er zwischen dem Tabs {{< ui-button "Extern" >}}, {{< ui-button "Intern" >}} und {{< ui-button "Teams" >}}.
 
 |Einstellungen|Beschreibung|
 |---|---|

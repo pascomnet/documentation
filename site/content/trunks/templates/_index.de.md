@@ -10,7 +10,7 @@ weight: 10
 
 ## Amtsvorlagen verwenden
 
-Fügen Sie ein neues Amt ein unter `Gateways` > `Ämter` > `Hinzufügen`. Sie gelangen nun zur Ämter-Datenbank. Hier finden Sie Vorlagen für alle von pascom unterstützten und von uns getesten Ämter.  
+Fügen Sie ein neues Amt ein unter {{< ui-button "Gateways" >}} > {{< ui-button "Ämter" >}} > {{< ui-button "Hinzufügen" >}}. Sie gelangen nun zur Ämter-Datenbank. Hier finden Sie Vorlagen für alle von pascom unterstützten und von uns getesten Ämter.  
 Über den Filter können Sie direkt nach Ihrem Amt suchen und anschließend auswählen. Befüllen Sie die Vorlage mit Ihren Daten, die Sie von Ihrem Telefonanbieter erhalten haben.  
 Da verschiedene Ämter-Typen unterschiedliche Variablen benötigen finden Sie im folgendem eine Übersicht:
 

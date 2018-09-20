@@ -21,14 +21,14 @@ Für die automatische Inbetriebnahme ist ein funktionierender DHCP-Server zwinge
 
 ## Konfiguration
 
-Schließen Sie jetzt alle Basisstationen, die Sie verwenden wollen, an das Netzwerk an. Diese werden nach dem Bootvorgang automatisch in der Liste der Gateways (unter `Gateways` > `Gatewayliste`) erscheinen.
+Schließen Sie jetzt alle Basisstationen, die Sie verwenden wollen, an das Netzwerk an. Diese werden nach dem Bootvorgang automatisch in der Liste der Gateways (unter {{< ui-button "Gateways" >}} > {{< ui-button "Gatewayliste" >}}) erscheinen.
 Das Feld **Status** hat keine Aussagekraft. Die Warnung mit dem "Steckersymbol" ist normal.
 
 ### Handsets anlegen und zuweisen
 
 Es können bis zu 5 Handsets an einer Basisstation registriert werden.
 
-Wählen Sie unter `Endgeräte` > `Geräteliste` > `Hinzufügen` den Eintrag *Via yealink DECT Gateway: Mobilteil* aus. Folgende Einstellungen müssen Sie vornehmen:
+Wählen Sie unter {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} > {{< ui-button "Hinzufügen" >}} den Eintrag *Via yealink DECT Gateway: Mobilteil* aus. Folgende Einstellungen müssen Sie vornehmen:
 
 |Einstellung|Beschreibung|
 |---|---|
