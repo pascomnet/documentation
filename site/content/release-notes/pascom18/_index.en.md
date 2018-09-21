@@ -10,6 +10,8 @@ With pascom 18 there are a number of core changes that you will need to check be
 
 ## Highlights
 
+{{< youtube nE3SCcMVfto >}}
+
 ### Platform Unify 
 
 The pascom classic and cloudstack have been unified into one platform. This ensures that all "cloud" functions such as encrypting of all calls and the simple integration of mobile users are also available in on-premise installations.

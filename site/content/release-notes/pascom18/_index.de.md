@@ -10,6 +10,8 @@ Folgen Sie bitte unserer detaillierten [Upgrade-Anleitung]({{< ref "/server/upgr
 
 ## Highlights
 
+{{< youtube 4oU8MibyrT8 >}}
+
 ### Plattform Unify 
 
 Die pascom classic und cloudstack Plattformen wurden zusammengelegt. Dadurch können Sie alle "cloud" Funktionen wie konsequente Verschlüsselung aller Gespräche oder einfache Integration mobiler Teilnehmer, auch in einer vor Ort Installation nutzen.
