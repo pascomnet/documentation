@@ -66,19 +66,19 @@ Having checked the above, you can continue with adding the Trunk via the pascom 
 
 The following screenshots were created using a *LANCOM R883VAW (over ISDN)* with the Firmware 10.00.0170.
 
-The SIP-ALG settings are found on the LANCOM router Web UI under `Configuration` > `SIP-ALG` > `General`.
+The SIP-ALG settings are found on the LANCOM router Web UI under {{< ui-button "Configuration" >}} > {{< ui-button "SIP-ALG" >}} > {{< ui-button "General" >}}.
 Uncheck the "SIP-ALG activated" box.
 
 ![LANCOM SIP-ALG Settings](/Lancom_SIP_Alg.png?width=70%)
 
-The trunk configuration is found within the LANCOM router web UI under `Configuration` > `Voice Call Manager` > `Lines` > `SIP Lines`.
+The trunk configuration is found within the LANCOM router web UI under {{< ui-button "Configuration" >}} > {{< ui-button "Voice Call Manager" >}} > {{< ui-button "Lines" >}} > {{< ui-button "SIP Lines" >}}.
 Makes sure that these settings are either empty or deactivated.
 
 ![LANCOM SIP-Lines](/Lancom_SIP_Leitungen.png?width=70%)
 
 #### Completing the Trunk Template
 
-Add a new Deutsche Telekom trunk under `Gateways` > `Trunks` > `Add`, which directs you the the SIP provider database. Using the filter, you can search directly for *Deutsche Telekom* templates. Select the *Deutsche Telekom SIP Trunk* template and add your account data / credentials to the template setup wizard.
+Add a new Deutsche Telekom trunk under {{< ui-button "Gateways" >}} > {{< ui-button "Trunks" >}} > {{< ui-button "Add" >}}, which directs you the the SIP provider database. Using the filter, you can search directly for *Deutsche Telekom* templates. Select the *Deutsche Telekom SIP Trunk* template and add your account data / credentials to the template setup wizard.
 
 |Variable|Description|
 |---|---|
@@ -93,17 +93,17 @@ Add a new Deutsche Telekom trunk under `Gateways` > `Trunks` > `Add`, which dire
 |**Extension for central**|Enter the internal extension number to which calls to the first number of your number block (normally 0) should be routed, i.e. to the switchboard / reception / AutoAttendant.|
 
 
-After pressing `Save` the trunk will be added. Doing so will automatically add default call rules, which can then be adapted according to your requirements. For more please read the following article on [Call Rules]({{< ref "trunks/rules">}}).
+After pressing {{< ui-button "Save" >}} the trunk will be added. Doing so will automatically add default call rules, which can then be adapted according to your requirements. For more please read the following article on [Call Rules]({{< ref "trunks/rules">}}).
 
 #### Update Password
 
-Go to `Gateways` > `Trunks` and select the required trunk and press `Edit`. Under the `Account` tab you can change your password by doubling clicking on the desired field under the `Password` column. Confirm the changes by pressing `Ok` and save and apply the new settings via the `Save` and then finally the apply telephony configurations.
+Go to {{< ui-button "Gateways" >}} > {{< ui-button "Trunks" >}} and select the required trunk and press {{< ui-button "Edit" >}}. Under the {{< ui-button "Account" >}} tab you can change your password by doubling clicking on the desired field under the {{< ui-button "Password" >}} column. Confirm the changes by pressing {{< ui-button "Ok" >}} and save and apply the new settings via the {{< ui-button "Save" >}} and then finally the apply telephony configurations.
 
 ### Adding Additional Deutsche Telekom SIP Accounts
 
-Should you wish to extend your Deutsche Telekom DeutschlandLAN SIP-Trunk connection by adding an additional account, add the new account in the existing Trunk configuration under the `Accounts` tab. Since the default settings (basic settings) are the same for both accounts, all you need to do is highlight the account and press the `duplicate` button. In the new account row that will appear, you can now adapt the settings by adding the new **Username** (i.e. *Registrierungsrufnummer*), the **password** and the **Auth_User** (i.e. the *telefonie-Benutzernamen*) as well as updating the other fields to match your needs.
+Should you wish to extend your Deutsche Telekom DeutschlandLAN SIP-Trunk connection by adding an additional account, add the new account in the existing Trunk configuration under the {{< ui-button "Accounts" >}} tab. Since the default settings (basic settings) are the same for both accounts, all you need to do is highlight the account and press the {{< ui-button "duplicate" >}} button. In the new account row that will appear, you can now adapt the settings by adding the new **Username** (i.e. *Registrierungsrufnummer*), the **password** and the **Auth_User** (i.e. the *telefonie-Benutzernamen*) as well as updating the other fields to match your needs.
 
-Next, the [inbound and outbound call rules]({{< ref "/trunks/rules">}}) must be modified. By the outbound rules you will need choose which account should be used per rule. Scroll to the right and under the `Account` column choose the desired account.
+Next, the [inbound and outbound call rules]({{< ref "/trunks/rules">}}) must be modified. By the outbound rules you will need choose which account should be used per rule. Scroll to the right and under the {{< ui-button "Account" >}} column choose the desired account.
 
 ### Setup via Fritz!Box
 
@@ -125,11 +125,11 @@ The following guide has been created using a *Fritz!Box Fon WLAN 7390* with Firm
 Firstly, you will need to setup the telekom phone numbers on the Fritz!Box in order to ensure that the Fritz!Box can correctly connect to Deutsche Deutsche Telekom.
 
 1. Log in to your Fritz!Box Web UI.
-2. Under `Telephony` > `Own Numbers` clcik on `New Number`.
-3. Select *Deutsche Telekom* as your `Telephony Provider`.
+2. Under {{< ui-button "Telephony" >}} > {{< ui-button "Own Numbers" >}} clcik on {{< ui-button "New Number" >}}.
+3. Select *Deutsche Telekom* as your {{< ui-button "Telephony Provider" >}}.
 4. Enter your *Area Code* and *Line Number* as stated in your account activation letter (see above).
-5. Enter `Further phone numbers` and repeat the process from step 4 with all numbers from your account info letter.
-6. Confirm the settings in the current and all following screens by clicking `Next` and `Apply`.
+5. Enter {{< ui-button "Further phone numbers" >}} and repeat the process from step 4 with all numbers from your account info letter.
+6. Confirm the settings in the current and all following screens by clicking {{< ui-button "Next" >}} and {{< ui-button "Apply" >}}.
 
 The Fritz!Box will immediately try to establish a connection with Deutsche Deutsche Telekom using the entered credentials.
 
@@ -137,7 +137,7 @@ The Fritz!Box will immediately try to establish a connection with Deutsche Deuts
 
 After the Deutsche Telekom numbers have been successfully setup, you will need to setup some accounts on your Fritz!Box with which your pascom PBX can register with the Fritz!Box.
 
-1. In the Fritz!Box web UI  under `Telephony` > `Telephony Devices` click on `Add New Device`.
+1. In the Fritz!Box web UI  under {{< ui-button "Telephony" >}} > {{< ui-button "Telephony Devices" >}} click on {{< ui-button "Add New Device" >}}.
 2. Select *Telephone (with or without Voicemail)*.
 3. In the next step, select *LAN/WLAN (IP Telephone)* and enter a name for the device.
 4. Finally enter a *Username* and *Password*. Make a note of these as they are required by the pascom PBX.
@@ -153,7 +153,7 @@ After the Deutsche Telekom numbers have been successfully setup, you will need t
 
 **Complete the Trunk Template**
 
-Add a new Frtz!Box trunk under `Gateways` > `Trunks` > `Add`, which directs you the the SIP provider database. Using the filter, you can search directly for *fritz* templates and select this template. Complete the template using the account data you have just set up on your Fritz!Box.
+Add a new Frtz!Box trunk under {{< ui-button "Gateways" >}} > {{< ui-button "Trunks" >}} > {{< ui-button "Add" >}}, which directs you the the SIP provider database. Using the filter, you can search directly for *fritz* templates and select this template. Complete the template using the account data you have just set up on your Fritz!Box.
 
 ![Fritz!Box Account](/fritzbox_account_telekom.png?width=80%)
 
@@ -172,13 +172,13 @@ Using the template, it is possible to add the first 3 accounts.
 |**Area code**|Enter your area code excluding the leading 0 e. g. 89 for Munich or 203 for London|
 |**Prefix for incoming number**|Any digit that precedes incoming phone calls via this trunk. If you enter 0 here for example, then the incoming call number will be display as 00172123123 on your IP phone's display instead of 0172123123. This allows you to call back the number using the same trunk / account phone number.|
 
-After `Saving` the trunk will be added. If you have added further accounts to your Fritz!Box, you can add these under the `Accounts` tab. Simply select an entry and click on `Duplicate`. When duplicating an entry, it is sufficient to only update the *Username*, *Password* and *Extension reg.* columns.
+After {{< ui-button "Saving" >}} the trunk will be added. If you have added further accounts to your Fritz!Box, you can add these under the {{< ui-button "Accounts" >}} tab. Simply select an entry and click on {{< ui-button "Duplicate" >}}. When duplicating an entry, it is sufficient to only update the *Username*, *Password* and *Extension reg.* columns.
 
 **Modify Call Rules**
 
 The call rules for the first 3 accounts will be automatically added. All further account call rules must be added manually. These can be configured according to your requirements. Further to this please read the article [Call Rules]({{< ref "/trunks/rules">}}).
 
-The templates assumes that the extensions on the Fritz!Box match the extensions added on your pascom PBX. Should this not be the case, your will need to modify the call rules under `Gateways` > `Trunks` > select trunk >`Edit` and under the `Inbound Calls` and `Outbound Calls` tabs.
+The templates assumes that the extensions on the Fritz!Box match the extensions added on your pascom PBX. Should this not be the case, your will need to modify the call rules under {{< ui-button "Gateways" >}} > {{< ui-button "Trunks" >}} > select trunk > {{< ui-button "Edit" >}} and under the {{< ui-button "Inbound Calls" >}} and {{< ui-button "Outbound Calls" >}} tabs.
 
 |Inbound Calls||
 |---|---|

@@ -29,7 +29,7 @@ The following guide has been created using a *Fritz!Box Fon WLAN 7390* with the 
 Firstly, you will need to add a Fritz!Box account with which the pascom PBX can register onto the Fritz!Box. As AVM (Fritz!Box vendor) produces a German Version and an International Version, our English Translations appear in brackets:
 
 1. Got to your Fritz!Box webpage.
-2. Under `Telefonie` > `Telefoniegeräte` click on `Neues Gerät einrichten`. (*Telephony > Telephony Devices > Add New Device*)
+2. Under {{< ui-button "Telefonie" >}} > {{< ui-button "Telefoniegeräte" >}} click on {{< ui-button "Neues Gerät einrichten" >}}. (*Telephony > Telephony Devices > Add New Device*)
 3. Select *Telefon (mit oder ohne Anrufbeantworter)*. (*Telephone (with or without answering machine)*)
 4. Select *LAN/WLAN (IP-Telefon)* and enter a name.  *LAN/WLAN (IP-Telephone)*
 5. Enter the *Username* and *Password* with which the pascom PBX should register.
@@ -42,7 +42,7 @@ Firstly, you will need to add a Fritz!Box account with which the pascom PBX can 
 
 ### Completing the Trunk Template
 
-Add a new Fritz!Box trunk under`Gateways` > `Trunks` > `Add`, which directs you the the SIP provider database. Using the filter, you can search directly for the *Fritz!Box* templates. Select the template and add your account data / credentials to the template setup wizard.
+Add a new Fritz!Box trunk under {{< ui-button "Gateways" >}} > {{< ui-button "Trunks" >}} > {{< ui-button "Add" >}}, which directs you the the SIP provider database. Using the filter, you can search directly for the *Fritz!Box* templates. Select the template and add your account data / credentials to the template setup wizard.
 
 ![Fritz!Box Account](fritzbox_account.de.png?width=80%)
 
@@ -63,7 +63,7 @@ By using the template it is possible to add three accounts.
 
 ### Modifying Call Rules
 
-The template works on the assumption that the Extensions on the Fritz!Box match the extensions on the pascom phone system exactly. Should this not be the case, you will need to modify your call rules under `Gateways` > `Trunks` > Select Trunk >`Edit` and via modify the rules using the tabs `Inbound Calls` and `Outbound Calls`.
+The template works on the assumption that the Extensions on the Fritz!Box match the extensions on the pascom phone system exactly. Should this not be the case, you will need to modify your call rules under {{< ui-button "Gateways" >}} > {{< ui-button "Trunks" >}} > Select Trunk > {{< ui-button "Edit" >}} and via modify the rules using the tabs {{< ui-button "Inbound Calls" >}} and {{< ui-button "Outbound Calls" >}}.
 
 |Inbound Calls||
 |---|---|
@@ -78,6 +78,6 @@ The template works on the assumption that the Extensions on the Fritz!Box match 
 
 ### Adding Additional Accounts
 
-Should you wish to add an additional Fritz!Box Number  add the new account in the existing Trunk configuration under the `Accounts` tab. Since the default settings (basic settings) are the same for both accounts, all you need to do is highlight the account and press the `duplicate` button.  In the new account row that will appear, you can now adapt the settings by adding the new **Username**, **Password** and **Extension reg.**.
+Should you wish to add an additional Fritz!Box Number  add the new account in the existing Trunk configuration under the {{< ui-button "Accounts" >}} tab. Since the default settings (basic settings) are the same for both accounts, all you need to do is highlight the account and press the {{< ui-button "duplicate" >}} button.  In the new account row that will appear, you can now adapt the settings by adding the new **Username**, **Password** and **Extension reg.**.
 
-Finally, under `Gateways` > `Trunks` > Select Trunk >`Edit` it is possible to modify / add [call rules]({{< ref "/trunks/rules">}}) via the `Inbound Calls` and `Outbound Calls` for the new account.
+Finally, under {{< ui-button "Gateways" >}} > {{< ui-button "Trunks" >}} > Select Trunk > {{< ui-button "Edit" >}} it is possible to modify / add [call rules]({{< ref "/trunks/rules">}}) via the {{< ui-button "Inbound Calls" >}} and {{< ui-button "Outbound Calls" >}} for the new account.

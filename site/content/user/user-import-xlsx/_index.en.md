@@ -14,9 +14,9 @@ weight: 22
 
 ## Add Users Using via XLSX File
 
-For the purposes of the initial installation, importing users via a .xlsx file is an excellent option. The file *UserImport* can be found under `Appliance` > `Import` >`User Import`. Simply download the template, fill it out and upload it. Please take note of the instructions within the file.
+For the purposes of the initial installation, importing users via a .xlsx file is an excellent option. The file *UserImport* can be found under {{< ui-button "Appliance" >}} > {{< ui-button "Import" >}} > {{< ui-button "User Import" >}}. Simply download the template, fill it out and upload it. Please take note of the instructions within the file.
 
-Alternatively, you can use the *Advanced Import* option (`Appliance` > `Import` >`Advanced Import`). This option enables you to configure additional settings whilst adding the users:
+Alternatively, you can use the *Advanced Import* option ({{< ui-button "Appliance" >}} > {{< ui-button "Import" >}} > {{< ui-button "Advanced Import" >}}). This option enables you to configure additional settings whilst adding the users:
 
 * Assign IP telephones
 * Assign pascom softphone

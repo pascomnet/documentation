@@ -19,7 +19,7 @@ As a DHCP servers are already available in almost ever local network, it is reco
 
 Per default, the local DHCP provisioning is activated. 
 
-Should you have deactivated this function in the past, log into the pascom Management UI (not the phone system) and under `Interfaces` sekect the corresponding network card and click `Edit`. Activate the option `Allow local DHCP provisionioning` and save your new configuration.
+Should you have deactivated this function in the past, log into the pascom Management UI (not the phone system) and under {{< ui-button "Interfaces" >}} select the corresponding network card and click {{< ui-button "Edit" >}}. Activate the option {{< ui-button "Allow local DHCP provisionioning" >}} and save your new configuration.
 
 ### Configure the DHCP Server
 {{% notice tip %}}
@@ -54,9 +54,9 @@ Reset your Desktop phones to factory settings. Should the DHCP function with the
 
 Alternatively, you can also use the pascom DHCP server. 
 
-Log into the pascom Server Management UI and under `Interfaces` select the corresponding network card and click `Edit`.
+Log into the pascom Server Management UI and under {{< ui-button "Interfaces" >}} select the corresponding network card and click {{< ui-button "Edit" >}}.
 
-Activate the options `Allow Local DHCP Provisioning` and `DHCP Server`.
+Activate the options {{< ui-button "Allow Local DHCP Provisioning" >}} and {{< ui-button "DHCP Server" >}}.
 
 Configure the DHCP Server:
 

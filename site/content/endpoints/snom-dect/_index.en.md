@@ -37,13 +37,13 @@ The **Status** field currently has no relevance and the "plug symbol" warning is
 
 Should you wish to network multiple Gateways into a multicell DECT system, simply mark and select all the desired Gateways and click **Edit**. By using the arrow buttons, you can navigate through all your selected Gateways and then edit them as follows:
 
-Under the `Mutli Cell` option, select the value `Base Station` for one of the Gateways and for all other Gateways, select the option `Repeater`.
+Under the {{< ui-button "Mutli Cell" >}} option, select the value {{< ui-button "Base Station" >}} for one of the Gateways and for all other Gateways, select the option {{< ui-button "Repeater" >}}.
 
 ### Add / Assign Handsets
 
-Under`Devices` > `Device List` > `Add`, select the option `Via Snom DECT Gateway: handset`
+Under {{< ui-button "Devices" >}} > {{< ui-button "Device List" >}} > {{< ui-button "Add" >}}, select the option {{< ui-button "Via Snom DECT Gateway: handset" >}}
 
-Ìn the next screen, you will be able to configure the device and under the `Assignment` tab you will be able to assign users and / or locations.
+Ìn the next screen, you will be able to configure the device and under the {{< ui-button "Assignment" >}} tab you will be able to assign users and / or locations.
 
 |Parameter|Description|Comments|
 |----|----|----|

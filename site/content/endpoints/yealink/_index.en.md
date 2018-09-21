@@ -25,7 +25,7 @@ weight: 30
 
 ## Configuration
 
-With [the pascom phone system] (https://www.pascom.net/en/ "pascom VoIP phone systems") it is possible to centrally and automatically configure the majority of Yealink IP Telephones. This process is know as `Provisioning`. For this purpose, pascom phone systems include a Default Configuration (`Devices > Basic Configuration`). For most deployments, these standard settings provide the ideal configuration. However, in some cases, the settings may need to be modified.
+With [the pascom phone system] (https://www.pascom.net/en/ "pascom VoIP phone systems") it is possible to centrally and automatically configure the majority of Yealink IP Telephones. This process is know as {{< ui-button "Provisioning" >}}. For this purpose, pascom phone systems include a Default Configuration ({{< ui-button "Devices" >}} > {{< ui-button "Basic Configuration" >}}). For most deployments, these standard settings provide the ideal configuration. However, in some cases, the settings may need to be modified.
 
 {{% notice tip%}}
 By new installations, you should first test the provisioning process with a telephone. Should this be successful then you will be able to deploy further telephones.
@@ -39,13 +39,13 @@ In order to automatically deploy (AutoProvision) Yealink Telephones, a functioni
 
 Connect the phone to your network. Yealink IP phones come with a built in switch, allowing you to connect the phone directly via the Ethernet port labelled as **Internet**. Should you not have a **PoE** option available, connect the phone to a power supply.
 
-The Yealink IP phone will now boot and acquires an IP address and the corresponding Basic Configurations via DHCP. After this process is completed, the device will automatically appear under `device` > `device list` as well as adding the appropriate SIP peer.
+The Yealink IP phone will now boot and acquires an IP address and the corresponding Basic Configurations via DHCP. After this process is completed, the device will automatically appear under {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}} as well as adding the appropriate SIP peer.
 
 As mentioned above, for every device pascom will also automatically add a SIP peer. In addition, the device username and password will also be automatically generated. The username consists of a randomly generated string followed by the last six digits of the device’s MAC address (15 digits in total). As the IP phones are automatically provisioned, you will not be required to enter this data manually and it is not possible to modify the user data. This is designed to considerably increase security against SIP Brute Force attacks.
 
 The Device Name will be automatically added as signified by the vendor (Yealink) and the MAC Address. On most IP phones, the MAC address is noted on the device housing, allowing phones to be more simply deployed on site in the correct locations.
 
-After a successful provisioning, the IP phone display should show to correct language and time as well as the text `Emergency Only`
+After a successful provisioning, the IP phone display should show to correct language and time as well as the text {{< ui-button "Emergency Only" >}}
 
 {{% notice info%}}
 After the successful phone provisioning, the admin user will be reset by the PBX with the following credentials:  
@@ -57,7 +57,7 @@ The Telephone Admin User Password can be changed within the Web UI under system 
 
 ### Assigning Users
 
-As soon as the IP phone has appeared in the Device List, it can be edited via the `Edit` button. Under the `Assign` tab, the phone can be assigned to a [user (or location)]({{< ref "concept/user">}}).
+As soon as the IP phone has appeared in the Device List, it can be edited via the {{< ui-button "Edit" >}} button. Under the {{< ui-button "Assign" >}} tab, the phone can be assigned to a [user (or location)]({{< ref "concept/user">}}).
 
 After saving and once again apply the telephony configuration, the telephone will restart.
 
@@ -98,7 +98,7 @@ Press the **OK** key when the phone idle screen is active and the phone IP addre
 
 #### Finding the IP-Address via the pascom Web UI Device Listn
 
-Log into the PBX Web UI and select the `Devices` > `Device list`, which provides you an overview of all available devices. To the left of each entry is an *Info* symbol which when clicked will open an overview of the provisioned telephone including the IP address.
+Log into the PBX Web UI and select the {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}}, which provides you an overview of all available devices. To the left of each entry is an *Info* symbol which when clicked will open an overview of the provisioned telephone including the IP address.
 
 ### Function Keys
 
@@ -125,7 +125,7 @@ To confirm, press *Save*.
 
 #### Assign Function Keys via the Yealink Web UI
 
-Under the tab `DSSKey` it is possible to assign the various telephone keys as BLF keys for example:
+Under the tab {{< ui-button "DSSKey" >}} it is possible to assign the various telephone keys as BLF keys for example:
 
 |Type|Value|Label|Line|Extension|
 |---|---|---|---|
@@ -142,24 +142,24 @@ As well as user extensions, it is also possible to configure a BLF key with logi
 
 ### Default Configuration
     
-As previously stated, Yealink IP phones are provisioned using the default configurations which can be found under `Devices`> `Basic Configurations`.
+As previously stated, Yealink IP phones are provisioned using the default configurations which can be found under {{< ui-button "Devices" >}} > {{< ui-button "Basic Configurations" >}}.
     
 {{% notice note%}}
-When modifying the default configuration settings, ensure you make a duplicate copy of the original using the `Duplicate`tool.
+When modifying the default configuration settings, ensure you make a duplicate copy of the original using the {{< ui-button "Duplicate" >}} tool.
 {{% /notice %}}
     
-In addition, you can set an already edited default configurations as the `standard settings`. Doing so ensures that all newly added IP telephones will automatically be provisioned with these default configurations.
+In addition, you can set an already edited default configurations as the {{< ui-button "standard settings" >}}. Doing so ensures that all newly added IP telephones will automatically be provisioned with these default configurations.
 
 #### Assigning a Default Configuration
 
 A default configuration can be assigned using multiple methods:
 
-+ Via `Devices`> `Basic Configurations` > Choose your Basic configuration set and press `Edit` Under the `Devices` tab, it is possible to add multiple IP telephones.
-+ Via `Devices`> `Device list` > Select and edit the IP Telephone and under the tab `Basic Data` choose the correct **Basic configuration** option.
++ Via {{< ui-button "Devices" >}} > {{< ui-button "Basic Configurations" >}} > Choose your Basic configuration set and press {{< ui-button "Edit" >}} Under the {{< ui-button "Devices" >}} tab, it is possible to add multiple IP telephones.
++ Via {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}} > Select and edit the IP Telephone and under the tab {{< ui-button "Basic Data" >}} choose the correct **Basic configuration** option.
 
 #### Default Configuration & Automatic BLF Assignment
 
-Under the `Configuration` tab, it is possible to modify the existing basic configuration. Under the **Keys** section you will find the already pre-configured function keys which provide a useful guideline to work with.
+Under the {{< ui-button "Configuration" >}} tab, it is possible to modify the existing basic configuration. Under the **Keys** section you will find the already pre-configured function keys which provide a useful guideline to work with.
 
 BLF Keys can be setup as follows:
 
@@ -174,7 +174,7 @@ The assigned key (in this case, line key 3) consists of three parameters:
 + *value*: the value, in this case the extension number,
 + *label*: the label, which is to be displayed on the phone's screen Label.
 
-Via the menu tab `Devices`, assign these default configurations to thoses telephones that should be configured with this BLF setup. Save and apply your changes and once the phones have restarted, the changes will have taken affect.
+Via the menu tab {{< ui-button "Devices" >}}, assign these default configurations to thoses telephones that should be configured with this BLF setup. Save and apply your changes and once the phones have restarted, the changes will have taken affect.
 
 ### Firmware Updates
 
@@ -182,7 +182,7 @@ From mobydick version 7.14 onwards, IP endpoint firmware will no longer be inclu
 
 #### Upload New Firmware
 
-The desired firmware can be uploaded via the the `Devices`> `Device firmware`:
+The desired firmware can be uploaded via the the {{< ui-button "Devices" >}} > {{< ui-button "Device firmware" >}}:
 
 |Settings|Description|
 |---|---|
@@ -193,7 +193,7 @@ The desired firmware can be uploaded via the the `Devices`> `Device firmware`:
 
 #### Firmware Roll Outs
 
-Firmware updates can be roll out via the `Devices` > `Device list` menu. Simply select the desired Yealink Endpoints from the list via the check boxes and under `Actions` > `Roll out firmware`. This will open an overview of all selected devices to which the new firmware version should be roll out to. Click `Firmware Update` to roll out the desired firmware version.
+Firmware updates can be roll out via the {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}} menu. Simply select the desired Yealink Endpoints from the list via the check boxes and under {{< ui-button "Actions" >}} > {{< ui-button "Roll out firmware" >}}. This will open an overview of all selected devices to which the new firmware version should be roll out to. Click {{< ui-button "Firmware Update" >}} to roll out the desired firmware version.
 
 #### Recommended Firmware 
 
