@@ -26,7 +26,7 @@ Once your HFO-Telekom trunk has been activated, you will receive a confirmation 
 
 ## Setup
 
-Add a new Telekom trunk under `Gateways` > `Trunks` > `Add`, which directs you the the SIP provider database. Using the filter, you can search directly for *HFO* template and add your account data / credentials to the template setup wizard.
+Add a new Telekom trunk under {{< ui-button "Gateways" >}} > {{< ui-button "Trunks" >}} > {{< ui-button "Add" >}}, which directs you the the SIP provider database. Using the filter, you can search directly for *HFO* template and add your account data / credentials to the template setup wizard.
 
 |Variable|Description|
 |---|---|
@@ -39,16 +39,16 @@ Add a new Telekom trunk under `Gateways` > `Trunks` > `Add`, which directs you t
 |**Number of extension digits**|The digit length of User Extensions - NOT the number of digits in the number block|
 |**Extension for central**|Enter the internal extension number to which calls to the first number of your number block (normally 0) should be routed, i.e. to the switchboard / reception / AutoAttendant.|
 
-After pressing `Save` the trunk will be added. Doing so will automatically add default call rules, which can then be adapted according to your requirements. For more please read the following article on [Call Rules]({{< ref "trunks/rules">}}).
+After pressing {{< ui-button "Save" >}} the trunk will be added. Doing so will automatically add default call rules, which can then be adapted according to your requirements. For more please read the following article on [Call Rules]({{< ref "trunks/rules">}}).
 
 ## Make Changes to the Trunk Configurations
 
 ### Update Password
 
-Go to `Gateways` > `Trunks` and select the required trunk and press `Edit`. Under the `Account` tab you can change your password by doubling clicking on the desired field under the `Password` column. Confirm the changes by pressing `Ok` and save and apply the new settings via the `Save` and then finally the apply telephony configurations.
+Go to {{< ui-button "Gateways" >}} > {{< ui-button "Trunks" >}} and select the required trunk and press {{< ui-button "Edit" >}}. Under the {{< ui-button "Account" >}} tab you can change your password by doubling clicking on the desired field under the {{< ui-button "Password" >}} column. Confirm the changes by pressing {{< ui-button "Ok" >}} and save and apply the new settings via the {{< ui-button "Save" >}} and then finally the apply telephony configurations.
 
 ### Adding Additional HFO Account
 
-Should you wish to add an additional HFO account, add the new account in the existing Trunk configuration under the `Accounts` tab. Since the default settings (basic settings) are the same for both accounts, all you need to do is highlight the account and press the `duplicate` button. In the new account row that will appear, you can now adapt the settings by adding the new **Username** and **Password** as well as updating the other fields to match your needs.
+Should you wish to add an additional HFO account, add the new account in the existing Trunk configuration under the {{< ui-button "Accounts" >}} tab. Since the default settings (basic settings) are the same for both accounts, all you need to do is highlight the account and press the {{< ui-button "duplicate" >}} button. In the new account row that will appear, you can now adapt the settings by adding the new **Username** and **Password** as well as updating the other fields to match your needs.
 
-Next, the [inbound and outbound call rules]({{< ref "trunks/rules">}}) must be modified. By the outbound rules you will need choose which account should be used per rule. Scroll to the right and under the `Account` column choose the desired account.
+Next, the [inbound and outbound call rules]({{< ref "trunks/rules">}}) must be modified. By the outbound rules you will need choose which account should be used per rule. Scroll to the right and under the {{< ui-button "Account" >}} column choose the desired account.

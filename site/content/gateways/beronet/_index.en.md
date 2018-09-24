@@ -55,37 +55,37 @@ Individual BeroNet boxes need be connected to your switch. Next, connect the pow
 ### Detecting and Adding beroNet Hardware
 pascom phone systems will detect the new hardware automatically once you have connected your beroNet expansion card or Box to the LAN. Please note that beroNet Boxes need to be in the same subnet as the PBX for this to work.
 
-In the pascom web interface, select ***Gateways > Gateway list*** and press the `+Add` button. The phone system will then try to detect your beroNet hardware:
+In the pascom web interface, select {{< ui-button "Gateways" >}} > {{< ui-button "Gateway list" >}} and press the {{< ui-button "+Add" >}} button. The phone system will then try to detect your beroNet hardware:
 ![Screenshot - beroNet Gateway identication](detect.en.png?width=90% "Detect new beroNet Gateway")
 
-If the detection process is unsuccessful or the beroNet Box is in a different subnet from the PBX, you can add the hardware manually by clicking the `Create manually` button.
+If the detection process is unsuccessful or the beroNet Box is in a different subnet from the PBX, you can add the hardware manually by clicking the {{< ui-button "Create manually" >}} button.
 
-The drop-down menu `Gateways` lists all detected beroNet Boxes and expansion cards:
+The drop-down menu {{< ui-button "Gateways" >}} lists all detected beroNet Boxes and expansion cards:
 ![Screenshot - add beroNet Gateway](add.en.png?width=90% "Add new beroNet Gateway")
 
-Enter your data in the fields `Username` and `Password` to authenticate with the webserver running on the beroNet device. The default user name and password is ***admin***. You cannot change the username or password at this point yet.
+Enter your data in the fields **Username** and **Password** to authenticate with the webserver running on the beroNet device. The default user name and password is **admin***. You cannot change the username or password at this point yet.
 
 With beroNet Gateways it is also possible to modify the network configuration, i.e. **the IP address, netmask and gateway** settings. If you do not want to change these settings, you can just leave them blank. If you have a PCI expansion card installed, the network setting is configured automatically and cannot be changed.
 
-To continue, press `Next` which will lead to a summary screen highlight which modules are installed on each beroNet card or Gateway. Press **Save** to store your changes.
+To continue, press {{< ui-button "Next" >}} which will lead to a summary screen highlight which modules are installed on each beroNet card or Gateway. Press **Save** to store your changes.
 
 Alternatively, you can now add a trunk and the corresponding inbound / outbound rules by checking the **Create Trunk** entry.
 
 ### Creating ISDN trunks
-A common use case for beroNet hardware is to connect ISDN trunks to it. To do so, select the gateway you want to use from the list, click the `Edit` button and then switch to the **Allocation** tab.
+A common use case for beroNet hardware is to connect ISDN trunks to it. To do so, select the gateway you want to use from the list, click the {{< ui-button "Edit" >}} button and then switch to the **Allocation** tab.
 
 ![Screenshot - Add ISDN Trunk](isdn_trunk_add.en.png?width=90% "Add ISDN Trunnk via beroNet")
 
-Under `Add` to configure either a **BRI** or **PRI Trunk line** .
+Under {{< ui-button "Add" >}} to configure either a **BRI** or **PRI Trunk line** .
 
 <!-- //FixMe Siehe Konzept: ISDN verstehen falls Sie mit den Begrifflichkeiten nicht vertraut sind. Dieser Vorgang fügt einen neuen Datensatz ein. -->
 
 ![Screenshot - Add ISDN Trunk in Detail](isdn_trunk_add_detail.en.png?width=90% "Add ISDN Trunk via beroNet")
 
 
-Double-clicking on the record `Name` field will open a more detailed view in which you select which **Ports** are allocated to the trunk. It is possible to select multiple options here as a BRI that is configured to use the PP protocol allows for several NTs to be aggregated so they form a single trunk.
+Double-clicking on the record {{< ui-button "Name" >}} field will open a more detailed view in which you select which **Ports** are allocated to the trunk. It is possible to select multiple options here as a BRI that is configured to use the PP protocol allows for several NTs to be aggregated so they form a single trunk.
 
-Under `Mode` and `Technology` to configure the interface type. For BRI connections in PP mode, the interface should be set to **TE** and **PTP**.
+Under {{< ui-button "Mode" >}} and {{< ui-button "Technology" >}} to configure the interface type. For BRI connections in PP mode, the interface should be set to **TE** and **PTP**.
 
 <!-- //FixMe  Siehe Konzept: ISDN verstehen für weitere Details. -->
 
@@ -93,17 +93,17 @@ You have now configured the interface of the beroNet hardware. For complete func
 
 ### Adding ISDN / Analog Endpoints
 
-Choose the required Gateway from the list and select `Edit` and go to the **Allocation** tab.
+Choose the required Gateway from the list and select {{< ui-button "Edit" >}} and go to the **Allocation** tab.
 
 In diesem Schritt konfigurieren Sie lediglich den Anschluss auf der beroNet Hardware. Zur vollständigen Funktion fahren Sie nun mit Aemter und Rufregeln anlegen fort.
 
 ### ISDN oder Analoge Nebenstellen anlegen
 
-Selektieren Sie das entsprechende Gateway aus der Liste aus, wählen Sie `Bearbeiten` und schalten Sie dann auf den Tab **Belegung** um.
+Selektieren Sie das entsprechende Gateway aus der Liste aus, wählen Sie {{< ui-button "Bearbeiten" >}} und schalten Sie dann auf den Tab **Belegung** um.
 
 ![Screenshot - Add Analog Endpoint](analog_add.en.png?width=90% "Add Analog Endpoint via beroNet")
 
-The `Add` dropdown includes the following options:
+The {{< ui-button "Add" >}} dropdown includes the following options:
 
 |Type            |Description   |Uses |
 |---------------|---------------|---------------|

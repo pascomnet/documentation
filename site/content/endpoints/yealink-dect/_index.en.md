@@ -29,7 +29,7 @@ The **Status** field currently has no relevance and the "plug symbol" warning is
 
 It is only possible to register a maximum of 5 handsets per base station.
 
-nder`Devices` > `Device List` > `Add`, select the option `Via Yealink DECT Gateway: handset`. Next you will need to update the following settings: Einstellungen müssen Sie vornehmen:
+Under {{< ui-button "Devices" >}} > {{< ui-button "Device List" >}} > {{< ui-button "Add" >}}, select the option {{< ui-button "Via Yealink DECT Gateway: handset" >}}. Next you will need to update the following settings: Einstellungen müssen Sie vornehmen:
 
 |Settings|Description|
 |---|---|

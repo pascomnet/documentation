@@ -21,7 +21,7 @@ Assign a password for the pascom user and select *password never expires*. The p
 ## "Users from AD" Connector Profile
 
 Create a new connector profile by using the following steps in the pascom phone system Web UI:
-Click on the menu option `Advanced` > `Connector` and then click `Add`.
+Click on the menu option {{< ui-button "Advanced" >}} > {{< ui-button "Connector" >}} and then click {{< ui-button "Add" >}}.
 
 Within the template, select *AD User Sync** and enter the following data:
 
@@ -31,13 +31,13 @@ Within the template, select *AD User Sync** and enter the following data:
 |**AD Domain**|Active Directory Domain Name|
 |**AD Server**|Server IP or Host DNS Name|
 |**Username** and **Password**|Credentials of the previously added pascom User for authentication|
-|**Configure authentication**|**NO**: Users will only be imported. Authentication will be performed by the pascom phone system. <br>**YES**: Users will be imported and the can be authenticated against the AD. In this case, the authentification will be setup and you can modify this according to your needs under `Appliance` > `Services` under the tab `Authentification`.|
+|**Configure authentication**|**NO**: Users will only be imported. Authentication will be performed by the pascom phone system. <br>**YES**: Users will be imported and the can be authenticated against the AD. In this case, the authentification will be setup and you can modify this according to your needs under {{< ui-button "Appliance" >}} > {{< ui-button "Services" >}} under the tab {{< ui-button "Authentification" >}}.|
 
-After saving, the template can be modified according to requirements under the tab `Basic Data`.
+After saving, the template can be modified according to requirements under the tab {{< ui-button "Basic Data" >}}.
 
 ### Pre Filter
 
-Per default, the template will import all users from the AD except for the user *mobydick*. Using the `Pre Filter` tab you can restrict the import to groups of users e.g. *pascom-user*. Simply enter the following code: 
+Per default, the template will import all users from the AD except for the user *mobydick*. Using the {{< ui-button "Pre Filter" >}} tab you can restrict the import to groups of users e.g. *pascom-user*. Simply enter the following code: 
 
     if (strpos($row['memberOf'],'pascom-user') !== false) {
     return true;
@@ -63,12 +63,12 @@ These fields are just template suggestions. You can add and remove fields or eve
 
 ### Test and Activate the Import Process
 
-After you have finalised your configuration, you can test the connector profile to determine which datasets will be imported using the `Save and Simulate` button. Once you are satisfied with the results, it is possible to either perform a one off import using the `Action` > `Import Now` option or automate the import to be performed at regular intervals by clicking the `Automate` button.
+After you have finalised your configuration, you can test the connector profile to determine which datasets will be imported using the {{< ui-button "Save and Simulate" >}} button. Once you are satisfied with the results, it is possible to either perform a one off import using the {{< ui-button "Action" >}} > {{< ui-button "Import Now" >}} option or automate the import to be performed at regular intervals by clicking the {{< ui-button "Automate" >}} button.
 
 ### Authentication Tests
 
-If you have configured the template using the *Configure authentication* *YES* option, it is now possible to test the user authentication process using the following menu options `Appliance` > `Services`
-under the `Authentification` tab and finally using the `Test Authentication` button.
+If you have configured the template using the *Configure authentication* *YES* option, it is now possible to test the user authentication process using the following menu options {{< ui-button "Appliance" >}} > {{< ui-button "Services" >}}
+under the {{< ui-button "Authentification" >}} tab and finally using the {{< ui-button "Test Authentication" >}} button.
 
 
 ## Optional Settings
@@ -77,14 +77,14 @@ under the `Authentification` tab and finally using the `Test Authentication` but
 
 Within the Connector Profile under the tabs Variables and Structure it is possible to modify the field assignments from Active Directory > pascom according to your requirements.
 
-For example, should you wish to save the Job Title of a user in the pascom telephone book notes field, simply go to the `Variables` tab and click `Add`:
+For example, should you wish to save the Job Title of a user in the pascom telephone book notes field, simply go to the {{< ui-button "Variables" >}} tab and click {{< ui-button "Add" >}}:
 
 |Variable|Source|
 |----|----|
 |Job|return $row["Job"];|
 
 Through this row, the connector saves the content of the Active Directory "Job" field under the variable of the same name "Job". 
-This Variable must now be assigned to the pascom telephone book notes field under the `Structure` tab.
+This Variable must now be assigned to the pascom telephone book notes field under the {{< ui-button "Structure" >}} tab.
 
 To do this add the lines:
 
@@ -126,7 +126,7 @@ This will result in the Job variable being assigned to the notes field in the pa
 
 In order to assign roles to users directly upon importing, the structure must be expanded to include role assignments.
 
-Under the `Variables` tab add the following lines by clicking `Add`:
+Under the {{< ui-button "Variables" >}} tab add the following lines by clicking {{< ui-button "Add" >}}:
 
 **Variable:** roles
 
@@ -163,7 +163,7 @@ You can use the member assignment in Active Directory to determine the pascom ph
 By using this coding, the Connector can read the Active Directory member assignments and assign them to the pascom field User Roles.
 
 {{% notice note%}}
-In the PHP-Variable `rolesToFilter`, enter the `source` field code and role name for which the connector should search for in the Active Directory. All other Active Directory member assignments will be ignored. 
+In the PHP-Variable `rolesToFilter`, enter the {{< ui-button "source" >}} field code and role name for which the connector should search for in the Active Directory. All other Active Directory member assignments will be ignored. 
 
 Example: **array('Role1', 'Role2');**
 {{% /notice%}}
@@ -216,7 +216,7 @@ From within the Active Directory, it is possible to directly assign a user with 
 
 **Assign IP Telephones via MAC Address:**
 
-Under the `Variables` tab add the following lines by clicking `Add`:
+Under the {{< ui-button "Variables" >}} tab add the following lines by clicking {{< ui-button "Add" >}}:
 
 |Variable|Source|
 |----|----|
@@ -224,7 +224,7 @@ Under the `Variables` tab add the following lines by clicking `Add`:
 
 This line instructs the Connector to save the content of the Active Directory field "ipphone" to the variable "mac".
 "mac" corresponds to the MAC Address of the IP phone which should be assigned to the user.
-This variable now be assigned to the pascom field IP Telephone within the `Structure`.
+This variable now be assigned to the pascom field IP Telephone within the {{< ui-button "Structure" >}}.
 
 To do this, expand the following lines so: 
 
@@ -237,7 +237,7 @@ To do this, expand the following lines so:
 
 If you want to assign users with a pascom softphone, it is not necessary to add an additional varialble.
 
-Expanding the `Structure` coding with the following is sufficient:
+Expanding the {{< ui-button "Structure" >}} coding with the following is sufficient:
 
       "ipdevice.mdsoftphone": [{
             "010dev_bez": "{{{username}}}_sipdevice"

@@ -59,7 +59,7 @@ Gateways verbinden Sie mit Ihrem Switch. Schließen Sie dann das Netzteil an und
 ### Auffinden und Anlegen von beroNet Hardware
 Sobald Sie die beroNet Karte eingebaut oder beroNet Gateway mit dem LAN verbunden haben ist pascom in der Lage die Hardware automatisch zu erkennen. Bei beroNet Gateways gilt dies nur solange sich die Gateway im selben Netzsegment wie die pascom befindet.
 
-Wählen Sie in der pascom Weboberfläche Gateways > Gatewayliste und drücken Sie auf die {{< ui-button "+Hinzufügen" >}} Schaltfläche. pascom wird nun versuchen die beroNet Hardware zu finden:
+Wählen Sie in der pascom Weboberfläche {{< ui-button "Gateways" >}} > {{< ui-button "Gatewayliste" >}} und drücken Sie auf die {{< ui-button "+Hinzufügen" >}} Schaltfläche. pascom wird nun versuchen die beroNet Hardware zu finden:
 ![Screenshot - beroNet Gateway erkennen](detect.de.png?width=90% "Neues beroNet Gateway erkennen")
 
 

@@ -34,14 +34,14 @@ For automatic device commissioning, a functioning DHCP server is essential.
 
 ### Device Commissioning
 
-Connect your Grandstream ATA to your network. The device will then automatically appear in the Gateways list once successfully booted `Gateways` > `Gateway list`.
+Connect your Grandstream ATA to your network. The device will then automatically appear in the Gateways list once successfully booted {{< ui-button "Gateways" >}} > {{< ui-button "Gateway list" >}}.
 
 <!--FIXME steckersymbol, status?-->
 
 ### Adding Endpoints via SIP
 
-Follow the following steps `Devices` > `Device list` > `Add` > and select the option **Via Grandstream Gateway: Analog device via SIP**.
-Next, under the `Basic data` tab select the Gateway port on which the device should be connected to. Finally, assign the device to a user under the `Assignment` tab.
+Follow the following steps {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}} > {{< ui-button "Add" >}} > and select the option **Via Grandstream Gateway: Analog device via SIP**.
+Next, under the {{< ui-button "Basic data" >}} tab select the Gateway port on which the device should be connected to. Finally, assign the device to a user under the {{< ui-button "Assignment" >}} tab.
 
 {{% notice note%}}
 After saving your configuration, the Gateway must be manually restarted. This needs to only be done once and is done by disconnecting the Gateway's power supply. After restarting, the Grandstream ATA will be provisioned by the pascom phone system.

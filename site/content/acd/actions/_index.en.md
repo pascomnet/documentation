@@ -51,7 +51,7 @@ Actions are directly configured within the objects to which they belong.
 
 ### Example Scenario: User Actions
 
-Select the required user via the menu `Users` > `User list` and press `Edit`. Within the corresponding menu taps, you will be able to configure the actions
+Select the required user via the menu {{< ui-button "Users" >}} > {{< ui-button "User list" >}} and press {{< ui-button "Edit" >}}. Within the corresponding menu taps, you will be able to configure the actions
 
 + **Internal/Before**
 + **Internal/After**
@@ -60,12 +60,12 @@ Select the required user via the menu `Users` > `User list` and press `Edit`. Wi
 
 |Action Types|Description|
 |---|---|
-|**Prompt**|(For versions before & including 7.13.04 - announcement) Plays a prompt which can be added under `Advanced` > `Prompts`.|
+|**Prompt**|(For versions before & including 7.13.04 - announcement) Plays a prompt which can be added under {{< ui-button "Advanced" >}} > {{< ui-button "Prompts" >}}.|
 |**Voicemailbox**|Connects the call to a voicemail box. The VM box can be for the user themselves, that of another user or a team. In addition, it is possible to set *Hint* (user not available or busy) as well as a *Handling* (Prompt that the caller can leave a message).|
 |**Hang up**|Hangs up the call. This action is recommended for example when the caller is only play a prompt.|
-|**Script**|Executes a script which has been created under the `Advanced` > `Scripts` menu.|
+|**Script**|Executes a script which has been created under the {{< ui-button "Advanced" >}} > {{< ui-button "Scripts" >}} menu.|
 |**Inline-Script**|Single line script which can be entered here.|
-|**Set Label**|Labels are configured under `ACD` > `Call Labels` and can be added as an action. Labels are displayed to desktop clients users as additional information regarding the caller and it is possible to set as many labels per caller as you wish. Please note a call label must be configured before you can add them as actions.|
+|**Set Label**|Labels are configured under {{< ui-button "ACD" >}} > {{< ui-button "Call Labels" >}} and can be added as an action. Labels are displayed to desktop clients users as additional information regarding the caller and it is possible to set as many labels per caller as you wish. Please note a call label must be configured before you can add them as actions.|
 
 Additional Actions:
 
@@ -77,7 +77,7 @@ Additional Actions:
 
 ### Action Sequencing and Actions Conditions
 
-Should you added multiple actions under either the `Internal Before` or `External Before` action tabs, then these will be processed in order from top to bottom. The sequence can be altered using the blue arrow keys to push an action either a position upwards or downwards.
+Should you added multiple actions under either the {{< ui-button "Internal Before" >}} or {{< ui-button "External Before" >}} action tabs, then these will be processed in order from top to bottom. The sequence can be altered using the blue arrow keys to push an action either a position upwards or downwards.
 
 {{% notice tip%}}
 Consideration should be paid to a sensible sequencing of conditions, e.g. should the national holiday calendar be checked first before checking business hours as if it is a national holiday, the business hours may not actually need to be checked.
@@ -85,11 +85,11 @@ Consideration should be paid to a sensible sequencing of conditions, e.g. should
 
 In order to perform an action, the condition will be checked. Action lines with **-no-** condition set will be automatically performed by every call setup. Action lines with a condition set will only be performed should the condition be is met. It is also possible to use the same action condition in multiple lines. In this scenario, the actions are performed sequentially.
 
-Conditions can be added under `ACD` > `Action Conditions`.
+Conditions can be added under {{< ui-button "ACD" >}} > {{< ui-button "Action Conditions" >}}.
 
 ### Call Status
 
-pascom phone systems are able to identify when a caller has not be able to reach their desired contact / team or destination in the call flow and in such scenarios can perform additional actions - known as `Actions After`. Therefore, in addition to conditions, it is also possible to add a `Call Status` (dial status) to **Actions After**, meaning the state of the call (unavailable or busy) can be checked and different actions can be performed according to the call state.
+pascom phone systems are able to identify when a caller has not be able to reach their desired contact / team or destination in the call flow and in such scenarios can perform additional actions - known as {{< ui-button "Actions After" >}}. Therefore, in addition to conditions, it is also possible to add a {{< ui-button "Call Status" >}} (dial status) to **Actions After**, meaning the state of the call (unavailable or busy) can be checked and different actions can be performed according to the call state.
 
 
 |Call Status|Description|Applies to Users|Applies to Queues|
@@ -110,7 +110,7 @@ pascom phone systems are able to identify when a caller has not be able to reach
 
 In scenarios when a selection of actions could be applied to multiple objects, it is possible to create an action template and apply this template to all objects where it applies.
 
-Top add an action template, navigate to `ACD` > `Action templates` > `Add`.
+Top add an action template, navigate to {{< ui-button "ACD" >}} > {{< ui-button "Action templates" >}} > {{< ui-button "Add" >}}.
 
 |Setting|Description|
 |---|---|
@@ -118,11 +118,11 @@ Top add an action template, navigate to `ACD` > `Action templates` > `Add`.
 |**Object type**|User, Team or IVR menu|
 |**Call position**|Action Before or Action After|
 
-After clicking `Save` it will then be possible to select the template under the corresponding object and call position via the `Templates` button.
+After clicking {{< ui-button "Save" >}} it will then be possible to select the template under the corresponding object and call position via the {{< ui-button "Templates" >}} button.
 
-In order to distribute actions to the corresponding objects, go back to the `ACD` > `Action templates` overview and select (via checkbox) the desired template and click the `Roll out template` button.
+In order to distribute actions to the corresponding objects, go back to the {{< ui-button "ACD" >}} > {{< ui-button "Action templates" >}} overview and select (via checkbox) the desired template and click the {{< ui-button "Roll out template" >}} button.
 
-Under `Options` you can configure the template roll out setup:
+Under {{< ui-button "Options" >}} you can configure the template roll out setup:
 
 |Setting|Description|
 |---|---|

@@ -25,7 +25,7 @@ With [our VoIP Software] (https://www.pascom.net/en/mobydick-voip/ "pascom VoIP 
 
 ## Snom Provisioning
 
-The process of configuring or registering an VoIP phone with an IP PBX such as pascom's is know as `Provisioning`. For this purpose, pascom phone systems include a Default Configuration (`Devices > Basic Configuration`). For most deployment scenarios, these standard settings provide an ideal configuration. However, in some cases, the settings may need to be modified.
+The process of configuring or registering an VoIP phone with an IP PBX such as pascom's is know as {{< ui-button "Provisioning" >}}. For this purpose, pascom phone systems include a Default Configuration ({{< ui-button "Devices" >}} > {{< ui-button "Basic Configuration" >}}). For most deployment scenarios, these standard settings provide an ideal configuration. However, in some cases, the settings may need to be modified.
 
 ## (Optional) Mass Deployments
 
@@ -39,7 +39,7 @@ The telephone requires a DHCP server in order to receive an IP Address.
 {{% /notice %}}
 
 {{% notice tip %}}
-Should the telephone not be factory new, ensure you perform a **factory reset**. In order to do this on the phone, power up the phone and then press`**##` holding the final `#` until after the phone has restarted and a menu has appeared. Select option `1` for factory settings. 
+Should the telephone not be factory new, ensure you perform a **factory reset**. In order to do this on the phone, power up the phone and then press <strong>\**##</strong> holding the final <strong>#</strong> until after the phone has restarted and a menu has appeared. Select option **1** for factory settings. 
 {{% /notice %}}
 
 ### Connect the Phone
@@ -56,31 +56,31 @@ MAC addresses can be found on the rear underside of the telephone.
 
 Alternatively, using your browser, surf to the previously noted telephone's IP address.
 
-Under `System Information > MAC-Address` please take a note of the phone's IP address.
+Under {{< ui-button "System Information" >}} > {{< ui-button "MAC-Address" >}} please take a note of the phone's IP address.
 
 ### Add Phones / Endpoints
 
-Log into your pascom phone system and under `Devices > Device list` and press `Add` and select the option **IP Telephone: Manufacturer Snom**.
+Log into your pascom phone system and under {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}} and press {{< ui-button "Add" >}} and select the option **IP Telephone: Manufacturer Snom**.
 
 Under the corresponding field, enter the **Mac-Address** that you have just found and noted. 
 
 ### Apply Jobs
 
-After saving your phone setup configurations, a corresponding prompt to apply telephony configs will appear in the job box (top of the screen). Simply start the job by clicking on the `green tick`.
+After saving your phone setup configurations, a corresponding prompt to apply telephony configs will appear in the job box (top of the screen). Simply start the job by clicking on the {{< ui-button "green tick" >}}.
 
 ### Finding the Provisioning URL
 
-Select the desired telephone from the device list and under `Action` select the option `Provisioning URL`. Copy the **URL** to your clipboard.
+Select the desired telephone from the device list and under {{< ui-button "Action" >}} select the option {{< ui-button "Provisioning URL" >}}. Copy the **URL** to your clipboard.
 
 ### Enter the Provisioning URL on the Telephone
 
-Go back to the telephone Web UI and under `Advanced Settings > Update > Setting URL` paste the copied Provisioning URL.
+Go back to the telephone Web UI and under {{< ui-button "Advanced Settings" >}} > {{< ui-button "Update" >}} > {{< ui-button "Setting URL" >}} paste the copied Provisioning URL.
 
-Click on `Apply` and finally `Reboot`.
+Click on {{< ui-button "Apply" >}} and finally {{< ui-button "Reboot" >}}.
 
 ### Assigning Users
 
-As soon as the IP phone has appeared in the Device List, it can be edited via the `Edit` button. Under the `Assign` tab, the phone can be assigned to a [user (or location)]({{< ref "concept/user">}}).
+As soon as the IP phone has appeared in the Device List, it can be edited via the {{< ui-button "Edit" >}} button. Under the {{< ui-button "Assign" >}} tab, the phone can be assigned to a [user (or location)]({{< ref "concept/user">}}).
 
 After saving and once again apply the telephony configuration, the telephone will restart.
 
@@ -122,7 +122,7 @@ Press the **?** (i.e. the **help**) in order to call up the phone IP address.
 
 #### Finding the IP-Address via the pascom Web UI Device List
 
-Log into the PBX Web UI and select the `Devices` > `Device list`, which provides you an overview of all available devices. To the left of each entry is an *Info* symbol which when clicked will open an overview of the provisioned telephone including the IP address.
+Log into the PBX Web UI and select the {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}}, which provides you an overview of all available devices. To the left of each entry is an *Info* symbol which when clicked will open an overview of the provisioned telephone including the IP address.
 
 #### Admin Rights
 
@@ -130,7 +130,7 @@ In order to access certain menu options with the Snom Telephone web UI, you will
 
 ### Function Keys
 
-In the menu of the left, click on the `Function Keys` option.
+In the menu of the left, click on the {{< ui-button "Function Keys" >}} option.
 
 #### User / Extension Monitoring with BLF Keys
 
@@ -152,24 +152,24 @@ Alongside user extensions, it is also possible to configure keys as login / out 
 
 ### Default Configuration
 
-As previously stated, Snom IP phones are provisioned using the default configurations which can be found under `Devices`> `Basic Configurations`.
+As previously stated, Snom IP phones are provisioned using the default configurations which can be found under {{< ui-button "Devices" >}} > {{< ui-button "Basic Configurations" >}}.
 
 {{% notice note%}}
-When modifying the default configuration settings, ensure you make a duplicate copy of the original using the `Duplicate`tool.
+When modifying the default configuration settings, ensure you make a duplicate copy of the original using the {{< ui-button "Duplicate" >}} tool.
 {{% /notice %}}
 
-In addition, you can set an already edited default configurations as the `standard settings`. Doing so ensures that all newly added IP telephones will automatically be provisioned with these default configurations.
+In addition, you can set an already edited default configurations as the {{< ui-button "standard settings" >}}. Doing so ensures that all newly added IP telephones will automatically be provisioned with these default configurations.
 
 #### Assigning a Default Configuration
 
 A default configuration can be assigned using multiple methods:
 
-+ Via `Devices`> `Basic Configurations` > Choose your Basic configuration set and press `Edit` Under the `Devices` tab, it is possible to add multiple IP telephones.
-+ Via `Devices`> `Device list` > Select and edit the IP Telephone and under the tab `Basic Data` choose the correct **Basic configuration** option.
++ Via {{< ui-button "Devices" >}} > {{< ui-button "Basic Configurations" >}} > Choose your Basic configuration set and press {{< ui-button "Edit" >}} Under the {{< ui-button "Devices" >}} tab, it is possible to add multiple IP telephones.
++ Via {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}} > Select and edit the IP Telephone and under the tab {{< ui-button "Basic Data" >}} choose the correct **Basic configuration** option.
 
 #### Automatic BLF Key Configuration via Basic Configurations
 
-Under the `Configuration` tab, it is possible to modify the existing basic configuration. Under the **Keys** section you will find the already pre-configured function keys which provide a useful guideline to work with.
+Under the {{< ui-button "Configuration" >}} tab, it is possible to modify the existing basic configuration. Under the **Keys** section you will find the already pre-configured function keys which provide a useful guideline to work with.
 
 Navigate to the Snom Telephone web UI and under *Function Keys* configure the **P1** button as an example. As type, select **Extension**, and as number **123** and **ExampleUser** as the short text. Once done, apply the settings.
 
@@ -180,7 +180,7 @@ Search for *fkey0* and *fkey_label0*. Next copy and paste the search result line
     fkey0: dest <sip:123@192.168.100.1>
     fkey_label0: Switchboard
 
-Via the menu tab `devices`, assign these default configurations to the telephones which should have this BLF configuration. Save and apply your changes and once the phones have restarted, the changes will have taken affect.
+Via the menu tab {{< ui-button "devices" >}}, assign these default configurations to the telephones which should have this BLF configuration. Save and apply your changes and once the phones have restarted, the changes will have taken affect.
 
 ### Firmware Updates
 
@@ -188,7 +188,7 @@ From mobydick version 7.14 onwards, IP endpoint firmware will no longer be inclu
 
 #### Upload New Firmware
 
-The desired firmware can be uploaded via the the `Devices`> `Device firmware`:
+The desired firmware can be uploaded via the the {{< ui-button "Devices" >}} > {{< ui-button "Device firmware" >}}:
 
 |Settings|Description|
 |---|---|
@@ -199,7 +199,7 @@ The desired firmware can be uploaded via the the `Devices`> `Device firmware`:
 
 #### Firmware Roll Outs
 
-Firmware updates can be rolled out via the `Devices` > `Device list` menu. Simply select the desired Snom Endpoints from the list via the check boxes and click `Actions` > `Roll out firmware`. This will open an overview of all selected devices to which the new firmware version should be rolled out to. Click `Firmware Update` to roll out the desired firmware version.
+Firmware updates can be rolled out via the {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}} menu. Simply select the desired Snom Endpoints from the list via the check boxes and click {{< ui-button "Actions" >}} > {{< ui-button "Roll out firmware" >}}. This will open an overview of all selected devices to which the new firmware version should be rolled out to. Click {{< ui-button "Firmware Update" >}} to roll out the desired firmware version.
 
 #### Recommended Firmware
 

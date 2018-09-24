@@ -14,7 +14,7 @@ weight: 22
 
 ## Adding Users
 
-To add a new user, login into the admin Web UI and go to `Users` > `User list` and click `Add`
+To add a new user, login into the admin Web UI and go to {{< ui-button "Users" >}} > {{< ui-button "User list" >}} and click {{< ui-button "Add" >}}
 
 Next, simply complete the quick user add form with the information below:
 
@@ -41,9 +41,9 @@ Once finished with adding users, simply click on the following:
 
 ### Add Users Using the .xlsx Import
 
-For the purposes of the initial installation, importing users via a .xlsx file is a very good option. The file *UserImport* can be found under `Appliance` > `Import` >`User Import`. Simply download the template, fill it out and upload it. Please take note of the instructions within the file.
+For the purposes of the initial installation, importing users via a .xlsx file is a very good option. The file *UserImport* can be found under {{< ui-button "Appliance" >}} > {{< ui-button "Import" >}} > {{< ui-button "User Import" >}}. Simply download the template, fill it out and upload it. Please take note of the instructions within the file.
 
-Alternatively, you can use the *Advanced Import* option (`Appliance` > `Import` >`Advanced Import`). This option enables you to configure additional settings whilst adding the users:
+Alternatively, you can use the *Advanced Import* option ({{< ui-button "Appliance" >}} > {{< ui-button "Import" >}} > {{< ui-button "Advanced Import" >}}). This option enables you to configure additional settings whilst adding the users:
 
 * Assign IP telephones
 * Assign pascom softphone
@@ -73,7 +73,7 @@ As standard, only your pascom Administrator can log in to the Web UI. However, s
 
 Each user is automatically configured with a voicemail box. Per default, the voicemail box exists, but callers will not be transferred to it.
 
-Firstly, voicemail handling must be configured. Under `Users` > `User List` > select a user and click  `Edit`. Under the `Basic Data` tab, you will be able to change the following settings:
+Firstly, voicemail handling must be configured. Under {{< ui-button "Users" >}} > {{< ui-button "User List" >}} > select a user and click  {{< ui-button "Edit" >}}. Under the {{< ui-button "Basic Data" >}} tab, you will be able to change the following settings:
 
 |Settings|Description|
 |---|---|
@@ -85,7 +85,7 @@ Finally, a Voicemail box action must be added should this not have already been 
 
 ## Alternative CallerID (CID Number)
 
-When adding a user, the user will be assigned with their individual extension under which they can be called. Normally this extension number will also be displayed to other system users. Should your requirements differ, it is possible to configure an alternative caller ID / CID number under `Users` > `User List` > select the required user and click `Edit` and under the `Basic Data` tab enter the alternative **CID Number**.
+When adding a user, the user will be assigned with their individual extension under which they can be called. Normally this extension number will also be displayed to other system users. Should your requirements differ, it is possible to configure an alternative caller ID / CID number under {{< ui-button "Users" >}} > {{< ui-button "User List" >}} > select the required user and click {{< ui-button "Edit" >}} and under the {{< ui-button "Basic Data" >}} tab enter the alternative **CID Number**.
 
 {{% notice tip %}}
 Should a user use /signal a different extension for external calls, please configure this in the trunks menu under outbound calls.
@@ -97,13 +97,13 @@ For each user, a **phonebook** entry is added containing both their **display na
 
 It is also possible to **deactivate** an entry, for example, should a member of the management team require that their phonebook entry not be visible to other users.
 
-User phone book entry settings can be found and modified under `Users` > `User List` > select the required user and click `Edit` and then the `Phonebook` tab.
+User phone book entry settings can be found and modified under {{< ui-button "Users" >}} > {{< ui-button "User List" >}} > select the required user and click {{< ui-button "Edit" >}} and then the {{< ui-button "Phonebook" >}} tab.
 
 <!--For more details, please see //FixMe Link Maintaining the Central Telephone Book.-->
 
 ## Virtual Fax Devices
 
-Under `Users` > `User List` > select the required user and click `Edit` and then the `Fax Device` tab, it is possible to add and assign a virtual fax device for this user.
+Under {{< ui-button "Users" >}} > {{< ui-button "User List" >}} > select the required user and click {{< ui-button "Edit" >}} and then the {{< ui-button "Fax Device" >}} tab, it is possible to add and assign a virtual fax device for this user.
 
 |Setting|Description|
 |---|---|
@@ -114,7 +114,7 @@ Under `Users` > `User List` > select the required user and click `Edit` and then
 
 ## Endpoints / Devices
 
-Under `Users`> `User List` select the required user and click `Edit` and then the `Devices` tab, it is possible to assign devices to the selected user. On the left of the screen, an overview of all available devices will be displayed. Using the blue arrows, it is possible to select the desired telephone and add it to the assigned device list (the right hand column). If the device is no longer required by the user, use the left arrow to move the device back to the available devices column on the left.
+Under {{< ui-button "Users" >}} > {{< ui-button "User List" >}} select the required user and click {{< ui-button "Edit" >}} and then the {{< ui-button "Devices" >}} tab, it is possible to assign devices to the selected user. On the left of the screen, an overview of all available devices will be displayed. Using the blue arrows, it is possible to select the desired telephone and add it to the assigned device list (the right hand column). If the device is no longer required by the user, use the left arrow to move the device back to the available devices column on the left.
 
 Users can be assigned any number of devices. Which endpoint should be used to make and receive calls can be determined via the pascom desktop client.
 
@@ -133,20 +133,20 @@ User timeouts must be set per device and per user.
 
 ## Locations
 
-Under `Users`> `Locations` > `Add` it is possible to add a location (i.e. HomeOffice, Office Location, specific workstation etc). Under the `Devices` tab it is possible to assign devices to the location (multiple devices can be assigned to a location).
+Under {{< ui-button "Users" >}} > {{< ui-button "Locations" >}} > {{< ui-button "Add" >}} it is possible to add a location (i.e. HomeOffice, Office Location, specific workstation etc). Under the {{< ui-button "Devices" >}} tab it is possible to assign devices to the location (multiple devices can be assigned to a location).
 
-Under the `User Assignment` tab, you can assign the location to users. The location user assignment can also be left empty once added. Users can login into the location using their telephone or via the pascom client.
+Under the {{< ui-button "User Assignment" >}} tab, you can assign the location to users. The location user assignment can also be left empty once added. Users can login into the location using their telephone or via the pascom client.
 
 |Login into a location:||
 |---|---|
 |**Using the pascom client**|Above the profile picture on the left of the client it is possible to select a location <br> Should you often work from the same locations, these will be displayed via the dropdown list. <br> Otherwise, click on the softphone menu and under my devices it is possible to select from a list of available locations.<br>If you wish to log out of a location, simply select *None/roaming* |
 |**Using an IP Telephone**|IP telephones which are provisioned by your pascom phone system will have a pascom menu key assigned. Press this key and select *login*. Enter your extension number followed by your 4 digit PIN number.<br>To log out, press the pascom menu key and select *Log out*|
 
-Under `Users`> `User List` select the required user and click `Edit`. Under the `Location` tab you can then assign Locations to users plus have an overview of in which locations users are currently working.
+Under {{< ui-button "Users" >}} > {{< ui-button "User List" >}} select the required user and click {{< ui-button "Edit" >}}. Under the {{< ui-button "Location" >}} tab you can then assign Locations to users plus have an overview of in which locations users are currently working.
 
 ## Call Forwarding (Server Based)
 
-An overview of call forwarding can be found under `Users`> `Call forwarding`, which will display all call forwards which have been setup by your users, regardless of whether they are currently active or inactive. It is also possible to add new call forwards via this menu option.
+An overview of call forwarding can be found under {{< ui-button "Users" >}} > {{< ui-button "Call forwarding" >}}, which will display all call forwards which have been setup by your users, regardless of whether they are currently active or inactive. It is also possible to add new call forwards via this menu option.
 
 {{% notice warning %}}
 Call Forwarding should be setup using your pascom phone system (i.e. pascom client or the pascom menu key on your IP phone). Doing so will avoid uncontrolled, never ending forwarding loops.
@@ -167,7 +167,7 @@ For more information, please refer to the [Actions article]({{< ref "acd/actions
 
 Users, devices, locations and teams can all be members of one or more role groups. The role itself can be assigned with settings and permissions, making it possible for example to manage telephony relevant settings such as allowing call pickups from other users.
 
-Roles can be configured via the `Users`> `Roles` menu.
+Roles can be configured via the {{< ui-button "Users" >}} > {{< ui-button "Roles" >}} menu.
 
 There is a special **Role** called **All Users**, which as default is assigned to all Users, devices, workstations and teams and can not be removed.
 
@@ -194,7 +194,7 @@ Users and workspaces (locations) can be assigned with multiple Endpoints. The co
 
 A prerequisite for the configuration is that users have already been added and that a minimum of one endpoint has been assigned.
 
-Within the Web UI, click on `User` > `User list` > select user > and go to the `Devices` tab. In the right-hand column, you will see an overview of the directly assigned devices with the corresponding FollowMe settings. Next, click on the FollowMe setting:
+Within the Web UI, click on {{< ui-button "User" >}} > {{< ui-button "User list" >}} > select user > and go to the {{< ui-button "Devices" >}} tab. In the right-hand column, you will see an overview of the directly assigned devices with the corresponding FollowMe settings. Next, click on the FollowMe setting:
 
 ![FollowMe](followme_webui_settings.en.png?width=50% "FollowMe pascom Web UI")
 
@@ -213,11 +213,11 @@ FollowMe settings can be configured for
 
 ### FollowMe UC Client Set up
 
-If a user is permitted to manage their FollowMe settings, this can be done via their pascom Desktop UC client (`Settings` > `FollowMe`).
+If a user is permitted to manage their FollowMe settings, this can be done via their pascom Desktop UC client ({{< ui-button "Settings" >}} > {{< ui-button "FollowMe" >}}).
 
 ![FollowMe](followme_settings_client.en.png?width=100% "User Defined FollowMe")
 
-Users can configure individual FollowMe settings for internal and external calls as well as calls originating via a queue / team. To do so, the user must simply toggle between the `External`, `Internal` and `Teams` tabs.
+Users can configure individual FollowMe settings for internal and external calls as well as calls originating via a queue / team. To do so, the user must simply toggle between the {{< ui-button "External" >}}, {{< ui-button "Internal" >}} and {{< ui-button "Teams" >}} tabs.
 
 |Settings|Description|
 |---|---|

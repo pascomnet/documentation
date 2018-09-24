@@ -27,7 +27,7 @@ After purchasing and activating your M-net SIP trunk, you will receive a letter 
 
 ## Setup
 
-Under `Gateways` > `Trunks` > `Add`, add a new M-net trunk. This will take you the pascom SIP Trunk Provider database. Use the filter to search for M-net and select the *M-net SIP-Trunk* template and complete it using the received account details.
+Under {{< ui-button "Gateways" >}} > {{< ui-button "Trunks" >}} > {{< ui-button "Add" >}}, add a new M-net trunk. This will take you the pascom SIP Trunk Provider database. Use the filter to search for M-net and select the *M-net SIP-Trunk* template and complete it using the received account details.
 
 |Variable|Description|
 |---|---|
@@ -42,20 +42,20 @@ Under `Gateways` > `Trunks` > `Add`, add a new M-net trunk. This will take you t
 
 <!--FIXME satz zu zentrale verwirrend  -->
 
-After pressing `Save` the trunk will be added. Doing so will automatically add default call rules, which can then be adapted according to your requirements. For more please read the following article on [Call Rules]({{< ref "/trunks/rules">}}).
+After pressing {{< ui-button "Save" >}} the trunk will be added. Doing so will automatically add default call rules, which can then be adapted according to your requirements. For more please read the following article on [Call Rules]({{< ref "/trunks/rules">}}).
 
 ## Making Changes to the Trunk
 
 ### Change Password
 
-Go to `Gateways` > `Trunks` and select the required trunk and press `Edit`. Under the `Account` tab you can change your password by doubling clicking on the desired field under the `Password` column. Confirm the changes by pressing `Ok` and save and apply the new settings via the `Save` and then finally the apply telephony configurations.
+Go to {{< ui-button "Gateways" >}} > {{< ui-button "Trunks" >}} and select the required trunk and press {{< ui-button "Edit" >}}. Under the {{< ui-button "Account" >}} tab you can change your password by doubling clicking on the desired field under the {{< ui-button "Password" >}} column. Confirm the changes by pressing {{< ui-button "Ok" >}} and save and apply the new settings via the {{< ui-button "Save" >}} and then finally the apply telephony configurations.
 
 ### Add Additional M-net SIP Accounts
 
-Should you wish to expand your M-net SIP trunk connection with additional accounts, please add the new accounts under the `Accounts` tab within the current Trunk template. As the settings are in principle the same, you can use the already added account. Simply click and mark the account and then click the `Duplicate` button. 
+Should you wish to expand your M-net SIP trunk connection with additional accounts, please add the new accounts under the {{< ui-button "Accounts" >}} tab within the current Trunk template. As the settings are in principle the same, you can use the already added account. Simply click and mark the account and then click the {{< ui-button "Duplicate" >}} button. 
 In the newly appeared account line, it is possible to update the **Username** and **password** fields and other fields according to your requirements.
 
-Next, the [inbound and outbound call rules]({{< ref "/trunks/rules">}}) must be modified. By the outbound rules you will need choose which account should be used per rule. Scroll to the right and under the `Account` column choose the desired account.
+Next, the [inbound and outbound call rules]({{< ref "/trunks/rules">}}) must be modified. By the outbound rules you will need choose which account should be used per rule. Scroll to the right and under the {{< ui-button "Account" >}} column choose the desired account.
 
 
 [inbound and outbound call rules]({{< ref "/trunks/rules">}})

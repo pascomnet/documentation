@@ -64,7 +64,7 @@ weight: 125
 |**\*99{team}#{extension}#{pausecode}**|Pause / unpause an agent in a certain team.|To pause / unpause an agent with ext. 123 from the team 1100 using pause code 10:<br>*\*99110#123#10*|Can also be added as a *BLF* key on an IP desktop phone.|
 
 {{% notice info %}}
-Function Codes can be found in the Web UI under `Appliance`>`System Settings`> `asterisk.dialplan.global`. If needed the codes can also be modified here.
+Function Codes can be found in the Web UI under {{< ui-button "Appliance" >}} > {{< ui-button "System Settings" >}} > `asterisk.dialplan.global`. If needed the codes can also be modified here.
 
 Should you use Function Codes, please check the **asterisk.dialplan.alias.global** parameter, as it should have the user extension number length set as the value. Per default is the value set to 3.<br>
 We recommend against configuring user extensions with varying lengths as for example in the above scenarios, certain function codes will no longer function correctly.
