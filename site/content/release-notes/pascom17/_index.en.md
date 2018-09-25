@@ -27,8 +27,33 @@ Ensure to do the following before the update to this version:<br><br>
 - The community version includes functionality for the new mobile app, but can not send any PUSH notifications. Therefore, you are only reachable per chat messages when the app is active in the foreground. Calls will be forwarded over GSM just as with the previous classic mobile app.     
 - After a cloudstack update, you should configure your Proxy to include the new options for mobile phone pairing. Only activate these settings for the Proxy that is accessible from the Internet.        
 - After a cloudstack update, please refresh your license in order to activate the PUSH functionality.         
-- The FollowMe system for pascom softphones and mobile devices is now end-user configurable per default.
+- The FollowMe system for pascom softphones and mobile devices is now end-user configurable per default.     
+- To restore backups, the backup must be from an LTS or later
 {{% /notice %}}
+
+
+## Release 17.11. (25.09.2018)
+
+**Change Overview**
+
+* Server-side support for creating a phonebook entry from an ongoing call or journal entry
+* The firmware version 4.0 on the Snom M700 is now supported with autoprovisioning
+* Important: To restore backups, the backup must be from an LTS or later
+
+**MODIFICATIONS:**
+
+* [MD-5352] - Improve translation code of voicemailConf.php
+* [MD-8007] - Optimize phonecallrecord, journal and eventlog table
+* [MD-9220] - Create a phonebook entry out of a journal entry or running phonecall
+* [MD-9837] - Limit database import to LTS onwards 
+* [MD-9923] - No RTP stream after hold / unhold using snom desk phone via mobydick.cloud
+* [MD-10122] - Improve Microsoft AD Template
+* [MD-10143] - Snom M700 provisioning broken with new firmware 4.00 
+* [MD-10179] - Implement provider template for "envia TEL"
+* [MD-10252] - Cleanup orphaned roster and archive xmppserver DB entries
+* [MD-10277] - Aastra/mitel dect handset auth code is empty after migration
+* [MD-10313] - Wrong labels are attached to outgoing mobile hub calls
+* [MD-10397] - Modify Seabix trunk template
 
 
 ## Release 17.10 (19.06.2018)

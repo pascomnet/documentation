@@ -27,8 +27,32 @@ Ensure to do the following before the update to this version:<br><br>
 - Sie sollten nach einem Cloudstack Update Ihren Proxy konfigurieren. Dort finden Sie eine neue Option für das Pairing der Mobiltelefone. Aktivieren Sie diese nur bei dem Proxy, der aus dem Internet erreichbar ist.                  
 - aktualisieren Sie bitte nach einem Cloudstack Update Ihre Lizenz um die Push Funktionalität freizuschalten.              
 - das FollowMe ist jetzt für pascom Softphones und Mobilgeräte standardmäßig vom Benutzer konfigurierbar.            
+- Für die Wiederherstellung von Backups muss das Backup von einer LTS oder neuer stammen
 {{% /notice %}}
 
+
+## Release 17.11. (25.09.2018)
+
+**Auf einen Blick**
+
+* Serverseitige Unterstützung, um aus einem laufenden Anruf oder einem Journaleintrag einen Telefonbucheintrag zu erstellen
+* Die Firmware-Version 4.0 beim Snom M700 wird nun mit Autoprovisionierung unterstützt
+* Wichtig: Für die Wiederherstellung von Backups muss das Backup von einer LTS oder neuer stammen
+
+**ÄNDERUNGEN:**
+
+* [MD-5352] - Improve translation code of voicemailConf.php
+* [MD-8007] - Optimize phonecallrecord, journal and eventlog table
+* [MD-9220] - Create a phonebook entry out of a journal entry or running phonecall
+* [MD-9837] - Limit database import to LTS onwards 
+* [MD-9923] - No RTP stream after hold / unhold using snom desk phone via mobydick.cloud
+* [MD-10122] - Improve Microsoft AD Template
+* [MD-10143] - Snom M700 provisioning broken with new firmware 4.00 
+* [MD-10179] - Implement provider template for "envia TEL"
+* [MD-10252] - Cleanup orphaned roster and archive xmppserver DB entries
+* [MD-10277] - Aastra/mitel dect handset auth code is empty after migration
+* [MD-10313] - Wrong labels are attached to outgoing mobile hub calls
+* [MD-10397] - Modify Seabix trunk template
 
 
 ## Release 17.10 (19.06.2018)
