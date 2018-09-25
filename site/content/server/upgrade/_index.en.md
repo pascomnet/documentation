@@ -96,10 +96,10 @@ Should you power all your hardware telephones centrally using PoE, then simply d
 
 All hardware phones must switched from SIP-UDP and RTP to SIP-TLS and SRTP (encryption). Once you have prepared the DHCP server, you will only need to restart all the telephones. This process must be done manually as rebooting via the pascom Server without previously having performed this Provisioning switch is not possible. 
 
-### Neuprovisionierung Beronet PCI-Karte
+<!--### Neuprovisionierung Beronet PCI-Karte
 
 
-### Neuprovisionierung Beronet Box
+### Neuprovisionierung Beronet Box-->
 
 ### pascom Desktop Client Updates
 
