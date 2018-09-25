@@ -48,5 +48,5 @@ Das pascom Support Team kann Ihnen nur bei Ämtern behilflich sein die über ein
 |Telekom SIP-Trunk| [Details]( {{< ref "/trunk-templates/telekom-sip-trunk" >}}) |
 |TelemaxX|
 |upc speed Pack|
-|Vadafone| Aktuell in pascom 18 nicht unterstützt da keine Registrierung möglich! |
+|Vodafone| Aktuell in pascom 18 nicht unterstützt da keine Registrierung möglich! |
 |voipGATE Business|
