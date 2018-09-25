@@ -9,7 +9,7 @@ weight: 70
 ## Licence Upgrades
 
 {{% notice tip%}}
-If a licence that has been migrated pascom 18 or newer can not be used for older systems. Purchasing additional user licences for an older pascom phone system is no longer possible without upgrading to pascom 18 or newer.
+Guide to upgrading from pascom 17 or older to pascom 18 or newer. 
 {{% /notice %}}
 
 Before you can upgrade, please **contact** our sales team in order to update your licence to pascom 18 or newer. This process is of course free of charge.
