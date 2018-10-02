@@ -66,6 +66,10 @@ Click {{< ui-button "Start Backup" >}} and make sure you **download** the newly 
 
 ### pascom Server New Installation
 
+{{% notice tip %}}
+As you have most likely configured the new pascom server with the same IP address you previously used, it is likely that when surfing to the IP address your are redirected to **/mobydickcmd/** as this is saved within your **Browser's Cache**. In this case, simply use "HTTPS" (e.g.: https://192.168.0.1) in order to access the system.
+{{% /notice %}}
+
 Now install the pascom phone system server version 18 or newer. 
 
 Should you by deploying a virtual phone system, to start with it is advisable to setup a new virtual machine and only shutdown the old system. 
@@ -88,7 +92,7 @@ Should you have used the pascom DHCP server in the past, you will need to activa
 
 Should you use your own DHCP Server for provisioning, you will need to update the DHCP option 66 as this has changed slighty in terms of provisioning. Details on how to do this can be found in the HowTo [Telephone Provisioning via DHCP]({{< ref "/howto/dhcp-provisioning" >}}).
 
-### New Provisioning of All Endpoints and Gateways
+### New Provisioning of All Telepones
 
 {{% notice tip %}}
 Should you power all your hardware telephones centrally using PoE, then simply disconnecting and reconnecting your PoE switch from the network is sufficient to restart all the phones.
@@ -96,10 +100,52 @@ Should you power all your hardware telephones centrally using PoE, then simply d
 
 All hardware phones must switched from SIP-UDP and RTP to SIP-TLS and SRTP (encryption). Once you have prepared the DHCP server, you will only need to restart all the telephones. This process must be done manually as rebooting via the pascom Server without previously having performed this Provisioning switch is not possible. 
 
-<!--### Neuprovisionierung Beronet PCI-Karte
+### New Provisioning of beroNet PCI Cards
 
+Internal beroNet PCI cards can still be automatically provisioned. There is no need to copy the provisioning URL. Simply proceed as follows: 
 
-### Neuprovisionierung Beronet Box-->
+#### Check beroNet Firmware
+
+Log into the beroNet card web UI and und **Management** > **Info** that you use appfs **16 or newer**. If not, update the box now:
+
+* Download the [Firmware 16.X](https://beronet.atlassian.net/wiki/spaces/PUB/pages/61210659/Tools+and+Downloads) (Section: beroNet OS)
+* Under the beroNet **Management** > **Firmware update** select the update mode. 
+* Upload the firmware 16.X after the reboot and start the update
+
+#### Start Provisioning 
+
+Log into the phone system web UI. Under **Gateways** > **Gateway list**, select your beroNet Gateway and click **Actions** > **Provisioning**. The PCI cards will automatically restart and takes over the configuration of the pascom server.
+
+### New Provisioning of a beroNet Box
+
+As beroNet boxes can now also be used with pascom.cloud solutions, pairing using the provisioning URL is required. Simply proceed as follows:
+
+#### Check beroNet Firmware
+
+Log into the beroNet card web UI and und **Management** > **Info** that you use appfs **16 or newer**. If not, update the box now:
+
+* Download the [Firmware 16.X](https://beronet.atlassian.net/wiki/spaces/PUB/pages/61210659/Tools+and+Downloads) (Section: beroNet OS)
+* Under the beroNet **Management** > **Firmware update** select the update mode. 
+* Upload the firmware 16.X after the reboot and start the update
+
+#### Determine the Provisioning URL
+
+Log into the phone system web UI. Under **Gateways** > **Gateway list**, select your beroNet Gateway and click **Actions** > **Provisioning URL**, which you must now copy to your clipboard.
+
+#### Enter the Provisioning URL on a beroNet Device
+
+Log into thhe web UI of the beroNet box and under **GUI Mode**, ensure that you have selected **Advanced**.
+
+Under **Preferences** > **Provisioning**, enter the following values:
+
+|Field|Value|
+|---|---|
+|Manual Config| activate|
+|Provisioning on Boot:|**always**|
+|Provisioning-URL|Paste the previously copied Provisioning URL|
+|Polling Interval (min.)|Leave empty|
+
+Save your changes and the beroNet box will now restart.
 
 ### pascom Desktop Client Updates
 
@@ -123,7 +169,5 @@ The QueueMetrics Interface now transfers data between the pascom Server and Queu
 
 Further Information can be found in the [Uniloader Documentation](http://manuals.loway.ch/Uniloader-chunked/)
 
-### Manual File System Modifications are Lost
 
-### Mail to Fax is Now Different
 
