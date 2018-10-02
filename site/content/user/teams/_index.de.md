@@ -10,7 +10,7 @@ weight: 30
 
 ## Konzept
 
-Jeder Benutzer hat in der [VoIP Telefonalage](https://www.pascom.net/de/mobydick-voip/) seine eigene Durchwahl, Geräte und Aktionen die den Anruf an diese Durchwahl steuern. **Zusätzlich kann** ein Benutzer Mitglied in einem Team sein.
+Jeder Benutzer hat in der [VoIP Telefonalage](https://www.pascom.net/de/) seine eigene Durchwahl, Geräte und Aktionen die den Anruf an diese Durchwahl steuern. **Zusätzlich kann** ein Benutzer Mitglied in einem Team sein.
 
 ![IllustratioTeam Konzept](concept.de.png?width=60%)
 
