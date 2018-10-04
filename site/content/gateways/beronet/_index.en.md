@@ -1,6 +1,6 @@
 ---
-title: beroNet Gateways einrichten
-description: Integrieren Sie Ihre Analog- und ISDN-Endgeräte mithilfe von beroNet Gateways in Ihre pascom
+title: beroNet Gateways Setup
+description: How to integrate Analog and ISDN endpoints into your pascom phone system using a beroNet Gateway. 
 weight: 10
 ---
 
@@ -13,7 +13,6 @@ beroNet are a German Gateway vendor who offer a modular construction, meaning yo
 The beroNet Gateway is connected via LAN and is assigned an IP address from the telephone network. Connections to the public telephone network and analogue terminal devices are established using the front ports. beroNet Boxes allow for the installation of various modules. Depending on the module, the front ports are compatible with analogue or ISDN devices. Due to the LAN connection, beroNet Boxes can be easily integrated with a pascom virtual appliance.
 
 ![beroNet Gateway](voip_gateway.en.png)
-
 
 ### beroNet Cards
 beroNet expansion cards can be mounted directly in a pascom hardware appliance and are automatically assigned an IP address from the zero-config network range **169.254.0.0/16** during boot. With exception of this difference configuration of beroNet Gateways and expansion cards

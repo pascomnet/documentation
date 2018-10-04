@@ -30,18 +30,17 @@ In order for a SIP device to operate with the pascom server, the following funct
 
 ### Add Endpoint
 
-Log into the phone system web UI and under `Devices > Device list`, click “Add” and select a new device type: IP telephone: any manufacturer or softphone
+Log into the phone system web UI and under {{< ui-button "Devices" >}} > {{< ui-button "Device List" >}}, click {{< ui-button "Add" >}} and select a new device type: IP telephone: any manufacturer or softphone
    
 Next, setup and take a not of the **Device Login** and **Password** for the device or use the automatically generated credentials. 
 
 ### Add / Assign Users
 
-Under `Users > User list`, either add a new user or assign an existing user to the phone.
+Under {{< ui-button "Users" >}} > {{< ui-button "User List" >}}, either add a new user or assign an existing user to the phone.
  
 ### Apply Jobs
 
 After saving your changes, an entry will appear in the job box (top centre of the window). Start the job by clicking apply or the `green tick`.
-
 
 ### On the SIP Device
 
@@ -62,7 +61,6 @@ You will need to configure the following settings on the SIP endpoint:
 #### SIP TLS and SRTP
 
 Read the SIP endpoint handbook regarding how to activate SIP TLS and SRTP. This could involve multiple setting configs. 
-
 
 ## Test Call
 
