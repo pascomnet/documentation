@@ -1,5 +1,5 @@
 ---
-title: pascom 18
+title: pascom Server 18
 description: Mit dem pascom Release 18 stehen Ihnen eine Vielzahl an neuen Funktionen zur Verfügung.
 weight: 996
 ---
@@ -55,6 +55,25 @@ Patton Gateways werden nicht mehr unterstützt. Sollten Sie noch ISDN im Einsatz
 ### Einstellung Siemens Unify optiPoint Support
 
 Wegen fehlender Verschlüsselung für Sprache wie Provisionierung wurde die Unterstützung für die Siemens Unify optiPoint Modell eingestellt.
+
+
+## Release 18.01 (09.10.2018)
+
+**Auf einen Blick**
+
+- TAPI und weitere Third-Party XMPP-Clients können sich nun wieder zum Server verbinden ohne dass die Verbindung abbricht
+- Die pascom Appliance kann nun zuverlässig neu gestartet werden
+- Eine angepasste Mailserver-Konfiguration bleibt nun beim Neustart erhalten
+
+**ÄNDERUNGEN:**
+
+- MD-11016 - Custom mail server gets lost after reboot
+- MD-11037 - Fix XMPP Version check for clients
+- MD-11040 - Red mini appliance fails to startup properly, containers are not running
+- MD-11041 - Can not add a beronet gateway with only one interface
+- MD-11048 - Self signed certificate change after appliance update
+- MD-11049 - Add restic binary to host firmware
+
 
 ## Release 18.00 (20.09.2018)
 

@@ -1,5 +1,5 @@
 ---
-title: pascom 17
+title: pascom Server 17
 description: With the new pascom version 17 Release, numerous new and improved functions are now available
 weight: 997
 ---

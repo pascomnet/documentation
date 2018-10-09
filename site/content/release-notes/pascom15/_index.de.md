@@ -1,5 +1,5 @@
 ---
-title: pascom 15
+title: pascom Server 15
 description: Mit dem pascom Release 15 stehen Ihnen eine Vielzahl an neuen Funktionen zur Verfügung.
 weight: 998
 ---

@@ -1,5 +1,5 @@
 ---
-title: mobydick 7.11
+title: mobydick Server 7.11
 description: ith the new pascom version 15 Release, numerous new and improved functions are now available
 weight: 999
 ---

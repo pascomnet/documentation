@@ -1,5 +1,5 @@
 ---
-title: mobydick 7.11
+title: mobydick Server 7.11
 description: Mit dem mobydick Release 7.11 stehen Ihnen eine Vielzahl an neuen Funktionen zur Verfügung.
 weight: 999
 ---
