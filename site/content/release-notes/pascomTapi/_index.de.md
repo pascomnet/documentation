@@ -8,7 +8,7 @@ weight: 1000
 Folgen Sie bitte unserer detaillierten [Installations-Anleitung]({{< ref "/clients/tapi-installation" >}}).
 {{%/notice%}}
 
-## Tapi Release 3.R42 (09.10.2018)
+## Release 3.R42 (09.10.2018)
 
 **Auf einen Blick**
 
