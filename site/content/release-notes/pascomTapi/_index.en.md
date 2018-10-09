@@ -16,7 +16,7 @@ Please use our detailed [Installation Guide]({{< ref "/clients/tapi-installation
 - new versionnumber
 - rebranding from mobydick to pascom
 
-**ÄNDERUNGEN:**
+**MODIFICATIONS:**
 
 - TAPI-3 - Correct "Mobydick" to "pascom" in tapi
 - TAPI-14 - Tapi can't connect if Role doesn't contain RoleTypeList
