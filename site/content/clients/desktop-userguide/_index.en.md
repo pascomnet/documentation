@@ -188,7 +188,7 @@ If you have numerous open chats, these will be listed alongside each other.
 
 ### Group Chat
 
-![Group Chat](groupchat.en.png)
+![Group Chat](group_chat.en.png)
 
 If there are no active chat tabs open, click on the chat symbol in the toolbar and you will have the option of starting a group chat via the Group Chat button at the bottom right of the content area. When starting a group chat, you will be able to modify the group name to reflect the purpose of the chat or who organized the chat as well as selecting which contacts should join the chat via the Select Participants tool. Within the participants list, only online contacts will be displayed. It is possible to add more participants after the chat has been setup via the red / white plus + symbol. Newly added contacts will receive messages from the point that they entered the group chat and not before.
 
