@@ -47,7 +47,7 @@ Preferably, you should not create nested IVRs that are deeper than two levels. H
 
 ### Maintaining IVRs
 
-In the pascom web interface, select `Advanced > IVR`. To add a new IVR, press `Add`. To modify an existing IVR, select it from the list and press `Edit`.
+In the pascom web interface, select {{< ui-button "ACD" >}} > {{< ui-button "IVR" >}}. To add a new IVR, press {{< ui-button "Add" >}}. To modify an existing IVR, select it from the list and press {{< ui-button "Edit" >}}.
 
 ![Screenshot - add IVR](/ivr_add.png?width=100% "add IVR")
 
@@ -61,18 +61,18 @@ In the pascom web interface, select `Advanced > IVR`. To add a new IVR, press `A
 
 ### Creating entries
 
-In the pascom web interface, select `Advanced > IVR`. Select the IVR you wish to `config / edit` options for and press the **Entries** button. Here, you can define the available options (and configure the corresponding key) and how they should be handled once selected by the caller:
+In the pascom web interface, select {{< ui-button "ACD" >}} > {{< ui-button "IVR" >}}. Select the IVR you wish to config / edit options for and press the {{< ui-button "Entries" >}} button. Here, you can define the available options (and configure the corresponding key) and how they should be handled once selected by the caller:
 
-Press the `Add` button to create a new entry.
+Press the {{< ui-button "Add" >}} button to create a new entry.
 ![Screenshot - create IVR entries](/ivr_entries.png?width=100% "create IVR entries")
 
 |Parameter|Explanation|
 |---------|---------|
 |Title|General title for the entry.|
-|Number| The key pressed by the caller. Valid keys are arbitrary **numbers** or **sequences of numbers**. Special numbers are t for timeout and i to signal that an invalid key was pressed (note that these two are characters and not numbers). To avoid overlapping keys either use single, double or triple digit combinations and avoid mixing these numbers.|
+|Number| The key pressed by the caller. Valid keys are arbitrary **numbers** or **sequences of numbers**. Special numbers are **t** for timeout and **i** to signal that an invalid key was pressed (note that these two are characters and not numbers). To avoid overlapping keys either use single, double or triple digit combinations and avoid mixing these numbers.|
 
 ### Adding Actions to an Entry
 
 For each entry, corresponding actions must exist that are to be carried out if and when a certain button is pressed.
 
-In the pascom web interface, select `Advanced > IVR`, select the desired IVR and click the **Entries** button. Select the entry you want to modify and press the `Edit` button. Actions pertaining to the entry can be found in the **Intern** and **Extern** tabs.
+In the pascom web interface, select {{< ui-button "ACD" >}} > {{< ui-button "IVR" >}}, select the desired IVR and click the **Entries** button. Select the entry you want to modify and press the {{< ui-button "Edit" >}} button. Actions pertaining to the entry can be found in the **Intern** and **Extern** tabs.
