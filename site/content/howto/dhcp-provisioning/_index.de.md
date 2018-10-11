@@ -32,9 +32,9 @@ Je nach verwendeten Telefonen unterscheiden sich die Provisionierungs-URLs.
 
 |Telefonhersteller|Option 66 (tftp-server-name) |Option 67 (filename) |
 |---|---|---|
-|Snom|https://[pascom_Server]:8884/p/[Telefonanlagenname]/{mac}||
-|Yealink, Grandstream, Aastra, Mitel|https://[pascom_Server]:8884/p/[Telefonanlagenname]/||
-|Auerswald|https://[pascom_Server]:8884/p/[Telefonanlagenname]/|\<MACADR\>|
+|Snom|https://[pascom_Server]:8880/p/[Telefonanlagenname]/{mac}||
+|Yealink, Grandstream, Aastra, Mitel|https://[pascom_Server]:8880/p/[Telefonanlagenname]/||
+|Auerswald|https://[pascom_Server]:8880/p/[Telefonanlagenname]/|\<MACADR\>|
 
 Falls Sie diese Optionen ausschließlich an Telefone versenden möchten können Sie die Vergabe dieser Option auf den von Ihnen 
 verwendeten Hersteller einschränken:
