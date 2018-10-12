@@ -1,7 +1,7 @@
 ---
 title: Grandstream ATA HT701 and HT802
 description: Grandstream ATA adapters provide a cost effective solution for integrating Analog technology such as Fax / Door Intercom systems etc into your pascom phone system.
-weight: 20
+weight: 40
 ---
 
 ## Compatibility

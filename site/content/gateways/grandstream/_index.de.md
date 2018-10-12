@@ -1,7 +1,7 @@
 ---
 title: Grandstream ATA HT701 und HT802
 description: Integrieren Sie Ihre Analog- und ISDN-Endgeräte mithilfe des Grandstream ATA HT701 und HT802 in Ihre pascom
-weight: 20
+weight: 40
 ---
 
 {{< doctype "both"  >}}
