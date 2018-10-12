@@ -1,7 +1,7 @@
 ---
 title: beroNet Gateways Setup
 description: How to integrate Analog and ISDN endpoints into your pascom phone system using a beroNet Gateway. 
-weight: 10
+weight: 20
 ---
 
 ## Overview
