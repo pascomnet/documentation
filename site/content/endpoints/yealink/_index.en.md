@@ -133,7 +133,7 @@ Function Keys can be assigned in a variety of ways.
 
 Push and hold the function key on the phone which you wish to configure for 5 seconds. At this point you will be able to assign this key with a function (e.g. BLF key).
 
-|Settings|Assignement|
+|Settings|Assignment|
 |---|---|
 |Type|BLF|
 |Account ID|Line 1|
@@ -147,8 +147,8 @@ To confirm, press *Save*.
 Under the tab {{< ui-button "DSSKey" >}} it is possible to assign the various telephone keys as BLF keys for example:
 
 |Type|Value|Label|Line|Extension|
-|---|---|---|---|
-|BLF|The extension to be monitored, e.g. 123 for extension 123|Enter an label / name for the key.|Line 1|The extension number, i.e. 123|
+|---|---|---|---|---|
+| BLF | The extension to be monitored, e.g. 123 for extension 123 | Enter an label / name for the key. | Line 1 | The extension number, i.e. 123 |
 
 As well as user extensions, it is also possible to configure a BLF key with login codes or extensions switches.
 
