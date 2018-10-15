@@ -26,7 +26,7 @@ The pascom VPN Connector establishes a Point to Point connection between your pa
 
 ### Change Transit Network (optional)
 
-Should you wish to use a different Transit Network other than 172.16.23.0/24, you can configure this under the following menu points {{< ui-button "Appliance" >}} >{{< ui-button "System Settings" >}}* and editing the parameter **sys.vpn.transit.network**. Simply use the search tool to search from the parameter.
+Should you wish to use a different Transit Network other than 172.16.23.0/24, you can configure this under the following menu points {{< ui-button "Appliance" >}} >{{< ui-button "System Settings" >}}* and editing the parameter **sys.vpn.transit.network**. Simply use the search tool to search for the parameter.
 
 ### pascom Instance
 
