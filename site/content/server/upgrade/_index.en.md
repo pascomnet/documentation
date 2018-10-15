@@ -122,7 +122,7 @@ As beroNet boxes can now also be used with pascom.cloud solutions, pairing using
 
 #### Check beroNet Firmware
 
-Log into the beroNet card web UI and und **Management** > **Info** that you use appfs **16 or newer**. If not, update the box now:
+Log into the beroNet card web UI and under **Management** > **Info** that you use appfs **16 or newer**. If not, update the box now:
 
 * Download the [Firmware 16.X](https://beronet.atlassian.net/wiki/spaces/PUB/pages/61210659/Tools+and+Downloads) (Section: beroNet OS)
 * Under the beroNet **Management** > **Firmware update** select the update mode. 
