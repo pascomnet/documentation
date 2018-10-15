@@ -26,7 +26,7 @@ Der pascom VPN Connector baut eine Punkt-zu-Punkt Verbindung zwischen Ihrer pasc
 
 ### Transit-Netzwerk ändern (optional)
 
-Falls Sie ein anderes Transit-Netzwerk als 172.16.23.0/24 verweden möchten können Sie dies in Ihrer Instanz unter **Appliance** > **Systemeinsttellungen** im Parameter **sys.vpn.transit.network** verändern. 
+Falls Sie ein anderes Transit-Netzwerk als 172.16.23.0/24 verwenden möchten können Sie dies in Ihrer Instanz unter **Appliance** > **Systemeinsttellungen** im Parameter **sys.vpn.transit.network** verändern. 
 
 ### pascom Instanz
 

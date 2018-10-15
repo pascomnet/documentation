@@ -1,6 +1,6 @@
 ---
 title: pascom VPN Connector
-description: Verbinden Sie Ihr lokales Netzwerk via VPN mit Ihrer Instanz in der pascom.cloud oder Ihrem lokalen pascom Server
+description: Connect your local network to your pascom.cloud phone system instance or self hosted pascom PBX via VPN Sie Ihr lokales Netzwerk via VPN mit Ihrer Instanz in der pascom.cloud oder Ihrem lokalen pascom Server
 weight: 10
 ---
 
@@ -8,41 +8,41 @@ weight: 10
 
 {{< description >}}
 
-## Überblick
+## Overview
 
-Mithilfe des pascom VPN Connectors können Sie direkt aus der pascom.cloud auf Dienste aus Ihrem lokalen Netzwerk zugreifen. Dies kann notwendig sein, um beispielsweise Benutzer gegen Ihren lokal installierten Active Directory Server zu authentifizieren oder turnusmäßig Kundendaten aus Ihrem ERP- oder CRM-System in das pascom Telefonbuch zu importieren.
+By using the pascom VPN connector it is possible to access local network services directly from the pascom.cloud hosted phone system. This could be necessary, for example, in order to authenticate phone system users against a locally installed Active Directory or to periodically import customer data from your ERP or CRM system into the pascom phone book. 
 
-Diese Funktion steht Ihnen auch zur Verfügung, wenn Sie den pascom Server vor Ort nutzen und beispielsweise auf Daten aus einem anderen Standort zugreifen möchten.
+This function is also available to you should you have an on-site pascom server and need to access, for example, data from another location. 
 
 {{%notice tip%}}
-Da pascom einen eigenen Session Border Controller für mobile Anwender mit sich bringt, ist der VPN Connector für deren Anbindung unnötig und ungeeignet.
+That pascom phone systems include a Session Border Controller for mobile users, the VPN Connector is not necessary for and indeed is unsuitable for their connection.
 {{%/notice%}}
 
-### Transit-Netzwerk und IP-Adressen
+### Transit Network and IP Addresses
 
-Der pascom VPN Connector baut eine Punkt-zu-Punkt Verbindung zwischen Ihrer pascom Instanz und dem OpenVPN Client auf. Die pascom Instanz hat dabei immer die IP-Adresse 172.16.23.1. Als Transit-Netzwerk wird die 172.16.23.0/24 verwendet. Der OpenVPN Client erhält eine zufällige, jedoch dann persistente (immer gleiche) IP-Adresse aus dem Transit-Netzwerk. Diese IP-Adresse können Sie am OpenVPN Client ablesen und für den Zugriff der pascom Instanz auf lokale Dienste des Clients nutzen.
+The pascom VPN Connector establishes a Point to Point connection between your pascom instance and the OpenVPN client. The pascom instance is permanently assigned the IP address 172.16.23.1. For the purpose of the Transit Network, the address 172.16.23.0/24 is used. The OpenVPN client receives a random, however persistent IP address (always the same) from the Transit Network. You can determine this IP address via the OpenVPN client and use it enable access for you pascom instance to local client services.
 
-## Konfiguration
+## Configuration
 
-### Transit-Netzwerk ändern (optional)
+### Change Transit Network (optional)
 
-Falls Sie ein anderes Transit-Netzwerk als 172.16.23.0/24 verweden möchten können Sie dies in Ihrer Instanz unter **Appliance** > **Systemeinsttellungen** im Parameter **sys.vpn.transit.network** verändern. 
+Should you wish to use a different Transit Network other than 172.16.23.0/24, you can configure this under the following menu points {{< ui-button "Appliance" >}} >{{< ui-button "System Settings" >}}* and editing the parameter **sys.vpn.transit.network**. Simply use the search tool to search from the parameter.
 
-### pascom Instanz
+### pascom Instance
 
-Loggen Sie sich in die Weboberfläche Ihrer pascom Instanz ein und legen Sie unter **Gateways** > **Gatewayliste** via **Hinzufügen** einen neuen **VPN Zugriff** an.
+Log into your pascom phone system instance and under {{< ui-button "Gateways" >}} > {{< ui-button "Gateway list" >}} > {{< ui-button "Add" >}} and select new **VPN Access** from the list.
 
-Geben Sie dem VPN Connector eine **Bezeichnung** und laden Sie die Konfiguration via **Speichern und exportieren** herunter.
+Enter a **name** for the VPN Connector and download the configuration via the {{< ui-button "Save and Export" >}} button.
 
 ### OpenVPN Client
 
-Der pascom VPN Connector basiert auf OpenVPN. Mit den eben heruntergeladenen Daten können Sie einen beliebigen OpenVPN Client aufsetzen. OpenVPN Clients gibt es für eine Vielzahl von Betriebssystemen und Routern. 
+The pascom VPN Connector is based on OpenVPN. Using the downloaded configuration, it is now possible to setup any OpenVPN client. OpenVPN clients are available for a number of Operationg Systems and Routers. 
 
-Um beispielsweise auf Ihre lokal installierte Active Directory zugreifen zu können installieren Sie den OpenVPN Client für Windows direkt auf Ihrem Windows Server und bauen die Verbindung zu Ihrer pascom Instanz auf.
+In order to access, for example, your locally installed Active Directory, simply install the OpenVPN client for Windows directly on your Windows Server and establish the connection to your pascom phone system instance. 
 
-### Verbindung testen
+### Test the Connection
 
-Nach erfolgreichem VPN Aufbau sollten Sie in der Lage sein vom OpenVPN Client aus die IP-Adresse der pascom Instanz 172.16.23.1 zu erreichen:
+After successfully establishing the VPN, you should be in the position to reach the IP address of your pascom Instance 172.16.23.1 from the OpenVPN client:
 
 ```bash
 ping 172.16.23.1
