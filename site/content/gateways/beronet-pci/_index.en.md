@@ -12,85 +12,87 @@ weight: 30
 
 ## Overview
 
-beroNet Karten werden in die pascom Appliance eingebaut und erhalten beim Hochfahren der pascom automatisch eine IP-Adresse aus dem Zero-Config-Netzwerk **169.254.0.0/16**. An die vorderen Anschlüsse der Karte werden dann z. B. das öffentliche Telefonnetz oder analoge Endgeräte angeschlossen. beroNet Karten können modular ausgestattet werden. Je nach Modulen sind die Ports an der Vorderseite analog oder ISDN.
+beroNet Cards can be mounted in the pascom SMB appliance and during the boot process are automatically assigned an IP address from the Zero-Config-Network **169.254.0.0/16**. On the front ports of the cards, connection options such as the Public Telephony Network or analog Endpoints are then connected. beroNet Cards can be modular mounted. Depending on the module, the front ports are then either intended for either Analog or ISDN connections.
 
-### (Optional) Direkte Amt-Anbindung von Endgeräten
-{{% notice tip %}}
-Diese Funktion ist nur in Kombination mit einem ISDN-Amt, dass sich auf derselben Karte befindet, sinnvoll.
+### Direct Trunk Connection of Endpoints (Optional)
+
+{{% notice tip %}}  
+This function only makes sense in combination with an ISDN trunk located on the same PCIe Card.
 {{% /notice %}}
 
-Möchten Sie Ihre beroNet Karte dazu verenden ISDN- oder Analog-Endgeräte in Kombination mit einem ISDN-Amt auf derselben Karte zu betreiben haben Sie die Möglichkeit das Endgerät direkt mit dem Amt zu verbinden ohne dass die Anrufe über die gesamte Strecke bis zur Telefonanlage geführt werden.
+If you wish to use your beroNet card to operate ISDN or Analog endpoints in combination with an ISDN trunk on the same card, then use the option to directly connect the endpoints directly to the trunk without needing to route calls over the complete path to the phone system. 
 
-![beroNet direct connection](direct.de.png)
+![beroNet direct connection](direct.en.png)
 
-Anrufe werden nicht in SIP gewandelt und über die pascom geschickt sondern direkt auf der beroNet geroutet. Kommt beispielsweise ein eingehender Anruf für das Faxgerät herein, wird dieser direkt von der beroNet mit dem Faxgerät verbunden.
+Calls will not be converted to SIP and sent over the phone system server, but rather they are routed directly over the beroNet device. If, for example, there is an inbound call for the fax device, the beroNet device will directly connect it to the fax device.
 
-Der Vorteil dieser Methode ist, dass Verbindungen die nicht in SIP gewandelt werden. Für **Faxanwendungen** erzielt man dadurch wesentlich bessere Ergebnisse. Ein weiterer Anwendungsfall ist die Übertragung von **ISDN Daten**.  
+The **advantage** of this approach is that connections are not converted to SIP, which gives superior results when **fax applications** are used. Direct connections can also be used if **ISDN data** must be transmitted.
 
-Nachteil ist, dass die pascom von diesen Anrufen nichts "mitbekommt". Dadurch kann pascom nicht in den Anruffluss eingreifen. Z. B. den Anruf nach einem Timeout an ein anderes Ziel leiten, Geschäftszeiten prüfen, usw.. Außerdem muss sich das ISDN Amt und die betroffene Nebenstelle auf derselben beroNet Hardware befinden.
+The **disadvantage** here is that the PBX will not be made aware of these calls. Therefore, the server is not able to manage the call flow, e.g. forward the call to another device after a timeout, check for business hours, etc. In addition to that, the ISDN trunk and the extension must be connected to the same beroNet hardware.
 
-Ob ein Endgerät direkt an ein Amt oder über die Telefonanlage geführt werden soll können Sie beim Anlegen des ISDN- oder Analog-Endgerätes festlegen.
+Whether an endpoint should be routed directly on a trunk or via the pascom phone system can be configured when adding the ISDN or Analog endpoint. 
 
-## Konfiguration
+## Configuration
 
-### Karte vorbereiten
+## Card Preparation
 
-Als Vorbereitung müssen beroNet Karten mit den passenden Modulen bestückt werden. Haben Sie Ihre Hardware bei pascom bestellt sind diese Module bereits installiert. Detail hierzu wie z. B. Portbelegung, usw. entnehmen Sie bitte direkt der [beroNet Dokumentation] (https://beronet.atlassian.net/wiki/spaces/PUB/pages/51085410/Gateways+and+Cards "Zur beroNet Dokumentation").
+The first step of preparation is to mount suitable modules on the beroNet Gateway. If you ordered your hardware via pascom, the modules will already be pre-installed. For further details such as port assignment etc, please refer to the [beroNet Documentation](https://beronet.atlassian.net/wiki/spaces/PUB/pages/51085410/Gateways+and+Cards "beroNet Documentation").
 
-Bauen Sie die Karte nun (soweit nicht vorinstalliert) in die pascom Appliance ein.
+Mount the cards now (assuming they were not pre-installed) into your pascom SMB appliance now. 
 
-### Zugriff auf die beroNet Karte
+### Accessing the beroNet Cards
 
-Nach dem Systemstart finden Sie erkannte beroNet Karten im pascom Management unter **System** > **System** > **Berofix Karte**. Durch klicken auf den Link können Sie auf die Weboberfläche der Karte zugreifen z. B. um ein Firmware Update durchzuführen (Standardbenutzer **admin**, Kennwort **admin**).
+After the system startup it will now be possible to view all detected cards within the pascom Management UI under {{< ui-button "System" >}}, listed under **berofix cards** in the **System** section. By clicking on the link, you can access beroNet card web UI for example to perform a Firmware update (Default User **admin**, Password **admin**).
 
 ### Firmware Update (optional)
 
 {{% notice warning %}}
-pascom Server ab Version 18 benötigt mindestens die **beroNet Firmware 16** oder höher!
+pascom phone system server's from version 18 onwards required a minimum of the **beroNet Firmware 16** or higher.
 {{% /notice %}}
 
-Loggen Sie sich auf der Weboberfläche des beroNet Karte ein (Standardbenutzer: admin Passwort: admin) und stellen Sie zunächst unter **Management** > **Info** sicher, dass Sie appfs **16 oder neuer** verwenden. Falls nicht updaten Sie die Karte jetzt:
+Log into the beroNet card web UI (per default User: admin, password: admin) and under **Management** > **Info** that you use appfs **16 or newer**. If not, update the box now:
 
-* Download der [Firmware 16.X](https://beronet.atlassian.net/wiki/spaces/PUB/pages/61210659/Tools+and+Downloads) (Abschnitt: beroNet OS)
-* Setzen Sie die beroNet unter **Management** > **Firmwareupdate** in den Updatemodus
-* Laden Sie die Firmware 16.X nach dem Reboot hoch und starten Sie das Update
+* Download the [Firmware 16.X](https://beronet.atlassian.net/wiki/spaces/PUB/pages/61210659/Tools+and+Downloads) (Section: beroNet OS)
+* Under the beroNet **Management** > **Firmware update** select the update mode. 
+* Upload the firmware 16.X after the reboot and start the update
 
-### Anlegen der beroNet Karte
+### Adding beroNet Cards
 
-Loggen Sie sich nun auf der Weboberfläche der Telefonanlage ein und klicken Sie unter **Gateways** > **Gatewayliste** auf **Hinzufügen** und wählen **beroNet** aus. beroNet Karten werden automatisch erkannt. Wählen Sie die Karte unter **Gateways** aus und klicken auf **weiter**.
+Log into the pascom phone system web UI and navigate to the menu {{< ui-button "Gateways" >}} > {{< ui-button "Gateway List" >}} > {{< ui-button "Add" >}} and select {{< ui-button "beroNet" >}}. beroNet cards will then be automatically detected. Select your card from the **Gateways** dropdown list and click {{< ui-button "Next" >}}.
 
-Zur Kontrolle wird Ihnen nun die aktuelle Modulbelegung und MAC-Adresse der Karte angezeigt. Schließen Sie den Vorgang durch **Speichern** ab.
+For control purposes, the card's actual module assignment and MAC Address will be displayed. The process can be closed by pressing {{< ui-button "Save" >}}.
 
-### ISDN Amtsleitungen anlegen
-In vielen Fällen wird beroNet Hardware dazu verwendet ISDN Amtsleitungen daran anzuschließen. Selektieren Sie hierzu die entsprechende Karte aus der Liste, wählen Sie **Bearbeiten** und schalten Sie dann auf den Tab **Belegung** um.
+### Add ISDN Trunk Lines
 
-![Screenshot - ISDN-Amt hinzufügen](isdn_trunk_add.de.png?width=90% "ISDN-Amt per beroNet hinzufügen")
+A common use case for beroNet hardware is to connect ISDN trunks to it. To do so, select the gateway you want to use from the list, click the {{< ui-button "Edit" >}} button and then switch to the **Allocation** tab.
 
-Unter **Hinzufügen** können Sie entweder **BRI** oder **PRI-Amtsleitungen** konfigurieren.
+![Screenshot - Add ISDN Trunk](isdn_trunk_add.en.png?width=90% "Add ISDN Trunk via beroNet")
 
-![Screenshot - ISDN-Amt hinzufügen im Detail](isdn_trunk_add_detail.de.png?width=90% "ISDN-Amt per beroNet hinzufügen")
+Under {{< ui-button "Add" >}} you can configure either **BRI** or **PRI Trunk Lines**.
 
-Klicken Sie im entsprechenden Datensatz doppelt auf das Feld **Bezeichnung**. Dadurch öffnet sich ein Detailfenster. Hier können Sie anhaken welcher **Port** der Karte zu diesem Amt gehört. Auch Mehrfachauswahlen sind möglich da es bei z. B. Anlagenanschlüssen sein kann, dass mehrere NTs zu einem Amtsanschluss zusammengefasst werden.
+![Screenshot - Add ISDN Trunk Details](isdn_trunk_add_detail.en.png?width=90% "Add ISDN Trunk via beroNet")
 
-Unter **Modus** und **Technologie** stellen Sie die Anschlussart ein. Bei einem Anlagenanschluss ist das z. B. **TE** und **PTP**.
+Double-clicking on the record {{< ui-button "Name" >}} field will open a more detailed view in which you select which **Ports** are allocated to the trunk. It is possible to select multiple options here as a BRI that is configured to use the PP protocol allows for several NTs to be aggregated so they form a single trunk.
 
-In diesem Schritt konfigurieren Sie lediglich den Anschluss auf der beroNet Hardware. Nun müssen Sie unter **Gateway** > **Ämter** ein entsprechendes Amt anlegen. Nutzen Sie hierzu die **Amtsvorlage** **beroNet Gateway**.
+Under {{< ui-button "Mode" >}} and {{< ui-button "Technology" >}} to configure the interface type. For BRI connections in PP mode, the interface should be set to **TE** and **PTP**.
 
-### ISDN oder Analoge Nebenstellen anlegen
+You have now configured the interface of the beroNet hardware. For complete functionality, you should now continue with the appropriate Trunks and Call Rules configuration under {{< ui-button "Gateways" >}} > {{< ui-button "Trunks" >}} > {{< ui-button "Add" >}}. To help you, use the **Trunk Template** **beroNet Gateway**. 
 
-Selektieren Sie die entsprechende Karte aus der Liste, wählen Sie **Bearbeiten** und schalten Sie dann auf den Tab **Belegung** um.
+### Add ISDN or Analog Terminals
 
-![Screenshot - Analoges Endgerät hinzufügen](analog_add.de.png?width=90% "Analoges Endgerät hinzufügen")
+Select the desired Gateway from the list and press {{< ui-button "Edit" >}} and switch to the **Allocation** tab.
 
-Unter **Hinzufügen** haben Sie folgende Auswahl:
+![Screenshot - Add Analog Endpoint](analog_add.en.png?width=90% "Add Analog Endpoint via beroNet")
 
-|Typ|Beschreibung|Anwendungsfall|
-|---|---|---|
-|Analoges Endgerät direkt|Analoges Endgerät welches direkt auf der beroNet Hardware geroutet wird|Faxgerät, Türöffner, Feuermeldeanlage|
-|Analoges Endgerät via SIP|Analoges Endgerät welches über die pascom geroutet wird|Telefon|
-|ISDN Telefon direkt|ISDN Telefon welches direkt auf der beroNet Hardware geroutet wird |Notruftelefon|
-|ISDN Fax direkt|ISDN Fax welches direkt auf der beroNet Hardware geroutet wird |Faxserver (z. B. Tobit Faxware)|
-|ISDN Datenleitung direkt|ISDN Datenleitung welches direkt auf der beroNet Hardware geroutet wird|Onlinebanking, ISDN Maschinensteuerung, Alarmanlage|
-|ISDN Telefon via SIP|ISDN Telefon welches über die pascom geroutet wird|Telefon|
+The **Add** dropdown includes the following options:
 
-In diesem Schritt konfigurieren Sie lediglich den Anschluss auf der beroNet Karte. Legen Sie nun unter **Endgeräte** > **Geräteliste** ein Gerät vom Typ **Via beroNet Gateway**, analog dem zuvor gewählten Typ, an.
+|Type            |Description   |Uses |
+|---------------|---------------|---------------|
+|Analogue terminal directly | Analogue terminal device being routed directly on beroNet hardware| Fax, door control, fire alarm system|
+|Analogue terminal via SIP| Analogue terminal device being routed on the PBX| Telephones|
+|ISDN telephone directly| ISDN telephone being routed directly on beroNet hardware| Emergency phone|
+|ISDN fax directly| ISDN fax being routed directly on beroNet hardware| Fax server (e.g. Tobit Faxware)|
+|ISDN data directly| ISDN data transmission line being routed directly on beroNet hardware| Online banking, ISDN machine control, Security alarm|
+|ISDN telephone via SIP| ISDN telephone being routed on the PBX| Telephones|
+
+You have now configured the connection of the beroNet hardware. For complete functionality, you should now continue with Endpoint deployment under {{< ui-button "Devices" >}} > {{< ui-button "Device List" >}} > {{< ui-button "Add" >}} and select the appropriate endpoint type listed under {{< ui-button "Via beroNet Gateway" >}} from the list.

@@ -20,10 +20,10 @@ beroNet Gateways are connected via LAN and assigned an IP address from the telep
 ### Direct Trunk Connection of Endpoints (Optional)
 
 {{% notice tip %}}  
-This function only makes sense with an ISDN trunk located on the same Gateway.
+This function only makes sense in combination with an ISDN trunk located on the same Gateway.
 {{% /notice %}}
 
-If you wish to purpose your beroNet Gateway to operate ISDN or Analog endpoints in combination with an ISDN trunk on the same box, then the option to directly connect the endpoints directly to the trunk without needing to route calls over the complete path to the phone system. 
+If you wish to use your beroNet Gateway to operate ISDN or Analog endpoints in combination with an ISDN trunk on the same box, then use the option to directly connect the endpoints directly to the trunk without needing to route calls over the complete path to the phone system. 
 
 ![beroNet direct connection](direct.en.png)
 
@@ -59,7 +59,7 @@ Should you not be able to determine the Gateway's IP address, you can find the G
 pascom phone system server's from version 18 onwards required a minimum of the **beroNet Firmware 16** or higher.
 {{% /notice %}}
 
-Log into the beroNet card web UI (per default User: admin, password: admin) and under **Management** > **Info** that you use appfs **16 or newer**. If not, update the box now:
+Log into the beroNet Gateway web UI (per default User: admin, password: admin) and under **Management** > **Info** that you use appfs **16 or newer**. If not, update the box now:
 
 * Download the [Firmware 16.X](https://beronet.atlassian.net/wiki/spaces/PUB/pages/61210659/Tools+and+Downloads) (Section: beroNet OS)
 * Under the beroNet **Management** > **Firmware update** select the update mode. 
