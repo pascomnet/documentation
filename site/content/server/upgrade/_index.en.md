@@ -34,6 +34,7 @@ Please take the time to review the following checklist **before** you begin the 
 * [ ] You have taken a snapshot of your virtual machine (if appropriate)
 * [ ] You have had your licence upgraded by the pascom sales team
 * [ ] You have a my.pascom.net access associated with your company
+* [ ] I use the "Admin" user for administrative purposes only
 
 Further details regarding the changes can be found in the release notes.
 
