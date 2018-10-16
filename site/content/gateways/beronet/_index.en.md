@@ -67,7 +67,7 @@ Log into the beroNet Gateway web UI (per default User: admin, password: admin) a
 
 ### Setup VPN Gateway (Cloud Only)
 
-The pascom instance hosted in pascom.cloud must be able to reach the beroNet Gateway via IP address. This is only possible by using a VPN between the beroNet Gateway location and your pascom cloud hosted PBX. To simplify this process, pascom phone systems include the option of adding [VPN Connector]({{< ref "/gateways/vpn-connector" >}}.
+The pascom instance hosted in pascom.cloud must be able to reach the beroNet Gateway via IP address. This is only possible by using a VPN between the beroNet Gateway location and your pascom cloud hosted PBX. To simplify this process, pascom phone systems include the option of adding [VPN Connector]({{< ref "/gateways/vpn-connector" >}}).
 
 ### Adding the beroNet Gateway
 

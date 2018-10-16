@@ -12,7 +12,7 @@ If you have already deployed a pascom 18 or newer phone system, the following st
 
 ## Download pascom ISO
 
- Download the latest version of the pascom phone system server [ISO file](https://www.pascom.net/en/downloads/) from the downloads page on our website.
+Download the latest version of the pascom phone system server [ISO file](https://www.pascom.net/en/downloads/) from the downloads page on our website.
 
 ## Perform pascom Update
 
