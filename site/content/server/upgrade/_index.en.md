@@ -1,7 +1,7 @@
 ---
 title: Upgrade from pascom 17 or older
 description: How to upgrade from a pascom 17 phone system or older
-weight: 70
+weight: 80
 ---
 
 {{< doctype "self" >}}

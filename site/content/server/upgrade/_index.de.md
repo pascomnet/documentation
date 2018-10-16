@@ -1,7 +1,7 @@
 ---
 title: Upgrade von pascom 17 und älter
 description: Schritte für ein Upgrade von pascom 17 und älter
-weight: 70
+weight: 80
 ---
 
 {{< doctype "self" >}}
