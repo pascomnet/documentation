@@ -22,7 +22,7 @@ The latest pascom mobile VoIP app can be directly installed on your Android smar
 System Requirements **iOS 10 (64bit)** or higher
 {{% /notice %}}
 
-The latest pascom mobile VoIP app can be directly installed on your Apple smartphone via the[Apple Appstore](https://www.pascom.net/appstore).
+The latest pascom mobile VoIP app can be directly installed on your Apple smartphone via the [Apple Appstore](https://www.pascom.net/appstore).
 
 ## Add Mobile Device on the Server (optional)
 

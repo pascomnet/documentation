@@ -50,7 +50,7 @@ The Snom IP phone will now boot and acquires an IP address which is displayed on
 
 After booting, the phone will stop at the country selection screen.
 
-### Determine the MAC Address
+### Finding the MAC Address
 
 MAC addresses can be found on the rear underside of the telephone.
 

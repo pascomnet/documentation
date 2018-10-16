@@ -23,39 +23,58 @@ weight: 30
 **Desktop Client CTI Control**: The desktop UC client can remotely control the phone, i.e. to start calls.<br>
 **pascom Menu**: A phone touch key will be assigned to access the pascom Menu.
 
-## Configuration
+## Yealink Provisioning
 
-With [the pascom phone system] (https://www.pascom.net/en/ "pascom VoIP phone systems") it is possible to centrally and automatically configure the majority of Yealink IP Telephones. This process is know as {{< ui-button "Provisioning" >}}. For this purpose, pascom phone systems include a Default Configuration ({{< ui-button "Devices" >}} > {{< ui-button "Basic Configuration" >}}). For most deployments, these standard settings provide the ideal configuration. However, in some cases, the settings may need to be modified.
-
-{{% notice tip%}}
-By new installations, you should first test the provisioning process with a telephone. Should this be successful then you will be able to deploy further telephones.
+{{% notice tip %}}
+For local pascom phone system installations, it is possible to automatically on-board and perform mass deployments of endpoints using the DHCP server.
+For more details, please refer to our HowTo [Telephone Provisioning via DHCP]({{< ref "/howto/dhcp-provisioning" >}}).
 {{% /notice %}}
 
-### Preparation
+[pascom phone systems](https://www.pascom.net/en/ "pascom VoIP phone systems") are able to automatically and centrally configure Yealink IP phones. This process is known as Provisioning. For this purpose, pascom phone systems include a Default Configuration ({{< ui-button "Devices" >}} > {{< ui-button "Basic Configuration" >}}). For most deployment scenarios, these standard settings provide an ideal configuration. However, in some cases, the settings may need to be modified.
 
-In order to automatically deploy (AutoProvision) Yealink Telephones, a functioning DHCP server is required.
+## Add New Yealink Phone
 
-### Device Onboarding
+{{% notice tip %}}
+Should the telephone not be factory new, ensure you perform a **factory reset**. In order to do this on the phone, power up the phone and then press {{< ui-button "OK" >}} holding the final until **Factory Reset** appears in the display. Confirm by pressing {{< ui-button "OK" >}}. 
+{{% /notice %}}
 
 Connect the phone to your network. Yealink IP phones come with a built in switch, allowing you to connect the phone directly via the Ethernet port labelled as **Internet**. Should you not have a **PoE** option available, connect the phone to a power supply.
 
-The Yealink IP phone will now boot and acquires an IP address and the corresponding Basic Configurations via DHCP. After this process is completed, the device will automatically appear under {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}} as well as adding the appropriate SIP peer.
+After the boot proces press {{< ui-button "OK" >}} again and note the phone's IP Address. 
 
-As mentioned above, for every device pascom will also automatically add a SIP peer. In addition, the device username and password will also be automatically generated. The username consists of a randomly generated string followed by the last six digits of the device’s MAC address (15 digits in total). As the IP phones are automatically provisioned, you will not be required to enter this data manually and it is not possible to modify the user data. This is designed to considerably increase security against SIP Brute Force attacks.
+### Finding the MAC Address
 
-The Device Name will be automatically added as signified by the vendor (Yealink) and the MAC Address. On most IP phones, the MAC address is noted on the device housing, allowing phones to be more simply deployed on site in the correct locations.
+The MAC address is noted on the rear of the device housing.
 
-After a successful provisioning, the IP phone display should show to correct language and time as well as the text {{< ui-button "Emergency Only" >}}
+Alternatively, using your browser go to the previously noted telephone IP address. Log into the phone's web UI using the username and password **admin** **admin**. Under {{< ui-button "Status" >}} > {{< ui-button "MAC Address" >}} take a note of the phone's MAC address. 
 
-{{% notice info%}}
-After the successful phone provisioning, the admin user will be reset by the PBX with the following credentials:  
-<br>Username: *admin*
-<br>Password: *0000*
-{{% /notice  %}}
+### Add Yealink Endpoint
 
-The Telephone Admin User Password can be changed within the Web UI under system settings. Use the search box and search for the parameter *sys.peripherals.access.password* and enter your desired password. Finally, you will be required to manually apply the Telephony Configurations and restart the endpoint.
+Log into your pascom phone system web UI and nder {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}} and press {{< ui-button "Add" >}} and select the option **IP Telephone: Manufacturer Yealink**. 
 
-### Assigning Users
+Under the corresponding field, enter the **MAC Address** that you have just found and noted. 
+
+### Apply Jobs
+
+After saving your phone setup configurations, a corresponding prompt to apply telephony configs will appear in the job box (top of the screen). Simply start the job by clicking on the {{< ui-button "green tick" >}}.
+
+### Finding the Provisioning URL
+
+Select the desired telephone from the device list and under {{< ui-button "Action" >}} select the option {{< ui-button "Provisioning URL" >}}. Copy the **URL** to your clipboard.
+
+### Enter the Provisioning URL on the Telephone
+
+{{% notice tip %}}
+Should you not have installed an **official certificate** on your proxy, you will need to configure the phone to ***Only Accept Trusted Certificates*** by going to the phone's web UI menu {{< ui-button "Security" >}} > {{< ui-button "Trusted Certificates" >}} and selecting **Disabled** . 
+{{% /notice %}}
+
+Again in the Yealink phone's admin UI, go to {{< ui-button "Settings" >}} > {{< ui-button "Auto Provision" >}} > {{< ui-button "Server URL" >}} and enter the copied provisioning URL.
+
+Click {{< ui-button "Confirm" >}} and finally {{< ui-button "Autprovision Now" >}}.
+
+The phone will now restart.
+
+### Assign Users
 
 As soon as the IP phone has appeared in the Device List, it can be edited via the {{< ui-button "Edit" >}} button. Under the {{< ui-button "Assign" >}} tab, the phone can be assigned to a [user (or location)]({{< ref "concept/user">}}).
 
@@ -71,7 +90,7 @@ Having been provisioned, the pascom menu key can be found on the second function
 
 |Function|Description|
 |---|---|
-|Telephone Book|Opens up the central PBX phonebook.|
+|Telephone Book|Opens up the central pascom phonebook.|
 |Journal|Displays answered, dialed and missed calls|
 |Call Forwarding|Sets a call forwarding, activates / updates a previously configured call forwarding or deactivates an active call forwarding.|
 |Voicemail Box|Voicemail box menu for activating/deactivating your mail box, plus message play backs|
@@ -85,7 +104,7 @@ Only set Call Forwardings via the pascom menu as they can then be managed by the
 {{% /notice %}}
 
 {{% notice info%}}
- Using the DND key (*do not disturb*) directly on your Yealink phone, ensures that the assigned user extension cannot be reached on the phone. The DND notice will appear only on the telephone itself and will have no impact on other endpoints or the Desktop UC client (softphone).
+ Using the DND key (*Do Not Disturb*) directly on your Yealink phone, ensures that the assigned user extension cannot be reached on the phone. The DND notice will appear only on the telephone itself and will have no impact on other endpoints or the Desktop UC client (softphone).
 {{% /notice %}}
 
 ### Accessing the Yealink Web UI
@@ -114,7 +133,7 @@ Function Keys can be assigned in a variety of ways.
 
 Push and hold the function key on the phone which you wish to configure for 5 seconds. At this point you will be able to assign this key with a function (e.g. BLF key).
 
-|Settings|Assignement|
+|Settings|Assignment|
 |---|---|
 |Type|BLF|
 |Account ID|Line 1|
@@ -128,8 +147,8 @@ To confirm, press *Save*.
 Under the tab {{< ui-button "DSSKey" >}} it is possible to assign the various telephone keys as BLF keys for example:
 
 |Type|Value|Label|Line|Extension|
-|---|---|---|---|
-|BLF|The extension to be monitored, e.g. 123 for extension 123|Enter an label / name for the key.|Line 1|The extension number, i.e. 123|
+|---|---|---|---|---|
+| BLF | The extension to be monitored, e.g. 123 for extension 123 | Enter an label / name for the key. | Line 1 | The extension number, i.e. 123 |
 
 As well as user extensions, it is also possible to configure a BLF key with login codes or extensions switches.
 
