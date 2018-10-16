@@ -1,6 +1,6 @@
 ---
-title: pascom 18 updaten
-description: Schritte für ein Update der pascom Telefonanlage
+title: Updating pascom 18
+description: Step by step guide to updating your pascom phone system
 weight: 70
 ---
 
@@ -8,26 +8,26 @@ weight: 70
 
 {{< description >}}
 
-Wenn Sie bereits eine pascom 18 oder höher im Einsatz haben, sind für ein Update folgende Schritte notwendig. 
+If you have already deployed a pascom 18 or newer phone system, the following steps are necessary when updating your phone system. 
 
-## pascom ISO downloaden
+## Download pascom ISO
 
-Laden Sie sich die pascom Server [ISO-Datei](https://www.pascom.net/de/downloads/) der aktuellsten Version von der Download-Seite unserer Homepage herunter.
+ Download the latest version of the pascom phone system server [ISO file](https://www.pascom.net/en/downloads/) from the downloads page on our website.
 
-## pascom Update durchführen
+## Perform pascom Update
 
-Melden Sie sich am **pascom Server Management** an.
+Log into the **pascom Server Management** UI.
 
-Klicken Sie unter dem Menüpunkt {{< ui-button "System" >}} auf den Button {{< ui-button "Update hochladen" >}} und laden Sie dort die zuvor heruntergeladene pascom ISO-Datei hoch.
+Under the menu option {{< ui-button "System" >}} click the {{< ui-button "Upload Update" >}} button and upload the ISO file downloaded in the previous step.
 
-Sobald der Upload erfolgreich durchgeführt wurde, wird Ihnen der Host mit der neuen Server Version unter {{< ui-button "System" >}} > {{< ui-button "Firmwares" >}} aufgelistet.
+As soon as the upload has successfully finished, the host with the new server version will be listed under {{< ui-button "System" >}} > {{< ui-button "Firmware" >}}.
 
-## pascom neustarten
+## Restart pascom
 
 {{% notice warning %}}
-Während dem Neustart und Installationsvorgang der Telefonanlage, ist die Telefonie nicht möglich und alle laufenden Gespräche werden beendet. Führen Sie den Neustart daher nie im laufenden Betrieb aus.
+During the phone system restart and installation process, telephony services will not be available and all active calls will be disconnected. Therefore, never perform a system restart while the system is in use.
 {{% /notice %}}
 
-Die Installation des Updates wird erst bei einem Neustart der Telefonanlage durchgeführt.
+The installation of updates is done only when the phone system has been restarted.
 
-Klicken Sie dazu auf {{< ui-button "System" >}} > {{< ui-button "Neustart" >}}
+To perform a restart, click {{< ui-button "System" >}} > {{< ui-button "Restart" >}}
