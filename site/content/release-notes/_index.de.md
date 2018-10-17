@@ -7,14 +7,21 @@ pre: <i class="fa fa-file-alt" aria-hidden="true"></i>&nbsp;
 
 {{< description >}}
 
-## Current Version
+## pascom Client
+
+|Version|Release Type|Veröffentlichung|
+|-------|------------|---------------:|
+|[Release 42.R34]({{< ref "/release-notes/pascomClient">}})| Feature Release | 17.10.2018 |
+
+
+## Current Server Version
 
 |Version|Release Type|Veröffentlichung|
 |-------|------------|---------------:|
 |[Release 18.01]({{< ref "/release-notes/pascom18" >}})| Bugfix Release | 09.10.2018 |
 |[Release 18.00]({{< ref "/release-notes/pascom18#release-18-00-20-09-2018" >}})| Feature Release | 
 
-## Stable Version
+## Stable Server Version
 
 |Version|Release Type|Veröffentlichung|
 |-------|------------|---------------:|
@@ -31,7 +38,7 @@ pre: <i class="fa fa-file-alt" aria-hidden="true"></i>&nbsp;
 |[Release 17.01]({{< ref "/release-notes/pascom17#release-17-01-08-01-2018" >}})| Bugfix Release | 08.01.2018 |
 |[Release 17.00]({{< ref "/release-notes/pascom17#release-17-00-14-12-2017" >}})| Feature Release | 14.12.2017 |
 
-## LTS Version
+## LTS Server Version
 
 |Version|Release Type|Veröffentlichung|
 |-------|------------|---------------:|
