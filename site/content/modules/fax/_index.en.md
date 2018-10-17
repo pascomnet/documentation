@@ -1,6 +1,6 @@
 ---
-title: FAX Server
-description: Lernen Sie den virtuellen Fax Server Ihrer pascom optimal einzurichten.
+title: Fax Server
+description: How to optimally setup the pascom phone system's virtual fax server. 
 weight: 10
 ---
 
@@ -8,219 +8,209 @@ weight: 10
 
 {{< description >}}
 
-## Übersicht
+## Overview
 
-[In unsere VoIP Software](https://www.pascom.net/de/mobydick-voip/) ist ein Fax-Server integriert. Dabei handelt es sich um das Produkt [HylaFax](http://www.hylafax.org/) welches über virtuelle IAX-Modems direkt an den Asterisk Telefonieserver angekoppelt ist.
+[Our VoIP phone system software](https://www.pascom.net/en/ "pascom IP phone system software") comes with a fully integrated fax server as standard.
+The included fax server is [HylaFax](http://www.hylafax.org/ "pascom Integrated HylaFax Server"), which is connected to the Asterisk telephony server via virtual IAX modems.
 
-Dabei stehen Ihnen folgende Fax-Möglichkeiten zur Verfügung:
+The integrated fax server offers a number of functions, which are described in this how-to:
 
-+ Empfangen von Faxen über E-Mail.
-+ Versenden von Faxen über den [pascom Client]({{< ref "/clients/desktop-userguide">}}).
-+ Versenden von Faxen über [Mail-to-Fax]({{< relref "#mail-to-fax">}}) als E-Mail-Weiterleitung.
-+ Versenden von Faxen über [Print-to-Fax]({{< relref "#print-to-fax">}}) mit Steueranweisungen per virtuellem Drucker oder ohne Steueranweisungen mit virtuellem Drucker über den Client.
++ Receive faxes via E-mail.
++ Send faxes via the [pascom Client]({{< ref "/clients/desktop-userguide">}}).
++ Send faxes via [Mail-to-Fax]({{< relref "#mail-to-fax">}}) as an e-mail forwarding.
++ Send faxes via [Print-to-Fax]({{< relref "#print-to-fax">}}) using printer commands via virtual printer or without printer commands via virtual printer using the client.
 
+## Fax Server Configuration
 
-## Fax-Server Konfigurieren
+Under {{< ui-button "Services" >}} > {{< ui-button "Fax Server" >}} you will need to activate and setup the fax server: 
 
-Unter {{< ui-button "Dienste" >}} > {{< ui-button "Faxserver" >}} muss zunächst der Fax-Server aktiviert und eingerichtet werden:
-
-|Einstellung|Beschreibung|
+|Setting|Description|
 |---|---|
-|Gesamtanzahl Faxleitungen|Die Gesamtanzahl der Faxleitungen definiert die Menge an virtuellen Modems und somit die maximale Anzahl paralleler Faxvorgänge.|
-|Für eingehende Faxe reserviert|Anzahl der Faxleitungen, die immer für eingehende Faxe reserviert bleibt.|
-|Ländercode|Geben Sie hier den Ländercode Ihres Landes an ohne die führenden Nullen. Z. B. 49 für Deutschland.|
-|Vorwahl ohne führende 0|Geben Sie hier Ihre Ortsvorwahl ohne führende 0 an. Z. B. 89 für München.|
-|Stammnummer|Geben Sie hier die Stammnummer Ihres Telefonanschlusses an.|
-|Faxdomain|Die Faxdomain wird für [Mail-to-Fax]({{< relref "#mail-to-fax">}}) benötigt. Z. B. "fax".|
-|EMail Adressformat|Hier wird angegeben in welchem Format man "Mail-to-Fax" versenden möchte.|
-|Mail to Fax|Hier wird der angegeben, ob das zu versendende Fax die E-Mail oder der Anhang ist.|
-|Print to Fax|Fax versenden:<br> * Nur über den CLient.<br> * Nur über die Steueranweisungen im Dokument.<br> * Zuerst wird versucht über die Steueranweisungen zu faxen, anschließend über den Client.|
-|Lebensdauer Faxdokumente/Tage|Gibt an, wie lange Fax-Dokumente auf der pascom gespeichert werden. Der Default-Wert ist 30 Tage.|
-|Anzahl Sendeversuche|Gibt an, wie viele Versuche unternommen werden um ein Fax zu verdenden, falls die Gegenstelle kurzzeitig nicht erreichbar ist.|
+|Number of fax lines|Defines the number of virtual modems and therefore the maximum number of parallel fax jobs.|
+|Dedicated lines for inbound|Defines the nummber of fax lines reserved for inbound faxes.|
+|Country Code|Enter the international country code for your country excluding the leading zeros, e.g. 44 for the United Kingdom.|
+|Prefix without leading 0|Enter your area code without the leading 0, e.g. 203 for London.|
+|Originating number|Enter your fixed line originating number, i.e. phone number without international or area codes.|
+|Fax domain|The fax domain is required for [Mail-to-Fax]({{< relref "#mail-to-fax">}}), e.g. "fax".|
+|E-mail Address Format|In which e-mail address format "Mail-to-Fax" should be sent.|
+|Mail to Fax|Determines whether the fax to be sent should be the E-mail content or attachment.|
+|Print to Fax|Fax sending:<br> * Only Client.<br> * Only control statement in the document.<br> * Control statement and then the client.|
+|Fax document storage / days|Enter the maximumm time in days that a fax document should  be stored. The default value  is  30 days.|
+|Number of Send attempts|Enter the maximum number of send attempts should for example the intended recipient temporarily not be available.|
 
+### Overview of Sent / Received Faxes
 
-### Übersicht der gesendeten/empfangenen Faxe
+Under {{< ui-button "Information" >}} > {{< ui-button "Fax Server" >}} it is possible to call up an overview of both Sent and Received faxes. It is also possible to download individual fax documents from the list of received faxes. 
 
-Unter {{< ui-button "Information" >}} > {{< ui-button "Faxserver" >}} haben Sie eine Übersicht über die gesendeten und empfangenen Faxe. Die Liste der empfangenen Faxe bietet auch die Möglichkeit die Fax-Dokumente herunterzuladen.
+Under {{< ui-button "Apply" >}} > {{< ui-button "Clean up fax server" >}} it is possible to configure and automate the removal of older faxes. The default value is 30 days. That means that during the clean up process, all faxes older than 30 days will be deleted. You can automate the process via the {{< ui-button "Automate" >}} button which will allow you to setup a Cron Job to automate future fax server clean up tasks. 
 
-Über {{< ui-button "Anwenden" >}} > {{< ui-button "Faxserver bereinigen" >}} können Sie einstellen, dass ältere Faxe aus dem System gelöscht werden. Der Default-Wert hierfür ist 30 Tage. Das bedeutet, dass beim Bereinigungs-Prozess, alle Faxe, die älter sind als 30 Tage gelöscht werden. Über den Button {{< ui-button "Automatisieren" >}} kann ein Cronjob eingerichtet werden, der automatisiert bereinigt.
+## Add Virtual Fax Devices
 
+Virtual fax devices can be added for both a [User]({{< ref "/user/user">}}) and / or a Team.
 
+#### Virtual User Fax Device
 
-## Virtuelles Fax anlegen
+Under {{< ui-button "Users" >}} > {{< ui-button "User list" >}} selectt the required user and press {{< ui-button "Edit" >}}. Under the {{< ui-button "Fax Device" >}} tab, it is possible to add a virtual fax device for existing users. Simply select the *Configure personal fax* tick box:
 
-Virtuelle Faxe können für einen [Benutzer]({{< ref "/user/user">}}) oder für ein Team anlegen.
-
-#### Virtuelles Benutzerfax
-
-Unter {{< ui-button "Benutzer" >}} > {{< ui-button "Benutzerliste" >}} > Benutzer auswählen und {{< ui-button "Bearbeiten" >}} im Tab {{< ui-button "Faxgerät" >}} kann für einen schon bestehenden Benutzer ein Faxgerät angelegt werden. Setzen Sie das Häckchen bei *Persönliches Fax konfigurieren*:
-
-|Einstellung|Beschreibung|
+|Settings|Description|
 |---|---|
-|E-Mail|Geben Sie hier die E-Mail-Adresse des Benutzers ein. Über diese E-Mail-Adresse erhält der Benutzer die Bestätigung über versendete Faxe, und je nach Konfiguration auch empfangene Faxe.|
-|Durchwahl|Geben Sie hier die Faxdurchwahl des Benutzers. Lesen Sie bitte hierfür folgendes [Howto zum Vergeben von Durchwahlen]({{< relref "">}}).|
-|ausgehende Faxkennung|Hier kann optional eine ausgehende Faxkennung angegeben werden.|
-|Format|Hier legen Sie fest, in welchem Format das Fax versendet wird. Zur Auswahl stehen<br> * PDF<br> * TIF<br> * DATEI<br> * INLINEGIF|
+|E-mail|Enter the user's e-mail address. The user will receive confirmations for all sent faxes and depending on the configuration also for all received faxes.|
+|Extension|Enter the user's fax extension number. Please refer to the following [HowTo: Extensions]({{< ref "/howto/extensions">}}).|
+|Outgoing fax ID|Optional tool for setting an outbound fax ID. |
+|Format|Determines in which format a fax should be sent. Options include: <br> * PDF<br> * TIF<br> * File<br> * INLINEGIF|
 
-#### Virtuelles Teamfax
+#### Virtual Team Fax Device
 
-Unter {{< ui-button "Benutzer" >}} > {{< ui-button "Benutzerliste" >}} > Benutzer auswählen und {{< ui-button "Bearbeiten" >}} im Tab {{< ui-button "Faxgerät" >}} kann für einen schon bestehenden Benutzer ein Faxgerät angelegt werden. Setzen Sie das Häckchen bei *Team Fax konfigurieren*:
+Under {{< ui-button "Users" >}} > {{< ui-button "Teams" >}} selectt the required Team and press {{< ui-button "Edit" >}}. Under the {{< ui-button "Fax Device" >}} tab, it is possible to add a virtual fax device for existing Teams. Simply select the *Configure team fax* tick box:
 
-|Einstellung|Beschreibung|
+|Settings|Description|
 |---|---|
-|E-Mail|Geben Sie hier die E-Mail-Adresse des Teams ein. Über diese E-Mail-Adresse erhält das Team empfangene Faxe und je nach Konfiguration die Bestätigung über ein versendetes Fax.|
-|Durchwahl|Geben Sie hier die Faxdurchwahl des Team-Faxes an.|
-|ausgehende Faxkennung|Hier kann optional eine ausgehende Faxkennung angegeben werden.|
-|Format|Hier legen Sie fest, in welchem Format das Fax versendet wird. Zur Auswahl stehen<br> * PDF<br> * TIF<br> * DATEI<br> * INLINEGIF|
-
-
+|E-mail|Enter the team's e-mail address. The team will receive confirmations for all sent faxes and depending on the configuration also for all received faxes.|
+|Extension|Enter the team's fax extension number. Please refer to the following [HowTo: Extensions]({{< ref "/howto/extensions">}}).|
+|Outgoing fax ID|Optional tool for setting an outbound fax ID. |
+|Format|Determines in which format a fax should be sent. Options include: <br> * PDF<br> * TIF<br> * File<br> * INLINEGIF|
 
 ## Mail-to-Fax
 
 {{% notice info %}}
-Mail-to-Fax wird im Cloudstack nicht unterstützt.
+Mail-to-Fax is not supported in cloudstack solutions.
 {{% /notice %}}
 
-#### Vorbereitung
+#### Preparation
 
-Stellen Sie den Mail-Server Ihres so ein, dass alle E-Mails an die Domain *.fax* per SMTP an Ihren pascom Server weitergeleitet werden.
+Setup your mail server so that all e-mails are forward to your pascom server via the domain *.fax* per SMTP.
 
-#### Fax versenden
+#### Send Fax
 
-Um nach der Einrichtung ein Fax zu versenden, versenden Sie einfach ein E-Mail mit folgendem Aufbau (der Aufbau der E-Mail kann bei der [Fax-Server-Konfiguration]({{< relref "#fax-server-konfigurieren">}}) festgelegt werden):
+In order to send a fax after the configuration is done, simply send an E-mail using the following structure (the structure of the e-mail can be configured following our [Fax Server Configuration]({{< relref "#fax-server-konfigurieren">}}) guide):
 
-|E-Mail-Feld|Beispiel|Beschreibung|
-|---|---|---|
-|An|empfaenger@00991123456999.fax|Hier wird die Nummer ausgewertet und der Teil vor dem *@*-Zeichen wird auf einem eventuellen Fax-Deckblatt als Empfänger eingetragen. (Standardmäßig sind Fax-Deckblätter deaktiviert)|
-|Betreff und Test der E-Mail||Werden in Postscript konvertiert und standardmäßig als erste Faxseite versendet.|
-|Anhang||Das ist das eigentliche Fax, im PDF- oder TIF-Dateiformat|
+|Field|Example|Description|
+|----|--------|------------|
+|To|recipient@009912700619.fax|The number is evaluated and the part to the left of the "@" sign is used as the recipient on the cover page of a fax. (the default is to disable cover pages for fax).|
+|Subject and body| |Converted to PostScript and used as the first page of the fax.|
+|Attachment| |This is the actual fax as PDF or TIF file.|
 
-#### Anpassungen
+#### Customisations
 
-Aktuell kann das Verhalten des Mail-to-Fax-Gateways teilweise nur direkt in den Konfigurationsdateien angepasst
-werden. Hierzu müssen Sie sich auf der pascom per SSH einloggen und benötigen root-Rechte.
+Currently, it is only partially possible to customise the behaviour of the Mail-to-Fax gateway and must be done directly in the configuration file. To this end, you will need to log into your pascom phone system via SSH and will require Root permissions.
 
-Ohne Anpassungen erhalten Sie eine Plain-Text-E-Mail sobald es eine Veränderung an einem Fax-Auftrag gibt (besetzt,
-fehlgeschlagen, erfolgreich etc.).
-Sie können stattdessen ein alternatives Format setzen. Bei diesem wird eine HTML-E-Mail mit eingebetteter erster Seite nebst PDF-Anhang generiert. Das Format entspricht somit einem empfangenen Fax an ein virtuelles Faxgerät welches mit Format="inlinegif" konfiguriert wurde.
+Without any customisation, the default setting is to send out a plain-text e-mail whenever there is a change in a fax job (busy, failed, successful, etc.). 
 
-* öffnen Sie die Datei */etc/hylafax/FaxNotify* mit einem Editor,
-* entfernen Sie das *#*-Zeichen (Kommentar) der Zeile INLINE=true
-* und starten Sie das Faxsystem per Weboberfläche oder mit dem Befehl */etc/init.d/hylafax restart* neu
+This setting can be changed to use an alternative format. As such, this generate an HTML e-mail with an embedded first page and PDF attachment. The fax itself will be sent as an attachment in PDF format. This format is the same as the one used when a fax is received by a virtual fax machine configured to use the format="inlinegif" option.
 
-{{% notice note %}}
-Dies verändert auch das Benachrichtigungsformat bei Print-to-Fax-Aufträgen.
-{{% /notice %}}
+* open the file /etc/hylafax/FaxNotify in a text editor
+* remove the "#" comment in the line INLINE=true
+* restart in the fax system using the web interface or the  _ /etc/init.d/hylafax restart _ command
 
-#### Adressierung anpassen
+{{% notice tip %}}
+Changes made to the format of notification e-mails will also affect the format of print-to-fax jobs.
+ {{% /notice %}}
+
+#### Customising the Address Format
 
 <!--FIXME bitte hier prüfen/nachfragen was hier aktuell ist, ich hab das gefühl, dass über die faxserver-konfiguration einige Dinge schon abgedeckt sind. -->
 
-Wenn Sie nun z. B. das Adressformat auf 009912700619@meinedomain.de setzen möchten, können Sie wie folgt
-vorgehen:
+If you would like to change the address format to, for example, 009912700619@mydomain.de, follow these steps below:
 
-* Erweitern Sie über das Web-UI die Systemeinstellungen ({{< ui-button "Appliance" >}} > {{< ui-button "Systemeinstellungen" >}}) um den Eintrag *sys.fax.configure.faxmail.matcher.fax*.
-* Tragen Sie hier als Wert **/||(\d+)@.\*/** ein.
-* Diese Änderung aktivieren Sie mit Speichern und manuellem Anwenden der Netzwerk-Dienste ({{< ui-button "Anwenden" >}} > {{< ui-button "Netzwerk Dienste" >}})
+* In the pascom web UI, under ({{< ui-button "Appliance" >}} > {{< ui-button "System Settings" >}}) modify the system setting entry *sys.fax.configure.faxmail.matcher.fax*.
+* Enter the value **/||(\d+)@.\*/**.
+* These changes are activated by saving and manually applying the network services ({{< ui-button "Apply" >}} > {{< ui-button "Network Services" >}})
 
 <!--FIXME eigentlich müßte hier der Mail-Server neugestartet werden, aber das taucht nicht auf... bitte prüfen/nachfragen ob das hier so passt-->
 
-Die Standard-Adressierung lautet wie oben erwähnt z. B. empfaenger@00991123456999.fax. Sie können das
-Adressformat verändern, in dem Sie über SSH die Datei */etc/exim4/exim4.conf.mdc* editieren:
+The default address format is recipient@009912700619.fax. The format can be changed by editing the  **/etc/exim4/exim4.conf.mdc** file via SSH:
 
     fax:
     driver = manualroute
     transport = fax
     route_list ="\*.fax"
 
-Wenn Sie nun z. B. das Adressformat auf 00991123456999@meinedomain.de setzen möchten, so ist folgende Anpassung
-nötig:
+Should you wish to change the address format to, for example, 009912700619@mydomain.de, the following modification is necessary:
 
     route_list = "meinedomain.de"
 
-Um die Änderung abzuschließen, müssen Sie zusätzlich noch die Datei */etc/exim4/update-exim4.conf.conf* bearbeiten:
+To complete the modifications, you will also need to edit the file */etc/exim4/update-exim4.conf.conf*:
 
     dc_other_hostnames='localhost.localdomain;meinedomain.de'
 
 
 <!--FIXME bitte hier nochmal nachfragen was angepasst werden muss, damit die einstellungen, die über ssh gemacht werden nicht überschreiben werden. die vorhandene anleitung an dieser stelle ist etwas veraltet...-->
 
-#### Fileformat/Anhang anpassen
+#### Customise File Format / Attachment
 
-Über die Systemeinstellung sys.fax.configure.faxmail kann konfiguriert werden welche Bestandteile der E-Mail verschickt wird:
+Via the system setting sys.fax.configure.faxmail it is possible to specify which components of an e-mail are sent when it is converted to a fax:
 
-* 0: Alle Bestandteile der E-Mail werden konvertiert und verschickt (auch der E-Mail-Text)
-* 1: Nur der Anhang wird gefaxt
+* 0 (default): the entire e-mail is converted and sent as a fax (including the text of the e-mail)
+* 1: only the attachment is sent via fax
 
-#### Konvertierung der E-Mail-Bestandteile anpassen
+#### Modifying E-mail Component Conversion
 
-Unter `/var/spool/hylafax/mimetype` liegen die Konverterskripte. Diese zerlegen die eingehende EMail, je nach mimetype, in ihre Bestandteile und konvertieren diese dann zu einer Faxnachricht. Liegt für einen mimetype kein Skript vor wir dieser Teil der EMail einfach ignoriert und nicht in das Fax mit eingebunden.
-Folgende Skripte existieren:
+under `/var/spool/hylafax/mimetype` you will find the conversion scripts. Depending on MIME type, these scripts deconstruct inbound e-mails into their individual components and convert them into a fax message. Should a script for a particular mimetype not be available, then this component of the e-mail will be ignored and not built into the fax.
 
-|Skript|Beschreibung|
-|---|---|
-|application/pdf|Konvertiert einen PDF-Anhang in ein Fax|
-|image/tiff|Konvertiert einen TIFF- oder TIF-Anhang in ein Fax|
-|text/plain|Konvertiert den Plaintext-Body einer E-Mail in ein Fax|
-|text/html|Konvertiert den HTML-Body einer E-Mail in ein Fax|
+The following scripts are available: 
+
+|Script|Description|
+|------|------------|
+|application/pdf|converts a PDF attachment to a fax message|
+|image/tiff|converts a TIF or TIFF attachment to a fax message|
+|text/plain|converts a plain-text e-mail message body to a fax message|
+|text/html|converts an HTML e-mail message body to a fax message|
 
 
 ## Print-to-Fax
 
-Das Print-to-Fax-Gateway kann sowohl für den automatischen Dokumentenversand aus z. B. ERP Systemen als auch für dialogbasierte Aufträge mit dem Desktop-Client genutzt werden.
+The Print-to-Fax Gateway can be used to automatically send documents from, for example, ERP systems as well as for sending documents manually using the desktop client.
 
-{{% notice warning %}}
-Print-to-Fax wird im Cloudstack und in pascom 18 nicht unterstützt.
+{{% notice info %}}
+Print-to-Fax is not supported by cloudstack and pascom 18 solutions.
 {{% /notice %}}
 
-#### Betriebsart festlegen
+#### Define the Operating Mode
 
-Legen Sie bei der [Konfiguration des Fax-Servers]({{< relref "#fax-server-konfigurieren">}}) fest, wie Sie das Print-to-Fax-Gateway verwenden möchten.
+When [configuring the fax server]({{< relref "#fax-server-configuration">}}) please define how you would like to use the Print-to-Fax Gateway. 
 
-#### Steuerfelder einfügen
+#### Add Control Fields
 
-Damit das Faxsystem die Zielnummer und eventuell weitere Informationen aus dem Druckauftrag ermitteln kann, muss
-das zu faxende Dokument mit Steuerfeldern ausgezeichnet werden. Da diese i. d. R. nicht mit an den Empfänger
-übermittelt werden sollen, können Sie diese im produktiven Betrieb z. B. auch weiß einfärben.
+To enable the fax system to extract the destination number and other information from the print job, the document to be sent via fax must contain control fields. As those fields are usually not transmitted to the recipient, they can also be coloured in white.
 
-|Ausdruck|Bedeutung|
-|---|---|
-|@@+FAX:0991....@@|Die Rufnummer des Empfängers. Dies ist das einzige Pflichtfeld!|
-|@@+TAG:Bestellung 12345@@|Individuelle Jobkennung, wird in Listen und Benachrichtigungen angezeigt|
-|@@+NOTIFY:mustermann@pascom.net@@|Über den Fortschritt zu benachrichtigender User.|
-|@@+PRIO:100@@|Priorität des Auftrags (0-255). Aufträge mit niedriger Priorität werden bevorzugt verschickt. Default ist 200. Prioritäten verwenden Sie in Zusammenhang mit lange andauernden großvolumigen Batchaufträgen, welche dann i. d. R. eine Priorität von z. B. 250 bekommen. Ansonsten müssten alle manuellen Faxvorgänge warten, bis der Batchjob abgeschlossen ist.|
+|Expression|Description|
+|--------|---------|
+|@@+FAX:0991....@@|The recipient's fax number. This is the only mandatory field!|
+|@@+TAG:Bestellung 12345@@|Individual job description, displayed in lists and notifications.|
+|@@+PRIO:100@@|Job priority (0-255). Jobs with a lower number are dispatched before others. Default priority is 200. Priorities that you should use in relation to time-consuming, large-volume batch jobs, will usually be assigned a priority of 250, otherwise all manually started jobs would have to wait for the batch job to finish.|
 
-#### Mögliche Probleme
-Damit das System die Steuerzeichen auswerten kann, muss der Druckauftrag zunächst in ein Textformat gewandelt werden. Je nach Komplexität des Druckauftrags, verwendeten Schriftarten und Art des Druckertreibers kann es an dieser Stelle Komplikationen geben.
+#### Possible Issues
 
-Folgende Punkte sollten Sie beachten:
+That the system can analyse the control fields, the print job must now be converted into text format. Depending on the complexity of the print job, used fonts and type of print driver, this can lead to potential issues. 
 
-* Halten Sie sich an die empfohlene Treibereinrichtung.
-* Versuchen Sie bei Problemen die Steuerzeichen in einer Standardschriftart wie etwa Arial 10 einzutragen.
+You should consider the following: 
+
+* Follow the recommended driver setup.
+* Should issues arise, try entering standard fonts such as Arial 10 in the control fields.
 
 
-### Druckertreiber einrichten
-
+### Print Driver Setup
+<!--FIXME - check actual setting names in English-->
 #### Mac
 
-* Gehen Sie in die Systemeinstellungen Ihres Macs zu {{< ui-button "Drucken und Faxen" >}}.
-* Fügen Sie über {{< ui-button "+" >}} einen neuen Drucker hinzu.
-* Geben Sie nun folgende Optionen im Tab {{< ui-button "IP" >}} ein:
+* Under your Mac's System Preferences, go to {{< ui-button "Printer and Faxes" >}}.
+* Via the {{< ui-button "+" >}} symbol add a new printer.
+* Under the {{< ui-button "IP" >}} tab, enter the following options:
 
-|Option|Einstellung|
+|Option|Setting|
 |---|---|
-|Protokoll|IPP|
-|Adresse|ihreAnlage:631|
-|Warteliste|printers/sendfax|
+|Protocol|IPP|
+|Address|yourappliance:631|
+|Waiting list|printers/sendfax|
 
 #### Windows
 
-* Fügen Sie unter {{< ui-button "Systemsteuerung" >}} > {{< ui-button "Drucker und Faxgeräte" >}} einen neuen Netzwerkdrucker ein.
-* Überspringen Sie die automatische Suche.
-* Wählen Sie *Freigegebenen Drucker über den Namen auswählen* und geben Sie hier folgendes ein: *http://ihreAnlage:631/printers/sendfax*
-* Wählen Sie den geeigneten Druckertreiber aus:
+* Under {{< ui-button "Control Panel" >}} > {{< ui-button "Printers and Fax Devices" >}} add a new network printer.
+* Skip the automatic search.
+* Select *Select shared printer by name* and enter the following: *http://yourappliance:631/printers/sendfax*
+* Select the appropriate print driver:
 
-|Betriebssystem|Druckertreiber|
+|Operating System|Print Driver|
 |---|---|
 |Windows 7|Xerox 6120PS|
 |Windows 8.1|Dell Printer 3100cn PS|
