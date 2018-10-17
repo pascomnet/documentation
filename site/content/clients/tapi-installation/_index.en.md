@@ -52,7 +52,7 @@ System requirements: **Windows 7 (32 and 64bit)** or higher and **Windows Server
 
 ### TAPI Software Download
 
-The current pascom TAPI client can be [downloaded](https://www.dev.pascom.net/en/downloads/#clients) from the pascom Homepage.
+The current pascom TAPI client can be [downloaded](https://www.pascom.net/en/downloads/#clients) from the pascom Homepage.
 
 
 ### Installation on a Windows Computer

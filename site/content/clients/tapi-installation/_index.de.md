@@ -53,7 +53,7 @@ Sie können eine Debug- anstatt der Produktiv-Version installieren, indem Sie da
 
 ### TAPI Software herunterladen
 
-Den aktuellen pascom TAPI Client finden Sie im [Downloadbereich](https://www.dev.pascom.net/de/downloads/#clients) der pascom Homepage.
+Den aktuellen pascom TAPI Client finden Sie im [Downloadbereich](https://www.pascom.net/de/downloads/#clients) der pascom Homepage.
 
 
 ### Installation auf einer Windows Arbeitsstation
