@@ -1,7 +1,7 @@
 ---
 title: Import Users via XLSX
 description: Import users for the initial installation via XLSX file (Excel, Open Office, Libreoffice, etc)
-weight: 22
+weight: 20
 ---
 
 {{< doctype "both" >}}

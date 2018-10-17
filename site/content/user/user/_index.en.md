@@ -1,7 +1,7 @@
 ---
-title: Adding Users
+title: Add Users
 description: Add new users and configure the most important settings.
-weight: 22
+weight: 10
 ---
 
 {{< doctype "both" >}}
