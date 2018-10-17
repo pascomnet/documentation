@@ -64,7 +64,7 @@ Unter {{< ui-button "Benutzer" >}} > {{< ui-button "Benutzerliste" >}} > Benutze
 
 #### Virtuelles Teamfax
 
-Unter {{< ui-button "Benutzer" >}} > {{< ui-button "Benutzerliste" >}} > Benutzer auswählen und {{< ui-button "Bearbeiten" >}} im Tab {{< ui-button "Faxgerät" >}} kann für einen schon bestehenden Benutzer ein Faxgerät angelegt werden. Setzen Sie das Häckchen bei *Team Fax konfigurieren*:
+Unter {{< ui-button "Benutzer" >}} > {{< ui-button "Teams" >}} > Team auswählen und {{< ui-button "Bearbeiten" >}} im Tab {{< ui-button "Faxgerät" >}} kann für einen schon bestehenden Benutzer ein Faxgerät angelegt werden. Setzen Sie das Häckchen bei *Team Fax konfigurieren*:
 
 |Einstellung|Beschreibung|
 |---|---|
