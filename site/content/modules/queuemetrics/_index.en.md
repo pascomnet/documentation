@@ -29,9 +29,11 @@ This behaviour can be changed in the **QueueMetrics web interface** in the menu 
 
 #### Check the bindings
 To enable your phone system to write queue data to the MySQL server, external access must be enabled on the MySQL server. Sometimes, MySQL binds to localhost and therefore is unreachable from other computers. To check this, see the file **/etc/mysql/my.conf** and change the binding to **0.0.0.0** (file name and path can vary depending on your system environment).
+
     ..
     bind-address = 0.0.0.0
     ..
+    
 Then, restart the MySQL server:
 
     /etc/init.d/mysql restart
@@ -87,10 +89,12 @@ To do this, you will need to (if you have not already done so) enable the AMI to
  Next you will need to create a manager account for QueueMetrics with the pascom Web UI using the menu {{< ui-button "Appliance" >}} > {{< ui-button "Asterisk Manager" >}} accounts:
 
 #### Creating a manager account
-The manager account that you just created within the Web UI must now be added to QueueMetrics. This can be done in the menu {{< ui-button "Administrative Tools" >}} > {{< ui-button "Edit System Parameters" >}} of the QueueMetrics web interface:
-..
-callfile.dir=tcp:USERNAME:PASSWORT@PASCOM_HOST
-..
+The manager account that you just created within the Web UI must now be added to QueueMetrics. This can be done in the menu {{< ui-button "Administrative Tools" >}} > {{< ui-button "Edit System Parameters" >}} of the QueueMetrics web interface:  
+
+    ..
+    callfile.dir=tcp:USERNAME:PASSWORT@PASCOM_HOST
+    ..
+
 Replace USERNAME and PASSWORD with the values of the manager account. Instead of using the PASCOM_HOST, enter the IP address or the host name of your pascom PBX server.
 
 ## Troubleshooting
