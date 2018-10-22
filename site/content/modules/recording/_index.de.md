@@ -18,7 +18,6 @@ Das Mitschnitt System basiert auf einem in der pascom hinterlegtem Regelwerk. Di
 
 ![Illustration - pascom Mitschnitt System](concept.de.png?width=100% "pascom Mitschnitt System")
 
-
 Egal ob sie manuell oder automatisch erfolgen, die Mitschnitte werden auf der Festplatte der pascom abgelegt und können bei berechtigten Personen im Classic Client angezeigt werden. Optional können Mitschnitte per Regelwerk an beliebige E-Mail-Empfänger versendet oder per Skript auf beliebige Ziele kopiert werden.
 
 ## Konfiguration

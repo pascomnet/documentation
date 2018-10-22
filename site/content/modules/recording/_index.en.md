@@ -18,8 +18,7 @@ The recording system is based one of the many frameworks existing within pascom 
 
 ![Illustration - pascom Call Recording System](concept.en.png?width=60% "pascom Call Recording System")
 
-
-Regardless of whether the recordings are manually or automatically initiated, they will be stored on the pascom HardDisk and be displayed to permitted users within the [Classic Client]({{< relref "clients/03classic-client.md">}}). An additional option is for the recordings to be sent via the rule framework to any number of e-mail recipients or copied via script to any destination.
+Regardless of whether the recordings are manually or automatically initiated, they will be stored on the pascom HardDisk and be displayed to permitted users within the Classic Client. An additional option is for the recordings to be sent via the rule framework to any number of e-mail recipients or copied via script to any destination.
 
 ## Configuration
 
@@ -105,7 +104,7 @@ Example:
 
 Allows a user who is through a rule permitted to manually record, and during a call a red Record symbol will become visible within the Classic Client, which will start a recording:
 
-![Screenshot - Call Recordings in the client](client_manual.de.png?width=80% "Recordings in the clientt")
+![Screenshot - Call Recordings in the client](client_manual.en.png?width=80% "Recordings in the client")
 
 Alternatively recordings can also be started via the Record Button on your Telephone.
 Should a recording have been made, you can access it retrospectively from your Journal through the REC symbol:
