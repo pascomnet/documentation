@@ -1,5 +1,5 @@
 ---
-title: Lancom as a Router
+title: Using a Lancom as a Router
 description: How to use a LANCOM router to connect mobile users to the pascom Server via the Internet
 weight: 10
 ---
