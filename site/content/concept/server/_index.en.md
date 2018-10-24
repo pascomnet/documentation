@@ -1,6 +1,6 @@
 ---
-title: pascom Server Systemaufbau
-description: Überblick Systemaufbau des pascom Servers
+title: pascom Server Structure
+description: Overview of the pascom system server structure
 weight: 10
 ---
  
