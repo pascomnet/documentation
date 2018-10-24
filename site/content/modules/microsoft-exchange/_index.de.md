@@ -19,6 +19,10 @@ Mit dem pascom Connector für Microsoft Exchange haben Sie die Möglichkeit
 
 Microsoft Exchange wird auch unterstützt bei Verwendung des gehosteten Office 365.
 
+{{% notice tip %}}
+Systemvoraussetzung ist **Exchange 2013 SP1** oder höher, **Office 365** oder **Exchange Online**.
+{{% /notice %}}
+
 ### Öffentliche Adressbücher
 
 pascom verbindet sich zum Exchange Server mit einem eigens dafür angelegten Benutzer.

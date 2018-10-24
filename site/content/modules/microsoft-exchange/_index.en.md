@@ -17,6 +17,10 @@ The pascom Microsoft Exchange Connector provides you with the option for synchro
 
 Microsoft Exchange is also supported when using a hosted Office 365.
 
+{{% notice tip %}}
+System requirements are **Exchange 2013 SP1** or higher, **Office 365** or **Exchange Online**.
+{{% /notice %}}
+
 ### Public Address Books
 
 pascom phone systems connect to the Exchange Server via a pascom Exchange User specially created for this purpose.
