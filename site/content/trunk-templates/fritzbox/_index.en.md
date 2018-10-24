@@ -4,7 +4,7 @@ description: Register Trunk via Fritz!Box
 weight: 40
 ---
 
-{{< doctype "both"  >}}
+{{< doctype "self"  >}}
 
 {{< description >}}
 
