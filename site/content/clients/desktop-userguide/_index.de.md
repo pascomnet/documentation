@@ -257,12 +257,17 @@ Bei der Installation des Clients sind die Tastenkürzel bereits vordefiniert. Di
 
 ![Tastenkürzel](settings_shortcuts.de.png?width=55%)
 
+{{% notice info %}}
+Tastenkürzel sind nur im Desktop Client unter Windows und macOS verfügbar.
+{{% /notice %}}
+
 Im folgenden werden die globalen Tastenkürzel näher erklärt:
 
 |Tastenkürzel|Beschreibung|
 |---|---|
 |Intelligentes Abheben|Sie können einen ankommenden Anruf unter Verwendung des Tastenkürzels annehmen, auch wenn der Client nicht im Fokus ist.|
 |Click-to-Dial|Diese Funktion ermöglicht es mit einem Tastenkürzel aus dem Browser oder einem Dokument heraus eine Nummer zu wählen.|
+|Fenster umschalten|Diese Funktion ermöglicht es mit einem Tastenkürzel den Client in den Vordergrund zu holen oder zu minimieren.|
 
 ## Client-Einstellungen
 
