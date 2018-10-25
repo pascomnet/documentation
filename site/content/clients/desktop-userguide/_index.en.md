@@ -245,6 +245,10 @@ By clicking on the Voicemail box symbol, it is possible to call your voicemail b
 
 ## Shortcut Keys
 
+{{% notice info %}}
+Shortcut keys are only available in the desktop client for Windows and macOS.
+{{% /notice %}}
+
 When installing the client, the shortcut keys are predefined. However, if needed the shortcut keys can be freely customised according to your preference.
 
 ![Shortcut keys](settings_shortcuts.en.png?width=55%)
@@ -255,6 +259,7 @@ When installing the client, the shortcut keys are predefined. However, if needed
 |---|---|
 |Smart On / Off Hooking |Enables incoming call pickup via shortcut key, even when the client is not the active window.|
 |Click-to-Dial|Enables dialing a number direct from a browser or document by highlight and pressing the shortcut keys.|
+|Toggle Window|This function enables either bringing the client to the foreground or to minimise the client via a shortcut key.|
 
 ## Client Settings
 
