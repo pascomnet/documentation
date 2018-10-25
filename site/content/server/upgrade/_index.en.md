@@ -22,7 +22,7 @@ Please take the time to review the following checklist **before** you begin the 
 
 * [ ] You do not use any Siemens Telephones
 * [ ] You do not use any Auerswald Telephones (Support is being implemented)
-* [ ] You do not use any Aastra Desktop Telephones
+* [ ] You do not use any Aastra Desktop Telephones (Support is being implemented)
 * [ ] You do not use any Patton Gateways
 * [ ] You do not use any FlexPanels
 * [ ] You do not use any Print To Fax
