@@ -32,9 +32,9 @@ In the following example, please **replace** **[pascom_Server]** with the IP add
 
 |Phone Manufacturer|Option 66 (tftp-server-name) |Option 67 (filename) |
 |---|---|---|
-|Snom|https://[pascom_Server]:8880/p/[phonesystemname]/{mac}||
-|Yealink, Grandstream, Aastra, Mitel|https://[pascom_Server]:8880/p/[phonesystemname]/||
-|Auerswald|https://[pascom_Server]:8880/p/[phonesystemname]/|\<MACADR\>|
+|Snom|http://[pascom_Server]:8880/p/[phonesystemname]/{mac}||
+|Yealink, Grandstream, Aastra, Mitel|http://[pascom_Server]:8880/p/[phonesystemname]/||
+|Auerswald|http://[pascom_Server]:8880/p/[phonesystemname]/|\<MACADR\>|
 
 Should you only wish to send these options exclusively to telephones, then you can restrict the use of the option to the manufactures used by you:
 
