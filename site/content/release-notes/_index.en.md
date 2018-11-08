@@ -17,7 +17,8 @@ pre: <i class="fa fa-file-alt" aria-hidden="true"></i>&nbsp;
 
 |Version|Release Type|Published|
 |-------|------------|---------------:|
-|[Release 18.01]({{< ref "/release-notes/pascom18" >}})| Bugfix Release | 09.10.2018 |
+|[Release 18.02]({{< ref "/release-notes/pascom18" >}})| Bugfix Release | 07.11.2018 |
+|[Release 18.01]({{< ref "/release-notes/pascom18#release-18-01-09-10-2018" >}})| Bugfix Release | 
 |[Release 18.00]({{< ref "/release-notes/pascom18#release-18-00-20-09-2018" >}})| Feature Release | 
 
 ## Stable Server Version

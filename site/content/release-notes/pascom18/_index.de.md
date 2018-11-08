@@ -57,6 +57,49 @@ Patton Gateways werden nicht mehr unterstützt. Sollten Sie noch ISDN im Einsatz
 Wegen fehlender Verschlüsselung für Sprache wie Provisionierung wurde die Unterstützung für die Siemens Unify optiPoint Modell eingestellt.
 
 
+## Release 18.02 (07.11.2018)
+
+**Auf einen Blick**
+
+- Mobile Clients lassen sich nun auch mit Credentials pairen
+- Mehr Sicherheit durch Firewall zwischen Instanzen
+- Neue Benutzer können nun auch aus der fertig eingerichteten Instanz heraus eingeladen werden
+- Snom M700 unterstützt nun LDAP (kein TLS, Schnittstelle muss auf "mixed" eingestellt werden)
+- Gateway Provisionierung über GUI wurde repariert
+- Endgeräte können nun über den User Wizard angelegt werden
+
+**ÄNDERUNGEN:**
+
+- MD-7686 - Conference hasleft and hasjoin messages are always played in english
+- MD-8200 - Info of received fax keeps loading
+- MD-10647 - Yealink firmware update broken
+- MD-10794 - Basic configuration not used as default
+- MD-10821 - Change dialplan in grandstream provisioning template
+- MD-10925 - Device reboot invoked after deleting a user
+- MD-10977 - Avoid empty page in /ui/ of management interface
+- MD-10984 - Logout button is shown in instanceui if the user is authenticatd via csui SSO
+- MD-10995 - Consul license.update event should be synchronized
+- MD-10997 - Remove deprecated flex panel data and hide Flex panels in webui
+- MD-11025 - REST /identity/states returns 204 in any case
+- MD-11032 - M700 provisioning via commander throws exception
+- MD-11035 - Grandstream HT802 provisioning via commander throws exception
+- MD-11036 - Aastra Dect provisioning via commander throws exception
+- MD-11059 - Authentication dialogue shows "mobydick" in some browsers
+- MD-11070 - Improve response of client if wrong phonenumber gets entered
+- MD-11093 - Message about wrong input after creating a trunk because of (not deletable) gateway
+- MD-11104 - Documentation for REST Trunk is wrong
+- MD-11105 - REST Request “/identity/states” is broken
+- MD-11130 - Can't dial large numbers necessary for *74 call forwardings
+- MD-9034 - Show provisioning URL for gateway also for related devices
+- MD-10047 - Block ip traffic between cloud instances
+- MD-10114 - Import Integrated External Phones via connector
+- MD-10866 - Invite new users after finished instance wizard
+- MD-10970 - Implement ldap proxy support for M700
+- MD-11027 - Add desktop phone pairing to the instance-wizard
+- MD-11043 - XMPP warning mails are sent to users of pascom.cloud
+- MD-11126 - Mobile pairing with credentials
+
+
 ## Release 18.01 (09.10.2018)
 
 **Auf einen Blick**
