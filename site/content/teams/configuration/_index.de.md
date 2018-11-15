@@ -1,6 +1,6 @@
 ---
 title: Teams anlegen
-description: Teams in pascom sind vergleichbar mit Warteschlangen. Rufstrategien helfen Ihnen Anrufe gezielt zu steuern.
+description: So legen Sie ein Team manuell an und nehmen die wichtigsten Einstellungen vor.
 weight: 10
 ---
 
@@ -52,10 +52,6 @@ Hier kann ein Routing-Skript ausgewählt werden. Mehr dazu unter [Skill Based Ro
 
 In einem Team ist es möglich einzustellen, welche Benutzer im pascom Client Pickup-Benachrichtigungen über eingehende Rufe erhalten.
 
-Zuerst muss eine Pickup-Rolle definiert werden. Diese kann als Mitglieder ein Team haben und auch einzelne Benutzer, die nicht zum Team gehören. Informationen zu Rollen finden Sie unter Rollen.
-
-Anschließend können Sie im Team, das zur angelegten Pickup-Rolle gehört festlegen wer Benachrichtigungen erhält.
-
 Folgende Einstellungen sind möglich:
 
 |Parameter|Bedeutung|
@@ -64,7 +60,8 @@ Folgende Einstellungen sind möglich:
 |**Verfügbare Agenten und Nichtmitglieder**|Agenten die im Team angemeldet sind und Agenten die Nichtmitglieder im Team sind erhalten eine Benachrichtigung. Flexible Agenten die gerade nicht im Team angemeldet sind und pausierte Agenten erhalten keine Benachrichtigung.|
 |**Nicht verfügbare Agenten und Nichtmitglieder**|Agenten die nicht im Team angemeldet sind, Agenten die pausiert sind und Nichtmitglieder des Teams erhalten eine Benachrichtigung. Agenten die feste Mitglieder des Teams sind und flexible Agenten die gerade angemeldet sind erhalten keine Benachrichtigungen.|
 |**Nur Nichtmitglieder**|Nur Nichtmitglieder des Teams erhalten eine Benachrichtigung.|
-|**Gesamte Pickup-Gruppe**|Die gesamte Pickup-Gruppe bekommt Benachrichtigungen.|
+|**Gesamte Pickup-Gruppe**|Die gesamte Pickup-Gruppe bekommt Benachrichtigungen. Dazu muss zuerst eine [Pickup-Rolle]({{<ref "/user/role#pickup">}}) definiert werden.|
+
 
 ### Anzeigetext
 
@@ -113,7 +110,7 @@ Wenn Sie mit Gewichten arbeiten dürfen Sie keine Warteschlangen ohne Gewicht b
 
 ### Ansage-Frequenz
 
-Tragen Sie hier ein in welchen Abständen (Sekunden) der Anrufer über seine Position und Wartezeit in der Warteschleife informiert werden soll. Lassen Sie dieses Feld leer wird der Anrufer keine derartigen Ansagen hören.
+Tragen Sie hier ein in welchen Abständen (Anzahl Sekunden) der Anrufer über seine Position und Wartezeit in der Warteschleife informiert werden soll. Lassen Sie dieses Feld leer wird der Anrufer keine derartigen Ansagen hören.
 
 ### Optionen
 

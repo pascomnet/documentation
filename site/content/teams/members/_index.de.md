@@ -1,6 +1,6 @@
 ---
 title: Team Mitglieder
-description: Teams in pascom sind vergleichbar mit Warteschlangen. Rufstrategien helfen Ihnen Anrufe gezielt zu steuern.
+description: So fügen Sie Benutzer in Teams hinzu und steueren deren Erreichbarkeit.
 weight: 20
 ---
 
