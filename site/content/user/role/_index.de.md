@@ -77,6 +77,8 @@ Beispiel:
 
 ### Pickup
 
+Grundsätzlich kann jeder Benutzer von jedem einen Anruf via *8 heranholen, bis irgendeine Rolle mit dem Rollentyp "pickup.group" angelegt wurde. Ab diesem Zeitpunkt muss das Pickup-Recht explizit definiert werden.
+
 In einem Team ist es möglich einzustellen, welche Benutzer im pascom Client Pickup-Benachrichtigungen über eingehende Rufe erhalten. 
 Wenn die zu benachrichtigenden Benutzer nicht in der Pickup-Konfiguration im [Team]({{<ref "/teams/configuration#pickup-benachrichtigungen">}}) abgedeckt werden können ist das Erstellen einer Pickup-Gruppe notwendig. 
 
