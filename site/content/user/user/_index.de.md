@@ -162,27 +162,6 @@ Aktionen sind in der pascom ein wichtiges Werkzeug um den Anrufablauf zu steuern
 
 Lesen Sie dazu bitte den Artikel über [Aktionen]({{< ref "acd/actions" >}}).
 
-## Rollen
-
-Benutzer ebenso wie Geräte, Arbeitsplätze oder Teams können Mitglieder in einer oder mehreren Rollen sein. Der Rolle selbst können Eigenschaften und Rechte zugeteilt werden. Sie steuern telefonie-relevante Eigenschaften und Rechte wie bsw. die Erlaubnis Gespräche anderer Benutzer heranzuholen.
-
-Rollen können eingerichtet werden unter {{< ui-button "Benutzer" >}} > {{< ui-button "Rollen" >}}.
-
-Es gibt eine spezielle Rolle mit dem Namen **All Users**. Diese Rolle ist standardmäßig allen Benutzern, Geräten, Arbeitsplätzen und Teams zugeteilt und kann auch nicht entzogen werden.
-
-Ein häufiger Anwendungsfall (und unsere Empfehlung) ist es, dass man pro Abteilung oder Team eine Rolle erstellt. Z. B. ist es häufig gewünscht, dass Benutzer nur innerhalb Ihrer Abteilung Gespräche heranholen können und sich gegenseitig im pascom Client sehen. Dazu entziehen Sie einfach der Rolle *All Users* die Eigenschaft *xmpp.group* und weisen dies einer neuen Rolle z. B. Support zu in der Sie dann alle Support-Benutzer zu Mitgliedern machen.  
-
-|Rollentype|Beschreibung|Auswirkung|
-|---|---|---|
-|**billing.group**|Abrechnungsgruppe des Billing-Moduls. Dient zur Gruppierung der Gesprächsdaten.|Benutzer, Rufgruppen, Warteschlangen|
-|**xmpp.supervisor**|Benutzer mit dieser Rolle können Gespräche aller Benutzer managen. Wichtig für Flexpanel und TAPI.|Benutzer|
-|**location.group**|Diese Rolle legt fest, welche Benutzer sich an Arbeitsplätzen anmelden können. Wird diese Rolle nicht konfiguriert, können sich Benutzer an allen Arbeitsplätzen anmelden. Wird eine solche Rolle angelegt, können sich Benutzer die nicht in einer Rolle *location.group* Mitglieder sind, nicht mehr an Arbeitsplätzen anmelden.|Benutzer, Arbeitsplätze|
-|**pickup.group**|Alle Mitglieder der Rolle haben das Recht, eingehende Anrufe die an ein anderes Mitglied der Gruppe gerichtet sind, heranzuholen. Dies kann dann entweder per Telefon \*8<Durchwahl> oder Client erfolgen.|Benutzer, Rufgruppen, Warteschlangen|
-|**redirect.choice**|Eine Identität mit diesem Rollentyp wird nie von einer anlagenbasierten Rufumleitung umgeleitet, sondern ruft immer das direkte Ziel.|Benutzer|
-|**xmpp.group**|Alle Identitäten die eine Rolle mit dem Rollentyp *xmpp.group* zugewiesen haben, werden in eine *XMPP shared Group* eingebunden. D. h. in den Kontaktliste der Clients müssen sich diese Personen nicht mehr gegenseitig hinzufügen sondern sind sofort sichtbar. Falls Sie die *xmpp.group* der Rolle allen Identitäten zuordnen, sieht im Client immer jeder jeden.|Benutzer|
-|**redirect.group**|Alle Benutzer in dieser Rolle haben das Recht für andere Benutzer Rufumleitungen setzen (via [Funktions-Code]({{< ref "howto/featurecodes" >}}))|
-
-
 
 ## FollowMe
 

@@ -122,7 +122,7 @@ Beispiel:
 
 ### Rufumleitung setzen
 
-Wenn ein Benutzer das Recht haben soll für andere Benutzer via Funktionscodes eine Rufumleitung einzustellen wird eine Rolle mit dem Rollentyp ***redirect.group*** benötigt.
+Wenn ein Benutzer das Recht haben soll für andere Benutzer via [Funktions-Codes]({{<ref "/howto/featurecodes">}}) eine Rufumleitung einzustellen wird eine Rolle mit dem Rollentyp ***redirect.group*** benötigt.
 
 Beispiel:       
 *Unter* {{< ui-button "Benutzer" >}} > {{< ui-button "Rollen" >}} > {{< ui-button "Hinzufügen" >}} *eine neue Rolle anlegen mit der Bezeichung "Rufumleitungen".*               
