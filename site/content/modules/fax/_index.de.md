@@ -74,11 +74,6 @@ Unter {{< ui-button "Benutzer" >}} > {{< ui-button "Teams" >}} > Team auswählen
 
 ## Mail-to-Fax
 
-{{% notice info %}}
-Mail-to-Fax wird im Cloudstack nicht unterstützt.
-{{% /notice %}}
-
-
 ### Vorbereitung
 
 Richten Sie auf Ihrem Mail-Server ein Postfach ein, welches via Pop3 oder IMAP von der pascom Telefonanlage abgerufen werden kann.
