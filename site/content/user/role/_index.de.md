@@ -45,34 +45,19 @@ Jetzt können Sie der erstellten Rolle Benutzer, Teams, Geräte und/oder Arbeits
 
 ## Anwendungsbeispiele
 
-### TAPI
+### Sichtbarkeit im Client
 
-Wenn Sie in Ihrer Windows Umgebung die [pascom TAPI]({{<ref "/clients/tapi-installation">}}) verwenden möchten wird eine eigene Rolle benötigt.
-Erstellen Sie dazu eine eigene Rolle mit dem Rollentyp **xmpp.supervisor** und weisen Sie im Falle von einem Terminal Server einen Benutzer hinzu, über den die Telefonie gesteuert werden soll.
+Wenn Sie Teams im [Desktop und Mobile Client]({{<ref "/clients">}}) sichtbar machen möchten benötigen Sie eine Rolle mit dem Rollentyp **xmpp.group**.
 
 Beispiel:           
-*Unter* {{< ui-button "Benutzer" >}} > {{< ui-button "Rollen" >}} > {{< ui-button "Hinzufügen" >}} *eine neue Rolle anlegen mit der Bezeichung "TAPI-Benutzer".*            
-*Weisen Sie unter* {{< ui-button "Rollentypen" >}} ***xmpp.supervisor*** *hinzu.*           
-*Weisen Sie unter {{< ui-button "Benutzer" >}} den Benutzer "Superuser" hinzu.*            
+*Unter* {{< ui-button "Benutzer" >}} > {{< ui-button "Rollen" >}} > {{< ui-button "Hinzufügen" >}} *eine neue Rolle anlegen mit der Bezeichung "Support-Team".*               
+*Weisen Sie unter* {{< ui-button "Rollentypen" >}} ***xmpp.group*** *hinzu.*             
+*Weisen Sie unter {{< ui-button "Benutzer" >}} alle Benutzer des "Support" Team hinzu.*          
+*Weisen Sie unter {{< ui-button "Teams" >}} das Team "Support" hinzu.*    
 *Klicken Sie auf {{< ui-button "Speichern" >}} und wenden Sie die Änderungen an.*       
+*Jetzt sehen alle Support-Benutzer in Ihrem Client eine eigene Kontaktliste "Support-Team" und unter der Kontaktanzeige "Teams" ist die Warteschlange "Support" sichtbar.*
 
-
-### flexible Arbeitsplätze
-
-Wenn Ihre Mitarbeiter in Ihrem Unternehmen keine festen Arbeitsplätze haben oder bestimmte Mitarbeiter regelmäßig Ihre [Arbeitsplätze]({{<ref "/concept/user">}}) wechseln (zb. auch ins Homeoffice) ist es ratsam die entsprechenden Geräte in Ihrer pascom Anlage nicht Benutzern direkt, sondern einem [Arbeitsplatz]({{<ref "/user/user#arbeitsplatz">}}) zuzuweisen.
-
-Standardmäßig kann sich jeder Benutzer an jedem Arbeitsplatz in Ihrer pascom Telefonanlage anmelden.
-Möchten Sie dies verhindern und jedem Benutzer nur bestimmte Arbeitsplätze anbieten/ zugänglich machen benötigen Sie hierfür eine Rolle mit dem Rollentyp **location.group**.
-
-Diese Konfiguration ist dann für jeden Benutzer, der Arbeitsplätze flexibel nutzen möchte, notwendig.
-
-Beispiel:       
-*Unter* {{< ui-button "Benutzer" >}} > {{< ui-button "Rollen" >}} > {{< ui-button "Hinzufügen" >}} *eine neue Rolle anlegen mit der Bezeichung "Arbeitsplatz Praktikant".*               
-*Weisen Sie unter* {{< ui-button "Rollentypen" >}} ***location.group*** *hinzu.*             
-*Weisen Sie unter {{< ui-button "Benutzer" >}} den Benutzer "Praktikant" hinzu.*           
-*Weisen Sie unter {{< ui-button "Arbeitsplätze" >}} den oder die verfügbaren/ erlaubten Arbeitsplätze hinzu.*               
-*Klicken Sie auf {{< ui-button "Speichern" >}} und wenden Sie die Änderungen an.*           
-*Jetzt kann sich der Benutzer "Praktikant" nur an den zugewiesenen Arbeitsplätzen anmelden.*
+Wenn Sie im Client angezeigt bekommen möchten, wer mit wem telefoniert, müssen Sie in der Weboberfläche der pascom Telefonanlage die Einstellung ***sys.xmpp.properties.roster.shownumbers*** auf "true" setzen. *(Verfügbar seit pascom 17.08)*
 
 
 ### Pickup
@@ -107,22 +92,39 @@ Beispiel:
 *Jetzt erreicht der Benutzer "Chef" trotz eingerichteter Rufumleitung immer alle anderen Benutzer direkt.*
 
 
-### Sichtbarkeit im Client
+### TAPI
 
-Wenn Sie bestimmte Benutzer und Teams im [Desktop und Mobile Client]({{<ref "/clients">}}) sichtbar machen möchten benötigen Sie eine Rolle mit dem Rollentyp ***xmpp.group***.
+Wenn Sie in Ihrer Windows Umgebung die [pascom TAPI]({{<ref "/clients/tapi-installation">}}) verwenden möchten wird eine eigene Rolle benötigt.
+Erstellen Sie dazu eine eigene Rolle mit dem Rollentyp **xmpp.supervisor** und weisen Sie im Falle von einem Terminal Server einen Benutzer hinzu, über den die Telefonie gesteuert werden soll.
 
 Beispiel:           
-*Unter* {{< ui-button "Benutzer" >}} > {{< ui-button "Rollen" >}} > {{< ui-button "Hinzufügen" >}} *eine neue Rolle anlegen mit der Bezeichung "Support-Team".*               
-*Weisen Sie unter* {{< ui-button "Rollentypen" >}} ***xmpp.group*** *hinzu.*             
-*Weisen Sie unter {{< ui-button "Benutzer" >}} alle Benutzer im "Support" Team hinzu.*          
-*Weisen Sie unter {{< ui-button "Teams" >}} das Team "Support" hinzu.*    
+*Unter* {{< ui-button "Benutzer" >}} > {{< ui-button "Rollen" >}} > {{< ui-button "Hinzufügen" >}} *eine neue Rolle anlegen mit der Bezeichung "TAPI-Benutzer".*            
+*Weisen Sie unter* {{< ui-button "Rollentypen" >}} ***xmpp.supervisor*** *hinzu.*           
+*Weisen Sie unter {{< ui-button "Benutzer" >}} den Benutzer "Superuser" hinzu.*            
 *Klicken Sie auf {{< ui-button "Speichern" >}} und wenden Sie die Änderungen an.*       
-*Jetzt sehen alle Support-Benutzer in Ihrem Client eine eigene Kontaktliste "Support-Team" und unter der Kontaktanzeige "Teams" ist die Warteschlange "Support" sichtbar.*
+
+
+### flexible Arbeitsplätze
+
+Wenn Ihre Mitarbeiter in Ihrem Unternehmen keine festen Arbeitsplätze haben oder bestimmte Mitarbeiter regelmäßig Ihre [Arbeitsplätze]({{<ref "/concept/user">}}) wechseln (zb. auch ins Homeoffice) ist es ratsam die entsprechenden Geräte in Ihrer pascom Anlage nicht Benutzern direkt, sondern einem [Arbeitsplatz]({{<ref "/user/user#arbeitsplatz">}}) zuzuweisen.
+
+Standardmäßig kann sich jeder Benutzer an jedem Arbeitsplatz in Ihrer pascom Telefonanlage anmelden.
+Möchten Sie dies verhindern und jedem Benutzer nur bestimmte Arbeitsplätze anbieten/ zugänglich machen benötigen Sie hierfür eine Rolle mit dem Rollentyp **location.group**.
+
+Diese Konfiguration ist dann für jeden Benutzer, der Arbeitsplätze flexibel nutzen möchte, notwendig.
+
+Beispiel:       
+*Unter* {{< ui-button "Benutzer" >}} > {{< ui-button "Rollen" >}} > {{< ui-button "Hinzufügen" >}} *eine neue Rolle anlegen mit der Bezeichung "Arbeitsplatz Praktikant".*               
+*Weisen Sie unter* {{< ui-button "Rollentypen" >}} ***location.group*** *hinzu.*             
+*Weisen Sie unter {{< ui-button "Benutzer" >}} den Benutzer "Praktikant" hinzu.*           
+*Weisen Sie unter {{< ui-button "Arbeitsplätze" >}} den oder die verfügbaren/ erlaubten Arbeitsplätze hinzu.*               
+*Klicken Sie auf {{< ui-button "Speichern" >}} und wenden Sie die Änderungen an.*           
+*Jetzt kann sich der Benutzer "Praktikant" nur an den zugewiesenen Arbeitsplätzen anmelden.*
 
 
 ### Rufumleitung setzen
 
-Wenn ein Benutzer das Recht haben soll für andere Benutzer via [Funktions-Codes]({{<ref "/howto/featurecodes">}}) eine Rufumleitung einzustellen wird eine Rolle mit dem Rollentyp ***redirect.group*** benötigt.
+Wenn ein Benutzer das Recht haben soll für andere Benutzer via [Funktions-Codes]({{<ref "/howto/featurecodes">}}) eine Rufumleitung einzustellen wird eine Rolle mit dem Rollentyp **redirect.group** benötigt.
 
 Beispiel:       
 *Unter* {{< ui-button "Benutzer" >}} > {{< ui-button "Rollen" >}} > {{< ui-button "Hinzufügen" >}} *eine neue Rolle anlegen mit der Bezeichung "Rufumleitungen".*               
@@ -131,4 +133,3 @@ Beispiel:
 *Klicken Sie auf {{< ui-button "Speichern" >}} und wenden Sie die Änderungen an.*       
 *Jetzt kann die Benutzerin "Sekretärin" für einen Benutzer mit der Durchwahl 15 via Funktionscode \*7415#100 eine Rufumleitung auf die Zentrale mit der Durchwahl 100 setzen.*
 
-<!-- TODO -->

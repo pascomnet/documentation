@@ -1,7 +1,7 @@
 ---
 title: Team Mitglieder
 description: So fügen Sie Benutzer in Teams hinzu und steueren deren Erreichbarkeit.
-weight: 20
+weight: 30
 ---
 
 {{< doctype "both" >}}
@@ -51,10 +51,8 @@ Somit kann die Pause aktiviert/deaktiviert werden mit: **\*99100#13#111**
 
 Pausiert ein Mitglied in der Warteschleife kann das von den anderen Mitgliedern incl. Pausengrund im pascom Client gesehen werden:
 
-<!-- TODO
-![Screenshot - Pause aktivieren im pascom Client](../../images/team_pause.png?width=90% " Pause aktivieren im pascom Client") -->
+![Screenshot - Pausengründe im pascom Client](pausereasons_overview.de.png "Pausengründe im pascom Client")
 
 Das Pausieren kann im pascom Client in der Team Anzeige durch das Pausensymbol gesteuert werden:
-<!-- TODO 
-![Screenshot - Pausengründe im pascom Client](../../images/team_pause_detail.png?width=30% " Pausengründe im pascom Client") -->
 
+![Screenshot - Pause aktivieren im pascom Client](pausereasons_activate.de.png?width=90% "Pause aktivieren im pascom Client")

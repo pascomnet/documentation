@@ -1,7 +1,7 @@
 ---
 title: Teams anlegen
 description: So legen Sie ein Team manuell an und nehmen die wichtigsten Einstellungen vor.
-weight: 10
+weight: 20
 ---
 
 {{< doctype "both" >}}
@@ -14,7 +14,7 @@ Es gibt zwei verschiedene Arten von Teams die sich lediglich im Funktionsumfang 
 
 ### Rufgruppen
 
-Rufgruppen *(Abkürzung: RG)* haben **fix zugeteilte** Mitglieder und kennen nur die beiden Rufstrategien **alle** und **nacheinander**. Anrufer bekommen entweder ein Freizeichen oder Wartemusik vorgespielt.
+Rufgruppen *(Abkürzung: RG)* haben **fix zugeteilte** Mitglieder und kennen nur die beiden Rufstrategien **alle** und **nacheinander**. Anrufer bekommen entweder ein Freizeichen oder Wartemusik vorgespielt. 
 
 ### Warteschlangen
 
@@ -25,9 +25,9 @@ Anrufer werden nacheinander in der Warteschlange **eingereiht** und bekommen auf
 Warteschlangen können ein unterschiedliches Gewicht haben. Je höher die Gewichtung, desto wichtiger die Warteschlange.
 
 
-## Warteschlangen erstellen
+## Team erstellen
 
-Zum Erstellen eines Teams klicken Sie in der Web-UI auf {{< ui-button "Benutzer" >}} > {{< ui-button "Teams" >}}. Hier wählen Sie **Warteschlange** und geben Sie der Team einen Namen und eine Durchwahl und Klicken Sie auf {{< ui-button "Weiter" >}}.
+Zum Erstellen eines Teams klicken Sie in der Web-UI auf {{< ui-button "Benutzer" >}} > {{< ui-button "Teams" >}}. Hier wählen Sie **Warteschlange** oder **Rufgruppe** aus und geben Sie dem Team einen Namen und eine Durchwahl und klicken Sie auf {{< ui-button "Weiter" >}}.
 
 Folgende Einstellungen sind nun möglich:
 
@@ -41,6 +41,7 @@ Folgende Einstellungen sind nun möglich:
 |**wenigsten Anrufe**|Bei dieser Rufstrategie wird der eingehende Anruf zuerst dem Team-Mitglied signalisiert, welches am wenigsten Anrufe angenommen hat. <br/>Diese Einstellung berücksichtigt nicht die Anrufdauer der getätigten Anrufe. Wenn ein Mitglied beispielsweise 5 mal eine Minute lang telefoniert und ein anderes 2 mal eine Stunde ist trotzdem letzteres an der Reihe. <br/>**Achtung**: Flexible Mitglieder setzen durch ein- und ausbuchen aus dem Team alle Zähler zurück und sind nach dem Einbuchen immer automatisch das Mitglied, welches die wenigsten Anrufe entgegen genommen hat. Wir empfehlen stattdessen Pausengründe zu verwenden, da diese keine Zähler zurücksetzen.|<i class="fas fa-times"></i>|<i class="fas fa-check"></i>|
 |**per Zufall**|Bei dieser Rufstrategie wird der eingehende Anruf zufällig an ein Team-Mitglied signalisiert. |<i class="fas fa-times"></i>|<i class="fas fa-check"></i>|
 |**mem-nacheinander**|Bei dieser Rufstrategie werden alle Mitglieder nach der Zuweisungsreihenfolge angerufen. Nach einem angenommenen Anruf wird der nächste Anrufer jedoch nicht an das Mitglied am Anfang der Zuweisungsreihenfolge signalisiert, sondern an das Team-Mitglied nach dem Mitglied, das zuletzt den Anruf angenommen hat.<br/>Die Klingel-Dauer des Anrufs wird hier durch den "Mitglieder-Timeout" definiert. <br/>**Achtung**: Flexible Mitglieder verändern durch ein- und ausbuchen die Position im Team, daher wird empfohlen hier alle Mitglieder fest einzubuchen und stattdessen Pausengründe zu verwenden. |<i class="fas fa-times"></i>|<i class="fas fa-check"></i>|
+|**mem-nacheinander - sortiert**|Bei dieser Rufstrategie werden alle Mitglieder nach der Zuweisungsreihenfolge angerufen. Nach einem angenommenen Anruf wird der nächste Anrufer jedoch nicht an das Mitglied am Anfang der Zuweisungsreihenfolge signalisiert, sondern an das Team-Mitglied nach dem Mitglied, das zuletzt den Anruf angenommen hat.<br/>Die Klingel-Dauer des Anrufs wird hier durch den "Mitglieder-Timeout" definiert. <br/>Flexible Mitglieder verändern durch ein- und ausbuchen nicht die Position im Team. |<i class="fas fa-times"></i>|<i class="fas fa-check"></i>|
 |**per Zufall - gewichtet**|Bei dieser Rufstrategie wird der eingehende Anruf zufällig an ein Team-Mitglied signalisiert, jedoch fließen die Prioritäten in die Gewichtung mit ein - es bleibt aber weiterhin zufällig welcher Agent gerufen wird.<br/>Ein Agent mit niedrigerem Prioritätswert hat also nur eine höhere Wahrscheinlichkeit gerufen zu werden als ein Agent mit höherer Priorität. |<i class="fas fa-times"></i>|<i class="fas fa-check"></i>|
 
 
