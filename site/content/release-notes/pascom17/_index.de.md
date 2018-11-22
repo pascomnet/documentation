@@ -31,7 +31,34 @@ Ensure to do the following before the update to this version:<br><br>
 {{% /notice %}}
 
 
-## Release 17.11. (25.09.2018)
+## Release 17.12 (22.11.2018)
+
+**Auf einen Blick**
+
+* Klingelverhalten ist nun im Amt anpassbar um providerspezifische Probleme mit fehlendem Ringback tone bei eingehenden Anrufen zu beheben
+* Mobile Clients können nun auch über Zugangsdaten gepairt werden
+* Verhalten bei Datenbankbackup verbessert
+* Berofix Gateways mit einem Modul können wieder hinzugefügt werden
+* Telekom DNS Monitoring Skript verbessert
+
+**ÄNDERUNGEN:**
+
+* MD-9046 - User import is not possible
+* MD-10361 - No ringback tone for calls coming in from a sip trunk
+* MD-10709 - Add new cisco MAC vendor ID
+* MD-10732 - Database backup task is not stopped if postgresql dump fails
+* MD-10896 - Improve Telekom DNS monitoring script
+* MD-10999 - Enable remote control with HTTP credentials on Snom phones via basic config
+* MD-11000 - Change preselected value in peoplefone trunk
+* MD-11045 - Skill handling via REST-API is broken
+* MD-11124 - Change grandstream ATA gateway basic config
+* MD-11127 - Empty mail body and attached pdf not faxed if "fax with content of the mail" configured
+* MD-11128 - Can not add a beronet gateway with only one interface in stable
+* MD-11159 - Server update breaks if the database backup would get too big
+* MD-11113 - Implement mobile phone pairing with user credentials
+
+
+## Release 17.11 (25.09.2018)
 
 **Auf einen Blick**
 

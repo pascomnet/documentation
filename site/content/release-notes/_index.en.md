@@ -25,7 +25,8 @@ pre: <i class="fa fa-file-alt" aria-hidden="true"></i>&nbsp;
 
 |Version|Release Type|Published|
 |-------|------------|---------------:|
-|[Release 17.11]({{< ref "/release-notes/pascom17" >}})| Bugfix Release | 25.09.2018 |
+|[Release 17.12]({{< ref "/release-notes/pascom17" >}})| Bugfix Release | 22.11.2018 |
+|[Release 17.11]({{< ref "/release-notes/pascom17#release-17-11-25-09-2018" >}})| Bugfix Release | 25.09.2018 |
 |[Release 17.10]({{< ref "/release-notes/pascom17#release-17-10-19-06-2018" >}})| Bugfix Release | 19.06.2018 |
 |[Release 17.09]({{< ref "/release-notes/pascom17#release-17-09-24-05-2018" >}})| Bugfix Release | 24.05.2018 |
 |[Release 17.08]({{< ref "/release-notes/pascom17#release-17-08-23-04-2018" >}})| Bugfix Release | 23.04.2018 |
