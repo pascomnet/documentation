@@ -56,6 +56,10 @@ Patton Gateways werden nicht mehr unterstützt. Sollten Sie noch ISDN im Einsatz
 
 Wegen fehlender Verschlüsselung für Sprache wie Provisionierung wurde die Unterstützung für die Siemens Unify optiPoint Modell eingestellt.
 
+### Einstellung cisco SPA 112 Support
+
+Aufgrund fehlender Zertifikate für die Nutzung des cisco SPA 112 Gateways wurde die Unterstützung mit pascom 18 eingestellt.
+
 
 ## Release 18.02 (07.11.2018)
 
