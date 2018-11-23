@@ -23,6 +23,7 @@ Bitte beachten Sie folgende Checkliste **BEVOR** Sie mit dem Upgrade beginnen
 * [ ] Ich verwende keine Auerswald Telefone (Unterstützung noch in Arbeit)
 * [ ] Ich verwende keine Aastra Tischtelefone (Unterstützung noch in Arbeit)
 * [ ] Ich verwende keine Patton Gateways
+* [ ] Ich verwende keine cisco SPA 112 Gateways
 * [ ] Ich verwende keine FlexPanels
 * [ ] Ich verwende kein Print To Fax
 * [ ] Ich verwende kein SIP-Amt ohne Registrierung (z.B. Vodafone)
@@ -32,6 +33,8 @@ Bitte beachten Sie folgende Checkliste **BEVOR** Sie mit dem Upgrade beginnen
 * [ ] Ich verwende keinen pascom Cluster bzw. möchte diesen auflösen
 * [ ] Ich habe meine Lizenz vom pascom Vertriebs Team upgraden lassen
 * [ ] Ich habe einen mit meiner Firma verknüpften my.pascom.net Zugang
+* [ ] Ich habe eine statische externe IP-Adresse, da ich Mobile und Desktop Clients von extern nutzen möchte oder werde extern keine Clients nutzen
+* [ ] Ich nutze meine pascom Telefonanlage nicht als Router
 * [ ] Ich verwende den "Admin"-User nur zu administrativen Zwecken
 
 Weitere Details über wichtige Änderungen entnehmen Sie bitte den Release-Notes.

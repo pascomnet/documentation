@@ -45,7 +45,7 @@ Unter {{< ui-button "Informationen" >}} > {{< ui-button "Faxserver" >}} haben Si
 
 ## Virtuelles Fax anlegen
 
-Virtuelle Faxe können für einen [Benutzer]({{< ref "/user/user">}}) oder für ein Team angelegt werden.
+Virtuelle Faxe können für einen [Benutzer]({{< ref "/user/user">}}) oder für ein [Team]({{< ref "/teams/configuration">}}) angelegt werden.
 
 
 #### Virtuelles Benutzerfax

@@ -16,6 +16,23 @@ weight: 30
 - Hinweis auf unterstützte Headsets
 - VErbinden -> Bilder mit einheitlichen Nummern
 -->
+## Login
+
+Damit ein angelegter [Benutzer]({{< relref "/user/user#Benutzer-anlegen">}}) den pascom Client verwenden und sich anmelden kann benötigt er seinen Benutzernamen und das hinterlegte Benutzerkennwort.
+
+|Eingabefeld|Beschreibung|
+|---|---|
+|Benutzername|Benutzername@Instanzname|
+|Passwort|Benutzerkennwort|
+|Server|Domain oder IP des Serverhosts|
+|Anmeldedaten speichern?|Setzen Sie hier einen Haken, wenn sich der Client beim Starten automatisch mit den angegebenen Zugangsdaten anmelden soll.|
+
+{{% notice info %}}
+Verwenden Sie eine selbstgehostete "on Premise" Telefonanlage mit nur einer Instanz, ist die Angabe des Instanznamen nicht erforderlich.
+{{% /notice %}}
+
+![Client Login](clientlogin.de.png?width=80%)
+
 
 ## Übersicht
 
