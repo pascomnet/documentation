@@ -33,7 +33,6 @@ Verwenden Sie eine selbstgehostete "on Premise" Telefonanlage mit nur einer Inst
 
 ![Client Login](clientlogin.de.png?width=80%)
 
-
 ## Übersicht
 
 Der Client besteht aus drei grundsätzlichen Bereichen:

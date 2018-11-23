@@ -17,6 +17,23 @@ weight: 30
 - VErbinden -> Bilder mit einheitlichen Nummern
 -->
 
+## Login
+
+That the added [user]({{< relref "/user/user#adding-users">}}) can login and use the pascom client den pascom Client, they will need their username and password.
+
+|Field|Description|
+|---|---|
+|Username|username@instancename|
+|Password|User password|
+|Server|Domain or IP address of the server|
+|Save login details?|Select the check box if your wish the allow the client to start automatically with the added login credentials.|
+
+{{% notice info %}}
+Should you use a self-hosted "On-premise" phone system with only one instance, entering the @instancename component after the username is not necessary.
+{{% /notice %}}
+
+![Client Login](clientlogin.en.png?width=80%)
+
 ## Overview
 
 The Desktop client consists of three main components:
