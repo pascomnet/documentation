@@ -58,7 +58,7 @@ Wegen fehlender Verschlüsselung für Sprache wie Provisionierung wurde die Unte
 
 ### Einstellung cisco SPA 112 Support
 
-Aufgrund fehlender Zertifikate für die Nutzung des cisco SPA 112 Gateways wurde die Unterstützung mit pascom 18 eingestellt.
+Aufgrund der Einschränkung des cisco SPA 112 Gateways auf ausschließliche Nutzung mit cisco-Zertifikaten wurde die Unterstützung mit pascom 18 eingestellt. 
 
 
 ## Release 18.02 (07.11.2018)
