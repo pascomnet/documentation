@@ -9,7 +9,7 @@ For further information, please refer to our detailed [Client documentation]({{<
 {{%/notice%}}
 
 
-## Release 44.D54
+## Release 44.R66 (27.11.2018)
 
 **Overview**
 

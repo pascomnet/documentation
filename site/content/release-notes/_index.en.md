@@ -11,7 +11,7 @@ pre: <i class="fa fa-file-alt" aria-hidden="true"></i>&nbsp;
 
 |Version|Release Type|Published|
 |-------|------------|---------------:|
-|[Release 44.D54]({{< ref "/release-notes/pascomClient">}})| Bugfix Release |  |
+|[Release 44.R66]({{< ref "/release-notes/pascomClient#release-44-r66-27-11-2018">}})| Bugfix Release | 27.11.2018 |
 |[Release 42.R34]({{< ref "/release-notes/pascomClient#release-42-r34-17-10-2018">}})| Feature Release | 17.10.2018 |
 
 ## Current Server Version

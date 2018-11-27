@@ -9,12 +9,12 @@ Für weitere Informationen zu unserem pascom Client lesen Sie bitte unsere ausf�
 {{%/notice%}}
 
 
-## Release 44.D54
+## Release 44.R66 (27.11.2018)
 
 **Auf einen Blick**
 
 - Plantronics Headset Bibliothek auf die neueste Version aktualisiert
-- Die iOS-App empfängt nun zuverlässiger Anrufe via Push
+- Die iOS-App empfängt nun noch zuverlässiger Anrufe via Push
 - Der GSM-Schalter behält seinen Zustand nun zuverlässig
 
 **ÄNDERUNGEN:**
