@@ -35,7 +35,7 @@ Please take the time to review the following checklist **before** you begin the 
 * [ ] You have taken a snapshot of your virtual machine (if appropriate)
 * [ ] You have had your licence upgraded by the pascom sales team
 * [ ] You have a my.pascom.net access associated with your company
-* [ ] Either you have a static external IP address as you wish to use both the mobile and desktop clients from outside the company network or you no clients can be used externally
+* [ ] Either you have a static external IP address as you wish to use both the mobile and desktop clients from outside the company network or the clients are not to be used externally
 * [ ] You do not use your pascom phone system as a router
 * [ ] You use the "Admin" user for administrative purposes only
 
