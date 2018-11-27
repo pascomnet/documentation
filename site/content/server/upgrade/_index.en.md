@@ -24,6 +24,7 @@ Please take the time to review the following checklist **before** you begin the 
 * [ ] You do not use any Auerswald Telephones (Support is being implemented)
 * [ ] You do not use any Aastra Desktop Telephones (Support is being implemented)
 * [ ] You do not use any Patton Gateways
+* [ ] You do not use any Cisco SPA 112 Gateways
 * [ ] You do not use any FlexPanels
 * [ ] You do not use any Print To Fax
 * [ ] You do not use any SIP Trunks without Registration (e.g. Vodafone)
@@ -34,7 +35,10 @@ Please take the time to review the following checklist **before** you begin the 
 * [ ] You have taken a snapshot of your virtual machine (if appropriate)
 * [ ] You have had your licence upgraded by the pascom sales team
 * [ ] You have a my.pascom.net access associated with your company
-* [ ] I use the "Admin" user for administrative purposes only
+* [ ] Either you have a static external IP address as you wish to use both the mobile and desktop clients from outside the company network or you no clients can be used externally
+* [ ] You do not use your pascom phone system as a router
+* [ ] You use the "Admin" user for administrative purposes only
+
 
 Further details regarding the changes can be found in the release notes.
 

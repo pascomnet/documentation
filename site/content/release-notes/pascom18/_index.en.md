@@ -52,9 +52,13 @@ The pascom Classic Client and the FlexPanels are no longer supported by pascom 1
 
 Patton Gateways are no longer supported. Should you still have ISDN deployed, you should consider switching to a SIP connection. If you use Patton Gateways for analog fax devices etc., the  [Grandstream ATA Apapter]({{< ref "/gateways/grandstream" >}}) an ideal, cost effective alternative. 
 
-### Discountinued Siemens Unify optiPoint Support
+### Discontinued Siemens Unify optiPoint Support
 
 Due to non-existing encryption for voice and provisioning, Siemens Unify optiPoint endpoint support has been discontinued.
+
+### Discontinued Cisco SPA 112 Support
+
+Due to the Cisco SPA 112 gateway limitations that require a Cisco certificate, support has been discontinued in pascom 18.
 
 
 ## Release 18.02 (07.11.2018)
@@ -65,7 +69,7 @@ Due to non-existing encryption for voice and provisioning, Siemens Unify optiPoi
 - Increased security with Firewalls between instances.
 - New users can now be sent e-mail invites from an already configured phone system instance.
 - Snom M700 systems now support LDAP (no TLS, interface must be set to "mixed"). 
-- Repaired Gateway provisionig via the GUI
+- Repaired Gateway provisioning via the GUI
 - Endpoints can now be added via the User Setup wizard. 
 
 **MODIFICATIONS:**
@@ -121,7 +125,7 @@ Due to non-existing encryption for voice and provisioning, Siemens Unify optiPoi
 
 ## Release 18.00 (20.09.2018)
 
-Intial Release of pascom Version 18.
+Initial Release of pascom Version 18.
 
 ### pascom Clients
 - The Desktop clients can now control phones via HTTP
