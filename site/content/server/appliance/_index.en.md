@@ -41,7 +41,7 @@ Now you can directly connect the prepared USB stick to the USB3 port (blue port 
 
 ## Connect Appliance
 
-![Quick Start Guide](getting_started_guide.en.png)
+![Quick Start Guide](getting_started_guide.en.png?width=80%)
 
 {{% button href="getting_started_guide.pdf" icon="fa fa-download" %}} Download Quick Start Guide{{% /button %}}
 

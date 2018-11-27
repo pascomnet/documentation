@@ -41,7 +41,7 @@ Den so vorbereiteten USB-Stick können Sie nun direkt an den USB3 Port (Rücksei
 
 ## Appliance anschließen
 
-![Schnellstartanleitung](getting_started_guide.de.png)
+![Schnellstartanleitung](getting_started_guide.de.png?width=80%)
 
 {{% button href="getting_started_guide.pdf" icon="fa fa-download" %}} Schnellstartanleitung herunterladen{{% /button %}}
 
