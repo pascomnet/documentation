@@ -39,7 +39,7 @@ Der Einbuchcode lautet **\*90** und der Agent hat die Durchwahl **13**. Der Agen
 
 {{% notice note %}}
 Damit der Einbuchcode von der pascom richtig erkannt und bearbeitet wird, muss die pascom wissen, wie viele Stellen eine Benutzerduchwahl hat. Dies muss in den Systemeinstellungen festgelegt werden. Suchen Sie in dem Suchfeld nach *sys.asterisk.dialplan.global.alias.digit.value*. Der Defaultwert ist hier *3*. Passen Sie das entsprechend an.<br>
-Wir raten davon ab, bei Benutzern Durchwahlen zu verwenden mit unterschiedlichen Druchwahlstellen.
+Wir raten davon ab, bei Benutzern Durchwahlen zu verwenden mit unterschiedlichen Durchwahlstellen.
 {{% /notice %}}
 
 Mit den von Asterisk zur Verfügung gestellten [Funktionscodes]({{<relref "/howto/featurecodes" >}}) kann der Benutzer das Ein- und Ausbuchen in Teams mit **\*99** auch ohne bekannten Einbuchcode steuern.

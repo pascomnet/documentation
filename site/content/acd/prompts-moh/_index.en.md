@@ -59,7 +59,7 @@ As has already been described, English and German are currently available as the
 
 Upon saving, your new language will appear in the languages overview list.
 
-Managing Music on Hold
+### Managing Music on Hold
 
 The recordings used for your music on hold can be managed in the `Advanced > Music on Hold` menu of the pascom web interface.
 {{% notice warning %}}
