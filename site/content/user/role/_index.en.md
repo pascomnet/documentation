@@ -48,11 +48,11 @@ Now you can assigned users, teams, devices and / or locations to your newly crea
 Should you wish to make teams visible in the [Desktop and Mobile Client]({{<ref "/clients">}}), a role with the role type **xmpp.group** is required.
 
 Example:           
-*Under* {{< ui-button "Users" >}} > {{< ui-button "Roles" >}} > {{< ui-button "Add" >}} *add a new role with the name "Support-Team".*               
-*Under the* {{< ui-button "Role types" >}} *tab, add the ***xmpp.group*** role type to the role.*           
-*Under the* {{< ui-button "Users" >}} *tab, add all "Support" users.*          
-*Under the* {{< ui-button "Teams" >}} *tab, add the "Support" team.*    
-*Click {{< ui-button "Save" >}} *and apply the changes.*       
+Under {{< ui-button "Users" >}} > {{< ui-button "Roles" >}} > {{< ui-button "Add" >}} add a new role with the name "Support-Team".              
+Under the {{< ui-button "Role types" >}} tab, add the ***xmpp.group*** role type to the role.          
+Under the {{< ui-button "Users" >}} tab, add all "Support" users.         
+Under the {{< ui-button "Teams" >}} tab, add the "Support" team.   
+Click {{< ui-button "Save" >}} and apply the changes. 
 *Now all support users will see their own "Support Team" contact list within the pascom client and under the contacts filter drop down "Teams", the "Support" queue will also be visible.*
 
 Should you wish to see who is calling with whom within the client, then you will need to the set the ***sys.xmpp.properties.roster.shownumbers*** property setting to "true" within the pascom phone system web UI. *(Available since pascom 17.08)*
@@ -68,11 +68,11 @@ If the [Team]({{<ref "/teams/configuration#pickup-notifications">}}) pickup conf
 With a pickup role with the type **pickup.group** it is also possible to configure users to be able to pickup incoming external and internal calls from one another.
 
 Example:       
-*Under* {{< ui-button "Users" >}} > {{< ui-button "Roles" >}} > {{< ui-button "Add" >}} *add a new role with the title "Pickup Group".*        
-*Under the* {{< ui-button "Role Type" >}} *tab, add the type ***pickup.group*** to the role.*  
-*Under the* {{< ui-button "Teams" >}} *tab, assign the desired team.*   
-*Under the* {{< ui-button "Users" >}} *tab, assign the desired users.*       
-*Click* {{< ui-button "Save" >}} *and apply the changes.*
+Under {{< ui-button "Users" >}} > {{< ui-button "Roles" >}} > {{< ui-button "Add" >}} add a new role with the title "Pickup Group".      
+Under the {{< ui-button "Role Type" >}} tab, add the type ***pickup.group*** to the role.  
+Under the {{< ui-button "Teams" >}} tab, assign the desired team.   
+Under the {{< ui-button "Users" >}} tab, assign the desired users.       
+Click {{< ui-button "Save" >}} and apply the changes.
 
 *Finally, you can specify in the [Team]({{<ref "/teams/configuration#pickup-notifications">}}) to which the pickup role belongs, that the pickup group should be used as the control option.*
 
@@ -81,11 +81,11 @@ Example:
 If user 'A', despite a call forwarding being activated wishes to directly reach internal user 'B' without the call forwarding coming into affect, a role with the role type **redirect.choice** is required. Each user with this role breaks through (penetrates) the call forwarding rule and will be put directly through to the selected extension.
 
 Example:           
-*Under* {{< ui-button "Users" >}} > {{< ui-button "Roles" >}} > {{< ui-button "Add" >}} *add a new role with the title "Boss Redirect".*               
-*Under the* {{< ui-button "Role types" >}} *tab, add the role type ***redirect.choice*** to the role.*             
-*Under the* {{< ui-button "Users" >}} *tab, add the user "Boss".*           
-*Click* {{< ui-button "Save" >}} *and apply the changes.*       
-*Now the user "Boss" can always directly reach any user despite any active call forwards.*
+Under {{< ui-button "Users" >}} > {{< ui-button "Roles" >}} > {{< ui-button "Add" >}} add a new role with the title "Boss Redirect".               
+Under the {{< ui-button "Role types" >}} tab, add the role type ***redirect.choice*** to the role.            
+Under the {{< ui-button "Users" >}} tab, add the user "Boss".          
+Click {{< ui-button "Save" >}} and apply the changes.       
+Now the user "Boss" can always directly reach any user despite any active call forwards.
 
 
 ### TAPI
@@ -95,10 +95,10 @@ Should you wish to use the [pascom TAPI]({{<ref "/clients/tapi-installation">}})
 For this purpose, create a role with the role type **xmpp.supervisor** and in the case of a Terminal Server scenario, assign a user via which telephony should be managed.
 
 Example:           
-*Under* {{< ui-button "Users" >}} > {{< ui-button "Roles" >}} > {{< ui-button "Add" >}} *add a new role with the title "TAPI-User".*            
-*Under the* {{< ui-button "Role types" >}} *tab, add the role type ***xmpp.supervisor*** to the role.*  
-*Under the* {{< ui-button "Users" >}} *tab, add the user "Superuser".*            
-*Click* {{< ui-button "Save" >}} *and apply the changes.*          
+Under {{< ui-button "Users" >}} > {{< ui-button "Roles" >}} > {{< ui-button "Add" >}} add a new role with the title "TAPI-User".            
+Under the {{< ui-button "Role types" >}} tab, add the role type ***xmpp.supervisor*** to the role.  
+Under the {{< ui-button "Users" >}} tab, add the user "Superuser".            
+Click {{< ui-button "Save" >}} and apply the changes.         
 
 
 ### Flexible Workstations / Locations
@@ -111,11 +111,11 @@ Should you wish to prevent this and only allow users to certain locations, a rol
 This configuration is necessary for each user wishing to flexibly user different locations.
 
 Example:       
-*Under* {{< ui-button "Users" >}} > {{< ui-button "Roles" >}} > {{< ui-button "Add" >}} *add a new role with the title "Location Office Internship".*               
-*Under the* {{< ui-button "Role types" >}} *tab, add the role type ***location.group*** to the role.*             
-*Under the* {{< ui-button "Users" >}} *tab, add the user "Office Intern".*           
-*Under the* {{< ui-button "Locations" >}} *tab, add the available / permitted locations.*               
-*Click* {{< ui-button "Save" >}} *and apply the changes.*          
+Under* {{< ui-button "Users" >}} > {{< ui-button "Roles" >}} > {{< ui-button "Add" >}} add a new role with the title "Location Office Internship".               
+Under the {{< ui-button "Role types" >}} tab, add the role type ***location.group*** to the role.            
+Under the {{< ui-button "Users" >}} tab, add the user "Office Intern".           
+Under the {{< ui-button "Locations" >}} tab, add the available / permitted locations.               
+Click {{< ui-button "Save" >}} and apply the changes.         
 *Now the user "Office Intern" can only log into the assigned locations.*
 
 
@@ -124,9 +124,10 @@ Example:
 If a user should have the permission to set call forwards for other users using [Function Codes]({{<ref "/howto/featurecodes">}}), a role with the role type **redirect.group** is required.
 
 Example:       
-*Under* {{< ui-button "Users" >}} > {{< ui-button "Roles" >}} > {{< ui-button "Add" >}} *add a new role with the title "Call Forwarding".*               
-*Under the* {{< ui-button "Role Types" >}} *tab, add the type ***redirect.group*** to the role.*             
-*Under the* {{< ui-button "Users" >}} *tab, add the user "Secretary".*         
-*Click* {{< ui-button "Save" >}} *and apply the changes.*         
+Under {{< ui-button "Users" >}} > {{< ui-button "Roles" >}} > {{< ui-button "Add" >}} add a new role with the title "Call Forwarding".               
+Under the {{< ui-button "Role Types" >}} tab, add the type ***redirect.group*** to the role.
+Under the {{< ui-button "Users" >}} tab, add the user "Secretary".         
+Click {{< ui-button "Save" >}} and apply the changes.         
+
 *Now the user "Secretary" will have the ability to use the function codes to set up call forwarding for other users. For example, should it be necessary, to set up a forwarding to the central switchboard (ext. 100) for the user with the extension 15 they can use the function code \*7415#100.*
 
