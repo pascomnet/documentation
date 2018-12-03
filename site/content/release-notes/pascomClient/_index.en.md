@@ -17,7 +17,7 @@ For further information, please refer to our detailed [Client documentation]({{<
 - The iOS-App now gets calls via push more reliable
 - The GSM-Switch now keeps it’s state reliably
 
-**ÄNDERUNGEN:**
+**MODIFICATIONS:**
 
 * [CL-10] - Adapt tooltip in client to current state
 * [CL-15] - Do not acknowledge chat message if received in settings menu
