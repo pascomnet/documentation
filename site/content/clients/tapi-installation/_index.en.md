@@ -19,14 +19,18 @@ The pascom TAPI functions independently of the pascom Desktop Client.
 ### Supported TAPI Functions
  
  The TAPI Interface specifies a number of call related functions, of which the following are supported by the pascom TAPI:
- 
- |Function| Comments|
- |---------|----------|
- |Signalization of incoming calls|  Signaling of phone numbers, call directions, further details|
- |Call Origination| Initiate calls to a number|
- |Hang Up   |End calls|
- |Pickup    |Complete a pick up on a certain extension|
- |Call Termination| Automatically terminate calls on the phone|
+
+|Function| Comment|
+|---|---|
+|**Signalization of incoming calls**|Signaling of phone numbers, call directions, further details|
+|**Pickup**|Complete a pick up on a certain extension|
+|**Hold**|Place an active call on hold|
+|**Resume**|Retrieve the held calls|
+|**Hang Up**|End calls|
+|**Call Origination**|Initiate calls to a number|.
+|**Call Termination**|Automatically terminate calls on the phone|
+
+
 
 ## Configure the Trunk Code for TAPI
 
@@ -34,7 +38,7 @@ When configuring or first using the TAPI interface, you will be asked for the to
 
 The arear code is a mandatory field. Enter your area code without the leading 0. All other fields should be left empty. <!--(FixMe) This dialog is accessible under {{< ui-button "Control Panel" >}} > {{< ui-button "Telephone and Modem" >}} > {{< ui-button "Call Rules (My location)" >}} > {{< ui-button "Edit" >}}-->.
 
-![Location settings einstellen](location.de.png?width=50%)<!--Fix Me-->
+![configurate location settings](location.en.png?width=50%)
 
 
 ## TAPI Client Installation
@@ -65,13 +69,13 @@ Start the setup procedure using the file you just downloaded, accept the terms a
 
 After the installation has been successfully completed, you will need to configure the connection of the TAPI to pascom
 
-![TAPI Configuration](config_credentials.en.png?width=30%)
+![TAPI Configuration](config_credentials.en.png?width=40%)
 
 As stated before, the TAPI will login with the same user data just like the pascom Client
 
 |Variable| Description |
 |---------|------------|
-|Username |username|
+|Username |username@instance|
 |Password |users´ password|
 |mobydick Server| IP number of hostname of the pascom Server|
 
@@ -83,7 +87,7 @@ You can now confirm the successful installation by clicking on **Finish**.
 
 Should you wish to install the TAPI on a Terminal Server or on a computer that is used by more than one person, then you will need assign the users, who will connect using the TAPI, with the ***xmpp.supervisor Role***. This means that only one individual XMPP connection will be constructed from the Terminal Server, over which the total communication will be transmitted.
 
-![Concept](terminalserver_concept.png?width=60%)
+![Concept](tapi_concept.png?width=60%)
 
 
 #### Installation
@@ -95,13 +99,13 @@ Start the setup procedure using the file you just downloaded, accept the terms a
 
 After the installation has been successfully completed, you will need to configure the connection of the TAPI to pascom:
 
-![TAPI configuration](config_credentials.en.png?width=30%)
+![TAPI configuration](config_credentials.en.png?width=40%)
 
 As stated before, the TAPI will login with the same user data just like the pascom Client.
 
 |Variable| Description |
 |---------|------------|
-|Username |username|
+|Username |username@instance|
 |Password |users´ password|
 |mobydick Server| IP number or hostname of the pascom Server|
 
@@ -115,11 +119,11 @@ You can now confirm the successful installation by clicking on **Finish**.
 
 Start Outlook and select the desired contact entry. Using the right mouse button, select the number to call from the drop down menu: 
 
-![TAPI Outlook](outlook_dial_1.de.png)
+![TAPI Outlook](outlook_dial_1.en.png)
 
 Now the New Call window will appear: confirm the number by clicking **Start call**:
 
-![TAPI Outlook](outlook_dial_2.de.png?width=40%)
+![TAPI Outlook](outlook_dial_2.en.png?width=40%)
 
  Now your telephone should make the call.
  
@@ -129,16 +133,17 @@ Now the New Call window will appear: confirm the number by clicking **Start call
  
  By clicking **Dial Options** you can select line to be used:
 
- ![TAPI Outlook](outlook_line.de.png?width=50%)
+ ![TAPI Outlook](outlook_line.en.png?width=50%)
 
 ### Unattended (Silent) Installation
 
 It is also possible to install the TAPI without needing any GUI interaction. In order to do this, the installations programme must be called up using the following options:
 
-    md-tapi-setup-2.00.00.R.exe /S /options=username:password:server.domain.tld
+    pc-tapi-setup-3.
+    R42_4b8de95.exe /S /options=username@instance:password:server.domain.tld
 
     Example:
-    md-tapi-setup-2.00.00.R.exe /S /options=mmuster:123456789:pascom.example.com
+    pc-tapi-setup-3.R42_4b8de95.exe /S /options=mmustermann@pascom:12345678:pascom.cloud
 
 If the TAPI user has the ***xmpp.supervisor*** **Role**, all available users will be automatically selected and will then be available within the TAPI application.
 
@@ -165,7 +170,7 @@ In order to be able to record Debug Output, the debug version of the pascom driv
 
 3. Select the entry "pascom TAPI Service Provider"
 
-![TAPI Service Provider](debug_phone_and_modem.de.png?width=50%)
+![TAPI Service Provider](debug_phone_and_modem.en.png?width=50%)
 
 4. Click Configure
 5. If in the following mask, the warning "WARNING: DEBUG VERSION INSTALLED" appears, then clearly the Debug-Version is installed
