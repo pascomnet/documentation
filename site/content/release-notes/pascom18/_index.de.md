@@ -61,6 +61,66 @@ Wegen fehlender Verschlüsselung für Sprache wie Provisionierung wurde die Unte
 Aufgrund der Einschränkung des cisco SPA 112 Gateways auf ausschließliche Nutzung mit cisco-Zertifikaten wurde die Unterstützung mit pascom 18 eingestellt. 
 
 
+## Release 18.03 (17.12.2018)
+
+**Auf einen Blick**
+
+- neue Asterisk Version 13.23.1
+- GUI für das Anlegen eines beronet gateways verbessert
+- Beronet card Audio Problem behoben
+- LDAP Unterstützung für Yealink Dect Systeme wurde eingebaut
+- Yealink W60B Dect wird nun provisioniert
+- SIP ALG ist nun auf Interfaceebene konfigurierbar
+- VPN der Instanz verbessert instance-to-site VPN
+- Diverse Verbesserungen bezüglich Fax
+
+**ÄNDERUNGEN:**
+
+- [MD-10485] - Asterisk log level can't be changed via UI
+- [MD-10972] - Ignore cronjob to create system backup during restore
+- [MD-10980] - CSUI close button in notification dialog ugly
+- [MD-11066] - Skip autostart feature is not cluster aware
+- [MD-11100] - Remove "pascom was started from your hard drive" hint in login mask
+- [MD-11101] - Instance administrator can not be renamed
+- [MD-11102] - Reduce sip registration speed in case of authentication failures
+- [MD-11106] - Load related problems on pascom.cloud apache proxies
+- [MD-11110] - Outgoing Fax ID not added to fax
+- [MD-11117] - Trunk Template Export fails
+- [MD-11119] - Snom M700 multicell senders will end up with same config
+- [MD-11120] - Remove the broken fax inlinegif feature
+- [MD-11125] - Prometheus database is lost on each host update
+- [MD-11133] - Provisioning log shows that Grandstream is not supported
+- [MD-11139] - Remove connector datasource "mobydick"
+- [MD-11140] - Empty mail body and attached pdf not faxed if "fax with content of the mail" configured
+- [MD-11153] - Can't get recordings via REST api /services/monitor
+- [MD-11155] - Sending fax via Beronet trunk failed
+- [MD-11157] - Increase length of username for fax 027mod_mailusername
+- [MD-11158] - Apache2 default page shown if UI is deactivated on second interface
+- [MD-11168] - Do not send rtcp stats to proxy localhost port
+- [MD-11170] - A snom M700 shows up as "yealink dect" in the gateway list
+- [MD-11177] - Missing call activity after dropping call to another team
+- [MD-11181] - Beronetcard after update to 18.02 no audio
+- [MD-11194] - A database restore is not cleaned up when doing an update at the same time
+- [MD-10367] - Remove deprecated yealink DeviceHandlers
+- [MD-10546] - Prune old pbx images on each system startup
+- [MD-10922] - Cleanup BeroNet device handler code
+- [MD-10933] - Remove "skip auto restart" feature from onsite hosts
+- [MD-10971] - Implement ldap proxy support for Yealink DECT system
+- [MD-11038] - Improve prometheus metrics
+- [MD-11069] - Upgrade asterisk to version 13.23.1
+- [MD-11078] - Enhance beroNet Provisioning for Cloud usage
+- [MD-11109] - Easier configuration for Fax-Tagline streamline Fax-Caller-ID
+- [MD-11115] - Enable/Disable SIP ALG on the host
+- [MD-11118] - Implement provisioning for Yealink W60B DECT gateway
+- [MD-11134] - Enhance instance vpn gateway for instance-to-site connections
+- [MD-11151] - Tune kamailio settings based on availiable memory
+- [MD-11154] - Unregister a sip peer if we can not reach it on the proxy because of a missing TLS connection
+- [MD-11156] - Configure and autoscale some prometheus parameters
+- [MD-11179] - Add idle metric to license renegotiation code
+- [MD-11180] - Add more network tools to host / containers
+- [MD-11189] - Increase consul max open file limit
+
+
 ## Release 18.02 (07.11.2018)
 
 **Auf einen Blick**
