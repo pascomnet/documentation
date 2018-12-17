@@ -9,6 +9,37 @@ For further information, please refer to our detailed [Client documentation]({{<
 {{%/notice%}}
 
 
+## Release 45.R93 (17.12.2018)
+
+**Overview**
+
+- Windows users can now optionally use Windows integrated notifications (Windows Info Center). This improves displaying notifications, in particular on mutli-monitor systems with differing UI scalings
+- The client can now use a monitored folder to automatically suggest PDF files to send as a Fax
+- The Android client now displays nofitications for missed calls
+- When two calls are being handled using the pascom softphone, it is now possible to switch the active call with the held call
+
+**MODIFICATIONS:**
+
+* [CL-55] - Use native notification systems on Windows
+* [CL-70] - Number in journal search results is very small on tablet
+* [CL-156] - Send PDF files as Fax by watching a folder
+* [CL-237] - Show a persistent notification if a call is missed on android
+* [CL-250] - Android client ignores phone locking state on android 9
+* [CL-256] - Received invalid call data after *44 on location device
+* [CL-261] - Prohibit multiple shortcuts in recording state
+* [CL-273] - Improve multi-call handling ("Makeln") when using pascom Softphone
+* [CL-274] - Call volume is too low on mobile
+* [CL-277] - Cant mark chat message as seen because of incorrect autoaway db value
+* [CL-279] - Touchable area for the phone number input field is too small on mobile
+* [CL-284] - Proximity sensor not darken call screen after transfer
+* [CL-288] - Handle incoming GSM call on android if softphone is already in call
+* [CL-292] - Missing busy tone if softphone is unavailable
+* [CL-303] - Generating new QR code by pressing enter
+* [CL-306] - Client crash on Ubuntu 18.04.1 LTS 
+* [CL-309] - Incorrect phone number matching in DATEV phonebook
+* [CL-333] - Improve client starter entry on Ubuntu
+
+
 ## Release 44.R66 (27.11.2018)
 
 **Overview**

@@ -9,6 +9,37 @@ Für weitere Informationen zu unserem pascom Client lesen Sie bitte unsere ausf�
 {{%/notice%}}
 
 
+## Release 45.R93 (17.12.2018)
+
+**Auf einen Blick**
+
+- Windows Benutzer können nun optional Windows-Integrierte (Windows Info Center) Benachrichtigungen verwenden. Dies verbessert die Anzeige der Benachrichtigungen insbesondere auf Multi-Monitor-Systemen mit verschiedenen UI-Skalierungsfaktoren
+- Der Client kann nun PDF-Dateien aus einem bestimmten überwachten Ordner automatisch zum Faxversand vorschlagen
+- Der Android-Client zeigt nun bei einem verpassten Anruf eine Benachrichtigung an
+- Wenn zwei Anrufe am pascom Softphone vorhanden sind, dann kann der aktive mit dem gehaltenen Anruf getauscht werden
+
+**ÄNDERUNGEN:**
+
+* [CL-55] - Use native notification systems on Windows
+* [CL-70] - Number in journal search results is very small on tablet
+* [CL-156] - Send PDF files as Fax by watching a folder
+* [CL-237] - Show a persistent notification if a call is missed on android
+* [CL-250] - Android client ignores phone locking state on android 9
+* [CL-256] - Received invalid call data after *44 on location device
+* [CL-261] - Prohibit multiple shortcuts in recording state
+* [CL-273] - Improve multi-call handling ("Makeln") when using pascom Softphone
+* [CL-274] - Call volume is too low on mobile
+* [CL-277] - Cant mark chat message as seen because of incorrect autoaway db value
+* [CL-279] - Touchable area for the phone number input field is too small on mobile
+* [CL-284] - Proximity sensor not darken call screen after transfer
+* [CL-288] - Handle incoming GSM call on android if softphone is already in call
+* [CL-292] - Missing busy tone if softphone is unavailable
+* [CL-303] - Generating new QR code by pressing enter
+* [CL-306] - Client crash on Ubuntu 18.04.1 LTS 
+* [CL-309] - Incorrect phone number matching in DATEV phonebook
+* [CL-333] - Improve client starter entry on Ubuntu
+
+
 ## Release 44.R66 (27.11.2018)
 
 **Auf einen Blick**
