@@ -69,7 +69,7 @@ Due to the Cisco SPA 112 gateway limitations that require a Cisco certificate, s
 - Improved GUI for adding beroNet Gateways
 - Resolved beroNet card audio problem
 - Implemented Plain LDAP support for Yealink DECT systems
-- Added Yealink W60B Auto Provisioning support
+- Added Yealink W60B DECT Auto Provisioning support
 - SIP ALG is now configurable at the interface level
 - Improved instance VPN tool function for instance to site VPNs
 - Diverse improvements relatiing to Fax functions
