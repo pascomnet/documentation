@@ -68,7 +68,7 @@ Due to the Cisco SPA 112 gateway limitations that require a Cisco certificate, s
 - New Asterisk version 13.23.1
 - Improved GUI for adding beroNet Gateways
 - Resolved beroNet card audio problem
-- Implemented LDAP support for Yealink DECT systems
+- Implemented Plain LDAP support for Yealink DECT systems
 - Added Yealink W60B Auto Provisioning support
 - SIP ALG is now configurable at the interface level
 - Improved instance VPN tool function for instance to site VPNs
@@ -83,7 +83,6 @@ Due to the Cisco SPA 112 gateway limitations that require a Cisco certificate, s
 - [MD-11100] - Remove "pascom was started from your hard drive" hint in login mask
 - [MD-11101] - Instance administrator can not be renamed
 - [MD-11102] - Reduce sip registration speed in case of authentication failures
-- [MD-11106] - Load related problems on pascom.cloud apache proxies
 - [MD-11110] - Outgoing Fax ID not added to fax
 - [MD-11117] - Trunk Template Export fails
 - [MD-11119] - Snom M700 multicell senders will end up with same config
