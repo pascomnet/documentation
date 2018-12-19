@@ -18,18 +18,19 @@ Die pascom TAPI funktioniert unabhängig vom pascom Desktop Client.
 
 ## Unterstützte TAPI-Funktionen
 
-Die TAPI Schnittstelle spezifiziert eine Vielzahl an anrufbezogenen Funktionen, von denen der pascom TAPI-Treiber die folgenden Unterstützt:
+Die TAPI Schnittstelle spezifiziert eine Vielzahl an anrufbezogenen Funktionen, von denen der pascom TAPI-Treiber die folgenden unterstützt:
 
 |Funktion| Kommentar|
 |---|---|
 |**Signalisierung von eingehenden Anrufen**|Signalisierung von Rufnummern, Rufrichtung, weiteren Details.|
 |**Pickup**|Pickup auf eine bestimmte Durchwahl durchführen.|
+|**Halten**|Halten eines aktiven Anrufs.|
+|**Fortsetzen**|Fortsetzen eines gehaltenen Anrufs.|
 |**Auflegen**|Anruf beenden.|
 |**Anrufen**|Anruf an eine Rufunummer initiieren|.
 |**Anruf annehmen**|Einen eingehenden Anruf automatisch am Telefon abheben.|
 
 ## Amtskennziffer bei der TAPI konfigurieren
-
 
 Bei der Konfiguration bzw. der ersten Verwendung der TAPI-Schnittstelle werden Sie nach den zu verwendenden Wähleinstellungen gefragt. Allerdings erfolgt die Rufnummernbehandlung (Setzen einer 0 für ausgehende Gespräche, Internationale Formattierung, ...) ausschließlich im pascom Server, so dass die in Windows hinterlegten Einstellungen ignoriert werden.
 
@@ -41,7 +42,7 @@ Die Ortskennzahl ist ein Pflichtfeld. Geben Sie hier bitte Ihre Ortskennzahl (Vo
 ## TAPI Client Installation
 
 {{% notice tip %}}
-Systemvoraussetzung **Windows 7 (32 und 64bit)** oder höher und **Windows Server 2008 R2 (32 und 64bit)** oder höher . Jeweils das neueste Patchlevel. 
+Systemvoraussetzung **Windows 7 (32 und 64bit)** oder höher und **Windows Server 2008 R2 (32 und 64bit)** oder höher. Jeweils das neueste Patchlevel. 
 {{% /notice %}}
 
 {{% notice warning %}}
@@ -67,15 +68,15 @@ Akzeptieren Sie die Allgemeinen Geschäftsbedingungen (AGB), anschließend werde
 
 Nach erfolgreicher Installation müssen Sie die Verbindung der TAPI zu pascom konfigurieren:
 
-![TAPI konfigurieren](config_credentials.en.png?width=30%)
+![TAPI konfigurieren](config_credentials.en.png?width=40%)
 
 Die TAPI meldet sich am Server mit den selben Benutzerdaten wie der pascom Client an.
 
 |Variable|Bedeutung|
 |---|---|
-|Username|Benutzername|
+|Username|Benutzername@Instanzname|
 |Password|Passwort des Benutzers|
-|pascom Server|IP Nummer oder Hostname des pascom Servers|
+|pascom Server|IP Adresse oder Hostname des pascom Servers|
 
 Bestätigen Sie den Erfolg der Installation mit einem Klick auf **Finish**.
 
@@ -85,7 +86,7 @@ Bestätigen Sie den Erfolg der Installation mit einem Klick auf **Finish**.
 
 Wenn Sie die TAPI auf einem Termial-Server oder einem Rechner der von mehreren Personen genutzt wird installieren, müssen Sie den Benutzer, den Sie mit der TAPI verbinden die **Rolle xmpp.supervisor** zuweisen. Dies bedeutet das vom Terminal Server nur eine einzige XMPP-Verbindung aufgebaut wird, über die die gesamte Kommunikation abgewickelt wird.
 
-![Konzept](terminalserver_concept.png?width=60%)
+![Konzept](tapi_concept.png?width=60%)
 
 
 #### Installation
@@ -97,15 +98,15 @@ Starten Sie das Setup indem Sie die zuvor heruntergeladene Datei ausführen. Akz
 
 Nach erfolgreicher Installation müssen Sie die Verbindung der TAPI zu pascom konfigurieren:
 
-![TAPI konfigurieren](config_credentials.en.png?width=30%)
+![TAPI konfigurieren](config_credentials.en.png?width=40%)
 
 Die TAPI meldet sich am Server mit den selben Benutzerdaten wie der pascom Client an.
 
 |Variable|Bedeutung|
 |---|---|
-|Username|Benutzername|
+|Username|Benutzername@Instanzname|
 |Password|Passwort des Benutzers|
-|pascom Server|IP oder Hostname des pascom Servers|
+|pascom Server|IP Adresse oder Hostname des pascom Servers|
 
 Es erscheint ein weiterer Dialog, in dem Sie die Benutzer auswählen können, die später in TAPI Applikationen (z. B. MS Outlook) zur Verfügung stehen sollen. Es werden hier alle in der pascom vorhandenen Benutzer angezeigt. Um einen Benutzer auszuwählen, kann man diese doppelklicken oder die Buttons in der Mitte verwenden:
 
@@ -113,9 +114,19 @@ Es erscheint ein weiterer Dialog, in dem Sie die Benutzer auswählen können, di
 
 Bestätigen Sie den Erfolg der Installation mit einem Klick auf **Finish**.
 
+{{% notice info %}}
+Wenn zu einem späteren Zeitpunkt weitere Benutzer das Recht erhalten oder entzogen bekommen sollen, kann dieser Dialog via {{< ui-button "Systemsteuerung" >}} > {{< ui-button "Telefon und Modem" >}} > {{< ui-button "Erweitert" >}} und Doppelklick auf "pascom TAPI Service Provider" erneut aufgerufen werden. Hierzu muss sich der Supervisor-Benutzer erneut anmelden.
+{{% /notice %}}
+
 ### Nutzungsbeispiel mit Microsoft Outlook
 
-Starten Sie Outlook und suchen Sie den gewünschten Kontakt. Mit der rechten Maustaste rufen Sie das Kontextmenü und die zu wählende Rufnummer auf:
+Starten Sie Outlook und suchen Sie den gewünschten Kontakt. 
+
+{{% notice note %}}
+Um die Anruffunktion nutzen zu können, wählen Sie in der Kontaktanzeige in Outlook die Ansicht: Visitenkarte, Karte, Telefon oder Liste aus. In der "Person"-Ansicht wird die pascom-Telefonie nicht unterstützt.
+{{%/notice%}}
+
+Mit der rechten Maustaste rufen Sie das Kontextmenü und die zu wählende Rufnummer auf:
 
 ![TAPI Outlook](outlook_dial_1.de.png)
 
@@ -135,11 +146,11 @@ Nun erscheint das Anruffenster. Bestätigen Sie per **Anruf beginnen** die Numme
 
 Es ist auch möglich, die TAPI ohne eine GUI-Interaktion zu installieren. Hierzu muss das Installationsprogramm mit den folgenden Optionen aufgerufen werden:
 
-    md-tapi-setup-2.
-    00.00.R.exe /S /options=username:password:server.domain.tld
+    pc-tapi-setup-3.
+    R42_4b8de95.exe /S /options=benutzername@instanz:passwort:server.domain.tld
 
     Beispiel:
-    md-tapi-setup-2.00.00.R.exe /S /options=mmuster:123456789:pascom.example.com
+    pc-tapi-setup-3.R42_4b8de95.exe /S /options=mmustermann@pascom:12345678:pascom.cloud
 
 Wenn dem TAPI-Benutzer die **Rolle xmpp.supervisor** hat, werden automatisch alle verfügbaren Benutzer selektiert und stehen dann in TAPI-Applikationen zur Verfügung.
 
