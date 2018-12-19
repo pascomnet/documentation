@@ -120,7 +120,13 @@ Wenn zu einem späteren Zeitpunkt weitere Benutzer das Recht erhalten oder entzo
 
 ### Nutzungsbeispiel mit Microsoft Outlook
 
-Starten Sie Outlook und suchen Sie den gewünschten Kontakt. Mit der rechten Maustaste rufen Sie das Kontextmenü und die zu wählende Rufnummer auf:
+Starten Sie Outlook und suchen Sie den gewünschten Kontakt. 
+
+{{% notice note %}}
+Um die Anruffunktion nutzen zu können, wählen Sie in der Kontaktanzeige in Outlook die Ansicht: Visitenkarte, Karte, Telefon oder Liste aus. In der "Person"-Ansicht wird die pascom-Telefonie nicht unterstützt.
+{{%/notice%}}
+
+Mit der rechten Maustaste rufen Sie das Kontextmenü und die zu wählende Rufnummer auf:
 
 ![TAPI Outlook](outlook_dial_1.de.png)
 

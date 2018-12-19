@@ -36,7 +36,9 @@ The pascom TAPI functions independently of the pascom Desktop Client.
 
 When configuring or first using the TAPI interface, you will be asked for the to be used dial settings. However, phone number handling i.e. setting a 0 for outbound calls, international formatting etc etc. is done exclusively by the pascom phone system server, meaning the settings added in windows will be ignored. 
 
-The arear code is a mandatory field. Enter your area code without the leading 0. All other fields should be left empty. <!--(FixMe) This dialog is accessible under {{< ui-button "Control Panel" >}} > {{< ui-button "Telephone and Modem" >}} > {{< ui-button "Call Rules (My location)" >}} > {{< ui-button "Edit" >}}-->.
+The arear code is a mandatory field. Enter your area code without the leading 0. All other fields should be left empty. 
+
+This dialog is accessible under {{< ui-button "Control Panel" >}} > {{< ui-button "Phone and Modem" >}} > {{< ui-button "Dialling Rules (My location)" >}} > {{< ui-button "Edit" >}}.
 
 ![configurate location settings](location.en.png?width=50%)
 
@@ -115,9 +117,19 @@ Now a further dialogue  box will appear, in which you will be able to select the
 
 You can now confirm the successful installation by clicking on **Finish**.
 
+{{% notice info %}}
+Should, at a later point in time, further users be assigned permissions or have permissions removed, permissions can be refreshed using the Control Panel > Phone and Modem > Advanced and then double clicking "pascom TAPI Service Provider". To do this, the Supervisor User must login again. 
+{{% /notice %}}
+
 ### Example scenario with Microsoft Outlook
 
-Start Outlook and select the desired contact entry. Using the right mouse button, select the number to call from the drop down menu: 
+Start Outlook and select the desired contact entry. 
+
+{{% notice note %}}
+In order to be able to use the call function, in Outlook go to My Contacts and then select either the view: Business Cards, Cards, Phone or List. pascom telephony is not supported under the "People" view.
+{{%/notice%}}
+
+Using the right mouse button, select the number to call from the drop down menu: 
 
 ![TAPI Outlook](outlook_dial_1.en.png)
 
