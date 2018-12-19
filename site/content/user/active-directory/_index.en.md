@@ -32,6 +32,8 @@ Within the template, select *AD User Sync** and enter the following data:
 |**AD Server**|Server IP or Host DNS Name|
 |**Username** and **Password**|Credentials of the previously added pascom User for authentication|
 |**Configure authentication**|**NO**: Users will only be imported. Authentication will be performed by the pascom phone system. <br>**YES**: Users will be imported and the can be authenticated against the AD. In this case, the authentification will be setup and you can modify this according to your needs under {{< ui-button "Appliance" >}} > {{< ui-button "Services" >}} under the tab {{< ui-button "Authentification" >}}.|
+|**Create pascom softphone**|**YES**: Creates a pascom softphone for every imported user. **NO**: Creates no pascom softphones for imported users.|
+|**Create mobile phone**|**YES**: Creates a mobile phone device for every imported user. **NO**: Creates no mobile phone devices for imported users.|
 
 After saving, the template can be modified according to requirements under the tab {{< ui-button "Basic Data" >}}.
 
@@ -56,7 +58,7 @@ Per default, the template will import all users from the AD except for the user 
 |General > mail|email|User's e-mail address. Used for sending voicemails and faxes.|
 |Organisation > company|organisation|Company to be entered in the user's pascom telephone book entry.|
 |Phone numbers > homePhone|homephone|User's private / home telephone number for the pascom telephone book entry.|
-|Phone numbers > mobile|mobile|User's mobile phone number to be added to the pascom telephone book entry.|
+|Phone numbers > mobile|mobile|User's mobile phone number to be added to the pascom telephone book entry and to create a mobile phone device with.|
 |Phone numbers > facsimileTelephoneNumber|Fax|Internal fax number assigned to the user. Automatically also adds a virtual pascom fax machine assigned to the user. A pre-requirement here is that the pascom fax server is already configured.|
 
 These fields are just template suggestions. You can add and remove fields or even modify the complete structure to match your requirements.
@@ -210,7 +212,7 @@ To do this, expand the following lines so:
           }
 
 
-### Assign a Softphone or IP Telephone
+### Assign a Softphone, Mobile Phone or IP Telephone
 
 From within the Active Directory, it is possible to directly assign a user with a Softphone or IP telephone. 
 
@@ -235,41 +237,13 @@ To do this, expand the following lines so:
 
 **Softphone Assignment:**
 
-If you want to assign users with a pascom softphone, it is not necessary to add an additional varialble.
+If you want to assign users with a pascom softphone, it is not necessary to add an additional variable.
 
-Expanding the {{< ui-button "Structure" >}} coding with the following is sufficient:
+Under {{< ui-button "Variables" >}} it is sufficient to set the entry **createSoftphone** to "return true;".
 
-      "ipdevice.mdsoftphone": [{
-            "010dev_bez": "{{{username}}}_sipdevice"
-        }]
+**Mobile Phone Assignment:**
 
+If you want to assign users with a mobile phone, it is not necessary to add an additional variable.
 
-**to the structure as follows:**
+Under {{< ui-button "Variables" >}} it is sufficient to set the entry **createMobile** to "return true;".
 
-          {
-            "identity": [{
-           
-              "003use_bez": "{{{displayname}}}",
-              "003use_name": "{{{username}}}",
-              "003use_pw": "{{{password}}}",
-              "011acc_pin": "{{{pin}}}",
-              "009ext_extension": "{{{phone}}}",
-              "016voi_email": "{{{email}}}",
-           
-              "post": {
-                "phonebook": [{
-                  "028pho_bez":       "{{{displayname}}}",
-                  "028pho_firstname": "{{{givenname}}}",
-                  "028pho_lastname":  "{{{surname}}}",
-                  "028pho_email":     "{{{email}}}"
-                  }],
-                "ipphone“: [{
-                      "010dev_bez": "{{username}}_sipdevice“,
-                      „071ipp_mac“: „{{{mac}}}“
-                  }],
-                "ipdevice.mdsoftphone": [{
-                      "010dev_bez": "{{{username}}}_sipdevice"
-                  }]
-               }
-            }]
-          }
