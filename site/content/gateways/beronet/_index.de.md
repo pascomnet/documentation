@@ -18,6 +18,7 @@ Das beroNet VoIP Gateway wird an das LAN angeschlossen und erhält eine IP-Adres
 ![beroNet Gateway](voip_gateway.de.png)
 
 ### (Optional) Direkte Amt-Anbindung von Endgeräten
+
 {{% notice tip %}}
 Diese Funktion ist nur in Kombination mit einem ISDN-Amt, dass sich auf demselben Gateway befindet, sinnvoll.
 {{% /notice %}}
@@ -58,35 +59,31 @@ Sollten Sie die IP-Adresse des Gateways nicht kennen können Sie das Gateway mit
 pascom Server ab Version 18 benötigt mindestens die **beroNet Firmware 16** oder höher!
 {{% /notice %}}
 
-Loggen Sie sich auf der Weboberfläche des beroNet Gateways ein (Standard Benutzer: admin Passwort: admin) und stellen Sie zunächst unter **Management** > **Info** sicher, dass Sie appfs **16 oder neuer** verwenden. Falls nicht updaten Sie die Box jetzt:
+Loggen Sie sich auf der Weboberfläche des beroNet Gateways ein (Standard Benutzer: admin Passwort: admin) und stellen Sie zunächst unter {{< ui-button "Management" >}} > {{< ui-button "Info" >}} sicher, dass Sie appfs **16 oder neuer** verwenden. Falls nicht updaten Sie die Box jetzt:
 
 * Download der [Firmware 16.X](https://beronet.atlassian.net/wiki/spaces/PUB/pages/61210659/Tools+and+Downloads) (Abschnitt: beroNet OS)
-* Setzen Sie die beroNet unter **Management** > **Firmwareupdate** in den Updatemodus
+* Setzen Sie die beroNet unter {{< ui-button "Management" >}} > {{< ui-button "Firmwareupdate" >}} in den Updatemodus
 * Laden Sie die Firmware 16.X nach dem Reboot hoch und starten Sie das Update
-
-### VPN Gateway einrichten (Nur Cloud)
-
-Die pascom Instanz in der pascom.cloud muss in der Lage sein das beroNet Gateway via IP-Adresse zu erreichen. Dies ist nur über ein VPN zwischen dem Standort des beroNet Gateways und Ihrer pascom Cloud Instanz möglich. pascom bietet hierzu die Möglichkeit, einen [VPN Connector]({{< ref "/gateways/vpn-connector" >}}) anzulegen.
 
 ### Anlegen des beroNet Gateways
 
-Loggen Sie sich nun auf der Weboberfläche der pascom Instanz ein und klicken Sie unter **Gateways** > **Gatewayliste** auf **Hinzufügen**. 
+Loggen Sie sich nun auf der Weboberfläche der pascom Instanz ein und klicken Sie unter {{< ui-button "Gateways" >}} > {{< ui-button "Gatewayliste" >}} auf {{< ui-button "Hinzufügen" >}}. 
 
 {{% notice tip %}}
-Warten Sie den Suchlauf ab. Dieser findet ausschließlich beroNet PCIe Karten, keine Gateways!
+Hat Ihre OnSite Telefonanlage eine integrierte beronet PCIe Karte klicken Sie auf {{< ui-button "beroNet PCI-Karte auffinden" >}} um den Suchlauf zu starten. 
 {{% /notice %}}
 
-Wählen Sie nach dem Suchlauf **Manuell anlegen** und geben die IP-Adresse, Netzmaske sowie die Zugangsdaten zu Ihrem Gateway an.
+Geben Sie in der Maske die gesteckten Module des Beronet-Gateways an, die MAC-Adresse, IP-Adresse, sowie die Zugangsdaten zu Ihrem Gateway an.
 
-Klicken Sie auf **Speichern** und wenden Sie die Jobs in der Jobbox an.
+Klicken Sie auf {{< ui-button "Speichern" >}} und wenden Sie die Jobs in der Jobbox an.
 
-### Privisionierungs URL kopieren
+### Provisionierungs URL kopieren
 
-Markieren Sie das Gateway in der Gatewayliste, klicken Sie auf **Aktionen** > **Provisioning URL** und kopieren die URL in die Zwischenablage.
+Markieren Sie das Gateway in der Gatewayliste, klicken Sie auf {{< ui-button "Aktionen" >}} > {{< ui-button "Provisioning URL" >}} und kopieren die URL in die Zwischenablage.
 
-Loggen Sie sich auf der Weboberfläche der beroNet Box ein und stellen Sie zunächst unter **GUI Mode** sicher, dass Sie **Advanced** gewählt haben.
+Loggen Sie sich auf der Weboberfläche der beroNet Box ein und stellen Sie zunächst unter {{< ui-button "GUI Mode" >}} sicher, dass Sie {{< ui-button "Advanced" >}} gewählt haben.
 
-Tragen Sie nun unter **Preferences** > **Provisioning** folgende Werte ein:
+Tragen Sie nun unter {{< ui-button "Preferences" >}} > {{< ui-button "Provisioning" >}} folgende Werte ein:
 
 |Feld|Wert|
 |---|---|
@@ -97,29 +94,33 @@ Tragen Sie nun unter **Preferences** > **Provisioning** folgende Werte ein:
 
 Speichern Sie die Änderung. Die beroNet Box startet neu. 
 
+{{% notice info %}}
+Da die Cloud Telefonanlage keinen direkten Zugriff auf die beronet Box hat, wird beim Bearbeiten der Einstellungen in pascom die Meldung "Die Hardwaredetails des Gateways konnten nicht abgerufen werden" angezeigt. In diesem Fall muss nach Änderungen an den Einstellungen die beronet Box neu gestartet werden.
+{{% /notice %}}
+
 ### ISDN Amtsleitungen anlegen
 
-In vielen Fällen wird beroNet Hardware dazu verwendet ISDN-Amtsleitungen daran anzuschließen. Selektieren Sie hierzu das entsprechende Gateway aus der Liste aus, wählen Sie **Bearbeiten** und schalten Sie dann auf den Tab **Belegung** um.
+In vielen Fällen wird beroNet Hardware dazu verwendet ISDN-Amtsleitungen daran anzuschließen. Selektieren Sie hierzu das entsprechende Gateway aus der Liste aus, wählen Sie {{< ui-button "Bearbeiten" >}} und schalten Sie dann auf den Tab {{< ui-button "Belegung" >}} um.
 
 ![Screenshot - ISDN-Amt hinzufügen](isdn_trunk_add.de.png?width=90% "ISDN-Amt per beroNet hinzufügen")
 
-Unter **Hinzufügen** können Sie entweder **BRI-** oder **PRI-Amtsleitungen** konfigurieren.
+Unter {{< ui-button "Hinzufügen" >}} können Sie entweder **BRI-** oder **PRI-Amtsleitungen** konfigurieren.
 
 ![Screenshot - ISDN-Amt hinzufügen im Detail](isdn_trunk_add_detail.de.png?width=90% "ISDN-Amt per beroNet hinzufügen")
 
-Klicken Sie im entsprechenden Datensatz doppelt auf das Feld **Bezeichnung**. Dadurch öffnet sich ein Detailfenster. Hier können Sie dann anhaken, welcher **Port**  zu diesem Amt gehört. Auch Mehrfachauswahlen sind möglich, da es bei z. B. Anlagenanschlüssen sein kann, dass mehrere NTs zu einem Amtsanschluss zusammengefasst werden.
+Klicken Sie im entsprechenden Datensatz doppelt auf das Feld **Bezeichnung**. Dadurch öffnet sich ein Detailfenster. Hier können Sie dann anhaken, welcher **Port** zu diesem Amt gehört. Auch Mehrfachauswahlen sind möglich, da es bei z. B. Anlagenanschlüssen sein kann, dass mehrere NTs zu einem Amtsanschluss zusammengefasst werden.
 
 Unter **Modus** und **Technologie** stellen Sie die Anschlussart ein. Bei einem Anlagenanschluss ist das z. B. **TE** und **PTP**.
 
-In diesem Schritt konfigurieren Sie lediglich den Anschluss auf der beroNet Hardware. Nun müssen Sie unter **Gateway** > **Ämter** ein entsprechendes Amt anlegen. Nutzen Sie hierzu die **Amtsvorlage** **beroNet Gateway**.
+In diesem Schritt konfigurieren Sie lediglich den Anschluss auf der beroNet Hardware. Nun müssen Sie unter {{< ui-button "Gateways" >}} > {{< ui-button "Ämter" >}} ein entsprechendes Amt anlegen. Nutzen Sie hierzu die Amtsvorlage: **beroNet Gateway**.
 
 ### ISDN oder Analoge Nebenstellen anlegen
 
-Selektieren Sie das entsprechende Gateway aus der Liste, wählen Sie **Bearbeiten** und schalten Sie dann auf den Tab **Belegung** um.
+Selektieren Sie das entsprechende Gateway aus der Liste, wählen Sie {{< ui-button "Bearbeiten" >}} und schalten Sie dann auf den Tab {{< ui-button "Belegung" >}} um.
 
 ![Screenshot - Analoges Endgerät hinzufügen](analog_add.de.png?width=90% "Analoges Endgerät hinzufügen")
 
-Unter **Hinzufügen** haben Sie folgende Auswahl:
+Unter {{< ui-button "Hinzufügen" >}} haben Sie folgende Auswahl:
 
 |Typ|Beschreibung|Anwendungsfall|
 |---|---|---|
@@ -130,4 +131,4 @@ Unter **Hinzufügen** haben Sie folgende Auswahl:
 |ISDN Datenleitung direkt|ISDN Datenleitung welches direkt auf der beroNet Hardware geroutet wird|Onlinebanking, ISDN Maschinensteuerung, Alarmanlage|
 |ISDN Telefon via SIP|ISDN Telefon welches über die pascom geroutet wird|Telefon|
 
-In diesem Schritt konfigurieren Sie lediglich den Anschluss auf der beroNet Hardware. Legen Sie nun unter **Endgeräte** > **Geräteliste** ein Gerät vom Typ **Via beroNet Gateway**, analog dem gewählten Typ, an.
+In diesem Schritt konfigurieren Sie lediglich den Anschluss auf der beroNet Hardware. Legen Sie nun unter {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} ein Gerät vom Typ **Via beroNet Gateway**, analog dem gewählten Typ, an.
