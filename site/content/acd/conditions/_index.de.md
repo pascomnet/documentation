@@ -31,7 +31,7 @@ Dies hinterlässt beim Kunden sicher keinen guten Eindruck.
 
 Um Ihre Geschäftszeiten abzubilden eignet sich der Bedingungstyp **Zeitschema**.
 
-Wählen Sie hierzu in der pascom Weboberfläche {{< ui-button "Erweitert" >}} > {{< ui-button "Aktionsbedingungen" >}} den Button {{< ui-button "Hinzufügen" >}}  um eine neue Bedingung zu erstellen oder markieren Sie eine bereits vorhandene Bedingung und wählen {{< ui-button "Bearbeiten" >}}.
+Wählen Sie hierzu in der pascom Weboberfläche {{< ui-button "Anrufverteilung" >}} > {{< ui-button "Aktionsbedingungen" >}} den Button {{< ui-button "Hinzufügen" >}}  um eine neue Bedingung zu erstellen oder markieren Sie eine bereits vorhandene Bedingung und wählen {{< ui-button "Bearbeiten" >}}.
 
 Beim Hinzufügen selektieren Sie den **Typ Zeitschema** und geben eine **Bezeichnung** ein. Anschließend können Sie im Tab {{< ui-button "Zeiten" >}} Ihre Geschäftszeiten definieren:
 
@@ -47,7 +47,7 @@ Sie müssen kein extra Schema für "außerhalb" der Geschäftszeiten definieren 
 
 Um **Feiertage** und **Urlaubskalender** abzubilden eignet sich der Bedingungstyp Kalender.
 
-Wählen Sie hierzu in der pascom Weboberfläche {{< ui-button "Erweitert" >}} > {{< ui-button "Aktionsbedingungen" >}} den Button {{< ui-button "Hinzufügen" >}}  um eine neue Bedingung zu erstellen oder markieren Sie eine bereits vorhandene Bedingung und wählen {{< ui-button "Bearbeiten" >}} .
+Wählen Sie hierzu in der pascom Weboberfläche {{< ui-button "Anrufverteilung" >}} > {{< ui-button "Aktionsbedingungen" >}} den Button {{< ui-button "Hinzufügen" >}}  um eine neue Bedingung zu erstellen oder markieren Sie eine bereits vorhandene Bedingung und wählen {{< ui-button "Bearbeiten" >}} .
 
 Beim Hinzufügen selektieren Sie den **Typ Kalender** und geben Sie eine **Bezeichnung** ein.
 
@@ -61,7 +61,7 @@ Leider ist es nicht möglich Kalender-Tage von einem Jahr auf andere zu überneh
 
 Durchwahlschalter sind ein praktisches Werkzeug wenn sich **kein fester Tag oder Zeitraum** definieren lässt.
 
-Wählen Sie hierzu in der pascom Weboberfläche {{< ui-button "Erweitert" >}} > {{< ui-button "Aktionsbedingungen" >}} den Button {{< ui-button "Hinzufügen" >}} um eine neue Bedingung zu erstellen oder markieren Sie eine bereits vorhandene Bedingung und wählen {{< ui-button "Bearbeiten" >}}.
+Wählen Sie hierzu in der pascom Weboberfläche {{< ui-button "Anrufverteilung" >}} > {{< ui-button "Aktionsbedingungen" >}} den Button {{< ui-button "Hinzufügen" >}} um eine neue Bedingung zu erstellen oder markieren Sie eine bereits vorhandene Bedingung und wählen {{< ui-button "Bearbeiten" >}}.
 
 Beim Hinzufügen selektieren Sie den **Typ Durchwahlschalter** und geben Sie eine **Bezeichnung** ein.
 
