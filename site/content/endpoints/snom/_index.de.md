@@ -214,13 +214,33 @@ Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es
 
 |Modell|Firmware|
 |---|---|
-|Snom 300|8.7.3.25.5|
-|Snom 320|8.7.3.25.5|
+|Snom D120|10.1.19.0|
+|Snom D345|8.9.3.40|
+|Snom D715|8.9.3.60|
+|Snom D745|8.9.3.80|
+|Snom D765|8.7.5.35|
+|Snom D785|10.1.20.0|
+
+
+<!--|Snom 300|8.7.3.25.5|
+|Snom 320|8.7.5.35|
 |Snom 360|8.7.3.25.5|
-|Snom 370|8.7.3.25.5|
+|Snom 370|8.7.5.35|
 |Snom 710|8.7.3.25.5|
 |Snom 715|8.7.8.8.2|
 |Snom 720|8.7.3.25.5|
 |Snom 760|8.7.3.25.5|
-|Snom D345|8.9.3.40|
-|Snom D715|8.9.3.60|
+|Snom 821|8.7.5.35| -->
+
+<!--
+D300 Serie
+D385 -> 10.1.25.0 von Eva getestet unter 18.01 -> Fernsteuerung via Client fehlgeschlagen,
+D378,
+D315,
+D305,
+
+D700 Serie
+D735 -> 10.1.25.1 von Eva getestet unter 18.01 -> Fernsteuerung via Client fehlgeschlagen,
+D725,
+D712,
+D710 -->
