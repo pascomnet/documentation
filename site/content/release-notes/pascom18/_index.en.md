@@ -61,6 +61,31 @@ Due to non-existing encryption for voice and provisioning, Siemens Unify optiPoi
 Due to the Cisco SPA 112 gateway limitations that require a Cisco certificate, support has been discontinued in pascom 18.
 
 
+## Release 18.04 (16.01.2019)
+
+**Overview**
+
+- Implemented support for new Mitel DECT senders
+- Overhauled the concept of roles
+- Instance wizard now includes the option of a peoplefone test trunk
+- Exchange connector can now imports private contacts based on the e-mail address
+- Calls via beroNet hardware are now long-term more reliable
+
+**MODIFICATIONS:**
+
+- [MD-11192] - Calls via beronet stop after 30 minutes
+- [MD-11219] - Mitel/aastra Dect RFP44 and new vendor ID
+- [MD-11220] - WebCLI broken on Firefox Version 64.0
+- [MD-11232] - Ignore deleted instances in auto deployment calculation
+- [MD-11246] - Grafana shows no data on some appliances
+- [MD-10823] - Improve ISO boot compatibility
+- [MD-11068] - SIP Test accounts in Instance wizard
+- [MD-11135] - Enable/Disable trunks in webui
+- [MD-11164] - Improve roles concept. Support dynamic assignments
+- [MD-11226] - Enhance exchange connector, map users by mail address instead of username (18)
+- [MD-11243] - Raise kamailio open file ulimit
+
+
 ## Release 18.03 (17.12.2018)
 
 **Overview**

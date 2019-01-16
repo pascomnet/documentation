@@ -61,6 +61,31 @@ Wegen fehlender Verschlüsselung für Sprache wie Provisionierung wurde die Unte
 Aufgrund der Einschränkung des cisco SPA 112 Gateways auf ausschließliche Nutzung mit cisco-Zertifikaten wurde die Unterstützung mit pascom 18 eingestellt. 
 
 
+## Release 18.04 (16.01.2019)
+
+**Auf einen Blick**
+
+- Neue Mitel Dect Sender werden unterstützt
+- Rollenkonzept wurde überarbeitet
+- Instanz Wizard bietet nun die Gelegenheit ein Peoplefone-Testamt anzulegen
+- Exchange-Connector importiert nun auch private Kontakte anhand der E-Mail-Adresse
+- Anrufe über Beronet Hardware laufen nun langfristig zuverlässiger 
+
+**ÄNDERUNGEN:**
+
+- [MD-11192] - Calls via beronet stop after 30 minutes
+- [MD-11219] - Mitel/aastra Dect RFP44 and new vendor ID
+- [MD-11220] - WebCLI broken on Firefox Version 64.0
+- [MD-11232] - Ignore deleted instances in auto deployment calculation
+- [MD-11246] - Grafana shows no data on some appliances
+- [MD-10823] - Improve ISO boot compatibility
+- [MD-11068] - SIP Test accounts in Instance wizard
+- [MD-11135] - Enable/Disable trunks in webui
+- [MD-11164] - Improve roles concept. Support dynamic assignments
+- [MD-11226] - Enhance exchange connector, map users by mail address instead of username (18)
+- [MD-11243] - Raise kamailio open file ulimit
+
+
 ## Release 18.03 (17.12.2018)
 
 **Auf einen Blick**
