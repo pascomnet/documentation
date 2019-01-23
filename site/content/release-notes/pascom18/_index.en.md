@@ -68,7 +68,7 @@ Due to the Cisco SPA 112 gateway limitations that require a Cisco certificate, s
 - Implemented support for new Mitel DECT senders
 - Overhauled the concept of roles
 - Instance wizard now includes the option of a peoplefone test trunk
-- Exchange connector can now imports private contacts based on the e-mail address
+- Exchange connector can now import private contacts based on the e-mail address
 - Calls via beroNet hardware are now long-term more reliable
 
 **MODIFICATIONS:**
