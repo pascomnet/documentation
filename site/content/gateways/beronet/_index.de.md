@@ -69,10 +69,6 @@ Loggen Sie sich auf der Weboberfläche des beroNet Gateways ein (Standard Benutz
 
 Loggen Sie sich nun auf der Weboberfläche der pascom Instanz ein und klicken Sie unter {{< ui-button "Gateways" >}} > {{< ui-button "Gatewayliste" >}} auf {{< ui-button "Hinzufügen" >}}. 
 
-{{% notice tip %}}
-Hat Ihre OnSite Telefonanlage eine integrierte beronet PCIe Karte klicken Sie auf {{< ui-button "beroNet PCI-Karte auffinden" >}} um den Suchlauf zu starten. 
-{{% /notice %}}
-
 Geben Sie in der Maske die gesteckten Module des Beronet-Gateways an, die MAC-Adresse, IP-Adresse, sowie die Zugangsdaten zu Ihrem Gateway an.
 
 Klicken Sie auf {{< ui-button "Speichern" >}} und wenden Sie die Jobs in der Jobbox an.
@@ -132,3 +128,7 @@ Unter {{< ui-button "Hinzufügen" >}} haben Sie folgende Auswahl:
 |ISDN Telefon via SIP|ISDN Telefon welches über die pascom geroutet wird|Telefon|
 
 In diesem Schritt konfigurieren Sie lediglich den Anschluss auf der beroNet Hardware. Legen Sie nun unter {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} ein Gerät vom Typ **Via beroNet Gateway**, analog dem gewählten Typ, an.
+
+{{% notice info %}}
+Da die Cloud Telefonanlage keinen direkten Zugriff auf die beronet Box hat, wird beim Bearbeiten der Einstellungen in pascom die Meldung "Die Hardwaredetails des Gateways konnten nicht abgerufen werden" angezeigt. In diesem Fall muss nach Änderungen an den Einstellungen die beronet Box neu gestartet werden.
+{{% /notice %}}

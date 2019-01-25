@@ -57,9 +57,13 @@ Loggen Sie sich auf der Weboberfläche des beroNet Karte ein (Standardbenutzer: 
 
 ### Anlegen der beroNet Karte
 
-Loggen Sie sich nun auf der Weboberfläche der Telefonanlage ein und klicken Sie unter **Gateways** > **Gatewayliste** auf **Hinzufügen** und wählen **beroNet** aus. beroNet Karten werden automatisch erkannt. Wählen Sie die Karte unter **Gateways** aus und klicken auf **weiter**.
+Loggen Sie sich nun auf der Weboberfläche der Telefonanlage ein und klicken Sie unter {{< ui-button "Gateways" >}} > {{< ui-button "Gatewayliste" >}} auf {{< ui-button "Hinzufügen" >}} und wählen **beroNet** aus. beroNet Karten werden automatisch erkannt. Wählen Sie die Karte unter {{< ui-button "Gateways" >}} aus und klicken auf {{< ui-button "weiter" >}}.
 
-Zur Kontrolle wird Ihnen nun die aktuelle Modulbelegung und MAC-Adresse der Karte angezeigt. Schließen Sie den Vorgang durch **Speichern** ab.
+Zur Kontrolle wird Ihnen nun die aktuelle Modulbelegung und MAC-Adresse der Karte angezeigt. Schließen Sie den Vorgang durch {{< ui-button "Speichern" >}} ab.
+
+{{% notice tip %}}
+Wird die integrierte beronet PCIe Karte nicht sofort automatisch zu gefunden, klicken Sie auf {{< ui-button "beroNet PCI-Karte auffinden" >}} um den Suchlauf zu starten. 
+{{% /notice %}}
 
 ### ISDN Amtsleitungen anlegen
 In vielen Fällen wird beroNet Hardware dazu verwendet ISDN Amtsleitungen daran anzuschließen. Selektieren Sie hierzu die entsprechende Karte aus der Liste, wählen Sie **Bearbeiten** und schalten Sie dann auf den Tab **Belegung** um.
