@@ -57,7 +57,7 @@ Wenden Sie die Einstellungen an, um die Konfiguration zu übernehmen.
 
 Bei einem Anruf von diesem Kontakt wird jetzt das zugewiesene Label inkl. hinterlegtem Wert im Client angezeigt.
 
--> Screenshot von Label-Darstellung im Client
+![Telefonbuch-Label im Journal](journal_label.png)
 
 {{% notice info %}}
 Ggf. ist es notwendig den XMPP-Dienst unter {{< ui-button "Anwenden">}} > {{< ui-button "XMPP Server neu starten">}} neu zu starten, um alle mit der pascom verbundenen Clients neu zu starten und damit mit der Telefonanlage zu synchronisieren, damit alle konfigurierten Labels korrekt angezeigt werden.
@@ -65,11 +65,16 @@ Ggf. ist es notwendig den XMPP-Dienst unter {{< ui-button "Anwenden">}} > {{< ui
 
 ### Suchalgorithmus
 
-* wie finde ich einen Eintrag (suche nach Name oder Nummer?)
-* Automatisches Anzeigen der Nummer eingehenden Anrufen
+Standardmäßig ist das pascom Telefonbuch nach dem Anzeigenamen sortiert.
+Da das globale Telefonbuch auf den Telefonen via LDAP übertragen wird, ist ein Blättern im gesamten Telefonbuch nicht möglich, sondern eine Suche nach dem gewünschten Eintrag notwendig.
 
-### Zusätzliche Einträge aus Outlook & Co.
+Die Suche filtert alle Einträge nach dem Vorkommen des eingetragenen Suchfilters, das bedeutet, dass bei der Suche nach einem einzelnen Buchstaben oder einer einzelnen Zahl nicht alle Einträge, die mit diesem Buchstaben bzw. dieser Zahl beginnen aufgelistet werden, sondern alle Einträge die diesen Buchstaben bzw. diese Zahl enthalten.
 
-* Outlook
-* Apple Contacts
-* Datev
+Wir empfehlen daher nach ganzen Namen und Nummern bzw. Teilen davon zu suchen um schneller den gewünschten Eintrag zu finden.
+
+### Zusätzliche Einträge aus Outlook, Datev & Apple Kontakte.
+
+Findet der pascom Desktop Client auf dem PC ein unterstütztes Telefonbuch, z.B. von Outlook, Datev oder Apple Kontakte, können diese automatisch als Privates Telefonbuch dem Client hinzugefügt werden.
+Wählen Sie dazu im pascom Desktop Client unter {{< ui-button "Einstellungen">}} > {{< ui-button "Adressbuch Einstellungen">}} aus.
+
+Diese Einträge sind nicht auf den zugewiesenen Telefoniegeräten verfügbar und werden nur im Client aufgelöst.
