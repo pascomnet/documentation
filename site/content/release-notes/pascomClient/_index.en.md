@@ -13,6 +13,21 @@ From Release 46.R152 macOS 10.12 is the minimum requirement
 {{% /notice %}}
 
 
+## Release 47.R161 (11.02.2019)
+
+{{% notice note %}}
+This release does not include a mobile version update as the changes only affect the desktop application.
+{{% /notice %}}
+
+**Overview**
+
+This version fixes an issue affecting some older Windows systems (e.g. Windows 2008 R2 Terminal Server) where V46 does not start as a result of an OpenGL error message.
+
+**MODIFICATIONS:**
+
+- [CL-414] - Default ANGLE Renderer doesn't work on Windows Server 2008R2
+
+
 ## Release 46.R152 (06.02.2019)
 
 **Overview**

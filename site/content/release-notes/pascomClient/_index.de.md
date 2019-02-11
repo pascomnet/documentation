@@ -13,6 +13,21 @@ Ab Release 46.R152 wird macOS 10.12 vorausgesetzt
 {{% /notice %}}
 
 
+## Release 47.R161 (11.02.2019)
+
+{{% notice note %}}
+Bei diesem Release gibt es keine eigene Mobile-Version, da die Änderungen nur die Destop Applikation betreffen.
+{{% /notice %}}
+
+**Auf einen Blick**
+
+Diese Version behebt ein Problem auf manchen älteren Windows-Systemen (z. B. Windows 2008 R2 Terminal Server), auf dem die Version v46 mit einer OpenGL-Fehlermeldung nicht mehr startet.
+
+**ÄNDERUNGEN:**
+
+- [CL-414] - Default ANGLE Renderer doesn't work on Windows Server 2008R2
+
+
 ## Release 46.R152 (06.02.2019)
 
 **Auf einen Blick**
