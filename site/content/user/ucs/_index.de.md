@@ -51,7 +51,7 @@ Wählen Sie die Vorlage *Benutzer aus UCS* und tragen Sie folgende Daten ein:
 |Feld|Beschreibung|
 |---|---|
 |**Bezeichung**|Name des Connectors|
-|**AD Domäne**|UCS Domain z.B. mydomain.intranet|
+|**AD Domäne**|UCS Domain z. B. mydomain.intranet|
 |**AD Server**|Server IP oder DNS-Name des Hosts|
 |**Benutzername** und **Passwort**|Der zuvor angelegte pascom Rechner und das dazugehörige Passwort|
 |**Authentifizierung konfigurieren**|**NEIN**: Benutzer werden nur importiert und authentifizieren sich gegen die pascom<br>**JA**: Benutzer werden importiert und können sich gegen USC authentifizieren. In diesem Fall wird die Authentifizierung eingerichtet und Sie können unter {{< ui-button "Appliance" >}} > {{< ui-button "Dienste" >}} im Reiter {{< ui-button "Authentifizierung" >}} bei Bedarf anpassen.|

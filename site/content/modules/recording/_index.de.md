@@ -34,7 +34,7 @@ Um das Mitschnitt System zu aktivieren müssen Sie mindestens eine Regel anlegen
 |Was wird aufgenommen?|	Das Aufnahmeziel ist rollenbasiert. Wählen Sie eine Rolle aus. Alle Mitglieder dieser Rolle, egal ob Benutzer oder ganze Teams, werden aufgenommen. Die Rolle braucht keinen speziellen Rollentyp sondern dient rein zur Gruppierung. Details zu Rollen finden Sie unter Konzept: Rollen.|
 |Rufrichtung|	Nur eingehende, ausgehende oder Telefonate in beide Richtungen mitschneiden|
 |Herkunft|	Nur interne, externe oder beide Gesprächsarten mitschneiden|
-|Versandart	|Alle Mitschnitte werden standardmäßig auf der Festplatte gespeichert und können per Classic Client abgefragt werden. Zusätzlich kann man jeden Mitschnitt an eine beliebige E-Mail Adresse versehen oder eine Bash-Skript erstellen das z.B. den Mitschnitt auf einen externen Fileserver kopiert. Der Versand wir durch einen Cronjob geregelt der standardmäßig nur einmal täglich um 20 Uhr ausgeführt wird. Details siehe **Conjob für Mitschnittsystem** weiter unten.|
+|Versandart	|Alle Mitschnitte werden standardmäßig auf der Festplatte gespeichert und können per Classic Client abgefragt werden. Zusätzlich kann man jeden Mitschnitt an eine beliebige E-Mail Adresse versehen oder eine Bash-Skript erstellen das z. B. den Mitschnitt auf einen externen Fileserver kopiert. Der Versand wir durch einen Cronjob geregelt der standardmäßig nur einmal täglich um 20 Uhr ausgeführt wird. Details siehe **Conjob für Mitschnittsystem** weiter unten.|
 
 ### Versandart Bash Skript
 Wird die Versandart Bash Skript gewählt wird ein Bash-Editor eingeblendet in man das gewünschte Skript direkt eingeben kann. Das Skript wird nach jedem Mitschnitt aufgerufen und es werden folgende Parameter übergeben die dann in den Variablen **$1** und **$2** abgerufen werden können:
@@ -42,7 +42,7 @@ Wird die Versandart Bash Skript gewählt wird ein Bash-Editor eingeblendet in ma
 |Variable|Inhalt|Beschreibung|Beispiel|
 |--------|------|------------|--------|
 |$1|	/absoluter/pfad/zu/aufnahme.wav |	Der Dateiname inkl. Pfad zum eben erzeugten Mitschnitt|	/var/spool/asterisk/monitor/na_1392064129-3_1392064129-10_29_001.wav|
-|$2|	/absoluter/pfad/zum/journal.json|	Der Dateiname inkl. Pfad zur json Datei für diesen Mitschnitt.| Darin befinden sich Metainformationen wie z.B. Gesprächsteilnehmer, Dauer, usw. des Mitschnittes|	/var/spool/asterisk/monitor/n_1392064129-3_1392064129-10.json|
+|$2|	/absoluter/pfad/zum/journal.json|	Der Dateiname inkl. Pfad zur json Datei für diesen Mitschnitt.| Darin befinden sich Metainformationen wie z. B. Gesprächsteilnehmer, Dauer, usw. des Mitschnittes|	/var/spool/asterisk/monitor/n_1392064129-3_1392064129-10.json|
 
 ### Cronjob für Mitschnittsystem
 
@@ -50,7 +50,7 @@ Für den Versand der Mitschnitte per E-Mail oder Skript und das Bereinigen der F
 
 Dies gilt wirklich nur für den Versand der Mitschnitte per E-Mail oder Skript. Im Classic Client werden die Mitschnitte sofort nach Fertigstellung der Aufnahme angezeigt.
 
-Möchten Sie den Intervall des Cronjobs erhöhen, z.B. alle 15 Minuten die Mitschnitte per E-Mail versenden, können Sie dies unter {{< ui-button "Erweitert" >}} > {{< ui-button "Mitschnitte" >}} > {{< ui-button "Aktionen" >}} > {{< ui-button "Versand Automatisieren" >}}  bzw. {{< ui-button "Appliance" >}} > {{< ui-button "Cronjobs" >}} > {{< ui-button "Mitschnitte" >}} verarbeiten anpassen.
+Möchten Sie den Intervall des Cronjobs erhöhen, z. B. alle 15 Minuten die Mitschnitte per E-Mail versenden, können Sie dies unter {{< ui-button "Erweitert" >}} > {{< ui-button "Mitschnitte" >}} > {{< ui-button "Aktionen" >}} > {{< ui-button "Versand Automatisieren" >}}  bzw. {{< ui-button "Appliance" >}} > {{< ui-button "Cronjobs" >}} > {{< ui-button "Mitschnitte" >}} verarbeiten anpassen.
 
 
 ### Festplattenspeicher verwalten

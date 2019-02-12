@@ -151,7 +151,7 @@ Nachdem die Telekom-Rufnummern erfolgreich eingerichtet wurden, müssen Sie auf 
 6. Nun muss die Nummer für ausgehende Rufe gewählt werden. Wählen Sie hier die Nummer, die Sie davor für eingehende Rufe ausgewählt haben.
 7. Im letzten Schritt übernehmen Sie die Einstellungen. Falls dies der erste Account ist, den Sie in dieser Session einrichten, müssen Sie bestätigen, dass Sie befugt sind diese Änderungen vorzunehmen. Gehen Sie zu Ihrer Fritz!Box und drücken Sie eine beliebige Taste.
 8. Wollen Sie alle Rufnummern Ihres Telekom-Anschlusses nutzen, wiederholen Sie die Schritte 1 - 7 um für alle Rufnummern einen Account anzulegen.
-9. In der Übersicht Ihrer Telefonie-Geräte sehen Sie die interne Nummer des Accounts (z.B. \**620). Diese Durchwahl müssen Sie sich ebenfalls für die Einrichtung in der pascom merken.
+9. In der Übersicht Ihrer Telefonie-Geräte sehen Sie die interne Nummer des Accounts (z. B. \**620). Diese Durchwahl müssen Sie sich ebenfalls für die Einrichtung in der pascom merken.
 
 ![Fritz!Box](fritzbox_telekom_phones.de.png?width=80%)
 

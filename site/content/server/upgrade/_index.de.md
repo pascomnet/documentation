@@ -26,7 +26,7 @@ Bitte beachten Sie folgende Checkliste **BEVOR** Sie mit dem Upgrade beginnen
 * [ ] Ich verwende keine cisco SPA 112 Gateways
 * [ ] Ich verwende keine FlexPanels
 * [ ] Ich verwende kein Print To Fax
-* [ ] Ich verwende kein SIP-Amt ohne Registrierung (z.B. Vodafone)
+* [ ] Ich verwende kein SIP-Amt ohne Registrierung (z. B. Vodafone)
 * [ ] Die Hardware oder Virtuelle Maschine die ich verwende hat min 2 GB RAM
 * [ ] Ich verwende keine 32Bit Hardware oder 32Bit Virtuelle Maschine
 * [ ] Mein Beronet Gateway hat mindestens Firmware Version 16

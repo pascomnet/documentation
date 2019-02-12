@@ -1,7 +1,7 @@
 ---
 title: pascom.cloud nutzen
 weight: 20
-description: Wir bietet allen FREE, Basic und Premium Kunden ein kostenloses hosting in der pascom.cloud. Einfach, Sicher, Schnell - Jetzt kostenlos starten.
+description: Wir bietet allen Free, Basic und Premium Kunden ein kostenloses hosting in der pascom.cloud. Einfach, Sicher, Schnell - Jetzt kostenlos starten.
 ---
 
 {{< doctype "cloud" >}}
@@ -10,7 +10,7 @@ description: Wir bietet allen FREE, Basic und Premium Kunden ein kostenloses hos
 
 ## pascom.cloud
 
-Die einfachste Möglichkeit pascom zu nutzen ist die, für FREE-, Basic- und Premium-Kunden kostenlose, Nutzung der pascom.cloud.  
+Die einfachste Möglichkeit pascom zu nutzen ist die, für Free-, Basic- und Premium-Kunden kostenlose, Nutzung der pascom.cloud.  
 
 Wenn Sie pascom als in der Cloud gehostete Telefonanlage nutzen, ist kein eigenes Hosting nötig. Sie können sofort loslegen, ohne jeden Installationsaufwand. Zusätzliche Hardware ist nicht nötig.
 

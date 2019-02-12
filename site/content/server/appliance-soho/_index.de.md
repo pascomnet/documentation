@@ -98,7 +98,7 @@ Nach erfolgreichem Reboot sehen Sie die Anmelde-Maske:
 ## Mobilzugriffe via Internet einrichten (optional)
 
 {{% notice note %}}
-Wenn Sie dieses Feature nutzen möchten führen Sie diese Schritte jetzt aus. Spätere Änderungen sind möglich, führen jedoch auch zu Änderungen für Ihre Benutzer da sich z.B. der Zugriff auf den Server via pascom Client von einer lokalen IP auf einen DNS Namen ändert. 
+Wenn Sie dieses Feature nutzen möchten führen Sie diese Schritte jetzt aus. Spätere Änderungen sind möglich, führen jedoch auch zu Änderungen für Ihre Benutzer da sich z. B. der Zugriff auf den Server via pascom Client von einer lokalen IP auf einen DNS Namen ändert. 
 {{% /notice %}}
 
 Dieser Schritt ist notwending falls Sie Ihren lokalen pascom Server auch von unterwegs per pascom Mobileclient (iOS/Android App) oder Desktopclient nutzen möchten. 
@@ -107,7 +107,7 @@ Dieser Schritt ist notwending falls Sie Ihren lokalen pascom Server auch von unt
 
 ## Telefonanlage einrichten
 
-Ein weiterer Assistent hilft ihnen dabei Ihre Telefonanlage ferig einzurichten und weitere Benutzer anzulegen, bzw. einzuladen.
+Ein weiterer Assistent hilft Ihnen dabei Ihre Telefonanlage fertig einzurichten und weitere Benutzer anzulegen, bzw. einzuladen.
 Gehen Sie hierzu wie folgt vor:
 
 * Melden Sie sich per Browser am pascom Server als admin an

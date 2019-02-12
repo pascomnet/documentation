@@ -1,5 +1,5 @@
 ---
-title: Amazon Web Servies (AWS)
+title: Amazon Web Services (AWS)
 description: So hosten Sie den pascom Server in der Amazon Cloud (AWS)
 weight: 50
 ---
@@ -103,7 +103,7 @@ Das Interface startet nun neu und bezieht automatisch das Let's Encrypt Certific
 
 ## Telefonanlage einrichten
 
-Ein weiterer Assistent hilft ihnen dabei Ihre Telefonanlage ferig einzurichten und weitere Benutzer anzulegen, bzw. einzuladen.
+Ein weiterer Assistent hilft ihnen dabei Ihre Telefonanlage fertig einzurichten und weitere Benutzer anzulegen, bzw. einzuladen.
 Gehen Sie hierzu wie folgt vor:
 
 * Melden Sie sich per Browser am pascom Server als admin an
