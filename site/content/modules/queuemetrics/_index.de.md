@@ -77,7 +77,7 @@ Ersetzten Sie BENUTZERNAME und KENNWORT mit den AMI-Zugangsdaten aus der pascom 
 
 
 {{% notice note %}}
-Das Mithören von Live-Anrufen via Queuemetrics ist mit der aktuellen pascom 18 noch nicht möglich. 
+Das Mithören von Live-Anrufen via Queuemetrics ist mit der aktuellen pascom 18 nicht möglich. 
 {{% /notice %}}
 
 ## Verbindung überprüfen (Onsite)
