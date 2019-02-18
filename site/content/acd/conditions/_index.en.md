@@ -36,7 +36,7 @@ This will most definitely not make a good impression on the customer - so make s
 
 To use your **timeframes** as the basis of a rule set, select **"time period"** when creating an action condition.
 
-In the pascom web interface, select {{< ui-button "Advanced" >}} > {{< ui-button "Action conditions" >}} and click {{< ui-button "Add" >}} to create a new condition. You can also select an existing condition and use the {{< ui-button "Edit" >}} function.
+In the pascom web interface, select {{< ui-button "ACD" >}} > {{< ui-button "Action conditions" >}} and click {{< ui-button "Add" >}} to create a new condition. You can also select an existing condition and use the {{< ui-button "Edit" >}} function.
 
 When you create the new condition, select {{< ui-button "time period" >}} as type and enter a **title**.
 
@@ -52,7 +52,7 @@ It is not necessary to create a time schema for outside of business hours; you c
 
 **Calendar** conditions are ideal for managing **public and company holiday** calendars.
 
-Select {{< ui-button "Advanced" >}} > {{< ui-button "Action conditions" >}} in the pascom web interface and click the {{< ui-button "Add" >}} button to create a new condition. You can also select an existing condition and click the {{< ui-button "Edit" >}} button.
+Select {{< ui-button "ACD" >}} > {{< ui-button "Action conditions" >}} in the pascom web interface and click the {{< ui-button "Add" >}} button to create a new condition. You can also select an existing condition and click the {{< ui-button "Edit" >}} button.
 
 When adding the condition, select {{< ui-button "calendar" >}} as the type and enter a **title**.
 
@@ -66,7 +66,7 @@ Unfortunately, it is not possible to transfer calendar days from one year to the
 
 **Extension switches** are a useful tool if there is **no specific day or timeframe** to use with a condition.
 
-Select {{< ui-button "Advanced" >}} > {{< ui-button "Action conditions" >}} in the pascom web interface and click the {{< ui-button "Add" >}} button to create a new condition. You can also select an existing condition and click the {{< ui-button "Edit" >}} button.
+Select {{< ui-button "ACD" >}} > {{< ui-button "Action conditions" >}} in the pascom web interface and click the {{< ui-button "Add" >}} button to create a new condition. You can also select an existing condition and click the {{< ui-button "Edit" >}} button.
 
 When adding the condition, select extension switch as the type and enter a **title**.
 

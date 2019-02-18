@@ -1,5 +1,5 @@
 ---
-title: Amazon Web Servies (AWS)
+title: Amazon Web Services (AWS)
 description: How to host you pascom phone system server in the Amazon Cloud (AWS)
 weight: 50
 ---

@@ -33,7 +33,7 @@ The pascom appliance is delivered with the pascom phone system server software a
 
 Connect the USB stick to your compute and start Rufus. Now select the pascom Server ISO file under {{< ui-button "Select image" >}}, select the USB stick via {{< ui-button "Select drive" >}} and finally click the {{< ui-button "START" >}}:
 
-![Etcher](etcher.png "Etcher")
+![Rufus](rufus.png?width=300px "Rufus")
 
 ### Connect the USB Stick
 

@@ -1,7 +1,7 @@
 ---
 title: Using pascom.cloud
 weight: 20
-description: We offer all FREE, Basic and Premium customers completely free pascom.cloud phone system hosting. Simple, Secure, Fast - start free now.
+description: We offer all Free, Basic and Premium customers completely free pascom.cloud phone system hosting. Simple, Secure, Fast - start free now.
 ---
 
 {{< doctype "cloud" >}}
@@ -10,7 +10,7 @@ description: We offer all FREE, Basic and Premium customers completely free pasc
 
 ## pascom.cloud
 
-The simplest deployment option for your pascom phone system is to use pascom.cloud which is free for all FREE, Basic and Premium pascom customers. 
+The simplest deployment option for your pascom phone system is to use pascom.cloud which is free for all Free, Basic and Premium pascom customers. 
 
 Choose the pascom.cloud phone system option and benefit from a hosted PBX without requiring any in-house or rented hosting as we take care of the hosting for you - free of charge. You can get started within minutes without any installation hassle or any additional hardware being required. 
 

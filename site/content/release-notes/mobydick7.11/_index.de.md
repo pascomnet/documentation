@@ -290,7 +290,7 @@ Bugfix Release, Veröffentlichung: 11.11.2015
 *   Feature: Labels können nun so konfiguriert werden, dass sie nicht am Client angezeigt werden.
 *   Das Anmeldefester zeigt nun den korrekten RSS Feed falls auf Englisch geschaltet ist.
 *   Ansagen können nun auch direkt in der Ansageübersicht (Grid) abgespielt werden
-*   Weitere Texte auf den Endgeräten übersetzt (z.B. Rufumleitung aktiv).
+*   Weitere Texte auf den Endgeräten übersetzt (z. B. Rufumleitung aktiv).
 *   Problem beim gleichzeitigen Hochladen der selben Ansage in mehreren Sprachen behoben.
 *   Problem bei beroNet und Patton analog Geräten behoben
 *   Problem bei Teams mit gesetzter ringinuse=yes option behoben

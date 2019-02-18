@@ -13,7 +13,6 @@ The pascom Support Team can only offer support for Trunks which have been create
 
 |Template||
 |---|---|
-|1&1 SIP-Trunk|
 |amplus|
 |Bergnet|
 |beroNet Gateway|

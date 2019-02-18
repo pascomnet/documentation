@@ -8,6 +8,62 @@ weight: 990
 For further information, please refer to our detailed [Client documentation]({{< ref "/clients" >}}).
 {{%/notice%}}
 
+{{% notice warning %}}
+From Release 46.R152 macOS 10.12 is the minimum requirement
+{{% /notice %}}
+
+
+## Release 47.R161 (11.02.2019)
+
+{{% notice note %}}
+This release does not include a mobile version update as the changes only affect the desktop application.
+{{% /notice %}}
+
+**Overview**
+
+This version fixes an issue affecting some older Windows systems (e.g. Windows 2008 R2 Terminal Server) where V46 does not start as a result of an OpenGL error message.
+
+**MODIFICATIONS:**
+
+- [CL-414] - Default ANGLE Renderer doesn't work on Windows Server 2008R2
+
+
+## Release 46.R152 (06.02.2019)
+
+**Overview**
+
+- Windows UI rendering is now based on OpenGL/Angle offering improved stability and performance
+- macOS 10.12 is now the minimum requirement for mac desktop apps
+- Improved iOS and Android app startup speeds
+- Improved compatibility with macOS 10.14 
+
+**MODIFICATIONS:**
+
+* [CL-16] - Don’t stack ‘configure headset’ messages
+* [CL-78] - Status text not in default language
+* [CL-116] - Switch back to OpenGL rendering on windows
+* [CL-147] - Check client macOS 10.14 "Mojave" compatibility
+* [CL-232] - Switch iOS App to iOS12-SDK (iPhone iOS 12)
+* [CL-268] - Log in and contact list has slow performance on android
+* [CL-285] - Client crashed when import outlook contacts
+* [CL-280] - Add possibility to hide notifications of new group chat messages
+* [CL-285] - Client crashed when import outlook contacts
+* [CL-311] - Improve layout of device settings on mobile
+* [CL-325] - Show “default” roster group in client with a nice translated name
+* [CL-334] - Calls waiting list position is misleading
+* [CL-335] - Crash when clicking on a letter in the phonebook view
+* [CL-347] - Send number to dialpad if call is running
+* [CL-352] - QR-Code is very big
+* [CL-353] - Generate QR-Code in pairing information with long press
+* [CL-362] - Client crash in MdSoftphone::muteAllCalls()
+* [CL-368] - Labels in native call notifications
+* [CL-377] - Regularly vacuum the client settings database
+* [CL-379] - Show message that Qt requires macOS 10.12.0 or later
+* [CL-397] - Mobile client shows different layout in pairing screen
+* [CL-380] - Missing “Play” and “Upload” button for ringtones in client settings
+* [CL-400] - No native missed call notification for calls with voicemail
+* [CL-408] - Request microphone permissions for client on macOS Mojave
+
 
 ## Release 45.R93 (17.12.2018)
 

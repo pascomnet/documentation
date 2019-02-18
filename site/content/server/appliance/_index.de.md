@@ -47,20 +47,20 @@ Den so vorbereiteten USB-Stick können Sie nun direkt an den USB3 Port (Rücksei
 
 ## Erster Systemstart
 
-Komplettieren Sie das Setup und folgen Sie den Anweisungen am Bildschrim bis Sie dazu aufgefordert werden in Ihren Browser zu wechseln um den Setup Wizard zu starten:
+Komplettieren Sie das Setup und folgen Sie den Anweisungen am Bildschirm bis Sie dazu aufgefordert werden in Ihren Browser zu wechseln um den Setup Wizard zu starten:
 
 ![Betriebssystem installieren](tui.png)
 
 ## Setup Wizard starten
 
-Öffnen Sie einen Brwoser und surfen auf die so eben konfigurierte IP-Adresse Ihres pascom Servers. Folgen Sie den Anweisungen bis Sie sich am Management Interface anmelden können:
+Öffnen Sie einen Browser und surfen auf die so eben konfigurierte IP-Adresse Ihres pascom Servers. Folgen Sie den Anweisungen bis Sie sich am Management Interface anmelden können:
 
 ![pascom Server Management](management.png)
 
 ## Mobilzugriffe via Internet einrichten (optional)
 
 {{% notice note %}}
-Wenn Sie dieses Feature nutzen möchten führen Sie diese Schritte jetzt aus. Spätere Änderungen sind möglich, führen jedoch auch zu Änderungen für Ihre Benutzer da sich z.B. der Zugriff auf den Server via pascom Client von einer lokalen IP auf einen DNS Namen ändert. 
+Wenn Sie dieses Feature nutzen möchten führen Sie diese Schritte jetzt aus. Spätere Änderungen sind möglich, führen jedoch auch zu Änderungen für Ihre Benutzer da sich z. B. der Zugriff auf den Server via pascom Client von einer lokalen IP auf einen DNS Namen ändert. 
 {{% /notice %}}
 
 Dieser Schritt ist notwending falls Sie Ihren lokalen pascom Server auch von unterwegs per pascom Mobileclient (iOS/Android App) oder Desktopclient nutzen möchten. 
@@ -69,7 +69,7 @@ Dieser Schritt ist notwending falls Sie Ihren lokalen pascom Server auch von unt
 
 ## Telefonanlage einrichten
 
-Ein weiterer Assistent hilft ihnen dabei Ihre Telefonanlage ferig einzurichten und weitere Benutzer anzulegen, bzw. einzuladen.
+Ein weiterer Assistent hilft Ihnen dabei Ihre Telefonanlage fertig einzurichten und weitere Benutzer anzulegen, bzw. einzuladen.
 Gehen Sie hierzu wie folgt vor:
 
 * Melden Sie sich per Browser am pascom Server als admin an

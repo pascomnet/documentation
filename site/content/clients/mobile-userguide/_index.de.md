@@ -124,7 +124,7 @@ Ist der Konversations-Bereich nicht im Fokus, und Sie erhalten eine neue Nachric
 
 ## Telefonieren
 
-Bevor Sie ein Telefonat starten können Sie über einen Schalter auswählen, ob Sie via GSM telefonieren möchten oder nicht. Sofern Sie beim Pairing des Mobiltelefons die Rufnummer Ihres Mobiltelefons angegeben haben, ist bei ausgeschaltetem GSM-Schalter ein Fallback auf GSM möglich. Der Fallback tritt in Kraft wenn die Internet-Verbindung instabil ist (z.b. beim Wechsel zwischen verschiedenen mobilen Netzen).
+Bevor Sie ein Telefonat starten können Sie über einen Schalter auswählen, ob Sie via GSM telefonieren möchten oder nicht. Sofern Sie beim Pairing des Mobiltelefons die Rufnummer Ihres Mobiltelefons angegeben haben, ist bei ausgeschaltetem GSM-Schalter ein Fallback auf GSM möglich. Der Fallback tritt in Kraft wenn die Internet-Verbindung instabil ist (z. B. beim Wechsel zwischen verschiedenen mobilen Netzen).
 
 ![Telefonieren](telephony.de.png)
 
@@ -180,7 +180,7 @@ Die Dreierkonferenz wird ähnlich wie [Attended Transfer]({{< relref "#attended-
 
 ### DTMF-Töne senden
 
-DTMF-Töne werden verwendet um z.B. in einem Konferenzraum eine PIN zur Authentifizierung einzugeben, wenn Sie in einer Hotline durch die Eingabe von 1,2 oder 3 an den/die gewünschten Gesprächspartner gelangen möchten oder mit einem Nummerncode eine Tür öffnen müssen.
+DTMF-Töne werden verwendet um z. B. in einem Konferenzraum eine PIN zur Authentifizierung einzugeben, wenn Sie in einer Hotline durch die Eingabe von 1,2 oder 3 an den/die gewünschten Gesprächspartner gelangen möchten oder mit einem Nummerncode eine Tür öffnen müssen.
 
 Um mit dem pascom Mobile Client DMTF-Töne zu versenden klicken Sie während des laufenden Gesprächs auf das *Wählfeld*.
 

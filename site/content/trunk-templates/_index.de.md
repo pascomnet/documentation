@@ -13,7 +13,6 @@ Das pascom Support Team kann Ihnen nur bei Ämtern behilflich sein die über ein
 
 |Vorlage||
 |---|---|
-|1&1 SIP-Trunk|
 |amplus|
 |Bergnet|
 |beroNet Gateway|

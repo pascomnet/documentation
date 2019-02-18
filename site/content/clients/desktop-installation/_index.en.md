@@ -80,17 +80,18 @@ tar jxvf ./Downloads/pascom_Client-7.17.10.R.tar.bz2
 |S|Enables an installation in to run in the background, without displaying any dialog windows.|
 |D=PATH| Enables the defining of the installation folder, i.e path. This parameter must always be the last parameter in the command line and only supports absolute file paths|
 
-## Desktop Client Umgebungsvariablen und Kommandozeilen Parameter
 
-Der pascom Desktop Client unterstützt auf allen Betriebsystemen zahlreiche Kommandozeilen Parameter und reagiert außerdem auf etliche Umgebungsvariablen. 
+## Desktop Client Environment Variables and Command Line Options
 
-Welche Parameter und Umgebungsvariablen von Ihrer Version unterstützt werden können Sie durch den Parameter `--help` abfragen.
+The pascom Desktop Client supports a range of command line options and reacts to a nummber of environment variables on all operating systems. 
+
+Using the `--help` parameter for more information on which options and envirnoment variables are supported by your version of the pascom desktop client. 
 
 {{% notice tip %}}
-Der Desktop Client darf nicht gestartet sein um die Hilfe auszugeben.
+The Desktop Client must not be running when accessing the help output.
 {{% /notice %}}
 
-Beispiel
+Example
 
 ```text
 pascom Client 7.18.00.D3667_267a0cd
