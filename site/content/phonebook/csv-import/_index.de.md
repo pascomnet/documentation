@@ -4,18 +4,19 @@ description: Telefonbuch-Kontakte aus externen Systemen importieren
 weight: 30
 ---
 
-### Telefonbuch aus CSV
+## Connector-Profil "Telefonbuch aus CSV"
 
 |Variablen|Beschreibung|
 |---|---|
-|**Bezeichung**|Bezeichnung des Profils|
+|**Bezeichnung**|Bezeichnung des Profils|
 |**Pfad zur CSV-Datei**|Die zu importierende Datei. Diese Angabe bezieht sich auf das Dateisystem der pascom und nicht auf Ihr lokales Dateisystem.|
 |**Zeichensatz der CSV-Datei**|Gibt an in welchem Format die CSV-Datei vorliegt. Wie empfehlen Ihnen UTF-8 zu verwenden.|
 |**Trennzeichen**|Mit welchem Trennzeichen wurden die Felder separiert.|
 |**Zeilenende**|Ob die CSV-Datei unter Windows oder Mac/Linux erstellt worden ist, unterscheidet sich das Zeilendende.|
 |**Feldeinfassung**|Wir empfehlen die einzelnen Felder mit Zeichen einzufassen, z. B. "Max Muster"|
 
-CSV-Quelle aus Freigabe laden:
+
+### CSV-Quelle aus Freigabe laden:
 
 |Variablen|Beschreibung|
 |---|---|
@@ -103,31 +104,27 @@ Dadurch wird der Wert der Variablen Homepage dem **Notiz** pascom Telefonbuch Fe
 
 pascom Labels lassen sich auch dazu nutzen zusätzliche Informationen aus der CSV-Datei mit im pascom Firmentelefonbuch anzuzeigen.
 
-In diese Beispiel möchten wir die Abteilung des Kontakts im Label **Abteilung** abspeichern. Dieses Label ist dann nicht nur im Telefonbuch sondern auch in Journaleinträgen oder diversen Anruferinformationen sichtbar.
+In diese Beispiel möchten wir die Abteilung des Kontakts im Label "Abteilung" abspeichern. Dieses Label ist dann nicht nur im Telefonbuch sondern auch in Journaleinträgen oder diversen Anruferinformationen sichtbar.
 
 **Label anlegen**
 
-Labels legen Sie im Menü `Anrufverteilung` > `Anruf Labels` durch Klicken auf die Schaltfläche `Hinzufügen` an.
+Labels legen Sie im Menü {{< ui-button "Anrufverteilung" >}} > {{< ui-button "Anruf Labels" >}} durch Klicken auf die Schaltfläche {{< ui-button "Hinzufügen" >}} an.
 
-Wählen Sie `Generisches Label`, vergeben Sie den Namen **Abteilung** und klicken auf `Speichern`.
+Wählen Sie {{< ui-button "Generisches Label" >}}, vergeben Sie den Namen "Abteilung" und klicken auf {{< ui-button "Speichern" >}}.
 
 Wenden Sie ausstehende Jobs an um das Label anzulegen.
 
 **Connector Profil anpassen**
 
-Fügen Sie hierzu im Reiter `Variablen` folgende Zeile durch `Hinzufügen` ein:
+Fügen Sie hierzu im Reiter {{< ui-button "Variablen" >}} folgende Zeile durch {{< ui-button "Hinzufügen" >}} ein:
 
 |Variable|Quelle|
 |---|---|
 |Department|return $row['Department'];|
 
-{{% notice info%}}
-Im Gegensatz zu anderen Connector-Profilen muss der Name der Variablen und der Name des Quellfeldes (hier "Department") identisch sein.
-{{% /notice  %}}
-
 Durch diese Zeile speichert der Connector den Inhalt des CSV Feldes "Department" in der gleichnamigen Variable "Department" ab.
 
-Diese Variable muss nun unter `Struktur` dem Label **Abteilung** pascom Feld zugeordnet werden.
+Diese Variable muss nun unter {{< ui-button "Struktur" >}} dem Label "Abteilung" pascom Feld zugeordnet werden.
 
 Ergänzen Sie hierzu die Zeilen:
 
@@ -166,7 +163,7 @@ in der Struktur:
           }]
         }
 
-Dadurch wird jedem Kontakt mit eingetragener Abteilung das Label **Abteilung** mit dem entsprechenden Wert zugeteilt.
+Dadurch wird jedem Kontakt mit eingetragener Abteilung das Label "Abteilung" mit dem entsprechenden Wert zugeteilt.
 
 **Ergebnis prüfen**
 
@@ -174,4 +171,8 @@ Dadurch wird jedem Kontakt mit eingetragener Abteilung das Label **Abteilung** m
 Label-Zuordnungen werden NICHT unter "Speichern und Simulieren" mit angezeigt
 {{% /notice  %}}
 
-Prüfen Sie die erfolgreiche Zuordnung des Labels in der pascom Web-UI unter `Benutzer` > `Telefonbuch` indem Sie einen ensprechenden Kontakt `Bearbeiten` und die Zuordnung im Reiter `Labels` prüfen. Alternativ können Sie auch das Firmentelefonbuch im pascom Client einsehen.
+Prüfen Sie die erfolgreiche Zuordnung des Labels in der pascom Web-UI unter {{< ui-button "Benutzer" >}} > {{< ui-button "Telefonbuch" >}} indem Sie einen ensprechenden Kontakt {{< ui-button "Bearbeiten" >}} und die Zuordnung im Reiter {{< ui-button "Labels" >}} prüfen. Alternativ können Sie auch das Firmentelefonbuch im pascom Client einsehen.
+
+{{% notice info %}}
+Ggf. ist es notwendig den XMPP-Dienst unter {{< ui-button "Anwenden">}} > {{< ui-button "XMPP Server neu starten">}} neu zu starten, um alle mit der pascom verbundenen Clients neu zu starten und damit mit der Telefonanlage zu synchronisieren, damit alle konfigurierten Labels korrekt angezeigt werden.
+{{% /notice %}}
