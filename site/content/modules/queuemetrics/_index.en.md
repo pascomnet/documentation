@@ -10,126 +10,91 @@ weight: 60
 
 ## Overview
 
-QueueMetrics is a Contact Center Queues and Agents reporting tool as is a powerful addition to pascom's [Call Center Software](https://www.pascom.net/en/call-center/ "pascom Contact Center Solutions"). QueueMetrics should be installed on a separate server to your pascom phone system. QueueMetrics stores data in a MySQL database which can be located either on the same server as QueueMetrics or on any other server. If needed, your pascom PBX can write the data required for reporting to the MySQL server.
+QueueMetrics is a [Call and Contact Center Software](https://www.pascom.net/en/call-center/ "pascom Contact Center Solutions") Queues and Agents reporting tool. 
 
 ## Configuration
 
-### Installing the QueueMetrics and MySQL server
-QueueMetrics is contact center performance analysis solution from Loway. First, you will need to download the latest version of QueueMetrics and follow the instructions to set up the server. For the setup, you will also need a MySQL server. After a default installation procedure, follow the QueueMetrics instructions to customize the database and users accordingly. It is recommended to run QueueMetrics and MySQL on the same server.
+### QueueMetrics Interface
 
-The default setting for QueueMetrics is to not read the queues from the database but to try and find it in the local file /var/log/asterisk/queues.log
+QueueMetrics is a Loway product. The QueueMetrics interface transfers data between the pascom server and QueueMetrics via Uniloader. The Uniloader is also capable of receiving HTTPs commands from QueueMetrics and passing these on to the Asterisk AMI. 
 
-This behaviour can be changed in the **QueueMetrics web interface** in the menu `Administrative tools > Edit system parameters`:
+Since the AMI is integrated directly into the pascom platform, no additional installation is required on the pascom server.
 
-    ..
-    default.queue_log_file=sql:P001
-    ..
+### QueueMetrics Configuration
 
-### Preparing the MySQL Server for pascom
+#### Add API User in QueueMetrics
 
-#### Check the bindings
-To enable your phone system to write queue data to the MySQL server, external access must be enabled on the MySQL server. Sometimes, MySQL binds to localhost and therefore is unreachable from other computers. To check this, see the file **/etc/mysql/my.conf** and change the binding to **0.0.0.0** (file name and path can vary depending on your system environment).
+Log in to the QueueMetrics web UI and select the menu option {{< ui-button "Settings" >}} > {{< ui-button "User" >}} > {{< ui-button "Create New" >}}.
 
-    ..
-    bind-address = 0.0.0.0
-    ..
-    
-Then, restart the MySQL server:
-
-    /etc/init.d/mysql restart
-
-#### Adding users
-
-It is recommended to use a separate user for the MySQL server instead of using the QueueMetrics user. Start the MySQL console:
-
-    mysql -u root -p
-
-Enter the root password for the MySQL server. Usually, this password is set during the installation of MySQL Server.
-
-
-With the MySQL console, create a new user for the pascom phone system:
-
-    mysql> grant all privileges on *.* to USERNAME@'%' identified by 'PASSWORD';
-
-Replace USERNAME and PASSWORD with their respective values. This will grant USERNAME all permissions on all databases of the server. If, as advised, MySQL for QueueMetrics is run on a dedicated server, this is acceptable. Otherwise, access should be restricted.
-
-#### Checking connections
-
-Log on to the PBX using SSH and test the connection to the QueueMetrics database using the following command:
-
-    mysql -h DB_HOST -u USERNAME --password=PASSWORT DB_NAME
-
-Replace USERNAME and PASSWORD with their current values. DB_HOST is the host of the database, DB_NAME is the name of the QueueMetrics database.
-
-### Configuring your pascom phone system
-
-#### Connecting the QueueMetrics database
-Log on to the pascom PBX web interface and select menu {{< ui-button "Advanced" >}} > {{< ui-button "QueueMetrics" >}}:
-
+Add the API User with the following values:
 
 |Parameter|Description|
 |---------|---------|
-|QueueMetrics enabled| Selecting YES here will cause the PBX to start the service and write the queue data to the QueueMetrics database|
-|IP/Host Mysql Server| Enter the address of the host of the MySQL server|
-|DB Port|  The port for the MySQL server (default is 3306)|
-|Database name|    The name of the QueueMetrics database|
-|DB user name| The PBX username which has been granted access to the QueueMetrics database|
-|DB password|  The corresponding password|
-|QueueMetrics URL| The QueueMetrics server URL|
-|API User| The API user for the QueueMetrics server|
-|API Password| The API user password|
+|Login|User login name. We recommend "pascom"|
+|Password|Password for user authentication|
+|Confirm Password|Reenter the user password|
+|Class|From the dropdown menu, select the class "WQLOADER" |
+|User keys| Click the Hat icon and select "User's roles" > "User may launch ROBOT transactions." and "Misc API access" > "The user can upload logs over HTTP". In the text field, "ROBOTS" will be automatically entered.|
 
-Save the configuration and apply the created jobs.
+Save the user via {{< ui-button "Save" >}}.
 
-#### Asterisk Manager Interface Configuration
+### pascom Configuration
 
-In order to communicate with the phone system Server, you will need to allow QueueMetrics access via the Asterisk Manager Interface (AMI)
-To do this, you will need to (if you have not already done so) enable the AMI to allow public access which can be done via {{< ui-button "Appliance" >}} > {{< ui-button "Services" >}} and then selecting ***public*** under ***the Allowed AMI Connections*** within the **Telephony** tab as shown below:
+#### Connect the QueueMetrics Database
 
- Next you will need to create a manager account for QueueMetrics with the pascom Web UI using the menu {{< ui-button "Appliance" >}} > {{< ui-button "Asterisk Manager" >}} accounts:
+Log into the pascom web UI and select the menu point {{< ui-button "Advanced" >}} > {{< ui-button "QueueMetrics" >}}:
 
-#### Creating a manager account
-The manager account that you just created within the Web UI must now be added to QueueMetrics. This can be done in the menu {{< ui-button "Administrative Tools" >}} > {{< ui-button "Edit System Parameters" >}} of the QueueMetrics web interface:  
+|Parameter|Description|
+|---------|---------|
+|QueueMetrics enabled| By selecting Yes, pascom will start the service which continually saves queue data to the QueueMetrics database|
+|QueueMetrics URL|The URL of the QueueMetrics server|
+|API User|The API user on the QueueMetrics Server (Login-Name)|
+|API Password|The API users password|
 
-    ..
-    callfile.dir=tcp:USERNAME:PASSWORT@PASCOM_HOST
-    ..
+Save the configuration and apply all generator jobs.
 
-Replace USERNAME and PASSWORD with the values of the manager account. Instead of using the PASCOM_HOST, enter the IP address or the host name of your pascom PBX server.
+#### Configure the Asterisk Manager Interface
 
-## Troubleshooting
+In order to communicate with the phone system Server, you will need to allow QueueMetrics access via the Asterisk Manager Interface (AMI).
 
-### Ensuring Correct Data Transmission Between pascom IP PBX and QueueMetrics
+**Find the AMI Access Credentials**       
+The AMI access credentials can be found in the pascom web UI under {{< ui-button "Advanced" >}} > {{< ui-button "QueueMetrics" >}} > {{< ui-button "Show AMI credentials" >}}
 
-To check whether that data has been correctly transferred from your pascom PBX to the QueueMetrics database, the file qloader.log can be used:
+**Setup AMI Access in QueueMetrics**      
+Now enter the access credentials within the QueueMetrics web UI under {{< ui-button "Administrative Tools" >}} > {{< ui-button "Edit system parameters." >}} and activate the phone system's access:
 
-    root@pascom:/var/log/asterisk# tail /var/log/asterisk/qloader.log
-     |Tue May 14 14:52:53 2013|QueueMetrics MySQL loader - $Revision: 1.29 $
-     |Tue May 14 14:52:53 2013|Partition P001 - PID 9161 - TZ offset: 0 s. - Heartbeat after 900 s.
-     |Tue May 14 14:52:53 2013|Now connecting to DB queuemetrics on 10.5.6.207 as user mobydick with password queuemetrics
-     |Tue May 14 14:52:53 2013|Ignoring all timestamps below 0
-     
-### Testing the manager connection
 
-Log on to the QueueMetrics web interface. The menu {{< ui-button "System diagnostic tool" >}} > {{< ui-button "AMI Testet" >}} allows you to test the connection to your pascom phone system. The result should be similar to the example below:
-
-    Status
-    AMI URL: tcp:queuemetrics:queuemetrics@10.5.6.77:5038
-    callfile.agentremovemember_ht is OK
-    callfile.agentaddmember_ht is OK
-    callfile.agentlogoff is OK
-    callfile.agentlogin is OK
-    Skipping check for $EM@from-internal
-    callfile.monitoring is OK
-    Skipping check for $EM@from-internal
-    callfile.customdial is OK
     ...
-    Asterisk dialog was OK
-    AMI Dialog took 6289 ms
+    callfile.dir=tcp:USERNAME:PASSWORD@127.0.0.1
+    ...
 
-<!-- ### QueueMetrics Jobs within the Commander
-Should you have entered and saved everything correctly within the pascom PBX Web UI, then you will now need to apply two jobs
+    ...
+    default.webloaderpbx=true
+    ...
 
-If the jobs have been executed correctly, then you should receive the following message:
 
-Upon every telephony services application, QueueMetrics will be automatically synchronized: -->
+Replace the USERNAME and PASSWORD with the AMI credentials from the pascom Web UI. The IP Address 127.0.0.1 does not need to be updated as the QueueMetrics Uniloader is located on the pascom phone system host.
+
+
+{{% notice note %}}
+The Call Monitor function (listening to live calls) from QueueMetrics is not currently possible with pascom 18. 
+{{% /notice %}}
+
+## Check the Connection (Onsite)
+
+### pascom to QueueMetrics Data Loading Checks
+
+In order to see whether the transfer of data from pascom to the QueueMetrics database is functioning, access your instance via SSH and you can use the following command to check the connection:
+
+    journalctl -fu uniloader.service
+
+
+As the answer, you will receive the status of the connection:
+
+
+    root@pascom:/# journalctl -fu uniloader.service            
+    -- Logs begin at Tue 2019-02-12 01:01:32 CET. --
+    Feb 15 14:46:33 pascom uniloader[12323]: 2019/02/15 14:46:33 Uniloader 0.4.1 (84-20170920.1110) is alive - GR: 19 - Mem: Alloc 3372k (Free 11992503k) Sys 9094k
+    Feb 15 14:51:33 pascom uniloader[12323]: 2019/02/15 14:51:33 Uniloader 0.4.1 (84-20170920.1110) is alive - GR: 17 - Mem: Alloc 1941k (Free 11999561k) Sys 9094k
+    Feb 15 14:56:33 pascom uniloader[12323]: 2019/02/15 14:56:33 Uniloader 0.4.1 (84-20170920.1110) is alive - GR: 19 - Mem: Alloc 3103k (Free 12004255k) Sys 9094k
+
