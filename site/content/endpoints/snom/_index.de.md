@@ -1,5 +1,5 @@
 ---
-title: Snom Tischtelefone D1XXer, D3XXer und D7XXer Serie
+title: Snom Tischtelefone D100er, D300er und D700er Serie
 description: Integrieren Sie Ihre Snom IP-Tischtelefone in die pascom
 weight: 10
 ---
@@ -8,7 +8,7 @@ weight: 10
  
 {{< description >}}
 
-![snom D3XX/D7XX Serie](snom-series.png)
+![snom D300/D700 Serie](snom-series.png)
 
 ## Kompatibilität
 
@@ -38,7 +38,7 @@ pascom ist in der Lage IP-Telefone des Herstellers Snom automatisch und zentral 
 {{% notice tip %}}
 Handelt es sich nicht um ein fabrikneues Telefon setzen Sie es in jedem
 Fall auf **Werkseinstellungen** zurück. Wählen Sie hierzu am Telefon, im eingeschalteten
-Zusatand, <strong>\**##</strong> und halten anschließend <strong>#</strong> gedrückt bis nach dem Reboot ein Menü
+Zustand, <strong>\**##</strong> und halten anschließend <strong>#</strong> gedrückt bis nach dem Reboot ein Menü
 erscheint. Wählen Sie **1** für Werkseinstellungen.
 {{% /notice %}}
 
