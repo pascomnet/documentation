@@ -9,14 +9,14 @@ weight: 10
 {{< description >}}
 
 ## General
-The pascom server includes a service called prometheus. This collects all the metrics of the system. These include, among other things, the utilization of CPU, RAM and HDD. By means of a plugin, these values can be queried externally.
+The pascom server includes a service called prometheus. It collects all the metrics of the system. These include, among other things, the utilisation of CPU, RAM and HDD. By means of a plugin, these values can be queried externally.
 
 {{% notice info %}}
 The Icinga oder Nagios server needs access to the pascom management port (8443).
 {{% /notice %}}
 
 ## Prometheus Nagios Plugin
-To collect the metrics a plugin is needed. This can be integrated via a check command.
+To query the metrics a plugin is needed. This can be integrated via a check command.
 
 https://github.com/prometheus/nagios_plugins
 

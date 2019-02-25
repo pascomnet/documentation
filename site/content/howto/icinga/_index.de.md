@@ -42,14 +42,14 @@ https://github.com/prometheus/nagios_plugins
 
     ./check_prometheus_metric.sh -H 'https://_PASCOM-IP_:8443/prometheus' -q 'node_filesystem_free{mountpoint="/"}/1024/1024'  -n "Number of free diskspace in MB" -w 8000 -c 3000 -C "-k" -t vector -m lt
 
-**Aulsatung der CPU (load1)  (Critical < 10, Warning < 5. Values are multiplied by 10)**
+**Aulsatung der CPU (load1)  (Critical < 10, Warning < 5. Werte werden mit 10 multipliziert)**
 
     ./check_prometheus_metric.sh -H 'https://_PASCOM-IP_:8443/prometheus' -q 'node_load1*10'  -n "Load average 1m" -w 50 -c 100 -C "-k" -t vector
 
-**Aulsatung der CPU (load5) (Critical < 6, Warning < 4. Values are multiplied by 10)**
+**Aulsatung der CPU (load5) (Critical < 6, Warning < 4. Werte werden mit 10 multipliziert)**
 
     ./check_prometheus_metric.sh -H 'https://_PASCOM-IP_:8443/prometheus' -q 'node_load5*10'  -n "Load average 5m" -w 40 -c 60 -C "-k" -t vector
 
-**Aulsatung der CPU (load15) (Critical < 4, Warning < 3. Values are multiplied by 10)**
+**Aulsatung der CPU (load15) (Critical < 4, Warning < 3. Werte werden mit 10 multipliziert)**
 
     ./check_prometheus_metric.sh -H 'https://_PASCOM-IP_:8443/prometheus' -q 'node_load15*10'  -n "Load average 15m" -w 30 -c 40 -C "-k" -t vector
