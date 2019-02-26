@@ -273,7 +273,7 @@ Bestätigen Sie die Einstellungen mit einem Klick auf {{< ui-button "Import" >}}
 
 Klicken Sie in der linken Menüleiste auf das Plus-Symbol und wählen Sie {{< ui-button "Dashboard" >}} aus, um ein neues Dashboard zu erstellen.
 
-![Dashboard importieren](Create-Dashboard.png)
+![Dashboard erstellen](Create-Dashboard.png)
 
 Wählen Sie unter {{< ui-button "Add" >}} die Diagramm-Form (*Panel*) aus, die Sie zu Ihrem neuen Dashboard hinzufügen möchten.
 
