@@ -24,38 +24,50 @@ Das Rufauswertungs-Tool Grafana bietet keine Sprachauswahl-Möglichkeiten und ka
 
 Die Rufstatistik umfasst standardmäßig 3 Auswertungs-Ansichten oder Dashboards genannt.
 
-+ **Live**: Im Live-Dashboard ist der aktuelle Status der Telefonanlage zu sehen: aktive Gespräche, Anrufer in den Warteschlagen, Teams und deren Agenten.
-+ **Overview**: Im Overview-Dashboard erhält man eine Übersicht über alle im ausgewählten Zeitraum geführten Gespräche, sowie eine ausführliche Rufauswertung.
-+ **Teams**: Im Teams-Dashboard findet man Auswertungen zu allen Warteschlangen/Teams, die durchschnittliche Wartezeit von Anrufern, sowie die durchschnittliche Gesprächsdauer bei eingehenden Anrufen.
++ [**Live**](#Live): Im Live-Dashboard ist der aktuelle Status der Telefonanlage zu sehen: aktive Gespräche, Anrufer in den Warteschlagen, Teams und deren Agenten.
++ [**Overview**](#Overview): Im Overview-Dashboard erhält man eine Übersicht über alle im ausgewählten Zeitraum geführten Gespräche, sowie eine ausführliche Rufauswertung.
++ [**Teams**](#Teams): Im Teams-Dashboard findet man Auswertungen zu allen Warteschlangen/Teams, die durchschnittliche Wartezeit von Anrufern, sowie die durchschnittliche Gesprächsdauer bei eingehenden Anrufen.
 
--> Hier Bild <-
+![Dashboards](Home-Dashboard.png)
 
 ### Live
 
 Das Live-Dashboard aktualisiert sich automatisch und zeigt alle Gespräche auf der Telefonanlage an, unabhängig davon, ob diese derzeit aktiv geführt, gehalten, verbunden, oder in einer Warteschlange geparkt sind. Alle Warteschlangen/ Teams werden ebenfalls automatisch angezeigt und aktualisiert, falls weitere Teams auf der pascom Anlage angelegt werden oder Agenten der Teams bearbeitet werden.
 
--> Hier Bild <-
+![Live-Dashboard](Live-Dashboard.png)
 
+**Echtzeit-Rufauswertung (oben)**       
+Hier werden in Echtzeit alle Anrufe angezeigt, die derzeit über pascom geführt werden. Es werden ein- und ausgehende Anrufe, sowie interne Rufe angezeigt.
+
+**Alle Teams/ Warteschlanen (darunter)**        
+Unter der Echtzeit-Rufanzeige werden automatisch alle auf der pascom vorhandenen Teams/ angezeigt.
+Links sind jeweils alle Agenten des Teams mit Telefon-Status und Team-Status, sowie Pausengründen zu sehen.
+Rechts werden alle wartenden Anrufer in der Warteschlange angezeigt. Die Hintergrund-Farbe der Anrufer gibt Auskunft über die Wartedauer des Anrufers:      
+*grün*: Der Anrufer wartet < 10 Sekunden        
+*gelb*: Der Anrufer wartet >= 10 Sekunden       
+*rot*: Der Anrufer wartet seit >= 20 Sekunden
 
 
 ### Overview
 
 Das Overview-Dashboard zeigt eine Übersicht aller geführten Gespräche, Statistiken über die Art der Gespräche, verwendeter Labels und eine ausführliche Rufauswertung.
 
--> Hier Bild <-
+![Overview-Dashboard](Overview-Dashboard.png)
 
 
 #### Auswertungs-Zeitraum setzen
 
 Standardmäßig wird im Overview-Dashboard der aktuelle Tag "*Today*" ausgewertet.
-Wenn Sie einen bestimmten Tag oder Zeitraum angezeigt bekommen möchten, klicken Sie rechts oben auf das Uhr-Symbol um den gewünschten Zeitraum einzustellen.
+Wenn Sie einen bestimmten Tag oder Zeitraum angezeigt bekommen möchten, klicken Sie im Aktionsmenü rechts oben auf das Uhr-Symbol um den gewünschten Zeitraum einzustellen.
 
--> Hier Bild <-
+![Zeitraum setzen](Date-Settings.png)
 
 
 #### Filter verwenden 
 
 Wenn Sie die Auswertungen und Statistiken im Overview-Dashboard detaillierter anzeigen möchten, bieten sich hierfür diverse Filter an. 
+
+![Filter](Overview-Filter.png)
 
 |Filter|Beschreibung|Default|
 |---|---|---|
@@ -66,12 +78,12 @@ Wenn Sie die Auswertungen und Statistiken im Overview-Dashboard detaillierter an
 |**To Name**|Hier können Sie nach dem Namen des Anruf-Empfängers filtern.|*-*|
 |**To Number**|Hier können Sie nach der Rufnummer des Anruf-Empfängers filtern.|*-*|
 
--> Hier Bild <-
-
 
 #### detaillierte Rufauswertung
 
 Die detaillierte Rufauswertung (*Calls*) gibt eine ausführliche Übersicht auf alle geführten Gespräche im ausgewählten Zeitraum. 
+
+![detaillierte Rufauswertung](Overview-Calls.png)
 
 |Wert|Beschreibung|
 |---|---|
@@ -90,6 +102,8 @@ Die detaillierte Rufauswertung (*Calls*) gibt eine ausführliche Übersicht auf 
 
 
 **Anruf-Details (*Chain*):**
+
+![Anruf-Details](Call-Chain.png)
 
 |Wert|Beschreibung|
 |---|---|
@@ -122,20 +136,22 @@ Das Team-Dashboard bietet eine Übersicht aller eingehenden Anrufe auf Warteschl
 Im Team-Dashboard werden nur eingehende Anrufe dargestellt, da ein Team als ganzes keinen ausgehenden Anruf starten kann. Um ausgehende Anrufe einzelner Benutzer/ Agenten auszuwerten bitte das Overview-Dashboard verwenden.
 {{% /notice %}}
 
--> Hier Bild <-
+![Team-Dashboard](Team-Dashboard.png)
 
 
 #### Auswertungs-Zeitraum setzen
 
 Standardmäßig wird im Team-Dashboard der aktuelle Tag "*Today*" ausgewertet.
-Wenn Sie einen bestimmten Tag oder Zeitraum angezeigt bekommen möchten, klicken Sie rechts oben auf das Uhr-Symbol um den gewünschten Zeitraum einzustellen.
+Wenn Sie einen bestimmten Tag oder Zeitraum angezeigt bekommen möchten, klicken Sie im Aktionsmenü rechts oben auf das Uhr-Symbol um den gewünschten Zeitraum einzustellen.
 
--> Hier Bild <-
+![Zeitraum setzen](Date-Settings.png)
 
 
 #### Filter verwenden 
 
 Wenn Sie die Auswertungen und Statistiken im Team-Dashboard detaillierter anzeigen möchten, bieten sich hierfür diverse Filter an. 
+
+![Filter](Team-Filter.png)
 
 |Filter|Beschreibung|Default|
 |---|---|---|
@@ -144,8 +160,6 @@ Wenn Sie die Auswertungen und Statistiken im Team-Dashboard detaillierter anzeig
 |**Label**|Hier können Sie die Anzeige auf ein oder mehrere Label einschränken.|All|
 |**From Name**|Hier können Sie nach dem Namen des Anrufers filtern.|*-*|
 |**From Number**|Hier können Sie nach der Rufnummer des Anrufers filtern.|*-*|
-
--> Hier Bild <-
 
 
 #### detaillierte Rufauswertung
@@ -168,6 +182,8 @@ Die detaillierte Rufauswertung (*Calls*) gibt eine ausführliche Übersicht auf 
 |**Chain**|Verlinkt zu einer Übersicht des genauen Anrufverlaufs, ähnlich der Anruf-Details im pascom Client.|
 
 **Anruf-Details (*Chain*):**
+
+![Anruf-Details](Call-Chain.png)
 
 |Wert|Beschreibung|
 |---|---|
@@ -206,6 +222,8 @@ Im Rufauswertungs-Tool gibt es standardmäßig 3 Standard-Dashboards (Live, Over
 
 Klicken Sie die Bezeichnung einer beliebigen Auswertung/ Statistik in einem bestehenden Dashboard an, um eine erweiterte Aktions-Auswahl zu erhalten. Wählen Sie die Aktion {{< ui-button "Edit" >}} aus.
 
+![Auswertung bearbeiten](Panel_Edit.png)
+
 Jetzt können Sie die Auswertung an Ihre Bedürfnisse anpassen: 
 
 + **Filter**: Filter bearbeiten (je nach zuvor gewähltem Standard-Dashboard)
@@ -215,8 +233,9 @@ Jetzt können Sie die Auswertung an Ihre Bedürfnisse anpassen:
 + **Value Mappings**: Standard-Werte und Formatierung bearbeiten
 + **Time range**: Auswertungszeitraum bearbeiten
 
-Sobald die Auswertung fertig angepasst wurde, können Sie die Änderungen mit einem Klick auf das Speichern-Symbol rechts oben speichern.
+Sobald die Auswertung fertig angepasst wurde, können Sie die Änderungen mit einem Klick auf das Speichern-Symbol im Aktionsmenü rechts oben speichern.
 
+![Dashboard speichern](Save-Dashboard.png)
 
 Handelt es sich bei dem bestehenden Dashboard um ein Standard-Dashboard (Live, Overview oder Team), erhalten Sie an dieser Stelle eine Fehlermeldung, dass ein Standard-Dashboard nicht verändert werden darf und die Änderungen nicht gespeichert werden können:
 
@@ -232,6 +251,8 @@ Stattdessen können Sie den angezeigten Konfigurations-Code (*JSON*) des Dashboa
 Wenn Sie ein Dashboard oder eine Auswertung bearbeitet haben und einen Konfigurations-Code (*JSON*), einen Link oder eine Dashboard-ID zur Hand haben, können Sie daraus ein bereits vollständig konfiguriertes Dashboard erstellen.
 
 Klicken Sie in der linken Menüleiste auf das Plus-Symbol und wählen Sie {{< ui-button "Import" >}} aus, um ein neues Dashboard anhand einer bestehenden Konfiguration zu erstellen.
+
+![Dashboard importieren](Import-Dashboard.png)
 
 + Wenn Sie einen Link oder eine ID zur Hand haben fügen Sie diese im ersten Feld bei {{< ui-button "Grafana.com Dashboard" >}} ein.
 oder:
@@ -252,6 +273,8 @@ Bestätigen Sie die Einstellungen mit einem Klick auf {{< ui-button "Import" >}}
 
 Klicken Sie in der linken Menüleiste auf das Plus-Symbol und wählen Sie {{< ui-button "Dashboard" >}} aus, um ein neues Dashboard zu erstellen.
 
+![Dashboard importieren](Create-Dashboard.png)
+
 Wählen Sie unter {{< ui-button "Add" >}} die Diagramm-Form (*Panel*) aus, die Sie zu Ihrem neuen Dashboard hinzufügen möchten.
 
 + Graph
@@ -267,7 +290,9 @@ Wählen Sie unter {{< ui-button "Add" >}} die Diagramm-Form (*Panel*) aus, die S
 
 Welche Diagram-Form (*Panel*) wofür geeignet ist und wie Sie diese korrekt einrichten finden Sie in der [Grafana-Dokumtentation](http://docs.grafana.org/features/panels).
 
-Sobald Sie die gewünschten Auswertungen Ihrem neuen Dashboard hinzugefügt haben, können Sie die Änderungen mit einem Klick auf das Speichern-Symbol rechts oben speichern. 
+Sobald Sie die gewünschten Auswertungen Ihrem neuen Dashboard hinzugefügt haben, können Sie die Änderungen mit einem Klick auf das Speichern-Symbol im Aktionsmenü rechts oben speichern. 
+
+![Dashboard speichern](Save-Dashboard.png)
 
 Jetzt ist es notwendig dem neuen Dashboard eine Bezeichnung zu geben, sodass das neue Dashboard eindeutig zugeordnet werden kann.
 
@@ -285,7 +310,10 @@ Das Rufauswertung-Tool bietet Ihnen die Möglichkeit bestimmte Auswertungen oder
 
 **Dashboard exportieren**
 
-Wenn Sie ein gesamtes Dashboard als JSON exportieren möchten, wählen Sie zuerst das gewünschte Dashboard aus und klicken dann in der Leiste rechts oben auf das Teilen-Symbol. 
+Wenn Sie ein gesamtes Dashboard als JSON exportieren möchten, wählen Sie zuerst das gewünschte Dashboard aus und klicken dann im Aktionsmenü rechts oben auf das Teilen-Symbol. 
+
+![Dashboard exportieren](Share-Dashboard.png)
+
 Wechseln Sie zu dem Reiter {{< ui-button "Export" >}} um einzustellen, wie dieses Dashboard exportiert werden soll.
 
 |Einstellung|Beschreibung|
@@ -302,11 +330,13 @@ Es ist möglich jede einzelne Statistik des Rufauswertungs-Tools via CSV zu expo
 
 Klicken Sie dazu die Bezeichnung einer beliebigen Auswertung/ Statistik in einem bestehenden Dashboard an, um eine erweiterte Aktions-Auswahl zu erhalten. Fahren Sie mit der Maus über die Aktion {{< ui-button "More" >}} und wählen Sie {{< ui-button "Export CSV" >}} aus. 
 
+![Auswertung exportieren](Panel-Options.png)
+
 Anschließend öffnet sich ein Detail-Fenster in dem Sie Einstellungen, wie Datumsformat und Darstellung der Auswertung zu dem CSV angeben können.
 
 Mit einem Klick auf {{< ui-button "Export" >}} wird die CSV-Datei generiert.
 
-
+<!---
 #### Dashboard teilen
 
 Wenn Sie eine Live-Auswertungen mit jemandem teilen möchten, können Sie hierfür einen Link zu Ihrem Dashboard erstellen um dieses zu teilen. 
@@ -315,7 +345,7 @@ Wenn Sie eine Live-Auswertungen mit jemandem teilen möchten, können Sie hierf�
 Das Teilen von Live-Links wird in der pascom Version 18.05 noch nicht unterstützt, da es hier kein Benutzermanagement gibt. Das Benutzermanagement wird erst in den folgenden Releases nachgereicht.
 Bis dahin verwenden Sie bitte Snapshots, oder loggen Sie sich als Benutzer mit Administrationsrechten ein, um Zugriff auf alle Dashboards mit aktualisierenden Daten zu erhalten.
 {{% /notice %}}
-
+--->
 
 #### Snapshots teilen
 
@@ -325,7 +355,10 @@ Wenn Sie eine aktuelle Auswertung mit jemanden ohne Administrationszugriff teile
 Der Snapshot stellt immer nur die Auswertung zum Zeitpunkt beim Erstellen des Snapshots dar und aktualisiert sich niemals automatisch mit aktuellen Daten. Mit einem Snapshot ist keine Live-Ansicht möglich.
 {{% /notice %}}
 
-Wählen Sie das Dashboard aus, das Sie teilen möchten und klicken Sie in der Leiste rechts oben auf das Teilen-Symbol. 
+Wählen Sie das Dashboard aus, das Sie teilen möchten und klicken Sie im Aktionsmenü rechts oben auf das Teilen-Symbol. 
+
+![Dashboard exportieren](Share-Dashboard.png)
+
 Wechseln Sie zu dem Reiter {{< ui-button "Snapshot" >}} um einzustellen, wie lange der Snapshot verfügbar sein soll.
 
 |Einstellung|Beschreibung|
@@ -349,10 +382,11 @@ Das bedeutet:
 + Gelöschte Benutzer und Warteschlangen/ Teams, sowie entfernte Agenten stehen in den Filtern nicht mehr zur Auswahl (*können jedoch manuell eingetippt werden*).
 + Gelöschte Benutzer und Warteschlangen/ Teams bleiben in der Rufauswertung vorhanden, sofern Sie im angezeigten Zeitraum noch exitstiert haben.
 
-
+<!--- 
 **Wie zeige ich an einem PC/ TV immer die aktuellen Live-Daten an?**
 
 Da durch fehlendes Benutzermanagement noch kein Teilen von Live-Daten möglich ist, bietet sich folgender Workaround an: 
 
 Melden Sie sich beim betreffenden PC/ TV als Administrator auf der pascom Servermanagement Oberfläche an und achten Sie darauf, dass diese Benutzersitzung keinen Timeout hat und der Adminbenutzer nicht automatisch ausgeloggt wird.
 Öffnen Sie die Rufstatistik der benötigten Instanz mit den gewünschten Live-Daten z. B. das Live-Dashboard.
+--->
