@@ -89,7 +89,7 @@ Ist **mindestens ein CSP-Host aufgesetzt** können Sie **FREE-, BASIC- und PREMI
 
 ### (Option A) Telefonanlage am CSP-Host erstellen 
 
-Melden Sie sich auf der **Management-Oberfläche des CSP-Hosts** an unter klicken Sie unter {{< ui-button "Telefonanlagen" >}} auf {{< ui-button "Neue hinzufügen" >}}. 
+Melden Sie sich auf der **Management-Oberfläche des CSP-Hosts** an und klicken Sie unter {{< ui-button "Telefonanlagen" >}} auf {{< ui-button "Neue hinzufügen" >}}. 
 
 Sie werden nach my.pascom.net umgeleitet und können dort ein neues Abonnement für Ihren Kunden erstellen.
 
