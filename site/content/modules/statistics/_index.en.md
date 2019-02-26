@@ -343,7 +343,7 @@ That means:
 + Deleted users / queues / teams remain in the existing analysis as long as they existed in the specified time frame.
 
 
-**How do I display the Real-Time Live Data on a PC / TV?**
+**How Do I display the Real-Time Live Data on a PC / TV?**
 
 Due to the missing user management component and that live data sharing is not yet possible, the following work around is available: 
 
