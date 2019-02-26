@@ -23,17 +23,17 @@ The call analytics tool from Grafana offers does not offer any language selectio
 
 Per default, the call analytics tool consist of 3 evaluation views (otherwise known as dashboards or wallboards).
 
-+ **Live**: With the live dashboard, the current status of your phone system can be viewed: active calls, callers waiting in a queue, teams and associated agents.
-+ **Overview**: Using the Overview dashboard will provide you with an overview of all calls processed within a specified timeframe including a detailed evaluation.
-+ **Teams**: The Teams dashboard delivers an analysis of all Queues / Teams including the average caller wait times as well as average call duration of inbound calls.
++ [**Live**](#Live): With the live dashboard, the current status of your phone system can be viewed: active calls, callers waiting in a queue, teams and associated agents.
++ [**Overview**](#Overview): Using the Overview dashboard will provide you with an overview of all calls processed within a specified timeframe including a detailed evaluation.
++ [**Teams**](#Teams): The Teams dashboard delivers an analysis of all Queues / Teams including the average caller wait times as well as average call duration of inbound calls.
 
--> Hier Bild <-
+![Dashboards](Home-Dashboard.png)
 
 ### Live
 
 The Live dashboard refreshes itself automatically and displays all phone system calls, regardless of whether these calls are currently active, on hold, connected or parked in a call queue. All queues / teams are also automatically displayed and updated, should further teams be added to the pascom phone system or the team agents be editied. 
 
--> Hier Bild <-
+![Live-Dashboard](Live-Dashboard.png)
 
 
 
@@ -41,7 +41,7 @@ The Live dashboard refreshes itself automatically and displays all phone system 
 
 The Overview dashboard displays an overview of all ongoing calls, statistics regarding the type of call, attached labels plus a detailed call evaluation.
 
--> Hier Bild <-
+![Overview-Dashboard](Overview-Dashboard.png)
 
 
 #### Analysis Time Frame 
@@ -49,12 +49,14 @@ The Overview dashboard displays an overview of all ongoing calls, statistics reg
 Per default, the Overview dashboard the current day "*Today*" is analysed.
 Should you wish to view a specific day or time frame, click on the clock symbol in the top right corner in order to enter the desired time frame.
 
--> Hier Bild <-
+![Analysis Time Frame ](Date-Settings.png)
 
 
 #### Using Filters
 
 Should you want to see a more detailed view of the analysis and statistics contained in the Overview dashboard, the following filters are available for this purposes. 
+
+![Filters](Overview-Filter.png)
 
 |Filter|Description|Default|
 |---|---|---|
@@ -65,12 +67,12 @@ Should you want to see a more detailed view of the analysis and statistics conta
 |**To Name**|Here it is possible to filter by call recipient / agent names.|*-*|
 |**To Number**|Here it is possible to filter by the call recipient / agent phone numbers.|*-*|
 
--> Hier Bild <-
-
 
 #### In Depth Analysis
 
 The detailed analysis (*Calls*) provides a comprehensive overview of all calls handled within a desired time frame. 
+
+![In Depth Analysis](Overview-Calls.png)
 
 |Value|Description|
 |---|---|
@@ -89,6 +91,8 @@ The detailed analysis (*Calls*) provides a comprehensive overview of all calls h
 
 
 **Call Details (*Chain*):**
+
+![Call Details](Call-Chain.png)
 
 |Value|Description|
 |---|---|
@@ -120,7 +124,7 @@ The Team dashboard provides an overview of all inbound calls to a team / queue, 
 Within the Team dashboard, only inbound calls are displayed as a team as a whole cannot start an outbound call. In order to analyse outbound calls of individual users / agents, please use the Overview dashboard.
 {{% /notice %}}
 
--> Hier Bild <-
+![Team-Dashboard](Team-Dashboard.png)
 
 
 #### Analysis Time Frame
@@ -128,12 +132,14 @@ Within the Team dashboard, only inbound calls are displayed as a team as a whole
 Per default, the Team dashboard the current day "*Today*" is analysed.
 Should you wish to view a specific day or time frame, click on the clock symbol in the top right corner in order to enter the desired time frame.
 
--> Hier Bild <-
+![Analysis Time Frame](Date-Settings.png)
 
 
 #### Using Filters
 
 Should you want to see a more detailed view of the analysis and statistics contained in the Team dashboard, the following filters are available for this purposes. 
+
+![Filters](Team-Filter.png)
 
 |Filter|Description|Default|
 |---|---|---|
@@ -142,8 +148,6 @@ Should you want to see a more detailed view of the analysis and statistics conta
 |**Label**|Here it is possible to restrict the display to one or more labels.|All|
 |**From Name**|Here it is possible to filter for caller names.|*-*|
 |**From Number**|Here it is possible to filter for caller phone numbers.|*-*|
-
--> Hier Bild <-
 
 
 #### In Depth Analysis
@@ -167,6 +171,8 @@ The detailed analysis (*Calls*) provides a comprehensive overview of all inbound
 
 **Call Details (*Chain*):**
 
+![Call Details](Call-Chain.png)
+
 |Value|Description|
 |---|---|
 |**Id**|ID the call process.|
@@ -188,6 +194,7 @@ The detailed analysis (*Calls*) provides a comprehensive overview of all inbound
 |**Recording**|Recording of the call process.|
 |**Labels**|Label(s) attached to the call process.|
 
+
 ## Further Functions
 
 The Grafana call analytics tools offers a number of additional settings and analysis options.
@@ -202,6 +209,8 @@ The call analytics tool consists of 3 standard dashboards (Live, Overview, Team)
 
 Click on the title of any Analysis / Statistic in an existing dashboard in order to open the advanced action options. Select the action {{< ui-button "Edit" >}}.
 
+![Edit Analysis](Panel_Edit.png)
+
 Now you can modify the analyses according to your requirements: 
 
 + **Filter**: Edit filters (according the previously selected standard dashboard)
@@ -212,6 +221,8 @@ Now you can modify the analyses according to your requirements:
 + **Time range**: Edit time frames
 
 As soon as you have finished with modifying the analytics settings, you can save your changes by clicking the save symbol in the top right corner.
+
+![Save Dashboard](Save-Dashboard.png)
 
 If the dashboard you have edited is an existing standard dashboard (Live, Overview or Team), you will receive an error message as standard dashboards cannot be modified and therefore the changes could not be saved:
 
@@ -227,6 +238,8 @@ Instead, you can copy the displayed dashboard configurations code (*JSON*) by cl
 Once you have edited a dashboard or an analysis and have the configurations code (*JSON*), a link or the dashboard ID to hand, then you can immediately create a fully configured dashboard.
 
 In the lefthand menu list, click the plus symbol and select {{< ui-button "Import" >}} in order to create a new dashboard using an existing configuration.
+
+![Import Dashboard](Import-Dashboard.png)
 
 + If you have a link or ID, paste it into the first field {{< ui-button "Grafana.com Dashboard" >}}.
 or:
@@ -247,6 +260,8 @@ Confirm the settings and click {{< ui-button "Import" >}}. Your newly created da
 
 In the lefthand menu list, click the plus symbol and select {{< ui-button "Dashboard" >}} in order to create a new dashboard from scratch.
 
+![Create a New Dashboard](Create-Dashboard.png)
+
 Under {{< ui-button "Add" >}}, select the diagram format (*Panel*) which you would like to add to your new dashboard.
 
 + Graph
@@ -264,7 +279,9 @@ Which diagram format (*Panel*) is most suitable and how to correctly configure t
 
 Once you have added the desired analyses to your new dashboard, click on the save symbol in the top right to save your setup. 
 
-JNow it is neccessary to enter a name for the new dashboard, so that the new dashboard can be appropriately assigned.
+![Save Dashboard](Save-Dashboard.png)
+
+Now it is neccessary to enter a name for the new dashboard, so that the new dashboard can be appropriately assigned.
  
 |Setting|Description|
 |---|---|
@@ -280,6 +297,9 @@ The call analytics tool provides the option of exporting certain analyses and ev
 **Export Dashboard**
 
 Should you wish to export a whole dashboard as JSON, first select the desired dashboard and then click the share symbol in the lefthand menu list. 
+
+![Export Dashboard](Share-Dashboard.png)
+
 Switch to the {{< ui-button "Export" >}} tab in order to set how the dashboard should be exported.
 
 |Setting|Description|
@@ -295,11 +315,13 @@ It is possible to export individual call analytics statistics as a CSV file.
 
 To do so, click on the title of any Analysis / Statistic in an existing dashboard in order to open the advanced action options. With the mouse fo the {{< ui-button "More" >}} action and select the {{< ui-button "Export CSV" >}} option. 
 
+![Exporting Analyses](Panel-Options.png)
+
 Finally, a details window will open in which you can define the CSV settings such as Date and Analysis Display.
 
 Click {{< ui-button "Export" >}} and the CSV file will be generated.
 
-
+<!---
 #### Sharing Dashboards
 
 If you want to share a live analysis with someone, you can do so by creating a link from your dashboard. 
@@ -308,6 +330,7 @@ If you want to share a live analysis with someone, you can do so by creating a l
 Sharing of live links is not yet supported in pascom version 18.05 as no user management is implemented yet. The user management function will be implemented in one of the upcoming releases.
 Until then, please use snapshots or login in as a user with admin privileges in order to access all dashboards containing the live data.
 {{% /notice %}}
+--->
 
 
 #### Sharing Snapshots
@@ -319,6 +342,9 @@ The snapshot displays only the analysis data to the point of the snapshot and wi
 {{% /notice %}}
 
 Select the dashboard that you wish to share and click the share symbol in the top right. 
+
+![Sharing Snapshots](Share-Dashboard.png)
+
 Go to the {{< ui-button "Snapshot" >}} tab to configure how long the snapshot should be available for.
 
 |Setting|Description|
@@ -342,10 +368,11 @@ That means:
 + Deleted users / queues / teams and removed agents are no longer listed in fitlers (*can however be manually typed in*).
 + Deleted users / queues / teams remain in the existing analysis as long as they existed in the specified time frame.
 
-
+<!---
 **How Do I display the Real-Time Live Data on a PC / TV?**
 
 Due to the missing user management component and that live data sharing is not yet possible, the following work around is available: 
 
 On the required PC / TV, login to the pascom server management web UI as admin and ensure that the user sitting does not have a timeout limitation and that the admin user will not be logged out.
 Open the call analytics of the required instance with the required live data e.g. the Live dashboard. 
+--->
