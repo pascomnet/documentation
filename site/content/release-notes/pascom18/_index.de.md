@@ -105,8 +105,6 @@ Aufgrund der Einschränkung des cisco SPA 112 Gateways auf ausschließliche Nutz
 - [MD-11334] - Apply telephony config fails after update
 - [MD-11336] - Grafana glitches after restoring backup
 - [MD-8742] - Make CSV Connector cloudstack ready
-- [MD-8826] - Test new auerswald firmware versions
-- [MD-10920] - Complete auerswald client proxy remote control code
 - [MD-11080] - Include a preconfigure grafana server to the pbx container
 - [MD-11081] - Provide a default grafana dashboard for call data analysis
 - [MD-11141] - Manage voicemails in client journal - Server side
