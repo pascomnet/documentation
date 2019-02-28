@@ -12,8 +12,23 @@ weight: 10
 The pascom server includes a service called prometheus. It collects all the metrics of the system. These include, among other things, the utilisation of CPU, RAM and HDD. By means of a plugin, these values can be queried externally.
 
 {{% notice info %}}
-The Icinga oder Nagios server needs access to the pascom management port (8443).
+The Icinga oder Nagios server needs access to the pascom management port (8443). External access to prometheus must be granted.
 {{% /notice %}}
+
+## Grant external access to prometheus
+Login to Server via SSH as admin and get root access. Stop the Controller Container.
+Edit the file /var/lib/lxc/controller/vars.json and set EXPOSE_PROMETHEUS to on. Start Controller Container again.
+
+
+    sudo su
+    cs container stop controller
+    vi /var/lib/lxc/controller/vars.json
+
+    "EXPOSE_PROMETHEUS": "on"
+
+    cs container start controller
+
+
 
 ## Prometheus Nagios Plugin
 To query the metrics a plugin is needed. This can be integrated via a check command.
