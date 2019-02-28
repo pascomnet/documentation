@@ -16,7 +16,7 @@ The Icinga oder Nagios server needs access to the pascom management port (8443).
 {{% /notice %}}
 
 ## Grant external access to prometheus
-Login to Server via SSH as admin and get root access. Stop the Controller Container.
+Login to the server via SSH as admin and get root access. Stop the Controller Container.
 Edit the file /var/lib/lxc/controller/vars.json and set EXPOSE_PROMETHEUS to on. Start Controller Container again.
 
 
