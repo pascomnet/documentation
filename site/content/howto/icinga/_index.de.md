@@ -15,7 +15,7 @@ Auf jedem pascom Server ist ein Dienst names prometheus installiert. Dieser samm
 Der Icinga oder Nagios Server benötigt Zugriff auf den Management Port (8443) der Anlage. Der Zugriff auf prometheus muss eingeschaltet werden.
 {{% /notice %}}
 
-## Freischalten des Zugriffs auf prometheus
+## Freischalten des Zugriffs auf prometheus von extern
 Hierzu am Server via SSH als admin anmelden und root werden. Den Controller Container stoppen.
 Anschließend die Datei /var/lib/lxc/controller/vars.json bearbeiten und EXPOSE_PROMETHEUS auf on setzen. Den Controller Container wieder starten
 
