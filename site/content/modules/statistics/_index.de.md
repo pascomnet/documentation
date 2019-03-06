@@ -24,9 +24,9 @@ Das Rufauswertungs-Tool Grafana bietet keine Sprachauswahl-Möglichkeiten und ka
 
 Die Rufstatistik umfasst standardmäßig 3 Auswertungs-Ansichten oder Dashboards genannt.
 
-+ [**Live**](#Live): Im Live-Dashboard ist der aktuelle Status der Telefonanlage zu sehen: aktive Gespräche, Anrufer in den Warteschlagen, Teams und deren Agenten.
-+ [**Overview**](#Overview): Im Overview-Dashboard erhält man eine Übersicht über alle im ausgewählten Zeitraum geführten Gespräche, sowie eine ausführliche Rufauswertung.
-+ [**Teams**](#Teams): Im Teams-Dashboard findet man Auswertungen zu allen Warteschlangen/Teams, die durchschnittliche Wartezeit von Anrufern, sowie die durchschnittliche Gesprächsdauer bei eingehenden Anrufen.
++ [**Live**](#live): Im Live-Dashboard ist der aktuelle Status der Telefonanlage zu sehen: aktive Gespräche, Anrufer in den Warteschlagen, Teams und deren Agenten.
++ [**Overview**](#overview): Im Overview-Dashboard erhält man eine Übersicht über alle im ausgewählten Zeitraum geführten Gespräche, sowie eine ausführliche Rufauswertung.
++ [**Teams**](#teams): Im Teams-Dashboard findet man Auswertungen zu allen Warteschlangen/Teams, die durchschnittliche Wartezeit von Anrufern, sowie die durchschnittliche Gesprächsdauer bei eingehenden Anrufen.
 
 ![Dashboards](Home-Dashboard.png)
 
@@ -39,7 +39,7 @@ Das Live-Dashboard aktualisiert sich automatisch und zeigt alle Gespräche auf d
 **Echtzeit-Rufauswertung (oben)**       
 Hier werden in Echtzeit alle Anrufe angezeigt, die derzeit über pascom geführt werden. Es werden ein- und ausgehende Anrufe, sowie interne Rufe angezeigt.
 
-**Alle Teams/ Warteschlanen (darunter)**        
+**Alle Teams/ Warteschlangen (darunter)**        
 Unter der Echtzeit-Rufanzeige werden automatisch alle auf der pascom vorhandenen Teams/ angezeigt.
 Links sind jeweils alle Agenten des Teams mit Telefon-Status und Team-Status, sowie Pausengründen zu sehen.
 Rechts werden alle wartenden Anrufer in der Warteschlange angezeigt. Die Hintergrund-Farbe der Anrufer gibt Auskunft über die Wartedauer des Anrufers:      
@@ -53,6 +53,35 @@ Rechts werden alle wartenden Anrufer in der Warteschlange angezeigt. Die Hinterg
 Das Overview-Dashboard zeigt eine Übersicht aller geführten Gespräche, Statistiken über die Art der Gespräche, verwendeter Labels und eine ausführliche Rufauswertung.
 
 ![Overview-Dashboard](Overview-Dashboard.png)
+
+**Anruf-Übersicht (Werte)**     
+In der Anruf-Übersicht sind alle aktuellen Werte zum ausgewählten Zeitraum dargestellt.   
+
+- *Calls total (grün)*: Gesamt-Anzahl aller Telefonate      
+- *Calls duration (grün)*: Gesamt-Dauer aller Telefonate        
+- *Inbound calls total (gelb)*: Gesamt-Anzahl aller eingegangenen Anrufe        
+- *Inbaound calls duration (gelb)*: Gesamt-Dauer aller eingegangenen Anrufe     
+- *Outbound calls total (blau)*: Gesamt-Anzahl aller ausgegangenen Anrufe       
+- *Outbound calls duration (blau)*: Gesamt-Dauer aller ausgegangenen Anrufe     
+- *Internal calls total (violett)*: Gesamt-Anzahl aller internen Telefonate         
+- *Internal calls duration (violett)*: Gesamt-Dauer aller internen Telefonate
+
+**Anruf-Übersicht (Diagramme)**     
+Das Torten-Diagramm links zeigt mit welchem Status alle Telefonate beendet wurden.     
+
+- *hangup*: Anruf wurde aufgelegt       
+- *transfer*: Anruf wurde weitergeleitet        
+- *noanswer*: Anruf wurde nicht entgegen genommen
+
+Das Säulen-Diagramm mittig zeigt an welche Art von Telefonaten zu welchem Zeitpunkt des ausgewählten Zeitraums geführt wurden.      
+
+- *inbound*: Eingehende Anrufe      
+- *outbound*: Ausgehende Anrufe     
+- *internal*: Interne Telefonate
+
+**Label-Übersicht**     
+Das Torten-Diagramm rechts zeigt welche Labels im gewählten Zeitraum gesetzt wurden.
+
 
 
 #### Auswertungs-Zeitraum setzen
@@ -138,6 +167,31 @@ Im Team-Dashboard werden nur eingehende Anrufe dargestellt, da ein Team als ganz
 
 ![Team-Dashboard](Team-Dashboard.png)
 
+**Anruf-Auswertung**        
+In der Anruf-Auswertung werden detaillierte Angaben zu allen eingegangenen Team-Anrufe im ausgewählten Zeitraum angezeigt.
+
+- *Calls total*: Gesamt-Anzahl aller eingegangenen Team-Anrufe
+- *Total duration*: Gesamte Wartezeit aller eingegangenen Team-Anrufe
+- *Total Talking time*: Gesamte Gesprächsdauer aller eingegangenen Team-Anrufe
+- *AHT (Average Handle time)*: Durchschnittliche Gesprächsdauer aller eingegangenen Team-Anrufe
+- *ASA (Average Speed of Answer)*: Durchschnittliche Wartezeit aller eingegangenen Team-Anrufe
+
+**Status-Übersicht**        
+In der Status-Übersicht wird in Form eines Torten-Diagramms dargestellt, mit welchem Status alle eingegangenen Team-Anrufe beendet wurden.
+
+- *noanswer*: Anruf wurde nicht entgegen genommen
+- *transfer*: Anruf wurde weitergeleitet
+- *hangup*: Anruf wurde aufgelegt
+
+**Auswertung: angenommene Anrufe**      
+In dieser Auswertung sehen Sie eine Liste aller Team-Agenten, die bisher Anrufe entgegen genommen haben mit der genauen Anzahl der entgegen genommenen Anrufe.
+
+**Auswertung: gesamte Gesprächsdauer**      
+In dieser Auswertung sehen Sie eine Liste aller Team-Agenten, die bisher Anrufe entgegen genommen ahben mit der gesamten Gesprächsdauer der entgegen genommenen Anrufe.
+
+**verwendete Labels**       
+In dieser Auswertung sehen Sie eine Liste aller Labels, die bei eingehenden Team-Anrufen gesetzt wurden, mit der genauen Anzahl, wie oft die Labels gesetzt wurden.
+
 
 #### Auswertungs-Zeitraum setzen
 
@@ -217,8 +271,75 @@ Das Rufauswertungs-Tool Grafana bietet noch viele weitere Einstellungs- und Ausw
 
 Im Rufauswertungs-Tool gibt es standardmäßig 3 Standard-Dashboards (Live, Overview, Team), die nicht verändert werden können. Es besteht jedoch die Möglichkeit einzelne Auswertungen/ Statistiken zu bearbeiten und in einem eigenen Dashboard abzuspeichern.
 
+#### Neues Dashboard erstellen
 
-#### Eigenes Dashboard bearbeiten
+**Neues Dashboard aus bestehendem Dashboard erstellen**
+
+Wählen Sie ein beliebiges Dashboard aus, dass Sie gerne kopieren bzw. als Vorlage für Ihr neues Dashboard verwenden möchten. 
+
+Klicken Sie im Aktionsmenü rechts oben auf das Einstellungsmenü um in das Konfigurationsmenü des Dashboards zu gelangen.
+Passen Sie die Konfigurationen wie für Ihr neues Dashboard gewünscht an und klicken Sie links im Menü auf {{< ui-button "Save As..." >}} um das neue Dashboard zu speichern.
+Ihr neu erstelltes Dashboard öffnet sich automatisch und steht zukünftig zur Verfügung.
+
+**Neues Dashboard aus Konfigurations-Code (*JSON*), URL oder ID erstellen**
+
+Wenn Sie ein Dashboard oder eine Auswertung bearbeitet haben und einen [Konfigurations-Code (*JSON*)](#dashboards-und-auswertungen-exportieren), einen Link oder eine Dashboard-ID zur Hand haben, können Sie daraus ein bereits vollständig konfiguriertes Dashboard erstellen.
+
+Klicken Sie in der linken Menüleiste auf das Plus-Symbol und wählen Sie {{< ui-button "Import" >}} aus, um ein neues Dashboard anhand einer bestehenden Konfiguration zu erstellen.
+
+![Dashboard importieren](Import-Dashboard.png)
+
++ Wenn Sie einen Link oder eine ID zur Hand haben fügen Sie diese im ersten Feld bei {{< ui-button "Grafana.com Dashboard" >}} ein.
+oder:
++ Wenn Sie einen Konfigurations-Code (*JSON*) zur Hand haben fügen Sie diesen im zweiten Feld bei {{< ui-button "Or paste JSON" >}} ein. Alternativ können Sie den Konfigurations-Code auch als JSON-Datei über den Button {{< ui-button "Upload .json File" >}} hochladen.
+
+Jetzt ist es notwendig dem neuen Dashboard eine Bezeichnung zu geben, sodass das neue Dashboard eindeutig zugeordnet werden kann.
+
+|Einstellung|Beschreibung|
+|---|---|
+|**Name**|Eindeutige Bezeichnung des neuen Dashboards.|
+|**Folder**|Ablage-Ordner des Dashboards.|
+|**Unique identifier (uid)**|Eindeutige ID des neuen Dashboards. *Default: auto-generated*|
+
+Bestätigen Sie die Einstellungen mit einem Klick auf {{< ui-button "Import" >}}. Ihr neu erstelltes Dashboard öffnet sich automatisch und steht zukünftig zur Verfügung.
+
+**Neues Dashboard mit neuen Auswertungen erstellen**
+
+Klicken Sie in der linken Menüleiste auf das Plus-Symbol und wählen Sie {{< ui-button "Dashboard" >}} aus, um ein neues Dashboard zu erstellen.
+
+![Dashboard erstellen](Create-Dashboard.png)
+
+Wählen Sie unter {{< ui-button "Add" >}} die Diagramm-Form (*Panel*) aus, die Sie zu Ihrem neuen Dashboard hinzufügen möchten.
+
++ Graph
++ Singlestat
++ Table
++ Text
++ Heatmap
++ Alert List
++ Dashboard List
++ Row
++ Pie Chart
++ Plugin List
+
+Welche Diagramm-Form (*Panel*) wofür geeignet ist und wie Sie diese korrekt einrichten finden Sie in der [Grafana-Dokumtentation](http://docs.grafana.org/features/panels).
+
+Sobald Sie die gewünschten Auswertungen Ihrem neuen Dashboard hinzugefügt haben, können Sie die Änderungen mit einem Klick auf das Speichern-Symbol im Aktionsmenü rechts oben speichern. 
+
+![Dashboard speichern](Save-Dashboard.png)
+
+Jetzt ist es notwendig dem neuen Dashboard eine Bezeichnung zu geben, sodass das neue Dashboard eindeutig zugeordnet werden kann.
+
+|Einstellung|Beschreibung|
+|---|---|
+|**Name**|Eindeutige Bezeichnung des neuen Dashboards.|
+|**Folder**|Ablage-Ordner des Dashboards. |
+
+Bestätigen Sie die Einstellungen mit einem Klick auf {{< ui-button "Save" >}}. Ihr neu erstelltes Dashboard öffnet sich automatisch und steht zukünftig zur Verfügung.
+
+#### Dashboards bearbeiten
+
+Sie können eigene Dashboards nach belieben bearbeiten, bestehende Auswertungen/ Statistiken hinzufügen, kopieren, bearbeiten und löschen.
 
 Klicken Sie die Bezeichnung einer beliebigen Auswertung/ Statistik in einem bestehenden Dashboard an, um eine erweiterte Aktions-Auswahl zu erhalten. Wählen Sie die Aktion {{< ui-button "Edit" >}} aus.
 
@@ -241,70 +362,10 @@ Handelt es sich bei dem bestehenden Dashboard um ein Standard-Dashboard (Live, O
 
         Cannot save provisioned dashboard.
 
-Stattdessen können Sie den angezeigten Konfigurations-Code (*JSON*) des Dashboards mit einem Klick auf {{< ui-button "Copy JSON to Clipboard" >}} in die Zwischenablage speichern und anschließend mit einem Click auf {{< ui-button "Cancel" >}} und {{< ui-button "Back to Dashboard" >}} die Bearbeitungs-Maske verlassen.
+Stattdessen können Sie den angezeigten Konfigurations-Code (*JSON*) des Dashboards mit einem Klick auf {{< ui-button "Copy JSON to Clipboard" >}} in die Zwischenablage speichern und anschließend mit einem Klick auf {{< ui-button "Cancel" >}} und {{< ui-button "Back to Dashboard" >}} die Bearbeitungs-Maske verlassen.
 
 
-#### Neues Dashboard erstellen
-
-**Neues Dashboard aus Konfigurations-Code (*JSON*), URL oder ID erstellen**
-
-Wenn Sie ein Dashboard oder eine Auswertung bearbeitet haben und einen Konfigurations-Code (*JSON*), einen Link oder eine Dashboard-ID zur Hand haben, können Sie daraus ein bereits vollständig konfiguriertes Dashboard erstellen.
-
-Klicken Sie in der linken Menüleiste auf das Plus-Symbol und wählen Sie {{< ui-button "Import" >}} aus, um ein neues Dashboard anhand einer bestehenden Konfiguration zu erstellen.
-
-![Dashboard importieren](Import-Dashboard.png)
-
-+ Wenn Sie einen Link oder eine ID zur Hand haben fügen Sie diese im ersten Feld bei {{< ui-button "Grafana.com Dashboard" >}} ein.
-oder:
-+ Wenn Sie einen Konfigurations-Code (*JSON*) zur Hand haben fügen Sie diesen im zweiten Feld bei {{< ui-button "Or paste JSON" >}} ein. Alternativ können Sie den Konfigurations-Code auch als JSON-Datei über den Button {{< ui-button "Upload .json File" >}} hochladen.
-
-Jetzt ist es notwendig dem neuen Dashboard eine Bezeichnung zu geben, sodass das neue Dashboard eindeutig zugeordnet werden kann.
-
-|Einstellung|Beschreibung|
-|---|---|
-|**Name**|Eindeutige Bezeichnung des neuen Dashboards.|
-|**Folder**|Ablage-Ordner des Dashboards.|
-|**Unique identifier (uid)**|Eindeutige ID des neuen Dashboards. *Default: auto-generated*|
-
-Bestätigen Sie die Einstellungen mit einem Klick auf {{< ui-button "Import" >}}. Ihr neu erstelltes Dashboard öffnet sich automatisch und steht zukünftig zur Verfügung.
-
-
-**Neues Dashboard mit neuen Auswertungen erstellen**
-
-Klicken Sie in der linken Menüleiste auf das Plus-Symbol und wählen Sie {{< ui-button "Dashboard" >}} aus, um ein neues Dashboard zu erstellen.
-
-![Dashboard erstellen](Create-Dashboard.png)
-
-Wählen Sie unter {{< ui-button "Add" >}} die Diagramm-Form (*Panel*) aus, die Sie zu Ihrem neuen Dashboard hinzufügen möchten.
-
-+ Graph
-+ Singlestat
-+ Table
-+ Text
-+ Heatmap
-+ Alert List
-+ Dashboard List
-+ Row
-+ Pie Chart
-+ Plugin List
-
-Welche Diagram-Form (*Panel*) wofür geeignet ist und wie Sie diese korrekt einrichten finden Sie in der [Grafana-Dokumtentation](http://docs.grafana.org/features/panels).
-
-Sobald Sie die gewünschten Auswertungen Ihrem neuen Dashboard hinzugefügt haben, können Sie die Änderungen mit einem Klick auf das Speichern-Symbol im Aktionsmenü rechts oben speichern. 
-
-![Dashboard speichern](Save-Dashboard.png)
-
-Jetzt ist es notwendig dem neuen Dashboard eine Bezeichnung zu geben, sodass das neue Dashboard eindeutig zugeordnet werden kann.
-
-|Einstellung|Beschreibung|
-|---|---|
-|**Name**|Eindeutige Bezeichnung des neuen Dashboards.|
-|**Folder**|Ablage-Ordner des Dashboards. |
-
-Bestätigen Sie die Einstellungen mit einem Klick auf {{< ui-button "Save" >}}. Ihr neu erstelltes Dashboard öffnet sich automatisch und steht zukünftig zur Verfügung.
-
-
-#### Dashboards und Auswertungen exportieren
+### Dashboards und Auswertungen exportieren
 
 Das Rufauswertung-Tool bietet Ihnen die Möglichkeit bestimmte Auswertungen oder sogar ganze Dashboards zu exportieren.
 
@@ -323,7 +384,6 @@ Wechseln Sie zu dem Reiter {{< ui-button "Export" >}} um einzustellen, wie diese
 Klicken Sie auf {{< ui-button "Save to file" >}} um das Dashboard als JSON-Datei zu exportieren.
 Klicken Sie auf {{< ui-button "View JSON" >}} um den JSON-Konfigurationscode anzeigen zu lassen.
 
-
 **Auswertung exportieren**
 
 Es ist möglich jede einzelne Statistik des Rufauswertungs-Tools via CSV zu exportieren. 
@@ -336,16 +396,19 @@ Anschließend öffnet sich ein Detail-Fenster in dem Sie Einstellungen, wie Datu
 
 Mit einem Klick auf {{< ui-button "Export" >}} wird die CSV-Datei generiert.
 
-<!---
-#### Dashboard teilen
+### Dashboards teilen
+
+#### Dashboard via Link teilen
 
 Wenn Sie eine Live-Auswertungen mit jemandem teilen möchten, können Sie hierfür einen Link zu Ihrem Dashboard erstellen um dieses zu teilen. 
 
-{{% notice info %}}
-Das Teilen von Live-Links wird in der pascom Version 18.05 noch nicht unterstützt, da es hier kein Benutzermanagement gibt. Das Benutzermanagement wird erst in den folgenden Releases nachgereicht.
-Bis dahin verwenden Sie bitte Snapshots, oder loggen Sie sich als Benutzer mit Administrationsrechten ein, um Zugriff auf alle Dashboards mit aktualisierenden Daten zu erhalten.
-{{% /notice %}}
---->
+Der Link-Empfänger benötigt jedoch ebenfalls einen Zugang zum Rufauswertungs-Tool, daher ist es sinnvoll hierfür einen eigenen Benutzer anzulegen (z.b. Gast).
+
+Wählen Sie das Dashboard aus, das Sie teilen möchten und klicken Sie im Aktionsmenü rechts oben auf das Teilen-Symbol. 
+
+![Dashboard exportieren](Share-Dashboard.png)
+
+Im Reiter "Link" wird automatisch ein lokaler Link generiert, mit dem Sie das aktuelle Dashboard teilen können.
 
 #### Snapshots teilen
 
@@ -370,6 +433,36 @@ Wechseln Sie zu dem Reiter {{< ui-button "Snapshot" >}} um einzustellen, wie lan
 Mit einem Klick auf {{< ui-button "Local Snapshot" >}} wird ein lokaler Link generiert, der mit {{< ui-button "Copy Link" >}} in die Zwischenablage kopiert und geteilt werden kann.
 
 
+## Benutzer anlegen
+
+Um aktuelle Dashboards und Statistiken sehen zu können, ist es notwendig Zugangsdaten zur Rufstatistik zu haben.
+Sofern Sie jemandem Zugang zu einem oder mehreren Dashboards geben möchten, ohne Adminrechte einzuräumen können Sie hierfür einen neuen Benutzer anlegen.
+
+Klicken Sie dazu links in der Menüleiste auf das Menü-Icon und wählen Sie {{< ui-button "Server Admin" >}} aus.
+
+Hier können Sie mit einem Klick auf {{< ui-button "Add new user" >}} einen Benutzer mit Zugriff auf das Rufauswertungs-Tool anlegen.
+
+Sobald der Benutzer mit einem Klick auf {{< ui-button "Create" >}} erfolgreich angelegt wurde, kann dieser sich mit Username oder Email und dem vergebenen Passwort am Rufauswertungs-Tool anmelden, unter:        
+https:// link-zum-pascom-server/instanz-name/analysis/
+
+*Beispiel Login-Link:*
+
+        https://pascom.cloud/pascom/analysis/
+
+
+### Benutzerrechte vergeben
+
+Nachdem ein Benutzer erfolgreich angelegt wurde können Sie in der User-Liste erneut auf den Benutzer klicken um weitere Einstellungen (z. B. Benutzerrollen) vorzunehmen.
+
+Standardmäßig ist jeder neue Benutzer ein "Viewer" und darf Dashboards nur betrachten und teilen, jedoch nicht verändern.
+
+Um die Benutzerrolle zu verändern, wählen Sie am Ende des Reiters {{< ui-button "Users" >}} unter {{< ui-button "Organizations" >}} zu dem Punkt "Main Org.Current" im Dropdown die gewünschte Rolle aus:
+
++ **Viewer**: Diese Benutzer dürfen Dashboards nur betrachten, jedoch nicht verändern.
++ **Editor**: Diese Benutzer dürfen eigene Dashboards bearbeiten und verändern. Standard-Dashboards (Live, Overview, Teams) können generell nicht verändert werden.
++ **Admin**: Diese Benutzer sind Administratoren und dürfen Änderungen am System vornehmen und Dashboards neu erstellen und löschen.
+
+
 ## FAQ
 
 **Was passiert wenn ein Benutzer oder eine Warteschlange/ Team auf der Telefonanlage gelöscht wird?**
@@ -382,11 +475,30 @@ Das bedeutet:
 + Gelöschte Benutzer und Warteschlangen/ Teams, sowie entfernte Agenten stehen in den Filtern nicht mehr zur Auswahl (*können jedoch manuell eingetippt werden*).
 + Gelöschte Benutzer und Warteschlangen/ Teams bleiben in der Rufauswertung vorhanden, sofern Sie im angezeigten Zeitraum noch exitstiert haben.
 
-<!--- 
+
 **Wie zeige ich an einem PC/ TV immer die aktuellen Live-Daten an?**
 
-Da durch fehlendes Benutzermanagement noch kein Teilen von Live-Daten möglich ist, bietet sich folgender Workaround an: 
+Für die Anzeige von Dashboards auf einem PC oder TV empfehlen wir einen eigenen [Benutzer anzulegen](#benutzer-anlegen). 
+Dieser Benutzer sollte lediglich "Viewer"-Rechte besitzen, sodass keine Änderungen vorgenommen werden können.
 
-Melden Sie sich beim betreffenden PC/ TV als Administrator auf der pascom Servermanagement Oberfläche an und achten Sie darauf, dass diese Benutzersitzung keinen Timeout hat und der Adminbenutzer nicht automatisch ausgeloggt wird.
-Öffnen Sie die Rufstatistik der benötigten Instanz mit den gewünschten Live-Daten z. B. das Live-Dashboard.
---->
+Loggen Sie sich mit dem neuen Benutzer auf dem PC oder TV ein und öffnen Sie das gewünschte Dashboard zur Ansicht.
+
+
+**Wie lasse ich Dashboards wie in einer Slideshow automatisch wechseln?**
+
+Möchten Sie nicht ein bestimmtes Dashboard anzeigen lassen, sondern alle Dashboards automatisch rotierend darstellen, müssen Sie hierfür eine "Playlist" erstellen um zu definieren, welche Dashboards angezeigt werden sollen.
+
+Wählen Sie hierfür in der Menüleiste links, im Dashboard-Menü {{< ui-button "Playlists" >}} aus und erstellen Sie mit einem Klick auf {{< ui-button "New Playlist" >}} eine neue Playlist.
+Jetzt können Sie der Playlist einen Namen geben und das Intervall in sec (Sekunden) oder m (Minuten) definieren, wie schnell die Dashboards wechseln sollen.
+
+Unter {{< ui-button "Add dashboards" >}} können Sie mit einem Klick auf {{< ui-button "+ Add to playlist" >}} zur Liste der Dashboards hinzufügen, die in der Slideshow angezeigt werden sollen.
+
+Natürlich können Sie unter {{< ui-button "Dashboards" >}} mit den Pfeiltasten die Reihenfolge der Dashboards anpassen.
+
+Sobald Sie mit der Konfiguration zufrieden sind, klicken Sie auf {{< ui-button "Save" >}} um die Playlist zu speichern.
+
+Zurück in der Playlist-Liste können Sie die mit einem Klick auf {{< ui-button "Start playlist" >}} die Dashboards als Slideshow im gewünschten Modus anzeigen lassen:
+
++ **In Normal mode**: Normale Ansicht der Dashboards inklusive Filterleiste
++ **In TV mode**: Dashboard-Inhalte werden nur mit Namen des Dashboards als Überschrift dargestellt
++ **In Kiosk mode**: Es werden nur die Dashboard-Inhalte dargestellt
