@@ -66,6 +66,17 @@ Due to non-existing encryption for voice and provisioning, Siemens Unify optiPoi
 Due to the Cisco SPA 112 gateway limitations that require a Cisco certificate, support has been discontinued in pascom 18.
 
 
+## Release 18.06 (07.03.2019)
+
+**Overview**
+
+- Unsecured telephony using UDP / RTP now works flawlessly again for OnSite deployments
+
+**MODIFICATIONS:**
+
+- [MD-11372] - Insecure calls via UDP/RTP not working 
+
+
 ## Release 18.05 (26.02.2019)
 
 **Overview**

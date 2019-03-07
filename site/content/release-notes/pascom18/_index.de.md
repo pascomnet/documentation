@@ -66,6 +66,17 @@ Wegen fehlender Verschlüsselung für Sprache wie Provisionierung wurde die Unte
 Aufgrund der Einschränkung des cisco SPA 112 Gateways auf ausschließliche Nutzung mit cisco-Zertifikaten wurde die Unterstützung mit pascom 18 eingestellt. 
 
 
+## Release 18.06 (07.03.2019)
+
+**Auf einen Blick**
+
+- Unverschlüsselte Telefonie mit UDP/RTP funktioniert nun wieder einwandfrei in OnSite Installationen
+
+**ÄNDERUNGEN:**
+
+- [MD-11372] - Insecure calls via UDP/RTP not working 
+
+
 ## Release 18.05 (26.02.2019)
 
 **Auf einen Blick**
