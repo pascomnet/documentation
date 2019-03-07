@@ -80,7 +80,7 @@ Replace the USERNAME and PASSWORD with the AMI credentials from the pascom Web U
 The Call Monitor function (listening to live calls) from QueueMetrics is not currently possible with pascom 18. 
 {{% /notice %}}
 
-## Check the Connection (Onsite)
+## Check the Connection (On-premise
 
 ### pascom to QueueMetrics Data Loading Checks
 

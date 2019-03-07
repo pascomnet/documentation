@@ -70,7 +70,7 @@ Due to the Cisco SPA 112 gateway limitations that require a Cisco certificate, s
 
 **Overview**
 
-- Unsecured telephony using UDP / RTP now works flawlessly again for OnSite deployments
+- Unsecured telephony using UDP / RTP now works flawlessly again for On-premise deployments
 
 **MODIFICATIONS:**
 
@@ -120,7 +120,7 @@ Due to the Cisco SPA 112 gateway limitations that require a Cisco certificate, s
 - [MD-11081] - Provide a default grafana dashboard for call data analysis
 - [MD-11141] - Manage voicemails in client journal - Server side
 - [MD-11205] - Support Vodafone ngn trunks without sip registration
-- [MD-11211] - Introduce trunk template flag to filter onsite/cloud templates
+- [MD-11211] - Introduce trunk template flag to filter on-premise/cloud templates
 - [MD-11214] - Upgrade kamailio and introduce python routing script
 - [MD-11269] - Implement support for insecure dhcp based provisioning through openvpn tunnel
 - [MD-11272] - Improve exchange connection tests
@@ -199,7 +199,7 @@ Due to the Cisco SPA 112 gateway limitations that require a Cisco certificate, s
 - [MD-10367] - Remove deprecated yealink DeviceHandlers
 - [MD-10546] - Prune old pbx images on each system startup
 - [MD-10922] - Cleanup BeroNet device handler code
-- [MD-10933] - Remove "skip auto restart" feature from onsite hosts
+- [MD-10933] - Remove "skip auto restart" feature from on-premise hosts
 - [MD-10971] - Implement ldap proxy support for Yealink DECT system
 - [MD-11038] - Improve prometheus metrics
 - [MD-11069] - Upgrade asterisk to version 13.23.1

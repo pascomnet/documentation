@@ -46,5 +46,5 @@ The pascom Support Team can only offer support for Trunks which have been create
 |TeleData|
 |Telekom SIP-Trunk| [Details]( {{< ref "/trunk-templates/telekom-sip-trunk" >}}) |
 |TelemaxX|
-|Vodafone| OnSite only! Currently not support in pascom 18 cloud as registration is not possible! |
+|Vodafone| On-premise only! Currently not support in pascom 18 cloud as registration is not possible! |
 |voipGATE Business|

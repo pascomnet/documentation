@@ -40,7 +40,7 @@ Das Live-Dashboard aktualisiert sich automatisch und zeigt alle Gespräche auf d
 Hier werden in Echtzeit alle Anrufe angezeigt, die derzeit über pascom geführt werden. Es werden ein- und ausgehende Anrufe, sowie interne Rufe angezeigt.
 
 **Alle Teams/ Warteschlangen (darunter)**        
-Unter der Echtzeit-Rufanzeige werden automatisch alle auf der pascom vorhandenen Teams/ angezeigt.
+Unter der Echtzeit-Rufanzeige werden automatisch alle auf der pascom vorhandenen Teams/ Warteschlangen angezeigt.
 Links sind jeweils alle Agenten des Teams mit Telefon-Status und Team-Status, sowie Pausengründen zu sehen.
 Rechts werden alle wartenden Anrufer in der Warteschlange angezeigt. Die Hintergrund-Farbe der Anrufer gibt Auskunft über die Wartedauer des Anrufers:      
 *grün*: Der Anrufer wartet < 10 Sekunden        
@@ -60,7 +60,7 @@ In der Anruf-Übersicht sind alle aktuellen Werte zum ausgewählten Zeitraum dar
 - *Calls total (grün)*: Gesamt-Anzahl aller Telefonate      
 - *Calls duration (grün)*: Gesamt-Dauer aller Telefonate        
 - *Inbound calls total (gelb)*: Gesamt-Anzahl aller eingegangenen Anrufe        
-- *Inbaound calls duration (gelb)*: Gesamt-Dauer aller eingegangenen Anrufe     
+- *Inbound calls duration (gelb)*: Gesamt-Dauer aller eingegangenen Anrufe     
 - *Outbound calls total (blau)*: Gesamt-Anzahl aller ausgegangenen Anrufe       
 - *Outbound calls duration (blau)*: Gesamt-Dauer aller ausgegangenen Anrufe     
 - *Internal calls total (violett)*: Gesamt-Anzahl aller internen Telefonate         
