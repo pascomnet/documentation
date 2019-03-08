@@ -8,7 +8,7 @@ weight: 10
  
 {{< description >}}
 
-![snom 300/700 Series](snom-series.png)
+![snom D300/ D700 Series](snom-series.png)
 
 ## Compatability
 
@@ -26,23 +26,19 @@ With [our VoIP Software] (https://www.pascom.net/en/mobydick-voip/ "pascom VoIP 
 ## Snom Provisioning
 
 The process of configuring or registering an VoIP phone with an IP PBX such as pascom's is know as {{< ui-button "Provisioning" >}}. For this purpose, pascom phone systems include a Default Configuration ({{< ui-button "Devices" >}} > {{< ui-button "Basic Configuration" >}}). For most deployment scenarios, these standard settings provide an ideal configuration. However, in some cases, the settings may need to be modified.
-
-## (Optional) Mass Deployments
-
-For pascom on-premise phone system installations, it is possible to perform fully automated mass Endpoint deployments by using the pascom DHCP server:
-
-* See mass deployments Masseninbetriebnahme
-
-## Device Onboarding 
+<--
+## (Optional) Mass Deployments 
+-->
 {{% notice tip %}}
-The telephone requires a DHCP server in order to receive an IP Address.
+For pascom on-premise phone system installations, it is possible to perform fully automated mass Endpoint deployments by using the pascom DHCP server.  
+Further details can be found in our Howto [Telephone Provisioning via DHCP]({{< ref "/howto/dhcp-provisioning" >}}).
 {{% /notice %}}
+
+## Add New Phone
 
 {{% notice tip %}}
 Should the telephone not be factory new, ensure you perform a **factory reset**. In order to do this on the phone, power up the phone and then press <strong>\**##</strong> holding the final <strong>#</strong> until after the phone has restarted and a menu has appeared. Select option **1** for factory settings. 
 {{% /notice %}}
-
-### Connect the Phone
 
 Connect the phone to your network. Snom IP phones come with a built in switch, allowing you to connect the phone directly via the Ethernet port labelled as **NET**. Should you not have a **PoE** option available, connect the phone to a power supply.
 
@@ -63,6 +59,10 @@ Under {{< ui-button "System Information" >}} > {{< ui-button "MAC-Address" >}} p
 Log into your pascom phone system and under {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}} and press {{< ui-button "Add" >}} and select the option **IP Telephone: Manufacturer Snom**.
 
 Under the corresponding field, enter the **Mac-Address** that you have just found and noted. 
+
+### Assigning Users
+
+As soon as the IP phone has appeared in the Device List, it can be edited via the {{< ui-button "Edit" >}} button. Under the {{< ui-button "Assign" >}} tab, the phone can be assigned to a [user (or location)]({{< ref "concept/user">}}).
 
 ### Apply Jobs
 
@@ -182,11 +182,11 @@ Search for *fkey0* and *fkey_label0*. Next copy and paste the search result line
 
 Via the menu tab {{< ui-button "devices" >}}, assign these default configurations to the telephones which should have this BLF configuration. Save and apply your changes and once the phones have restarted, the changes will have taken affect.
 
-### Firmware Updates
+## Firmware Updates
 
 From mobydick version 7.14 onwards, IP endpoint firmware will no longer be included as standard. Should a firmware version (other than the version pre-installed on the phone) be required, this must be externally sourced and per hand uploaded to the phone system firmware management tool.
 
-#### Upload New Firmware
+### Upload New Firmware
 
 The desired firmware can be uploaded via the the {{< ui-button "Devices" >}} > {{< ui-button "Device firmware" >}}:
 
@@ -197,13 +197,53 @@ The desired firmware can be uploaded via the the {{< ui-button "Devices" >}} > {
 |Version|Firmware Version|
 |Comments|Optional field for notes|
 
-#### Firmware Roll Outs
+### Firmware Roll Outs
 
 Firmware updates can be rolled out via the {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}} menu. Simply select the desired Snom Endpoints from the list via the check boxes and click {{< ui-button "Actions" >}} > {{< ui-button "Roll out firmware" >}}. This will open an overview of all selected devices to which the new firmware version should be rolled out to. Click {{< ui-button "Firmware Update" >}} to roll out the desired firmware version.
 
-#### Recommended Firmware
+### Supported Models
 
-As there are numerous Firmware versions available for the varying IP endpoint models, it is unfortunately not possible to test them all. Therefore, it is possible that some firmware versions may not support all phone system functions. If in doubt, please refer to below list of already tested firmware versions:
+Please refer to the following list of Snom VoIP phone models which are supported by pascom:
+
+{{% notice warning %}}
+Models from the Snom 3xx series are currently not functional in a pascom cloud solution and can only be deployed in an on-premise solution.
+{{% /notice %}}
+
+|Models||
+|---|---|
+|Snom D120|Snom D715|
+|Snom D315|Snom D725|
+|Snom D345|Snom D735|
+|Snom D375|Snom D745|
+|Snom D385|Snom D765|
+
+<!--- |Modell|getestete Firmware-Version|
+|---|---|
+|Snom D120|10.1.33.33|
+|Snom D315| 8.9.|
+|Snom D345|8.9.3.40|
+|Snom D375|8.9.3.60|
+|Snom D385|10.1.33.33|
+|Snom D715|8.9.3.80|
+|Snom D725|8.9.3|
+|Snom D735|10.1.33.33|
+|Snom D745|8.9.3.80|
+|Snom D765|8.9.3|
+
+alt:
+|Snom D785|10.1.20.0|
+|Snom 710|8.7.3.25.5|
+|Snom 720|8.7.3.25.5|
+|Snom 760|8.7.3.25.5|
+|Snom 821|?| --->
+
+{{% notice note %}}
+As there is a vast range of firmware versions available for the different IP telephones, it is not possible for us to test each version. That means that it could be the case that pascom does not support some firmware versions. 
+{{% /notice %}}
+
+{{% notice info %}}
+Due to the current security standards, Snom 3xx IP telephones will not be supported in the upcoming pascom 19 version.
+{{% /notice %}}
 
 |Model|Firmware|
 |---|---|
