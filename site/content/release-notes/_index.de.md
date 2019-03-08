@@ -66,4 +66,5 @@ pre: <i class="fa fa-file-alt" aria-hidden="true"></i>&nbsp;
 
 |Version|Release Type|Veröffentlichung|
 |-------|------------|---------------:|
-|[Release 3.R42]({{< ref "/release-notes/pascomTapi">}})| Feature Release | 09.10.2018 |
+|[Release 4.R56]({{< ref "/release-notes/pascomTapi">}})| Bugfix Release | 08.03.2019 |
+|[Release 3.R42]({{< ref "/release-notes/pascomTapi#release-3-r42-09-10-2018">}})| Feature Release | 09.10.2018 |
