@@ -13,6 +13,43 @@ Ab Release 46.R152 wird macOS 10.12 vorausgesetzt
 {{% /notice %}}
 
 
+## Release 48.R196 (08.03.2019)
+
+**Auf einen Blick**
+
+- Automatischer Faxversand: Wenn ein PDF Steuerzeichen enthält und GhostScript installiert und konfiguriert ist, kann der pascom Client dieses nun automatisch an die Zielrufnummer faxen
+- Der iOS Client zeigt nun eine Benachrichtigung bei verpassten Anrufen an
+- Auch mit aktiviertem Jabra-Headset-Support können nun wieder 3er-Konferenzen erstellt werden
+
+**ÄNDERUNGEN:**
+
+* [CL-7] - You can open a grayed out dial pad 
+* [CL-41] - Missed call notification is empty after moving it
+* [CL-251] - Make search editable to correct typos
+* [CL-252] - Buttons for creating phonebook entry layout broken
+* [CL-258] - Reset changed phonebook entry after invalid input
+* [CL-267] - Copy outlook/apple contacts to private and company phonebook
+* [CL-289] - Show a missed call notification on iOS additionally
+* [CL-302] - Multiple push notifications with same content are not displayed on android
+* [CL-305] - Schedule call back notification if phone is offline
+* [CL-313] - Mobile client shows no number after pairing
+* [CL-331] - Additional timestamp of current date in journal
+* [CL-338] - Improve Settings Dialog - Use a consistent layout for checkboxes / switches
+* [CL-341] - Duration in call details overlapping with info button on iPod
+* [CL-349] - Sending fax documents unattended
+* [CL-355] - If you click on a native chat notification, the client is not moved to the foreground
+* [CL-385] - Jabra Pro prohibits to add a call to a running one
+* [CL-399] - Playing Voicemail in journal glitches
+* [CL-411] - App-Icon Unread messages counter is not reset on iOS
+* [CL-413] - Client crashes quite often on macOS
+* [CL-416] - Client crashed when try to close all native notifications
+* [CL-418] - Can't open settings screen on iPhone
+* [CL-423] - Client UI freezes sometimes on macOS
+* [CL-433] - Can't create phonebook entry without email address
+* [CL-437] - Broken layout of the Chat Input Box on macOS
+* [CL-457] - Chat input box does not reset correctly on mobile.
+
+
 ## Release 47.R161 (11.02.2019)
 
 {{% notice note %}}

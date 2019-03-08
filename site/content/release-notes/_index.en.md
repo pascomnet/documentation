@@ -11,7 +11,8 @@ pre: <i class="fa fa-file-alt" aria-hidden="true"></i>&nbsp;
 
 |Version|Release Type|Published|
 |-------|------------|---------------:|
-|[Release 47.R161]({{< ref "/release-notes/pascomClient">}})| Bugfix Release - Desktop only | 11.02.2019 |
+|[Release 48.R196]({{< ref "/release-notes/pascomClient">}})| Bugfix Release | 08.03.2019 |
+|[Release 47.R161]({{< ref "/release-notes/pascomClient#release-47-r161-11-02-2019">}})| Bugfix Release - Desktop only | 11.02.2019 |
 |[Release 46.R152]({{< ref "/release-notes/pascomClient#release-46-r152-06-02-2019">}})| Bugfix Release | 06.02.2019 |
 |[Release 45.R93]({{< ref "/release-notes/pascomClient#release-45-r93-17-12-2018">}})| Bugfix Release | 17.12.2018 |
 |[Release 44.R66]({{< ref "/release-notes/pascomClient#release-44-r66-27-11-2018">}})| Bugfix Release | 27.11.2018 |
