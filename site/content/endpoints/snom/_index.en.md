@@ -26,9 +26,7 @@ With [our VoIP Software] (https://www.pascom.net/en/mobydick-voip/ "pascom VoIP 
 ## Snom Provisioning
 
 The process of configuring or registering an VoIP phone with an IP PBX such as pascom's is know as {{< ui-button "Provisioning" >}}. For this purpose, pascom phone systems include a Default Configuration ({{< ui-button "Devices" >}} > {{< ui-button "Basic Configuration" >}}). For most deployment scenarios, these standard settings provide an ideal configuration. However, in some cases, the settings may need to be modified.
-<--
-## (Optional) Mass Deployments 
--->
+
 {{% notice tip %}}
 For pascom on-premise phone system installations, it is possible to perform fully automated mass Endpoint deployments by using the pascom DHCP server.  
 Further details can be found in our Howto [Telephone Provisioning via DHCP]({{< ref "/howto/dhcp-provisioning" >}}).
