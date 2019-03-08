@@ -7,6 +7,11 @@ weight: 996
 {{% notice tip %}}
 With pascom 18 there are a number of core changes that you will need to check before updating and then modify once you have updated. Please use our check list in our detailed [Upgrade Guide]({{ ref "/server/upgrade" }}).{{%/notice%}}
 
+{{% notice warning %}}  
+**Important Notice to this Update:**     
+The reading of files from an SMB share is no longer supported. Instead, the import file can now be uploaded or queried from a URL.
+{{% /notice %}}
+
 
 ## Highlights
 
@@ -59,6 +64,72 @@ Due to non-existing encryption for voice and provisioning, Siemens Unify optiPoi
 ### Discontinued Cisco SPA 112 Support
 
 Due to the Cisco SPA 112 gateway limitations that require a Cisco certificate, support has been discontinued in pascom 18.
+
+
+## Release 18.06 (07.03.2019)
+
+**Overview**
+
+- Unsecured telephony using UDP / RTP now works flawlessly again for On-premise deployments
+
+**MODIFICATIONS:**
+
+- [MD-11372] - Insecure calls via UDP/RTP not working 
+
+
+## Release 18.05 (26.02.2019)
+
+**Overview**
+
+- The CSV connector now allows manual uploads of files via the GUI as well as adding the data source URL
+- The call analytics are now available per instance with a real-time graphical representation (Grafana)
+- Added support for Vodafone NGN Trunks
+- Improved analysis of Exchange connections via a connections tester
+- The insecure provisioning of telephones and gateways in a local network via DHCP can now done and secured via OpenVPN
+- Implemented support for Cloud Service Provider (CSP) and pascom 18 
+- Added provisioning support for Yealink T5* series.
+
+**MODIFICATIONS:**
+
+- [MD-10710] - Firefox causes problem with exchange authentication test
+- [MD-10951] - Do not show "Licensed Users" in csui on a csp host
+- [MD-10962] - CSUI: Change Password form throws validation errors, but you can save anyway
+- [MD-11051] - Overlapping text in mailserver settings
+- [MD-11060] - Can not setup pascom 18 in hyperv on windows notebook with intel gpu
+- [MD-11061] - No external number shown after pickup
+- [MD-11132] - Grandstream desktop phone not requesting config via DHCP
+- [MD-11171] - Handle reboot device action via UI more properly
+- [MD-11195] - get /identity/userName/cdr returns 500
+- [MD-11208] - Translate mail text for failed mail to fax
+- [MD-11212] - Empty page after click on device type
+- [MD-11268] - Remove "CS" conditions from basic configurations
+- [MD-11276] - Confusing default outbound prefix mismatch
+- [MD-11277] - Control grandstream via client in same network broken
+- [MD-11278] - Backups are reachable over public URL without authentication
+- [MD-11282] - Missing caller name during system call
+- [MD-11287] - Improve security for instance files
+- [MD-11293] - No fallback to originate dial
+- [MD-11303] - New Snom firmware 10.1.33.33 breaks PUI menu and crashes in other cases
+- [MD-11306] - Add timer_support to Snom M700 basic config
+- [MD-11319] - Yealink call control results in originate dial
+- [MD-11323] - Queue position is not correct (in grafana)
+- [MD-11334] - Apply telephony config fails after update
+- [MD-11336] - Grafana glitches after restoring backup
+- [MD-8742] - Make CSV Connector cloudstack ready
+- [MD-11080] - Include a preconfigure grafana server to the pbx container
+- [MD-11081] - Provide a default grafana dashboard for call data analysis
+- [MD-11141] - Manage voicemails in client journal - Server side
+- [MD-11205] - Support Vodafone ngn trunks without sip registration
+- [MD-11211] - Introduce trunk template flag to filter on-premise/cloud templates
+- [MD-11214] - Upgrade kamailio and introduce python routing script
+- [MD-11269] - Implement support for insecure dhcp based provisioning through openvpn tunnel
+- [MD-11272] - Improve exchange connection tests
+- [MD-11280] - Enhance Setup Wizard to handle CSP License setups
+- [MD-11281] - Enhance Management UI (csui) to handle CSP hosts
+- [MD-11297] - Use a AWS spot instance for building the pascom server iso
+- [MD-11311] - Optimize apache config to avoid frequent reloads
+- [MD-11332] - Allow to customize lxcbr iptables masquerade options
+- [MD-8976] - Support Yealink T5 Series Phones
 
 
 ## Release 18.04 (16.01.2019)
@@ -128,7 +199,7 @@ Due to the Cisco SPA 112 gateway limitations that require a Cisco certificate, s
 - [MD-10367] - Remove deprecated yealink DeviceHandlers
 - [MD-10546] - Prune old pbx images on each system startup
 - [MD-10922] - Cleanup BeroNet device handler code
-- [MD-10933] - Remove "skip auto restart" feature from onsite hosts
+- [MD-10933] - Remove "skip auto restart" feature from on-premise hosts
 - [MD-10971] - Implement ldap proxy support for Yealink DECT system
 - [MD-11038] - Improve prometheus metrics
 - [MD-11069] - Upgrade asterisk to version 13.23.1

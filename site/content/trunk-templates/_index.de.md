@@ -46,5 +46,5 @@ Das pascom Support Team kann Ihnen nur bei Ämtern behilflich sein die über ein
 |TeleData|
 |Telekom SIP-Trunk| [Details]( {{< ref "/trunk-templates/telekom-sip-trunk" >}}) |
 |TelemaxX|
-|Vodafone| Aktuell in pascom 18 nicht unterstützt da keine Registrierung möglich! |
+|Vodafone| nur OnSite! Aktuell in pascom 18 Cloud nicht unterstützt da keine Registrierung möglich! |
 |voipGATE Business|

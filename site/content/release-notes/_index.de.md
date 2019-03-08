@@ -22,7 +22,9 @@ pre: <i class="fa fa-file-alt" aria-hidden="true"></i>&nbsp;
 
 |Version|Release Type|Veröffentlichung|
 |-------|------------|---------------:|
-|[Release 18.04]({{< ref "/release-notes/pascom18" >}})| Bugfix Release | 16.01.2019 |
+|[Release 18.06]({{< ref "/release-notes/pascom18" >}})| Bugfix Release | 07.03.2019 |
+|[Release 18.05]({{< ref "/release-notes/pascom18#release-18-05-26-02-2019" >}})| Bugfix Release | 26.02.2019 |
+|[Release 18.04]({{< ref "/release-notes/pascom18#release-18-04-16-01-2019" >}})| Bugfix Release | 16.01.2019 |
 |[Release 18.03]({{< ref "/release-notes/pascom18#release-18-03-17-12-2018" >}})| Bugfix Release | 17.12.2018 | 
 |[Release 18.02]({{< ref "/release-notes/pascom18#release-18-02-07-11-2018" >}})| Bugfix Release | 07.11.2018 |
 |[Release 18.01]({{< ref "/release-notes/pascom18#release-18-01-09-10-2018" >}})| Bugfix Release | 09.10.2018 |
@@ -64,4 +66,5 @@ pre: <i class="fa fa-file-alt" aria-hidden="true"></i>&nbsp;
 
 |Version|Release Type|Veröffentlichung|
 |-------|------------|---------------:|
-|[Release 3.R42]({{< ref "/release-notes/pascomTapi">}})| Feature Release | 09.10.2018 |
+|[Release 4.R56]({{< ref "/release-notes/pascomTapi">}})| Bugfix Release | 08.03.2019 |
+|[Release 3.R42]({{< ref "/release-notes/pascomTapi#release-3-r42-09-10-2018">}})| Feature Release | 09.10.2018 |

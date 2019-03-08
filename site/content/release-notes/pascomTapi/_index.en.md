@@ -8,6 +8,27 @@ weight: 1000
 For further information, please refer to our detailed [Installation Guide]({{< ref "/clients/tapi-installation" >}}).
 {{%/notice%}}
 
+
+## Release 4.R56 (08.03.2019)
+
+**Overview**
+
+- Calls that were started immediately after launching the TAPI application are no longer dropped
+- If the TAPI user's password is no longer valid, the driver will stop the registration process after 5 attempts 
+- Phone numbers with the following format "0044 (0) 29691 0" are now correctly transmitted to the pascom server
+- Enhanced call hangup reliability for TAPI calls on a pascom 18 server
+- Increased stability of XMPP connections to a pascom 18 server
+
+**MODIFICATIONS:**
+
+- [TAPI-4] - TAPI looses calls issued very early after initialization
+- [TAPI-6] - TAPI: stop trying to reconnect if the password is invalid
+- [TAPI-16] - Number cleanup for phone numbers containing (0) fails
+- [TAPI-17] - Increase version field width
+- [TAPI-19] - TAPI not reacting anymore after inactivity
+- [TAPI-21] - Hangup does not work properly in tapi
+
+
 ## Release 3.R42 (09.10.2018)
 
 **Overview**

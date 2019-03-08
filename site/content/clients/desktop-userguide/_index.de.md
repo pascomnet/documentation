@@ -88,7 +88,7 @@ Profil- und Kontaktlisten-Einstellungen:
 ![Teams](teams.de.png)
 
 
-## Integrates Softphone
+## Integriertes Softphone
 
 Über die Einstellungen können Sie auch das pascom Softphone auswählen. Voraussetzung ist, dass Ihr Administrator Ihnen bereits ein integriertes Softphone zugewiesen hat.
 

@@ -1,5 +1,5 @@
 ---
-title: Snom Tischtelefone 300er und 700er Serie
+title: Snom Tischtelefone D100er, D300er und D700er Serie
 description: Integrieren Sie Ihre Snom IP-Tischtelefone in die pascom
 weight: 10
 ---
@@ -8,7 +8,7 @@ weight: 10
  
 {{< description >}}
 
-![snom 300/700 Serie](snom-series.png)
+![snom D300/D700 Serie](snom-series.png)
 
 ## Kompatibilität
 
@@ -38,7 +38,7 @@ pascom ist in der Lage IP-Telefone des Herstellers Snom automatisch und zentral 
 {{% notice tip %}}
 Handelt es sich nicht um ein fabrikneues Telefon setzen Sie es in jedem
 Fall auf **Werkseinstellungen** zurück. Wählen Sie hierzu am Telefon, im eingeschalteten
-Zusatand, <strong>\**##</strong> und halten anschließend <strong>#</strong> gedrückt bis nach dem Reboot ein Menü
+Zustand, <strong>\**##</strong> und halten anschließend <strong>#</strong> gedrückt bis nach dem Reboot ein Menü
 erscheint. Wählen Sie **1** für Werkseinstellungen.
 {{% /notice %}}
 
@@ -66,6 +66,11 @@ neues Gerät vom Typ **IP-Telefon: Hersteller Snom** hinzu.
 Tragen Sie im Feld **Mac-Adresse** die zuvor ermittelte MAC-Adresse des Telefones
 ein.
 
+### Benutzer zuweisen
+
+Als nächstes können Sie dem IP-Telefon einen Benutzer oder Arbeitsplatz zuweisen. Klicken Sie hierzu auf {{< ui-button "Bearbeiten" >}}. Im Tab {{< ui-button "Zuweisung" >}} kann dem Telefon ein [Benutzer (oder Arbeitsplatz)]({{< ref "concept/user">}}) zugewiesen werden.
+
+
 ### Jobs Anwenden
 
 Nach dem Speichern von Änderungen erscheint in der Job-Box (oben) ein
@@ -84,12 +89,6 @@ die eben kopierte Provisionierung-URL ein.
 
 Klicken Sie auf {{< ui-button "Apply" >}} und anschließend auf {{< ui-button "Reboot" >}}.
 
-### Benutzer zuweisen
-
-Nachdem das Telefon neu gestartet ist und erfolgreich provisioniert wurde können Sie einen Benutzer oder Arbeitsplatz zuweisen. Klicken Sie hierzu auf {{< ui-button "Bearbeiten" >}}. Im Tab {{< ui-button "Zuweisung" >}} kann dem Telefon ein [Benutzer (oder Arbeitsplatz)]({{< ref "concept/user">}}) zugewiesen werden.
-
-Nach dem Speichern und Anwenden der Telefoniekonfiguration wird das Telefon neu gestartet.
-
 ### Funktion testen
 
 Am einfachsten kann man die erfolgreiche Inbetriebnahme testen, indem man mit **\*100** die eigene Voicemailbox anruft. Daraufhin sollte die Ansage Ihrer Voicemailbox zu hören sein.
@@ -105,7 +104,7 @@ Nach der Provisionierung entspricht die **Menü**-Taste am Snom IP-Telefon nicht
 |Rufumleitung|Setzt eine Rufumleitung, aktiviert/ändert eine schon gesetzte Rufumleitung oder deaktiviert eine aktive Rufumleitung.|
 |Voicmailbox|Voicemailbox-Menü zum Einschalten/Ausschalten und Abhören der eigenen Voicemailbox|
 |Anmelden|Hier kann sich ein Benutzer an dem Arbeitsplatz anmelden.|
-|Abmelden [*benutzername*]|Der bereits angemeldete Benutzer kann sich an dem Arbeitsplatz abmelden.|
+|Abmelden [*Benutzername*]|Der bereits angemeldete Benutzer kann sich an dem Arbeitsplatz abmelden.|
 |Warteschlangen|Dient zur Verwaltung der Warteschlangen (anmelden, abmelden, pausieren...), je nach Konfiguration der Warteschlangen.|
 
 Besitzt das Snom IP-Telefon keine Menütaste (z. B. Snom 300, 710, D715) wird die zweite Funktionstaste mit dem pascom Menü belegt.
@@ -138,7 +137,7 @@ Um Zugriff zu einigen Menüpunkten in der Web-UI des Snom Telefons zu haben ben�
 
 Klicken Sie in der Menüliste auf der linken Seite auf Funktionstasten.
 
-### Andere Benutzer (Nebenstellen) überwachen mit BLFs
+#### Andere Benutzer (Nebenstellen) überwachen mit BLFs
 
 Hier können Sie Funktionstasten einrichten, um andere Nebenstellen zu überwachen. Die BLF-Taste (Besetztlampenfeld oder Busy Lamp Field) gibt Informationen über den Status der überwachten Durchwahl. Überwachen bedeutet in diesem Fall zu sehen ob ein Benutzer telefoniert, angerufen wird und ggf. sein Gespräch heranzuholen (Pickup).
 
@@ -149,7 +148,7 @@ Hier können Sie Funktionstasten einrichten, um andere Nebenstellen zu überwach
 Neben Benutzer-Durchwahlen können auch Einbuchcodes für Warteschlangen oder Durchwahlschalter konfiguriert werden.
 <!--FIXME Links zu dw-schalter, warteschlangen  -->
 
-### Weitere nützliche Funktionstasten
+#### Weitere nützliche Funktionstasten
 
 |Funktionstaste|Beschreibung|
 |---|---|
@@ -191,7 +190,7 @@ Weisen Sie diese Basis-Konfiguration über den Tab {{< ui-button "Geräte" >}} d
 
 ## Firmwareupdate
 
-Ab der mobydick Version 7.14 wird die Firmware für IP-Endgeräte nicht mehr mitgeliefert. Sollte eine andere als auf dem IP-Endgerät installierte Firmware benötigt werden, muss diese selber heruntergeladen und in die pascom Firmware-Verwaltung hochgeladen werden.
+Seit der mobydick Version 7.14 wird die Firmware für IP-Endgeräte nicht mehr mitgeliefert. Sollte eine andere als auf dem IP-Endgerät installierte Firmware benötigt werden, muss diese selber heruntergeladen und in die pascom Firmware-Verwaltung hochgeladen werden.
 
 ### Firmware hinzufügen
 
@@ -208,39 +207,46 @@ Die gewünschte Firmware kann hinzugefügt werden unter {{< ui-button "Endgerät
 
 Die Firmware kann über {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} aktualisiert werden. Wählen Sie die Zielgeräte in der Geräteliste mit Häkchen aus und klicken Sie auf {{< ui-button "Aktion" >}} > {{< ui-button "Firmware ausrollen" >}}. Nun erhalten Sie eine Übersicht der gewählten Geräte, in der Sie die Zielfirmware auswählen können. Anschließend klicken Sie auf {{< ui-button "Firmware update" >}} um die gewählte Firmware auszurollen.
 
-### Empfohlene Firmware
+### Unterstützte Modelle
 
-Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es uns leider nicht möglich jede zu testen, so dass es sein kann, dass manche Firmware-Versionen pascom Funktionen nicht unterstützen. Daher finden Sie hier eine Liste der Firmwares die von uns bereits getestet wurden:
+Nachfolgend finden Sie eine Liste an Snom Modellen, die von uns unterstützt werden:
 
-|Modell|Firmware|
+{{% notice warning %}}
+Modelle aus der Snom 3XX Reihe sind in der aktuellen pascom Cloud-Lösung nicht funktionsfähig und können nur OnSite verwendet werden.
+{{% /notice %}}
+
+|Modelle||
 |---|---|
-|Snom D120|10.1.19.0|
+|Snom D120|Snom D715|
+|Snom D315|Snom D725|
+|Snom D345|Snom D735|
+|Snom D375|Snom D745|
+|Snom D385|Snom D765|
+
+<!--- |Modell|getestete Firmware-Version|
+|---|---|
+|Snom D120|10.1.33.33|
+|Snom D315| 8.9.|
 |Snom D345|8.9.3.40|
-|Snom D715|8.9.3.60|
+|Snom D375|8.9.3.60|
+|Snom D385|10.1.33.33|
+|Snom D715|8.9.3.80|
+|Snom D725|8.9.3|
+|Snom D735|10.1.33.33|
 |Snom D745|8.9.3.80|
-|Snom D765|8.7.5.35|
+|Snom D765|8.9.3|
+
+alt:
 |Snom D785|10.1.20.0|
-
-
-<!--|Snom 300|8.7.3.25.5|
-|Snom 320|8.7.5.35|
-|Snom 360|8.7.3.25.5|
-|Snom 370|8.7.5.35|
 |Snom 710|8.7.3.25.5|
-|Snom 715|8.7.8.8.2|
 |Snom 720|8.7.3.25.5|
 |Snom 760|8.7.3.25.5|
-|Snom 821|8.7.5.35| -->
+|Snom 821|?| --->
 
-<!--
-D300 Serie
-D385 -> 10.1.25.0 von Eva getestet unter 18.01 -> Fernsteuerung via Client fehlgeschlagen,
-D378,
-D315,
-D305,
+{{% notice note %}}
+Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es uns leider nicht möglich jede zu testen, so dass es sein kann, dass manche Firmware-Versionen pascom Funktionen nicht unterstützen. 
+{{% /notice %}}
 
-D700 Serie
-D735 -> 10.1.25.1 von Eva getestet unter 18.01 -> Fernsteuerung via Client fehlgeschlagen,
-D725,
-D712,
-D710 -->
+{{% notice info %}}
+Aufgrund aktueller Sicherheitsstandards werden Snom IP-Telefone der 3XX Reihe in der kommenden pascom 19 Version nicht mehr unterstützt.
+{{% /notice %}}
