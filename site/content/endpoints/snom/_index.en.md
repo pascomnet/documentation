@@ -1,5 +1,5 @@
 ---
-title:  Snom 3xx 7xx Series Desktop Phones
+title:  Snom D1xx D3xx D7xx Series Desktop Phones
 description: Integrate your Snom VoIP phones into your pascom business phone system
 weight: 10
 ---
