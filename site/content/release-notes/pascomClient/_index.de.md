@@ -12,6 +12,39 @@ Für weitere Informationen zu unserem pascom Client lesen Sie bitte unsere ausf�
 Ab Release 46.R152 wird macOS 10.12 vorausgesetzt
 {{% /notice %}}
 
+## Release 49.R265 (21.03.2019)
+
+**Auf einen Blick**
+ 
+- Systemanrufe können nun aus dem Journal gefiltert werden
+- Bei eingehenden Chat-Nachrichten wird nun ein Ton abgespielt
+- Beim pascom Softphone kann nun eine Verstärkung für Mikrofon und Lautsprecher konfiguriert werden
+ 
+**ÄNDERUNGEN:**
+ 
+- [CL-14] - Switches changing color in client settings
+- [CL-38] - Scroll loop in client journal
+- [CL-100] - Save Settings (FollowMe) on pressing Home-Button
+- [CL-281] - Chat room glitches
+- [CL-299] - Simplify login forms for pascom.cloud users
+- [CL-326] - Play a sound when receiving an incoming chat message
+- [CL-345] - Improve tabbing through settings
+- [CL-366] - Bright context menu in dark theme
+- [CL-390] - Call volume is still to low on certain mobile devices
+- [CL-395] - Pickup call clicking on phone icon
+- [CL-396] - Preserve entered mobile number if the app goes to sleep
+- [CL-401] - Remove deprecated logging window and model
+- [CL-402] - Select dark theme automatically if the main theme of windows is dark
+- [CL-405] - Callback notification shown twice
+- [CL-415] - Headset not selected as speaker
+- [CL-419] - Enhance “offline contact filter” - also filter out user that have a paired mobile but an offline phone presence
+- [CL-422] - Introduce a switch to filter out system calls from journal
+- [CL-442] - Missing activity after voicemailbox answers
+- [CL-446] - Notifications has incorrect position on windows
+- [CL-452] - pascom Client does not recognize eSim on a iPhone Xr/Xs
+- [CL-453] - Phonecall duration is incorrect
+- [CL-455] - Softphone not reacting on rejected call
+- [CL-473] - Pairing not working
 
 ## Release 48.R196 (08.03.2019)
 
