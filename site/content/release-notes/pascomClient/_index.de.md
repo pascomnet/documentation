@@ -12,6 +12,76 @@ Für weitere Informationen zu unserem pascom Client lesen Sie bitte unsere ausf�
 Ab Release 46.R152 wird macOS 10.12 vorausgesetzt
 {{% /notice %}}
 
+## Release 49.R265 (21.03.2019)
+
+**Auf einen Blick**
+ 
+- Systemanrufe können nun aus dem Journal gefiltert werden
+- Bei eingehenden Chat-Nachrichten wird nun ein Ton abgespielt
+- Beim pascom Softphone kann nun eine Verstärkung für Mikrofon und Lautsprecher konfiguriert werden
+ 
+**ÄNDERUNGEN:**
+ 
+- [CL-14] - Switches changing color in client settings
+- [CL-38] - Scroll loop in client journal
+- [CL-100] - Save Settings (FollowMe) on pressing Home-Button
+- [CL-281] - Chat room glitches
+- [CL-299] - Simplify login forms for pascom.cloud users
+- [CL-326] - Play a sound when receiving an incoming chat message
+- [CL-345] - Improve tabbing through settings
+- [CL-366] - Bright context menu in dark theme
+- [CL-390] - Call volume is still to low on certain mobile devices
+- [CL-395] - Pickup call clicking on phone icon
+- [CL-396] - Preserve entered mobile number if the app goes to sleep
+- [CL-401] - Remove deprecated logging window and model
+- [CL-402] - Select dark theme automatically if the main theme of windows is dark
+- [CL-405] - Callback notification shown twice
+- [CL-415] - Headset not selected as speaker
+- [CL-419] - Enhance “offline contact filter” - also filter out user that have a paired mobile but an offline phone presence
+- [CL-422] - Introduce a switch to filter out system calls from journal
+- [CL-442] - Missing activity after voicemailbox answers
+- [CL-446] - Notifications has incorrect position on windows
+- [CL-452] - pascom Client does not recognize eSim on a iPhone Xr/Xs
+- [CL-453] - Phonecall duration is incorrect
+- [CL-455] - Softphone not reacting on rejected call
+- [CL-473] - Pairing not working
+
+## Release 48.R196 (08.03.2019)
+
+**Auf einen Blick**
+
+- Automatischer Faxversand: Wenn ein PDF Steuerzeichen enthält und GhostScript installiert und konfiguriert ist, kann der pascom Client dieses nun automatisch an die Zielrufnummer faxen
+- Der iOS Client zeigt nun eine Benachrichtigung bei verpassten Anrufen an
+- Auch mit aktiviertem Jabra-Headset-Support können nun wieder 3er-Konferenzen erstellt werden
+
+**ÄNDERUNGEN:**
+
+* [CL-7] - You can open a grayed out dial pad 
+* [CL-41] - Missed call notification is empty after moving it
+* [CL-251] - Make search editable to correct typos
+* [CL-252] - Buttons for creating phonebook entry layout broken
+* [CL-258] - Reset changed phonebook entry after invalid input
+* [CL-267] - Copy outlook/apple contacts to private and company phonebook
+* [CL-289] - Show a missed call notification on iOS additionally
+* [CL-302] - Multiple push notifications with same content are not displayed on android
+* [CL-305] - Schedule call back notification if phone is offline
+* [CL-313] - Mobile client shows no number after pairing
+* [CL-331] - Additional timestamp of current date in journal
+* [CL-338] - Improve Settings Dialog - Use a consistent layout for checkboxes / switches
+* [CL-341] - Duration in call details overlapping with info button on iPod
+* [CL-349] - Sending fax documents unattended
+* [CL-355] - If you click on a native chat notification, the client is not moved to the foreground
+* [CL-385] - Jabra Pro prohibits to add a call to a running one
+* [CL-399] - Playing Voicemail in journal glitches
+* [CL-411] - App-Icon Unread messages counter is not reset on iOS
+* [CL-413] - Client crashes quite often on macOS
+* [CL-416] - Client crashed when try to close all native notifications
+* [CL-418] - Can't open settings screen on iPhone
+* [CL-423] - Client UI freezes sometimes on macOS
+* [CL-433] - Can't create phonebook entry without email address
+* [CL-437] - Broken layout of the Chat Input Box on macOS
+* [CL-457] - Chat input box does not reset correctly on mobile.
+
 
 ## Release 47.R161 (11.02.2019)
 
