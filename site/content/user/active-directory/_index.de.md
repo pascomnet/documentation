@@ -1,7 +1,7 @@
 ---
 title: Microsoft Active Directory Integration
 description: Synchronisieren und Authentifizieren Sie Ihre Benutzer gegen das Microsoft Active Directory
-weight: 50
+weight: 60
 ---
 
 {{< doctype "both" >}}
@@ -77,7 +77,7 @@ im Reiter {{< ui-button "Authentifizierung" >}} mit der Schaltfläche {{< ui-bu
 
 #### Feldzuordnung anpassen
 
-Im Connector Profil können Sie im Reiter Variablen und Struktur die Feldzuordnung ActiveDirectory > pascom an Ihre Bedürfnisse anpassen.
+Im Connector Profil können Sie im Reiter {{< ui-button "Variablen" >}} und {{< ui-button "Struktur" >}} die Feldzuordnung ActiveDirectory > pascom an Ihre Bedürfnisse anpassen.
 
 Als Beispiel möchten wir die Berufsbezeichnung des Benutzers im Notizfeld des pascom Telefonbuches speichern.
 Fügen Sie hierzu im Reiter {{< ui-button "Variablen" >}} folgende Zeile durch {{< ui-button "Hinzufügen" >}} ein:

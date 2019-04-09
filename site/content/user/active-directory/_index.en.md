@@ -1,7 +1,7 @@
 ---
 title: Microsoft Active Directory Integration
 description: User Synchronisation and Authentication with Microsoft Active Directory
-weight: 50
+weight: 60
 ---
 
 {{< doctype "both" >}}

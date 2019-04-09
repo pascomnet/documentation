@@ -1,7 +1,7 @@
 ---
 title: Microsoft Exchange Integration
 description: Integrate your Microsoft Exchange / Office365 in to your pascom VoIP phone system
-weight: 40
+weight: 50
 ---
 
 {{< doctype "both"  >}}

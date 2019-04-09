@@ -1,7 +1,7 @@
 ---
 title: Microsoft Exchange Integration
 description: Integrieren Sie Microsoft Exchange / Office365 in Ihre pascom.
-weight: 40
+weight: 50
 ---
 
 {{< doctype "both"  >}}

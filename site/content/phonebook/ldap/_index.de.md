@@ -4,60 +4,57 @@ description: Synchronisieren Sie Ihre Telefonbuch-Einträge gegen LDAP
 weight: 40
 ---
 
-## Connector-Profil "Telefonbuch aus AD"
+{{< doctype "both" >}}
+
+{{< description >}}
+
+
+## Connector-Profil "Telefonbuch aus LDAP"
 
 Erstellen Sie ein neues Connector-Profil indem Sie in der pascom Web-UI unter dem
 Menüpunkt {{< ui-button "Erweitert" >}} > {{< ui-button "Connector" >}} auf {{< ui-button "Hinzufügen" >}} klicken.
 
-Wählen Sie die Vorlage *Telefonbuch aus AD* und tragen Sie folgende Daten ein:
+Wählen Sie die Vorlage *Telefonbuch aus LDAP* und tragen Sie folgende Daten ein:
 
 |Feld|Beschreibung|
 |---|---|
 |**Bezeichung**|Name des Connectors|
-|**AD Domäne**|Active Directory Domain Name|
-|**AD Server**|Server IP oder DNS-Name des Hosts|
-|**SSL aktivieren**|**JA**: zu Active Directory via sicherer SSL-Verbindung verbinden. **NEIN**: zu Active Directory ohne SSL verbinden.|
-|**Benutzername** und **Passwort**|Der zuvor im AD angelegte pascom Benutzer zur Authentifizierung|
+|**LDAP URI**|URL zum LDAP-Verzeichnis|
+|**BaseDN**|BaseDN gibt die Position im LDAP-Verzeichnis an, die ausgelesen werden soll|
+|**LDAP bindDN**|Benutzer mit Zugriff auf das LDAP-Verzeichnis|
+|**Passwort**|Passwort zur Authentifizierung an LDAP|
+|**Suchfilter**|Filter zur detaillierten Suche im LDAP-Verzeichnis|
 
 Nach dem Speichern kann die Vorlage im Reiter {{< ui-button "Basisdaten" >}} bei Bedarf angepasst werden.
 
 ### Basisdaten
 
-In den Basisdaten konfigurieren Sie die Verbindung zu Ihrem Active Directory genauer oder können die zuerst konfigurierten Einstellungen ändern.
+In den Basisdaten konfigurieren Sie die Verbindung zu Ihrem LDAP genauer oder können die zuerst konfigurierten Einstellungen ändern.
 
 |Feld|Beschreibung|
 |---|---|
 |**Bezeichung**|Name des Connectors (*wird automatisch befüllt*)|
-|**Modus**|**Neue Sätze importieren, geänderte abgleichen und früher importiere Datensätze entfernen**: (*Standardauswahl*) Importiert nur neue Telefonbucheinträge und gleicht geänderte Einträge ab, alte Einträge werden entfernt. **Neue Sätze importieren und geänderte abgleichen**: Importiert neue Telefoneinträge und gleicht geänderte ab. Es werden keine Einträge entfernt.|
-|**URI**|Uri zur Active Directory Domain (*wird automatisch befüllt*)|
-|**Basis DN**|Basis DN Einträge zum Active Directory (*wird automatisch befüllt*)|
-|**Benutzername** und **Passwort**|Der zuvor im AD angelegte pascom Benutzer zur Authentifizierung (*wird automatisch befüllt*)|
+|**Modus**|**Neue Sätze importieren, geänderte abgleichen und früher importiere Datensätze entfernen**: (*Standardauswahl*) Importiert nur neue Telefonbucheinträge und gleicht geänderte Einträge ab, alte Einträge werden entfernt. <br/>**Neue Sätze importieren und geänderte abgleichen**: Importiert neue Telefoneinträge und gleicht geänderte ab. Es werden keine Einträge entfernt.|
+|**URI**|Uri zum LDAP (*wird automatisch befüllt*)|
+|**Basis DN**|Basis DN Einträge zum LDAP (*wird automatisch befüllt*)|
+|**Benutzername** und **Passwort**|Zugangsdaten zum im LDAP angelegten pascom Benutzer zur Authentifizierung (*wird automatisch befüllt*)|
 |**Suchfilter**|LDAP-Suchfilter zur Filterung des auszulesenen Telefonbuch-Ordners (*wird automatisch befüllt*)|
 |**Dokumentation**|Dient zur Dokumentation/ Beschreibung des Connectors|
 
 ### Pre Filter
 
-Im Standard importiert die Vorlage alle globalen Telefonbucheinträge aus dem AD. Über den Reiter {{< ui-button "Pre Filter" >}} können Sie den Import eines bestimmten Telefonbuchs, z. B. *company-phonebook*, einschränken. Fügen Sie dazu folgenden Code ein:
+Im Standard importiert die Vorlage alle globalen Telefonbucheinträge aus dem LDAP. Über den Reiter {{< ui-button "Pre Filter" >}} können Sie den Import eines bestimmten Telefonbuchs, z. B. *company-phonebook*, einschränken. Fügen Sie dazu folgenden Code ein:
 
     if (strpos($row['memberOf'],'company-phonebook') !== false) {
     return true;
     }
     return false;
 
-### Telefonbuchfelder im AD
+### Telefonbuchfelder aus LDAP
 
-|Active Directory|pascom|Beschreibung|
-|---|---|---|
-|Allgemein > Anzeigename|Anzeigename |Der Anzeigename erscheint im Telefondisplays und im pascom Client Journal. Pflichtfeld.|
-|Rufnummer > Privat|Telefon|Die Rufnummer des Kontakts.|
-|Allgemein > Vorname|Vorname|Vorname des Kontakts.|
-|Allgemein > Nachname|Nachname|Nachname des Kontakts.|
-|Organisation > Firma|Organisation|Firma des Kontakts.|
-|Rufnummer > Fax|Fax|Faxnummer des Kontakts.|
-|Allgemein > E-Mail|EMail|E-Mail Adresse des Kontakts.|
-|Rufnummern > Mobil|Handy|Mobilnummer des Kontakts.|
+Über den Reiter {{< ui-button "Variablen" >}} können Sie in der Spalte **Quelle** definieren aus welchem Telefonbuchfeld in LDAP die Informationen ausgelesen werden können. Auf der linken Seite ist die **Variable** definiert, die zum Importieren der Daten in die pascom Telefonanlage gesetzt werden kann.
 
-Die Felder sind lediglich ein Vorschlag der Vorlage. Sie können Felder hinzufügen und entfernen bzw. die gesamte Import-Struktur beliebig anpassen.
+Die bereits gesetzten Felder sind lediglich ein Vorschlag der Vorlage. Sie können Felder hinzufügen und entfernen bzw. die gesamte Import-Struktur beliebig anpassen.
 
 ### Importlauf testen und aktivieren
 
@@ -67,7 +64,7 @@ Nachdem Sie die Konfiguration abgeschlossen haben, können Sie durch die Schalt
 
 #### Feldzuordnung anpassen
 
-Im Connector Profil können Sie im Reiter Variablen und Struktur die Feldzuordnung ActiveDirectory > pascom Telefonbuch an Ihre Bedürfnisse anpassen.
+Im Connector Profil können Sie im Reiter {{< ui-button "Variablen" >}} und {{< ui-button "Struktur" >}} die Feldzuordnung LDAP > pascom Telefonbuch an Ihre Bedürfnisse anpassen.
 
 Als Beispiel möchten wir Hinweise zu dem Kontakt im Notizfeld des pascom Telefonbuches speichern.
 Fügen Sie hierzu im Reiter {{< ui-button "Variablen" >}} folgende Zeile durch {{< ui-button "Hinzufügen" >}} ein:
@@ -76,7 +73,7 @@ Fügen Sie hierzu im Reiter {{< ui-button "Variablen" >}} folgende Zeile durch {
 |----|----|
 |Notiz|return $row["info"];|
 
-Durch diese Zeile speichert der Connector den Inhalt des ActiveDirectory Feldes "Info" (*Rufnummern > Anmerkung*) in der Variable "Notiz" ab.
+Durch diese Zeile speichert der Connector den Inhalt des LDAP Feldes "info" in der Variable "Notiz" ab.
 Diese Variable muss nun unter {{< ui-button "Struktur" >}} dem Notiz pascom-Telefonbuch Feld zugeordnet werden.
 
 Ergänzen Sie hierzu die Zeilen:
@@ -102,15 +99,15 @@ Ergänzen Sie hierzu die Zeilen:
 
 Dadurch wird der Wert der Variablen Notiz dem **Notiz** pascom Telefonbuch Feld zugewiesen.
 
-#### (Optional) Labels nutzen
+#### Labels nutzen
 
-pascom Labels lassen sich auch dazu nutzen zusätzliche Informationen aus Active Directory
+pascom Labels lassen sich auch dazu nutzen zusätzliche Informationen aus LDAP
 mit im pascom Firmentelefonbuch anzuzeigen.
 
-In diesem Beispiel möchten wir die Kundennummer des Active Directory Kontakts im Label **Kundennummer**
+In diesem Beispiel möchten wir die Kundennummer des LDAP Kontakts im Label **Kundennummer**
 abspeichern. Dieses Label ist dann nicht nur im Telefonbuch sondern auch in Journaleinträgen oder diversen Anruferinformationen sichtbar.
 
-#### Label anlegen
+##### Label anlegen
 
 Labels legen Sie im Menü {{< ui-button "Anrufverteilung" >}} > {{< ui-button "Anruf Labels" >}} durch Klicken auf die Schaltfläche {{< ui-button "Hinzufügen" >}} an.
 
@@ -118,7 +115,7 @@ Wählen Sie {{< ui-button "Generisches Label" >}}, vergeben Sie den Namen **Kund
 
 Wenden Sie ausstehende Jobs an um das Label anzulegen.
 
-#### Connector Profil anpassen
+##### Connector Profil anpassen
 
 Fügen Sie hierzu im Reiter {{< ui-button "Variablen" >}} folgende Zeile durch {{< ui-button "Hinzufügen" >}} ein:
 
@@ -131,7 +128,7 @@ Im Gegensatz zu anderen Connector-Profilen muss der Name der Variablen und
 der Name des Quellfeldes (hier "Customernumber") identisch sein.
 {{% /notice  %}}
 
-Durch diese Zeile speichert der Connector den Inhalt des Active Directory Feldes "Customernumber" in der gleichnamigen Variable "Customernumber" ab.
+Durch diese Zeile speichert der Connector den Inhalt des LDAP Feldes "Customernumber" in der gleichnamigen Variable "Customernumber" ab.
 
 Diese Variable muss nun unter {{< ui-button "Struktur" >}} dem Label **Kundennummer** pascom Feld zugeordnet werden.
 
@@ -177,7 +174,7 @@ in der Struktur:
 Dadurch wird jedem Kontakt mit eingetragener Kundennummer das Label **Kundennummer** mit
 dem entsprechenden Wert zugeteilt.
 
-#### Ergebnis prüfen
+##### Ergebnis prüfen
 
 {{% notice info%}}
 Label-Zuordnungen werden NICHT unter "Speichern und Simulieren" mit angezeigt

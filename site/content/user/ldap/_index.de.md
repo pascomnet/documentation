@@ -1,5 +1,5 @@
 ---
-title: LDAP Integration
+title: Benutzer aus LDAP Integration
 description: Synchronisieren und Authentifizieren Sie Ihre Benutzer gegen LDAP
 weight: 70
 ---

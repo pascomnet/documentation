@@ -1,8 +1,12 @@
 ---
 title: Telefonbuch aus Microsoft Active Directory
 description: Synchronisieren Sie Ihre Telefonbuch-Einträge gegen das Microsoft Active Directory
-weight: 20
+weight: 30
 ---
+
+{{< doctype "both" >}}
+
+{{< description >}}
 
 
 ## Microsoft Active Directory
@@ -112,7 +116,7 @@ Ergänzen Sie hierzu die Zeilen:
 
 Dadurch wird der Wert der Variablen Notiz dem **Notiz** pascom Telefonbuch Feld zugewiesen.
 
-#### (Optional) Labels nutzen
+#### Labels nutzen
 
 pascom Labels lassen sich auch dazu nutzen zusätzliche Informationen aus Active Directory
 mit im pascom Firmentelefonbuch anzuzeigen.
@@ -120,7 +124,7 @@ mit im pascom Firmentelefonbuch anzuzeigen.
 In diesem Beispiel möchten wir die Kundennummer des Active Directory Kontakts im Label **Kundennummer**
 abspeichern. Dieses Label ist dann nicht nur im Telefonbuch sondern auch in Journaleinträgen oder diversen Anruferinformationen sichtbar.
 
-#### Label anlegen
+##### Label anlegen
 
 Labels legen Sie im Menü {{< ui-button "Anrufverteilung" >}} > {{< ui-button "Anruf Labels" >}} durch Klicken auf die Schaltfläche {{< ui-button "Hinzufügen" >}} an.
 
@@ -128,7 +132,7 @@ Wählen Sie {{< ui-button "Generisches Label" >}}, vergeben Sie den Namen **Kund
 
 Wenden Sie ausstehende Jobs an um das Label anzulegen.
 
-#### Connector Profil anpassen
+##### Connector Profil anpassen
 
 Fügen Sie hierzu im Reiter {{< ui-button "Variablen" >}} folgende Zeile durch {{< ui-button "Hinzufügen" >}} ein:
 
@@ -187,7 +191,7 @@ in der Struktur:
 Dadurch wird jedem Kontakt mit eingetragener Kundennummer das Label **Kundennummer** mit
 dem entsprechenden Wert zugeteilt.
 
-#### Ergebnis prüfen
+##### Ergebnis prüfen
 
 {{% notice info%}}
 Label-Zuordnungen werden NICHT unter "Speichern und Simulieren" mit angezeigt
