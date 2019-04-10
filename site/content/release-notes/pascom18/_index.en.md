@@ -66,6 +66,52 @@ Due to non-existing encryption for voice and provisioning, Siemens Unify optiPoi
 Due to the Cisco SPA 112 gateway limitations that require a Cisco certificate, support has been discontinued in pascom 18.
 
 
+## Release 18.07 (10.04.2019)
+
+{{% notice info %}}
+pascom cloud customers will be updated to pascom 18.07 over the weekend of 13. - 14. April 2019.
+{{%/notice%}}
+
+**Overview**
+
+- Improved remote CTI control for various desktop telephones
+- Integrated LDAPs for Yealink Telephone and DECT systems
+- Implemented LDAP support for Mitel / Aastra systems
+- Added compatibility support for Snom M700 DECT firmware 450B5 and experimental LDAPs support
+- Improved provisioning and remote CTI support for Auerswald telephones
+- Upgraded to Asterisk 13.25.0
+- Kernel updated to 4.4.0.143
+- Uploaded telephone firmware files are no longer deleted after a server update
+- Telephone status in the client will now display "unavailable" should the user only have a mobile telephone AND configured their FollowMe settings as "off"
+
+**MODIFICATIONS:**
+
+* [MD-10956] - Host shutdown or reboot gets stuck and other kernel issues
+* [MD-11131] - Download of big database backups failed
+* [MD-11163] - pbx instances log to rotated file after some time
+* [MD-11227] - Improve error message for failed phonebook entry creation
+* [MD-11317] - Auerswald device handler throws error during reboot task
+* [MD-11321] - Transfer calls not working with new Yealink firmware *.84.0.15
+* [MD-11342] - Fix auerswald client proxy remote control code
+* [MD-11352] - Task for applying iptables rules is not invoked
+* [MD-11385] - Enabled LDAPS in Yealink DECT and Desktop phone provisioning profiles
+* [MD-11404] - Previously uploaded phone firmware files lost after update
+* [MD-11414] - Test M700 450B5 firmware and LDAP
+* [MD-11426] - Buffer overflow in res_mobydick if we have locations with id greater 9999
+* [MD-11433] - Throttle slapd restarts when we create/delete multiple instances automatically
+* [MD-11440] - Enhance Snom basic config to show phone and mobile number via LDAP
+* [MD-8242] - Remove Gateway and Netmask Fields from some or all Gateways
+* [MD-10201] - Deploy Ldap configuration for Mitel DECT systems
+* [MD-11161] - Change cron job pre- and postscript user to be asterisk
+* [MD-11254] - Simplify proxy services startup environment files
+* [MD-11260] - Connect mobile phone presence and follow me state
+* [MD-11348] - Run consul as separate user instead of root
+* [MD-11378] - Update asterisk to release 13.25.0
+* [MD-11386] - Increase php memory auto scale factor
+* [MD-11387] - Update consul to the latest 1.0.8 version
+* [MD-11393] - Integrate kamailio_exporter to get more sip metrics
+
+
 ## Release 18.06 (07.03.2019)
 
 **Overview**

@@ -12,6 +12,6 @@ weight: 80
 
 ## Kompatibilität
 
-{{%notice warning%}}
-The pascom 18 compatibility for Auerswald desktop phones is still in development. Further information will be available here soon.
+{{%notice info%}}
+From pascom version 18.07 onwards, Auerswald desktop phones can be fully integrated. Further information will be available here soon.
 {{%/notice %}}

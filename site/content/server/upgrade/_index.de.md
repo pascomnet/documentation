@@ -20,7 +20,6 @@ Für die Migration **benötigen** Sie außerdem einen **my.pascom.net Zugang**. 
 Bitte beachten Sie folgende Checkliste **BEVOR** Sie mit dem Upgrade beginnen
 
 * [ ] Ich verwende keine Siemens Telefone
-* [ ] Ich verwende keine Auerswald Telefone (Unterstützung noch in Arbeit)
 * [ ] Ich verwende keine Aastra Tischtelefone (Unterstützung noch in Arbeit)
 * [ ] Ich verwende keine Patton Gateways
 * [ ] Ich verwende keine cisco SPA 112 Gateways

@@ -12,6 +12,6 @@ weight: 80
 
 ## Kompatibilität
 
-{{%notice warning%}}
-An der Kompatibilität von Auerswald Tischtelefonen zu pascom 18 wird noch gearbeitet. Weiter Informationen finden Sie in Kürze hier.
+{{%notice info%}}
+Auerswald Tischtelefone können ab der pascom Version 18.07 integriert werden. Weitere Informationen finden Sie in Kürze hier.
 {{%/notice %}}
