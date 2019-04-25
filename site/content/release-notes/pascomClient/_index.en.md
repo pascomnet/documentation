@@ -13,6 +13,55 @@ From Release 46.R152 macOS 10.12 is the minimum requirement
 {{% /notice %}}
 
 
+## Release 50.R318 (24.04.2019)
+
+**Overview**
+
+- Fixed "flickering display" issues related to clients running on macOS 10.14.4
+- New and improved design of all desktop client pop up notifications
+- Fixed numerous crash problems on Android platforms 
+- Faster client start-up thanks to quicker avatar rendering
+- Call labels are now also displayed for calls waiting in a team queue
+
+**MODIFICATIONS:**
+
+- [CL-127] - Upgrade Client to Qt 5.12
+- [CL-151] - Show incoming file transfer requests also as toast
+- [CL-244] - Mobile client crashes on Huawei and Android 6.x 
+- [CL-310] - pascom Client crashes when Acessibility Support is enabled in Windows
+- [CL-358] - Close open fax dialog if connection interrupts
+- [CL-382] - Can't scroll via mouse wheel on non-primary screen
+- [CL-404] - Improve custom notifications in client
+- [CL-435] - Improve layout for "Edit" button of phone book entry in call details
+- [CL-441] - Introduce Database migration during updates
+- [CL-444] - Show labels in queue waiting calls
+- [CL-464] - Autofocus in LoginPane
+- [CL-465] - Use OpenGL fragmentShader for drawing avatar images
+- [CL-470] - Deactivate call action buttons if device doesn't support remote control
+- [CL-471] - Exception on registerSoftphone after selecting softphone as prefered device
+- [CL-475] - Phonebook entry layout broken after incoming call on mobile client
+- [CL-476] - Roster button schedules callback notification instead of calling destination of call forwarding
+- [CL-479] - Mark text if you tab to input filed in login mask
+- [CL-483] - Client Crash when displaying pickup notifications
+- [CL-487] - Mobile pairing glitches
+- [CL-494] - Client Freezes with ANGLE in an Windows Server 2012R2 Terminal Server Environment
+- [CL-497] - Some database settings are read too early during client startup
+- [CL-498] - Test client release 50
+- [CL-501] - Client crashes on Windows and OSX if you initiate a call
+- [CL-504] - Decline button on left side after take off on mobile
+- [CL-509] - Copy from phonebook is broken
+- [CL-513] - Client flickers when displaying notifications on macOS 10.14.4
+- [CL-521] - Wrong avatar shown in roster
+- [CL-522] - copy from a chat search result cell copies the wrong text
+- [CL-523] - Client crash after receiving incoming chat message
+- [CL-525] - Can't show more details to missed call notification with labels 
+- [CL-527] - Inconsistent and too low call volume on android
+- [CL-529] - Broken Menubar Layout for iPhone X devices with Qt 5.12
+- [CL-530] - No default avatar shown in team overview
+- [CL-537] - Android client sometimes crashes during first startup
+- [CL-555] - Windows client shows both native and custom callback notification
+
+
 ## Release 49.R265 (21.03.2019)
 
 **Overview**
