@@ -23,7 +23,7 @@ Assign a password for the pascom user and select *password never expires*. The p
 Create a new connector profile by using the following steps in the pascom phone system Web UI:
 Click on the menu option {{< ui-button "Advanced" >}} > {{< ui-button "Connector" >}} and then click {{< ui-button "Add" >}}.
 
-Within the template, select *AD User Sync** and enter the following data:
+Select the *AD User Sync* template and enter the following data:
 
 |Field|Description|
 |---|---|
@@ -32,8 +32,8 @@ Within the template, select *AD User Sync** and enter the following data:
 |**AD Server**|Server IP or Host DNS Name|
 |**Username** and **Password**|Credentials of the previously added pascom User for authentication|
 |**Configure authentication**|**NO**: Users will only be imported. Authentication will be performed by the pascom phone system. <br>**YES**: Users will be imported and the can be authenticated against the AD. In this case, the authentification will be setup and you can modify this according to your needs under {{< ui-button "Appliance" >}} > {{< ui-button "Services" >}} under the tab {{< ui-button "Authentification" >}}.|
-|**Create pascom softphone**|**YES**: Creates a pascom softphone for every imported user. **NO**: Creates no pascom softphones for imported users.|
-|**Create mobile phone**|**YES**: Creates a mobile phone device for every imported user. **NO**: Creates no mobile phone devices for imported users.|
+|**Create pascom softphone**|**YES**: Creates a pascom softphone for every imported user. **NO**: No pascom softphones will be added for imported users.|
+|**Create mobile phone**|**YES**: Creates a mobile phone device for every imported user. **NO**: No mobile devices will be added for imported users.|
 
 After saving, the template can be modified according to requirements under the tab {{< ui-button "Basic Data" >}}.
 
@@ -58,26 +58,25 @@ Per default, the template will import all users from the AD except for the user 
 |General > mail|email|User's e-mail address. Used for sending voicemails and faxes.|
 |Organisation > company|organisation|Company to be entered in the user's pascom telephone book entry.|
 |Phone numbers > homePhone|homephone|User's private / home telephone number for the pascom telephone book entry.|
-|Phone numbers > mobile|mobile|User's mobile phone number to be added to the pascom telephone book entry and to create a mobile phone device with.|
+|Phone numbers > mobile|mobile|The user's mobile phone number to be added to the pascom telephone book entry and with which a mobile phone device should be automatically created.|
 |Phone numbers > facsimileTelephoneNumber|Fax|Internal fax number assigned to the user. Automatically also adds a virtual pascom fax machine assigned to the user. A pre-requirement here is that the pascom fax server is already configured.|
 
 These fields are just template suggestions. You can add and remove fields or even modify the complete structure to match your requirements.
 
 ### Test and Activate the Import Process
 
-After you have finalised your configuration, you can test the connector profile to determine which datasets will be imported using the {{< ui-button "Save and Simulate" >}} button. Once you are satisfied with the results, it is possible to either perform a one off import using the {{< ui-button "Action" >}} > {{< ui-button "Import Now" >}} option or automate the import to be performed at regular intervals by clicking the {{< ui-button "Automate" >}} button.
+After you have finalised your configuration, you can test the connector profile to determine which data sets will be imported using the {{< ui-button "Save and Simulate" >}} button. Once you are satisfied with the results, it is possible to either perform a one off import using the {{< ui-button "Action" >}} > {{< ui-button "Import Now" >}} option or automate the import to be performed at regular intervals by clicking the {{< ui-button "Automate" >}} button.
 
 ### Authentication Tests
 
-If you have configured the template using the *Configure authentication* *YES* option, it is now possible to test the user authentication process using the following menu options {{< ui-button "Appliance" >}} > {{< ui-button "Services" >}}
-under the {{< ui-button "Authentification" >}} tab and finally using the {{< ui-button "Test Authentication" >}} button.
+If you have configured the template using the *Configure authentication* *YES* option, it is now possible to test the user authentication process using the following menu options {{< ui-button "Appliance" >}} > {{< ui-button "Services" >}} under the {{< ui-button "Authentification" >}} tab and finally using the {{< ui-button "Test Authentication" >}} button.
 
 
-## Optional Settings
+### Optional Settings
 
-### Modify Field Assignments
+#### Modify Field Mappings
 
-Within the Connector Profile under the tabs Variables and Structure it is possible to modify the field assignments from Active Directory > pascom according to your requirements.
+Within the Connector Profile under the tabs  {{< ui-button "Variables" >}} and {{< ui-button "Structure" >}} it is possible to modify the field assignments from Active Directory > pascom according to your requirements.
 
 For example, should you wish to save the Job Title of a user in the pascom telephone book notes field, simply go to the {{< ui-button "Variables" >}} tab and click {{< ui-button "Add" >}}:
 
@@ -121,10 +120,10 @@ To do this add the lines:
         }
 
 
-This will result in the Job variable being assigned to the notes field in the pascom telephone book.
+This will result in the "job" variable being assigned to the **notes** field in the pascom telephone book.
 
 
-### Role Assignment
+#### Role Assignment
 
 In order to assign roles to users directly upon importing, the structure must be expanded to include role assignments.
 
@@ -165,8 +164,7 @@ You can use the member assignment in Active Directory to determine the pascom ph
 By using this coding, the Connector can read the Active Directory member assignments and assign them to the pascom field User Roles.
 
 {{% notice note%}}
-In the PHP-Variable `rolesToFilter`, enter the {{< ui-button "source" >}} field code and role name for which the connector should search for in the Active Directory. All other Active Directory member assignments will be ignored. 
-
+In the PHP-Variable `rolesToFilter`, enter the {{< ui-button "source" >}} field code and role name for which the connector should search for in the Active Directory. All other Active Directory member assignments will be ignored.   
 Example: **array('Role1', 'Role2');**
 {{% /notice%}}
 
@@ -212,7 +210,7 @@ To do this, expand the following lines so:
           }
 
 
-### Assign a Softphone, Mobile Phone or IP Telephone
+#### Assign a Softphone, Mobile Phone or IP Telephone
 
 From within the Active Directory, it is possible to directly assign a user with a Softphone or IP telephone. 
 
@@ -243,7 +241,7 @@ Under {{< ui-button "Variables" >}} it is sufficient to set the entry **createSo
 
 **Mobile Phone Assignment:**
 
-If you want to assign users with a mobile phone, it is not necessary to add an additional variable.
+If you want to assign users with a mobile phone, it is not necessary to add an additional variable. The mobile phone number will be automatically read from the field "Phone numbers" > "mobile".
 
 Under {{< ui-button "Variables" >}} it is sufficient to set the entry **createMobile** to "return true;".
 
