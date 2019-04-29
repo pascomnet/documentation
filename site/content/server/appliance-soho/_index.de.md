@@ -1,6 +1,6 @@
 ---
 title: pascom SOHO Server
-description: Der pascom SOHO-Server ist die perfekte Lösung für kleine Büros oder Außenstandorte mit eigener Hardware
+description: Der pascom SOHO-Server ist die perfekte Lösung für kleine Büros oder Außenstandorte mit eigener Hardware.
 weight: 30
 ---
 
@@ -9,17 +9,17 @@ weight: 30
 {{< description >}}
 
 {{% notice warning %}}
-**ABGEKÜNDIGT** - Der pascom SOHO Server wird weiterhin unterstütz jedoch nicht mehr neu verkauft. Er wurde durch die [pascom Appliance]({{< ref "server/appliance" >}}) ersetzt.
+**ABGEKÜNDIGT** - Der pascom SOHO-Server wird weiterhin unterstützt jedoch nicht mehr neu verkauft. Er wurde durch die [pascom Appliance]({{< ref "server/appliance" >}}) ersetzt.
 {{% /notice %}}
 
 
- 
+
 **Nützliches Vorwissen**
- 
- 
+
+
  * [pascom Server Systemaufbau]({{< ref "concept/server" >}})
 
- 
+
 ## pascom SOHO Server
 
 ![pascom SOHO Server](pascomSOHOserver.png)
@@ -34,7 +34,7 @@ Im Auslieferungszustand ist der pascom Server bereits vorinstalliert. Führen Si
 * USB-Stick mit mindestes 8 GB Kapazität
 * Kostenlosen Flash Tool [Rufus](https://rufus.akeo.ie/) (nur für Windows)
 * pascom Server [ISO-Dateien](https://www.pascom.net/de/download/)
- 
+
 ### USB-Stick flashen
 {{% notice info %}}
 Der USB-Stick muss nach dem Flashen ein **FAT-Dateisystem** enthalten da Sie die **setup.json** für das automatische Setup **anpassen** müssen. Tools wie Etcher erstellen auf dem USB-Stick ein Read Only ISO Datei System. Dadurch ist die nötige Anpassung der setup.json nicht möglich. Verwenden Sie daher in jedem Fall **Rufus** um den USB-Stick zu erzeugen.
@@ -98,10 +98,10 @@ Nach erfolgreichem Reboot sehen Sie die Anmelde-Maske:
 ## Mobilzugriffe via Internet einrichten (optional)
 
 {{% notice note %}}
-Wenn Sie dieses Feature nutzen möchten führen Sie diese Schritte jetzt aus. Spätere Änderungen sind möglich, führen jedoch auch zu Änderungen für Ihre Benutzer da sich z. B. der Zugriff auf den Server via pascom Client von einer lokalen IP auf einen DNS Namen ändert. 
+Wenn Sie dieses Feature nutzen möchten führen Sie diese Schritte jetzt aus. Spätere Änderungen sind möglich, führen jedoch auch zu Änderungen für Ihre Benutzer da sich z. B. der Zugriff auf den Server via pascom Client von einer lokalen IP auf einen DNS Namen ändert.
 {{% /notice %}}
 
-Dieser Schritt ist notwending falls Sie Ihren lokalen pascom Server auch von unterwegs per pascom Mobileclient (iOS/Android App) oder Desktopclient nutzen möchten. 
+Dieser Schritt ist notwending falls Sie Ihren lokalen pascom Server auch von unterwegs per pascom Mobileclient (iOS/Android App) oder Desktopclient nutzen möchten.
 
  * Siehe [Mobilzugriffe via Internet einrichten]({{< ref "howto/mobile-access" >}})
 
@@ -113,6 +113,3 @@ Gehen Sie hierzu wie folgt vor:
 * Melden Sie sich per Browser am pascom Server als admin an
 * Klicken Sie auf {{< ui-button "Phone Systems" >}} und dann auf den Namen Ihrere Anlage
 * Folgen Sie den Anweisungen des Assistenten
-
-
-
