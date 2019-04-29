@@ -8,7 +8,7 @@ weight: 70
 
 {{< description >}}
 
-Wenn Sie bereits eine pascom 18 oder höher im Einsatz haben, sind für ein Update folgende Schritte notwendig. 
+Wenn Sie bereits eine pascom 18 oder höher im Einsatz haben, sind für ein Update folgende Schritte notwendig.
 
 ## pascom ISO downloaden
 
@@ -25,7 +25,7 @@ Sobald der Upload erfolgreich durchgeführt wurde, wird Ihnen der Host mit der n
 ## pascom neustarten
 
 {{% notice warning %}}
-Während dem Neustart und Installationsvorgang der Telefonanlage, ist die Telefonie nicht möglich und alle laufenden Gespräche werden beendet. Führen Sie den Neustart daher nie im laufenden Betrieb aus.
+Während des Neustarts und Installationsvorgang der Telefonanlage, ist die Telefonie nicht möglich und alle laufenden Gespräche werden beendet. Führen Sie den Neustart daher nie im laufenden Betrieb aus.
 {{% /notice %}}
 
 Die Installation des Updates wird erst bei einem Neustart der Telefonanlage durchgeführt.

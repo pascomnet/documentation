@@ -6,7 +6,7 @@ weight: 30
 
 
 {{< doctype "both" >}}
- 
+
 {{< description >}}
 
 <!-- FIXME - bilder nur mit hellem theme! -->
@@ -255,11 +255,21 @@ Der Client bietet neben dem Firmen-Telefonbuch auch ein eigenes (privates) welch
 
 ## Fax
 
+### Faxen über den Telefoniebereich
+
 ![Fax](fax.de.png?width=75%)
+
+### Faxen über den Telefonbuch-Eintrag
 
 Falls die Faxnummer bereits bekannt und im Telefonbuch hinterlegt ist, kann das Fax auch mit einem Klick auf das Fax-Symbol im Telefonbuch versendet werden:
 
 ![Fax](phonebook_fax.de.png?width=45%)
+
+### Faxen über einen überwachten Ordner (PDF to Fax)
+
+Über die Client-Einstellungen > {{< ui-button "PDF zu Fax Einstellungen" >}} können Sie auf Ihrem Rechner einen Ordner definieren. Dieser Ordner wird vom Client überwacht. Sobald eine PDF-Datei in diesem Ordner  gespeichert, kopiert oder gedruckt wird, öffnet der pascom Client den Fax-Dialog um diese Datei zu versenden.
+
+
 
 ## Voicemailbox abrufen
 
