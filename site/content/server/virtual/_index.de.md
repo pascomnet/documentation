@@ -27,6 +27,21 @@ weight: 40
 
 **\*** Die Berechnung der Festplattenkapazität geht von einer durchschnittlichen Nutzung aus. Insbesondere die Mitschnitte von Gesprächen können Ihren Platzbedarf massiv beeinflussen. Rechnen Sie hier bitte mit 1 MB Platzbedarf pro 10 Minuten Gesprächsmitschnitt zusätzlich.  
 
+## Ihre Firewall anpassen
+
+Viele Unternehmen haben **keinen eingeschränkten Internetzugriff** und können den **pascom Server** daher **sofort**, ohne jede Anpassung an der Firewall **nutzen**.
+
+Wenn Sie jedoch genau festlegen auf welche Internetdienste Ihr Unternehmensnetzwerk zugreifen darf, schalten Sie bitte folgende Ports für den pascom Server frei, um einen reibungslosen Betrieb der pascom Telefonanlage zu ermöglichen:
+
+### pascom Dienste
+
+| Port | Host | Beschreibung |
+| ---- | ---- | ------------ |
+| TCP **80**/**443** | my.pascom.net | Zugriff zum pascom Lizenzserver + Push-Services |
+| TCP **25** | cloudmx1.pascom.net, cloudmx2.pascom.net | Zugriff zum pascom Mailserver |
+| UDP **123** | \* | Zugriff zum bevorzugten Zeitserver (NTP) |
+
+
 ## ISO Datei herunterladen
 
 Für die Installation einer virtuellen Maschine stellen wir ensprechende [ISO-Dateien](https://www.pascom.net/de/download/) auf unserer [Download-Seite](https://www.pascom.net/de/download/) zur Verfügung.

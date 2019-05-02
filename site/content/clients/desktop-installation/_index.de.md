@@ -8,6 +8,20 @@ weight: 10
  
 {{< description >}}
 
+## Ihre Firewall anpassen
+
+Viele Unternehmen haben **keinen eingeschränkten Internetzugriff** und können den **pascom Desktop Client** daher **sofort**, ohne jede Anpassung an der Firewall **nutzen**.
+
+Wenn Sie jedoch genau festlegen auf welche Internetdienste Ihr Unternehmensnetzwerk zugreifen darf, schalten Sie bitte folgende Ports für den pascom Desktop Client frei, um einen reibungslosen Betrieb der pascom Telefonanlage zu ermöglichen:
+
+### pascom Client
+
+| Port | Host | Beschreibung |
+| ---- | ---- | ------------ |
+| TCP **443** | my.pascom.net | Zur Überprüfung auf Client-Updates |
+| TCP **443** | download.pascom.net | Zum Downlaod von Client-Updates |
+
+
 ## Windows Installation
 
 {{% notice tip %}}
