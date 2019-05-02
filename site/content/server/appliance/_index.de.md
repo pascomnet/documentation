@@ -17,6 +17,22 @@ weight: 30
 
 ![pascom Appliance](pascom-appliance.png)
 
+
+### Ihre Firewall anpassen
+
+Viele Unternehmen haben **keinen eingeschränkten Internetzugriff** und können die **pascom Appliance** daher **sofort**, ohne jede Anpassung an der Firewall **nutzen**.
+
+Wenn Sie jedoch genau festlegen auf welche Internetdienste Ihr Unternehmensnetzwerk zugreifen darf, schalten Sie bitte folgende Ports für die pascom Appliance frei, um einen reibungslosen Betrieb der pascom Telefonanlage zu ermöglichen:
+
+#### pascom Dienste
+
+| Port | Host | Beschreibung |
+| ---- | ---- | ------------ |
+| TCP **80**/**443** | my.pascom.net | Zugriff zum pascom Lizenzserver + Push-Services |
+| TCP **25** | cloudmx1.pascom.net, cloudmx2.pascom.net | Zugriff zum pascom Mailserver |
+| UDP **123** | \* | Zugriff zum bevorzugten Zeitserver (NTP) |
+
+
 ## pascom Server installieren (nur bei Neuinstallation)
 {{% notice warning %}}
 Im Auslieferungszustand ist der pascom Server bereits vorinstalliert. Führen Sie diesen Schritt nur dann aus wenn Sie eine Neuinstallation des Systems vornehmen möchten!
