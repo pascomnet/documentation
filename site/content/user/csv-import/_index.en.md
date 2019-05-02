@@ -28,7 +28,7 @@ Under Basic Data, you can more exactly configure the CSV import or change your r
 
 |Field|Description|
 |---|---|
-|**Title**|Name des Connectors (*Automatically filled*)|
+|**Title**|Connector profile name (*Automatically filled*)|
 |**Source**|CSV (*cannot be altered*)|
 |**Mode**|**Create and update records. Remove missing records from previous imports.**: (*default setting*) Imports only new phone book entries and compares updated entries, old entries will be removed.<br/>**Create and update records**: Imports only new phone book entries and compares updated entries. No entries will be removed.|
 |**Type**|If you selected **Upload in Browser** when setting up your template: Upload manually<br/>If you selected **Fetch from URL** when setting up your template: Download from URL|
@@ -51,7 +51,7 @@ Per default, the template will import all lines from the CSV file. Via the {{< u
 ### User Fields from CSV
 
 In the {{< ui-button "Variables" >}} tab, all the fields which can be imported into your pascom phone system are listed. 
-The field mappy from CSV > pascom can also be modified to match your needs under this tab.
+The field mapping from CSV > pascom can also be modified to match your needs under this tab.
 Per default, the CSV column names correspond to the field names within the pascom PBX.
 
 An example for a CSV file:
@@ -75,7 +75,7 @@ An automated import is only recommended for import types **Fetch from URL**.
 
 Within the connector profile under the tab {{< ui-button "Variables" >}} and {{< ui-button "Structure" >}}, it is possible to modify the CSV > pascom field mapping according to your needs.
 
-As an example, let's say we want to save the users Job Titel within the pascom phone book notes field. 
+As an example, let's say we want to save the users Job title within the pascom phone book notes field. 
 Under the {{< ui-button "Variables" >}} tab, enter the following line by pressing {{< ui-button "Add" >}}:
 
 |Variable|Source|
