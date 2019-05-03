@@ -104,11 +104,10 @@ Bei Aktionen Nachher kann zusätzlich zu einer Bedingung auch ein Rufstatus gepr
 |**keine Antwort**|Der gesetzte Timeout wurde erreicht.|*ja*|*ja*|
 |**belegt**|Benutzer telefoniert.|*ja*||
 |**Warteschlange Voll**|Die maximale Anzahl der Wartenden ist überschritten||*ja*|
-|**Beitritt bei leer**|Aktion wird ausgeführt, wenn der Anrufer die Warteschlage betritt, obwohl kein Agent angemeldet ist.||*ja*|
-|**Verlassen bei leer**|Gibt an, ob ein Anrufer die Warteschlage verlassen soll, falls sich der letzte Agent abmeldet.||*ja*|
-
-<!-- |**Beitritt nicht möglich**|||*ja*|
-|**Verlassen nicht möglich**|||*ja*| -->
+|**Beitritt bei leer**|Aktion wird ausgeführt, wenn der Anrufer die Warteschlange betritt, obwohl kein Mitglied angemeldet ist.||*ja*|
+|**Verlassen bei leer**|Aktion wird ausgeführt, wenn der Anrufer die Warteschlange verlässt, weil sich das letzte Mitglied abgemeldet hat.||*ja*|
+|**Beitritt nicht möglich**|Aktion wird ausgeführt, wenn der Anrufer die Warteschlange betreten möchte, obwohl diese nicht erreichbar ist.||*ja*|
+|**Verlassen nicht möglich**|Aktion wird ausgeführt, wenn der Anrufer die Warteschlange verlässt, weil diese nicht erreichbar ist.||*ja*|
 
 
 ## Aktionsvorlagen
