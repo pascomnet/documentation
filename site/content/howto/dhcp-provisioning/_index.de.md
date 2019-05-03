@@ -3,12 +3,12 @@ title: Telefon-Provisonierung via DHCP
 description: Statt jedes einzelne Hardware Telefon mit dem pascom Server per URL zu pairen können Sie Provisionierungs-URLs auch per DHCP automatisiert übergeben
 ---
  
-{{< doctype "self" >}} 
+{{< doctype "both" >}} 
 
 {{< description >}}
 
 {{% notice warning %}}
-Die DHCP Provisionierung ist nur möglich wenn sich die Telefone und der pascom Server im gleichen, lokalen Netzwerk befinden!
+Die DHCP Provisionierung ist nur möglich wenn sich die Telefone und der pascom Server im gleichen, lokalen Netzwerk befinden, oder zuvor eine entsprechende [VPN-Verbindung]({{< relref "/gateways/vpn-connector">}}) zwischen dem lokalen Netzwerk und dem pascom Server aufgebaut wurde!
 {{% /notice %}}
 
 ## Eigenen DHCP-Server verwenden (empfohlen)
@@ -51,7 +51,7 @@ verwendeten Hersteller einschränken:
 
 Setzen Sie ein Hardware Telefon auf Werkseinstellungen zurück. Funktioniert der DHCP-Server mit den Optionen korrekt konfiguriert sich das Telefon nun automatisch. War das provisionieren erfolgreich sehen Sie im Display des Telefones "Nur Notrufe" oder den Namen des zugewiesenen Benutzers oder Arbeitsplatzes.
 
-## pascom DHCP-Server verwenden
+## pascom DHCP-Server verwenden (nur OnSite)
 
 Alternativ können Sie auch den DHCP-Server der pascom nutzen.
 

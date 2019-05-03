@@ -18,21 +18,38 @@ Diese Funktion steht Ihnen auch zur Verfügung, wenn Sie den pascom Server vor O
 Da pascom einen eigenen Session Border Controller für mobile Anwender mit sich bringt, ist der VPN Connector für deren Anbindung unnötig und ungeeignet.
 {{%/notice%}}
 
+## VPN Gateway einrichten
+
 ### Transit-Netzwerk und IP-Adressen
 
 Der pascom VPN Connector baut eine Punkt-zu-Punkt Verbindung zwischen Ihrer pascom Instanz und dem OpenVPN Client auf. Die pascom Instanz hat dabei immer die IP-Adresse 172.16.23.1. Als Transit-Netzwerk wird die 172.16.23.0/24 verwendet. Der OpenVPN Client erhält eine zufällige, jedoch dann persistente (immer gleiche) IP-Adresse aus dem Transit-Netzwerk. Diese IP-Adresse können Sie am OpenVPN Client ablesen und für den Zugriff der pascom Instanz auf lokale Dienste des Clients nutzen.
+
+### eigenen DHCP nutzen
+
+Der pascom VPN Connector baut eine Punkt-zu-Punkt Verbindung zwischen Ihrer pascom Instanz und Ihrem lokalen DHCP Server auf, sodass Sie beispielsweise auch in der pascom Cloud die DHCP-Provsionierung verwenden können.
+Die pascom Instanz hat dabei immer die IP-Adresse 172.16.23.1. Als Transit-Netzwerk wird die 172.16.23.0/24 verwendet. 
 
 ## Konfiguration
 
 ### Transit-Netzwerk ändern (optional)
 
-Falls Sie ein anderes Transit-Netzwerk als 172.16.23.0/24 verwenden möchten können Sie dies in Ihrer Instanz unter **Appliance** > **Systemeinsttellungen** im Parameter **sys.vpn.transit.network** verändern. 
+Falls Sie ein anderes Transit-Netzwerk als 172.16.23.0/24 verwenden möchten können Sie dies in Ihrer Instanz unter {{< ui-button "Appliance" >}} > {{< ui-button "Systemeinstellungen" >}} im Parameter **sys.vpn.transit.network** verändern. 
 
 ### pascom Instanz
 
-Loggen Sie sich in die Weboberfläche Ihrer pascom Instanz ein und legen Sie unter **Gateways** > **Gatewayliste** via **Hinzufügen** einen neuen **VPN Zugriff** an.
+Loggen Sie sich in die Weboberfläche Ihrer pascom Instanz ein und legen Sie unter {{< ui-button "Gateways" >}} > {{< ui-button "Gatewayliste" >}} mit einem Klick auf {{< ui-button "Hinzufügen" >}} ein neues Gateway vom Typ **"VPN Zugriff"** an.
 
-Geben Sie dem VPN Connector eine **Bezeichnung** und laden Sie die Konfiguration via **Speichern und exportieren** herunter.
+|Einstellung|Beschreibung|
+|---|---|
+|Aktiviert|JA: Der VPN Zugriff ist aktiviert.<br/> NEIN: Der VPN Zugriff ist deaktiviert.|
+|Bezeichnung|Name der VPN Verbindung|
+|Routing|Tragen Sie hier das Netzwerk der Gegenstelle ein, sodass die pascom via VPN auf dieses Netzwerk Zugriff erhält. *Beispiel: 192.168.1.0 255.255.255.0*|
+|Server Optionen|Tragen Sie hier optionale Serverkonfigurationen ein, die in der .ccd-Datei enthalten sein sollen.|
+|Client Optionen|Tragen Sie hier optionale Clientkonfigurationen ein, die in der .ovpn-Datei enthalten sein sollen.|
+
+Klicken Sie anschließend auf {{< ui-button "Speichern und exportieren" >}} um die OpenVPN-Dateien und Zertifikate herunterzuladen.
+
+Diese können Sie in Ihrem Router einbinden.
 
 ### OpenVPN Client
 
