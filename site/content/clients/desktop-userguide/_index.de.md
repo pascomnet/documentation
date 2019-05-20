@@ -269,6 +269,32 @@ Falls die Faxnummer bereits bekannt und im Telefonbuch hinterlegt ist, kann das 
 
 Über die Client-Einstellungen > {{< ui-button "PDF zu Fax Einstellungen" >}} können Sie auf Ihrem Rechner einen Ordner definieren. Dieser Ordner wird vom Client überwacht. Sobald eine PDF-Datei in diesem Ordner  gespeichert, kopiert oder gedruckt wird, öffnet der pascom Client den Fax-Dialog um diese Datei zu versenden.
 
+### Automatisches Faxen über einen überwachten Ordner
+
+Fax-Steuerfelder werden als normaler Text in das zu sendende Dokument eingefügt, anschließend verarbeitet der Fax-Server diese Anweisungen.
+
+#### Vorbereitung
+
+Damit die Steuerfelder aus dem PFD-Dokument erkannt werden können, wird das [Ghostskript](https://www.ghostscript.com/) auf Ihrem Rechner benötigt.
+Ist das Ghostskript installiert muss der Pfad der Ghostskript-Datei *gs* über die Client-Einstellungen > {{< ui-button "PDF zu Fax Einstellungen" >}} ausgewählt werden.
+
+
+#### Automatisches Senden
+
+Fügen Sie die Steuerfelder in das zu sendende Dokument ein.
+
+Bitte beachten Sie, dass diese Steuerfelder vom Empfänger auch gelesen werden können. Ggf. können Sie mit bestimmten Schreibprogrammen "unsichtbar" gemacht werden (z. B. weiße Schrift auf weißem Hintergrund).
+
+|Verfügbare Steuerfelder||
+|---|---|
+|@@+FAX:+49991123456789@@|Das Fax muss mindestens dieses Steuerzeichen mit der Zielnummer enthalten.|
+|@@+TAG:Bestellung XYZ@@|Optional kann der Fax-Job mit einem Betreff versehen werden.|
+|@@+NOTIFY:mustermann@musterfirma.de@@|Optional kann festgelegt werden, wer über den Status des Fax-Jobs informiert werden soll.|
+
+
+Wie bereits im vorherigen Punkt beschrieben, können Sie über die Client-Einstellungen > {{< ui-button "PDF zu Fax Einstellungen" >}} auf Ihrem Rechner einen Ordner definieren, der vom Client überwacht wird. Sobald eine PDF-Datei in diesem Ordner  gespeichert, kopiert oder gedruckt wird, werden die Steuerfelder ausgewertet und die Datei als Fax versendet.
+
+
 
 
 ## Voicemailbox abrufen
@@ -306,7 +332,7 @@ Im folgenden werden die globalen Tastenkürzel näher erklärt:
 |Download-Ordner|Als Standardeinstellung wird hier immer Ihr Download-Ordner verwendet. Diesen können Sie bei Bedarf anpassen.|
 
 
-## Client Feedback an pascom melden
+## Client-Feedback an pascom melden
 
 Sollten Sie Probleme mit dem Client haben, können Sie über die Einstellungen die Client-Log-Datei sichten.
 Falls Sie das Problem melden möchten, senden Sie bitte die *Support-Info*-Zip-Datei mit.
