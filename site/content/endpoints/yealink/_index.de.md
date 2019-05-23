@@ -204,12 +204,14 @@ BLF-Tasten lassen sich wie folgt einrichten:
     linekey.3.type = 16
     linekey.3.value = 123
     linekey.3.label = Max
+    linekey.3.line = 1
 
 Die belegte Taste (in diesem Fall Linekey 3) besteht aus drei Parametern:
 
 + *type*: der Typ der Taste, 16 steht für BLF,
 + *value*: der Wert, das ist hier die Nebenstelle,
 + *label*: das Label, das ist die Bezeichnung, die am Display angezeigt wird.
++ *line*: das Konto des Benutzers, der am Telefon angemeldet ist und die Konfiguration ausführt. *(Muss immer 1 sein)*
 
 Weisen Sie diese Basis-Konfiguration über den Tab {{< ui-button "Geräte" >}} den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und speichern Sie. Nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
 

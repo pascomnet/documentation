@@ -186,12 +186,14 @@ BLF Keys can be setup as follows:
     linekey.3.type = 16
     linekey.3.value = 123
     linekey.3.label = Max
+    linekey.3.line = 1
 
 The assigned key (in this case, line key 3) consists of three parameters:
 
 + *type*: The key type, 16 stands for BLF,
 + *value*: the value, in this case the extension number,
 + *label*: the label, which is to be displayed on the phone's screen Label.
++ *line*: the account of the user who is logged in to the telephone and is performing the configuration. *(selected line must always be 1)*
 
 Via the menu tab {{< ui-button "Devices" >}}, assign these default configurations to thoses telephones that should be configured with this BLF setup. Save and apply your changes and once the phones have restarted, the changes will have taken affect.
 
