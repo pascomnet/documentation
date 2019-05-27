@@ -13,6 +13,43 @@ Ab Release 46.R152 wird macOS 10.12 vorausgesetzt
 {{% /notice %}}
 
 
+## Release 51.R365 (27.05.2019)
+
+**Auf einen Blick**
+
+- Es stehen jetzt mehr integrierte Klingeltöne zur Auswahl
+- Benachrichtigungen zeigen nun wieder die Quelle (z. b. eine Warteschlange an)
+- Diverse Performance und Stabilitätsverbesserungen
+
+**ÄNDERUNGEN:**
+
+- [CL-67] - Remove keyboard lowercase hints on android again
+- [CL-286] - Sennheiser status LED stays busy and call control problems
+- [CL-327] - Include more ringtones in pascom Client
+- [CL-383] - Update opus codec to version 1.3
+- [CL-403] - Select dark theme automatically if the main theme of macOS is dark
+- [CL-407] - Open chat shortcut broken in normal and extended mode
+- [CL-429] - You can select multiple messages in the chat room, but copy only one
+- [CL-448] - No error message if password change in pascom Client fails
+- [CL-450] - Implement ‘select all’ for group chats
+- [CL-478] - Improve behavior of client if a call gets cancelled
+- [CL-481] - Copy and paste via right click menu in login mask
+- [CL-489] - Chat UI is broken after resizing
+- [CL-495] - Show message that no journal entries are matching the filter
+- [CL-502] - Introduce a toast message if the client is outdated and updates are disabled
+- [CL-503] - Native notification avatar resolution is too low
+- [CL-532] - Improve avatar handling for larger (> 50 User) installations with huge images
+- [CL-539] - Client crashes after connecting to appliance without maintenance
+- [CL-545] - Client doesn’t remember auto PDF faxing setting
+- [CL-552] - Wrong shortcut appears after recording key press
+- [CL-558] - Attended Transfer is broken on iOS
+- [CL-565] - Display a warning if the client connects to a deprecated or outdated server version
+- [CL-586] - Avatar in roster still gray if contact switches to available
+- [CL-589] - Avatar Caching mechanism sometimes loops, consuming huge amounts of bandwith
+- [CL-599] - Use “callDisplayName” property to show correct title for a phonecall in new call notifications
+- [CL-614] Number shown twice instead of name
+
+
 ## Release 50.R318 (24.04.2019)
 
 **Auf einen Blick**
