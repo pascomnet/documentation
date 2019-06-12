@@ -8,43 +8,65 @@ pre: <i class="fa fa-copy" aria-hidden="true"></i>&nbsp;
 {{< description >}}
 
 {{% notice warning %}}
-Das pascom Support Team kann Ihnen nur bei Ämtern behilflich sein die über eine Vorlage erstellt wurden. Ist Ihr Amt nicht dabei nutzen Sie bitte die Vorlage "Generisches SIP-Amt". Wenden Sie sich bei Fragen zu offiziell nicht unterstützen Ämtern bitte direkt an unser [Forum](https://www.pascom.net/forum).
+Ist Ihr Amt nicht in den unten aufgelisteten Tabellen enthalten, nutzen Sie bitte die Vorlage "Generisches SIP-Amt". Wenden Sie sich bei Fragen zu offiziell nicht unterstützen Ämtern bitte direkt an unser [Forum](https://www.pascom.net/forum).
 {{% /notice %}}
 
-|Vorlage||
-|---|---|
-|amplus|
-|Bergnet|
-|beroNet Gateway|
-|colt|
-|comingolstadt Business|
-|Deutsche Telefon|
-|Easybell Business|
-|envia TEL|
-|equada|
-|EWE|
-|flowroute|
-|FRITZ!Box Gateway| [Details]( {{< ref "/trunk-templates/fritzbox" >}}) |
-|Gradwell|
-|HFO Telecom| [Details]( {{< ref "/trunk-templates/hfo-telecom" >}}) |
-|inexio|
-|M-net SIP-Trunk| [Details]( {{< ref "/trunk-templates/mnet-sip-trunk" >}}) |
-|Netcom Kassel|
-|netplanet|
-|Nexbridge|
-|peoplefone|
-|QSC Ipfonie extended connect|
-|RKOM R-FON|
-|SBB|
-|Seabix voip.direct|
-|SIP Trunk Plus|
-|sipcall.ch|
-|sipgate Basic|
-|sipgate Team|
-|sipgate Trunking|
-|Tele2|
-|TeleData|
-|Telekom SIP-Trunk| [Details]( {{< ref "/trunk-templates/telekom-sip-trunk" >}}) |
-|TelemaxX|
-|Vodafone| nur OnSite! Aktuell in pascom 18 Cloud nicht unterstützt da keine Registrierung möglich! |
-|voipGATE Business|
+### pascom unterstützte Vorlagen
+
+Das pascom Support Team ist Ihnen jederzeit bei Ämtern der nachfolgend gelisteten Amts-Vorlagen behilflich. 
+Es werden nur Ämter der genannten Provider von pascom unterstützt.
+
+|Vorlage/ Provider|verfügbar in|Produkt|OnSite|Cloud|
+|---|---|---|---|---|
+|AVM Gateway| - |[FRITZ!Box]( {{< ref "/trunk-templates/fritzbox" >}})|<i class='fas fa-check'></i> <br/><sub>Kann lokale SIP-Ämter terminieren.</sub>|<i class='fas fa-check'></i> <br/><sub>Kann lokale SIP-Ämter terminieren. Eine direkte Verbindung zur Box z. B. via VPN ist erforderlich.</sub>|
+|BeroNet Gateway| - |BeroBox|<i class='fas fa-check'></i> <br/><sub>Kann alle Analogen und ISDN/ Primärmultiplex Ämter terminieren.</sub>|<i class='fas fa-check'></i> <br/><sub>Kann alle Analogen und ISDN/ Primärmultiplex Ämter terminieren.</sub>|
+|Deutsche Telefon|DE|SIP TK-Anlagenanschluss|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
+|EasyBell|DE|Business|<i class='fas fa-check'></i>|<i class='fas fa-check'></i> <br/><sub>Bedingt durch Provider-seitiges Blacklisting kann es zu kurzen Unterbrechungen kommen.</sub>|
+|[HFO Telekom]( {{< ref "/trunk-templates/hfo-telecom" >}})|DE|Alle|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
+|[M-net]( {{< ref "/trunk-templates/mnet-sip-trunk" >}})|DE (Regional)|SIP Trunk|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
+|peoplefone|CH, DE, AT, PL, LT|Alle|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
+|plusnet (QSC)|DE|Ipfonie extended connect|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
+|R-Kom|DE (Regional)|VoipTrunk|<i class='fas fa-check'></i>|<i class='fas fa-check'></i> <br/><sub>Bei einem Umzug des lokalen Amts zur pascom Cloud ist eine Abstimmung mit dem R-Kom Vertrieb notwendig.</sub>|
+|sipgate|DE|Basic, Trunking, Team|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
+|Telekom|DE|Einzelrufnummern (tel.t-online.de)|<i class='fas fa-check'></i> <br/><sub>Wenn mehrere Rufnummern von unterschiedlichen Standorten konfiguriert werden, ist das Amt des fremden Standorts nicht mehr für Notrufe geeignet. Es wird immer der Standort des Anschlusses, mit dem das Amt registriert wurde, an die Leitstelle übermittelt.</sub> |<i class='fas fa-check'></i><br/><sub>Dieses Amt ist in der Cloud nicht für Notrufe geeignet, da immer der Standort des Anschlusses, mit dem das Amt registriert wurde, an die Leitstelle übermittelt wird.|
+|[Telekom]( {{< ref "/trunk-templates/telekom-sip-trunk" >}})|DE|SIP Trunk|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
+|[Vodafone]( {{< ref "/trunk-templates/vodafone-ngn" >}})|DE, UK, IR, CZ, IT, SP, PT, ... [vollständige Liste](https://www.vodafone.com/content/index/about/where.html)|Alle|<i class='fas fa-check'></i> <br/><sub>Eine besondere Konfiguration, aufgrund des Amts ohne Registrierung, ist notwendig. [Zur Konfiguration]( {{< ref "/trunk-templates/vodafone-ngn" >}})</sub>|<i class='fas fa-times'></i> <br/><sub> Wird derzeit noch nicht unterstützt.</sub>|
+
+
+### Partner unterstützte Vorlagen
+
+Folgende Amts-Vorlagen sind ausschließlich durch unsere nachfolgend genannten Partner unterstützt. 
+Bei Fragen und Problemen zu diesem Amt oder der Vorlage wenden Sie sich bitte direkt an den entsprechenden pascom Partner.
+
+|Vorlage/ Provider|verfügbar in|Produkt|Ansprechpartner|
+|---|---|---|---|
+|Bergnet|DE|Alle|CSP Partner [Bergnet GmbH](https://www.berg.net/)|
+|Seabix|CH|Alle|CSP Partner [Seabix AG](https://www.seabix.com/home)|
+
+
+### Community gepflegte Vorlagen
+
+Folgende Amts-Vorlagen wurden innerhalb der pascom Community im Forum durch aktive Nutzer erarbeitet und getestet. 
+Da diese Vorlagen nicht von pascom selbst gepflegt werden, wenden Sie sich bei Fragen oder Problemen direkt an unser [Community Forum](https://www.pascom.net/forum).
+
+|Vorlage/ Provider|verfügbar in|Produkt|
+|---|---|---|
+|amplus|DE (Regional)|Alle|
+|colt| - |SIP Trunking|
+|comingolstadt Business| - | - |
+|envia TEL| - | - |
+|equada| - | - |
+|EWE| - | - |
+|flowroute| - | - |
+|Gradwell| - | - |
+|inexio| - | - |
+|Netcom Kassel| - | - |
+|netplanet| - | - |
+|Nexbridge| - | - |
+|SBB|RS|Alle|
+|SIP Trunk Plus| - | - |
+|sipcall.ch| - | - |
+|Tele2| - | - |
+|TeleData| - | - |
+|TelemaxX| - | - |
+|voipGATE Business| - | - |
