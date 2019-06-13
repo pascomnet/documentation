@@ -72,7 +72,7 @@ Due to the Cisco SPA 112 gateway limitations that require a Cisco certificate, s
 
 **Overview**
 
-* Implement a wide range of Management Interface and Wizard improvements
+* Implemented a wide range of Management Interface and Setup Wizard improvements
 * Grafana is now designated as "Analytics"
 * Added IPAustria community SIP Provider template and improved a number of other SIP provider templates
 * memberOf can now be read via the UCS Connector
