@@ -11,49 +11,49 @@ pre: <i class="fa fa-file-alt" aria-hidden="true"></i>&nbsp;
 
 ![Supported Versions](pascom_version_support.png "Supported Versions")
 
-### What does supported version mean?
+### What is meant by "Supported Version"?
 
-This is the most recent bugfix release of a pascom server version. For supported versions only pascom guarantees:
+The term supported version relates to the most recent bugfix release of a pascom phone system server version. pascom guarantees the following services for supported versions only:
 
 - Updates, bug fixes and security fixes
 - pascom PREMIUM Support
 - Compatibility of the pascom desktop and mobile clients
-- Compatibility of the server license
+- Compatibility of the server licence
 
 ### Can I still use unsupported versions?
 
-pascom does **not block** the use of unsupported versions **in any form**, but you have to expect the following consequences:
+pascom does **not prevent** the use of unsupported versions **in any way**. However, through using an unsupported version the following consequences could occur:
 
 **1) Updates, bug fixes and security fixes**
 
-Unsupported versions will not receive updates, bug fixes or security fixes. Since the pascom server in many cases must be connected to the Internet because of the pascom clients, the operation of an unsupported server version is negligent.
+Unsupported versions will not receive any updates, bug fixes or security fixes. In many cases, the pascom server must be connected to the internet to communicate with the pascom clients, using an unsupported version would be particularly negligent. 
 
 **2) pascom PREMIUM Support**
 
-Our fee-based PREMIUM support will not give you any help when using unsupported versions and you first have to update to a supported version.
+Accessing our fee-based PREMIUM support services will not be possible. You will first need to to a supported version.
 
-**3) Compatibility of pascom desktop and mobile clients**
+**3) pascom desktop and mobile client compatibility**
 
-The pascom desktop and mobile clients are updated centrally. Since pascom tests the compatibility of the clients only for supported versions, it may be that the clients can no longer connect to the server after an update or some functions are defective. You can disable the auto-update for the desktop client with the **-noUpdate** command-line parameter, but this does not apply to mobile clients distributed by third-party vendors such as Apple or Google.
+Both the pascom desktop and mobile clients are centrally updated. As pascom only tests client compatibility with supported versions, it could be the case that after an update, the clients are no longer able to connect to the pascom server or some functions may not work correctly. You can disable the auto update function for the desktop client using the **-noUpdate** command-line parameter, but this does not apply to mobile clients distributed by third-party vendors such as Apple or Google.
 
-In addition, each user is permanently shown a message that the client is connected to a non-supported server.
+In addition, each user will permanently be shown a message stating that the client is connected to a non-supported server.
 
-**4) Compatibility of the server license**
+**4) Compatibility of the server licence**
 
-For all **pascom 17 servers and older** the licenses are not updated automatically. Here it may be that pascom can not make changes to the license for unsupported server versions. For example, an adjustment of the number of users (= additional purchase) without updating the server version is no longer possible.
+With **pascom 17 servers or older**, the licence update is not performed automatically. Therefore, it could be the case that pascom are unable to make changes to the licence for an unsupported pascom phone system. For example, changing the number of users (= making an additional purchase) is no longer possible without updating the phone system version. 
 
-All **pascom 18 servers and newer** automatically update the license according to the paired subscription on a daily basis. In exceptional cases, an unsupported server version may become incompatible with this license. As a result, after 30 days the server can only accept incoming calls, or license values (for example, number of user counts) are no longer correctly accepted. We try to avoid this but guarantee compatibility only for supported server versions.
+All **pascom 18 servers and newer** automatically update the licence according to the paired subscription on a daily basis. In exceptional cases, an unsupported server version may become incompatible with this licence. As a result, after 30 days the pascom server will only be able to accept incoming calls or licence values (e.g. number of users) no longer being reflected correctly. Naturally, we try to avoid such occurrences but can only guarantee compatibility for supported server versions.
 
 ### Will I be warned before my version's support expires?
 
-About three months before the server version you are using is no longer supported, all pascom clients display a brief message after logging in.
+Yes, approximately three months before the End of Support (EoS) date for the particular server version you are using, all pascom clients will display a brief message after a successful login.
 
 ### What is "Extended Support"?
 
-Due to the change in technology from pascom 17 to 18 and the associated additional expenses for our customers and partners, pascom extends the support for this version by one year and continues to guarantee:
+Due to the technological changes made between pascom 17 to 18 and the resulting potential extra workload / costs to our customers and partners, pascom have extended the support for this phone system version by an additional year and continues to guarantee the following: 
 
 - pascom PREMIUM Support
-- Compatibility of the pascom desktop and mobile clients
+- pascom desktop and mobile clients compatibility
 
 ## Release Notes
 
