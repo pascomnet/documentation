@@ -1,5 +1,5 @@
 ---
-title: Release Notes
+title: Support & Release Notes
 description: Our Release Notes provide an excellent overview of all our asterisk based VoIP phone system release versions.
 weight: 200
 pre: <i class="fa fa-file-alt" aria-hidden="true"></i>&nbsp;
@@ -7,17 +7,57 @@ pre: <i class="fa fa-file-alt" aria-hidden="true"></i>&nbsp;
 
 {{< description >}}
 
+## Supported Server Versions
 
-{{% notice info%}}
-Support: support is only available for the newest version of the pascom 17 *(stable)* and 18 *(current)* phone system servers, pascom clients and the pascom TAPI. 
-{{% /notice %}}
+![Supported Versions](pascom_version_support.png "Supported Versions")
 
-{{% notice warning %}}
-No support: the pascom LTS version will no longer be supported. 
-{{% /notice %}}
+### What does supported version mean?
 
+This is the most recent bugfix release of a pascom server version. For supported versions only pascom guarantees:
 
-## pascom Client
+- Updates, bug fixes and security fixes
+- pascom PREMIUM Support
+- Compatibility of the pascom desktop and mobile clients
+- Compatibility of the server license
+
+### Can I still use unsupported versions?
+
+pascom does **not block** the use of unsupported versions **in any form**, but you have to expect the following consequences:
+
+**1) Updates, bug fixes and security fixes**
+
+Unsupported versions will not receive updates, bug fixes or security fixes. Since the pascom server in many cases must be connected to the Internet because of the pascom clients, the operation of an unsupported server version is negligent.
+
+**2) pascom PREMIUM Support**
+
+Our fee-based PREMIUM support will not give you any help when using unsupported versions and you first have to update to a supported version.
+
+**3) Compatibility of pascom desktop and mobile clients**
+
+The pascom desktop and mobile clients are updated centrally. Since pascom tests the compatibility of the clients only for supported versions, it may be that the clients can no longer connect to the server after an update or some functions are defective. You can disable the auto-update for the desktop client with the **-noUpdate** command-line parameter, but this does not apply to mobile clients distributed by third-party vendors such as Apple or Google.
+
+In addition, each user is permanently shown a message that the client is connected to a non-supported server.
+
+**4) Compatibility of the server license**
+
+For all **pascom 17 servers and older** the licenses are not updated automatically. Here it may be that pascom can not make changes to the license for unsupported server versions. For example, an adjustment of the number of users (= additional purchase) without updating the server version is no longer possible.
+
+All **pascom 18 servers and newer** automatically update the license according to the paired subscription on a daily basis. In exceptional cases, an unsupported server version may become incompatible with this license. As a result, after 30 days the server can only accept incoming calls, or license values (for example, number of user counts) are no longer correctly accepted. We try to avoid this but guarantee compatibility only for supported server versions.
+
+### Will I be warned before my version's support expires?
+
+About three months before the server version you are using is no longer supported, all pascom clients display a brief message after logging in.
+
+### What is "Extended Support"?
+
+Due to the change in technology from pascom 17 to 18 and the associated additional expenses for our customers and partners, pascom extends the support for this version by one year and continues to guarantee:
+
+- pascom PREMIUM Support
+- Compatibility of the pascom desktop and mobile clients
+
+## Release Notes
+
+### pascom Client
 
 |Version|Release Type|Published|
 |-------|------------|---------------:|
@@ -32,7 +72,7 @@ No support: the pascom LTS version will no longer be supported.
 |[Release 42.R34]({{< ref "/release-notes/pascomClient#release-42-r34-17-10-2018">}})| Feature Release | 17.10.2018 |
 
 
-## Current Server Version
+### pascom Server 18
 
 |Version|Release Type|Published|
 |-------|------------|---------------:|
@@ -46,7 +86,7 @@ No support: the pascom LTS version will no longer be supported.
 |[Release 18.00]({{< ref "/release-notes/pascom18#release-18-00-20-09-2018" >}})| Feature Release | 20.09.2018 |
 
 
-## Stable Server Version
+## pascom Server 17
 
 |Version|Release Type|Published|
 |-------|------------|---------------:|
