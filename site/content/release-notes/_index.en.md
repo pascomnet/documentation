@@ -36,7 +36,8 @@ No support: the pascom LTS version will no longer be supported.
 
 |Version|Release Type|Published|
 |-------|------------|---------------:|
-|[Release 18.07]({{< ref "/release-notes/pascom18" >}})| Bugfix Release | 10.04.2019 |
+|[Release 18.08]({{< ref "/release-notes/pascom18" >}})| Bugfix Release | 13.06.2019 |
+|[Release 18.07]({{< ref "/release-notes/pascom18#release-18-07-10-04-2019" >}})| Bugfix Release | 10.04.2019 |
 |[Release 18.06]({{< ref "/release-notes/pascom18#release-18-06-07-03-2019" >}})| Bugfix Release | 07.03.2019 |
 |[Release 18.05]({{< ref "/release-notes/pascom18#release-18-05-26-02-2019" >}})| Bugfix Release | 26.02.2019 |
 |[Release 18.04]({{< ref "/release-notes/pascom18#release-18-04-16-01-2019" >}})| Bugfix Release | 16.01.2019 |

@@ -10,7 +10,8 @@ Folgen Sie bitte unserer detaillierten [Upgrade-Anleitung]({{< ref "/server/upgr
 
 {{% notice warning %}}  
 **Wichtige Hinweise zu diesem Update:**     
-Das lesen von Dateien aus einem SMB-Share wird nicht mehr unterstützt. Stattdessen kann die Import-Datei nun hochgeladen oder von einer URL abgefragt werden.
+Das Lesen von Dateien aus einem SMB-Share wird nicht mehr unterstützt. Stattdessen kann die Import-Datei nun hochgeladen oder von einer URL abgefragt werden.         
+Um mit der Version 18.08 über den Client Faxe versenden zu können wird die Clientversion 51 oder neuer benötigt.
 {{% /notice %}}
 
 ## Highlights
@@ -66,11 +67,78 @@ Wegen fehlender Verschlüsselung für Sprache wie Provisionierung wurde die Unte
 Aufgrund der Einschränkung des cisco SPA 112 Gateways auf ausschließliche Nutzung mit cisco-Zertifikaten wurde die Unterstützung mit pascom 18 eingestellt. 
 
 
-## Release 18.07 (10.04.2019)
+## Release 18.08 (13.06.2019)
 
-{{% notice info %}}
-pascom Cloud Kunden werden am Wochenende, dem 13. und 14. April 2019 auf diese Version geupdated.
-{{%/notice%}}
+**Auf einen Blick**
+
+* Diverse Verbesserungen im Management Interface und Wizard durchgeführt  
+* Grafana wird ab sofort als "Analytics" bezeichnet
+* "IPAustria" community Ämterprofil hinzugefügt und einige Provider-Templates verbessert
+* memberOf kann nun via UCS Connector ausgelesen werden
+* Konfiguration eines eigenen Mailservers und der Versand der Testmail wird jetzt zuverlässig durchgeführt
+* Yealink W60B DECT unterstützt ab sofort 8 Handsets
+* Grandstream HT-802 Provisioning-Template geändert um eine zuverlässige Registrierung zu gewährleisten
+* Anrufe können jetzt über REST API aufgelegt werden
+* Der Connector kann nun optional auch Quellen mit unsicheren Zertifikaten nutzen.
+* Generische SIP-Geräte erhalten nun LDAP-Zugangsdaten um den Zugriff auf das Telefonbuch zu ermöglichen.
+
+**ÄNDERUNGEN:**
+
+- [MD-10898] - Improve validation of phone systems name
+- [MD-11065] - Improve subscription details and alerts
+- [MD-11096] - Can't hangup call via rest api
+- [MD-11111] - management UI improvements and translation
+- [MD-11245] - Add "Mitel" to aastra dect gateway name
+- [MD-11247] - Remove "Extend Network Interface" in interface list
+- [MD-11253] - Improve button layout in wizard
+- [MD-11256] - Weird translation for "Skip configuring voip phone"
+- [MD-11263] - Make description of default role more generic
+- [MD-11265] - Grandstream HT-802 Gateway registration loss after instance reboot
+- [MD-11289] - Need another inbound rule in telekom trunk template
+- [MD-11291] - PUI menu not fully translated
+- [MD-11294] - Change RKom template number determination
+- [MD-11320] - Beronet capi with BF2S02FXS module and pascom 18
+- [MD-11322] - Talk time vs. duration looks invalid
+- [MD-11343] - Add more than 5 heandsets to Yealink W60B DECT
+- [MD-11354] - Add mobile variable to LDAP user import connector profile
+- [MD-11357] - Change Mnet template ringtone generation to SIP only
+- [MD-11359] - Caller name not updated after transfer
+- [MD-11376] - Management UI grafana shows wrong home dashboard sometimes
+- [MD-11395] - Warnings in CSV importer (maybe only cosmetic)
+- [MD-11397] - Remove 'mobydick' from auerswald basic configuration
+- [MD-11400] - Grafana timestamps with wrong timezone
+- [MD-11401] - Instance can't be started after restore of old backup
+- [MD-11403] - Wrong language in instance wizard invitation mail for users
+- [MD-11411] - Setup fails on machines with lots of RAM and small disk
+- [MD-11413] - Add 1.5 GB to edit pbx management form
+- [MD-11427] - Limit amount of asterisk core dumps
+- [MD-11456] - AD connector import failed because of unexpected data set
+- [MD-11458] - Improve csd performance when the license in refreshed
+- [MD-11465] - Memory of instance not accepted anymore after update
+- [MD-11472] - updatesmtp job fails if testmail and custom mailserver are used
+- [MD-11475] - Leader election is unreliable
+- [MD-11483] - Amazon ec2 AMI setup fails because volume is to small
+- [MD-11508] - Aastra/mitel device migration failed because of empty 066dev_id
+- [MD-10605] - Make LDAP groups usable in our UCS connector
+- [MD-11028] - Add possibility to skip "user" part in instance-wizard
+- [MD-11255] - Improve xmppserver code quality
+- [MD-11259] - Introduce place holder image until QR code is shown
+- [MD-11326] - SetupUI translation and improvements
+- [MD-11351] - Different password lengths in client and webui
+- [MD-11356] - Rename new Grafana Feature to "Analytics"
+- [MD-11425] - Expose ldap connection settings for generic sip devices
+- [MD-11432] - Integrate / Update trunk templates for swiss providers
+- [MD-11435] - Integrate "IPAustria" community template
+- [MD-11443] - Register each proxy in the consul with a unique tag
+- [MD-11447] - Tune kamailio settings based on availiable memory 2
+- [MD-11448] - Restart apache in interfaces when logrotate runs
+- [MD-11451] - Adjust global trunk register attempt limit
+- [MD-11453] - Fix advertised rtp ip when using AWS elastic ip or AWS nlb
+- [MD-11457] - Allow self-signed certificates in Fetch-from-Url Connector
+- [MD-11484] - Add htop utility to host system
+
+
+## Release 18.07 (10.04.2019)
 
 **Auf einen Blick**
 
