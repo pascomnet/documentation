@@ -29,44 +29,43 @@ Folgende Amtsvorlagen werden vom pascom Support unterstützt. Um diese Unterstü
 |sipgate|DE|Basic, Trunking, Team|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
 |[Telekom]( {{< ref "/trunk-templates/telekom-sip-trunk" >}})|DE|Einzelrufnummern (tel.t-online.de)|<i class='fas fa-check'></i> <br/><sub>Wenn mehrere Rufnummern von unterschiedlichen Standorten konsolidiert werden, ist das Amt des fremden Standorts nicht mehr für Notrufe geeignet. Es wird immer der Standort des Anschlusses, mit dem das Amt registriert wurde, an die Leitstelle übermittelt.</sub> |<i class='fas fa-check'></i><br/><sub>Dieses Amt ist in der Cloud nicht für Notrufe geeignet, da immer der Standort des Anschlusses, mit dem das Amt registriert wurde, an die Leitstelle übermittelt wird.|
 |[Telekom]( {{< ref "/trunk-templates/telekom-sip-trunk" >}})|DE|SIP Trunk|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
-|[Vodafone]( {{< ref "/trunk-templates/vodafone-ngn" >}})|DE, UK, IR, CZ, IT, SP, PT, ... [vollständige Liste](https://www.vodafone.com/content/index/about/where.html)|Alle|<i class='fas fa-check'></i> <br/><sub>Eine besondere Konfiguration ist aufgrund des Amts ohne Registrierung notwendig. [Zur Konfiguration]( {{< ref "/trunk-templates/vodafone-ngn" >}})</sub>|<i class='fas fa-times'></i> <br/><sub> Wird derzeit noch nicht unterstützt.</sub>|
+|[Vodafone]( {{< ref "/trunk-templates/vodafone-ngn" >}})|DE, UK, IR, CZ, IT, SP, PT, ... [vollständige Liste](https://www.vodafone.com/content/index/about/where.html)|Alle|<i class='fas fa-### Partner unterstützte Vorlagen
+                                                                                                                                                                                              
+                                                                                                                                                                                              Folgende Amts-Vorlagen sind ausschließlich durch unsere nachfolgend genannten Partner unterstützt. 
+                                                                                                                                                                                              Bei Fragen und Problemen zu diesem Amt oder der Vorlage wenden Sie sich bitte direkt an den entsprechenden pascom Partner.
+                                                                                                                                                                                              
+                                                                                                                                                                                              |Vorlage/ Provider|Ansprechpartner|
+                                                                                                                                                                                              |---|---|
+                                                                                                                                                                                              |Bergnet|CSP Partner [Bergnet GmbH](https://www.berg.net/)|
+                                                                                                                                                                                              |Seabix|CSP Partner [Seabix AG](https://www.seabix.com/home)|
+                                                                                                                                                                                              
+                                                                                                                                                                                              
+                                                                                                                                                                                              ### Community gepflegte Vorlagen
+                                                                                                                                                                                              
+                                                                                                                                                                                              Folgende Amts-Vorlagen wurden innerhalb der pascom Community im Forum durch aktive Nutzer erarbeitet und getestet. 
+                                                                                                                                                                                              Da diese Vorlagen nicht von pascom selbst gepflegt werden, wenden Sie sich bei Fragen oder Problemen direkt an unser [Community Forum](https://www.pascom.net/forum).
+                                                                                                                                                                                              
+                                                                                                                                                                                              |Vorlage/ Provider|
+                                                                                                                                                                                              |---|
+                                                                                                                                                                                              |amplus|
+                                                                                                                                                                                              |colt|
+                                                                                                                                                                                              |comingolstadt Business|
+                                                                                                                                                                                              |envia TEL|
+                                                                                                                                                                                              |equada|
+                                                                                                                                                                                              |EWE|
+                                                                                                                                                                                              |flowroute|
+                                                                                                                                                                                              |Gradwell|
+                                                                                                                                                                                              |inexio|
+                                                                                                                                                                                              |IP Austria|
+                                                                                                                                                                                              |Netcom Kassel|
+                                                                                                                                                                                              |netplanet|
+                                                                                                                                                                                              |Nexbridge|
+                                                                                                                                                                                              |SBB|
+                                                                                                                                                                                              |SIP Trunk Plus|
+                                                                                                                                                                                              |sipcall.ch|
+                                                                                                                                                                                              |Tele2|
+                                                                                                                                                                                              |TeleData|
+                                                                                                                                                                                              |TelemaxX|
+                                                                                                                                                                                              |voipGATE Business|check'></i> <br/><sub>Eine besondere Konfiguration ist aufgrund des Amts ohne Registrierung notwendig. [Zur Konfiguration]( {{< ref "/trunk-templates/vodafone-ngn" >}})</sub>|<i class='fas fa-times'></i> <br/><sub> Wird derzeit noch nicht unterstützt.</sub>|
 
 
-### Partner unterstützte Vorlagen
-
-Folgende Amts-Vorlagen sind ausschließlich durch unsere nachfolgend genannten Partner unterstützt. 
-Bei Fragen und Problemen zu diesem Amt oder der Vorlage wenden Sie sich bitte direkt an den entsprechenden pascom Partner.
-
-|Vorlage/ Provider|Ansprechpartner|
-|---|---|
-|Bergnet|CSP Partner [Bergnet GmbH](https://www.berg.net/)|
-|Seabix|CSP Partner [Seabix AG](https://www.seabix.com/home)|
-
-
-### Community gepflegte Vorlagen
-
-Folgende Amts-Vorlagen wurden innerhalb der pascom Community im Forum durch aktive Nutzer erarbeitet und getestet. 
-Da diese Vorlagen nicht von pascom selbst gepflegt werden, wenden Sie sich bei Fragen oder Problemen direkt an unser [Community Forum](https://www.pascom.net/forum).
-
-|Vorlage/ Provider|
-|---|
-|amplus|
-|colt|
-|comingolstadt Business|
-|envia TEL|
-|equada|
-|EWE|
-|flowroute|
-|Gradwell|
-|inexio|
-|IP Austria|
-|Netcom Kassel|
-|netplanet|
-|Nexbridge|
-|SBB|
-|SIP Trunk Plus|
-|sipcall.ch|
-|Tele2|
-|TeleData|
-|TelemaxX|
-|voipGATE Business|
