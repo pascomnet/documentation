@@ -10,7 +10,7 @@ pre: <i class="fa fa-copy" aria-hidden="true"></i>&nbsp;
 {{< description >}}
  
 {{% notice warning %}}
-The pascom Support Team can only offer support for Trunks which have been created using a Template. Should your SIP trunk not be listed, please use the "Generic SIP Trunk" template. Should you have questions regarding officially not supported trunks, please refer to our [Forum](https://www.pascom.net/forum).
+Should your SIP trunk not be listed, please use the "Generic SIP Trunk" template. Should you have questions regarding officially not supported trunks, please refer to our [Forum](https://www.pascom.net/forum).
 {{% /notice %}}
 
 ### pascom Supported Trunk Templates
