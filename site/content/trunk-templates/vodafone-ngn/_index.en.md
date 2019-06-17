@@ -4,7 +4,7 @@ description: How to correctly configure and manage your Vodafone NGN trunk.
 weight: 50
 ---
 
-{{< doctype "self"  >}}
+{{< doctype "self" >}}
 
 {{< description >}}
 
@@ -36,12 +36,12 @@ Inbound traffic from the Vodafone SBC must be forwarded onto the pascom phone sy
 Conversely, outbound traffic must be modified per NAT, as the Vodafone SBC only accepts data from the external IP from port 5069 to port 5060 tcp of the connection.
 Finally, you must consider your phone system settings in terms of the range of RTP ports so that these packets are transmitted from the phone system via the firewall to the SBC. 
 
-![Vodafone Port-Forwarding](Vodafone_NGN_Portforwarding.png)
+![Vodafone Port-Forwarding](Vodafone_NGN_Portforwarding.en.png)
 
 
 ## Setup
 
-Under {{< ui-button "Gateways" >}} > {{< ui-button "Trunks" >}} > {{< ui-button "add" >}, add a new Vodafone NGN trunk. This will take you to the Provider Database where you can filter directly for *Vodafone* and the select the template **Vodafone NGN Trunk**. Complete the template using the account data you received.
+Under {{< ui-button "Gateways" >}} > {{< ui-button "Trunks" >}} > {{< ui-button "add" >}}, add a new Vodafone NGN trunk. This will take you to the Provider Database where you can filter directly for *Vodafone* and the select the template **Vodafone NGN Trunk**. Complete the template using the account data you received.
 
 |Variable|Description|
 |---|---|

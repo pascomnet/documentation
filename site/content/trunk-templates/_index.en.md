@@ -5,6 +5,8 @@ weight: 70
 pre: <i class="fa fa-copy" aria-hidden="true"></i>&nbsp;
 ---
 
+{{< doctype "both" >}}
+
 {{< description >}}
  
 {{% notice warning %}}
