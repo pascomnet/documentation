@@ -13,6 +13,39 @@ Ab Release 46.R152 wird macOS 10.12 vorausgesetzt
 {{% /notice %}}
 
 
+## Release 52.R428 (18.06.2019)
+
+**Auf einen Blick**
+
+- Alle Plattformen: Die App sperrt die UI nicht mehr während Daten nachgeladen werden. Dies verbessert insbesondere auf Mobilgeräten die Reaktionszeit
+- Windows: Das verwendete Renderbackend lässt sich nun direkt in den Client-Einstellungen umschalten
+- Android: Die App ist jetzt als 32bit / 64bit "Universal APK" verfügbar
+- Android / iOS: Notrufe an die 110 und 112 werden nun immer direkt über das Mobiltelefon (GSM) aufgebaut
+
+**ÄNDERUNGEN:**
+
+- [CL-11] - Wrong call state if second call via hardware phone
+- [CL-31] - Remember selected journal filter in client
+- [CL-84] - Ensure 64bit compatibility in android client for play store
+- [CL-469] - Copy private phonebook entry to global company phonebook
+- [CL-492] - Do not block the client UI by default if a cmd is sent
+- [CL-511] - Switch the Rendering mode directly in the client
+- [CL-531] - No popup notification if chattab is open in background on mobile
+- [CL-533] - Close right click menu in phonebook details after click on different area
+- [CL-544] - Convert capital letters to lower case in login mask
+- [CL-554] - Force openglSoftware on Intel G41 express
+- [CL-561] - Mute in 3 party conference causes missing audio for all participants
+- [CL-569] - Get rid of "libpng warning: iCCP: known incorrect sRGB profile" warnings
+- [CL-572] - Chat Notification does not immediately close if you click on it
+- [CL-601] - Enforce mobile client emergency call via GSM
+- [CL-602] - Update cocoasudo version in macOS client
+- [CL-627] - pascom Client on iOS looses pairing after update
+- [CL-631] - Phonebook entry details are not showing any details in the client
+- [CL-649] - No chat notification sent if chat is already open
+- [CL-650] - No chat notification sent if client was closed
+- [CL-651] - Remove server version deprecated warning again
+
+
 ## Release 51.R365 (27.05.2019)
 
 **Auf einen Blick**
