@@ -18,7 +18,7 @@ From Release 46.R152 macOS 10.12 is the minimum requirement
 **Overview**
 
 - All platforms: The app no longer locks the UI during data reloads. This improves usability and reaction times on mobile devices in particular
-- Windows: The render back to be used can now be switched directly within the client settings
+- Windows: The renderbackend to be used can now be switched directly within the client settings
 - Android: The Android app is now available as a 32bit / 64bit "Universal APK"
 - Android / iOS: Emergency calls to 110 and 112 will now always be made via the mobile phone itself using GSM
 

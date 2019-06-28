@@ -78,7 +78,8 @@ Wegen des Technologiewechsels von pascom 17 auf 18 und den damit verbundenen Meh
 
 |Version|Release Type|Veröffentlichung|
 |-------|------------|---------------:|
-|[Release 18.08]({{< ref "/release-notes/pascom18" >}})| Bugfix Release | 13.06.2019 |
+|[Release 18.09]({{< ref "/release-notes/pascom18" >}})| Bugfix Release | 28.06.2019 |
+|[Release 18.08]({{< ref "/release-notes/pascom18#release-18-08-13-06-2019" >}})| Bugfix Release | 13.06.2019 |
 |[Release 18.07]({{< ref "/release-notes/pascom18#release-18-07-10-04-2019" >}})| Bugfix Release | 10.04.2019 |
 |[Release 18.06]({{< ref "/release-notes/pascom18#release-18-06-07-03-2019" >}})| Bugfix Release | 07.03.2019 |
 |[Release 18.05]({{< ref "/release-notes/pascom18#release-18-05-26-02-2019" >}})| Bugfix Release | 26.02.2019 |

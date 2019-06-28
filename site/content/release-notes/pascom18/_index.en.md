@@ -67,6 +67,20 @@ Due to non-existing encryption for voice and provisioning, Siemens Unify optiPoi
 Due to the Cisco SPA 112 gateway limitations that require a Cisco certificate, support has been discontinued in pascom 18.
 
 
+## Release 18.09 (28.06.2019)
+
+**Overview**
+
+- Improved re-pairing process in the case of licence problems
+- Migrations connected to the Yealink W60B are now performed correctly
+- Improved reliability of the trunk registration process after a trunk disconnect
+
+**MODIFICATIONS:**
+
+MD-11501 - you cannot re-pair a license if no license is configured in csd
+MD-11552 - Yealink W60B DECT migration error "Port count mismatch"
+MD-11538 - Retry asterisk sip trunk registration periodically
+
 
 ## Release 18.08 (13.06.2019)
 
