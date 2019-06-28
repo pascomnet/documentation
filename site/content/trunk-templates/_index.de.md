@@ -29,7 +29,7 @@ Folgende Amtsvorlagen werden vom pascom Support unterstützt. Um diese Unterstü
 |plusnet (QSC)|DE|Ipfonie extended connect|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
 |R-Kom|DE (Regional)|VoipTrunk|<i class='fas fa-check'></i>|<i class='fas fa-check'></i> <br/><sub>Bei einem Umzug des lokalen Amts zur pascom Cloud ist eine Abstimmung mit dem R-Kom Vertrieb notwendig.</sub>|
 |sipgate|DE|Basic, Trunking, Team|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
-|[Telekom]( {{< ref "/trunk-templates/telekom-sip-trunk" >}})|DE|Einzelrufnummern (tel.t-online.de)|<i class='fas fa-check'></i> <br/><sub>Wenn mehrere Rufnummern von unterschiedlichen Standorten konsolidiert werden, ist das Amt des fremden Standorts nicht mehr für Notrufe geeignet. Es wird immer der Standort des Anschlusses, mit dem das Amt registriert wurde, an die Leitstelle übermittelt.</sub> |<i class='fas fa-check'></i><br/><sub>Dieses Amt ist in der Cloud nicht für Notrufe geeignet, da immer der Standort des Anschlusses, mit dem das Amt registriert wurde, an die Leitstelle übermittelt wird.|
+|[Telekom]( {{< ref "/trunk-templates/telekom-sip-trunk" >}})|DE|Einzelrufnummern (tel.t-online.de)|<i class='fas fa-check'></i> <br/><sub>Wenn mehrere Rufnummern von unterschiedlichen Standorten konsolidiert werden, ist das Amt des fremden Standorts nicht mehr für [Notrufe]({{< ref "/trunks/emergencies" >}}) geeignet. Es wird immer der Standort des Anschlusses, mit dem das Amt registriert wurde, an die Leitstelle übermittelt.</sub> |<i class='fas fa-check'></i><br/><sub>Dieses Amt ist in der Cloud nicht für [Notrufe]({{< ref "/trunks/emergencies" >}}) geeignet, da immer der Standort des Anschlusses, mit dem das Amt registriert wurde, an die Leitstelle übermittelt wird.|
 |[Telekom]( {{< ref "/trunk-templates/telekom-sip-trunk" >}})|DE|SIP Trunk|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
 |[Vodafone]( {{< ref "/trunk-templates/vodafone-ngn" >}})|DE, UK, IR, CZ, IT, SP, PT, ... [vollständige Liste](https://www.vodafone.com/content/index/about/where.html)|Alle|<i class='fas fa-check'></i> <br/><sub>Eine besondere Konfiguration ist aufgrund des Amts ohne Registrierung notwendig. [Zur Konfiguration]( {{< ref "/trunk-templates/vodafone-ngn" >}})</sub>|<i class='fas fa-times'></i> <br/><sub> Wird derzeit noch nicht unterstützt.</sub>|
 
@@ -62,6 +62,7 @@ Da diese Vorlagen nicht von pascom selbst gepflegt werden, wenden Sie sich bei F
 |Gradwell|
 |inexio|
 |IP Austria|
+|iway.ch|
 |Netcom Kassel|
 |netplanet|
 |Nexbridge|
