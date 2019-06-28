@@ -77,9 +77,9 @@ Due to the Cisco SPA 112 gateway limitations that require a Cisco certificate, s
 
 **MODIFICATIONS:**
 
-MD-11501 - you cannot re-pair a license if no license is configured in csd
-MD-11552 - Yealink W60B DECT migration error "Port count mismatch"
-MD-11538 - Retry asterisk sip trunk registration periodically
+* MD-11501 - you cannot re-pair a license if no license is configured in csd
+* MD-11552 - Yealink W60B DECT migration error "Port count mismatch"
+* MD-11538 - Retry asterisk sip trunk registration periodically
 
 
 ## Release 18.08 (13.06.2019)
