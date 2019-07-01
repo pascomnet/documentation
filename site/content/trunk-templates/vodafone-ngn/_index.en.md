@@ -36,7 +36,7 @@ Inbound traffic from the Vodafone SBC must be forwarded onto the pascom phone sy
 Conversely, outbound traffic must be modified per NAT, as the Vodafone SBC only accepts data from the external IP from port 5069 to port 5060 tcp of the connection.
 Finally, you must consider your phone system settings in terms of the range of RTP ports so that these packets are transmitted from the phone system via the firewall to the SBC. 
 
-![Vodafone Port-Forwarding](vodafone_ngn_portforwarding.en.png)
+![Vodafone Port-Forwarding](vodafone_ngn_forwarding.en.png)
 
 
 ## Setup
