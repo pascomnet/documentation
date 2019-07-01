@@ -37,7 +37,7 @@ Eingehender Verkehr vom SBC der Vodafone muss an die IP-Adresse der pascom Telef
 Umgekehrt muss ausgehender Verkehr per NAT modifiziert werden, da der SBC der Vodafone nur Daten von der externen IP von Port 5069 auf Port 5060 TCP des Access akzeptiert.
 Abgehend sind Ihre Einstellungen der Telefonanlage mit dem Bereich der RTP Ports zu berücksichtigen, damit diese Pakete von der Telefonanlage über die Firewall zum SBC übertragen werden. 
 
-![Vodafone Port-Forwarding](Vodafone_NGN_Portforwarding.png)
+![Vodafone Port-Forwarding](vodafone_ngn_portforwarding.png)
 
 
 ## Einrichtung
