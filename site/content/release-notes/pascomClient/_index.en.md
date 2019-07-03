@@ -13,6 +13,32 @@ From Release 46.R152 macOS 10.12 is the minimum requirement
 {{% /notice %}}
 
 
+## Release 53.R453 (03.07.2019)
+
+**Overview**
+
+- Android: Improved locked screen call handling
+- iOS: If DND is active on an iOS device, calls will no longer be routed to the device and handled in accordance to the FollowMe settings
+- Desktop: Despite a set --noUpdate-Flag, an update will be downloaded but not installed. The client will now only display an notification that a new version is available
+- Windows: For systems with Intel graphics cards, the Rendering Backend Angle is now used per default
+
+**MODIFICATIONS:**
+
+- [CL-260] - Broken attended transfer with locked screen on android
+- [CL-354] - Check iPhone "DND" mode *before* setting up an incoming call
+- [CL-500] - Message badge is not reset on iOS if no Chats are opened
+- [CL-515] - Prevent Screen Locking while phoning on android
+- [CL-528] - Proximity Screen Turn Off is not handled correctly on android
+- [CL-546] - Show unix path as example action app path on macOS/Linux 
+- [CL-549] - Add a red background again to Buttonless iOS-Devices
+- [CL-584] - Setup "Angle" as default rendering for all Intel GPUs
+- [CL-605] - FindPhonebookEntry is sent for journal without phonebook entry 
+- [CL-653] - pascom Client prevents screen locking on Android if no passcode or similar locking mechanism is defined
+- [CL-657] - Volume too low on iOS handsfree speaker
+- [CL-658] - Bump target api level to 28 on android client
+- [CL-660] - pascom Client downloads update despite NO_UPDATE is set
+
+
 ## Release 52.R428 (18.06.2019)
 
 **Overview**

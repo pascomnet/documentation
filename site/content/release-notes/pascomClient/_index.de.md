@@ -12,6 +12,31 @@ Für weitere Informationen zu unserem pascom Client lesen Sie bitte unsere ausf�
 Ab Release 46.R152 wird macOS 10.12 vorausgesetzt
 {{% /notice %}}
 
+## Release 53.R453 (03.07.2019)
+
+**Auf einen Blick**
+
+- Android: Anrufhandling bei gesperrtem Bildschirm verbessert
+- iOS: Wenn der DND-Modus von iOS aktiv ist, wird der Anruf direkt abgelehnt
+- Desktop: Ein Update wurde trotz gesetztem --noUpdate-Flag heruntergeladen, aber nicht installiert. Der Client gibt nun nur noch einen Hinweis, dass eine neue Version zur Verfügung steht
+- Windows: Auf Systemen mit Intel-Grafikkarte wird nun standardmäßing Angle als Rendering-Backend verwendet
+
+**ÄNDERUNGEN:**
+
+- [CL-260] - Broken attended transfer with locked screen on android
+- [CL-354] - Check iPhone "DND" mode *before* setting up an incoming call
+- [CL-500] - Message badge is not reset on iOS if no Chats are opened
+- [CL-515] - Prevent Screen Locking while phoning on android
+- [CL-528] - Proximity Screen Turn Off is not handled correctly on android
+- [CL-546] - Show unix path as example action app path on macOS/Linux 
+- [CL-549] - Add a red background again to Buttonless iOS-Devices
+- [CL-584] - Setup "Angle" as default rendering for all Intel GPUs
+- [CL-605] - FindPhonebookEntry is sent for journal without phonebook entry 
+- [CL-653] - pascom Client prevents screen locking on Android if no passcode or similar locking mechanism is defined
+- [CL-657] - Volume too low on iOS handsfree speaker
+- [CL-658] - Bump target api level to 28 on android client
+- [CL-660] - pascom Client downloads update despite NO_UPDATE is set
+
 
 ## Release 52.R428 (18.06.2019)
 
