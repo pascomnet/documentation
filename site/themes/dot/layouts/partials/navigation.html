@@ -25,13 +25,13 @@
         </a>
         <div class="dropdown-menu" >
           {{ range .Children }}
-          <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
+          <a class="dropdown-item" href="{{ .Permalink | absURL }}">{{ .Name }}</a>
           {{ end }}
         </div>
       </li>
       {{ else }}
       <li class="nav-item">
-        <a class="nav-link text-dark" href="{{ .URL | absURL }}">{{ .Name }}</a>
+        <a class="nav-link text-dark" href="{{ .Permalink | absURL }}">{{ .Name }}</a>
       </li>
       {{ end }}
       {{ end }}
@@ -46,10 +46,10 @@
       {{ if eq $translation.Lang .Lang }}
       {{ $selected := false }}
       {{ if eq $pageLang .Lang}}
-      <option id="{{ $translation.Language }}" value="{{ $translation.URL }}" selected>{{ .LanguageName }}
+      <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}
       </option>
       {{ else }}
-      <option id="{{ $translation.Language }}" value="{{ $translation.URL }}">{{ .LanguageName }}</option>
+      <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
       {{ end }}
       {{ end }}
       {{ end }}
