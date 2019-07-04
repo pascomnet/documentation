@@ -4,6 +4,20 @@ weight: 20
 description: We offer all Free, Basic and Premium customers completely free pascom.cloud phone system hosting. Simple, Secure, Fast - start free now.
 ---
 
+{{% tabs %}}
+  {{% tab "first" %}}
+   This is first tab
+  {{% /tab %}}
+
+  {{% tab "second" %}}
+  this is second tab
+  {{% /tab %}}
+
+  {{% tab "third" %}}
+  this is third tab
+  {{% /tab %}}
+{{% tabs %}}
+
 {{< doctype "cloud" >}}
  
 {{< description >}}

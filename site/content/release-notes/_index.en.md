@@ -1,8 +1,9 @@
 ---
 title: Support & Release Notes
 description: Our Release Notes provide an excellent overview of all our asterisk based VoIP phone system release versions.
-weight: 200
-pre: <i class="fa fa-file-alt" aria-hidden="true"></i>&nbsp;
+type: "pages"
+icon: "fa fa-file-alt"
+weight: 14
 ---
 
 {{< description >}}

@@ -1,13 +1,12 @@
 ---
 title: Trunk Templates
 description: The pascom phone system includes a SIP provider database including a number of templates for creating SIP, analog and ISDN trunks. These templates are designed to support admins with the trunk setup and automatically add the appropriate call rules.
-weight: 70
-pre: <i class="fa fa-copy" aria-hidden="true"></i>&nbsp;
+type: "pages"
+icon: "fa fa-copy"
+weight: 9
 ---
 
 {{< doctype "both" >}}
-
-{{< description >}}
  
 {{% notice warning %}}
 Should your SIP trunk not be listed, please use the "Generic SIP Trunk" template. Should you have questions regarding officially not supported trunks, please refer to our [Forum](https://www.pascom.net/forum).

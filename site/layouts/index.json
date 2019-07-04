@@ -2,7 +2,7 @@
 {{- if ne $page.Type "json" -}}
 {{- if and $index (gt $index 0) -}},{{- end }}
 {
-	"objectID": "{{ .UniqueID }}",
+	"objectID": "{{ .File.UniqueID }}",
 	"url": "{{ $page.Permalink }}",
 	"title": "{{ htmlEscape $page.Title}}",
 	"description": "{{ htmlEscape .Description}}",

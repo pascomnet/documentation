@@ -1,10 +1,7 @@
 ﻿---
 title: Gateways
 description: Nutzen Sie Gateways für die Integration von ISDN- und Analoger-Technologien wie Fax-Geräte oder ISDN-Anschlüsse
-weight: 50
-pre: <i class="fa fa-hdd" aria-hidden="true"></i>&nbsp;
+icon: "fa fa-hdd"
+type : "pages"
+weight : 7
 ---
-
-{{< description >}}
- 
-{{%children description="true" %}}
