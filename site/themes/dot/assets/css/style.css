@@ -22,7 +22,7 @@ h4,
 h5,
 h6 {
   color: var(--text-color-dark);
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'yanone kaffeesatz', sans-serif;
   font-weight: 700;
   line-height: 1.2;
 }
