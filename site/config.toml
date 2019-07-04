@@ -1,4 +1,4 @@
-baseURL = "https://pascom.netlify.com/"
+baseURL = "https://www.pascom.net/doc"
 theme = "dot"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
@@ -22,25 +22,21 @@ whiteColor = "#ffffff"
   languageName = "En"
   weight = 1
   languageCode = "en-us"
-  title = "PASCOM"
+  title = "pascom Documentation"
   dateFormat = "2 January 2006"
   home = "Home"
   logo = "images/logo_white.png"
   logoAlt = "images/logo.png"
-  copyright = "Copyright © 2019 a theme by themefisher.com"
+  copyright = "Copyright © 2019 pascom.net"
 
     # navigation
-    [Languages.en.menu]
-    
-      [[Languages.en.menu.main]]
-        weight = 2
-        name = "Faq"
-        url = "en/faq"
-        
-      [[Languages.en.menu.main]]
-        weight = 2
-        name = "contact"
-        url = "en/contact"
+    #[Languages.en.menu]
+    #
+    #    
+    #  [[Languages.en.menu.main]]
+    #    weight = 2
+    #    name = "contact"
+    #    url = "en/contact"
       
 
     # algolia
@@ -50,27 +46,21 @@ whiteColor = "#ffffff"
 
     # banner
     [Languages.en.params.banner]
-      title = "Support Center & Knowledge base"
-      description = "Find advice and answers from our support team fast or get in touch"
-      image = "images/banner.jpg"
-      placeholder = "Have a question? Just ask here or enter terms"
+      title = "Documentation"
+      description = "pascom Product Documentation and Release Notes"
 
     # Topics
     [Languages.en.params.topics]
-      title = "Find your answer by subject"
+      title = "Categories"
     
     # call to action
     [Languages.en.params.cta]
       enable = true
       title = "Didn't find an answer to your question?"
-      description = "Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam."
-      btnText = "contact us"
-      btnURL = "en/contact"
+      description = "Ask our support forum. We are here to help!"
+      btnText = "Ask Our Support Forum"
+      btnURL = "https://www.pascom.net/forum/tags/english"
 
-    # contact
-    [Languages.en.params.contact]
-      title = "Got Any Questions"
-      content = "Submit the form and confirm your email address at <a class='text-primary' href='https://formspree.io/'>Formspree</a> Then add the following lines to contact page YAML Front Matter."
 
     # footer social icon
     [[Languages.en.socialIcon]]
@@ -94,24 +84,19 @@ whiteColor = "#ffffff"
   languageCode = "de"
   title = "PASCOM"
   dateFormat = "2 January 2006"
-  home = "Aidez-moi"
+  home = "Home"
   logo = "images/logo_white.png"
   logoAlt = "images/logo.png"
-  copyright = "Copyright © 2019 a theme by themefisher.com"
+  copyright = "Copyright © 2019 pascom.net"
 
     # navigation
-    [Languages.de.menu]
-    
-      [[Languages.de.menu.main]]
-        weight = 2
-        name = "Faq"
-        url = "de/faq"
+    #[Languages.de.menu]
+    # 
 
-      [[Languages.de.menu.main]]
-        weight = 2
-        name = "contact"
-        url = "de/contact"
-
+    #  [[Languages.de.menu.main]]
+    #    weight = 2
+    #    name = "contact"
+    #    url = "de/contact"
 
 
     # algolia
@@ -122,28 +107,23 @@ whiteColor = "#ffffff"
 
     # banner
     [Languages.de.params.banner]
-      title = "Comment pouvons nous aider?"
-      description = "Trouvez rapidement des conseils et des réponses auprès de notre équipe d'assistance ou contactez-nous."
-      image = "images/banner.jpg"
-      placeholder = "Have a question? Just ask here or enter terms"
+      title = "Dokumentation"
+      description = "pascom Produkt Dokumentation und Release Notes"
 
-    # pages
-    [Languages.de.params.pages]
-      title = "Parcourir tous les sujets"
+        # Topics
+    [Languages.de.params.topics]
+      title = "Kategorien"
+  
     
     # call to action
     [Languages.de.params.cta]
       enable = true
-      title = "Vous n'avez pas trouvé de réponse à votre question?"
-      description = "Contactez-nous pour plus de détails sur les services supplémentaires et la tarification du travail personnalisé"
-      btnText = "Contactez nous"
-      btnURL = "de/contact/"
+      title = "Keine Antwort auf Ihre Frage gefunden?"
+      description = "Fragen Sie unser Support Forum. Wir sind hier um zu helfen!"
+      btnText = "Support Forum Fragen"
+      btnURL = "https://www.pascom.net/forum"
 
-    # contact
-    [Languages.de.params.contact]
-      title = "Vous avez des questions"
-      content = "Envoyez le formulaire et confirmez votre adresse e-mail à l'adresse <a class='text-primary' href='https://formspree.io/'>Formspree</a> Ajoutez ensuite les lignes suivantes pour contacter la page YAML Front Matter."
-
+  
     # footer social icon
     [[Languages.de.socialIcon]]
       icon = "fab fa-facebook-f"
