@@ -16,7 +16,7 @@ weight: 14
 
 The term supported version relates to the most recent bugfix release of a pascom phone system server version. pascom guarantees the following services for supported versions only:
 
-- Updates, bug fixes and security fixes
+- Updates, bug fixes, and security fixes
 - pascom PREMIUM Support
 - Compatibility of the pascom desktop and mobile clients
 - Compatibility of the server licence
@@ -25,23 +25,23 @@ The term supported version relates to the most recent bugfix release of a pascom
 
 pascom does **not prevent** the use of unsupported versions **in any way**. However, through using an unsupported version the following consequences could occur:
 
-**1) Updates, bug fixes and security fixes**
+**1) Updates, bug fixes, and security fixes**
 
 Unsupported versions will not receive any updates, bug fixes or security fixes. In many cases, the pascom server must be connected to the internet to communicate with the pascom clients, using an unsupported version would be particularly negligent. 
 
 **2) pascom PREMIUM Support**
 
-Accessing our fee-based PREMIUM support services will not be possible. You will first need to to a supported version.
+Accessing our fee-based PREMIUM support services will not be possible. You will first need to update to a supported version.
 
 **3) pascom desktop and mobile client compatibility**
 
-Both the pascom desktop and mobile clients are centrally updated. As pascom only tests client compatibility with supported versions, it could be the case that after an update, the clients are no longer able to connect to the pascom server or some functions may not work correctly. You can disable the auto update function for the desktop client using the **-noUpdate** command-line parameter, but this does not apply to mobile clients distributed by third-party vendors such as Apple or Google.
+Both the pascom desktop and mobile clients are centrally updated. As pascom only tests client compatibility with supported versions, it could be the case that after an update, the clients are no longer able to connect to the pascom server or some functions may not work correctly. You can disable the auto-update function for the desktop client using the **-noUpdate** command-line parameter, but this does not apply to mobile clients distributed by third-party vendors such as Apple or Google.
 
 In addition, each user will permanently be shown a message stating that the client is connected to a non-supported server.
 
 **4) Compatibility of the server licence**
 
-With **pascom 17 servers or older**, the licence update is not performed automatically. Therefore, it could be the case that pascom are unable to make changes to the licence for an unsupported pascom phone system. For example, changing the number of users (= making an additional purchase) is no longer possible without updating the phone system version. 
+With **pascom 17 servers or older**, the licence update is not performed automatically. Therefore, it could be the case that pascom is unable to make changes to the licence for an unsupported pascom phone system. For example, changing the number of users (= making an additional purchase) is no longer possible without updating the phone system version. 
 
 All **pascom 18 servers and newer** automatically update the licence according to the paired subscription on a daily basis. In exceptional cases, an unsupported server version may become incompatible with this licence. As a result, after 30 days the pascom server will only be able to accept incoming calls or licence values (e.g. number of users) no longer being reflected correctly. Naturally, we try to avoid such occurrences but can only guarantee compatibility for supported server versions.
 
@@ -62,7 +62,9 @@ Due to the technological changes made between pascom 17 to 18 and the resulting 
 
 |Version|Release Type|Published|
 |-------|------------|---------------:|
-|[Release 51.R365]({{< ref "/release-notes/pascomClient">}})| Bugfix Release | 27.05.2019 |
+|[Release 53.R453]({{< ref "/release-notes/pascomClient">}})| Bugfix Release | 03.07.2019 |
+|[Release 52.R428]({{< ref "/release-notes/pascomClient#release-52-r428-18-06-2019">}})| Bugfix Release | 18.06.2019 |
+|[Release 51.R365]({{< ref "/release-notes/pascomClient#release-51-r365-27-05-2019">}})| Bugfix Release | 27.05.2019 |
 |[Release 50.R318]({{< ref "/release-notes/pascomClient#release-50-r318-24-04-2019">}})| Bugfix Release | 24.04.2019 |
 |[Release 49.R265]({{< ref "/release-notes/pascomClient#release-49-r265-21-03-2019">}})| Bugfix Release | 21.03.2019 |
 |[Release 48.R196]({{< ref "/release-notes/pascomClient#release-48-r196-08-03-2019">}})| Bugfix Release | 08.03.2019 |
@@ -77,7 +79,8 @@ Due to the technological changes made between pascom 17 to 18 and the resulting 
 
 |Version|Release Type|Published|
 |-------|------------|---------------:|
-|[Release 18.08]({{< ref "/release-notes/pascom18" >}})| Bugfix Release | 13.06.2019 |
+|[Release 18.09]({{< ref "/release-notes/pascom18" >}})| Bugfix Release | 28.06.2019 |
+|[Release 18.08]({{< ref "/release-notes/pascom18#release-18-08-13-06-2019" >}})| Bugfix Release | 13.06.2019 |
 |[Release 18.07]({{< ref "/release-notes/pascom18#release-18-07-10-04-2019" >}})| Bugfix Release | 10.04.2019 |
 |[Release 18.06]({{< ref "/release-notes/pascom18#release-18-06-07-03-2019" >}})| Bugfix Release | 07.03.2019 |
 |[Release 18.05]({{< ref "/release-notes/pascom18#release-18-05-26-02-2019" >}})| Bugfix Release | 26.02.2019 |

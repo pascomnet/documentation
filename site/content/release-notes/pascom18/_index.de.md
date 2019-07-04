@@ -67,6 +67,21 @@ Wegen fehlender Verschlüsselung für Sprache wie Provisionierung wurde die Unte
 Aufgrund der Einschränkung des cisco SPA 112 Gateways auf ausschließliche Nutzung mit cisco-Zertifikaten wurde die Unterstützung mit pascom 18 eingestellt. 
 
 
+## Release 18.09 (28.06.2019)
+
+**Auf einen Blick**
+
+- Erneutes Pairen bei Lizenzproblemen verbessert
+- Migrationen in Verbindung mit dem Yealink W60B werden nun ordnungsgemäß durchgeführt
+- Registrierungen von Ämtern werden nun bei Abbrüchen noch zuverlässiger wiederhergestellt
+
+**ÄNDERUNGEN:**
+
+* MD-11501 - you cannot re-pair a license if no license is configured in csd
+* MD-11552 - Yealink W60B DECT migration error "Port count mismatch"
+* MD-11538 - Retry asterisk sip trunk registration periodically
+
+
 ## Release 18.08 (13.06.2019)
 
 **Auf einen Blick**
