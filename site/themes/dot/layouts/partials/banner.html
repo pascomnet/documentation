@@ -24,7 +24,7 @@
 							suggestion: function (suggestion) {
 								if (typeof suggestion._snippetResult !== 'undefined') {
 									return ('<div class="text-left">' +
-										'<div class="icon">' + suggestion.icon + '</div>' +
+										'<div class="icon"> <i class=' + suggestion.icon + ' aria-hidden="true"></i></div>' +
 										'<div class="title">' + suggestion._highlightResult.title
 										.value + '</div>' +
 										'<div class="text">...' + suggestion._snippetResult.text.value +
@@ -32,7 +32,7 @@
 										'</div>');
 								} else {
 									return ('<div class="text-left">' +
-										'<div class="icon">' + suggestion.icon + '</div>' +
+										'<div class="icon"> <i class=' + suggestion.icon + ' aria-hidden="true"></i></div>' +
 										'<div class="title">' + suggestion._highlightResult.title
 										.value + '</div>' +
 										'</div>');
