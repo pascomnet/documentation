@@ -1,4 +1,4 @@
-baseURL = "https://www.pascom.net/doc"
+baseURL = "https://www.pascom.net/doc/"
 theme = "dot"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
