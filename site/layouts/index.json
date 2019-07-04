@@ -7,7 +7,7 @@
 	"title": "{{ htmlEscape $page.Title}}",
 	"description": "{{ htmlEscape .Description}}",
 	"text": {{ substr $page.Plain 0 19000 | jsonify}},
-	"icon": {{ if $page.Params.pre }} {{ $page.Params.icon | jsonify }} {{ else if $page.Parent }} {{ $page.Parent.Params.icon | jsonify }} {{else}} "" {{ end }} 
+	"icon": {{ if $page.Params.icon }} {{ $page.Params.icon | jsonify }} {{ else if $page.Parent }} {{ $page.Parent.Params.icon | jsonify }} {{else}} "" {{ end }} 
 }
 {{- end -}}
 {{- end -}}]

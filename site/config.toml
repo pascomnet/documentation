@@ -2,7 +2,7 @@ baseURL = "https://www.pascom.net/doc/"
 theme = "dot"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
-
+enableGitInfo = true
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
@@ -82,7 +82,7 @@ whiteColor = "#ffffff"
   languageName = "De"
   weight = 1
   languageCode = "de"
-  title = "PASCOM"
+  title = "pascom Dokumentation"
   dateFormat = "2 January 2006"
   home = "Home"
   logo = "images/logo_white.png"
