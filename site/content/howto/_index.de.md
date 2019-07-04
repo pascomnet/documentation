@@ -1,11 +1,7 @@
 ---
-title: Howtos
+title: How to
 description: Unsere Howtos helfen Ihnen bei der Konfiguration spezieller Themen
-weight: 100
-pre: <i class="fa fa-wrench" aria-hidden="true"></i>&nbsp;
+icon: "fa fa-wrench"
+type : "pages"
+weight: 13
 ---
- 
-{{< description >}}
-
-{{%children description="true" %}}
- 

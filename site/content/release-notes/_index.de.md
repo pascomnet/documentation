@@ -1,8 +1,9 @@
 ---
 title: Support & Release Notes
 description: In unseren Release Notes erfahren Sie alle Neuerung der pascom Telefonanlage
-weight: 200
-pre: <i class="fa fa-file-alt" aria-hidden="true"></i>&nbsp;
+type: "pages"
+icon: "fa fa-file-alt"
+weight: 14
 ---
 
 {{< description >}}

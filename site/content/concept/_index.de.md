@@ -1,8 +1,7 @@
 ---
 title: Konzepte
 description: Konzepte zum besseren Verständnis der pascom Lösung
-weight: 100
-pre: <i class="fa fa-lightbulb" aria-hidden="true"></i>&nbsp;
+icon: "fa fa-sticky-note"
+type : "pages"
+weight: 12
 ---
- 
-{{%children description="true" %}}

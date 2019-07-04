@@ -1,0 +1,13 @@
+
+{{ $type := .Get 0}}
+{{ if eq $type "cloud" }}
+<i class="fas fa-cloud" style="font-size: 200%" ></i> Cloud only
+{{end}}
+
+{{ if eq $type "self" }}
+<i class="fa fa-server" style="font-size: 200%"></i> Self Hosted only
+{{end}}
+
+{{ if eq $type "both" }}
+<i class="fas fa-cloud" style="font-size: 200%"></i> + <i class="fa fa-home" style="font-size: 200%"></i> Cloud and Self Hosted
+{{end}}

@@ -1,8 +1,7 @@
 ---
 title: Concepts
 description: Gain a better understanding of the pascom phone system
-weight: 100
-pre: <i class="fa fa-sticky-note" aria-hidden="true"></i>&nbsp;
+icon: "fa fa-sticky-note"
+type : "pages"
+weight: 12
 ---
- 
-{{%children description="true" %}}

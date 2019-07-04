@@ -1,10 +1,7 @@
 ---
 title: Endgeräte
 description: pascom ist zu einer Vielzahl an Hardware IP-Telefonen kompatibel. An dieser Stelle erfahren Sie wie diese automatisch und sicher eingebunden werden können.
-weight: 40
-pre: <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;
+icon: "fa fa-phone"
+type : "pages"
+weight : 6
 ---
-
-{{< description >}}
- 
-{{%children description="true" %}}

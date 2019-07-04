@@ -1,10 +1,7 @@
 ---
 title: Anrufverteilung (ACD)
 description: So steuern Sie eingehende Anrufe und verteilen diese an Ihre Benutzer 
-weight: 80
-pre: <i class="fa fa-map-signs" aria-hidden="true"></i>&nbsp;
+icon: "fa fa-map-signs"
+type : "pages"
+weight: 10
 ---
-
-{{< description >}}
-
-{{%children description="true" %}}
