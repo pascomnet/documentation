@@ -21,7 +21,7 @@ RUN curl -sL -o /tmp/hugo.deb \
     rm /tmp/hugo.deb && \
     mkdir /usr/share/blog
 
-WORKDIR /usr/share/blog
+WORKDIR /usr/share/site
 
 # Expose default hugo port
 EXPOSE 1313
@@ -31,5 +31,5 @@ ENV HUGO_BASE_URL http://localhost:1313
 CMD hugo server -b ${HUGO_BASE_URL} --bind=0.0.0.0
 
 # Automatically build site
-ADD site/ /usr/share/blog
+ADD . /usr/share
 RUN hugo -d /usr/share/nginx/html/
