@@ -13,9 +13,9 @@
 
   <div class="collapse navbar-collapse text-center" id="navigation">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
+     <!-- <li class="nav-item">
         <a class="nav-link text-dark" href="{{ .Site.BaseURL }}{{ .Language.LanguageName | lower }}">{{ .Site.Params.home }}</a>
-      </li>
+      </li> -->
       {{ range .Site.Menus.main }}
       {{ if .HasChildren }}
       <li class="nav-item dropdown">
@@ -25,13 +25,13 @@
         </a>
         <div class="dropdown-menu" >
           {{ range .Children }}
-          <a class="dropdown-item" href="{{ .Permalink | absURL }}">{{ .Name }}</a>
+          <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
           {{ end }}
         </div>
       </li>
       {{ else }}
       <li class="nav-item">
-        <a class="nav-link text-dark" href="{{ .Permalink | absURL }}">{{ .Name }}</a>
+        <a class="nav-link text-dark" href="{{ .URL | absURL }}">{{ .Name }}</a>
       </li>
       {{ end }}
       {{ end }}

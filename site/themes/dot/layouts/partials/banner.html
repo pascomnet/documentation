@@ -5,6 +5,9 @@
 			<h1 class="text-white mb-3">{{ .Site.Params.banner.title }}</h1>
 			<p class="text-white mb-4">{{ .Site.Params.banner.description }}</p>
 			<input type="text" class="form-control" id="search-input" placeholder="{{ i18n "Search-placeholder"}}">
+			<p class="text-white mb-4">
+				<a class="old-doc" href={{ .Site.Params.banner.olddoc_url }}>{{ .Site.Params.banner.olddoc_text }}</a>
+			</p>
 			<script type="text/javascript">
 				var client = algoliasearch("GEETCE1DI1", "b0971ec5f58948f0ef803d3eccf92bad")
 				var index = client.initIndex('{{ .Site.Params.algoliaindex }}');
