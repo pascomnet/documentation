@@ -7,9 +7,9 @@ weight: 40
 
 {{< description >}}
 
-**Nützliches Vorwissen**
+## Trainingsvideo
 
- * [pascom Server Systemaufbau]({{< ref "concept/server" >}})
+{{< youtube spMOJwPVlUU >}}
 
 ## Unterstütze Hypervisoren
 
