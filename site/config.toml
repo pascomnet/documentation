@@ -48,6 +48,8 @@ whiteColor = "#ffffff"
     [Languages.en.params.banner]
       title = "Documentation"
       description = "pascom Product Documentation and Release Notes"
+      olddoc_text = "Documentation for older versions"
+      olddoc_url = "https://www.pascom.net/doc-old/en/"
 
     # Topics
     [Languages.en.params.topics]
@@ -109,6 +111,8 @@ whiteColor = "#ffffff"
     [Languages.de.params.banner]
       title = "Dokumentation"
       description = "pascom Produkt Dokumentation und Release Notes"
+      olddoc_text = "Dokumentation für ältere Versionen"
+      olddoc_url = "https://www.pascom.net/doc-old/de/"
 
         # Topics
     [Languages.de.params.topics]
