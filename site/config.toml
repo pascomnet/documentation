@@ -24,20 +24,28 @@ whiteColor = "#ffffff"
   languageCode = "en-us"
   title = "pascom Documentation"
   dateFormat = "2 January 2006"
-  home = "Home"
   logo = "images/logo_white.png"
   logoAlt = "images/logo.png"
   copyright = "Copyright © 2019 pascom.net"
 
     # navigation
-    #[Languages.en.menu]
-    #
-    #    
-    #  [[Languages.en.menu.main]]
-    #    weight = 2
-    #    name = "contact"
-    #    url = "en/contact"
+    [Languages.en.menu]
       
+    [[Languages.en.menu.main]]
+      weight = 2
+      name = "Homepage"
+      url = "https://www.pascom.net/en/"
+
+     [[Languages.en.menu.main]]
+      weight = 3
+      name = "Prices"
+      url = "https://www.pascom.net/en/voip-prices/"
+      
+
+     [[Languages.en.menu.main]]
+      weight = 4
+      name = "Forum"
+      url = "https://www.pascom.net/forum/tags/english"
 
     # algolia
     [Languages.en.params]
@@ -92,14 +100,23 @@ whiteColor = "#ffffff"
   copyright = "Copyright © 2019 pascom.net"
 
     # navigation
-    #[Languages.de.menu]
-    # 
+    [Languages.de.menu]
+      
+    [[Languages.de.menu.main]]
+      weight = 2
+      name = "Homepage"
+      url = "https://www.pascom.net/de/"
 
-    #  [[Languages.de.menu.main]]
-    #    weight = 2
-    #    name = "contact"
-    #    url = "de/contact"
+     [[Languages.de.menu.main]]
+      weight = 3
+      name = "Preise"
+      url = "https://www.pascom.net/de/voip-preise/"
+      
 
+     [[Languages.de.menu.main]]
+      weight = 4
+      name = "Forum"
+      url = "https://www.pascom.net/forum/"
 
     # algolia
     [Languages.de.params]
