@@ -7,6 +7,10 @@ weight: 30
 {{< doctype "self"  >}}
 
 {{< description >}}
+
+{{% notice warning %}}
+**DISCONTINUED** - The pascom SMB Server will continue to be supported but is no longer available to purchase, having been replaced by the [pascom Appliance]({{< ref "server/appliance" >}}).
+{{% /notice %}}
  
 **Useful Knowlegde**
  

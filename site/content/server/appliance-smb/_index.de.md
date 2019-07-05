@@ -8,6 +8,10 @@ weight: 30
 
 {{< description >}}
 
+{{% notice warning %}}
+**ABGEKÜNDIGT** - Der pascom SMB-Server wird weiterhin unterstützt jedoch nicht mehr neu verkauft. Er wurde durch die [pascom Appliance]({{< ref "server/appliance" >}}) ersetzt.
+{{% /notice %}}
+
 **Nützliches Vorwissen**
 
 
