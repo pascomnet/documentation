@@ -42,7 +42,7 @@ Alles was von intern und extern direkt unter der gleichen Rufnummer/Durchwahl er
 - Die Durchwahl 0 darf intern nicht vergeben werden.<br>
 - Interne Durchwahlen dürfen nicht mit 0 anfangen.<br>
 - Einstellige Durchwahlen dürfen nicht vergeben werden.<br>
-- Die Durchwahlen 110 und 112 dürfen nicht vergeben werden, da es sich hierbei um [Notrufnummern]({{< ref "/howto/emergency-numbers">}}) handelt.
+- Die Durchwahlen 110 und 112 dürfen nicht vergeben werden, da es sich hierbei um [Notrufnummern]({{< ref "/trunks/emergencies">}}) handelt.
 {{% /notice %}}
 
 Bei einigen Durchwahlen macht es Sinn, nicht von extern erreichbar zu sein, z. B. Durchwahlschalter, Türsprechanlagen, Konferenzräume, die nur intern von den Mitarbeitern verwendet werden. Bei z. B. 3-stelligen Rufnummernblöcken sollte diese Durchwahlen mehr als drei Stellen haben.
