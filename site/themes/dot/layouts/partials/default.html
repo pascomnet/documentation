@@ -26,7 +26,14 @@
             </ul>
           </div>
           {{ end }}
-          <p class="post-meta border-bottom pb-3 mb-0">Updated on {{ .Lastmod.Format "02 Jan 2006" }}</p>
+          <p class="post-meta border-bottom pb-3 mb-0">
+          
+            Updated on {{ .Lastmod.Format "02 Jan 2006" }}
+            <a href="https://github.com/pascomnet/documentation/edit/master/site/content/{{.File}}" 
+            target="_blank"> <i class="fas fa-edit"></i></a>
+          
+          </p>
+          
           <nav class="pagination mt-3">
             <!-- Next prev page -->
             {{ $currentNode := . }}
