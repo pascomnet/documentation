@@ -2,6 +2,7 @@ node('docker') {
 
     def version = "${env.DOC_VERSION}"
     def target = "${env.DOC_TARGET}"
+    def algoliaKey = "${env.ALGOLIA_KEY}"
     def baseUrl
     def sedCmd
     
@@ -46,7 +47,7 @@ node('docker') {
     }
 
     stage('Push Algolia Index') {
-        def algolia = docker.build("algolia:${env.BUILD_ID}", "--build-arg TARGET=${target} ./algolia-container")
+        def algolia = docker.build("algolia:${env.BUILD_ID}", "--build-arg TARGET=${target} --build-arg KEY=${algoliaKey} ./algolia-container")
 
     }
 
