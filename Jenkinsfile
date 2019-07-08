@@ -47,7 +47,7 @@ node('docker') {
     }
 
     stage('Push Algolia Index') {
-        def algolia = docker.build("algolia:${env.BUILD_ID}", "--build-arg TARGET=${target} --build-arg AKEY=${algoliaKey} ./algolia-container")
+        def algolia = docker.build("algolia:${env.BUILD_ID}", "--build-arg TARGET=${target} --build-arg KEY=${algoliaKey} ./algolia-container")
 
     }
 
