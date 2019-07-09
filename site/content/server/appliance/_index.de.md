@@ -44,21 +44,51 @@ Im Auslieferungszustand ist der pascom Server bereits vorinstalliert. Führen Si
 * Kostenlosen Flash Tool [Rufus](https://rufus.akeo.ie/) (nur für Windows)
 * pascom Server [ISO-Dateien](https://www.pascom.net/de/download/)
 
-### USB-Stick flashen
+### {{< num 1 >}} USB-Stick flashen
 
 Verbinden Sie den USB-Stick mit Ihrem Computer und starten Sie das Tool Rufus. Wählen Sie nun das pascom Server-ISO unter {{< ui-button "SELECT" >}}, wählen Sie den USB-Stick via {{< ui-button "Device" >}} und klicken Sie im Anschluss auf {{< ui-button "START" >}}:
 
 ![Rufus](rufus.png?width=300px "Rufus")
 
-### USB-Stick anstecken
+### {{< num 2 >}} Server-ISO kopieren
 
-Den so vorbereiteten USB-Stick können Sie nun direkt an den USB3-Port (Rückseite, blauer Port) anstecken.
+Kopieren Sie nun das Server-ISO direkt auf den USB-Stick und benennen es nach **pascom.iso** um.
+
+### {{< num 3 >}} Konfigurationsdatei erstellen
+
+Erstellen Sie, ebenfalls direkt auf dem USB-Stick, die Datei **setup.json** mit folgendem Inhalt:
+
+```
+{
+    "device": "sda",
+    "skipWelcome": true,
+    "skipHostname": true,
+    "hostname": "usbsetup",
+    "skipNetwork": true,
+    "skipStartNetwork": true,
+    "skipBrowser": true,
+    "skipReboot": true,
+    "halt": true,
+    "preinst" : {
+ 
+    }
+}
+```
+
+### {{< num 4 >}} USB-Stick anstecken, installieren und entfernen
+
+Den so vorbereiteten **USB-Stick** können Sie nun direkt an den **USB3-Port** (Rückseite, blauer Port) anstecken. Schließen Sie die Appliance an Bildschirm und Strom und schalten diese ein. Das Setup läuft automatisch durch. Nach erfolgreichem Setup schaltet sich die Appliance selbst ab. 
+
+{{% notice warning %}}
+**ENTFERNEN SIE NUN DEN USB-STICK!**
+{{% /notice %}}
+
+
+Schalten Sie die Appliance wieder ein und fahren Sie mit mit dem nächsten Schritt fort.
 
 ## Appliance anschließen
 
 ![Schnellstartanleitung](getting_started_guide.de.png?width=80%)
-
-{{% button href="getting_started_guide.pdf" icon="fa fa-download" %}} Schnellstartanleitung herunterladen{{% /button %}}
 
 ## Erster Systemstart
 
@@ -83,6 +113,9 @@ Dieser Schritt ist notwending falls Sie Ihren lokalen pascom Server auch von unt
  * Siehe [Mobilzugriffe via Internet einrichten]({{< ref "howto/mobile-access" >}}).
 
 ## Telefonanlage einrichten
+
+
+{{< youtube aNkUjHr7cco >}}
 
 Ein weiterer Assistent hilft Ihnen dabei Ihre Telefonanlage fertig einzurichten und weitere Benutzer anzulegen, bzw. einzuladen.
 Gehen Sie hierzu wie folgt vor:

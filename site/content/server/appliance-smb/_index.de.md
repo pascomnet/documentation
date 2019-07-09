@@ -91,6 +91,8 @@ Dieser Schritt ist notwending falls Sie Ihren lokalen pascom Server auch von unt
 
 ## Telefonanlage einrichten
 
+{{< youtube aNkUjHr7cco >}}
+
 Ein weiterer Assistent hilft Ihnen dabei Ihre Telefonanlage fertig einzurichten und weitere Benutzer anzulegen, bzw. einzuladen.
 Gehen Sie hierzu wie folgt vor:
 

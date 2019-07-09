@@ -103,6 +103,8 @@ Das Interface startet nun neu und bezieht automatisch das Let's Encrypt Certific
 
 ## Telefonanlage einrichten
 
+{{< youtube aNkUjHr7cco >}}
+
 Ein weiterer Assistent hilft ihnen dabei Ihre Telefonanlage fertig einzurichten und weitere Benutzer anzulegen, bzw. einzuladen.
 Gehen Sie hierzu wie folgt vor:
 

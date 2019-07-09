@@ -29,21 +29,52 @@ The pascom appliance is delivered with the pascom phone system server software a
 * Free of charge Flash Tool [Rufus](https://rufus.akeo.ie/) (only for Windows)
 * pascom Server Software [ISO File](https://www.pascom.net/en/download/)
  
-### Flash the USB Stick
+### {{< num 1 >}} Flash the USB Stick
 
 Connect the USB stick to your compute and start Rufus. Now select the pascom Server ISO file under {{< ui-button "Select image" >}}, select the USB stick via {{< ui-button "Select drive" >}} and finally click the {{< ui-button "START" >}}:
 
 ![Rufus](rufus.png?width=300px "Rufus")
 
-### Connect the USB Stick
+### {{< num 2 >}} Copy Server-ISO
 
-Now you can directly connect the prepared USB stick to the USB3 port (blue port located on the back of the server).
+Now copy the server ISO directly to the USB stick and rename it to **pascom.iso**.
+
+### {{< num 3 >}} Create Configfile
+
+Create the file **setup.json** directly on the USB stick with the following content:
+
+```
+{
+    "device": "sda",
+    "skipWelcome": true,
+    "skipHostname": true,
+    "hostname": "usbsetup",
+    "skipNetwork": true,
+    "skipStartNetwork": true,
+    "skipBrowser": true,
+    "skipReboot": true,
+    "halt": true,
+    "preinst" : {
+ 
+    }
+}
+```
+
+### {{< num 4 >}} Connect, install and remove the USB stick
+
+Den so vorbereiteten **USB-Stick** können Sie nun direkt an den **USB3-Port** (Rückseite, blauer Port) anstecken. Schließen Sie die Appliance an Bildschirm und Strom und schalten diese ein. Das Setup läuft automatisch durch. Nach erfolgreichem Setup schaltet sich die Appliance selbst ab. 
+
+The **USB stick** prepared in this way can now be connected directly to the **USB3 port** (rear, blue port). Plug the appliance into screen and power and turn it on. The setup will run automatically. After successful setup, the appliance shuts itself off.
+
+{{% notice warning %}}
+**REMOVE THE USB-STICK NOW!**
+{{% /notice %}}
+
+Turn the appliance back on and proceed to the next step.
 
 ## Connect Appliance
 
 ![Quick Start Guide](getting_started_guide.en.png?width=80%)
-
-{{% button href="getting_started_guide.pdf" icon="fa fa-download" %}}Download Quick Start Guide{{% /button %}}
 
 ## First System Start
 

@@ -8,6 +8,10 @@ description: Wir bietet allen Free, Basic und Premium Kunden ein kostenloses Hos
 
 {{< description >}}
 
+## Trainingsvideo
+
+{{< youtube aNkUjHr7cco >}}
+
 ## pascom.cloud
 
 Die einfachste Möglichkeit pascom zu nutzen ist die für Free-, Basic- und Premium-Kunden kostenlose Nutzung der pascom.cloud.  
@@ -37,3 +41,5 @@ Möchten Sie jedoch genau festlegen auf welche Internetdienste Ihr Unternehmensn
 | TCP **636** | LDAPS für Telefonbuchzugriffe via LDAP |
 | TCP **8884**  | Provisionierung von IP-Hardware-Telefonen |
 | TCP **8885**  | VPN Tunnel direkt zur Telefonanlage |
+
+
