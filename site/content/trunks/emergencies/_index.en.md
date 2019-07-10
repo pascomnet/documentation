@@ -36,7 +36,6 @@ In order to remove any potential errors, the [pascom Mobile Client]({{< ref "/cl
 An emergency call to alert the emergency services (Ambulance, Police and Fire) should always be routed without any modification to the Calling Line Identification/phone number.  
 Since 11. February 1991, the European emergency number 112 has been in force across all countries within the EU and EFTA (European Free Trade Association), as well as Russia, Ukraine and a number of other countries.
 
-
 ## Add Further Emergency Numbers
 
 Should your pascom solution be installed, deployed or used in a country outside of the EU or EFTA that does not support or use the standard European emergency number or you want to include country-specific emergency numbers within your pascom solution, this can be done the admin web UI. Under {{< ui-button "Advanced" >}} > {{< ui-button "Emergency numbers" >}} > {{< ui-button "Add" >}} simply expand the pool of emergency numbers added to you pascom phone system.
