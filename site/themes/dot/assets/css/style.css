@@ -807,7 +807,7 @@ tbody {
 
 /* side list */
 .sidelist {
-  display: block;
+  display: none;
 }
 
 .sidelist.parent {
