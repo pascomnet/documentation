@@ -26,14 +26,14 @@ weight: 10
 
 ## Provisionierung
 
-{{% notice tip %}}
-Für lokale Installationen des pascom Servers ist es möglich Endgeräte per DHCP-Server massenweise und vollautomatisch in Betrieb zu nehmen.
-Details können Sie dem Howto [Telefon-Provisionierung via DHCP]({{< ref "/howto/dhcp-provisioning" >}}) entnehmen.
-{{% /notice %}}
-
 pascom ist in der Lage IP-Telefone des Herstellers Snom automatisch und zentral zu konfigurieren. Diesen Vorgang nennt man Provisionierung. Dazu stellt pascom eine Basis-Konfiguration ({{< ui-button "Endgeräte" >}} > {{< ui-button "Basis-Konfigurationen" >}}) zur Verfügung. Diese ist ausreichend vorparametriert und muss nur in manchen Fällen angepasst werden.
 
 ## Neues Telefon hinzufügen
+
+{{% tabs %}}
+{{% tab "Pairing via URL (cloud + onsite)" %}}
+
+{{< num 1 "Telefon anschließen" >}}
 
 {{% notice tip %}}
 Handelt es sich nicht um ein fabrikneues Telefon setzen Sie es in jedem
@@ -49,7 +49,7 @@ Display. Notieren Sie sich diese.
 
 Nach dem Booten bleibt das Telefon bei der Länderauswahl stehen.
 
-### MAC-Adresse ermitteln
+{{< num 2 "MAC-Adresse ermitteln" >}}
 
 Die MAC-Adresse steht auf der Rückseite des Telefones.
 
@@ -58,7 +58,7 @@ Alternativ surfen Sie nun mit Ihrem Browser auf die zuvor notierte IP-Adresse de
 Unter {{< ui-button "System Information" >}} > {{< ui-button "MAC-Address" >}} notieren Sie sich die MAC-Adresse des
 Telefones.
 
-### Endgerät anlegen
+{{< num 3 "Endgerät anlegen" >}}
 
 Loggen Sie sich in Ihrer Telefonanlage ein und fügen unter {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} ein
 neues Gerät vom Typ **IP-Telefon: Hersteller Snom** hinzu.
@@ -66,32 +66,78 @@ neues Gerät vom Typ **IP-Telefon: Hersteller Snom** hinzu.
 Tragen Sie im Feld **Mac-Adresse** die zuvor ermittelte MAC-Adresse des Telefones
 ein.
 
-### Benutzer zuweisen
+{{< num 4 "Benutzer zuweisen" >}}
 
 Als nächstes können Sie dem IP-Telefon einen Benutzer oder Arbeitsplatz zuweisen. Klicken Sie hierzu auf {{< ui-button "Bearbeiten" >}}. Im Tab {{< ui-button "Zuweisung" >}} kann dem Telefon ein [Benutzer (oder Arbeitsplatz)]({{< ref "concept/user">}}) zugewiesen werden.
 
-
-### Jobs Anwenden
+{{< num 5 "Jobs Anwenden" >}}
 
 Nach dem Speichern von Änderungen erscheint in der Job-Box (oben) ein
 entsprechender Eintrag die Telefonie anzuwenden. Starten Sie den Job durch
 einen Klick auf den {{< ui-button "grünen Haken" >}}.
 
-### Provisionierung-URL ermitteln
+{{< num 6 "Provisionierung-URL ermitteln" >}}
 
 Haken Sie das Telefon in der Geräte-Liste an und wählen {{< ui-button "Aktion" >}} > {{< ui-button "Provisioning URL" >}}. Kopieren Sie die
 **URL** in die Zwischenablage.
 
-### Provisionierung-URL am Telefon eintragen
+{{< num 7 "Provisionierung-URL am Telefon eintragen" >}}
 
 Zurück auf der Web-UI des Telefones tragen Sie unter {{< ui-button "Advanced Settings" >}} > {{< ui-button "Update" >}} > {{< ui-button "Setting URL" >}}
 die eben kopierte Provisionierung-URL ein.
 
 Klicken Sie auf {{< ui-button "Apply" >}} und anschließend auf {{< ui-button "Reboot" >}}.
 
-### Funktion testen
+{{< num 8 "Funktion testen" >}}
 
 Am einfachsten kann man die erfolgreiche Inbetriebnahme testen, indem man mit **\*100** die eigene Voicemailbox anruft. Daraufhin sollte die Ansage Ihrer Voicemailbox zu hören sein.
+
+{{% /tab %}}
+
+{{% tab "DHCP Provisioning (onsite)" %}}
+
+{{% notice note %}}
+Für lokale Installationen des pascom Servers ist es möglich Endgeräte per DHCP-Server massenweise und vollautomatisch in Betrieb zu nehmen.
+{{% /notice %}}
+
+{{< num 1 "DHCP-Server vorbereiten" >}}
+
+Bereiten Sie einen DHCP-Server wie unter [Telefon-Provisionierung via DHCP]({{< ref "/howto/dhcp-provisioning" >}}) beschreiben vor.
+
+{{< num 2 "Telefon anschließen" >}}
+
+{{% notice tip %}}
+Handelt es sich nicht um ein fabrikneues Telefon setzen Sie es in jedem
+Fall auf **Werkseinstellungen** zurück. Wählen Sie hierzu am Telefon, im eingeschalteten
+Zustand, <strong>\**##</strong> und halten anschließend <strong>#</strong> gedrückt bis nach dem Reboot ein Menü
+erscheint. Wählen Sie **1** für Werkseinstellungen.
+{{% /notice %}}
+
+Stecken Sie das IP-Telefon an das Netzwerk. Das Telefon enthält einen eingebauten Switch, benutzen Sie den Ethernet-Port mit der Bezeichnung **NET**. Falls Sie kein **PoE** (Power over Ethernet) verwenden, stecken Sie das Telefon an den Netzstrom.
+
+Das Gerät wird **automatisch** vom pascom Server konfiguriert und **erscheint** daraufhin in der List {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}}. 
+
+{{< num 3 "Benutzer zuweisen" >}}
+
+Als nächstes können Sie dem IP-Telefon einen Benutzer oder Arbeitsplatz zuweisen. Klicken Sie hierzu auf {{< ui-button "Bearbeiten" >}}. Im Tab {{< ui-button "Zuweisung" >}} kann dem Telefon ein [Benutzer (oder Arbeitsplatz)]({{< ref "concept/user">}}) zugewiesen werden.
+
+{{< num 4 "Jobs Anwenden" >}}
+
+Nach dem Speichern von Änderungen erscheint in der Job-Box (oben) ein
+entsprechender Eintrag die Telefonie anzuwenden. Starten Sie den Job durch
+einen Klick auf den {{< ui-button "grünen Haken" >}}. Das Telefon startet neu. 
+Nach dem Neustart steht der Name des Benutzers oder der zugewiesene Arbeitsplatz im Telefondisplay.
+
+{{< num 5 "Funktion testen" >}}
+
+Am einfachsten kann man die erfolgreiche Inbetriebnahme testen, indem man mit **\*100** die eigene Voicemailbox anruft. Daraufhin sollte die Ansage Ihrer Voicemailbox zu hören sein.
+
+
+{{% /tab %}}
+
+
+
+{{% /tabs %}}
 
 ## pascom Menütaste
 

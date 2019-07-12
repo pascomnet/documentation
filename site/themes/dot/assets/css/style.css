@@ -807,11 +807,11 @@ tbody {
 
 /* side list */
 .sidelist {
-  display: none;
+  display: block;
 }
 
 .sidelist.parent {
-  display: block;
+ display: block;
 }
 
 .sidelist.parent::before {
@@ -821,6 +821,11 @@ tbody {
 .sidelist.parent.active::before {
   display: block;
 }
+
+.sidelist.parent.active {
+  display: block;
+}
+
 
 .sidelist li.sidelist {
   display: block;
@@ -897,7 +902,10 @@ p a:empty {
 .nav-tabs>li>a {
   display: block;
   padding: 5px 10px;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #dee2e6;
+  color: #000;
 }
 
 pre {
@@ -911,8 +919,7 @@ pre {
   margin: 10px 0px 0px 00px;
 }
 
-.nav-tabs>li.active>a,
-.nav-tabs>li>a:hover {
+.nav-tabs>li.active>a {
   color: #000 !important;
   background: transparent;
 }
@@ -938,24 +945,7 @@ pre {
   background: rgb(253, 253, 253);
 }
 
-.back-btn {
-  position: relative;
-}
 
-.back-btn::before {
-  position: absolute;
-  content: "\f060";
-  height: 30px;
-  width: 20px;
-  background: #fff;
-  font-size: inherit;
-  font-family: "font awesome 5 free";
-  font-weight: 900;
-  color: inherit;
-  z-index: 1;
-  left: -4px;
-  top: 4px;
-}
 
 .video-container { 
   position: relative; 
@@ -981,4 +971,20 @@ pre {
 }
 .old-doc:visited, .old-doc:hover, .old-doc:active, .old-doc:link {
   color: white;
+}
+
+.step {
+  font-family: 'yanone kaffeesatz', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 26px;
+  color: var(--text-color-dark);
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.step-num {
+  font-size: 0.5em;
+  margin-bottom: 5px;
+  margin-right: 3px;
 }

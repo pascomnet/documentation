@@ -44,17 +44,17 @@ Im Auslieferungszustand ist der pascom Server bereits vorinstalliert. Führen Si
 * Kostenlosen Flash Tool [Rufus](https://rufus.akeo.ie/) (nur für Windows)
 * pascom Server [ISO-Dateien](https://www.pascom.net/de/download/)
 
-### {{< num 1 >}} USB-Stick flashen
+{{< num 1 "USB-Stick flashen" >}}
 
 Verbinden Sie den USB-Stick mit Ihrem Computer und starten Sie das Tool Rufus. Wählen Sie nun das pascom Server-ISO unter {{< ui-button "SELECT" >}}, wählen Sie den USB-Stick via {{< ui-button "Device" >}} und klicken Sie im Anschluss auf {{< ui-button "START" >}}:
 
 ![Rufus](rufus.png?width=300px "Rufus")
 
-### {{< num 2 >}} Server-ISO kopieren
+{{< num 2 "Server-ISO kopieren" >}}
 
 Kopieren Sie nun das Server-ISO direkt auf den USB-Stick und benennen es nach **pascom.iso** um.
 
-### {{< num 3 >}} Konfigurationsdatei erstellen
+{{< num 3 "Konfigurationsdatei erstellen" >}}
 
 Erstellen Sie, ebenfalls direkt auf dem USB-Stick, die Datei **setup.json** mit folgendem Inhalt:
 
@@ -75,7 +75,7 @@ Erstellen Sie, ebenfalls direkt auf dem USB-Stick, die Datei **setup.json** mit 
 }
 ```
 
-### {{< num 4 >}} USB-Stick anstecken, installieren und entfernen
+{{< num 4 "USB-Stick anstecken, installieren und entfernen" >}}
 
 Den so vorbereiteten **USB-Stick** können Sie nun direkt an den **USB3-Port** (Rückseite, blauer Port) anstecken. Schließen Sie die Appliance an Bildschirm und Strom und schalten diese ein. Das Setup läuft automatisch durch. Nach erfolgreichem Setup schaltet sich die Appliance selbst ab. 
 
