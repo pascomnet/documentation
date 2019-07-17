@@ -26,6 +26,20 @@ weight: 40
 
 **\*** The hard disk storage requirement suggestions are based on an average usage. In particular, Call Recordings will significantly influence your storage requirements. Please take into account that every 10 minutes worth of recordings will require approximately an additional 1 MB of storage space.
 
+### Modify your Firewall
+
+Many companies have **no Internet access restrictions** and can therefore **immediately** start using your **pascom virtual phone system** without needing to make any alterations to their Firewall.
+
+However, should you choose to, you can specify which internet services your company network is permitted to access by opening the following ports and allowing the pascom virtual server access in order to ensure that your pascom phone system operates optimally:
+
+#### pascom Services
+
+| Port | Host | Description |
+| ---- | ---- | ------------ |
+| TCP **80**/**443** | my.pascom.net | Access to the pascom licence server + PUSH services |
+| TCP **25** | cloudmx1.pascom.net, cloudmx2.pascom.net | Access to the pascom Mailserver |
+| UDP **123** | \* | Access to the preferred time server (NTP) |
+
 ## Download ISO File
 
 For installing a pascom IP PBX virtual machine, please use the [ISO File](https://www.pascom.net/en/download/) which is available on our [Download page](https://www.pascom.net/en/download/).

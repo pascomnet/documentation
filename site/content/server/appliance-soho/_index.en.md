@@ -22,6 +22,20 @@ weight: 30
 
 ![pascom SOHO Server](pascomSOHOserver.png)
 
+### Modify your Firewall
+
+Many companies have **no Internet access restrictions** and can therefore **immediately** start using your **pascom SOHO Server** without needing to make any alterations to their Firewall.
+
+However, should you choose to, you can specify which internet services your company network is permitted to access by opening the following ports and allowing the pascom SOHO servers access in order to ensure that your pascom phone system operates optimally:
+
+#### pascom Services
+
+| Port | Host | Description |
+| ---- | ---- | ------------ |
+| TCP **80**/**443** | my.pascom.net | Access to the pascom licence server + PUSH services |
+| TCP **25** | cloudmx1.pascom.net, cloudmx2.pascom.net | Access to the pascom Mailserver |
+| UDP **123** | \* | Access to the preferred time server (NTP) |
+
 ## pascom Server Installation (for new / reinstallations only)
 {{% notice warning %}}
 The pascom appliance is delivered with the pascom phone system server software already pre-installed. Perform the following steps only if you wish to reinstall the system!
