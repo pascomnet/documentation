@@ -94,9 +94,10 @@ Wenn Sie die TAPI auf einem Termial-Server oder einem Rechner der von mehreren P
 {{% notice note %}}
 Das Setup benötigt Administrationsrechte auf dem jeweiligen Server. Ab Windows Server 2008 wird automatisch nach einem entsprechenden Login gefragt, bei Windows Server 2003 müssen Sie sich ggf. vorher unter einer geeigneten Kennung anmelden.
 {{% /notice %}}
+
 Starten Sie das Setup indem Sie die zuvor heruntergeladene Datei ausführen. Akzeptieren Sie die Allgemeinen Geschäftsbedingungen (AGB), anschließend werden alle Komponente in das System installiert.
 
-Nach erfolgreicher Installation müssen Sie die Verbindung der TAPI zu pascom konfigurieren:
+Nach erfolgreicher Installation müssen Sie die Verbindung der TAPI zu pascom konfigurieren:  
 
 ![TAPI konfigurieren](config_credentials.en.png?width=40%)
 
