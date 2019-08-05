@@ -67,6 +67,49 @@ Wegen fehlender Verschlüsselung für Sprache wie Provisionierung wurde die Unte
 Aufgrund der Einschränkung des cisco SPA 112 Gateways auf ausschließliche Nutzung mit cisco-Zertifikaten wurde die Unterstützung mit pascom 18 eingestellt. 
 
 
+## Release 18.10 (05.08.2019)
+
+**Auf einen Blick**
+
+- Anrufe können wieder an sich selbst transferiert werden um das Endgerät zu wechseln       
+- Hochladen von Updates und Backups verbessert, sowie allgemein benötigten Festplattenspeicherplatz optimiert       
+- Amtsholungs-Prefix wird im Zusammenhang mit Outlook-, Android-, Apple- und DATEV-Kontakten richtig im Journal gesetzt     
+- Selbst signierte Zertifikate werden bei Änderungen des FQDN neu generiert     
+- Faxserver wird nun permanent bereitgestellt       
+
+**ÄNDERUNGEN:**
+
+- MD-10990 - Can't transfer to second device of same user
+- MD-11114 - Improve loading screens in management ui
+- MD-11196 - Uploading a csb image inside the instance causes problem
+- MD-11224 - Calling from journal does not work if a phone number is resolved from Outlook or Apple contacts
+- MD-11266 - Show a proper error page in CSUI if we get a 500 response from a API call
+- MD-11290 - Gateway status confuses customers
+- MD-11309 - Call deflection not working (with rkom trunk)
+- MD-11318 - Broken prompts during roaming
+- MD-11324 - Too strict E-Mail validation in phonebook
+- MD-11337 - CSUI Wizard after installation can be bypassed by changing the url
+- MD-11353 - Sent faxes not shown in web UI
+- MD-11430 - Improve details of interface in CSUI
+- MD-11460 - Check free disc space before update
+- MD-11461 - Decrease swap file of disc
+- MD-11462 - Validate ISO before update of pascom
+- MD-11500 - import-raw-3.json not found after exchange import simulation
+- MD-11502 - Display license content even if it is invalid
+- MD-11504 - Renew self signed cert if FQDN changes
+- MD-11505 - Display alert on System page when the license is invalid
+- MD-11523 - Grandstream HT802 should not use opus codec
+- MD-11524 - Automatically cleanup asterisk core dumps on apply telephony
+- MD-11525 - Grandstream GXP16XX reboots after short time
+- MD-11544 - Sometimes statemap.txt has no ip entry for instance
+- MD-11555 - Consul kv keys are missing after instance delete
+- MD-9199 - Fax service should run from the beginning
+- MD-10635 - Show a reconnect page if the management address is changed
+- MD-10967 - Setupui "done": Show a manual access link after 1 minute
+- MD-11531 - Update consul
+- MD-11592 - Prometheus should scrape consul metrics
+
+
 ## Release 18.09 (28.06.2019)
 
 **Auf einen Blick**
