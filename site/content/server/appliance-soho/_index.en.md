@@ -66,6 +66,7 @@ As the pascom SOHO phone system server does not have a monitor connectivity opti
     "device": "sda",
     "skipWelcome": true,
     "skipHostname": true,
+    "skipDevice": true,
     "hostname": "pascom-server",
     "skipNetwork": true,
     "network": {

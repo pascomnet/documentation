@@ -70,6 +70,7 @@ Da der pascom SOHO Server keine Monitoranschluss hat müssen Sie auf dem USB-Sti
     "device": "sda",
     "skipWelcome": true,
     "skipHostname": true,
+    "skipDevice": true,
     "hostname": "pascom-server",
     "skipNetwork": true,
     "network": {
