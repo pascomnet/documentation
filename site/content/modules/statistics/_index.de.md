@@ -1,5 +1,5 @@
 ---
-title: Rufstatistik
+title: Analytics
 description: Erhalten Sie Statistiken zur Auswertung von Warteschleifen (Teams) und deren Benutzern.
 weight: 7
 ---
@@ -12,10 +12,10 @@ weight: 7
 
 Seit der pascom Version 18.05 steht mit Grafana ein umfangreiches Rufauswertungs-Tool zur Verfügung. Damit können der Live-Status von verfügbaren Agenten in Teams, aktive Anrufe, Rufstatistiken und Informationen über Anrufverläufe ausgelesen werden.
 
-Die Rufstatistik ist in der pascom Weboberfläche unter {{< ui-button "Informationen" >}} > {{< ui-button "Rufstatistik" >}} zu finden. 
+Das Analytics-Tool ist in der pascom Weboberfläche unter {{< ui-button "Informationen" >}} > {{< ui-button "Analytics" >}} zu finden. 
 
 {{% notice info %}}
-Das Rufauswertungs-Tool Grafana bietet keine Sprachauswahl-Möglichkeiten und kann daher nur English dargestellt werden.
+Das Analytics- und Rufauswertungs-Tool Grafana bietet keine Sprachauswahl-Möglichkeiten und kann daher nur English dargestellt werden.
 {{% /notice %}}
 
 

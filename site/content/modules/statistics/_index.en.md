@@ -1,6 +1,6 @@
 ---
-title: Call Statistics
-description: Gain real-time insight analytics for evaluating Queues (Teams) and associated User performance. 
+title: Analytics
+description: Gain real-time insight call statistics for evaluating Queues (Teams) and associated User performance. 
 weight: 7
 ---
 
@@ -12,7 +12,7 @@ weight: 7
 
 From pascom phone system version 18.05 onwards, the integration of Grafana ensures that a comprehensive call analytics tool is now available. Through using this Analytics tool, it is possible to gain an instant live overview of the overall performance and status of your available agents, teams, active calls, call statistics plus information concerning call flows.
 
-The call analytics tool can be found in the pascom web UI under {{< ui-button "Information" >}} > {{< ui-button "call statistics" >}}. 
+The call analytics tool can be found in the pascom web UI under {{< ui-button "Information" >}} > {{< ui-button "Analytics" >}}. 
 
 {{% notice info %}}
 The call analytics tool from Grafana offers does not offer any language selection options and is therefore only available in English.
