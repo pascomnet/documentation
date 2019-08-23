@@ -1,6 +1,6 @@
 ---
-title: Yealink T4 Series Desktop Phones
-description: How to integrate your Yealink T4 Series Desktop SIP phones with your pascom phone system.
+title: Yealink T4 and T5 Series Desktop Phones
+description: How to integrate your Yealink T4 or T5 Series Desktop SIP phones with your pascom phone system.
 weight: 30
 ---
 

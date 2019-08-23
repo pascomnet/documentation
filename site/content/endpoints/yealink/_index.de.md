@@ -1,5 +1,5 @@
 ---
-title: Yealink Tischtelefone T4-Serie
+title: Yealink Tischtelefone T4- und T5-Serie
 description: Integrieren Sie Ihre Yealink IP-Tischtelefone in die pascom.
 weight: 30
 ---
