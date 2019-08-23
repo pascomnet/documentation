@@ -61,6 +61,7 @@ Create the file **setup.json** directly on the USB stick with the following cont
 {
     "device": "sda",
     "skipWelcome": true,
+    "skipDevice": true,
     "skipHostname": true,
     "hostname": "usbsetup",
     "skipNetwork": true,
