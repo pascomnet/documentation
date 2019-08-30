@@ -41,10 +41,18 @@ Nach dem Speichern kann die Vorlage im Reiter {{< ui-button "Basisdaten" >}} bei
 
 Im Standard importiert die Vorlage alle Benutzer bis auf den Benutzer *mobydick* aus dem AD. Über den Reiter {{< ui-button "Pre Filter" >}} können Sie den Import einer Gruppe von Benutzern, z. B. *pascom-user*, einschränken. Fügen Sie dazu folgenden Code ein:
 
-    if (strpos($row['memberOf'],'pascom-user') !== false) {
-    return true;
+    # only import users with membership
+    if (!array_key_exists("memberOf", $row)) return false;
+
+    $groups = $row["memberOf"];
+    # turn a single group membership (string) into a list of memberships (array)
+    if (!is_array($groups)){
+      $groups = array($row["memberOf"]);
     }
-    return false;
+
+    # always search in a list of memberships
+    return preg_grep('/pascom-user/i', $groups);
+
 
 ### Benutzerfelder im AD
 
@@ -84,45 +92,43 @@ Fügen Sie hierzu im Reiter {{< ui-button "Variablen" >}} folgende Zeile durch {
 
 |Variable|Quelle|
 |----|----|
-|Job|return $row["Job"];|
+|job|return $row["job"];|
 
-Durch diese Zeile speichert der Connector den Inhalt des ActiveDirectory Feldes "Job" in der gleichnamigen Variable "Job" ab.
+Durch diese Zeile speichert der Connector den Inhalt des ActiveDirectory Feldes "job" in der gleichnamigen Variable "job" ab.
 Diese Variable muss nun unter {{< ui-button "Struktur" >}} dem Notiz pascom-Telefonbuch Feld zugeordnet werden.
 
 Ergänzen Sie hierzu die Zeilen:
 
-          "028pho_notes" :        "{{{Job}}}"
+    "028pho_notes" :        "{{{job}}}"
 
 **in der Struktur:**
 
-        {
-          "identity": [{
+    {
+      "identity": [{
 
-            "003use_bez": "{{{displayname}}}",
-            "003use_name": "{{{username}}}",
-            "003use_pw": "{{{password}}}",
-            "011acc_pin": "{{{pin}}}",
-            "009ext_extension": "{{{phone}}}",
-            "016voi_email": "{{{email}}}"          
-            ,"post": {
-              "phonebook": [{
-                "028pho_bez" :  "{{{DisplayName}}}",
-                "028pho_phone" : "{{{BusinessPhone}}}",
-                "028pho_firstname" :  "{{{GivenName}}}",
-                "028pho_lastname" : "{{{Surname}}}",
-                "028pho_organisation" : "{{{CompanyName}}}",
-                "028pho_email" :  "{{{EmailAddress}}}",
-                "028pho_mobile" : "{{{MobilePhone}}}",
-                "028pho_homephone" :  "{{{HomePhone}}}",
-                "028pho_fax" :  "{{{BusinessFax}}}",
-                "028pho_notes" :  "{{{Job}}}"
-              }]
-            }
+        "003use_bez": "{{{displayname}}}",
+        "003use_name": "{{{username}}}",
+        "009ext_extension": "{{{phone}}}",
+        "016voi_email": "{{{email}}}",
+        "003use_auth_method": "EXTERN"          
+        ,"post": {
+          "phonebook": [{
+            "028pho_bez" :  "{{{displayname}}}",
+            "028pho_firstname" :  "{{{givenname}}}",
+            "028pho_lastname" : "{{{surname}}}",
+            "028pho_organisation" : "{{{organisation}}}",
+            "028pho_email" :  "{{{email}}}",
+            "028pho_mobile" : "{{{mobile}}}",
+            "028pho_homephone" :  "{{{homephone}}}",
+            "028pho_fax" :  "{{{fax}}}",
+            "028pho_notes" :  "{{{job}}}"
           }]
         }
+      }]
+    }
 
 
-Dadurch wird der Wert der Variablen Job dem **Notiz** pascom Telefonbuch Feld zugewiesen.
+Dadurch wird der Wert der Variablen "job" dem **Notiz** pascom Telefonbuch Feld zugewiesen.
 
 
 #### Rollenzuweisung
@@ -135,31 +141,31 @@ Fügen Sie hierzu im Reiter {{< ui-button "Variablen" >}} folgende Zeile durch {
 
 **Quelle:**
 
-          //Fill in the roles you want to filter (rolesToFilter) like this:
-          //array('Rolle1', 'Rolle2');          
+    //Fill in the roles you want to filter (rolesToFilter) like this:
+    //array('Rolle1', 'Rolle2');          
 
-          $rolesToFilter=array();          
-          $output=array();
+    $rolesToFilter=array();          
+    $output=array();
 
-          if(empty($rolesToFilter))
-             return $output;
+    if(empty($rolesToFilter))
+        return $output;
 
-          $src = $row['memberOf'];
+    $src = $row['memberOf'];
 
-          if(!is_array($src)) {
-            $src = array($src);
-          }
+    if(!is_array($src)) {
+      $src = array($src);
+    }
 
-          foreach($src as $group) {
-            $list = explode(',', str_replace(array('[', ']', 'CN=', 'DC=', '"'), '', $group));
-            foreach($list as $elem) {
-             if(in_array($elem, $rolesToFilter)) {
-                $output[]=$elem;
-              }
-            }
-          }
+    foreach($src as $group) {
+      $list = explode(',', str_replace(array('[', ']', 'CN=', 'DC=', '"'), '', $group));
+      foreach($list as $elem) {
+        if(in_array($elem, $rolesToFilter)) {
+          $output[]=$elem;
+        }
+      }
+    }
 
-          return $output;
+    return $output;
 
 Das Feld "rollen" entspricht einer Liste an Rollen, denen der Benutzer zugeordnet werden soll.
 Über die Mitgliedszuweisung im ActiveDirectory können Sie die Rollen in pascom bestimmen.
@@ -172,44 +178,43 @@ Beispiel: **array('Rolle1', 'Rolle2');**
 
 Ergänzen Sie hierzu die Zeilen:
 
+    {{#if rollen}}
+      ,"user_roles": [
+        {{#each rollen}}
+        "{{this}}",
+        {{/each}}
+        "All"
+      ],
+    {{/if}}
+
+**in der Struktur:**
+
+    {
+      "identity": [{
+
+        "003use_bez": "{{{displayname}}}",
+        "003use_name": "{{{username}}}",
+        "009ext_extension": "{{{phone}}}",
+        "016voi_email": "{{{email}}}",
+        "003use_auth_method": "EXTERN"
         {{#if rollen}}
           ,"user_roles": [
             {{#each rollen}}
             "{{this}}",
             {{/each}}
-            "All Users"
+            "All"
           ],
         {{/if}}
-
-**in der Struktur:**
-
-          {
-            "identity": [{
-
-              "003use_bez": "{{{displayname}}}",
-              "003use_name": "{{{username}}}",
-              "003use_pw": "{{{password}}}",
-              "011acc_pin": "{{{pin}}}",
-              "009ext_extension": "{{{phone}}}",
-              "016voi_email": "{{{email}}}"
-              {{#if rollen}}
-                ,"user_roles": [
-                  {{#each rollen}}
-                  "{{this}}",
-                  {{/each}}
-                  "All Users"
-                ],
-              {{/if}}
-              ,"post": {
-                "phonebook": [{
-                  "028pho_bez":       "{{{displayname}}}",
-                  "028pho_firstname": "{{{givenname}}}",
-                  "028pho_lastname":  "{{{surname}}}",
-                  "028pho_email":     "{{{email}}}"
-                  }]
-                }
+        ,"post": {
+          "phonebook": [{
+            "028pho_bez":       "{{{displayname}}}",
+            "028pho_firstname": "{{{givenname}}}",
+            "028pho_lastname":  "{{{surname}}}",
+            "028pho_email":     "{{{email}}}"
             }]
           }
+      }]
+    }
 
 
 #### Softphone, Mobiltelefon oder IP-Telefone zuweisen
@@ -230,10 +235,10 @@ Diese Variable muss nun unter {{< ui-button "Struktur" >}} dem IP-Telefon pascom
 
 Ergänzen Sie hierzu die Zeilen:
 
-      ,"ipphone“: [{
-            "010dev_bez": "{{username}}_sipdevice“,
-            „071ipp_mac“: „{{{mac}}}“
-        }],
+    ,"ipphone“: [{
+      "010dev_bez": "{{username}}_sipdevice“,
+      „071ipp_mac“: „{{{mac}}}“
+    }],
 
 **Softphone zuweisen:**
 

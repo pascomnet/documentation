@@ -49,12 +49,20 @@ Under the basic data tab, you can configure your LDAP connection more precisely 
 
 ### Pre Filter
 
-Per default, the template will import all users from the Active Directory. Using the {{< ui-button "Pre Filter" >}} tab you can restrict the import according to certain factors e.g. *company-phonebook* is populated. Simply replace "*return true;*" with the following code: 
+Per default, the template will import all users from the Active Directory. Using the {{< ui-button "Pre Filter" >}} tab you can restrict the import according to certain factors e.g. *company-phonebook* is populated. Simply replace "*return array_key_exists('displayName', $row);*" with the following code: 
 
-    if (strpos($row['memberOf'],'company-phonebook') !== false) {
-    return true;
+    # only import contacts with membership
+    if (!array_key_exists("memberOf", $row)) return false;
+
+    $groups = $row["memberOf"];
+    # turn a single group membership (string) into a list of memberships (array)
+    if (!is_array($groups)){
+      $groups = array($row["memberOf"]);
     }
-    return false;
+
+    # always search in a list of memberships
+    return preg_grep('/company-phonebook/i', $groups);
+
 
 ### Telephone Book Fields in AD
 
@@ -85,31 +93,31 @@ For example, should you wish to save the contact notes to the notes field in the
 
 |Variable|Source|
 |----|----|
-|Notes|return $row["info"];|
+|notes|return $row["info"];|
 
-Through this row, the connector saves the content of the Activity Directory "info" field (*Phone > Comment*) under the variable "Notes". 
+Through this row, the connector saves the content of the Activity Directory "info" field (*Phone > Comment*) under the variable "notes". 
 This Variable must now be assigned to the pascom telephone book notes field under the {{< ui-button "Structure" >}} tab.
 
 To do this add the lines:
 
-          "028pho_notes" :        "{{{Notes}}}"
+    "028pho_notes" :        "{{{notes}}}"
 
 **to the structure:**
 
-        {
-          "phonebook": [{
-            "028pho_bez" :  "{{{DisplayName}}}",
-            "028pho_phone" : "{{{BusinessPhone}}}",
-            "028pho_firstname" :  "{{{GivenName}}}",
-            "028pho_lastname" : "{{{Surname}}}",
-            "028pho_organisation" : "{{{CompanyName}}}",
-            "028pho_email" :  "{{{EmailAddress}}}",
-            "028pho_mobile" : "{{{MobilePhone}}}",
-            "028pho_homephone" :  "{{{HomePhone}}}",
-            "028pho_fax" :  "{{{BusinessFax}}}",
-            "028pho_notes" :  "{{{Notes}}}"
-          }]
-        }
+    {
+      "phonebook": [{
+        "028pho_bez" : 			"{{{displayname}}}",
+        "028pho_phone" : 		"{{{phone}}}",
+        "028pho_firstname" : 	"{{{givenname}}}",
+        "028pho_lastname" : 	"{{{surname}}}",
+        "028pho_organisation" : "{{{organisation}}}",
+        "028pho_email" : 		"{{{email}}}",
+        "028pho_mobile" : 		"{{{mobile}}}",
+        "028pho_homephone" : 	"{{{homephone}}}",
+        "028pho_fax" : 			"{{{fax}}}",
+        "028pho_notes" :    "{{{notes}}}"
+      }]
+    }
 
 This will result in the "notes" variable being assigned to the **Notes** field in the pascom telephone book.
 
@@ -133,54 +141,48 @@ Go to the {{< ui-button "Variables" >}} tab and via the {{< ui-button "Add" >}} 
 
 |Variable|Source|
 |---|---|
-|Customernumber|return $row['Customernumber'];|
+|customernumber|return $row['customerNumber'];|
 
-{{% notice info%}}
-Opposed to other connector profiles, the name of both the variable and source fields must be identical.
-{{% /notice  %}}
 
-Through this modification, the Connector will save the content of the AD field "Customernumber" in the identically named Variable "Customernumber".
+Through this modification, the Connector will save the content of the AD field "customerNumber" in the Variable "customernumber".
 
 This variable must now be assigned to the label **Customernumber** pascom field via the {{< ui-button "Structure" >}} tab.
 
 To do this simply add the following line:
 
-```
-"post": {
-            "phonebook.phonebooklabel": [
-                {
-                    "050lab_bez": "Customernumber",
-                    "028050pholab_value": "{{{Customernumber}}}"
-                }
-            ]
-}
-```
+    "post": {
+      "phonebook.phonebooklabel": [
+        {
+          "050lab_bez": "Customernumber",
+          "028050pholab_value": "{{{customernumber}}}"
+        }
+      ]
+    }
+
 
 to the structure:
 
-```
-{
-  "phonebook": [{
-    "028pho_bez" :          "{{{DisplayName}}}",
-    "028pho_phone" :        "{{{BusinessPhone}}}",
-    "028pho_firstname" :    "{{{GivenName}}}",
-    "028pho_lastname" :     "{{{Surname}}}",
-    "028pho_organisation" : "{{{CompanyName}}}",
-    "028pho_email" :        "{{{EmailAddress1}}}",
-    "028pho_mobile" :       "{{{MobilePhone}}}",
-    "028pho_homephone" :    "{{{HomePhone}}}",
-    "028pho_fax" :          "{{{BusinessFax}}}",
-    "post": {
-            "phonebook.phonebooklabel": [
-                {
-                    "050lab_bez": "Customernumber",
-                    "028050pholab_value": "{{{Customernumber}}}"
-                }
-            ]
+    {
+      "phonebook": [{
+        "028pho_bez" : 			"{{{displayname}}}",
+        "028pho_phone" : 		"{{{phone}}}",
+        "028pho_firstname" : 	"{{{givenname}}}",
+        "028pho_lastname" : 	"{{{surname}}}",
+        "028pho_organisation" : "{{{organisation}}}",
+        "028pho_email" : 		"{{{email}}}",
+        "028pho_mobile" : 		"{{{mobile}}}",
+        "028pho_homephone" : 	"{{{homephone}}}",
+        "028pho_fax" : 			"{{{fax}}}",
+        "post": {
+          "phonebook.phonebooklabel": [
+            {
+              "050lab_bez": "Customernumber",
+              "028050pholab_value": "{{{customernumber}}}"
+            }
+          ]
+        }
+      }]
     }
-  }]
-}
-```
 
 This will assign all AD contacts with an entered customer number value with the Call Label **Customer Number** and corresponding value.
 

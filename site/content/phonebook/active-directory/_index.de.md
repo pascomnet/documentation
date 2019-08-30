@@ -51,12 +51,20 @@ In den Basisdaten konfigurieren Sie die Verbindung zu Ihrem Active Directory gen
 
 ### Pre Filter
 
-Im Standard importiert die Vorlage alle globalen Telefonbucheinträge aus dem AD. Über den Reiter {{< ui-button "Pre Filter" >}} können Sie den Import eines bestimmten Telefonbuchs, z. B. *company-phonebook*, einschränken. Fügen Sie dazu folgenden Code ein:
+Im Standard importiert die Vorlage alle globalen Telefonbucheinträge mit ausgefülltem "Anzeigenamen" aus dem AD. Über den Reiter {{< ui-button "Pre Filter" >}} können Sie den Import eines bestimmten Telefonbuchs, z. B. *company-phonebook*, einschränken. Fügen Sie dazu folgenden Code ein:
 
-    if (strpos($row['memberOf'],'company-phonebook') !== false) {
-    return true;
+    # only import contacts with membership
+    if (!array_key_exists("memberOf", $row)) return false;
+
+    $groups = $row["memberOf"];
+    # turn a single group membership (string) into a list of memberships (array)
+    if (!is_array($groups)){
+      $groups = array($row["memberOf"]);
     }
-    return false;
+
+    # always search in a list of memberships
+    return preg_grep('/company-phonebook/i', $groups);
+
 
 ### Telefonbuchfelder im AD
 
@@ -88,33 +96,72 @@ Fügen Sie hierzu im Reiter {{< ui-button "Variablen" >}} folgende Zeile durch {
 
 |Variable|Quelle|
 |----|----|
-|Notiz|return $row["info"];|
+|info|return $row["info"];|
 
-Durch diese Zeile speichert der Connector den Inhalt des ActiveDirectory Feldes "Info" (*Rufnummern > Anmerkung*) in der Variable "Notiz" ab.
+Durch diese Zeile speichert der Connector den Inhalt des ActiveDirectory Feldes "Info" (*Rufnummern > Anmerkung*) in der Variable "info" ab.
 Diese Variable muss nun unter {{< ui-button "Struktur" >}} dem Notiz pascom-Telefonbuch Feld zugeordnet werden.
 
 Ergänzen Sie hierzu die Zeilen:
 
-          "028pho_notes" :        "{{{Notiz}}}"
+    "028pho_notes" :        "{{{info}}}"
 
 **in der Struktur:**
 
-        {
-          "phonebook": [{
-            "028pho_bez" :  "{{{DisplayName}}}",
-            "028pho_phone" : "{{{BusinessPhone}}}",
-            "028pho_firstname" :  "{{{GivenName}}}",
-            "028pho_lastname" : "{{{Surname}}}",
-            "028pho_organisation" : "{{{CompanyName}}}",
-            "028pho_email" :  "{{{EmailAddress}}}",
-            "028pho_mobile" : "{{{MobilePhone}}}",
-            "028pho_homephone" :  "{{{HomePhone}}}",
-            "028pho_fax" :  "{{{BusinessFax}}}",
-            "028pho_notes" :  "{{{Notiz}}}"
-          }]
-        }
 
-Dadurch wird der Wert der Variablen Notiz dem **Notiz** pascom Telefonbuch Feld zugewiesen.
+    {
+      "phonebook": [{
+        "028pho_bez" : 			"{{{displayname}}}",
+        "028pho_phone" : 		"{{{phone}}}",
+        "028pho_firstname" : 	"{{{givenname}}}",
+        "028pho_lastname" : 	"{{{surname}}}",
+        "028pho_organisation" : "{{{organisation}}}",
+        "028pho_email" : 		"{{{email}}}",
+        "028pho_mobile" : 		"{{{mobile}}}",
+        "028pho_homephone" : 	"{{{homephone}}}",
+        "028pho_fax" : 			"{{{fax}}}",
+        "028pho_notes" :    "{{{info}}}"
+      }]
+    }
+
+Dadurch wird der Wert der Variablen "info" dem **Notiz** pascom Telefonbuch Feld zugewiesen.
+
+#### Anzeigenamen individualisieren
+
+Der Anzeigename im pascom Telefonbuch wird bei ein- und ausgehenden Anrufen sowohl im Display Ihres Tischtelefons, als auch in Ihrem pascom Client angezeigt.
+Wenn Sie den Anzeigenamen von Kontakten anpassen möchten, da der im Active Directory hinterlegte Anzeigename nicht Ihren Bedürfnissen oder den Anforderungen der Telefonanlage entspricht, können Sie dieses Feld natürlich individuell befüllen.
+
+Woher die die Informationen aus Active Directory stammen finden Sie im Reiter {{< ui-button "Variablen" >}}.
+Standardmäßig wird der Anzeigename (*displayName*) aus dem Active Directory direkt übernommen.
+
+|Variable|Quelle|
+|----|----|
+|displayname|return $row["displayName"];|
+
+
+Da jedoch in der pascom Telefonanlage der Anzeigename nicht mehr als 80 Zeichen betragen darf, kann es notwendig sein den Anzeigenamen aus Active Directory heraus zu kürzen, oder falls gewünscht, aus anderen Feldern auszulesen.
+
+Im nachfolgenden Beispiel wird der Anzeigename aus Active Directory auf die Länge geprüft und im Falle, dass der Anzeigename im Active Directory gar nicht gesetzt wurde, automatisch durch den Nachnamen (Surname) und Vornamen (Givenname) des Benutzers ersetzt und ebenfalls auf die maximale Länge von 80 Zeichen gekürzt.
+
+Dazu wird im Reiter {{< ui-button "Variablen" >}} die **Quelle** der Variable *displayname* ersetzt durch folgenden Inhalt:
+
+    # check if displayname is empty
+    if (!empty($row['DisplayName'])) {
+
+      # check if displayname has more than 80 chars and cut it if necessary
+      if (strlen($row['DisplayName']) <= 80) {
+        return $row['DisplayName'];
+      }
+      # displayname will be cut from 0 to 80 chars
+      return substr($row['DisplayName'],0,80);
+    }
+
+    # if displayname is empty use a combination of "Surname" and "Givenname" 
+    # and also cut it if it's longer than 80 chars
+    return substr($row['Surname'] . ', ' . $row['GivenName'],0,80);
+
+
+Anstelle von Vorname und Nachname, kann natürlich auch jedes andere Feld aus Active Directory ausgelesen und als Quelle für den Anzeigenamen dienen.
+
 
 #### Labels nutzen
 
@@ -138,55 +185,47 @@ Fügen Sie hierzu im Reiter {{< ui-button "Variablen" >}} folgende Zeile durch {
 
 |Variable|Quelle|
 |---|---|
-|Customernumber|return $row['Customernumber'];|
+|customernumber|return $row['customerNumber'];|
 
-{{% notice info%}}
-Im Gegensatz zu anderen Connector-Profilen muss der Name der Variablen und
-der Name des Quellfeldes (hier "Customernumber") identisch sein.
-{{% /notice  %}}
-
-Durch diese Zeile speichert der Connector den Inhalt des Active Directory Feldes "Customernumber" in der gleichnamigen Variable "Customernumber" ab.
+Durch diese Zeile speichert der Connector den Inhalt des Active Directory Feldes "customerNumber" in der Variable "customernumber" ab.
 
 Diese Variable muss nun unter {{< ui-button "Struktur" >}} dem Label **Kundennummer** pascom Feld zugeordnet werden.
 
 Ergänzen Sie hierzu die Zeilen:
 
-```
-"post": {
-            "phonebook.phonebooklabel": [
-                {
-                    "050lab_bez": "Kundennummer",
-                    "028050pholab_value": "{{{Customernumber}}}"
-                }
-            ]
-}
-```
+    "post": {
+      "phonebook.phonebooklabel": [
+        {
+          "050lab_bez": "Kundennummer",
+          "028050pholab_value": "{{{customernumber}}}"
+        }
+      ]
+    }
+
 
 in der Struktur:
 
-```
-{
-  "phonebook": [{
-    "028pho_bez" :          "{{{DisplayName}}}",
-    "028pho_phone" :        "{{{BusinessPhone}}}",
-    "028pho_firstname" :    "{{{GivenName}}}",
-    "028pho_lastname" :     "{{{Surname}}}",
-    "028pho_organisation" : "{{{CompanyName}}}",
-    "028pho_email" :        "{{{EmailAddress1}}}",
-    "028pho_mobile" :       "{{{MobilePhone}}}",
-    "028pho_homephone" :    "{{{HomePhone}}}",
-    "028pho_fax" :          "{{{BusinessFax}}}",
-    "post": {
-            "phonebook.phonebooklabel": [
-                {
-                    "050lab_bez": "Kundennummer",
-                    "028050pholab_value": "{{{Customernumber}}}"
-                }
-            ]
+    {
+      "phonebook": [{
+        "028pho_bez" : 			"{{{displayname}}}",
+        "028pho_phone" : 		"{{{phone}}}",
+        "028pho_firstname" : 	"{{{givenname}}}",
+        "028pho_lastname" : 	"{{{surname}}}",
+        "028pho_organisation" : "{{{organisation}}}",
+        "028pho_email" : 		"{{{email}}}",
+        "028pho_mobile" : 		"{{{mobile}}}",
+        "028pho_homephone" : 	"{{{homephone}}}",
+        "028pho_fax" : 			"{{{fax}}}",
+        "post": {
+          "phonebook.phonebooklabel": [
+            {
+              "050lab_bez": "Kundennummer",
+              "028050pholab_value": "{{{customernumber}}}"
+            }
+          ]
+        }
+      }]
     }
-  }]
-}
-```
 
 Dadurch wird jedem Kontakt mit eingetragener Kundennummer das Label **Kundennummer** mit
 dem entsprechenden Wert zugeteilt.
