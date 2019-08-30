@@ -142,14 +142,14 @@ In the following example, the display name from Active Directory will be:
 To do this, under the {{< ui-button "Variables" >}} tab, the *displayname* **Source** will be replaced with the following content: 
 
     # check if displayname is empty
-    if (!empty($row['DisplayName'])) {
+    if (!empty($row['displayName'])) {
 
       # check if displayname has more than 80 chars and cut it if necessary
-      if (strlen($row['DisplayName']) <= 80) {
-        return $row['DisplayName'];
+      if (strlen($row['displayName']) <= 80) {
+        return $row['displayName'];
       }
       # displayname will be cut from 0 to 80 chars
-      return substr($row['DisplayName'],0,80);
+      return substr($row['displayName'],0,80);
     }
 
     # if displayname is empty use a combination of "Surname" and "Givenname" 
