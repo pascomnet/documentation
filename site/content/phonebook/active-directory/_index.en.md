@@ -121,6 +121,44 @@ To do this add the lines:
 
 This will result in the "notes" variable being assigned to the **Notes** field in the pascom telephone book.
 
+#### Individualised Display Names
+
+The pascom telephone book display name is displayed for in- and outbound calls, desktop VoIP phone displays as well as in your pascom UC client. Should you wish to customised / change display names because the stored display name in Active Directory does not match your needs or requirements of your pascom phone system, it is possible to individually populate this field. 
+
+Where the information originates from in Active Directory can be found under the tab {{< ui-button "Variables" >}}. Per default, the display name (*displayName*) is taken directly from Active Directory.
+
+|Variable|Source|
+|----|----|
+|displayname|return $row["displayName"];|
+
+However, as the display name within your pascom phone system may not exceed 80 characters, it may be necessary to shorted the display name from Active Directory or, if desired, be read from different fields.
+
+In the following example, the display name from Active Directory will be:
+
+* Checked for length
+* Automatically populated using the users' Surname and Forename (Givenname) should the AD display name not have been set
+* Shortenedd to the maximum allowed 80 characters. 
+
+To do this, under the {{< ui-button "Variables" >}} tab, the *displayname* **Source** will be replaced with the following content: 
+
+    # check if displayname is empty
+    if (!empty($row['DisplayName'])) {
+
+      # check if displayname has more than 80 chars and cut it if necessary
+      if (strlen($row['DisplayName']) <= 80) {
+        return $row['DisplayName'];
+      }
+      # displayname will be cut from 0 to 80 chars
+      return substr($row['DisplayName'],0,80);
+    }
+
+    # if displayname is empty use a combination of "Surname" and "Givenname" 
+    # and also cut it if it's longer than 80 chars
+    return substr($row['Surname'] . ', ' . $row['GivenName'],0,80);
+
+
+Instead of forename and surname, it is of course also possible to read any other Active Directory field and use this as the display name source. 
+
 #### Using Labels
 
 pascom labels can be used to display additional information from the LDAP directory within the pascom telephone book. 
