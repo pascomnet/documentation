@@ -38,7 +38,7 @@ Log in to https://my.pascom.net and open the corresponding subscription under {{
 
 Within the details area, click {{< ui-button "Cancel" >}}.
 
-Select the option Sie die Option {{< ui-button "Cancel Now" >}}. Only by following this process can you immediately re-use the name of your instance for a new subscription.
+Select the option the Option {{< ui-button "Cancel Now" >}}. Only by following this process can you immediately re-use the name of your instance for a new subscription.
 
 {{< num 3 "Create New Subscription" >}}
 
@@ -62,7 +62,7 @@ Log in to https://my.pascom.net and open the corresponding subscription under {{
 
 Within the details area, click {{< ui-button "Cancel" >}}.
 
-Select the option Sie die Option {{< ui-button "Cancel Now" >}}.
+Select the option the Option {{< ui-button "Cancel Now" >}}.
 
 {{< num 2 "Create New Subscription" >}}
 
