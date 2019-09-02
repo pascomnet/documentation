@@ -27,13 +27,13 @@ Under {{< ui-button "Appliance" >}} > {{< ui-button "Services" >}} > {{< ui-butt
 |Setting|Description|
 |---|---|
 |Number of fax lines|Defines the number of virtual modems and therefore the maximum number of parallel fax jobs.|
-|Dedicated lines for inbound|Defines the nummber of fax lines reserved for inbound faxes.|
+|Dedicated lines for inbound|Defines the number of fax lines reserved for inbound faxes.|
 |Country Code|Enter the international country code for your country excluding the leading zeros, e.g. 44 for the United Kingdom.|
 |Prefix without leading 0|Enter your area code without the leading 0, e.g. 203 for London.|
 |Originating number|Enter your fixed line originating number, i.e. phone number without international or area codes.|
 |Mail to Fax|Determines whether the fax to be sent should be the E-mail content or attachment.*Default: Deactivated*|
-|Fax document storage / days|Enter the maximumm time in days that a fax document should  be stored. The default value  is  30 days.|
-|Number of Send attempts|Enter the maximum number of send attempts should for example the intended recipient temporarily not be available.|
+|Fax document storage / days|Enter the maximum time in days that a fax document should  be stored. The default value  is  30 days.|
+|Number of Send attempts|Enter the maximum number of send attempts should, for example, the intended recipient temporarily not be available.|
 
 ### Overview of Sent / Received Faxes
 
@@ -47,7 +47,7 @@ Virtual fax devices can be added for both a [User]({{< ref "/user/user">}}) and 
 
 #### Virtual User Fax Device
 
-Under {{< ui-button "Users" >}} > {{< ui-button "User list" >}} selectt the required user and press {{< ui-button "Edit" >}}. Under the {{< ui-button "Fax Device" >}} tab, it is possible to add a virtual fax device for existing users. Simply select the *Configure personal fax* tick box:
+Under {{< ui-button "Users" >}} > {{< ui-button "User list" >}} select the required user and press {{< ui-button "Edit" >}}. Under the {{< ui-button "Fax Device" >}} tab, it is possible to add a virtual fax device for existing users. Simply select the *Configure personal fax* tick box:
 
 |Settings|Description|
 |---|---|
@@ -58,7 +58,7 @@ Under {{< ui-button "Users" >}} > {{< ui-button "User list" >}} selectt the requ
 
 #### Virtual Team Fax Device
 
-Under {{< ui-button "Users" >}} > {{< ui-button "Teams" >}} selectt the required Team and press {{< ui-button "Edit" >}}. Under the {{< ui-button "Fax Device" >}} tab, it is possible to add a virtual fax device for existing Teams. Simply select the *Configure team fax* tick box:
+Under {{< ui-button "Users" >}} > {{< ui-button "Teams" >}} select the required Team and press {{< ui-button "Edit" >}}. Under the {{< ui-button "Fax Device" >}} tab, it is possible to add a virtual fax device for existing Teams. Simply select the *Configure team fax* tick box:
 
 |Settings|Description|
 |---|---|
@@ -73,7 +73,7 @@ Under {{< ui-button "Users" >}} > {{< ui-button "Teams" >}} selectt the required
 
 Setup your mail server so that all e-mails are forwarded to your pascom server via the domain *.fax* per SMTP.
 
-On your mail server, setup an inbox which can be retrieved p via either POP3 or IMAP by the pascom phone system.
+On your mail server, setup an inbox which can be retrieved via either POP3 or IMAP by the pascom phone system.
 
 *Example:*         
 *fax@mydomain.com*
@@ -89,7 +89,7 @@ Regardless of which option you choose, further configuration fields regarding yo
 |Setting|Description|
 |---|---|
 |Mail Server|Enter the mail server on which the prepared inbox is located.|
-|Mail Protocol|Enter whether the E-mails should be retreived using POP3 or IMAP (*Default setting*).|
+|Mail Protocol|Enter whether the E-mails should be retrieved using POP3 or IMAP (*Default setting*).|
 |Retrieval interval|*Only for POP3 accounts*: Enter the time interval in seconds at which e-mails should be retreived.|
 |Remove from mailbox|Enter whether the e-mails should be removed from the inbox once retrieved or whether they should continue to be saved. *Default: Yes*|
 |Mail Username|Enter the username for your pre-prepared inbox|
@@ -105,7 +105,7 @@ Once the setup has been completed, to send a fax simply send an e-mail with the 
 |Field|Example|Description|
 |----|--------|------------|
 |To|fax@mydomain.com|Enter the e-mail address of your pre-prepared inbox.|
-|Subject|00991123456999 |Enter the to be used trunk prefix + the fax number of the receipient.|
+|Subject|00991123456999 |Enter the to be used trunk prefix + the fax number of the recipient.|
 |Attachment| |This is the actual fax as PDF or TIF file.|
 
 Depending on your fax server configuration choices, the contents of the e-mail will also be sent in the fax.
@@ -116,7 +116,7 @@ Currently, it is only partially possible to customise the behaviour of the Mail-
 
 Without any customisation, the default setting is to send out a plain-text e-mail whenever there is a change in a fax job (busy, failed, successful, etc.). 
 
-This setting can be changed to use an alternative format. As such, this generate an HTML e-mail with an embedded first page and PDF attachment. The fax itself will be sent as an attachment in PDF format. This format is the same as the one used when a fax is received by a virtual fax machine configured to use the format="inlinegif" option.
+This setting can be changed to use an alternative format. As such, this generates an HTML e-mail with an embedded first page and PDF attachment. The fax itself will be sent as an attachment in PDF format. This format is the same as the one used when a fax is received by a virtual fax machine configured to use the format="inlinegif" option.
 
 * open the file /etc/hylafax/FaxNotify in a text editor
 * remove the "#" comment in the line INLINE=true
