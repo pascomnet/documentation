@@ -10,7 +10,12 @@ weight: 50
 
 ## Konzept
 
-Die DATEV-Schnittstelle ermöglicht es bei einem eingehenden Anruf die Anrufdaten in Ihre *DATEV Arbeitsplatz pro*-Software zu übertragen. Ebenso können Sie aus dem DATEV-Telefonbuch Gespräche starten. Voraussetzung ist die Verwendung von *DATEV Arbeitsplatz pro* mit dem *Telefoniemodul*
+Die DATEV-Schnittstelle ermöglicht es bei einem eingehenden Anruf die Anrufdaten in Ihre *DATEV Arbeitsplatz pro*-Software zu übertragen. Ebenso können Sie aus dem DATEV-Telefonbuch Gespräche starten. Voraussetzung ist die Verwendung von *DATEV Arbeitsplatz pro* mit dem *Telefoniemodul*.
+
+{{% notice warning %}}
+DATEV Cloud ist nur kompatibel zu einer pascom OnPremise Telefonanlage vor Ort.
+Verwenden Sie DATEV Arbeitsplatz pro vor Ort können Sie auch eine pascom Cloud Anlage verwenden.
+{{% /notice %}}
 
 ## Konfiguration
 
@@ -18,47 +23,44 @@ Zur Vorbereitung muss zunächst ein *Generisches Label* angelegt werden. Klicken
 
 Anschließend ist die DATEV-Schnittstelle automatisch aktiv sobald Sie neben *DATEV Arbeitsplatz pro* mit Telefoniemodul den [pascom Client]({{< relref "clients/desktop-installation">}}) installieren.
 
-Sollte das Label nicht angelegt sein, erscheint bei Start des Classic Clients folgende Meldung:
+Sollte das Label nicht angelegt sein, erscheint beim Übertragen der Anrufdaten in Datev während einem aktiven Anruf mit dem pascom Client folgende Meldung:
 
-![Kein DATEV-Label konfiguriert](no-label.de.png?width=250px)
+![Kein DATEV-Label konfiguriert](datev-label.de.png)
 
 ## Bedienung
+
+![DATEV-Klick ausführen](datev-journal.de.png)
 
 ### Eingehender Anruf
 
 Bei einem eingehenden Anruf werden die DATEV-Stammdaten abgefragt und Treffer in der Anruf-Notification angezeigt.
 
-![DATEV Notification](notification.de.png)
-
 Schon während des Läutens ist es möglich über den DATEV-Klick die Telefonie-Daten in die Telefonliste Ihres *DATEV Arbeitsplatz pro* zu übertragen.
 
 Nach einem Anruf können die Daten über den DATEV-Klick aus dem Journal übertragen werden.
 
-![DATEV Journal](journal.de.png)
 
-Sollten zu einer Telefonnummer mehrere Einträge in den DATEV-Stammdaten zu finden sein, erscheint eine Liste mit den möglichen Treffern und Sie können den richtigen Kontakt für die Datenübertragung auswählen.
+Sollten zu einer Telefonnummer keine oder mehrere Einträge in den DATEV-Stammdaten zu finden sein, erscheint eine Liste mit den möglichen Treffern und Sie können den richtigen Kontakt für die Datenübertragung auswählen, oder die Anrufdaten ohne Zuordnung übertragen.
 
-![DATEV Eintrag auswählen](select_entry.de.png)
-
-**DATEV-Einstellungen im Classic Client**
-
-Im Classic Client können unter {{< ui-button "Einstellungen" >}} > {{< ui-button "Adressbücher" >}} Einstellungen vorgenommen werden:
-
-![DATEV Einstellungen](full-auto.de.png)
-
-|Einstellungen|Beschreibung|
-|---|---|
-|Reihenfolge der Telefonbücher|Verwenden Sie den Classic Client auf einer Arbeitsstation auf dem auch *DATEV Arbeitsplatz pro* installiert ist, wird immer als erstes das DATEV-Telefonbuch abgefragt.|
-|DATEV-Integration ist aktiviert|Hier kann die Verwendung der DATEV-Schnittstelle deaktiviert/aktiviert werden.|
-|Bei Telefonbuch-Suche verwenden|Hier kann angegeben werden, ob bei einem einkommenden Anruf das DATEV-Telefonbuch durchsucht werden soll.|
-|Cache aktualisieren|Wenn Sie in den DATEV-Stammdaten Änderungen vornehmen, kann es bis zu 2 Stunden dauern, bis diese synchronisiert werden. Möchten Sie die Änderungen sofort synchronisieren, klicken Sie hier auf {{< ui-button "Aktualisieren" >}}|
-|Automatische Datenweitergabe|Hier können Sie einstellen, ob Anrufdaten erst nach dem DATEV-Klick oder automatisch in die DATEV-Stammdaten übertragen werden sollen.|
-
+![DATEV Eintrag auswählen](datev-selection.de.png)
 
 ### Ausgehender Anruf
 
-Bei Ausgehenden Anrufen werden folgende Funktionen unterstützt:
+Wird im Client-Telefonbuch nach einem Kontakt gesucht, wird immer auch das DATEV-Telefonbuch durchsucht.
+Außerdem kann auch direkt aus der Kontaktliste des *DATEV Arbeitsplatz pro* heraus ein Kontakt angerufen werden.
 
-* Wird eine Nummer über den pascom Client oder einem Hardware-Telefon gestartet, erscheint in der Gesprächs-Notification der DATEV-Klick. Über den Klick können die Gesprächs-Daten an die DATEV-Software übertragen werden. Ist das Gespräch beendet, können die Daten über den DATEV-Klick aus dem Journal heraus übertragen werden.
-* Wird im  Client-Telefonbuch nach einem Kontakt gesucht, wird auch das DATEV-Telefonbuch durchsucht.
-* Aus der Kontaktliste in der *DATEV Arbeitsplatz pro* kann ebenfalls ein Kontakt angerufen werden.
+Wird eine Nummer über den pascom Client oder einem Hardware-Telefon gewählt, erscheint in der Gesprächs-Benachrichtigung der DATEV-Klick. Über den Klick können die Gesprächs-Daten an die DATEV-Software übertragen werden. 
+Sobald ein Gespräch beendet wurde, können die Daten ebenfalls über den DATEV-Klick direkt aus dem Client-Journal heraus übertragen werden.
+
+
+## DATEV-Einstellungen im pascom Client
+
+Im pascom Client können unter {{< ui-button "Einstellungen" >}} > {{< ui-button "DATEV Integration" >}} Einstellungen vorgenommen werden:
+
+![DATEV Einstellungen](datev-settings.de.png)
+
+|Einstellungen|Beschreibung|
+|---|---|
+|DATEV Integration|Kann mit dem Schalter aktiviert oder deaktiviert werden. |
+|DATEV Kontakte aktualisieren|Stößt die Synchronisation mit dem DATEV Telefonbuch an und aktualisiert diese mit dem pascom Client ab. *Im Default findet der Kontakt-Import alle 2 Stunden statt.*|
+|DATEV Klick automatisch ausführen|Hier können Sie einstellen, ob die Datenweitergabe an DATEV manuell via DATEV-Klick ausgeführt werden (*Aus*), nur Externe Anrufe automatisch an DATEV übertragen werden (*Externe Anrufe*) oder Alle Anrufe automatisch an DATEV übertragen werden (*Alle*). |
