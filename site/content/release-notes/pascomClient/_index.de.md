@@ -12,6 +12,22 @@ Für weitere Informationen zu unserem pascom Client lesen Sie bitte unsere ausf�
 Ab Release 46.R152 wird macOS 10.12 vorausgesetzt
 {{% /notice %}}
 
+
+## Release 54.R534 (12.09.2019)
+
+{{% notice note %}}
+Bei diesem Release gibt es keine eigene Client-Version, da die Änderungen nur die Mobile iOS-Applikation betrifft.
+{{% /notice %}}
+
+**Auf einen Blick**
+
+- Kompatibilität zu iOS 13
+
+**ÄNDERUNGEN:**
+
+- [CL-748] - pascom Client compatibility to iOS 13
+
+
 ## Release 53.R453 (03.07.2019)
 
 **Auf einen Blick**

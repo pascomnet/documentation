@@ -13,6 +13,21 @@ From Release 46.R152 macOS 10.12 is the minimum requirement
 {{% /notice %}}
 
 
+## Release 54.R534 (12.09.2019)
+
+{{% notice note %}}
+This release does not include a desktop version update as the changes only affect the mobile iOS-application.
+{{% /notice %}}
+
+**Overview**
+
+- Compatibility to iOS 13
+
+**MODIFICATIONS:**
+
+- [CL-748] - pascom Client compatibility to iOS 13
+
+
 ## Release 53.R453 (03.07.2019)
 
 **Overview**
