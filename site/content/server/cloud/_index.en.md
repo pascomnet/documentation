@@ -8,6 +8,10 @@ description: We offer all Free, Basic and Premium customers completely free pasc
  
 {{< description >}}
 
+## Training Video
+
+{{< youtube QDtL-9ktR6E  >}}
+
 ## pascom.cloud
 
 The simplest deployment option for your pascom phone system is to use pascom.cloud which is free for all Free, Basic and Premium pascom customers. 

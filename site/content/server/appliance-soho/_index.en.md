@@ -119,6 +119,8 @@ This step is required should you wish to use the pascom mobile client (iOS/Andro
 
 ## Phone System Setup
 
+{{< youtube QDtL-9ktR6E  >}}
+
 An additionnal assistant will help you to finish setting up your phone system and add / invite further users.
 Proceed as follows: 
 

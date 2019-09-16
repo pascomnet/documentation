@@ -1,5 +1,5 @@
 ---
-title: Updating pascom 18
+title: pascom phone system updates
 description: Step by step guide to updating your pascom phone system
 weight: 70
 ---
@@ -7,6 +7,12 @@ weight: 70
 {{< doctype "self" >}}
 
 {{< description >}}
+
+## Training Video
+
+{{< youtube 4vM4dXrs0sQ  >}}
+
+## Phone System Updates
 
 If you have already deployed a pascom 18 or newer phone system, the following steps are necessary when updating your phone system. 
 

@@ -6,9 +6,9 @@ weight: 40
 
 {{< description >}}
 
-**Useful Knowledge**
+## Training Video
 
- * [pascom Server System Structure]({{< ref "concept/server" >}})
+{{< youtube F1Yl0dkI2ng  >}}
 
 ## Supported Hypervisors
 
@@ -67,6 +67,8 @@ This step is required should you wish to use the pascom mobile client (iOS/Andro
  * See [Setup Mobile Acces via the Internet]({{< ref "howto/mobile-access" >}})
 
 ## Phone System Setup
+
+{{< youtube QDtL-9ktR6E  >}}
 
 An additionnal assistant will help you to finish setting up your phone system and add / invite further users.
 Proceed as follows: 
