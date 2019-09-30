@@ -110,7 +110,7 @@ To do this, expand structure by adding the line:
 
 This will assign the variable "Homepage" to the **Notes** field of the pascom phone book.
 
-**Liste der verfügbaren pascom Felder**
+**List of available pascom fields**
 
 |Name|Description|
 |---|---|
