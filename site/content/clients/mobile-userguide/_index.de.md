@@ -1,6 +1,6 @@
 ---
 title: Mobile Client Benutzerhandbuch
-description: Diese Benutzerhandbuch richtet sich an Endanwender und erklärt den täglichen Umgang mit dem pascom Mobile Client 
+description: Diese Benutzerhandbuch richtet sich an Endanwender und erklärt den täglichen Umgang mit dem pascom Mobile Client. 
 weight: 50
 ---
 {{< doctype "both" >}}

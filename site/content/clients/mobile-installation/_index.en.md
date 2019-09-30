@@ -11,7 +11,7 @@ weight: 40
 ## Android Installation
 
 {{% notice tip %}}
-System Requirements **Android 5.1** or higher
+System Requirements **Android 5.1** or higher.
 {{% /notice %}}
 
 The latest pascom mobile VoIP app can be directly installed on your Android smartphone via the [Google Playstore](https://www.pascom.net/playstore).
@@ -19,7 +19,7 @@ The latest pascom mobile VoIP app can be directly installed on your Android smar
 ## iOS Installation
 
 {{% notice tip %}}
-System Requirements **iOS 10 (64bit)** or higher
+System Requirements **iOS 10 (64bit)** or higher.
 {{% /notice %}}
 
 The latest pascom mobile VoIP app can be directly installed on your Apple smartphone via the [Apple Appstore](https://www.pascom.net/appstore).
@@ -56,5 +56,5 @@ Should you choose to, as an administrator, you can perform the pairing process f
 
 ### Pairing via the pascom Desktop Client
 
-Alternatively, your user can pair the devices themselves via the pascom Desktop Client. Further details can be found in the [Mobile Client User Guide]
+Alternatively, your user can pair the devices themselves via the pascom Desktop Client. Further details can be found in the [Mobile Client User Guide]({{< ref "/clients/mobile-userguide">}})
 

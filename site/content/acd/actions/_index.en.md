@@ -10,7 +10,6 @@ weight: 71
 
 
 ## Concept
-<!--FIXME reihenfolge: beispiel zuerst als konzept  -->
 
 Actions are an important and useful pascom phone system tool for SMBs, Contact Centre and larger [Call Centers](https://www.pascom.net/en/call-center "pascom CallCenter solutions"). Through using actions, the process of each individual call flow can be controlled.
 

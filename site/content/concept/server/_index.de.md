@@ -28,7 +28,7 @@ Das pascom Server Management liegt direkt via **Port 8443** am Interface an. Hab
 
 ### Session Border Controller
 
-Zugriffe auf die Telefonanlage können ausschließlich via Session Border Controller erfolgen. Dieser sichert das System ab und lässt in der Standard-Konfiguration ausschließlich verschlüsselte Verbindugen zu. Über den Session Border Controller stehen folgede Dienste der Telefonanlage am Interface zur Verfügung:
+Zugriffe auf die Telefonanlage können ausschließlich via Session Border Controller erfolgen. Dieser sichert das System ab und lässt in der Standard-Konfiguration ausschließlich verschlüsselte Verbindugen zu. Über den Session Border Controller stehen folgende Dienste der Telefonanlage am Interface zur Verfügung:
 
 #### Aktiviert (Standard)
 | Port | Beschreibung |
@@ -36,7 +36,7 @@ Zugriffe auf die Telefonanlage können ausschließlich via Session Border Contro
 | TCP **443** | Webinterface der Telefonanlage |
 | TCP **636** | LDAPS für Telefonbuchzugriffe via LDAP |
 | TCP **5061** | SIP-TLS - sichere SIP-Kommunikation |
-| TCP **5222** | pascom Desktop- und Mobile-Client Zugriffe |
+| TCP **5222** | pascom Desktop- und Mobile-Client-Zugriffe |
 | TCP **8884**  | Provisionierung von IP-Hardware-Telefonen |
 | UDP **30000 - 35000** | SRTP - verschlüsselte Sprachdaten |
 
@@ -54,7 +54,7 @@ Direkt am Interface steht via **Port 22** der SSH-Server zur Verfügung. Dort k�
 
 Ist die eigentliche Telefonanlage. Auf diese kann, aus Sicherheitsgründen, ausschließlich per Session Border Controller zugegriffen werden. Es ist auch möglich mehrere Telefonanlagen auf einem pascom Sever gleichzeitig zu betreiben. Dies ist jedoch unseren Cloud Service Provider Partnern vorbehalten.
 
-Um nicht immer über das Management auf die Weboberfläche der Telefonanlage zugreifen zu müssen steht diese auch direkt, durch angabe des Telefonanlgen Names, zur Verfügung:
+Um nicht immer über das Management auf die Weboberfläche der Telefonanlage zugreifen zu müssen steht diese auch direkt, durch angabe des Telefonanlgen-Namens, zur Verfügung:
 
 ```
 https://pascom-server/my-company
