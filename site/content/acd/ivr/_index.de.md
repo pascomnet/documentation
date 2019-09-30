@@ -1,6 +1,6 @@
 ---
 title: IVR - Auswahlmenüs
-description: Auswahlmenüs (IVR) dienen dazu dem Anrufer durch das Drücken einer Taste durch das Telefonmenü zu lenken.
+description: Auswahlmenüs (IVR) dienen dazu den Anrufer durch das Drücken einer Taste durch das Telefonsystem zu lenken.
 weight: 40
 ---
 
@@ -10,7 +10,7 @@ weight: 40
 
 ## Konzept
 
-Auswahlmenüs (IVR) dienen dazu dem Anrufer durch das Drücken einer Taste durch das System zu lenken. Beispielsweise kann es sein, dass 50% der Anrufer auf der Zentrale nur entweder mit dem Vertrieb oder dem Support verbunden werden möchten. Hier kann man die [Telefonzentrale](https://www.pascom.net/de/call-center/ "Telefonzentrale") sinnvoll entlasten indem man ein Auswahlmenü vor die Zentrale schaltet.
+Auswahlmenüs (IVR) dienen dazu den Anrufer durch das Drücken einer Taste durch das Telefonsystem zu lenken. Beispielsweise kann es sein, dass 50% der Anrufer auf der Zentrale nur entweder mit dem Vertrieb oder dem Support verbunden werden möchten. Hier kann man die [Telefonzentrale](https://www.pascom.net/de/voip-telefonanlage "Telefonzentrale") sinnvoll entlasten indem man ein Auswahlmenü vor die Zentrale schaltet.
 
 Dies kann dem Anrufer dann anbieten:
 
@@ -23,13 +23,13 @@ Wird ein IVR Menü gerufen findet folgender Ablauf statt:
 
 Zuerst spielt ein IVR-Menü eine [Ansage Ihrer Wahl]({{< ref "/acd/prompts-moh">}}) ab. Diese Ansage beinhaltet beispielsweise den Text:
 
-> "Drücken Sie die für den Vertrieb die 2 für den Support. Treffen Sie keine Auswahl werden Sie automatisch mit der Telefonzentrale verbunden ...".
+> "Drücken Sie die 1 für den Vertrieb die 2 für den Support. Treffen Sie keine Auswahl werden Sie automatisch mit der Telefonzentrale verbunden ...".
 
 Danach wartet das System den von Ihnen im IVR Menü definierten **Timeout** lang auf einen Tastendruck des Anrufers. Ein 5 Sekunden Timeout hat sich hier als praktikabel erwiesen.
 
 Hat der Anrufer eine Taste gedrückt, für die ein **Eintrag vorhanden** ist, werden die Aktionen ausgeführt die dort hinterlegt sind.
 
-Drückt der Anrufer eine Taste für die **kein Eintrag vorhanden** ist wird automatisch der Eintrag mit der Sondernummer i (für *invalid*) gerufen. In den hier hinterlegten Aktionen ist es sinnvoll den Anrufer darauf hinzuweisen, dass er eine falsche Taste gedrückt hat und ihn wieder auf das selbe IVR abzuwerfen um ihm erneut die Auswahlmöglichkeiten vorzulesen.
+Drückt der Anrufer eine Taste für die **kein Eintrag vorhanden** ist, wird automatisch der Eintrag mit der Sondernummer i (für *invalid*) gerufen. In den hier hinterlegten Aktionen ist es sinnvoll den Anrufer darauf hinzuweisen, dass er eine falsche Taste gedrückt hat und ihn wieder auf das selbe IVR abzuwerfen um ihm erneut die Auswahlmöglichkeiten vorzulesen.
 
 Drückt der Anrufer innerhalb des Timeouts **keine Taste** wird automatisch der Eintrag mit der Sondernummer t (für *timeout*) gerufen. In den hier hinterlegten Aktionen ist es entweder sinnvoll den Anrufer darauf hinzuweisen, dass er keine Taste gedrückt hat und ihn wieder auf das selbe IVR abzuwerfen um ihm erneut die Auswahlmöglichkeiten vorzulesen oder den Anrufer z. B. auf die Zentrale abzuwerfen.
 
@@ -52,7 +52,7 @@ Wählen Sie in der pascom Weboberfläche {{< ui-button "Anrufverteilung" >}} > {
 |---|---|
 |**Bezeichnung**|Allgemeine Bezeichnung des IVR Menüs.
 |**Kanal beantworten**|Normalerweise wird der Kanal sofort beantwortet falls Wartemusik oder eine Ansage abgespielt werden soll. Dies kann man hier verzögern (in Millisekunden). Bei manchen Anrufern kommt es vor, dass bei einer sofortigen Beantwortung die erste Silbe der Ansage "verschluckt" wird. Durch eine Verzögerung kann dies vermieden werden.|
-|**Timeout**|Wie lange wartet pascom auf einem Tastendruck des Anrufers nachdem die Ansage vorgelesen wurde in Sekunden.
+|**Timeout**|Wie lange wartet das System auf einen Tastendruck des Anrufers nachdem die Ansage vorgelesen wurde in Sekunden.
 |**Durchwahl**|Die Durchwahl unter der dieses IVR erreichbar ist.|
 |**Ansage vorschalten**|Diese Ansage wird beim Betreten des Menüs vorgelesen und sollte Text wie "Drücken Sie die 1 um ..., die 2 um ..., usw." enthalten.|
 

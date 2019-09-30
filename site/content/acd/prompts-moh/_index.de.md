@@ -10,7 +10,7 @@ weight: 30
 
 ## Konzept
 
-An vielen Stellen haben Sie die Möglichkeit dem [Anrufer in Ihrem Call Center](https://www.pascom.net/de/call-center/) oder Ihrer Zentrale Ansagen oder Wartemusik vorzuspielen. pascom liefert bereits eine große Anzahl an vorgefertigten Ansagen mit. Allerdings ist es fast immer sinnvoll eigene Ansagen, z. B. zur Begrüßung Ihrer Kunden oder zur Ansage der Geschäftszeiten, zu erstellen.   
+An vielen Stellen haben Sie die Möglichkeit dem [Anrufer in Ihrem Call Center](https://www.pascom.net/de/voip-telefonanlage) oder Ihrer Zentrale, Ansagen oder Wartemusik vorzuspielen. pascom liefert bereits eine große Anzahl an vorgefertigten Ansagen mit. Allerdings ist es fast immer sinnvoll eigene Ansagen, z. B. zur Begrüßung Ihrer Kunden oder zur Ansage der Geschäftszeiten, zu erstellen.   
 
 {{% notice tip %}}
 Wollen Sie Ihre Ansagen lieber von einem Tonstudio mit professionellem Sprecher erstellen lassen? Unser Vertrieb hilft Ihnen gerne weiter.
@@ -20,7 +20,7 @@ Wollen Sie Ihre Ansagen lieber von einem Tonstudio mit professionellem Sprecher 
 
 ### Ansagen anlegen und hochladen
 
-Zum Anlegen einer neuen Ansage wählen Sie in der pascom Weboberfläche {{< ui-button "Erweitert" >}} > {{< ui-button "Ansagen" >}}. Möchten die eine bereits bestehende Ansage bearbeiten, markieren Sie diese und klicken Sie auf {{< ui-button "Bearbeiten" >}}. Um eine neue Ansage zu erstellen klicken Sie auf {{< ui-button "Hinzufügen" >}}.
+Zum Anlegen einer neuen Ansage wählen Sie in der pascom Weboberfläche {{< ui-button "Erweitert" >}} > {{< ui-button "Ansagen" >}}. Möchten Sie eine bereits bestehende Ansage bearbeiten, markieren Sie diese und klicken Sie auf {{< ui-button "Bearbeiten" >}}. Um eine neue Ansage zu erstellen klicken Sie auf {{< ui-button "Hinzufügen" >}}.
 
 {{% notice note %}}
 Wir empfehlen Ihnen einen Präfix für Ihre eingenen Ansagen zu verwenden um eine bessere Übersicht zu haben und um die eigenen Ansagen später leichter zu finden.<br>Z. B. *CC-gescheaftszeiten*, wobei hier CC für die Firma ChaosConsulting steht.
@@ -29,7 +29,7 @@ Wir empfehlen Ihnen einen Präfix für Ihre eingenen Ansagen zu verwenden um ein
 Nun wird vorerst der "Platz" für die Ansagen angelegt.
 
 Sie haben die Möglichkeit in der Spalte **Hochladen** eine bereits vorhandene Ansage hochzuladen.
-Nach erfolgereichem Hochladen und Speichern erscheint in der Spalte Abspielen das Abspielsysmbol und Sie können die Ansage anhören. Falls Sie die Ansage sichern möchten können Sie diese in der Spalte Ansagedatei auf Ihren PC herungerladen.
+Nach erfolgereichem Hochladen und Speichern erscheint in der Spalte Abspielen das Abspielsysmbol und Sie können die Ansage anhören. Falls Sie die Ansage sichern möchten können Sie diese in der Spalte Ansagedatei auf Ihren PC herunterladen.
 
 ### Eigene Ansagen Sichern
 
@@ -49,13 +49,13 @@ Wenn Sie die Ansage fertig aufgesprochen haben legen Sie nicht auf sonder drück
 
 Sie können die gerade aufgesprochene Ansage anhören, indem Sie erneut mit der \***50** in das Ansagesystem gehen. Durch drücken einer beliebigen Taste am Telefon (statt der 1) und nach Eingabe der Ansagen-ID wird die Ansage abgespielt.
 
-In der pascom können Sie die Ansage ebenfalls abspielen oder herunterladen. Muss die Ansage nicht mehr geändert werden, kann sie durch klicken den roten X links neben der Ansagen-ID wieder gesperrt werden. Daduch verschwindet die Ansagen-ID. Beim erneuten Freigeben wird eine neue ID generiert.
+In der pascom können Sie die Ansage ebenfalls abspielen oder herunterladen. Muss die Ansage nicht mehr geändert werden, kann sie durch Klicken des roten X links neben der Ansagen-ID wieder gesperrt werden. Daduch verschwindet die Ansagen-ID. Beim erneuten Freigeben wird eine neue ID generiert.
 
 ### Weitere Sprachen hinzufügen
 
-Wie bereits schon erwähnt, sind bei der Installation auf der pascom die Sprachen Deutsch, Englisch und Spanisch verfügbar. Bei Bedarf können weitere Sprachen hinzugefügt werden, unter dem Menüpunkt {{< ui-button "Erweitert" >}} > {{< ui-button "Sprachen" >}}, dann {{< ui-button "Hinzufügen" >}}. Benennen Sie die Sprache und geben Sie eine Abkürzung an.
+Wie bereits erwähnt, sind bei der Installation auf der pascom die Sprachen Deutsch, Englisch und Spanisch verfügbar. Bei Bedarf können weitere Sprachen hinzugefügt werden, unter dem Menüpunkt {{< ui-button "Erweitert" >}} > {{< ui-button "Sprachen" >}}, dann {{< ui-button "Hinzufügen" >}}. Benennen Sie die Sprache und geben Sie eine Abkürzung an.
 
-Nach dem Spreichern sehen Sie die neu angelegt Sprache in der Übersicht.
+Nach dem Spreichern sehen Sie die neu angelegte Sprache in der Übersicht.
 
 ### Wartemusik verwalten
 
@@ -69,7 +69,7 @@ Eine große Auswahl an lizenzierbarer Wartemusik gibt es unter [http://www.music
 
 In pascom wählen Sie nicht einzelne Musikstücke aus die abgespielt werden sollen sondern ganze Playliste. Im Lieferumfang ist die Playliste (Klasse) **default** enthalten. Diese beinhaltet drei Melodien welche von den Asterisk Entwicklern frei gegeben wurden und somit GEMA-frei sind.
 
-Wenn Sie eine Playliste anhaken können Sie unter {{< ui-button "Aktion" >}} > {{< ui-button "Musikstücke" >}} anzeigen die einzelnen Musikstücke anzeigen bzw. löschen. Möchten Sie neue Musikstücke für diese Playliste hochladen wählen Sie {{< ui-button "Aktion" >}} > {{< ui-button "Musikstück" >}} hochladen.
+Wenn Sie eine Playliste anhaken können Sie unter {{< ui-button "Aktion" >}} > {{< ui-button "Musikstücke" >}} die einzelnen Musikstücke anzeigen lassen bzw. löschen. Möchten Sie neue Musikstücke für diese Playliste hochladen wählen Sie {{< ui-button "Aktion" >}} > {{< ui-button "Musikstück" >}} hochladen.
 
 Kompatible Formate sind **WAV** und **MP3** Dateien.
 
@@ -91,10 +91,10 @@ Ein gutes, kostenloses und plattformunabhängiges Programm zur Erstellung von An
 Die Verwendung ist recht simpel. Das passende Microfon wählen (siehe Screenshot "Built-in Microphone"), Lautstärke einstellen und Aufnahme durch den roten Record-Knopf starten.
 
 {{% notice tip %}}
-Keine Hektik. Drücken Sie den Record-Knopf und sprechen Sie die Ansage u. U. mehr mals hintereinander auf. Sie können die Ansage hinterher einfach durch Markieren der Tonspur und anschließendem Drücken der ENTF Taste zurechtschneiden.
+Keine Hektik. Drücken Sie den Record-Knopf und sprechen Sie die Ansage u. U. mehrmals hintereinander auf. Sie können die Ansage hinterher einfach durch Markieren der Tonspur und anschließendem Drücken der ENTF Taste zurechtschneiden.
 {{% /notice %}}
 
-Wenn Sie mit dem Ergebnis zufrieden sind wählen Sie {{< ui-button "Datei" >}} > {{< ui-button "Exportieren" >}} und erzeugen ein **WAV (Microsoft) 16-bit PCM**. Falls Sie das Projekt später noch einmal weiter bearbeiten möchten empfiehlt es sich außerdem dieses ebenfalls zu speichern {{< ui-button "Datei" >}} > {{< ui-button "Projekt speichern" >}}.     
+Wenn Sie mit dem Ergebnis zufrieden sind wählen Sie {{< ui-button "Datei" >}} > {{< ui-button "Exportieren" >}} und erzeugen ein **WAV (Microsoft) 16-bit PCM**. Falls Sie das Projekt später noch einmal weiter bearbeiten möchten empfiehlt es sich dieses ebenfalls zu speichern {{< ui-button "Datei" >}} > {{< ui-button "Projekt speichern" >}}.     
     
 #### Ansagen mit Musik hinterlegen
 
@@ -104,7 +104,7 @@ Sprechen Sie Ihre Ansage wie bereits beschrieben auf und wählen Sie dann {{< ui
 
 Ihnen wird auffallen, dass die Musik zum einen den Text übertönt und es zum anderen nicht schön ist, dass Musik und Ansage gleichzeitige beginnen.
 
-Um die Ansage etwas versetzt beginnen klicken Sie in der Ansagetonspur vor den Beginn der Ansage und fügen per {{< ui-button "Erzeugen" >}} > {{< ui-button "Stille" >}} ... ca. 3 Sekunden Stille ein. Durch diese Maßnahme beginnt zuerst die Musik zu spielen und nach 3 Sekunden startet die Ansage.
+Um die Ansage etwas versetzt beginnen zu lassen klicken Sie in der Ansagetonspur vor den Beginn der Ansage und fügen per {{< ui-button "Erzeugen" >}} > {{< ui-button "Stille" >}} ... ca. 3 Sekunden Stille ein. Durch diese Maßnahme beginnt zuerst die Musik und nach 3 Sekunden startet die Ansage.
 
 Um die Musik leiser zu machen nutzen Sie das Hüllkurvenwerkzeug. Wenn Sie mit mit dem Hüllkurvenwerkzeug in die Tonspur klicken und die Maus dabei auf und ab bewegen, werden Sie feststellen, dass Sie damit die Lautstärke der Tonspur verändern können. Wenn Sie das an mehreren Stellen wiederholen, werden alle betreffenden Stellen in Audacity mit einer Hüllkurvenlinie verbunden. Ausserdem erscheinen dort kleine weisse Punkte.
 ![Ansage mit Audacity erstellen](audacity_envelope_editing.png?width=35%)
@@ -114,4 +114,4 @@ Das Endergebnis sollte in etwa wie folgt aussehen:
 
 Wenn Sie mit dem Ergebnis zufrieden sind wählen Sie {{< ui-button "Datei" >}} > {{< ui-button "Exportieren" >}} und erzeugen ein **WAV (Microsoft) 16-bit PCM**. Die Tonspuren werden hierbei automatisch zusammen gemischt.
 
-Falls Sie das Projekt später noch einmal weiter bearbeiten möchten empfiehlt es sich außerdem dieses ebenfalls zu speichern {{< ui-button "Datei" >}} > {{< ui-button "Projekt speichern" >}}.
+Falls Sie das Projekt später noch einmal weiter bearbeiten möchten empfiehlt es sich außerdem dieses zu speichern {{< ui-button "Datei" >}} > {{< ui-button "Projekt speichern" >}}.

@@ -24,7 +24,7 @@ Funktionen:
 
 ### Übersicht
 
-Der Anrufer muss über ein IVR-Menü die Sprache auswählen, anschließend gelangt er zum Team Support. Es klingelt nur bei den Agenten, die den Support in der ausgewählte Sprache anbieten.
+Der Anrufer muss über ein IVR-Menü die Sprache auswählen, anschließend gelangt er zum Team Support. Es klingelt nur bei den Agenten, die den Support in der ausgewählten Sprache anbieten.
 ![Skill Based Routing](sample-1.de.png?width=80%)
 
 ### Konfiguration
@@ -89,7 +89,7 @@ Nun wird das vorherige Beispiel erweitert. Nach der Sprachauswahl wird die Kunde
 ### Konfiguration
 
 #### 1. Generisches Label für Kundennummer
-Nach der Sprachauswahl muss der Anrufer seine Kundennummer eingeben. Das wird mit einem *Generichen Label* realsiert: unter {{< ui-button "Anruferverteilung" >}} > {{< ui-button "Anruf Labels" >}} > {{< ui-button "Hinzufügen" >}} > {{< ui-button "Generisches Label" >}}.
+Nach der Sprachauswahl muss der Anrufer seine Kundennummer eingeben. Das wird mit einem *Generischen Label* realsiert: unter {{< ui-button "Anruferverteilung" >}} > {{< ui-button "Anruf Labels" >}} > {{< ui-button "Hinzufügen" >}} > {{< ui-button "Generisches Label" >}}.
 
 ![Generiches Label](label-generic.de.png?width=80%)
 

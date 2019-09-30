@@ -1,6 +1,6 @@
 ---
 title: Mobile Client Installation
-description: Installieren Sie die pascom Mobile Clients via App- bzw. Playstore und pairen ihn via Bardcode mit dem pascom Server
+description: Installieren Sie die pascom Mobile Clients via App- bzw. Playstore und pairen ihn via Bardcode mit dem pascom Server.
 weight: 40
 ---
 
@@ -11,7 +11,7 @@ weight: 40
 ## Android Installation
 
 {{% notice tip %}}
-Systemvoraussetzung **Android 5.1** oder höher
+Systemvoraussetzung **Android 5.1** oder höher.
 {{% /notice %}}
 
 Den aktuellen pascom Mobile Client installieren Sie direkt auf Ihrem Android Smartphone via [Google Playstore](https://www.pascom.net/playstore).
@@ -19,7 +19,7 @@ Den aktuellen pascom Mobile Client installieren Sie direkt auf Ihrem Android Sma
 ## iOS Installation
 
 {{% notice tip %}}
-Systemvoraussetzung **iOS 10 (64bit)** oder höher
+Systemvoraussetzung **iOS 10 (64bit)** oder höher.
 {{% /notice %}}
 
 Den aktuellen pascom Mobile Client installieren Sie direkt auf Ihrem Apple Smartphone via [Apple Appstore](https://www.pascom.net/appstore).
@@ -27,10 +27,10 @@ Den aktuellen pascom Mobile Client installieren Sie direkt auf Ihrem Apple Smart
 ## (Optional) Mobilgerät am Server anlegen
 
 {{% notice tip %}}
-Wenn Sie einen neuen Benutzer anlegen wird für diesen Benutzer **automatisch** auch ein **Mobiltelefon** angelegt. Haben Sie jedoch bei der Anlage des Benutzers **Hat ein Mobiltelefon : nein** gewählt, das Gerät **gelöscht** oder hat der Benutzer **mehrere Mobiltelefone** müssen Sie es vor dem Pairing Vorgang **zuerst anlegen**.
+Wenn Sie einen neuen Benutzer anlegen wird für diesen Benutzer **automatisch** auch ein **Mobiltelefon** angelegt. Haben Sie jedoch beim Anlegen des Benutzers **Hat ein Mobiltelefon : nein** gewählt, das Gerät **gelöscht** oder hat der Benutzer **mehrere Mobiltelefone** müssen Sie es vor dem Pairing Vorgang **zuerst anlegen**.
 {{% /notice %}}
 
-Gehen Sie zur Anlage eines Mobiltelefones wie folgt vor:
+Gehen Sie zur zum Anlegen eines Mobiltelefones wie folgt vor:
 
  * Melden Sie sich an der Weboberfläche des pascom Servers an
  * Fügen Sie ein neues Gerät hinzu: {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} > {{< ui-button "Hinzufügen" >}} > **Via Mobile Hub: Integriertes Mobiltelefon**
@@ -56,5 +56,5 @@ Möchten Sie als Administrator den Pairing Vorgang für Ihre Benutzer übernehme
 
 ### Via Desktop Client pairen
 
-Alternativ haben Ihre Benutzer die Möglichkeit das Mobiltelefon selbst über den pascom Desktop Client zu Pairen. Details dazu entnehmen Sie bitte dem [Mobile Client Benutzerhandbuch]
+Alternativ haben Ihre Benutzer die Möglichkeit das Mobiltelefon selbst über den pascom Desktop Client zu Pairen. Details dazu entnehmen Sie bitte dem [Mobile Client Benutzerhandbuch]({{< ref "/clients/mobile-userguide">}})
 
