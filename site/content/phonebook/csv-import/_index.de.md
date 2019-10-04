@@ -8,10 +8,11 @@ weight: 20
 
 {{< description >}}
 
-
-## Connector-Profil "Telefonbuch aus CSV"
+## Training Video
 
 {{< youtube zK3yOniy0Ok >}} 
+
+## Connector-Profil "Telefonbuch aus CSV"
 
 |Variablen|Beschreibung|
 |---|---|

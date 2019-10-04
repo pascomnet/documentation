@@ -4,9 +4,11 @@ description: Auf pascom steht Ihnen ein globales Telefonbuch zur Verfügung.
 weight: 10
 ---
 
-## Konzept
+## Training Video
 
 {{< youtube oZxZKbHKPFM >}} 
+
+## Konzept
 
 Auf pascom gibt es ein globales Telefonbuch, das jedem Benutzer zur Verfügung gestellt wird.
 Dieses Telefonbuch wird im pascom Client und auch auf den unterstützten Telefonen angezeigt.

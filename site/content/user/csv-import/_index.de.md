@@ -8,10 +8,11 @@ weight: 50
 
 {{< description >}}
 
-
-## Connector-Profil "Benutzer aus CSV"
+## Training Video
 
 {{< youtube 8Zt1Ojdoxn0 >}}
+
+## Connector-Profil "Benutzer aus CSV"
 
 |Variablen|Beschreibung|
 |---|---|

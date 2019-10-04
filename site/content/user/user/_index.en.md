@@ -8,6 +8,8 @@ weight: 10
 
 {{< description >}}
 
+## Training Video
+
 {{< youtube p_qXlNbyFuM >}}
 
 **Useful Knowledge**

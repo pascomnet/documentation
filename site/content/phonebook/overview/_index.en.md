@@ -4,9 +4,11 @@ description: With pascom, a global telephone book is available to you.
 weight: 10
 ---
 
-## Concept
+## Training Video
 
 {{< youtube RERdCwlk5_U >}}
+
+## Concept
 
 pascom phone systems provide a global company telephone book which is available to all system users.
 
