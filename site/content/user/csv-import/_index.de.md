@@ -11,6 +11,8 @@ weight: 50
 
 ## Connector-Profil "Benutzer aus CSV"
 
+{{< youtube 8Zt1Ojdoxn0 >}}
+
 |Variablen|Beschreibung|
 |---|---|
 |**Bezeichnung**|Bezeichnung des Profils|

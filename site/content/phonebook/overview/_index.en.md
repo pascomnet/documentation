@@ -6,6 +6,8 @@ weight: 10
 
 ## Concept
 
+{{< youtube RERdCwlk5_U >}}
+
 pascom phone systems provide a global company telephone book which is available to all system users.
 
 This telephone book is displayed within the pascom clients as well as on supported VoIP telephones.

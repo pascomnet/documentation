@@ -101,7 +101,7 @@ In order to enable pascom server access from the Internet, it is necessary to se
 
 ## Domain Name Setup
 
-As valid certificates can only be created using the domain name and not IP addresses, you will now need to setup a domain name for the external AWS IP address.
+As valid certificates can only be created using domain names and not IP addresses, you will now need to setup a domain name for the external IP address of your internet access.
 
 Should you not have your own, external DNS server available,[no-ip](https://www.noip.com/) offers an easy way to setup externally accessible domain names on your router (Fritzbox, etc).
 

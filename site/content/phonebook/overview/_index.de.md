@@ -6,10 +6,10 @@ weight: 10
 
 ## Konzept
 
+{{< youtube oZxZKbHKPFM >}} 
+
 Auf pascom gibt es ein globales Telefonbuch, das jedem Benutzer zur Verfügung gestellt wird.
 Dieses Telefonbuch wird im pascom Client und auch auf den unterstützten Telefonen angezeigt.
-
-
 
 ### Privates Telefonbuch (Desktop Client + Telefone)
 

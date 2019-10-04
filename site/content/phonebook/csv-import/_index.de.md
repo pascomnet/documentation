@@ -11,6 +11,8 @@ weight: 20
 
 ## Connector-Profil "Telefonbuch aus CSV"
 
+{{< youtube zK3yOniy0Ok >}} 
+
 |Variablen|Beschreibung|
 |---|---|
 |**Bezeichnung**|Bezeichnung des Profils|

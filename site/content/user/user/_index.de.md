@@ -8,6 +8,8 @@ weight: 10
 
 {{< description >}}
 
+{{< youtube 8Zt1Ojdoxn0 >}}
+
 **Nützliches Vorwissen**
  
  * [Benutzer und Arbeitsplätze]({{< ref "concept/user" >}})

@@ -11,6 +11,8 @@ weight: 20
 
 ## "Telephone Book from CSV" Connector Profile
 
+{{< youtube 23gajxqsr5s >}} 
+
 |Variable|Description|
 |---|---|
 |**Name**|Profile name|
@@ -19,8 +21,6 @@ weight: 20
 |**Delimiter**|Select the separating character which separates the CSV fields.|
 |**Line Separator**|If the CSV file is generated under Windows opposed to Mac / Linux, the line ending will be signified differently.|
 |**Field Enclosure**|We recommend enclosing individual fields inside specific characaters, e.g. "Max Muster"|
-
-Nach dem Speichern kann die Vorlage im Reiter {{< ui-button "Basisdaten" >}} bei Bedarf angepasst werden.
 
 After saving, the template can be modified according to requirements under the {{< ui-button "Basic Data" >}} tab.
 
@@ -77,7 +77,7 @@ An automated import is only recommended for import types **Fetch from URL**.
 Within the connector profile under the tab {{< ui-button "Variables" >}} and {{< ui-button "Structure" >}}, it is possible to modify the CSV > pascom field mapping according to your needs.
 
 As an example, let's say we want to save the contact's Homepage within the pascom phone book notes field. 
-Under the {{< ui-button "Variables" >}} tab, enter the following line by pressing {{< ui-button "Add" >}}:anpassen.
+Under the {{< ui-button "Variables" >}} tab, enter the following line by pressing {{< ui-button "Add" >}}:
 
 |Variable|Source|
 |----|----|

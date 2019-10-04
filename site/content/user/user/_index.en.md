@@ -8,6 +8,8 @@ weight: 10
 
 {{< description >}}
 
+{{< youtube p_qXlNbyFuM >}}
+
 **Useful Knowledge**
  
  * [User and Locations]({{< ref "concept/user" >}})

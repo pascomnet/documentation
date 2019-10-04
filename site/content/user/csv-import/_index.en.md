@@ -11,6 +11,8 @@ weight: 50
 
 ## Connector Profile "Users from CSV"
 
+{{< youtube p_qXlNbyFuM >}}
+
 |Variable|Description|
 |---|---|
 |**Name**|Profile name|
