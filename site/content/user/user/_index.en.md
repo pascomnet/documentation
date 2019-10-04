@@ -200,7 +200,7 @@ A prerequisite for the configuration is that users have already been added and t
 
 Within the Web UI, click on {{< ui-button "User" >}} > {{< ui-button "User list" >}} > select user > and go to the {{< ui-button "Devices" >}} tab. In the right-hand column, you will see an overview of the directly assigned devices with the corresponding FollowMe settings. Next, click on the FollowMe setting:
 
-![FollowMe](followme_webui_settings.en.png?width=50% "FollowMe pascom Web UI")
+![FollowMe](followme_webui_settings.en.png?width=80% "FollowMe pascom Web UI")
 
 |Setting|Description|
 |---|---|
@@ -219,7 +219,7 @@ FollowMe settings can be configured for
 
 If a user is permitted to manage their FollowMe settings, this can be done via their pascom Desktop UC client ({{< ui-button "Settings" >}} > {{< ui-button "FollowMe" >}}).
 
-![FollowMe](followme_settings_client.en.png?width=100% "User Defined FollowMe")
+![FollowMe](followme_settings_client.en.png?width=80% "User Defined FollowMe")
 
 Users can configure individual FollowMe settings for internal and external calls as well as calls originating via a queue / team. To do so, the user must simply toggle between the {{< ui-button "External" >}}, {{< ui-button "Internal" >}} and {{< ui-button "Teams" >}} tabs.
 
