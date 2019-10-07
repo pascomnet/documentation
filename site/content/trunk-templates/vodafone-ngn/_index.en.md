@@ -32,8 +32,8 @@ After the purchase and activation of your Vodafone NGN trunk, you will receive a
 Please note that SIP communication with the entered SBC is only possible from the phone system IP address. 
 Should you use your pascom phone system inside your own network with a private IP address, please verify the necessary network settings on your firewall / router (NAT).
 
-Inbound traffic from the Vodafone SBC must be forwarded onto the pascom phone system. For security reasons, the firewall rule should be exclusively limited to port 5060 TCP to port 5069 of the phone system. 
-Conversely, outbound traffic must be modified per NAT, as the Vodafone SBC only accepts data from the external IP from port 5069 to port 5060 tcp of the connection.
+Inbound traffic from the Vodafone SBC must be forwarded onto the pascom phone system. For security reasons, the firewall rule should be exclusively limited to port 5060 UDP to port 5069 of the phone system. 
+Conversely, outbound traffic must be modified per NAT, as the Vodafone SBC only accepts data from the external IP from port 5069 to port 5060 UDP of the connection.
 Finally, you must consider your phone system settings in terms of the range of RTP ports so that these packets are transmitted from the phone system via the firewall to the SBC. 
 
 ![Vodafone Port-Forwarding](vodafone_ngn_forwarding.en.png)
