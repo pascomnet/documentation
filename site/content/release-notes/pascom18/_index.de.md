@@ -66,6 +66,55 @@ Wegen fehlender Verschlüsselung für Sprache wie Provisionierung wurde die Unte
 
 Aufgrund der Einschränkung des cisco SPA 112 Gateways auf ausschließliche Nutzung mit cisco-Zertifikaten wurde die Unterstützung mit pascom 18 eingestellt. 
 
+## Release 18.11 (16.10.2019)
+
+**Auf einen Blick**
+
+- Grandstream GRP, WP sowie Geräte mit neuer MAC werden unterstützt
+- Snom M900 DECT Gateway kann provisioniert werden
+- T38 Support aktiviert
+- Asterisk Update auf Version 13.27.0
+- Generische Geräte können über den Connector angelegt werden
+
+**ÄNDERUNGEN:**
+
+- [MD-11004] - Display warning if the server time is different from mypascom time
+- [MD-11341] - "Home" button during loading points to wrong URL
+- [MD-11503] - Re-enable spandsp T.38 support in asterisk
+- [MD-11511] - Invalid phone presence when the GSM fallback is used
+- [MD-11416] - Integrate Grandstream WP 820 WiFi phone
+- [MD-11481] - Notify administrator if onsite pbx update failed
+- [MD-11597] - Can't pair CSP host again after unpairing it in erp
+- [MD-11605] - Add "P-Called-Party-ID" to trunk to number determination
+- [MD-11490] - Fix the library for leader election
+- [MD-11584] - dnsmasq not automatically starting on second interface of hardware appliance
+- [MD-11535] - Update asterisk to 13.27.0
+- [MD-11598] - Introduce SIP option field for mobile devices
+- [MD-11608] - Import and synchronize generic sip devices via connector
+- [MD-11517] - Error in browser console after reload in phone systems section
+- [MD-11545] - Remove the REST end point for XLSX export of our journal
+- [MD-11554] - Remove link in pascom instance wizard
+- [MD-11559] - Change Yealink DECT provisioning template setting custom.handset.auto_intercom
+- [MD-11562] - 1&1 versatel, Toplink xpress and Bergnet trunk templates are broken
+- [MD-11565] - Can't apply telephony after migration because of missing sip.password in berofix gateway
+- [MD-11540] - Instance wizard does not show a message if password mismatch
+- [MD-11621] - Enable PUI menu for Grandstream GRP models
+- [MD-11623] - Activate remote control fror Grandstream GRP phones
+- [MD-11650] - Broken license without working subscription details button
+- [MD-11653] - Django corsheaders dropped support for python 2.7
+- [MD-11655] - Can not install or upgrade pascom 18.10 on a soho appliance
+- [MD-11629] - CSUI white screen it prometheus not running
+- [MD-11172] - Improve layout of trunk template overview
+- [MD-11640] - Improve Mitel / aastra DECT gateway basic configuration template
+- [MD-11646] - Server build fails because of grafana plugin download server problems
+- [MD-11586] - pascom.cloud host is complaining about license server
+- [MD-11692] - Phone presence has invalid state
+- [MD-11694] - Xmpp server can't boot because of deadlock
+- [MD-11702] - Provide more info about the push message type
+- [MD-11711] - Add new MAC vendor ID for Grandstream phones
+- [MD-11284] - Improve QSC template
+- [MD-11590] - ISO upload process bar stuck
+- [MD-11701] - Support for snom M900
 
 ## Release 18.10 (05.08.2019)
 
@@ -79,35 +128,35 @@ Aufgrund der Einschränkung des cisco SPA 112 Gateways auf ausschließliche Nutz
 
 **ÄNDERUNGEN:**
 
-- MD-10990 - Can't transfer to second device of same user
-- MD-11114 - Improve loading screens in management ui
-- MD-11196 - Uploading a csb image inside the instance causes problem
-- MD-11224 - Calling from journal does not work if a phone number is resolved from Outlook or Apple contacts
-- MD-11266 - Show a proper error page in CSUI if we get a 500 response from a API call
-- MD-11290 - Gateway status confuses customers
-- MD-11309 - Call deflection not working (with rkom trunk)
-- MD-11318 - Broken prompts during roaming
-- MD-11324 - Too strict E-Mail validation in phonebook
-- MD-11337 - CSUI Wizard after installation can be bypassed by changing the url
-- MD-11353 - Sent faxes not shown in web UI
-- MD-11430 - Improve details of interface in CSUI
-- MD-11460 - Check free disc space before update
-- MD-11461 - Decrease swap file of disc
-- MD-11462 - Validate ISO before update of pascom
-- MD-11500 - import-raw-3.json not found after exchange import simulation
-- MD-11502 - Display license content even if it is invalid
-- MD-11504 - Renew self signed cert if FQDN changes
-- MD-11505 - Display alert on System page when the license is invalid
-- MD-11523 - Grandstream HT802 should not use opus codec
-- MD-11524 - Automatically cleanup asterisk core dumps on apply telephony
-- MD-11525 - Grandstream GXP16XX reboots after short time
-- MD-11544 - Sometimes statemap.txt has no ip entry for instance
-- MD-11555 - Consul kv keys are missing after instance delete
-- MD-9199 - Fax service should run from the beginning
-- MD-10635 - Show a reconnect page if the management address is changed
-- MD-10967 - Setupui "done": Show a manual access link after 1 minute
-- MD-11531 - Update consul
-- MD-11592 - Prometheus should scrape consul metrics
+- [MD-10990] - Can't transfer to second device of same user
+- [MD-11114] - Improve loading screens in management ui
+- [MD-11196] - Uploading a csb image inside the instance causes problem
+- [MD-11224] - Calling from journal does not work if a phone number is resolved from Outlook or Apple contacts
+- [MD-11266] - Show a proper error page in CSUI if we get a 500 response from a API call
+- [MD-11290] - Gateway status confuses customers
+- [MD-11309] - Call deflection not working (with rkom trunk)
+- [MD-11318] - Broken prompts during roaming
+- [MD-11324] - Too strict E-Mail validation in phonebook
+- [MD-11337] - CSUI Wizard after installation can be bypassed by changing the url
+- [MD-11353] - Sent faxes not shown in web UI
+- [MD-11430] - Improve details of interface in CSUI
+- [MD-11460] - Check free disc space before update
+- [MD-11461] - Decrease swap file of disc
+- [MD-11462] - Validate ISO before update of pascom
+- [MD-11500] - import-raw-3.json not found after exchange import simulation
+- [MD-11502] - Display license content even if it is invalid
+- [MD-11504] - Renew self signed cert if FQDN changes
+- [MD-11505] - Display alert on System page when the license is invalid
+- [MD-11523] - Grandstream HT802 should not use opus codec
+- [MD-11524] - Automatically cleanup asterisk core dumps on apply telephony
+- [MD-11525] - Grandstream GXP16XX reboots after short time
+- [MD-11544] - Sometimes statemap.txt has no ip entry for instance
+- [MD-11555] - Consul kv keys are missing after instance delete
+- [MD-9199] - Fax service should run from the beginning
+- [MD-10635] - Show a reconnect page if the management address is changed
+- [MD-10967] - Setupui "done": Show a manual access link after 1 minute
+- [MD-11531] - Update consul
+- [MD-11592] - Prometheus should scrape consul metrics
 
 
 ## Release 18.09 (28.06.2019)
