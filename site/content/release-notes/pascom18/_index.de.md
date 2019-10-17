@@ -66,7 +66,7 @@ Wegen fehlender Verschlüsselung für Sprache wie Provisionierung wurde die Unte
 
 Aufgrund der Einschränkung des cisco SPA 112 Gateways auf ausschließliche Nutzung mit cisco-Zertifikaten wurde die Unterstützung mit pascom 18 eingestellt. 
 
-## Release 18.11 (16.10.2019)
+## Release 18.11 (17.10.2019)
 
 **Auf einen Blick**
 

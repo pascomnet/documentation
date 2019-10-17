@@ -66,7 +66,7 @@ Due to non-existing encryption for voice and provisioning, Siemens Unify optiPoi
 
 Due to the Cisco SPA 112 gateway limitations that require a Cisco certificate, support has been discontinued in pascom 18.
 
-## Release 18.11 (16.10.2019)
+## Release 18.11 (17.10.2019)
 
 **Overview**
 
