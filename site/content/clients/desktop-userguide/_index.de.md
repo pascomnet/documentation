@@ -1,6 +1,6 @@
 ---
 title: Desktop Client Benutzerhandbuch
-description: Diese Benutzerhandbuch richtet sich an Endanwender und erklärt den täglichen Umgang mit dem pascom Desktop Client
+description: Dieses Benutzerhandbuch richtet sich an Endanwender und erklärt den täglichen Umgang mit dem pascom Desktop Client
 weight: 30
 ---
 
@@ -20,6 +20,13 @@ weight: 30
 
 Damit ein angelegter [Benutzer]({{< relref "/user/user#Benutzer-anlegen">}}) den pascom Client verwenden und sich anmelden kann benötigt er seinen Benutzernamen und das hinterlegte Benutzerkennwort.
 
+{{% notice info %}}
+Verwenden Sie eine selbstgehostete "on Premise" Telefonanlage mit nur einer Instanz, ist die Angabe des Instanznamen nicht erforderlich.
+{{% /notice %}}
+
+![Client Login](clientlogin.de.png?width=80%)
+
+
 |Eingabefeld|Beschreibung|
 |---|---|
 |Benutzername|Benutzername@Instanzname|
@@ -27,18 +34,13 @@ Damit ein angelegter [Benutzer]({{< relref "/user/user#Benutzer-anlegen">}}) den
 |Server|Domain oder IP des Serverhosts|
 |Anmeldedaten speichern?|Setzen Sie hier einen Haken, wenn sich der Client beim Starten automatisch mit den angegebenen Zugangsdaten anmelden soll.|
 
-{{% notice info %}}
-Verwenden Sie eine selbstgehostete "on Premise" Telefonanlage mit nur einer Instanz, ist die Angabe des Instanznamen nicht erforderlich.
-{{% /notice %}}
-
-![Client Login](clientlogin.de.png?width=80%)
 
 ## Übersicht
 
 Der Client besteht aus drei grundsätzlichen Bereichen:
 
 + Der Bereich links beinhaltet das eigene Profil mit Kontaktliste und Umschaltleiste,
-+ der Bereich links bietet die Telefonie-Funktion
++ der Bereich rechts bietet die Telefonie-Funktion
 + und der mittlere Content-Bereich ist flexibel. Sie können über die rote Umschaltleiste Konversationen, Journal oder das Telefonbuch anzeigen lassen.
 
 ![Client Expanded Mode](expanded_mode.de.png)
@@ -63,29 +65,25 @@ Funktionen in der Kontaktliste:
 
 |Funktion|Beschreibung|
 |---|---|
-|Profil- und Kontaktlisten-Einstellungen|Hier können Sie sich am Client abmelden und weitere Einstellungen vornehmen (siehe unten).|
 |Verfügbarkeits-Status|Es stehen zur Auswahl:<br>- *grün* > Verfügbar<br>- *gelb* > Bin gleich zurück<br>- *rot* > Bitte nicht stören (Diese Einstellung hat keine DND-Funktionalität.)<br>Die Status-Texte können Sie nach Bedarf ändern.|
-|Umschalter der Kontaktliste|Mit diesem Umschalter können Sie die Ansicht der Kontakte einstellen, *breit* mit Profil-Bild oder *schmal* ohne Profil-Bild.|
-|Filter für Kontaktliste|Hier können Sie über Filter nur bestimme Kontakte anzeigen lassen. Zwei Filter sind standardmäßig schon vorhanden, *Favoriten* und *Team*. Die Favoriten können Sie selber definieren, mit einem Klick auf das Sternchen neben dem Hörer-Symbol. Weitere Filter werden von Ihrem Administrator über Rollen festgelegt.|
+|Neue Gruppe erstellen|Über das "+ Symbol" können Sie eine neue permanente Gruppe erstellen.|
+|Filter für Kontaktliste|Über die Filter/Suche finden Sie schnell, anhand Ihrer Eingaben, die gewünschten Kontakte in Ihrer Kontaktliste.|
 |Kontakte|Hier erhalten Sie Informationen über Ihre [Kontakte]({{< relref "#kontakte">}}).|
-|Teams|Hier sehen Sie die [Teams]({{< relref "#teams">}}) in denen Sie fester oder flexibler Mitglied sind. Der Status *Verfügbar* oder *Offline* bezieht sich in diesem Fall darauf, ob Sie eingebucht sind oder nicht.|
+|Hörer-Symbol|Mit einem Klick auf den Hörer rufen Sie den Kontakt an.|
+|Favoriten makieren|Mit dem "Sternchen-Symbol" makieren Sie ganz einfach Ihre favorisierten Kontakte. Diese werden dann oben in der Kontaktliste angepinnt.|
+|Teams|Hier sehen Sie die [Teams]({{< relref "#teams">}}) in denen Sie ein festes oder flexibles Mitglied sind. Der Status *Verfügbar* oder *Offline* bezieht sich in diesem Fall darauf, ob Sie eingebucht sind oder nicht.|
 
-Profil- und Kontaktlisten-Einstellungen:
 
-|Einstellung|Beschreibung|
-|---|---|
-|Profil|Im Bereich Profil können Sie ein Profil-Bild hinzufügen. Klicken Sie auf *Auswählen...* und wählen Sie ein Bild, das auf Ihrem Rechner gespeichert ist, aus. Alternativ können Sie auch eins *Generieren*.|
-|Kontaktliste|Hier finden Sie Optionen zur Gestaltung Ihrer Kontaktliste.|
-|Automatische Abwesenheit|Hier können Sie die automatische Abwesenheit aktivieren. Geben Sie die Zeit ein, nach der der Status auf gelb wechselt und Ihre Abwesenheitsnotiz angezeigt wird.|
-|Passwort ändern|Falls Ihre Authentifizierung über die pascom erfolgt, können Sie mit dem Button *Passwort ändern* ein neues Passwort vergeben.|
 
 ## Kontakte
 
-![Kontakte](contacts.de.png?width=75%)
+Jeder Kontakt in Ihrer Kontaktliste besitzt diverse Status, welche anhand der folgenden Darstellung erkennbar sind.
+
+![Kontakte](contacts.de.png?width=90%)
 
 ## Teams
 
-![Teams](teams.de.png)
+![Teams](teams.de.png?width=100%)
 
 
 ## Integriertes Softphone
@@ -103,25 +101,25 @@ Um das Softphone verwenden zu können, müssen Sie die passenden Softphone-Einst
 
 Bevor Sie das erste Mal telefonieren, prüfen Sie bitte die Telefon-Einstellungen. Wichtig dabei ist, dass Sie, falls Ihnen mehrere Telefone zugewiesen sind, das richtige auswählen.
 
-![Telefonie](softphone.de.png?width=80%)
+![Telefonie](dialpad.de.png?width=100%)
 
 
 ### Gespräch starten
 
 Der Client bietet mehrere Möglichkeiten ein Gespräch zu starten:
 
-* Geben Sie im [Wählfeld]({{< relref "#telefonieren">}}) eine Nummer ein,
-* rufen Sie einen Kollegen an, indem Sie auf das grüne Hörer-Symbol in der [Kontaktliste]({{< relref "#kontakte">}}),
-* klicken Sie das Hörer-Symbol im [Journal-Eintrag]({{< relref "#journal">}}) an oder
-* wählen Sie eine Nummer im [Telefonbuch]({{< relref "#telefonbuch">}}).
+* Geben Sie im [Wählfeld]({{< relref "#telefonieren">}}) eine Nummer ein.
+* Rufen Sie einen Kollegen an, indem Sie auf das grüne Hörer-Symbol in der [Kontaktliste]({{< relref "#kontakte">}}) klicken.
+* Klicken Sie das Hörer-Symbol im [Journal-Eintrag]({{< relref "#journal">}}) an.
+* Wählen Sie eine Nummer im [Telefonbuch]({{< relref "#telefonbuch">}}).
 
 ### Aktives Gespräch
 
-![Aktives Gespräch](current_call.de.png?width=45%)
+![Aktives Gespräch](current_call.de.png?width=90%)
 
 ### Eingehender Anruf
 
-![Eingehender Anruf](inbound_call.de.png?width=50%)
+![Eingehender Anruf](inbound_call.de.png?width=90%)
 
 ### Verbinden
 
@@ -137,10 +135,10 @@ Möchten Sie den Anrufer an einen Kollegen verbinden, rechts-klicken Sie auf des
 
 Das Verbinden mit Rücksprache erfolgt in zwei Schritten:
 
-1. Einen weiteren *Anruf hinzufügen*, um Rücksprache zu halten und
-2. den ersten Anrufer mit dem hinzugefügten Anrufer *verbinden*.
+1. Einen weiteren *Anruf hinzufügen*, um Rücksprache zu halten.
+2. Den ersten Anrufer mit dem hinzugefügten Anrufer *verbinden*.
 
-![Attended Transfer](attended_transfer.de.png?width=85%)
+![Attended Transfer](attended_transfer.de.png?width=100%)
 
 Es ist nicht notwendig den ersten Anruf extra zu halten. Dieser wird automatisch gehalten, wenn, wie in Schritt 1 beschrieben, der neue Anruf gestartet wird. Anschließend wird im Schritt 2 der Anrufer verbunden.
 
@@ -181,44 +179,61 @@ Benachrichtigungen sind Popups, die erscheinen, sobald eine Aktion stattfindet. 
 |Benachrichtigung|Beschreibung|
 |---|---|
 |![Ausgehender Anruf](notification_outbound_call.de.png?width=50%)|Benachrichtigung über einen aktuell ausgehen Anruf mit der Möglichkeit den Anruf zu beenden mit Click auf den roten Hörer.|
-|![Eingehender Anruf](notification_inbound_call.de.png?width=50%)|Benachrichtigung über einen aktuell eingehen Anruf mit der Möglichkeit den Anruf...<br>...anzunehmen mit Click auf den grünen Hörer<br>...abzulehnen mit Click auf den roten Hörer.|
-|![Aktiver Anruf](notification_active_call.de.png?width=50%)|Benachrichtigung über einen aktive Anruf mit der Möglichkeit den Anruf...<br>...zu halten mit Click auf das Pause-Symbol<br>...zu beenden mit Click auf den roten Hörer.|
-|![Gehaltener Anruf](notification_call_hold.de.png?width=50%)|Benachrichtigung über einen aktive Anruf mit der Möglichkeit den Anruf...<br>...fortzusetzen mit Click auf das Play-Symbol<br>...zu beenden mit Click auf den roten Hörer.|
-|![Versasster Anruf](notification_missed_call.de.png?width=50%)|Benachrichtigung über einen verpassten Anruf mit der Möglichkeit zurück zu rufen mit Click auf den grünen Hörer|
+|![Eingehender Anruf](notification_inbound_call.de.png?width=50%)|Benachrichtigung über einen aktuell eingehen Anruf mit der Möglichkeit den Anruf anzunehmen mit Click auf den grünen Hörer.|
+|![Aktiver Anruf](notification_active_call.de.png?width=50%)|Benachrichtigung über einen aktive Anruf mit der Möglichkeit den Anruf...<br>...zu halten mit Click auf das Pause-Symbol.<br>...zu beenden mit Click auf den roten Hörer.|
+|![Versasster Anruf](notification_missed_call.de.png?width=50%)|Benachrichtigung über einen verpassten Anruf mit der Möglichkeit zurück zu rufen mit Click auf den grünen Hörer.|
 |![Chat](notification_chat.de.png?width=50%)|Benachrichtigung über eine neue Chat-Nachricht mit der Möglichkeit zurück zu schreiben.|
 
 Über Einstellungen können Sie Ihre Benachrichtigungen anpassen:
-![Benachrichtigung Einstellungen](notification_settings.de.png?width=45%)
+
+
+![Benachrichtigung Einstellungen](notification_settings.de.png?width=50%)
+
+
+## Gruppen
+
+Mit der Gruppen-Funktion erstellen Sie permanente Gruppen welche eine menge Funktionen bieten.
+
+1. Gruppen-Chat
+2. Audio-Konferenz
+3. Video-Konferenz
+4. Online-Meetings mit Screensharing
+
+
+### Gruppe erstellen
+
+![Gruppe erstellen](group_create.de.png?width=100%)
+
+Klicken Sie in der Kontaktliste auf das "+ - Symbol" um eine neue Gruppe zu erstellen. Sie können so viele Gruppen anlegen, wie Sie möchten. Im nächsten Schritt vergeben Sie einen Gruppennamen, Gruppenbild und fügen die gewünschten Teilnehmer hinzu. Abschließend speichern Sie die Gruppe mit dem "Disketten-Symbol". Die neue Gruppe erscheint nun in Ihrer Kontaktliste.
+
+### Gruppe verwalten
+
+![Gruppe erstellen](group_manage.de.png?width=100%)
+
+Um eine Gruppe zu verwalten, klicken Sie in der Kontaktliste auf die entsprechende Gruppe. Im Contentbereich erscheint im oberen Abschnitt ein kleines Infosymbol. Hier nehmen Sie Änderungen an der Gruppe vor. Wünschen Sie keine Benachrichtigungen mehr, können Sie die Gruppe über das Lautsprechersymbol stummschalten.
 
 ## Chat
 
-Klicken Sie auf das Chat-Symbol (Sprechblase) in der roten Umschaltleiste um in den Konversations-Bereich zu gelangen.
+Es gibt 2 Möglichkeiten eine Chat Konversation mit einem Kontakt zu starten. Mit einem direkten Klick auf den Kontakt in der Kontaktliste oder während einem Gespräch in den Anrufoptionen.
 
-### Einzelchat
-
-Starten Sie einen Einzelchat indem Sie in der Kontaktliste auf dem gewünschten Chat-Partner klicken. Nun erscheint der Chat im Kontent-Bereich.
-
-![Einzelchat](chat.de.png?width=85%)
-
-
-Haben Sie mehrer offenen Chats, werden diese nebeneinander angeordnet:
-
-![Mehrere Chats](multiple_open_chats.de.png?width=70%)
+![Einzelchat](chat.de.png?width=90%)
 
 
 ### Gruppenchat
 
+Für einen Gruppenchat wird eine Gruppe benötigt. Haben Sie noch keine Gruppe angelegt, erstellen Sie sich zunächst eine neue [Gruppe]({{< relref "#gruppen">}}).
+
 ![Gruppenchat](groupchat.de.png)
 
-Ist noch kein Konversationsfenster geöffnet, und Sie Klicken in der Umschaltleiste auf das Sprechblasen-Symbol, haben Sie nur die Möglichkeit über Gruppenchat eine Gruppen-Konversation zu eröffnen. Anschließend können Sie ein Thema festlegen und die Teilnehmer der Konversation auszuwählen. In der Auswahl-Liste stehen nur Online-Kontakte zur Verfügung. Fügen Sie nachträglich neue Kontakte zu Ihrer Gruppen-Konversation hinzu erhalten diese nur die neuen Nachrichten, ab dem Zeitpunkt zu dem Sie hinzugefügt wurden.
+Klicken Sie in der Kontaktliste auf die gewünschte Gruppe. Im Contentbereich erscheint nun die Konversation der jeweiligen Gruppe. Sie können von dort aus auch eine Gruppen-Konferenz starten. Zum Verlassen des Chats, klicken Sie einfach auf das X Symbol in der oberen rechten Ecke.
 
 ### Chatbenachrichtigungen
 
 
-![Mehrere Chats](notification_chat_bubble.png?width=50px)
+![Mehrere Chats](notification_newmassages.png?width=35%)
 
-Ist der Konversations-Bereich nicht im Fokus, und Sie erhalten eine neue Nachricht, so erscheint die Benachrichtigung in der roten Umschaltleiste neben dem Sprechblasen-Symbol.
 
+Ist der Konversations-Bereich nicht im Fokus, und Sie erhalten eine neue Nachricht, so erscheint in der Kontaktliste am Profilbild und am jeweiligen Kontakt eine Hinweismeldung. Am Profilbild erkennen Sie immer die gesamten, noch nicht gelesenen, Nachrichten. Kontakte mit neuen Nachrichten, rutschen in der Kontaktliste automatisch nach oben. 
 
 ## Dateien versenden
 
@@ -228,8 +243,38 @@ Der Client bietet Ihnen die Möglichkeit mit Ihren Kollegen Dateien auszutausche
 ![Datei versenden](file_transfer_1.de.png?width=60%)
 2. Sie können bei einer bereits bestehenden Konversation mit dem Kollegen auch die Datei einfach auf das Konversations-Feld ziehen. Beim Loslassen der Datei wird diese versendet:
 ![Datei versenden](file_transfer_2.de.png?width=40%)
-3. Falls Sie keine bereits bestehende Konversation, können Sie die Datei auch in der Kontaktliste auf das Profil-Feld des Kollegen. Beim Loslassen der Datei wird diese versendet:
-![Datei versenden](file_transfer_3.de.png?width=25%)
+3. Falls Sie keine bestehende Konversation offen haben, können Sie die Datei auch in der Kontaktliste auf das Profil-Feld des Kollegen ziehen. Beim Loslassen der Datei wird diese versendet:
+![Datei versenden](file_transfer_3.de.png?width=35%)
+
+## Gruppen Konferenz
+
+
+Oft kommt es vor, dass Sie sich schnell mit Kontakten abstimmen müssen. Um nicht jedes Mal einen Konferenzraum zu belegen, gibt es die Gruppen Konferenzen.
+Für eine Gruppen Konferenz wird eine Gruppe benötigt. Haben Sie noch keine Gruppe angelegt, erstellen Sie sich zunächst eine neue [Gruppe]({{< relref "#gruppen">}}).
+
+
+### Gruppen Konferenz starten/beitreten
+
+Um eine Gruppen Konferenz zu starten oder beizutreten, rufen Sie die entsprechende Gruppe an. Das System wird Ihnen wie in einem Konferenzraum alle nötigen Infos zur Konferenz mitteilen. 
+
+![Gruppen Konferenz starten](group_conference_start.de.png?width=35%)
+
+Sind bereits Kollegen in einer Gruppen Konferenz, erkennen Sie dies daran, dass die Gruppe nun grün hervorgehoben ist. Beitreten können Sie ganz einfach, indem Sie die Gruppe anrufen. 
+
+![Gruppen Konferenz starten](group_conference_notification.de.png?width=35%)
+
+### Aktive Gruppen Konferenz
+
+Während der Gruppen Konferenz stehen Ihnen eine Reihe von Funktionen zur Verfügung.
+
+1. Gruppen Chat der Gruppen Konferenz
+2. Auf Video-Session umstellen
+3. Screensharing starten
+
+Verlassen können Sie die Gruppen Konferenz über den roten Hörer.
+
+![Gruppen Konferenz starten](group_conference_active.de.png?width=95%)
+
 
 ## Journal
 
