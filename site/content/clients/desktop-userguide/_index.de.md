@@ -229,11 +229,16 @@ Klicken Sie in der Kontaktliste auf die gewünschte Gruppe. Im Contentbereich er
 
 ### Chatbenachrichtigungen
 
+Ist der Konversations-Bereich nicht im Fokus, und Sie erhalten eine neue Nachricht, so erscheint in der Kontaktliste am Profilbild und am jeweiligen Kontakt eine Hinweismeldung. Am Profilbild erkennen Sie immer die gesamten, noch nicht gelesenen, Nachrichten. Kontakte mit neuen Nachrichten, rutschen in der Kontaktliste automatisch nach oben, sofern die Sortierung so eingestellt wurde.
 
 ![Mehrere Chats](notification_newmassages.png?width=35%)
 
 
-Ist der Konversations-Bereich nicht im Fokus, und Sie erhalten eine neue Nachricht, so erscheint in der Kontaktliste am Profilbild und am jeweiligen Kontakt eine Hinweismeldung. Am Profilbild erkennen Sie immer die gesamten, noch nicht gelesenen, Nachrichten. Kontakte mit neuen Nachrichten, rutschen in der Kontaktliste automatisch nach oben. 
+ Sollte Ihre Sortierung nicht so eingestellt sein, dass die letzten Änderungen automatisch oben in der Kontaktliste erscheinen, können Sie mit einem Klick auf die Nummer, der noch nicht gelesenen Nachrichten an Ihrem Profilbild, klicken. Mit Hilfe der Smart Filter werden dann nur die Kontakte angezeigt, die neue Nachrichten enthalten. 
+
+
+![Mehrere Chats](notification_newmassages_filtered.png?width=35%)
+
 
 ## Dateien versenden
 
@@ -261,20 +266,79 @@ Um eine Gruppen Konferenz zu starten oder beizutreten, rufen Sie die entsprechen
 
 Sind bereits Kollegen in einer Gruppen Konferenz, erkennen Sie dies daran, dass die Gruppe nun grün hervorgehoben ist. Beitreten können Sie ganz einfach, indem Sie die Gruppe anrufen. 
 
-![Gruppen Konferenz starten](group_conference_notification.de.png?width=35%)
+![Gruppen Konferenz Nachricht](group_conference_notification.de.png?width=35%)
 
 ### Aktive Gruppen Konferenz
 
 Während der Gruppen Konferenz stehen Ihnen eine Reihe von Funktionen zur Verfügung.
 
-1. Gruppen Chat der Gruppen Konferenz
+1. Gruppen Chat
 2. Auf Video-Session umstellen
 3. Screensharing starten
 
 Verlassen können Sie die Gruppen Konferenz über den roten Hörer.
 
-![Gruppen Konferenz starten](group_conference_active.de.png?width=95%)
+![Aktive Gruppen Konferenz](group_conference_active.de.png?width=95%)
 
+## Video und Screensharing
+
+### Video-Telefonie
+
+Während eines Telefonats, können Sie ganz einfach auf Video-Telefonie umschalten, sofern eine entsprechende Webcam vorhanden ist. Ob Ihre Webcam richtig funktioniert, sehen Sie in den Client Einstellungen.
+
+![Video Telefonie starten](video_start.de.png?width=35%)
+
+Die Video-Telefonie startet standartmäßig im Vollbildmodus.
+
+![Aktives Video Telefonat](video_active.png?width=95%)
+
+Das Chat-Symbol öffnet die aktuelle Chatkonversation des Kontakts oder der Gruppe. Das Video-Menü bietet folgende Optionen:
+
+![Aktives Video Menü](video_options.png?width=35%)
+
+|Option|Beschreibung|
+|---|---|
+|Auflegen|Beendet das komplette Telefonat.|
+|Video an/aus|startet/beendet das Video Telefonat und kehrt zum normal Audio Telefonat zurück.|
+|Screensharing an/aus|startet/beendet das Screensharing.|
+|Fullscreen aus|Minimiert den Fullscreen und integriert Video/Screensharing in den Contentbereich des Client.|
+|Weiere Optionen (3 Punkte)|Erweitert das Menü.|
+|DTMF Dialpad|Blendet das Wählfeld ein.|
+|Stummschalten aus/ein|Schaltet das Mikrofon aus/ein.|
+|Kamera wechseln|Wechselt die Kamera Font/Back - nur am Mobiltelefon.|
+
+Wenn Sie den Vollbildmodus verlassen, wird das aktive Video/Screensharing Telefonat minimiert und in den Client integriert. Von dort aus haben Sie wieder Zugriff auf die gewohnten Funktionen. Natürlich können Sie auch wieder mit den Buttons unter dem Videofenster zurück in den Vollbildmodus wechseln.
+
+![Aktives Video minimiert](video_active_minimized.de.png?width=95%)
+
+### Screensharing
+
+Während dem Telefonat können Sie mit einem Klick auf den Screensharing-Button Ihren Bildschirminhalt mit dem Gesprächspartner teilen.
+
+![Screensharing starten](screensharing_start.de.png?width=35%)
+
+Die Screensharing-Session startet standartmäßig im Vollbildmodus. Ihnen stehen die selben [Optionen]({{< relref "#video-telefonie">}}) wie bei der Video Telefonie zur Verfügung.
+
+![Screensharing starten](screensharing_active.png?width=95%)
+
+### Video-Telefonie und Screensharing gleichzeitig
+
+Sie können während einem [Video-Telefonat]({{< relref "#video-telefonie">}}) gleichzeitig Ihren Bildschirminhalt mit Ihrem Gesprächspartner teilen. Dazu klicken Sie im Menü einfach auf Screensharing starten. 
+
+![Screensharing starten während Video Telefonie](video_options_startscreensharing.png?width=35%)
+
+Der Video-Bereich wird minimiert und macht Platz für den Bildschirminhalt des Gesprächspartners. Auch hier stehen Ihnen wieder alle gewohnten [Optionen]({{< relref "#video-telefonie">}}) zur Verfügung.
+
+![Video Telefonat mit Screensharing](video_screensharing_fullscreen.png?width=95%)
+
+## Gruppen Audio/Video Konferenz mit Screensharing
+
+Als Basis für folgende Funktionen wird eine Gruppe benötigt. Haben Sie noch keine Gruppe, erstellen Sie sich zunächst eine neue [Gruppe]({{< relref "#gruppen">}}).  
+
+Starten Sie nun eine neue [Gruppen Konferenz]({{< relref "#gruppen-konferenz">}}) oder treten Sie einer existierenden Gruppen Konferenz bei. Nun können Sie die [Video]({{< relref "#video-telefonie">}})- und [Screensharing]({{< relref "#screensharing">}}) Funktion mit mehreren Konferenzteilnehmern nutzen.
+
+
+![Gruppen Video Screensharing Konferenz](group_video_screensharing_conference.png?width=95%)
 
 ## Journal
 

@@ -223,10 +223,14 @@ Click on the desired group in the contact list. In the content area the conversa
 
 ### Chat Notifications
 
+If the conversation area is not in focus and you receive a new message, a note appears in the contact list on the profile picture and also at the respective contact. On the profile picture you always recognize the whole, not yet read, messages. Contacts with new messages will automatically move up to the top of the contact list, if the sorting has been set to this behavior.
+
 ![multiple Chats](notification_newmassages.png?width=35%)
 
 
-If the conversation area is not in focus and you receive a new message, a note appears in the contact list on the profile picture and also at the respective contact. On the profile picture you always recognize the whole, not yet read, messages. Contacts with new messages will automatically move up to the top of the contact list.
+If your order is not set to automatically show the latest changes at the top of the contact list, you can click on the number of unread messages on your profile picture. The smart filters will then only show the contacts that contain new messages.
+
+![Mehrere Chats](notification_newmassages_filtered.png?width=35%)
 
 ## File Transfers
 
@@ -254,21 +258,79 @@ To start or join a group conference, simply call the appropriate group. The syst
 
 If there are already colleagues in a group conference, this is indicated by the fact that the group is now highlighted in green. You can easily join by calling the group.
 
-![Gruppen Konferenz starten](group_conference_notification.en.png?width=35%)
+![Group Conference Notification](group_conference_notification.en.png?width=35%)
 
 ### Active Group Conferences
 
 During the group conference a number of functions are available to you.
 
-1. Group Chat of the particular Group
+1. Group Chat
 2. Switch to Video Session
 3. Start Screensharing
 
 You can leave the Group Conference over the red phone Symbol.
 
-![Gruppen Konferenz starten](group_conference_active.en.png?width=95%)
+![Active Group Conference](group_conference_active.en.png?width=95%)
+
+## Video and Screensharing
+
+### Video-Call
 
 
+During a call, you can easily switch to video telephony if there is a webcam available. Whether your webcam works properly, you can see it in the client settings.
+
+![Start Video Call](video_start.en.png?width=35%)
+
+The video call starts by default in full screen mode.
+
+![Active Video Call](video_active.png?width=95%)
+
+The chat icon opens the current chat conversation of the contact or group. The video menu offers the following options:
+
+![Active Video Menue](video_options.png?width=35%)
+
+|Option|Description|
+|---|---|
+|Hang Up| Stops the complete call.|
+|Video on/off|start/stop the video call and returns to the normal audio call.|
+|Screensharing on/off|start/stop Screensharing.|
+|Fullscreen off|Minimizes the fullscreen and integrates video / screen sharing into the content area of ​​the client.|
+|More Options (3 Dots)|Expant the menue.|
+|DTMF Dialpad|Shows the dialpad.|
+|Mute on/off|Turns the microphone off / on.|
+|Change Camera|Change the Camera from Font to Back - Works only on Mobile Devices.|
+
+When you exit full-screen mode, the active video / screen sharing call is minimized and integrated into the client. From there you have access to the usual functions again. Of course, you can also switch back to full-screen mode with the buttons below the video window.
+
+![Active Video minimized](video_active_minimized.en.png?width=95%)
+
+### Screensharing
+
+During the call, you can share your screen content with your conversation partner by clicking on the screen sharing button.
+
+![Start Screensharing](screensharing_start.en.png?width=35%)
+
+By default, the screen sharing session starts in fullscreen mode. You have the same [Options]({{< relref "#video-call">}}) as you have with a video call. 
+
+![Active Screensharing Session](screensharing_active.png?width=95%)
+
+### Video-Call and Screensharing at the same time
+
+During a [Video-Call]({{< relref "#video-telefonie">}}) you can simultaneously share your screen content with the party member. Simply click on Start Screen Sharing in the menue. 
+
+![Start screensharing during a Video Call](video_options_startscreensharing.png?width=35%)
+
+The video area will then be automaticly minimized and makes room for the screen content of the caller. Again, all the usual [options]({{< relref "#video-call">}}) are available again.
+
+![Video Call with screensharing](video_screensharing_fullscreen.png?width=95%)
+
+## Audio/Video groups with Screensharing
+
+The base for the following functions is a group. If you do not have a group yet, you need to create a [group]({{< relref "#groups">}}) first.  
+
+Start a new [group conference]({{< relref "#group-conferences">}}) or join an existing group conference. Now you can use the [video]({{< relref "#video-call">}})- and [screensharing]({{< relref "#screensharing">}}) feature with multiple conference participants.
+
+![Group Video Screensharing Conference](group_video_screensharing_conference.png?width=95%)
 
 ## Call History
 
