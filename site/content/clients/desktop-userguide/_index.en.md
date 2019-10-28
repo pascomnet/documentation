@@ -151,13 +151,13 @@ DTMF tones are used to enter information via the dialpad such as PIN authenticat
 
 For the pascom Client to send DTMF tones, the pascom softphone is required and the DTMF tones can be sent during a call via the *Dialpad*.
 
-![DTMF](dtmf.en.png?width=70%)
+![DTMF](dtmf.en.png?width=500px)
 
 ## Search
 
 The pascom desktop client includes an extensive search tool which can be accessed via the magnifying glass icon. When searching, the search tool will search all connected phone books, the call history and the chat archive. The search term can consist of multiple terms / words.
 
-![pascom client search](search.en.png?width=65%)
+![pascom client search](search.en.png?width=500px)
 
 *Example*: when searching for the contact *"Max-Andreas Mustermann"* the search term *"And Muster"* is sufficient.
 
@@ -171,16 +171,16 @@ As soon as an event (call, message etc) occurs a popup notification will appear.
 
 |Notification|Description|
 |---|---|
-|![Active Call](notification_outbound_call.en.png?width=50%)|Popup indicating an active outbound call with the ability to end the call by clicking on the red phone icon.|
-|![Active Call](notification_inbound_call.en.png?width=50%)|Popup notification indicating an active inbound call with the ability to pick up via the green phone icon.|
-|![Active Call](notification_active_call.en.png?width=50%)|Popup indicating an active call with the ability to:<br>* hold the call via the pause symbol<br>* to end the call by clicking on the red phone icon.|
-|![Active Call](notification_missed_call.en.png?width=50%)|Popup notification indicating a missed call with the ability call back via the green phone icon.|
-|![Active Call](notification_chat.en.png?width=50%)|Popup notification indicating a new chat message with the ability to respond direct from the popup.|
+|![Active Call](notification_outbound_call.en.png)|Popup indicating an active outbound call with the ability to end the call by clicking on the red phone icon.|
+|![Active Call](notification_inbound_call.en.png)|Popup notification indicating an active inbound call with the ability to pick up via the green phone icon.|
+|![Active Call](notification_active_call.en.png)|Popup indicating an active call with the ability to:<br>* hold the call via the pause symbol<br>* to end the call by clicking on the red phone icon.|
+|![Active Call](notification_missed_call.en.png)|Popup notification indicating a missed call with the ability call back via the green phone icon.|
+|![Active Call](notification_chat.en.png)|Popup notification indicating a new chat message with the ability to respond direct from the popup.|
 
 Via the settings menu, you can modify your notification settings:
 
 
-![Notification Settings](notification_settings.en.png?width=50%)
+![Notification Settings](notification_settings.en.png?width=500px)
 
 
 ## Groups
@@ -225,23 +225,23 @@ Click on the desired group in the contact list. In the content area the conversa
 
 If the conversation area is not in focus and you receive a new message, a note appears in the contact list on the profile picture and also at the respective contact. On the profile picture you always recognize the whole, not yet read, messages. Contacts with new messages will automatically move up to the top of the contact list, if the sorting has been set to this behavior.
 
-![multiple Chats](notification_newmassages.png?width=35%)
+![multiple Chats](notification_newmassages.png?width=250px)
 
 
 If your order is not set to automatically show the latest changes at the top of the contact list, you can click on the number of unread messages on your profile picture. The smart filters will then only show the contacts that contain new messages.
 
-![Mehrere Chats](notification_newmassages_filtered.png?width=35%)
+![Mehrere Chats](notification_newmassages_filtered.png?width=250px)
 
 ## File Transfers
 
 The desktop client allows you to share files with your colleagues which can done via either one of the following three methods:
 
 1. In an ongoing, active chat simply click on the paper clip symbol (bottom right of the chat area). This will allow you to select a file from your computer which can then be sent:
-![File Transfer](file_transfer_1.en.png?width=60%)
+![File Transfer](file_transfer_1.en.png?width=500px)
 2. In an active chat with a colleague, you can add the file to be transferred by drag and drop. Upon dropping the file will be sent:
-![File Transfer](file_transfer_2.en.png?width=40%)
+![File Transfer](file_transfer_2.en.png?width=350px)
 3. Should you not have an active chat open, it is possible to send a file to a colleague by dragging the file to the desired contact's profile listing in the contact list. Drop the file on the contact and the file will be sent:
-![File Transfer](file_transfer_3.en.png?width=35%)
+![File Transfer](file_transfer_3.en.png?width=300px)
 
 ## Group Conferences
 
@@ -254,11 +254,11 @@ For a group conference a group is needed. If you have not yet created a group, f
 
 To start or join a group conference, simply call the appropriate group. The system will tell you all the necessary information about the conference, just like in a conference room.
 
-![Start Group Conference](group_conference_start.en.png?width=35%)
+![Start Group Conference](group_conference_start.en.png?width=300px)
 
 If there are already colleagues in a group conference, this is indicated by the fact that the group is now highlighted in green. You can easily join by calling the group.
 
-![Group Conference Notification](group_conference_notification.en.png?width=35%)
+![Group Conference Notification](group_conference_notification.en.png?width=300px)
 
 ### Active Group Conferences
 
@@ -279,7 +279,7 @@ You can leave the Group Conference over the red phone Symbol.
 
 During a call, you can easily switch to video telephony if there is a webcam available. Whether your webcam works properly, you can see it in the client settings.
 
-![Start Video Call](video_start.en.png?width=35%)
+![Start Video Call](video_start.en.png?width=300px)
 
 The video call starts by default in full screen mode.
 
@@ -287,7 +287,7 @@ The video call starts by default in full screen mode.
 
 The chat icon opens the current chat conversation of the contact or group. The video menu offers the following options:
 
-![Active Video Menue](video_options.png?width=35%)
+![Active Video Menue](video_options.png?width=250px)
 
 |Option|Description|
 |---|---|
@@ -302,35 +302,35 @@ The chat icon opens the current chat conversation of the contact or group. The v
 
 When you exit full-screen mode, the active video / screen sharing call is minimized and integrated into the client. From there you have access to the usual functions again. Of course, you can also switch back to full-screen mode with the buttons below the video window.
 
-![Active Video minimized](video_active_minimized.en.png?width=95%)
+![Active Video minimized](video_active_minimized.en.png)
 
 ### Screensharing
 
 During the call, you can share your screen content with your conversation partner by clicking on the screen sharing button.
 
-![Start Screensharing](screensharing_start.en.png?width=35%)
+![Start Screensharing](screensharing_start.en.png?width=300px)
 
 By default, the screen sharing session starts in fullscreen mode. You have the same [Options]({{< relref "#video-call">}}) as you have with a video call. 
 
-![Active Screensharing Session](screensharing_active.png?width=95%)
+![Active Screensharing Session](screensharing_active.png)
 
 ### Video-Call and Screensharing at the same time
 
 During a [Video-Call]({{< relref "#video-telefonie">}}) you can simultaneously share your screen content with the party member. Simply click on Start Screen Sharing in the menue. 
 
-![Start screensharing during a Video Call](video_options_startscreensharing.png?width=35%)
+![Start screensharing during a Video Call](video_options_startscreensharing.png?width=250px)
 
 The video area will then be automaticly minimized and makes room for the screen content of the caller. Again, all the usual [options]({{< relref "#video-call">}}) are available again.
 
-![Video Call with screensharing](video_screensharing_fullscreen.png?width=95%)
+![Video Call with screensharing](video_screensharing_fullscreen.png)
 
 ## Audio/Video groups with Screensharing
 
-The base for the following functions is a group. If you do not have a group yet, you need to create a [group]({{< relref "#groups">}}) first.  
+The base for the following functions is a group. If you do not have a group yet, you need to create a new [group]({{< relref "#groups">}}) first.  
 
 Start a new [group conference]({{< relref "#group-conferences">}}) or join an existing group conference. Now you can use the [video]({{< relref "#video-call">}})- and [screensharing]({{< relref "#screensharing">}}) feature with multiple conference participants.
 
-![Group Video Screensharing Conference](group_video_screensharing_conference.png?width=95%)
+![Group Video Screensharing Conference](group_video_screensharing_conference.png)
 
 ## Call History
 

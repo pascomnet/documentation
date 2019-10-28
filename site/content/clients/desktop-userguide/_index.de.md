@@ -157,13 +157,13 @@ DTMF-Töne werden verwendet um z. B. in einem Konferenzraum eine PIN zur Authent
 
 Um mit dem pascom Client unter Verwendung des pascom Softphones DTMF-Töne zu versenden klicken Sie während des laufenden Gesprächs auf das *Wählfeld*.
 
-![DTMF](dtmf.de.png?width=70%)
+![DTMF](dtmf.de.png?width=500px)
 
 ## Suche
 
 Der Client bietet über das Lupen-Symbol eine sehr umfangreiche Suche. Gegen Sie ein Suchbegriff ein, werden Telefonbücher, Journal-Einträge und das Chat-Archiv durchsucht. Der Suchbegriff kann dabei aus mehreren Begriffen und sogar aus mehreren Wortteilen bestehen.
 
-![Suche](search.de.png?width=65%)
+![Suche](search.de.png?width=500px)
 
 *Beispiel*: Sie suchen nach dem  Kontakt *"Max-Andreas Mustermann"* reicht der Suchbegriff *"And Muster"*.
 
@@ -178,16 +178,16 @@ Benachrichtigungen sind Popups, die erscheinen, sobald eine Aktion stattfindet. 
 
 |Benachrichtigung|Beschreibung|
 |---|---|
-|![Ausgehender Anruf](notification_outbound_call.de.png?width=50%)|Benachrichtigung über einen aktuell ausgehen Anruf mit der Möglichkeit den Anruf zu beenden mit Click auf den roten Hörer.|
-|![Eingehender Anruf](notification_inbound_call.de.png?width=50%)|Benachrichtigung über einen aktuell eingehen Anruf mit der Möglichkeit den Anruf anzunehmen mit Click auf den grünen Hörer.|
-|![Aktiver Anruf](notification_active_call.de.png?width=50%)|Benachrichtigung über einen aktive Anruf mit der Möglichkeit den Anruf...<br>...zu halten mit Click auf das Pause-Symbol.<br>...zu beenden mit Click auf den roten Hörer.|
-|![Versasster Anruf](notification_missed_call.de.png?width=50%)|Benachrichtigung über einen verpassten Anruf mit der Möglichkeit zurück zu rufen mit Click auf den grünen Hörer.|
-|![Chat](notification_chat.de.png?width=50%)|Benachrichtigung über eine neue Chat-Nachricht mit der Möglichkeit zurück zu schreiben.|
+|![Ausgehender Anruf](notification_outbound_call.de.png)|Benachrichtigung über einen aktuell ausgehen Anruf mit der Möglichkeit den Anruf zu beenden mit Click auf den roten Hörer.|
+|![Eingehender Anruf](notification_inbound_call.de.png)|Benachrichtigung über einen aktuell eingehen Anruf mit der Möglichkeit den Anruf anzunehmen mit Click auf den grünen Hörer.|
+|![Aktiver Anruf](notification_active_call.de.png)|Benachrichtigung über einen aktive Anruf mit der Möglichkeit den Anruf...<br>...zu halten mit Click auf das Pause-Symbol.<br>...zu beenden mit Click auf den roten Hörer.|
+|![Versasster Anruf](notification_missed_call.de.png)|Benachrichtigung über einen verpassten Anruf mit der Möglichkeit zurück zu rufen mit Click auf den grünen Hörer.|
+|![Chat](notification_chat.de.png)|Benachrichtigung über eine neue Chat-Nachricht mit der Möglichkeit zurück zu schreiben.|
 
 Über Einstellungen können Sie Ihre Benachrichtigungen anpassen:
 
 
-![Benachrichtigung Einstellungen](notification_settings.de.png?width=50%)
+![Benachrichtigung Einstellungen](notification_settings.de.png?width=500px)
 
 
 ## Gruppen
@@ -231,13 +231,13 @@ Klicken Sie in der Kontaktliste auf die gewünschte Gruppe. Im Contentbereich er
 
 Ist der Konversations-Bereich nicht im Fokus, und Sie erhalten eine neue Nachricht, so erscheint in der Kontaktliste am Profilbild und am jeweiligen Kontakt eine Hinweismeldung. Am Profilbild erkennen Sie immer die gesamten, noch nicht gelesenen, Nachrichten. Kontakte mit neuen Nachrichten, rutschen in der Kontaktliste automatisch nach oben, sofern die Sortierung so eingestellt wurde.
 
-![Mehrere Chats](notification_newmassages.png?width=35%)
+![Mehrere Chats](notification_newmassages.png?width=250px)
 
 
  Sollte Ihre Sortierung nicht so eingestellt sein, dass die letzten Änderungen automatisch oben in der Kontaktliste erscheinen, können Sie mit einem Klick auf die Nummer, der noch nicht gelesenen Nachrichten an Ihrem Profilbild, klicken. Mit Hilfe der Smart Filter werden dann nur die Kontakte angezeigt, die neue Nachrichten enthalten. 
 
 
-![Mehrere Chats](notification_newmassages_filtered.png?width=35%)
+![Mehrere Chats](notification_newmassages_filtered.png?width=250px)
 
 
 ## Dateien versenden
@@ -245,11 +245,11 @@ Ist der Konversations-Bereich nicht im Fokus, und Sie erhalten eine neue Nachric
 Der Client bietet Ihnen die Möglichkeit mit Ihren Kollegen Dateien auszutauschen. Dafür gibt es drei Möglichkeiten.
 
 1. Klicken Sie bei einer bereits bestehenden Konversation mit dem Kollegen auf das Büroklammern-Symbol. Anschließend können Sie auf Ihrem Rechner die gewünschte Datei auswählen und somit verschicken:
-![Datei versenden](file_transfer_1.de.png?width=60%)
+![Datei versenden](file_transfer_1.de.png?width=500px)
 2. Sie können bei einer bereits bestehenden Konversation mit dem Kollegen auch die Datei einfach auf das Konversations-Feld ziehen. Beim Loslassen der Datei wird diese versendet:
-![Datei versenden](file_transfer_2.de.png?width=40%)
+![Datei versenden](file_transfer_2.de.png?width=350px)
 3. Falls Sie keine bestehende Konversation offen haben, können Sie die Datei auch in der Kontaktliste auf das Profil-Feld des Kollegen ziehen. Beim Loslassen der Datei wird diese versendet:
-![Datei versenden](file_transfer_3.de.png?width=35%)
+![Datei versenden](file_transfer_3.de.png?width=300px)
 
 ## Gruppen Konferenz
 
@@ -262,11 +262,11 @@ Für eine Gruppen Konferenz wird eine Gruppe benötigt. Haben Sie noch keine Gru
 
 Um eine Gruppen Konferenz zu starten oder beizutreten, rufen Sie die entsprechende Gruppe an. Das System wird Ihnen wie in einem Konferenzraum alle nötigen Infos zur Konferenz mitteilen. 
 
-![Gruppen Konferenz starten](group_conference_start.de.png?width=35%)
+![Gruppen Konferenz starten](group_conference_start.de.png?width=300px)
 
 Sind bereits Kollegen in einer Gruppen Konferenz, erkennen Sie dies daran, dass die Gruppe nun grün hervorgehoben ist. Beitreten können Sie ganz einfach, indem Sie die Gruppe anrufen. 
 
-![Gruppen Konferenz Nachricht](group_conference_notification.de.png?width=35%)
+![Gruppen Konferenz Nachricht](group_conference_notification.de.png?width=300px)
 
 ### Aktive Gruppen Konferenz
 
@@ -286,7 +286,7 @@ Verlassen können Sie die Gruppen Konferenz über den roten Hörer.
 
 Während eines Telefonats, können Sie ganz einfach auf Video-Telefonie umschalten, sofern eine entsprechende Webcam vorhanden ist. Ob Ihre Webcam richtig funktioniert, sehen Sie in den Client Einstellungen.
 
-![Video Telefonie starten](video_start.de.png?width=35%)
+![Video Telefonie starten](video_start.de.png?width=300)
 
 Die Video-Telefonie startet standartmäßig im Vollbildmodus.
 
@@ -294,7 +294,7 @@ Die Video-Telefonie startet standartmäßig im Vollbildmodus.
 
 Das Chat-Symbol öffnet die aktuelle Chatkonversation des Kontakts oder der Gruppe. Das Video-Menü bietet folgende Optionen:
 
-![Aktives Video Menü](video_options.png?width=35%)
+![Aktives Video Menü](video_options.png?width=250px)
 
 |Option|Beschreibung|
 |---|---|
@@ -309,27 +309,27 @@ Das Chat-Symbol öffnet die aktuelle Chatkonversation des Kontakts oder der Grup
 
 Wenn Sie den Vollbildmodus verlassen, wird das aktive Video/Screensharing Telefonat minimiert und in den Client integriert. Von dort aus haben Sie wieder Zugriff auf die gewohnten Funktionen. Natürlich können Sie auch wieder mit den Buttons unter dem Videofenster zurück in den Vollbildmodus wechseln.
 
-![Aktives Video minimiert](video_active_minimized.de.png?width=95%)
+![Aktives Video minimiert](video_active_minimized.de.png)
 
 ### Screensharing
 
 Während dem Telefonat können Sie mit einem Klick auf den Screensharing-Button Ihren Bildschirminhalt mit dem Gesprächspartner teilen.
 
-![Screensharing starten](screensharing_start.de.png?width=35%)
+![Screensharing starten](screensharing_start.de.png?width=300px)
 
 Die Screensharing-Session startet standartmäßig im Vollbildmodus. Ihnen stehen die selben [Optionen]({{< relref "#video-telefonie">}}) wie bei der Video Telefonie zur Verfügung.
 
-![Screensharing starten](screensharing_active.png?width=95%)
+![Screensharing starten](screensharing_active.png)
 
 ### Video-Telefonie und Screensharing gleichzeitig
 
 Sie können während einem [Video-Telefonat]({{< relref "#video-telefonie">}}) gleichzeitig Ihren Bildschirminhalt mit Ihrem Gesprächspartner teilen. Dazu klicken Sie im Menü einfach auf Screensharing starten. 
 
-![Screensharing starten während Video Telefonie](video_options_startscreensharing.png?width=35%)
+![Screensharing starten während Video Telefonie](video_options_startscreensharing.png?width=250px)
 
 Der Video-Bereich wird minimiert und macht Platz für den Bildschirminhalt des Gesprächspartners. Auch hier stehen Ihnen wieder alle gewohnten [Optionen]({{< relref "#video-telefonie">}}) zur Verfügung.
 
-![Video Telefonat mit Screensharing](video_screensharing_fullscreen.png?width=95%)
+![Video Telefonat mit Screensharing](video_screensharing_fullscreen.png)
 
 ## Gruppen Audio/Video Konferenz mit Screensharing
 
@@ -338,7 +338,7 @@ Als Basis für folgende Funktionen wird eine Gruppe benötigt. Haben Sie noch ke
 Starten Sie nun eine neue [Gruppen Konferenz]({{< relref "#gruppen-konferenz">}}) oder treten Sie einer existierenden Gruppen Konferenz bei. Nun können Sie die [Video]({{< relref "#video-telefonie">}})- und [Screensharing]({{< relref "#screensharing">}}) Funktion mit mehreren Konferenzteilnehmern nutzen.
 
 
-![Gruppen Video Screensharing Konferenz](group_video_screensharing_conference.png?width=95%)
+![Gruppen Video Screensharing Konferenz](group_video_screensharing_conference.png)
 
 ## Journal
 
