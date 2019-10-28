@@ -89,7 +89,7 @@ Finally, a Voicemail box action must be added should this not have already been 
 
 ## Alternative CallerID (CID Number)
 
-When adding a user, the user will be assigned with their individual extension under which they can be called. Normally this extension number will also be displayed to other system users. Should your requirements differ, it is possible to configure an alternative caller ID / CID number under {{< ui-button "Users" >}} > {{< ui-button "User List" >}} > select the required user and click {{< ui-button "Edit" >}} and under the {{< ui-button "Basic Data" >}} tab enter the alternative **CID Number**.
+When a user, the user will be assigned with their individual extension under which they can be called. Normally this extension number will also be displayed to other system users. Should your requirements differ, it is possible to configure an alternative caller ID / CID number under {{< ui-button "Users" >}} > {{< ui-button "User List" >}} > select the required user and click {{< ui-button "Edit" >}} and under the {{< ui-button "Basic Data" >}} tab enter the alternative **CID Number**.
 
 {{% notice tip %}}
 Should a user use /signal a different extension for external calls, please configure this in the trunks menu under outbound calls.

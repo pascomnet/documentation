@@ -16,6 +16,9 @@ weight: 30
 - Hinweis auf unterstützte Headsets
 - VErbinden -> Bilder mit einheitlichen Nummern
 -->
+## Training Video
+ 
+{{< youtube 1oK8OLRG624 >}}
 
 ## Login
 
