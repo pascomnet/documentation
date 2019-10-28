@@ -16,6 +16,11 @@ weight: 30
 - Hinweis auf unterstützte Headsets
 - VErbinden -> Bilder mit einheitlichen Nummern
 -->
+
+## Whats New in pascom19 | Training Video
+ 
+{{< youtube cnSuDvVzl5Q >}}
+
 ## Login
 
 Damit ein angelegter [Benutzer]({{< relref "/user/user#Benutzer-anlegen">}}) den pascom Client verwenden und sich anmelden kann benötigt er seinen Benutzernamen und das hinterlegte Benutzerkennwort.
@@ -344,7 +349,7 @@ Starten Sie nun eine neue [Gruppen Konferenz]({{< relref "#gruppen-konferenz">}}
 
 Das Journal gibt eine Übersicht über alle getätigten Anrufe.
 
-![Journal](journal.de.png?width=90%)
+![Journal](journal.de.png)
 
 
 Im Journal haben Sie die Möglichkeit mit einem Rechtsklick auf den Eintrag
@@ -360,19 +365,23 @@ Im Journal haben Sie die Möglichkeit mit einem Rechtsklick auf den Eintrag
 
 ![Telefonbuch](phonebook.de.png)
 
-Der Client bietet neben dem Firmen-Telefonbuch auch ein eigenes (privates) welches Sie selber anlegen und pflegen können. Legen Sie einen Eintrag in Ihrem privaten Telefonbuch, wird dessen Name bei einem eingehendenen Anruf nur in Ihrem Client angezeigt.
+Der Client bietet neben dem Firmen-Telefonbuch auch ein eigenes (privates) welches Sie selber anlegen und pflegen können. Legen Sie einen Eintrag in Ihrem privaten Telefonbuch, wird dessen Name bei einem eingehendenen Anruf nur in Ihrem Client angezeigt.  
+
+Möchten Sie externe Kontakte aus Ihrem Telefonbuch in die Kontaktliste mit aufnehmen, so können Sie im Telefonbuch den entsprechenden Kontakt als Favorit markieren.
+
+![Telefonbuch](phonebook_favorit.png?width=350px)
 
 ## Fax
 
 ### Faxen über den Telefoniebereich
 
-![Fax](fax.de.png?width=75%)
+![Fax](fax.de.png?width=500px)
 
 ### Faxen über den Telefonbuch-Eintrag
 
 Falls die Faxnummer bereits bekannt und im Telefonbuch hinterlegt ist, kann das Fax auch mit einem Klick auf das Fax-Symbol im Telefonbuch versendet werden:
 
-![Fax](phonebook_fax.de.png?width=45%)
+![Fax](phonebook_fax.de.png?width=350px)
 
 ### Faxen über einen überwachten Ordner (PDF to Fax)
 
@@ -384,7 +393,7 @@ Fax-Steuerfelder werden als normaler Text in das zu sendende Dokument eingefügt
 
 #### Vorbereitung
 
-Damit die Steuerfelder aus dem PFD-Dokument erkannt werden können, wird das [Ghostskript](https://www.ghostscript.com/) auf Ihrem Rechner benötigt.
+Damit die Steuerfelder aus dem PDF-Dokument erkannt werden können, wird das [Ghostskript](https://www.ghostscript.com/) auf Ihrem Rechner benötigt.
 Ist das Ghostskript installiert muss der Pfad der Ghostskript-Datei *gs* über die Client-Einstellungen > {{< ui-button "PDF zu Fax Einstellungen" >}} ausgewählt werden.
 
 
@@ -408,7 +417,7 @@ Wie bereits im vorherigen Punkt beschrieben, können Sie über die Client-Einste
 
 ## Voicemailbox abrufen
 
-![Voicemail-Box](voicemailbox.de.png?width=70%)
+![Voicemail-Box](voicemailbox.de.png?width=500px)
 
 Mit dem Klick auf das Voicemail-Box-Symbol können Sie Ihre Voicemail-Box direkt anrufen. Weitere Optionen erfolgen über die Ansagen der Voicemail-Box.
 
@@ -416,7 +425,7 @@ Mit dem Klick auf das Voicemail-Box-Symbol können Sie Ihre Voicemail-Box direkt
 
 Bei der Installation des Clients sind die Tastenkürzel bereits vordefiniert. Diese können Sie aber nach Ihren Wünschen belegen.
 
-![Tastenkürzel](settings_shortcuts.de.png?width=55%)
+![Tastenkürzel](settings_shortcuts.de.png?width=90%)
 
 {{% notice info %}}
 Tastenkürzel sind nur im Desktop Client unter Windows und macOS verfügbar.
@@ -432,14 +441,60 @@ Im folgenden werden die globalen Tastenkürzel näher erklärt:
 
 ## Client-Einstellungen
 
-![Client Einstellungen](settings.de.png?width=45%)
+### Profil Einstellungen
+
+![Profil Einstellungen](profilesettings.de.png?width=400px)
 
 |Einstellung|Beschreibung|
 |---|---|
-|Sprache|Aktuell verfügbare Sprachen: Deutsch, Englisch, Französisch, Niederländisch, Bayrisch, Serbisch.|
-|Farbschema|Verfügbar sind zwei Farbschemata: hell und dunkel.|
-|Download-Ordner|Als Standardeinstellung wird hier immer Ihr Download-Ordner verwendet. Diesen können Sie bei Bedarf anpassen.|
+|Avatar|Ändern Sie Ihr Profilbild. Lassen Sie sich ein Profilbild generieren oder laden Sie sich ein Profilbild vom Computer hoch.|
+|Kontaktliste|Sortieren Sie Ihre Kontaktliste nach Ihren Anwendungsvorlieben.|
+|Listenstil|Es stehen 2 Kontaktlistenstile zur Verfügung. "Listenansicht" für eine schmale Kontaktliste und "Details" für eine detailiertere Ansicht.|
+|Automatische Abwesenheit|Ist Ihr Computer nicht gespehrt und Ihre Maus bewegt sich für XXX Sekunden nicht, wechselt Ihr Status auf gelb "Bin gleich zurück"|
+|Journal / Systemanrufe ausblenden|Blendet Systemanrufe wie Voicemail etc. aus dem Journal aus.|
+|Passwort ändern|Passwort neu vergeben - funktioniert nur, wenn das Passwort nicht von extern kommt (z.B. Active Directory)|
 
+### Audio und Headset Einstellungen
+
+Einstellungen für Headsets unterstützter Hersteller Sennheiser, Jabra und Plantronics. Diese sollten auf "Auto" stehen, um eine schnelle Hardware Erkennung angeschlossener Geräte zu gewährleisten. Stellen Sie das Mikrofon, Lautsprecher und den Klingelton der angeschlossenen Headsets ein.
+
+![Audio und Headset Einstellungen](audiosettings.de.png?width=400px)
+
+### Meine Geräte / Follow Me Einstellungen
+
+In den Follow Me Einstellungen bestimmen Sie selbst, sofern es durch den Administrator freigeschalten wurde, welche Ihrer Endgeräte wann klingeln soll. Zusätzlich können Sie vordefinierte Arbeitsplätze auswählen, an denen Sie sich anmelden können.
+
+1. Bestimmen Sie Ihr Endgerät das für ausgehende Telefonate verwendet werden soll.
+2. Legen Sie fest, welches Ihrer Endgeräte wann klingeln soll. 
+3. Pairen/unpairen Sie Ihr Mobilgerät. 
+
+![Follow Me Einstellungen](followme.de.png?width=95%)
+
+### Client Einstellungen
+
+Hier legen Sie die Basiseinstellungen des Client fest.
+
+1. Ändern Sie die Sprache
+2. Wählen Sie zwischen 2 Farbmodi, hell und dunkel.
+3. Bestimmen Sie einen Download Ordner in dem die Dateien von Übertragungen gespeichert werden. 
+
+![Client Einstellungen](client_settings.de.png?width=500px)
+
+## Aktionen
+
+In den Aktionen können Sie Anrufdaten an Drittanwendungen weitergeben. Hier haben Sie die Möglichkeit Daten an eine URL, oder an eine installierte Anwendung weiter zu geben. 
+
+![Client Aktionen](actions.de.png?width=500px)
+
+Die Anwendungsfälle sind hier vielfälltig. Sie können die Variablen ${name}, ${number}, ${MDC_LABEL-X} oder ${MDC_SKILL-X} (Labels) als Parameter verwenden.
+
+|Einstellung|Beschreibung|
+|---|---|
+|URL|Geben Sie hier die URL ein, gefolgt von den gewünschten Parametern.|
+|URL automatisch öffnen|URL automatisch bei eingehendem Anruf öffnen.|
+|Anwendung|Wählen Sie hier die installierte Anwendung auf Ihrem Computer aus.|
+|Parameter|Hinterlegen Sie hier die Parameter, die an die Anwendung übergeben werden soll.|
+|Anwendung automatisch öffnen|Anwendung wird automatisch gestartet bei eingehendem Anruf.|
 
 ## Client-Feedback an pascom melden
 

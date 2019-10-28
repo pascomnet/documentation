@@ -16,7 +16,7 @@ weight: 30
 - Hinweis auf unterstützte Headsets
 - VErbinden -> Bilder mit einheitlichen Nummern
 -->
-## Training Video
+## Whats New in pascom19 | Training Video
  
 {{< youtube 1oK8OLRG624 >}}
 
@@ -339,9 +339,9 @@ Start a new [group conference]({{< relref "#group-conferences">}}) or join an ex
 
 The Call History provides an overview of all your calls.
 
-![pascom Call History](journal.en.png?width=90%)
+![pascom Call History](journal.en.png)
 
-By using the right click function, it is possible to use do the following when clicking on a call in the log:
+By using the right click function, it is possible to use the following when clicking on a call in the log:
 
 * Copy all details pertaining to a caller (Time, type of call, caller name (if available), and their phone number),
 * Copy only the phone number to store or edit elsewhere,
@@ -353,19 +353,51 @@ By using the right click function, it is possible to use do the following when c
 
 ![pascom Telephone book](phonebook.en.png)
 
-The client provides access to the company phone book as well as your private phone book which you can manage yourself. Add a contact to the private phone book and this display name will displayed by incoming calls but only in your desktop client.
+The client provides access to the company phone book as well as your private phone book which you can manage yourself. Add a contact to the private phone book and this display name will displayed by incoming calls but only in your desktop client.  
+
+If you want to add external contacts from your phonebook to the contact list, you can mark the corresponding contact as a favorite in the phonebook.
+
+![phonebook](phonebook_favorit.png?width=350px)
 
 ## Fax
 
-![pascom client fax](fax.en.png?width=75%)
+![pascom client fax](fax.en.png?width=500px)
 
 If a fax number is already stored in the phone book, it is possible to send a fax by clicking on the fax symbol in the phone book:
 
-![Fax](phonebook_fax.en.png?width=45%)
+![Fax](phonebook_fax.en.png?width=350px)
+
+### Fax from an watched Folder (PDF to Fax)
+
+The Client Settings > {{< ui-button "PDF to FAX settings" >}} allows you to define a folder on your computer. This folder is monitored by the client. As soon as a PDF File is saved, copied or printed in this folder, the pascom client opens the fax dialog to send this file.
+
+### Automatic fax via an watched folder
+
+Fax control panels are inserted as plain text in the document to be sent, then the fax server processes these instructions.
+
+#### Preparation
+
+To be able to recognize the panels from the PDF document, the [Ghostskript](https://www.ghostscript.com/) is needed on your machine. If the ghostscript is installed then the path of the Ghostscript File *gs* must be selected via the client > {{< ui-button "PDF to FAX settings" >}}.
+
+
+#### Automatic transmission
+
+Insert the controls into the document to be sent.
+
+Please note that these panels can also be read by the recipient. Possibly, you can be invisible with certain writing programs (eg white test on a white background).
+
+|Available controls||
+|---|---|
+|@@+FAX:+49991123456789@@|The fax must contain at least this control character with the destination number.|
+|@@+TAG:Bestellung XYZ@@|Optionally, the fax job can be provided with a subject.|
+|@@+NOTIFY:mustermann@musterfirma.de@@|Optionally, you can specify who should be notified of the status of the fax job.|
+
+
+As described in the previous section, you can use the client settings > {{< ui-button "PDF to FAX settings" >}} to define a folder on your computer that is monitored by the client. As soon as a PDF file is saved, copied or printed in this folder, the control fields are evaluated and the file is sent as a fax.
 
 ## Call Voicemail
 
-![Voicemail-Box](voicemailbox.en.png?width=70%)
+![Voicemail-Box](voicemailbox.en.png?width=500px)
 
 By clicking on the Voicemail box symbol, it is possible to call your voicemail box directly. Additional options can be configured by following the prompts in the voicemail system itself.
 
@@ -377,7 +409,7 @@ Shortcut keys are only available in the desktop client for Windows and macOS.
 
 When installing the client, the shortcut keys are predefined. However, if needed the shortcut keys can be freely customised according to your preference.
 
-![Shortcut keys](settings_shortcuts.en.png?width=55%)
+![Shortcut keys](settings_shortcuts.en.png?width=90%)
 
 ### Global Shortcut Keys:
 
@@ -389,13 +421,61 @@ When installing the client, the shortcut keys are predefined. However, if needed
 
 ## Client Settings
 
-![Client Settings](settings.en.png?width=45%)
+### Profile Settings
 
-|Settings|Description|
+![profile settings](profilesettings.en.png?width=45%)
+
+|Setting|Description|
 |---|---|
-|Language|Current languages available include: English, German, French, Dutch, Serbian and Bavarian.|
-|Colour Scheme|Available in a two colour schemes: light and dark.|
-|Download Folder|Per default, your downloads folder will be used, however it is possible to customize according to your requirements.|
+|Avatar|Change your profile picture. Autogenerate a profile picture or upload a profile picture from the computer.|
+|Contact List|Sort your contact list according to your application preferences.|
+|List Style|There are 2 contact list styles available. "List view" for a narrow contact list and "Details" for a more detailed view.|
+|Auto Away|If your computer is not locked and your mouse does not move for XXX seconds, your status will change to yellow "I'll be right back"|
+|Journal / Hide System Calls|Hides system calls like voicemail etc. from the journal.|
+|Change Password|Set a new Password - works only if the password is not set from an  external source (for example Active Directory)|
+
+### Audio and Headset Settings
+
+Headset settings for supported manufacturers Sennheiser, Jabra and Plantronics. These should be set to "auto" to ensure a fast hardware detection of connected devices. Adjust the microphone, speakers and ringtone of the connected headsets.
+
+![audio and headset settings](audiosettings.en.png?width=400px)
+
+### My Devices / Follow Me Settings
+
+In the Follow Me Settings you decide yourself, providet that it has been activated by the administrator, which of your devices should ring. In addition, you can select predefined workstations to which you can login.
+
+1. Determine your device that will be used for outgoing calls.
+2. Determine which of your devices should ring when. 
+3. Pair / unpair your mobile device. 
+
+![Follow Me Settings](followme.en.png?width=95%)
+
+### Client Settings
+
+Here you define the basic settings of the Client.
+
+1. Change the Language.
+2. Choose between 2 Colormodes, bright and dark.
+3. Determine a download folder in which the files of transfers are stored. 
+
+![Client Settings](client_settings.en.png?width=500px)
+
+## Actions
+
+The actions allow you to pass call data to third-party applications. Here you have the possibility to pass on data to a URL or to an installed application.
+
+![Client Actions](actions.en.png?width=500px)
+
+The applications are diverse here. You can use the variables $ {name}, $ {number}, $ {MDC_LABEL-X} or $ {MDC_SKILL-X} (Labels) as parameters.
+
+|Setting|Description|
+|---|---|
+|URL|Enter the URL here, followed by the desired parameters.|
+|Automaticly open URL|Automatically open URL on incoming call.|
+|Application|Select the installed application on your computer here.|
+|Parameters|Define here the parameters to be passed to the application.|
+|Automaticly open app|Application starts automatically on incoming call.|
+
 
 ## pascom Client Feedback  
 
