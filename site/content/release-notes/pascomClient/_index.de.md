@@ -9,15 +9,12 @@ F체r weitere Informationen zu unserem pascom Client lesen Sie bitte unsere ausf�
 {{%/notice%}}
 
 {{% notice warning %}}
-Ab Release 46.R152 wird macOS 10.12 vorausgesetzt
+Ab Release 46.R152 wird macOS 10.12 vorausgesetzt  
+**Die pascom Clientversion 56.R659 ist kompatibel zu pascom 17, 18 und 19.**  
+F체r Client Versionen die mit 채lteren Server System Versionen kompatibel sind, besuchen Sie bitte unser [Release-Archiv](https://www.pascom.net/de/downloads/#release-archive).
 {{% /notice %}}
 
 ## Release 56.R659 (29.10.2019)
-
-{{% notice warning %}}
-**Diese Clientversion ist kompatibel zu pascom 17, 18 und 19.**  
-F체r Client Versionen die mit 채lteren Server System Versionen kompatibel sind, besuchen Sie bitte unser [Release-Archiv](https://www.pascom.net/de/downloads/#release-archive).
-{{% /notice %}}
 
 ### What's New in pascom19 
  

@@ -198,7 +198,7 @@ With the group function, it is possible to create permanent groups which deliver
 
 ![Create group](group_create.en.png?width=100%)
 
-In the contact list, click on the "+ - symbol" to create a new group. You can create as many groups as you need. Next, enter an appropriate group name (i.e. sales or marketing), upload a group profile image and add the desired participants. Finally, save the group by clicking the "Floppy Disk" save symbol. The new group will now appear in your contact list. 
+In the contact list, click on the "+ symbol" to create a new group. You can create as many groups as you need. Next, enter an appropriate group name (i.e. sales or marketing), upload a group profile image and add the desired participants. Finally, save the group by clicking the "Floppy Disk" save symbol. The new group will now appear in your contact list. 
 
 ### Manage Groups
 
@@ -208,30 +208,28 @@ To manage a group, select and click on the required group within your contact li
 
 ## Chat
 
-There are 2 ways to start a chat conversation with a contact. With a direct click on the contact in the contact list or during a call in the call options.
+There are 2 ways to start a chat conversation: by clicking on the desired person within the contacts list OR during a call and selecting the chat option from within the in-call menu.
 
 ![pascom Instant Messaging](chat.en.png?width=90%)
 
+### Team Messaging / Group Chat
 
-### Group Chat
-
-For a group chat a group is needed. If you have not yet created a group, first create a new [Group]({{< relref "#groups">}}).
+In order to use the team messaging / group chat tools, a group is required. If you have not yet created a group, first create a new [Group]({{< relref "#groups">}}).
 
 ![Group Chat](groupchat.en.png)
 
-
-Click on the desired group in the contact list. In the content area the conversation of the respective group appears. You can also start a group conference from there. To close the chat, just click on the X icon in the upper right corner.
+Click on the desired group in the contact list. Within the contect section of the client, all chat messages from the selected group will appear. To close the chat, simply click the "X" symbol in the upper right hand corner of the chat window. 
 
 ### Chat Notifications
 
-If the conversation area is not in focus and you receive a new message, a note appears in the contact list on the profile picture and also at the respective contact. On the profile picture you always recognize the whole, not yet read, messages. Contacts with new messages will automatically move up to the top of the contact list, if the sorting has been set to this behavior.
+Should the chat window not currently be active and you receive a new message, a green notifier will appear in the contact list next to the respective group / contact AND within your profile picture. The notifier within your profile picture represents all unread messages from all contacts / groups. Contacts with new messages will automatically move up to the top of the contact list, if you have set the list sorting to "recent".
 
-![multiple Chats](notification_newmessages.png?width=250px)
+![Multiple Chats](notification_newmessages.png?width=250px)
 
 
-If your order is not set to automatically show the latest changes at the top of the contact list, you can click on the number of unread messages on your profile picture. The smart filters will then only show the contacts that contain new messages.
+If your order is not set to automatically show the most recent activity at the top of the contact list, you can click on the number of unread messages within your profile picture. The smart filters will then only show the contacts that contain new unread messages.
 
-![Mehrere Chats](notification_newmessages_filtered.png?width=250px)
+![Multiple chats filtered](notification_newmessages_filtered.png?width=250px)
 
 ## File Transfers
 
@@ -246,30 +244,29 @@ The desktop client allows you to share files with your colleagues which can done
 
 ## Group Conferences
 
+It is often the case, that you may have to quickly and effectively collaboration with your colleagues on the fly. In order prevent conference room login, availability and scheduling issues, the pascom client includes a group audio conferencing tool.
 
-It often happens that you have to quickly coordinate with contacts. In order not to occupy a conference room every time, there are the groups conferences.
-For a group conference a group is needed. If you have not yet created a group, first create a new [Group]({{< relref "#groups">}}).
-
+To start a group audio conference, a group is required. If you have not yet created a group, first create a new [Group]({{< relref "#groups">}}).
 
 ### Start/Join Group Conferences
 
-To start or join a group conference, simply call the appropriate group. The system will tell you all the necessary information about the conference, just like in a conference room.
+To start or join a group conference, simply call the desired group. The system will provide you with all the relevant information about the conference, just like in a conference room.
 
 ![Start Group Conference](group_conference_start.en.png?width=300px)
 
-If there are already colleagues in a group conference, this is indicated by the fact that the group is now highlighted in green. You can easily join by calling the group.
+If there are already colleagues in a group conference, this is indicated within the client by highlighting the group in green within the contact list. You can easily join the audio conference by calling the group.
 
 ![Group Conference Notification](group_conference_notification.en.png?width=300px)
 
 ### Active Group Conferences
 
-During the group conference a number of functions are available to you.
+During a group conference, a number of additional functions will become available.
 
 1. Group Chat
 2. Switch to Video Session
 3. Start Screensharing
 
-You can leave the Group Conference over the red phone Symbol.
+You can leave the Group Conference by clicking the red hangup button.
 
 ![Active Group Conference](group_conference_active.en.png?width=95%)
 
@@ -277,22 +274,23 @@ You can leave the Group Conference over the red phone Symbol.
 
 ### Video-Call
 
-
-During a call, you can easily switch to video telephony if there is a webcam available. Whether your webcam works properly, you can see it in the client settings.
+During a call, you can easily elevate a call to a video conference as long as a webcam is available. To check whether your webcam is correctly configured, please go to the client settings.
 
 ![Start Video Call](video_start.en.png?width=300px)
 
-The video call starts by default in full screen mode.
+By default, video calls start in full screen mode.
 
 ![Active Video Call](video_active.png?width=95%)
 
-The chat icon opens the current chat conversation of the contact or group. The video menu offers the following options:
+By clicking the chat icon, the current chat or group chat (depending on with whom you are calling) will open. 
+
+The video menu includes the following options:
 
 ![Active Video Menue](video_options.png?width=250px)
 
 |Option|Description|
 |---|---|
-|Hang Up| Stops the complete call.|
+|Hang Up| Ends the complete call.|
 |Video on/off|start/stop the video call and returns to the normal audio call.|
 |Screensharing on/off|start/stop Screensharing.|
 |Fullscreen off|Minimizes the fullscreen and integrates video / screen sharing into the content area of ​​the client.|
