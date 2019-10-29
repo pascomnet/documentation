@@ -156,7 +156,7 @@ For the pascom Client to send DTMF tones, the pascom softphone is required and t
 
 ![DTMF](dtmf.en.png?width=500px)
 
-## Search
+## Search and Smart Filter
 
 The pascom desktop client includes an extensive search tool which can be accessed via the magnifying glass icon. When searching, the search tool will search all connected phone books, the call history and the chat archive. The search term can consist of multiple terms / words.
 
@@ -228,12 +228,12 @@ Click on the desired group in the contact list. In the content area the conversa
 
 If the conversation area is not in focus and you receive a new message, a note appears in the contact list on the profile picture and also at the respective contact. On the profile picture you always recognize the whole, not yet read, messages. Contacts with new messages will automatically move up to the top of the contact list, if the sorting has been set to this behavior.
 
-![multiple Chats](notification_newmassages.png?width=250px)
+![multiple Chats](notification_newmessages.png?width=250px)
 
 
 If your order is not set to automatically show the latest changes at the top of the contact list, you can click on the number of unread messages on your profile picture. The smart filters will then only show the contacts that contain new messages.
 
-![Mehrere Chats](notification_newmassages_filtered.png?width=250px)
+![Mehrere Chats](notification_newmessages_filtered.png?width=250px)
 
 ## File Transfers
 

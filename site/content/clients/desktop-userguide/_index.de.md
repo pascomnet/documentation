@@ -236,13 +236,13 @@ Klicken Sie in der Kontaktliste auf die gewünschte Gruppe. Im Contentbereich er
 
 Ist der Konversations-Bereich nicht im Fokus, und Sie erhalten eine neue Nachricht, so erscheint in der Kontaktliste am Profilbild und am jeweiligen Kontakt eine Hinweismeldung. Am Profilbild erkennen Sie immer die gesamten, noch nicht gelesenen, Nachrichten. Kontakte mit neuen Nachrichten, rutschen in der Kontaktliste automatisch nach oben, sofern die Sortierung so eingestellt wurde.
 
-![Mehrere Chats](notification_newmassages.png?width=250px)
+![Mehrere Chats](notification_newmessages.png?width=250px)
 
 
  Sollte Ihre Sortierung nicht so eingestellt sein, dass die letzten Änderungen automatisch oben in der Kontaktliste erscheinen, können Sie mit einem Klick auf die Nummer, der noch nicht gelesenen Nachrichten an Ihrem Profilbild, klicken. Mit Hilfe der Smart Filter werden dann nur die Kontakte angezeigt, die neue Nachrichten enthalten. 
 
 
-![Mehrere Chats](notification_newmassages_filtered.png?width=250px)
+![Mehrere Chats](notification_newmessages_filtered.png?width=250px)
 
 
 ## Dateien versenden
