@@ -63,7 +63,8 @@ Wegen des Technologiewechsels von pascom 17 auf 18 und den damit verbundenen Meh
 
 |Version|Release Type|Veröffentlichung|
 |-------|------------|---------------:|
-|[Release 54.R534]({{< ref "/release-notes/pascomClient">}})| Bugfix Release | 12.09.2019 |
+|[Release 56.R657]({{< ref "/release-notes/pascomClient">}})| Feature Release | 29.10.2019 |
+|[Release 54.R534]({{< ref "/release-notes/pascomClient#release-54-r534-12-09-2019">}})| Bugfix Release | 12.09.2019 |
 |[Release 53.R453]({{< ref "/release-notes/pascomClient#release-53-r453-03-07-2019">}})| Bugfix Release | 03.07.2019 |
 |[Release 52.R428]({{< ref "/release-notes/pascomClient#release-52-r428-18-06-2019">}})| Bugfix Release | 18.06.2019 |
 |[Release 51.R365]({{< ref "/release-notes/pascomClient#release-51-r365-27-05-2019">}})| Bugfix Release | 27.05.2019 |

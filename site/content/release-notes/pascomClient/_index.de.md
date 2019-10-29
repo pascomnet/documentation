@@ -12,6 +12,49 @@ Für weitere Informationen zu unserem pascom Client lesen Sie bitte unsere ausf�
 Ab Release 46.R152 wird macOS 10.12 vorausgesetzt
 {{% /notice %}}
 
+## Release 56.R659 (29.10.2019)
+
+{{% notice warning %}}
+**Diese Clientversion ist kompatibel zu pascom 17, 18 und 19.**  
+Für Client Versionen die mit älteren Server System Versionen kompatibel sind, besuchen Sie bitte unser [Release-Archiv](https://www.pascom.net/de/downloads/#release-archive).
+{{% /notice %}}
+
+### What's New in pascom19 
+ 
+{{< youtube cnSuDvVzl5Q >}}
+ 
+**Auf einen Blick**
+ 
+- Kontaktliste neu gestaltet
+- Chat UI überarbeitet
+- Suchbildschirm verbessert
+- Android: Connection Service integriert, dies ermöglicht u. a. Anrufsteuerung via Headset und im Auto
+- Android 10 kompatibilität
+- Android 6.0 oder neuer erforderlich
+ 
+**Im Zusammenspiel mit einem pascom19 Server außerdem:**  
+
+- Video-Anrufe
+- Flexible permanente Gruppenchats, Anrufe und Videokonferenzen
+ 
+**ÄNDERUNGEN:**
+ 
+- [CL-921] - Sometimes deleted contacts show up in the contactlist
+- [CL-895] - Emoticon Keyboard is broken on iOS 13
+- [CL-882] - Answer a call in a car does not work on android
+- [CL-816] - Use native notifications by default on windows
+- [CL-809] - iOS somtimes continues ringing after push
+- [CL-807] -  Android client does not hang up softphone call if a gsm call is already running
+- [CL-792] -  Auto update doesn't work sometimes on macOS
+- [CL-763] -  Be compatible to Android 9 privacy settings
+- [CL-751] -  pascom Client does not ring in background on android 10
+- [CL-748] -  pascom Client compatibility to iOS 13
+- [CL-728] -  Broken timestamp formatting on iOS/Android journal
+- [CL-726] -  Wrong translation for "Hide System Calls in Journal"
+- [CL-710] -  Implement workaround: Call Specific actions are broken for softphone calls
+- [CL-647] -  Prevent connecting to server versions lower than 17
+- [CL-567] -  CallKit on Lockscreen should have an icon for the "pascom" button
+- [CL-508] -  Sennheiser keeps ringing after offhook on desktop phone
 
 ## Release 54.R534 (12.09.2019)
 

@@ -17,7 +17,7 @@ weight: 30
 - VErbinden -> Bilder mit einheitlichen Nummern
 -->
 
-## Whats New in pascom19 | Training Video
+## What's New in pascom19 | Training Video
  
 {{< youtube cnSuDvVzl5Q >}}
 

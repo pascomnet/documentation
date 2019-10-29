@@ -4,6 +4,10 @@ description: Users can be assigned team membership and in a pascom phone systems
 weight: 10
 ---
 
+## Training Video
+
+{{< youtube bQGXqn0--Iw  >}}
+
 ## Concept
 
 Each [pascom VoIP phone system](https://www.pascom.net/en/) user has their own extension, devices and actions which control calls to their extension. **Additionally,** users can also be members of a team.

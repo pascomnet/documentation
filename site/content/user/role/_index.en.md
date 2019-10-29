@@ -8,6 +8,10 @@ weight: 40
 
 {{< description >}}
 
+## Training Video
+
+{{< youtube WVQuH8x7CXc  >}}
+
 ## Concept
 
 Users, devices, teams and even locations can be assigned one or more roles. Roles themselves can be assigned with functions and permissions, which can be used to control telephony relevant tools such as, for example, whether or not a user is permitted to pickup calls from other users.

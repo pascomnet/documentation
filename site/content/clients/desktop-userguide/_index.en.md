@@ -16,20 +16,20 @@ weight: 30
 - Hinweis auf unterstützte Headsets
 - VErbinden -> Bilder mit einheitlichen Nummern
 -->
-## Whats New in pascom19 | Training Video
+## What's new in pascom 19 | Training Video
  
 {{< youtube 1oK8OLRG624 >}}
 
 ## Login
 
-That the added [user]({{< relref "/user/user#adding-users">}}) can login and use the pascom client den pascom Client, they will need their username and password.
+In to enable the added [user]({{< relref "/user/user#adding-users">}}) to login and use the pascom client, they will need their username and password.
 
 |Field|Description|
 |---|---|
 |Username|username@instancename|
 |Password|User password|
 |Server|Domain or IP address of the server|
-|Save login details?|Select the check box if your wish the allow the client to start automatically with the added login credentials.|
+|Save login details?|Select the check box if your wish to enable the client to start automatically with the entered login credentials.|
 
 {{% notice info %}}
 Should you use a self-hosted "On-premise" phone system with only one instance, entering the @instancename component after the username is not necessary.
@@ -41,9 +41,9 @@ Should you use a self-hosted "On-premise" phone system with only one instance, e
 
 The Desktop client consists of three main components:
 
-+ On the left hand side of the client, you will find your profile section, UC functions selector and contact list.
++ On the left hand side of the client, you will find your profile section, UC tools menu and contact list.
 + The right hand side is dedicated to telephony functions
-+ The middle section is a flexible content area that changes depending on which UC tool is currently selected, i.e. Instant Messaging (Chat), Call History or Phone Books.
++ The middle section is a fluid content area that changes depending on which UC tool is currently being used, i.e. Instant Messaging (Chat), Call History or Phone Books.
 
 ![Client Expanded Mode](expanded_mode.en.png)
 
@@ -51,7 +51,7 @@ The desktop client also offers differing view modes:
 
 + **Expanded Mode**: Displays all three components, of which the middle section can be selected using the UC tool toggle list.
 + **Normal Mode**: The user profile and contacts are visible as well as it being possible to switch between the *Chats, Telephony, Call History,* and *Phone Book* tools.
-+ **Mini Mode**: Only a single area is visible and the UC tool selector menu is now found under the content area. Using the selector tool, it is possible to navigate through all UC tools, changing the visible content area as you go.
++ **Mini Mode**: Only a single area is visible and the UC tools menu is now found under the content area. Using the menu tool, it is possible to navigate through all UC tools, changing the visible content area as you go.
 
 ![Client Normal and Mini Mode](normal_mini_mode.en.png)
 
@@ -63,12 +63,12 @@ In order to simplify switching the various views, it is possible to toggle the s
 
 |Function|Description|
 |---|---|
-|Presence Status|It is possible to update your presence status with the following options:<br>- *Green* > Available<br>- *Yellow* > Away<br>- *Red* > Do Not Disturb / Busy (This option doesn't deliver DND functionality.)<br>Status texts can be personalized according to requirements - simply select the correct presence and then click on the status text and replace it.|
-|Create new group|With the "+ symbol" you can create a new permanent group.|
-|Contact list filter|Filter contacts to display only certain contacts. Per default, two filters are available as standard - *Favorites* and *Teams*. Favorites can be add by clicking on the star symbol next to a contact's handset icon. Additional filters can be defined by the system administrator via Roles.|
-|Contacts |[Contact Information]({{< relref "#Contacts">}}) list displaying contact presence, extension and contact information.|
+|Presence Status|It is possible to update your presence status with the following options:<br>- *Green* > Available<br>- *Yellow* > Away<br>- *Red* > Do Not Disturb / Busy (This option doesn't deliver DND functionality.)<br><br>Status texts can be customised according to requirements - simply select the correct presence and then click on the status text and replace it.|
+|Create new group|With the "+ symbol" you can create a new permanent team messaging / chat group.|
+|Contact list filter|Filter contacts to display only certain contacts. Per default, two filters are available as standard - *Favourites* and *Teams*. Favourites can be added by clicking on the star symbol next to a contact's handset icon. Additional filters can be defined by the system administrator using [Roles]({{< relref "/user/role">}}).|
+|Contacts |[Contact list]({{< relref "#Contacts">}}) displaying contact presence, extension and contact information.|
 |Phone Symbol |Click on the phone symbol to call the contact.|
-|Favorite Symbol|Simply mark your favorite contacts with the "star" symbol. These are then pinned at the top of the contact list.|
+|Favourite Symbol|Simply mark your favourite contacts with the "star" symbol. These are then pinned at the top of the contact list.|
 |Teams | Under [Teams]({{< relref "#teams">}}) you will see all the teams of which you are either a permanent or dynamic member. The *Available* or *Offline* status signify whether you are currently logged into a team or not.|
 
 
@@ -82,19 +82,19 @@ Each contact in your contact list has various statuses, which can be seen in the
 
 ![Teams](teams.en.png)
 
-The teams function can be used to gain an overview of what's happening in the teams of which you are a member of. The teams tool also enables you to dynamically log in / out of a team (if your are a dynamic member) as well as being able to pause / resume your team membership plus seeing the status of other team members / queue agents and seeing any calls currently waiting in the queue.
+The teams function can be used to gain an overview of what's happening in the teams of which you are a member of. The teams tool also enables you to dynamically log in / out of a team (if your are a dynamic member), pause / resume your team membership as well as seeing the status of other team members / queue agents and seeing any calls currently waiting in the queue.
 
 ## Integrated Softphone
 
-If your user has been assigned a pascom softphone by your System Admin, then you can select your pascom softphone via the telephony settings menu.
+If your system admin has assigned a pascom softphone to your user account (default yes), then you can select your pascom softphone via the telephony settings menu.
 
 ![Softphone](softphone_audio.en.png?width=250px "pascom Softphone Audio Settings")
 
-In order to use the softphone, you will need to configure the following softphone settings; Microphone, Speaker (Audio output) and Ringing speaker. Even if your desktop client has automatically detected your headset, you will need to select it from the drop down list. Should your headset not automatically appear in the list, then please check your computers audio
+To use the softphone, you will need to configure the following softphone settings; Microphone, Speaker (Audio output) and Ringing speaker. Even if your desktop client has automatically detected your headset, you will need to select it from the drop down list. Should your headset not automatically appear in the list, then please check your computers audio.
 
 ## Making Calls
   
-Before you starting phoning, please check your telephone settings. Particularly if you have multiple telephone assigned to your user account, it is essential to ensure that the correct device is selected.
+Before you starting making calls, please check your telephone settings. Particularly if you have multiple telephones assigned to your user account, it is essential to ensure that the correct device is selected.
 
 ![Dialpad](dialpad.en.png?width=100% "pascom SIP Softphone")
 
@@ -127,7 +127,7 @@ If you wish to transfer the call to an internal colleague, simply right click on
 
 #### Attended Transfer
 
-To transfer a call having spoken to the party to whom the call should be transferred, please follow these steps:
+An attended transfer is a call transfer that involves speaking to the intended recipient before completing the transfer. To perform an attended transfer, please follow these steps:
 
 1. Click *Add Participant*, to talk to the new party.
 2. Now *Transfer* the caller with the newly added participant.
@@ -141,7 +141,7 @@ It is not necessary to place the caller on hold, as this is automatically done w
 
 ![3-way-conferencing](3_way_conference.en.png)
 
-A 3-way-conference is started in a similar fashon to an [Attended Transfer](/clients/client-user-guide/#attended-transfer) via a 2 step process.
+A 3-way-conference is started in a similar fashion to an [Attended Transfer](/clients/client-user-guide/#attended-transfer) via a 2 step process.
 
 1. Click the *Add Participant* button and call the required party.
 2. To start a 3-way-conference simply click on the *Conference* button.
@@ -150,7 +150,7 @@ During a 3-way-conference call it is possible for the initiator to remove a part
 
 ### Sending DTMF Tones
 
-DTMF tones are used to enter information via the dialpad such as PIN authentication for conference rooms or when selecting the required choice in an options menu (press 1 for..., 2 for ..., 3 for ... etc) or even having to enter a number code to open an intercom door for example.
+DTMF tones are used to enter information via the dialpad such as PIN authentication for conference rooms or when selecting the required choice in an IVR options menu (press 1 for..., 2 for ..., 3 for ... etc) or even having to enter a number code to open an intercom door for example.
 
 For the pascom Client to send DTMF tones, the pascom softphone is required and the DTMF tones can be sent during a call via the *Dialpad*.
 
@@ -158,55 +158,53 @@ For the pascom Client to send DTMF tones, the pascom softphone is required and t
 
 ## Search and Smart Filter
 
-The pascom desktop client includes an extensive search tool which can be accessed via the magnifying glass icon. When searching, the search tool will search all connected phone books, the call history and the chat archive. The search term can consist of multiple terms / words.
+The pascom desktop client includes an extensive search tool which can be accessed via the search / magnifying glass icon. When searching, the search tool will search your internal contacts, all connected phone books, your call history and chat archive. The search term can consist of multiple terms / words.
 
 ![pascom client search](search.en.png?width=500px)
 
 *Example*: when searching for the contact *"Max-Andreas Mustermann"* the search term *"And Muster"* is sufficient.
 
 {{% notice info %}}
-The magnifying glass icon is visible within the content area no matter the client view (size).
+The magnifying glass icon is visible within the menu ribbon no matter the client view (size).
 {{% /notice %}}
 
 ## Notifications
 
-As soon as an event (call, message etc) occurs a popup notification will appear. These popup notifications provide additional information to the type of event i.e. caller name or chat contact name. The popups also allow users to react to the event without needing to refer to the desktop client.
+As soon as an event (call, message etc) occurs a popup notification will appear. These popup notifications provide additional information to the type of event i.e. caller name or chat contact name. The popups also allow users to react to the event without needing to go to the desktop client.
 
 |Notification|Description|
 |---|---|
-|![Active Call](notification_outbound_call.en.png)|Popup indicating an active outbound call with the ability to end the call by clicking on the red phone icon.|
-|![Active Call](notification_inbound_call.en.png)|Popup notification indicating an active inbound call with the ability to pick up via the green phone icon.|
-|![Active Call](notification_active_call.en.png)|Popup indicating an active call with the ability to:<br>* hold the call via the pause symbol<br>* to end the call by clicking on the red phone icon.|
-|![Active Call](notification_missed_call.en.png)|Popup notification indicating a missed call with the ability call back via the green phone icon.|
+|![Active Call](notification_outbound_call.en.png)|Popup indicating an active outbound call with the ability to end the call by clicking on the hangup icon.|
+|![Active Call](notification_inbound_call.en.png)|Popup notification indicating an active inbound call with the ability to pick up via the green phone / pickup icon.|
+|![Active Call](notification_active_call.en.png)|Popup indicating an active call with the ability to:<br>* hold the call via the pause symbol<br>* to end the call by clicking on the hangup icon.|
+|![Active Call](notification_missed_call.en.png)|Popup notification indicating a missed call with the ability call back via the green call back button.|
 |![Active Call](notification_chat.en.png)|Popup notification indicating a new chat message with the ability to respond direct from the popup.|
 
 Via the settings menu, you can modify your notification settings:
 
-
 ![Notification Settings](notification_settings.en.png?width=500px)
-
 
 ## Groups
 
-With the group function you create permanent groups which offer a lot of functions.
+With the group function, it is possible to create permanent groups which deliver a number of additional functions.
 
-1. Group-Chat
-2. Audio-Conferences
-3. Video-Conferences
-4. Online-Meetings with Screensharing
+1. Always - on Team Messaging / Group Chat
+2. Audio Conference rooms
+3. Video Conferencing
+4. Online Meetings including Screensharing
 
 
 ### Create Groups
 
-![Gruppe erstellen](group_create.en.png?width=100%)
+![Create group](group_create.en.png?width=100%)
 
-In the contact list, click on the "+ - symbol" to create a new group. You can create as many groups as you like. In the next step you have to assign a group name, a group picture and add the desired participants. Finally, save the group with the "Floppy Disk Symbol". The new group will now appear in your contact list. 
+In the contact list, click on the "+ - symbol" to create a new group. You can create as many groups as you need. Next, enter an appropriate group name (i.e. sales or marketing), upload a group profile image and add the desired participants. Finally, save the group by clicking the "Floppy Disk" save symbol. The new group will now appear in your contact list. 
 
 ### Manage Groups
 
-![Gruppe erstellen](group_manage.en.png?width=100%)
+![Manage pascom collaboration group](group_manage.en.png?width=100%)
 
-To manage a group, click the appropriate group in the contact list. In the Content Area, a small information symbol appears in the upper section. Here you make changes to the group. If you no longer want notifications, you can mute the group using the speaker icon.
+To manage a group, select and click on the required group within your contact list. To make changes to the group, click on the information symbol next to the group name and icon at the top of the content section. It is also possible to mute notifications for this particular group via the speaker icon (top right of the content section). 
 
 ## Chat
 
@@ -355,7 +353,7 @@ By using the right click function, it is possible to use the following when clic
 
 The client provides access to the company phone book as well as your private phone book which you can manage yourself. Add a contact to the private phone book and this display name will displayed by incoming calls but only in your desktop client.  
 
-If you want to add external contacts from your phonebook to the contact list, you can mark the corresponding contact as a favorite in the phonebook.
+If you want to add external contacts from your phonebook to the contact list, you can mark the corresponding contact as a favourite in the phonebook.
 
 ![phonebook](phonebook_favorit.png?width=350px)
 

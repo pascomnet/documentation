@@ -8,6 +8,10 @@ weight: 30
 
 {{< description >}}
 
+## Training Video
+
+{{< youtube bQGXqn0--Iw  >}}
+
 ## Assign Members
 
 Under the members tab, users can be assigned as team members. Use the blue arrow (pointing right) to assign a user. Should you wish to remove the user from the team, click on the blue arrow pointing left. 

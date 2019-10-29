@@ -8,6 +8,10 @@ weight: 20
 
 {{< description >}}
 
+## Training Video
+
+{{< youtube bQGXqn0--Iw  >}}
+
 ## Team Types
 
 There are two different types of teams which offer differing functionality.
