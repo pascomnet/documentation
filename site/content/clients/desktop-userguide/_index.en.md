@@ -272,7 +272,7 @@ You can leave the Group Conference by clicking the red hangup button.
 
 ## Video and Screensharing
 
-### Video-Call
+### Video Telephony
 
 During a call, you can easily elevate a call to a video conference as long as a webcam is available. To check whether your webcam is correctly configured, please go to the client settings.
 
@@ -286,20 +286,20 @@ By clicking the chat icon, the current chat or group chat (depending on with who
 
 The video menu includes the following options:
 
-![Active Video Menue](video_options.png?width=250px)
+![Active Video menu](video_options.png?width=250px)
 
 |Option|Description|
 |---|---|
 |Hang Up| Ends the complete call.|
-|Video on/off|start/stop the video call and returns to the normal audio call.|
+|Video on/off|start/stop the video call and returns to a normal audio call.|
 |Screensharing on/off|start/stop Screensharing.|
 |Fullscreen off|Minimizes the fullscreen and integrates video / screen sharing into the content area of ​​the client.|
-|More Options (3 Dots)|Expant the menue.|
+|More options (3 Dots)|Expands the menu.|
 |DTMF Dialpad|Shows the dialpad.|
-|Mute on/off|Turns the microphone off / on.|
-|Change Camera|Change the Camera from Font to Back - Works only on Mobile Devices.|
+|Mute on/off|Turns the microphone on / off.|
+|Change Camera|Switchs the active camera from front to back - only on Mobile Devices.|
 
-When you exit full-screen mode, the active video / screen sharing call is minimized and integrated into the client. From there you have access to the usual functions again. Of course, you can also switch back to full-screen mode with the buttons below the video window.
+When you exit full-screen mode, the active video / screen sharing call is minimized and integrated into the client. From there you can access all your usual client functions. Of course, you can also switch back to full-screen mode with the buttons below the video window.
 
 ![Active Video minimized](video_active_minimized.en.png)
 
@@ -309,23 +309,23 @@ During the call, you can share your screen content with your conversation partne
 
 ![Start Screensharing](screensharing_start.en.png?width=300px)
 
-By default, the screen sharing session starts in fullscreen mode. You have the same [Options]({{< relref "#video-call">}}) as you have with a video call. 
+By default, screen sharing sessions start in fullscreen mode. You have the same [Options]({{< relref "#video-call">}}) as with a video call. 
 
 ![Active Screensharing Session](screensharing_active.png)
 
-### Video-Call and Screensharing at the same time
+### Video Call and Screensharing
 
-During a [Video-Call]({{< relref "#video-telefonie">}}) you can simultaneously share your screen content with the party member. Simply click on Start Screen Sharing in the menue. 
+During a [Video Call]({{< relref "#video-telephony">}}) you can simultaneously share your screen with other members on the call. Simply click on Start Screen Sharing in the menu. 
 
 ![Start screensharing during a Video Call](video_options_startscreensharing.png?width=250px)
 
-The video area will then be automaticly minimized and makes room for the screen content of the caller. Again, all the usual [options]({{< relref "#video-call">}}) are available again.
+The video stream will then be automaticly minimized and makes room for the screen content of the caller. Again, all the usual [options]({{< relref "#video-call">}}) are available again.
 
 ![Video Call with screensharing](video_screensharing_fullscreen.png)
 
 ## Audio/Video groups with Screensharing
 
-The base for the following functions is a group. If you do not have a group yet, you need to create a new [group]({{< relref "#groups">}}) first.  
+The basis for these team collaboration tools is a group.. If you do not have a group yet, you need to create a new [group]({{< relref "#groups">}}) first.  
 
 Start a new [group conference]({{< relref "#group-conferences">}}) or join an existing group conference. Now you can use the [video]({{< relref "#video-call">}})- and [screensharing]({{< relref "#screensharing">}}) feature with multiple conference participants.
 
@@ -363,11 +363,11 @@ If a fax number is already stored in the phone book, it is possible to send a fa
 
 ![Fax](phonebook_fax.en.png?width=350px)
 
-### Fax from an watched Folder (PDF to Fax)
+### Fax from a watched folder (PDF to Fax)
 
 The Client Settings > {{< ui-button "PDF to FAX settings" >}} allows you to define a folder on your computer. This folder is monitored by the client. As soon as a PDF File is saved, copied or printed in this folder, the pascom client opens the fax dialog to send this file.
 
-### Automatic fax via an watched folder
+### Automatic fax via a watched folder
 
 Fax control panels are inserted as plain text in the document to be sent, then the fax server processes these instructions.
 
