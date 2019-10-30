@@ -164,17 +164,25 @@ Um mit dem pascom Client unter Verwendung des pascom Softphones DTMF-Töne zu ve
 
 ![DTMF](dtmf.de.png?width=500px)
 
-## Suche
+## Suche und Smart Filter
 
-Der Client bietet über das Lupen-Symbol eine sehr umfangreiche Suche. Gegen Sie ein Suchbegriff ein, werden Telefonbücher, Journal-Einträge und das Chat-Archiv durchsucht. Der Suchbegriff kann dabei aus mehreren Begriffen und sogar aus mehreren Wortteilen bestehen.
+### Suche
 
-![Suche](search.de.png?width=500px)
+Der Client bietet über das Lupen-Symbol eine sehr umfangreiche Suche. Geben Sie einen Suchbegriff ein, werden Telefonbücher, Journal-Einträge, Kontakte und das Chat-Archiv durchsucht. Der Suchbegriff kann dabei aus mehreren Begriffen und sogar aus mehreren Wortteilen bestehen.
 
-*Beispiel*: Sie suchen nach dem  Kontakt *"Max-Andreas Mustermann"* reicht der Suchbegriff *"And Muster"*.
+![Suche](search.de.png)
 
-{{% notice info %}}
-Das Lupen-Symbol ist im Content-Bereich in jeder Ansicht sichtbar
-{{% /notice %}}
+*Beispiel*: Sie suchen nach dem  Kontakt *"Max-Andreas Mustermann"* reicht der Suchbegriff *"And Muster"*.  
+
+Die Suchfunktion kann auch im Wählfeld genutzt werden, um schnell Kontakte z.B. für Konferenzen oder Transfers zu finden.
+
+![Suche im Wählfeld](search_dialpad.de.png?width=250px)
+
+### Smart Filter
+
+Smart-Filter sind ein tolles Werkzeug um seine Kontaktliste schnell nach bestimmten Attributen oder Status zu filtern z.B wer ist gerade Online oder zeige nur meine Favoriten.
+
+![Smartfilter](smartfilter.de.png?width=250px)
 
 ## Benachrichtigungen
 

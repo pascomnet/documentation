@@ -158,15 +158,23 @@ For the pascom Client to send DTMF tones, the pascom softphone is required and t
 
 ## Search and Smart Filter
 
+### Search
+
 The pascom desktop client includes an extensive search tool which can be accessed via the search / magnifying glass icon. When searching, the search tool will search your internal contacts, all connected phone books, your call history and chat archive. The search term can consist of multiple terms / words.
 
-![pascom client search](search.en.png?width=500px)
+![pascom client search](search.en.png)
 
-*Example*: when searching for the contact *"Max-Andreas Mustermann"* the search term *"And Muster"* is sufficient.
+*Example*: when searching for the contact *"Max-Andreas Mustermann"* the search term *"And Muster"* is sufficient.  
 
-{{% notice info %}}
-The magnifying glass icon is visible within the menu ribbon no matter the client view (size).
-{{% /notice %}}
+The search function can also be used in the dialpad to quickly find contacts for conferences or transfers.
+
+![Search within dialpad](search_dialpad.en.png?width=250px)
+
+### Smart Filter
+
+Smart-Filters are a great tool to quickly filter your contact list for specific attributes or status, for example, who is currently online or just showing my favorites.
+
+![Smartfilter](smartfilter.en.png?width=250px)
 
 ## Notifications
 
