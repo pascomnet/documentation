@@ -35,6 +35,7 @@ However, should you choose to, you can specify which internet services your comp
 | TCP **80**/**443** | my.pascom.net | Access to the pascom licence server + PUSH services |
 | TCP **25** | cloudmx1.pascom.net, cloudmx2.pascom.net | Access to the pascom Mailserver |
 | UDP **123** | \* | Access to the preferred time server (NTP) |
+| UDP **3478** | \* | Zugriff für Video-Funktionalität |
 
 ## pascom Server Installation (for new / reinstallations only)
 {{% notice warning %}}
