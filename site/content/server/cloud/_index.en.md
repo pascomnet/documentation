@@ -33,6 +33,7 @@ However, should you choose to, you can specify which internet services your comp
 | TCP **5061** | SIP-TLS - secure SIP communication |
 | TCP **5222** | pascom Desktop and Mobile client access |
 | UDP **30000 - 35000** | SRTP - encrypted Voice Data |
+| UDP **3478** | Access for Video-Functionality |
 
 #### Optional Servicees
 

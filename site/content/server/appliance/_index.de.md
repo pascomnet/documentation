@@ -31,6 +31,7 @@ Wenn Sie jedoch genau festlegen auf welche Internetdienste Ihr Unternehmensnetzw
 | TCP **80**/**443** | my.pascom.net | Zugriff zum pascom Lizenzserver + Push-Services |
 | TCP **25** | cloudmx1.pascom.net, cloudmx2.pascom.net | Zugriff zum pascom Mailserver |
 | UDP **123** | \* | Zugriff zum bevorzugten Zeitserver (NTP) |
+| UDP **3478** | \* | Zugriff für Video-Funktionalität |
 
 
 ## pascom Server installieren (nur bei Neuinstallation)

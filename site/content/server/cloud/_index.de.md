@@ -33,6 +33,7 @@ Möchten Sie jedoch genau festlegen auf welche Internetdienste Ihr Unternehmensn
 | TCP **5061** | SIP-TLS - sichere SIP-Kommunikation |
 | TCP **5222** | pascom Desktop- und Mobile-Client Zugriffe |
 | UDP **30000 - 35000** | SRTP - verschlüsselte Sprachdaten |
+| UDP **3478** | Zugriff für Video-Funktionalität |
 
 #### Optionale Dienste
 
