@@ -14,12 +14,22 @@ Ab Release 46.R152 wird macOS 10.12 vorausgesetzt
 Für Client Versionen die mit älteren Server System Versionen kompatibel sind, besuchen Sie bitte unser [Release-Archiv](https://www.pascom.net/de/downloads/#release-archive).
 {{% /notice %}}
 
-## Release 56.R659 (29.10.2019)
-
 ### What's New in pascom19 
  
 {{< youtube cnSuDvVzl5Q >}}
- 
+
+## Release 57.R661 (30.10.2019)
+
+**Auf einen Blick**
+
+- iOS Anruf Problem in Verbindung mit pascom 18 Server behoben.
+
+**ÄNDERUNGEN:** 
+
+- [CL-942] - iOS App can't phone with a pascom 18 server
+
+## Release 56.R659 (29.10.2019)
+
 **Auf einen Blick**
  
 - Kontaktliste neu gestaltet

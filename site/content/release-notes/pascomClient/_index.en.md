@@ -14,11 +14,21 @@ From Release 46.R152 macOS 10.12 is the minimum requirement
 For client versions compatible with older phone system versions, please visit our [Release Archive](https://www.pascom.net/en/downloads/#release-archive).
 {{% /notice %}}
 
-## Release 56.R659 (29.10.2019)
-
 ### What's New in pascom19 
  
 {{< youtube 1oK8OLRG624 >}}  
+
+## Release 57.R661 (30.10.2019)
+
+**Overview** 
+
+- Fixed iOS calling issues in combination with pascom 18 server
+
+**Modifications** 
+
+- [CL-942] - iOS App can't phone with a pascom 18 server
+
+## Release 56.R659 (29.10.2019)
 
 **Overview**
  
