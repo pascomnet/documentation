@@ -28,7 +28,7 @@ However, should you choose to, you can specify which internet services your comp
 
 #### Telephony and Instant Messaging
 
-| Port | Descriptuon |
+| Port | Description |
 | ---- | ------------ |
 | TCP **5061** | SIP-TLS - secure SIP communication |
 | TCP **5222** | pascom Desktop and Mobile client access |

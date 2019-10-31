@@ -48,34 +48,37 @@ As soon as the pascom mobile app has been setup and logged into, it can now be u
 
 The pascom mobile app consists of 6 menu options / features:
 
-+ The **contact list** displaying all your contacts, favourites and teams.
-+ The **chat** option enables you find all your chats & group chats
-+ The **telephony** tool enables phone calls, transfers & 3-way-conferencing as well as accessing your voicemail box.
-+ The **call history** provides an overview of all your calls on your office extension across all your devices.
-+ The **phone book** contains all you company & private phone book contacts
++ The [**contact-list**]({{< relref "#contact-list">}}) displaying all your contacts, favourites and teams.
++ The [**telephony**]({{< relref "#telefonieren">}}) tool enables phone calls, transfers & conferencing as well as accessing your voicemail box.
++ The [**call-history**]({{< relref "#journal">}}) provides an overview of all your calls on your office extension across all your devices.
++ The [**phonebook**]({{< relref "#telefonbuch">}}) contains all you company & private phone book contacts.
++ In the [**search**]({{< relref "#chat">}}) you can quickly find seach results for all possible areas
 + The **settings** menu option allows you to update your user profile, configure pascom mobile client settings as well as assigned device follow me settings.
+
 
 ![pascom mobile app](sections.png?width=50%)
 
 
-## Contact List
+## Profile and Contacts List
 
-![Contact List](contactlist.en.png?width=50%)
-
-
-### Contacts
-
-![Contacts](contactlist_stati.en.png?width=75%)
-
-#### Contact list functions:
+![My Profile](profile.en.png?width=90%)
 
 |Function|Description|
 |---|---|
-|Contact list filter|Can be used to display only specific contacts. Per default, three filters are available, *Client-User*, *Favourites* and *Team*. Favorites can be user defined by clicking on the star next to the receiver symbol. Further filters can be defined by your phone system admin using Roles.|
-|Client-User|Displays information regarding your internal [contacts]({{< relref "#contacts">}}).|
-|Favorites|Filters and display only those contacts added to your favorites.|
-|Teams|Lists the [Teams]({{< relref "#teams">}}) within which you are either a permanent or flexible member. The *Available* or *Offline* status here refers to wether you are currently logged into the team nore not.|
-|Search|Search tool to search through a.o. your contact list. |
+|Presence Status|It is possible to update your presence status with the following options:<br>- *Green* > Available<br>- *Yellow* > Away<br>- *Red* > Do Not Disturb / Busy (This option doesn't deliver DND functionality.)<br><br>Status texts can be customised according to requirements - simply select the correct presence and then click on the status text and replace it.|
+|Create new group|With the "+ symbol" you can create a new permanent team messaging / chat group.|
+|Contact list filter|Filter contacts to display only certain contacts. Per default, two filters are available as standard - *Favourites* and *Teams*. Favourites can be added by clicking on the star symbol next to a contact's handset icon. Additional filters can be defined by the system administrator using [Roles]({{< relref "/user/role">}}).|
+|Contacts |[Contact list]({{< relref "#Contacts">}}) displaying contact presence, extension and contact information.|
+|Phone Symbol |Click on the phone symbol to call the contact.|
+|Favourite Symbol|Simply mark your favourite contacts with the "star" symbol. These are then pinned at the top of the contact list.|
+|Teams | Under [Teams]({{< relref "#teams">}}) you will see all the teams of which you are either a permanent or dynamic member. The *Available* or *Offline* status signify whether you are currently logged into a team or not.|
+
+
+## Contacts
+
+Each contact in your contact list has various statuses, which can be seen in the following illustration.
+
+![Contacts](contacts.en.png?width=90%)
 
 ### Teams
 

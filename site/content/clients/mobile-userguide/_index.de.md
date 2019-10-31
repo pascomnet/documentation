@@ -49,34 +49,40 @@ Sobald der pascom Mobile Client angemeldet wurde, kann dieser unabhängig vom [p
 Der pascom Mobile Client besteht grundsätzlich aus 6 Bereichen:
 
 + Die [**Kontaktliste**]({{< relref "#kontaktliste">}}) enthält alle Kontakte, Favoriten und Teams
-+ Im [**Chat**]({{< relref "#chat">}})-Bereich findet man alle Einzel- und Gruppenchats
-+ Im [**Telefonie**]({{< relref "#telefonieren">}})-Bereich können Gespräche und Dreierkonferenzen geführt werden. Auch die eigene Voicemailbox ist hier zu finden
++ Im [**Telefonie**]({{< relref "#telefonieren">}})-Bereich können Gespräche und Konferenzen geführt werden. Auch die eigene Voicemailbox ist hier zu finden
 + Im [**Journal**]({{< relref "#journal">}}) ist eine Übersicht aller getätigten Anrufe zu finden
 + Das [**Telefonbuch**]({{< relref "#telefonbuch">}}) enthält die Einträge aus dem privaten und Firmen-Telefonbuch
++ In der [**Suche**]({{< relref "#chat">}})findet man schnell Suchergebnisse zu allen möglichen Bereiche.
 + Alle **Einstellungen** zum Benutzerprofil, pascom Mobile Client und den eigenen Geräten befinden sich hier
 
 
 ![Client-Bereiche](sections.png?width=50%)
 
 
-## Kontaktliste
+## Profil und Kontaktliste
 
-![Kontaktliste](contactlist.de.png?width=50%)
-
-
-### Kontakte
-
-![Kontakte](contactlist_stati.de.png?width=75%)
+![Mein Profil](profile.de.png?width=90%)
 
 Funktionen in der Kontaktliste:
 
 |Funktion|Beschreibung|
 |---|---|
-|Filter für Kontaktliste|Hier können Sie über Filter nur bestimme Kontakte anzeigen lassen. Drei Filter sind standardmäßig schon vorhanden, *Client-User*, *Favoriten* und *Team*. Die Favoriten können Sie selber definieren, mit einem Klick auf das Sternchen neben dem Hörer-Symbol. Weitere Filter werden von Ihrem Administrator über Rollen festgelegt.|
-|Client-User|Hier erhalten Sie Informationen über Ihre [Kontakte]({{< relref "#kontakte">}}).|
-|Favoriten|Hier finden Sie Ihre favorisierten Kontakte, die sowohl Benutzer als auch Telefonbuch-Kontakte sein können.|
-|Teams|Hier sehen Sie die [Teams]({{< relref "#teams">}}) in denen Sie festes oder flexibles Mitglied sind. Der Status *Verfügbar* oder *Offline* bezieht sich in diesem Fall darauf, ob Sie eingebucht sind oder nicht.|
-|Suche|Hier können Sie Ihre Kontaktliste durchsuchen.|
+|Verfügbarkeits-Status|Es stehen zur Auswahl:<br>- *grün* > Verfügbar<br>- *gelb* > Bin gleich zurück<br>- *rot* > Bitte nicht stören (Diese Einstellung hat keine DND-Funktionalität.)<br>Die Status-Texte können Sie nach Bedarf ändern.|
+|Neue Gruppe erstellen|Über das "+ Symbol" können Sie eine neue permanente Gruppe erstellen.|
+|Filter für Kontaktliste|Über die Filter/Suche finden Sie schnell, anhand Ihrer Eingaben, die gewünschten Kontakte in Ihrer Kontaktliste.|
+|Kontakte|Hier erhalten Sie Informationen über Ihre [Kontakte]({{< relref "#kontakte">}}).|
+|Hörer-Symbol|Mit einem Klick auf den Hörer rufen Sie den Kontakt an.|
+|Favoriten makieren|Mit dem "Sternchen-Symbol" makieren Sie ganz einfach Ihre favorisierten Kontakte. Diese werden dann oben in der Kontaktliste angepinnt.|
+|Teams|Hier sehen Sie die [Teams]({{< relref "#teams">}}) in denen Sie ein festes oder flexibles Mitglied sind. Der Status *Verfügbar* oder *Offline* bezieht sich in diesem Fall darauf, ob Sie eingebucht sind oder nicht.|
+
+
+
+## Kontakte
+
+Jeder Kontakt in Ihrer Kontaktliste besitzt diverse Status, welche anhand der folgenden Darstellung erkennbar sind.
+
+![Kontakte](contacts.de.png?width=90%)
+
 
 
 ### Teams

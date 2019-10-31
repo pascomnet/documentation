@@ -76,7 +76,7 @@ In order to simplify switching the various views, it is possible to toggle the s
 
 Each contact in your contact list has various statuses, which can be seen in the following illustration.
 
-![Contacts](contacts.en.png?width=75%)
+![Contacts](contacts.en.png?width=90%)
 
 ## Teams
 

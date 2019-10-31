@@ -60,8 +60,6 @@ Die verschiedenen Ansicht-Möglichkeiten des Clients:
 
 Zwischen den verschiedenen Ansichten können Sie wechseln, indem Sie die Größe des Clients ändern oder indem Sie [Tastenkürzel]({{< relref "#tastenkürzel">}}) verwenden.
 
-Im Folgenden werden die einzelnen Bereiche und Funktionen näher erklärt.
-
 ## Profil und Kontaktliste
 
 ![Mein Profil](profile.de.png?width=90%)
