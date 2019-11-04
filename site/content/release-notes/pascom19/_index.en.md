@@ -10,13 +10,13 @@ Please use our check list in our detailed [Upgrade Guide]({{ ref "/server/upgrad
 
 {{% notice warning %}}  
 **Important Notice to this Update:**     
-1. Trunk Failover deleted without substitution. No migration and no direct workaround. Support can help with a outbound script, if needed.   
-2. IAX trunks deleted without substitution.   
-3. Beronet is not yet supported in pascom 19 "BETA", will follow in next bugfix version.  
-4. swap is now disabled by default. This can break virtualized setups with memory lower then 1 GB, please configure more memory in this case.  
-5. callgroups are automatically converted to teams. The callgroup feature is removed and customers should configure teams instead.  
-6. intercom feature is not working.  
-7. Portforwarding for udp 3478 is mandatory, otherwise video will not work.
+1. Trunk Failover deleted without alternative tools. No migration and no direct workaround. Support can help with an outbound script, if needed.   
+2. IAX trunks deleted without alternatives.   
+3. beroNet is not yet supported in pascom 19 "BETA", will follow in next bugfix version.  
+4. Swap is now disabled by default. This can break virtualised setups with memory lower then 1 GB, please configure more memory in this case.  
+5. Call groups are automatically converted to teams. The callgroup feature has been removed and customers should configure teams instead.  
+6. Public Announcement (PA) feature does not work.  
+7. Port forwarding for UDP 3478 is now mandatory, otherwise video tools will not work.
 {{% /notice %}}
 
 
