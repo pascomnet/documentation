@@ -1,12 +1,12 @@
 ---
-title: pascom Server 19 beta
+title: pascom Server 19 BETA
 description: With the new pascom version 19 Release, numerous new and improved functions are now available
 weight: 995
 ---
 ![Highlights](pascom19_highlights.jpg)
 
 {{% notice tip %}}
-With pascom 18 there are a number of core changes that you will need to check before updating and then modify once you have updated. Please use our check list in our detailed [Upgrade Guide]({{ ref "/server/upgrade" }}).{{%/notice%}}
+Please use our check list in our detailed [Upgrade Guide]({{ ref "/server/upgrade" }}).{{%/notice%}}
 
 {{% notice warning %}}  
 **Important Notice to this Update:**     
