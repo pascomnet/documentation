@@ -6,7 +6,17 @@ weight: 995
 ![Highlights](pascom19_highlights.jpg)
 
 {{% notice tip %}}
-Still using pascom 17? In order to upgrade to pascom 18 or 19, please follow our detailed [Upgrade Guide]({{ ref "/server/upgrade" }}).{{%/notice%}}
+**Want to test the pascom 19 BETA?**<br/>
+<br/>
+The simplest way to test the new BETA is with a new pascom.cloud FREE instance. These instances automatically use the pascom 19 BETA.  
+<br/>
+**Would rather update?**  
+* Onsite 18: Download the [BETA ISO file](https://download.pascom.net/release-archive/server/7.19.00/pascom_7.19.00.R.iso?_ga=2.100405213.2125405943.1572851023-458383881.1533124029) and perform an update.  
+* Onsite 17 or older: Read the [Upgrade Guide](https://www.pascom.net/doc/en/server/upgrade/) and use the [BETA Iso](https://download.pascom.net/release-archive/server/7.19.00/pascom_7.19.00.R.iso?_ga=2.100405213.2125405943.1572851023-458383881.1533124029)  
+* Cloud PREMIUM: please contact the pascom support.  
+* Partner customers: please contact your pascom partner, who can support you with updating to the pascom 19 BETA.
+{{%/notice%}}
+
 
 {{% notice warning %}}  
 
