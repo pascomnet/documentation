@@ -78,6 +78,13 @@ Wegen des Technologiewechsels von pascom 17 auf 18 und den damit verbundenen Meh
 |[Release 44.R66]({{< ref "/release-notes/pascomClient#release-44-r66-27-11-2018">}})| Bugfix Release | 27.11.2018 |
 |[Release 42.R34]({{< ref "/release-notes/pascomClient#release-42-r34-17-10-2018">}})| Feature Release | 17.10.2018 |
 
+### pascom Server 19
+
+|Version|Release Type|Veröffentlichung|
+|-------|------------|---------------:|
+|[Release 18.11]({{< ref "/release-notes/pascom18" >}})| Bugfix Release | 17.10.2019 |
+|[Release 18.10]({{< ref "/release-notes/pascom18#release-18-10-05-08-2019" >}})| Bugfix Release | 05.08.2019 |
+
 
 ### pascom Server 18
 
