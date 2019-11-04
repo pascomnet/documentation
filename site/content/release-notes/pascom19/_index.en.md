@@ -6,10 +6,10 @@ weight: 995
 ![Highlights](pascom19_highlights.jpg)
 
 {{% notice tip %}}
-Please use our check list in our detailed [Upgrade Guide]({{ ref "/server/upgrade" }}).{{%/notice%}}
+Still using pascom 17? In order to upgrade to pascom 18 or 19, please follow our detailed [Upgrade Guide]({{ ref "/server/upgrade" }}).{{%/notice%}}
 
 {{% notice warning %}}  
-**Important Notice to this Update:**     
+**Important Notice regarding this BETA Version:**     
 1. Trunk Failover deleted without substitution. No migration and no direct workaround. Support can help with a outbound script, if needed.   
 2. IAX trunks deleted without substitution.   
 3. Beronet is not yet supported in pascom 19 "BETA", will follow in next bugfix version.  

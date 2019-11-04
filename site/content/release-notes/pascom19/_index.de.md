@@ -1,5 +1,5 @@
 ---
-title: pascom Server 19 beta
+title: pascom Server 19 BETA
 description: Mit dem pascom Release 19 stehen Ihnen eine Vielzahl an neuen Funktionen zur Verfügung.
 weight: 995
 ---
@@ -7,11 +7,11 @@ weight: 995
 ![Highlights](pascom19_highlights.jpg)
 
 {{% notice tip %}}
-Folgen Sie bitte unserer detaillierten [Upgrade-Anleitung]({{< ref "/server/upgrade" >}}).
+Sie nutzen noch pascom 17? Folgen Sie bitte unserer detaillierten [Upgrade-Anleitung]({{< ref "/server/upgrade" >}}).
 {{%/notice%}}
 
 {{% notice warning %}}  
-**Wichtige Hinweise zu diesem Update:**     
+**Wichtige Hinweise zu dieser BETA Version:**     
 1. Trunk Failover (Ämterketten) ersatzlos gelöscht. Keine Migration und keine direkte Problemumgehung. Der Support kann bei Bedarf mit einem ausgehenden Skript helfen.  
 2. IAX-Amtsleitungen ersatzlos gelöscht.  
 3. Beronet wird in pascom 19 "BETA" noch nicht unterstützt, wird in der nächsten Bugfix-Version folgen.  
