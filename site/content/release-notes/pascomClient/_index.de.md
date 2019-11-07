@@ -22,11 +22,11 @@ Für Client Versionen die mit älteren Server System Versionen kompatibel sind, 
 
 **Auf einen Blick**
 
-- Die Icons in den Details eines Telefonbucheintrages können wieder zum wählen angeklickt werden
-- Avatare Flackern nicht mehr wenn ein Smart Filter gesetzt ist
-- Chat-Nachrichten werden nicht mehr mehrfach angezeigt (pascom 17/18 server)
-- Seltenen Crash beim empfangen einer Chat-Nachricht behoben
-- Pickup Benachrichtigungen aus Teams zeigen wieder korrekte Informationen an
+- Die Icons in den Details eines Telefonbucheintrages können wieder zum Wählen angeklickt werden.
+- Avatare Flackern nicht mehr, wenn ein Smart Filter gesetzt ist.
+- Chat-Nachrichten werden nicht mehr mehrfach angezeigt (pascom 17/18 server).
+- Seltenen Crash beim Empfangen einer Chat-Nachricht behoben.
+- Pickup Benachrichtigungen aus Teams zeigen wieder korrekte Informationen an.
 
 **ÄNDERUNGEN:** 
 

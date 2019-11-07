@@ -22,11 +22,11 @@ For client versions compatible with older phone system versions, please visit ou
 
 **Overview** 
 
-- Phone book entry icons are once again clickable for dialing purposes
-- Avatars no longer flicker when a Smart Filter is active
-- Chat messages are no longer displayed mutliple times (pascom 17 / 18 servers)
-- Resolved the seldom occuring crash issue caused by receiving a chat message
-- Team pickup notifications once again show the correct information
+- Phone book entry icons are once again clickable for dialing purposes.
+- Avatars no longer flicker when a Smart Filter is active.
+- Chat messages are no longer displayed mutliple times (pascom 17 / 18 servers).
+- Resolved the seldom occuring crash issue caused by receiving a chat message.
+- Team pickup notifications once again show the correct information.
 
 **Modifications** 
 
