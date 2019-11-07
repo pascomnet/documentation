@@ -18,6 +18,34 @@ For client versions compatible with older phone system versions, please visit ou
  
 {{< youtube 1oK8OLRG624 >}}  
 
+## Release 58.R676 (07.11.2019)
+
+**Overview** 
+
+- Phone book entry icons are once again clickable for dialing purposes
+- Avatars no longer flicker when a Smart Filter is active
+- Chat messages are no longer displayed mutliple times (pascom 17 / 18 servers)
+- Resolved the seldom occuring crash issue caused by receiving a chat message
+- Team pickup notifications once again show the correct information
+
+**Modifications** 
+
+- [CL-905] - Wrong datev icon size 
+- [CL-923] - Hide 'Add to group' button if phonebook entry is in edit mode
+- [CL-934] - Do not show video buttons in a external 1:1 phonecall
+- [CL-935] - Renaming a group is tricky
+- [CL-936] - Group + Icon missing when starting with empty user directory 
+- [CL-937] - You can't click on a phone number within phonebook entry details to dial it
+- [CL-938] - Speed up Avatar Displaying, avoid flickering images
+- [CL-939] - If you pair a mobile, your avatar is sometimes broken
+- [CL-940] - Native windows notifications still flicker sometimes
+- [CL-948] - Pickup notification doesn't show team information anymore and it's not possible to pickup a team
+- [CL-955] - Integrate User Feedback 
+- [CL-958] - Client crashes with a stackoverflow when receiving a chat message
+- [CL-968] - Pascom 18: The same chat message is shown multiple times in a notification
+- [CL-969] - pascom Client does not ring in background on android 10 (again)
+
+
 ## Release 57.R661 (30.10.2019)
 
 **Overview** 
