@@ -98,31 +98,60 @@ Funktionen in der Teamübersicht:
 |Wartende Anrufer|Hier werden Ihnen alle Anrufer, die derzeit in der Warteschlange des ausgewählten Teams warten angezeigt.|
 
 
+## Gruppen
+
+Mit der Gruppen-Funktion erstellen Sie permanente Gruppen welche eine menge Funktionen bieten.
+
+1. Gruppen-Chat
+2. Audio-Konferenz
+3. Video-Konferenz
+
+
+### Gruppe erstellen
+
+![Gruppe erstellen](group_create.de.png?width=100%)
+
+Klicken Sie in der Kontaktliste auf das "+ - Symbol" um eine neue Gruppe zu erstellen. Sie können so viele Gruppen anlegen, wie Sie möchten. Im nächsten Schritt vergeben Sie einen Gruppennamen, Gruppenbild und fügen die gewünschten Teilnehmer hinzu. Abschließend speichern Sie die Gruppe mit dem "Disketten-Symbol". Die neue Gruppe erscheint nun in Ihrer Kontaktliste.
+
+### Gruppe verwalten
+
+![Gruppe erstellen](group_manage.de.png?width=100%)
+
+Um eine Gruppe zu verwalten, klicken Sie in der Kontaktliste auf die entsprechende Gruppe. Im Contentbereich erscheint im oberen Abschnitt ein kleines Infosymbol. Hier nehmen Sie Änderungen an der Gruppe vor. Wünschen Sie keine Benachrichtigungen mehr, können Sie die Gruppe über das Lautsprechersymbol stummschalten.
 
 ## Chat
 
-Klicken Sie auf das Chat-Symbol (Sprechblase) in roten Umschaltfläche um in den Konversations-Bereich zu gelangen. Dort werden alle aktiven Einzel- und Gruppenchats in einer Listenansicht dargestellt.
+Es gibt 2 Möglichkeiten eine Chat Konversation mit einem Kontakt zu starten. Mit einem direkten Klick auf den Kontakt in der Kontaktliste oder während einem Gespräch in den Anrufoptionen.
+![Einzelchat](chat.de.png?width=80%)
 
-### Einzelchat
-
-![Einzelchat](single_user_chat.de.png?width=75%)
-
-
- Starten Sie einen Einzelchat, indem Sie in der Kontaktliste auf den gewünschten Chat-Partner klicken.
 
 ### Gruppenchat
 
-![Gruppenchat](group_chat.de.png?width=75%)
+Für einen Gruppenchat wird eine Gruppe benötigt. Haben Sie noch keine Gruppe angelegt, erstellen Sie sich zunächst eine neue [Gruppe]({{< relref "#gruppen">}}).
 
-Starten Sie einen Gruppenchat, indem Sie im Konversations-Bereich auf *Gruppenchat...* klicken. Anschließend können Sie ein Thema festlegen und die Teilnehmer der Konversation auswählen. In der Auswahl-Liste stehen nur Online-Kontakte zur Verfügung. Fügen Sie nachträglich neue Kontakte zu Ihrer Gruppen-Konversation hinzu erhalten diese nur die neuen Nachrichten, ab dem Zeitpunkt zu dem Sie hinzugefügt wurden.
+![Gruppenchat](groupchat.de.png)
+
+Klicken Sie in der Kontaktliste auf die gewünschte Gruppe. Im Contentbereich erscheint nun die Konversation der jeweiligen Gruppe. Sie können von dort aus auch eine Gruppen-Konferenz starten. Zum Verlassen des Chats, klicken Sie einfach auf das X Symbol in der oberen rechten Ecke.
 
 ### Chatbenachrichtigungen
 
-![Chatbenachrichtigungen](chatnotification.de.png?width=50%)
+Ist der Konversations-Bereich nicht im Fokus, und Sie erhalten eine neue Nachricht, so erscheint in der Kontaktliste am Profilbild und am jeweiligen Kontakt eine Hinweismeldung. Am Profilbild erkennen Sie immer die gesamten, noch nicht gelesenen, Nachrichten. Kontakte mit neuen Nachrichten, rutschen in der Kontaktliste automatisch nach oben, sofern die Sortierung so eingestellt wurde.
 
-Auch wenn der pascom Mobile Client nur im Hintergrund auf Ihrem Mobiltelefon läuft und gerade nicht aktiv verwendet wird, erhalten Sie eine Benachrichtigung über neue Chatnachrichten als Statusmeldung.
-Ist der Konversations-Bereich nicht im Fokus, und Sie erhalten eine neue Nachricht so erscheint die Benachrichtigung in der roten Umschaltleiste neben dem Sprechblasen-Symbol.
+![Mehrere Chats](notification_newmessages.png?width=250px)
 
+
+ Sollte Ihre Sortierung nicht so eingestellt sein, dass die letzten Änderungen automatisch oben in der Kontaktliste erscheinen, können Sie mit einem Klick auf die Nummer, der noch nicht gelesenen Nachrichten an Ihrem Profilbild, klicken. Mit Hilfe der Smart Filter werden dann nur die Kontakte angezeigt, die neue Nachrichten enthalten. 
+
+
+![Mehrere Chats](notification_newmessages_filtered.png?width=250px)
+
+Zusätzlich erhalten Sie, bei eingehenden Nachrichten, eine Pushup Benachrichtigung.
+
+![Pushup Notification](pushup.de.png?width=350px)
+
+Außerdem zeigt Ihnen das pascom Symbol auf der Startseite ebenfalls die Anzahl ungelesener Nachrichten an. 
+
+![Notification Symbol](notification_symbol.png?width=150px)
 
 <!--- TODO: Noch nicht in der App umgesetzt
 ### Dateien versenden
@@ -130,67 +159,83 @@ Ist der Konversations-Bereich nicht im Fokus, und Sie erhalten eine neue Nachric
 
 ## Telefonieren
 
-Bevor Sie ein Telefonat starten können Sie über einen Schalter auswählen, ob Sie via GSM telefonieren möchten oder nicht. Sofern Sie beim Pairing des Mobiltelefons die Rufnummer Ihres Mobiltelefons angegeben haben, ist bei ausgeschaltetem GSM-Schalter ein Fallback auf GSM möglich. Der Fallback tritt in Kraft wenn die Internet-Verbindung instabil ist (z. B. beim Wechsel zwischen verschiedenen mobilen Netzen).
+![Telefonie](dialpad.de.png?width=100%)
 
-![Telefonieren](telephony.de.png)
 
 ### Gespräch starten
 
-Der pascom Mobile Client bietet mehrere Möglichkeiten ein Gespräch zu starten:
+Der Client bietet mehrere Möglichkeiten ein Gespräch zu starten:
 
-+ Geben Sie im [Wählfeld]({{< relref "#telefonieren">}}) eine Nummer ein,
-+ rufen Sie einen Kollegen an, in dem Sie auf das grüne Hörer-Symbol in der [Kontaktliste]({{< relref "#kontaktliste">}}) klicken,
-+ klicken Sie auf das Hörer-Symbol im [Journal-Eintrag]({{< relref "#journal">}}) oder
-+ wählen Sie eine Nummer im [Telefonbuch]({{< relref "#telefonbuch">}}).
-
+* Geben Sie im [Wählfeld]({{< relref "#telefonieren">}}) eine Nummer ein.
+* Rufen Sie einen Kollegen an, indem Sie auf das grüne Hörer-Symbol in der [Kontaktliste]({{< relref "#kontakte">}}) klicken.
+* Klicken Sie das Hörer-Symbol im [Journal-Eintrag]({{< relref "#journal">}}) an.
+* Wählen Sie eine Nummer im [Telefonbuch]({{< relref "#telefonbuch">}}).
 
 ### Aktives Gespräch
 
-![Aktives Gespräch](active_call.de.png?width=50%)
+![Aktives Gespräch](current_call.de.png?width=90%)
 
 ### Eingehender Anruf
 
-![Eingehender Anruf](incoming_call.de.png?width=50%)
+![Eingehender Anruf](inbound_call.de.png?width=90%)
 
 ### Verbinden
 
 #### Blind Transfer (Verbinden ohne Rücksprache)
 
-![Blind Transfer](blind_transfer.de.png)
+![Blind Transfer](blind_transfer.de.png?width=90%)
 
-Während eines Gesprächs können Sie einen Gesprächspartner ohne Rücksprache weiter verbinden.
-Klicken Sie auf *Verbinden* und wählen Sie die neue Zielrufnummer.
+Während eines Gesprächs können Sie einen Gesprächspartner ohne Rücksprache weiter verbinden.  Klicken Sie auf 'Verbinden' und wählen Sie die neue Zielrufnummer.
 
-Möchten Sie den Anrufer an einen Kollegen verbinden, wechseln Sie während dem Telefonat über die rote Umschaltfläche zu Ihrer Kontaktliste und klicken Sie lange auf dessen Namen oder Profilbild, bis sich weitere Optionen öffnen und wählen Sie *Transfer*.
+Möchten Sie den Anrufer an einen Kollegen verbinden, rechts-klicken Sie auf dessen Namen oder Profilbild in der Kontaktiliste und wählen Sie *Transfer*.
 
 #### Attended Transfer (Verbinden mit Rücksprache)
 
 Das Verbinden mit Rücksprache erfolgt in zwei Schritten:
 
-1. Einen weiteren *Anruf hinzufügen*, um Rücksprache zu halten und
-2. den ersten Anrufer mit dem hinzugefügten Anrufer *verbinden*.
+1. Einen weiteren *Anruf hinzufügen*, um Rücksprache zu halten.
+2. Den ersten Anrufer mit dem hinzugefügten Anrufer *verbinden*.
 
-![Attended Transfer](attended_transfer.de.png)
+![Attended Transfer](attended_transfer.de.png?width=100%)
 
 Es ist nicht notwendig den ersten Anruf extra zu halten. Dieser wird automatisch gehalten, wenn, wie in Schritt 1 beschrieben, der neue Anruf gestartet wird. Anschließend wird im Schritt 2 der Anrufer verbunden.
+
 
 ### Dreierkonferenz
 
 ![Dreierkonferenz](3_way_conference.de.png)
 
-Die Dreierkonferenz wird ähnlich wie [Attended Transfer]({{< relref "#attended-transfer-verbinden-mit-rücksprache">}})  in zwei Schritten eingeleitet.
+Die Dreierkonferenz wird ähnlich wie [Attended Transfer]({{< relref "#attended-transfer-verbinden-mit-rücksprache">}}) in zwei Schritten eingeleitet. Im ersten Schritt wird, wie bereits bekannt, der Anruf hinzugefügt.
 
-1. Zuerst wird, wie bereits bekannt, der Anruf hinzugefügt.
-2. Dann werden beide aktiven Anrufe mit dem Klick auf *Konferenz* zu einer Dreierkonferenz zusammengeschalten
-3. Außerdem können Sie, als Initiator der Dreierkonferenz, einen Teilnehmer aus der Konferenz entfernen.
+Im Schritt 2 werden beide aktiven Anrufe mit dem Klicke auf *Konferenz* zu einer Dreierkonferenz zusammengeschalten. Im Schritt 3 können Sie, als Initiator der Dreierkonferenz, einen Teilnehmer aus der Konferenz entfernen.
 
 ### DTMF-Töne senden
 
-DTMF-Töne werden verwendet um z. B. in einem Konferenzraum eine PIN zur Authentifizierung einzugeben, wenn Sie in einer Hotline durch die Eingabe von 1,2 oder 3 an den/die gewünschten Gesprächspartner gelangen möchten oder mit einem Nummerncode eine Tür öffnen müssen.
+DTMF-Töne werden verwendet um z. B. in einem Konferenzraum eine PIN zur Authentifizierung einzugeben, wenn Sie in einer Hotline durch die Eingabe von 1, 2 oder 3 an den/die gewünschten Gesprächspartner gelangen möchten oder mit einem Nummerncode eine Tür öffnen müssen.
 
-Um mit dem pascom Mobile Client DMTF-Töne zu versenden klicken Sie während des laufenden Gesprächs auf das *Wählfeld*.
+Um mit dem pascom Client unter Verwendung des pascom Softphones DTMF-Töne zu versenden klicken Sie während des laufenden Gesprächs auf das *Wählfeld*.
 
-![DTMF-Töne](send_dtmf.de.png?width=75%)
+![DTMF](dtmf.de.png?width=500px)
+
+## Suche und Smart Filter
+
+### Suche
+
+Der Client bietet über das Lupen-Symbol eine sehr umfangreiche Suche. Geben Sie einen Suchbegriff ein, werden Telefonbücher, Journal-Einträge, Kontakte und das Chat-Archiv durchsucht. Der Suchbegriff kann dabei aus mehreren Begriffen und sogar aus mehreren Wortteilen bestehen.
+
+![Suche](search.de.png)
+
+*Beispiel*: Sie suchen nach dem  Kontakt *"Max-Andreas Mustermann"* reicht der Suchbegriff *"And Muster"*.  
+
+Die Suchfunktion kann auch im Wählfeld genutzt werden, um schnell Kontakte z.B. für Konferenzen oder Transfers zu finden.
+
+![Suche im Wählfeld](search_dialpad.de.png?width=250px)
+
+### Smart Filter
+
+Smart-Filter sind ein tolles Werkzeug um seine Kontaktliste schnell nach bestimmten Attributen oder Status zu filtern z.B wer ist gerade Online oder zeige nur meine Favoriten.
+
+![Smartfilter](smartfilter.de.png?width=250px)
 
 ### Benachrichtigungen
 
@@ -200,7 +245,7 @@ Auch wenn der pascom Mobile Client nur im Hintergrund auf Ihrem Mobiltelefon lä
 
 ### Voicemailbox abrufen
 
-![Voicemailbox](voicemailbox.de.png?width=50%)
+![Voicemailbox](voicemailbox.de.png?width=500px)
 
 Mit dem Klick auf das Voicemailbox-Symbol können Sie Ihre Voicemailbox direkt anrufen. Weitere Optionen erfolgen über die Ansagen der Voicemailbox.
 
@@ -208,24 +253,39 @@ Mit dem Klick auf das Voicemailbox-Symbol können Sie Ihre Voicemailbox direkt a
 
 Das Journal gibt eine Übersicht über alle getätigten Anrufe.
 
-![Journal](journal.de.png?width=60%)
+![Journal](journal.de.png?width=500px)
 
 Klicken Sie auf einen Journal-Eintrag um detaillierte Informationen zu diesem Anruf anzeigen zu lassen. Hier haben Sie auch die Möglichkeit einen Rückruf anzustoßen.
 Im Journal haben Sie außerdem die Möglichkeit durch gedrückt halten des Eintrags Details des Anrufers zu kopieren (Name des Anrufers, falls vorhanden und die Telefonnummer).
 
 ## Telefonbuch
 
-![Telefonbuch](phonebook.de.png?width=75%)
+![Telefonbuch](phonebook.de.png)
 
-Der pascom Mobile Client bietet neben dem Firmen-Telefonbuch auch ein eigenes (privates) welches Sie selber anlegen und pflegen können. Legen Sie einen Eintrag in Ihrem privaten Telefonbuch an, wird dessen Name bei einem eingehenden Anruf nur in Ihrem Mobile und Desktop Client angezeigt.
+Der Client bietet neben dem Firmen-Telefonbuch auch ein eigenes (privates) welches Sie selber anlegen und pflegen können. Legen Sie einen Eintrag in Ihrem privaten Telefonbuch, wird dessen Name bei einem eingehendenen Anruf nur in Ihrem Client angezeigt.  
 
-<!---
-## Mobile-Client Einstellungen
+Möchten Sie externe Kontakte aus Ihrem Telefonbuch in die Kontaktliste mit aufnehmen, so können Sie im Telefonbuch den entsprechenden Kontakt als Favorit markieren.
+## Client-Einstellungen
 
-### Profileinstellungen
+### Profil Einstellungen
 
-### Telefoneinstellungen
+![Profil Einstellungen](profilesettings.de.png?width=400px)
 
-### Meine Geräte
+|Einstellung|Beschreibung|
+|---|---|
+|Avatar|Ändern Sie Ihr Profilbild. Lassen Sie sich ein Profilbild generieren oder laden Sie sich ein Profilbild vom Computer hoch.|
+|Kontaktliste|Sortieren Sie Ihre Kontaktliste nach Ihren Anwendungsvorlieben.|
+|Listenstil|Es stehen 2 Kontaktlistenstile zur Verfügung. "Listenansicht" für eine schmale Kontaktliste und "Details" für eine detailiertere Ansicht.|
+|Automatische Abwesenheit|Ist Ihr Computer nicht gespehrt und Ihre Maus bewegt sich für XXX Sekunden nicht, wechselt Ihr Status auf gelb "Bin gleich zurück"|
+|Journal / Systemanrufe ausblenden|Blendet Systemanrufe wie Voicemail etc. aus dem Journal aus.|
+|Passwort ändern|Passwort neu vergeben - funktioniert nur, wenn das Passwort nicht von extern kommt (z.B. Active Directory)|
 
-### Sonstige Einstellungen --->
+### Meine Geräte / Follow Me Einstellungen
+
+In den Follow Me Einstellungen bestimmen Sie selbst, sofern es durch den Administrator freigeschalten wurde, welche Ihrer Endgeräte wann klingeln soll. Zusätzlich können Sie vordefinierte Arbeitsplätze auswählen, an denen Sie sich anmelden können.
+
+1. Bestimmen Sie Ihr Endgerät das für ausgehende Telefonate verwendet werden soll.
+2. Legen Sie fest, welches Ihrer Endgeräte wann klingeln soll. 
+3. Pairen/unpairen Sie Ihr Mobilgerät. 
+
+![Follow Me Einstellungen](followme.de.png)

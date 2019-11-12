@@ -37,9 +37,9 @@ Beim Anwenden des XMPP Server Dienstes starten ausnahmslos alle Desktop Clients 
 Anhand folgendem Beispiel sehen Sie die Auswirkung dieser Systemeinstellung.           
 
             
-![ohne definierte Systemvariable oder Wert auf "false"](shownumbers-false.de.png)
+![ohne definierte Systemvariable oder Wert auf "false"](shownumbers-false.de.png?width=550px)
 *Systemvariable* ***sys.xmpp.properties.roster.shownumbers*** *nicht gesetzt, oder Wert auf* '***false***'           
 
 
-![definierte Systemvariable mit Wert auf "true"](shownumbers-true.de.png)
+![definierte Systemvariable mit Wert auf "true"](shownumbers-true.de.png?width=550px)
 *Systemvariable* ***sys.xmpp.properties.roster.shownumbers*** *gesetzt mit Wert auf* '***true***'
