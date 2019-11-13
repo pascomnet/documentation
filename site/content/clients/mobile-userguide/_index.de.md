@@ -273,12 +273,10 @@ Möchten Sie externe Kontakte aus Ihrem Telefonbuch in die Kontaktliste mit aufn
 
 |Einstellung|Beschreibung|
 |---|---|
-|Avatar|Ändern Sie Ihr Profilbild. Lassen Sie sich ein Profilbild generieren oder laden Sie sich ein Profilbild vom Computer hoch.|
+|Avatar|Das Avatar lässt sich nur über den Desktop Client ändern.|
 |Kontaktliste|Sortieren Sie Ihre Kontaktliste nach Ihren Anwendungsvorlieben.|
 |Listenstil|Es stehen 2 Kontaktlistenstile zur Verfügung. "Listenansicht" für eine schmale Kontaktliste und "Details" für eine detailiertere Ansicht.|
-|Automatische Abwesenheit|Ist Ihr Computer nicht gespehrt und Ihre Maus bewegt sich für XXX Sekunden nicht, wechselt Ihr Status auf gelb "Bin gleich zurück"|
 |Journal / Systemanrufe ausblenden|Blendet Systemanrufe wie Voicemail etc. aus dem Journal aus.|
-|Passwort ändern|Passwort neu vergeben - funktioniert nur, wenn das Passwort nicht von extern kommt (z.B. Active Directory)|
 
 ### Meine Geräte / Follow Me Einstellungen
 

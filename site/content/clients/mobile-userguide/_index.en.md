@@ -234,7 +234,7 @@ Smart-Filters are a great tool to quickly filter your contact list for specific 
 ![Smartfilter](smartfilter.en.png?width=250px)
 ### Notifications
 <!--Screen Shot-->
-![Call Notifications](callnotification.en.png?width=50%)
+![Call Notifications](callnotification.en.png?width=500px)
 
 Even if the pascom mobile client is running in the background on your mobile device or the telephony tool is currently not in focus, active calls will be display as a status update via which you can switch to the active call window (telephony section) within the pascom mobile client at any time.
 
@@ -268,12 +268,10 @@ The pascom mobile client provides access to both the company phone book as well 
 
 |Setting|Description|
 |---|---|
-|Avatar|Change your profile picture. Autogenerate a profile picture or upload a profile picture from the computer.|
+|Avatar|The avatar can only be changed via the desktop client.|
 |Contact List|Sort your contact list according to your application preferences.|
 |List Style|There are 2 contact list styles available. "List view" for a narrow contact list and "Details" for a more detailed view.|
-|Auto Away|If your computer is not locked and your mouse does not move for XXX seconds, your status will change to yellow "I'll be right back"|
 |Journal / Hide System Calls|Hides system calls like voicemail etc. from the journal.|
-|Change Password|Set a new Password - works only if the password is not set from an  external source (for example Active Directory)|
 
 ### My Devices / Follow Me Settings
 
