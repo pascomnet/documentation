@@ -10,26 +10,25 @@ weight: 65
 
 ## Concept
 
-If it makes sense for your team to check with which participant a colleague or co-worker is talking right now, you can add an additional system variable to show in your [pascom Desktop Client]({{< relref "/clients/desktop-userguide">}}) and [pascom Mobile Client]({{< relref "/clients/mobile-userguide">}}).
-So it is for each user of the pascom client directly noticable in the contact list.
+Should it makes sense for your team to be able check with whom a colleague or co-worker is currently talking to, you can add an additional system variable to show this information within the [pascom Desktop Client]({{< relref "/clients/desktop-userguide">}}) and [pascom Mobile Client]({{< relref "/clients/mobile-userguide">}}).
+Doing so will enable each pascom client user to see the number and telephone book entry name (if stored) of the contact within the contact list. 
 
 {{% notice info %}}
-
-The appearance of the caller / participant in the contact list of the pascom client applies globally to each user of the desktop and mobile client, regardless of assigned roles and user rights.
+The display of the caller information with the pascom client contact list applies globally for every desktop and mobile client user and is not dependant on any assigned roles and user permissions.
 {{% /notice %}}
 
 
-## Set Systemvariables
+## Set System Variables
 
-In the WebUI of your pascom PBX, select {{< ui-button "Appliance">}} > {{< ui-button "System settings">}} and {{< ui-button "Add">}}.
+In your pascom PBX WebUI, select {{< ui-button "Appliance">}} > {{< ui-button "System settings">}} and {{< ui-button "Add">}}.
 Create a variable with the parameter **sys.xmpp.properties.roster.shownumbers** and set the value of the newly created variable to **true**.           
 If the variable has already been created, you can find the variable in the tree structure on the left under {{< ui-button "sys">}} > {{< ui-button "xmpp">}} > {{< ui-button "properties">}} > {{< ui-button "roster">}} and there you can adjust the value of the parameter **shownumbers**.             
-Then save the changes.
+Now save your changes.
 
-To apply the customization, it is necessary to reboot the XMPP server using {{< ui-button "apply">}} > {{< ui-button "Restart XMPP Server">}}.
+To apply the customisation, it is necessary to reboot the XMPP server using {{< ui-button "apply">}} > {{< ui-button "Restart XMPP Server">}}.
 
 {{% notice warning %}}
-When you apply the XMPP Server service, all desktop clients invariably restart. Active calls via softphone are interrupted.
+Upon restarting the XMPP Server service, all desktop clients will restart. Active pascom softphone calls will be terminated.
 {{% /notice %}}
 
  
