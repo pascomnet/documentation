@@ -92,6 +92,16 @@ If your system admin has assigned a pascom softphone to your user account (defau
 
 To use the softphone, you will need to configure the following softphone settings; Microphone, Speaker (Audio output) and Ringing speaker. Even if your desktop client has automatically detected your headset, you will need to select it from the drop down list. Should your headset not automatically appear in the list, then please check your computers audio.
 
+## Choose a Workstation
+
+You have the option of using the workstation function to use preconfigured setups, e.g. Home office PC with hardware telephone. If an administrator gives you the rights to log in and out of such a workstation, you can easily apply this setup to your user.
+
+
+![Choose a Workstation](workspace.en.png?width=500px)
+
+
+You select one of the workstations assigned to you and can now use the preconfigured telephone setup. This setting can also be found again in the Follow Me Settings of the Client Settings.
+
 ## Making Calls
   
 Before you starting making calls, please check your telephone settings. Particularly if you have multiple telephones assigned to your user account, it is essential to ensure that the correct device is selected.

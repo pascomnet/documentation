@@ -100,6 +100,17 @@ Jeder Kontakt in Ihrer Kontaktliste besitzt diverse Status, welche anhand der fo
 Um das Softphone verwenden zu können, müssen Sie die passenden Softphone-Einstellungen vornehmen (Mikrofon und Lautsprecher auswählen). Auch wenn Ihr Client das Headset bereits erkannt hat, müssen Sie es explizit auswählen. Sollte das gewünschte Headset nicht automatisch in den Einstellungen erscheinen, müssen Sie ggf. die Audio-Einstellungen Ihrer Rechners prüfen.
 
 
+## Arbeitsplatz auswählen
+
+Sie haben die Möglichkeit, mit der Arbeitsplatz Funktion, vorkonfigurierte Setups zu benutzen z.B. Homeoffice PC mit Hardwaretelefon. Sofern Ihnen durch einen Administrator die Rechte, für das An- und Abmelden an solch einem Arbeitsplatz, gegeben wurde, können Sie ganz einfach dieses Setup für Ihren Benutzer übernehmen.
+
+
+![Arbeitsplatz auswählen](workspace.de.png?width=500px)
+
+
+Sie wählen einen der Ihnen zugewiesenen Arbeitsplätze aus und können von nun an das vorkonfigurierte Telefonsetup verwenden. Diese Einstellung finden Sie auch nochmals in den Follow Me Settings der Client Einstellungen.
+
+
 ## Telefonieren
 
 Bevor Sie das erste Mal telefonieren, prüfen Sie bitte die Telefon-Einstellungen. Wichtig dabei ist, dass Sie, falls Ihnen mehrere Telefone zugewiesen sind, das richtige auswählen.
