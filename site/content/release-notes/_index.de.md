@@ -43,7 +43,7 @@ Zusätzlich wird jedem Benutzer permanent eine Meldung eingeblendet, dass der Cl
 
 Bei allen **pascom 17 Servern und älter** werden die Lizenzen nicht automatisch aktualisiert. Hier kann es sein, dass pascom für nicht unterstütze Server Versionen keine Änderungen mehr an der Lizenz vornehmen kann. Beispielsweise ist dadurch eine Anpassung der Benutzerzahl (=Nachkauf) ohne update der Server-Version nicht mehr möglich.
 
-Alle **pascom 18 Server und neuer** aktualisieren die Lizenz entsprechend dem gepairten Abonnement täglich automatisch. In Ausnahmefällen kann es dazu kommen, dass eine nicht unterstützte Server Version zu dieser Lizenz nicht mehr kompatibel ist. Als Auswirkung kann der Server nach 30 Tagen nur noch eingehende Telefonate annehmen oder Lizenzwerte (z.B. Nutzeranzahl) werden nicht mehr korrekt übernommen. Wir versuchen dies zu vermeiden garantieren die Kompatibilität jedoch nur für unterstützte Server Versionen.
+Alle **pascom 18 Server und neuer** aktualisieren die Lizenz entsprechend dem gepairten Abonnement täglich automatisch. In Ausnahmefällen kann es dazu kommen, dass eine nicht unterstützte Server Version zu dieser Lizenz nicht mehr kompatibel ist. Als Auswirkung kann der Server nach 30 Tagen nur noch eingehende Telefonate annehmen oder Lizenzwerte (z.B. Nutzeranzahl) werden nicht mehr korrekt übernommen. Wir versuchen dies zu vermeiden, garantieren die Kompatibilität jedoch nur für unterstützte Server Versionen.
 
 ### Werde ich gewarnt bevor die Unterstützung meiner Version ausläuft?
 
