@@ -10,9 +10,9 @@ node('docker') {
     
     switch (target) {
         case 'dev':
-            baseUrl = 'https://www.dev.pascom.net/doc/'
-            mypascom = 'https://my.dev.pascom.net'
-            homepage = 'https://www.dev.pascom.net'
+            baseUrl = 'https://www.pascom-dev.net/doc/'
+            mypascom = 'https://my.pascom-dev.net'
+            homepage = 'https://www.pascom-dev.net'
             doc = 'doc-dev'
             break
         
