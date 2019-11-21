@@ -82,6 +82,7 @@ Due to the technological changes made between pascom 17 to 18 and the resulting 
 
 |Version|Release Type|Veröffentlichung|
 |-------|------------|---------------:|
+|[Release 19.01]({{< ref "/release-notes/pascom19" >}})| Bugfix Release | 21.11.2019|
 |[Release 19.00]({{< ref "/release-notes/pascom19" >}})| Feature Release | 04.11.2019|
 
 ### pascom Server 18

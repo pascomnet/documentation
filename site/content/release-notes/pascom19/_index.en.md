@@ -51,6 +51,34 @@ Further enhance team collaboration with team messaging / team chat. Building on 
 
 ![pasocm Gruppen](pascom-team-chat.png)
 
+## Release 19.01 (21.11.2019)
+
+**Overview**
+
+- Yealink BLF keys now show the correct current status.
+- Resolved migration issues connected to call groups and actions.
+- Yealink telephone call logs now consider the trunk prefix for call backs.
+- Fixed microphone muting issues relating to external calls.
+- Improved holding and retrieving / resuming multiple calls
+
+**Modifications:** 
+
+- [MD-11818] - Can't change password via client
+- [MD-11819] - Invalid image.json configuration file for cs-proxy
+- [MD-11823] - Error invalid wire type in xmpp log
+- [MD-11831] - Mobile icon missing if user deactivates mobile in follow me
+- [MD-11813] - Improve UI for creating the queue
+- [MD-11843] - Redial on hardware phones is broken if trunk has 0 prefix
+- [MD-11844] - Adapt Seabix trunk template
+- [MD-11851] - Call Specific actions are broken for softphone calls
+- [MD-11833] - Unreliable Yealink BLF
+- [MD-11828] - Incorrect phone call data after the pickup
+- [MD-11824] - pascom 19 migration bug if action of type "c" (callgroup) exists
+- [MD-11821] - Error on restarting pbx containers
+- [MD-11834] - Consul template service is not started in the cs-proxy container
+- [MD-11380] - Export more instance level metrics to prometheus
+
+
 ## Release 19.00 (04.11.2019)
 
 **Overview**
