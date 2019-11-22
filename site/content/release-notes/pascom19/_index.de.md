@@ -51,6 +51,20 @@ Verbessern Sie die Teamzusammenarbeit mithilfe von Gruppen. Aufbauend auf unsere
 
 ![pasocm Gruppen](pascom-team-chat.png)
 
+## Release 19.02 (22.11.2019)
+
+**Auf einen Blick**
+
+- Anrufe auf dem Mobile Client können wieder zuverlässig angenommen werden.
+- Let's Encrypt Zertifikate werden wieder ausgestellt.
+
+**ÄNDERUNGEN:** 
+
+- [MD-11874] - Internal calls softphone to mobile can't be answered
+- [MD-11876] - Port let's encrypt to 19
+- [MD-11866] - Configure QOS/TOS in asterisk pjsip
+
+
 ## Release 19.01 (21.11.2019)
 
 **Auf einen Blick**
