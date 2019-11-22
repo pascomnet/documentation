@@ -12,8 +12,8 @@ weight: 995
 Der einfachste Weg ist eine neue FREE Instanz in der pascom.cloud zu erstellen. Diese verwenden automatisch pascom 19 BETA.  
 <br/>
 **Sie möchten lieber updaten?**  
-* Onsite 18: Laden Sie sich das [ISO herunter](https://download.pascom.net/release-archive/server/7.19.00/pascom_7.19.00.R.iso?_ga=2.100405213.2125405943.1572851023-458383881.1533124029) und machen Sie ein Update.  
-* Onsite 17 und älter: Lesen Sie die [Upgrade Anleitung](https://www.pascom.net/doc/de/server/upgrade/) und nutzen Sie das [BETA Iso](https://download.pascom.net/release-archive/server/7.19.00/pascom_7.19.00.R.iso?_ga=2.100405213.2125405943.1572851023-458383881.1533124029)  
+* Onsite 18: Laden Sie sich das [ISO herunter](https://www.pascom.net/de/downloads/) und machen Sie ein Update.  
+* Onsite 17 und älter: Lesen Sie die [Upgrade Anleitung]({{< ref "/server/upgrade">}}) und nutzen Sie das [BETA Iso](https://www.pascom.net/de/downloads/)  
 * Cloud PREMIUM: Wenden Sie sich an den pascom Support.  
 * Partnerkunden: Wenden Sie sich an Ihren pascom Partner, dieser kann ein Update auf pascom 19 BETA veranlassen.
 {{%/notice%}}

@@ -50,7 +50,7 @@ Im Auslieferungszustand ist der pascom Server bereits vorinstalliert. Führen Si
 
 * USB-Stick mit mindestes 8 GB Kapazität
 * Kostenlosen Flash Tool [Rufus](https://rufus.akeo.ie/) (nur für Windows)
-* pascom Server [ISO-Dateien](https://www.pascom.net/de/download/)
+* pascom Server [ISO-Dateien](https://www.pascom.net/de/downloads/)
 
 ### USB-Stick flashen
 {{% notice info %}}

@@ -48,6 +48,10 @@ Für Client Versionen die mit älteren Server System Versionen kompatibel sind, 
 
 ## Release 57.R661 (30.10.2019)
 
+{{% notice note %}}
+Bei diesem Release gibt es keine eigene Client-Version, da die Änderungen nur die Mobile iOS-Applikation betrifft.
+{{% /notice %}}
+
 **Auf einen Blick**
 
 - iOS Anruf Problem in Verbindung mit pascom 18 Server behoben.
