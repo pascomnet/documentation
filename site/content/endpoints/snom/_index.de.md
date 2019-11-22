@@ -189,7 +189,7 @@ Hier können Sie Funktionstasten einrichten, um andere Nebenstellen zu überwach
 
 |Kontext|Typ|Nummer|Kurzform|
 |---|---|---|---|
-|Account wählen|**Nebenstelle**|Die zu überwachende Durchwahl (z. B. 123) in der Form <sip:123@192.168.100.1>.|Besitzt das Telefon statt des Papier-Beschriftungsstreifens ein zweites Display, können hier die Tasten beschriftet werden.|
+|Account wählen|**BLF**|Die zu überwachende Durchwahl (z. B. 123) in der Form sip:123@instanzname\|*8 |Besitzt das Telefon statt des Papier-Beschriftungsstreifens ein zweites Display, können hier die Tasten beschriftet werden.|
 
 Neben Benutzer-Durchwahlen können auch Einbuchcodes für Warteschlangen oder Durchwahlschalter konfiguriert werden.
 <!--FIXME Links zu dw-schalter, warteschlangen  -->
@@ -222,13 +222,13 @@ Eine Basis-Konfiguration kann auf mehreren Wegen zugewiesen werden:
 
 Im Tab {{< ui-button "Konfiguration" >}} können Sie die vorhandene Basis-Konfiguration anpassen. Im Bereich **keys** finden Sie bereits vorkonfigurierte Funktionstasten, an denen Sie sich orientieren können.
 
-Surfen Sie auf das Web-UI Ihres Snom Telefons und belegen Sie unter *Funktionstasten* als Beispiel die Taste **P1**. Wählen Sie als Typ **Nebenstelle**, als Nummer **123** und als Label **Musterbenutzer**. Übernehmen Sie die Einstellungen.
+Surfen Sie auf das Web-UI Ihres Snom Telefons und belegen Sie unter *Funktionstasten* als Beispiel die Taste **P1**. Wählen Sie als Typ **BLF**, als Nummer **\*8123** und als Label **Musterbenutzer**. Übernehmen Sie die Einstellungen.
 
 Klicken Sie auf den Menüpunkt *Einstellungen*. Falls Sie den Menüpunkt noch nicht sehen, benötigen Sie [Admin-Rechte]({{< relref "#auf-die-snom-weboberfläche-zugreifen">}}).<br>
 Suchen Sie nach *fkey0* und *fkey_label0*. Die gefundenen Zeilen tragen Sie anschließend in der Basis-Konfiguration über das Web-UI der pascom ein:
 
     {{!-- keys --}}
-    fkey0: dest <sip:123@192.168.100.1>
+    fkey0: blf <sip:123@{{{cs_domain}}}|*8>
     fkey_label0: Zentrale
 
 Weisen Sie diese Basis-Konfiguration über den Tab {{< ui-button "Geräte" >}} den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und speichern Sie. Nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
