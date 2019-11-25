@@ -4,7 +4,7 @@ description: Mit dem pascom Release 19 stehen Ihnen eine Vielzahl an neuen Funkt
 weight: 995
 ---
 
-![Highlights](pascom19_highlights.jpg)
+{{< youtube eLfIiR32nEc >}}  
 
 {{% notice tip %}}
 **Sie wollen die pascom 19 BETA testen?**<br/>

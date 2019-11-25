@@ -8,6 +8,8 @@ weight: 10
  
 {{< description >}}
 
+## Trainingsvideo
+{{< youtube YhKqWQMBkuI >}} 
 
 ## Konzept
 

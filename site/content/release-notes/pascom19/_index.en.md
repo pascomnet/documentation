@@ -3,7 +3,7 @@ title: pascom Server 19 BETA
 description: With the new pascom version 19 Release, numerous new and improved functions are now available
 weight: 995
 ---
-![Highlights](pascom19_highlights.jpg)
+{{< youtube UBoICL_2tEM >}}  
 
 {{% notice tip %}}
 **Want to test the pascom 19 BETA?**<br/>
