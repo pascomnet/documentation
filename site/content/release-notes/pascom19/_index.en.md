@@ -11,8 +11,8 @@ weight: 995
 The simplest way to test the new BETA is with a new pascom.cloud FREE instance. These instances automatically use the pascom 19 BETA.  
 <br/>
 **Would rather update?**  
-* Onsite 18: Download the [BETA ISO file](https://download.pascom.net/release-archive/server/7.19.00/pascom_7.19.00.R.iso?_ga=2.100405213.2125405943.1572851023-458383881.1533124029) and perform an update.  
-* Onsite 17 or older: Read the [Upgrade Guide](https://www.pascom.net/doc/en/server/upgrade/) and use the [BETA Iso](https://download.pascom.net/release-archive/server/7.19.00/pascom_7.19.00.R.iso?_ga=2.100405213.2125405943.1572851023-458383881.1533124029)  
+* Onsite 18: Download the [BETA ISO file](https://www.pascom.net/en/downloads/) and perform an update.  
+* Onsite 17 or older: Read the [Upgrade Guide]({{< ref "/server/upgrade">}}) and use the [BETA Iso](https://www.pascom.net/en/downloads/)  
 * Cloud PREMIUM: please contact the pascom support.  
 * Partner customers: please contact your pascom partner, who can support you with updating to the pascom 19 BETA.
 {{%/notice%}}
@@ -50,6 +50,47 @@ A picture says a thousand words and with pascom 19, adding yet more visual aids 
 Further enhance team collaboration with team messaging / team chat. Building on our “on the fly” group chat, with pascom 19 it is now possible to add “always-on” team messaging channels. Break down information silos by grouping users into departments, teams or projects and enable them to brainstorm ideas, share files and dynamically start audio / video conferences and desktop sharing sessions.
 
 ![pasocm Gruppen](pascom-team-chat.png)
+
+## Release 19.02 (22.11.2019)
+
+**Auf einen Blick**
+
+- Restabilised call pickups on the mobile client.
+- Let's Encrypt certificates will once again be issued.
+
+**ÄNDERUNGEN:** 
+
+- [MD-11874] - Internal calls softphone to mobile can't be answered
+- [MD-11876] - Port let's encrypt to 19
+- [MD-11866] - Configure QOS/TOS in asterisk pjsip
+
+## Release 19.01 (21.11.2019)
+
+**Overview**
+
+- Yealink BLF keys now show the correct current status.
+- Resolved migration issues connected to call groups and actions.
+- Yealink telephone call logs now consider the trunk prefix for call backs.
+- Fixed microphone muting issues relating to external calls.
+- Improved holding and retrieving / resuming multiple calls
+
+**Modifications:** 
+
+- [MD-11818] - Can't change password via client
+- [MD-11819] - Invalid image.json configuration file for cs-proxy
+- [MD-11823] - Error invalid wire type in xmpp log
+- [MD-11831] - Mobile icon missing if user deactivates mobile in follow me
+- [MD-11813] - Improve UI for creating the queue
+- [MD-11843] - Redial on hardware phones is broken if trunk has 0 prefix
+- [MD-11844] - Adapt Seabix trunk template
+- [MD-11851] - Call Specific actions are broken for softphone calls
+- [MD-11833] - Unreliable Yealink BLF
+- [MD-11828] - Incorrect phone call data after the pickup
+- [MD-11824] - pascom 19 migration bug if action of type "c" (callgroup) exists
+- [MD-11821] - Error on restarting pbx containers
+- [MD-11834] - Consul template service is not started in the cs-proxy container
+- [MD-11380] - Export more instance level metrics to prometheus
+
 
 ## Release 19.00 (04.11.2019)
 

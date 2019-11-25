@@ -42,7 +42,7 @@ The pascom appliance is delivered with the pascom phone system server software a
 
 * USB stick with a minimum capacity of 8GB
 * Free of charge Flash Tool [Rufus](https://rufus.akeo.ie/) (only for Windows)
-* pascom Server Software [ISO File](https://www.pascom.net/en/download/)
+* pascom Server Software [ISO File](https://www.pascom.net/en/downloads/)
  
 ### {{< num 1 >}} Flash the USB Stick
 

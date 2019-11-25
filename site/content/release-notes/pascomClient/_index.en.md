@@ -48,6 +48,10 @@ For client versions compatible with older phone system versions, please visit ou
 
 ## Release 57.R661 (30.10.2019)
 
+{{% notice note %}}
+This release does not include a desktop version update as the changes only affect the mobile iOS-application.
+{{% /notice %}}
+
 **Overview** 
 
 - Fixed iOS calling issues in combination with pascom 18 server

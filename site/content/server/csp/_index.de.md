@@ -62,7 +62,7 @@ Für die Installation des CSP-Hosts laden Sie sich **pascom Server ISO 18.5 oder
 
 ### Betriebsystem installieren
 
-Erstellen Sie eine neue virtuelle Maschine und verwenden Sie die pascom Server [ISO-Dateien](https://www.pascom.net/de/download/) als Bootmedium. Folgen Sie den Anweisungen am Bildschirm bis Sie dazu aufgefordert werden in Ihren Browser zu wechseln um den Setup Wizard zu starten:
+Erstellen Sie eine neue virtuelle Maschine und verwenden Sie die pascom Server [ISO-Dateien](https://www.pascom.net/de/downloads/) als Bootmedium. Folgen Sie den Anweisungen am Bildschirm bis Sie dazu aufgefordert werden in Ihren Browser zu wechseln um den Setup Wizard zu starten:
 
 ![Betriebssystem installieren](tui.png)
 

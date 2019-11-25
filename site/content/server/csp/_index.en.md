@@ -62,7 +62,7 @@ For the installation of the CSP host, please download the **pascom Server ISO 18
 
 ### Operating System Installation
 
-Create a new virtual machine and use the pascom server [ISO file](https://www.pascom.net/en/download/) as the boot medium. Follow the on screen instructions until you are instructed to switch to your browser in order to start the setup wizard:
+Create a new virtual machine and use the pascom server [ISO file](https://www.pascom.net/en/downloads/) as the boot medium. Follow the on screen instructions until you are instructed to switch to your browser in order to start the setup wizard:
 
 ![Operating System Installation](tui.png)
 

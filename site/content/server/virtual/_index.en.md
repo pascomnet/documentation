@@ -43,11 +43,11 @@ However, should you choose to, you can specify which internet services your comp
 
 ## Download ISO File
 
-For installing a pascom IP PBX virtual machine, please use the [ISO File](https://www.pascom.net/en/download/) which is available on our [Download page](https://www.pascom.net/en/download/).
+For installing a pascom IP PBX virtual machine, please use the [ISO File](https://www.pascom.net/en/downloads/) which is available on our [Download page](https://www.pascom.net/en/downloads/).
 
 ## Operating System Installation
 
-Create a new virtual machine and use the pascom server [ISO File](https://www.pascom.net/en/download/) as a boot media. Follow the on-screen instructions until you are prompted to switch to your browser and continue with the pascom Setup Wizard:
+Create a new virtual machine and use the pascom server [ISO File](https://www.pascom.net/en/downloads/) as a boot media. Follow the on-screen instructions until you are prompted to switch to your browser and continue with the pascom Setup Wizard:
 
 ![Operating System Installation](tui.png)
 

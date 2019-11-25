@@ -12,8 +12,8 @@ weight: 995
 Der einfachste Weg ist eine neue FREE Instanz in der pascom.cloud zu erstellen. Diese verwenden automatisch pascom 19 BETA.  
 <br/>
 **Sie möchten lieber updaten?**  
-* Onsite 18: Laden Sie sich das [ISO herunter](https://download.pascom.net/release-archive/server/7.19.00/pascom_7.19.00.R.iso?_ga=2.100405213.2125405943.1572851023-458383881.1533124029) und machen Sie ein Update.  
-* Onsite 17 und älter: Lesen Sie die [Upgrade Anleitung](https://www.pascom.net/doc/de/server/upgrade/) und nutzen Sie das [BETA Iso](https://download.pascom.net/release-archive/server/7.19.00/pascom_7.19.00.R.iso?_ga=2.100405213.2125405943.1572851023-458383881.1533124029)  
+* Onsite 18: Laden Sie sich das [ISO herunter](https://www.pascom.net/de/downloads/) und machen Sie ein Update.  
+* Onsite 17 und älter: Lesen Sie die [Upgrade Anleitung]({{< ref "/server/upgrade">}}) und nutzen Sie das [BETA Iso](https://www.pascom.net/de/downloads/)  
 * Cloud PREMIUM: Wenden Sie sich an den pascom Support.  
 * Partnerkunden: Wenden Sie sich an Ihren pascom Partner, dieser kann ein Update auf pascom 19 BETA veranlassen.
 {{%/notice%}}
@@ -51,21 +51,59 @@ Verbessern Sie die Teamzusammenarbeit mithilfe von Gruppen. Aufbauend auf unsere
 
 ![pasocm Gruppen](pascom-team-chat.png)
 
+## Release 19.02 (22.11.2019)
+
+**Auf einen Blick**
+
+- Anrufe auf dem Mobile Client können wieder zuverlässig angenommen werden.
+- Let's Encrypt Zertifikate werden wieder ausgestellt.
+
+**ÄNDERUNGEN:** 
+
+- [MD-11874] - Internal calls softphone to mobile can't be answered
+- [MD-11876] - Port let's encrypt to 19
+- [MD-11866] - Configure QOS/TOS in asterisk pjsip
 
 
+## Release 19.01 (21.11.2019)
+
+**Auf einen Blick**
+
+- Yealink BLF-Tasten zeigen wieder den richtigen Status.
+- Migrationsprobleme in Verbindung mit Rufgruppen und Aktionen behoben.
+- Journal der Yealink-Telefone berücksichtigten wieder die Amtsvorwahl beim Zurückwählen.
+- Mikrofon wird bei externen Anrufen zuverlässig stumm geschaltet.
+- Halten und Zurückholen bei mehreren Anrufen verbessert.
+
+**ÄNDERUNGEN:** 
+
+- [MD-11818] - Can't change password via client
+- [MD-11819] - Invalid image.json configuration file for cs-proxy
+- [MD-11823] - Error invalid wire type in xmpp log
+- [MD-11831] - Mobile icon missing if user deactivates mobile in follow me
+- [MD-11813] - Improve UI for creating the queue
+- [MD-11843] - Redial on hardware phones is broken if trunk has 0 prefix
+- [MD-11844] - Adapt Seabix trunk template
+- [MD-11851] - Call Specific actions are broken for softphone calls
+- [MD-11833] - Unreliable Yealink BLF
+- [MD-11828] - Incorrect phone call data after the pickup
+- [MD-11824] - pascom 19 migration bug if action of type "c" (callgroup) exists
+- [MD-11821] - Error on restarting pbx containers
+- [MD-11834] - Consul template service is not started in the cs-proxy container
+- [MD-11380] - Export more instance level metrics to prometheus
 
 ## Release 19.00 (04.11.2019)
 
 **Auf einen Blick**
 
-- Kontakte/Kontaktliste überarbeitet
-- Neue Suchfunktion mit Smartfilter
-- Interaktive Anrufobjekte während einem Telefonat
-- Video und Screensharing Funktion
-- pascom Gruppen. Permanente Audio,- Video und Screensharing Gruppen
-- Asterisk Update auf Version 16 LTS
-- Zugriff auf RTP Statistiken
-- Ämtertemplates geändert auf die pjsip Syntax
+- Kontakte/Kontaktliste überarbeitet.
+- Neue Suchfunktion mit Smartfilter.
+- Interaktive Anrufobjekte während einem Telefonat.
+- Video und Screensharing Funktion.
+- pascom Gruppen. Permanente Audio,- Video und Screensharing Gruppen.
+- Asterisk Update auf Version 16 LTS.
+- Zugriff auf RTP Statistiken.
+- Ämtertemplates geändert auf die pjsip Syntax.
 
 
 

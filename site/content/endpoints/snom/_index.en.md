@@ -136,7 +136,7 @@ Using the function keys, it is possible to monitor other extensions (i.e. users)
 
 |Context|Type|Number|Short Text|
 |---|---|---|---|
-|Select Account / Identity|**Extension**|The extension to be monitored (e.g. 123) in the following format <sip:123@192.168.100.1>|Should the telephone have a second display for paperless keys, then the keys labels can be entered here.|
+|Select Account / Identity|**BLF**|The extension to be monitored (e.g. 123) in the following format sip:123@instancename\|*8 |Should the telephone have a second display for paperless keys, then the keys labels can be entered here.|
 
 Alongside user extensions, it is also possible to configure keys as login / out codes for queues or to configure them as an extension switch.
 <!--FIXME Links zu dw-schalter, warteschlangen  -->
@@ -169,13 +169,13 @@ A default configuration can be assigned using multiple methods:
 
 Under the {{< ui-button "Configuration" >}} tab, it is possible to modify the existing basic configuration. Under the **Keys** section you will find the already pre-configured function keys which provide a useful guideline to work with.
 
-Navigate to the Snom Telephone web UI and under *Function Keys* configure the **P1** button as an example. As type, select **Extension**, and as number **123** and **ExampleUser** as the short text. Once done, apply the settings.
+Navigate to the Snom Telephone web UI and under *Function Keys* configure the **P1** button as an example. As type, select **BLF**, and as number **\*8123** and **ExampleUser** as the short text. Once done, apply the settings.
 
 Next, click on the *Settings* menu option. Should this option not be visible, you will require [admin rights]({{< relref "#accessing-the-snom-telephone-web-ui">}}).<br>
 Search for *fkey0* and *fkey_label0*. Next copy and paste the search result lines into the phone system web UI:
 
     {{!-- keys --}}
-    fkey0: dest <sip:123@192.168.100.1>
+    fkey0: blf <sip:123@{{{cs_domain}}}|*8>
     fkey_label0: Switchboard
 
 Via the menu tab {{< ui-button "devices" >}}, assign these default configurations to the telephones which should have this BLF configuration. Save and apply your changes and once the phones have restarted, the changes will have taken affect.

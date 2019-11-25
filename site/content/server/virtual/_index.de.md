@@ -45,11 +45,11 @@ Wenn Sie jedoch genau festlegen auf welche Internetdienste Ihr Unternehmensnetzw
 
 ## ISO Datei herunterladen
 
-Für die Installation einer virtuellen Maschine stellen wir ensprechende [ISO-Dateien](https://www.pascom.net/de/download/) auf unserer [Download-Seite](https://www.pascom.net/de/download/) zur Verfügung.
+Für die Installation einer virtuellen Maschine stellen wir ensprechende [ISO-Dateien](https://www.pascom.net/de/downloads/) auf unserer [Download-Seite](https://www.pascom.net/de/downloads/) zur Verfügung.
 
 ## Betriebsystem installieren
 
-Erstellen Sie eine neue virtuelle Maschine und verwenden Sie die pascom Server [ISO-Dateien](https://www.pascom.net/de/download/) als Bootmedium. Folgen Sie den Anweisungen am Bildschirm bis Sie dazu aufgefordert werden in Ihren Browser zu wechseln um den Setup Wizard zu starten:
+Erstellen Sie eine neue virtuelle Maschine und verwenden Sie die pascom Server [ISO-Dateien](https://www.pascom.net/de/downloads/) als Bootmedium. Folgen Sie den Anweisungen am Bildschirm bis Sie dazu aufgefordert werden in Ihren Browser zu wechseln um den Setup Wizard zu starten:
 
 ![Betriebssystem installieren](tui.png)
 
