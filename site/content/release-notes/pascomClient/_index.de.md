@@ -18,15 +18,46 @@ Für Client Versionen die mit älteren Server System Versionen kompatibel sind, 
  
 {{< youtube cnSuDvVzl5Q >}}
 
+
+## Release 59.R726 (26.11.2019)
+
+**Auf einen Blick**
+
+- Die Favoriten werden mit pascom 17 / 18 Servern wieder korrekt angezeigt
+- Chat-Nachrichten werden bei pascom 17 / 18 Servern nicht mehr mehrfach angezeigt
+- Der Client verbindet sich schneller zu pascom 17 und 18 Servern
+- Die Telefonbuch Listenansicht enthält jetzt wieder Icons, um direkt eine Rufnummer zu wählen
+- Chat-Nachrichten werden auf pascom 19 Servern nicht mehr mehrfach angezeigt
+- Gruppenchats zeigen jetzt den Avatar des Absenders an
+
+**ÄNDERUNGEN:**
+
+* [CL-853] - Introduce a refresh button on the contactlist
+* [CL-913] - Roster contacts slowly shown on mobiles with pascom 17 and pascom18
+* [CL-925] - No phonebook details visible after adding phonebook contact to group
+* [CL-933] - Improve contact search provider
+* [CL-943] - "filtered" message not shown when text filter is active 
+* [CL-944] - Active smart filter + click on message indicator makes strange things
+* [CL-949] - Respect XDG Specification in linux create-starter.sh
+* [CL-953] - Improve Toast Messages after login
+* [CL-962] - Fax via phone book contact not correctly working
+* [CL-964] - Improve Phonebook list view cells
+* [CL-970] - Pascom 19: The same chat message is shown multiple times in a notification 
+* [CL-973] - Missing call buttons  if renderer mode is 'software'
+* [CL-976] - Avatar is missing in notification
+* [CL-983] - The same chat message is shown multiple times in a notification on pascom 17 / 18 (again)
+* [CL-984] - pascom Client crashes after startup
+
+
 ## Release 58.R676 (07.11.2019)
 
 **Auf einen Blick**
 
-- Die Icons in den Details eines Telefonbucheintrages können wieder zum Wählen angeklickt werden.
-- Avatare Flackern nicht mehr, wenn ein Smart Filter gesetzt ist.
-- Chat-Nachrichten werden nicht mehr mehrfach angezeigt (pascom 17/18 server).
-- Seltenen Crash beim Empfangen einer Chat-Nachricht behoben.
-- Pickup Benachrichtigungen aus Teams zeigen wieder korrekte Informationen an.
+- Die Icons in den Details eines Telefonbucheintrages können wieder zum Wählen angeklickt werden
+- Avatare flackern nicht mehr, wenn ein Smart Filter gesetzt ist
+- Chat-Nachrichten werden nicht mehr mehrfach angezeigt (pascom 17 / 18 Server)
+- Seltenen Crash beim Empfangen einer Chat-Nachricht behoben
+- Pickup Benachrichtigungen aus Teams zeigen wieder korrekte Informationen an
 
 **ÄNDERUNGEN:** 
 
