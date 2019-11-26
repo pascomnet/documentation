@@ -4,7 +4,7 @@ description: Mit dem pascom Release 19 stehen Ihnen eine Vielzahl an neuen Funkt
 weight: 995
 ---
 
-{{< youtube eLfIiR32nEc >}}  
+
 
 {{% notice tip %}}
 **Sie wollen die pascom 19 BETA testen?**<br/>
@@ -31,7 +31,7 @@ Der einfachste Weg ist eine neue FREE Instanz in der pascom.cloud zu erstellen. 
 
 ## Highlights
 
-
+{{< youtube eLfIiR32nEc >}}  
 
 ### pascom Video Konferenzen 
 

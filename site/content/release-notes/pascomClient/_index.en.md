@@ -9,8 +9,9 @@ For further information, please refer to our detailed [Client documentation]({{<
 {{%/notice%}}
 
 {{% notice warning %}}
-From Release 46.R152 macOS 10.12 is the minimum requirement  
 **The pascom client version 56. R659 onwards is compatible with pascom phone system server versions 17, 18 and 19.**  
+From Release 46.R152 macOS 10.12 is the minimum requirement.  
+
 For client versions compatible with older phone system versions, please visit our [Release Archive](https://www.pascom.net/en/downloads/#release-archive).
 {{% /notice %}}
 

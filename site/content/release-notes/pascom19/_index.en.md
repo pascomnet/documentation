@@ -3,7 +3,7 @@ title: pascom Server 19 BETA
 description: With the new pascom version 19 Release, numerous new and improved functions are now available
 weight: 995
 ---
-{{< youtube UBoICL_2tEM >}}  
+
 
 {{% notice tip %}}
 **Want to test the pascom 19 BETA?**<br/>
@@ -32,7 +32,7 @@ The simplest way to test the new BETA is with a new pascom.cloud FREE instance. 
 
 
 ## Highlights
-
+{{< youtube UBoICL_2tEM >}}  
 ### pascom Video Conferencing 
 
 55 % of communication is visual so add the personal, visual element to your face-to-face video meetings. With pascom’s native video conferencing suite, starting a video conference from your desktop, mobile device or in a huddle room is as simple as clicking a button and there’s no need for any additional software and avoids any browser compatibility issues.
