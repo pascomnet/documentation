@@ -66,6 +66,22 @@ Due to non-existing encryption for voice and provisioning, Siemens Unify optiPoi
 
 Due to the Cisco SPA 112 gateway limitations that require a Cisco certificate, support has been discontinued in pascom 18.
 
+## Release 18.12 (27.11.2019)
+
+**Overview**
+
+- Let's Encrypt certificates function correctly again.
+- Recordings can be recorded separately by caller and called party by setting a channel variable.
+- The device list now directly displays whether a mobile device is paired or not.
+
+**MODIFICATIONS:**
+
+- [MD-11788] - Failed to request let's encrypt cert because of ACMEv1 end of life
+- [MD-11776] - Record each audio stream to separate files during monitoring a call
+- [MD-11731] - Show pairing status of mobile directly in device list
+- [MD-11648] - Migration of xmpp server failed because of md_xmppserver_71710_01.php
+- [MD-11768] - PHP function 'getClass' is wrongly called with 'self' instead of '$this'
+
 ## Release 18.11 (17.10.2019)
 
 **Overview**
