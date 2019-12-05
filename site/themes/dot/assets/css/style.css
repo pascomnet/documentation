@@ -700,6 +700,33 @@ tbody {
 }
 
 
+.notices.changes p {
+  border-top: 30px solid #F0B37E;
+  background: #FFF2DB;
+}
+
+.notices.changes p::after {
+  content: 'Breaking Changes';
+  position: absolute;
+  top: 2px;
+  color: #fff;
+  left: 2rem;
+}
+
+.notices.issues p {
+  border-top: 30px solid #E06F6C;
+  background: #FAE2E2;
+}
+
+.notices.issues p::after {
+  content: 'Known Issues';
+  position: absolute;
+  top: 2px;
+  color: #fff;
+  left: 2rem;
+}
+
+
 .notices.warning p {
   border-top: 30px solid #E06F6C;
   background: #FAE2E2;

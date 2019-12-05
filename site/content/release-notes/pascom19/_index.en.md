@@ -3,35 +3,10 @@ title: pascom Server 19 BETA
 description: With the new pascom version 19 Release, numerous new and improved functions are now available
 weight: 995
 ---
-![Highlights](pascom19_highlights.jpg)
-
-{{% notice tip %}}
-**Want to test the pascom 19 BETA?**<br/>
-<br/>
-The simplest way to test the new BETA is with a new pascom.cloud FREE instance. These instances automatically use the pascom 19 BETA.  
-<br/>
-**Would rather update?**  
-* Onsite 18: Download the [BETA ISO file](https://www.pascom.net/en/downloads/) and perform an update.  
-* Onsite 17 or older: Read the [Upgrade Guide]({{< ref "/server/upgrade">}}) and use the [BETA Iso](https://www.pascom.net/en/downloads/)  
-* Cloud PREMIUM: please contact the pascom support.  
-* Partner customers: please contact your pascom partner, who can support you with updating to the pascom 19 BETA.
-{{%/notice%}}
-
-
-{{% notice warning %}}  
-
-**Important Notice regarding this BETA Version:**     
-1. Trunk Failover deleted without alternative tools. No migration and no direct workaround. Support can help with an outbound script, if needed.   
-2. IAX trunks deleted without alternatives.   
-3. beroNet is not yet supported in pascom 19 "BETA", will follow in next bugfix version.  
-4. Swap is now disabled by default. This can break virtualised setups with memory lower then 1 GB, please configure more memory in this case.  
-5. Call groups are automatically converted to teams. The callgroup feature has been removed and customers should configure teams instead.  
-6. Public Announcement (PA) feature does not work.  
-7. Port forwarding for UDP 3478 is now mandatory, otherwise video tools will not work.
-{{% /notice %}}
-
 
 ## Highlights
+
+{{< youtube UBoICL_2tEM >}}
 
 ### pascom Video Conferencing 
 
@@ -49,16 +24,58 @@ A picture says a thousand words and with pascom 19, adding yet more visual aids 
 
 Further enhance team collaboration with team messaging / team chat. Building on our “on the fly” group chat, with pascom 19 it is now possible to add “always-on” team messaging channels. Break down information silos by grouping users into departments, teams or projects and enable them to brainstorm ideas, share files and dynamically start audio / video conferences and desktop sharing sessions.
 
-![pasocm Gruppen](pascom-team-chat.png)
+![pascom Groups](pascom-team-chat.png)
+
+## Become a beta tester
+
+{{% notice tip %}}
+The simplest way to test the new BETA is with a new pascom.cloud FREE instance. These instances automatically use the pascom 19 BETA.  
+{{%/notice%}}
+
+**Would rather update?**  
+
+* **Onsite 18**: Download the [BETA ISO file](https://www.pascom.net/en/downloads/) and perform an update.  
+* **Onsite 17 or older**: Read the [Upgrade Guide]({{< ref "/server/upgrade">}}) and use the [BETA Iso](https://www.pascom.net/en/downloads/)  
+* **Cloud PREMIUM**: please contact the pascom support.  
+* **Partner customers**: please contact your pascom partner, who can support you with updating to the pascom 19 BETA.
+
+## Breaking Changes
+
+{{% notice changes %}} 
+This section explains the changes that you must consider when migrating to pascom 19
+{{% /notice %}}
+
+* **Snom Pickups** where changed to `EXTENSION|*8` syntax. See [Snom Desktop Phones]({{< ref "/endpoints/snom#function-keys" >}}).
+* **Trunk Failover** deleted without alternative tools. No migration and no direct workaround. Support can help with an outbound script, if needed.   
+* **IAX trunks** deleted without alternatives.   
+* **Swap** is now disabled by default. This can break virtualised setups with memory lower then 1 GB, please configure more memory in this case.  
+* **Call groups** are automatically converted to teams. The callgroup feature has been removed and customers should configure teams instead.  
+* Port forwarding for **UDP 3478** is now mandatory, otherwise **video** tools will not work.
+
+
+## Known Issues
+
+{{% notice issues %}}
+These problems are already known to us in pascom 19 and we are currently working on a solution
+{{% / notice%}}
+
+* [MD-11810] - Beronet support is not working
+* [MD-11842] - SIP headers can not be changed by the admin
+* QSC Trunks do not work in all cases
+* The announcement system does not work
+* Hardware phone displays are not updated after attendant transfer and pickup
+* [MD-11892] - Grandstream ATA HT802 in New MAC Range C074AD * are recognized as a phone, not a gateway
+
+
 
 ## Release 19.02 (22.11.2019)
 
-**Auf einen Blick**
+**Overview**
 
 - Restabilised call pickups on the mobile client.
 - Let's Encrypt certificates will once again be issued.
 
-**ÄNDERUNGEN:** 
+**Modifications:** 
 
 - [MD-11874] - Internal calls softphone to mobile can't be answered
 - [MD-11876] - Port let's encrypt to 19
