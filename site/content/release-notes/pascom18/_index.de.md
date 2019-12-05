@@ -43,7 +43,7 @@ Durch die Integration von Let's Encrypt ist bei vor Ort Installationen nun auf e
 ## Wichtige Änderungen
 
 {{% notice changes %}}  
-In diesem Abschnitt werden die Änderungen erläutert, die Sie bei der Migration auf pascom 19 berücksichtigen müssen
+In diesem Abschnitt werden die Änderungen erläutert, die Sie bei der Migration auf pascom 18 berücksichtigen müssen
 {{% /notice %}}
 
 Siehe auch die Checkliste in der detaillierten [Upgrade-Anleitung]({{< ref "/server/upgrade" >}})
@@ -55,7 +55,15 @@ Siehe auch die Checkliste in der detaillierten [Upgrade-Anleitung]({{< ref "/ser
 * **Connector**: Das Lesen von Dateien aus einem SMB-Share wird nicht mehr unterstützt. Stattdessen kann die Import-Datei nun hochgeladen oder von einer URL abgefragt werden.
 * **Print to Fax** wurde entfernt. Alternativ kann der pascom Client nun ein Spool-Verzeichnis überwachen und darin abgelegte PDFs als Fax versenden.
 * **Beronet Gateways** benötigen mindestens Firmware Version 16
-* pascom Cluster wurde eingestellt
+* **pascom Cluster** wurde eingestellt
+
+## Bekannte Probleme
+
+{{% notice issues %}}
+Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung  
+{{% /notice %}}
+
+* [MD-11892] - Grandstream ATA HT802 in neuem MAC-Bereich C074AD* werden als Telefon und nicht als Gateway erkannt
 
 
 ## Release 18.12 (27.11.2019)

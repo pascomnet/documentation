@@ -7,13 +7,6 @@ weight: 996
 {{% notice tip %}}
 With pascom 18 there are a number of core changes that you will need to check before updating and then modify once you have updated. Please use our check list in our detailed [Upgrade Guide]({{ ref "/server/upgrade" }}).{{%/notice%}}
 
-{{% notice warning %}}  
-**Important Notice to this Update:**     
-The reading of files from an SMB share is no longer supported. Instead, the import file can now be uploaded or queried from a URL.            
-With pascom v18.08, in order to be able to send faxes via the UC client, client version 51 or newer is required.
-{{% /notice %}}
-
-
 ## Highlights
 
 {{< youtube nE3SCcMVfto >}}
@@ -46,25 +39,31 @@ Starting now, we are providing all pascom customers with the ability to send e-m
 
 Thanks to the Let's Encrypt integration it is now very simple to use secure certificates.
 
-## Core Changes
+## Breaking Changes
 
-With pascom 18 there are a number of core changes that you will need to check before updating and then modify once you have updated. Please use our check list in our detailed [Upgrade Guide]({{ ref "/server/upgrade" }}).
+{{% notice changes%}}
+This section explains the changes that you must consider when migrating to pascom 18
+{{% / notice%}}
 
-### pascom Classic Client
+See the checklist in the detailed [Upgrade Guide]({{<ref "/server/upgrade">}})
 
-The pascom Classic Client and the FlexPanels are no longer supported by pascom 18. FlexPanels will be improved and enhanced for both desktop and mobile clients with pascom 19.
+* The **pascom Classic Client** and the **FlexPanels** are no longer supported by pascom 18.
+* **Patton Gateways** are no longer supported. If you still have ISDN in use, you should think about switching to a SIP connection. If you use Patton gateways for your analog fax machine, etc., the [Grandstream ATA converter]({{<ref "/gateways/grandstream">}}) is a good and cheap alternative.
+* Due to lack of encryption the support for the **Siemens Unify optiPoint** model has been discontinued.
+* Due to the limitation of the **cisco SPA 112 Gateway** to exclusive use cisco certificates, the support with pascom 18 has been discontinued.
+* **Connector**: Reading files from an SMB share is no longer supported. Instead, the import file can now be uploaded or queried from a URL.
+* **Print to Fax** has been removed. Alternatively, the pascom client can now monitor a spool directory and send stored PDFs as a fax.
+* **Beronet Gateways** require at least firmware version 16
+* **pascom Cluster** has been discontinued
 
-### Discontinued Patton Support
+## Known Issues
 
-Patton Gateways are no longer supported. Should you still have ISDN deployed, you should consider switching to a SIP connection. If you use Patton Gateways for analog fax devices etc., the  [Grandstream ATA Apapter]({{< ref "/gateways/grandstream" >}}) an ideal, cost effective alternative. 
+{{% notice issues%}}
+These issues are known to us and we are already working on a solution
+{{% / notice%}}
 
-### Discontinued Siemens Unify optiPoint Support
+* [MD-11892] - Grandstream ATA HT802 in new MAC Range C074AD * are recognized as a phone, not a gateway
 
-Due to non-existing encryption for voice and provisioning, Siemens Unify optiPoint endpoint support has been discontinued.
-
-### Discontinued Cisco SPA 112 Support
-
-Due to the Cisco SPA 112 gateway limitations that require a Cisco certificate, support has been discontinued in pascom 18.
 
 ## Release 18.12 (27.11.2019)
 
