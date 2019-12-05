@@ -21,12 +21,10 @@ For the migration, you will also **require** access to **my.pascom.net**. Should
 Please take the time to review the following checklist **before** you begin the upgrade process
 
 * [ ] You do not use any Siemens Telephones
-* [ ] You do not use any Aastra Desktop Telephones (Support is being implemented)
 * [ ] You do not use any Patton Gateways
 * [ ] You do not use any Cisco SPA 112 Gateways
 * [ ] You do not use any FlexPanels
 * [ ] You do not use any Print To Fax
-* [ ] You do not use any SIP Trunks without Registration (e.g. Vodafone)
 * [ ] Your server hardware or virtual machine has a minimum of 2GB RAM
 * [ ] You do not use any 32Bit Hardware or 32Bit virtual machines
 * [ ] Your beroNet Gateway is running at least Firmware version 16
