@@ -5,18 +5,27 @@ weight: 990
 ---
 
 {{% notice tip %}}
-Für weitere Informationen zu unserem pascom Client lesen Sie bitte unsere ausführliche [Client-Dokumentation]({{< ref "/clients" >}}).
+Für weitere Informationen zu unserem pascom Client finden Sie in unserer ausführliche [Client-Dokumentation]({{< ref "/clients" >}}).
 {{%/notice%}}
 
-{{% notice warning %}}
-Ab Release 46.R152 wird macOS 10.12 vorausgesetzt  
-**Die pascom Clientversion 56.R659 ist kompatibel zu pascom 17, 18 und 19.**  
-Für Client Versionen die mit älteren Server System Versionen kompatibel sind, besuchen Sie bitte unser [Release-Archiv](https://www.pascom.net/de/downloads/#release-archive).
-{{% /notice %}}
-
-### What's New in pascom19 
+## What's New
  
 {{< youtube cnSuDvVzl5Q >}}
+
+## Wichtige Änderungen
+
+{{% notice changes %}}  
+In diesem Abschnitt geben wir Ihnen einen Überblick aller wichtigen Änderungen im pascom Client
+{{% /notice %}}
+
+* Kompatibilität zu pascom 16 und älter wurde eingestellt. Ältere Client versionen finden Sie in unserem [Release-Archiv](https://www.pascom.net/de/downloads/#release-archive).
+* Der pascom macOS Client setzt jetzt macOS mindestens 10.12 voraus
+
+## Bekannte Probleme
+
+{{% notice issues %}}
+Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung  
+{{% /notice %}}
 
 
 ## Release 59.R726 (26.11.2019)

@@ -8,16 +8,24 @@ weight: 990
 For further information, please refer to our detailed [Client documentation]({{< ref "/clients" >}}).
 {{%/notice%}}
 
-{{% notice warning %}}
-**The pascom client version 56. R659 onwards is compatible with pascom phone system server versions 17, 18 and 19.**  
-From Release 46.R152 macOS 10.12 is the minimum requirement.  
-
-For client versions compatible with older phone system versions, please visit our [Release Archive](https://www.pascom.net/en/downloads/#release-archive).
-{{% /notice %}}
-
-### What's New in pascom19 
+## What's New 
  
 {{< youtube 1oK8OLRG624 >}}  
+
+## Breaking Changes
+
+{{% notice changes%}}
+In this section, we give you an overview of all breaking changes in the pascom client
+{{% / notice%}}
+
+* Compatibility with pascom 16 and older has been discontinued. Older client versions can be found in our [Release archive] (https://www.pascom.net/en/downloads/#release-archive).
+* The pascom macOS client now requires macOS 10.12 and higher
+
+## Known Issues
+
+{{% notice issues%}}
+These problems are known to us and we are already working on a solution
+{{% / notice%}}
 
 
 ## Release 59.R726 (26.11.2019)
