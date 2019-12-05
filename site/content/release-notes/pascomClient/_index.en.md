@@ -27,6 +27,14 @@ In this section, we give you an overview of all breaking changes in the pascom c
 These problems are known to us and we are already working on a solution
 {{% / notice%}}
 
+* [CL-1018] - Windows 10 (since 1903): Check for the microphone privacy settings does not work. The user is therefore not automatically warned if the client does not have access to the microphone. Must be checked manually.
+* [CL-1009] - Windows 10: Native notifications do not work properly in rare situations.
+* [CL-800] - iOS: In-prefix of the trunk is shown before the caller number for the incoming call.
+* [CL-491] - Linux: selection of audio devices does not work - only pulse is usable.
+* [CL-1002] - Linux: Starting with Ubuntu 18.10, the CPU usage is 100% after a call.
+* [CL-957] - Android: In rare cases there are still problems with the Connection Service. For example, "Hang up a call on the steering wheel button in the car"
+
+
 
 ## Release 59.R726 (26.11.2019)
 

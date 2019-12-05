@@ -8,12 +8,6 @@ weight: 996
 Folgen Sie bitte unserer detaillierten [Upgrade-Anleitung]({{< ref "/server/upgrade" >}}).
 {{%/notice%}}
 
-{{% notice warning %}}  
-**Wichtige Hinweise zu diesem Update:**     
-Das Lesen von Dateien aus einem SMB-Share wird nicht mehr unterstützt. Stattdessen kann die Import-Datei nun hochgeladen oder von einer URL abgefragt werden.         
-Um mit der Version 18.08 über den Client Faxe versenden zu können wird die Clientversion 51 oder neuer benötigt.
-{{% /notice %}}
-
 ## Highlights
 
 {{< youtube 4oU8MibyrT8 >}}
@@ -46,25 +40,23 @@ Ab sofort stellen wir allen Kunden zum versenden von E-Mails unseren Service "cl
 
 Durch die Integration von Let's Encrypt ist bei vor Ort Installationen nun auf einfachste Art und Weise möglich sichere Zertifikate zu verwenden.
 
-## Grundlegende Änderungen
+## Wichtige Änderungen
 
-Mit pascom 18 gibt es grundlegende Änderungen die Sie vor einem Update überprüfen bzw. nach dem Update anpassen müssen. Wir stellen hierzu auch eine Checkliste in einer detaillierten [Upgrade-Anleitung]({{< ref "/server/upgrade" >}}) zur Verfügung.
+{{% notice changes %}}  
+In diesem Abschnitt werden die Änderungen erläutert, die Sie bei der Migration auf pascom 19 berücksichtigen müssen
+{{% /notice %}}
 
-### Einstellung pascom Classic Client
+Siehe auch die Checkliste in der detaillierten [Upgrade-Anleitung]({{< ref "/server/upgrade" >}})
 
-Der pascom Classic Client und die FlexPanels werden von pascom 18 nicht mehr unterstützt. FlexPanels wird es, in verbesserter Form, mit pascom 19 im aktuellen Desktop und Mobile Client geben.
+* Der **pascom Classic Client** und die **FlexPanels** werden von pascom 18 nicht mehr unterstützt.
+* **Patton Gateways** werden nicht mehr unterstützt. Sollten Sie noch ISDN im Einsatz sollten Sie über den Wechseln zu einem SIP-Anschluss nachdenken. Verweden Sie Patton Gateways für Ihr analoges Fax-Gerät etc. ist der [Grandstream ATA Wandler]({{< ref "/gateways/grandstream" >}}) eine gute wie günstige Alternative. 
+* Wegen fehlender Verschlüsselung für Sprache wie Provisionierung wurde die Unterstützung für die **Siemens Unify optiPoint** Modell eingestellt.
+* Aufgrund der Einschränkung des **cisco SPA 112 Gateways** auf ausschließliche Nutzung mit cisco-Zertifikaten wurde die Unterstützung mit pascom 18 eingestellt. 
+* **Connector**: Das Lesen von Dateien aus einem SMB-Share wird nicht mehr unterstützt. Stattdessen kann die Import-Datei nun hochgeladen oder von einer URL abgefragt werden.
+* **Print to Fax** wurde entfernt. Alternativ kann der pascom Client nun ein Spool-Verzeichnis überwachen und darin abgelegte PDFs als Fax versenden.
+* **Beronet Gateways** benötigen mindestens Firmware Version 16
+* pascom Cluster wurde eingestellt
 
-### Einstellung Patton Support
-
-Patton Gateways werden nicht mehr unterstützt. Sollten Sie noch ISDN im Einsatz sollten Sie über den Wechseln zu einem SIP-Anschluss nachdenken. Verweden Sie Patton Gateways für Ihr analoges Fax-Gerät etc. ist der [Grandstream ATA Wandler]({{< ref "/gateways/grandstream" >}}) eine gute wie günstige Alternative. 
-
-### Einstellung Siemens Unify optiPoint Support
-
-Wegen fehlender Verschlüsselung für Sprache wie Provisionierung wurde die Unterstützung für die Siemens Unify optiPoint Modell eingestellt.
-
-### Einstellung cisco SPA 112 Support
-
-Aufgrund der Einschränkung des cisco SPA 112 Gateways auf ausschließliche Nutzung mit cisco-Zertifikaten wurde die Unterstützung mit pascom 18 eingestellt. 
 
 ## Release 18.12 (27.11.2019)
 

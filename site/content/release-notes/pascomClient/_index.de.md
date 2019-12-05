@@ -18,8 +18,8 @@ Für weitere Informationen zu unserem pascom Client finden Sie in unserer ausfü
 In diesem Abschnitt geben wir Ihnen einen Überblick aller wichtigen Änderungen im pascom Client
 {{% /notice %}}
 
-* Kompatibilität zu pascom 16 und älter wurde eingestellt. Ältere Client versionen finden Sie in unserem [Release-Archiv](https://www.pascom.net/de/downloads/#release-archive).
-* Der pascom macOS Client setzt jetzt macOS mindestens 10.12 voraus
+* Kompatibilität zu pascom 16 und älter wurde eingestellt. Ältere Client Versionen finden Sie in unserem [Release-Archiv](https://www.pascom.net/de/downloads/#release-archive).
+* Der pascom macOS Client setzt jetzt mindestens macOS 10.12 voraus
 
 ## Bekannte Probleme
 
@@ -27,6 +27,12 @@ In diesem Abschnitt geben wir Ihnen einen Überblick aller wichtigen Änderungen
 Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung  
 {{% /notice %}}
 
+* [CL-1018] - Windows 10 (ab 1903): Check für die Mikrofon Privatsphäre Einstellungen funktioniert nicht. Der Benutzer wird daher nicht automatisch gewarnt wenn der Client keinen Zugriff auf das Mikrofon hat. Muss manuell geprüft werden.
+* [CL-1009] - Windows 10:  Native Benachrichtigungen funktionieren in seltenen Situationen nicht richtig.
+* [CL-800] - iOS: In-Prefix des Amtes steht beim eingehenden Anruf vor der Rufnummer.
+* [CL-491] - Linux: Auswahl der Audio Geräte funktioniert nicht - nur pulse ist benutzbar.
+* [CL-1002] - Linux: Ab Ubuntu 18.10 kommt es zu 100% CPU Auslastung nach einem Anruf.
+* [CL-957] - Android: In seltenen Fällen kommt es noch zu Problemen mit dem Connection Service. Beispielsweise "Auflegen am Lenkrad im Auto"
 
 ## Release 59.R726 (26.11.2019)
 
