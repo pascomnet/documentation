@@ -136,7 +136,7 @@ Using the function keys, it is possible to monitor other extensions (i.e. users)
 
 |Context|Type|Number|Short Text|
 |---|---|---|---|
-|Select Account / Identity|**BLF**|The extension to be monitored (e.g. 123) in the following format sip:123@instancename\|*8 |Should the telephone have a second display for paperless keys, then the keys labels can be entered here.|
+|Select Account / Identity|**BLF**|The extension to be monitored (e.g. 123) in the following format 123\|*8 |Should the telephone have a second display for paperless keys, then the keys labels can be entered here.|
 
 Alongside user extensions, it is also possible to configure keys as login / out codes for queues or to configure them as an extension switch.
 <!--FIXME Links zu dw-schalter, warteschlangen  -->
@@ -175,7 +175,7 @@ Next, click on the *Settings* menu option. Should this option not be visible, yo
 Search for *fkey0* and *fkey_label0*. Next copy and paste the search result lines into the phone system web UI:
 
     {{!-- keys --}}
-    fkey0: blf <sip:123@{{{cs_domain}}}|*8>
+    fkey0: blf sip:123@{{{cs_domain}}}|*8
     fkey_label0: Switchboard
 
 Via the menu tab {{< ui-button "devices" >}}, assign these default configurations to the telephones which should have this BLF configuration. Save and apply your changes and once the phones have restarted, the changes will have taken affect.

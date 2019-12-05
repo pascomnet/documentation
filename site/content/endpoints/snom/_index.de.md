@@ -189,7 +189,7 @@ Hier können Sie Funktionstasten einrichten, um andere Nebenstellen zu überwach
 
 |Kontext|Typ|Nummer|Kurzform|
 |---|---|---|---|
-|Account wählen|**BLF**|Die zu überwachende Durchwahl (z. B. 123) in der Form sip:123@instanzname\|*8 |Besitzt das Telefon statt des Papier-Beschriftungsstreifens ein zweites Display, können hier die Tasten beschriftet werden.|
+|Account wählen|**BLF**|Die zu überwachende Durchwahl (z. B. 123) in der Form 123\|*8 |Besitzt das Telefon statt des Papier-Beschriftungsstreifens ein zweites Display, können hier die Tasten beschriftet werden.|
 
 Neben Benutzer-Durchwahlen können auch Einbuchcodes für Warteschlangen oder Durchwahlschalter konfiguriert werden.
 <!--FIXME Links zu dw-schalter, warteschlangen  -->
@@ -228,7 +228,7 @@ Klicken Sie auf den Menüpunkt *Einstellungen*. Falls Sie den Menüpunkt noch ni
 Suchen Sie nach *fkey0* und *fkey_label0*. Die gefundenen Zeilen tragen Sie anschließend in der Basis-Konfiguration über das Web-UI der pascom ein:
 
     {{!-- keys --}}
-    fkey0: blf <sip:123@{{{cs_domain}}}|*8>
+    fkey0: blf sip:123@{{{cs_domain}}}|*8
     fkey_label0: Zentrale
 
 Weisen Sie diese Basis-Konfiguration über den Tab {{< ui-button "Geräte" >}} den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und speichern Sie. Nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
