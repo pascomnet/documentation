@@ -48,11 +48,11 @@ As soon as the pascom mobile app has been setup and logged into, it can now be u
 
 The pascom mobile app consists of 6 menu options / features:
 
-+ The [**contact-list**]({{< relref "#contact-list">}}) displaying all your contacts, favourites and teams.
-+ The [**telephony**]({{< relref "#telefonieren">}}) tool enables phone calls, transfers & conferencing as well as accessing your voicemail box.
-+ The [**call-history**]({{< relref "#journal">}}) provides an overview of all your calls on your office extension across all your devices.
-+ The [**phonebook**]({{< relref "#telefonbuch">}}) contains all you company & private phone book contacts.
-+ In the [**search**]({{< relref "#chat">}}) you can quickly find seach results for all possible areas
++ The [**contact list**]({{< relref "#contacts">}}) displaying all your contacts, favourites and teams.
++ The [**telephony**]({{< relref "#telephony">}}) tool enables phone calls, transfers & conferencing as well as accessing your voicemail box.
++ The [**call history**]({{< relref "#call-history">}}) provides an overview of all your calls on your office extension across all your devices.
++ The [**phonebook**]({{< relref "#telephone-book">}}) contains all you company & private phone book contacts.
++ In the [**search**]({{< relref "#search">}}) you can quickly find seach results for all possible areas
 + The **settings** menu option allows you to update your user profile, configure pascom mobile client settings as well as assigned device follow me settings.
 
 
@@ -68,7 +68,7 @@ The pascom mobile app consists of 6 menu options / features:
 |Presence Status|It is possible to update your presence status with the following options:<br>- *Green* > Available<br>- *Yellow* > Away<br>- *Red* > Do Not Disturb / Busy (This option doesn't deliver DND functionality.)<br><br>Status texts can be customised according to requirements - simply select the correct presence and then click on the status text and replace it.|
 |Create new group|With the "+ symbol" you can create a new permanent team messaging / chat group.|
 |Contact list filter|Filter contacts to display only certain contacts. Per default, two filters are available as standard - *Favourites* and *Teams*. Favourites can be added by clicking on the star symbol next to a contact's handset icon. Additional filters can be defined by the system administrator using [Roles]({{< relref "/user/role">}}).|
-|Contacts |[Contact list]({{< relref "#Contacts">}}) displaying contact presence, extension and contact information.|
+|Contacts |[Contact list]({{< relref "#contacts">}}) displaying contact presence, extension and contact information.|
 |Phone Symbol |Click on the phone symbol to call the contact.|
 |Favourite Symbol|Simply mark your favourite contacts with the "star" symbol. These are then pinned at the top of the contact list.|
 |Teams | Under [Teams]({{< relref "#teams">}}) you will see all the teams of which you are either a permanent or dynamic member. The *Available* or *Offline* status signify whether you are currently logged into a team or not.|
@@ -159,10 +159,10 @@ Also the pascom symbol on the start page shows you the number of unread messages
 
 The desktop app offers numerous options for starting a call:
 
-* Enter the number via the [Dialpad]({{< relref "#making-calls">}}).
+* Enter the number via the [Dialpad]({{< relref "#telephony">}}).
 * Call a colleague by clicking on the phone icon within the [Contact List]({{< relref "#contacts">}}).
 * Click on the phone icon in the [Call History]({{< relref "#call-history">}}).
-* Select a number from the [Phone Book]({{< relref "#phone-book">}}).
+* Select a number from the [Phone Book]({{< relref "#telephone-book">}}).
 
 ### Active Call
 
@@ -198,7 +198,7 @@ It is not necessary to place the caller on hold, as this is automatically done w
 
 ![3-way-conferencing](3_way_conference.en.png)
 
-A 3-way-conference is started in a similar fashion to an [Attended Transfer](/clients/client-user-guide/#attended-transfer) via a 2 step process.
+A 3-way-conference is started in a similar fashion to an [Attended Transfer](#attended-transfer) via a 2 step process.
 
 1. Click the *Add Participant* button and call the required party.
 2. To start a 3-way-conference simply click on the *Conference* button.

@@ -9,8 +9,9 @@ For further information, please refer to our detailed [Client documentation]({{<
 {{%/notice%}}
 
 {{% notice warning %}}
-From Release 46.R152 macOS 10.12 is the minimum requirement  
 **The pascom client version 56. R659 onwards is compatible with pascom phone system server versions 17, 18 and 19.**  
+From Release 46.R152 macOS 10.12 is the minimum requirement.  
+
 For client versions compatible with older phone system versions, please visit our [Release Archive](https://www.pascom.net/en/downloads/#release-archive).
 {{% /notice %}}
 
@@ -18,17 +19,47 @@ For client versions compatible with older phone system versions, please visit ou
  
 {{< youtube 1oK8OLRG624 >}}  
 
+
+## Release 59.R726 (26.11.2019)
+
+**Overview**
+
+- Favourites are correctly displayed in pascom 17 / 18 platforms
+- Chat notifications are no longer displayed multiple times on pascom 17 / 18 platforms
+- Phone book list view again contains icons for calling numbers directly
+- Chat messages on pascom 19 platforms are no longer displayed in duplicate / multiple times
+- Group chats now display the senders Avatar / profile image
+
+**MODIFICATIONS:**
+
+* [CL-853] - Introduce a refresh button on the contactlist
+* [CL-913] - Roster contacts slowly shown on mobiles with pascom 17 and pascom18
+* [CL-925] - No phonebook details visible after adding phonebook contact to group
+* [CL-933] - Improve contact search provider
+* [CL-943] - "filtered" message not shown when text filter is active 
+* [CL-944] - Active smart filter + click on message indicator makes strange things
+* [CL-949] - Respect XDG Specification in linux create-starter.sh
+* [CL-953] - Improve Toast Messages after login
+* [CL-962] - Fax via phone book contact not correctly working
+* [CL-964] - Improve Phonebook list view cells
+* [CL-970] - Pascom 19: The same chat message is shown multiple times in a notification 
+* [CL-973] - Missing call buttons  if renderer mode is 'software'
+* [CL-976] - Avatar is missing in notification
+* [CL-983] - The same chat message is shown multiple times in a notification on pascom 17 / 18 (again)
+* [CL-984] - pascom Client crashes after startup
+
+
 ## Release 58.R676 (07.11.2019)
 
 **Overview** 
 
-- Phone book entry icons are once again clickable for dialing purposes.
-- Avatars no longer flicker when a Smart Filter is active.
-- Chat messages are no longer displayed multiple times (pascom 17 / 18 servers).
-- Resolved the seldom occuring crash issue caused by receiving a chat message.
-- Team pickup notifications once again show the correct information.
+- Phone book entry icons are once again clickable for dialing purposes
+- Avatars no longer flicker when a Smart Filter is active
+- Chat messages are no longer displayed multiple times (pascom 17 / 18 servers)
+- Resolved the seldom occuring crash issue caused by receiving a chat message
+- Team pickup notifications once again show the correct information
 
-**Modifications** 
+**MODIFICATIONS:** 
 
 - [CL-905] - Wrong datev icon size 
 - [CL-923] - Hide 'Add to group' button if phonebook entry is in edit mode
@@ -56,7 +87,7 @@ This release does not include a desktop version update as the changes only affec
 
 - Fixed iOS calling issues in combination with pascom 18 server
 
-**Modifications** 
+**MODIFICATIONS:** 
 
 - [CL-942] - iOS App can't phone with a pascom 18 server
 
@@ -77,7 +108,7 @@ This release does not include a desktop version update as the changes only affec
 - Flexible always on permenant chat groups
 - Audio and video conferencing tools
  
-**Modifications:**
+**MODIFICATIONS:**
  
 - [CL-921] - Sometimes deleted contacts show up in the contactlist
 - [CL-895] - Emoticon Keyboard is broken on iOS 13

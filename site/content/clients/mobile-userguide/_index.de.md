@@ -48,11 +48,11 @@ Sobald der pascom Mobile Client angemeldet wurde, kann dieser unabhängig vom [p
 
 Der pascom Mobile Client besteht grundsätzlich aus 6 Bereichen:
 
-+ Die [**Kontaktliste**]({{< relref "#kontaktliste">}}) enthält alle Kontakte, Favoriten und Teams
++ Die [**Kontaktliste**]({{< relref "#kontakte">}}) enthält alle Kontakte, Favoriten und Teams
 + Im [**Telefonie**]({{< relref "#telefonieren">}})-Bereich können Gespräche und Konferenzen geführt werden. Auch die eigene Voicemailbox ist hier zu finden
 + Im [**Journal**]({{< relref "#journal">}}) ist eine Übersicht aller getätigten Anrufe zu finden
 + Das [**Telefonbuch**]({{< relref "#telefonbuch">}}) enthält die Einträge aus dem privaten und Firmen-Telefonbuch
-+ In der [**Suche**]({{< relref "#chat">}})findet man schnell Suchergebnisse zu allen möglichen Bereiche.
++ In der [**Suche**]({{< relref "#suche">}}) findet man schnell Suchergebnisse zu allen möglichen Bereiche.
 + Alle **Einstellungen** zum Benutzerprofil, pascom Mobile Client und den eigenen Geräten befinden sich hier
 
 

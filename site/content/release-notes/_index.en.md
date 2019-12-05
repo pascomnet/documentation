@@ -62,8 +62,9 @@ Due to the technological changes made between pascom 17 to 18 and the resulting 
 
 |Version|Release Type|Published|
 |-------|------------|---------------:|
-|[Release 58.R676]({{< ref "/release-notes/pascomClient#release-58.R676-07-11-2019">}})| Bugfix Release | 07.11.2019 |
-|[Release 57.R661]({{< ref "/release-notes/pascomClient#release-57.R661-30-10-2019">}})| Bugfix Release | 30.10.2019 |
+|[Release 59.R726]({{< ref "/release-notes/pascomClient#release-59-r726-26-11-2019">}})| Bugfix Release | 26.11.2019|
+|[Release 58.R676]({{< ref "/release-notes/pascomClient#release-58-r676-07-11-2019">}})| Bugfix Release | 07.11.2019 |
+|[Release 57.R661]({{< ref "/release-notes/pascomClient#release-57-r661-30-10-2019">}})| Bugfix Release | 30.10.2019 |
 |[Release 56.R657]({{< ref "/release-notes/pascomClient#release-56-r659-29-10-2019">}})| Feature Release | 29.10.2019 |
 |[Release 54.R534]({{< ref "/release-notes/pascomClient#release-54-r534-12-09-2019">}})| Bugfix Release | 12.09.2019 |
 |[Release 53.R453]({{< ref "/release-notes/pascomClient#release-53-r453-03-07-2019">}})| Bugfix Release | 03.07.2019 |
@@ -72,7 +73,7 @@ Due to the technological changes made between pascom 17 to 18 and the resulting 
 |[Release 50.R318]({{< ref "/release-notes/pascomClient#release-50-r318-24-04-2019">}})| Bugfix Release | 24.04.2019 |
 |[Release 49.R265]({{< ref "/release-notes/pascomClient#release-49-r265-21-03-2019">}})| Bugfix Release | 21.03.2019 |
 |[Release 48.R196]({{< ref "/release-notes/pascomClient#release-48-r196-08-03-2019">}})| Bugfix Release | 08.03.2019 |
-|[Release 47.R161]({{< ref "/release-notes/pascomClient#release-47-r161-11-02-2019">}})| Bugfix Release - Desktop only | 11.02.2019 |
+|[Release 47.R161]({{< ref "/release-notes/pascomClient#release-47-r161-11-02-2019">}})| Bugfix Release - nur Desktop | 11.02.2019 |
 |[Release 46.R152]({{< ref "/release-notes/pascomClient#release-46-r152-06-02-2019">}})| Bugfix Release | 06.02.2019 |
 |[Release 45.R93]({{< ref "/release-notes/pascomClient#release-45-r93-17-12-2018">}})| Bugfix Release | 17.12.2018 |
 |[Release 44.R66]({{< ref "/release-notes/pascomClient#release-44-r66-27-11-2018">}})| Bugfix Release | 27.11.2018 |
@@ -83,14 +84,15 @@ Due to the technological changes made between pascom 17 to 18 and the resulting 
 |Version|Release Type|Published|
 |-------|------------|---------------:|
 |[Release 19.02]({{< ref "/release-notes/pascom19" >}})| Bugfix Release | 22.11.2019|
-|[Release 19.01]({{< ref "/release-notes/pascom19" >}})| Bugfix Release | 21.11.2019|
-|[Release 19.00]({{< ref "/release-notes/pascom19" >}})| Feature Release | 04.11.2019|
+|[Release 19.01]({{< ref "/release-notes/pascom19#release-19-01-21-11-2019" >}})| Bugfix Release | 21.11.2019|
+|[Release 19.00]({{< ref "/release-notes/pascom19#release-19-00-04-11-2019" >}})| Feature Release | 04.11.2019|
 
 ### pascom Server 18
 
 |Version|Release Type|Published|
 |-------|------------|---------------:|
-|[Release 18.11]({{< ref "/release-notes/pascom18" >}})| Bugfix Release | 17.10.2019 |
+|[Release 18.12]({{< ref "/release-notes/pascom18#release-18-12-27-11-2019" >}})| Bugfix Release | 27.11.2019 |
+|[Release 18.11]({{< ref "/release-notes/pascom18#release-18-11-17-10-2019" >}})| Bugfix Release | 17.10.2019 |
 |[Release 18.10]({{< ref "/release-notes/pascom18#release-18-10-05-08-2019" >}})| Bugfix Release | 05.08.2019 |
 |[Release 18.09]({{< ref "/release-notes/pascom18#release-18-09-28-06-2019" >}})| Bugfix Release | 28.06.2019 |
 |[Release 18.08]({{< ref "/release-notes/pascom18#release-18-08-13-06-2019" >}})| Bugfix Release | 13.06.2019 |

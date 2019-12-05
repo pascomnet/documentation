@@ -10,13 +10,13 @@ weight: 65
 
 ## Concept
 
-Should it makes sense for your team to be able check with whom a colleague or co-worker is currently talking to, you can add an additional system variable to show this information within the [pascom Desktop Client]({{< relref "/clients/desktop-userguide">}}) and [pascom Mobile Client]({{< relref "/clients/mobile-userguide">}}).
+Should it makes sense for your team to be able check with whom a colleague or co-worker is currently talking to, you can add an additional system variable to show this information within the [pascom Desktop Client]({{< relref "/clients/desktop-userguide">}}) and [pascom Mobile Client]({{< relref "/clients/mobile-userguide" >}}).  
+
 Doing so will enable each pascom client user to see the number and telephone book entry name (if stored) of the contact within the contact list. 
 
 {{% notice info %}}
 The display of the caller information with the pascom client contact list applies globally for every desktop and mobile client user and is not dependant on any assigned roles and user permissions.
 {{% /notice %}}
-
 
 ## Set System Variables
 

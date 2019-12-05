@@ -8,6 +8,9 @@ weight: 71
  
 {{< description >}}
 
+## Training Video
+
+{{< youtube mt_EWSaFhuY >}} 
 
 ## Concept
 

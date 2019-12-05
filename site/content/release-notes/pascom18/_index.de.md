@@ -66,6 +66,23 @@ Wegen fehlender Verschlüsselung für Sprache wie Provisionierung wurde die Unte
 
 Aufgrund der Einschränkung des cisco SPA 112 Gateways auf ausschließliche Nutzung mit cisco-Zertifikaten wurde die Unterstützung mit pascom 18 eingestellt. 
 
+## Release 18.12 (27.11.2019)
+
+**Auf einen Blick**
+
+- Let's Encrypt Zertifikate funktionieren wieder.
+- Mittschnitte können, durch setzen einer Channel-Variable, getrennt für Anrufer und Angerufenen aufgenommen werden.
+- Geräteliste zeigt nun direkt an, ob ein Mobilgerät gepairt ist oder nicht.
+
+
+**ÄNDERUNGEN:**
+
+- [MD-11788] - Failed to request let's encrypt cert because of ACMEv1 end of life
+- [MD-11776] - Record each audio stream to separate files during monitoring a call
+- [MD-11731] - Show pairing status of mobile directly in device list
+- [MD-11648] - Migration of xmpp server failed because of md_xmppserver_71710_01.php
+- [MD-11768] - PHP function 'getClass' is wrongly called with 'self' instead of '$this'
+
 ## Release 18.11 (17.10.2019)
 
 **Auf einen Blick**
