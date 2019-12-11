@@ -34,6 +34,7 @@ Access to the pascom phone system can only be made via the Session Border Contro
 | ---- | ------------ |
 | TCP **443** | phone system web UI|
 | TCP **636** | LDAPS for phone hook access via LDAP |
+| UDP **3478** | Access for Video-Functionality |
 | TCP **5061** | SIP TLS - secure SIP communication |
 | TCP **5222** | pascom Desktop and Mobile client access |
 | TCP **8884**  | Provisioning of IP desktop phones |

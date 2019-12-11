@@ -35,6 +35,7 @@ Zugriffe auf die Telefonanlage können ausschließlich via Session Border Contro
 | ---- | ------------ |
 | TCP **443** | Webinterface der Telefonanlage |
 | TCP **636** | LDAPS für Telefonbuchzugriffe via LDAP |
+| UDP **3478** | Zugriff für Video-Funktionalität |
 | TCP **5061** | SIP-TLS - sichere SIP-Kommunikation |
 | TCP **5222** | pascom Desktop- und Mobile-Client-Zugriffe |
 | TCP **8884**  | Provisionierung von IP-Hardware-Telefonen |
