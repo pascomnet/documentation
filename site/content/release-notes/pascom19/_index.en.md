@@ -26,7 +26,7 @@ Further enhance team collaboration with team messaging / team chat. Building on 
 
 ![pascom Groups](pascom-team-chat.png)
 
-## Become a beta tester
+## Become a BETA tester
 
 {{% notice tip %}}
 The simplest way to test the new BETA is with a new pascom.cloud FREE instance. These instances automatically use the pascom 19 BETA.  

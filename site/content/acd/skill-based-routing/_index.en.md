@@ -8,6 +8,10 @@ weight: 50
  
 {{< description >}}
 
+## Training Video
+
+{{< youtube x1XDszqEmoA >}} 
+
 ## Concept
 Skills Based Routing is an Automated Call Distribution strategy often deployed in [Call Centers](https://www.pascom.net/en/call-center/ "pascom ContactCenter Tools") to route inbound callers to the agent(s) who are best qualified (skilled) to fulfill the callers requirements.
 

@@ -8,6 +8,9 @@ weight: 50
  
 {{< description >}}
 
+## Trainingsvideo
+{{< youtube sImKR9HUBnE >}} 
+
 ## Konzept
 
 *Skill Based Routing* ermöglicht die Verteilung von Anrufern anhand von Fähigkeiten der Benutzer.
