@@ -16,7 +16,7 @@ The recording of calls can be legally problematic, and in certain cases even a c
 
 The recording system is based one of the many frameworks existing within pascom phone systems. This framework enables your pascom phone system to automatically record calls or to allow an user to manually start a recording.
 
-![Illustration - pascom Call Recording System](concept.en.png?width=60% "pascom Call Recording System")
+![Illustration - pascom Call Recording System](concept.en.png?width=100% "pascom Call Recording System")
 
 Regardless of whether the recordings are manually or automatically initiated, they will be stored on the pascom HardDisk and be displayed to permitted users within the Classic Client. An additional option is for the recordings to be sent via the rule framework to any number of e-mail recipients or copied via script to any destination.
 
@@ -40,10 +40,10 @@ In order to activate the recording system, you must have created at least one ru
 ### Dispatch Mode: Bash Script
 If the dispatch mode Bash script is selected, then a Bash-Editor into which one can enter the desired script will appear. The script will then be call up after every recording and the following parameters will be passed on, which can then be called up in the Variables  **$1** and **$2**:
 
-|Variable|Content|Description|Example|
-|--------|------|------------|--------|
-|**$1**|   /absolute/path/to/recording.wav  | The File name incl. of path to the corresponding generate recording|   /var/spool/asterisk/monitor/na_1392064129-3_1392064129-10_29_001.wav|
-|**$2**|   /absolute/path/to/journal.json|    The File name incl. of path to json file for this recording. Contained within it the recording meta information such as, Call participants, Call Length etc|   /var/spool/asterisk/monitor/n_1392064129-3_1392064129-10.json|
+|Variable|Content|Example|
+|--------|-------|-------|
+|**$1**|   /absolute/path/to/recording.wav  |/var/spool/asterisk/monitor/na_1392064129-3_1392064129-10_29_001.wav|
+|**$2**|   /absolute/path/to/journal.json|/var/spool/asterisk/monitor/n_1392064129-3_1392064129-10.json|
 
 ### Cronjob for Recording System
 
@@ -53,7 +53,7 @@ This really only applies for the sending of recordings via e-mail or script. In 
 
 Should you need to, you can increase the frequency of the Cronjob execution (e.g. send the recordings every 15 Minutes) this can be modified under the {{< ui-button "Advanced" >}} > {{< ui-button "Recordings" >}} > {{< ui-button "Action" >}} > {{< ui-button "Automate Dispatch" >}} or alternatively {{< ui-button "Appliance" >}} > {{< ui-button "Cron jobs" >}} > {{< ui-button "Recordings" >}}.
 
-### HardDisk Memory Management
+### HardDisk Memory Management (Onsite only)
 Every recording, regardless of whether it was automatically or manually created, will be stored centrally on the pascom HardDisk.  A recording that took 1 minute, will require approx. 1 MB of memory. So should you for example for training purposes need to continuously record the support team, which consists of 4 people who are on the phone for ca. 3 hrs per day, the recordings will require approximately 720 MB of HardDisk space, therefore, please ensure that you have sized your HardDisk memory accordingly.
 
 In order to prevent the overflow of the HardDisk, we have setup the system so that it removes all recordings after 90 days as standard. This setting can be modified through using the pascom Web UI under {{< ui-button "Applaince" >}} > {{< ui-button "System Settings" >}}. Within the tree structure, you will find the **expiration** parameter under **sys.monitor.configure.monitorcron**, which has been set to 90 days but can be modified to any time period
@@ -68,10 +68,15 @@ To this end, the DialPlan can be influenced according to needs through using the
 
 #### Setting MDC_MON_MODE Variable in the Call Setup
 
-* MDC_MON_MODE not defined or Value=auto: Rule Framework accessed , (see below). **DEFAULT**
-* MDC_MON_MODE=force This call will be recorded in every scenario (Skips Rule Framework )
-* MDC_MON_MODE=deny This call will **not** be recorded under **any** circumstances (Skips Rule Framework )
-* MDC_MON_MODE=manual Rule Framework will be skipped, manual recording will be enabled
+|Variable|Beschreibung|
+|--------|------------|
+|MDC_MON_MODE|not defined or Value=auto: Rule Framework accessed , (see below). **DEFAULT**|
+|MDC_MON_MODE=force|This call will be recorded in **every** scenario (Skips Rule Framework )|
+|MDC_MON_MODE=deny|This call will **not** be recorded under **any** circumstances (Skips Rule Framework )|
+|MDC_MON_MODE=manual|Rule Framework will be skipped, manual recording will be enabled|
+|MDC_MON_MODE=caller|records only caller voice|
+|MDC_MON_MODE=callee|records only callee voice|
+|MDC_MON_MODE=splited|records caller and callee but stores streams in separate files|
 
 An example script for the blocking of call recordings could appear somewhat like:
 
@@ -80,9 +85,9 @@ An example script for the blocking of call recordings could appear somewhat like
 
 This script could be then be linked into the IVR Menu and thus through being selected deactivate the Recording function.
 
-### Configure Record Button on SNOM Telephones
+### Configure Record Button on Telephones
 
-Many SNOM Telephones (3 Series) have a record button, which will be, through pascom, automatically provided with the correct URL for controlling the Recording System. On SNOM Handsets that do not have an additional recording button, you can repurpose any button to control this function.
+Many Telephones have a record button, which will be, through pascom, automatically provided with the correct URL for controlling the Recording System. On Handsets that do not have an additional recording button, you can repurpose any button to control this function.
 
 #### Central Distribution of Button Settings
 
@@ -106,13 +111,25 @@ Allows a user who is through a rule permitted to manually record, and during a c
 
 ![Screenshot - Call Recordings in the client](client_manual.en.png?width=80% "Recordings in the client")
 
-Alternatively recordings can also be started via the Record Button on your Telephone.
+
 Should a recording have been made, you can access it retrospectively from your Journal through the REC symbol:
+Through clicking on the **REC** Symbol all the recordings from this Call will be then be displayed:  
 
-Through clicking on the **REC** Symbol all the recordings from this Call will be then be displayed:
-![Screenshot - Call history in classic client](client_journal.en.png?width=80% "Call history in classic client")
+![Screenshot - Call history in classic client](client_journal.en.png?width=50% "Call history in classic client")
 
-Through clicking on the Play Symbol you can listen to the recording directly from your client as well as being able to download it via the download symbol.
-![Screenshot - Recording Rules](client-play.en.png?width=80% "Manage recording rules")
+Through clicking on the Play Symbol you can listen to the recording directly from your client as well as being able to download it via the download symbol.  
 
-<!--FixMe new recording images-->
+![Screenshot - Recording Rules](client_play.en.png?width=80% "Manage recording rules")
+
+### Manage Recordings via REST API
+
+Via the REST Interface, you can set various queries and parameters for monitoring and downloading conversation recordings.
+Below is a example URL that needs to be adjusted with your parameters.
+
+- https://$ip/$instance/services/monitor/r_$recordID/$ruleID/1/wav -> Anrufer Gesprächsdatei
+- https://$ip/$instance/services/monitor/t_$recordID/$ruleID/1/wav -> Teilnehmer Gesprächsdatei
+
+
+Using the interactive REST documentation of the pascom system, you can test queries and adapt them accordingly.
+
+![Screenshot - Mitschnitte über REST](REST.png?width=100% "Mitschnitte per REST")
