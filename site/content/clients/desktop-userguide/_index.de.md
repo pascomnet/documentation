@@ -477,7 +477,7 @@ Einstellungen für Headsets unterstützter Hersteller Sennheiser, Jabra und Plan
 
 ![Audio und Headset Einstellungen](audiosettings.de.png?width=400px)
 
-### Meine Geräte / Follow Me Einstellungen
+### Meine Geräte
 
 In den Follow Me Einstellungen bestimmen Sie selbst, sofern es durch den Administrator freigeschalten wurde, welche Ihrer Endgeräte wann klingeln soll. Zusätzlich können Sie vordefinierte Arbeitsplätze auswählen, an denen Sie sich anmelden können.
 

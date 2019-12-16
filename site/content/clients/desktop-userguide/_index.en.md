@@ -454,7 +454,7 @@ Headset settings for supported manufacturers Sennheiser, Jabra and Plantronics. 
 
 ![audio and headset settings](audiosettings.en.png?width=400px)
 
-### My Devices / Follow Me Settings
+### My Devices
 
 In the Follow Me Settings you decide yourself, providet that it has been activated by the administrator, which of your devices should ring. In addition, you can select predefined workstations to which you can login.
 

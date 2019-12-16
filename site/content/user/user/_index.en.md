@@ -217,19 +217,4 @@ FollowMe settings can be configured for
 
 ### FollowMe UC Client Set up
 
-If a user is permitted to manage their FollowMe settings, this can be done via their pascom Desktop UC client ({{< ui-button "Settings" >}} > {{< ui-button "FollowMe" >}}).
-
-![FollowMe](followme_settings_client.en.png?width=80% "User Defined FollowMe")
-
-Users can configure individual FollowMe settings for internal and external calls as well as calls originating via a queue / team. To do so, the user must simply toggle between the {{< ui-button "External" >}}, {{< ui-button "Internal" >}} and {{< ui-button "Teams" >}} tabs.
-
-|Settings|Description|
-|---|---|
-|**Client controls**|Should a user be assigned with multiple devices, with this drop down menu, it is possible to set up which endpoint (device) the desktop client can control.|
-|**My Devices**|List of all devices assigned to the user. Telephones which the user is not permitted to configure FollowMe settings are greyed out.<br>The user can activate / deactivate devices and define whether a phone should ring or not as well as defining a device specific **Delay** and **Timeout**.|
-
-A graphical overview of the user defined FollowMe settings is available in the column on the left showing device specific delays and timeouts.
-
-<!--FIXME wenn Client fertig übersetzt ist Felder nochmal prüfen -->
-<!-- ### Followme über den Mobility Client steuern -->
-<!--FIXME mobility client!!!  -->
+If a user is permitted to manage their FollowMe settings, this can be done via their pascom Desktop UC client in the [Settings]({{< relref "/clients/desktop-userguide#my-devices">}})
