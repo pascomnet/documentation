@@ -112,6 +112,10 @@ Depending on your fax server configuration choices, the contents of the e-mail w
 
 #### Customisations
 
+{{% notice warning %}}
+The following customisations are only possible if you are using an **Onsite pascom telephone system**!
+{{% /notice %}}
+
 Currently, it is only partially possible to customise the behaviour of the Mail-to-Fax gateway and must be done directly in the configuration file. To this end, you will need to log into your pascom phone system via SSH and will require Root permissions.
 
 Without any customisation, the default setting is to send out a plain-text e-mail whenever there is a change in a fax job (busy, failed, successful, etc.). 

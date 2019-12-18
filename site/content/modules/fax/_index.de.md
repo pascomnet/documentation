@@ -117,6 +117,10 @@ Je nach Auswahl in der Fax-Server Konfiguration wird auch der Inhalt der Email a
 
 ### Anpassungen
 
+{{% notice warning %}}
+Nachfolgende Anpassungen sind nur möglich, wenn Sie eine **Onsite pascom Telefonanlage** verwenden!
+{{% /notice %}}
+
 Aktuell kann das Verhalten des Mail-to-Fax-Gateways teilweise nur direkt in den Konfigurationsdateien angepasst
 werden. Hierzu müssen Sie sich auf der pascom per SSH einloggen und benötigen root-Rechte.
 
