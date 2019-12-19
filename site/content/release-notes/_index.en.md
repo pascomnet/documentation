@@ -129,5 +129,6 @@ Due to the technological changes made between pascom 17 to 18 and the resulting 
 
 |Version|Release Type|Published|
 |-------|------------|---------------:|
-|[Release 4.R56]({{< ref "/release-notes/pascomTapi">}})| Bugfix Release | 08.03.2019 |
+|[Release 5.R76]({{< ref "/release-notes/pascomTapi#release-5-r76-20-12-2019">}})| Bugfix Release | 20.12.2019 |
+|[Release 4.R56]({{< ref "/release-notes/pascomTapi#release-4-r56-08-03-2019">}})| Bugfix Release | 08.03.2019 |
 |[Release 3.R42]({{< ref "/release-notes/pascomTapi#release-3-r42-09-10-2018">}})| Feature Release | 09.10.2018 |

@@ -132,5 +132,6 @@ Wegen des Technologiewechsels von pascom 17 auf 18 und den damit verbundenen Meh
 
 |Version|Release Type|Veröffentlichung|
 |-------|------------|---------------:|
-|[Release 4.R56]({{< ref "/release-notes/pascomTapi">}})| Bugfix Release | 08.03.2019 |
+|[Release 5.R76]({{< ref "/release-notes/pascomTapi#release-5-r76-20-12-2019">}})| Bugfix Release | 20.12.2019 |
+|[Release 4.R56]({{< ref "/release-notes/pascomTapi#release-4-r56-08-03-2019">}})| Bugfix Release | 08.03.2019 |
 |[Release 3.R42]({{< ref "/release-notes/pascomTapi#release-3-r42-09-10-2018">}})| Feature Release | 09.10.2018 |

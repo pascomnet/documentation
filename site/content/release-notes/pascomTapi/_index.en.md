@@ -8,6 +8,19 @@ weight: 1000
 For further information, please refer to our detailed [Installation Guide]({{< ref "/clients/tapi-installation" >}}).
 {{%/notice%}}
 
+## Release 5.R76 (20.12.2019)
+
+**Overview**
+
+- Windows feature updates no longer result in the settings (username, password, server, etc.) being deleted. A new configuration is required when installing the tapi update.
+- Pickups within a Terminal Server installation function correctly again (requires a server update to 18.13 or newer).
+- Special characters, e.g. umlauts etc. within passwords are correctly processed again.
+
+**MODIFICATIONS:**
+
+- [TAPI-20] - TAPI will loose settings after Windows 10 feature update
+- [TAPI-24] - TAPI doesn't accept umlauts and special chars
+- [TAPI-25] - Enhance pickup command with username attribute if xmpp.supervisor is set
 
 ## Release 4.R56 (08.03.2019)
 
