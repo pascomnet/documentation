@@ -8,7 +8,7 @@ weight: 1000
 For further information, please refer to our detailed [Installation Guide]({{< ref "/clients/tapi-installation" >}}).
 {{%/notice%}}
 
-## Release 5.R76 (20.12.2019)
+## Release 5.R76 (19.12.2019)
 
 **Overview**
 
