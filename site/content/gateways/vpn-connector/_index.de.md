@@ -69,3 +69,24 @@ PING 172.16.23.1 (172.16.23.1): 56 data bytes
 64 bytes from 172.16.23.1: icmp_seq=1 ttl=63 time=11.945 ms
 ...
 ```
+
+### Zuverlässigkeit des OpenVPN Client am Windows Server erhöhen
+
+Falls Sie den OpenVPN Client am Windows Server betreiben, kann es vorkommen, dass der VPN Tunnel  nach 24h nicht mehr funktioniert und neugestartet werden muss. Die Verbindung ist zwar noch aktiv, das TAP Interface hat jedoch eine APIPA (169.x.x.x) Adresse und es kann deswegen nicht über den Tunnel kommuniziert werden.
+
+Um die Zuverlässigkeit der Verbindung zu erhöhen, muss die Windows Option "DHCP-Medienerkennung"
+eingeschaltet werden.
+
+Prüfen Sie zunächst den Status der Option "DHCP-Medienerkennung" in der Windows Eingabeaufforderung:
+
+```shell
+netsh interface ipv4 show global
+```
+
+Sollte "DHCP-Medienerkennung" deaktiviert sein, aktivieren Sie diese durch den Befehl:
+
+```shell
+netsh interface ipv4 set global dhcpmediasense=enabled
+```
+
+

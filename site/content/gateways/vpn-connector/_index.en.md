@@ -52,3 +52,22 @@ PING 172.16.23.1 (172.16.23.1): 56 data bytes
 64 bytes from 172.16.23.1: icmp_seq=1 ttl=63 time=11.945 ms
 ...
 ```
+
+### Increase the reliability of the OpenVPN client on a Windows server
+
+If you use the OpenVPN client on the Windows server, the VPN tunnel may not work after 24 hours and must be restarted. The connection is still active, but the TAP interface has an APIPA (169.x.x.x) address and therefore it cannot be reached via the tunnel.
+
+In order to increase the reliability of the connection, the Windows option "DHCP media sense"
+be switched on.
+
+First check the status of the "DHCP media sense" option in the Windows command prompt:
+
+```shell
+netsh interface ipv4 show global
+```
+
+If "DHCP media sense" is deactivated, activate it with the command:
+
+```shell
+netsh interface ipv4 set global dhcpmediasense = enabled
+```
