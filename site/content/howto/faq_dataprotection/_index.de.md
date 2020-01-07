@@ -12,7 +12,7 @@ weight: 10
 
 pascom betreibt sein eigenes Rechenzentrum in Deutschland, Regensburg und verwendet Dienste von AWS in Deutschland, Frankfurt. 
 
-### Welche Daten werden gespeichert ?
+### Welche Daten werden gespeichert?
 
 In der kundenspezifischen Instanz werden Benutzerdaten, Telefondaten, Chatdaten, Mediendaten und Gesprächsaufzeichnungen gespeichert. 
 
