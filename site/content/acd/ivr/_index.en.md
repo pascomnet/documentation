@@ -18,7 +18,8 @@ The IVR could then offer the following options to the user:
 
 ### Process flow of an IVR
 
-When a IVR menu is entered, the following procedures are executed:
+When a IVR menu is entered, the following procedures are executed:  
+
 ![IVR Call Flow](ivr-call-flow.en.png "pascom phone system IVR call flow")
 
 As the first step of the IVR flow, an announcement you choose is played. To learn how to record your own announcements, please see Custom Prompts and Music On Hold. Your announcement could be structured similar to this example:
@@ -49,8 +50,6 @@ Preferably, you should not create nested IVRs that are deeper than two levels. H
 
 In the pascom web interface, select {{< ui-button "ACD" >}} > {{< ui-button "IVR" >}}. To add a new IVR, press {{< ui-button "Add" >}}. To modify an existing IVR, select it from the list and press {{< ui-button "Edit" >}}.
 
-![Screenshot - add IVR](/ivr_add.png?width=100% "add IVR")
-
 |Parameter|Explanation|
 |---------|---------|
 |Title|The title of the IVR menu.
@@ -64,7 +63,7 @@ In the pascom web interface, select {{< ui-button "ACD" >}} > {{< ui-button "IVR
 In the pascom web interface, select {{< ui-button "ACD" >}} > {{< ui-button "IVR" >}}. Select the IVR you wish to config / edit options for and press the {{< ui-button "Entries" >}} button. Here, you can define the available options (and configure the corresponding key) and how they should be handled once selected by the caller:
 
 Press the {{< ui-button "Add" >}} button to create a new entry.
-![Screenshot - create IVR entries](/ivr_entries.png?width=100% "create IVR entries")
+
 
 |Parameter|Explanation|
 |---------|---------|

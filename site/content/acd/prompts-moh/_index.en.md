@@ -8,9 +8,13 @@ weight: 30
  
 {{< description >}}
 
+## Training Video
+
+{{< youtube aby-Ap1zyMM >}} 
+
 ## Concept
 
-During a telephone call, there are a number of points at which you situations where you could use prompts or music on hold. pascom phone systems already come with a number of prompt templates in both German and English. However, is normally better to create your own voice prompts or Music on Hold to welcome and guide your customers or inform them about your business hours. This is particularly useful for creating a professional impression and welcoming [callers to your Contact Center](/en/call-center/ "pascom Contact Center solutions") or central switchboard.
+During a telephone call, there are a number of points at which you situations where you could use prompts or music on hold. pascom phone systems already come with a number of prompt templates in both German and English. However, is normally better to create your own voice prompts or Music on Hold to welcome and guide your customers or inform them about your business hours. This is particularly useful for creating a professional impression and welcoming [callers to your Contact Center](/en/business-phone-system/ "pascom Contact Center solutions") or central switchboard.
 
 {{% notice tip %}}
 If you prefer to create your announcements in a recording studio with the help of professional voice actors, please contact our sales team.
@@ -20,7 +24,7 @@ If you prefer to create your announcements in a recording studio with the help o
 
 ### Adding Voice Prompts
 
-In order to add a new prompt to pascom, select `Advanced > Prompts` in the pascom phone system Web UI and click `Add`. Should you wish to edit an existing prompt, then select the prompt and click `Edit`.
+In order to add a new prompt to pascom, select {{< ui-button "Advanced" >}} > {{< ui-button "Prompts" >}} in the pascom phone system Web UI and click {{< ui-button "Add" >}}. Should you wish to edit an existing prompt, then select the prompt and click {{< ui-button "Edit" >}}.
 
 {{% notice note %}}
 We recommend using a prefix when naming your custom prompts in order to maintain a good overview and to be able to find them more easily later. This prefix could be something like CC-businesshours, where the CC stands for the company name "ChaosConsulting".
@@ -28,9 +32,9 @@ We recommend using a prefix when naming your custom prompts in order to maintain
 
  Firstly, the "placeholder" for the prompt will be added.
 
-Under the **upload** column, you have the option to upload your existing prompts should they be available. 
-After the successfully uploading and saving the custom prompt, the play back symbol will appear in the Play column which enables you to listen to the prompt. If necessary, you can also create a backup copy of this prompt by downloading it to your PC via the download link in the prompt file column.
+Under the **upload** column, you have the option to upload your existing prompts should they be available.   
 
+After the successfully uploading and saving the custom prompt, the play back symbol will appear in the Play column which enables you to listen to the prompt. If necessary, you can also create a backup copy of this prompt by downloading it to your PC via the download link in the prompt file column.
 
 ### Backup your prompts
 
@@ -55,13 +59,13 @@ You can also listen to and download your Voice Prompts by using the pascom comma
 
 ### Adding Additional Languages
 
-As has already been described, English and German are currently available as the installation languages. However, further languages can be added according to your needs, through using the menu tab `Advanced > Languages` and clicking on the `Add` button. Name the new language and enter the abbreviation code for the language. 
+As has already been described, English and German are currently available as the installation languages. However, further languages can be added according to your needs, through using the menu tab {{< ui-button "Advanced" >}} > {{< ui-button "Languages" >}} and clicking on the {{< ui-button "Add" >}} button. Name the new language and enter the abbreviation code for the language. 
 
 Upon saving, your new language will appear in the languages overview list.
 
 ### Managing Music on Hold
 
-The recordings used for your music on hold can be managed in the `Advanced > Music on Hold` menu of the pascom web interface.
+The recordings used for your music on hold can be managed in the {{< ui-button "Advanced" >}} > {{< ui-button "Music on Hold" >}} menu of the pascom web interface.
 {{% notice warning %}}
 Always make sure you do not violate any intellectual property rights when using a particular song for your music on hold. Either use music by artists not covered by collecting societies (such as the German musical performance and reproductions rights protection society: GEMA) or pay the royalties. As the music you will be using is made publicly available by playing it to the caller, not paying the royalties incurs the risk of legal action against you.
 {{% /notice %}}
@@ -71,7 +75,7 @@ Always make sure you do not violate any intellectual property rights when using 
 
 With pascom, you should select whole playlists and not individual songs which should be played. pascom comes with the playlist (class) called **"default"**. It includes song snippets created by Asterisk developers and can be used without having to pay any royalties to GEMA.
 
-Once you have selected a playlist, `Action > Display music` allows you to display or remove individual songs within the playlist.
+Once you have selected a playlist, {{< ui-button "Action" >}} > {{< ui-button "Display Music" >}} allows you to display or remove individual songs within the playlist.
 
 Compatible formats are **WAV** and **MP3** files.
 
@@ -97,26 +101,28 @@ Using it is quite simple. Select your microphone (see drop-down menu "Built-in M
 Don't worry if the recording is not perfect on the first try. Simply press the record button and repeat your text several times in a row. You can cut the recording later by marking the soundtrack at the desired points and pressing the DEL key.
 {{% /notice %}}
 
-Once you are satisfied with the output, select `File -> Export` and create a **WAV (Microsoft 16-bit PCM** file.
-If you want to edit your file later, you should save the project file as well by selecting `File -> Save project`.
+Once you are satisfied with the output, select {{< ui-button "File" >}} > {{< ui-button "Export" >}} and create a **WAV (Microsoft 16-bit PCM** file.
+If you want to edit your file later, you should save the project file as well by selecting {{< ui-button "File" >}} > {{< ui-button "Save Project" >}}.
 
 #### Including Background Music
 
 You can also add background music to the prompts, such as a suitable jingle during the Christmas season etc. Audacity can handle several sound tracks at once.
 
-Record your prompts as described above. Then select `File`> `Import` > `Audio`. Choose the file that contains the desired music and import it. Audacity will then create a second sound track. If you press **Play**, both the recorded voice prompt and the song will be played.
+Record your prompts as described above. Then select {{< ui-button "File" >}} > {{< ui-button "Import" >}} > {{< ui-button "Audio" >}}. Choose the file that contains the desired music and import it. Audacity will then create a second sound track. If you press **Play**, both the recorded voice prompt and the song will be played.
 
 You will be able to hear that the music is so loud it drowns out the the voice prompt. In addition, it might not be desirable for the music and the prompt to start at the same time.
 
-To start the voice prompt a bit later than the background music, position the cursor at the beginning of the voice prompt's sound track and add about three seconds of silence by clicking `Generate` > `Silence`. This way, the background music will start about three seconds before the voice prompt.
+To start the voice prompt a bit later than the background music, position the cursor at the beginning of the voice prompt's sound track and add about three seconds of silence by clicking {{< ui-button "Generate" >}} > {{< ui-button "Silence" >}}. This way, the background music will start about three seconds before the voice prompt.
 
-To reduce the loudness of the background music, use the envelope tool. When the envelope tool is activated while you position your cursor in the sound track and move your mouse up and down, you will notice you an change the volume of the sound track. Repeating this process in several more parts along the sound track will cause Audacity to create an envelope from all the selected positions, indicated by small white dots.
+To reduce the loudness of the background music, use the envelope tool. When the envelope tool is activated while you position your cursor in the sound track and move your mouse up and down, you will notice you an change the volume of the sound track. Repeating this process in several more parts along the sound track will cause Audacity to create an envelope from all the selected positions, indicated by small white dots.  
+
 ![Creating prompts with Audacity](audacity_envelope_editing.png?width=35%)
 
 The result should look similar to this:
+
 ![Prompts with Audactiy](audacity_music.de.png?width=90%)
 
-If you like the result, select `File` > `Export`and create a **WAV (Microsoft) 16-bit PCM** file. The sound tracks will be merged automatically.
+If you like the result, select {{< ui-button "File" >}} > {{< ui-button "Export" >}} and create a **WAV (Microsoft) 16-bit PCM** file. The sound tracks will be merged automatically.
 
-If you want to edit your file later, you should save the project file as well by selecting `File` > `Save project.
+If you want to edit your file later, you should save the project file as well by selecting {{< ui-button "File" >}} > {{< ui-button "Save Project" >}}.
 
