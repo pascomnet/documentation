@@ -38,7 +38,7 @@ Den Auftragsverarbeitungsvertrag finden Sie als PDF-Datei zum Download.
 
 ### Werden meine Daten gesichert?
 
-Alle Instanzen in der pascom.cloud werden täglich gesichert. Jedoch kann nur mit einer Premium Lizenz die Widerherstellung übder den pascom Support beauftragt werden.
+Alle Instanzen in der pascom.cloud werden täglich gesichert. Jedoch kann nur mit einer Premium Lizenz die Widerherstellung über den pascom Support beauftragt werden.
 
 ### Wie oft werden Updates und Upgrades eingespielt?
 

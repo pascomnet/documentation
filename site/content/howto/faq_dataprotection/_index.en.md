@@ -8,57 +8,57 @@ weight: 10
  
 {{< description >}}
 
-### Wo werden die Daten gespeichert?
+### Where is the data stored? 
 
-pascom betreibt sein eigenes Rechenzentrum in Deutschland, Regensburg und verwendet Dienste von AWS in Deutschland, Frankfurt. 
+pascom operates its own data centre in Regensburg, Germany and utilises services from AWS (Amazon Web Services) in Frankfurt, Germany. 
 
-### Welche Daten werden gespeichert ?
+### Which data is stored?
 
-In der kundenspezifischen Instanz werden Benutzerdaten, Telefondaten, Chatdaten, Mediendaten und Gesprächsaufzeichnungen gespeichert. 
+Within a customer specific instance, data including user data, telephony data, chat data, media data and call recordings are stored.
 
-### Wie funktioniert das Löschverfahren?
+### How does the deletion process work?
 
-Es findet eine Löschung der Kundeninstanz und somit aller verbundenen Daten, bei Beendigung einer pascom Lizenz, statt. Gleiches gilt, wenn die Instanz über my.pascom vom Kunden gelöscht wird. 
+A removal / deletion of the customer instance and therefore all associated data occurs when the pascom licence is terminated. The same applies when the instance is removed by the customer via my.pascom.net. 
 
-### Wie sind die technischen und organisatorischen Maßnahmen (ToM) von pascom (Art. 32 DS-GVO)?
+### What are pascom's Technical and Organisational Measures (ToM) (Art. 32 GDPR / DS-GVO)
 
-Die technischen und organisatorischen Maßnahmen finden Sie als PDF-Datei zum Download.  
+pascom's Technical and Organisational Measures can be found in the below downloadable file.  
 
-**pascom ToMs [herunterladen](pascom_toms_de.pdf).**
+**pascom ToMs [download](pascom_toms_en.pdf).**
 
-### Gibt es eine Vorlage für einen Auftragsverarbeitungsvertrag (Art. 28 DS-GVO)?
+### Is there a template for the order processing contract (Art. 28 GDPR / DS-GVO)?
 
-Den Auftragsverarbeitungsvertrag finden Sie als PDF-Datei zum Download.  
+The order processing contract can be found in the downloadable PDF below:
 
-**pascom Datenverarbeitungsvertrag [herunterladen](pascom_dataprotectioncontract_de.pdf).**
+**pascom data processing contract [download](pascom_dataprotectioncontract_en.pdf).**
 
-### Wo finde ich Informationen zu Datenschutzrichtlinien, Beauftragten und Subunternehmer?
+### Where can I find information regarding data protection guidelines, contractors and sub-contractors?
 
-**Alle Infos finden Sie auf der pascom [Datenschutzseite](https://www.pascom.net/de/datenschutz/)**
+**All information can be found on the [pascom data protection page](https://www.pascom.net/en/data-protection/)**
 
-### Werden meine Daten gesichert?
+### Will my data be backed up?
 
-Alle Instanzen in der pascom.cloud werden täglich gesichert. Jedoch kann nur mit einer Premium Lizenz die Widerherstellung übder den pascom Support beauftragt werden.
+All pascom.cloud phone system instances are backed up daily. However, only premium subscription licence customers can request a restoration via the pascom support.
 
-### Wie oft werden Updates und Upgrades eingespielt?
+### How often are upgates and upgrades deployed?
 
-Grundsätzlich werden alle Wartungsarbeiten über [status.pascom.net](https://status.pascom.net/) angekündigt. Hierzu zählen auch Updates und Upgrades. Die Häufigkeit ist abhängig von Kritikalität und Release Zyklen.
+In principal all maintenance work is announced via [status.pascom.net](https://status.pascom.net/). This includes updates and upgrades. The frequency is dependant on criticality and the pascom release cycle.
 
-### Ist die Übertragung zwischen pascom und Endgeräten verschlüsselt?
+### Is the transmission between pascom and the endpoints encrypted?
 
-Alle Geräte und Clients kommunizieren ausschließlich über verschlüsselte Protokolle mit der zentralen pascom Instanz.
+All devices and clients communicate with the central pascom instance exclusively via an encrypted protocol.
 
-### Ist der pascom IT Betrieb zertifiziert?
+### Is the pascom IT Infrastructure certified?
 
-Der IT Betrieb ist nach ISIS12 zertifiziert. Das pascom eigene Rechenzentrum ist nach TÜVIT zertifiziert.
+pascom's IT infrastructure is certified according to ISIS12. pascom's own data centre is zertified according to TüVIT.
 
-**[Download](pascom_isis12_de.pdf) ISIS12 Zertifikat.**  
-**[Download](pascom_tuevit_de.pdf) TÜVIT Zertifikat.**
+**[Download](pascom_isis12_de.pdf) ISIS12 Certificate.**  
+**[Download](pascom_tuevit_de.pdf) TÜVIT Certificate.**
 
-### Werden die bereitgestellen Dienste überwacht?
+### Are the provided services monitored?
 
-Alle zentralen Komponenten der pascom.cloud werden 24-7 überwacht.
+All central components of the pascom.cloud are monitored 24 / 7.
 
-### Wie kann ich den aktuellen Zustand der von pascom bereitgestellten Dienste einsehen?
+### How can I view the current status of pascom provided services?
 
-Den aktuellen Zustand finden Sie unter [status.pascom.net](https://status.pascom.net/). Hier gibt es auch die Funktion, die Statusseite zu abonnieren. Dadurch werden Sie automatisch über Störungen und geplante Wartungen informiert. 
+The current live status can be viewed on [status.pascom.net](https://status.pascom.net/). The option of subscribing to the status page is also available on this page. This will automatically inform you of any downtime and upcoming planned maintenance work.
