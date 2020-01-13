@@ -30,7 +30,7 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 * [CL-1018] - Windows 10 (ab 1903): Check für die Mikrofon Privatsphäre Einstellungen funktioniert nicht. Der Benutzer wird daher nicht automatisch gewarnt wenn der Client keinen Zugriff auf das Mikrofon hat. Muss manuell geprüft werden.
 
 
-## Release 60.R871 (13.01.2020)
+## Release 60.R872 (13.01.2020)
 
 **Auf einen Blick**
 

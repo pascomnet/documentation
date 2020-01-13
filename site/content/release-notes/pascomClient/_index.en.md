@@ -29,7 +29,7 @@ These problems are known to us and we are already working on a solution
 
 * [CL-1018] - Windows 10 (since 1903): Check for the microphone privacy settings does not work. The user is therefore not automatically warned if the client does not have access to the microphone. Must be checked manually.
 
-## Release 60.R871 (13.01.2020)
+## Release 60.R872 (13.01.2020)
 
 **Overview**
 
