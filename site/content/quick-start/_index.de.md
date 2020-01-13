@@ -2,6 +2,7 @@
 title: Quick Start
 description: Sie wissen nicht womit Sie starten sollen? Legen Sie mit dem pascom Quick-Start-Guide einen Raketenstart hin! 
 icon: "fas fa-rocket"
+btnDesc: Los Gehts!
 type : ""
 weight: 1
 ---

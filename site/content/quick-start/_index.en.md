@@ -2,6 +2,7 @@
 title: Quick Start
 description: Not sure how to start with pascom? Get off to a rocket start with our Quick-Start-Guide! 
 icon: "fas fa-rocket"
+btnDesc: Lets Go!
 type : ""
 weight: 1
 ---
