@@ -28,11 +28,81 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 {{% /notice %}}
 
 * [CL-1018] - Windows 10 (ab 1903): Check für die Mikrofon Privatsphäre Einstellungen funktioniert nicht. Der Benutzer wird daher nicht automatisch gewarnt wenn der Client keinen Zugriff auf das Mikrofon hat. Muss manuell geprüft werden.
-* [CL-1009] - Windows 10:  Native Benachrichtigungen funktionieren in seltenen Situationen nicht richtig.
-* [CL-800] - iOS: In-Prefix des Amtes steht beim eingehenden Anruf vor der Rufnummer.
-* [CL-491] - Linux: Auswahl der Audio Geräte funktioniert nicht - nur pulse ist benutzbar.
-* [CL-1002] - Linux: Ab Ubuntu 18.10 kommt es zu 100% CPU Auslastung nach einem Anruf.
-* [CL-957] - Android: In seltenen Fällen kommt es noch zu Problemen mit dem Connection Service. Beispielsweise "Auflegen am Lenkrad im Auto"
+
+
+## Release 60.R871 (13.01.2020)
+
+**Auf einen Blick**
+
+- Wenn das Softphone die Verbindung verliert, registriert es sich wieder deutlich schneller.
+- Die Kontaktliste kann nun wieder nach den Server konfigurierten Rollen gefiltert werden.
+- Linux: Der Client verbraucht nicht mehr 100% CPU nach einem Telefonat auf Ubuntu ab 18.10. (Known Issue CL-1002)
+- Linux: Die Auswahl von Audiogeräten zeigt nun leserliche Namen und funktioniert wieder. (Known Issue CL-491)
+- Linux: Kompatibilität zu verschiedenen Linux Distributionen / Versionen verbessert.
+- Windows: Native Benachrichtungen sind zuverlässiger. (Known Issues CL-1009)
+- Windows: Der Client startet nun automatisch beim Systemstart. (Option in den Client Einstellungen und bei der Installation)
+- Android: Connection-Service Implementation verbessert. (Known Issues CL-957)
+- iOS: Amtspräfix wird nun nicht mehr vor der Rufnummer gezeigt, bei einem eingehenden Anruf. (Known Issues CL-800)
+
+**ÄNDERUNGEN:**
+
+* [CL-357] - Client doesn't remember pdf watcher folder after closing settings
+* [CL-394] - Inconsistent behavior for adding a call
+* [CL-426] - Speedup client installation time on windows
+* [CL-431] - Improve registration of softphone after instance/xmpp restart
+* [CL-491] - pascom Client shows wrong audio devices on Linux
+* [CL-585] - Ask user if setup should create autostart link on windows
+* [CL-676] - Client crashes on older Nvidia GPUs during QSGDefaultDistanceFieldGlyphCache creation
+* [CL-677] - Client crashes on older ATI / AMD GPUs during QOpenGLContext destructor
+* [CL-688] - Wrong device used for team pickup
+* [CL-755] - Implement hardened runtime / sandboxing in pascom Client until 2020
+* [CL-783] - Automate Upload to the iOS App Store
+* [CL-793] - Speed up Settings Screen
+* [CL-800] - iOS client shows trunk prefix in call push notification
+* [CL-871] - Only show applicable Rendering Modes on MacOS/Linux Clients
+* [CL-891] - Smart Filters, Milestone 1 - Filter Roles
+* [CL-906] - Apple phonebook contact not populated after switching to settings
+* [CL-911] - Open 'join group' info from group details
+* [CL-917] - Mark phonebookentry as favorite broken
+* [CL-919] - Store pin in groupparticipant table
+* [CL-932] - Improve Android Connection Service Integration
+* [CL-947] - Match different ringing icons
+* [CL-951] - Impossible to invite newly created user into the group
+* [CL-952] - Improve client resynchronisation logic
+* [CL-957] - Sometimes, a connection service screen shows up despite self managed is enabled
+* [CL-967] - Custom status not immediately visible
+* [CL-972] - MdSoftphone::findCall(PhonecallPtr) breaks mute and handsfree feature
+* [CL-978] - Client requests prohibited contacts
+* [CL-982] - Can't copy phonebook contact to private phonebook if added to group before
+* [CL-986] - Update to Qt 5.12.6
+* [CL-987] - Include type in monitor init transfer
+* [CL-991] - Call list layout broken
+* [CL-992] - Details of favorite phone book contact not updated
+* [CL-993] - Bring back details and chat in ringing screen
+* [CL-995] - Message counter wrong in group edgecase
+* [CL-1001] - Windows native notification shows group avatar
+* [CL-1002] - Linux Client freeze/high-cpu after each call starting from ubuntu 18.10
+* [CL-1003] - Fix phonebook UI glitches on mobile clients
+* [CL-1005] - Fix fpic and other build problems on modern linux systems
+* [CL-1009] - Problems with Windows Notification Center
+* [CL-1012] - Roster not shown after new log in 
+* [CL-1016] - Client settings partly broken
+* [CL-1017] - Linux client crashes on startup
+* [CL-1020] - Crash due to invalid read in winFileTransfer notification
+* [CL-1023] - Linux: Check which system libraries should be used
+* [CL-1028] - Chat view is broken if you put the app into background and bring it back again
+* [CL-1032] - Windows native notification not shown for missed voicemail call
+* [CL-1045] - Ringback tone during call on mobile
+* [CL-1046] - Auto sending of fax setting disabled after client restart
+* [CL-1053] - Can't add favorite contact to group 
+* [CL-1055] - Client crashes when there is no matching ContactFactory
+* [CL-1057] - Logout or restart causes problems with smart filter in roster
+* [CL-1060] - NSIS 3.05 breaks pascom client setup script
+* [CL-1066] - Name of phonebook contact missing in group overview
+* [CL-1069] - Sound for incoming message is played multiple times in a row
+* [CL-1070] - Client allows to add phonebook contacts to 'removed' groups 
+* [CL-1075] - Open android phonebook entry is broken
+
 
 ## Release 59.R726 (26.11.2019)
 
