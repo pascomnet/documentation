@@ -1,5 +1,5 @@
 ---
-title: Yealink W52P DECT System
+title: Yealink DECT System
 description: Integrate your Yealink DECT system with your pascom phone system.
 weight: 40
 ---
@@ -13,7 +13,7 @@ weight: 40
 
 ## Overview
 
-The Yealink W52P DECT solution is ideally suited for small businesses who require only a small number of mobile handsets (maximum 5).
+The Yealink DECT solution is ideally suited for small businesses who require only a small number of mobile handsets (maximum 5).
 
 ### Preparation
 

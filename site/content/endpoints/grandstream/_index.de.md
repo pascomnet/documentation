@@ -1,5 +1,5 @@
 ---
-title: Grandstream Tischtelefone GXP- und GXV-Serie
+title: Grandstream Tischtelefone
 description: Integrieren Sie Ihre Grandstream IP-Tischtelefone in die pascom.
 weight: 50
 ---
@@ -7,33 +7,6 @@ weight: 50
 {{< doctype "both"  >}}
 
 ![Grandstream GXP2160](grandstream_GXP2160.jpg?width=400px)
-
-## Kompatibilität
-
-|Provisionierung|Firmware-Verwaltung|Fernsteuerung über Desktop-Client|pascom Menü|
-|---|---|---|---|
-|ja|ja|ja|nein|
-
-**Provisionierung**: Das IP-Telefon wird über die pascom verwaltet.<br>
-**Firmware-Verwaltung**: Die Firmware kann über pascom aktualisiert werden.<br>
-**Fernsteuerung über Desktop-Client**: Gespräche können über den Desktop-Client gestartet werden.<br>
-**pascom Menü**: Das pascom Menü ist nicht auf dem IP-Telefon hinterlegt.
-
-## Unterstütze IP-Telefone
-
-Folgende IP-Telefone werden unterstützt:
-
-+ Grandstream GXP 1610
-+ Grandstream GXP 1615
-+ Grandstream GXP 1620
-+ Grandstream GXP 1625
-+ Grandstream GXP 1628
-+ Grandstream GXP 1630
-+ Grandstream GXP 2130
-+ Grandstream GXP 2135	 
-+ Grandstream GXP 2160
-+ Grandstream GXP 2170	 
-+ Grandstream GXV 3240
 
 
 ## Provisionierung
@@ -188,13 +161,3 @@ Die gewünschte Firmware kann hinzugefügt werden unter {{< ui-button "Endgerät
 
 Die Firmware kann aus den IP-Endgeräten über {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} aktualisiert werden. Wählen Sie die Zielgeräte in der Geräteliste mit Häkchen aus und klicken Sie auf {{< ui-button "Aktion" >}} > {{< ui-button "Firmware ausrollen" >}}. Nun erhalten Sie eine Übersicht der gewählten Geräte, in der Sie die Zielfirmware auswählen können. Anschließend klicken Sie auf {{< ui-button "Firmware update" >}} um die gewählte Firmware auszurollen.
 
-
-Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es uns leider nicht möglich jede zu testen, so dass es sein kann, dass manche Firmware-Versionen pascom Funktionen nicht unterstützen. Daher finden Sie hier eine Liste der Firmwares die von uns bereits getestet wurden:
-
-|Modell|Empfohlene Firmware|
-|---|---|
-|GXP 1630|1.0.4.55|
-|GXP 2130|1.0.7.25|
-|GXP 2135|1.0.7.97|
-|GXP 2160|1.0.7.97|
-|GXV 3240|1.0.3.158|

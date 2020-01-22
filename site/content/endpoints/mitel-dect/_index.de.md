@@ -1,6 +1,6 @@
 ---
-title: Mitel/Aastra DECT-System
-description: Integrieren Sie Ihr Mitel/Aastra DECT-System in die pascom.
+title: Mitel DECT-System
+description: Integrieren Sie Ihr Mitel DECT-System in die pascom.
 weight: 60
 ---
 
@@ -8,11 +8,11 @@ weight: 60
 
 {{< description >}}
 
-![Aastra/ Mitel DECT RFPs](Aastra-Mitel-DECT-System.png?width=50%)
+![Mitel DECT RFPs](Aastra-Mitel-DECT-System.png?width=50%)
 
 ## Überblick
 
-Ein Mitel/Aastra-SIP-Dect System besteht aus mindestens einer und bis zu 254 Basisstationen. Die Basisstationen werden an das IP-Telefonnetzwerk angeschlossen und kommunizieren per SIP mit der [pascom VoIP Software](https://www.pascom.net/de/mobydick-voip/ "pascom VoIP Software"). Zusätzlich gleichen sich die Basen per Funk (DECT) ab um ein Wechseln der Basis während des Telefonates zu ermöglichen. Dabei muss nicht jede Basis jede andere Basis per Funk erreichen können aber alle Basen müssen miteinander verkettet sein. Es dürfen keine Inseln entstehen.
+Ein Mitel-SIP-Dect System besteht aus mindestens einer und bis zu 254 Basisstationen. Die Basisstationen werden an das IP-Telefonnetzwerk angeschlossen und kommunizieren per SIP mit der [pascom VoIP Software](https://www.pascom.net/de/mobydick-voip/ "pascom VoIP Software"). Zusätzlich gleichen sich die Basen per Funk (DECT) ab um ein Wechseln der Basis während des Telefonates zu ermöglichen. Dabei muss nicht jede Basis jede andere Basis per Funk erreichen können aber alle Basen müssen miteinander verkettet sein. Es dürfen keine Inseln entstehen.
 
 Eine Basis übernimmt die Verwaltung der Benutzer und die Verbindung zur pascom. Diese Basis ist der Master. Der Master startet die Software **OpenMobility Manager** kurz **OMM**. Diese dient zur Verwaltung und hält eine Weboberfläche bereit. Fällt der Master aus kann dessen Arbeit von einer anderen, zuvor festgelegten, Failover-Basis übernommen werden.
 

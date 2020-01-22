@@ -1,5 +1,5 @@
 ---
-title:  Snom D1xx D3xx D7xx Series Desktop Phones
+title:  Snom Desktop Phones
 description: Integrate your Snom VoIP phones into your pascom business phone system
 weight: 10
 ---
@@ -9,19 +9,6 @@ weight: 10
 {{< description >}}
 
 ![snom D300/ D700 Series](snom-series.png)
-
-## Compatability
-
-With [our VoIP Software] (https://www.pascom.net/en/mobydick-voip/ "pascom VoIP phone systems") it is possible to centrally and automatically configure Snom IP Telephones including the Snom 3xx, 7xx, D3xx and D7xx series of phones.
-
-|Provisioning|Firmware Management|Desktop Client CTI Control|pascom Menu|
-|---|---|---|---|
-|yes|yes|yes|yes|
-
-**Provisioning**: The IP phone is manageable via the PBX web UI.<br>
-**Firmware Management**: Firmware can be managed and updated via the PBX web UI.<br>
-**Desktop Client CTI Control**: The desktop UC client can remotely control the phone, i.e. to start calls.<br>
-**pascom Menu**: A phone touch key will be assigned to access the pascom Menu.
 
 ## Snom Provisioning
 
@@ -199,59 +186,4 @@ The desired firmware can be uploaded via the the {{< ui-button "Devices" >}} > {
 
 Firmware updates can be rolled out via the {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}} menu. Simply select the desired Snom Endpoints from the list via the check boxes and click {{< ui-button "Actions" >}} > {{< ui-button "Roll out firmware" >}}. This will open an overview of all selected devices to which the new firmware version should be rolled out to. Click {{< ui-button "Firmware Update" >}} to roll out the desired firmware version.
 
-### Supported Models
 
-Please refer to the following list of Snom VoIP phone models which are supported by pascom:
-
-{{% notice warning %}}
-Models from the Snom 3xx series are currently not functional in a pascom cloud solution and can only be deployed in an on-premise solution.
-{{% /notice %}}
-
-|Models||
-|---|---|
-|Snom D120|Snom D715|
-|Snom D315|Snom D725|
-|Snom D345|Snom D735|
-|Snom D375|Snom D745|
-|Snom D385|Snom D765|
-
-<!--- |Modell|getestete Firmware-Version|
-|---|---|
-|Snom D120|10.1.33.33|
-|Snom D315| 8.9.|
-|Snom D345|8.9.3.40|
-|Snom D375|8.9.3.60|
-|Snom D385|10.1.33.33|
-|Snom D715|8.9.3.80|
-|Snom D725|8.9.3|
-|Snom D735|10.1.33.33|
-|Snom D745|8.9.3.80|
-|Snom D765|8.9.3|
-
-alt:
-|Snom D785|10.1.20.0|
-|Snom 710|8.7.3.25.5|
-|Snom 720|8.7.3.25.5|
-|Snom 760|8.7.3.25.5|
-|Snom 821|?| --->
-
-{{% notice note %}}
-As there is a vast range of firmware versions available for the different IP telephones, it is not possible for us to test each version. That means that it could be the case that pascom does not support some firmware versions. 
-{{% /notice %}}
-
-{{% notice info %}}
-Due to the current security standards, Snom 3xx IP telephones will not be supported in the upcoming pascom 19 version.
-{{% /notice %}}
-
-|Model|Firmware|
-|---|---|
-|Snom 300|8.7.3.25.5|
-|Snom 320|8.7.3.25.5|
-|Snom 360|8.7.3.25.5|
-|Snom 370|8.7.3.25.5|
-|Snom 710|8.7.3.25.5|
-|Snom 715|8.7.8.8.2|
-|Snom 720|8.7.3.25.5|
-|Snom 760|8.7.3.25.5|
-|Snom D345|8.9.3.40|
-|Snom D715|8.9.3.60|

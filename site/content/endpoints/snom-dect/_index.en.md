@@ -1,5 +1,5 @@
 ---
-title: Snom M700 DECT System
+title: Snom DECT System
 description: Integrate your Snom DECT System with your pascom IP PBX solution.
 weight: 20
 ---

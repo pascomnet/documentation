@@ -1,5 +1,5 @@
 ---
-title: Yealink T4 and T5 Series Desktop Phones
+title: Yealink Desktop Phones
 description: How to integrate your Yealink T4 or T5 Series Desktop SIP phones with your pascom phone system.
 weight: 30
 ---
@@ -11,17 +11,6 @@ weight: 30
 
 ![Yealink T46G](yealink-t4-series1.jpg?width=400px "pascom Yealink T46 VoIP phone")
 
-
-## Compatibility
-
-|Provisioning|Firmware Management|Desktop Client CTI Control|pascom Menu|
-|---|---|---|---|
-|yes|yes|yes|yes|
-
-**Provisioning**: The IP phone is manageable via the PBX web UI.<br>
-**Firmware Management**: Firmware can be managed and updated via the PBX web UI.<br>
-**Desktop Client CTI Control**: The desktop UC client can remotely control the phone, i.e. to start calls.<br>
-**pascom Menu**: A phone touch key will be assigned to access the pascom Menu.
 
 ## Yealink Provisioning
 
@@ -216,12 +205,4 @@ The desired firmware can be uploaded via the the {{< ui-button "Devices" >}} > {
 
 Firmware updates can be roll out via the {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}} menu. Simply select the desired Yealink Endpoints from the list via the check boxes and under {{< ui-button "Actions" >}} > {{< ui-button "Roll out firmware" >}}. This will open an overview of all selected devices to which the new firmware version should be roll out to. Click {{< ui-button "Firmware Update" >}} to roll out the desired firmware version.
 
-#### Recommended Firmware 
 
-As there are numerous Firmware versions available for the varying IP endpoint models, it is unfortunately not possible to test them all. Therefore, it is possible that some firmware versions may not support all phone system functions. If in doubt, please refer to below list of already tested firmware versions:
-
-|Model|Firmware|
-|---|---|
-|T41P|36.81.0.110|
-|T46G|28.81.0.110, 28.73.0.50|
-|T46S|66.81.0.20, 66.81.0.110|

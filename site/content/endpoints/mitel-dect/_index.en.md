@@ -1,5 +1,5 @@
 ---
-title: Mitel/Aastra DECT Systems
+title: Mitel DECT Systems
 description: How to integrate your Mitel / Aastra DECT system with your pascom phone system.
 weight: 60
 ---
@@ -8,11 +8,11 @@ weight: 60
 
 {{< description >}}
 
-![Aastra/ Mitel DECT RFPs](Aastra-Mitel-DECT-System.png?width=50%)
+![Mitel DECT RFPs](Aastra-Mitel-DECT-System.png?width=50%)
 
 ## Overview
 
-An Aastra SIP-DECT system can have any number from 1 to 254 base stations. The base stations are connected to the IP telephone network and communicate with your [pascom VoIP Software](https://www.pascom.net/en/mobydick-voip/ "pascom VoIP phone systems") solution using the SIP protocol. The base stations also communicate with one another using DECT to allow for switching between base stations during a call. A single base station does not have to connect to every other base station, but all base stations must be able to form a chain. Isolated groups of base stations should not be used.
+An Mitel SIP-DECT system can have any number from 1 to 254 base stations. The base stations are connected to the IP telephone network and communicate with your [pascom VoIP Software](https://www.pascom.net/en/mobydick-voip/ "pascom VoIP phone systems") solution using the SIP protocol. The base stations also communicate with one another using DECT to allow for switching between base stations during a call. A single base station does not have to connect to every other base station, but all base stations must be able to form a chain. Isolated groups of base stations should not be used.
 
 One base station takes care of the user management and the connection to pascom. The master starts the **OpenMobility Manager (OMM)**. This software is used for management tasks and comes with a web interface. If a master base station fails, another base station that was previously specified can take over the role of the master.
 

@@ -1,5 +1,5 @@
 ---
-title: Yealink W52P DECT-System
+title: Yealink DECT-System
 description: Integrieren Sie Ihr Yealink DECT-System in die pascom.
 weight: 40
 ---
@@ -10,10 +10,6 @@ weight: 40
 
 ![Yealink W52P](yealink_w52p_dect.png?width=300px)
 
-
-## Übersicht
-
-Die Basisstation W52P ist ideal für kleine Unternehmen geeignet, die nur eine geringe Anzahl an Handsets mit bis zu 5 Mobilteilen benötigen.
 
 ### Vorbereitung
 

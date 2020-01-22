@@ -1,5 +1,5 @@
 ---
-title: Yealink Tischtelefone T4- und T5-Serie
+title: Yealink Tischtelefone
 description: Integrieren Sie Ihre Yealink IP-Tischtelefone in die pascom.
 weight: 30
 ---
@@ -10,18 +10,6 @@ weight: 30
 {{< description >}}
 
 ![Yealink T46G](yealink-t4-series1.jpg?width=400px)
-
-
-## Kompatibilität
-
-|Provisionierung|Firmware-Verwaltung|Fernsteuerung über Desktop-Client|pascom Menü|
-|---|---|---|---|
-|ja|ja|ja|ja|
-
-**Provisionierung**: Das IP-Telefon wird über die pascom verwaltet.<br>
-**Firmware-Verwaltung**: Die Firmware kann über pascom aktualisiert werden.<br>
-**Fernsteuerung über Desktop-Client**: Gespräche können über den Desktop-Client gestartet werden.<br>
-**pascom Menü**: An einer Taste am Telefon wird das pascom Menü hinterlegt.
 
 
 ## Provisionierung
@@ -235,12 +223,4 @@ Die gewünschte Firmware kann hinzugefügt werden unter {{< ui-button "Endgerät
 
 Die Firmware kann über {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} aktualisiert werden. Wählen Sie die Zielgeräte in der Geräteliste mit Häkchen aus und klicken Sie auf {{< ui-button "Aktion" >}} > {{< ui-button "Firmware ausrollen" >}}. Nun erhalten Sie eine Übersicht der gewählen Geräte, in der Sie die Zielfirmware auswählen können. Anschließend klicken Sie auf {{< ui-button "Firmware update" >}} um die gewählte Firmware auszurollen.
 
-### Empfohlene Firmware
 
-Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es uns leider nicht möglich jede zu testen, so dass es sein kann, dass manche Firmware-Versionen pascom Funktionen nicht unterstützen. Daher finden Sie hier eine Liste der Firmwares die von uns bereits getestet wurden:
-
-|Modell|Firmware|
-|---|---|
-|T41P|36.81.0.110|
-|T46G|28.81.0.110, 28.73.0.50|
-|T46S|66.81.0.20, 66.81.0.110|

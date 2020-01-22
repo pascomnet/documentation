@@ -1,5 +1,5 @@
 ---
-title: Grandstream GXP / GXV Series Desktop Phones
+title: Grandstream Desktop Phones
 description: How to integrate your Grandstream IP Telephones in your pascom phone system.
 weight: 50
 ---
@@ -7,33 +7,6 @@ weight: 50
 {{< doctype "both"  >}}
 
 ![Grandstream GXP2160](grandstream_GXP2160.jpg?width=400px "Grandstream VoIP Phones")
-
-## Compatibility
-
-|Provisioning|Firmware Management|Desktop Client CTI Control|pascom Menu|
-|---|---|---|---|
-|yes|yes|yes|no|
-
-**Provisioning**: The IP phone is manageable via the PBX web UI.<br>
-**Firmware Management**: Firmware can be managed and updated via the PBX web UI.<br>
-**Desktop Client CTI Control**: The desktop UC client can remotely control the phone, i.e. to start calls.<br>
-**pascom Menu**: A phone touch key will be assigned to access the pascom Menu.
-
-## Supported Grandstream IP Phones
-
-The following Grandstream VoIP phones are supported by pascom:
-
-+ Grandstream GXP 1610
-+ Grandstream GXP 1615
-+ Grandstream GXP 1620
-+ Grandstream GXP 1625
-+ Grandstream GXP 1628
-+ Grandstream GXP 1630
-+ Grandstream GXP 2130
-+ Grandstream GXP 2135	 
-+ Grandstream GXP 2160
-+ Grandstream GXP 2170	 
-+ Grandstream GXV 3240
 
 
 ## Configuration
@@ -182,14 +155,3 @@ The desired firmware can be uploaded via the the {{< ui-button "Devices" >}} > {
 
 Firmware updates can be roll out via the {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}} menu. Simply select the desired Grandstream Endpoints from the list via the check boxes and under {{< ui-button "Actions" >}} > {{< ui-button "Roll out firmware" >}}. This will open an overview of all selected devices to which the new firmware version should be roll out to. Click {{< ui-button "Firmware Update" >}} to roll out the desired firmware version.
 
-#### Recommended Firmware
-
-As there are numerous Firmware versions available for the varying IP endpoint models, it is unfortunately not possible to test them all. Therefore, it is possible that some firmware versions may not support all phone system functions. If in doubt, please refer to below list of already tested firmware versions:
-
-|Model|Recommended Firmware|
-|---|---|
-|GXP 1630|1.0.4.55|
-|GXP 2130|1.0.7.25|
-|GXP 2135|1.0.7.97|
-|GXP 2160|1.0.7.97|
-|GXV 3240|1.0.3.158|

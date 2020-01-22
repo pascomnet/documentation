@@ -1,5 +1,5 @@
 ---
-title: Snom M700 DECT-System
+title: Snom DECT-System
 description: Integrieren Sie Ihr Snom DECT-System in die pascom.
 weight: 20
 ---
