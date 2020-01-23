@@ -1,6 +1,6 @@
 ---
 title: pascom VPN Connector
-description: Connect your local network to your pascom.cloud phone system instance or self hosted pascom PBX via VPN Sie Ihr lokales Netzwerk via VPN mit Ihrer Instanz in der pascom.cloud oder Ihrem lokalen pascom Server
+description: Connect your local network to your pascom.cloud phone system instance or self hosted pascom PBX via VPN
 weight: 10
 ---
 
