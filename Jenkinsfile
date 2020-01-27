@@ -17,9 +17,9 @@ node('docker') {
             break
         
         case 'test':
-            baseUrl = 'https://www.test.pascom.net/doc/'
-            mypascom = 'https://my.test.pascom.net'
-            homepage = 'https://www.test.pascom.net'
+            baseUrl = 'https://www.pascom-test.net/doc/'
+            mypascom = 'https://my.pascom-test.net'
+            homepage = 'https://www.pascom-test.net'
             doc = 'doc-test'
             break
     }
