@@ -51,6 +51,7 @@ This section explains the changes that you must consider when migrating to pasco
 * **Swap** is now disabled by default. This can break virtualised setups with memory lower then 1 GB, please configure more memory in this case.  
 * **Call groups** are automatically converted to teams. The callgroup feature has been removed and customers should configure teams instead.  
 * Port forwarding for **UDP 3478** is now mandatory, otherwise **video** tools will not work.
+* A new provisioning is required for **beronet Gateways**.
 
 
 ## Known Issues
@@ -59,14 +60,74 @@ This section explains the changes that you must consider when migrating to pasco
 These problems are already known to us in pascom 19 and we are currently working on a solution
 {{% / notice%}}
 
-* [MD-11810] - Beronet support is not working
-* [MD-11842] - SIP headers can not be changed by the admin
-* QSC Trunks do not work in all cases
-* The announcement system does not work
 * Hardware phone displays are not updated after attendant transfer and pickup
-* [MD-11892] - Grandstream ATA HT802 in New MAC Range C074AD * are recognized as a phone, not a gateway
 
 
+## Release 19.03 (29.01.2020)
+
+**Overview**
+
+* Added generic IP endpoint provisioning
+* beronet Gateways and trunks function again
+* Snom Basis configuration now uses XML format
+* SIP Header can once again be manually modified
+* PJSIP Header for trunks can now directly configured within the Trunk account options, and no longer in scripts (e.g. def_outbound).
+* External and internal ring tones (via Alert-info-header) are now usable
+* Intercom groups function again
+* Aastra/Mitel DECT Handsets no longer display failed registration during on going calls.
+* Grandstream Gateways with the new MAC address are now added correctly
+* Resolved the Grafana migration issues (missing forwarding and broken login)
+* Mail-to-Fax configuration can now differentiate between SSL, StartTLS and Plain
+* TAPI Pickups now also work for multiple lines
+* Modified Snom Basis configurations now migrate "Extension" button to "BLF" in order to enable Pickups
+* pascom logos are now set as the background image when provisioning various Snom and Yealink devices
+* Correct the QSC/Plusnet SIP provider template
+* Added T-M-Net SIP provider template
+* Added magenta.at SIP provider template
+
+**Modifications:**
+
+- [MD-11087] - Optimize Snom M700 config
+- [MD-11721] - Easybell contact header
+- [MD-11829] - Plusnet QSC trunk has wrong options in pascom 19
+- [MD-11832] - Remove swap from grafana in pascom 19
+- [MD-11968] - Increase maxlength of external_group_number input
+- [MD-11847] - Remove 'type' column in team overview
+- [MD-11856] - Mitel Aastra DECT shows that its unregistered
+- [MD-11927] - Automatically configure lxc soft memory limit
+- [MD-11952] - CSUI shows no error if FQDN is missing
+- [MD-11863] - Asterisk opens a lot of tcp connections, saturates kamailio
+- [MD-11919] - Kamailio does not rewrite Supported: header correctly
+- [MD-11924] - Wrong context in sip_ipdevice.conf
+- [MD-11892] - Grandstream HT802 ATA gateway (with new MAC) created as phone
+- [MD-11812] - Grafana of instance not accessible after update sometimes
+- [MD-11722] - Improve mail to fax configuration
+- [MD-11720] - Add language selector to instance wizard admin and account pages
+- [MD-11659] - Pickup is broken in multiline tapi setup
+- [MD-8588] - Auto-provision logos on supported Snom and Yealink phones
+- [MD-10822] - Multidial on trunks with direct transfer fails when external device is called
+- [MD-11853] - Improve layout of pascom logo in login + setup view
+- [MD-11762] - Update asterisk to 16.6.1
+- [MD-11814] - Optimize pascom.cloud janus video traffic
+- [MD-11857] - Better CLIP handling for trunks
+- [MD-11230] - Simple generic provisioning
+- [MD-11842] - Allow to set pjsip headers via script
+- [MD-11931] - Migration to 19.X fails if broken vcard exists
+- [MD-11849] - Can't use PUI menu on a Yealink phone,
+- [MD-11855] - Can't create new team after importing backup of 17.12
+- [MD-10725] - Improve trunk inbound anonymous handling
+- [MD-11810] - Berofix SIP to ISDN trunk not working with pascom 19
+- [MD-11962] - Change sip trunk template of Deutsche Telefon
+- [MD-11588] - T-M-NET SIP-Provider Integration
+- [MD-11658] - magenta.at sip trunk template
+- [MD-11667] - Update web applications to angular 8
+- [MD-11714] - Configure asterisk local_net and fake external address in pascom.cloud
+- [MD-11926] - Store systemd journal on disk instead of tmpfs
+- [MD-11979] - Logrotate and restart pbx apache once per night
+- [MD-11850] - Snom BLF pickup is broken (pascom 19)
+- [MD-11949] - Pickup from a queue doesn't work via notification
+- [MD-11633] - Use XML based provisioning templates for Snom phones
+- [MD-12009] - Xmpp migration fails if there is no events after mdarchive migration
 
 ## Release 19.02 (22.11.2019)
 
