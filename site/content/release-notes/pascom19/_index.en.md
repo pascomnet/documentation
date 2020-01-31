@@ -61,6 +61,7 @@ These problems are already known to us in pascom 19 and we are currently working
 {{% / notice%}}
 
 * Hardware phone displays are not updated after attendant transfer and pickup
+* Instance does not start after migration from 19.X to 19.3. See [Forum Post](https://www.pascom.net/forum/t/migrationsproblem-pascom-19-03/6563 "Forum Post")
 
 
 ## Release 19.03 (29.01.2020)
