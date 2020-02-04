@@ -60,20 +60,20 @@ This section explains the changes that you must consider when migrating to pasco
 These problems are already known to us in pascom 19 and we are currently working on a solution
 {{% / notice%}}
 
-* Hardware phone displays are not updated after attendant transfer and pickup
+* Hardware phone displays are not updated after attended transfers and pickups
 
 
 ## Release 19.04 (03.02.2020)
 
 **Overview**
 
-* Fixed migration problems with Trunks containing empty SIP options.
-* TCP Trunks work now without problems.
+* Fixed migration issues relating to trunks containing empty SIP options.
+* TCP trunks now work without any issues.
 
 **Modifications:**
 
 - [MD-11973] - Apply telephony broken if trunk account contains no options
-- [MD-12041] - All incoming calls on tcp trunks rejected
+- [MD-12041] - All incoming calls on TCP trunks rejected
 
 ## Release 19.03 (29.01.2020)
 
@@ -81,19 +81,19 @@ These problems are already known to us in pascom 19 and we are currently working
 
 * Added generic IP endpoint provisioning
 * beronet Gateways and trunks function again
-* Snom Basis configuration now uses XML format
+* Snom basis configuration now uses XML format
 * SIP Header can once again be manually modified
-* PJSIP Header for trunks can now directly configured within the Trunk account options, and no longer in scripts (e.g. def_outbound).
+* PJSIP Header for trunks can now be directly configured within the Trunk account options, and no longer in scripts (e.g. def_outbound).
 * External and internal ring tones (via Alert-info-header) are now usable
-* Intercom groups function again
+* Fixed Intercom group functionality
 * Aastra/Mitel DECT Handsets no longer display failed registration during on going calls.
 * Grandstream Gateways with the new MAC address are now added correctly
-* Resolved the Grafana migration issues (missing forwarding and broken login)
-* Mail-to-Fax configuration can now differentiate between SSL, StartTLS and Plain
-* TAPI Pickups now also work for multiple lines
-* Modified Snom Basis configurations now migrate "Extension" button to "BLF" in order to enable Pickups
-* pascom logos are now set as the background image when provisioning various Snom and Yealink devices
-* Correct the QSC/Plusnet SIP provider template
+* Resolved Grafana migration issues (missing forwarding and broken login)
+* Mail-to-Fax configuration is now able to differentiate between SSL, StartTLS and Plain
+* TAPI pickups now also work for multiple lines
+* Modified Snom basis configuration to now migrate "Extension" button to "BLF" in order to enable pickups
+* Added pascom logo background image provisioning function for various Snom and Yealink devices
+* Updated the QSC/Plusnet SIP provider template
 * Added T-M-Net SIP provider template
 * Added magenta.at SIP provider template
 
