@@ -6,7 +6,7 @@ type : "pages"
 weight : 6
 ---
 {{% notice tip %}}
-Nutzen Sie von pascom unterstütze Endgeräte um alle integrierten Provisionierungs- und CTI- Tools zu nutzen!
+Verwenden Sie von pascom unterstütze Endgeräte um alle integrierten Provisionierungs- und CTI- Tools zu nutzen!
 {{% /notice %}}
 
 # Übersicht unterstützter Endgeräte
@@ -64,7 +64,7 @@ alt:
 |Snom 821|?| --->
 
 {{% notice note %}}
-Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es uns leider nicht möglich jede zu testen, so dass es sein kann, dass manche Firmware-Versionen pascom Funktionen nicht unterstützen. 
+Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es uns leider nicht möglich jede zu testen, so dass es sein kann, dass manche Firmware-Versionen pascom Funktionen nicht unterstützen.
 {{% /notice %}}
 
 {{% notice info %}}
