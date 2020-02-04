@@ -62,8 +62,21 @@ Diese Probleme sind uns in pascom 19 bereits bekannt und wir arbeiten aktuell an
 {{% /notice %}}
 
 * Hardwaretelefon-Displays werden beim Verbinden (mit Rücksprache) und Pickup nicht aktualisiert
-* Instanz startet nach Migration von 19.X auf 19.3 nicht mehr. Siehe [Forumspost](https://www.pascom.net/forum/t/migrationsproblem-pascom-19-03/6563 "Forumspost")
 
+
+
+## Release 19.04 (03.02.2020)
+
+**Auf einen Blick**
+
+* Migrationsprobleme bei Ämtern mit leeren SIP Optionen behoben.
+* TCP Ämter funktionieren wieder problemlos.
+
+
+**ÄNDERUNGEN:**
+
+- [MD-11973] - Apply telephony broken if trunk account contains no options
+- [MD-12041] - All incoming calls on tcp trunks rejected
 
 ## Release 19.03 (29.01.2020)
 

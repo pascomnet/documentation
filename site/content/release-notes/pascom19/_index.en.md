@@ -61,8 +61,19 @@ These problems are already known to us in pascom 19 and we are currently working
 {{% / notice%}}
 
 * Hardware phone displays are not updated after attendant transfer and pickup
-* Instance does not start after migration from 19.X to 19.3. See [Forum Post](https://www.pascom.net/forum/t/migrationsproblem-pascom-19-03/6563 "Forum Post")
 
+
+## Release 19.04 (03.02.2020)
+
+**Overview**
+
+* Fixed migration problems with Trunks containing empty SIP options.
+* TCP Trunks work now without problems.
+
+**Modifications:**
+
+- [MD-11973] - Apply telephony broken if trunk account contains no options
+- [MD-12041] - All incoming calls on tcp trunks rejected
 
 ## Release 19.03 (29.01.2020)
 
