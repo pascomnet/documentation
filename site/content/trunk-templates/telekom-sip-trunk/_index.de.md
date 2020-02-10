@@ -8,6 +8,10 @@ weight: 10
 
 {{< description >}}
 
+## Telekom Training Video
+ 
+{{< youtube igfkRY6OGqc >}}
+
 ## Übersicht
 
 Informationen über Leistungsmerkmale und Tarife finden Sie [hier](https://geschaeftskunden.telekom.de/startseite/festnetz-internet/tarife/333506/deutschlandlan-sip-trunk.html).
