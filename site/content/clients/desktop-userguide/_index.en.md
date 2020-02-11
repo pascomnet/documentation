@@ -16,9 +16,9 @@ weight: 30
 - Hinweis auf unterstützte Headsets
 - VErbinden -> Bilder mit einheitlichen Nummern
 -->
-## What's new in pascom 19 | Training Video
- 
-{{< youtube 1oK8OLRG624 >}}
+## pascom Client Training Videos
+
+{{< youtube dZ6U_YShgag >}}
 
 ## Login
 
