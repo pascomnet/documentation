@@ -7,7 +7,7 @@ RUN apt-get -qq update \
 
 ## Fix for hugo extended 
 
-RUN wget -q -O libstdc++6 http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/libstdc++6_5.4.0-6ubuntu1~16.04.10_amd64.deb \
+RUN wget -q -O libstdc++6 http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/libstdc++6_5.4.0-6ubuntu1~16.04.12_amd64.deb \
     && dpkg --force-all -i libstdc++6
 
 # Download and install hugo
