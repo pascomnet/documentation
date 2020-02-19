@@ -45,17 +45,17 @@ Im Auslieferungszustand ist der pascom Server bereits vorinstalliert. Führen Si
 * Kostenlosen Flash Tool [Rufus](https://rufus.akeo.ie/) (nur für Windows)
 * pascom Server [ISO-Dateien](https://www.pascom.net/de/downloads/)
 
-{{< num 1 "USB-Stick flashen" >}}
+### USB-Stick flashen
 
 Verbinden Sie den USB-Stick mit Ihrem Computer und starten Sie das Tool Rufus. Wählen Sie nun das pascom Server-ISO unter {{< ui-button "SELECT" >}}, wählen Sie den USB-Stick via {{< ui-button "Device" >}} und klicken Sie im Anschluss auf {{< ui-button "START" >}}:
 
 ![Rufus](rufus.png?width=300px "Rufus")
 
-{{< num 2 "Server-ISO kopieren" >}}
+### Server-ISO kopieren
 
 Kopieren Sie nun das Server-ISO direkt auf den USB-Stick und benennen es nach **pascom.iso** um.
 
-{{< num 3 "Konfigurationsdatei erstellen" >}}
+### Konfigurationsdatei erstellen
 
 Erstellen Sie, ebenfalls direkt auf dem USB-Stick, die Datei **setup.json** mit folgendem Inhalt:
 
@@ -77,7 +77,51 @@ Erstellen Sie, ebenfalls direkt auf dem USB-Stick, die Datei **setup.json** mit 
 }
 ```
 
-{{< num 4 "USB-Stick anstecken, installieren und entfernen" >}}
+### Unattended Konfigurationsdatei erstellen
+(***Anstelle der obigen Konfigurationsdatei***)  
+Oft ist es nicht möglich, einen Monitor an die Appliance anzuschließen. Um eine **unattended** - Installation durchzuführen, ohne durch die Setup-Oberfläche zu klicken, 
+erstellen Sie, ebenfalls direkt auf dem USB-Stick, die Datei **setup.json** mit folgendem Inhalt. 
+
+```
+{
+    "device": "sda",
+    "skipWelcome": true,
+    "skipHostname": true,
+    "skipDevice"; true,
+    "hostname": "usbsetup",
+    "skipNetwork": true,
+    "skipStartNetwork": true,
+    "skipBrowser": true,
+    "skipReboot": true,
+    "halt": true,
+    "preinst" : {
+        "device": "sda",
+        "skipWelcome": true,
+        "skipHostname": true,
+        "hostname": "pascom-server",
+        "skipNetwork": true,
+        "network": {
+            "interface": "enp1s0",
+            "mode": "static",
+            "ip": "192.168.100.1",
+            "netmask": "255.255.255.0",
+            "gateway": "192.168.100.254",
+            "dns1": "192.168.100.254",
+            "dns2": ""
+       }
+    }
+}
+```
+**Von Ihnen anpassbare Parameter:**
+
+
+|Parameter|Beschreibung|
+|---|---|
+|preinst - **hostname**| Vergeben Sie den Hostnamen Ihrer pascom Telefonanlage z.B. pascom-server.|
+|preinst - network - **mode**| **static:** Vergeben Sie manuell IP-Adressen. <br /> **dhcp:** Netzwerkinterface erhält automatisch eine IP-Adresse Ihres DHCP Servers.|
+|preinst - network - <br/> **ip, <br/> netmask, <br/> gateway, <br/> dns1 + dns2**|Parameter können von Ihnen vergeben werden, sobald Sie **preinst - network - mode** ***static*** gewählt haben. Bei ***dhcp*** lassen Sie die Parameter frei **""**.|
+
+### USB-Stick anstecken, installieren und entfernen
 
 Den so vorbereiteten **USB-Stick** können Sie nun direkt an den **USB3-Port** (Rückseite, blauer Port) anstecken. Schließen Sie die Appliance an Bildschirm und Strom und schalten diese ein. Das Setup läuft automatisch durch. Nach erfolgreichem Setup schaltet sich die Appliance selbst ab. 
 
