@@ -55,7 +55,7 @@ Direkt am Interface steht via **Port 22** der SSH-Server zur Verfügung. Dort k�
 
 Ist die eigentliche Telefonanlage. Auf diese kann, aus Sicherheitsgründen, ausschließlich per Session Border Controller zugegriffen werden. Es ist auch möglich mehrere Telefonanlagen auf einem pascom Sever gleichzeitig zu betreiben. Dies ist jedoch unseren Cloud Service Provider Partnern vorbehalten.
 
-Um nicht immer über das Management auf die Weboberfläche der Telefonanlage zugreifen zu müssen steht diese auch direkt, durch angabe des Telefonanlgen-Namens, zur Verfügung:
+Um nicht immer über das Management auf die Weboberfläche der Telefonanlage zugreifen zu müssen steht diese auch direkt, durch Angabe des Telefonanlagennamens, zur Verfügung:
 
 ```
 https://pascom-server/my-company

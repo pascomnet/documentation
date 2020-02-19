@@ -33,7 +33,7 @@ Unter {{< ui-button "Appliance" >}} > {{< ui-button "Dienste" >}} > {{< ui-butto
 |Stammnummer|Geben Sie hier die Stammnummer Ihres Telefonanschlusses an.|
 |Mail to Fax|Hier wird der angegeben, ob das zu versendende Fax die E-Mail oder der Anhang ist. *Default: Deaktiviert*|
 |Lebensdauer Faxdokumente/Tage|Gibt an, wie lange Fax-Dokumente auf der pascom gespeichert werden. *Der Default-Wert ist 30 Tage*|
-|Anzahl Sendeversuche|Gibt an, wie viele Versuche unternommen werden um ein Fax zu verdenden, falls die Gegenstelle kurzzeitig nicht erreichbar ist.|
+|Anzahl Sendeversuche|Gibt an, wie viele Versuche unternommen werden um ein Fax zu versenden, falls die Gegenstelle kurzzeitig nicht erreichbar ist.|
 
 
 ### Übersicht der gesendeten/empfangenen Faxe

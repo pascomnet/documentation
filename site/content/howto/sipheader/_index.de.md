@@ -18,15 +18,15 @@ Nachfolgend finden Sie zu einigen Szenarien Beispiele, auf welche Arten SIP Head
 
 ### Über die Trunk-Optionen
 
-Die einfachste Methode ist die Verwendung des **Optionenfelds** in den Trunk-Account Einstellungen. Eine pascom spezifische Syntax erleichtert das setzen von Headern.
-In den Optionen gesetzte SIP Header schalgen automatisch immer die durch den Trunk gesetzte Werte ***(z.B. CLIP=auto)***.
+Die einfachste Methode ist die Verwendung des **Optionenfelds** in den Trunk-Account Einstellungen. Eine pascom spezifische Syntax erleichtert das Setzen von Headern.
+In den Optionen gesetzte SIP Header schlagen automatisch immer die durch den Trunk gesetzten Werte ***(z.B. CLIP=auto)***.
 
 **Beispiel:** Clip no screening.
 
 ```
 header/P-Asserted-Identity=<sip:09916666666@provider.des.kundens>
 ```
-Das **Optionenfeld** ist ab pascom 19.03 flexibel mit Variablen verwendbar. Ein komplexeres Beispiel:
+Das **Optionenfeld** ist ab pascom 19.03 flexibel mit Variablen nutzbar. Ein komplexeres Beispiel:
 
 ```
 header/P-Asserted-Identity=<sip:{{{048pee_username}}}@{{{048pee_domain}}}>
@@ -36,7 +36,7 @@ Variablen werden erst sehr spät im Dialplan evaluiert. Man kann also auch z.B. 
 
 ### Über ein Outbound Skript
 
-Natürlich kann man, wie man es bisher kennt, ein **Outbound Skript** benutzen um SIP Header zu manipulieren.
+Natürlich kann man, wie man es bisher kennt, ein **Outbound Skript** benutzen, um SIP Header zu manipulieren.
 
 **Beispiel:** Setzen/überschreiben eines Headers
 ```
