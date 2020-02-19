@@ -73,7 +73,7 @@ The search tool filters all entries according to occurrence of the entered searc
 
 Therefore, we recommend searching for full names and complete numbers, or at least a larger part in order to find the desired entry more quickly. 
 
-### Additional Entries from Outlook, DATEV & Apple Contacts
+### Additional Entries from Outlook (from v.2013), DATEV & Apple Contacts
 
 If the pascom desktop client is able to find a supported phone book on the PC, for example Outlook, DATEV or Apple contacts, then these can be automatically incorporated into the desktop client as a private telephone book.
 
