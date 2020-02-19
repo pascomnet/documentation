@@ -74,3 +74,6 @@ Da diese Vorlagen nicht von pascom selbst gepflegt werden, wenden Sie sich bei F
 |TeleData|
 |TelemaxX|
 |voipGATE Business|
+|Toplink Xpress SIP Trunk|
+|500 Ltd, SIP Trunk Plus|
+|T-M-Net Trunk|
