@@ -22,9 +22,10 @@ The following trunk templates are supported by the pascom support team. In order
 |[AVM Gateway]( {{< ref "/trunk-templates/fritzbox" >}})| - |FRITZ!Box|<i class='fas fa-check'></i> <br/><sub>Can perform local SIP trunk termination.</sub>|<i class='fas fa-check'></i> <br/><sub>Can perform local SIP trunk termination. A direct connection to the box e.g. via VPN is required.</sub>|
 |beroNet Gateway| - |BeroBox|<i class='fas fa-check'></i> <br/><sub>Can perform the termination of all analog and ISDN primary rate interface trunks.</sub>|<i class='fas fa-check'></i> <br/><sub>Can perform the termination of all analog and ISDN / Primary Rate Interface (PRI) trunks.</sub>|
 |Deutsche Telefon|DE|SIP TK-Anlagenanschluss|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
-|EasyBell|DE|Business|<i class='fas fa-check'></i>|<i class='fas fa-check'></i> <br/><sub>Due to provider-side blacklisting, short interruptions may occur.</sub>|
+|[Easybell]( {{< ref "/trunk-templates/easybell" >}})|DE|Business|<i class='fas fa-check'></i>|<i class='fas fa-check'></i> <br/><sub>Due to provider-side blacklisting, short interruptions may occur.</sub>|
 |[HFO Telekom]( {{< ref "/trunk-templates/hfo-telecom" >}})|DE|All|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
 |[M-net]( {{< ref "/trunk-templates/mnet-sip-trunk" >}})|DE (Regional)|SIP Trunk|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
+|Magenta.at (former UPC)|AT|SIP Trunk|<i class='fas fa-check'></i>|<i class='fas fa-times'></i><br/><sub> Is currently not supported.</sub>|
 |peoplefone|CH, DE, AT, PL, LT|Alle|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
 |plusnet (QSC)|DE|Ipfonie extended connect|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
 |R-Kom|DE (Regional)|VoipTrunk|<i class='fas fa-check'></i>|<i class='fas fa-check'></i> <br/><sub>When migrating a local trunk to the pascom cloud, it is first necessary to coordinate with the R-Kom sales team.</sub>|
@@ -71,3 +72,6 @@ As these templates are not supported directly by pascom, please refer to our [Co
 |TeleData|
 |TelemaxX|
 |voipGATE Business|
+|Toplink Xpress SIP Trunk|
+|500 Ltd, SIP Trunk Plus|
+|T-M-Net Trunk|
