@@ -12,28 +12,80 @@ weight: 20
 ![Snom M700](snom_m700_dect.png?width=600px)
 
 
+## Unterstützte Geräte
+
+**[Liste der unterstützten Endgeräte, hier klicken!]({{<ref "/endpoints#snom-dect-systeme" >}})**
+
 ## Übersicht
 
-Die Basisstation M700 lässt sich sowohl einzeln als auch als Multizellenkonfiguration betreiben. Sie ist ideal für Unternehmen geeignet, die eine Funkabdeckung über mehrere Etagen oder in großen Bürogebäuden benötigen.
+Die DECT Basis lässt sich sowohl einzeln als auch als Multizellenkonfiguration betreiben. Sie ist ideal für Unternehmen geeignet, die eine Funkabdeckung über mehrere Etagen oder in großen Bürogebäuden benötigen.
 
 ### Verfügbare Kanäle
 
-||Snom M700 - Einzelle|Snom M700 - Multizelle|
+||Snom - Einzelle|Snom - Multizelle|
 |----|----|----|
 |Schmalband (g711, g729, g726)|10|8|
 |Breitband (g722), SRTP aktiviert (g722, g711, g729, g726)|5|4|
 
-### Vorbereitung
+
+## Neue DECT Basisstation hinzufügen
+
+{{% tabs %}}
+{{% tab "Pairing via URL (cloud + onsite)" %}}
+
+{{< num 1 "DECT System anschließen" >}}
+
+
+Integrieren Sie das DECT-System in Ihr Netzwerk. 
+
+{{< num 2 "MAC-Adresse ermitteln" >}}
+
+Die MAC-Adresse steht auf der Basisstation oder einem beigelegten Merkzettel.
+
+{{< num 3 "Basisstation anlegen" >}}
+
+Loggen Sie sich in Ihrer Telefonanlage ein und fügen unter {{< ui-button "Gateways" >}} > {{< ui-button "Gatewayliste" >}} ein
+neues Gerät vom Typ **SNOM Dect** hinzu.
+
+Tragen Sie im Feld **Mac-Adresse** die zuvor ermittelte MAC-Adresse des DECT Systems ein.
+
+{{< num 4 "Jobs Anwenden" >}}
+
+Nach dem Speichern von Änderungen erscheint in der Job-Box (oben) ein
+entsprechender Eintrag die Telefonie anzuwenden. Starten Sie den Job durch
+einen Klick auf den {{< ui-button "grünen Haken" >}}.
+
+{{< num 5 "Provisionierung-URL ermitteln" >}}
+
+Haken Sie das DECT-System in der Geräte-Liste an und wählen {{< ui-button "Aktion" >}} > {{< ui-button "Provisioning URL" >}}. Kopieren Sie die
+**URL** in die Zwischenablage.
+
+{{< num 6 "Provisionierung-URL in der DECT Basis hinterlegen" >}}
+
+Auf der Web-UI des DECT System tragen Sie die eben kopierte Provisionierung-URL ein.
+
+Klicken Sie auf {{< ui-button "Apply" >}} und anschließend auf {{< ui-button "Reboot" >}}.
+
+{{% /tab %}}
+
+{{% tab "DHCP Provisioning (onsite)" %}}
+
+
+{{< num 1 "DHCP-Server vorbereiten" >}}
 
 Für die automatische Inbetriebnahme ist ein funktionierender DHCP-Server zwingend erforderlich.
+Bereiten Sie einen DHCP-Server wie unter [Telefon-Provisionierung via DHCP]({{< ref "/howto/dhcp-provisioning" >}}) beschreiben vor.
 
-
-## Konfiguration
+{{< num 2 "DECT System anschließen" >}}
 
 Schließen Sie jetzt alle Basisstationen, die Sie verwenden wollen, an das Netzwerk an. Diese werden nach dem Bootvorgang automatisch in der Liste der Gateways (unter {{< ui-button "Gateways" >}} > {{< ui-button "Gatewayliste" >}}) erscheinen.
 Das Feld **Status** hat keine Aussagekraft. Die Warnung mit dem "Steckersymbol" ist normal.
 
-### Multizellenbetrieb konfigurieren
+
+{{% /tab %}}
+
+
+## Multizellenbetrieb konfigurieren
 
 Falls Sie mehrere Gateways zum Multizellenbetrieb vernetzen möchten markieren Sie alle betroffenen Gateways und klicken dann auf {{< ui-button "Bearbeiten" >}}. Wählen Sie für eines der Gateways unter *Multi Cell* den Wert **Basisstation** aus, auf allen anderen Gateways **Repeater** aus. Durch die Pfeilschaltfläche können Sie durch alle zuvor markierten Gateways navigieren und die Änderungen entsprechend vornehmen.
 

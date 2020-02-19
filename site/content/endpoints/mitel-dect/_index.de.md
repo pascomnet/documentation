@@ -10,6 +10,10 @@ weight: 60
 
 ![Mitel DECT RFPs](Aastra-Mitel-DECT-System.png?width=50%)
 
+## Unterstützte Geräte
+
+**[Liste der unterstützten Endgeräte, hier klicken!]({{<ref "/endpoints#mitel-dect-systeme" >}})**
+
 ## Überblick
 
 Ein Mitel-SIP-Dect System besteht aus mindestens einer und bis zu 254 Basisstationen. Die Basisstationen werden an das IP-Telefonnetzwerk angeschlossen und kommunizieren per SIP mit der [pascom VoIP Software](https://www.pascom.net/de/mobydick-voip/ "pascom VoIP Software"). Zusätzlich gleichen sich die Basen per Funk (DECT) ab um ein Wechseln der Basis während des Telefonates zu ermöglichen. Dabei muss nicht jede Basis jede andere Basis per Funk erreichen können aber alle Basen müssen miteinander verkettet sein. Es dürfen keine Inseln entstehen.

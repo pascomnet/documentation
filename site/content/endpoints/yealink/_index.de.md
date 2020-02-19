@@ -11,6 +11,9 @@ weight: 30
 
 ![Yealink T46G](yealink-t4-series1.jpg?width=400px)
 
+## Unterstützte Geräte
+
+**[Liste der unterstützten Endgeräte, hier klicken!]({{<ref "/endpoints#yealink-ip-telefone" >}})**
 
 ## Provisionierung
 
