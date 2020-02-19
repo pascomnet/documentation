@@ -57,7 +57,7 @@ Unter {{< ui-button "Benutzer" >}} > {{< ui-button "Benutzerliste" >}} > Benutze
 |E-Mail|Geben Sie hier die E-Mail-Adresse des Benutzers ein. Über diese E-Mail-Adresse erhält der Benutzer die Bestätigung über versendete Faxe, und je nach Konfiguration auch empfangene Faxe.|
 |Fax-Durchwahl|Geben Sie hier die Faxdurchwahl des Benutzers ein. Lesen Sie bitte hierfür folgendes [Howto zum Vergeben von Durchwahlen]({{< relref "/howto/extensions">}}).|
 |ausgehende Faxkennung|Hier kann optional eine ausgehende Faxkennung angegeben werden.|
-|Format|Hier legen Sie fest, in welchem Format das Fax versendet wird. Zur Auswahl stehen<br> * PDF<br> * TIF<br> * DATEI<br> * INLINEGIF|
+
 
 #### Virtuelles Teamfax
 
@@ -68,7 +68,7 @@ Unter {{< ui-button "Benutzer" >}} > {{< ui-button "Teams" >}} > Team auswählen
 |E-Mail|Geben Sie hier die E-Mail-Adresse des Teams ein. Über diese E-Mail-Adresse erhält das Team empfangene Faxe und je nach Konfiguration die Bestätigung über ein versendetes Fax.|
 |Durchwahl|Geben Sie hier die Faxdurchwahl des Team-Faxes an. Lesen Sie bitte hierfür folgendes [Howto zum Vergeben von Durchwahlen]({{< relref "/howto/extensions">}})|
 |ausgehende Faxkennung|Hier kann optional eine ausgehende Faxkennung angegeben werden.|
-|Format|Hier legen Sie fest, in welchem Format das Fax versendet wird. Zur Auswahl stehen<br> * PDF<br> * TIF<br> * DATEI<br> * INLINEGIF|
+
 
 
 
