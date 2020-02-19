@@ -13,16 +13,12 @@ Verwenden Sie von pascom unterstütze Endgeräte um alle integrierten Provisioni
 
 [SNOM IP-Telefone](#snom-ip-telefone "SNOM IP-Telefone")  
 [SNOM DECT-Systeme](#snom-dect-systeme "SNOM DECT-Systeme")      
-[SNOM Konferenzsysteme](#snom-konferenzsysteme "SNOM Konferenzsysteme")  
 [Yealink IP-Telefone](#yealink-ip-telefone "Yealink IP-Telefone")  
 [Yealink DECT-Systeme](#yealink-dect-systeme "Yealink DECT-Systeme")  
 [Grandstream IP-Telefone](#grandstream-ip-telefone "Grandstream IP-Telefone")  
 [Mitel DECT-Systeme](#mitel-dect-systeme "Mitel DECT-Systeme")     
 
 ## SNOM IP-Telefone
-
-[![Snom Einrichtung](snom-series.png?width=70%)]({{<ref "/endpoints/snom" >}})
-
 
 |Provisionierung|Firmware-Verwaltung|Fernsteuerung über Desktop-Client|pascom Menü|
 |---|---|---|---|
@@ -75,33 +71,13 @@ Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es
 Aufgrund aktueller Sicherheitsstandards werden Snom IP-Telefone der 3XX Reihe in der kommenden pascom 19 Version nicht mehr unterstützt.
 {{% /notice %}}
 
- **[Einrichtung SNOM Telefone, hier klicken!]({{<ref "/endpoints/snom" >}})**
-
 ## SNOM DECT-Systeme
-
-[![SNOM DECT Einrichtung](snom_m700_dect.png?width=50%)]({{<ref "/endpoints/snom-dect" >}})
 
 |Modelle||
 |---|---|
 |Snom M700|Snom M900|
 
- **[Einrichtung SNOM-DECT, hier klicken!]({{<ref "/endpoints/snom-dect" >}})**
-
-
-## SNOM Konferenzsysteme
-
-
-[![SNOM Konferenz Einrichtung](snom_c520.jpg?width=50%)]({{<ref "/endpoints/snom-conference" >}})
-
-|Modelle||
-|---|---|
-|Snom C520||
-
- **[Einrichtung SNOM Konferenzsysteme, hier klicken!]({{<ref "/endpoints/snom-conference" >}})**
-
 ## Yealink IP-Telefone
-
-[![Yealink Einrichtung](yealink-t4-series1.jpg?width=50%)]({{<ref "/endpoints/yealink" >}})
 
 |Provisionierung|Firmware-Verwaltung|Fernsteuerung über Desktop-Client|pascom Menü|
 |---|---|---|---|
@@ -120,8 +96,6 @@ Aufgrund aktueller Sicherheitsstandards werden Snom IP-Telefone der 3XX Reihe in
 Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es uns leider nicht möglich jede zu testen, so dass es sein kann, dass manche Firmware-Versionen pascom Funktionen nicht unterstützen. 
 {{% /notice %}}
 
- **[Einrichtung Yealink Telefone, hier klicken!]({{<ref "/endpoints/yealink" >}})**
-
 <!--- |Modell|Firmware|
 |---|---|
 |T41P|36.81.0.110|
@@ -130,17 +104,11 @@ Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es
 
 ## Yealink DECT-Systeme
 
-[![Yealink DECT Einrichtung](yealink_w52p_dect.png?width=30%)]({{<ref "/endpoints/yealink-dect" >}})
-
 |Modelle||
 |---|---|
 |Yealink W52P|Yealink W60P|
 
-**[Einrichtung Yealink DECT, hier klicken!]({{<ref "/endpoints/yealink-dect" >}})**
-
 ## Grandstream IP-Telefone
-
-[![Grandstream Einrichtung](grandstream_GXP2160.jpg?width=50%)]({{<ref "/endpoints/grandstream" >}})
 
 |Provisionierung|Firmware-Verwaltung|Fernsteuerung über Desktop-Client|pascom Menü|
 |---|---|---|---|
@@ -168,8 +136,6 @@ Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es
 Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es uns leider nicht möglich jede zu testen, so dass es sein kann, dass manche Firmware-Versionen pascom Funktionen nicht unterstützen. 
 {{% /notice %}}
 
-**[Einrichtung Grandstream Telefone, hier klicken!]({{<ref "/endpoints/grandstream" >}})**
-
 <!--- |Modell|Empfohlene Firmware|
 |---|---|
 |GXP 1630|1.0.4.55|
@@ -180,11 +146,7 @@ Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es
 
 ## Mitel DECT-Systeme
 
-[![Mitel DECT Einrichtung](Aastra-Mitel-DECT-System.png?width=40%)]({{<ref "/endpoints/mitel-dect" >}})
-
 |Modelle||
 |---|---|
 |Mitel RFP 44 indoor|Mitel RFP 45 indoor|
 |Mitel RFP 47 indoor|Mitel RFP 47 DRC outdoor|
-
-**[Einrichtung Mitel DECT, hier klicken!]({{<ref "/endpoints/mitel-dect" >}})**

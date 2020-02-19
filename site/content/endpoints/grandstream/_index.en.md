@@ -8,9 +8,6 @@ weight: 50
 
 ![Grandstream GXP2160](grandstream_GXP2160.jpg?width=400px "Grandstream VoIP Phones")
 
-## Supported Endpoints
-
-**[List of supported Endpoints, Click here!]({{<ref "/endpoints#grandstream-ip-phones" >}})**
 
 ## Configuration
 
