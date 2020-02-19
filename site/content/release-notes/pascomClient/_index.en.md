@@ -27,7 +27,69 @@ In this section, we give you an overview of all breaking changes in the pascom c
 These problems are known to us and we are already working on a solution
 {{% / notice%}}
 
-* [CL-1018] - Windows 10 (since 1903): Check for the microphone privacy settings does not work. The user is therefore not automatically warned if the client does not have access to the microphone. Must be checked manually.
+
+## Release 61.R919 (19.02.2020)
+
+**Overview**
+
+- HTTP Proxies configured within the Operating System are now taken in account during an update.
+- Automatic updates can now be disabled under the advanced settings.
+- Improved contact list filter performance and fixed the duplicated character display issue.
+- Android: Incoming calls are now displayed in an optimised screen in order to improve usability and avoid incorrect input / usability errors.
+- Android/iOS: Fixed the Handsfree function ensuring it is now reliably "loud".
+- Android: Improved app wake up process reliability for incoming calls.
+- Android: Improved switching to Handsfree function reliability.
+- Increased pascom softphone volume on all platforms.
+- Improved Echo-Cancelling (AEC) for calls and Handsfree.
+- Disabled Automatic Gain Control (AGC).
+- Improved mobile device SIP re-registration performance and speed.
+
+**MODIFICATIONS:**
+
+* [CL-94] - Proper http proxy support in pascom Client
+* [CL-370] - Weird behaviour if recording stops
+* [CL-534] - Disable menu buttons if we already are in the correct view
+* [CL-564] - Always set MODE_IN_COMMUNICATION for AudioManager
+* [CL-686] - Disable automatic updates via "Advanced Settings"
+* [CL-693] - Improve logging of client proxy
+* [CL-729] - Introduce chat inline notifications
+* [CL-839] - Disable proxymity sensor when handsfree speaker is active
+* [CL-879] - Correctly handle pushed messages on iOS and Android
+* [CL-894] - Show group chat message origin in android and ios notification
+* [CL-909] - Hide away (yellow) user state on pascom 19
+* [CL-928] - Switching to handsfree speaker doesn't work
+* [CL-971] - Prohibit to open empty settings on mobile during pairing process
+* [CL-950] - Save outgoing message immediately to the database
+* [CL-980] - pascom Client looses characters when typing into the roster filter
+* [CL-994] - Bring back redial function on dial button
+* [CL-998] - Resolve caller number of local (DATEV) phone book in pickup notifications
+* [CL-1004] - Do not resynchronize on every server version change
+* [CL-1006] - Implement a special incoming call screen on android
+* [CL-1018] - Check for microphone access is broken on windows
+* [CL-1019] - Re-Implement alert() / request attention feature in desktop client
+* [CL-1031] - Client crashes on shutdown on macOS in pjsip libDestroy()
+* [CL-1040] - Crash in WinnotificationController::findToastFromHistory()
+* [CL-1044] - TAPI doesn't immediately use changed preferred device
+* [CL-1047] - You can't use Escape to close the settings screen
+* [CL-1061] - Switch NSIS installer to Unicode
+* [CL-1068] - Hover for outlook settings button 'add' vanishes text
+* [CL-1074] - Change status text after switching focus
+* [CL-1078] - Fix macOS 10.15 notarization
+* [CL-1079] - An active redirection is not shown in the roster anymore
+* [CL-1080] - Don't change position of filtered roster (sorted by name) after presence change
+* [CL-1081] - Crash in MdTonePlayer::stop() on android
+* [CL-1084] - Back button does not work correctly on android
+* [CL-1086] - User chat is opened instead of group chat when clicking on a group notification
+* [CL-1089] - Mobile apps shows sip connection error message after wakeup
+* [CL-1090] - Handsfree speaker is not correctly handled if gain increase is disabled
+* [CL-1102] - android pascom Client sometimes does not wake up to calls
+* [CL-1104] - Gain increase doesn't work on certain ios devices
+* [CL-1106] - Use Connection Service Switch is missing from the Advanced Settings on android
+* [CL-1114] - Changing roster sort broken
+* [CL-1116] - libgstqtvideo is searched in wrong path on android armv7 (32bit)
+* [CL-1120] - Improve echo cancellation and audio quality in pascom Client
+* [CL-1140] - Client always shows resync screen after login
+* [CL-1142] - WebCam stream leaks and crashes Client if usb monitor is restared while a stream is running
 
 ## Release 60.R872 (13.01.2020)
 

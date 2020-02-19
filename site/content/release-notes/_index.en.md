@@ -62,6 +62,7 @@ Due to the technological changes made between pascom 17 to 18 and the resulting 
 
 |Version|Release Type|Published|
 |-------|------------|---------------:|
+|[Release 61.R919]({{< ref "/release-notes/pascomClient#release-61-R919-19-02-2020">}})| Bugfix Release | 19.02.2020|
 |[Release 60.R872]({{< ref "/release-notes/pascomClient#release-60-r872-13-01-2020">}})| Bugfix Release | 13.01.2020|
 |[Release 59.R726]({{< ref "/release-notes/pascomClient#release-59-r726-26-11-2019">}})| Bugfix Release | 26.11.2019|
 |[Release 58.R676]({{< ref "/release-notes/pascomClient#release-58-r676-07-11-2019">}})| Bugfix Release | 07.11.2019 |
