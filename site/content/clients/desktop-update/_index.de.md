@@ -41,4 +41,8 @@ Wenn Sie von einem eigenen Update-Channel oder dem *Beta* Channel auf *Stable* z
 Alternativ können Sie manuell einen Feature-Channel einstellen. Diese werden gelegentlich zum testen neuer Einzelfunktionen angelegt und über unser [Forum](https://www.pascom.net/forum/) bzw. den Support bekannt gegeben. 
 
 
+## Aktiviern / Deaktivieren der Automatik Updates
 
+In den **Erweiterten Einstellungen** des Client können automatische Updates aktiviert oder deaktiviert werden. 
+
+ ![AutomaticUpdates](AutoUpdateSetting.de.PNG?width=70%)

@@ -39,3 +39,9 @@ If you wish to switch from a bespoke / custom Update Channel or the `BETA` Chann
 ### Feature Channels
 
 Alternatively, you can manually set a feature channel. These are occasionally added to test individual functions and are announced via our [Forum](https://www.pascom.net/forum/) or by our support team. 
+
+## Activate/Deactivate automatic Updates
+
+Automatic updates can be activated or deactivated in the **Advanced Settings** of the client.
+
+ ![AutomaticUpdates](AutoUpdateSetting.en.PNG?width=70%)
