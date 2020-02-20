@@ -28,7 +28,7 @@ The next step is to build a new basic configuration for the conference system. T
 With pascom version 19.03 there is a new basic configuration **Empty Generic Profile**
 {{% /notice %}}
 
-Duplicate the basic configuration ** Empty Generic Profile ** and give it a name e.g. SNOM C520 conference. Select the new basic configuration and click on
+Duplicate the basic configuration **Empty Generic Profile** and give it a name e.g. SNOM C520 conference. Select the new basic configuration and click on
 {{<ui-button "Edit">}}> {{<ui-button "Configuration">}}.
 
 **Now replace the existing code with the following code snipped:**
@@ -195,7 +195,7 @@ Under the tab {{<ui-button "Assign">}} you give the conference device an user. F
 ## Provisioning the Conference System
 
 Check the conference system in the device list and go to {{<ui-button "Action">}}> {{<ui-button "Provisioning URL">}} where you can
-copy the ** provisioning URL ** to the clipboard.
+copy the **provisioning URL** to the clipboard.
 
 With the IP address noted at the beginning, go to the web interface of your SNOM conference system. Under {{<ui-button "Servicing">}}> {{<ui-button "Provisioning">}}
 you will find the **Server URL** field in which the **Provisioning URL** must be stored. Click on {{<ui-button "Save">}} and restart the conference system by clicking on {{<ui-button "Reboot">}}.
