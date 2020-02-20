@@ -1,5 +1,5 @@
 ---
-title: Snom Konferenzsysteme
+title: Snom Konferenzsystem
 description: Integrieren Sie Ihr Snom Konferenzsystem in die pascom.
 weight: 20
 ---
@@ -32,7 +32,7 @@ Mit der pascom Version 19.03 gibt es eine neue Basiskonfiguration **Empty Generi
 Duplizieren Sie die Basiskonfiguration **Empty Generic Profile** und geben Ihr eine Bezeichnung z.B. SNOM C520 Konferenz. Markieren Sie die neue Basiskonfiguration und klicken auf 
 {{< ui-button "Bearbeiten" >}} > {{< ui-button "Konfiguration" >}}.
 
-**Ersetzen Sie nun den vorhandenen Code-Teil mit nachfolgendem Snipped:**
+**Ersetzen Sie nun den vorhandenen Code mit nachfolgenden Code Snipped:**
 ```
 <?xml version="1.0"?>
 <settings>
@@ -189,14 +189,17 @@ Speichern Sie die Basiskonfiguration ab.
 ## Konferenzsystem anlegen
 
 Legen Sie unter {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} ein
-neues Gerät vom Typ **IP-Telefon: Hersteller beliebig oder Softphone** an. Wählen Sie nun die erstellte neue
-Basiskonfiguration aus (SNOM C520 Konferenz). 
+neues Gerät vom Typ **IP-Telefon: Hersteller beliebig oder Softphone** an. Wählen Sie nun die erstellte **neue Basiskonfiguration** aus (SNOM C520 Konferenz). 
 
-Unter dem Reiter {{< ui-button "Zuweisen" >}} geben Sie dem Konferenzgerät noch einen Benutzer. 
+Unter dem Reiter {{< ui-button "Zuweisen" >}} geben Sie dem Konferenzgerät noch einen Benutzer. Abschließend Speichern!
 
 ## Konferenzsystem provisionieren
 
 Markieren Sie das Konferenzsystem in der Geräteliste und gehen zu {{< ui-button "Aktion" >}} > {{< ui-button "Provisioning URL" >}} wo Sie sich
 die **Provisionierungs-URL** in die Zwischenablage kopieren. 
 
-
+Mit der zu Beginn notierten IP-Adresse gehen Sie auf die Weboberfläche Ihres SNOM Konferenzsystem. Unter {{< ui-button "Servicing" >}} > {{< ui-button "Provisioning" >}}
+finden Sie das Feld **Server URL** in dem die **Provisioning URL** hinterlegt werden muss. Klicken Sie auf {{< ui-button "Speichern" >}} und führen einen Neustart des Konferenzsystem mit einem Klick auf {{< ui-button "Reboot" >}} aus.  
+<br />
+<br />
+![Snom C520](SNOM_GUI.PNG?width=80%)
