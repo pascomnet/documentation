@@ -127,7 +127,7 @@ Für die zugewiesenen Geräte können Sie Timeouts einstellen:
 |**Warten Intern**|Nach wie vielen  Sekunden soll das Telefon bei internen Rufen klingeln.|
 |**Läuten Intern**|Wie viele Sekunden soll das Telefon klingeln, bevor der Anrufer in eine Aktion  Intern/Nachher übergeht.|
 |**Warten Extern**|Nach wie vielen Sekunden soll das Telefon bei internen Rufen klingeln.|
-|**Läuten Intern**|Wie viele Sekunden soll das Telefon klingeln, bevor der Anrufer in eine Aktion  Extern/Nachher übergeht.|
+|**Läuten Extern**|Wie viele Sekunden soll das Telefon klingeln, bevor der Anrufer in eine Aktion  Extern/Nachher übergeht.|
 |**Warten Agent**|Nach wie vielen Sekunden soll das Telefon klingeln, wenn der Benutzer als Agent einen Anruf über ein Team bekommt.|
 |**Läuten Agent**|Wie viele Sekunden soll das Telefon klingeln, wenn der Benutzer über ein Team angerufen wird. Dieser Timeout überschreibt den Timeout, der beim Team eingestellt ist.|
 
