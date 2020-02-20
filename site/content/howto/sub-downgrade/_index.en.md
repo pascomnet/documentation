@@ -60,6 +60,9 @@ Log in to https://my.pascom.net and open the corresponding subscription under {{
 
 **Take note of your instance name! (Name after the number in square brackets)**
 
+
+**Important!** In the "Details" area, unpair the license using the {{<ui-button "Unpair">}} button before you cancel.
+
 Within the details area, click {{< ui-button "Cancel" >}}.
 
 Select the option the Option {{< ui-button "Cancel Now" >}}.

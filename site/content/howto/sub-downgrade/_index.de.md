@@ -58,7 +58,9 @@ Ihre Endgeräte (z. B. Tischtelefone) werden sich nach einigen Minuten automatis
 
 Loggen Sie sich in https://my.pascom.net ein und öffnen Sie das entsprechende Abonnement unter {{< ui-button "Abonnements" >}} durch klicken auf die Schaltfläche {{< ui-button "Details" >}}
 
-**Notieren Sie sich Ihren Instanznamen! (Name nach der Nummer in eckigen Klammern)**
+**Notieren Sie sich Ihren Instanznamen! (Name nach der Nummer in eckigen Klammern)**  
+
+**Wichtig!** Unpairen Sie im Bereich "Details" zuerst die Lizenz über den Button {{< ui-button "Unpairen" >}} bevor Sie kündigen. 
 
 Klicken Sie im Bereich Details auf {{< ui-button "Kündigen" >}}.
 
