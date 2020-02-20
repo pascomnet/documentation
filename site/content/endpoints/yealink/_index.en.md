@@ -11,6 +11,9 @@ weight: 30
 
 ![Yealink T46G](yealink-t4-series1.jpg?width=400px "pascom Yealink T46 VoIP phone")
 
+## Supported Endpoints
+
+**[List of supported Endpoints, Click here!]({{<ref "/endpoints#yealink-ip-phones" >}})**
 
 ## Yealink Provisioning
 

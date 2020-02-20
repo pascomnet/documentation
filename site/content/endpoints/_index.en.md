@@ -13,13 +13,15 @@ Use the end devices supported by pascom to use all the integrated provisioning a
 # Overview of supported Endpoints
 
 [SNOM IP-Phones](#snom-ip-phones "SNOM IP-Phones")  
-[SNOM DECT-Systems](#snom-dect-systems "SNOM DECT-Systems")      
+[SNOM DECT-Systems](#snom-dect-systems "SNOM DECT-Systems")  
+[SNOM Conferencing Systems](#snom-conferencing-systems "SNOM Conferencing Systems")      
 [Yealink IP-Phones](#yealink-ip-phones "Yealink IP-Phones")  
 [Yealink DECT-Systems](#yealink-dect-systems "Yealink DECT-Systems")  
 [Grandstream IP-Phones](#grandstream-ip-phones "Grandstream IP-Phones")  
 [Mitel DECT-Systems](#mitel-dect-systems "Mitel DECT-Systems")     
 
 ## SNOM IP-Phones
+[![Snom Setup](snom-series.png?width=70%)]({{<ref "/endpoints/snom" >}})
 
 |Provisioning|Firmware Management|Desktop Client CTI Control|pascom Menu|
 |---|---|---|---|
@@ -72,13 +74,32 @@ As there is a vast range of firmware versions available for the different IP tel
 Due to the current security standards, Snom 3xx IP telephones will not be supported in the upcoming pascom 19 version.
 {{% /notice %}}
 
+**[Setup SNOM Endpoints, Click here!]({{<ref "/endpoints/snom" >}})**
+
 ## SNOM DECT-Systems
 
-|Modelle||
+[![SNOM DECT Setup](snom_m700_dect.png?width=50%)]({{<ref "/endpoints/snom-dect" >}})
+
+|Models||
 |---|---|
 |Snom M700|Snom M900|
 
+ **[Setup SNOM-DECT, Click here!]({{<ref "/endpoints/snom-dect" >}})**
+
+
+## SNOM Conferencing Systems
+
+[![SNOM Conference Setup](snom_c520.jpg?width=50%)]({{<ref "/endpoints/snom-conference" >}})
+
+|Models||
+|---|---|
+|Snom C520||
+
+ **[Setup SNOM Conference System, Click here!]({{<ref "/endpoints/snom-conference" >}})**
+
 ## Yealink IP-Phones
+
+[![Yealink Setup](yealink-t4-series1.jpg?width=50%)]({{<ref "/endpoints/yealink" >}})
 
 |Provisioning|Firmware Management|Desktop Client CTI Control|pascom Menu|
 |---|---|---|---|
@@ -97,6 +118,8 @@ Due to the current security standards, Snom 3xx IP telephones will not be suppor
 As there is a vast range of firmware versions available for the different IP telephones, it is not possible for us to test each version. That means that it could be the case that pascom does not support some firmware versions. 
 {{% /notice %}}
 
+ **[Setup Yealink Endpoints, Click here!]({{<ref "/endpoints/yealink" >}})**
+
 <!--- |Modell|Firmware|
 |---|---|
 |T41P|36.81.0.110|
@@ -105,11 +128,17 @@ As there is a vast range of firmware versions available for the different IP tel
 
 ## Yealink DECT-Systems
 
-|Modelle||
+[![Yealink DECT Setup](yealink_w52p_dect.png?width=30%)]({{<ref "/endpoints/yealink-dect" >}})
+
+|Models||
 |---|---|
 |Yealink W52P|Yealink W60P|
 
+**[Setup Yealink DECT, Click here!]({{<ref "/endpoints/yealink-dect" >}})**
+
 ## Grandstream IP-Phones
+
+[![Grandstream Setup](grandstream_GXP2160.jpg?width=50%)]({{<ref "/endpoints/grandstream" >}})
 
 |Provisioning|Firmware Management|Desktop Client CTI Control|pascom Menu|
 |---|---|---|---|
@@ -137,6 +166,8 @@ As there is a vast range of firmware versions available for the different IP tel
 As there is a vast range of firmware versions available for the different IP telephones, it is not possible for us to test each version. That means that it could be the case that pascom does not support some firmware versions. 
 {{% /notice %}}
 
+**[Setup Grandstream Endpoints, Click here!]({{<ref "/endpoints/grandstream" >}})**
+
 <!--- |Modell|Empfohlene Firmware|
 |---|---|
 |GXP 1630|1.0.4.55|
@@ -147,7 +178,11 @@ As there is a vast range of firmware versions available for the different IP tel
 
 ## Mitel DECT-Systems
 
+[![Mitel DECT Setup](Aastra-Mitel-DECT-System.png?width=40%)]({{<ref "/endpoints/mitel-dect" >}})
+
 |Models||
 |---|---|
 |Mitel RFP 44 indoor|Mitel RFP 45 indoor|
 |Mitel RFP 47 indoor|Mitel RFP 47 DRC outdoor|
+
+**[Setup Mitel DECT, Click here!]({{<ref "/endpoints/mitel-dect" >}})**

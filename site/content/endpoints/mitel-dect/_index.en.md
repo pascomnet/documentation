@@ -10,6 +10,10 @@ weight: 60
 
 ![Mitel DECT RFPs](Aastra-Mitel-DECT-System.png?width=50%)
 
+## Supported Endpoints
+
+**[List of supported Endpoints, Click here!]({{<ref "/endpoints#mitel-dect-systems" >}})**
+
 ## Overview
 
 An Mitel SIP-DECT system can have any number from 1 to 254 base stations. The base stations are connected to the IP telephone network and communicate with your [pascom VoIP Software](https://www.pascom.net/en/mobydick-voip/ "pascom VoIP phone systems") solution using the SIP protocol. The base stations also communicate with one another using DECT to allow for switching between base stations during a call. A single base station does not have to connect to every other base station, but all base stations must be able to form a chain. Isolated groups of base stations should not be used.

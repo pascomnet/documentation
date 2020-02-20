@@ -10,6 +10,9 @@ weight: 10
 
 ![snom D300/D700 Serie](snom-series.png)
 
+## Unterstützte Geräte
+
+**[Liste der unterstützten Endgeräte, hier klicken!]({{<ref "/endpoints#snom-ip-telefone" >}})**
 
 ## Provisionierung
 

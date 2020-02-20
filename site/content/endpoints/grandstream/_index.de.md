@@ -8,6 +8,9 @@ weight: 50
 
 ![Grandstream GXP2160](grandstream_GXP2160.jpg?width=400px)
 
+## Unterstützte Geräte
+
+**[Liste der unterstützten Endgeräte, hier klicken!]({{<ref "/endpoints#grandstream-ip-telefone" >}})**
 
 ## Provisionierung
 

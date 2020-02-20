@@ -10,6 +10,10 @@ weight: 10
 
 ![snom D300/ D700 Series](snom-series.png)
 
+## Supported Endpoints
+
+**[List of supported Endpoints, Click here!]({{<ref "/endpoints#snom-ip-phones" >}})**
+
 ## Snom Provisioning
 
 The process of configuring or registering an VoIP phone with an IP PBX such as pascom's is know as {{< ui-button "Provisioning" >}}. For this purpose, pascom phone systems include a Default Configuration ({{< ui-button "Devices" >}} > {{< ui-button "Basic Configuration" >}}). For most deployment scenarios, these standard settings provide an ideal configuration. However, in some cases, the settings may need to be modified.
