@@ -54,7 +54,7 @@ Connect the USB stick to your compute and start Rufus. Now select the pascom Ser
 
 Now copy the server ISO directly to the USB stick and rename it to **pascom.iso**.
 
-### Create Configfile
+### Variant 1 | Create Configfile
 
 Create the file **setup.json** directly on the USB stick with the following content:
 
@@ -76,7 +76,7 @@ Create the file **setup.json** directly on the USB stick with the following cont
 }
 ```
 
-### Create unattended Configfile
+### Variant 2 | Create unattended Configfile
 (***Instead of the configuration file above***)  
 It is often not possible to connect a monitor to the pascom appliance. To perform an **unattended** installation without clicking through the setup interface
 create the file **setup.json** with the following content, also directly on the USB-Stick

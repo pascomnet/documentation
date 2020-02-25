@@ -55,7 +55,7 @@ Verbinden Sie den USB-Stick mit Ihrem Computer und starten Sie das Tool Rufus. W
 
 Kopieren Sie nun das Server-ISO direkt auf den USB-Stick und benennen es nach **pascom.iso** um.
 
-### Konfigurationsdatei erstellen
+### Variante 1 | Konfigurationsdatei erstellen
 
 Erstellen Sie, ebenfalls direkt auf dem USB-Stick, die Datei **setup.json** mit folgendem Inhalt:
 
@@ -77,7 +77,7 @@ Erstellen Sie, ebenfalls direkt auf dem USB-Stick, die Datei **setup.json** mit 
 }
 ```
 
-### Unattended Konfigurationsdatei erstellen
+### Variante 2 | Unattended Konfigurationsdatei erstellen
 (***Anstelle der obigen Konfigurationsdatei***)  
 Oft ist es nicht möglich, einen Monitor an die Appliance anzuschließen. Um eine **unattended** - Installation durchzuführen, ohne durch die Setup-Oberfläche zu klicken, 
 erstellen Sie, ebenfalls direkt auf dem USB-Stick, die Datei **setup.json** mit folgendem Inhalt. 
