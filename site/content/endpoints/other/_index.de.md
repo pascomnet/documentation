@@ -36,7 +36,7 @@ Mit der pascom Version 19.03 gibt es eine neue Basiskonfiguration **Empty Generi
 Duplizieren Sie die Basiskonfiguration **Empty Generic Profile** und geben Ihr eine Bezeichnung z.B. Meine Siemens Geräte. Markieren Sie die neue Basiskonfiguration und klicken auf 
 {{< ui-button "Bearbeiten" >}} > {{< ui-button "Konfiguration" >}}.
 
-Nachfolgenden Code-Teil können Sie natürlich zusätzlich anpassen. 
+**Nachfolgenden Code-Teil müssen Sie mit Ihren Parametern anpassen.**
 
 ```
 {{!-- This is a example template --}}
