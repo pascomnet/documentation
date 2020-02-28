@@ -19,7 +19,7 @@ weight: 30
 
 ## pascom Client Training Videos
 
-{{< youtube r-MfrLPXkXY >}}
+{{< youtube r-MfrLPXkXY >}} JC9AhCM2p_M
 
 ## Login
 
@@ -112,6 +112,10 @@ Sie wählen einen der Ihnen zugewiesenen Arbeitsplätze aus und können von nun 
 
 
 ## Telefonieren
+
+### Training Video
+
+{{< youtube JC9AhCM2p_M >}} 
 
 Bevor Sie das erste Mal telefonieren, prüfen Sie bitte die Telefon-Einstellungen. Wichtig dabei ist, dass Sie, falls Ihnen mehrere Telefone zugewiesen sind, das richtige auswählen.
 

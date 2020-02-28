@@ -103,6 +103,10 @@ You have the option of using the location function to use preconfigured setups, 
 You select one of the locations assigned to you and can now use the preconfigured telephone setup. This setting can also be found again in the Follow Me Settings of the Client Settings.
 
 ## Making Calls
+
+### Training Video
+
+{{< youtube xATkFu9Qizk >}}
   
 Before you starting making calls, please check your telephone settings. Particularly if you have multiple telephones assigned to your user account, it is essential to ensure that the correct device is selected.
 
