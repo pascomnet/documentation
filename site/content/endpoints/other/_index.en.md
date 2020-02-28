@@ -37,7 +37,7 @@ With pascom version 19.03 there is a new basic configuration **Empty Generic Pro
 Duplicate the basic configuration **Empty Generic Profile** and give it a name e.g. My Siemens Devices. Select the new basic configuration and click on
 {{<ui-button "Edit">}}> {{<ui-button "Configuration">}}.
 
-**Of course you can also adapt the existing code part:**
+**You have to adapt the following code part to your parameters.**
 ```
 {{!-- This is a example template --}}
 
