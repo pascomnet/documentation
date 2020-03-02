@@ -52,6 +52,7 @@ As these templates are not supported directly by pascom, please refer to our [Co
 
 |Template / Provider|
 |---|
+|500 Ltd, SIP Trunk Plus|
 |amplus|
 |colt|
 |comingolstadt Business|
@@ -71,7 +72,6 @@ As these templates are not supported directly by pascom, please refer to our [Co
 |Tele2|
 |TeleData|
 |TelemaxX|
-|voipGATE Business|
-|Toplink Xpress SIP Trunk|
-|500 Ltd, SIP Trunk Plus|
 |T-M-Net Trunk|
+|Toplink Xpress SIP Trunk|
+|voipGATE Business|

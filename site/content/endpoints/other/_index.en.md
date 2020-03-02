@@ -18,7 +18,7 @@ Non supported phones can not be automatically configured nor be configured with 
 
 Remote CTI control via the pascom client is only possible in a restricted form.
 
-## Endpoint Requirements
+### Endpoint Requirements
 
 In order for a SIP device to operate with the pascom server, the following functions are necessary:
 
@@ -26,18 +26,37 @@ In order for a SIP device to operate with the pascom server, the following funct
 * **SRTP** (encrypted voice data)
 * **Outbound Proxy** (send data via the Session Border Controller)
 
+## Preparation and login data
+
+{{% notice tip %}}
+Unfortunately, many vendors use different names for effectively the same settings. This means you may need to experiment a bit. The following table shows the common terms used.
+{{% /notice %}}
+
+|Setting|Example value|Description|
+|---|---|---|
+|Registrar, SIP-Server|**pascom**|Name of the phone system|
+|Proxy, Outbound-Proxy|**pascom.cloud**|DNS name or Server IP address|
+|SIP-Port| **TCP 5061** | TLS SIP Port|
+|Username, Identity, Authuser|**my-telephone-name**|Device login name|
+|Password|*****| Device password, not the user's password!|
+
+### SIP TLS and SRTP
+
+Read the SIP endpoint handbook regarding how to activate SIP TLS and SRTP. This could involve multiple setting configs. 
+
+
 ## Create a new Basic Configuration Template
 
-The next step is to build a new basic configuration for the SIP device. To do this, go to the pascom WEB GUI on {{<ui-button "Devices">}}> {{<ui-button "Basic configuration">}}
+The next step is to build a new basic configuration for the SIP device. To do this, go to the pascom WEB GUI on {{< ui-button "Devices" >}} > {{< ui-button "Basic configuration" >}}
 
 {{% notice tip %}}
 With pascom version 19.03 there is a new basic configuration **Empty Generic Profile**
 {{% /notice %}}
 
 Duplicate the basic configuration **Empty Generic Profile** and give it a name e.g. My Siemens Devices. Select the new basic configuration and click on
-{{<ui-button "Edit">}}> {{<ui-button "Configuration">}}.
+{{< ui-button "Edit" >}} > {{< ui-button "Configuration" >}}.
 
-**You have to adapt the following code part to your parameters.**
+**You have to adapt the following code part to your device-parameters. The listed variables are used to automatically fill in the correct login/server data.**
 ```
 {{!-- This is a example template --}}
 
@@ -94,36 +113,19 @@ After saving your changes, an entry will appear in the job box (top centre of th
 
 ## Create/Add the SIP Device
 
-Insert under {{<ui-button "Devices">}}> {{<ui-button "Device list">}}
+Insert under {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}}
  a new device of type **IP-Telefon: Hersteller beliebig oder Softphone**. Now select the **new basic configuration** you created earlier (My Siemens Devices).
 
-Under the tab {{<ui-button "Assign">}} you give the SIP device an user. Finally save!
+Under the tab {{< ui-button "Assign" >}} you give the SIP device an user. Finally save!
 
 ## Provisioning on the SIP Device
 
-Check the IP Device in the device list and go to {{<ui-button "Action">}}> {{<ui-button "Provisioning URL">}} where you can
+Check the IP Device in the device list and go to {{< ui-button "Action" >}} > {{< ui-button "Provisioning URL" >}} where you can
 copy the **provisioning URL** to the clipboard.
 
 Each SIP device has its own web interface. How to get there, please refer to the instructions of the respective manufacturer.
 The **Provisioning URL** usually has to be set in the **Servicing** settings of the device at the server URL. After applying the changes and
 a **restart / reboot** of the device, the settings are automatically transferred to the device via the provisioning URL.
-
-{{% notice tip %}}
-Unfortunately, many vendors use different names for effectively the same settings. This means you may need to experiment a bit. The following table shows the common terms used.
-{{% /notice %}}
-
-
-|Setting|Example value|Description|
-|---|---|---|
-|Registrar, SIP-Server|**pascom**|Name of the phone system|
-|Proxy, Outbound-Proxy|**pascom.cloud**|DNS name or Server IP address|
-|SIP-Port| **TCP 5061** | TLS SIP Port|
-|Username, Identity, Authuser|**my-telephone-name**|Device login name|
-|Password|*****| Device password, not the user's password!|
-
-### SIP TLS and SRTP
-
-Read the SIP endpoint handbook regarding how to activate SIP TLS and SRTP. This could involve multiple setting configs. 
 
 ## Test Call
 
