@@ -86,7 +86,7 @@ create the file **setup.json** with the following content, also directly on the 
     "device": "sda",
     "skipWelcome": true,
     "skipHostname": true,
-    "skipDevice"; true,
+    "skipDevice": true,
     "hostname": "usbsetup",
     "skipNetwork": true,
     "skipStartNetwork": true,

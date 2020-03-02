@@ -87,7 +87,7 @@ erstellen Sie, ebenfalls direkt auf dem USB-Stick, die Datei **setup.json** mit 
     "device": "sda",
     "skipWelcome": true,
     "skipHostname": true,
-    "skipDevice"; true,
+    "skipDevice": true,
     "hostname": "usbsetup",
     "skipNetwork": true,
     "skipStartNetwork": true,
