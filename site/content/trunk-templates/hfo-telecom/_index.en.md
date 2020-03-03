@@ -9,13 +9,13 @@ weight: 20
 
 ## Overview
 
-HFO-Telekom are a nationwide German VoIP Provider. Further package specifications and tariff information can be found here: [HFO Telecom](http://www.hfo-telecom.de/).
+HFO-Telekom are a nationwide German VoIP Provider. Further package specifications and tariff information can be found here: [HFO Telecom](http://www.hfo-telecom.de/ "HFO Telecom SIP Provider").
 
 ## Your Account
 
 Once your HFO-Telekom trunk has been activated, you will receive a confirmation similar to below:
 
-![Ihr HFO Telecom Account](/hfo-account.png?width=50%)
+![Ihr HFO Telecom Account](/hfo-account.png?width=50% "HFO Telecom SIP account")
 
 **Important Info**
 

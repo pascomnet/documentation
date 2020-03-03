@@ -9,7 +9,7 @@ weight : 6
 Verwenden Sie von pascom unterstütze Endgeräte um alle integrierten Provisionierungs- und CTI- Tools zu nutzen!
 {{% /notice %}}
 
-# Übersicht unterstützter Endgeräte
+## Übersicht unterstützter Endgeräte
 
 [SNOM IP-Telefone](#snom-ip-telefone "SNOM IP-Telefone")  
 [SNOM DECT-Systeme](#snom-dect-systeme "SNOM DECT-Systeme")      

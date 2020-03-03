@@ -29,7 +29,7 @@ System requirements: **Windows 7, 8.1 or 10 (32 and 64bit)** including the most 
 
 The Windows installation process does not require any admin privileges and be performed directly in the home-directory of the currently logged in user:
 
- * Download the [Windows Desktop Client](https://my.pascom.net/update/client/stable/windows)
+ * Download the [Windows Desktop Client](https://my.pascom.net/update/client/stable/windows "pascom Windows Desktop UC Client")
  * Run the **pascom-client-setup.exe**
  * Follow the install guide
 
@@ -47,7 +47,7 @@ System requirements: **Windows Server 2008 R2 64bit** or higher
 
 The disadvantage of this type of installation is that you will need to manually perform all pascom desktop client updates, as the updates require admin rights. The advantage of terminal server installations is that you can save upto ca. 100MB storage space per user. 
 
-* Download the [Windows Desktop Client](https://my.pascom.net/update/client/stable/windows)
+* Download the [Windows Desktop Client](https://my.pascom.net/update/client/stable/windows )
 * Open the command prompt as an Administrator
 * Start the setup and specify the install directory
 

@@ -10,7 +10,7 @@ weight : 6
 Use the end devices supported by pascom to use all the integrated provisioning and CTI tools!
 {{% /notice %}}
 
-# Overview of supported Endpoints
+## Overview of supported Endpoints
 
 [SNOM IP-Phones](#snom-ip-phones "SNOM IP-Phones")  
 [SNOM DECT-Systems](#snom-dect-systems "SNOM DECT-Systems")  

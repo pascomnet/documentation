@@ -76,12 +76,12 @@ Damit Ihre Telefonanlage erreichbar ist und Sie natürlich auch damit telefonier
 </div>
 
 <div class="d-flex justify-content-center">
-<a href="https://www.pascom.net/doc/de/trunks/" title="Amt auf der pascom Anlage einrichten" alt="pascom free cloud PBX edition" target="_blank" ><img src="trunk_setup.de.png" style="width:200px; height: auto;" ></a> 
+<a href="https://www.pascom.net/doc/de/trunks/" title="Amt auf der pascom Anlage einrichten" alt="pascom free cloud PBX edition" target="_blank" ><img src="trunk_setup.de.png" title="Amt auf der pascom Anlage einrichten" alt="pascom SIP Trunk einrichten" style="width:200px; height: auto;" ></a> 
 </div>
 
 {{% notice tip %}}
 **Testen Sie Ihr Amt!**<br/>
-Starten Sie durch und testen Sie Ihre Telefonie mit den pascom Software Clients. Die pascom Clients für Windows, Linux, MacOSX und Smartphones, finden Sie in unserem <a href="https://www.pascom.net/de/downloads/" title="pasocm Client Downloads" alt="pascom free cloud PBX edition" target="_blank">Downloadbereich</a>.
+Starten Sie durch und testen Sie Ihre Telefonie mit den pascom Software Clients. Die pascom Clients für Windows, Linux, MacOSX und Smartphones, finden Sie in unserem <a href="https://www.pascom.net/de/downloads/" title="pascom Client Downloads" alt="pascom free cloud PBX edition" target="_blank">Downloadbereich</a>.
 {{%/notice%}}
 
 ### 4. Benutzer anlegen
@@ -90,7 +90,7 @@ Da Sie nun mit der pascom Anlage telefonieren können, macht es Sinn Ihre Benutz
 </br>  
 
 <div class="d-flex justify-content-center">
-<a href="https://www.pascom.net/doc/de/user/user/" title="Benutzer anlegen" alt="pascom free cloud PBX edition" target="_blank" ><img src="add_users.de.png" style="width:200px; height: auto;" ></a>
+<a href="https://www.pascom.net/doc/de/user/user/" title="Benutzer anlegen" alt="pascom free cloud PBX edition" target="_blank" ><img src="add_users.de.png" title="Benutzer anlegen" alt="pascom Benutzer anlegen"style="width:200px; height: auto;" ></a>
 </div>
 
 ##### Sie haben noch mehr Möglichkeiten:
@@ -104,7 +104,7 @@ Da Sie nun mit der pascom Anlage telefonieren können, macht es Sinn Ihre Benutz
 
 Ihre Benutzer sind angelegt. Einige telefonieren womöglich bereits über das integrierte Softphone des pascom Client. Einige Benutzer bevorzugen jedoch Hardware Telefone an ihren Arbeitsplätzen. Verwenden Sie nach Möglichkeit Telefonhersteller die von der pascom Telefonanlage unterstütz werden, um die **Einrichtung zu vereinfachen** und die von pascom bereitgestellten **CTI-Funktionen** an den Telefonen zu nutzen. 
 <br>
-<a href="https://www.pascom.net/doc/de/endpoints/" title="Engeräte bei pascom" alt="pascom free cloud PBX edition" target="_blank" ><img src="phone_setup.de.png" style="width:200px; height: auto;" ></a>
+<a href="https://www.pascom.net/doc/de/endpoints/" title="Endgeräte bei pascom" alt="pascom free cloud PBX edition" target="_blank" ><img src="phone_setup.de.png" title="Endgeräte bei pascom" alt="pascom Supported Endgeräte" style="width:200px; height: auto;" ></a>
 <br>
 
 ### 6. Teams (Warteschlangen) konfigurieren
@@ -113,7 +113,7 @@ Aus einer professionellen Geschäftskommuniaktionsumgebung heutzutage kaum mehr 
 
 
 <br>
-<a href="https://www.pascom.net/doc/de/teams/" title="Teams (Warteschlangen) anlegen" alt="pascom free cloud PBX edition" target="_blank" ><img src="teams.de.png" style="width:200px; height: auto;" ></a>
+<a href="https://www.pascom.net/doc/de/teams/" title="Teams (Warteschlangen) anlegen" alt="pascom free cloud PBX edition" target="_blank" ><img src="teams.de.png" title="Teams (Warteschlangen) anlegen" alt="pascom Warteschlangen anlegen" style="width:200px; height: auto;" ></a>
 <br>
 
 
@@ -127,7 +127,7 @@ Sie haben sich sicherlich bereits Gedanken darüber gemacht, was passieren soll 
 Steht Ihre Planung, machen Sie sich an die Umsetzung und plazieren Sie Aktionen dort wo sie Sinn machen. Ansagen, Abwürfe und Weiterleitungen können spielend einfach, mit Parametern entsprechend Ihrer Anforderungen, eingerichtet werden.
 
 <br>
-<a href="https://www.pascom.net/doc/de/acd/actions/" title="Anrufverlauf umsetzen" alt="pascom free cloud PBX edition" target="_blank" ><img src="callflow.de.png" style="width:200px; height: auto;" ></a>
+<a href="https://www.pascom.net/doc/de/acd/actions/" title="Anrufverlauf umsetzen" alt="pascom free cloud PBX edition" target="_blank" ><img src="callflow.de.png" itle="Anrufverlauf umsetzen" alt="pascom Anrufverlauf umsetzen" style="width:200px; height: auto;" ></a>
 <br>
 
 
@@ -137,7 +137,7 @@ Holen Sie Ihre Kunden ab und begeistern Sie Ihre Anrufer mit eigenen Ansagen und
 
 
 <br>
-<a href="https://www.pascom.net/doc/de/acd/prompts-moh/" title="Ansagen und Wartemusik anlegen" alt="pascom free cloud PBX edition" target="_blank" ><img src="prompts_music.de.png" style="width:200px; height: auto;" ></a>
+<a href="https://www.pascom.net/doc/de/acd/prompts-moh/" title="Ansagen und Wartemusik anlegen" alt="pascom free cloud PBX edition" target="_blank" ><img src="prompts_music.de.png" itle="Ansagen und Wartemusik anlegen" alt="pascom Ansagen und Wartemusik" style="width:200px; height: auto;" ></a>
 <br>
 
 
@@ -147,7 +147,7 @@ Sie schalten während Ihrer Mittagszeit noch per Hand auf eine Weiterleitung mit
 Verknüpfen Sie Aktionen mit Bedingungen und lassen Sie z.B innerhalb Ihrer Geschäftszeiten Anrufer mit einer Willkommensansage in die Warteschlange und außerhalb Ihrer Öffnungszeiten ist eine Weiterleitung auf die Voicemailbox aktiv. Einmal eingerichtet, müssen Sie sich nicht mehr darum kümmern. 
 
 <br>
-<a href="https://www.pascom.net/doc/de/acd/conditions/" title="Bedingungen einrichten" alt="pascom free cloud PBX edition" target="_blank" ><img src="conditions.de.png" style="width:200px; height: auto;" ></a>
+<a href="https://www.pascom.net/doc/de/acd/conditions/" title="Bedingungen einrichten" alt="pascom free cloud PBX edition" target="_blank" ><img src="conditions.de.png" title="Bedingungen einrichten" alt="pascom Bedingungen einrichten" style="width:200px; height: auto;" ></a>
 <br>
 
 ### 10. Anrufverlauf erweitern

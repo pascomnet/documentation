@@ -13,7 +13,7 @@ You have successfully set up your Easybell SIP Account with the official Trunk T
 signaling of your Phonenumber does not yet work according to your requirements. In most cases, you still have to activate or 
 configure the feature to use it with the pascom telephone system. 
 
-# Solution
+## Solution
 
 The Clip no screening feature includes a few settings that you have to make directly with Easybell. 
 

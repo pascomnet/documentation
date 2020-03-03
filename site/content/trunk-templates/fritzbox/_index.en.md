@@ -24,7 +24,7 @@ Through utilizing a Fritz!Box, the Connection will be limited to 2 Voice Channel
 
 The following guide has been created using a *Fritz!Box Fon WLAN 7390* with the Firmware 06.83.
 
-# Fritz!Box Preparation
+## Fritz!Box Preparation
 
 Firstly, you will need to add a Fritz!Box account with which the pascom PBX can register onto the Fritz!Box. As AVM (Fritz!Box vendor) produces a German Version and an International Version, our English Translations appear in brackets:
 
