@@ -31,7 +31,10 @@ The way to your pascom phone system is via the mypascom portal. Creating a accou
 
 
 ### 2. Select deployment type and create your phone system
-Already decided on how & where you want to deploy your pascom phone system? There are several options available to you, from the pascom cloud to self hosting virtual and hardware PBX platforms. Our Top Tip is to keep it simple and opt for a cloud phone system. However, if for whatever reason you do not want to go down the cloud route, then opting for an on-premise phone system solution is for you. For more information, feel free to check out our [blog](https://www.pascom.net/en/blog/comparing-cloud-phone-system-vs-virtual-ip-pbx-providers/ "pascom cloud vs virtual PBX solutions").
+
+Already decided on how & where you want to deploy your pascom phone system? There are several options available to you, from the pascom cloud to [self hosting virtual and hardware PBX platforms](https://www.pascom.net/en/business-phone-system/ "pascom self-hosted phone systems"). 
+
+Our Top Tip is to keep it simple and opt for a [cloud phone system](https://www.pascom.net/en/cloud-phone-system/ "pascom cloud hosted phone systems"). However, if for whatever reason you do not want to go down the cloud route, then opting for an on-premise phone system solution is for you. For more information, feel free to check out our [blog](https://www.pascom.net/en/blog/comparing-cloud-phone-system-vs-virtual-ip-pbx-providers/ "pascom cloud vs virtual PBX solutions").
 
 <div class= "d-flex justify-content-center">
 <a href="https://www.pascom.net/doc/en/server/cloud/" title="create pascom cloud system" alt="pascom free cloud PBX edition" target="_blank" ><img src="cloud_setup.en.png" style="width:200px; height: auto;" ></a> 
