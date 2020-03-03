@@ -48,11 +48,11 @@ These problems are known to us and we are already working on a solution
 **Overview**
 
 * Linux: Support for Jabra headsets
-* Windows/macOS: pascom Client and Jabra Direct can be used simultaneously now
+* Windows/macOS: pascom Client and Jabra Direct can now be used simultaneously
 * Improved stability of the Jabra headset integration
-* macOS/Linux/Android/iOS: QOS / TOS Flags for SIP and SRTP are now correctly set
-* Android: The client checks if the energy optimization settings are correctly configured.
-* Android/Xiaomi: If the "Wake up Screen" permission on MIUI is not configured, the client now shows a warning after the first failed call.
+* macOS/Linux/Android/iOS: QOS / TOS Flags for SIP and SRTP are now set correctly 
+* Android: The app now performs energy optimisation settings checks to ensure they are correctly configured
+* Android/Xiaomi: If the "Wake up Screen" permission is not configured on Xiaomi devices with MIUI, a warning notification will now be shown in the app after the first failed call
 * Improved audio quality for all softphone calls
 
 **MODIFICATIONS**
