@@ -17,13 +17,37 @@ Bitte beachten Sie, dass Ihnen das pascom Support Team bei der Einbindung nicht 
 Nicht unterstützte Telefone können vom pascom Server weder automatisch konfiguriert werden noch steht am Endgerät das pascom Menü zur Verfügung.
 Die Fernsteuerung via pascom Client ist nur eingeschränkt möglich. 
 
-## Voraussetzungen des Engerätes 
+### Voraussetzungen des Engerätes 
 
 Um ein SIP-Endgerät am pascom Server betreiben zu können sind folgende Funktionen notwendig:
 
 * **SIP via TCP/TLS** (verschlüsseltes Signaling)
 * **SRTP** (verschlüsselte Gesprächsdaten)
 * **Outbound-Proxy** (senden der Daten via Session Border Controller)
+
+## Vorbereitung und Zugangsdaten
+
+{{% notice tip %}}
+Leider nutzen viele Hersteller für die gleiche Einstellung verschiedene
+Begrifflichkeiten. Lassen Sie sich davon nicht irritieren. Evtl. müssen Sie
+ein wenig experimentieren. In der folgenden Tabelle werden häufige Begriffe
+genannt.
+{{% /notice %}}
+
+
+|Einstellung|Beispiel-Wert|Beschreibung|
+|---|---|---|
+|Registrar, SIP-Server|**pascom**|Der Name der Telefonanlage|
+|Proxy, Outbound-Proxy|**pascom.cloud**|DNS-Name oder IP-Adresse des Servers|
+|SIP-Port| **TCP 5061** | TLS SIP Port|
+|Username, Identity, Authuser|**mein-telefon-name**|Der Geräte-Anmeldename|
+|Password|*****| Passwort des Gerätes, nicht des Benutzers!|
+
+
+### SIP TLS und SRTP
+
+Lesen Sie im Handbuch des IP-Endgerätes nach wie man SIP TLS und SRTP aktiviert.
+Eventuell sind hierfür mehrere Einstellungen nötig.
 
 ## Neue Basiskonfiguration erstellen
 
@@ -36,7 +60,7 @@ Mit der pascom Version 19.03 gibt es eine neue Basiskonfiguration **Empty Generi
 Duplizieren Sie die Basiskonfiguration **Empty Generic Profile** und geben Ihr eine Bezeichnung z.B. Meine Siemens Geräte. Markieren Sie die neue Basiskonfiguration und klicken auf 
 {{< ui-button "Bearbeiten" >}} > {{< ui-button "Konfiguration" >}}.
 
-**Nachfolgenden Code-Teil müssen Sie mit Ihren Parametern anpassen.**
+**Nachfolgenden Code-Teil müssen Sie mit den passenden Geräte-Parametern anpassen. Die aufgelisteten Variablen dienen zum automatischen befüllen der korrekten Zugangs-/Serverdaten.**
 
 ```
 {{!-- This is a example template --}}
@@ -106,30 +130,8 @@ Markieren Sie das SIP-Endgeräte in der Geräteliste und gehen zu {{< ui-button 
 die **Provisionierungs-URL** in die Zwischenablage kopieren. 
 
 Jedes SIP-fähige Endgeräte besitzt eine eigene Weboberfläche. Wie Sie dort hin gelangen, entnehmen Sie bitte den Instruktionen des jeweiligen Herstellers.
-Die **Provisioning URL** muss meistens in den **Servicing** Einstellungen des Endgeräts bei der Server URL gesetzt werden. Nach Anwenden der Änderungen und 
+Die **Provisioning URL** muss in der Regel in den **Servicing** Einstellungen des Endgeräts bei der Server URL gesetzt werden. Nach Anwenden der Änderungen und 
 einem **Neustart/Reboot** des Endgeräts werden automatisch die Einstellungen über die Provisioning URL in das Endgerät übertragen. 
-
-
-{{% notice tip %}}
-Leider nutzen viele Hersteller für die gleiche Einstellung verschiedene
-Begrifflichkeiten. Lassen Sie sich davon nicht irritieren. Evtl. müssen Sie
-ein wenig experimentieren. In der folgenden Tabelle werden häufige Begriffe
-genannt.
-{{% /notice %}}
-
-
-|Einstellung|Beispiel-Wert|Beschreibung|
-|---|---|---|
-|Registrar, SIP-Server|**pascom**|Der Name der Telefonanlage|
-|Proxy, Outbound-Proxy|**pascom.cloud**|DNS-Name oder IP-Adresse des Servers|
-|SIP-Port| **TCP 5061** | TLS SIP Port|
-|Username, Identity, Authuser|**mein-telefon-name**|Der Geräte-Anmeldename|
-|Password|*****| Passwort des Gerätes, nicht des Benutzers!|
-
-#### SIP TLS und SRTP
-
-Lesen Sie im Handbuch des IP-Endgerätes nach wie man SIP TLS und SRTP aktiviert.
-Eventuell sind hierfür mehrere Einstellungen nötig.
 
 ## Anruf testen
 

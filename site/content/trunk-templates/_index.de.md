@@ -54,6 +54,7 @@ Da diese Vorlagen nicht von pascom selbst gepflegt werden, wenden Sie sich bei F
 
 |Vorlage/ Provider|
 |---|
+|500 Ltd, SIP Trunk Plus|
 |amplus|
 |colt|
 |comingolstadt Business|
@@ -74,7 +75,6 @@ Da diese Vorlagen nicht von pascom selbst gepflegt werden, wenden Sie sich bei F
 |Tele2|
 |TeleData|
 |TelemaxX|
-|voipGATE Business|
-|Toplink Xpress SIP Trunk|
-|500 Ltd, SIP Trunk Plus|
 |T-M-Net Trunk|
+|Toplink Xpress SIP Trunk|
+|voipGATE Business|

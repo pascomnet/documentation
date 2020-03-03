@@ -28,6 +28,59 @@ These problems are known to us and we are already working on a solution
 {{% / notice%}}
 
 
+## Beta 62.D940 (03.03.2020)
+
+[Feedback zur Beta](https://www.pascom.net/forum/t/pascom-client-v62-beta/6722)
+
+**Overview**
+
+* Linux: Jabra-Headset support fixed
+* Windows/macOS/Linux: allow to disable "dynamic scrolling"
+
+**ÄNDERUNGEN**
+
+* [CL-847] Allow to disable / reduce scroll inertia
+
+## Beta 62.D939 (02.03.2020)
+
+[Beta feedback](https://www.pascom.net/forum/t/pascom-client-v62-beta/6722)
+
+**Overview**
+
+* Linux: Support for Jabra headsets
+* Windows/macOS: pascom Client and Jabra Direct can be used simultaneously now
+* Improved stability of the Jabra headset integration
+* macOS/Linux/Android/iOS: QOS / TOS Flags for SIP and SRTP are now correctly set
+* Android: The client checks if the energy optimization settings are correctly configured.
+* Android/Xiaomi: If the "Wake up Screen" permission on MIUI is not configured, the client now shows a warning after the first failed call.
+* Improved audio quality for all softphone calls
+
+**MODIFICATIONS**
+
+* [CL-22] - Hide headset configuration message during login
+* [CL-114] - Improved Jabra Headset support (SDK v2)
+* [CL-540] - Cursor stays in input mode
+* [CL-542] - Implement QOS / TOS support in client
+* [CL-583] - Disable background-clicking in settings
+* [CL-629] - Apple Call Kit Overlay won't work for iOS client
+* [CL-633] - Right click menu glitches
+* [CL-643] - Show a hint if the android client is not on the "Battery Whitelist"
+* [CL-1054] - Remove unread messages of deleted user (sender)
+* [CL-1059] - Scrolling glitches on mobile clients
+* [CL-1082] - Disable tooltips on mobile client
+* [CL-1085] - Content entered in the chat input is lost if you put the app into the background
+* [CL-1093] - You can click through the resync screen
+* [CL-1099] - Yellow stated user should also be visible if filter is 'online'
+* [CL-1109] - Reset to default on mobile client 
+* [CL-1110] - App does not open if you tap on a missed call notification on android
+* [CL-1111] - Android app doesn't handle vendor specific additional permissions correctly
+* [CL-1134] - Follow me settings are out of box on mobile if config is blocked by admin
+* [CL-1135] - Client does not notify me if i do not have a usable phone
+* [CL-1146] - Optimize AEC and Gain Parameters
+* [CL-1157] - Test client release 62
+* [CL-1162] - Status Text content is not properly filtered, and will be treated as html
+* [CL-1167] - pascom Client checks for updates too often
+
 ## Release 61.R919 (19.02.2020)
 
 **Overview**

@@ -27,6 +27,60 @@ In diesem Abschnitt geben wir Ihnen einen Überblick aller wichtigen Änderungen
 Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung  
 {{% /notice %}}
 
+
+## Beta 62.D940 (03.03.2020)
+
+[Feedback zur Beta](https://www.pascom.net/forum/t/pascom-client-v62-beta/6722)
+
+
+**Auf einen Blick**
+
+* Linux: Jabra-Headset Support repariert
+* Windows/macOS/Linux: "dynamisches Scrollen" kann nun deaktiviert werden
+
+**ÄNDERUNGEN**
+
+* [CL-847] Allow to disable / reduce scroll inertia
+
+## Beta 62.D939 (02.03.2020)
+
+**Auf einen Blick**
+
+* Linux: Support für Jabra Headsets
+* Windows/macOS: Der pascom Client kann jetzt gleichzeitig mit Jabra Direct installiert sein
+* Windows/macOS: Stabilität der Jabra-Integration verbessert
+* macOS/Linux/Android/iOS: QOS / TOS Flags für SIP und SRTP werden nun unter korrekt gesetzt
+* Android: Der Client prüft nun ob die Energiespar-Einstellungen korrekt konfiguriert sind
+* Android/Xiaomi: Wenn die "Bildschirm-Aufwecken"-Berechtigung auf Xiaomi-Geräten mit MIUI nicht gesetzt ist, erscheint nun eine Warnungmeldung nach dem ersten Fehlgeschlagenen Anruf
+* Audioqualität bei Softphone-Gesprächen auf allen Plattformen verbessert
+
+**ÄNDERUNGEN**
+
+* [CL-22] - Hide headset configuration message during login
+* [CL-114] - Improved Jabra Headset support (SDK v2)
+* [CL-540] - Cursor stays in input mode
+* [CL-542] - Implement QOS / TOS support in client
+* [CL-583] - Disable background-clicking in settings
+* [CL-629] - Apple Call Kit Overlay won't work for iOS client
+* [CL-633] - Right click menu glitches
+* [CL-643] - Show a hint if the android client is not on the "Battery Whitelist"
+* [CL-1054] - Remove unread messages of deleted user (sender)
+* [CL-1059] - Scrolling glitches on mobile clients
+* [CL-1082] - Disable tooltips on mobile client
+* [CL-1085] - Content entered in the chat input is lost if you put the app into the background
+* [CL-1093] - You can click through the resync screen
+* [CL-1099] - Yellow stated user should also be visible if filter is 'online'
+* [CL-1109] - Reset to default on mobile client 
+* [CL-1110] - App does not open if you tap on a missed call notification on android
+* [CL-1111] - Android app doesn't handle vendor specific additional permissions correctly
+* [CL-1134] - Follow me settings are out of box on mobile if config is blocked by admin
+* [CL-1135] - Client does not notify me if i do not have a usable phone
+* [CL-1146] - Optimize AEC and Gain Parameters
+* [CL-1157] - Test client release 62
+* [CL-1162] - Status Text content is not properly filtered, and will be treated as html
+* [CL-1167] - pascom Client checks for updates too often
+
+
 ## Release 61.R919 (19.02.2020)
 
 **Auf einen Blick**
