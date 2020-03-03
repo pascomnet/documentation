@@ -27,7 +27,21 @@ In this section, we give you an overview of all breaking changes in the pascom c
 These problems are known to us and we are already working on a solution
 {{% / notice%}}
 
-## Beta 62.D939 (01.03.2020)
+
+## Beta 62.D940 (03.03.2020)
+
+[Feedback zur Beta](https://www.pascom.net/forum/t/pascom-client-v62-beta/6722)
+
+**Overview**
+
+* Linux: Jabra-Headset support fixed
+* Windows/macOS/Linux: allow to disable "dynamic scrolling"
+
+**ÄNDERUNGEN**
+
+* [CL-847] Allow to disable / reduce scroll inertia
+
+## Beta 62.D939 (02.03.2020)
 
 [Beta feedback](https://www.pascom.net/forum/t/pascom-client-v62-beta/6722)
 

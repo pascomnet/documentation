@@ -27,9 +27,22 @@ In diesem Abschnitt geben wir Ihnen einen Überblick aller wichtigen Änderungen
 Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung  
 {{% /notice %}}
 
-## Beta 62.D939 (01.03.2020)
+
+## Beta 62.D940 (03.03.2020)
 
 [Feedback zur Beta](https://www.pascom.net/forum/t/pascom-client-v62-beta/6722)
+
+
+**Auf einen Blick**
+
+* Linux: Jabra-Headset Support repariert
+* Windows/macOS/Linux: "dynamisches Scrollen" kann nun deaktiviert werden
+
+**ÄNDERUNGEN**
+
+* [CL-847] Allow to disable / reduce scroll inertia
+
+## Beta 62.D939 (02.03.2020)
 
 **Auf einen Blick**
 
