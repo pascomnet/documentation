@@ -28,9 +28,16 @@ These problems are known to us and we are already working on a solution
 {{% / notice%}}
 
 
-## Beta 62.D940 (03.03.2020)
+## Beta 62.D946 (06.03.2020)
 
 [Beta feedback](https://www.pascom.net/forum/t/pascom-client-v62-beta/6722)
+
+**Overview**
+
+* Fixed problems with controling some Jabra Headsets
+* Video support can now be disabled via a commandline option or environment variable
+
+## Beta 62.D940 (03.03.2020)
 
 **Overview**
 
