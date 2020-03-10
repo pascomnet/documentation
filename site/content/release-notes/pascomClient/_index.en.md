@@ -27,10 +27,22 @@ In this section, we give you an overview of all breaking changes in the pascom c
 These problems are known to us and we are already working on a solution
 {{% / notice%}}
 
-
-## Beta 62.D946 (06.03.2020)
+## Beta 62.D956 (10.03.2020)
 
 [Beta feedback](https://www.pascom.net/forum/t/pascom-client-v62-beta/6722)
+
+**Overview**
+
+* Fixed a rare problem during transfer or pickup when using a Jabra Headset
+* Fixed a rare problem during transfer or pickup when using a Sennheiser Headset
+
+**MODIFICATIONS**
+
+* [CL-1115] Sennheiser Headset treats forwarded calls incorrectly
+* [CL-1173] Pickup to a queue with Jabra Headset results in a hangup of the picked call
+
+
+## Beta 62.D946 (06.03.2020)
 
 **Overview**
 
