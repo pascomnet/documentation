@@ -27,9 +27,17 @@ In diesem Abschnitt geben wir Ihnen einen Überblick aller wichtigen Änderungen
 Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung  
 {{% /notice %}}
 
-## Beta 62.D956 (10.03.2020)
+## Beta 62.D961 (11.03.2020)
 
 [Feedback zur Beta](https://www.pascom.net/forum/t/pascom-client-v62-beta/6722)
+
+**Auf einen Blick**
+
+* Das Jabra-Headset hat nun auch den korrekten Zustand wenn der andere Teilnehmer auflegt
+* Jabra-Konfiguration unter Ubuntu Linux repariert
+
+## Beta 62.D956 (10.03.2020)
+
 
 **Auf einen Blick**
 
