@@ -1,5 +1,5 @@
 ---
-title: pascom Server 19
+title: pascom Server 19 BETA
 description: With the new pascom version 19 Release, numerous new and improved functions are now available
 weight: 995
 ---

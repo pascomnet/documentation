@@ -1,5 +1,5 @@
 ---
-title: pascom Server 19
+title: pascom Server 19 BETA
 description: Mit dem pascom Release 19 stehen Ihnen eine Vielzahl an neuen Funktionen zur Verfügung.
 weight: 995
 ---
