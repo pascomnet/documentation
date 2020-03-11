@@ -1,5 +1,5 @@
 ---
-title: pascom Server 19 BETA
+title: pascom Server 19
 description: Mit dem pascom Release 19 stehen Ihnen eine Vielzahl an neuen Funktionen zur Verfügung.
 weight: 995
 ---
@@ -61,9 +61,61 @@ In diesem Abschnitt werden die Änderungen erläutert, die Sie bei der Migration
 Diese Probleme sind uns in pascom 19 bereits bekannt und wir arbeiten aktuell an einer Lösung  
 {{% /notice %}}
 
-* Hardwaretelefon-Displays werden beim Verbinden (mit Rücksprache) und Pickup nicht aktualisiert
 
 
+## Release 19.05 (11.03.2020)
+
+**Auf einen Blick**
+
+* Outbound Proxy für Ämter eingeführt.
+* Allgemeine Verbesserungen bei Ämtern (z. B. bei Umleitungen, Halten, Transfer).
+* Vodafone NGN Trunk Unterstützung über Outbound Proxy (onsite).
+* Analytics optimiert (unter anderem Teamansicht).
+* Migration von Analytics läuft nun stabiler.
+* Anzeige beim Heranholen und Transferieren auf Hardwaregeräten verbessert.
+* Abwerfen eines Anrufes erzeugt in jedem Fall wieder eine Call Activity.
+
+
+**ÄNDERUNGEN:**
+
+- [MD-10987] - Improve Peoplefone trunk anonymous call behavior
+- [MD-11541] - Broken Analytics/Grafana after fresh installations in rare cases
+- [MD-11707] - Do not show warning messages during loading in CSUI
+- [MD-11835] - Update xmpsserver http client
+- [MD-11858] - Consul register again deleted instance
+- [MD-11867] - Clean up db-schema file
+- [MD-11868] - Disable yealink subscribe_register because not supported in pjsip
+- [MD-11939] - Rename label for number of extension digits in trunk
+- [MD-11971] - Don't add any options to generic SIP trunk
+- [MD-12006] - Can't upload wav to default MoH
+- [MD-12035] - Analytics can't handle dots properly
+- [MD-12053] - Missing audio after outbound redirections
+- [MD-12058] - Missing English silence/1 prompts
+- [MD-11861] - API improvement for queue live stats
+- [MD-12095] - pascom Analytics: Add counter for waiting users/agents on live dashboard
+- [MD-12036] - Improve performance and restrict amount of shown teams in analytics
+- [MD-12086] - Update linux kernel to 4.15
+- [MD-12078] - Add container memory details (caches, buffers) to prometheus metrics
+- [MD-8596] - Monitor asterisk trunk connectivity
+- [MD-11914] - Update Seabix Trunk Template
+- [MD-12056] - Update asterisk to 16.8.0
+- [MD-12083] - Restrict default trunk codec list to alaw with ptime 20 to avoid re-invites
+- [MD-11985] - Update Java 11 AdoptOpenJDK JRE/JDK
+- [MD-12046] - No ringback tone with Telekom advanced template
+- [MD-11708] - Prohibit sip call push in GSM only mode
+- [MD-12060] - Remove hard upper memory limit from all container image descriptor
+- [MD-12074] - Replace apache mod_php with php fpm
+- [MD-11635] - Allow to hangup multiple channels by sending base.Hangup
+- [MD-12103] - Phone status unavailable if connected via UDP interface
+- [MD-12088] - Missing call activity after drop in external/before action
+- [MD-11779] - Subscription valid until info in instance shows negative amount of days
+- [MD-11846] - Correctly handle callerid and connectedline updates in pjsip
+- [MD-12073] - Improve overlay cleanup on instance update
+- [MD-11948] - SIP outbound proxy for pascom 19 pjsip trunks
+- [MD-12099] - Outbound proxy support for vodafone NGN trunks
+- [MD-12040] - Set ptime 20 for physical and virtual fax devices
+- [MD-11935] - Hide sip peer in display of snom phones
+- [MD-11980] - Update Kamailio to version 5.3.x
 
 ## Release 19.04 (03.02.2020)
 

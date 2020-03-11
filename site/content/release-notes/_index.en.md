@@ -85,6 +85,7 @@ Due to the technological changes made between pascom 17 to 18 and the resulting 
 
 |Version|Release Type|Published|
 |-------|------------|---------------:|
+|[Release 19.05]({{< ref "/release-notes/pascom19#release-19-05-11-03-2020" >}})| Bugfix Release | 11.03.2020|
 |[Release 19.04]({{< ref "/release-notes/pascom19#release-19-04-03-02-2020" >}})| Bugfix Release | 03.02.2020|
 |[Release 19.03]({{< ref "/release-notes/pascom19#release-19-03-29-01-2020" >}})| Bugfix Release | 29.01.2020|
 |[Release 19.02]({{< ref "/release-notes/pascom19#release-19-02-22-11-2019" >}})| Bugfix Release | 22.11.2019|
