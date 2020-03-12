@@ -33,12 +33,12 @@ These problems are known to us and we are already working on a solution
 
 **Overview**
 
-* Fixed a rare problem during transfer or pickup when using a Jabra Headset
-* Fixed a rare problem during transfer or pickup when using a Sennheiser Headset
+* Fixed a seldom occuring problem during transfer or pickup when using a Jabra Headset
+* Fixed a seldom occuring problem during transfer or pickup when using a Sennheiser Headset
 
 **MODIFICATIONS**
 
-* [CL-1115] Sennheiser Headset treats forwarded calls incorrectly
+* [CL-1115] Sennheiser Headset handles forwarded calls incorrectly
 * [CL-1173] Pickup to a queue with Jabra Headset results in a hangup of the picked call
 
 
