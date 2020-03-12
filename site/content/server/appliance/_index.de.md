@@ -59,6 +59,9 @@ Kopieren Sie nun das Server-ISO direkt auf den USB-Stick und benennen es nach **
 
 Erstellen Sie, ebenfalls direkt auf dem USB-Stick, die Datei **setup.json** mit folgendem Inhalt:
 
+{{% tabs %}}
+{{% tab "pascom 18" %}}
+
 ```
 {
     "device": "sda",
@@ -76,12 +79,37 @@ Erstellen Sie, ebenfalls direkt auf dem USB-Stick, die Datei **setup.json** mit 
     }
 }
 ```
+{{% /tab %}}
+
+{{% tab "pascom 19" %}}
+
+```
+{
+    "device": "sdb",
+    "skipWelcome": true,
+    "skipDevice": true,
+    "skipHostname": true,
+    "hostname": "usbsetup",
+    "skipNetwork": true,
+    "skipStartNetwork": true,
+    "skipBrowser": true,
+    "skipReboot": true,
+    "halt": true,
+    "preinst" : {
+ 
+    }
+}
+```
+{{% /tab %}}
+{{% /tabs %}}
 
 ### Variante 2 | Unattended Konfigurationsdatei erstellen
 (***Anstelle der obigen Konfigurationsdatei***)  
 Oft ist es nicht möglich, einen Monitor an die Appliance anzuschließen. Um eine **unattended** - Installation durchzuführen, ohne durch die Setup-Oberfläche zu klicken, 
 erstellen Sie, ebenfalls direkt auf dem USB-Stick, die Datei **setup.json** mit folgendem Inhalt. 
 
+{{% tabs %}}
+{{% tab "pascom 18" %}}
 ```
 {
     "device": "sda",
@@ -112,6 +140,42 @@ erstellen Sie, ebenfalls direkt auf dem USB-Stick, die Datei **setup.json** mit 
     }
 }
 ```
+{{% /tab %}}
+
+{{% tab "pascom 19" %}}
+```
+{
+    "device": "sdb",
+    "skipWelcome": true,
+    "skipHostname": true,
+    "skipDevice": true,
+    "hostname": "usbsetup",
+    "skipNetwork": true,
+    "skipStartNetwork": true,
+    "skipBrowser": true,
+    "skipReboot": true,
+    "halt": true,
+    "preinst" : {
+        "device": "sdb",
+        "skipWelcome": true,
+        "skipHostname": true,
+        "hostname": "pascom-server",
+        "skipNetwork": true,
+        "network": {
+            "interface": "enp1s0",
+            "mode": "static",
+            "ip": "192.168.100.1",
+            "netmask": "255.255.255.0",
+            "gateway": "192.168.100.254",
+            "dns1": "192.168.100.254",
+            "dns2": ""
+       }
+    }
+}
+```
+{{% /tab %}}
+{{% /tabs %}}
+
 **Von Ihnen anpassbare Parameter:**
 
 

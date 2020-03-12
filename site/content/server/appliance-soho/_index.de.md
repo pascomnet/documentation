@@ -66,7 +66,9 @@ Verbinden Sie den USB-Stick mit Ihrem Computer und starten Sie das Tool Rufus. W
 
 Da der pascom SOHO Server keine Monitoranschluss hat müssen Sie auf dem USB-Stick noch eine Datei mit dem Namen **setup.json** anlegen und mit Ihren Netzwerkeisntellungen vorbelegen. Dadurch bootet das System automatisch und konfiguriert das Netzwerk entsprechen. Somit können Sie direkt nach dem Systemstart mit dem Webbasierten Setup fortfahren.
 
-```json
+{{% tabs %}}
+{{% tab "pascom 18" %}}
+```
 {
     "device": "sda",
     "skipWelcome": true,
@@ -85,7 +87,30 @@ Da der pascom SOHO Server keine Monitoranschluss hat müssen Sie auf dem USB-Sti
    }
 }
 ```
+{{% /tab %}}
 
+{{% tab "pascom 19" %}}
+```
+{
+    "device": "sdb",
+    "skipWelcome": true,
+    "skipHostname": true,
+    "skipDevice": true,
+    "hostname": "pascom-server",
+    "skipNetwork": true,
+    "network": {
+        "interface": "enp1s0",
+        "mode": "static",
+        "ip": "192.168.100.1",
+        "netmask": "255.255.255.0",
+        "gateway": "192.168.100.254",
+        "dns1": "192.168.100.254" ,
+        "dns2": ""
+   }
+}
+```
+{{% /tab %}}
+{{% /tabs %}}
 
 ### USB-Stick anstecken
 

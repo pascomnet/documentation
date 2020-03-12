@@ -27,9 +27,17 @@ In this section, we give you an overview of all breaking changes in the pascom c
 These problems are known to us and we are already working on a solution
 {{% / notice%}}
 
-## Beta 62.D956 (10.03.2020)
+
+## Beta 62.D961 (11.03.2020)
 
 [Beta feedback](https://www.pascom.net/forum/t/pascom-client-v62-beta/6722)
+
+**Overview**
+
+* State is correctly synchronized to the Jabra headset if the other party hangs up 
+* Fixed Jabra headset configuration on Ubuntu Linux
+
+## Beta 62.D956 (10.03.2020)
 
 **Overview**
 
