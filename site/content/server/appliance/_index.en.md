@@ -58,6 +58,9 @@ Now copy the server ISO directly to the USB stick and rename it to **pascom.iso*
 
 Create the file **setup.json** directly on the USB stick with the following content:
 
+{{% tabs %}}
+{{% tab "pascom 18" %}}
+
 ```
 {
     "device": "sda",
@@ -75,12 +78,37 @@ Create the file **setup.json** directly on the USB stick with the following cont
     }
 }
 ```
+{{% /tab %}}
+
+{{% tab "pascom 19" %}}
+
+```
+{
+    "device": "sdb",
+    "skipWelcome": true,
+    "skipDevice": true,
+    "skipHostname": true,
+    "hostname": "usbsetup",
+    "skipNetwork": true,
+    "skipStartNetwork": true,
+    "skipBrowser": true,
+    "skipReboot": true,
+    "halt": true,
+    "preinst" : {
+ 
+    }
+}
+```
+{{% /tab %}}
+{{% /tabs %}}
 
 ### Variant 2 | Create unattended Configfile
 (***Instead of the configuration file above***)  
 It is often not possible to connect a monitor to the pascom appliance. To perform an **unattended** installation without clicking through the setup interface
 create the file **setup.json** with the following content, also directly on the USB-Stick
 
+{{% tabs %}}
+{{% tab "pascom 18" %}}
 ```
 {
     "device": "sda",
@@ -111,6 +139,42 @@ create the file **setup.json** with the following content, also directly on the 
     }
 }
 ```
+{{% /tab %}}
+
+{{% tab "pascom 19" %}}
+```
+{
+    "device": "sdb",
+    "skipWelcome": true,
+    "skipHostname": true,
+    "skipDevice": true,
+    "hostname": "usbsetup",
+    "skipNetwork": true,
+    "skipStartNetwork": true,
+    "skipBrowser": true,
+    "skipReboot": true,
+    "halt": true,
+    "preinst" : {
+        "device": "sdb",
+        "skipWelcome": true,
+        "skipHostname": true,
+        "hostname": "pascom-server",
+        "skipNetwork": true,
+        "network": {
+            "interface": "enp1s0",
+            "mode": "static",
+            "ip": "192.168.100.1",
+            "netmask": "255.255.255.0",
+            "gateway": "192.168.100.254",
+            "dns1": "192.168.100.254",
+            "dns2": ""
+       }
+    }
+}
+```
+{{% /tab %}}
+{{% /tabs %}}
+
 **Customizable Parameters:**
 
 

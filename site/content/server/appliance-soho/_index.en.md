@@ -62,7 +62,9 @@ Connect the USB stick to your compute and start Rufus. Now select the pascom Ser
 
 As the pascom SOHO phone system server does not have a monitor connectivity option, you will need to add a file named **setup.json** to the USB stick and pre-allocate the file with your network settings. The system will automatically boot and configure the network settings accordingly. This ensures that you are able to continue with the web based setup as soon as the system has started. 
 
-```json
+{{% tabs %}}
+{{% tab "pascom 18" %}}
+```
 {
     "device": "sda",
     "skipWelcome": true,
@@ -73,14 +75,38 @@ As the pascom SOHO phone system server does not have a monitor connectivity opti
     "network": {
         "interface": "enp1s0",
         "mode": "static",
-        "ip": "192.168.0.5",
+        "ip": "192.168.100.1",
         "netmask": "255.255.255.0",
-        "gateway": "192.168.0.1",
-        "dns1": "192.168.0.1" ,
-		"dns2": ""
+        "gateway": "192.168.100.254",
+        "dns1": "192.168.100.254" ,
+        "dns2": ""
    }
 }
 ```
+{{% /tab %}}
+
+{{% tab "pascom 19" %}}
+```
+{
+    "device": "sdb",
+    "skipWelcome": true,
+    "skipHostname": true,
+    "skipDevice": true,
+    "hostname": "pascom-server",
+    "skipNetwork": true,
+    "network": {
+        "interface": "enp1s0",
+        "mode": "static",
+        "ip": "192.168.100.1",
+        "netmask": "255.255.255.0",
+        "gateway": "192.168.100.254",
+        "dns1": "192.168.100.254" ,
+        "dns2": ""
+   }
+}
+```
+{{% /tab %}}
+{{% /tabs %}}
 
 ### Connect the USB Stick
 
