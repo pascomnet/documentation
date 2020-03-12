@@ -61,7 +61,6 @@ These problems are already known to us in pascom 19 and we are currently working
 {{% / notice%}}
 
 
-
 ## Release 19.05 (11.03.2020)
 
 **Overview**
