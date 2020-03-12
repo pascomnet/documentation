@@ -67,7 +67,7 @@ These problems are already known to us in pascom 19 and we are currently working
 **Overview**
 
 * Outbound Proxy for trunks implemented.
-* General improvements in trunks (p.e. redirections, hold and transfers).
+* General improvements in trunks (e.g. redirections, hold and transfers).
 * Vodafone NGN trunk support via outbound proxy (onsite).
 * Analytics optimized (including team view).
 * Analytics migration is now more stable.
