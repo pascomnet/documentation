@@ -1,42 +1,40 @@
 ---
-title: Mobile Client Settings for Energy Savings
-description: The battery optimization must be switched off so that the android pascom Mobile App can reliably receive messages and calls in the background. 
+title: Mobile App Energy Optimisation Settings
+description: In order to ensure that the pascom mobile app for Android is able to reliably receive messages and calls whilst running in the background, the app's battery optimisation settings must be switched off.
 ---
  
 
 {{< description >}}
 
 
-### The message in the pascom mobile app
+### pascom Mobile App Energy Optimisation Notification
 
-When you start the pascom mobile app, you may see the following message in the upper area of ​​the client.
+When you start the pascom mobile app, the following notification may appear across the top of the client.
 
-![pascom message power savings](client_notification.jpg?width=50% "Message Power Savings")
+![pascom energy optimisation notification](client-notification-en.jpg?width=50% "pascom Android app energy optimisation")
 
-**Message:** - Battery optimization for pascom app is switched on
+**Message:** - pascom App battery optimisation is enabled
 
 ### The Solution
 
-Click on the link "**Details**" in the message to go to the following page.
+Click **Details** link within the notification in order to open the following screen:
 
-![pascom message power savings](client_warning.jpg?width=50% "Message Power Savings")
+![pascom energy optimisation notification details](client-warning-en.jpg?width=50% "pascom Android app battery optimisation")
 
-With the button {{<ui-button "Settings">}} the pascom app wants to carry out the optimization for you and needs an
-access to the Android energy saving settings. You allow this by clicking on **Allow**.
+By pressing the {{<ui-button "Settings">}} button, the pascom app will automatically adjust the apps battery optimisation settings in order to ensure maximum performance. In order to proceed and allow the changes, you must press **Allow**.
 
-![pascom message power savings](disable_powermanagement.jpg?width=50% "Message Power Savings")
+![pascom App battery usage optimisation](disable-powermanagement-en.jpg?width=50% "pascom App power management settings")
 
 {{% notice tip %}}
-The pascom client has its own power management in which the battery consumption is optimized and regulated. In addition, messages and calls are in the background
-received reliably. 
+The pascom app includes a dedicated power management function in order to optimise and regulate battery consumption. By making the above changes, the reliable, real-time receipt of calls and messages is ensured. 
 {{% /notice %}}
 
-### Make the energy saving setting manually
+### Manually Disable Energy Saving
 
-You can also deactivate the energy saving settings manually. To do this, go to the settings for your installed apps and search for the **pascom Client**.
+You can also manually disable energy saving settings for the pascom app. To do this, go to apps settings menu on your smartphone and search for the **pascom Client**.
 
-![Deactivate pascom battery optimization](android_settings1.jpg?width=50% "Deactivate pascom battery optimization")
+![Deactivate pascom battery optimisation](android-settings1-en.jpg?width=50% "Deactivate pascom battery optimisation")
 
-Tap on {{<ui-button "Battery">}} to **disable** on the next page the item "**Optimize battery consumption**".
+Tap the {{<ui-button "Battery">}} icon in order to **disable** the **Optimise battery usage** within the next screen. Note, you may need to select **All Apps** from the drop down list.
 
-![Deactivate pascom battery optimization](android_settings2.jpg?width=50% "Deactivate pascom battery optimization")
+![Deactivate pascom battery optimization](android-settings2-en.jpg?width=50% "Deactivate pascom battery optimisation")
