@@ -61,18 +61,17 @@ No problems are known at the moment!
 {{% / notice%}}
 
 
-
 ## Release 19.05 (11.03.2020)
 
 **Overview**
 
-* Outbound Proxy for Trunks implemented.
-* General improvements in Trunks (p.e. redirections, hold and transfers).
-* Vodafone NGN Trunk support via outbound proxy (onsite).
+* Outbound Proxy for trunks implemented.
+* General improvements in trunks (e.g. redirections, hold and transfers).
+* Vodafone NGN trunk support via outbound proxy (onsite).
 * Analytics optimized (including team view).
 * Analytics migration is now more stable.
-* Improved display when picking up and transfering to hardware devices.
-* Discarding a call always creates a call activity again.
+* Improved display when picking up and transfering to desktop phones.
+* Discarding a call will always create a call activity.
 
 **Modifications:**
 
