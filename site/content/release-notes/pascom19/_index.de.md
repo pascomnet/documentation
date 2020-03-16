@@ -58,7 +58,7 @@ In diesem Abschnitt werden die Änderungen erläutert, die Sie bei der Migration
 ## Bekannte Probleme
 
 {{% notice issues %}}
-Diese Probleme sind uns in pascom 19 bereits bekannt und wir arbeiten aktuell an einer Lösung  
+Derzeit sind keine Probleme bekannt!  
 {{% /notice %}}
 
 

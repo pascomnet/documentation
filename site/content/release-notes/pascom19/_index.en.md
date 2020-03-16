@@ -57,7 +57,7 @@ This section explains the changes that you must consider when migrating to pasco
 ## Known Issues
 
 {{% notice issues %}}
-These problems are already known to us in pascom 19 and we are currently working on a solution
+No problems are known at the moment!
 {{% / notice%}}
 
 
