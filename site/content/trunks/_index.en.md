@@ -1,6 +1,6 @@
 ---
 title: Trunks
-description: How to add and register your on-premise pascom Business VoIP Phone System or pascom Hosted PBX with a trunk from your preferred Voice Service Provider.
+description: pascom is compatible with a wide range of providers. Here you can find out everything about the basic settings, accounts and call rules.
 icon: "fa fa-globe"
 type : "pages"
 weight : 8

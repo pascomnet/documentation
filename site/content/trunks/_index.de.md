@@ -1,6 +1,6 @@
 ---
 title: Ämter
-description: pascom ist zu einer Vielzahl an Hardware IP-Telefonen kompatibel. An dieser Stelle erfahren Sie wie diese automatisch und sicher eingebunden werden können.
+description: pascom ist kompatibel mit einer Vielzahl von Providern. Hier erfahren Sie alles über die Basiseinstellungen, Accounts und Rufregeln.
 icon: "fa fa-globe"
 type : "pages"
 weight : 8

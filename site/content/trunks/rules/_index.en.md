@@ -1,12 +1,14 @@
 ---
 title: Call Rules
 description: Using call rules you are able to manage which extensions are available over which trunk i.e. who can call out via this trunk. Call rules are automatically added when using one of our trunk templates and can then be modified.
-weight: 20
+weight: 40
 ---
 
 {{< doctype "both"  >}}
 
 {{< description >}}
+
+{{< youtube ZFyW7IlxLYE >}}
 
 When adding trunks (accounts), you can add call rules for both inbound and outbound calls.
 

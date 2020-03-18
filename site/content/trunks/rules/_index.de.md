@@ -1,12 +1,14 @@
 ---
 title: Rufregeln
 description: Mit Hilfe von Rufregeln steuern Sie welche Durchwahlen über ein Amt erreichbar sind bzw. wer über diese Amt hinaustelefonieren kann. Rufregeln werden von unseren Amtsvorlagen automatisch erstellt und können angepasst werden.
-weight: 20
+weight: 40
 ---
 
 {{< doctype "both"  >}}
 
 {{< description >}}
+
+{{< youtube WnVM3bOtOw8 >}}
 
 Auf der pascom unterscheidet man Rufregeln für eingehende und ausgehende Rufe.
 
