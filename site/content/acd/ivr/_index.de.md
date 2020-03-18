@@ -8,6 +8,8 @@ weight: 40
  
 {{< description >}}
 
+{{< youtube zLTaIJlvYeU >}} 
+
 ## Konzept
 
 Auswahlmenüs (IVR) dienen dazu den Anrufer durch das Drücken einer Taste durch das Telefonsystem zu lenken. Beispielsweise kann es sein, dass 50% der Anrufer auf der Zentrale nur entweder mit dem Vertrieb oder dem Support verbunden werden möchten. Hier kann man die [Telefonzentrale](https://www.pascom.net/de/voip-telefonanlage "Telefonzentrale") sinnvoll entlasten indem man ein Auswahlmenü vor die Zentrale schaltet.

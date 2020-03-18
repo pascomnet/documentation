@@ -19,6 +19,10 @@ weight: 30
 ## pascom Client Training Videos
 
 {{< youtube dZ6U_YShgag >}}
+<br>
+{{< youtube xATkFu9Qizk >}} 
+<br>
+{{< youtube 8OBSRSndjas >}} 
 
 ## Login
 
@@ -479,6 +483,8 @@ Here you define the basic settings of the Client.
 ![Client Settings](client_settings.en.png?width=500px)
 
 ## Actions
+
+{{< youtube pyVqJ5SKIIk >}} 
 
 The actions allow you to pass call data to third-party applications. Here you have the possibility to pass on data to a URL or to an installed application.
 

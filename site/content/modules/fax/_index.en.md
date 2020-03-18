@@ -8,6 +8,10 @@ weight: 10
 
 {{< description >}}
 
+## Trainingsvideo
+
+{{< youtube zS7hPRGWXPk >}}
+
 ## Overview
 
 [Our VoIP phone system software](https://www.pascom.net/en/ "pascom IP phone system software") comes with a fully integrated fax server as standard.

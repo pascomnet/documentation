@@ -19,7 +19,11 @@ weight: 30
 
 ## pascom Client Training Videos
 
-{{< youtube r-MfrLPXkXY >}} JC9AhCM2p_M
+{{< youtube r-MfrLPXkXY >}} 
+<br>
+{{< youtube JC9AhCM2p_M >}} 
+<br>
+{{< youtube -k1t5sel0NE >}} 
 
 ## Login
 
@@ -502,6 +506,8 @@ Hier legen Sie die Basiseinstellungen des Client fest.
 ![Client Einstellungen](client_settings.de.png?width=500px)
 
 ## Aktionen
+
+{{< youtube n9QQMU1CrTM >}} 
 
 In den Aktionen können Sie Anrufdaten an Drittanwendungen weitergeben. Hier haben Sie die Möglichkeit Daten an eine URL, oder an eine installierte Anwendung weiter zu geben. 
 

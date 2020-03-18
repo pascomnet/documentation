@@ -8,6 +8,10 @@ weight: 10
 
 {{< description >}}
 
+## Trainingsvideo
+
+{{< youtube ZVieZBOLqDE >}}
+
 ## Übersicht
 
 [In unsere VoIP Software](https://www.pascom.net/de/) ist ein Fax-Server integriert. Dabei handelt es sich um das Produkt [HylaFax](http://www.hylafax.org/) welches über virtuelle IAX-Modems direkt an den Asterisk Telefonieserver angekoppelt ist.

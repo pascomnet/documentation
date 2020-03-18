@@ -3,6 +3,9 @@ title: Teams Konzept
 description: Benutzer können Mitglied in einem Team sein. Teams in pascom sind Vergleichbar mit Warteschlangen.
 weight: 10
 ---
+## Training Video
+
+{{< youtube 4p7ncvEI6Es >}}
 
 ## Konzept
 

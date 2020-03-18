@@ -8,6 +8,10 @@ weight: 40
 
 {{< description >}}
 
+## Training Video
+
+{{< youtube vsqXY-HsueY >}}
+
 ## Konzept
 
 Benutzer ebenso wie Geräte, Arbeitsplätze oder Teams können Mitglieder in einer oder mehreren Rollen sein. Der Rolle selbst können Eigenschaften und Rechte zugeteilt werden. Sie steuern telefonie-relevante Eigenschaften und Rechte wie bsw. die Erlaubnis Gespräche anderer Benutzer heranzuholen.
