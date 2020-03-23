@@ -27,6 +27,11 @@ In this section, we give you an overview of all breaking changes in the pascom c
 These problems are known to us and we are already working on a solution
 {{% / notice%}}
 
+* [CL-1071] Plantronics Support is unstable on some systems. If the Client of crashes in combination with a Plantronics headset, set Plantronics to "ignore" in the settings. Only the use of headset buttons then no longer works
+* [CL-1165] Outlook Support is unstable on some systems and causes the pascom client to crash
+* [CL-1191] Some endpoint protection software (e.g. Kaspersky) prevents certain actions of the pascom client, e.g. b. Autostart configuration or microphone access
+
+
 ## Beta 62.D961 (11.03.2020)
 
 [Beta feedback](https://www.pascom.net/forum/t/pascom-client-v62-beta/6722)
