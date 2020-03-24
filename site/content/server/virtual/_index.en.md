@@ -40,6 +40,7 @@ However, should you choose to, you can specify which internet services your comp
 | TCP **25** | cloudmx1.pascom.net, cloudmx2.pascom.net | Access to the pascom Mailserver |
 | UDP **123** | \* | Access to the preferred time server (NTP) |
 | UDP **3478** | \* | Access for Video-Functionality |
+| UDP + TCP **19302** | WebRTC |
 
 ## Download ISO File
 

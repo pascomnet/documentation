@@ -34,6 +34,7 @@ Möchten Sie jedoch genau festlegen auf welche Internetdienste Ihr Unternehmensn
 | TCP **5222** | pascom Desktop- und Mobile-Client Zugriffe |
 | UDP **30000 - 35000** | SRTP - verschlüsselte Sprachdaten |
 | UDP **3478** | Zugriff für Video-Funktionalität |
+| UDP + TCP **19302** | WebRTC |
 
 #### Optionale Dienste
 
