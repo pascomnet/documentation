@@ -15,17 +15,17 @@ weight: 50
 |**Instanz Typ<sup>1</sup>**|t2.small| t2.medium |t2.large| t2.xlarge | t2.2xlarge |
 |**EBS Volume<sup>2</sup>**|32 GB|64 GB|128 GB|256 GB|512 GB|
 
-**1)** Bei hoher CPU-Last empfiehlt sich das Setzen der kostenpflichtigen Option "t2 unlimited". Die Last hängt stark von vom jeweiligen Nutzerverhalten ab. Daher empfehlen wir ohne die Option zu starten und die Instanz über das AWS monitoring zu beobachten. 
+**1)** Bei hoher CPU-Last empfiehlt sich das Setzen der kostenpflichtigen Option "t2 unlimited". Die Last hängt stark vom jeweiligen Nutzerverhalten ab. Daher empfehlen wir ohne die Option zu starten die Instanz über das AWS Monitoring zu beobachten. 
 
 **2)** Im Standardfall erzeugt der pascom Server keine hohe IO Last. Daher ist der Volume Typ "magnetic" ausreichend. 
 
 ## AWS Instanz Setup
 
-pascom stellt am AWS Standort Frankfurt ein **Community AMI** zur Verfügung:
+pascom stellt am AWS Standort Frankfurt eine **Community AMI** zur Verfügung:
 
 ![AMI auswählen](select_ami.png "AMI auswählen")
 
-Fahren Sie mit dem AWS Instanz Setup fort und treffen Sie weiteren Einstellungen laut unseren Empfehlungen bis Sie zum Schritt 6 **Configure Security Group** gelangen.
+Fahren Sie mit dem AWS Instanz Setup fort und treffen Sie weitere Einstellungen laut unseren Empfehlungen bis Sie zum Schritt 6 **Configure Security Group** gelangen.
 
 
 ### Konfiguration der Security Group
@@ -33,7 +33,7 @@ Fahren Sie mit dem AWS Instanz Setup fort und treffen Sie weiteren Einstellungen
 #### Management
 
 {{% notice warning %}}
-Auf diese Port müssen Sie als Administrator zugrifen können. Geben Sie diese Ports **keinesfalls** für ungeschrängten Internetzugriff frei. Am einfachsten beschränken Sie hierzu die Quell-IP-Adresse auf den Berich Ihres Unternehens-Netzwerkes. Alternativ können Sie VPN- oder Direkverbindungen der AWS nutzen.
+Auf diese Ports müssen Sie als Administrator zugrifen können. Geben Sie diese Ports **keinesfalls** für uneingeschrängten Internetzugriff frei. Am einfachsten beschränken Sie hierzu die Quell-IP-Adresse auf den Berich Ihres Unternehensnetzwerk. Alternativ können Sie VPN- oder Direkverbindungen der AWS nutzen.
 {{% /notice %}}
 
 | Port | Beschreibung |
@@ -58,7 +58,7 @@ Für die Nutzung der Telefonie- und Chatservices geben Sie diese Ports für den 
 #### Optionale Dienste
 
 {{% notice tip %}}
-Geben Sie folgende Ports nur dann für die uneingeschrängte Nutzung über das Internet frei wenn Sie diese Dienste auch wiklich verwenden. 
+Geben Sie folgende Ports nur dann für die uneingeschrängte Nutzung über das Internet frei, wenn Sie diese Dienste auch wiklich verwenden. 
 {{% /notice %}}
 
 | Port | Beschreibung |
@@ -91,7 +91,7 @@ Sollte Ihnen kein eigener, externer DNS Server zu verfügung stehen bietet [no-i
 
 ## Let's encrypt aktivieren
 
-Der pascom Server in der Lage vollautomatisiert ein Let's Encrypt Certificate für diesen Domainnamen einzurichten. Hierzu sind folgende Schritte notwendig:
+Der pascom Server ist in der Lage vollautomatisiert ein Let's Encrypt Zertifikate für diesen Domainnamen einzurichten. Hierzu sind folgende Schritte notwendig:
 
 * Melden Sie sich per Browser am pascom Server als admin an
 * Klicken Sie auf {{< ui-button "Interface" >}}
@@ -100,7 +100,7 @@ Der pascom Server in der Lage vollautomatisiert ein Let's Encrypt Certificate f�
 * Schalten Sie den {{< ui-field "Certificate mode" >}} auf {{< ui-input "Let's Encrypt" >}}
 * Durch {{< ui-button "Save" >}} wenden Sie die Konfiguration an
 
-Das Interface startet nun neu und bezieht automatisch das Let's Encrypt Certificate. Sollte der Start des Interfaces fehl schlagen prüfen Sie bitte Ihre Firewall-Einstellungen, insbesondere Port TCP 443, und Ihren Domainnamen erneut.
+Das Interface startet nun neu und bezieht automatisch das Let's Encrypt Zertifikat. Sollte der Start des Interfaces fehlschlagen, prüfen Sie bitte Ihre Firewall-Einstellungen, insbesondere Port TCP 443, und Ihren Domainnamen.
 
 ## Telefonanlage einrichten
 
