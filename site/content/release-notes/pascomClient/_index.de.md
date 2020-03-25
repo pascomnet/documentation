@@ -31,9 +31,19 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 * [CL-1165] Outlook Support ist auf einigen Systemen instabil und führt zu Abstürzen des pascom Clients
 * [CL-1191] Manche Endpoint-Protection Software (z. B. Kaspersky) verhindert bestimmten Aktionen des pascom Clients, z. b. Autostart-Konfiguration oder Mikrofonzugriff
 
-## Beta 62.D984 (23.03.2020)
+## Beta 62.D996 (25.03.2020)
 
 [Feedback zur Beta](https://www.pascom.net/forum/t/pascom-client-v62-beta/6722)
+
+* Webcams werden nun wieder zuverlässig erkannt
+* Sowohl pascom Client.exe als auch das setup haben nun ein gültiges Codesign-Zertifikat
+
+**ÄNDERUNGEN**
+
+* [CL-1191] Additionally sign pascom Client.exe, not only setup
+* [CL-1206] Missing camera device in settings after startup sometimes
+
+## Beta 62.D984 (23.03.2020)
 
 **Auf einen Blick**
 

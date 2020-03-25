@@ -31,12 +31,21 @@ These problems are known to us and we are already working on a solution
 * [CL-1165] Outlook Support is unstable on some systems and causes the pascom client to crash
 * [CL-1191] Some endpoint protection software (e.g. Kaspersky) prevents certain actions of the pascom client, e.g. b. Autostart configuration or microphone access
 
-
-## Beta 62.D984 (23.03.2020)
+## Beta 62.D996 (25.03.2020)
 
 [Beta feedback](https://www.pascom.net/forum/t/pascom-client-v62-beta/6722)
 
-**Auf einen Blick**
+**Overview**
+
+* Webcams are now detected reliably again
+* both setup and pascom Client.exe are now code signed
+
+**MODIFICATIONS**
+
+* [CL-1191] Additionally sign pascom Client.exe, not only setup
+* [CL-1206] Missing camera device in settings after startup sometimes
+
+## Beta 62.D984 (23.03.2020)
 
 * Acoustic Echo Cancellation (AEC) Settings are now configurable
 * Fixed a problem with Jabra Headsets and two outgoing calls
