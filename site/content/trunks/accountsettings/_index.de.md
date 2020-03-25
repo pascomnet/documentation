@@ -59,7 +59,7 @@ Nutzen Sie einen Anschluss, der mehrere einzelne Rufnummern beeinhaltet, müssen
 |**Optionen**|Dieses Feld bietet die Möglichkeit weitere SIP-Optionen (eine Option pro Zeile), die von Asterisk verstanden werden, anzugeben.|
 
 {{% notice tip %}}
-Einen Überblick über SIP-Optionen finden Sie hier: [SIP Configurations - peers and clients](http://www.voip-info.org/wiki/view/Asterisk+config+sip.conf#SIPconfigurationspeersandclients)
+Einen Überblick über SIP-Optionen finden Sie hier: [SIP Configuration - peers and clients](http://www.voip-info.org/wiki/view/Asterisk+config+sip.conf#SIPconfigurationspeersandclients)
 {{% /notice %}}
 
 ### Registrierung
