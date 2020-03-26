@@ -27,7 +27,7 @@ In diesem Abschnitt geben wir Ihnen einen Überblick aller wichtigen Änderungen
 Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung  
 {{% /notice %}}
 
-* [CL-1071] Plantronics Support ist auf einigen Systemen instabil. Falls im Zusammenspiel mit einem Plantronics Headset der Client of Abstürzt, in den Einstellungen Plantronics auf "ignorieren" stellen. Nur die Nutzung von Headset-Tasten funktioniert dann nicht mehr
+* [CL-1071] Plantronics Support ist auf einigen Systemen instabil. Falls im Zusammenspiel mit einem Plantronics Headset der Client oft abstürzt, in den Einstellungen Plantronics auf “ignorieren” stellen. Nur die Nutzung von Headset-Tasten funktioniert dann nicht mehr
 * [CL-1165] Outlook Support ist auf einigen Systemen instabil und führt zu Abstürzen des pascom Clients
 * [CL-1191] Manche Endpoint-Protection Software (z. B. Kaspersky) verhindert bestimmten Aktionen des pascom Clients, z. b. Autostart-Konfiguration oder Mikrofonzugriff
 
