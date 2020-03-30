@@ -12,13 +12,14 @@ weight: 10
 
 Zu den Grundeinstellungen Ihres Amts gelangen Sie über {{< ui-button "Gateways" >}} > {{< ui-button "Ämter" >}} > {{< ui-button "Bearbeiten" >}}. Im Register **Basisdaten** erhalten Sie folgende Einstellungsmöglichkeiten.
 
-![Basiseinstellungen](basesettings.de.JPG?width=60%)
+![Basiseinstellungen](basesettings_de.JPG?width=60%)
 
 
 
 |Variable|Erklärung|
 |---|---|
 |**Bezeichung**|Geben Sie Ihrem Amt einen Namen, dieser taucht dann in der Ämterliste auf|
+|**Schnittstelle**|Wählen Sie das Interface für den Outbound Proxy aus. **Default** deaktiviert den Outbound Proxy. **NUR ONSITE**|
 |**Präfix eing. Nummer**|Ist eine beliebige Ziffer, die bei eingehenden Telefonanrufen über dieses Amt vorangestellt wird. Wenn Sie hier eine 0 eingeben erscheint beispielsweise in der Anruferliste von IP-Telefonen dann nicht die 0172123123 sondern die 00172123123. Dadurch können Sie direkt aus der Anruferliste wieder über das selbe Amt zurückrufen.|
 |**Internationale Vorwahl**|Die Ziffer die vorangestellt werden muss um im Festnetz eine internationale Nummer (Ausland) zu erreichen. Im Normalfall ist das die *00*.|
 |**Landeskennzahl**|Geben Sie hier die Landeskennzahl für das Land an in dem sich das Amt befindet. Für Deutschland z. B. 49. Durch die IP-Ämter ist es möglich, dass sich die pascom zwar in Deutschland befindet jedoch über das Internet ein Amt in der Schweiz nutzt. Geben Sie hier immer die Landeskennzahl an in dem sich das Amt befindet, nicht den Standort der Anlage.|

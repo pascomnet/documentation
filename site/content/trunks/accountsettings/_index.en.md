@@ -1,6 +1,6 @@
 ---
 title: Account Settings
-description: In the account settings, you specify the data with which the pascom should register to the provider's servers. Additional attributes can also be set here.
+description: In the account settings, enter the registration details with which pascom should register on the provider's server. It is also possible to configure additional settings aside from the authentication details.
 weight: 30
 ---
 
@@ -10,20 +10,18 @@ weight: 30
 
 ## The Account Settings
 
-You can access the account data of your Trunk via {{<ui-button "Gateways">}}> {{<ui-button "Trunks">}}> {{<ui-button "Edit">}}. In the **Account** tab you will find the records of your registrar. You can change these as you wish.
+You can access your trunk account data via {{<ui-button "Gateways">}}> {{<ui-button "Trunks">}}> {{<ui-button "Edit">}}. Under the **Account** tab you will find the records of your registrar. You can change these as you wish.
 
-### Extension register
+### Extension Register
 
 ![Extension register](extension_reg.en.JPG?width=15%)
 
-
-
 |Variables|Description|
 |---|---|
-|**Extension reg.**|This option shares the extension which should be called by the host when receiving an incoming call. This is required should your SIP User Account only provide a single number. Should you be using a SIP trunk connection (e.g. sipgate) then do not enter anything here as the called extension will be transmitted separately.|
+|**Extension reg.**|This option shares the extension which should be called by the host when receiving an incoming call. This is required if your User SIP Account only provides one number. If you use a SIP Trunk connection (e.g. sipgate trunking) then do not enter anything here as the called extension will be transmitted separately.|
 
 {{% notice tip %}}
-If you use a Trunk that contains several individual numbers, you have to create a separate data record for each number under {{<ui-button "Add">}} so that each number can register with the provider.
+If you use a SIP Trunk that contains multiple individual numbers, you will need to create separate data sets for each number under {{<ui-button "Add">}} so that each number can register with the provider.
 {{% /notice %}}
 
 ### Username
@@ -32,7 +30,7 @@ If you use a Trunk that contains several individual numbers, you have to create 
 
 |Variables|Description|
 |---|---|
-|**Username**|Depending on your trunk type, the username is used to either <br> * to register your phone system with the **host** (Type: *User*)<br> or is the name with which a host registers with your phone system (Type:*Peer*).<br>If type *Friend* is used, two objects will be created and the username will be used for both the User and the Peer.|
+|**Username**|Depending on your trunk type, the username is used to either <br> * register your phone system with the **host** (Type: *User*)<br> or is the name with which a host registers with your phone system (Type:*Peer*).<br>If type *Friend* is used, two objects will be created and the username will be used for both the User and the Peer.|
 
 ### Password
 
@@ -40,7 +38,7 @@ If you use a Trunk that contains several individual numbers, you have to create 
 
 |Variables|Description|
 |---|---|
-|**Password**|Is the password for the corresponding user - should it be required.|
+|**Password**|Is the password for the corresponding user - if required.|
 
 ### Host
 
@@ -48,7 +46,7 @@ If you use a Trunk that contains several individual numbers, you have to create 
 
 |Variables|Description|
 |---|---|
-|**Host**|Enter the IP Address or the host name on which the account must register.|
+|**Host**|Enter the IP address or the host name on which the account must register.|
 
 ### Options
 
@@ -56,10 +54,10 @@ If you use a Trunk that contains several individual numbers, you have to create 
 
 |Variables|Description|
 |---|---|
-|**Options**|Options provide you with the ability to add further SIP options (one per line). These options must be recognisable by Asterisk phone systems.|
+|**Options**|Options provide you with the ability to add further SIP options (one per line). These options must be compatible with Asterisk phone systems.|
 
 {{% notice tip %}}
-An overview of SIP options can be found here: [SIP Configurations - peers and clients](http://www.voip-info.org/wiki/view/Asterisk+config+sip.conf#SIPconfigurationspeersandclients)
+An overview of SIP options can be found here: [SIP Configuration - peers and clients](http://www.voip-info.org/wiki/view/Asterisk+config+sip.conf#SIPconfigurationspeersandclients)
 {{% /notice %}}
 
 ### Registration

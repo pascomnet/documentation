@@ -12,11 +12,12 @@ weight: 20
 
 You can access the basic settings of your Trunk via {{<ui-button "Gateways">}}> {{<ui-button "Trunks">}}> {{<ui-button "Edit">}}. The **Basic data** tab gives you the following setting options.
 
-![Basesettings](basesettings.en.JPG?width=60%)
+![Basesettings](basesettings_en.JPG?width=60%)
 
 |Variable|Description|
 |---|---|
 |**Title**|Enter a name for the trunk, which is then displayed in the Trunks overview list |
+|**Interface**|Select the interface for the outbound proxy. **Default** deactivates the outbound proxy. **ONSITE ONLY**.|
 |**Prefix Incoming Number**|Any pre-set number which is attached to incoming calls via this trunk. If, for example, you enter a **0**, then calls to this number may appear in your IP phone's call history as `00172123123` instead of `0172123123`. This allows users to directly callback numbers in the call history using the same trunk over which the call came in.|
 |**International Prefix**|The characters or numbers needed to dial international numbers - ordinarily *00*.|
 |**Country Code**|Enter the country code for the Trunk's originating country. For example, the UK is **44**. SIP trunks allow you to have your phone system server located in one country and register it with a trunk from another country via the internet. Therefore, enter the country code for where the Trunk is located, not the phone system server. |
