@@ -8,7 +8,7 @@ weight: 40
  
 {{< description >}}
 
-{{< youtube zLTaIJlvYeU >}} 
+{{< youtube zLTaIJlvYeU >}}
 
 ## Konzept
 
