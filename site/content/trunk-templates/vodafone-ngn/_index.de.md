@@ -10,10 +10,10 @@ weight: 50
 
 ## Übersicht
 
+
 Ab pascom 18.05 ist die Amtsvorlage für Vodafone NGN Trunks ([IP Anlagenanschluss](https://www.vodafone.de/business/festnetz-internet/ip-anlagen-anschluss.html)) verfügbar.
 
 Da die Authentifizierung am SIP Server von Vodafone über die IP Adresse Ihres Internetanschlusses stattfindet, ist eine Konfiguration dieses Trunks nur in selbstgehosteten pascom OnSite Telefonanlagen möglich.
-
 
 ## Ihr Account
 
@@ -27,6 +27,11 @@ Nach dem Erwerb und der Freischaltung Ihres Vodafone NGN Trunks erhalten Sie ein
 |SBC-IP|IP des SBC, der nur über die Telefonanlagen-IP erreichbar ist|XXX.XXX.XXX.XXX|
 |SIP Domain|SIP Domain des Telefon-Anschlusses|pascom.ngn.vodafone.de|
 *(Aus Datenschutz-Gründen wurden die exakten Nummern und Daten durch "X" ersetzt)*
+
+{{% tabs %}}
+{{% tab "pascom 18" %}}
+
+
 
 ## Router vorbereiten
 
@@ -65,3 +70,20 @@ Möchten Sie Ihren Vodafone NGN Anschluss um einen weiteren Account erweitern, f
 In der neuen Account-Zeile können Sie nun **Benutzername** und **Host** und bei Bedarf weitere Felder anpassen.
 
 Nun müssen [eingehende und ausgehende Rufregeln]({{< ref "trunks/rules">}}) angepasst werden. Bei den ausgehenden Regeln müssen Sie nun auswählen welcher Account pro Regel verwendet werden soll. Scrollen Sie hierfür nach rechts und wählen in der Spalte {{< ui-button "Account" >}} den entsprechenden aus.
+{{% /tab %}}
+
+{{% tab "pascom 19" %}}
+
+## Einrichtung
+
+Fügen Sie ein neues Vodafone NGN-Amt ein unter {{< ui-button "Gateways" >}} > {{< ui-button "Ämter" >}} > {{< ui-button "Hinzufügen" >}}. Sie gelangen nun zur Ämter-Datenbank. Über den Filter können Sie direkt nach *Vodafone* suchen und die Vorlage **Vodafone NGN Trunk** anschließend auswählen. Befüllen Sie die Vorlage mit den erhaltenen Account-Daten.
+
+{{% notice tip %}}
+Nutzen Sie für eine einfachere Einrichtung des Vodafone NGN Trunk den pascom Outbound Proxy ohne Konfigurationen am NAT vorzunehmen. (ab pascom 19.05)
+Die Anleitung zum aktivieren des Outbound Proxy finden Sie [hier]({{< ref "trunks/outbound_proxy">}}).
+{{% /notice %}}
+
+{{% /tab %}}
+{{% /tabs %}}
+
+
