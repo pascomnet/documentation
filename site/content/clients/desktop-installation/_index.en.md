@@ -53,6 +53,13 @@ The following group policies "**Policy-based QoS**" are required under Windows t
 | *DSCP Value*              | 24                | 46                | 24                |
 | *Throttle Rate*           | -1                | -1                | -1                |
 
+The group policies are created under the following path:
+
+```bash
+Local Computer Policy > Computer Configuration 
+> Windows Settings > Policy-based QoS
+```
+
 
 ## Terminalserver Installation
 

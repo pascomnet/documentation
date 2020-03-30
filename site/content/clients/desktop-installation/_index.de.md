@@ -55,6 +55,14 @@ Unter Windows sind folgende Gruppenrichtlinien "**Richtlinienbasierter QoS**" no
 | *Drosselungsrate*         | -1                | -1                | -1                |
 
 
+Die Gruppenrichtlinien werden unter folgendem Pfad erstellt:
+
+```
+Lokaler Computer > Computerkonfiguration 
+> Windows-Einstellungen > Richtlinienbasierter QoS
+```
+
+
 ## Terminalserver Installation
 
 {{% notice tip %}}
