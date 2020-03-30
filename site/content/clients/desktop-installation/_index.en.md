@@ -39,7 +39,14 @@ In order to achieve the maximum voice quality, the pascom client marks all voice
 
 With the exception of Windows, this happens automatically on all other platforms.
 
-The following group policies "**Policy-based QoS**" are required under Windows to mark the packages accordingly:
+The following group policies "**Policy-based QoS**" are required under Windows to mark the packages accordingly.
+
+The group policies are created under the following path:
+
+```bash
+Local Computer Policy > Computer Configuration 
+> Windows Settings > Policy-based QoS
+```
 
 |                           | Policy 1          | Policy 2          | Policy 3          |
 | ------------------------- | ----------------- | ----------------- | ----------------- |
@@ -52,13 +59,6 @@ The following group policies "**Policy-based QoS**" are required under Windows t
 | *Destination-IP*          | \*                | \*                | \*                |
 | *DSCP Value*              | 24                | 46                | 24                |
 | *Throttle Rate*           | -1                | -1                | -1                |
-
-The group policies are created under the following path:
-
-```bash
-Local Computer Policy > Computer Configuration 
-> Windows Settings > Policy-based QoS
-```
 
 
 ## Terminalserver Installation

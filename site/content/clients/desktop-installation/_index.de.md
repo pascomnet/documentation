@@ -40,7 +40,14 @@ Um die maximale Sprachqualität zu erreichen markiert der pascom Client alle Spr
 
 Dies passiert, mit Ausnahme von Windows, auf allen weiteren Plattformen automatisch.
 
-Unter Windows sind folgende Gruppenrichtlinien "**Richtlinienbasierter QoS**" notwendig um die Pakete entsprechend zu markieren:
+Unter Windows sind folgende Gruppenrichtlinien "**Richtlinienbasierter QoS**" notwendig um die Pakete entsprechend zu markieren.
+
+Die Gruppenrichtlinien werden unter folgendem Pfad erstellt:
+
+```
+Lokaler Computer > Computerkonfiguration 
+> Windows-Einstellungen > Richtlinienbasierter QoS
+```
 
 |                           | Richtlinie 1      | Richtlinie 2      | Richtlinie 3      |
 | ------------------------- | ----------------- | ----------------- | ----------------- |
@@ -53,14 +60,6 @@ Unter Windows sind folgende Gruppenrichtlinien "**Richtlinienbasierter QoS**" no
 | *Ziel-IP*                 | \*                | \*                | \*                |
 | *DSCP-Wert*               | 24                | 46                | 24                |
 | *Drosselungsrate*         | -1                | -1                | -1                |
-
-
-Die Gruppenrichtlinien werden unter folgendem Pfad erstellt:
-
-```
-Lokaler Computer > Computerkonfiguration 
-> Windows-Einstellungen > Richtlinienbasierter QoS
-```
 
 
 ## Terminalserver Installation
