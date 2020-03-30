@@ -40,6 +40,7 @@ Zugriffe auf die Telefonanlage können ausschließlich via Session Border Contro
 | TCP **5222** | pascom Desktop- und Mobile-Client-Zugriffe |
 | TCP **8884**  | Provisionierung von IP-Hardware-Telefonen |
 | UDP **30000 - 35000** | SRTP - verschlüsselte Sprachdaten |
+| UDP + TCP **19302** | WebRTC | Zugriff für Web Client |
 
 #### Deaktiviert (Standard)
 | Port | Beschreibung |

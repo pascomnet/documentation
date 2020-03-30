@@ -39,6 +39,7 @@ Access to the pascom phone system can only be made via the Session Border Contro
 | TCP **5222** | pascom Desktop and Mobile client access |
 | TCP **8884**  | Provisioning of IP desktop phones |
 | UDP **30000 - 35000** | SRTP - encrypted Voice data |
+| UDP + TCP **19302** | WebRTC | Access for Web Client |
 
 #### Deactivated (Standard)
 | Port | Description |
