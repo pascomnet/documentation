@@ -30,10 +30,17 @@ These problems are known to us and we are already working on a solution
 * [CL-1071] On some platforms, Plantronics support is unstable. If the client often crashes in combination with a Plantronics headset, set the Plantronics support to "ignore" in the settings. Only using headset buttons will no longer work
 * [CL-1165] Outlook Support is unstable on some systems and causes the pascom client to crash
 * [CL-1191] Some endpoint protection software (e.g. Kaspersky) prevents certain actions of the pascom client, e.g. b. Autostart configuration or microphone access
+* [CL-1212] Headset support for Sennheiser on macOS can't be configured at the moment, because HeadSetup for macOS is not provided for downloading from EPOS / Sennheiser
 
-## Beta 62.D996 (25.03.2020)
+## Beta 62.D1005 (30.03.2020)
 
 [BETA feedback](https://www.pascom.net/forum/t/pascom-client-v62-beta/6722)
+
+**Overview**
+
+* AEC is disabled by default if a supported Headset (Jabra, Sennheiser, Plantronics) is in use
+
+## Beta 62.D996 (25.03.2020)
 
 **Overview**
 
