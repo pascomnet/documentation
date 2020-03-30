@@ -34,7 +34,7 @@ However, should you choose to, you can specify which internet services your comp
 | TCP **5222** | pascom Desktop and Mobile client access |
 | UDP **30000 - 35000** | SRTP - encrypted Voice Data |
 | UDP **3478** | Access for Video-Functionality |
-| UDP + TCP **19302** | WebRTC |
+| UDP + TCP **19302** | WebRTC | Access for Web Client |
 
 #### Optional Servicees
 

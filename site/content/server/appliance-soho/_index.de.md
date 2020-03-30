@@ -39,7 +39,7 @@ Wenn Sie jedoch genau festlegen auf welche Internetdienste Ihr Unternehmensnetzw
 | TCP **25** | cloudmx1.pascom.net, cloudmx2.pascom.net | Zugriff zum pascom Mailserver |
 | UDP **123** | \* | Zugriff zum bevorzugten Zeitserver (NTP) |
 | UDP **3478** | \* | Zugriff für Video-Funktionalität |
-| UDP + TCP **19302** | WebRTC |
+| UDP + TCP **19302** | WebRTC | Zugriff für Web Client |
 
 
 ## pascom Server installieren (nur bei Neuinstallation)
