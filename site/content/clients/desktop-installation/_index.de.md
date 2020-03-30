@@ -34,6 +34,27 @@ Die Windows Installation benötigt keine Administratorrechte und erfolgt automat
  * **pascom-client-setup.exe** ausführen
  * Installationanweisungen folgen
 
+### Windows QoS Einstellungen (Optional)
+
+Um die maximale Sprachqualität zu erreichen markiert der pascom Client alle Sprachdaten entsprechend mit QoS-Flags.
+
+Dies passiert, mit Ausnahme von Windows, auf allen weiteren Plattformen automatisch.
+
+Unter Windows sind folgende Gruppenrichtlinien "**Richtlinienbasierter QoS**" notwendig um die Pakete entsprechend zu markieren:
+
+|                           | Richtlinie 1      | Richtlinie 2      | Richtlinie 3      |
+| ------------------------- | ----------------- | ----------------- | ----------------- |
+| *Richtlinienname*         | pascomSIP         | pascomRTP         | pascomXMPP        |
+| *Anwendungsname*          | pascom Client.exe | pascom Client.exe | pascom Client.exe |
+| *Protokoll*               | TCP und UDP       | UDP               | TCP               |
+| *Quellport*               | \*                | \*                | \*                |
+| *Zielport*                | 5060:5062         | 30000:35000       | 5222              |
+| *Quell-IP*                | \*                | \*                | \*                |
+| *Ziel-IP*                 | \*                | \*                | \*                |
+| *DSCP-Wert*               | 24                | 46                | 24                |
+| *Drosselungsrate*         | -1                | -1                | -1                |
+
+
 ## Terminalserver Installation
 
 {{% notice tip %}}

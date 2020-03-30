@@ -33,6 +33,27 @@ The Windows installation process does not require any admin privileges and be pe
  * Run the **pascom-client-setup.exe**
  * Follow the install guide
 
+### Windows QoS Settings (Optional)
+
+In order to achieve the maximum voice quality, the pascom client marks all voice data accordingly with QoS flags.
+
+With the exception of Windows, this happens automatically on all other platforms.
+
+The following group policies "**Policy-based QoS**" are required under Windows to mark the packages accordingly:
+
+|                           | Policy 1          | Policy 2          | Policy 3          |
+| ------------------------- | ----------------- | ----------------- | ----------------- |
+| *Policy Name*             | pascomSIP         | pascomRTP         | pascomXMPP        |
+| *Application Name*        | pascom Client.exe | pascom Client.exe | pascom Client.exe |
+| *Protocoll*               | TCP and UDP       | UDP               | TCP               |
+| *Source Port*             | \*                | \*                | \*                |
+| *Destination Port*        | 5060:5062         | 30000:35000       | 5222              |
+| *Source-IP*               | \*                | \*                | \*                |
+| *Destination-IP*          | \*                | \*                | \*                |
+| *DSCP Value*              | 24                | 46                | 24                |
+| *Throttle Rate*           | -1                | -1                | -1                |
+
+
 ## Terminalserver Installation
 
 {{% notice tip %}}
