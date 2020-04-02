@@ -24,6 +24,8 @@ Choose the pascom.cloud phone system option and benefit from a hosted PBX withou
 
 Many companies have **no Internet access restrictions** and can therefore **immediately** start using **pascom.cloud** without needing to make any alterations to their Firewall.
 
+#### Destination Ports
+
 However, should you choose to, you can specify which internet services your company network is permitted to access by opening the following ports:
 
 #### Telephony and Instant Messaging
@@ -43,3 +45,20 @@ However, should you choose to, you can specify which internet services your comp
 | TCP **636** | LDAPS for telephone book access via LDAP |
 | TCP **8884**  | Provisioning of Desktop IP Phones (hardware telephones) |
 | TCP **8885**  | VPN Tunnel direct to the phone system |
+
+#### QoS settings
+
+pascom.cloud marks voice and signal packets. Many routers / switches take this into account as standard or can be configured accordingly.
+
+| Package type | TOS | COS | DSCP decimal |
+| -------- | ----- | ----- | ------------ |
+| Voice | ef / 184 | 5 | 46 |
+| Signaling | cs3 / 96 | 3 | 24 |
+
+All pascom clients also mark packages in accordance. Please note that group policies must be set for this under Windows. See [Windows QoS Settings]({{< ref "/clients/desktop-installation#windows-qos-settings-optional" >}}).
+
+#### Destination IP addresses
+
+Our recommendation is to restrict ***only*** **destination ports** and ***not*** **destination IP addresses**. Pascom.cloud uses a variety of services and balancers and thus also corresponds to many destination IP addresses. The list of destination IP addresses is constantly being expanded and is therefore difficult for you to maintain.
+
+If you still need a current list of destination IP addresses, please contact our support.
