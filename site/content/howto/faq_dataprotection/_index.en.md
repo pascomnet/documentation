@@ -62,3 +62,7 @@ All central components of the pascom.cloud are monitored 24 / 7.
 ### How can I view the current status of pascom provided services?
 
 The current live status can be viewed on [status.pascom.net](https://status.pascom.net/). The option of subscribing to the status page is also available on this page. This will automatically inform you of any downtime and upcoming planned maintenance work.
+
+### Is the security of pascom.cloud checked regularly?
+
+The security of pascom.cloud is regularly checked by external service providers for security and resilience against DDoS attacks. This also applies to all on-site and client products. The scope of the tests includes code reviews and pentration tests.

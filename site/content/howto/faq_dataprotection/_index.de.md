@@ -62,3 +62,7 @@ Alle zentralen Komponenten der pascom.cloud werden 24-7 überwacht.
 ### Wie kann ich den aktuellen Zustand der von pascom bereitgestellten Dienste einsehen?
 
 Den aktuellen Zustand finden Sie unter [status.pascom.net](https://status.pascom.net/). Hier gibt es auch die Funktion, die Statusseite zu abonnieren. Dadurch werden Sie automatisch über Störungen und geplante Wartungen informiert. 
+
+### Wird die Sicherheit der pascom.cloud regelmäßig überprüft?
+
+Die Sicherheit der pascom.cloud wird regelmäßig durch externe Dienstleister auf ihre Sicherheit und Wiederstandfähigkeit gegen DDoS Attacken überprüft. Dies gilt auch für alle onsite und Client Produkte. Zum Umfang der Tests zählen Code-Reviews und Pentration-Tests.
