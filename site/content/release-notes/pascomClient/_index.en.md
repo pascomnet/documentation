@@ -32,9 +32,24 @@ These problems are known to us and we are already working on a solution
 * [CL-1191] Some endpoint protection software (e.g. Kaspersky) prevents certain actions of the pascom client, e.g. b. Autostart configuration or microphone access
 * [CL-1212] Headset support for Sennheiser on macOS can't be configured at the moment, because HeadSetup for macOS is not provided for downloading from EPOS / Sennheiser
 
-## Beta 62.D1005 (30.03.2020)
+
+## Beta 62.D1027 (02.04.2020)
 
 [BETA feedback](https://www.pascom.net/forum/t/pascom-client-v62-beta/6722)
+
+**Overview**
+
+* Android: Fixed "You need to assign device in order to dial" error message when connected to a pascom 17 server
+* Some libraries were not loaded correctly if the installation path contains an umlaut
+* Synchronisation on pascom19 is much faster and doesn't block the client anymore
+
+**MODIFICATIONS**
+
+* [CL-1215] Client shows "You need to assign a number to the device in order to dial" error
+* [CL-1213] utf-8 error when loading gstreamer plugins
+* [CL-1208] Better Interactivity with incremental handling of Events
+
+## Beta 62.D1005 (30.03.2020)
 
 **Overview**
 

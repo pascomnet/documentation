@@ -32,11 +32,25 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 * [CL-1191] Manche Endpoint-Protection Software (z. B. Kaspersky) verhindert bestimmten Aktionen des pascom Clients, z. b. Autostart-Konfiguration oder Mikrofonzugriff
 * [CL-1212] Unter macOS lässt sich die Unterstützung für Sennheiser Headsets derzeit nicht einrichten, da HeadSetup seitens EPOS / Sennheiser nicht zum Download zur Verfügung steht
 
-## Beta 62.D1005 (30.03.2020)
+## Beta 62.D1027 (02.04.2020)
 
 [Feedback zur Beta](https://www.pascom.net/forum/t/pascom-client-v62-beta/6722)
 
+**Auf einen Blick**
+
+* Android: "Sie müssen ein Gerät zuordnen um wählen zu können" Fehlermeldung erschein nun nicht mehr auf pascom17 servern
+* Einige Bibliotheken wurden auf Systemen mit einem Umlaut im Installationspfad nicht korrekt geladen
+* Synchronisierung mit einem pascom19 Server ist schneller und blockiert den Client nicht mehr
+
 **ÄNDERUNGEN**
+
+* [CL-1215] Client shows "You need to assign a number to the device in order to dial" error
+* [CL-1213] utf-8 error when loading gstreamer plugins
+* [CL-1208] Better Interactivity with incremental handling of Events
+
+## Beta 62.D1005 (30.03.2020)
+
+**Auf einen Blick**
 
 * AEC ist standardmäßig deaktiviert, wenn ein Unterstütztes Headset (Jabra, Sennheiser, Plantronics) verwendet wird
 
