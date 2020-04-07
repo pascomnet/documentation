@@ -116,7 +116,7 @@ filter_queue_calls (
 | from_timestamp     | Calls since then (timestamp without time zone). Usually dasboard variable ***$__timeFrom()*** for the selected period. |
 | to_timestamp       | Calls up to this point in time (timestamp without time zone). Usually dashboard variable ***$__timeTo()*** for the selected period. |
 | filter_team        | Filter by team name. ***\**** = All teams. Multiple teams per comma separated list possible e.g. 'team1, team2'. |
-| filter_user        | Filter by username (not display name). *** \ **** = All users. Multiple users per comma-separated list possible e.g. 'user1, user2'. |
+| filter_user        | Filter by username (not display name). ***\**** = All users. Multiple users per comma-separated list possible e.g. 'user1, user2'. |
 | filter_from_name   | Filter by caller name. Display name of the caller, e.g. from the phone book if available. Leave the parameter ***empty*** in order not to apply a filter. |
 | filter_from_number | Filter by caller number. Leave the parameter ***empty*** in order not to apply a filter. |
 | filter_label       | Filter by label name. ***\**** = All labels. Multiple labels per comma separated list possible e.g. 'labe1, label2'. |
