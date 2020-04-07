@@ -32,10 +32,18 @@ These problems are known to us and we are already working on a solution
 * [CL-1191] Some endpoint protection software (e.g. Kaspersky) prevents certain actions of the pascom client, e.g. b. Autostart configuration or microphone access
 * [CL-1212] Headset support for Sennheiser on macOS can't be configured at the moment, because HeadSetup for macOS is not provided for downloading from EPOS / Sennheiser
 
+## Beta 62.D1041 (07.04.2020)
+
+[BETA feedback](https://www.pascom.net/forum/t/pascom-client-v62-beta/6722)
+
+**Overview**
+
+- Fixed a compatibility Problem with macOS 10.13
+- Fullscreen mode is automatically entered / left if video is enabled / disabled
+- Improved AEC quality on windows
 
 ## Beta 62.D1027 (02.04.2020)
 
-[BETA feedback](https://www.pascom.net/forum/t/pascom-client-v62-beta/6722)
 
 **Overview**
 
