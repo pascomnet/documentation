@@ -33,18 +33,18 @@ However, should you choose to, you can specify which internet services your comp
 | Port | Description |
 | ---- | ------------ |
 | TCP **5061** | SIP-TLS - secure SIP communication |
-| TCP **5222** | pascom Desktop and Mobile client access |
+| TCP **5222** | pascom desktop and mobile client access |
 | UDP **30000 - 35000** | SRTP - encrypted Voice Data |
-| UDP **3478** | Access for Video-Functionality |
-| UDP + TCP **19302** | WebRTC | Access for Web Client |
+| UDP **3478** | Access for video functionality |
+| UDP + TCP **19302** | WebRTC | Access for pascom web client |
 
 #### Optional Servicees
 
 | Port | Description |
 | ---- | ------------ |
 | TCP **636** | LDAPS for telephone book access via LDAP |
-| TCP **8884**  | Provisioning of Desktop IP Phones (hardware telephones) |
-| TCP **8885**  | VPN Tunnel direct to the phone system |
+| TCP **8884**  | Provisioning of desktop IP phones (hardware telephones) |
+| TCP **8885**  | VPN tunnel direct to the phone system |
 
 #### QoS settings
 
@@ -55,10 +55,10 @@ pascom.cloud marks voice and signal packets. Many routers / switches take this i
 | Voice | ef / 184 | 5 | 46 |
 | Signaling | cs3 / 96 | 3 | 24 |
 
-All pascom clients also mark packages in accordance. Please note that group policies must be set for this under Windows. See [Windows QoS Settings]({{< ref "/clients/desktop-installation#windows-qos-settings-optional" >}}).
+All pascom clients also mark packages accordingly. Please note that group policies must be set for this under Windows. See [Windows QoS Settings]({{< ref "/clients/desktop-installation#windows-qos-settings-optional" >}}).
 
 #### Destination IP addresses
 
-Our recommendation is to restrict ***only*** **destination ports** and ***not*** **destination IP addresses**. Pascom.cloud uses a variety of services and balancers and thus also corresponds to many destination IP addresses. The list of destination IP addresses is constantly being expanded and is therefore difficult for you to maintain.
+Our recommendation is to restrict ***only*** **destination ports** and ***not*** **destination IP addresses**. pascom.cloud uses a variety of services and balancers and thus also corresponds to many destination IP addresses. The list of destination IP addresses is constantly being expanded and is therefore difficult for you to maintain.
 
 If you still need a current list of destination IP addresses, please contact our support.

@@ -66,7 +66,7 @@ filter_calls(
 | to_timestamp       | Anrufe bis zu diesem Zeitpunkt. Üblicherweise Dashboard-Variable ***$__timeTo()*** für selektierten Zeitraum. |
 | call_type          | Mögliche Werte: ***all*** = alle Anrufe, ***inbound*** = Nur eingehende Anrufe, ***outbound*** = Nur ausgehende Anrufe, ***internal*** = Nur interne Anrufe |
 | filter_user        | Filter nach Benutzername (nicht Anzeigename). ***\****  = Alle Benutzer. Mehrere Benutzer per Kommagetrennter Liste möglich z.B. 'user1, user2'.  |
-| filter_label       | Filter nach Labelname. ***\****  = Alle Label. Mehrere Label per Kommagetrennter Liste möglich z.B. 'labe1, label2'. |
+| filter_label       | Filter nach Labelname. ***\****  = Alle Label. Mehrere Label per Kommagetrennter Liste möglich z.B. 'label1, label2'. |
 | filter_from_name   | Filter nach Anrufer Namen. Anzeigenamen des Anrufers, z.B. aus Telefonbuch falls vorhanden. Lassen Sie den Parameter ***leer*** um keinen Filter anzuwenden. |
 | filter_from_number | Filter nach Anrufer Nummer. Lassen Sie den Parameter ***leer*** um keinen Filter anzuwenden. |
 | filter_to_name     | Filter nach Angerufenem Namen. Anzeigenamen des Angerufenen, z.B. aus Telefonbuch falls vorhanden. Lassen Sie den Parameter ***leer*** um keinen Filter anzuwenden. |
