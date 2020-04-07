@@ -466,6 +466,10 @@ Im folgenden werden die globalen Tastenkürzel näher erklärt:
 
 ## Client-Einstellungen
 
+Zu den Client-Einstellungen gelangen Sie über einen Klick auf das Zahnrad in der Menüleiste.
+
+![Client Einstellungen](Menu_single.png?width=200px)
+
 ### Profil Einstellungen
 
 ![Profil Einstellungen](profilesettings.de.png?width=400px)
@@ -478,6 +482,13 @@ Im folgenden werden die globalen Tastenkürzel näher erklärt:
 |Automatische Abwesenheit|Ist Ihr Computer nicht gespehrt und Ihre Maus bewegt sich für XXX Sekunden nicht, wechselt Ihr Status auf gelb "Bin gleich zurück"|
 |Journal / Systemanrufe ausblenden|Blendet Systemanrufe wie Voicemail etc. aus dem Journal aus.|
 |Passwort ändern|Passwort neu vergeben - funktioniert nur, wenn das Passwort nicht von extern kommt (z.B. Active Directory)|
+
+### Rufumleitungen
+
+Um eine Rufumleitung zu setzen, geben Sie die gewünschte Rufnummer in das Feld ein. Nach einem Klick ist diese gesetzt und aktiv. Zum deaktivieren, klicken Sie auf das rote X-Symbol neben der Rufnummer. Sofern vom Administrator eingerichtet, finden Sie mit einem Klick auf das Eingabefeld ein Drop-Down Menü, in welchem vordefinierte Rufumleitungen hinterlegt sind. 
+
+![Rufumleitungen](redirection.de.png?width=400px)
+
 
 ### Audio und Headset Einstellungen
 

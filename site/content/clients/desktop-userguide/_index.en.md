@@ -443,6 +443,10 @@ When installing the client, the shortcut keys are predefined. However, if needed
 
 ## Client Settings
 
+You can access the client settings by clicking on the gear-symbol in the menu bar.
+
+![Client Einstellungen](Menu_single.png?width=200px)
+
 ### Profile Settings
 
 ![profile settings](profilesettings.en.png?width=45%)
@@ -455,6 +459,12 @@ When installing the client, the shortcut keys are predefined. However, if needed
 |Auto Away|If your computer is not locked and your mouse does not move for XXX seconds, your status will change to yellow "I'll be right back"|
 |Journal / Hide System Calls|Hides system calls like voicemail etc. from the journal.|
 |Change Password|Set a new Password - works only if the password is not set from an  external source (for example Active Directory)|
+
+### Call forwarding
+
+To set up call forwardings, enter the desired number in the field. After a click, it is set and active. To deactivate, click on the red X symbol next to the phone number. If configured by the administrator, you can click on the input field to find a drop-down menu in which predefined call diversions are stored.
+
+![Rufumleitungen](redirection.en.png?width=400px)
 
 ### Audio and Headset Settings
 
