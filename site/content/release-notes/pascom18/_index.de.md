@@ -56,6 +56,7 @@ Siehe auch die Checkliste in der detaillierten [Upgrade-Anleitung]({{< ref "/ser
 * **Print to Fax** wurde entfernt. Alternativ kann der pascom Client nun ein Spool-Verzeichnis überwachen und darin abgelegte PDFs als Fax versenden.
 * **Beronet Gateways** benötigen mindestens Firmware Version 16
 * **pascom Cluster** wurde eingestellt
+* **pascom SOHO Server** ist nicht mehr kompatibel. Bitte führen Sie ein Hardware-Upgrade auf die [pascom Appliance]({{< ref "server/appliance" >}}) durch oder nutzen Sie die pascom.cloud.
 
 ## Bekannte Probleme
 

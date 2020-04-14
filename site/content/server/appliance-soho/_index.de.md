@@ -8,154 +8,16 @@ weight: 30
 
 {{< description >}}
 
+![pascom SOHO Server](pascomSOHOserver.png)
+
 {{% notice warning %}}
 **ABGEKÜNDIGT** - Der pascom SOHO-Server wird weiterhin unterstützt jedoch nicht mehr neu verkauft. Er wurde durch die [pascom Appliance]({{< ref "server/appliance" >}}) ersetzt.
 {{% /notice %}}
 
-
-
-**Nützliches Vorwissen**
-
-
- * [pascom Server Systemaufbau]({{< ref "concept/server" >}})
-
-
-## pascom SOHO Server
-
-![pascom SOHO Server](pascomSOHOserver.png)
-
-
-### Ihre Firewall anpassen
-
-Viele Unternehmen haben **keinen eingeschränkten Internetzugriff** und können den **pascom SOHO Server** daher **sofort**, ohne jede Anpassung an der Firewall **nutzen**.
-
-Wenn Sie jedoch genau festlegen auf welche Internetdienste Ihr Unternehmensnetzwerk zugreifen darf, schalten Sie bitte folgende Ports für den pascom SOHO Server frei, um einen reibungslosen Betrieb der pascom Telefonanlage zu ermöglichen:
-
-#### pascom Dienste
-
-| Port | Host | Beschreibung |
-| ---- | ---- | ------------ |
-| TCP **80**/**443** | my.pascom.net | Zugriff zum pascom Lizenzserver + Push-Services |
-| TCP **25** | cloudmx1.pascom.net, cloudmx2.pascom.net | Zugriff zum pascom Mailserver |
-| UDP **123** | \* | Zugriff zum bevorzugten Zeitserver (NTP) |
-| UDP **3478** | \* | Zugriff für Video-Funktionalität |
-| UDP + TCP **19302** | WebRTC | Zugriff für Web Client |
-
-
-## pascom Server installieren (nur bei Neuinstallation)
 {{% notice warning %}}
-Im Auslieferungszustand ist der pascom Server bereits vorinstalliert. Führen Sie diesen Schritt nur dann aus wenn Sie eine Neuinstallation des Systems vornehmen möchten!
-{{% /notice %}}
-
-### Vorraussetzungen
-
-* USB-Stick mit mindestes 8 GB Kapazität
-* Kostenlosen Flash Tool [Rufus](https://rufus.akeo.ie/) (nur für Windows)
-* pascom Server [ISO-Dateien](https://www.pascom.net/de/downloads/)
-
-### USB-Stick flashen
-{{% notice info %}}
-Der USB-Stick muss nach dem Flashen ein **FAT-Dateisystem** enthalten da Sie die **setup.json** für das automatische Setup **anpassen** müssen. Tools wie Etcher erstellen auf dem USB-Stick ein Read Only ISO Datei System. Dadurch ist die nötige Anpassung der setup.json nicht möglich. Verwenden Sie daher in jedem Fall **Rufus** um den USB-Stick zu erzeugen.
+**KEINE UNTERSTÜTZUNG FÜR PASCOM 18 UND NEUER** - pascom 18 und neuer nutzt als Grundlage moderne Linux-Kernel-Versionen. Diese führen auf manchen SOHO-Server-Versionen zu Inkompatibilitäten oder Abstürzen. Daher raten wir mit pascom 18 und neuer zu einem Hardware-Upgrade auf die [pascom Appliance]({{< ref "server/appliance" >}}). 
 {{% /notice %}}
 
 
-Verbinden Sie den USB-Stick mit Ihrem Computer und starten Sie das Tool Rufus. Wählen Sie nun das pascom Server ISO unter {{< ui-button "SELECT" >}}, wählen Sie den USB-Stick via {{< ui-button "Device" >}} und klicken Sie im Anschluss auf {{< ui-button "START" >}}:
 
-![Rufus](rufus.png?width=300px "Rufus")
 
-### Automatik Setup vorbereiten
-
-Da der pascom SOHO Server keine Monitoranschluss hat müssen Sie auf dem USB-Stick noch eine Datei mit dem Namen **setup.json** anlegen und mit Ihren Netzwerkeisntellungen vorbelegen. Dadurch bootet das System automatisch und konfiguriert das Netzwerk entsprechen. Somit können Sie direkt nach dem Systemstart mit dem Webbasierten Setup fortfahren.
-
-{{% tabs %}}
-{{% tab "pascom 18" %}}
-```
-{
-    "device": "sda",
-    "skipWelcome": true,
-    "skipHostname": true,
-    "skipDevice": true,
-    "hostname": "pascom-server",
-    "skipNetwork": true,
-    "network": {
-        "interface": "enp1s0",
-        "mode": "static",
-        "ip": "192.168.100.1",
-        "netmask": "255.255.255.0",
-        "gateway": "192.168.100.254",
-        "dns1": "192.168.100.254" ,
-        "dns2": ""
-   }
-}
-```
-{{% /tab %}}
-
-{{% tab "pascom 19" %}}
-```
-{
-    "device": "sdb",
-    "skipWelcome": true,
-    "skipHostname": true,
-    "skipDevice": true,
-    "hostname": "pascom-server",
-    "skipNetwork": true,
-    "network": {
-        "interface": "enp1s0",
-        "mode": "static",
-        "ip": "192.168.100.1",
-        "netmask": "255.255.255.0",
-        "gateway": "192.168.100.254",
-        "dns1": "192.168.100.254" ,
-        "dns2": ""
-   }
-}
-```
-{{% /tab %}}
-{{% /tabs %}}
-
-### USB-Stick anstecken
-
-Den so vorbereiteten USB-Stick können Sie nun direkt an den USB Port des Servers anstecken.
-
-## Appliance anschließen
-
-* Schließen Sie das Netzwerk and die **linke** der drei Netzwerkbuchsen an
-* Verbinden Sie das Netzteil
-* Der Server beginnt automatisch zu starten
-
-## Erster Systemstart
-
-Nach kurzer Zeit steht das System entweder unter der Standard-IP-Adresse **192.168.100.1** (Auslieferungszustand) oder der von Ihnen per **setup.json** festgelegten **IP-Adresse** zur Verfügung.
-
-## Setup Wizard starten
-
-Öffnen Sie einen Browser und surfen auf die so eben konfigurierte IP-Adresse Ihres pascom Servers. Folgen Sie den Anweisungen bis Sie zum Reboot des Systems aufgefordert werden:
-
-{{% notice warning %}}
-Falls Sie das System neu aufsetzen und von **USB-Stick** gebootet haben **ENTFERNEN** Sie diesen **VOR DEM REBOOT**. Andernfalls wiederholt sich das initiale Setup.
-{{% /notice %}}
-
-Nach erfolgreichem Reboot sehen Sie die Anmelde-Maske:
-
-![pascom Server Management](management.png)
-
-## Mobilzugriffe via Internet einrichten (optional)
-
-{{% notice note %}}
-Wenn Sie dieses Feature nutzen möchten führen Sie diese Schritte jetzt aus. Spätere Änderungen sind möglich, führen jedoch auch zu Änderungen für Ihre Benutzer da sich z. B. der Zugriff auf den Server via pascom Client von einer lokalen IP auf einen DNS Namen ändert.
-{{% /notice %}}
-
-Dieser Schritt ist notwending falls Sie Ihren lokalen pascom Server auch von unterwegs per pascom Mobileclient (iOS/Android App) oder Desktopclient nutzen möchten.
-
- * Siehe [Mobilzugriffe via Internet einrichten]({{< ref "howto/mobile-access" >}})
-
-## Telefonanlage einrichten
-
-{{< youtube aNkUjHr7cco >}}
-
-Ein weiterer Assistent hilft Ihnen dabei Ihre Telefonanlage fertig einzurichten und weitere Benutzer anzulegen, bzw. einzuladen.
-Gehen Sie hierzu wie folgt vor:
-
-* Melden Sie sich per Browser am pascom Server als admin an
-* Klicken Sie auf {{< ui-button "Phone Systems" >}} und dann auf den Namen Ihrere Anlage
-* Folgen Sie den Anweisungen des Assistenten

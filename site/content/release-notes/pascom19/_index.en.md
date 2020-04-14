@@ -52,7 +52,7 @@ This section explains the changes that you must consider when migrating to pasco
 * **Call groups** are automatically converted to teams. The callgroup feature has been removed and customers should configure teams instead.  
 * Port forwarding for **UDP 3478** is now mandatory, otherwise **video** tools will not work.
 * A new provisioning is required for **beronet Gateways**.
-
+* **pascom SOHO Server** is no longer compatible. Please perform a hardware upgrade to the [pascom Appliance]({{< ref "server/appliance" >}}) or use the pascom.cloud.
 
 ## Known Issues
 

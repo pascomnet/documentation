@@ -53,6 +53,7 @@ In diesem Abschnitt werden die Änderungen erläutert, die Sie bei der Migration
 * **Anrufgruppen** werden automatisch in Teams umgewandelt. Die Anrufgruppenfunktion wurde entfernt, und stattdessen sollten Teams konfiguriert werden.  
 * Portforwarding für **UDP 3478** ist Voraussetzung, andernfalls funktioniert **Video** nicht.
 * **Beronet Gateways** müssen neu provisioniert werden.
+* **pascom SOHO Server** ist nicht mehr kompatibel. Bitte führen Sie ein Hardware-Upgrade auf die [pascom Appliance]({{< ref "server/appliance" >}}) durch oder nutzen Sie die pascom.cloud.
 
 
 ## Bekannte Probleme
