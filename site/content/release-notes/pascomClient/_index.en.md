@@ -32,9 +32,22 @@ These problems are known to us and we are already working on a solution
 * [CL-1191] Some endpoint protection software (e.g. Kaspersky) prevents certain actions of the pascom client, e.g. b. Autostart configuration or microphone access
 * [CL-1212] Headset support for Sennheiser on macOS can't be configured at the moment, because HeadSetup for macOS is not provided for downloading from EPOS / Sennheiser
 
-## Beta 62.D1041 (07.04.2020)
+## Beta 62.D1050 (15.04.2020)
 
 [BETA feedback](https://www.pascom.net/forum/t/pascom-client-v62-beta/6722)
+
+**Overview**
+
+* Already read chat messages could be shown as unread again if the client was used on multiple devices together with a pascom 19 server
+* If multiple desktop clients are connected, the SIP registration is kept on the most recently connected one, instead of flapping every second
+
+**MODIFICATIONS**
+
+* [CL-1180] Client steals sip registration if two desktop clients are online
+* [CL-1242] Client shows notifications for displayed or already acknowledged messages
+
+## Beta 62.D1041 (07.04.2020)
+
 
 **Overview**
 
