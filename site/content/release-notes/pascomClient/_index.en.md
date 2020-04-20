@@ -32,119 +32,25 @@ These problems are known to us and we are already working on a solution
 * [CL-1191] Some endpoint protection software (e.g. Kaspersky) prevents certain actions of the pascom client, e.g. b. Autostart configuration or microphone access
 * [CL-1212] Headset support for Sennheiser on macOS can't be configured at the moment, because HeadSetup for macOS is not provided for downloading from EPOS / Sennheiser
 
-## Beta 62.D1050 (15.04.2020)
-
-[BETA feedback](https://www.pascom.net/forum/t/pascom-client-v62-beta/6722)
+## Release 62.R1060 (20.04.2020)
 
 **Overview**
 
-* Already read chat messages could be shown as unread again if the client was used on multiple devices together with a pascom 19 server
-* If multiple desktop clients are connected, the SIP registration is kept on the most recently connected one, instead of flapping every second
-
-**MODIFICATIONS**
-
-* [CL-1180] Client steals sip registration if two desktop clients are online
-* [CL-1242] Client shows notifications for displayed or already acknowledged messages
-
-## Beta 62.D1041 (07.04.2020)
-
-
-**Overview**
-
-- Fixed a compatibility Problem with macOS 10.13
-- Fullscreen mode is automatically entered / left if video is enabled / disabled
-- Improved AEC quality on windows
-
-## Beta 62.D1027 (02.04.2020)
-
-
-**Overview**
-
-* Android: Fixed "You need to assign device in order to dial" error message when connected to a pascom 17 server
-* Fixed issue with some libraries not being loaded correctly if the installation path contains an umlaut
-* Synchronisation on pascom19 is much faster and no longer blocks the pascom client
-
-**MODIFICATIONS**
-
-* [CL-1215] Client shows "You need to assign a number to the device in order to dial" error
-* [CL-1213] utf-8 error when loading gstreamer plugins
-* [CL-1208] Better interactivity with incremental handling of events
-
-## Beta 62.D1005 (30.03.2020)
-
-**Overview**
-
-* AEC is disabled by default if a supported Headset (Jabra, Sennheiser, Plantronics) is in use
-
-## Beta 62.D996 (25.03.2020)
-
-**Overview**
-
-* Webcams are now detected reliably again
-* Both the setup and pascom Client.exe are now code signed
-
-**MODIFICATIONS**
-
-* [CL-1191] Additionally sign pascom Client.exe, not only setup
-* [CL-1206] Missing camera device in settings after startup sometimes
-
-## Beta 62.D984 (23.03.2020)
-
-* Acoustic Echo Cancellation (AEC) Settings are now configurable
-* Fixed a problem with Jabra Headsets and two outgoing calls
-
-## Beta 62.D961 (11.03.2020)
-
-
-**Overview**
-
-* State is correctly synchronized to the Jabra headset if the other party hangs up 
-* Fixed Jabra headset configuration on Ubuntu Linux
-
-## Beta 62.D956 (10.03.2020)
-
-**Overview**
-
-* Fixed a seldom occuring problem during transfer or pickup when using a Jabra Headset
-* Fixed a seldom occuring problem during transfer or pickup when using a Sennheiser Headset
-
-**MODIFICATIONS**
-
-* [CL-1115] Sennheiser Headset handles forwarded calls incorrectly
-* [CL-1173] Pickup to a queue with Jabra Headset results in a hangup of the picked call
-
-
-## Beta 62.D946 (06.03.2020)
-
-**Overview**
-
-* Fixed problems with controling some Jabra Headsets
-* Video support can now be disabled via a commandline option or environment variable
-
-## Beta 62.D940 (03.03.2020)
-
-**Overview**
-
-* Linux: Fixed Jabra headset support
-* Windows/macOS/Linux: "dynamic scrolling" can now be deactivated
-
-**MODIFICATIONS**
-
-* [CL-847] Allow to disable / reduce scroll inertia
-
-## Beta 62.D939 (02.03.2020)
-
-[Beta feedback](https://www.pascom.net/forum/t/pascom-client-v62-beta/6722)
-
-**Overview**
-
+* Support for guests via WebClient when using a pascom 19.06R server
 * Linux: Support for Jabra headsets
-* Windows/macOS: pascom Client and Jabra Direct can now be used simultaneously
-* Improved stability of the Jabra headset integration
-* macOS/Linux/Android/iOS: QOS / TOS Flags for SIP and SRTP are now set correctly 
-* Android: The app now performs energy optimisation settings checks to ensure they are correctly configured
-* Android/Xiaomi: If the "Wake up Screen" permission is not configured on Xiaomi devices with MIUI, a warning notification will now be shown in the app after the first failed call
-* Improved audio quality for all softphone calls
+* Windows/macOS: Jabra Direct and pascom Client can now be installed simultaneously
+* Windows/macOS: Improved stability of Jabra integration
+* macOS/Linux/Android/iOS: QOS / TOS Flags for SIP and SRTP are now set correctly
+* Android: The client checks if battery saving settings are configured correctly
+* Android/Xiaomi: If the "Wake Screen" Permission on Xiaomi devices with MIUI is not correctly configured, a warning message appears after the first failed call
+* Improve audio quality for softphone calls on all plattforms
+* Windows/macOS/Linux: "dynamic scrolling" can now be disabled
+* AEC is enabled by default, if a supported headset (Jabra, Sennheiser, Plantronics) is in use
+* Acoustic Echo Cancellation (AEC) settings are now configurable
+* Both pascom Client.exe and the setup now have a valid codesign certificate
+* The SIP registration is now kept on the most recent connection if two desktop clients are connected
+* Synchronization with a pascom19 server is faster and doesn't block the client anymore
+* If the pascom Client is in use on multiple devices, sometimes already read chat messages are displayed again if a pascom19 server is in use
 
 **MODIFICATIONS**
 
@@ -156,21 +62,49 @@ These problems are known to us and we are already working on a solution
 * [CL-629] - Apple Call Kit Overlay won't work for iOS client
 * [CL-633] - Right click menu glitches
 * [CL-643] - Show a hint if the android client is not on the "Battery Whitelist"
+* [CL-762] - Support iOS13 SDK and Remote Notification pushes in iOS
+* [CL-847] - Allow to disable / reduce scroll inertia
+* [CL-1007] - Implement a "Detail overlay" for (error) toast messages on mobile
+* [CL-1024] - Support Public Groups and Guests in pascom Client
 * [CL-1054] - Remove unread messages of deleted user (sender)
 * [CL-1059] - Scrolling glitches on mobile clients
 * [CL-1082] - Disable tooltips on mobile client
 * [CL-1085] - Content entered in the chat input is lost if you put the app into the background
 * [CL-1093] - You can click through the resync screen
 * [CL-1099] - Yellow stated user should also be visible if filter is 'online'
-* [CL-1109] - Reset to default on mobile client 
 * [CL-1110] - App does not open if you tap on a missed call notification on android
 * [CL-1111] - Android app doesn't handle vendor specific additional permissions correctly
+* [CL-1115] - Sennheiser Headset treats forwarded calls incorrectly
 * [CL-1134] - Follow me settings are out of box on mobile if config is blocked by admin
 * [CL-1135] - Client does not notify me if i do not have a usable phone
+* [CL-1144] - Show "audio only" users in group details and stream list
 * [CL-1146] - Optimize AEC and Gain Parameters
-* [CL-1157] - Test client release 62
-* [CL-1162] - Status Text content is not properly filtered, and will be treated as html
+* [CL-1156] - pascom Client sometimes crashes when rescanning video devices on Windows
+* [CL-1162] - User entered content is not properly filtered, and will be treated as html
 * [CL-1167] - pascom Client checks for updates too often
+* [CL-1173] - Pickup to a queue with Jabra Headset results in a hangup of the picked call
+* [CL-1174] - Can't change selected audio device after start up
+* [CL-1180] - Client steals sip registration if two desktop clients are online
+* [CL-1181] - Link buttons on blue background are hard to read
+* [CL-1186] - Message ordering is wrong if you send a message in a group chat
+* [CL-1188] - Handle aspect-ratio changes in the video stream correctly
+* [CL-1191] - Additionally sign pascom Client.exe, not only setup
+* [CL-1193] - Clean chat history on discardEvent
+* [CL-1198] - Invalid Displayed marker is sent to server
+* [CL-1203] - Group vanishes if you star and unstar it
+* [CL-1204] - Sometimes, video is hidden in client for no apparent reason
+* [CL-1206] - Missing camera device in settings after startup sometimes
+* [CL-1208] - Better Interactivity with incremental handling of Events
+* [CL-1213] - utf-8 error when loading gstreamer plugins
+* [CL-1215] - Client shows "You need to assign a number to the device in order to dial" error
+* [CL-1219] - Close video fullscreen mode if the last video stream stops
+* [CL-1225] - Client crashes during datev import
+* [CL-1231] - Client displays "login failed" before actually logging in
+* [CL-1235] - iOS App doesn't play notification sound if a message is received via push
+* [CL-1240] - Broken translation for HeadsetToast
+* [CL-1242] - Client shows notifications for displayed or already acknowledged messages
+* [CL-1255] - Message content is not visible in push notification
+
 
 ## Release 61.R919 (19.02.2020)
 
