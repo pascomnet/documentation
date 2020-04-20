@@ -33,7 +33,7 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 * [CL-1212] Unter macOS lässt sich die Unterstützung für Sennheiser Headsets derzeit nicht einrichten, da HeadSetup seitens EPOS / Sennheiser nicht zum Download zur Verfügung steht
 
 
-## Release 62.R1060 (20.04.2020)
+## Release 62.R1061 (20.04.2020)
 
 **Auf einen Blick**
 

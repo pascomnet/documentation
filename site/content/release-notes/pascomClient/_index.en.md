@@ -32,7 +32,7 @@ These problems are known to us and we are already working on a solution
 * [CL-1191] Some endpoint protection software (e.g. Kaspersky) prevents certain actions of the pascom client, e.g. b. Autostart configuration or microphone access
 * [CL-1212] Headset support for Sennheiser on macOS can't be configured at the moment, because HeadSetup for macOS is not provided for downloading from EPOS / Sennheiser
 
-## Release 62.R1060 (20.04.2020)
+## Release 62.R1061 (20.04.2020)
 
 **Overview**
 
