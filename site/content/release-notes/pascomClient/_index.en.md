@@ -36,21 +36,20 @@ These problems are known to us and we are already working on a solution
 
 **Overview**
 
-* Support for guests via WebClient when using a pascom 19.06R server
-* Linux: Support for Jabra headsets
-* Windows/macOS: Jabra Direct and pascom Client can now be installed simultaneously
-* Windows/macOS: Improved stability of Jabra integration
-* macOS/Linux/Android/iOS: QOS / TOS Flags for SIP and SRTP are now set correctly
-* Android: The client checks if battery saving settings are configured correctly
-* Android/Xiaomi: If the "Wake Screen" Permission on Xiaomi devices with MIUI is not correctly configured, a warning message appears after the first failed call
-* Improve audio quality for softphone calls on all plattforms
-* Windows/macOS/Linux: "dynamic scrolling" can now be disabled
-* AEC is enabled by default, if a supported headset (Jabra, Sennheiser, Plantronics) is in use
-* Acoustic Echo Cancellation (AEC) settings are now configurable
-* Both pascom Client.exe and the setup now have a valid codesign certificate
-* The SIP registration is now kept on the most recent connection if two desktop clients are connected
-* Synchronization with a pascom19 server is faster and doesn't block the client anymore
-* If the pascom Client is in use on multiple devices, sometimes already read chat messages are displayed again if a pascom19 server is in use
+* Added support for guests via WebClient in combination with a pascom 19.06R server or newer.
+* Linux: added support for Jabra headsets.
+* Windows/macOS: Jabra Direct and the pascom client can now be installed simultaneously.
+* Windows/macOS: improved Jabra integration stability.
+* macOS/Linux/Android/iOS: SIP and SRTP QoS / ToS flags are now correctly set.
+* Android: The app checks that the battery optimisation settings are correctly configured.
+* Android/Xiaomi: if the "Wake up Screen" permission is not correctly configured on Xiaomi devices with MIUI, a warning notification will now be shown in the app after the first failed call.
+* Improve audio quality for softphone calls on all plattforms.
+* AEC is disabled by default if a supported headset (Jabra, Sennheiser, Plantronics) is in use.
+* Added Acoustic Echo Cancellation (AEC) configuration options to enable setting modifications.
+* Both the pascom client.exe and the setup now have a valid codesign certificate.
+* When two desktop clients are logged on, the SIP registration will remain with the last logged on client.
+* Client synchronisation on a pascom19 server is now faster and no longer blocks the client.
+* If the pascom client is being used multiple devices, previously read chat messages are sometimes displayed as unread again (in combination with a pascom 19 server is).
 
 **MODIFICATIONS**
 
