@@ -67,6 +67,22 @@ You now receive a **dial-in number, PIN and URL** for the web client.
 As soon as a group is public, external participants can log in to the group using the dial-in data. But don't panic, only moderators can actually start web conferences.
 {{% /notice %}}
 
+### Setup Dial In Number
+
+In order for your participants to be able to attend a conference using the dial-in number, you must set the **external group number** on the Admin GUI. You can find this setting under ({{< ui-button "Appliance" >}} > {{< ui-button "Services" >}} > {{< ui-button "Telephony" >}}).
+
+![Setup Dial in Number](set_number.en.PNG?width=60%)
+
+As with classic conference rooms, reserve a telephone number for your physical Trunk and set this up with the external group number. All groups now use the same dial-in number for external dial-in.
+
+{{% notice tip %}}
+Are you wondering how one dial-in number should work for all groups? The pascom system generates a unique PIN for each group. This way, the telephone system knows to which group / conference an external participant wants. Think of it like a hotel lobby.
+{{% /notice %}}
+
+If the **external group number** is not set, the feature for participating in conferences via the dial-in number is missing.
+
+![Keine Einwahlnummer](no_number.en.PNG?width=80%)
+
 
 ## The Moderator
 
@@ -79,11 +95,11 @@ As soon as external participants log into a conference and wait for the conferen
 Several internal users can also participate in a web conference, all of them then act as moderators. Hold a presentation and let another users answer questions in the chat at the same time.
 {{% /notice %}}
 
-### Start a Web Conference
+### Start a Conference
 
 As soon as you are ready to start the web conference, join the group by dialing in with the **handset symbol**. 
 
-### Manage a Web Conference
+### Manage a Conference
 
 As a moderator, you have full control over the conference. In the call area you can see all participants in the conference and can interact with them. You still have all the phone and video tools you need to give great online meetings or presentations. 
 
@@ -102,7 +118,7 @@ You can remove individual participants from the conference using the **info symb
 
 ![Remove Participant](participant_remove.de.PNG?width=80%)
 
-### Close a Web Conference
+### Close a Conference
 
 You have the option of ending a conference at different points in the desktop or mobile client. In the content or call area, click on the **red handset symbol** to leave the conference. 
 
@@ -110,9 +126,25 @@ You have the option of ending a conference at different points in the desktop or
 The web conference is not completely ended. External participants are directed to a waiting screen. So after a short break you can restart the web conference again.
 {{% /notice %}}
 
-## The Web Client
+## Participate in Conferences
 
-The pascom Web Client offers the same conference functions as the pascom Desktop or Mobile Client. Video telephony, screen sharing and chat functions can be used via your favorite web browser.
+pascom groups are a powerful conference tool which enable classic audio conferences and video conferences via the web browser.
+
+### Join a classic Audio Conference
+
+{{% notice tip %}}
+For this, the public group must be configured with an **external group number**!
+{{% /notice %}}
+
+As an external participant in an audio conference, you will usually receive dial-in data consisting of a phone number + PIN.
+
+```
+Dial in Number: +499912969166
+PIN: 313 787 136
+
+```
+As soon as you have dialed in via the dial-in number and entered the PIN, the pascom system will direct you to the corresponding conference. To end the audio conference, simply hang up.
+
 
 ### Participate in a Web Conference
 

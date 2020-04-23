@@ -66,6 +66,21 @@ Man erhält nun eine **Einwahlnummer, PIN und URL** für den Web Client.
 Sobald eine Gruppe öffentlich ist, können sich externe Teilnehmer über die Einwahldaten in die Gruppe einloggen/einwählen. Jedoch keine Panik, nur Moderatoren können Web Konferenzen tatsächlich starten.
 {{% /notice %}}
 
+### Einwahlnummer konfigurieren
+
+Damit Ihre Teilnehmer per Einwahlnummer an einer Konferenz teilnehmen können, müssen Sie auf der Admin GUI die **externe Gruppennummer** setzen. Diese Einstellung finden Sie unter ({{< ui-button "Appliance" >}} > {{< ui-button "Dienste" >}} > {{< ui-button "Telefonie" >}}).
+
+![Einwahlnummer konfigurieren](set_number.de.PNG?width=60%)
+
+Wie bei klassischen Konferenzräumen reservieren Sie sich eine Telefonnummer Ihres physikalischen Anschluss und richten diese bei der externen Gruppennummer ein. Alle Gruppen verwenden nun für die externe Einwahl die selbe Einwahlnummer.
+
+{{% notice tip %}}
+Fragen Sie sich, wie eine Einwahlnummer für alle Gruppen funktionieren soll? Das pascom System generiert einen einzigartigen PIN für jede Gruppe. So weiß die Telefonanlage, zu welcher Gruppe/Konferenz ein externer Teilnehmer möchte. Stellen Sie sich das, wie eine Hotellobby vor.
+{{% /notice %}}
+
+Ist die **externe Gruppennummer** nicht gesetzt, fehlt das Feature über die Einwahlnummer an Konferenzen teilzunehmen. 
+
+![Keine Einwahlnummer](no_number.de.PNG?width=80%)
 
 ## Der Moderator
 
@@ -78,11 +93,11 @@ Sobald sich externe Teilnehmer in eine Konferenz einloggen und auf den Start der
 Es können auch mehrere interne Benutzer an einer Konferenz teilnehmen, die dann alle als Moderator fungieren. Halten Sie einen Vortrag und lassen Sie gleichzeitig einen weiteren Benutzer Fragen im Chat beantworten.
 {{% /notice %}}
 
-### Web Konferenz starten
+### Konferenz starten
 
 Sobald Sie bereit sind, die Konferenz zu starten, treten Sie der Gruppe bei, indem Sie sich über das **Hörer-Symbol** einwählen. 
 
-### Web Konferenz verwalten
+### Konferenz verwalten
 
 Als Moderator haben Sie die volle Kontrolle über die Konferenz. Im Anrufbereich sehen Sie alle Teilnehmer der Konferenz und können mit ihnen Interagieren. Sie haben weiterhin alle Telefon-und Videotools zur Verfügung, um tolle Vorträge oder Präsentationen zu halten. 
 
@@ -100,7 +115,7 @@ Weiterhin können Sie die Chatfunktion mit allen Teilnehmern nutzen und Einstell
 
 ![Teilnehmer entfernen](participant_remove.de.PNG?width=80%)
 
-### Web Konferenz beenden
+### Konferenz beenden
 
 Sie haben die Möglichkeit, eine Konferenz an unterschiedlichen Stellen im Desktop oder Mobil Client zu beenden. Im Content - oder Anrufbereich klicken Sie auf den **roten Hörer**, um aus der Konferenz auszutreten.  
 
@@ -108,11 +123,26 @@ Sie haben die Möglichkeit, eine Konferenz an unterschiedlichen Stellen im Deskt
 Die Web Konferenz ist nicht komplett beendet. Externe Teilnehmer werden auf einen Wartebildschirm geleitet. Sie können also eine Web Konferenz, nach einer kurzen Pause, auch wieder aufnehmen.
 {{% /notice %}}
 
-## Der Web Client
+## An Konferenzen teilnehmen
 
-Der pascom Web Client bietet die selben Konferezfunktionen wie der pascom Desktop oder Mobil Client. Videotelefonie, Screensharing und Chatfunktionen lassen sich so über Ihren favorisierten Web Browser nutzen. 
+pascom Gruppen sind ein mächtiges Konferenztool, welche klassiche Audio-Konferenzen und Video-Konferenzen über den Web Browser ermöglichen.
 
-### An Web Konferenz teilnehmen
+### An klassischer Audio-Konferenz teilnehmen
+
+{{% notice tip %}}
+Hierfür muss die öffentliche Gruppe mit einer **externen Gruppennummer** konfiguriert sein!
+{{% /notice %}}
+
+Als externer Teilnehmer einer Audio-Konferenz, erhalten Sie in der Regel Einwahldaten, die aus einer Rufnummer + PIN bestehen.
+
+```
+Einwahlnummer: +499912969166
+PIN: 313 787 136
+
+```
+Sobald Sie sich über die Einwahlnummer eingwählt und die PIN eingegeben haben, leitet Sie das pascom System in die entsprechende Konferenz. Zum Beenden der Audio-Konferenz, legen Sie einfach auf.
+
+### An Web Video-Konferenz teilnehmen
 
 Als externer Teilnehmer einer Web Konferenz, erhalten Sie in der Regel Einwahldaten, die folgendermaßen aussehen können.
 
