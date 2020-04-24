@@ -18,7 +18,8 @@ Use the end devices supported by pascom to use all the integrated provisioning a
 [Yealink IP-Phones](#yealink-ip-phones "Yealink IP-Phones")  
 [Yealink DECT-Systems](#yealink-dect-systems "Yealink DECT-Systems")  
 [Grandstream IP-Phones](#grandstream-ip-phones "Grandstream IP-Phones")  
-[Mitel DECT-Systems](#mitel-dect-systems "Mitel DECT-Systems")     
+[Mitel DECT-Systems](#mitel-dect-systems "Mitel DECT-Systems")    
+[Siemens Gigaset DECT-Systems](#siemens-gigaset-dect-systems "Siemens Gigaset DECT-Systems")   
 
 ## SNOM IP-Phones
 [![Snom Setup](snom-series.png?width=70%)]({{<ref "/endpoints/snom" >}})
@@ -186,3 +187,13 @@ As there is a vast range of firmware versions available for the different IP tel
 |Mitel RFP 47 indoor|Mitel RFP 47 DRC outdoor|
 
 **[Setup Mitel DECT, Click here!]({{<ref "/endpoints/mitel-dect" >}})**
+
+## Siemens Gigaset DECT-Systems
+
+[![Gigaset DECT Setup](gigaset_n870.jpg)]({{<ref "/endpoints/gigaset-dect" >}})
+
+|Models||
+|---|---|
+|Siemens Gigaset N870|
+
+**[Setup Gigaset DECT, Click here!]({{<ref "/endpoints/gigaset-dect" >}})**
