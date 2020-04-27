@@ -14,17 +14,23 @@ weight: 995
 
 ![Video Conferences](pascom-19-video-desktop-conference.png)
 
-### Screensharing
+### pascom Online Web Conferencing
+
+Online meetings, remote presentations and support, the pascom Web Client allows pascom users to invite customers, business partners and stakeholders to join and participate in online web meetings direct in their browser, without requiring any additional software or hardware. Compatible with all leading web browsers, the pascom Web Client is an excellent customer service and engagement tool and ensures that pascom customers are able to benefit from a secure, flexible and easy-to-use WebRTC video conferencing solution.
+
+![Video Conferences](pascom-web-conferencing.png)
+
+### pascom Screensharing
 
 A picture says a thousand words and with pascom 19, adding yet more visual aids to your team collaboration and meetings is just a click away. The new screen sharing functionality is available on all devices and platforms to ensure that even remote workers are able to view shared presentations and share their own screens.
 
-![Screensharing](pascom-screen-sharing.png)
+![Screensharing](pascom-screensharing.png)
 
 ### pascom Groups with Audio, Video and Chat
 
 Further enhance team collaboration with team messaging / team chat. Building on our “on the fly” group chat, with pascom 19 it is now possible to add “always-on” team messaging channels. Break down information silos by grouping users into departments, teams or projects and enable them to brainstorm ideas, share files and dynamically start audio / video conferences and desktop sharing sessions.
 
-![pascom Groups](pascom-team-chat.png)
+![pascom Groups](pascom-collaboration-team-messaging.png)
 
 ## Breaking Changes
 
@@ -53,10 +59,10 @@ No problems are known at the moment!
 **Overview**
 
 * pascom Web Client for web conferencing
-* Support for Gigaset DECT N870 Gateway
+* Support for Gigaset Pro IP DECT N870 Gateway
 * Trunk templates are now automatically updated with system updates
 * Chat history can be restricted and cleaned up again
-* System language can be configured in the instance
+* System language can be configured directly in the instance
 * Connector performance has been improved
 
 **Modifications:**

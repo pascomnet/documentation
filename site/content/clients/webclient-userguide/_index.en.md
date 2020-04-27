@@ -46,20 +46,19 @@ First you will need a pascom group. Create a new group using the following [Inst
 
 ### Make pascom Groups Public
 
-In order to grant external participants access to a group, the group must be made public. The **info symbol** of a group takes you to the administration settings. Switch the **Allow guests** button **on**. The group is now public. This is also shown in the contact list for the respective group.
-
+In order to provide external participants access to a group, the group must be made public. Click the **info symbol** within the group which will take you to the administration settings. Switch the **Allow guests** button to **on** in order to make the now "public". This "public" status will also be shown in the contact list for the respective group.
 
 ![pulic groups](groups_public.en.PNG?width=70%)
 
-You now receive a **dial-in number, PIN and URL** for the web client.
+A **dial-in number, PIN and URL** for the pascom WebRTC web client access will now be generated and displayed.
 
 
 |Fields|Description|
 |---|---|
-|Dial-in-Number|Participants can take part in the conference by phone via the WebClient by dialing the dial-in number.|
+|Dial-in-Number|Participants can access the conference by phone using the pascom Web Client's dial-in number.|
 |PIN|The PIN is required to participate in the conference using the dial-in number.|
-|URL|Link to the group in the web client.|
-|Copy Invitation to Clipboard| Copy all details clearly to the clipboard to share all important data with external participants.|
+|URL|Link to the pascom Web Client to access the group web meeting.|
+|Copy Invitation to Clipboard| Copy all details to the clipboard for sharing all access information with the intended participants.|
 
 {{% notice tip %}}
 As soon as a group is public, external participants can log in to the group using the dial-in data. But don't panic, only moderators can actually start web conferences.

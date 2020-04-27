@@ -14,17 +14,23 @@ weight: 995
 
 ![Video Konferenz](pascom-19-video-desktop-conference.png)
 
-### Screensharing
+### pascom Web Konferenzen
+
+Online Meetings, Remote Präsentationen und Support: Mit dem neuen pascom Web Client können pascom Nutzer ihre Kunden, Geschäftspartner und Stakeholder, direkt im bevorzugten Browser zur Teilnahme an Online Web Meetings einladen, ohne dass zusätzliche Software oder Hardware erforderlich ist. Der pascom Web Client ist mit allen führenden Webbrowsern kompatibel und ein hervorragendes Tool für Kundenservice und Kundenbindung. Profitieren Sie von einer sicheren, flexiblen und benutzerfreundlichen Videokonferenzlösung. 
+
+![pascom Web Konferenzen](pascom-web-conferencing.png)
+
+### pascom Screensharing
 
 Ein Bild sagt mehr als tausend Worte. Die neue Screensharing Funktion steht auf allen Geräten und Plattformen zur Verfügung und stellt sicher, dass auch Außendienstmitarbeiter jederzeit Dokumente und Präsentationen mit Ihren Kollegen teilen können.
 
-![Screensharing](pascom-screen-sharing.png)
+![Screensharing](pascom-screensharing.png)
 
 ### pascom Gruppen mit Audio, Video und Chat
 
 Verbessern Sie die Teamzusammenarbeit mithilfe von Gruppen. Aufbauend auf unserem “on the fly” Gruppen-Chat ist es mit pascom 19 jetzt jedem Benutzer möglich, permanente Gruppen zu erstellen. Ermöglichen Sie Ihren Mitarbeitern sich mühelos per Chat, Audio oder Video austauschen.
 
-![pascom Gruppen](pascom-team-chat.png)
+![pascom Gruppen](pascom-collaboration-team-messaging.png)
 
 ## Wichtige Änderungen
 
