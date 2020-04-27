@@ -1,5 +1,5 @@
 ---
-title: pascom Server 19 BETA
+title: pascom Server 19
 description: With the new pascom version 19 Release, numerous new and improved functions are now available
 weight: 995
 ---
@@ -25,19 +25,6 @@ A picture says a thousand words and with pascom 19, adding yet more visual aids 
 Further enhance team collaboration with team messaging / team chat. Building on our “on the fly” group chat, with pascom 19 it is now possible to add “always-on” team messaging channels. Break down information silos by grouping users into departments, teams or projects and enable them to brainstorm ideas, share files and dynamically start audio / video conferences and desktop sharing sessions.
 
 ![pascom Groups](pascom-team-chat.png)
-
-## Become a BETA tester
-
-{{% notice tip %}}
-The simplest way to test the new BETA is with a new pascom.cloud FREE instance. These instances automatically use the pascom 19 BETA.  
-{{%/notice%}}
-
-**Would rather update?**  
-
-* **Onsite 18**: Download the [BETA ISO file](https://www.pascom.net/en/downloads/) and perform an update.  
-* **Onsite 17 or older**: Read the [Upgrade Guide]({{< ref "/server/upgrade">}}) and use the [BETA Iso](https://www.pascom.net/en/downloads/)  
-* **Cloud PREMIUM**: please contact the pascom support.  
-* **Partner customers**: please contact your pascom partner, who can support you with updating to the pascom 19 BETA.
 
 ## Breaking Changes
 

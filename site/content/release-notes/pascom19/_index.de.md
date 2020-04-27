@@ -1,5 +1,5 @@
 ---
-title: pascom Server 19 BETA
+title: pascom Server 19
 description: Mit dem pascom Release 19 stehen Ihnen eine Vielzahl an neuen Funktionen zur Verfügung.
 weight: 995
 ---
@@ -25,20 +25,6 @@ Ein Bild sagt mehr als tausend Worte. Die neue Screensharing Funktion steht auf 
 Verbessern Sie die Teamzusammenarbeit mithilfe von Gruppen. Aufbauend auf unserem “on the fly” Gruppen-Chat ist es mit pascom 19 jetzt jedem Benutzer möglich, permanente Gruppen zu erstellen. Ermöglichen Sie Ihren Mitarbeitern sich mühelos per Chat, Audio oder Video austauschen.
 
 ![pascom Gruppen](pascom-team-chat.png)
-
-## Beta Tester werden
-
-{{% notice tip %}}
-Der einfachste Weg ist eine neue FREE Instanz in der pascom.cloud zu erstellen. Diese verwenden automatisch pascom 19 BETA.  
-{{% /notice %}}
-
-
-**Sie möchten lieber updaten?**  
-
-* **Onsite 18**: Laden Sie sich das [ISO herunter](https://www.pascom.net/de/downloads/) und machen Sie ein Update.  
-* **Onsite 17 und älter**: Lesen Sie die [Upgrade Anleitung]({{< ref "/server/upgrade">}}) und nutzen Sie das [BETA Iso](https://www.pascom.net/de/downloads/)  
-* **Cloud PREMIUM**: Wenden Sie sich an den pascom Support.  
-* **Partnerkunden**: Wenden Sie sich an Ihren pascom Partner, dieser kann ein Update auf pascom 19 BETA veranlassen.
 
 ## Wichtige Änderungen
 
