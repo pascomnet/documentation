@@ -46,7 +46,7 @@ First you will need a pascom group. Create a new group using the following [Inst
 
 ### Make pascom Groups Public
 
-In order to provide external participants access to a group, the group must be made public. Click the **info symbol** within the group which will take you to the administration settings. Switch the **Allow guests** button to **on** in order to make the now "public". This "public" status will also be shown in the contact list for the respective group.
+In order to provide external participants access to a group, the group must be made public. Click the **info symbol** within the group which will take you to the administration settings. Switch the **Allow guests** button to **on** in order to make the group "public". This "public" status will also be displayed respective group's entry in the contact list.
 
 ![pulic groups](groups_public.en.PNG?width=70%)
 
@@ -61,154 +61,149 @@ A **dial-in number, PIN and URL** for the pascom WebRTC web client access will n
 |Copy Invitation to Clipboard| Copy all details to the clipboard for sharing all access information with the intended participants.|
 
 {{% notice tip %}}
-As soon as a group is public, external participants can log in to the group using the dial-in data. But don't panic, only moderators can actually start web conferences.
+As soon as a group is public, external participants can log in to the group using the dial-in / access data. But don't panic, only moderators can actually start web conferences.
 {{% /notice %}}
 
 ### Setup Dial In Number
 
-In order for your participants to be able to attend a conference using the dial-in number, you must set the **external group number** on the Admin GUI. You can find this setting under ({{< ui-button "Appliance" >}} > {{< ui-button "Services" >}} > {{< ui-button "Telephony" >}}).
+In order for your participants to be able to attend a conference using the dial-in number, you must configure an **external group number** in the admin web UI. To do this, go to ({{< ui-button "Appliance" >}} > {{< ui-button "Services" >}} > {{< ui-button "Telephony" >}}).
 
-![Setup Dial in Number](set_number.en.PNG?width=60%)
+![Setup Dial-in Number](set_number.en.PNG?width=60%)
 
-As with classic conference rooms, reserve a telephone number for your physical Trunk and set this up with the external group number. All groups now use the same dial-in number for external dial-in.
+As with classic conference rooms, reserve an available telephone number from your SIP trunk number block / DIDs (Direct Inward Dials) and configure it as the external group number. All groups will now use the same dial-in number for external dial-in.
 
 {{% notice tip %}}
-Are you wondering how one dial-in number should work for all groups? The pascom system generates a unique PIN for each group. This way, the telephone system knows to which group / conference an external participant wants. Think of it like a hotel lobby.
+Wondering how one dial-in number should work for all groups? The pascom system generates a unique PIN for each group. This way, the telephone system knows which group / conference an external participant wants to access.
 {{% /notice %}}
 
-If the **external group number** is not set, the feature for participating in conferences via the dial-in number is missing.
+If the **external group number** has not been configured, the feature enabling conference participation via dial-in will be missing.
 
-![Keine Einwahlnummer](no_number.en.PNG?width=80%)
-
+![No dial-in number](no_number.en.PNG?width=80%)
 
 ## The Moderator
 
-Internal users of the pascom system are referred as moderators. Every internal user who participates in a public conference is also a moderator. If a moderator dials into a public conference, it starts for all externally logged in participants. If the last moderator leaves a public conference, the conference is set to **hold**.
-As soon as external participants log into a conference and wait for the conference to start, you will see this in the contact list for the relevant group. The group will then turn green.
+Internal users of the pascom system are referred as moderators. Every internal user who participates in a public conference is also a moderator. If a moderator dials into a public conference, the conference will automatically start for all externally logged in participants. If the last moderator leaves a public conference, the conference will then be set to **hold**.
+As soon as external participants log into a conference and wait for the conference to start, you will see this in the contact list for the relevant group as the group will turn green.
 
 ![Group in Contact List](contactlist.en.PNG?width=40%)
 
 {{% notice tip %}}
-Several internal users can also participate in a web conference, all of them then act as moderators. Hold a presentation and let another users answer questions in the chat at the same time.
+Several internal users can also participate in a web conference, all of them acting as moderators. For example, when holding a presentation you can let other moderator users answer questions in the chat at the same time.
 {{% /notice %}}
 
 ### Start a Conference
 
-As soon as you are ready to start the web conference, join the group by dialing in with the **handset symbol**. 
+As soon as you are ready to start the web conference, join the group by dialing in by clicking the green **phone symbol**. 
 
 ### Manage a Conference
 
 As a moderator, you have full control over the conference. In the call area you can see all participants in the conference and can interact with them. You still have all the phone and video tools you need to give great online meetings or presentations. 
 
-
 ![participants](participant_list.en.PNG?width=80%)
 
-You can still use the chat function with all participants and manage settings for the group.
+You can still use your pascom chat tools to chat with  all participants and manage settings for the group.
 
 ![Chat](contentview_during_conference.en.PNG?width=80%)
 
 ### Remove Participants
 
-You can remove individual participants from the conference using the **info symbol** of the group. Simply click on the **trash symbol** of the participant you want to remove. The conference is then ended for this participant.
-
-
+You can remove individual participants from a conference using the group **info symbol**. Simply click on the **rubbish bin symbol** next to the participant you want to remove and the conference will then end for this participant.
 
 ![Remove Participant](participant_remove.de.PNG?width=80%)
 
-### Close a Conference
+### Ending a Conference
 
-You have the option of ending a conference at different points in the desktop or mobile client. In the content or call area, click on the **red handset symbol** to leave the conference. 
+With the pascom desktop client of mobile app, there are a number of options for ending a conference. In the content or call area, press the **red phone symbol** to leave the conference. 
 
 {{% notice tip %}}
-The web conference is not completely ended. External participants are directed to a waiting screen. So after a short break you can restart the web conference again.
+This will not completely end the web conference, but rather places it on hold. External participants will be directed to a waiting screen. So after a short break, you will be able to restart the web conference again.
 {{% /notice %}}
 
 ## Participate in Conferences
 
-pascom groups are a powerful conference tool which enable classic audio conferences and video conferences via the web browser.
+pascom groups are a powerful conference tool which cn be used to enable both classic audio conferences and modern video conferences via the web browser.
 
-### Join a classic Audio Conference
+### Join a Classic Audio Conference
 
 {{% notice tip %}}
-For this, the public group must be configured with an **external group number**!
+To use this option, the public group must be configured with an **external group number**!
 {{% /notice %}}
 
-As an external participant in an audio conference, you will usually receive dial-in data consisting of a phone number + PIN.
+As an external participant in an audio conference, you will usually receive dial-in data consisting of a phone number and PIN.
 
 ```
 Dial in Number: +499912969166
 PIN: 313 787 136
 
 ```
-As soon as you have dialed in via the dial-in number and entered the PIN, the pascom system will direct you to the corresponding conference. To end the audio conference, simply hang up.
-
+As soon as you have dialed in via the dial-in number and entered the PIN, the pascom phone system will direct you to the corresponding conference. To end the audio conference, simply hang up.
 
 ### Participate in a Web Conference
 
-As an external participant in a web conference, you will usually receive invitation data, that can look like this.
+As an external participant in a web conference, you will usually receive an invitation that can look like similar to below.
 
 ```
-Group: "Demo Gruppe"
+Group: "Demo Group"
 Webclient URL: https://pascom.net/pascom/webclient/f791b39a-4fd4-431b-850a
 Dial in Number: +499912969166
 PIN: 313 787 136
 
 ```
-Surf to the web client URL with your browser and you will get to the start page of the web client.
+Enter the URL into to your browser and navigate to the pascom web client's web conference start page.
 
-![Webclient Startpage](webclient_startpage.en.PNG?width=100%)
+![Web Client Start page](webclient_startpage.en.PNG?width=100%)
 
-Enter a name with which you want to participate in the web conference. This name will also be shown to all other participants. 
+Enter a name with which you want to join the web conference. This name will also be visible to all other participants. 
 
 ### The Web Client Options
 
-![Webclient Options](webclient_options.PNG?width=100%)
+![Web Client Options](webclient_options1.en.png)
 
-**Choose Video**  
+**Select Camera**  
 
-Your browser will automatically find installed webcams to participate in the web conference via video. Of course you can also deactivate the video function via the **DropDown menu**. 
+Your browser will automatically search for and find installed webcams which can be used when participating in a video web conference. It is of course also possible to disable the video function via the **drop down menu** and selecting **no camera**. 
 
-**Audio through the Browser**  
+**Browser Audio**  
 
-Set the audio for the microphone and speakers here. The browser finds all installed devices such as, integrated components, headsets and headphones. Simply select your preferred end devices from the **DropDown menu**.
+Select and configure your audio preferences for both your microphone and speaker. Your browser will automatically try to detect installed devices such as integrated audio components, headsets and headphones. Simply select your preferred audio device from the **drop down list**.
 
-**Audio through the Phone**  
+**Phone Audio**  
 
-Change the tabs from browser to **Phone** to join the web conference by phone. Here you need the **dial-in number** and **PIN** to receive the audio via your phone.
+To join a conference using dial-in phone audio you will need to select the **phone tab** within your the webclient log in browser window. You will need the conference **dial-in number** and **PIN** in order to call in and use your phone audio.
 
 ### The Waiting Area
 
-The waiting area always appears when no moderator has started the web conference or has chosen to pause from the conference.
+If a participant joins a web meeting before a moderator has started the conference, the waiting area will always appear. This is also the case if a moderator chooses to pause a conference.
 
 ![Webclient Wating Area](webclient_waiting.en.PNG?width=60%)
 
-External participants can hear the music on hold set in the pascom system for the duration of their stay. The **Exit symbol** takes you back to the Web Client options.
+External participants will hear the music on hold set in the pascom phone system for the duration the wait before the conference starts / resumes. The **leaver (exit door) symbol** takes you back to the Web Client options.
 
 ### The Web Client Interface
 
-As soon as the web conference has started, you will be taken to the web client interface, where you as a participant can use several options.
+As soon as the web conference starts, all external participants will move to the web client interface, where as a participant several conferencing and collaboration tools will be available to you.
 
 ![Webclient GUI](webclient.PNG?width=100%)
 
-**Video Areas enlarge/reduce**  
+**Increase / Reduce Video Size**  
 
-Each video area can be enlarged with a click and brought into focus. Click again to reduce the size. This is particularly helpful if you e.g. want to see more details in the screen sharing video.
+By clicking on a participants video, it is possible to maximise the size of their video as the main point of focus. To decrease the video size, simply click it again. This function is especially helpful for maximising screen sharing video streams for maximum detail.
 
 **Chat Area**  
 
-On the left side you will find the menu for the chat, which you can show or hide. Here all participants can ask questions or talk to each other.
+On the left of the screen, you will see the chat menu icon which you can click to show or hide the instant messaging section. Within the chat area, each conference participant can chat with each other.
 
 **Participant List**  
 
-On the right-hand side you will find the menu for the participant list, which you can show or hide. Here you will find all participants in the web conference.
+On the right of the screen, you will find the the participant menu icon which you can click to which you can show or hide the conference participant list.
 
 **Toolbar**  
 
-In the lower area you will find the toolbar. Here you can activate/deactivate your **microphone**, activate/deactivate **video sharing**, switch to **fullscreen mode** and leave the conference.
+In the bottom section of the screen, you will find the conference toolbar in which it is possible to mute / unmute your **microphone**, turn your **video** on or off, switch to **fullscreen mode** and leave the conference.
 
 ### Leaving the Web Conference
 
-If you leave the web conference with the **Exit symbol**, you will return to the client options. From here, you can attend the web conference again or close the browser window.
+If you leave the web conference using the **Leave (exit door) symbol**, you will return to the client options. From here, you can re-enter the web conference again or close the browser window.
 
 
 
