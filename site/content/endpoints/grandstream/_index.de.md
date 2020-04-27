@@ -1,7 +1,7 @@
 ---
 title: Grandstream Tischtelefone
 description: Integrieren Sie Ihre Grandstream IP-Tischtelefone in die pascom.
-weight: 50
+weight: 11
 ---
 
 {{< doctype "both"  >}}

@@ -1,7 +1,7 @@
 ---
 title: Mitel DECT Systems
 description: How to integrate your Mitel / Aastra DECT system with your pascom phone system.
-weight: 60
+weight: 15
 ---
 
 {{< doctype "both"  >}}

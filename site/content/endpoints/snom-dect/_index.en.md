@@ -1,7 +1,7 @@
 ---
 title: Snom DECT System
 description: Integrate your Snom DECT System with your pascom IP PBX solution.
-weight: 20
+weight: 16
 ---
 
 

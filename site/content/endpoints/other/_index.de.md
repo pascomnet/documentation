@@ -1,7 +1,7 @@
 ---
 title: Generische SIP-Endgeräte
 description: So binden Sie SIP-Engeräte, nicht offiziell unterstützer Hersteller in die pascom ein
-weight: 100
+weight: 10
 ---
 
 {{< doctype "both"  >}}

@@ -1,7 +1,7 @@
 ---
 title: Siemens Gigaset DECT-System
 description: Integrieren Sie Ihr Gigaset DECT-System in die pascom.
-weight: 20
+weight: 15
 ---
 
 
@@ -50,7 +50,7 @@ einen Klick auf den {{< ui-button "grünen Haken" >}}.
 
 {{< num 5 "Provisionierung-URL ermitteln" >}}
 
-Haken Sie das DECT-System in der Geräte-Liste an und wählen {{< ui-button "Aktion" >}} > {{< ui-button "Provisioning URL" >}}. Kopieren Sie die
+Haken Sie das DECT-System in der Gateway-Liste an und wählen {{< ui-button "Aktion" >}} > {{< ui-button "Provisioning URL" >}}. Kopieren Sie die
 **URL** in die Zwischenablage.
 
 {{< num 6 "Provisionierung-URL in der DECT Basis hinterlegen" >}}
@@ -66,7 +66,7 @@ Abschließend führen Sie einen Reebot des DECT-System aus, damit die Provisioni
 
 Wählen Sie unter {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} > {{< ui-button "Hinzufügen" >}} den Eintrag *Via Gigaset DECT Gateway: handset* aus. Folgende Einstellungen müssen Sie vornehmen:
 
-|Einstellunge|Beschreibung|
+|Einstellung|Beschreibung|
 |---|---|
 |Angeschlossen an|Wählen Sie hier den DECT-Sender, bzw. bei Mulizellenbetrieb das DECT-System.|
 |IPEI Nummer|Geben Sie hier die IPEI-Nummer des Handsets ein.|

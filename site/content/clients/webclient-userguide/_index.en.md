@@ -4,7 +4,6 @@ description: This User Handbook explains how to use the pascom Web Client.
 weight: 30
 ---
 
-
 {{< doctype "both" >}}
 
 {{< description >}}
@@ -20,33 +19,32 @@ Comming soon!
 
 ## Supported Browsers
 
-The pascom Web Client can be used in your favorite web browsers. Currently popular browsers such as Chrome, Firefox, Safari and Microsoft Edge are supported.
+The pascom Web Client can be used in your favourite web browser. Currently, popular browsers such as Chrome, Firefox, Safari and Microsoft Edge are supported.
 
-![supported browsers](browser_logos.png?width=50%)
-
+![Supported browsers](browser_logos.png?width=50%)
 
 ## Overview
 
-With the pascom Web Client you make audio and video conferences accessible to external participants. Give your employees and customers the opportunity to participate in web conferences and presentations from anywhere. Quick, easy and professional. The case is simple, make your actual pascom groups accessible from outside and invite external participants. This guide shows you what you need and how it works.
+The pascom Web Client has been design to enable quick, easy and professional audio and video conferences accessible to external participants. Thanks to WebRTC technology the pascom Web Client provides your employees and customers with the ability to participate in web conferences and presentations from anywhere. The concept is easy to understand, simply make your existing pascom Team Messaging Groups externally accessible and invite your customers, business partners etc. to join your online meetings.
 
-**What you need?**  
+### What's required?
+
 - pascom Desktop or Mobile Client  
-- pascom Group  
-- Moderator  
-- external Participants   
+- pascom Team Messaging Group  
+- A Moderator  
+- External participants   
 
 ![Overview](webclient_overview.en.png?)
 
+## pascom Groups
 
-## Prepare the pascom Group
-
-Groups in pascom can quickly and dynamically create a place where people can communicate with each other. pascom groups can be used for a wide variety of scenarios, such as projects, presentations and conferences. Imagine pascom groups like virtual conference rooms.
+Groups in pascom provide an excellent Team Collaboration tool where you can quickly and dynamically create a place for people to communicate and collaborate with one another. pascom groups can be used for a wide variety of purposes, such as projects, presentations and conferences. Imagine pascom groups like virtual conference rooms.
 
 ### Create a pascom Group
 
-First you need a group. Create a new group using the following [Instructions]({{< ref "clients/desktop-userguide#groups">}}). Tip: You can create as many groups as you like on the pascom system.
+First you will need a pascom group. Create a new group using the following [Instructions]({{< ref "clients/desktop-userguide#groups">}}). Tip: There are no limitations on how many groups you can create, so you can add as many groups as you like / require on the pascom system.
 
-### Make pascom Groups public
+### Make pascom Groups Public
 
 In order to grant external participants access to a group, the group must be made public. The **info symbol** of a group takes you to the administration settings. Switch the **Allow guests** button **on**. The group is now public. This is also shown in the contact list for the respective group.
 

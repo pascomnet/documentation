@@ -1,7 +1,7 @@
 ---
-title: Siemens Gigaset DECT System
-description: Integrate your Gigaset DECT System with your pascom IP PBX solution.
-weight: 20
+title: Siemens Gigaset IP DECT System
+description: Integrate your Gigaset IP DECT System into your pascom VoIP phone system.
+weight: 15
 ---
 
 
@@ -13,59 +13,57 @@ weight: 20
 
 ## Supported Endpoints
 
-**[List of supported Endpoints, Click here!]({{<ref "/endpoints#siemens-gigaset-dect-systems" >}})**
+**[List of supported endpoints, click here!]({{<ref "/endpoints#siemens-gigaset-dect-systems" >}})**
 
 ## Overview
 
-[Snom M700] (https://www.snom.com/ip-phones/workplace-mobility/m700-multi-radio-base-station/ "Snom DECT Workplace mobility solutions") base stations can be operated in both Single Cell and Multi-Cell deployments and are compatible with pascom cloud, hardware and virtual phone systems. As such the Snom M700 is ideally suited for organisations that require additional [work place mobility] (https://www.pascom.net/en/features/ "pascom workplace mobility features") over multiple floors or across larger company buildings.
+The Gigaset IP DECT Base Station can be operated as either a single or mutli cell deployment. It is ideally suited for businesses that require DECT coverage across multiple floors or over a large office space.
 
 
-## Add a new DECT Base
+## Add New DECT Base Station
 
 {{% tabs %}}
 {{% tab "Pairing via URL (cloud + onsite)" %}}
 
-{{< num 1 "Connect your DECT System" >}}
-
-Integrate the DECT system into your network.
-
-{{< num 2 "Find the MAC Adress" >}}
-
-The MAC address can be found on the base station or on an enclosed memo.
-
-{{< num 3 "Create Basestation on the pascom server" >}}
-
-Log in to your pascom System and add a new basestation under {{< ui-button "Gateways" >}} > {{< ui-button "Gatewaylist" >}} of the type **DECT-gateway: Gigaset**.
+{{< num 1 "Connect DECT System" >}}
 
 
-Enter the previously determined MAC address of the DECT system in the **Mac address** field.
+Integrate the DECT System into your network. 
+
+{{< num 2 "Find the MAC Address" >}}
+
+The MAC address can be found on the Base Station or in a document enclosed within the packaging.
+
+{{< num 3 "Add Base Station" >}}
+
+Log into your pascom phone system and under {{< ui-button "Gateways" >}} > {{< ui-button "Gateway List" >}} add a new device with the type **DECT Gateway: Gigaset**.
+
+In the field **MAC address** enter the MAC address you found in step 2. 
 
 {{< num 4 "Apply Jobs" >}}
 
-After saving the changes, a job box appears (above). Start the job with a click on the button {{< ui-button "Apply" >}}.
+After saving your changes, the corresponding apply telephony entry will appear in the Job Box (top center of screen). Start the job by clicking on the {{< ui-button "green tick" >}}. 
 
-{{< num 5 "Find the provisioning URL" >}}
+{{< num 5 "Find the Provision URL" >}}
 
-Check the DECT System in the device list and select {{< ui-button "Aktion" >}} > {{< ui-button "Provisioning URL" >}}. Copy that
-**URL** to the clipboard.
+Within the device list and select {{< ui-button "Action" >}} > {{< ui-button "Provisioning URL" >}}. Copy the **URL** to the clipboard.
 
-{{< num 6 "Store the provisioning URL in the DECT base" >}}
+{{< num 6 "Enter the Provisioning URL to DECT base station admin UI" >}}
 
-Enter the just copied provisioning URL on the DECT System's Web UI.
+Within the DECT system admin Web UI, enter the copied provisioning URL.
 
-Finally make a Reboot of the DECT System to update the provisioningdata.
+Finally, on the DECT system perform a system restart in order to update the provisioning data.
 
 {{% /tab %}}
 
 
-### Add / Assign Handsets
+### Add and Assign Handsets
 
-Under {{< ui-button "Devices" >}} > {{< ui-button "Device List" >}} > {{< ui-button "Add" >}}, select the option {{< ui-button "Via Gigaset DECT Gateway: handset" >}}
+Under {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}} > {{< ui-button "Add" >}} select the option *Via Gigaset DECT Gateway: handset*. You will be required to configure the following settings:
 
-Ìn the next screen, you will be able to configure the device and under the {{< ui-button "Assignment" >}} tab you will be able to assign users and / or locations.
-
-|Parameter|Description|Comments|
-|----|----|----|
-|Connected to| Select a Gateway to connect to.|In multicell environments, all Gateways configured as a repeater are automatically hidden.|
-|IPEI Number|Enter the handset IPEI number which can be found via the handset menu Settings > Status|The first line of the IPEI number is enough, i.e. everything after the colon (:) symbol does not need to be entered.|
-|SIP Options| (Optional Step) It is possible to enter all the SIP peer options as supported by Asterisk| Please refer to Asterisk's SIP Configuration - Peers and Clients Documentation.|
+|Setting|Description|
+|---|---|
+|Connected to|Select a DECT sender or the DECT system (for multi cell deployments).|
+|IPEI number|Enter the Handset IPEI number.|
+|SIP Options|Optionally, it is possible to add Asterisk specific SIP options.|
+|Assignment|Under this tab, you can now assign the handset to a user / location.|

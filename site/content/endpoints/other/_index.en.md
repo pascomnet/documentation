@@ -1,7 +1,7 @@
 ---
 title: Generic SIP Endpoints
 description: How to integrate SIP devices from non-officially supported manufactures into your pascom phone system
-weight: 100
+weight: 10
 ---
 
 {{< doctype "both"  >}}

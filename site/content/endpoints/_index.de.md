@@ -11,14 +11,14 @@ Verwenden Sie von pascom unterstütze Endgeräte um alle integrierten Provisioni
 
 ## Übersicht unterstützter Endgeräte
 
+[Grandstream IP-Telefone](#grandstream-ip-telefone "Grandstream IP-Telefone")  
+[Mitel DECT-Systeme](#mitel-dect-systeme "Mitel DECT-Systeme")  
+[Siemens Gigaset DECT-Systeme](#siemens-gigaset-dect-systeme "Siemens Gigaset DECT-Systeme")  
 [SNOM IP-Telefone](#snom-ip-telefone "SNOM IP-Telefone")  
 [SNOM DECT-Systeme](#snom-dect-systeme "SNOM DECT-Systeme")      
 [SNOM Konferenzsysteme](#snom-konferenzsysteme "SNOM Konferenzsysteme")  
 [Yealink IP-Telefone](#yealink-ip-telefone "Yealink IP-Telefone")  
-[Yealink DECT-Systeme](#yealink-dect-systeme "Yealink DECT-Systeme")  
-[Grandstream IP-Telefone](#grandstream-ip-telefone "Grandstream IP-Telefone")  
-[Mitel DECT-Systeme](#mitel-dect-systeme "Mitel DECT-Systeme")  
-[Siemens Gigaset DECT-Systeme](#siemens-gigaset-dect-systeme "Siemens Gigaset DECT-Systeme")           
+[Yealink DECT-Systeme](#yealink-dect-systeme "Yealink DECT-Systeme")           
 
 ## SNOM IP-Telefone
 

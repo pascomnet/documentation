@@ -1,7 +1,7 @@
 ---
 title: Mitel DECT-System
 description: Integrieren Sie Ihr Mitel DECT-System in die pascom.
-weight: 60
+weight: 15
 ---
 
 {{< doctype "both"  >}}

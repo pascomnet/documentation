@@ -1,7 +1,7 @@
 ---
 title: Grandstream Desktop Phones
 description: How to integrate your Grandstream IP Telephones in your pascom phone system.
-weight: 50
+weight: 11
 ---
 
 {{< doctype "both"  >}}
