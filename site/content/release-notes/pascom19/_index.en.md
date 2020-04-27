@@ -53,12 +53,64 @@ This section explains the changes that you must consider when migrating to pasco
 * Port forwarding for **UDP 3478** is now mandatory, otherwise **video** tools will not work.
 * A new provisioning is required for **beronet Gateways**.
 * **pascom SOHO Server** is no longer compatible. Please perform a hardware upgrade to the [pascom Appliance]({{< ref "server/appliance" >}}) or use the pascom.cloud.
+* * **Automatic Trunk Updates** will be performed for Telekom, peoplefone (DE, AT, CH), HFO, Sipgate Trunking, RKom, t-m-net, sipcallch, seabix, mnet, easybell and qsc/plusnet. Please check your trunk after update.
 
 ## Known Issues
 
 {{% notice issues %}}
 No problems are known at the moment!
 {{% / notice%}}
+
+## Release 19.06 (28.04.2020)
+
+**Overview**
+
+* pascom Web Client for web conferencing
+* Support for Gigaset DECT N870 Gateway
+* Trunk templates are now automatically updated with system updates
+* Chat history can be restricted and cleaned up again
+* System language can be configured in the instance
+* Connector performance has been improved
+
+**Modifications:**
+
+- [MD-11661] - Snom M700 provisioning restarts all multicell senders
+- [MD-11960] - Payload data has wrong key
+- [MD-12033] - Fax extension invalid after change via connector
+- [MD-12055] - Auto created Peoplefone trunk during setup has wrong options
+- [MD-12069] - Delete contact in roster (favorite) if related phonebook entry gets deleted
+- [MD-12092] - Fix warnings in various jobs
+- [MD-12107] - Show correct language when adding a trunk from a template
+- [MD-12126] - Change mnet template pjsip options
+- [MD-12144] - Instance web UI shows wrong phone state
+- [MD-12155] - Improve outbound proxy, ensure to resolve internal alias ip numbers
+- [MD-12159] - Php segfault because of protobuf version incompatiblity
+- [MD-12161] - Different container versions are confusing CSUI version checks
+- [MD-12170] - Loader pattern is invalid
+- [MD-12181] - Handle SIP AOC info requests, fix dropped calls on rkom trunks
+- [MD-12182] - Can't delete group participants or leave group
+- [MD-12206] - Rtc media handles locking and cleanup
+- [MD-12213] - Show one provisioning URL per host-name
+- [MD-12236] - Stop to enforce opus for desktop client calls, fallback to alaw for trunk calls
+- [MD-12242] - Lost calls after 30 minutes on outbound proxy due to session timers
+- [MD-5675] - Increase Connector Performance, Step 1
+- [MD-8427] - Cleanup dialplan loop warnings on apply telephony
+- [MD-10779] - Unify system language, web ui language and prompts into one data model
+- [MD-11169] - Rate limit API requests
+- [MD-11358] - Managed, updateable, sip trunk profiles
+- [MD-11455] - Implement Gigaset N870 DECT multicell system
+- [MD-11925] - Add more instance level metrics to prometheus
+- [MD-12027] - Cleanup chat in event stream
+- [MD-12062] - Update Seabix logo in trunk template
+- [MD-12116] - Xmpp resource loader could be more efficient
+- [MD-12156] - Use python3 for installation process
+- [MD-12157] - Upgrade go to 1.13.X
+- [MD-12175] - Remove php proto generated files from git repo
+- [MD-12216] - Enhance PushManager to lower priority for chat messages pushed to android devices
+- [MD-12224] - Reduce idle cpu consumption in the xmppserver by reducing modules, ports
+- [MD-12244] - Add a parameter for video publisher soft limit
+- [MD-12252] - Change sip host in plusnet template and migrate it automatically
+- [MD-12269] - Raise asterisk open file limit
 
 
 ## Release 19.05 (11.03.2020)
