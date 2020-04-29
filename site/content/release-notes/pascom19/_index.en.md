@@ -46,7 +46,7 @@ This section explains the changes that you must consider when migrating to pasco
 * Port forwarding for **UDP 3478** is now mandatory, otherwise **video** tools will not work.
 * A new provisioning is required for **beronet Gateways**.
 * **pascom SOHO Server** is no longer compatible. Please perform a hardware upgrade to the [pascom Appliance]({{< ref "server/appliance" >}}) or use the pascom.cloud.
-* * **Automatic Trunk Updates** will be performed for Telekom, peoplefone (DE, AT, CH), HFO, Sipgate Trunking, RKom, t-m-net, sipcallch, seabix, mnet, easybell and qsc/plusnet. Please check your trunk after update.
+* **Automatic Trunk Updates** will be performed for Telekom, peoplefone (DE, AT, CH), HFO, Sipgate Trunking, RKom, t-m-net, sipcallch, seabix, mnet, easybell and qsc/plusnet. Please check your trunk after update.
 
 ## Known Issues
 
