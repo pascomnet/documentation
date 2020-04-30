@@ -51,8 +51,11 @@ This section explains the changes that you must consider when migrating to pasco
 ## Known Issues
 
 {{% notice issues %}}
-No problems are known at the moment!
+These problems are known to us and we are already working on a solution
 {{% / notice%}}
+
+* Onsite Telekom trunks only work if an outbound proxy is used. To do this, select the appropriate interface in the trunk instead of "default / NAT".
+* Pairing of mobile phones sometimes fails due to an invalid QR code. The process can simply be repeated.
 
 ## Release 19.06 (28.04.2020)
 

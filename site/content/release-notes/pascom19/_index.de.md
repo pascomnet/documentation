@@ -51,8 +51,11 @@ In diesem Abschnitt werden die Änderungen erläutert, die Sie bei der Migration
 ## Bekannte Probleme
 
 {{% notice issues %}}
-Derzeit sind keine Probleme bekannt!  
+Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 {{% /notice %}}
+
+* Onsite Telekom Ämter funktionieren nur wenn ein Outbound Proxy genutzt wird. Wählen Sie hierzu statt "default / NAT" das entsprechende Schnittstelle im Amt aus.
+* Pairing von Mobiltelefonen schlägt manchmal durch einen ungültigen QR code fehl. Der Vorgang kann einfach wiederholt werden.
 
 ## Release 19.06 (28.04.2020)
 
