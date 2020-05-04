@@ -1,7 +1,7 @@
 ---
 title: Yealink Tischtelefone
 description: Integrieren Sie Ihre Yealink IP-Tischtelefone in die pascom.
-weight: 30
+weight: 13
 ---
 
 

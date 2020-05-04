@@ -11,13 +11,14 @@ Verwenden Sie von pascom unterstütze Endgeräte um alle integrierten Provisioni
 
 ## Übersicht unterstützter Endgeräte
 
+[Grandstream IP-Telefone](#grandstream-ip-telefone "Grandstream IP-Telefone")  
+[Mitel DECT-Systeme](#mitel-dect-systeme "Mitel DECT-Systeme")  
+[Siemens Gigaset DECT-Systeme](#siemens-gigaset-dect-systeme "Siemens Gigaset DECT-Systeme")  
 [SNOM IP-Telefone](#snom-ip-telefone "SNOM IP-Telefone")  
 [SNOM DECT-Systeme](#snom-dect-systeme "SNOM DECT-Systeme")      
 [SNOM Konferenzsysteme](#snom-konferenzsysteme "SNOM Konferenzsysteme")  
 [Yealink IP-Telefone](#yealink-ip-telefone "Yealink IP-Telefone")  
-[Yealink DECT-Systeme](#yealink-dect-systeme "Yealink DECT-Systeme")  
-[Grandstream IP-Telefone](#grandstream-ip-telefone "Grandstream IP-Telefone")  
-[Mitel DECT-Systeme](#mitel-dect-systeme "Mitel DECT-Systeme")     
+[Yealink DECT-Systeme](#yealink-dect-systeme "Yealink DECT-Systeme")           
 
 ## SNOM IP-Telefone
 
@@ -188,3 +189,14 @@ Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es
 |Mitel RFP 47 indoor|Mitel RFP 47 DRC outdoor|
 
 **[Einrichtung Mitel DECT, hier klicken!]({{<ref "/endpoints/mitel-dect" >}})**
+
+## Siemens Gigaset DECT-Systeme
+
+[![Gigaset DECT Einrichtung](gigaset_n870.jpg?width=40%)]({{<ref "/endpoints/gigaset-dect" >}})
+
+|Modelle||
+|---|---|
+|Siemens Gigaset N870|
+
+
+**[Einrichtung Gigaset DECT, hier klicken!]({{<ref "/endpoints/gigaset-dect" >}})**

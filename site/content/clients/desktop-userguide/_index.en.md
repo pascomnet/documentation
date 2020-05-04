@@ -230,7 +230,7 @@ In the contact list, click on the "+ symbol" to create a new group. You can crea
 
 ![Manage pascom collaboration group](group_manage.en.png?width=100%)
 
-To manage a group, select and click on the required group within your contact list. To make changes to the group, click on the information symbol next to the group name and icon at the top of the content section. It is also possible to mute notifications for this particular group via the speaker icon (top right of the content section). 
+To manage a group, select and click on the required group within your contact list. To make changes to the group, click on the information symbol next to the group name and icon at the top of the content section. It is also possible to mute notifications for this particular group via the speaker icon (top right of the content section). In addition, you can make groups public by allowing **guest access**. Detailed instructions on public groups in connection with the WebClient can be found [here]({{<ref "clients/webclient-userguide">}}).
 
 ## Chat
 

@@ -8,6 +8,19 @@ weight: 1000
 Folgen Sie bitte unserer detaillierten [Installations-Anleitung]({{< ref "/clients/tapi-installation" >}}).
 {{%/notice%}}
 
+## Release 6.R84 (22.04.2020)
+
+**Auf einen Blick**
+
+- Die TAPI unterstützt jetzt auch Software, die TAPI v3 oder v3.1 voraussetzt.
+
+
+**ÄNDERUNGEN:**
+
+- [TAPI-27] - TAPI credentials are not accepting user without instance
+- [TAPI-28] - Update reported TAPI Version to 3.1
+- [TAPI-29] - Switch TAPI installer to Unicode
+
 ## Release 5.R76 (19.12.2019)
 
 **Auf einen Blick**

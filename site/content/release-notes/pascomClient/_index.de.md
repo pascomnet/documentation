@@ -37,21 +37,21 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 
 **Auf einen Blick**
 
-* Unterstützung für Gäste via WebClient mit pascom 19.06R Server
-* Linux: Support für Jabra Headsets
-* Windows/macOS: Der pascom Client kann jetzt gleichzeitig mit Jabra Direct installiert sein
-* Windows/macOS: Stabilität der Jabra-Integration verbessert
-* macOS/Linux/Android/iOS: QOS / TOS Flags für SIP und SRTP werden nun korrekt gesetzt
-* Android: Der Client prüft nun ob die Energiespar-Einstellungen korrekt konfiguriert sind
-* Android/Xiaomi: Wenn die "Bildschirm-Aufwecken"-Berechtigung auf Xiaomi-Geräten mit MIUI nicht gesetzt ist, erscheint nun eine Warnungmeldung nach dem ersten Fehlgeschlagenen Anruf
-* Audioqualität bei Softphone-Gesprächen auf allen Plattformen verbessert
-* Windows/macOS/Linux: "dynamisches Scrollen" kann nun deaktiviert werden
-* AEC ist standardmäßig deaktiviert, wenn ein Unterstütztes Headset (Jabra, Sennheiser, Plantronics) verwendet wird
-* Acoustic Echo Cancellation (AEC) Einstellungen sind nun konfigurierbar
-* Sowohl pascom Client.exe als auch das setup haben nun ein gültiges Codesign-Zertifikat
-* Wenn zwei Desktop Clients angemeldet sind, verbleibt die SIP-Registrierung beim zuletzt angemeldeten Client
-* Synchronisierung mit einem pascom19 Server ist schneller und blockiert den Client nicht mehr
-* Wenn der pascom client auf mehreren Geräten verwendet wurde, wurden bereits gelesene Chat-Nachrichten manchmal wieder als ungelesen angezeigt (mit pascom19 server)
+* Unterstützung für Gäste via WebClient mit pascom 19.06R Server.
+* Linux: Support für Jabra Headsets.
+* Windows/macOS: Der pascom Client kann jetzt gleichzeitig mit Jabra Direct installiert sein.
+* Windows/macOS: Stabilität der Jabra-Integration verbessert.
+* macOS/Linux/Android/iOS: QOS / TOS Flags für SIP und SRTP werden nun korrekt gesetzt.
+* Android: Der Client prüft nun ob die Energiespareinstellungen korrekt konfiguriert sind.
+* Android/Xiaomi: Wenn die "Bildschirm-Aufwecken"-Berechtigung auf Xiaomi-Geräten mit MIUI nicht gesetzt ist, erscheint nun eine Warnungmeldung nach dem ersten fehlgeschlagenen Anruf.
+* Audioqualität bei Gesprächen über das Softphone, auf allen Plattformen verbessert.
+* Windows/macOS/Linux: "dynamisches Scrollen" kann nun deaktiviert werden.
+* AEC ist standardmäßig deaktiviert, wenn ein unterstütztes Headset (Jabra, Sennheiser, Plantronics) verwendet wird.
+* Acoustic Echo Cancellation (AEC) Einstellungen sind nun konfigurierbar.
+* Sowohl pascom Client.exe als auch das Setup haben nun ein gültiges Codesign-Zertifikat.
+* Wenn zwei Desktop Clients angemeldet sind, verbleibt die SIP-Registrierung beim zuletzt angemeldeten Client.
+* Synchronisierung mit einem pascom19 Server ist schneller und blockiert den Client nicht mehr.
+* Behoben: Wenn der pascom Client auf mehreren Geräten verwendet wurde, wurden bereits gelesene Chat-Nachrichten manchmal wieder als ungelesen angezeigt (mit pascom19 Server).
 
 **ÄNDERUNGEN**
 

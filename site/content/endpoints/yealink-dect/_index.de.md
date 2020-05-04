@@ -1,7 +1,7 @@
 ---
 title: Yealink DECT-System
 description: Integrieren Sie Ihr Yealink DECT-System in die pascom.
-weight: 40
+weight: 17
 ---
 
 {{< doctype "both"  >}}

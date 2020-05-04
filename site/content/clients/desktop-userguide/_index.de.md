@@ -238,9 +238,9 @@ Klicken Sie in der Kontaktliste auf das "+ - Symbol" um eine neue Gruppe zu erst
 
 ### Gruppe verwalten
 
-![Gruppe erstellen](group_manage.de.png?width=100%)
+![Gruppe verwalten](group_manage.de.png?width=100%)
 
-Um eine Gruppe zu verwalten, klicken Sie in der Kontaktliste auf die entsprechende Gruppe. Im Contentbereich erscheint im oberen Abschnitt ein kleines Infosymbol. Hier nehmen Sie Änderungen an der Gruppe vor. Wünschen Sie keine Benachrichtigungen mehr, können Sie die Gruppe über das Lautsprechersymbol stummschalten.
+Um eine Gruppe zu verwalten, klicken Sie in der Kontaktliste auf die entsprechende Gruppe. Im Contentbereich erscheint im oberen Abschnitt ein kleines Infosymbol. Hier nehmen Sie Änderungen an der Gruppe vor. Wünschen Sie keine Benachrichtigungen mehr, können Sie die Gruppe über das Lautsprechersymbol stummschalten. Zusätzlich können Sie Gruppen öffentlich machen, indem Sie den **Gastzutritt** erlauben. Eine detaillierte Anleitung zu public Gruppen in Verbindung mit dem WebClient, finden Sie [hier]({{< ref "clients/webclient-userguide">}}).
 
 ## Chat
 

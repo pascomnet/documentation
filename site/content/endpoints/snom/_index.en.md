@@ -1,7 +1,7 @@
 ---
 title:  Snom Desktop Phones
 description: Integrate your Snom VoIP phones into your pascom business phone system
-weight: 10
+weight: 12
 ---
 
 {{< doctype "both" >}}

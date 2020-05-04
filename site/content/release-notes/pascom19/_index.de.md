@@ -1,5 +1,5 @@
 ---
-title: pascom Server 19 BETA
+title: pascom Server 19
 description: Mit dem pascom Release 19 stehen Ihnen eine Vielzahl an neuen Funktionen zur Verfügung.
 weight: 995
 ---
@@ -14,31 +14,23 @@ weight: 995
 
 ![Video Konferenz](pascom-19-video-desktop-conference.png)
 
-### Screensharing
+### pascom Web Konferenzen
+
+Online Meetings, Remote Präsentationen und Support: Mit dem neuen pascom Web Client können pascom Nutzer ihre Kunden, Geschäftspartner und Stakeholder, direkt im bevorzugten Browser zur Teilnahme an Online Web Meetings einladen, ohne dass zusätzliche Software oder Hardware erforderlich ist. Der pascom Web Client ist mit allen führenden Webbrowsern kompatibel und ein hervorragendes Tool für Kundenservice und Kundenbindung. Profitieren Sie von einer sicheren, flexiblen und benutzerfreundlichen Videokonferenzlösung. 
+
+![pascom Web Konferenzen](pascom-web-conferencing.png)
+
+### pascom Screensharing
 
 Ein Bild sagt mehr als tausend Worte. Die neue Screensharing Funktion steht auf allen Geräten und Plattformen zur Verfügung und stellt sicher, dass auch Außendienstmitarbeiter jederzeit Dokumente und Präsentationen mit Ihren Kollegen teilen können.
 
-![Screensharing](pascom-screen-sharing.png)
+![Screensharing](pascom-screensharing.png)
 
 ### pascom Gruppen mit Audio, Video und Chat
 
 Verbessern Sie die Teamzusammenarbeit mithilfe von Gruppen. Aufbauend auf unserem “on the fly” Gruppen-Chat ist es mit pascom 19 jetzt jedem Benutzer möglich, permanente Gruppen zu erstellen. Ermöglichen Sie Ihren Mitarbeitern sich mühelos per Chat, Audio oder Video austauschen.
 
-![pascom Gruppen](pascom-team-chat.png)
-
-## Beta Tester werden
-
-{{% notice tip %}}
-Der einfachste Weg ist eine neue FREE Instanz in der pascom.cloud zu erstellen. Diese verwenden automatisch pascom 19 BETA.  
-{{% /notice %}}
-
-
-**Sie möchten lieber updaten?**  
-
-* **Onsite 18**: Laden Sie sich das [ISO herunter](https://www.pascom.net/de/downloads/) und machen Sie ein Update.  
-* **Onsite 17 und älter**: Lesen Sie die [Upgrade Anleitung]({{< ref "/server/upgrade">}}) und nutzen Sie das [BETA Iso](https://www.pascom.net/de/downloads/)  
-* **Cloud PREMIUM**: Wenden Sie sich an den pascom Support.  
-* **Partnerkunden**: Wenden Sie sich an Ihren pascom Partner, dieser kann ein Update auf pascom 19 BETA veranlassen.
+![pascom Gruppen](pascom-collaboration-team-messaging.png)
 
 ## Wichtige Änderungen
 
@@ -54,15 +46,67 @@ In diesem Abschnitt werden die Änderungen erläutert, die Sie bei der Migration
 * Portforwarding für **UDP 3478** ist Voraussetzung, andernfalls funktioniert **Video** nicht.
 * **Beronet Gateways** müssen neu provisioniert werden.
 * **pascom SOHO Server** ist nicht mehr kompatibel. Bitte führen Sie ein Hardware-Upgrade auf die [pascom Appliance]({{< ref "server/appliance" >}}) durch oder nutzen Sie die pascom.cloud.
-
+* **Automatische Ämter Updates** werden für Telekom, peoplefone (DE, AT, CH), HFO, Sipgate Trunking, RKom, t-m-net, sipcallch, seabix, mnet, easybell und qsc/plusnet durchgeführt. Bitte prüfen Sie Ihr Amt nach dem Update.
 
 ## Bekannte Probleme
 
 {{% notice issues %}}
-Derzeit sind keine Probleme bekannt!  
+Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 {{% /notice %}}
 
+* Onsite Telekom Ämter funktionieren nur wenn ein Outbound Proxy genutzt wird. Wählen Sie hierzu statt "default / NAT" das entsprechende Schnittstelle im Amt aus.
+* Pairing von Mobiltelefonen schlägt manchmal durch einen ungültigen QR code fehl. Der Vorgang kann einfach wiederholt werden.
 
+## Release 19.06 (28.04.2020)
+
+**Auf einen Blick**
+
+* pascom Web Client für Web-Konferenzen
+* Gigaset DECT N870 Gateway wird unterstützt
+* Ämter Vorlagen werden nun automatisch bei Updates aktualisiert
+* Chat-History kann wieder beschränkt und aufgeräumt werden
+* Systemsprache ist in der Instanz konfigurierbar
+* Connector Performance wurde verbessert
+
+**ÄNDERUNGEN:**
+
+- [MD-11661] - Snom M700 provisioning restarts all multicell senders
+- [MD-11960] - Payload data has wrong key
+- [MD-12033] - Fax extension invalid after change via connector
+- [MD-12055] - Auto created Peoplefone trunk during setup has wrong options
+- [MD-12069] - Delete contact in roster (favorite) if related phonebook entry gets deleted
+- [MD-12092] - Fix warnings in various jobs
+- [MD-12107] - Show correct language when adding a trunk from a template
+- [MD-12126] - Change mnet template pjsip options
+- [MD-12144] - Instance web UI shows wrong phone state
+- [MD-12155] - Improve outbound proxy, ensure to resolve internal alias ip numbers
+- [MD-12159] - Php segfault because of protobuf version incompatiblity
+- [MD-12161] - Different container versions are confusing CSUI version checks
+- [MD-12170] - Loader pattern is invalid
+- [MD-12181] - Handle SIP AOC info requests, fix dropped calls on rkom trunks
+- [MD-12182] - Can't delete group participants or leave group
+- [MD-12206] - Rtc media handles locking and cleanup
+- [MD-12213] - Show one provisioning URL per host-name
+- [MD-12236] - Stop to enforce opus for desktop client calls, fallback to alaw for trunk calls
+- [MD-12242] - Lost calls after 30 minutes on outbound proxy due to session timers
+- [MD-5675] - Increase Connector Performance, Step 1
+- [MD-8427] - Cleanup dialplan loop warnings on apply telephony
+- [MD-10779] - Unify system language, web ui language and prompts into one data model
+- [MD-11169] - Rate limit API requests
+- [MD-11358] - Managed, updateable, sip trunk profiles
+- [MD-11455] - Implement Gigaset N870 DECT multicell system
+- [MD-11925] - Add more instance level metrics to prometheus
+- [MD-12027] - Cleanup chat in event stream
+- [MD-12062] - Update Seabix logo in trunk template
+- [MD-12116] - Xmpp resource loader could be more efficient
+- [MD-12156] - Use python3 for installation process
+- [MD-12157] - Upgrade go to 1.13.X
+- [MD-12175] - Remove php proto generated files from git repo
+- [MD-12216] - Enhance PushManager to lower priority for chat messages pushed to android devices
+- [MD-12224] - Reduce idle cpu consumption in the xmppserver by reducing modules, ports
+- [MD-12244] - Add a parameter for video publisher soft limit
+- [MD-12252] - Change sip host in plusnet template and migrate it automatically
+- [MD-12269] - Raise asterisk open file limit
 
 ## Release 19.05 (11.03.2020)
 

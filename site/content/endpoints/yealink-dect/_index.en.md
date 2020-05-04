@@ -1,7 +1,7 @@
 ---
 title: Yealink DECT System
 description: Integrate your Yealink DECT system with your pascom phone system.
-weight: 40
+weight: 17
 ---
 
 {{< doctype "both"  >}}

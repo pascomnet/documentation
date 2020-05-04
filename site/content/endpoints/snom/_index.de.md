@@ -1,7 +1,7 @@
 ---
 title: Snom Tischtelefone
 description: Integrieren Sie Ihre Snom IP-Tischtelefone in die pascom
-weight: 10
+weight: 12
 ---
 
 {{< doctype "both" >}}
