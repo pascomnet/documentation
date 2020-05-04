@@ -10,11 +10,10 @@ weight: 122
 
 ## Overview
 
-A dialplan loop exits when during a call, an extension is traversed 30 times.
+A dialplan loop exits when during a call, an extension is traversed 30 times. This happens e.g. through call diversions and drops that are set incorrectly and thus end in a loop.
 
-<!--FIXME wann kann das passieren
-abwurf von einer team a nach team b
-rufumleitung im kreis -> testen -->
+{{% tabs %}}
+{{% tab "Onsite - all Versions" %}}
 
 ## Warning Notification
 
@@ -28,6 +27,26 @@ Under */tmp/.dialplan-loop-detected* a file will have been written that contains
 
 In order to avoid Dialplan loops occuring more often, you will find further information in the file regarding the affected extensions and you can then edit your call flow accordingly.
 
-<!--FIXME beispiel-->
+The notification will only disappear once the file *.dialplan-loop-detected* has been removed (either deleted or moved). To do this log into the pascom phone system via SSH. 
+Change to the / tmp folder and delete the file: *.dialplan-loop-detected*.
+{{% /tab %}}
 
-The notification will only disappear once the file *.dialplan-loop-detected* has been removed (either deleted or moved). To do this log into the pascom phone system via SSH.
+{{% tab "Cloud - pascom 19" %}}
+## Warning Notification
+
+In the job box, a warning notification will appear as below:
+
+    CRITICAL: A dialplan loop was detected
+
+## Remove Warning Notification
+
+The pascom cloud system automatically clears this warning message the next time you save changes via **"Apply telephony configuration"**.
+
+## Avoid Dialplan Loop
+
+If this warning message occurs, check your call diversions and drops within your call flow. At some point, a loop will form here. Modify your call flow so that loops are avoided.
+
+{{% /tab %}}
+{{% /tabs %}}
+
+
