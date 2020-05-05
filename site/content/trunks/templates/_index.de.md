@@ -31,3 +31,37 @@ Da verschiedene Ämter-Typen unterschiedliche Variablen benötigen finden Sie im
 |**Präfix eing. Nummer**|Ist eine beliebige Ziffer, die bei eingehenden Telefonanrufen über dieses Amt vorangestellt wird. Wenn Sie hier eine 0 eingeben erscheint beispielsweise in der Anruferliste von IP-Telefonen dann nicht die 0172123123 sondern die 00172123123. Dadurch können Sie direkt aus der Anruferliste wieder über das selbe Amt zurückrufen.|
 |**Anzahl der Durchwahlstellen**|Anzahl der Stellen der Benutzer-Durchwahlen. (NICHT die Anzahl der Nummern im Rufnummernblock!)|
 |**Durchwahl der Zentrale**|Geben Sie hier an, auf welche interne Durchwahl die erste Nummer Ihres Rufnummernblocks (meistens die 0) abgeworfen werden soll.|
+
+## pascom managed Amtsvorlagen
+
+Von pascom verwaltete Amtsvorlagen erleichtern den Wartungsaufwand Ihrer eingerichteten Ämter. Hin und wieder kommt es vor, dass sich Verbindungsdaten und Optionen von Seiten eines Providers ändern. Die von pascom verwalteten Amtsvorlagen updaten sich in diesem Fall selbständig, was Ihnen manuelle Anpassungen erspart.  
+
+Entnehmen Sie unserer Liste für [unterstützte Amtsvorlagen]({{< ref "trunk-templates#pascom-unterstützte-vorlagen">}}) welche Templates von pascom verwaltet werden.
+
+### pascom managed Amtsvorlagen selbst anpassen
+
+Möchten Sie selbst Änderungen an Templates vornehmen, die von pascom verwaltet werden, muss die gesamte Vorlage auf ein generisches Template umgestellt werden. 
+
+{{% notice warning %}}
+Bitte beachten Sie, dass nach einer Umstellung der Amtsvorlage auf ein generisches Template, keine Änderungen oder Updates mehr von pascom durchgeführt werden. 
+{{% /notice %}}
+
+### pascom managed Amtsvorlage umstellen
+
+Editieren Sie Ihr Amt unter {{< ui-button "Gateways" >}} > {{< ui-button "Ämter" >}} > {{< ui-button "Bearbeiten" >}}. Dort finden Sie den Button {{< ui-button "Vorlage wechseln" >}}
+
+![Vorlage wechseln](change_template.de.PNG?width=50%)
+
+Wählen Sie nun aus der Vorlagenliste das **generische SIP-Amt** aus. 
+
+![Generische SIP Amt](generic_trunk.de.PNG?width=50%)
+
+Ihnen stehen nun alle SIP-Optionen zur Verfügung, um diese manuell anzupassen.
+
+![SIP Optionen](sip_options.de.PNG?width=80%)
+
+Abschließend übernehmen Sie die Änderungen über **Telefoniekonfig anwenden**.
+
+{{% notice tip %}}
+Sie können Ihr Amt jederzeit wieder zurück auf eine pascom managed Amtsvorlage stellen.
+{{% /notice %}}
