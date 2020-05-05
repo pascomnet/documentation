@@ -32,6 +32,63 @@ These problems are known to us and we are already working on a solution
 * [CL-1212] Headset support for Sennheiser on macOS can't be configured at the moment, because HeadSetup for macOS is not provided for downloading from EPOS / Sennheiser
 * [CL-1260] If the integrated camera of Microsoft Surface devices is used, the image often has a green cast
 
+## BETA 63.D1092 (05.05.2020)
+
+[Feedback](https://www.pascom.net/forum/t/pascom-client-v63-beta/7014)
+
+**Overview**
+
+* Call waiting is treated correctly if enabled on the server
+* Windows/macOS/Linux: Support for Kuando Busylights
+* Windows/macOS/Linux: It's now possible to select the screen to share for screensharing
+* iOS/Android: Switch between front and back camera during a video call
+* Windows: Video / Screensharing is enabled within RDP Sessions and on Terminal Servers
+* Linux: Ensured compatibility to Ubuntu 20.04 LTS "Focal Fossa"
+
+**ÄNDERUNGEN**
+
+* [CL-1] - Prohibit to add a call if GSM switch is active
+* [CL-350] - Support for Kuando Busylight
+* [CL-427] - Support Call waiting in client
+* [CL-536] - Completely close client if login mask window gets closed
+* [CL-626] - Always send callerId Updates for locally resolved names
+* [CL-672] - Prohibit pickup during if there are already two running calls
+* [CL-855] - Select screen to share if multiple are connected
+* [CL-960] - Chat history jumps back to most recent message frequently
+* [CL-1119] - Group mute menu is elided too much 
+* [CL-1122] - Mute a pascom group forever
+* [CL-1131] - Unify journal entry icons
+* [CL-1136] - Ensure pascom Client compatiblity to Ubuntu 20.04 LTS 
+* [CL-1149] - iOS mobile client shows warning to insert SIM card sometimes
+* [CL-1155] - System tray tooltip format is broken if no instancename is given on login
+* [CL-1166] - Enhance contact list "List view" 
+* [CL-1169] - Update to gstreamer 1.16.2
+* [CL-1179] - Allow to disable keyboard shortcuts
+* [CL-1187] - Play busy tone in softphone if a call ends with a "busy" status code
+* [CL-1190] - Make DND state more visible
+* [CL-1202] - Some shortcuts don't work
+* [CL-1209] - Correctly reset settings fields for invalid inputs
+* [CL-1217] - Toast shown in background if popup is in foreground
+* [CL-1218] - Automatically switch to Handsfree on mobile if video is started
+* [CL-1223] - Hide "..." button and replace it directly with "microphone off"
+* [CL-1227] - Only start video in settings if the element is visible
+* [CL-1228] - Implement live camera switching in mobile client
+* [CL-1230] - Enhance Fullscreen UI with a contact list, showing all active call participants (just like webclient)
+* [CL-1232] - Assert because of cross-thread signal being sent to DesktopAudioController
+* [CL-1233] - iOS client possible deadlock
+* [CL-1234] - pascom Client crashes on file transfer
+* [CL-1236] - Conversation is not closed if a user is removed from a group
+* [CL-1237] - Phone button looses active call indication
+* [CL-1238] - No phonecall duration indicator in list view
+* [CL-1239] - Color bindings for buttons in client broken
+* [CL-1246] - Error toasts covers call fullscreen layout
+* [CL-1251] - Location dropdown not usable if name is too long
+* [CL-1253] - Enable video in RDP sessions and Terminal Servers
+* [CL-1265] - Support "mac native" fullscreens
+* [CL-1270] - Upgrade client to to Qt 5.12.8
+* [CL-1271] - Fix Android-Qt-SSL Problem and Upgrade to Qt 5.12.8
+* [CL-1280] - Native notifications on Windows 10 are flickering again
+
 ## Release 62.R1061 (20.04.2020)
 
 **Overview**
