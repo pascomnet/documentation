@@ -18,10 +18,16 @@ Benutzer ebenso wie Geräte, Arbeitsplätze oder Teams können Mitglieder in ein
 
 Rollen können eingerichtet werden unter {{< ui-button "Benutzer" >}} > {{< ui-button "Rollen" >}}.
 
-Es gibt eine spezielle Rolle mit dem Namen **All Users**. Diese Rolle ist standardmäßig allen Benutzern, Geräten, Arbeitsplätzen und Teams zugeteilt und kann auch nicht entzogen werden.
+Es gibt eine spezielle Rolle mit dem Namen **Alle**. Diese Rolle ist standardmäßig allen Benutzern, Geräten, Arbeitsplätzen und Teams zugeteilt.
 
 Ein häufiger Anwendungsfall (und unsere Empfehlung) ist es, dass man pro Abteilung oder Team eine Rolle erstellt. 
 *Z. B. ist es häufig gewünscht, dass Benutzer nur innerhalb Ihrer Abteilung Gespräche heranholen können und sich gegenseitig im pascom Client sehen. Dazu entziehen Sie einfach der Rolle All Users die Eigenschaft xmpp.group und weisen dies einer neuen Rolle z. B. Support zu in der Sie dann alle Support-Benutzer zu Mitgliedern machen.*
+
+## Die Rolle "Alle"
+
+Per Default befindet sich in jeder pascom Telefoninstanz eine fest implementierte Rolle mit dem Namen "Alle". Diese Rolle kann nicht entfernt werden. Sie können diese jedoch soweit anpassen, dass Sie keine Berechtigungen oder Zuweisungen mehr enthält.  
+
+*Die Rolle "Alle" soll vorallem Einsteigern den Umgang mit Benutzerrollen erleichtern und ermöglicht per Default die Sichtbarkeit von Benutzern und Teams in den pascom Clients*
 
 
 ## Erstellen einer Rolle
@@ -33,7 +39,31 @@ Um eine Rolle zu erstellen klicken Sie auf  {{< ui-button "Hinzufügen" >}}.
 Geben Sie der Rolle eine Bezeichnung, je nach Zuweisung oder Funktion/ Recht der Rolle.
 Optional können Sie in dem Feld Beschreibung Hinweise hinzufügen welchen Zweck diese Rolle erfüllt.
 
-Sie können einer Rolle einen oder mehrere Rollentypen hinzufügen. Jeder Typ hat eine andere Funktion.
+### Automatische Zuweisung aktivieren
+
+In den Basiseinstellungen jeder Rolle, haben Sie die Möglichkeit, Zuweisungen automatisiert durchführen zu lassen. Das ist eine tolle Funktion, um den Wartungsaufwand erheblich zu reduzieren.
+
+Eine Rolle kann automatisch Benutzer, Teams, Arbeitsplätze und Geräte zuweisen.
+
+![Rollen Basiseinstellungen](role_basedata.de.PNG?width=45%)
+
+**Wie funktioniert das genau?**
+
+Aktivieren Sie eine Einstellung für das automatische Zuweisen, verschwindet der entsprechende Tab aus der Registerleiste und die Zuweisung wird automatisiert vorgenommen.
+
+*Beispiel:*  
+Sie aktivieren die automatische Zuweisung der Benutzer, so werden **alle** vorhandenen Benutzer auf der pascom Telefonanlage dieser Rolle zugewiesen. 
+
+Deaktivieren Sie eine Einstellung für das automatische Zuweisen, erscheint der entsprechende Tab wieder in der Registerleiste und Sie können der Rolle wieder manuell, entsprechende Elemente zuweisen. 
+
+{{% notice tip%}}
+Ist eine automatische Zuweisung aktiviert, so werden auch künfitge neu erstellte Elemente wie z.B. Benutzer und Teams, automatisch zugewiesen.
+{{% /notice  %}}
+
+
+### Die Rollentypen erklärt
+
+Sie können einer Rolle einen oder mehrere Rollentypen, auch Berechtigungen genannt, hinzufügen. Jeder Typ hat eine andere Funktion.
 
 |Rollentyp|Beschreibung|Auswirkung|
 |---|---|---|

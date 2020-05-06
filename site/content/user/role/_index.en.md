@@ -18,10 +18,16 @@ Users, devices, teams and even locations can be assigned one or more roles. Role
 
 Roles are set up under {{< ui-button "Users" >}} > {{< ui-button "Roles" >}}.
 
-A special **All Users** role is available which is assigned to all users, devices, teams and locations per default and can not be removed.
+A special **All Users** role is available which is assigned to all users, devices, teams and locations per default.
 
 A common use case (and our recommendation) is to create a role per department or team. 
 *For example, it is often wished that a user can only pickup and see calls in the pascom client that are from within their own department. To do this, simply remove the xmpp.group property from the All Users role and assign it to a new role e.g. Support and make all support employees members of the role group.*
+
+## The Role "All"
+
+By default, every pascom telephone instance has a permanently implemented role called "All". This role cannot be removed. However, you can adjust them that they no longer contain permissions or assignments.
+
+*The role "All" should make it easier for beginners to deal with user roles and, by default, enables the visibility of users and teams in the pascom clients*
 
 ## Creating Roles
 
@@ -32,7 +38,31 @@ To create a role, click the {{< ui-button "Add" >}}.
 Provide the role with a name which corresponds to the intended role assignment or function / permission.
 Optionally, under the Description field you can also enter additional relevant information which provide insight into the purpose of the role.
 
-Roles can have one or more role types added to them. Each role type offers differing functionality.
+### Activate automatic assignment
+
+In the base settings of each role, you have the option of having assignments carried out automatically. This is a great feature to significantly reduce maintenance.
+
+A role can automatically assign users, teams, locations and devices.
+
+![Role Basesettings](role_basedata.en.PNG?width=45%)
+
+**How does it work exactly?**
+
+If you activate a setting for automatic assignment, the corresponding tab disappears from the tab bar and the assignment is made automatically.
+
+*example:*  
+If you activate the automatic assignment of users, **all** existing users on the pascom telephone system, are assigned to this role .
+
+If you deactivate a setting for the automatic assignment, the corresponding tab appears again in the tab bar and you can manually assign the corresponding elements to the role. 
+
+{{% notice tip%}}
+If automatic assignment is activated, newly created elements such as e.g. Users and teams, will be automatically assigned.
+{{% /notice  %}}
+
+
+### The Role Types explained
+
+Roles can have one or more role types, also known as permissions, added to them. Each role type offers differing functionality.
 
 |Role Type|Description|Impact|
 |---|---|---|
