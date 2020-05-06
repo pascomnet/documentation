@@ -32,15 +32,23 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 * [CL-1212] Unter macOS lässt sich die Unterstützung für Sennheiser Headsets derzeit nicht einrichten, da HeadSetup seitens EPOS / Sennheiser nicht zum Download zur Verfügung steht
 * [CL-1260] Auf Microsoft-Surface Geräten kommt es bei der Verwendung der integrierten Kamera oft zu einem Grünstich im Bild
 
-## BETA 63.D1092 (05.05.2020)
+## BETA 63.D1095 (06.05.2020)
 
 [Feedback](https://www.pascom.net/forum/t/pascom-client-v63-beta/7014)
 
 **Auf einen Blick**
 
+* DTMF Eingabefeld kann nun wieder geschlossen werden
+* Windows: Wenn das Windows Info Center deaktiviert ist, werden nun automatisch pascom-Benachrichtungsfenster verwendet
+
+## BETA 63.D1092 (05.05.2020)
+
+
+**Auf einen Blick**
+
 * Anklopfen wird jetzt korrekt behandelt, wenn am Server aktiviert
 * Windows/macOS/Linux: Unterstützung für Kuando Busylights
-* Windows/macOS/Linux: Beim Screensharing kann nun der zu teilende Bildschirm ausgewählt werden
+* Windows/macOS: Beim Screensharing kann nun der zu teilende Bildschirm ausgewählt werden
 * iOS/Android: Während des Gesprächs kann nun zwischen Front und Rückkamera umgeschaltet werden
 * Windows: Video / Screensharing wird nun auch innerhalb von RDP-Sitzungen / auf Terminal-Servern aktiviert
 * Linux: Kompatibilität mit Ubuntu 20.04 LTS "Focal Fossa" geprüft

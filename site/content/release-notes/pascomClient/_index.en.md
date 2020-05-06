@@ -32,15 +32,22 @@ These problems are known to us and we are already working on a solution
 * [CL-1212] Headset support for Sennheiser on macOS can't be configured at the moment, because HeadSetup for macOS is not provided for downloading from EPOS / Sennheiser
 * [CL-1260] If the integrated camera of Microsoft Surface devices is used, the image often has a green cast
 
-## BETA 63.D1092 (05.05.2020)
+## BETA 63.D1095 (06.05.2020)
 
 [Feedback](https://www.pascom.net/forum/t/pascom-client-v63-beta/7014)
 
 **Overview**
 
+* DTMF Input view can now be closed again
+* Windows: Fall back to custom notifications if Windows Info Center is disabled
+
+## BETA 63.D1092 (05.05.2020)
+
+**Overview**
+
 * Call waiting is treated correctly if enabled on the server
 * Windows/macOS/Linux: Support for Kuando Busylights
-* Windows/macOS/Linux: It's now possible to select the screen to share for screensharing
+* Windows/macOS: It's now possible to select the screen to share for screensharing
 * iOS/Android: Switch between front and back camera during a video call
 * Windows: Video / Screensharing is enabled within RDP Sessions and on Terminal Servers
 * Linux: Ensured compatibility to Ubuntu 20.04 LTS "Focal Fossa"
