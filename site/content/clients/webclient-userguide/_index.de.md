@@ -24,6 +24,14 @@ Der pascom Web Client kann in Ihren favorisierten Webbrowsern genutzt werden. Un
 
 ![Unterstützte Browser](browser_logos.png?width=50%)
 
+## Lizenzierung
+
+Für die Nutzung des Web Client, benötigen externe Teilnehmer eine Concurrent User Lizenz. Stellen Sie daher sicher, dass vor geplanten Web Konferenzen, ausreichend Lizenzen vorhanden sind. 
+
+{{% notice tip %}}
+Möchten Sie mehr über das dynamische Concurrent User Lizenzmodel erfahren oder Ihre vorhandenen Lizenzen upgraden, wenden Sie sich an unseren Vertrieb. Weitere Infos finden Sie auch in der [Lizenzbeschreibung](https://www.pascom.net/de/voip-preise/).
+{{% /notice %}}
+
 
 ## Übersicht
 

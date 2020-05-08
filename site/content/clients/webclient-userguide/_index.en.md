@@ -23,6 +23,14 @@ The pascom Web Client can be used in your favourite web browser. Currently, popu
 
 ![Supported browsers](browser_logos.png?width=50%)
 
+## Licensing
+
+To use the Web Client, external participants need a concurrent user license. Therefore, make sure that there are sufficient licenses available before starting web conferences.
+
+{{% notice tip %}}
+If you would like to find out more about the dynamic concurrent user license model or upgrade your existing licenses, please contact our sales department. You can find further information in the [license description](https://www.pascom.net/en/voip-prices/).
+{{% /notice %}}
+
 ## Overview
 
 The pascom Web Client has been design to enable quick, easy and professional audio and video conferences accessible to external participants. Thanks to WebRTC technology the pascom Web Client provides your employees and customers with the ability to participate in web conferences and presentations from anywhere. The concept is easy to understand, simply make your existing pascom Team Messaging Groups externally accessible and invite your customers, business partners etc. to join your online meetings.
