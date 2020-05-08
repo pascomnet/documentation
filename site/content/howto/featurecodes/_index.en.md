@@ -30,7 +30,7 @@ weight: 125
 |---|---|---|---|
 |**\*70{Extension}**|Activates a permanent call forwarding for this extension. The voice menu will prompt you for the desired destination number on which to forward calls.|Activate call forwarding from extension 123:<br>*\*70123*| This service code can be assigned to an IP Telephone *BLF Key*|
 |**\*71{Extension}**|Deactivates an extension's call forwarding|To deactivate call forwarding on extension 123::<br>*\*71123*|This service code can be assigned to an IP Telephone *BLF Key*|
-|**\*74{Extension}#{Destination}**|Sets up an extension's call forwarding including the desired destination number.|E.g. to forward calls from extension 123 to extension 333 :<br>*\*74123#333*|This service code can be assigned to an IP Telephone *BLF Key*|
+|**\*74{Extension}#{Destination}**|Sets up an extension's call forwarding including the desired destination number.|E.g. to forward calls from extension 123 to extension 333 :<br>*\*74123#333*||
 
 ## Voicemail Box
 
