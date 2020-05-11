@@ -1,5 +1,5 @@
 ---
-title: Microsoft Exchange Integration
+title: Microsoft Exchange Integrieren
 description: Integrieren Sie Microsoft Exchange / Office365 in Ihre pascom.
 weight: 50
 ---
