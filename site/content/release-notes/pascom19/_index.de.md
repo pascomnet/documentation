@@ -56,6 +56,7 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 
 * Onsite Telekom Ämter funktionieren nur wenn ein Outbound Proxy genutzt wird. Wählen Sie hierzu statt "default / NAT" das entsprechende Schnittstelle im Amt aus.
 * Pairing von Mobiltelefonen schlägt manchmal durch einen ungültigen QR code fehl. Der Vorgang kann einfach wiederholt werden.
+* Wählt ein Nutzer mit Sonderzeichen (z.B. Umlaut) im Anzeigenamen per Mobile Client eine Telefonnummer und hat gleichzeitig den Desktop Client geöffnet, beginnt dieser zu wählen statt der Mobile Client. Als Problemumgehung kann das Sonderzeichen aus dem Anzeigenamen vorübergehend entfernt werden. 
 
 ## Release 19.06 (28.04.2020)
 
