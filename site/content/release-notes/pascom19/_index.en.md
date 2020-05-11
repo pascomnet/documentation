@@ -56,7 +56,7 @@ These problems are known to us and we are already working on a solution
 
 * Onsite Telekom trunks only work if an outbound proxy is used. To do this, select the appropriate interface in the trunk instead of "default / NAT".
 * Pairing of mobile phones sometimes fails due to an invalid QR code. The process can simply be repeated.
-* If a user dials a phone number and has special characters (e.g. umlaut) in his display name using the mobile client and has simultaneously opened the desktop client, the desktop client starts dialing instead of the mobile client. As a workaround, the special character can be temporarily removed from the display name.
+* If a user dials a phone number and has special characters (e.g. umlaut) in his display name using the mobile client and has simultaneously opened the desktop client, the desktop client starts dialing instead of the mobile client. In addition, the barcode for pairing a mobile via the desktop app does not work. As a workaround, the special character can be temporarily removed from the display name.
 
 ## Release 19.06 (28.04.2020)
 
