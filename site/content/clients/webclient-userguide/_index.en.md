@@ -14,8 +14,8 @@ The pascom Web Client does not replace the pascom desktop or mobile client, but 
 {{% /notice %}}
 
 ## pascom Training Video
-Comming soon!
 
+Coming soon!
 
 ## Supported Browsers
 
@@ -25,10 +25,10 @@ The pascom Web Client can be used in your favourite web browser. Currently, popu
 
 ## Licensing
 
-To use the Web Client, external participants need a concurrent user license. Therefore, make sure that there are sufficient licenses available before starting web conferences.
+In order to use the pascom WebRTC Client, a concurrent user license is required for each external participant. Therefore, make sure that there are sufficient licenses available before starting a web conference.
 
 {{% notice tip %}}
-If you would like to find out more about the dynamic concurrent user license model or upgrade your existing licenses, please contact our sales department. You can find further information in the [license description](https://www.pascom.net/en/voip-prices/).
+If you would like to find out more about our flexible concurrent user license model or upgrade your existing licenses, please contact our sales department. Further information can be found on our pricing [license description](https://www.pascom.net/en/voip-prices/) page.
 {{% /notice %}}
 
 ## Overview
