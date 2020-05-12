@@ -19,10 +19,10 @@ Ist Ihr Amt nicht in den unten aufgelisteten Tabellen enthalten, nutzen Sie bitt
 Folgende Amtsvorlagen werden vom pascom Support unterstützt. Um diese Unterstützung in Anspruch zu nehmen ist eine pascom Premium Version erforderlich.
 
 {{% notice tip %}}
-Erfahren Sie [hier]({{< ref "trunks/templates#pascom-managed-amtsvorlagen">}}) mehr über **pascom managed** Amtsvorlagen.
+Erfahren Sie [hier]({{< ref "trunks/templates#pascom-managed-amtsvorlagen">}}) mehr über **pascom maintained** Amtsvorlagen.
 {{% /notice %}}
 
-|Vorlage/ Provider|verfügbar in|Produkt|OnSite|Cloud|pascom managed|
+|Vorlage/ Provider|verfügbar in|Produkt|OnSite|Cloud|pascom maintained|
 |---|---|---|---|---|---|
 |[AVM Gateway]( {{< ref "/trunk-templates/fritzbox" >}})| - |FRITZ!Box|<i class='fas fa-check'></i> <br/><sub>Kann lokale SIP-Ämter terminieren.</sub>|<i class='fas fa-check'></i> <br/><sub>Kann lokale SIP-Ämter terminieren. Eine direkte Verbindung zur Box z. B. via VPN ist erforderlich.</sub>|
 |BeroNet Gateway| - |BeroBox|<i class='fas fa-check'></i> <br/><sub>Kann alle Analogen und ISDN/ Primärmultiplex Ämter terminieren.</sub>|<i class='fas fa-check'></i> <br/><sub>Kann alle Analogen und ISDN/ Primärmultiplex Ämter terminieren.</sub>|
@@ -46,7 +46,7 @@ Erfahren Sie [hier]({{< ref "trunks/templates#pascom-managed-amtsvorlagen">}}) m
 Folgende Amts-Vorlagen sind ausschließlich durch unsere nachfolgend genannten Partner unterstützt. 
 Bei Fragen und Problemen zu diesem Amt oder der Vorlage wenden Sie sich bitte direkt an den entsprechenden pascom Partner.
 
-|Vorlage/ Provider|Ansprechpartner|pascom managed|
+|Vorlage/ Provider|Ansprechpartner|pascom maintained|
 |---|---|---|
 |Bergnet|CSP Partner [Bergnet GmbH](https://www.berg.net/)|
 |Seabix|CSP Partner [Seabix AG](https://www.seabix.com/home)|<i class='fas fa-check'></i>|
