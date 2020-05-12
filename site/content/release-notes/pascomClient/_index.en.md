@@ -52,7 +52,7 @@ These problems are known to us and we are already working on a solution
 * Windows: Video / Screensharing is enabled within RDP Sessions and on Terminal Servers
 * Linux: Ensured compatibility to Ubuntu 20.04 LTS "Focal Fossa"
 
-**ÄNDERUNGEN**
+**MODIFICATIONS**
 
 * [CL-1] - Prohibit to add a call if GSM switch is active
 * [CL-350] - Support for Kuando Busylight
