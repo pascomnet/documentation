@@ -32,13 +32,13 @@ Da verschiedene Ämter-Typen unterschiedliche Variablen benötigen finden Sie im
 |**Anzahl der Durchwahlstellen**|Anzahl der Stellen der Benutzer-Durchwahlen. (NICHT die Anzahl der Nummern im Rufnummernblock!)|
 |**Durchwahl der Zentrale**|Geben Sie hier an, auf welche interne Durchwahl die erste Nummer Ihres Rufnummernblocks (meistens die 0) abgeworfen werden soll.|
 
-## pascom managed Amtsvorlagen
+## pascom maintained Amtsvorlagen
 
 Von pascom verwaltete Amtsvorlagen erleichtern den Wartungsaufwand Ihrer eingerichteten Ämter. Hin und wieder kommt es vor, dass sich Verbindungsdaten und Optionen von Seiten eines Providers ändern. Die von pascom verwalteten Amtsvorlagen updaten sich in diesem Fall selbständig, was Ihnen manuelle Anpassungen erspart.  
 
 Entnehmen Sie unserer Liste für [unterstützte Amtsvorlagen]({{< ref "trunk-templates#pascom-unterstützte-vorlagen">}}) welche Templates von pascom verwaltet werden.
 
-### pascom managed Amtsvorlagen selbst anpassen
+### pascom maintained Amtsvorlagen selbst anpassen
 
 Möchten Sie selbst Änderungen an Templates vornehmen, die von pascom verwaltet werden, muss die gesamte Vorlage auf ein generisches Template umgestellt werden. 
 
@@ -46,7 +46,7 @@ Möchten Sie selbst Änderungen an Templates vornehmen, die von pascom verwaltet
 Bitte beachten Sie, dass nach einer Umstellung der Amtsvorlage auf ein generisches Template, keine Änderungen oder Updates mehr von pascom durchgeführt werden. 
 {{% /notice %}}
 
-### pascom managed Amtsvorlage umstellen
+### pascom maintained Amtsvorlage umstellen
 
 Editieren Sie Ihr Amt unter {{< ui-button "Gateways" >}} > {{< ui-button "Ämter" >}} > {{< ui-button "Bearbeiten" >}}. Dort finden Sie den Button {{< ui-button "Vorlage wechseln" >}}
 
@@ -63,5 +63,5 @@ Ihnen stehen nun alle SIP-Optionen zur Verfügung, um diese manuell anzupassen.
 Abschließend übernehmen Sie die Änderungen über **Telefoniekonfig anwenden**.
 
 {{% notice tip %}}
-Sie können Ihr Amt jederzeit wieder zurück auf eine pascom managed Amtsvorlage stellen.
+Sie können Ihr Amt jederzeit wieder zurück auf eine pascom maintained Amtsvorlage stellen.
 {{% /notice %}}

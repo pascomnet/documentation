@@ -17,10 +17,10 @@ Should your SIP trunk not be listed, please use the "Generic SIP Trunk" template
 The following trunk templates are supported by the pascom support team. In order to benefit from this support, a pascom Premium subscription is required.
 
 {{% notice tip %}}
-Find out [more]({{<ref"trunks/templates#pascom-managed-trunk-templates">}}) about **pascom managed** provider templates.
+Find out [more]({{<ref"trunks/templates#pascom-managed-trunk-templates">}}) about **pascom maintained** provider templates.
 {{% /notice %}}
 
-|Template / Provider|Available in|Product(s)|On-premise|Cloud|pascom managed|
+|Template / Provider|Available in|Product(s)|On-premise|Cloud|pascom maintained|
 |---|---|---|---|---|---|
 |[AVM Gateway]( {{< ref "/trunk-templates/fritzbox" >}})| - |FRITZ!Box|<i class='fas fa-check'></i> <br/><sub>Can perform local SIP trunk termination.</sub>|<i class='fas fa-check'></i> <br/><sub>Can perform local SIP trunk termination. A direct connection to the box e.g. via VPN is required.</sub>|
 |beroNet Gateway| - |BeroBox|<i class='fas fa-check'></i> <br/><sub>Can perform the termination of all analog and ISDN primary rate interface trunks.</sub>|<i class='fas fa-check'></i> <br/><sub>Can perform the termination of all analog and ISDN / Primary Rate Interface (PRI) trunks.</sub>|
@@ -43,7 +43,7 @@ Find out [more]({{<ref"trunks/templates#pascom-managed-trunk-templates">}}) abou
 The following trunk templates are exclusively supported by the below named partners.
 Should you have any questions or issues relating to these trunks or the template, please contact the corresponding pascom partner directly. 
 
-|Template / Provider|Contact|pascom managed|
+|Template / Provider|Contact|pascom maintained|
 |---|---|---|
 |Bergnet|CSP Partner [Bergnet GmbH](https://www.berg.net/)|
 |Seabix|CSP Partner [Seabix AG](https://www.seabix.com/home)|<i class='fas fa-check'></i>|

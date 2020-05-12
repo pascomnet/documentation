@@ -32,21 +32,21 @@ As different Trunk types require different variables, please refer to the overvi
 |**DID format**|Number format for user extensions - how many digits. (Not the total number in a Number (DID) Block!)|
 |**Switchboard Extension**|Enter the internal extension on which calls to the first number in your number block (normally 0) should be routed.|
 
-## pascom managed Trunk Templates
+## pascom maintained Trunk Templates
 
-Official templates managed by pascom make it easier to maintain your Trunks. Occasionally, connection data and options on the side of a provider change. In this case, the official templates managed by pascom update themselves, which saves you to make manual adjustments.
+Official templates maintained by pascom make it easier to maintain your Trunks. Occasionally, connection data and options on the side of a provider change. In this case, the official templates maintained by pascom update themselves, which saves you to make manual adjustments.
 
-Please refer to our list for [supported trunk templates]({{<ref"trunk-templates#pascom-supported-trunk-templates">}}) which templates are managed by pascom
+Please refer to our list for [supported trunk templates]({{<ref"trunk-templates#pascom-supported-trunk-templates">}}) which templates are maintained by pascom
 
-### Change pascom managed Trunk Template
+### Change pascom maintained Trunk Template
 
-If you want to make changes yourself to templates that are managed by pascom, the entire template must be converted to a generic template.
+If you want to make changes yourself to templates that are maintained by pascom, the entire template must be converted to a generic template.
 
 {{% notice warning %}}
-Please note that after changing the pascom managed template to a generic template, pascom will no longer make any changes or updates. 
+Please note that after changing the pascom maintained template to a generic template, pascom will no longer make any changes or updates. 
 {{% /notice %}}
 
-### Switch pascom managed Trunk Template
+### Switch pascom maintained Trunk Template
 
 Edit your Trunk via {{< ui-button "Gateways" >}} > {{< ui-button "Trunks" >}} > {{< ui-button "Edit" >}}. Here you can find the Button {{< ui-button "Change Template" >}}
 
@@ -63,5 +63,5 @@ All SIP options are now available to you to adjust them manually.
 Finally, apply the changes via **apply Telephony Config**.
 
 {{% notice tip %}}
-You can change your Trunk back to a pascom managed template at any time.
+You can change your Trunk back to a pascom maintained template at any time.
 {{% /notice %}}
