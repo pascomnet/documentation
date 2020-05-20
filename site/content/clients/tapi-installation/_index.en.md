@@ -10,7 +10,7 @@ description: How to use the pascom TAPI client for Windows in order integrate TA
 
 ## Concept
 
-The pascom TAPI can be installed on any windows desktop. The TAPI client will then register itself with the server using the same credentials as the pascom Client, which means the TAPI is assigned to a user rather than being directly connected to a telephone.
+The pascom TAPI can be installed on any windows desktop. The TAPI client will then register itself with the [pascom VoIP phone system server](https://www.pascom.net/en/business-phone-system/ "pascom phone system VoIP software") using the same credentials as the pascom Client, which means the TAPI is assigned to a user rather than being directly connected to a telephone.
  
  When a dial command is sent to pascom via TAPI, pascom will automatically select the current phone of the user and use this phone to make the call. If the user then changes their location or phone, the TAPI will not require any reconfiguration.
 

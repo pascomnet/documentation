@@ -31,7 +31,7 @@ weight: 40
 
 Viele Unternehmen haben **keinen eingeschränkten Internetzugriff** und können den **pascom Server** daher **sofort**, ohne jede Anpassung an der Firewall **nutzen**.
 
-Wenn Sie jedoch genau festlegen auf welche Internetdienste Ihr Unternehmensnetzwerk zugreifen darf, schalten Sie bitte folgende Ports für den pascom Server frei, um einen reibungslosen Betrieb der pascom Telefonanlage zu ermöglichen:
+Wenn Sie jedoch genau festlegen auf welche Internetdienste Ihr Unternehmensnetzwerk zugreifen darf, schalten Sie bitte folgende Ports für den pascom Server frei, um einen reibungslosen Betrieb der [pascom Telefonanlage](https://www.pascom.net/de/voip-telefonanlage/ "pascom VoIP Telefonanlage") zu ermöglichen:
 
 ### pascom Dienste
 
@@ -46,19 +46,19 @@ Wenn Sie jedoch genau festlegen auf welche Internetdienste Ihr Unternehmensnetzw
 
 ## ISO Datei herunterladen
 
-Für die Installation einer virtuellen Maschine stellen wir ensprechende [ISO-Dateien](https://www.pascom.net/de/downloads/) auf unserer [Download-Seite](https://www.pascom.net/de/downloads/) zur Verfügung.
+Für die Installation einer virtuellen Maschine stellen wir ensprechende ISO-Dateien auf unserer [Download-Seite](https://www.pascom.net/de/downloads/ "pascom VoIP Telefonanlagen Software herunterladen") zur Verfügung.
 
 ## Betriebsystem installieren
 
 Erstellen Sie eine neue virtuelle Maschine und verwenden Sie die pascom Server [ISO-Dateien](https://www.pascom.net/de/downloads/) als Bootmedium. Folgen Sie den Anweisungen am Bildschirm bis Sie dazu aufgefordert werden in Ihren Browser zu wechseln um den Setup Wizard zu starten:
 
-![Betriebssystem installieren](tui.png)
+![Betriebssystem installieren](tui.png "pascom Telefonanlage Installation GUI")
 
 ## Setup Wizard starten
 
 Öffnen Sie einen Browser und surfen auf die so eben konfigurierte IP-Adresse Ihres pascom Servers. Folgen Sie den Anweisungen bis Sie sich am Management Interface anmelden können:
 
-![pascom Server Management](management.png)
+![pascom Server Management](management.png "pascom Telefonanlage Installation Management UI")
 
 ## Mobilzugriffe via Internet einrichten (optional)
 
@@ -66,7 +66,7 @@ Erstellen Sie eine neue virtuelle Maschine und verwenden Sie die pascom Server [
 Wenn Sie dieses Feature nutzen möchten führen Sie diese Schritte jetzt aus. Spätere Änderungen sind möglich, führen jedoch auch zu Änderungen für Ihre Benutzer da sich z. B. der Zugriff auf den Server via pascom Client von einer lokalen IP auf einen DNS Namen ändert. 
 {{% /notice %}}
 
-Dieser Schritt ist notwending falls Sie Ihren lokalen pascom Server auch von unterwegs per pascom Mobileclient (iOS/Android App) oder Desktopclient nutzen möchten. 
+Dieser Schritt ist notwending falls Sie Ihren lokalen pascom Server auch von unterwegs per pascom Mobile VoIP Client (iOS/Android App) oder [Desktop UCC Client](https://www.pascom.net/de/voip-telefonanlage/unified-communications/ "pascom Desktop und MObile UCC Apps") nutzen möchten. 
 
  * Siehe [Mobilzugriffe via Internet einrichten]({{< ref "howto/mobile-access" >}})
 

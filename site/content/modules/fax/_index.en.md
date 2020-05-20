@@ -14,10 +14,11 @@ weight: 10
 
 ## Overview
 
-[Our VoIP phone system software](https://www.pascom.net/en/ "pascom IP phone system software") comes with a fully integrated fax server as standard.
+[The pascom VoIP phone system software](https://www.pascom.net/en/business-phone-system/ "pascom IP phone system software") includes with a fully integrated fax server as standard.
+
 The included fax server is [HylaFax](http://www.hylafax.org/ "pascom Integrated HylaFax Server"), which is connected to the Asterisk telephony server via virtual IAX modems.
 
-The integrated fax server offers a number of functions, which are described in this how-to:
+The integrated fax server provides users with a number of [UCC optimisating functions](https://www.pascom.net/en/business-phone-system/unified-communications/ "pascom Unified Communications"), which are described in this how-to:
 
 + Receive faxes via E-mail.
 + Send faxes via the [pascom Client]({{< ref "/clients/desktop-userguide">}}).

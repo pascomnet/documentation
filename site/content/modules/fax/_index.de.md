@@ -16,7 +16,7 @@ weight: 10
 
 [In unsere VoIP Software](https://www.pascom.net/de/) ist ein Fax-Server integriert. Dabei handelt es sich um das Produkt [HylaFax](http://www.hylafax.org/) welches über virtuelle IAX-Modems direkt an den Asterisk Telefonieserver angekoppelt ist.
 
-Dabei stehen Ihnen folgende Fax-Möglichkeiten zur Verfügung:
+Dabei stehen Ihnen folgende [UC Fax-Möglichkeiten](https://www.pascom.net/de/voip-telefonanlage/unified-communications/ "pascom Unified Communications Fax-to-E-mail") zur Verfügung:
 
 + Empfangen von Faxen über E-Mail.
 + Versenden von Faxen über den [pascom Client]({{< ref "/clients/desktop-userguide">}}).
@@ -72,9 +72,6 @@ Unter {{< ui-button "Benutzer" >}} > {{< ui-button "Teams" >}} > Team auswählen
 |E-Mail|Geben Sie hier die E-Mail-Adresse des Teams ein. Über diese E-Mail-Adresse erhält das Team empfangene Faxe und je nach Konfiguration die Bestätigung über ein versendetes Fax.|
 |Durchwahl|Geben Sie hier die Faxdurchwahl des Team-Faxes an. Lesen Sie bitte hierfür folgendes [Howto zum Vergeben von Durchwahlen]({{< relref "/howto/extensions">}})|
 |ausgehende Faxkennung|Hier kann optional eine ausgehende Faxkennung angegeben werden.|
-
-
-
 
 ## Mail-to-Fax
 

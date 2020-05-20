@@ -44,19 +44,19 @@ However, should you choose to, you can specify which internet services your comp
 
 ## Download ISO File
 
-For installing a pascom IP PBX virtual machine, please use the [ISO File](https://www.pascom.net/en/downloads/) which is available on our [Download page](https://www.pascom.net/en/downloads/).
+For installing a pascom IP PBX virtual machine, please use the ISO File which is available on our [Download page](https://www.pascom.net/en/downloads/ "pascom Virtual VoIP Phone System Software download").
 
 ## Operating System Installation
 
-Create a new virtual machine and use the pascom server [ISO File](https://www.pascom.net/en/downloads/) as a boot media. Follow the on-screen instructions until you are prompted to switch to your browser and continue with the pascom Setup Wizard:
+Create a new virtual machine and use the [pascom VoIP Phone System Software](https://www.pascom.net/en/business-phone-system/ "pascom IP PBX VoIP Software") ISO File as a boot media. Follow the on-screen instructions until you are prompted to switch to your browser and continue with the pascom Setup Wizard:
 
-![Operating System Installation](tui.png)
+![Operating System Installation](tui.png "pascom IP PBX Installation GUI")
 
 ## Start Setup Wizard
 
 Open a browser window and go to your pascom PBX server IP address configured during the first system start. Follow the steps until you can login into the Management Interface:
 
-![pascom Server Management](management.png)
+![pascom Server Management](management.png "pascom VoIP Phone System Installation Management UI")
 
 ## Setup Mobile Acces via the Internet (optional)
 
@@ -64,7 +64,7 @@ Open a browser window and go to your pascom PBX server IP address configured dur
 If you want to use this feature, follow these steps now. Future changes are possible, but will result in changes for your users as aspects such as access to the server via the pascom client will change from a local IP address to a DNS name. 
 {{% /notice %}}
 
-This step is required should you wish to use the pascom mobile client (iOS/Android) or desktop client to access the local pascom server from "on the go" i.e. outside of the network. 
+This step is required should you wish to use the [pascom desktop and mobile Unified Communications apps](https://www.pascom.net/en/business-phone-system/unified-communications/ "pascom UC business phone systems") (Windows/Mac/Linux and iOS/Android) to access the local pascom server from "on the go" i.e. outside of the network. 
 
  * See [Setup Mobile Acces via the Internet]({{< ref "howto/mobile-access" >}})
 

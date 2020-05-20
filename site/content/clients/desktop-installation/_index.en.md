@@ -8,9 +8,9 @@ weight: 10
  
 {{< description >}}
 
-### Modify your Firewall
+### Modify Your Firewall
 
-Many companies have **no Internet access restrictions** and can therefore **immediately** start using your **pascom desktop client** without needing to make any alterations to their Firewall.
+Many companies do not have any **Internet access restrictions** and can therefore **immediately** start using the [pascom desktop UCC client}(https://www.pascom.net/en/business-phone-system/unified-communications/ "pascom Desktop Mobile Unified Communications") without needing to make any alterations to their Firewall.
 
 However, should you choose to, you can specify which internet services your company network is permitted to access by opening the following ports and allowing the pascom desktop client access in order to ensure that your pascom phone system operates optimally:
 
