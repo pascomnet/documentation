@@ -32,9 +32,29 @@ These problems are known to us and we are already working on a solution
 * [CL-1212] Headset support for Sennheiser on macOS can't be configured at the moment, because HeadSetup for macOS is not provided for downloading from EPOS / Sennheiser
 * [CL-1260] If the integrated camera of Microsoft Surface devices is used, the image often has a green cast
 
-## BETA 63.D1095 (06.05.2020)
+
+## Beta 63.D1123 (26.05.2020)
 
 [Feedback](https://www.pascom.net/forum/t/pascom-client-v63-beta/7014)
+
+**Auf einen Blick**
+
+* Bandwidth and resolution for screensharing is now automatically calculated
+* Improved video quality, less glitches
+* Kuando Busylight glows green on idle
+* Android client now handles tel: uris
+* iOS client shows back button if the keyboard is opened within a chat
+* The first second of call audio is no longer cut off on android
+
+**ÄNDERUNGEN**
+
+* [CL-76] - Chat header disappear when the keyboard is visible
+* [CL-898] - Adaptive quality for video and screensharing in pascom Client
+* [CL-1172] - Decoded video often breaks and shows glitches when displaying
+* [CL-1249] - iOS App misses first second of call audio
+* [CL-1295] - Improve screen sharing video scaling and aspect ratio
+
+## BETA 63.D1095 (06.05.2020)
 
 **Overview**
 
