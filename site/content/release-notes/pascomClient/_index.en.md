@@ -32,12 +32,23 @@ These problems are known to us and we are already working on a solution
 * [CL-1212] Headset support for Sennheiser on macOS can't be configured at the moment, because HeadSetup for macOS is not provided for downloading from EPOS / Sennheiser
 * [CL-1260] If the integrated camera of Microsoft Surface devices is used, the image often has a green cast
 
-
-## Beta 63.D1123 (26.05.2020)
+## Beta 63.D1128 (27.05.2020)
 
 [Feedback](https://www.pascom.net/forum/t/pascom-client-v63-beta/7014)
 
-**Auf einen Blick**
+**Overview**
+
+* Maximum screensharing resolution is now 2560x1440
+* improved downscaling for higher resolution screens
+* iOS / Android: Fixed problems in NAT64 networks (LTE)
+
+**MODIFICATIONS**
+
+* [CL-1294] pascom App doesn't work with 6to4 nat gateways via LTE on Android / iOS
+
+## Beta 63.D1123 (26.05.2020)
+
+**Overview**
 
 * Bandwidth and resolution for screensharing is now automatically calculated
 * Improved video quality, less glitches
@@ -46,7 +57,7 @@ These problems are known to us and we are already working on a solution
 * iOS client shows back button if the keyboard is opened within a chat
 * The first second of call audio is no longer cut off on android
 
-**ÄNDERUNGEN**
+**MODIFICATIONS**
 
 * [CL-76] - Chat header disappear when the keyboard is visible
 * [CL-898] - Adaptive quality for video and screensharing in pascom Client

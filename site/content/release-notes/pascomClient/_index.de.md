@@ -32,6 +32,20 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 * [CL-1212] Unter macOS lässt sich die Unterstützung für Sennheiser Headsets derzeit nicht einrichten, da HeadSetup seitens EPOS / Sennheiser nicht zum Download zur Verfügung steht
 * [CL-1260] Auf Microsoft-Surface Geräten kommt es bei der Verwendung der integrierten Kamera oft zu einem Grünstich im Bild
 
+## Beta 63.D1128 (27.05.2020)
+
+[Feedback](https://www.pascom.net/forum/t/pascom-client-v63-beta/7014)
+
+**Auf einen Blick**
+
+* Die maximale Auflösung beim Screensharing ist nun 2560x1440
+* Verbessertes herunterskalieren von höheren Bildschirmauflösungen
+* iOS / Android: Probleme mit NAT64 Netzwerken (z. B. via LTE) behoben
+
+**ÄNDERUNGEN**
+
+* [CL-1294] pascom App doesn't work with 6to4 nat gateways via LTE on Android / iOS
+
 ## Beta 63.D1123 (26.05.2020)
 
 [Feedback](https://www.pascom.net/forum/t/pascom-client-v63-beta/7014)
