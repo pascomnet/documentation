@@ -32,9 +32,22 @@ These problems are known to us and we are already working on a solution
 * [CL-1212] Headset support for Sennheiser on macOS can't be configured at the moment, because HeadSetup for macOS is not provided for downloading from EPOS / Sennheiser
 * [CL-1260] If the integrated camera of Microsoft Surface devices is used, the image often has a green cast
 
-## Beta 63.D1128 (27.05.2020)
+## Beta 63.D1142 (10.06.2020)
 
 [Feedback](https://www.pascom.net/forum/t/pascom-client-v63-beta/7014)
+
+**Overview**
+
+* Smaller UI Improvements
+* Busylights correctly revert to green idle color if ringtone is played and stopped
+* Faster bandwidth adjustment for screensharing
+* "There are no Journal entries which match the filter" is not shown multiple times anymore
+
+**MODIFICATIONS**
+
+- [CL-1321] Do not show "There are no Journal entries which match the filter" toast multiple times
+
+## Beta 63.D1128 (27.05.2020)
 
 **Overview**
 

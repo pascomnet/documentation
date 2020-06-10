@@ -32,9 +32,23 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 * [CL-1212] Unter macOS lässt sich die Unterstützung für Sennheiser Headsets derzeit nicht einrichten, da HeadSetup seitens EPOS / Sennheiser nicht zum Download zur Verfügung steht
 * [CL-1260] Auf Microsoft-Surface Geräten kommt es bei der Verwendung der integrierten Kamera oft zu einem Grünstich im Bild
 
-## Beta 63.D1128 (27.05.2020)
+## Beta 63.D1142 (10.06.2020)
 
 [Feedback](https://www.pascom.net/forum/t/pascom-client-v63-beta/7014)
+
+**Overview**
+
+* Kleiner UI Verbesserungen
+* Busylights zeigen nun wieder "grün" wenn der Klingelton in den Einstellungen abgespielt und wieder gestoppt wird
+* Schnellere Bandbreitenanpassung beim Screensharing
+* "Es gibt keine Journaleinträge die auf den Filter zutreffen"-Toast wird nicht mehr mehrfach angezeigt
+
+**MODIFICATIONS**
+
+- [CL-1321] Do not show "There are no Journal entries which match the filter" toast multiple times
+
+## Beta 63.D1128 (27.05.2020)
+
 
 **Auf einen Blick**
 
