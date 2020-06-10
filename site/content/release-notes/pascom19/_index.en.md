@@ -47,6 +47,8 @@ This section explains the changes that you must consider when migrating to pasco
 * A new provisioning is required for **beronet Gateways**.
 * **pascom SOHO Server** is no longer compatible. Please perform a hardware upgrade to the [pascom Appliance]({{< ref "server/appliance" >}}) or use the pascom.cloud.
 * **Automatic Trunk Updates** will be performed for Telekom, peoplefone (DE, AT, CH), HFO, Sipgate Trunking, RKom, t-m-net, sipcallch, seabix, mnet, easybell and qsc/plusnet. Please check your trunk after update.
+* **Cronjob Scripts (before/after)** are no longer supported
+* Tunks which have their **own template**, get this automatically assigned again. All customizations using a generic template are removed
 
 ## Known Issues
 
@@ -55,8 +57,69 @@ These problems are known to us and we are already working on a solution
 {{% / notice%}}
 
 * Onsite Telekom trunks only work if an outbound proxy is used. To do this, select the appropriate interface in the trunk instead of "default / NAT".
-* Pairing of mobile phones sometimes fails due to an invalid QR code. The process can simply be repeated.
-* If a user dials a phone number and has special characters (e.g. umlaut) in his display name using the mobile client and has simultaneously opened the desktop client, the desktop client starts dialing instead of the mobile client. In addition, the barcode for pairing a mobile via the desktop app does not work. As a workaround, the special character can be temporarily removed from the display name.
+
+## Release 19.07 (10.06.2020)
+
+**Overview**
+
+* Vendor Provisioning for Snom and Yealink
+* Display names for devices
+* Improve device creation workflow
+* Improve number displaying on Snom DECT systems
+* Optimized transfer workflow on Yealink and Grandstream phones
+* Fixed a problem where calls are not displayed after drop-calls from actions
+* Prompts when roaming from one location to a nother are now in the correct language
+* QR Code for mobile client pairing is now again valid for the entire configured timespan
+* Fixed problems with special characters in user display names
+
+**Modfications**
+
+- [MD-8349] - Improve "add device" ui workflow and add clean, translated device descriptions
+- [MD-11718] - Revokable provisioning urls
+- [MD-11752] - Integrate vendor provisionig service for snom phones
+- [MD-11928] - Push correctly resolved number to mobile apps
+- [MD-11941] - CSUI shows 'Subscription paired' after moving back from mypascom
+- [MD-11955] - Introduce Display Name for devices
+- [MD-11958] - Status of pascom support access button in CSUI is always off
+- [MD-12043] - Refactor and cleanup xmppserver internal apis and spring dependencies
+- [MD-12130] - Replace apache with nginx in pbx instances
+- [MD-12142] - Missing call activity after drop via action when condition is used
+- [MD-12163] - Optimize xmpp API to use device id instead of name
+- [MD-12165] - Apache not started after reload via certmanager
+- [MD-12184] - Beronet trunk shows anonymous for incoming calls
+- [MD-12186] - Snom M700 handset shows %23 instead of # and number during calls
+- [MD-12229] - User can't connect client because of broken db entries in 009ext_extension
+- [MD-12239] - Can't delete connector profile because operation is not permitted
+- [MD-12262] - CallerID not updated after transfer with some Yealink and Grandsteam phones
+- [MD-12263] - Switch to adoptopenjdk openJ9 jvm for more efficiency
+- [MD-12273] - Show proper busy text instead of technical cause code on yealink phones
+- [MD-12286] - Wrong prompt language when roaming to a location
+- [MD-12289] - Console error if you hover over the weblient while the fadeout animation is running
+- [MD-12291] - Improve webclient chat
+- [MD-12297] - QR code/pairing not valid for more than ~ 60 seconds
+- [MD-12299] - Additional account in SIP trunk doesn't apply trunk template
+- [MD-12301] - Restrict webclient also for legacy perpetual licenses, named users
+- [MD-12302] - Web client states that there is no dial-in number in error messages
+- [MD-12303] - Web client can use more licenses than allowed
+- [MD-12307] - Trunk Transport option has no effect
+- [MD-12312] - Reduce strain on consul servers by restricting csd leadership to fewer machines
+- [MD-12317] - Privilege escalation through cron jobs
+- [MD-12318] - Improve user wizard desktop phone page, add vendor provisioning support
+- [MD-12325] - Improve number in SIP trunk from header
+- [MD-12333] - PJSIP header doesn't appear in sip traffic when set via team action
+- [MD-12335] - Create a device and assign it to a user or location within the same webform
+- [MD-12338] - Telekom SIP trunk Clip no screening is not working
+- [MD-12339] - OpenVPN service crashes, is not restarted automatically
+- [MD-12340] - Change Snom M700 provisioning template
+- [MD-12345] - Can not upload and restore big backups into pbx instance
+- [MD-12348] - Enforce trunk templates on each pbx update
+- [MD-12351] - Deactivate sip 302 redirect for easybell trunk template
+- [MD-12352] - Change sipcall.ch trunk template for CLIP no screening
+- [MD-12353] - Improve mute button handling in web client
+- [MD-12356] - QR code on instance UI can be used for multiple pairings
+- [MD-12358] - Broken hint for *74 call forwardings
+- [MD-12359] - Remove broken/unnecessary swap creation logic in md-xmppserver patchscript
+- [MD-12384] - Can't leave full screen mode in web client with Safari
 
 ## Release 19.06 (28.04.2020)
 
