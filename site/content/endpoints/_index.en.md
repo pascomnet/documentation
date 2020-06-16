@@ -14,10 +14,10 @@ Use the end devices supported by pascom to use all the integrated provisioning a
 
 [Grandstream IP Phones](#grandstream-ip-phones "Grandstream IP-Phones")
 [Mitel DECT Systems](#mitel-dect-systems "Mitel DECT-Systems")    
-[Siemens Gigaset DECT Systems](#siemens-gigaset-dect-systems "Siemens Gigaset DECT-Systems")  
+[Siemens Gigaset DECT Systems](#siemens-gigaset-pro-ip-dect-systems "Siemens Gigaset DECT-Systems")  
 [Snom IP Phones](#snom-ip-phones "SNOM IP Phones")  
 [Snom DECT Systems](#snom-dect-systems "SNOM DECT-Systems")  
-[Snom Conferencing Systems](#snom-conferencing-systems "SNOM Conferencing Systems")      
+[Snom Conferencing Systems](#snom-conference-phones "SNOM Conferencing Systems")      
 [Yealink IP Phones](#yealink-ip-phones "Yealink IP-Phones")  
 [Yealink DECT Systems](#yealink-dect-systems "Yealink DECT-Systems")    
    
