@@ -36,23 +36,23 @@ These problems are known to us and we are already working on a solution
 
 **Overview**
 
-* Windows/macOS/Linux: Support for Kuando Busylights
-* Windows/macOS: It’s now possible to select the screen to share for screensharing
-* Windows: Video / Screensharing is enabled within RDP Sessions and on Terminal Servers
-* iOS / Android: Fixed problems in NAT64 networks (e.g. via LTE)
+* Windows/macOS/Linux: Support for kuando Busylight
+* Windows/macOS: It is now possible to select which screen to share for screensharing
+* Windows: Video / Screensharing is now enabled within RDP Sessions and on Terminal Servers
+* iOS / Android: Fixed issues relating to NAT64 networks (e.g. via LTE)
 * iOS/Android: Switch between front and back camera during a video call
 * Windows: Fall back to custom notifications if Windows Info Center is disabled
-* Android: "tel:" uris are now handled
+* Android: "tel:" URIs are now handled
 * Improved video quality, less glitches
-* Dynamic bandwidth and resolution for screensharing
+* Added dynamic bandwidth and resolution for screensharing
 * Maximum screensharing resolution is now 2560x1440
 * Improved downscaling for higher resolution screens
 * Windows/macOS/Linux: Shortcuts can be deactivated
 * Linux: Ensured compatibility to Ubuntu 20.04 LTS “Focal Fossa”
 * Smaller UI Improvements
-* iOS: back button is visible when the keyboard is opened within a chat
+* iOS: back button is now visible when the keyboard is opened within a chat
 * DTMF Input view can now be closed again
-* “There are no Journal entries which match the filter” is not shown multiple times anymore
+* “There are no Journal entries which match the filter” is no longer shown multiple times.
 
 **MODIFICATIONS**
 
