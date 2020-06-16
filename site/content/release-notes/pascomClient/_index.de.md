@@ -32,97 +32,53 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 * [CL-1212] Unter macOS lässt sich die Unterstützung für Sennheiser Headsets derzeit nicht einrichten, da HeadSetup seitens EPOS / Sennheiser nicht zum Download zur Verfügung steht
 * [CL-1260] Auf Microsoft-Surface Geräten kommt es bei der Verwendung der integrierten Kamera oft zu einem Grünstich im Bild
 
-## Beta 63.D1142 (10.06.2020)
-
-[Feedback](https://www.pascom.net/forum/t/pascom-client-v63-beta/7014)
-
-**Overview**
-
-* Kleiner UI Verbesserungen
-* Busylights zeigen nun wieder "grün" wenn der Klingelton in den Einstellungen abgespielt und wieder gestoppt wird
-* Schnellere Bandbreitenanpassung beim Screensharing
-* "Es gibt keine Journaleinträge die auf den Filter zutreffen"-Toast wird nicht mehr mehrfach angezeigt
-
-**MODIFICATIONS**
-
-- [CL-1321] Do not show "There are no Journal entries which match the filter" toast multiple times
-
-## Beta 63.D1128 (27.05.2020)
-
+## Release 64.R1156 (16.06.2020)
 
 **Auf einen Blick**
 
-* Die maximale Auflösung beim Screensharing ist nun 2560x1440
-* Verbessertes herunterskalieren von höheren Bildschirmauflösungen
-* iOS / Android: Probleme mit NAT64 Netzwerken (z. B. via LTE) behoben
-
-**ÄNDERUNGEN**
-
-* [CL-1294] pascom App doesn't work with 6to4 nat gateways via LTE on Android / iOS
-
-## Beta 63.D1123 (26.05.2020)
-
-[Feedback](https://www.pascom.net/forum/t/pascom-client-v63-beta/7014)
-
-**Auf einen Blick**
-
-* Bandbreite und Auflösung für Screensharing wird nun dynamisch ausgewählt
-* Videoqualität verbessert, es gibt nun weniger glitches
-* Kuando Busylight leuchtet nun grün wenn idle
-* tel: Uris werden nun vom Android Client verarbeitet
-* iOS: Zurück-Button ist nun sichtbar wenn die Tastatur im Chat geöffnet ist
-* Die erste Sekunde des Anrufs wird auf iOS nun nicht mehr abgeschnitten
-
-**ÄNDERUNGEN**
-
-* [CL-76] - Chat header disappear when the keyboard is visible
-* [CL-898] - Adaptive quality for video and screensharing in pascom Client
-* [CL-1172] - Decoded video often breaks and shows glitches when displaying
-* [CL-1249] - iOS App misses first second of call audio
-* [CL-1295] - Improve screen sharing video scaling and aspect ratio
-
-
-## BETA 63.D1095 (06.05.2020)
-
-**Auf einen Blick**
-
-* DTMF Eingabefeld kann nun wieder geschlossen werden
-* Windows: Wenn das Windows Info Center deaktiviert ist, werden nun automatisch pascom-Benachrichtungsfenster verwendet
-
-## BETA 63.D1092 (05.05.2020)
-
-
-**Auf einen Blick**
-
-* Anklopfen wird jetzt korrekt behandelt, wenn am Server aktiviert
 * Windows/macOS/Linux: Unterstützung für Kuando Busylights
 * Windows/macOS: Beim Screensharing kann nun der zu teilende Bildschirm ausgewählt werden
-* iOS/Android: Während des Gesprächs kann nun zwischen Front und Rückkamera umgeschaltet werden
 * Windows: Video / Screensharing wird nun auch innerhalb von RDP-Sitzungen / auf Terminal-Servern aktiviert
-* Linux: Kompatibilität mit Ubuntu 20.04 LTS "Focal Fossa" geprüft
+* iOS/Android: Probleme mit NAT64 Netzwerken (z.B. via LTE) behoben
+* iOS/Android: Während des Gesprächs kann nun zwischen Front und Rückkamera umgeschaltet werden
+* Windows: Wenn das Windows Info Center deaktiviert ist, werden nun automatisch pascom-Benachrichtungsfenster verwendet
+* Android: "tel:" Uris werden nun verarbeitet
+* Videoqualität verbessert, es gibt nun weniger glitches
+* Diverse Verbesserungen beim Screensharing
+* Bandbreite und Auflösung für Screensharing wird nun dynamisch ausgewählt
+* Die maximale Auflösung beim Screensharing ist nun 2560x1440
+* Verbessertes herunterskalieren von höheren Bildschirmauflösungen
+* Windows/macOS/Linux: Tastenkürzel können deaktiviert werden
+* Linux: Kompatibilität mit Ubuntu 20.04 LTS “Focal Fossa” geprüft
+* Kleinere UI Verbesserungen
+* iOS: Zurück-Button ist nun sichtbar wenn die Tastatur im Chat geöffnet ist
+* DTMF Eingabefeld kann nun wieder geschlossen werden
+* “Es gibt keine Journaleinträge die auf den Filter zutreffen”-Toast wird nicht mehr mehrfach angezeigt
 
 **ÄNDERUNGEN**
 
 * [CL-1] - Prohibit to add a call if GSM switch is active
+* [CL-76] - Chat header disappear when the keyboard is visible
 * [CL-350] - Support for Kuando Busylight
-* [CL-427] - Support Call waiting in client
 * [CL-536] - Completely close client if login mask window gets closed
 * [CL-626] - Always send callerId Updates for locally resolved names
-* [CL-672] - Prohibit pickup during if there are already two running calls
 * [CL-855] - Select screen to share if multiple are connected
+* [CL-898] - Adaptive quality for video and screensharing in pascom Client
 * [CL-960] - Chat history jumps back to most recent message frequently
+* [CL-1108] - Use pascom Mobile Client as standard telephony app on Android
 * [CL-1119] - Group mute menu is elided too much 
 * [CL-1122] - Mute a pascom group forever
 * [CL-1131] - Unify journal entry icons
 * [CL-1136] - Ensure pascom Client compatiblity to Ubuntu 20.04 LTS 
-* [CL-1149] - iOS mobile client shows warning to insert SIM card sometimes
+* [CL-1149] - iOS  mobile client shows warning to insert SIM card sometimes
 * [CL-1155] - System tray tooltip format is broken if no instancename is given on login
+* [CL-1161] - Blind transfer to external number needs trunk prefix
 * [CL-1166] - Enhance contact list "List view" 
-* [CL-1169] - Update to gstreamer 1.16.2
+* [CL-1172] - Decoded video often breaks and shows glitches when displaying
 * [CL-1179] - Allow to disable keyboard shortcuts
 * [CL-1187] - Play busy tone in softphone if a call ends with a "busy" status code
 * [CL-1190] - Make DND state more visible
-* [CL-1202] - Some shortcuts don't work
+* [CL-1194] - Show user provided device name instead the generated one
 * [CL-1209] - Correctly reset settings fields for invalid inputs
 * [CL-1217] - Toast shown in background if popup is in foreground
 * [CL-1218] - Automatically switch to Handsfree on mobile if video is started
@@ -130,8 +86,6 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 * [CL-1227] - Only start video in settings if the element is visible
 * [CL-1228] - Implement live camera switching in mobile client
 * [CL-1230] - Enhance Fullscreen UI with a contact list, showing all active call participants (just like webclient)
-* [CL-1232] - Assert because of cross-thread signal being sent to DesktopAudioController
-* [CL-1233] - iOS client possible deadlock
 * [CL-1234] - pascom Client crashes on file transfer
 * [CL-1236] - Conversation is not closed if a user is removed from a group
 * [CL-1237] - Phone button looses active call indication
@@ -141,9 +95,23 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 * [CL-1251] - Location dropdown not usable if name is too long
 * [CL-1253] - Enable video in RDP sessions and Terminal Servers
 * [CL-1265] - Support "mac native" fullscreens
-* [CL-1270] - Upgrade client to to Qt 5.12.8
-* [CL-1271] - Fix Android-Qt-SSL Problem and Upgrade to Qt 5.12.8
+* [CL-1272] - Client crashes if native Notifications are enabled and Windows Notification Center is disabled
 * [CL-1280] - Native notifications on Windows 10 are flickering again
+* [CL-1281] - Stack Overflow due to "openCall" signal on iOS
+* [CL-1282] - Open call from android notification broken
+* [CL-1284] - Highlight color for marked text is not red
+* [CL-1285] - Can't close DTMF input window
+* [CL-1286] - Existing video in group call does not open automatically
+* [CL-1287] - Client shows multiple registrations if no sip connection is possible
+* [CL-1288] - Enhance client fullscreen layout, show videos side-by-side if client window is landscape
+* [CL-1292] - Android group notification does not open chat dialog
+* [CL-1293] - iOS app has wrong color theme after pairing
+* [CL-1294] - pascom App doesn't work with 6to4 nat gateways via LTE on Android / iOS
+* [CL-1295] - Improve screen sharing video scaling and aspect ratio
+* [CL-1298] - Awake pascom app for call failed message
+* [CL-1311] - Get rid of misleading "dll could not be found" error message when initializing gstreamer
+* [CL-1321] - Do not show "There are no Journal entries which match the filter" toast multiple times
+* [CL-1347] - "Hide System Calls in Journal" is unset after app restart on iOS
 
 ## Release 62.R1061 (20.04.2020)
 
