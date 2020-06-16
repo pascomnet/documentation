@@ -65,7 +65,7 @@ These problems are known to us and we are already working on a solution
 * Vendor Provisioning for Snom and Yealink
 * Display names for devices
 * Improved device creation workflow
-* Improved number displaying on Snom DECT systems
+* Improved number displays on Snom DECT systems
 * Optimised transfer workflows on Yealink and Grandstream phones
 * Fixed issues relating to calls not being displayed after a "Call Drop" action
 * Corrected prompt language issues when roaming from one location to another
