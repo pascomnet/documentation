@@ -31,6 +31,7 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 * [CL-1165] Outlook Support ist auf einigen Systemen instabil und führt zu Abstürzen des pascom Clients
 * [CL-1212] Unter macOS lässt sich die Unterstützung für Sennheiser Headsets derzeit nicht einrichten, da HeadSetup seitens EPOS / Sennheiser nicht zum Download zur Verfügung steht
 * [CL-1260] Auf Microsoft-Surface Geräten kommt es bei der Verwendung der integrierten Kamera oft zu einem Grünstich im Bild
+* [CL-1344] Screensharing funktioniert nicht wenn eine Wayland-Session verwendet wird. Als Workaround kann auf eine X11-Session umgeschaltet werden
 
 ## Release 64.R1156 (16.06.2020)
 
