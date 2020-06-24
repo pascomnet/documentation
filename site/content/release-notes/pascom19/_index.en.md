@@ -58,6 +58,16 @@ These problems are known to us and we are already working on a solution
 
 * Onsite Telekom trunks only work if an outbound proxy is used. To do this, select the appropriate interface in the trunk instead of "default / NAT".
 
+## Release 19.08 (24.06.2020)
+
+**Overview**
+
+* Resolved seldom occurring issue resulting in limited mobile client functionality
+
+**Modifications**
+
+- [MD-12411] XMPP error on unpair a mobile client
+
 ## Release 19.07 (10.06.2020)
 
 **Overview**

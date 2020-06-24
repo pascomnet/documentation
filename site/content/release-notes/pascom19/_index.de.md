@@ -59,6 +59,16 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 
 * Onsite Telekom Ämter funktionieren nur wenn ein Outbound Proxy genutzt wird. Wählen Sie hierzu statt "default / NAT" das entsprechende Schnittstelle im Amt aus.
 
+## Release 19.08 (24.06.2020)
+
+**Auf einen Blick**
+
+* Gelegentliche Probleme mit eingeschränkter Funktionalität bei Mobile Clients behoben
+
+**ÄNDERUNGEN**
+
+- [MD-12411] XMPP error on unpair a mobile client
+
 ## Release 19.07 (10.06.2020)
 
 **Auf einen Blick**
