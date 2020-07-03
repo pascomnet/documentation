@@ -30,7 +30,7 @@ These problems are known to us and we are already working on a solution
 * [CL-1071] On some platforms, Plantronics support is unstable. If the client often crashes in combination with a Plantronics headset, set the Plantronics support to "ignore" in the settings. Only using headset buttons will no longer work
 * [CL-1165] Outlook Support is unstable on some systems and causes the pascom client to crash
 * [CL-1212] Headset support for Sennheiser on macOS can't be configured at the moment, because HeadSetup for macOS is not provided for downloading from EPOS / Sennheiser
-* [CL-1260] If the integrated camera of Microsoft Surface devices is used, the image often has a green cast
+* [CL-1260] If the integrated camera of Microsoft Surface devices is used, the image often has a green cast. [A Beta-Version with a bugfix is available here.](https://www.pascom.net/forum/t/pascom-client-beta-fur-microsoft-surface-gerate-intel-avstream-webcams/7312)
 * [CL-1344] Screensharing does not work if a Wayland Session is used on Linux. Use a X11 Session type instead
 
 ## Release 64.R1156 (16.06.2020)
