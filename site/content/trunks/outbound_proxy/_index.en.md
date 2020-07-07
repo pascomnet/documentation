@@ -31,4 +31,86 @@ Setting up the outbound proxy is very easy. In the [basic settings] ({{<ref "/tr
 
 ![Outound Proxy setup](setup_op.en.JPG?width=60%)
 
+## Use outbound proxy in CSP installation
 
+In the case of a CSP installation, the outbound proxy cannot be set in the trunk configuration but is configured using a file in the instance in order to prevent incorrect configurations by the instance admin and to be able to specifically manage the traffic.
+
+To do this, log in to the respective CSP host using SSH, enter the desired instance via `lxc-attach INSTANZNAME` and generate the file `/etc/pascom/sipproxy.json` with the following content:
+
+```
+{
+    "PROVIDER-HOST-DNSNAME": {
+        "proxy": "HOSTNAME-CONTAINERNAME.cs-proxy.service.pascom",
+        "options": "SIP-OPTIONS"
+    }
+}
+```
+
+Replace the uppercase variables as follows:
+
+**PROVIDER-HOST-DNSNAME**
+
+Enter the host name of the provider for which you want to use an outbound proxy. This will apply this configuration to all trunks that use this host as a registrar.
+E.g. for Deutsche Telekom `tel.t-online.de`.
+
+**HOSTNAME-CONTAINERNAME**
+
+Replace `HOSTNAME` with the host name of the CSP host and `CONTAINERNAME` with the name of the interface container that you want to use as an outbound proxy.
+
+You can determine the host name via SSH:
+
+```
+~ # hostname
+csphost01
+~ #
+```
+
+You can read the name of the interface in the Management UI under {{<ui-button "Interfaces">}}:
+
+![Determine interface name](interface.png)
+
+In our example, `HOSTNAME-CONTAINERNAME` is to be replaced by `csphost01-ifens5`.
+
+**SIP OPTIONS**
+
+Here you can force additional SIP options for this trunk, which can no longer be overridden by the instance admin.
+
+It is important that each SIP option ends up in a separate line. You can do this with `\n` at the beginning and end of each option.
+
+E.g. `\ntransport=tcp\n` to always force SIP TCP.
+
+### Complete sample file for Telekom
+
+```
+{
+    "tel.t-online.de": {
+        "proxy": "csphost01-ifens5.cs-proxy.service.pascom",
+        "options": "\ntransport=tcp\n"
+    }
+}
+```
+
+### (Optional) Roll out the configuration on the entire CSP host
+
+Instead of creating the file `/etc/pascom/sipproxy.json` in every instance, you can also enter it in the central Consul database.
+
+To do this, log in to the CSP host via SSH, become root and create the file `/tmp/sipproxy.json` with the same content as described above.
+
+The configuration is then entered in the Consul database via:
+
+```
+~ # consul kv put config/HOSTNAME/system/outboundproxy @/tmp/sipproxy.json
+```
+
+Replace `HOSTNAME` with the hostname of the CSP host.
+
+
+### Apply configuration
+
+To activate the configuration, log in to the respective instance using the web UI and click on {{<ui-button "Apply">}}> {{<ui-button "Telephony">}}> {{<ui-button "Perform Action">}}.
+
+If the file `/etc/pascom/sipproxy.json` was created correctly, you can see the usage of the outbound proxy in the log of the apply job:
+
+```
+Will route trunk [telekom] via proxy [csphost01-ifens5.cs-proxy.service.pascom]
+```
