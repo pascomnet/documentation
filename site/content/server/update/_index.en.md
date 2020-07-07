@@ -14,6 +14,10 @@ weight: 70
 
 ## Phone System Updates
 
+{{% notice warning %}}
+Never update the pascom system using the **APT command** (or similar commands). This will destroy your pascom phone system.
+{{% /notice %}}
+
 {{% notice tip %}}
 With a newly available version, cloud systems are automatically updated in service intervals. These take place outside of business hours at night.
 {{% /notice %}}

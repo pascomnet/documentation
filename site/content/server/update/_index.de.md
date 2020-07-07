@@ -14,6 +14,10 @@ weight: 70
 
 ## System Updaten
 
+{{% notice warning %}}
+Updaten Sie das pascom System niemals über den **APT Befehl** (oder ähnlichen Befehlen). Dies beschädigt Ihr pascom Telefonsystem.
+{{% /notice %}}
+
 {{% notice tip %}}
 Cloud Anlagen werden bei einer neu verfügbaren Version automatisch in Serviceinteravallen geupdatet. Diese finden außerhalb der Geschäftszeiten in der Nacht statt.
 {{% /notice %}}
