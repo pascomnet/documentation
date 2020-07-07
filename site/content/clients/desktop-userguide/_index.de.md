@@ -496,6 +496,13 @@ Einstellungen für Headsets unterstützter Hersteller Sennheiser, Jabra und Plan
 
 ![Audio und Headset Einstellungen](audiosettings.de.png?width=400px)
 
+### Kuando Busylight Einstellungen
+
+Das pascom System unterstützt die Verwendung des Kuando Busylight. Der pascom Client erkennt das angeschlossene Kuando Busylight automatisch und konfiguriert es. Alternativ kann man von **AUTO** auf **IGNORIEREN** schalten, wodurch das Kuando Busylight nicht im pascom Client verwendet wird. 
+
+![Kuando Busylight Setup](kuando.de.PNG?width=450px)
+
+
 ### Meine Geräte
 
 In den Follow Me Einstellungen bestimmen Sie selbst, sofern es durch den Administrator freigeschalten wurde, welche Ihrer Endgeräte wann klingeln soll. Zusätzlich können Sie vordefinierte Arbeitsplätze auswählen, an denen Sie sich anmelden können.
