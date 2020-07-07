@@ -1,7 +1,7 @@
 ---
 title: Server Management Interface
 description: Configure your local pascom host. (only onsite)
-weight: 80
+weight: 75
 ---
 
 {{< doctype "self" >}}

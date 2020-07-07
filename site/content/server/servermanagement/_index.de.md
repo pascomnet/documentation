@@ -1,7 +1,7 @@
 ---
 title: Server Management Oberfläche
 description: Konfigurieren Sie Ihren lokalen pascom Host. (nur onsite)
-weight: 80
+weight: 75
 ---
 
 {{< doctype "self" >}}
