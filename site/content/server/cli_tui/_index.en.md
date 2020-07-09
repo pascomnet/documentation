@@ -29,6 +29,10 @@ From here you can use Asterisk commands to debug the pascom telephone system, ev
 
 [Asterisk Command List](https://www.voip-info.org/asterisk-cli/)  
 
+**Astersik Tutorial Series incl. SIP Debugging (only EN)**
+
+{{< youtube ZYq51DDYZS0 >}}
+
 ## Root access to the pascom telephone system
 
 The pascom telephone system operates on a Linux system to which you have full root access in the onsite version. This allows you to access the file system of the pascom telephone system. 
@@ -134,6 +138,9 @@ From here you can use Asterisk commands to debug the pascom telephone system, ev
 
 [Asterisk Command List](https://www.voip-info.org/asterisk-cli/)  
 
+**Astersik Tutorial Series incl. SIP Debugging (only EN)**
+
+{{< youtube ZYq51DDYZS0 >}}
 
 {{% notice info %}}
 **Root access to the pascom cloud phone system is not possible**

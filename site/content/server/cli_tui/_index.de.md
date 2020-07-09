@@ -29,6 +29,10 @@ Von hier aus können Sie Asterisk-Befehle nutzen um die pascom Telefonanlage zu 
 
 [Asterisk Befehlsliste](https://www.voip-info.org/asterisk-cli/)  
 
+**Astersik Tutorial Series incl. SIP Debugging (only EN)**
+
+{{< youtube ZYq51DDYZS0 >}}
+
 ## Root Zugriff auf die pascom Telefonanlage
 
 Das pascom Telefonsystem läuft auf einem Linuxsystem, auf welches Sie in der Onsite-Variante vollen Root-Zugriff erhalten. Dies erlaubt es, auf das Dateisystem der pascom Telefonanlage zuzugreifen. 
@@ -132,6 +136,10 @@ Sie befinden sich nun in der pascom CLI
 Von hier aus können Sie Asterisk-Befehle nutzen um die pascom Telefonanlage zu debuggen, Telefonate auszuwerten, Kanäle und Verbindungen auslesen und vieles mehr. 
 
 [Asterisk Befehlsliste](https://www.voip-info.org/asterisk-cli/)  
+
+**Astersik Tutorial Series incl. SIP Debugging (only EN)**
+
+{{< youtube ZYq51DDYZS0 >}}
 
 {{% notice info %}}
 **Ein Root Zugriff auf pascom Cloud Telefonsysteme ist nicht möglich**
