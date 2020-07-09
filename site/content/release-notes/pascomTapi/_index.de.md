@@ -1,7 +1,7 @@
 ---
 title: pascom TAPI
 description: Nutzen Sie den pascom TAPI Client für Windows um TAPI-fähige Software wie ERP, CRM-Systeme, etc. in den pascom Server einzubinden
-weight: 1000
+weight: 999
 ---
 
 {{% notice tip %}}

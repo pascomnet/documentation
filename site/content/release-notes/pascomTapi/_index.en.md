@@ -1,7 +1,7 @@
 ---
 title: pascom TAPI
 description: The pascom TAPI client for Windows is designed to integrate TAPI enabled software such as MS Office, ERP and CRM systems etc.
-weight: 1000
+weight: 999
 ---
 
 {{% notice tip %}}
