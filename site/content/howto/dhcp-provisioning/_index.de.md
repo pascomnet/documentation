@@ -72,6 +72,19 @@ Konfigurieren Sie den DHCP-Server:
 
 Speichern Sie die Konfiguration ab.
 
+### Provisionierung per DHCP via VPN
+
+Sobald auf der pascom die VPN Verbindung eingerichtet wurde, ändern sich auch die Provisionierungs-URLs. Der Pfad sieht nun folgendermaßen aus. 
+
+|Telefonhersteller|URL-Pfad|
+|---|---|
+|Snom|http://[Ihre_VPN_IP]/provisioning/{mac}|
+|Yealink, Grandstream, Aastra, Mitel|http://[Ihre_VPN_IP]/provisioning/|
+|Auerswald|http://[Ihre_VPN_IP]/provisioning/|  
+  
+
+**Sobald Ihre Endgeräte über die VPN-Verbindung provisioniert wurden, läuft auch der Audiostream Ihrer Gespräche ebenfalls über die VPN-Verbindung**
+
 ### Provisionierung testen
 
 Setzen Sie ein Hardware Telefon auf Werkseinstellungen zurück. Funktioniert der DHCP-Server mit den Optionen korrekt konfiguriert sich das Telefon nun automatisch. War das provisionieren erfolgreich sehen Sie im Display des Telefones "Nur Notrufe" oder den Namen des zugewiesenen Benutzers oder Arbeitsplatzes.

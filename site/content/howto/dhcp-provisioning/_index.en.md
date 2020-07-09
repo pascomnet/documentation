@@ -71,6 +71,18 @@ Configure the DHCP Server:
 
 Save your configurations.
 
+### Provisioning with DHCP via VPN
+
+As soon as the VPN connection has been set up on the pascom, the provisioning URLs will also change. The path now looks like this. 
+
+|Phone manufacturer|URL-Path|
+|---|---|
+|Snom|http://[Ihre_VPN_IP]/provisioning/{mac}|
+|Yealink, Grandstream, Aastra, Mitel|http://[Ihre_VPN_IP]/provisioning/|
+|Auerswald|http://[Ihre_VPN_IP]/provisioning/|  
+
+**As soon as your end devices have been provisioned via the VPN connection, the audio stream of your calls will also run via the VPN connection**
+
 ### Test the Provisioning
 
 Reset your Desktop phones to factory settings. Should the DHCP function with the correct options, the desktop phone will be configured automatically. If the provisioning process was succesful, you will now see "Emergency Only" or a username or location name in the telephone display.
