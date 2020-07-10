@@ -26,6 +26,11 @@ Die DECT Basis lässt sich sowohl einzeln als auch als Multizellenkonfiguration 
 {{% tabs %}}
 {{% tab "Pairing via URL (cloud + onsite)" %}}
 
+Bevor Sie das Gigaset DECT System in der pascom Telefonanlage provisionieren, müssen Sie die DECT Sender vorbereiten. 
+Der erste Sender der auch zur Provisionierung der Daten von Ihrer pascom Telefonanlage verwendet wird muss vor der ersten Einrichtung in die Geräterolle **"Integrator/DECT-Manager"** versetzt werden. **Folgen Sie hierzu bitte der beiliegenden Anleitung bzw. der Anleitung die von Gigaset bereitgestellt wird.**
+Weitere Sender fügen Sie wie von Gigaset empfohlen als Basisstation (Standardgeräterolle im Auslieferungszustand) hinzu.
+
+
 {{< num 1 "DECT System anschließen" >}}
 
 

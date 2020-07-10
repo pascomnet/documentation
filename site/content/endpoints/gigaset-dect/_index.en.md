@@ -25,6 +25,8 @@ The Gigaset IP DECT Base Station can be operated as either a single or mutli cel
 {{% tabs %}}
 {{% tab "Pairing via URL (cloud + onsite)" %}}
 
+Before integrating a Gigaset DECT system with the pascom phone system, the Gigaset DECT sender(s) must first be prepared. The first sender is also used for transmitting data from the pascom phone system must be configured with the **"Integrator/DECT Manager"** role before starting the setup process. **Please follow the instructions outlined here or the instructions as provided by Gigaset.** When adding further senders as part of a mutle-cell solution, the sender(s) must be assigned with the "Base Station" role (standard device role as delivered by Gigaset).
+
 {{< num 1 "Connect DECT System" >}}
 
 
