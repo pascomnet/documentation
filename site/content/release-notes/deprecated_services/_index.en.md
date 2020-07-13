@@ -8,35 +8,95 @@ weight: 1000
 Here you will find an overview of services that no longer work with the current pascom version.
 {{%/notice%}}
 
-### pascom SOHO Server deprecated
+### Static Conference Rooms removed
+**Software**
+
 |Date|with Version|
 |---|---|
-|February 2020|19.00|
+|July 2020|19.09|  
+**Static conference rooms were replaced by pascom groups**
+
+<hr>
+
+### Call Groups deleted
+**Software**
+
+|Date|with Version|
+|---|---|
+|March 2020|19.05|  
+**The call group feature has been removed, and teams should be configured instead**
+
+<hr>
+
+### Trunk Failover deleted
+**Software**
+
+|Date|with Version|
+|---|---|
+|January 2020|19.03|  
+**No migration and no direct workaround. Support can help with an outgoing script if needed.**
+
+<hr>
+
+### IAX Trunks deleted
+**Software**
+
+|Date|with Version|
+|---|---|
+|January 2020|19.03|  
+
+<hr>
+
+### pascom SOHO Server no longer supported
+**Hardware**
+
+|Date|with Version|
+|---|---|
+|November 2019|19.00|  
 **Perform a hardware upgrade.**
 ![pascom SOHO Server](pascomSOHOserver.png)
 
-### Trunk Failover deleted
-|Date|with Version|
-|---|---|
-|Mai 2020|19.05|
-**No migration and no direct workaround. Support can help with an outbound script, if needed.**
+<hr>
 
-### IAX Amtsleitungen deleted
-|Date|with Version|
-|---|---|
-|March 2020|19.05|
+### Cron Job Scripts removed
+**Software**
 
-### Call Groups deleted
 |Date|with Version|
 |---|---|
-|February 2020|19.00|
-**The callgroup feature has been removed and customers should configure teams instead.**
+|November 2019|19.00|  
+**(before / after) Scripts are no longer supported**
 
-### Cron Job Scripts deleted
+<hr>
+
+### Auerswald Desktop Phones
+**Hardware**  
+
 |Date|with Version|
 |---|---|
-|February 2020|19.00|
-**(before/after) are no longer supported**
+|November 2019|19.00|    
+![Auerswald Desktop Phone](auerswald.jpg)
+
+<hr>
+
+### Beronet 
+**Hardware / Software**  
+
+|Date|with Version|
+|---|---|
+|November 2019|19.00|    
+**All devices running on the same Beronet Gateway as the Trunk are no longer supported.**
+
+
+<hr>
+
+### Aastra / Mitel Desktop Phones
+**Hardware**  
+
+|Date|with Version|
+|---|---|
+|November 2019|19.00|    
+![Aastra Desktop Phone](aastra.jpg?width=60%)
+
 
 
 
