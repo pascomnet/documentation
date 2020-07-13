@@ -135,7 +135,7 @@ Sie befinden sich nun in der pascom CLI
 
 Von hier aus können Sie Asterisk-Befehle nutzen um die pascom Telefonanlage zu debuggen, Telefonate auszuwerten, Kanäle und Verbindungen auslesen und vieles mehr. 
 
-[Asterisk Befehlsliste](https://www.voip-info.org/asterisk-cli/)  
+[Asterisk: The Future of Telephony](http://www.asteriskdocs.org/en/2nd_Edition/asterisk-book-html-chunk/index.html)  
 
 **Astersik Tutorial Series incl. SIP Debugging (only EN)**
 

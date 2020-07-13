@@ -136,7 +136,7 @@ You are now in the pascom CLI
 
 From here you can use Asterisk commands to debug the pascom telephone system, evaluate telephone calls, read out channels and connections and much more.
 
-[Asterisk Command List](https://www.voip-info.org/asterisk-cli/)  
+[Asterisk: The Future of Telephony](http://www.asteriskdocs.org/en/2nd_Edition/asterisk-book-html-chunk/index.html)  
 
 **Astersik Tutorial Series incl. SIP Debugging (only EN)**
 
