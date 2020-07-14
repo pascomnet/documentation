@@ -13,7 +13,7 @@ Hier finden Sie eine Übersicht über Services und Dienste, die mit der aktuelle
 
 |Datum|mit Version|
 |---|---|
-|Juli 2020|19.09|  
+|demnächst|19.xx|  
 **Statische Konferenzräume wurden durch pascom Gruppen ersetzt**
 
 <hr>
