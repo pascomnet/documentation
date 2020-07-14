@@ -478,6 +478,17 @@ The pascom system supports the use of the Kuando Busylight. The pascom client au
 
 ![Kuando Busylight Setup](kuando.en.PNG?width=450px)
 
+**Kuando Busylight Color Guide:**
+- red: active call
+- yellow: incomming call
+- green: available
+
+**Kuando Busylight Speaker / Ringtone**
+
+The Kuando Busylight's integrated loudspeakers allow you to play the client's ring tone. Select the type of ring tone and the volume. 
+
+![Kuando Busylight Audio](kuando_audio.en.png?width=450px)
+
 ### My Devices
 
 In the Follow Me Settings you decide yourself, providet that it has been activated by the administrator, which of your devices should ring. In addition, you can select predefined workstations to which you can login.

@@ -502,6 +502,18 @@ Das pascom System unterstützt die Verwendung des Kuando Busylight. Der pascom C
 
 ![Kuando Busylight Setup](kuando.de.PNG?width=450px)
 
+**Kuando Busylight LED-Farben:**
+
+- Rot: Aktiver Anruf
+- Gelb: Eingehender Anruf
+- Grün: Verfügbar
+
+**Kundo Busylight Lautsprecher / Klingelton**
+
+Durch die im Kuando Busylight integrierten Lautsprecher können Sie den Klingelton des Clients ausgeben lassen. Wählen Sie die Art des Klingeltons und die Lautstärke aus. 
+
+![Kuando Busylight Audio](kuando_audio.de.png?width=450px)
+
 
 ### Meine Geräte
 
