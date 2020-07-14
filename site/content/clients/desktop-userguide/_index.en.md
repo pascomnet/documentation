@@ -478,10 +478,11 @@ The pascom system supports the use of the Kuando Busylight. The pascom client au
 
 ![Kuando Busylight Setup](kuando.en.PNG?width=450px)
 
-**Kuando Busylight Color Guide:**
-- red: active call
-- yellow: incomming call
-- green: available
+**Kuando Busylight Color Guide:**  
+
+- red: active call  
+- yellow: incomming call  
+- green: available  
 
 **Kuando Busylight Speaker / Ringtone**
 
