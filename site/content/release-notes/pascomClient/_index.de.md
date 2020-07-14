@@ -33,6 +33,68 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 * [CL-1260] Auf Microsoft-Surface Geräten kommt es bei der Verwendung der integrierten Kamera oft zu einem Grünstich im Bild. [Eine Beta-Version mit einem Bugfix ist hier verfügbar.](https://www.pascom.net/forum/t/pascom-client-beta-fur-microsoft-surface-gerate-intel-avstream-webcams/7312)
 * [CL-1344] Screensharing funktioniert unter Ubuntu Linux nicht wenn eine Wayland-Session verwendet wird. Als Workaround kann auf eine X11-Session umgeschaltet werden
 
+## BETA 65.D1234 (14.07.2020)
+
+[Feedback](https://www.pascom.net/forum/t/pascom-client-v65-beta/7348)
+
+**AUF EINEN BLICK**
+
+- Es können jetzt beliebig viele App und Url-Aktionen konfiguriert werden
+- Journal wird jetzt vollständig auf den Client synchronisiert und ist schneller, filterbar und durchsuchbar (ab pascom Server 19.09)
+- Support für Sennheiser / EPOS Connect 4.1 
+- Updates mit inkompatiblen Server oder Betriebssystemversionen werden nun automatisch verhindert
+
+**ÄNDERUNGEN**
+
+* [CL-111] - Improve "No microphone permission" error message on iOS
+* [CL-123] - Improve chat search results to get the whole conversation
+* [CL-158] - Proper shutdown and unregister client on kill signal
+* [CL-243] - Multiple Actions in Desktop Client
+* [CL-655] - Implement constraints and optional messages for updating pascom Client
+* [CL-679] - Modernize Journal API, synchronize it using the Event Stream
+* [CL-1137] - Improve client behavior if no usable phone device is available
+* [CL-1138] - Client shows that latest version is used if connection is broken
+* [CL-1148] - Simplify pickup logic in client
+* [CL-1160] - Headset dialog opens automatically after reconnecting
+* [CL-1211] - Time counter is not updated during phonecall
+* [CL-1226] - Refactor android client java code
+* [CL-1257] - Unread messages badge rect to small for three-digit numbers
+* [CL-1268] - pascom Client update breaks on macOS if installed via user account
+* [CL-1291] - Make phone numbers and email clickable in phonebook details
+* [CL-1296] - Introduce a Copy URL button for group urls
+* [CL-1302] - Implement http based wav player for recordings and voicemails
+* [CL-1305] - Improve client journal UI
+* [CL-1332] - Improve screen selection
+* [CL-1335] - iOS call indicator for inactive calls
+* [CL-1337] - Show notifications and do not mark as read if chat view is scrolled upwards
+* [CL-1363] - Display Team members using the RosterCell in Team View
+* [CL-1366] - Client leaves fullscreen mode if another participant joins
+* [CL-1367] - Improve logging configuration
+* [CL-1368] - Improve client user agent again, include operating system version and architecture
+* [CL-1369] - Android's context menu for e.g. pasting text broken
+* [CL-1370] - Assertion in AudioDeviceList model on screen lock / unlock
+* [CL-1371] - Crash in pjsip when logging out
+* [CL-1373] - Crash in GStreamer audio player on incoming call
+* [CL-1378] - Refactor fax uploads to use http API
+* [CL-1379] - Native notifications crash on Windows 10 LTSB 2016
+* [CL-1380] - Windows client doesn't use native dialogs for selecting files
+* [CL-1381] - Screensharing is not reliable on a 4k Screen on windows
+* [CL-1383] - Call waiting sound is played instead of normal ringtone even if call waiting is disabled
+* [CL-1385] - Can't call group via button in chat view 
+* [CL-1387] - Copy and paste not working in phone book edit mode
+* [CL-1389] - Upgrade to Qt 5.12.9
+* [CL-1390] - Wrong camera orientation on iOS
+* [CL-1391] - Missing ringtones in pascom Client on window
+* [CL-1398] - iOS client crashes if a screenshare is started
+* [CL-1402] - Client gstreamer devices is missing default pulse audio sink under linux
+* [CL-1408] - "Journal fully loaded" toast covers full screen again
+* [CL-1413] - Handle discard events for journal entries
+* [CL-1416] - Away status is displayed with DND symbol on client
+* [CL-1419] - Disable missed call notifications for teams if you're logged out
+* [CL-1420] - Duplicate team entries in journal team filter list
+* [CL-1426] - Adjust EPOS Connect path
+
+
 ## Release 64.R1156 (16.06.2020)
 
 **Auf einen Blick**
