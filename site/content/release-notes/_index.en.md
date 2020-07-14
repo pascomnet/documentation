@@ -12,6 +12,14 @@ weight: 14
 
 ![Supported Versions](pascom_version_support.png "Supported Versions")
 
+### Rolling Release
+
+We deliver new functions upon completion in a rolling process and do not wait for the "next big" version. As an advantage, our customers receive new features faster and there are not so many changes at once.
+
+### When will pascom 20 be available?
+
+Thanks to our rolling release, a new major version is only necessary when major technology changes have to be made that require the parallel operation of several versions. No changes of this magnitude are currently in sight.
+
 ### What is meant by "Supported Version"?
 
 The term supported version relates to the most recent bugfix release of a pascom phone system server version. pascom guarantees the following services for supported versions only:

@@ -12,6 +12,14 @@ weight: 14
 
 ![Supported Versions](pascom_version_support.png "Supported Versions")
 
+### Rolling Release 
+
+Wir liefern neue Funktion bei Fertigstellung in einem rollierenden Prozess aus und warten nicht auf die "nächste große" Version. Als Vorteil erhalten unsere Kunden neue Funktionen schneller und es gibt nicht zu viele Änderungen auf einmal.
+
+### Wann wird es pascom 20 geben?
+
+Durch unser Rolling Release ist eine neue Major-Version erst dann nötig, wenn große Technologieänderungen vollzogen werden müssen die einen Parallelbetrieb mehrerer Versionen erfordert. Aktuell sind keine Änderungen dieser Größenordnung in Sichtweite.
+
 ### Was bedeutet unterstützte Version?
 
 Dabei handelt es sich um das jeweils aktuellste Bugfix-Release einer pascom Server Version. Nur für unterstützte Versionen gewährleistet pascom:
