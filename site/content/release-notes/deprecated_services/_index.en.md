@@ -13,7 +13,7 @@ Here you will find an overview of services that no longer work with the current 
 
 |Date|with Version|
 |---|---|
-|July 2020|19.09|  
+|coming soon|19.xx|  
 **Static conference rooms were replaced by pascom groups**
 
 <hr>
