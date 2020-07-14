@@ -38,14 +38,14 @@ These problems are known to us and we are already working on a solution
 
 [Feedback](https://www.pascom.net/forum/t/pascom-client-v65-beta/7348)
 
-**AUF EINEN BLICK**
+**OVERVIEW**
 
 - It's now possible to configure multiple app and url actions
-- Journal is synchronized to the client, faster to filter and searchable (with pascom Server 19.09)
-- Added Support for Sennheiser / EPOS Connect 4.1
-- Updates which would break Installations on onlder operating system or server versions are now automatically prevented
+- Call histories are now fully synchronised to the client, making them faster to filter and search (with pascom Server 19.09)
+- Added support for Sennheiser / EPOS Connect 4.1
+- Updates which are incompatible with older operating system or server versions are now prevented automatically.
 
-**ÄNDERUNGEN**
+**MODIFICATIONS**
 
 * [CL-111] - Improve "No microphone permission" error message on iOS
 * [CL-123] - Improve chat search results to get the whole conversation
