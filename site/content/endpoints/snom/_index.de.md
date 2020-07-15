@@ -21,7 +21,74 @@ pascom ist in der Lage IP-Telefone des Herstellers Snom automatisch und zentral 
 ## Neues Telefon hinzufügen
 
 {{% tabs %}}
-{{% tab "Pairing via URL (cloud + onsite)" %}}
+
+{{% tab "Zero Touch" %}}
+
+**Funkioniert in der CLOUD + ONSITE**
+
+Die Zero Touch Funktion ermöglicht Ihnen eine Einrichtung der Telefone ohne diese manuell zu konfigurieren. Die Provisionierung erfolgt über die Provisionierungs-Server der jeweiligen Hersteller. Dies geschieht alles vollautomatisch.
+
+{{< num 1 "Telefon anschließen" >}}
+
+{{% notice tip %}}
+Handelt es sich nicht um ein fabrikneues Telefon setzen Sie es in jedem
+Fall auf **Werkseinstellungen** zurück. Wählen Sie hierzu am Telefon, im eingeschalteten
+Zustand, <strong>\**##</strong> und halten anschließend <strong>#</strong> gedrückt bis nach dem Reboot ein Menü
+erscheint. Wählen Sie **1** für Werkseinstellungen.
+{{% /notice %}}
+
+Stecken Sie das IP-Telefon an das Netzwerk. Das Telefon enthält einen eingebauten Switch, benutzen Sie den Ethernet-Port mit der Bezeichnung **NET**. Falls Sie kein **PoE** (Power over Ethernet) verwenden, stecken Sie das Telefon an den Netzstrom.
+
+Während des Boot-Vorganges steht wiederholt die IP-Adresse des Telefones im
+Display. Notieren Sie sich diese.
+
+Nach dem Booten bleibt das Telefon bei der Länderauswahl stehen.
+
+{{< num 2 "MAC-Adresse ermitteln" >}}
+
+Die MAC-Adresse steht auf der Rückseite des Telefones.
+
+Alternativ surfen Sie nun mit Ihrem Browser auf die zuvor notierte IP-Adresse des Telefones.
+
+Unter {{< ui-button "System Information" >}} > {{< ui-button "MAC-Address" >}} notieren Sie sich die MAC-Adresse des
+Telefones.
+
+{{< num 3 "Endgerät anlegen" >}}
+
+Loggen Sie sich in Ihrer Telefonanlage ein und fügen unter {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} ein
+neues Gerät vom Typ **IP-Telefon: Hersteller Snom** hinzu.
+
+Wählen Sie einen **Anzeigenamen** für das Telefon z.B Fr. Müller - Zentrale.
+
+Tragen Sie im Feld **Mac-Adresse** die zuvor ermittelte MAC-Adresse des Telefones
+ein.
+
+Für eine Zero Touch Provisionierung hinterlegen Sie noch den **HTTP-Benutzer** und das **HTTP-Passwort** des Telefons. Die Daten erhalten Sie aus dem jeweiligen Herstellerhandbuch. 
+
+{{% notice tip %}}
+Sie können die HTTP-Daten auch frei lassen, müssen dann aber das Telefon manuell neustarten, da die pascom Telefonanlage keinen Zugriff erhält um den erforderlichen Geräteneustart für die Provisionierung durchzuführen.
+{{% /notice %}}
+
+{{< num 4 "Benutzer zuweisen" >}}
+
+Als nächstes können Sie dem IP-Telefon einen Benutzer oder Arbeitsplatz zuweisen. Klicken Sie hierzu auf {{< ui-button "Bearbeiten" >}}. Im Tab {{< ui-button "Zuweisung" >}} kann dem Telefon ein [Benutzer (oder Arbeitsplatz)]({{< ref "concept/user">}}) zugewiesen werden.
+
+{{< num 5 "Jobs Anwenden" >}}
+
+Nach dem Speichern von Änderungen erscheint in der Job-Box (oben) ein
+entsprechender Eintrag die Telefonie anzuwenden. Starten Sie den Job durch
+einen Klick auf den {{< ui-button "grünen Haken" >}}. Das Telefon wird nun komplett eingerichtet.
+
+{{< num 6 "Funktion testen" >}}
+
+Am einfachsten kann man die erfolgreiche Inbetriebnahme testen, indem man mit **\*100** die eigene Voicemailbox anruft. Daraufhin sollte die Ansage Ihrer Voicemailbox zu hören sein.
+
+{{% /tab %}}
+
+{{% tab "Cloud" %}}
+
+**Pairing via URL funktioniert in der CLOUD + ONSITE**  
+*für eine einfachere Einrichtung nutzen Sie Zero Touch*
 
 {{< num 1 "Telefon anschließen" >}}
 
@@ -84,7 +151,10 @@ Am einfachsten kann man die erfolgreiche Inbetriebnahme testen, indem man mit **
 
 {{% /tab %}}
 
-{{% tab "DHCP Provisioning (onsite)" %}}
+{{% tab "Onsite" %}}
+
+**DHCP Provisioning funktioniert nur ONSITE**  
+
 
 {{% notice note %}}
 Für lokale Installationen des pascom Servers ist es möglich Endgeräte per DHCP-Server massenweise und vollautomatisch in Betrieb zu nehmen.

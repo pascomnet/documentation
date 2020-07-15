@@ -24,37 +24,106 @@ For more details, please refer to our HowTo [Telephone Provisioning via DHCP]({{
 
 [pascom phone systems](https://www.pascom.net/en/ "pascom VoIP phone systems") are able to automatically and centrally configure Yealink IP phones. This process is known as Provisioning. For this purpose, pascom phone systems include a Default Configuration ({{< ui-button "Devices" >}} > {{< ui-button "Basic Configuration" >}}). For most deployment scenarios, these standard settings provide an ideal configuration. However, in some cases, the settings may need to be modified.
 
-## Add New Yealink Phone
+## Add New Phone
+{{% tabs %}}
+
+{{% tab "Zero Touch" %}}
+
+**works with CLOUD + ONSITE**
+
+The Zero Touch function allows you to set up the phones without having to configure them manually. The provisioning is done via the provisioning servers of the respective manufacturers. This all happens fully automatically.
+
+{{< num 1 "Connect your Device" >}}
 
 {{% notice tip %}}
 Should the telephone not be factory new, ensure you perform a **factory reset**. In order to do this on the phone, power up the phone and then press {{< ui-button "OK" >}} holding the final until **Factory Reset** appears in the display. Confirm by pressing {{< ui-button "OK" >}}. 
 {{% /notice %}}
 
-Connect the phone to your network. Yealink IP phones come with a built in switch, allowing you to connect the phone directly via the Ethernet port labelled as **Internet**. Should you not have a **PoE** option available, connect the phone to a power supply.
+Connect the phone to your network. Snom IP phones come with a built in switch, allowing you to connect the phone directly via the Ethernet port labelled as **NET**. Should you not have a **PoE** option available, connect the phone to a power supply.
 
-After the boot proces press {{< ui-button "OK" >}} again and note the phone's IP Address. 
+The Snom IP phone will now boot and acquires an IP address which is displayed on the screen during the boot process. Please take a note of this address.
 
-### Finding the MAC Address
+After booting, the phone will stop at the country selection screen.
 
-The MAC address is noted on the rear of the device housing.
+{{< num 2 "Finding the MAC Address" >}}
 
-Alternatively, using your browser go to the previously noted telephone IP address. Log into the phone's web UI using the username and password **admin** **admin**. Under {{< ui-button "Status" >}} > {{< ui-button "MAC Address" >}} take a note of the phone's MAC address. 
+MAC addresses can be found on the rear underside of the telephone.
 
-### Add Yealink Endpoint
+Alternatively, using your browser, surf to the previously noted telephone's IP address.
 
-Log into your pascom phone system web UI and nder {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}} and press {{< ui-button "Add" >}} and select the option **IP Telephone: Manufacturer Yealink**. 
+Under {{< ui-button "System Information" >}} > {{< ui-button "MAC-Address" >}} please take a note of the phone's IP address.
 
-Under the corresponding field, enter the **MAC Address** that you have just found and noted. 
+{{< num 3 "Add Phones / Endpoints" >}}
 
-### Apply Jobs
+Log into your pascom phone system and under {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}} and press {{< ui-button "Add" >}} and select the option **IP Telephone: Manufacturer Yealink**.
+
+Select a **display name** for the telephone
+
+Under the corresponding field, enter the **Mac-Address** that you have just found and noted. 
+
+For a Zero Touch Provisioning, you still have to enter the **HTTP user** and the **HTTP password** of the phone. You can obtain the data from the respective manufacturer's manual. 
+
+{{% notice tip %}}
+You can also leave the HTTP data free, but then you must restart the phone manually, as the pascom telephone system does not have access to perform the necessary device restart for provisioning.
+{{% /notice %}}
+
+{{< num 4 "Assigning Users" >}}
+
+As soon as the IP phone has appeared in the Device List, it can be edited via the {{< ui-button "Edit" >}} button. Under the {{< ui-button "Assign" >}} tab, the phone can be assigned to a [user (or location)]({{< ref "concept/user">}})
+
+{{< num 5 "Apply Jobs" >}}
 
 After saving your phone setup configurations, a corresponding prompt to apply telephony configs will appear in the job box (top of the screen). Simply start the job by clicking on the {{< ui-button "green tick" >}}.
 
-### Finding the Provisioning URL
+{{< num 6 "Function testing" >}}
+
+The simplest method of testing whether a device has been successfully deployed is to call ones Voicemail box via **\*100**. On successfully provisioned phones, you should now hear your Voicemail box prompts.
+
+{{% /tab %}}
+
+{{% tab "Cloud" %}}
+
+**Pairing via URL works with CLOUD + ONSITE**  
+*for a simplier Setup use the Zero Touch function*
+
+{{< num 1 "Connect your Device" >}}
+
+{{% notice tip %}}
+Should the telephone not be factory new, ensure you perform a **factory reset**. In order to do this on the phone, power up the phone and then press {{< ui-button "OK" >}} holding the final until **Factory Reset** appears in the display. Confirm by pressing {{< ui-button "OK" >}}. 
+{{% /notice %}}
+
+Connect the phone to your network. Snom IP phones come with a built in switch, allowing you to connect the phone directly via the Ethernet port labelled as **NET**. Should you not have a **PoE** option available, connect the phone to a power supply.
+
+The Snom IP phone will now boot and acquires an IP address which is displayed on the screen during the boot process. Please take a note of this address.
+
+
+{{< num 2 "Finding the MAC Address" >}}
+
+MAC addresses can be found on the rear underside of the telephone.
+
+Alternatively, using your browser, surf to the previously noted telephone's IP address.
+
+Under {{< ui-button "System Information" >}} > {{< ui-button "MAC-Address" >}} please take a note of the phone's IP address.
+
+{{< num 3 "Add Phones / Endpoints" >}}
+
+Log into your pascom phone system and under {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}} and press {{< ui-button "Add" >}} and select the option **IP Telephone: Manufacturer Yealink**.
+
+Under the corresponding field, enter the **Mac-Address** that you have just found and noted. 
+
+{{< num 4 "Assigning Users" >}}
+
+As soon as the IP phone has appeared in the Device List, it can be edited via the {{< ui-button "Edit" >}} button. Under the {{< ui-button "Assign" >}} tab, the phone can be assigned to a [user (or location)]({{< ref "concept/user">}})
+
+{{< num 5 "Apply Jobs" >}}
+
+After saving your phone setup configurations, a corresponding prompt to apply telephony configs will appear in the job box (top of the screen). Simply start the job by clicking on the {{< ui-button "green tick" >}}.
+
+{{< num 6 "Finding the Provisioning URL" >}}
 
 Select the desired telephone from the device list and under {{< ui-button "Action" >}} select the option {{< ui-button "Provisioning URL" >}}. Copy the **URL** to your clipboard.
 
-### Enter the Provisioning URL on the Telephone
+{{< num 7 "Enter the Provisioning URL on the Telephone" >}}
 
 {{% notice tip %}}
 Should you not have installed an **official certificate** on your proxy, you will need to configure the phone to ***Only Accept Trusted Certificates*** by going to the phone's web UI menu {{< ui-button "Security" >}} > {{< ui-button "Trusted Certificates" >}} and selecting **Disabled** . 
@@ -66,15 +135,49 @@ Click {{< ui-button "Confirm" >}} and finally {{< ui-button "Autprovision Now" >
 
 The phone will now restart.
 
-### Assign Users
-
-As soon as the IP phone has appeared in the Device List, it can be edited via the {{< ui-button "Edit" >}} button. Under the {{< ui-button "Assign" >}} tab, the phone can be assigned to a [user (or location)]({{< ref "concept/user">}}).
-
-After saving and once again apply the telephony configuration, the telephone will restart.
-
-### Function Testing
+{{< num 8 "Function Testing" >}}
 
 The simplest method of testing whether a device has been successfully deployed is to call ones Voicemail box via **\*100**. On successfully provisioned phones, you should now hear your Voicemail box prompts.
+
+{{% /tab %}}
+
+{{% tab "Onsite" %}}
+
+**DHCP Provisioning works only ONSITE**  
+
+{{% notice note %}}
+For local installations of the pascom server it is possible to commission end devices via DHCP server on a mass scale and fully automatically.
+{{% /notice %}}
+
+{{< num 1 "Prepare your DHCP-Server" >}}
+
+Prepare a DHCP server as described in [Phone Provisioning via DHCP]({{{< ref "/howto/dhcp-provisioning" >}}).
+
+{{< num 2 "Connect your Device" >}}
+
+{{% notice tip %}}
+Should the telephone not be factory new, ensure you perform a **factory reset**. In order to do this on the phone, power up the phone and then press {{< ui-button "OK" >}} holding the final until **Factory Reset** appears in the display. Confirm by pressing {{< ui-button "OK" >}}. 
+{{% /notice %}}
+
+Connect the phone to your network. Snom IP phones come with a built in switch, allowing you to connect the phone directly via the Ethernet port labelled as **NET**. Should you not have a **PoE** option available, connect the phone to a power supply.
+
+The device is **automatically** configured by the pascom server and **appears** in the list {{{< ui-button "Devices" >}}} > {{{< ui-button "Device List" >}}. 
+
+{{< num 3 "Assigning Users" >}}
+
+As soon as the IP phone has appeared in the Device List, it can be edited via the {{< ui-button "Edit" >}} button. Under the {{< ui-button "Assign" >}} tab, the phone can be assigned to a [user (or location)]({{< ref "concept/user">}})
+
+{{< num 4 "Apply Jobs" >}}
+
+After saving your phone setup configurations, a corresponding prompt to apply telephony configs will appear in the job box (top of the screen). Simply start the job by clicking on the {{< ui-button "green tick" >}}.
+
+{{< num 5 "Function testing" >}}
+
+The simplest method of testing whether a device has been successfully deployed is to call ones Voicemail box via **\*100**. On successfully provisioned phones, you should now hear your Voicemail box prompts.
+
+{{% /tab %}}
+{{% /tabs %}}
+
 
 ### pascom Menu Key
 

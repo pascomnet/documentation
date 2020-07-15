@@ -12,47 +12,108 @@ weight: 11
 
 **[List of supported Endpoints, Click here!]({{<ref "/endpoints#grandstream-ip-phones" >}})**
 
-## Configuration
-
-With [our VoIP Software] (https://www.pascom.net/en/ "pascom VoIP phone systems") it is possible to centrally and automatically configure the majority of Grandstream IP Telephones. This process is know as {{< ui-button "Provisioning" >}}. For this purpose, pascom phone systems include a Default Configuration ({{< ui-button "Devices" >}} > {{< ui-button "Basic Configuration" >}}). For most deployment scenarios, these standard settings provide a sufficient set of parameters. However, in some cases, the settings may need to be modified.
-
-{{% notice tip%}}
-By new installations, you should first test the provisioning process with a telephone. Should this be successful then you will be able to deploy further telephones.
+{{% notice tip %}}
+For local pascom phone system installations, it is possible to automatically on-board and perform mass deployments of endpoints using the DHCP server.
+For more details, please refer to our HowTo [Telephone Provisioning via DHCP]({{< ref "/howto/dhcp-provisioning" >}}).
 {{% /notice %}}
 
-### Preparation
+[pascom phone systems](https://www.pascom.net/en/ "pascom VoIP phone systems") are able to automatically and centrally configure Yealink IP phones. This process is known as Provisioning. For this purpose, pascom phone systems include a Default Configuration ({{< ui-button "Devices" >}} > {{< ui-button "Basic Configuration" >}}). For most deployment scenarios, these standard settings provide an ideal configuration. However, in some cases, the settings may need to be modified.
 
-In order to automatically deploy (AutoProvision) Grandstream Telephones, a functioning DHCP server is required.
+## Add New Phone
+{{% tabs %}}
 
-### Device Onboarding
-    
-Connect the phone to your network. Grandstream IP phones come with a built in switch, allowing you to connect the phone directly via the Ethernet port labelled as **LAN**. Should you not have a **PoE** option available, connect the phone to a power supply.
-    
-The Grandstream IP phone will now boot and acquires an IP address and the corresponding Basic Configurations via DHCP. After this process is completed, the device will automatically appear under {{< ui-button "device" >}} > {{< ui-button "device list" >}} as well as adding the appropriate SIP peer.
-    
-As mentioned above, for every device pascom will also automatically add a SIP peer. In addition, the device username and password will also be automatically generated. The username consists of a randomly generated string followed by the last six digits of the device’s MAC address (15 digits in total). As the IP phones are automatically provisioned, you will not be required to enter this data manually and it is not possible to modify the user data. This is designed to considerably increase security against SIP Brute Force attacks.
-    
-The Device Name will be automatically added as signified by the vendor (Grandstream) and the MAC Address. On most IP phones, the MAC address is noted on the device housing, allowing phones to be more simply deployed on site in the correct locations.
-    
-After a successful provisioning, the IP phone display should show to correct language and time as well as the text {{< ui-button "Emergency Only" >}}
-    
-{{% notice info%}}
-After the successful phone provisioning, the admin user will be reset by the PBX with the following credentials:  
-<br>Username: *admin*
-<br>Password: *0000*
-{{% /notice  %}}
-    
-The Telephone Admin User Password can be changed within the Web UI under system settings. Use the search box and search for the parameter *sys.peripherals.access.password* and enter your desired password. Finally, you will be required to manually apply the Telephony Configurations and restart the endpoint.
+{{% tab "Cloud" %}}
 
-### Assigning Users
+**Pairing via URL works with CLOUD + ONSITE**  
 
-As soon as the IP phone has appeared in the Device List, it can be edited via the {{< ui-button "Edit" >}} button. Under the {{< ui-button "Assign" >}} tab, the phone can be assigned to a [user (or location)]({{< ref "/user/user">}}).
 
-After saving your assignments and reapplying the telephony configurations, all affected IP phones will restart.
+{{< num 1 "Connect your Device" >}}
 
-### Function Testing
+{{% notice tip %}}
+Should the telephone not be factory new, ensure you perform a **factory reset**. 
+{{% /notice %}}
 
-The simplest method of testing whether a device has been successfully deployed is to call your Voicemail box via **\*100**. On successfully provisioned phones, you should now hear your Voicemail box prompts.
+Connect the phone to your network. Snom IP phones come with a built in switch, allowing you to connect the phone directly via the Ethernet port labelled as **NET**. Should you not have a **PoE** option available, connect the phone to a power supply.
+
+The Snom IP phone will now boot and acquires an IP address which is displayed on the screen during the boot process. Please take a note of this address.
+
+
+{{< num 2 "Finding the MAC Address" >}}
+
+MAC addresses can be found on the rear underside of the telephone.
+
+Alternatively, using your browser, surf to the previously noted telephone's IP address.
+
+Under {{< ui-button "System Information" >}} > {{< ui-button "MAC-Address" >}} please take a note of the phone's IP address.
+
+{{< num 3 "Add Phones / Endpoints" >}}
+
+Log into your pascom phone system and under {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}} and press {{< ui-button "Add" >}} and select the option **IP Telephone: Manufacturer Grandstream**.
+
+Under the corresponding field, enter the **Mac-Address** that you have just found and noted. 
+
+{{< num 4 "Assigning Users" >}}
+
+As soon as the IP phone has appeared in the Device List, it can be edited via the {{< ui-button "Edit" >}} button. Under the {{< ui-button "Assign" >}} tab, the phone can be assigned to a [user (or location)]({{< ref "concept/user">}})
+
+{{< num 5 "Apply Jobs" >}}
+
+After saving your phone setup configurations, a corresponding prompt to apply telephony configs will appear in the job box (top of the screen). Simply start the job by clicking on the {{< ui-button "green tick" >}}.
+
+{{< num 6 "Finding the Provisioning URL" >}}
+
+Select the desired telephone from the device list and under {{< ui-button "Action" >}} select the option {{< ui-button "Provisioning URL" >}}. Copy the **URL** to your clipboard.
+
+{{< num 7 "Enter the Provisioning URL on the Telephone" >}}
+
+Go to the Grandstream phone's admin UI, and enter the copied provisioning URL.
+
+Click {{< ui-button "Confirm" >}} and finally {{< ui-button "reboot" >}}.
+
+The phone will now restart and provision itself.
+
+{{< num 8 "Function Testing" >}}
+
+The simplest method of testing whether a device has been successfully deployed is to call ones Voicemail box via **\*100**. On successfully provisioned phones, you should now hear your Voicemail box prompts.
+
+{{% /tab %}}
+
+{{% tab "Onsite" %}}
+
+**DHCP Provisioning works only ONSITE**  
+
+{{% notice note %}}
+For local installations of the pascom server it is possible to commission end devices via DHCP server on a mass scale and fully automatically.
+{{% /notice %}}
+
+{{< num 1 "Prepare your DHCP-Server" >}}
+
+Prepare a DHCP server as described in [Phone Provisioning via DHCP]({{{< ref "/howto/dhcp-provisioning" >}}).
+
+{{< num 2 "Connect your Device" >}}
+
+{{% notice tip %}}
+Should the telephone not be factory new, ensure you perform a **factory reset**. In order to do this on the phone, power up the phone and then press {{< ui-button "OK" >}} holding the final until **Factory Reset** appears in the display. Confirm by pressing {{< ui-button "OK" >}}. 
+{{% /notice %}}
+
+Connect the phone to your network. Snom IP phones come with a built in switch, allowing you to connect the phone directly via the Ethernet port labelled as **NET**. Should you not have a **PoE** option available, connect the phone to a power supply.
+
+The device is **automatically** configured by the pascom server and **appears** in the list {{{< ui-button "Devices" >}}} > {{{< ui-button "Device List" >}}. 
+
+{{< num 3 "Assigning Users" >}}
+
+As soon as the IP phone has appeared in the Device List, it can be edited via the {{< ui-button "Edit" >}} button. Under the {{< ui-button "Assign" >}} tab, the phone can be assigned to a [user (or location)]({{< ref "concept/user">}})
+
+{{< num 4 "Apply Jobs" >}}
+
+After saving your phone setup configurations, a corresponding prompt to apply telephony configs will appear in the job box (top of the screen). Simply start the job by clicking on the {{< ui-button "green tick" >}}.
+
+{{< num 5 "Function testing" >}}
+
+The simplest method of testing whether a device has been successfully deployed is to call ones Voicemail box via **\*100**. On successfully provisioned phones, you should now hear your Voicemail box prompts.
+
+{{% /tab %}}
+{{% /tabs %}}
 
 ### Accessing the Grandstream Web UI
 
