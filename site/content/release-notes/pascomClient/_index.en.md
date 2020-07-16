@@ -33,10 +33,18 @@ These problems are known to us and we are already working on a solution
 * [CL-1260] If the integrated camera of Microsoft Surface devices is used, the image often has a green cast. [A Beta-Version with a bugfix is available here.](https://www.pascom.net/forum/t/pascom-client-beta-fur-microsoft-surface-gerate-intel-avstream-webcams/7312)
 * [CL-1344] Screensharing does not work if a Wayland Session is used on Linux. Use a X11 Session type instead
 
+## BETA 65.D1242 (16.07.2020)
+
+[Feedback](https://www.pascom.net/forum/t/pascom-client-v65-beta/7348)
+
+**OVERVIEW**
+
+- Added a Filter for "Internal/External/Both" to the Journal
+- Journal list now shows picked calls in a more clear way
+- Fix a crash on android which prevented wakeup on push, if the app was quitted earlier
 
 ## BETA 65.D1234 (14.07.2020)
 
-[Feedback](https://www.pascom.net/forum/t/pascom-client-v65-beta/7348)
 
 **OVERVIEW**
 
