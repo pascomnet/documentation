@@ -24,6 +24,10 @@ Verwenden Sie von pascom unterstütze Endgeräte um alle integrierten Provisioni
 
 [![Snom Einrichtung](snom-series.png?width=70%)]({{<ref "/endpoints/snom" >}})
 
+{{% notice warning %}}
+Modelle aus der Snom 3xx und 7xx Reihe sind in der aktuellen pascom Cloud-Lösung nicht funktionsfähig und können nur OnSite verwendet werden. Nutzen Sie
+das attraktive SNOM Exchange Programm um auf die neuere SNOM Serie zu wechseln. [Weitere Infos](https://www.pascom.net/de/blog/snom-exchange-programm-neu-gegen-alt/)
+{{% /notice %}}
 
 |Provisionierung|Firmware-Verwaltung|Fernsteuerung über Desktop-Client|pascom Menü|
 |---|---|---|---|
@@ -34,9 +38,7 @@ Verwenden Sie von pascom unterstütze Endgeräte um alle integrierten Provisioni
 **Fernsteuerung über Desktop-Client**: Gespräche können über den Desktop-Client gestartet werden.<br>
 **pascom Menü**: An einer Taste am Telefon wird das pascom Menü hinterlegt.
 
-{{% notice warning %}}
-Modelle aus der Snom 3XX Reihe sind in der aktuellen pascom Cloud-Lösung nicht funktionsfähig und können nur OnSite verwendet werden. 
-{{% /notice %}}
+
 
 |Modelle||
 |---|---|
@@ -46,7 +48,8 @@ Modelle aus der Snom 3XX Reihe sind in der aktuellen pascom Cloud-Lösung nicht 
 |Snom D375|Snom D735|
 |Snom D385|Snom D745|
 |Snom D712|Snom D765|
-|Snom D785||
+|Snom D785|Snom D305|
+|Snom D335||
 
 <!--- |Modell|getestete Firmware-Version|
 |---|---|
@@ -72,9 +75,6 @@ alt:
 Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es uns leider nicht möglich jede zu testen, so dass es sein kann, dass manche Firmware-Versionen pascom Funktionen nicht unterstützen.
 {{% /notice %}}
 
-{{% notice info %}}
-Aufgrund aktueller Sicherheitsstandards werden Snom IP-Telefone der 3XX Reihe in der kommenden pascom 19 Version nicht mehr unterstützt.
-{{% /notice %}}
 
  **[Einrichtung SNOM Telefone, hier klicken!]({{<ref "/endpoints/snom" >}})**
 

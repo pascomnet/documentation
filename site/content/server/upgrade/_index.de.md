@@ -20,6 +20,7 @@ Für die Migration **benötigen** Sie außerdem einen **my.pascom.net Zugang**. 
 Bitte beachten Sie folgende Checkliste **BEVOR** Sie mit dem Upgrade beginnen
 
 * [ ] Ich verwende keine Siemens Telefone
+* [ ] Ich verwende keine Snom Telefone der alten 3xx & 7xx Serie
 * [ ] Ich verwende keine Patton Gateways
 * [ ] Ich verwende keine cisco SPA 112 Gateways
 * [ ] Ich verwende keine FlexPanels

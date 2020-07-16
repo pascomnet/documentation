@@ -24,6 +24,11 @@ Use the end devices supported by pascom to use all the integrated provisioning a
 ## Snom IP Phones
 [![Snom Setup](snom-series.png?width=70%)]({{<ref "/endpoints/snom" >}})
 
+{{% notice warning %}}
+Snom 3xx and 7xx series IP phones are currently not compatible with the pascom cloud and can only be deployed in an on-premise pascom phone system solution.
+You can use the attractive SNOM Exchange program to switch to the newer SNOM series. [Further info](https://www.pascom.net/en/blog/snom-exchange-new-for-old/)
+{{% /notice %}}
+
 |Provisioning|Firmware Management|Desktop Client CTI Control|pascom Menu|
 |---|---|---|---|
 |yes|yes|yes|yes|
@@ -33,9 +38,9 @@ Use the end devices supported by pascom to use all the integrated provisioning a
 **Desktop Client CTI Control**: The desktop UC client can remotely control the phone, i.e. to start calls.<br>
 **pascom Menu**: A button on the phone will be assigned to access the pascom menu.
 
-{{% notice warning %}}
-Snom 3xx series IP phones are currently not compatible with the pascom cloud and can only be deployed in an on-premise pascom phone system solution.
-{{% /notice %}}
+
+Nutzen Sie
+das attraktive SNOM Exchange Programm um auf die neuere SNOM Serie zu wechseln. [Weitere Infos](https://www.pascom.net/de/blog/snom-exchange-programm-neu-gegen-alt/)
 
 |Models||
 |---|---|
@@ -45,7 +50,8 @@ Snom 3xx series IP phones are currently not compatible with the pascom cloud and
 |Snom D375|Snom D735|
 |Snom D385|Snom D745|
 |Snom D712|Snom D765|
-|Snom D785||
+|Snom D785|Snom D305|
+|Snom D335||
 
 <!--- |Modell|getestete Firmware-Version|
 |---|---|
@@ -71,9 +77,6 @@ alt:
 Due to vast range of firmware versions available for the different IP telephones, it is not possible for us to test each version. Therefore, it could be the case that pascom does not support some firmware versions. 
 {{% /notice %}}
 
-{{% notice info %}}
-Due to the current security standards, Snom 3xx IP telephones will not be supported in the upcoming pascom 19 version.
-{{% /notice %}}
 
 **[Setup Snom Endpoints, Click here!]({{<ref "/endpoints/snom" >}})**
 
