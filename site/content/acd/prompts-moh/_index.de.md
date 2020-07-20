@@ -10,7 +10,7 @@ weight: 30
 
 ## Konzept
 
-An vielen Stellen haben Sie die Möglichkeit dem [Anrufer in Ihrem Call Center](https://www.pascom.net/de/voip-telefonanlage) oder Ihrer Zentrale, Ansagen oder Wartemusik vorzuspielen. pascom liefert bereits eine große Anzahl an vorgefertigten Ansagen mit. Allerdings ist es fast immer sinnvoll eigene Ansagen, z. B. zur Begrüßung Ihrer Kunden oder zur Ansage der Geschäftszeiten, zu erstellen.   
+An vielen Stellen haben Sie die Möglichkeit dem [Anrufer in Ihrem Call Center](https://www.pascom.net/de/voip-telefonanlage/ "pascom VoIP Telefonanlagen") oder Ihrer Zentrale, Ansagen oder Wartemusik vorzuspielen. pascom liefert bereits eine große Anzahl an vorgefertigten Ansagen mit. Allerdings ist es fast immer sinnvoll eigene Ansagen, z. B. zur Begrüßung Ihrer Kunden oder zur Ansage der Geschäftszeiten, zu erstellen.   
 
 {{% notice tip %}}
 Wollen Sie Ihre Ansagen lieber von einem Tonstudio mit professionellem Sprecher erstellen lassen? Unser Vertrieb hilft Ihnen gerne weiter.

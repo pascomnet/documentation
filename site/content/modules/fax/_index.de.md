@@ -14,7 +14,7 @@ weight: 10
 
 ## Übersicht
 
-[In unsere VoIP Software](https://www.pascom.net/de/) ist ein Fax-Server integriert. Dabei handelt es sich um das Produkt [HylaFax](http://www.hylafax.org/) welches über virtuelle IAX-Modems direkt an den Asterisk Telefonieserver angekoppelt ist.
+[In unserer VoIP Telefonanlagen Software](https://www.pascom.net/de/voip-telefonanlage/ "pascom VoIP-Telefonanlagen") ist ein Fax-Server integriert. Dabei handelt es sich um das Produkt HylaFax welches über virtuelle IAX-Modems direkt an den Asterisk Telefonieserver angekoppelt ist.
 
 Dabei stehen Ihnen folgende [UC Fax-Möglichkeiten](https://www.pascom.net/de/voip-telefonanlage/unified-communications/ "pascom Unified Communications Fax-to-E-mail") zur Verfügung:
 

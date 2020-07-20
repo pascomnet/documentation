@@ -10,7 +10,7 @@ weight: 10
 
 ## Ihre Firewall anpassen
 
-Viele Unternehmen haben **keinen eingeschränkten Internetzugriff** und können den **pascom Desktop [UC Client](https://www.pascom.net/de/voip-telefonanlage/unified-communications/ "pascom Unified Communications")** daher **sofort**, ohne jede Anpassung an der Firewall **nutzen**.
+Viele Unternehmen haben **keinen eingeschränkten Internetzugriff** und können den [pascom Desktop UC Client](https://www.pascom.net/de/voip-telefonanlage/unified-communications/ "pascom Unified Communications Apps für Windows, macOS & Linux") daher **sofort**, ohne jede Anpassung an der Firewall **nutzen**.
 
 Wenn Sie jedoch genau festlegen auf welche Internetdienste Ihr Unternehmensnetzwerk zugreifen darf, schalten Sie bitte folgende Ports für den pascom Desktop Client frei, um einen reibungslosen Betrieb der pascom Telefonanlage zu ermöglichen:
 

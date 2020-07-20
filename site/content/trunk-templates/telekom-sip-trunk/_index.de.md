@@ -14,8 +14,7 @@ weight: 10
 
 ## Übersicht
 
-Informationen über Leistungsmerkmale und Tarife finden Sie [hier](https://geschaeftskunden.telekom.de/startseite/festnetz-internet/tarife/333506/deutschlandlan-sip-trunk.html).
-Die pascom Telefonanlage (sowohl Classic als auch Cloudstack) unterstützt nur Business-Anschlüsse von Telekom.
+Informationen über Leistungsmerkmale und Tarife finden Sie [hier](https://geschaeftskunden.telekom.de/startseite/festnetz-internet/tarife/333506/deutschlandlan-sip-trunk.html). Die [pascom Telefonanlage](https://www.pascom.net/de/voip-telefonanlage/ "pascom VoIP-Telefonagen Software") (sowohl Classic als auch Cloud) unterstützt nur Business-Anschlüsse von Telekom.
 
 {{% notice warning %}}
 pascom unterstützt die direkte Registrierung des SIP Accounts in der Telefonanlage nur in Verbindung mit dem von der Telekom [empfohlenen Lancom Router](https://geschaeftskunden.telekom.de/startseite/festnetz-internet/tarife/354892/paket-zum-anschluss-einer-ip-telefonanlage.html) für den Anschluss einer IP-Telefonanlage. Alternativ kann die [Registrierung im Router]({{< relref "#einrichtung-via-fritz-box">}}) vorgenommen werden.<br/><br/>
