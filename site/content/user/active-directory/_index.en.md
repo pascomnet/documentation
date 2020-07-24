@@ -89,7 +89,7 @@ For example, should you wish to save the Job Title of a user in the pascom telep
 
 |Variable|Source|
 |----|----|
-|job|return $row["job"];|
+|job|`return $row["job"];`|
 
 Through this row, the connector saves the content of the Active Directory "job" field under the variable of the same name "job". 
 This Variable must now be assigned to the pascom telephone book notes field under the {{< ui-button "Structure" >}} tab.
@@ -224,7 +224,7 @@ Under the {{< ui-button "Variables" >}} tab add the following lines by clicking 
 
 |Variable|Source|
 |----|----|
-|mac|return $row["ipPhone"];|
+|mac|`return $row["ipPhone"];`|
 
 This line instructs the Connector to save the content of the Active Directory field "ipPhone" to the variable "mac".
 "mac" corresponds to the MAC Address of the IP phone which should be assigned to the user.

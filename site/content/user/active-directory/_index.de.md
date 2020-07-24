@@ -92,7 +92,7 @@ Fügen Sie hierzu im Reiter {{< ui-button "Variablen" >}} folgende Zeile durch {
 
 |Variable|Quelle|
 |----|----|
-|job|return $row["job"];|
+|job|`return $row["job"];`|
 
 Durch diese Zeile speichert der Connector den Inhalt des ActiveDirectory Feldes "job" in der gleichnamigen Variable "job" ab.
 Diese Variable muss nun unter {{< ui-button "Struktur" >}} dem Notiz pascom-Telefonbuch Feld zugeordnet werden.
@@ -227,7 +227,7 @@ Fügen Sie hierzu im Reiter {{< ui-button "Variablen" >}} folgende Zeile durch {
 
 |Variable|Quelle|
 |----|----|
-|mac|return $row["ipPhone"];|
+|mac|`return $row["ipPhone"];`|
 
 Durch diese Zeile speichert der Connector den Inhalt des ActiveDirectory Feldes "ipPhone" in der Variable "mac" ab.
 "mac" entspricht der MAC-Adresse des IP-Telefons das zugewiesen werden soll.
