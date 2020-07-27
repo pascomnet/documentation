@@ -33,9 +33,17 @@ These problems are known to us and we are already working on a solution
 * [CL-1260] If the integrated camera of Microsoft Surface devices is used, the image often has a green cast. [A Beta-Version with a bugfix is available here.](https://www.pascom.net/forum/t/pascom-client-beta-fur-microsoft-surface-gerate-intel-avstream-webcams/7312)
 * [CL-1344] Screensharing does not work if a Wayland Session is used on Linux. Use a X11 Session type instead
 
-## BETA 65.D1242 (16.07.2020)
+## Beta 65.D1253 (24.07.2020)
 
 [Feedback](https://www.pascom.net/forum/t/pascom-client-v65-beta/7348)
+
+**OVERVIEW**
+
+- Editing of labels on phonebook entries works again
+- Enhanced and extended UI to edit client actions
+- Fixed copy & paste and file-selection for file transfers on windows, it should work more reliable again
+
+## BETA 65.D1242 (16.07.2020)
 
 **OVERVIEW**
 

@@ -92,7 +92,7 @@ Fügen Sie hierzu im Reiter {{< ui-button "Variablen" >}} folgende Zeile durch {
 
 |Variable|Quelle|
 |----|----|
-|job|return $row["job"];|
+|job|`return $row["job"];`|
 
 Durch diese Zeile speichert der Connector den Inhalt des ActiveDirectory Feldes "job" in der gleichnamigen Variable "job" ab.
 Diese Variable muss nun unter {{< ui-button "Struktur" >}} dem Notiz pascom-Telefonbuch Feld zugeordnet werden.
@@ -227,17 +227,17 @@ Fügen Sie hierzu im Reiter {{< ui-button "Variablen" >}} folgende Zeile durch {
 
 |Variable|Quelle|
 |----|----|
-|mac|return $row["ipphone"];|
+|mac|`return $row["ipPhone"];`|
 
-Durch diese Zeile speichert der Connector den Inhalt des ActiveDirectory Feldes "ipphone" in der Variable "mac" ab.
+Durch diese Zeile speichert der Connector den Inhalt des ActiveDirectory Feldes "ipPhone" in der Variable "mac" ab.
 "mac" entspricht der MAC-Adresse des IP-Telefons das zugewiesen werden soll.
 Diese Variable muss nun unter {{< ui-button "Struktur" >}} dem IP-Telefon pascom Feld zugeordnet werden.
 
 Ergänzen Sie hierzu die Zeilen:
 
-    ,"ipphone“: [{
-      "010dev_bez": "{{username}}_sipdevice“,
-      „071ipp_mac“: „{{{mac}}}“
+    ,"ipphone": [{
+      "010dev_bez": "{{username}}_sipdevice",
+      "071ipp_mac": "{{{mac}}}"
     }],
 
 **Softphone zuweisen:**
