@@ -15,7 +15,7 @@ The pascom Web Client does not replace the pascom desktop or mobile client, but 
 
 ## pascom Training Video
 
-Coming soon!
+{{< youtube QxdSqWK9dt8 >}} 
 
 ## Supported Browsers
 
