@@ -33,9 +33,19 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 * [CL-1260] Auf Microsoft-Surface Geräten kommt es bei der Verwendung der integrierten Kamera oft zu einem Grünstich im Bild. [Eine Beta-Version mit einem Bugfix ist hier verfügbar.](https://www.pascom.net/forum/t/pascom-client-beta-fur-microsoft-surface-gerate-intel-avstream-webcams/7312)
 * [CL-1344] Screensharing funktioniert unter Ubuntu Linux nicht wenn eine Wayland-Session verwendet wird. Als Workaround kann auf eine X11-Session umgeschaltet werden
 
-## Beta 65.D1253 (24.07.2020)
+## Beta 65.D1264 (28.07.2020)
 
 [Feedback](https://www.pascom.net/forum/t/pascom-client-v65-beta/7348)
+
+**AUF EINEN BLICK**
+
+- Voicemails werden nun unter Windows auf dem richtigen Standardgerät wiedergegeben, wenn der Konfigurierte Lautsprecher nicht verfügbar ist
+- Faxe werden im Journal nun richtig Dargestellt
+- Video-Kamera erkennung unter Windows ist nun zuverlässiger
+- Individuelle Klingeltöne bleiben nun auch nach einem Neustart des Clients wieder erhalten
+
+## Beta 65.D1253 (24.07.2020)
+
 
 **AUF EINEN BLICK**
 
