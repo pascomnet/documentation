@@ -64,7 +64,7 @@ angelegt werden.
 
 |Aktions-Typen|Beschreibung|
 |---|---|
-|**Ansagen**|Spielt eine Ansage vor. Diese kann hinzugefügt werden unter {{< ui-button "Erweitert" >}} > {{< ui-button "Ansagen" >}}.|
+|**Ansagen**|Spielt eine Ansage ab. Diese kann hinzugefügt werden unter {{< ui-button "Erweitert" >}} > {{< ui-button "Ansagen" >}}.|
 |**Voicemailbox**|Verbindet den Anrufer mit einer Voicemailbox. Dies kann die Eigene sein, die eines anderen Benutzers oder die eines Teams. Zusätzlich kann bei der Voicemailbox *Hinweis* (dass Benutzer nicht erreichbar oder belegt ist) und *Handhabung* (Ansage, dass der Anrufer eine Nachricht hinterlassen kann) gesetzt werden.|
 |**Auflegen**|Legt den Anruf auf. Diese Aktion z.B. zu empfehlen, wenn dem Anrufer nur eine Ansage vorgespielt wird.|
 |**Skript**|Führt ein Skript aus, das zuvor unter dem Menüpunkt {{< ui-button "Erweitert" >}} > {{< ui-button "Skripte" >}} erstellt wurde.|
@@ -126,7 +126,7 @@ Legen Sie eine Aktionsvorlage an unter {{< ui-button "Anrufverteilung" >}} > {{<
 
 Nach dem {{< ui-button "Speichern" >}} können im Tab {{< ui-button "Aktionen" >}} diese angelegt werden.
 
-Um Aktionen auf die entsprechende Objekte auszurollen, gehen Sie zurück zur Übersicht ({{< ui-button "Anrufverteilung" >}} > {{< ui-button "Aktionsvorlagen" >}}), setzten Sie bei der gewünschten Vorlage ein Häkchen und klicken Sie auf {{< ui-button "Vorlage ausrollen" >}}.
+Um Aktionen auf die entsprechenden Objekte auszurollen, gehen Sie zurück zur Übersicht ({{< ui-button "Anrufverteilung" >}} > {{< ui-button "Aktionsvorlagen" >}}), setzten Sie bei der gewünschten Vorlage einen Haken und klicken Sie auf {{< ui-button "Vorlage ausrollen" >}}.
 
 Im ersten Tab stellen Sie noch {{< ui-button "Optionen" >}} für die Vorlage ein:
 

@@ -23,7 +23,7 @@ Wollen Sie Ihre Ansagen lieber von einem Tonstudio mit professionellem Sprecher 
 Zum Anlegen einer neuen Ansage wählen Sie in der pascom Weboberfläche {{< ui-button "Erweitert" >}} > {{< ui-button "Ansagen" >}}. Möchten Sie eine bereits bestehende Ansage bearbeiten, markieren Sie diese und klicken Sie auf {{< ui-button "Bearbeiten" >}}. Um eine neue Ansage zu erstellen klicken Sie auf {{< ui-button "Hinzufügen" >}}.
 
 {{% notice note %}}
-Wir empfehlen Ihnen einen Präfix für Ihre eingenen Ansagen zu verwenden um eine bessere Übersicht zu haben und um die eigenen Ansagen später leichter zu finden.<br>Z. B. *CC-gescheaftszeiten*, wobei hier CC für die Firma ChaosConsulting steht.
+Wir empfehlen Ihnen einen Präfix für Ihre eigenen Ansagen zu verwenden um eine bessere Übersicht zu haben und um die eigenen Ansagen später leichter zu finden.<br>Z. B. *CC-gescheaftszeiten*, wobei hier CC für die Firma ChaosConsulting steht.
 {{% /notice %}}
 
 Nun wird vorerst der "Platz" für die Ansagen angelegt.
@@ -41,10 +41,10 @@ Angelegte Ansagen können Sie über Ihr Telefon aufsprechen.
 
 Dazu muss die Ansage freigeschaltet werden. Klicken Sie in der Spalte **Freigegeben** auf **Freigeben**. Nun erscheint eine sechstellige Ansagen-ID.
 
-Wählen Sie an Ihrem Telefon \***50** um in das pascom Ansagesystem zu gelanden. Durch das Drücken der 1 können Sie eine Ansage Aufnehmen. Sie werden nach der Ansage-ID gefragt. geben Sie diese ein und nach dem **Beep** können Sie die Ansage aufsprechen.
+Wählen Sie an Ihrem Telefon \***50** um in das pascom Ansagesystem zu gelangen. Durch das Drücken der 1 können Sie eine Ansage Aufnehmen. Sie werden nach der Ansage-ID gefragt. geben Sie diese ein und nach dem **Beep** können Sie die Ansage aufsprechen.
 
 {{% notice note %}}
-Wenn Sie die Ansage fertig aufgesprochen haben legen Sie nicht auf sonder drücken Sie die #-Taste um die Ansage zu speichern. Wenn Sie einfach auflegen wir die Ansage auch gespeichert, allerdings wird die Geräuschkulisse des Auflegens auch mit aufgenommen, was meistens unerwünscht ist.
+Wenn Sie die Ansage fertig aufgesprochen haben legen Sie nicht auf, sondern drücken Sie die #-Taste um die Ansage zu speichern. Wenn Sie einfach auflegen wir die Ansage auch gespeichert, allerdings wird die Geräuschkulisse des Auflegens auch mit aufgenommen, was meistens unerwünscht ist.
 {{% /notice %}}
 
 Sie können die gerade aufgesprochene Ansage anhören, indem Sie erneut mit der \***50** in das Ansagesystem gehen. Durch drücken einer beliebigen Taste am Telefon (statt der 1) und nach Eingabe der Ansagen-ID wird die Ansage abgespielt.
@@ -67,9 +67,9 @@ Klären Sie immer die Vermarktungsrechte der von Ihnen verwendeten Musik. Wähle
 Eine große Auswahl an lizenzierbarer Wartemusik gibt es unter [http://www.musicfox.com](http://www.musicfox.com "Zur musicfox Webseite")
 {{% /notice %}}
 
-In pascom wählen Sie nicht einzelne Musikstücke aus die abgespielt werden sollen sondern ganze Playliste. Im Lieferumfang ist die Playliste (Klasse) **default** enthalten. Diese beinhaltet drei Melodien welche von den Asterisk Entwicklern frei gegeben wurden und somit GEMA-frei sind.
+In pascom wählen Sie nicht einzelne Musikstücke aus die abgespielt werden sollen, sondern ganze Playlisten. Im Lieferumfang ist die Playlist (Klasse) **default** enthalten. Diese beinhaltet ein Musikstück welches von den Asterisk Entwicklern frei gegeben wurde und somit GEMA-frei ist.
 
-Wenn Sie eine Playliste anhaken können Sie unter {{< ui-button "Aktion" >}} > {{< ui-button "Musikstücke" >}} die einzelnen Musikstücke anzeigen lassen bzw. löschen. Möchten Sie neue Musikstücke für diese Playliste hochladen wählen Sie {{< ui-button "Aktion" >}} > {{< ui-button "Musikstück" >}} hochladen.
+Wenn Sie eine Playliste anhaken, können Sie unter {{< ui-button "Aktion" >}} > {{< ui-button "Musikstücke" >}} die einzelnen Musikstücke anzeigen lassen bzw. löschen. Möchten Sie neue Musikstücke für diese Playliste hochladen wählen Sie {{< ui-button "Aktion" >}} > {{< ui-button "Musikstück" >}} hochladen.
 
 Kompatible Formate sind **WAV** und **MP3** Dateien.
 
@@ -88,7 +88,7 @@ Ein gutes, kostenloses und plattformunabhängiges Programm zur Erstellung von An
 
 ![Ansage mit Audacity erstellen](audacity.de.png?width=90%)
 
-Die Verwendung ist recht simpel. Das passende Microfon wählen (siehe Screenshot "Built-in Microphone"), Lautstärke einstellen und Aufnahme durch den roten Record-Knopf starten.
+Die Verwendung ist recht simpel. Das passende Mikrofon wählen (siehe Screenshot "Built-in Microphone"), Lautstärke einstellen und Aufnahme durch den roten Record-Knopf starten.
 
 {{% notice tip %}}
 Keine Hektik. Drücken Sie den Record-Knopf und sprechen Sie die Ansage u. U. mehrmals hintereinander auf. Sie können die Ansage hinterher einfach durch Markieren der Tonspur und anschließendem Drücken der ENTF Taste zurechtschneiden.

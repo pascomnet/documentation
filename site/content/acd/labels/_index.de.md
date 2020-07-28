@@ -13,7 +13,7 @@ weight: 10
 
 ## Konzept
 
-Labels sind sogenannte **"Container"** die Informationen beinhalten wie z.B. Kundennummer, VIP, Blacklist etc., welche die pascom Telefonanlage weiter verarbeiten kann. Labels werden unterschieden in ***statische*** und ***dynamische*** Labels und finden an unterschiedlichsten Bereichen Ihre Anwendung.  
+Labels sind sogenannte **"Container"** die Informationen beinhalten wie z.B. Kundennummer, VIP, Blacklist etc., welche die pascom Telefonanlage weiter verarbeiten kann. Labels unterscheiden sich in ***statische*** und ***dynamische*** Labels und finden an unterschiedlichsten Bereichen Ihre Anwendung.  
 
 Wie unterscheiden sich Labels:
 
