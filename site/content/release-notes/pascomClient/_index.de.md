@@ -33,9 +33,16 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 * [CL-1260] Auf Microsoft-Surface Geräten kommt es bei der Verwendung der integrierten Kamera oft zu einem Grünstich im Bild. [Eine Beta-Version mit einem Bugfix ist hier verfügbar.](https://www.pascom.net/forum/t/pascom-client-beta-fur-microsoft-surface-gerate-intel-avstream-webcams/7312)
 * [CL-1344] Screensharing funktioniert unter Ubuntu Linux nicht wenn eine Wayland-Session verwendet wird. Als Workaround kann auf eine X11-Session umgeschaltet werden
 
-## Beta 65.D1264 (28.07.2020)
+## Beta 65.D1267 (29.07.2020)
 
 [Feedback](https://www.pascom.net/forum/t/pascom-client-v65-beta/7348)
+
+**AUF EINEN BLICK**
+
+- Absturz behoben, wenn das Abspielen eines Klingeltons nicht klappt
+- Bandbreitenberechnung beim Screensharing verbessert
+
+## Beta 65.D1264 (28.07.2020)
 
 **AUF EINEN BLICK**
 
