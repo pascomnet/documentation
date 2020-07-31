@@ -27,22 +27,124 @@ weight: 40
 
 
 ## Configuration
+{{% tabs %}}
 
-### Preparation
+{{% tab "Cloud" %}}
 
-For automatic device commissioning, a functioning DHCP server is essential.
+**Pairing via URL works in the CLOUD + ONSITE**  
 
-### Device Commissioning
+{{< num 1 "Connect Gateway" >}}
 
-Connect your Grandstream ATA to your network. The device will then automatically appear in the Gateways list once successfully booted {{< ui-button "Gateways" >}} > {{< ui-button "Gateway list" >}}.
-
-<!--FIXME steckersymbol, status?-->
-
-### Adding Endpoints via SIP
-
-Follow the following steps {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}} > {{< ui-button "Add" >}} > and select the option **Via Grandstream Gateway: Analog device via SIP**.
-Next, under the {{< ui-button "Basic data" >}} tab select the Gateway port on which the device should be connected to. Finally, assign the device to a user under the {{< ui-button "Assignment" >}} tab.
-
-{{% notice note%}}
-After saving your configuration, the Gateway must be manually restarted. This needs to only be done once and is done by disconnecting the Gateway's power supply. After restarting, the Grandstream ATA will be provisioned by the pascom phone system.
+{{% notice tip %}}
+If it is not a brand-new gateway, set it in every
+Fall back to **factory settings**. To do this at the gateway, switch to the admin interface of the gateway via your browser and perform a **Reset** there. For further information, please refer to the manufacturer's manual. 
 {{% /notice %}}
+
+Connect the gateway to the network. 
+
+
+{{< num 2 "Get MAC Address" >}}
+
+The MAC address is located on the back of the gateway.
+
+Alternatively, surf to the gateway's admin web interface with your browser or use the user manual.
+
+
+{{< num 3 "Create Gateway" >}}
+
+Log in to your PBX and under {{< ui-button "Gateways" >}} > {{< ui-button "Gatewaylist" >}}
+add a new device of type **ATA Gateway: Grandstream**.
+
+Select the **model** you have connected.
+
+In the **Mac Address** field, enter the previously determined MAC address of the gateway.
+
+Enter an individual description.
+
+Finally, click on **Next and Create Gateway**.
+
+{{< num 4 "Apply Jobs" >}}
+
+After saving changes, the job box (above) shows a
+corresponding entry to use telephony settings. Start the job by
+a click on the {{< ui-button "green check mark" >}}.
+
+{{< num 5 "Get Provisioning URL" >}}
+
+Check the Gateway in the Gateway List and choose {{< ui-button "Action" >}} > {{< ui-button "Provisioning URL" >}}. Copy the **URL** to the clipboard.
+
+{{< num 6 "Enter Provisioning URL at the Gateway" >}}
+
+Go to the admin UI of the gateway and store the copied provisioning URL.
+
+![Grandstream Provisioning URL](provisioning_url.png)
+
+Save the changes and restart the gateway for provisioning. Alternatively, you can restart the gateway
+also manually remove the power briefly.
+
+
+{{< num 7 "Creating a new device via SIP and assigning users" >}}
+
+Choose under {{< ui-button "Devices" >}} > {{< ui-button "Device List" >}} > {{< ui-button "Add" >}} > the entry **Via Grandstream Gateway: Analog Device via SIP**.
+In the tab {{< ui-button "Base Data" >}} select the port on the Gateway to which the device should be connected. Then assign the device to a user via the {{< ui-button "Assignment" >}} tab.
+
+{{< num 8 "Test Function" >}}
+
+The easiest way to test the successful Setup is to call your own voice mailbox with **\*100**. You should then hear the announcement of your voicemail box.
+
+
+{{% /tab %}}
+
+{{% tab "Onsite" %}}
+
+**DHCP Provisioning only works ONSITE**  
+
+
+{{% notice note %}}
+For local installations of the pascom server it is possible to commission gateways fully automatically via DHCP server.
+{{% /notice %}}
+
+{{< num 1 "Prepare DHCP server" >}}
+
+Prepare a DHCP server as described in [Phone Provisioning via DHCP]({{< ref "/howto/dhcp-provisioning" >}}).
+
+{{< num 2 "Connect the Gateway" >}}
+
+{{% notice tip %}}
+If it is not a brand-new gateway, set it in every
+Fall back to **factory settings**. To do this at the gateway, switch to the admin interface of the gateway via your browser and perform a **Reset** there. For further information, please refer to the manufacturer's manual. 
+{{% /notice %}}
+
+Connect the gateway to the network.
+
+The device is **automatically** configured by the pascom server and **appears** in the list {{< ui-button "Gateways" >}} > {{< ui-button "Gateway List" >}}. 
+
+{{< num 3 "Create new device via SIP and assign users" >}}
+
+Choose under {{< ui-button "Devices" >}} > {{< ui-button "Device List" >}} > {{< ui-button "Add" >}} > the entry **Via Grandstream Gateway: Analog Device via SIP**.
+In the tab {{< ui-button "Base Data" >}} select the port on the Gateway to which the device should be connected. Then assign the device to a user via the {{< ui-button "Assignment" >}} tab.
+
+{{< num 4 "Apply Jobs" >}}
+
+After saving changes, the job box (above) shows a
+corresponding entry to use telephony settings. Start the job by
+a click on the {{< ui-button "green check mark" >}}.
+
+{{< num 5 "Test function" >}}
+
+The easiest way to test the successful Setup is to call your own voice mailbox with **\*100**. You should then hear the announcement of your voicemail box.
+
+{{% /tab %}}
+{{% /tabs %}}
+
+{{% notice tip %}}
+Problems with provisioning? Occasionally, 3CX's built-in auto-provisioning feature may block a setup on the pascom.
+{{% /notice %}}
+
+### Deactivate 3CX Auto Provisioning.
+
+If the setup of the gateway on the pascom does not work, the auto-provisioning of 3CX may be activated. This can be disabled via the admin web interface of the gateway.
+
+![3CX Auto Provisioning](3cx_autoprovisioning.png?width=60%)
+
+
