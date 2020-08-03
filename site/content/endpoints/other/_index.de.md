@@ -57,7 +57,7 @@ Um die Provisionierung zu vereinfachen erstellen Sie sich eine neue Basiskonfigu
 Mit der pascom Version 19.03 gibt es eine neue Basiskonfiguration **Empty Generic Profile**
 {{% /notice %}}
 
-Duplizieren Sie die Basiskonfiguration **Empty Generic Profile** und geben Ihr eine Bezeichnung z.B. Meine Siemens Geräte. Markieren Sie die neue Basiskonfiguration und klicken auf 
+Duplizieren Sie die Basiskonfiguration **Empty Generic Profile** und geben Ihr eine Bezeichnung z.B. Meine Yealink Geräte. Markieren Sie die neue Basiskonfiguration und klicken auf 
 {{< ui-button "Bearbeiten" >}} > {{< ui-button "Konfiguration" >}}.
 
 **Nachfolgenden Code-Teil müssen Sie mit den passenden Geräte-Parametern anpassen. Die aufgelisteten Variablen dienen zum automatischen befüllen der korrekten Zugangs-/Serverdaten.**
@@ -114,7 +114,7 @@ Speichern Sie die neue Basiskonfiguration.
 ## Endgerät anlegen
 
 Legen Sie unter {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} ein
-neues Gerät vom Typ **IP-Telefon: Hersteller beliebig oder Softphone** an. Wählen Sie nun die erstellte **neue Basiskonfiguration** aus (Meine Siemens Geräte). 
+neues Gerät vom Typ **IP-Telefon: Hersteller beliebig oder Softphone** an. Wählen Sie nun die erstellte **neue Basiskonfiguration** aus (Meine Yealink Geräte). 
 
 Unter dem Reiter {{< ui-button "Zuweisen" >}} geben Sie dem IP-Endgerät noch einen Benutzer. Abschließend Speichern!
 
