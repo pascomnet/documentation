@@ -1,5 +1,5 @@
 ---
-title: Analytics Customization
+title: Customised pascom Analytics
 description: After you have familiarized yourself with the basics of pascom Analytics you can use this chapter to learn here how you to make your own adjustments.
 weight: 8
 ---

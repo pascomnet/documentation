@@ -1,5 +1,5 @@
 ---
-title: Amtsvorlagen
+title: Amtsvorlagen Übersicht
 description: pascom liefert eine Vielzahl von Amtsvorlagen zur Erstellung von SIP-, Analog- und ISDN-Ämtern mit. Diese Vorlagen helfen Ihnen bei der Einrichtung und legen automatisch passende Rufregeln an.
 type: "pages"
 icon: "fa fa-copy"

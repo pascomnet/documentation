@@ -17,7 +17,7 @@ weight: 16
 
 ## Overview
 
-[Snom M700] (https://www.snom.com/ip-phones/workplace-mobility/m700-multi-radio-base-station/ "Snom DECT Workplace mobility solutions") base stations can be operated in both Single Cell and Multi-Cell deployments and are compatible with pascom cloud, hardware and virtual phone systems. As such the Snom M700 is ideally suited for organisations that require additional [work place mobility] (https://www.pascom.net/en/features/ "pascom workplace mobility features") over multiple floors or across larger company buildings.
+[The Snom M700 & M900](https://www.snom.com/en/ip-phones/m-series/workplace-mobility/ "Snom DECT Workplace mobility solutions") base stations can be operated in both Single Cell and Multi-Cell deployments and are compatible with pascom cloud, hardware and virtual phone systems. As such the Snom M700 is ideally suited for organisations that require additional [work place mobility](https://www.pascom.net/en/features/ "pascom workplace mobility features") over multiple floors or across larger company buildings.
 
 ### Available Channels
 

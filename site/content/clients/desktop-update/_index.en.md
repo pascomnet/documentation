@@ -1,5 +1,5 @@
 ---
-title: Desktop Client Update
+title: Desktop UC Client Update
 description: The pascom Desktop client automatically updates itself. Through using our Update Channels, it is very simple to use for example our BETA and feature versions.
 weight: 20
 

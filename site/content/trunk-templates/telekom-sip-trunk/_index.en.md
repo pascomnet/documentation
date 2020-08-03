@@ -1,6 +1,6 @@
 ---
-title: Deutsche Telekom SIP Trunk
-description: How to correctly config and manage your M-net SIP trunk with your pascom phone system
+title: Deutsche Telekom SIP Trunk Template
+description: How to correctly config and manage your Deutsche Telekom SIP trunk with your pascom phone system
 weight: 10
 ---
 

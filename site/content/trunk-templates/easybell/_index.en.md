@@ -1,5 +1,5 @@
 ---
-title: Easybell - Clip no screening
+title: Easybell Template - Clip No Screening
 description: How to enable Clip no screening on Easybell
 weight: 10
 ---

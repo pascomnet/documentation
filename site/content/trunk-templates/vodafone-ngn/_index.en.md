@@ -1,5 +1,5 @@
 ---
-title: Vodafone NGN Trunk
+title: Vodafone NGN Trunk Template
 description: How to correctly configure and manage your Vodafone NGN trunk. 
 weight: 50
 ---

@@ -1,5 +1,5 @@
 ---
-title: Analytics
+title: pascom Analytics
 description: Gain real-time insight call statistics for evaluating Queues (Teams) and associated User performance. 
 weight: 7
 ---

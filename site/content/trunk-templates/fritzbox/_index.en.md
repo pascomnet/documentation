@@ -1,5 +1,5 @@
 ---
-title: Fritz!Box
+title: Fritz!Box Template
 description: Register Trunk via Fritz!Box
 weight: 40
 ---

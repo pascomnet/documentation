@@ -1,5 +1,5 @@
 ---
-title: HFO Telecom
+title: HFO Telecom Template
 description: How to correctly config and manage your HFO Telecom SIP Trunk with your pascom phone system
 weight: 20
 ---

@@ -1,7 +1,7 @@
 ---
-title: Cloud Service Provider (CSP)
+title: pascom Cloud Service Provider (CSP)
 weight: 60
-description: This setup is intended for pascom Partners who are Hosting Providers
+description: This setup is intended for pascom phone system Cloud Hosting Hosting Providers
 ---
 
 {{< doctype "self" >}}
