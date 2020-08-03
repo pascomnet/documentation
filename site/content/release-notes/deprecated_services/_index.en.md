@@ -8,22 +8,6 @@ weight: 1000
 Here you will find an overview of services that no longer work with the current pascom version.
 {{%/notice%}}
 
-### PREMIUM Support for pascom 17 & 18 ends 2020
-**Service**
-
-|Date|with Version|
-|---|---|
-|End of 2020|---|  
-**Our technology is constantly evolving, which is why we are ending the Premium Support for pascom 17 and 18 at the upcoming turn of the year in order to focus soley on the current pascom version.**
-
-1. Do you still use a pascom telephone system in version 17 & 18? Contact our **Sales-Team**, or your pascom **Sales Partner** to upgrade your license.
-2. You would like to replace your pascom 17/18 on-site telephone system with a CLOUD telephone system? Use our attractive [Exclusive Offer](https://www.pascom.net/en/exclusive-offers/switch-to-pascom-cloud/).  
-
-</br>
-
-![pascom17 EOS](pascom17_EOS.png)
-
-<hr>
 
 ### Static Conference Rooms removed
 **Software**
@@ -61,6 +45,17 @@ Here you will find an overview of services that no longer work with the current 
 |Date|with Version|
 |---|---|
 |January 2020|19.03|  
+
+<hr>
+
+### Cisco SPA 112 no longer supported
+**Hardware**
+
+|Date|with Version|
+|---|---|
+|November 2019|19.00|  
+
+![Cisco SPA 112](cisco_spa112.jpg?width=40%)
 
 <hr>
 

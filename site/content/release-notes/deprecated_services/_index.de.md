@@ -9,33 +9,6 @@ Hier finden Sie eine Übersicht über Services und Dienste, die mit der aktuelle
 {{%/notice%}}
 
 
-### PREMIUM Support für pascom 17 & 18 endet 2020
-**Service / Dienstleistung**
-
-|Datum|mit Version|
-|---|---|
-|Ende 2020|---|  
-**Unsere Technologie entwickelt sich weiter, weshalb wir den Premium Support für pascom 17 und 18 zum kommenden Jahreswechsel beenden, um uns nur noch auf die aktuelle pascom Version zu konzentrieren.**
-
-1. Nutzen Sie noch eine pascom Telefonanlage in der Version 17 & 18? Kontaktieren Sie unseren **Vertrieb**, oder Ihren pascom **Vertriebspartner**, um Ihre Lizenzen upzugraden. 
-2. Sie möchten Ihre pascom 17/18 Vor-Ort-Telefonanlage durch eine CLOUD-Telefonanlage ersetzen? Nutzen Sie unser attraktives [Wechselangebot](https://www.pascom.net/de/exklusiv-angebote/zu-pascom-cloud-wechseln/).  
-
-</br>
-
-![pascom17 EOS](pascom17_EOS.png)
-
-<hr>
-
-### Statische Konferenzräume entfernt
-**Software**
-
-|Datum|mit Version|
-|---|---|
-|demnächst|19.xx|  
-**Statische Konferenzräume wurden durch pascom Gruppen ersetzt**
-
-<hr>
-
 ### Anrufgruppen gelöscht
 **Software**
 
@@ -62,6 +35,17 @@ Hier finden Sie eine Übersicht über Services und Dienste, die mit der aktuelle
 |Datum|mit Version|
 |---|---|
 |Januar 2020|19.03|  
+
+<hr>
+
+### Cisco SPA 112 nicht mehr unterstützt
+**Hardware**
+
+|Datum|mit Version|
+|---|---|
+|November 2019|19.00|  
+
+![Cisco SPA 112](cisco_spa112.jpg?width=40%)
 
 <hr>
 
