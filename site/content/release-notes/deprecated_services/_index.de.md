@@ -8,6 +8,24 @@ weight: 1000
 Hier finden Sie eine Übersicht über Services und Dienste, die mit der aktuellen pascom Version nicht mehr funktionieren.
 {{%/notice%}}
 
+
+### PREMIUM Support für pascom 17 & 18 endet 2020
+**Service / Dienstleistung**
+
+|Datum|mit Version|
+|---|---|
+|Ende 2020|---|  
+**Unsere Technologie entwickelt sich weiter, weshalb wir den Premium Support für pascom 17 und 18 zum kommenden Jahreswechsel beenden, um uns nur noch auf die aktuelle pascom Version zu konzentrieren.**
+
+1. Nutzen Sie noch eine pascom Telefonanlage in der Version 17 & 18? Kontaktieren Sie unseren **Vertrieb**, oder Ihren pascom **Vertriebspartner**, um Ihre Lizenzen upzugraden. 
+2. Sie möchten Ihre pascom 17/18 Vor-Ort-Telefonanlage durch eine CLOUD-Telefonanlage ersetzen? Nutzen Sie unser attraktives [Wechselangebot](https://www.pascom.net/de/exklusiv-angebote/zu-pascom-cloud-wechseln/).  
+
+</br>
+
+![pascom17 EOS](pascom17_EOS.png)
+
+<hr>
+
 ### Statische Konferenzräume entfernt
 **Software**
 
