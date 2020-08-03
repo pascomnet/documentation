@@ -11,7 +11,7 @@ weight: 40
 ## Android Installation
 
 {{% notice tip %}}
-System Requirements **Android 5.1** or higher.
+System Requirements **Android 6.0** or higher.
 {{% /notice %}}
 
 The latest pascom mobile VoIP app can be directly installed on your Android smartphone via the [Google Playstore](https://www.pascom.net/playstore).

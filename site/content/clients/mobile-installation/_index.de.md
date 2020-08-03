@@ -11,7 +11,7 @@ weight: 40
 ## Android Installation
 
 {{% notice tip %}}
-Systemvoraussetzung **Android 5.1** oder höher.
+Systemvoraussetzung **Android 6.0** oder höher.
 {{% /notice %}}
 
 Den aktuellen pascom Mobile Client installieren Sie direkt auf Ihrem Android Smartphone via [Google Playstore](https://www.pascom.net/playstore).
