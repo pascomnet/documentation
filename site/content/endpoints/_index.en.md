@@ -14,7 +14,7 @@ Use the end devices supported by pascom to use all the integrated provisioning a
 
 [Grandstream IP Phones](#grandstream-ip-phones "Grandstream IP-Phones")
 [Mitel DECT Systems](#mitel-dect-systems "Mitel DECT-Systems")    
-[Siemens Gigaset DECT Systems](#siemens-gigaset-pro-ip-dect-systems "Siemens Gigaset DECT-Systems")  
+[Gigaset DECT Systems](#gigaset-pro-ip-dect-systems "Gigaset DECT-Systems")  
 [Snom IP Phones](#snom-ip-phones "SNOM IP Phones")  
 [Snom DECT Systems](#snom-dect-systems "SNOM DECT-Systems")  
 [Snom Conferencing Systems](#snom-conference-phones "SNOM Conferencing Systems")      
@@ -191,12 +191,12 @@ Due to vast range of firmware versions available for the different IP telephones
 
 **[Setup Mitel DECT, Click here!]({{<ref "/endpoints/mitel-dect" >}})**
 
-## Siemens Gigaset Pro IP DECT Systems
+## Gigaset Pro IP DECT Systems
 
 [![Gigaset DECT Setup](gigaset_n870.jpg)]({{<ref "/endpoints/gigaset-dect" >}})
 
 |Models||
 |---|---|
-|Siemens Gigaset N870|
+|Gigaset N870|
 
 **[Setup Gigaset Pro IP DECT, click here!]({{<ref "/endpoints/gigaset-dect" >}})**

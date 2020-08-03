@@ -1,5 +1,5 @@
 ---
-title: Siemens Gigaset DECT-System
+title: Gigaset DECT-System
 description: Integrieren Sie Ihr Gigaset DECT-System in die pascom.
 weight: 15
 ---
@@ -9,12 +9,12 @@ weight: 15
 
 {{< description >}}
 
-![Siemens Gigaset N870](gigaset_n870.jpg)
+![Gigaset N870](gigaset_n870.jpg)
 
 
 ## Unterstützte Geräte
 
-**[Liste der unterstützten Endgeräte, hier klicken!]({{<ref "/endpoints#siemens-gigaset-dect-systeme" >}})**
+**[Liste der unterstützten Endgeräte, hier klicken!]({{<ref "/endpoints#gigaset-dect-systeme" >}})**
 
 ## Übersicht
 

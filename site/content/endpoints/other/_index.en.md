@@ -53,7 +53,7 @@ The next step is to build a new basic configuration for the SIP device. To do th
 With pascom version 19.03 there is a new basic configuration **Empty Generic Profile**
 {{% /notice %}}
 
-Duplicate the basic configuration **Empty Generic Profile** and give it a name e.g. My Siemens Devices. Select the new basic configuration and click on
+Duplicate the basic configuration **Empty Generic Profile** and give it a name e.g. My Yealink Devices. Select the new basic configuration and click on
 {{< ui-button "Edit" >}} > {{< ui-button "Configuration" >}}.
 
 **You have to adapt the following code part to your device-parameters. The listed variables are used to automatically fill in the correct login/server data.**
@@ -114,7 +114,7 @@ After saving your changes, an entry will appear in the job box (top centre of th
 ## Create/Add the SIP Device
 
 Insert under {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}}
- a new device of type **IP-Telefon: Hersteller beliebig oder Softphone**. Now select the **new basic configuration** you created earlier (My Siemens Devices).
+ a new device of type **IP-Telefon: Hersteller beliebig oder Softphone**. Now select the **new basic configuration** you created earlier (My Yealink Devices).
 
 Under the tab {{< ui-button "Assign" >}} you give the SIP device an user. Finally save!
 

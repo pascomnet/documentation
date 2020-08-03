@@ -1,5 +1,5 @@
 ---
-title: Siemens Gigaset IP DECT System
+title: Gigaset IP DECT System
 description: Integrate your Gigaset IP DECT System into your pascom VoIP phone system.
 weight: 15
 ---
@@ -9,11 +9,11 @@ weight: 15
 
 {{< description >}}
 
-![Siemens Gigaset N870](gigaset_n870.jpg)
+![Gigaset N870](gigaset_n870.jpg)
 
 ## Supported Endpoints
 
-**[List of supported endpoints, click here!]({{<ref "/endpoints#siemens-gigaset-dect-systems" >}})**
+**[List of supported endpoints, click here!]({{<ref "/endpoints#gigaset-dect-systems" >}})**
 
 ## Overview
 

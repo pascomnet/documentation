@@ -20,7 +20,7 @@ For the migration, you will also **require** access to **my.pascom.net**. Should
 
 Please take the time to review the following checklist **before** you begin the upgrade process
 
-* [ ] You do not use any Siemens Telephones
+* [ ] You do not use any Siemens / Gigaset Telephones
 * [ ] You do not use any Snom Telephones of the old 3xx & 7xx Series
 * [ ] You do not use any Patton Gateways
 * [ ] You do not use any Cisco SPA 112 Gateways
