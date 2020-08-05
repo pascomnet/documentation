@@ -55,7 +55,7 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 * [CL-1138] - Client shows that latest version is used if connection is broken
 * [CL-1160] - Headset dialog opens automatically after reconnecting
 * [CL-1211] - Time counter is not updated during phonecall
-* [CL-1257] - Unread messages badge rect to small for three-digit numbers
+* [CL-1257] - Unread messages counter badge to small for three-digit numbers
 * [CL-1268] - pascom Client update breaks on macOS if installed via user account
 * [CL-1278] - Client shows "Sennheiser HeadSetup not started" if autostart is enabled
 * [CL-1283] - Use GStreamer for Ringtone, Notifications

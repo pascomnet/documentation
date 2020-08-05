@@ -24,44 +24,44 @@ In this section, we give you an overview of all breaking changes in the pascom c
 ## Known Issues
 
 {{% notice issues%}}
-These problems are known to us and we are already working on a solution
+These following issues are known to us and we are already working on solutions.
 {{% / notice%}}
 
-* [CL-1071] On some platforms, Plantronics support is unstable. If the client often crashes in combination with a Plantronics headset, set the Plantronics support to "ignore" in the settings. Only using headset buttons will no longer work
-* [CL-1165] Outlook Support is unstable on some systems and causes the pascom client to crash
-* [CL-1212] Headset support for Sennheiser on macOS can't be configured at the moment, because HeadSetup for macOS is not provided for downloading from EPOS / Sennheiser
+* [CL-1071] On some platforms, Plantronics support is unstable. If the client often crashes in combination with a Plantronics headset, set the Plantronics support to "ignore" in the settings. The only loss of functionality will be the use of headset buttons. 
+* [CL-1165] Outlook support is unstable on some systems and causes the pascom client to crash
+* [CL-1212] Headset support for Sennheiser on macOS can't be configured at the moment, because HeadSetup for macOS has not been made available to download by EPOS / Sennheiser.
 * [CL-1260] If the integrated camera of Microsoft Surface devices is used, the image often has a green cast. [A Beta-Version with a bugfix is available here.](https://www.pascom.net/forum/t/pascom-client-beta-fur-microsoft-surface-gerate-intel-avstream-webcams/7312)
-* [CL-1344] Screensharing does not work if a Wayland Session is used on Linux. Use a X11 Session type instead
+* [CL-1344] Screensharing does not work if a Wayland Session is used on Linux. As a work around, use a X11 Session type instead.
 
 ## Release 65.R1286 (05.08.2020)
 
 **Overview**
 
-- You can now configure multiple App and Url Actions
-- Actions in the client can now react on multiple call states, not just incoming calls
-- Journal is fully synchronized to the clients and is now filterable and searchable (pascom server 19.09 is required)
+- You can now configure multiple App and URL Actions
+- Actions in the client can now react to multiple call states, not just incoming calls
+- Journal is fully synchronized to the clients and can now be filtered and searched (pascom server 19.09 is required)
 - Support for Senenheiser / EPOS Connect 4.1
-- Updating the client is prevented if Operating system or connected server version is incompatible
-- Improved screensharing on slow or unreliable internet connections
+- Updating the client is prevented in the case of an incompatible Operating System or connected server version
+- Improved screen sharing for slow or unreliable internet connections
 
 **MODIFICATIONS**
 
 * [CL-111] - Improve "No microphone permission" error message on iOS
-* [CL-123] - Improve chat search results to get the whole conversation
+* [CL-123] - Improve chat search results to include whole conversation
 * [CL-158] - Proper shutdown and unregister client on kill signal
-* [CL-243] - Multiple Actions in Desktop Client
+* [CL-243] - Multiple actions in desktop Client
 * [CL-679] - Modernize Journal API, synchronize it using the Event Stream
-* [CL-1137] - Improve client behavior if no usable phone device is available
+* [CL-1137] - Improve client behaviour if no usable phone device is available
 * [CL-1138] - Client shows that latest version is used if connection is broken
 * [CL-1160] - Headset dialog opens automatically after reconnecting
 * [CL-1211] - Time counter is not updated during phonecall
-* [CL-1257] - Unread messages badge rect to small for three-digit numbers
+* [CL-1257] - Unread messages counter badge to small for three-digit numbers
 * [CL-1268] - pascom Client update breaks on macOS if installed via user account
 * [CL-1278] - Client shows "Sennheiser HeadSetup not started" if autostart is enabled
 * [CL-1283] - Use GStreamer for Ringtone, Notifications
-* [CL-1289] - Consistently use device id instead of display name in Commands
-* [CL-1291] - Make phone numbers and email clickable in phonebook details
-* [CL-1296] - Introduce a Copy URL button for group urls
+* [CL-1289] - Consistently use device ID instead of display name in Commands
+* [CL-1291] - Make phone numbers and email address clickable in phonebook details
+* [CL-1296] - Introduce a Copy URL button for group URLs
 * [CL-1302] - Implement http based wav player for recordings and voicemails
 * [CL-1332] - Improve screen selection for screensharing
 * [CL-1337] - Show notifications and do not mark as read if chat view is scrolled upwards
