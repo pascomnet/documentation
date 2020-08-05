@@ -27,22 +27,22 @@ In diesem Abschnitt geben wir Ihnen einen Überblick aller wichtigen Änderungen
 Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung  
 {{% /notice %}}
 
-* [CL-1071] Plantronics Support ist auf einigen Systemen instabil. Falls im Zusammenspiel mit einem Plantronics Headset der Client oft abstürzt, in den Einstellungen Plantronics auf “ignorieren” stellen. Nur die Nutzung von Headset-Tasten funktioniert dann nicht mehr
-* [CL-1165] Outlook Support ist auf einigen Systemen instabil und führt zu Abstürzen des pascom Clients
-* [CL-1212] Unter macOS lässt sich die Unterstützung für Sennheiser Headsets derzeit nicht einrichten, da HeadSetup seitens EPOS / Sennheiser nicht zum Download zur Verfügung steht
+* [CL-1071] Plantronics Support ist auf einigen Systemen instabil. Falls im Zusammenspiel mit einem Plantronics Headset der Client oft abstürzt, in den Einstellungen Plantronics auf “ignorieren” stellen. Nur die Nutzung der Headset-Tasten funktioniert dann nicht mehr.
+* [CL-1165] Outlook Support ist auf einigen Systemen instabil und führt zu Abstürzen des pascom Clients.
+* [CL-1212] Unter macOS lässt sich die Unterstützung für Sennheiser Headsets derzeit nicht einrichten, da HeadSetup seitens EPOS / Sennheiser nicht zum Download zur Verfügung steht.
 * [CL-1260] Auf Microsoft-Surface Geräten kommt es bei der Verwendung der integrierten Kamera oft zu einem Grünstich im Bild. [Eine Beta-Version mit einem Bugfix ist hier verfügbar.](https://www.pascom.net/forum/t/pascom-client-beta-fur-microsoft-surface-gerate-intel-avstream-webcams/7312)
-* [CL-1344] Screensharing funktioniert unter Ubuntu Linux nicht wenn eine Wayland-Session verwendet wird. Als Workaround kann auf eine X11-Session umgeschaltet werden
+* [CL-1344] Screensharing funktioniert unter Ubuntu Linux nicht wenn eine Wayland-Session verwendet wird. Als Workaround kann auf eine X11-Session umgeschaltet werden.
 
 ## Release 65.R1286 (05.08.2020)
 
 **Auf einen Blick**
 
-- Es können jetzt beliebig viele App und Url-Aktionen konfiguriert werden
-- Aktionen im Client können nun auf mehrere Anrufzustände reagieren
-- Journal wird jetzt vollständig auf den Client synchronisiert und ist schneller, filterbar und durchsuchbar (ab pascom Server 19.09)
-- Support für Sennheiser / EPOS Connect 4.1 
-- Updates mit inkompatiblen Server oder Betriebssystemversionen werden nun automatisch verhindert
-- Screensharing funktioniert nun auch über schlechte Internetverbindungen zuverlässiger
+- Es können jetzt beliebig viele App- und Url-Aktionen konfiguriert werden.
+- Aktionen im Client können nun auf mehrere Anrufzustände reagieren.
+- Journal wird jetzt vollständig auf den Client synchronisiert und ist schneller, filterbar und durchsuchbar (ab pascom Server 19.09).
+- Support für Sennheiser / EPOS Connect 4.1.
+- Updates mit inkompatiblen Server- oder Betriebssystemversionen werden nun automatisch verhindert.
+- Screensharing funktioniert nun auch über schlechte Internetverbindungen zuverlässiger.
 
 **ÄNDERUNGEN**
 
