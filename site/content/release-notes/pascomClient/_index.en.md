@@ -33,52 +33,16 @@ These problems are known to us and we are already working on a solution
 * [CL-1260] If the integrated camera of Microsoft Surface devices is used, the image often has a green cast. [A Beta-Version with a bugfix is available here.](https://www.pascom.net/forum/t/pascom-client-beta-fur-microsoft-surface-gerate-intel-avstream-webcams/7312)
 * [CL-1344] Screensharing does not work if a Wayland Session is used on Linux. Use a X11 Session type instead
 
-## Beta 65.D1267 (29.07.2020)
+## Release 65.R1286 (05.08.2020)
 
-[Feedback](https://www.pascom.net/forum/t/pascom-client-v65-beta/7348)
+**Overview**
 
-**OVERVIEW**
-
-- Fixed a crash if ringtone playback failed
-- Improved Bandwidth estimator for screensharing
-
-
-## Beta 65.D1264 (28.07.2020)
-
-
-**OVERVIEW**
-
-- Fix selecting default device for voicemail playback on windows
-- Fax Calls are now shown correctly in the Journal
-- Improved Video Camera Detection on Windows
-- Custom Ringtones are remembered after a restart again
-
-## Beta 65.D1253 (24.07.2020)
-
-
-**OVERVIEW**
-
-- Editing of labels on phonebook entries works again
-- Enhanced and extended UI to edit client actions
-- Fixed copy & paste and file-selection for file transfers on windows, it should work more reliable again
-
-## BETA 65.D1242 (16.07.2020)
-
-**OVERVIEW**
-
-- Added a Filter for "Internal/External/Both" to the Journal
-- Journal list now shows picked calls in a more clear way
-- Fix a crash on android which prevented wakeup on push, if the app was quitted earlier
-
-## BETA 65.D1234 (14.07.2020)
-
-
-**OVERVIEW**
-
-- It's now possible to configure multiple app and url actions
-- Call histories are now fully synchronised to the client, making them faster to filter and search (with pascom Server 19.09)
-- Added support for Sennheiser / EPOS Connect 4.1
-- Updates which are incompatible with older operating system or server versions are now prevented automatically.
+- You can now configure multiple App and Url Actions
+- Actions in the client can now react on multiple call states, not just incoming calls
+- Journal is fully synchronized to the clients and is now filterable and searchable (pascom server 19.09 is required)
+- Support for Senenheiser / EPOS Connect 4.1
+- Updating the client is prevented if Operating system or connected server version is incompatible
+- Improved screensharing on slow or unreliable internet connections
 
 **MODIFICATIONS**
 
@@ -86,27 +50,23 @@ These problems are known to us and we are already working on a solution
 * [CL-123] - Improve chat search results to get the whole conversation
 * [CL-158] - Proper shutdown and unregister client on kill signal
 * [CL-243] - Multiple Actions in Desktop Client
-* [CL-655] - Implement constraints and optional messages for updating pascom Client
 * [CL-679] - Modernize Journal API, synchronize it using the Event Stream
 * [CL-1137] - Improve client behavior if no usable phone device is available
 * [CL-1138] - Client shows that latest version is used if connection is broken
-* [CL-1148] - Simplify pickup logic in client
 * [CL-1160] - Headset dialog opens automatically after reconnecting
 * [CL-1211] - Time counter is not updated during phonecall
-* [CL-1226] - Refactor android client java code
 * [CL-1257] - Unread messages badge rect to small for three-digit numbers
 * [CL-1268] - pascom Client update breaks on macOS if installed via user account
+* [CL-1278] - Client shows "Sennheiser HeadSetup not started" if autostart is enabled
+* [CL-1283] - Use GStreamer for Ringtone, Notifications
+* [CL-1289] - Consistently use device id instead of display name in Commands
 * [CL-1291] - Make phone numbers and email clickable in phonebook details
 * [CL-1296] - Introduce a Copy URL button for group urls
 * [CL-1302] - Implement http based wav player for recordings and voicemails
-* [CL-1305] - Improve client journal UI
-* [CL-1332] - Improve screen selection
-* [CL-1335] - iOS call indicator for inactive calls
+* [CL-1332] - Improve screen selection for screensharing
 * [CL-1337] - Show notifications and do not mark as read if chat view is scrolled upwards
 * [CL-1363] - Display Team members using the RosterCell in Team View
 * [CL-1366] - Client leaves fullscreen mode if another participant joins
-* [CL-1367] - Improve logging configuration
-* [CL-1368] - Improve client user agent again, include operating system version and architecture
 * [CL-1369] - Android's context menu for e.g. pasting text broken
 * [CL-1370] - Assertion in AudioDeviceList model on screen lock / unlock
 * [CL-1371] - Crash in pjsip when logging out
@@ -122,15 +82,33 @@ These problems are known to us and we are already working on a solution
 * [CL-1390] - Wrong camera orientation on iOS
 * [CL-1391] - Missing ringtones in pascom Client on window
 * [CL-1398] - iOS client crashes if a screenshare is started
+* [CL-1401] - Windows client crash after hangup with 19.09
 * [CL-1402] - Client gstreamer devices is missing default pulse audio sink under linux
+* [CL-1404] - Client roster alphabetical ordering is case sensitive
 * [CL-1408] - "Journal fully loaded" toast covers full screen again
 * [CL-1413] - Handle discard events for journal entries
 * [CL-1416] - Away status is displayed with DND symbol on client
 * [CL-1419] - Disable missed call notifications for teams if you're logged out
 * [CL-1420] - Duplicate team entries in journal team filter list
+* [CL-1423] - Allow *103 and similar codes for call redirection
+* [CL-1425] - Provide a setting to "Disable HD Audio" in Client
 * [CL-1426] - Adjust EPOS Connect path
-
-
+* [CL-1432] - Add a "Internal/External" drop down to journal filter
+* [CL-1436] - Screensharing has huge delay on some machines
+* [CL-1439] - Make picked up calls more obvious in journal
+* [CL-1442] - Camera is sometimes not detected on windows
+* [CL-1445] - Android client logs an Exception when receiving an incoming chat message
+* [CL-1446] - Disable AEC by default again everywhere except iOS
+* [CL-1450] - Desktop client doesn't continue in pairing process
+* [CL-1460] - Fix translation of unconfigured dial in number hint
+* [CL-1463] - Label editing for phonebook entries is broken
+* [CL-1466] - Custom ringtone is lost after client restart
+* [CL-1469] - Show fax calls correctly in journal
+* [CL-1471] - Adjust Call detail fields for group calls
+* [CL-1474] - Legacy Journal does not reload if the client wakes up from sleep on Android
+* [CL-1475] - Client crashes on ringtone playback
+* [CL-1484] - Wrong status of play button in client settings
+* [CL-1485] - Dropdown for outgoing calls shows wrong device name after video call
 
 ## Release 64.R1156 (16.06.2020)
 
