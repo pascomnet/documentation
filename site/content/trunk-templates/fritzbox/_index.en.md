@@ -1,7 +1,7 @@
 ---
-title: Fritz!Box Template
+title: Fritz!Box as Trunk
 description: Register Trunk via Fritz!Box
-weight: 40
+weight: 100
 ---
 
 {{< doctype "self"  >}}

@@ -1,15 +1,17 @@
 ---
-title: HFO Telecom
-description: Overview of the pascom managed Provider Template from HFO Telecom
-weight: 20
+title: Plusnet
+description: Overview of the pascom managed Provider Template from Plusnet
+weight: 36
 ---
+
+
 {{< description >}}
 
-![HFO Provider Logo](hfo_telecom_logo.png?width=50%)
+![Plusnet Provider Logo](plusnet_logo.png?width=50%)
 
 ## Overview
 
-Information about features and tariff informations can be found here: [HFO Telecom](http://www.hfo-telecom.de/ "HFO Telecom SIP Provider").
+Information about features and tariff informations can be found here: [Plusnet](https://www.plusnet.de/produkte).
 
 
 ## Supported usage variants
@@ -27,7 +29,7 @@ You will receive the account data for your SIP trunk account from your provider 
 
 **Example**
 
-![HFO Account Data](hfo-account.de.png?width=80%)
+![Plusnet Account Daten](plusnet-account.PNG?width=70%)
 
 </br>
 

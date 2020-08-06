@@ -1,19 +1,24 @@
 ---
-title: Vodafone NGN Trunk
-description: So konfigurieren und verwalten Sie Ihren Vodafone NGN Trunk richtig
+title: Vodafone NGN 
+description: Übersicht zum pascom managed Provider Template von Vodafone
 weight: 50
 ---
 
-{{< doctype "self"  >}}
 
 {{< description >}}
 
-## Übersicht
+![Vodafone Provider Logo](vodafone-logo.png?width=50%)
 
+## Übersicht
 
 Ab pascom 18.05 ist die Amtsvorlage für Vodafone NGN Trunks ([IP Anlagenanschluss](https://www.vodafone.de/business/festnetz-internet/ip-anlagen-anschluss.html)) verfügbar.
 
 Da die Authentifizierung am SIP Server von Vodafone über die IP Adresse Ihres Internetanschlusses stattfindet, ist eine Konfiguration dieses Trunks nur in selbstgehosteten pascom OnSite Telefonanlagen möglich.
+
+## Unterstützte Nutzungsvarianten
+Nutzen Sie die pascom Telefonanlage in der Cloud oder Onsite Vor-Ort in Ihrem Unternehmen? Erfahren Sie in unserer Amtsvorlagenübersicht mehr zu den jeweiligen unterstützen Providern. 
+
+[Übersicht Amtsvorlagen]({{< ref "trunk-templates">}})
 
 ## Ihr Account
 

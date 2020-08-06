@@ -1,12 +1,12 @@
 ---
-title: Deutsche Telekom SIP Trunk Template
-description: How to correctly config and manage your Deutsche Telekom SIP trunk with your pascom phone system
-weight: 10
+title: Deutsche Telekom
+description: Overview of the pascom managed Provider Template from Deutsche Telekom
+weight: 5
 ---
 
-{{< doctype "both"  >}}
-
 {{< description >}}
+
+![Deutsche Telekom Provider Logo](deutsche-telekom-logo.png?width=50%)
 
 ## Overview
 
@@ -16,6 +16,11 @@ Deutsche Telekom package specifications and tariff information can be found [her
 pascom phone systems only supports direct SIP account registration in combination with the Deutsche Telekom [recommended Lancom Router](https://geschaeftskunden.telekom.de/startseite/festnetz-internet/tarife/354892/paket-zum-anschluss-einer-ip-telefonanlage.html) when connecting an IP PBX. Alternatively, it is possible to perform the [registration on the router]({{< relref "#setup-via-fritz-box">}}) .<br/><br/>
 Should you use your own router, this must in principle comply with the criteria as the devices recommended by Deutsche Telekom.  However, in such as scenario, pascom are not able to offer any support for the configuration.
 {{% /notice %}}
+
+## Supported usage variants
+Do you use the pascom telephone system in the cloud or on-site at your company? Learn more about the respective supported providers in our overview of trunk templates. 
+
+[Overview Trunk Templates]({{< ref "trunk-templates">}})
 
 ## Ihr Account
 

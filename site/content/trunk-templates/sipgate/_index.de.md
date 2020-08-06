@@ -1,16 +1,17 @@
 ---
-title: M-net
-description: Übersicht zum pascom managed Provider Template von M-Net
-weight: 30
+title: Sipgate
+description: Übersicht zum pascom managed Provider Template von Sipgate
+weight: 45
 ---
+
 
 {{< description >}}
 
-![Mnet Provider Logo](mnet-logo.png?width=50%)
+![Sipgate Provider Logo](sipgate-logo.png?width=50%)
 
 ## Übersicht
 
-Informationen über Leistungsmerkmale und Tarife finden Sie hier: [Mnet SIP Trunk](https://www.m-net.de/sip-trunk/).
+Informationen über Leistungsmerkmale und Tarife finden Sie hier: [Sipgate](https://www.sipgatetrunking.de/).
 
 ## Unterstützte Nutzungsvarianten
 Nutzen Sie die pascom Telefonanlage in der Cloud oder Onsite Vor-Ort in Ihrem Unternehmen? Erfahren Sie in unserer Amtsvorlagenübersicht mehr zu den jeweiligen unterstützen Providern. 
@@ -27,7 +28,7 @@ Die Zugangsdaten für Ihren SIP Trunk Account erhalten Sie von Ihrem Provider pe
 
 **Beispiel**
 
-![Mnet Account Daten](mnet-account.de.png?width=70%)
+![Sipgate Account Daten](sipgate-account.PNG?width=40%)
 
 </br>
 

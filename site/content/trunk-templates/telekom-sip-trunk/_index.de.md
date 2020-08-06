@@ -1,12 +1,13 @@
 ---
-title: Telekom SIP-Trunk
-description: So konfigurieren und verwalten Sie Ihren Telekom SIP-Trunk richtig
-weight: 10
+title: Deutsche Telekom
+description: Übersicht zum pascom managed Provider Template von der Deutschen Telekom
+weight: 5
 ---
 
-{{< doctype "both"  >}}
 
 {{< description >}}
+
+![Deutsche Telekom Provider Logo](deutsche-telekom-logo.png?width=50%)
 
 ## Telekom Training Video
  
@@ -20,6 +21,11 @@ Informationen über Leistungsmerkmale und Tarife finden Sie [hier](https://gesch
 pascom unterstützt die direkte Registrierung des SIP Accounts in der Telefonanlage nur in Verbindung mit dem von der Telekom [empfohlenen Lancom Router](https://geschaeftskunden.telekom.de/startseite/festnetz-internet/tarife/354892/paket-zum-anschluss-einer-ip-telefonanlage.html) für den Anschluss einer IP-Telefonanlage. Alternativ kann die [Registrierung im Router]({{< relref "#einrichtung-via-fritz-box">}}) vorgenommen werden.<br/><br/>
 Wenn Sie einen eigenen Router betreiben muss dieser grundsätzlich die gleichen Kriterien erfüllen wie das empfohlene Gerät der Telekom. In diesem Fall übernehmen wir allerdings keinen Support seitens pascom.
 {{% /notice %}}
+
+## Unterstützte Nutzungsvarianten
+Nutzen Sie die pascom Telefonanlage in der Cloud oder Onsite Vor-Ort in Ihrem Unternehmen? Erfahren Sie in unserer Amtsvorlagenübersicht mehr zu den jeweiligen unterstützen Providern. 
+
+[Übersicht Amtsvorlagen]({{< ref "trunk-templates">}})
 
 ## Ihr Account
 

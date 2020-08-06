@@ -1,7 +1,7 @@
 ---
-title: Fritz!Box
+title: Fritz!Box als Amt
 description: So konfigurieren und verwalten Sie Ihr Amt via Fritz!Box richtig
-weight: 40
+weight: 100
 ---
 
 {{< doctype "self"  >}}

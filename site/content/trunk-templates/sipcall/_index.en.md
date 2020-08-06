@@ -1,15 +1,17 @@
 ---
-title: HFO Telecom
-description: Overview of the pascom managed Provider Template from HFO Telecom
-weight: 20
+title: Sipcall
+description: Overview of the pascom managed Provider Template from Sipcall
+weight: 42
 ---
+
+
 {{< description >}}
 
-![HFO Provider Logo](hfo_telecom_logo.png?width=50%)
+![Sipcall Provider Logo](sipcall-logo.png?width=50%)
 
 ## Overview
 
-Information about features and tariff informations can be found here: [HFO Telecom](http://www.hfo-telecom.de/ "HFO Telecom SIP Provider").
+Information about features and tariff informations can be found here: [Sipcall](https://www.sipcall.ch/de/loesungen/sipcall-sip-trunk/).
 
 
 ## Supported usage variants
@@ -25,9 +27,10 @@ To set up a SIP Trunk via a pascom Provider Template, you need the SIP Account d
 
 You will receive the account data for your SIP trunk account from your provider by mail or can be viewed online in a customer portal.
 
-**Example**
+**To the Customer Portal**
 
-![HFO Account Data](hfo-account.de.png?width=80%)
+[Sipcall Customer Portal](https://my.sipcall.ch/)
+
 
 </br>
 

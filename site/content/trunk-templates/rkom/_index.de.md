@@ -1,16 +1,17 @@
 ---
-title: M-net
-description: Übersicht zum pascom managed Provider Template von M-Net
-weight: 30
+title: R-Kom
+description: Übersicht zum pascom managed Provider Template von R-Kom
+weight: 40
 ---
+
 
 {{< description >}}
 
-![Mnet Provider Logo](mnet-logo.png?width=50%)
+![R-Kom Provider Logo](rkom_logo.png?width=50%)
 
 ## Übersicht
 
-Informationen über Leistungsmerkmale und Tarife finden Sie hier: [Mnet SIP Trunk](https://www.m-net.de/sip-trunk/).
+Informationen über Leistungsmerkmale und Tarife finden Sie hier: [R-Kom](https://www.r-kom.de/).
 
 ## Unterstützte Nutzungsvarianten
 Nutzen Sie die pascom Telefonanlage in der Cloud oder Onsite Vor-Ort in Ihrem Unternehmen? Erfahren Sie in unserer Amtsvorlagenübersicht mehr zu den jeweiligen unterstützen Providern. 
@@ -25,9 +26,9 @@ Für die Einrichtung eines SIP-Amtes über ein pascom Provider Template benötig
 
 Die Zugangsdaten für Ihren SIP Trunk Account erhalten Sie von Ihrem Provider per Post oder sind online einsehbar im Kundenportal.
 
-**Beispiel**
+**Zum Kundenportal**
 
-![Mnet Account Daten](mnet-account.de.png?width=70%)
+[R-Kom Kundenportal](https://kundenportal.r-kom.de/intern/)
 
 </br>
 
@@ -36,3 +37,5 @@ Die Zugangsdaten für Ihren SIP Trunk Account erhalten Sie von Ihrem Provider pe
 Mit Ihren Zugangsdaten können Sie ein neues Amt auf der pascom Telefonanlage erstellen. Eine detaillierte Anleitung zum Einrichten von Ämtern mit Provider Vorlagen finden Sie in unserer Ämter Sektion. 
 
 [Zur Ämter Anleitung]({{< ref "trunks/templates">}})
+
+

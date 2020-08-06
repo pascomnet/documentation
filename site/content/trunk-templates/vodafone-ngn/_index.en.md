@@ -1,18 +1,23 @@
 ---
-title: Vodafone NGN Trunk Template
-description: How to correctly configure and manage your Vodafone NGN trunk. 
+title: Vodafone NGN 
+description: Overview of the pascom managed Provider Template from Vodafone
 weight: 50
 ---
 
-{{< doctype "self" >}}
-
 {{< description >}}
+
+![Vodafone Provider Logo](vodafone-logo.png?width=50%)
 
 ## Overview
 
 Since pascom 18.05, a trunk template for Vodafone NGN Trunks is available.
 
 As the authentication to the Vodafone SIP server takes place via the your Internet connection IP address, configuring these trunks is only possible in a self hosted on-premise pascom phone system. 
+
+## Supported usage variants
+Do you use the pascom telephone system in the cloud or on-site at your company? Learn more about the respective supported providers in our overview of trunk templates. 
+
+[Overview Trunk Templates]({{< ref "trunk-templates">}})
 
 
 ## Your Account
