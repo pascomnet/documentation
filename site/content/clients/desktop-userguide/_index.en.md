@@ -472,11 +472,19 @@ Headset settings for supported manufacturers Sennheiser, Jabra and Plantronics. 
 
 ![audio and headset settings](audiosettings.en.png?width=400px)
 
-### Kuando Busylight Settings
+### Kuando Busylight
+
+![Kuando Busylight](kuando-busylight-image.jpg)
+
+</br>
 
 The pascom system supports the use of the Kuando Busylight. The pascom client automatically recognises the connected Kuando Busylight and configures it. Alternatively, you can switch from **AUTO** to **IGNORATE**, which means that the Kuando Busylight is not used in the pascom client. 
 
+</br>
+
 ![Kuando Busylight Setup](kuando.en.PNG?width=450px)
+
+</br>
 
 **Kuando Busylight Color Guide:**  
 
