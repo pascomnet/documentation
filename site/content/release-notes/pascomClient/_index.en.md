@@ -40,7 +40,7 @@ These following issues are known to us and we are already working on solutions.
 - You can now configure multiple App and URL Actions
 - Actions in the client can now react to multiple call states, not just incoming calls
 - Journal is fully synchronized to the clients and can now be filtered and searched (pascom server 19.09 is required)
-- Support for Senenheiser / EPOS Connect 4.1
+- Support for Sennheiser / EPOS Connect 4.1
 - Updating the client is prevented in the case of an incompatible Operating System or connected server version
 - Improved screen sharing for slow or unreliable internet connections
 
