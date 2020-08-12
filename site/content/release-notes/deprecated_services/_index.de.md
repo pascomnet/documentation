@@ -8,6 +8,34 @@ weight: 1000
 Hier finden Sie eine Übersicht über Services und Dienste, die mit der aktuellen pascom Version nicht mehr funktionieren.
 {{%/notice%}}
 
+### Support für pascom 17 & 18 endet 2020
+**Service / Dienstleistung**
+
+|Datum|mit Version|
+|---|---|
+|Ende 2020|---|  
+**Unsere Technologie entwickelt sich stetig weiter, weshalb wir den Support für pascom 17 und 18 zum kommenden Jahreswechsel beenden, um uns nur noch auf die aktuelle pascom Version zu konzentrieren.**
+
+
+1. Ersetzen Sie Ihre pascom 17/18 Vor-Ort-Telefonanlage durch eine **CLOUD-Telefonanlage** mit einem einfachen Wechsel. Nutzen Sie unser attraktives [Wechselangebot](https://www.pascom.net/de/exklusiv-angebote/zu-pascom-cloud-wechseln/).  
+2. Kontaktieren Sie unseren **Vertrieb**, oder Ihren pascom **Vertriebspartner**, um Ihre Lizenzen upzugraden. Unseren Upgrade-Leitfaden finden Sie [hier]({{< ref "/server/upgrade">}}).
+
+</br>
+
+![pascom17 EOS](pascom17_EOS.png)
+
+<hr>
+
+### Statische Konferenzräume entfernt
+**Software**
+
+|Datum|mit Version|
+|---|---|
+|demnächst|19.xx|  
+**Statische Konferenzräume wurden durch pascom Gruppen ersetzt**
+
+<hr>
+
 
 ### Anrufgruppen gelöscht
 **Software**
