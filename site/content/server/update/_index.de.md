@@ -54,6 +54,10 @@ Sobald das Update erfolgreich durchgeführt wurde, wird Ihnen der Host mit der n
 
 Die pascom Anlage verfügt über ein Firmware-Cluster-Modul, welches bei Updateproblemen ganz einfach zurück auf die vorherige Version schalten kann. Bei einem Update wird immer das OS gewält, welches gerade nicht gestartet ist. Bei einem erfolgreichen Update, wird die geupdatete OS Version automatisch gestartet und die vorherige beendet, welche dann für das nächste Update bereitsteht. 
 
+{{% notice warning %}}
+Führen Sie vor einem Update Ihrer pascom Telefonanlage in jedem Fall ein komplettes Backup Ihrer Daten durch, da diese bei Updateproblemen nicht wiederhergestellt werden können. Das Firmware-Cluster-Modul schützt nicht vor Datenverlust!
+{{% /notice %}}
+
 **Was tun wenn ein Update fehlgeschlagen ist?**
 
 1. Verbinden Sie Ihre Hardware Appliance mit einem Monitor + Tastertur. (Virtualisiert meist schon vorhanden)

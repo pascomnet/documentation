@@ -76,7 +76,6 @@ Da diese Vorlagen nicht von pascom selbst gepflegt werden, wenden Sie sich bei F
 |Nexbridge|
 |SBB|
 |SIP Trunk Plus|
-|sipcall.ch|
 |Tele2|
 |TeleData|
 |TelemaxX|

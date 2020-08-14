@@ -57,6 +57,10 @@ As soon as the update has successfully finished, the host with the new server ve
 
 The pascom system has a firmware cluster module, which can easily switch back to the previous version in the case of update problems. During an update, the OS that is not currently started is selected. If the update is successful, the updated OS version is started automatically and the previous one is ended, which is then used for the next update.
 
+{{% notice warning %}}
+Before you update your pascom telephone system, always make a complete backup of your data, as it cannot be restored in case of update problems. The firmware cluster module does not protect against data loss!
+{{% /notice %}}
+
 **What to do if an update fails?**
 
 1. Connect your hardware appliance to a monitor + keyboard. (Virtualized mostly already available)
