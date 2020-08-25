@@ -29,7 +29,7 @@ Erfahren Sie [hier]({{< ref "trunks/templates#pascom-managed-amtsvorlagen">}}) m
 |Deutsche Telefon|DE|SIP TK-Anlagenanschluss|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
 |[Easybell]( {{< ref "/trunk-templates/easybell" >}})|DE|Business|<i class='fas fa-check'></i>|<i class='fas fa-check'></i> <br/><sub>Bedingt durch Provider-seitiges Blacklisting kann es zu kurzen Unterbrechungen kommen.</sub>|<i class='fas fa-check'></i>|
 |[HFO Telekom]( {{< ref "/trunk-templates/hfo-telecom" >}})|DE|Alle|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
-|[M-net]( {{< ref "/trunk-templates/mnet-sip-trunk" >}})|DE (Regional)|SIP Trunk|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
+|M-Net|DE (Regional)|SIP Trunk|<i class='fas fa-check'></i>|<i class='fas fa-times'></i><br/><sub> Wird derzeit nicht unterstützt.</sub>||
 |Magenta.at (ehemals UPC)|AT|SIP Trunk|<i class='fas fa-check'></i>|<i class='fas fa-times'></i><br/><sub> Wird derzeit nicht unterstützt.</sub>|
 |peoplefone|CH, DE, AT, PL, LT|Alle|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
 |plusnet (QSC)|DE|Ipfonie extended connect|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
