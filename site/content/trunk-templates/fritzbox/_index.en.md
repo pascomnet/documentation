@@ -17,7 +17,7 @@ Under the following circumstances we recommend using a Fritz!Box when registerin
 * VoIP product information is missing, resulting in a direct connection of the SIP trunk not being possible.
 
 {{% notice warning %}}
-Through utilizing a Fritz!Box, the Connection will be limited to 2 Voice Channels due to the Fritz!Box firmware.
+Through utilizing a Fritz!Box, the Connection will be limited to 2 Voice Channels due to the Fritz!Box firmware. Please also note that the registration of more than 3 accounts on the Fritzbox can lead to problems, which is different from Fritzbox to Fritzbox. 
 {{% /notice %}}
 
 ![Fritz!Box](fritzbox.en.png?width=70%)

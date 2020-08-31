@@ -17,7 +17,7 @@ In folgenden Fällen empfehlen wir die Verwendung der Amt-Einbindung über die F
 * Es fehlen Informationen zum VoIP-Produkt, so dass eine direkte Anbindung des SIP-Anschlusses nicht möglich ist.
 
 {{% notice warning %}}
-Bei der Verwendung der Fritz!Box ist der Anschluss auf die Benutzung von zwei Sprach-Kanälen aufgrund der Fritz!Box-Firmware beschränkt.
+Bei der Verwendung der Fritz!Box ist der Anschluss auf die Benutzung von zwei Sprach-Kanälen aufgrund der Fritz!Box-Firmware beschränkt. Bitte beachten Sie des Weiteren, dass die Registrierung von mehr wie 3 Accounts auf der Fritzbox zu Problemen führen kann, was von Fritzbox zu Fritzbox unterschiedlich ist. 
 {{% /notice %}}
 
 ![Fritz!Box](fritzbox.de.png?width=70%)
