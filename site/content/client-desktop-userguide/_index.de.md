@@ -8,8 +8,7 @@ weight: 1
 
 </br>
 
-![Unterstützte Betriebssysteme](desktop_handbook.png?width=30%)
+![Unterstützte Betriebssysteme](desktop_handbook.png?width=20%)
 
-</br>
 
-![pascom Desktop Client Benutzerhandbuch](frontpage_intro.png)
+![pascom Desktop Client Benutzerhandbuch](frontpage_intro.png?width=80%)

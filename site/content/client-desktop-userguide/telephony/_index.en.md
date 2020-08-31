@@ -131,3 +131,9 @@ In the upper telephone area you will find the function **signaling for outgoing 
 ![Change Signaling](amtsholung.jpg)
 *Changing the phone number signaling for outgoing calls*
 </br>
+
+## Your Voicemail Box
+
+Click the **Voicemail button** to call your voicemail box, provided your system administrator has configured your own voicemail box. You can also reach your **mailbox** via a [Function code](link to function codes). 
+
+1. retrieve your messages or make settings via a **voice menu** in your **mailbox**.

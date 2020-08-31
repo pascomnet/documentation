@@ -1,7 +1,7 @@
 ---
-title: Das Anruf- und Teamjournal
-weight: 11
-description: Alle Infos zur Anrufhistorie finden Sie im Journal des pascom Client
+title: pascom Teams - Arbeiten mit Warteschlangen
+weight: 12
+description: Lernen Sie alles Wissenswerte über pascom Teams und das Arbeiten mit Wartenschlangen
 ---
 
 {{< doctype "both" >}}
@@ -16,13 +16,13 @@ description: Alle Infos zur Anrufhistorie finden Sie im Journal des pascom Clien
 ## Übersicht
 
 
-Im Anrufjournal finden Sie die komplette Historie Ihrer Anrufe. Filteroptionen erleichtern das Wiederfinden von Anrufdatensätzen und die Detail-Funktion liefert wertvolle Informationen zu jedem einzelen Anruf.
+pascom Teams sind im Grunde Warteschlangen. Ein Ort wo Ihre Kunden verbleiben, bis ein Benutzer/Agent, den Anruf entgegennimmt. Sind Sie Mitglied in einem Team z.B **Vertrieb**, so erhalten Sie zusätzlich zu Ihren persönlichen Anrufen, die Anrufe aus der Warteschlange. 
 
-## Das Anrufjournal aufrufen
+## Ein pascom Team aufrufen
 
-Klicken Sie in der Menüleiste auf das Symbol der **Anrufhistorie** um das Journal aufzurufen.
+In Ihrer **Kontaktliste** finden Sie das **Team** in dem Sie Mitglied sind, und können mit einem **Klick** auf das Team, die Warteschlange öffnen.
 
-![Anruf Historie öffnen](open_call_history.jpg)
+![pascom Team öffnen](open_call_history.jpg)
 *Anrufjournal öffnen über das Menü*
 </br>
 
@@ -73,7 +73,7 @@ Im Anrufjournal finden Sie auf der rechten Seite in jedem Anrufdatensatz **Symbo
 
 Zudem zeigen kleine Pfeile die **Rufrichtung** an. **Eingehend / Ausgehend** oder **Verbunden**.
 
-1. Mit Klick auf den **roten Höhrer** in jedem Anrufdatensatz, starten Sie einen **Rückruf**.
+1. Mit Klick auf den **roten Höhrer** in jedem Anrufdatensatz, starten Sie einen **Rückruf**
 
 ## Weitere Anruf-Details anzeigen lassen.
 

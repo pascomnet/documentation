@@ -130,3 +130,9 @@ Im oberen Telefon-Bereich finden Sie die Funktion zur **Amtsholung für ausgehen
 ![Amtsholung ändern](amtsholung.jpg)
 *Ändern der Rufnummernsignalisierung für ausgehende Gespräche*
 </br>
+
+## Ihre Voicemailbox
+
+Mit einem Klick auf den **Voicemail-Button** rufen Sie Ihre Voicemailbox an, sofern Ihr Systemadministrator Ihnen eine eigene Voicemailbox eingerichtet hat. Sie können Ihre **Mailbox** auch über einen [Funktionscode](Link zu Funktionscodes) erreichen. 
+
+1. Abrufen Ihrer Nachrichten bzw. das Tätigen von Einstellungen erfolgt über ein **Sprachmenü** in Ihrer **Mailbox**.
