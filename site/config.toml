@@ -57,9 +57,13 @@ whiteColor = "#ffffff"
       title = "Documentation"
       description = "pascom Product Documentation and Release Notes"
 
-    # Topics
-    [Languages.en.params.topics]
-      title = "Categories"
+    # Handbook
+    [Languages.en.params.handbook]
+      title = "User Handbooks"
+
+                # Administration
+    [Languages.en.params.admin]
+      title = "Administration"
     
     # call to action
     [Languages.en.params.cta]
@@ -127,9 +131,13 @@ whiteColor = "#ffffff"
       title = "Dokumentation"
       description = "pascom Produkt Dokumentation und Release Notes"
 
-        # Topics
-    [Languages.de.params.topics]
-      title = "Kategorien"
+      # Handbook
+    [Languages.de.params.handbook]
+      title = "Benutzerhandbücher"
+
+            # Administration
+    [Languages.de.params.admin]
+      title = "Administration"
   
     
     # call to action
