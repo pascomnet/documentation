@@ -64,12 +64,8 @@ Sie können auswählen, aus welcher Warteschlange (in der Sie Mitglied sind) Anr
 
 Im Anrufjournal finden Sie auf der rechten Seite in jedem Anrufdatensatz **Symbole**, anhand derer Sie auf einen Blick erkennen, wie die **Rufrichtung** und das **Anrufergebis** verlaufen sind.
 
-![Journal Symbole](journal_symbols.de.jpg)
+![Journal Symbole](colors_explained.de.jpg)
 *Symbole in der Anrufhistorie zeigen nützliche Infos*
-
-**grüner Höhrer** = Anruf der angenommen wurde.   
-**gelber Höhrer** = Anruf der von einem Kollegen angenommen wurde.  
-**roter Höhrer** = Anruf der verpasst wurde.  
 
 Zudem zeigen kleine Pfeile die **Rufrichtung** an. **Eingehend / Ausgehend** oder **Verbunden**.
 
@@ -96,8 +92,34 @@ Tip: Klicken Sie auf das **rote Info-Symbol** bei den letzten 3 Anrufen. Damit g
 
 ## Team-Journal nutzen
 
+{{< youtube r-MfrLPXkXY  >}} 
+
 Das Team-Journal gibt Ihnen eine komplette Übersicht über alle Anrufe die im Team, in welchem Sie Mitglied sind, getätigt wurden. Weitere Infos zu pascom Teams, finden Sie in folgender [Anleitung](Link zu Teams).
 
+Klicken Sie zum öffnen des **Team-Journal** in Ihrem **Team** auf **Team Journal**.
+
+![Öffnen des Team Journal](open_team_journal.de.jpg)
+*Anrufdaten der Warteschlange in Ihrem Team*
+
+### Team-Journal Filtern und anpassen
+
+Ihnen stehen im **Team-Journal** wieder alle Funktionen, Filter und Einstellungen zur Verfügung, wie in Ihrer persönlichen Anrufhistorie.
+
+Zusätzlich können Sie das Team-Journal in Ihr persönliches Journal, wie [hier Beschrieben](link zu settings Team Journal), integrieren.
+
+### Team-Journal erklärt
+
+Das **Team-Journal** unterscheidet sich im wesentlichen nicht von Ihrem **persönlichen Anrufjournal**. 
+
+![Team Journal Details](team_journal_details.de.jpg)
+*Das Team-Journal im Detail*
+
+In Anrufdatensätzen die aus einem **Team** entstanden sind, können Sie folgende zusätzliche Informationen erhalten.
+
+1. In welchem **Team** der Anrufdatensatz entstanden ist. z.B. **Support**
+2. Was mit dem Anruf passiert ist (**Anrufergebnis**), sowie welcher Kollege aus Ihrem Team den Anruf beantwortet / entgegengenommen hat.   
+
+<br />
 
 
 
