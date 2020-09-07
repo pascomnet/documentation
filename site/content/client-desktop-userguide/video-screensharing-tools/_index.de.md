@@ -99,4 +99,24 @@ Rufen Sie wie gewohnt Ihren Kollegen an. Während dem **aktiven Gespräch** habe
 
 Ihnen stehen die selben Optionen- und Funktionen wie bei einem **Video-Telefonat** zur Verfügung.  
 
+## Video | Einstellungen
+
+In den Videoeinstellungen des pascom Client, können Sie testen ob Ihre WebCam funktioniert und zwischen Ihren installierten Kameras wählen.
+
+1. Öffnen Sie die **Client-Einstellungen** über das pascom Menü
+
+
+![Client Einstellungen öffnen](open_clientsettings.jpg)
 </br>
+
+2. Klicken Sie im **Einstellungs-Menü** auf **Video**
+
+
+![WebCam Einstellungen](videosettings.de.jpg)
+</br>
+
+### Webcam auswählen
+
+Klicken Sie im Drop-Down Feld bei den **Kameras** auf die entsprechende WebCam, welche Sie verwenden möchten und testen Sie gleichzeitig im Vorschaufenster, ob Sie ein Videobild erhalten.  
+
+<br />

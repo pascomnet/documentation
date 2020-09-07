@@ -80,6 +80,24 @@ If a colleague receives a call, a **pop-up notification** appears to **pick up**
 
 ## Call forwading
 
-You want to forward all incoming calls to a colleague or a phone number. No problem, the pascom client offers the possibility to set up a **call forwarding** in the **settings**. The system administrator must have set up a corresponding *authorization role* to set up **call forwarding** for you. How to set up call forwarding is explained in this [Tutorial](link to Client Settings).  
+You want to forward all incoming calls to a colleague or a phone number. No problem, the pascom client offers the possibility to set up a **call forwarding** in the **settings**. The system administrator must have set up a corresponding *authorization role* to set up **call forwarding** for you. 
 
+1. Open the **client settings** via the pascom menu.
+
+
+![Open Client Settings](open_clientsettings.jpg)
 </br>
+
+2. Click on **Phone Settings** in the **Settings menu**
+
+
+![Set up call forwarding](callforwarding.en.jpg)
+</br>
+
+### Set call forwarding
+
+In the **input line** enter the desired phone number to which you want to redirect. If a **predefined call forwarding** have already been set by the system administrator, you can select them from the drop-down menu by clicking on the input line.
+
+
+<br />
+

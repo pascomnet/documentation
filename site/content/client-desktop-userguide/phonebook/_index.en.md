@@ -88,4 +88,32 @@ Then the **Phonebook entry** appears in the section of your **Favorites** in the
 ![phonebook entry as a favorit in your contactlist](favorit_in_contactlist.jpg)
 *Add phone book entry as favorite in the contact list*
 
+## Outlook Kontakte importieren (ab v.2013)
+
+Findet der pascom Desktop Client auf dem PC ein unterstütztes Telefonbuch von Outlook können die Einträge automatisch als **privates Telefonbuch** dem Client hinzugefügt werden.
+
+1. Open the **Client-Settings** via the pascom Menü
+
+
+![Open Client Settings](open_clientsettings.jpg)
+</br>
+
+2. Click on **Outlook Settings** in the **Settings menu**
+
+
+![Outlook Settings](outlook_settings.en.jpg)
+</br>
+
+3. **Activate** the connector and the pascom client will automatically attempt to connect to your **Outlook**.
+
+### Set Outlook PST folder manually
+
+The Outlook PST file contains all Outlook data. Among others also your contacts.
+
+1. Click the **Add**-Button at **Selected folders** and select the directory where the Outlook PST file is located.
+
+### Update Outlook contacts
+
+The pascom client automatically updates your Outlook contacts every time you start the program. If newly created contact data does not yet appear in the pascom phone book, click on **Update Outlook Contacts** in the settings menu.  
+
 <br />

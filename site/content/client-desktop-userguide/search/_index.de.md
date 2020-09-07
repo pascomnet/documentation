@@ -80,3 +80,48 @@ Die pascom Benachrichtigungen finden Sie im Suchfenster. Hier erhalten Sie wertv
 </br>
 
 Mit einem Klick auf **"Mehr"** gelangen Sie zur entsprechenden Mitteilung. Sollten Sie keine Meldungen mehr wünschen, können Sie ganz einfach die Benachrichtigung mit Klick auf das **"X-Symbol"** deaktivieren.
+
+## Benachrichtigungen | Einstellungen
+
+Passen Sie Ihre Benachrichtungen an, um auch nur die Informationen zu erhalten, die für Sie Interessant sind. 
+
+1. Öffnen Sie die **Client-Einstellungen** über das pascom Menü
+
+
+![Client Einstellungen öffnen](open_clientsettings.jpg)
+</br>
+
+2. Klicken Sie im **Einstellungs-Menü** auf **Benachrichtigungen**
+
+
+![Benachrichtigungseinstellungen](notification_settings.de.jpg)
+</br>
+
+### Windows Info Center nutzen
+
+pascom Benachrichtigungen lassen Sich in das Windows Info Center integrieren, so haben Sie zusätzlich eine Benachrichtigungs-Historie. Die PopUp-Fenster passen sich zusätzlich dem Design von Windows an. 
+
+1. Aktivieren / Deaktivieren Sie **Windows Info Center verwenden**
+
+### Benachrichtigungen einstellen
+
+Sie können selbst definieren, welche Art von Benachrichtigungen Sie haben möchten. **Aktivieren / Deaktivieren** Sie einfach die gewünschte Benachrichtigungsart.
+
+1. **Anrufbenachrichtigungen** erscheinen rund um das Thema *"Telefonieren"*. Diese zeigen z.B. eingehende oder ausgehende Anrufe an.  
+
+2. **Heranholenbenachrichtigungen** erscheinen, wenn Sie Anrufe von Kollegen *pickuppen* können.  
+
+3. **Benachrichtigungen bei Dateiübertragung** erscheinen, wenn Ihnen Kollegen Dateien zusenden.  
+
+4. Die Benachrichtigung bei **Eingehende Nachrichten** erscheint, wenn Sie neue Einzel- oder Gruppenchatnachrichten erhalten.  
+
+### Benachrichtigungston einstellen
+
+Sie können aus einer Liste von **Klingeltönen** für die Benachrichtungen wählen oder den Benachrichtungston ganz deaktivieren.  
+
+<br/>
+
+
+
+
+

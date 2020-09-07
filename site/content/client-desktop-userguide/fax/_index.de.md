@@ -1,7 +1,7 @@
 ---
 title: Faxe senden und empfangen
 weight: 14
-description: Erfahren Sie alles Wissenswerte zum Umgang mit dem pascom Telefonbuch
+description: Wir zeigen Ihnen in dieser Anleitung, wie Sie Faxe senden und empfangen, sowie den Faxversand Vollautomatisieren können. 
 ---
 
 {{< doctype "both" >}}
@@ -16,76 +16,120 @@ description: Erfahren Sie alles Wissenswerte zum Umgang mit dem pascom Telefonbu
 ## Übersicht
 
 
-Das pascom Telefonbuch ist so aufgebaut, dass es ein firmenweites globales Telefonbuch und ein privates Telefonbuch, für jeden einzelnen Benutzer, enthält. Somit wird vermieden, dass einzelne Benutzer Ihre privaten Daten im Firmentelefonbuch hinterlegen. Systemadministratoren und Telefonbuchverwalter kümmern sich um globale Telefonbucheinträge und Sie können Ihre eigenen Datensätze verwalten. 
+Die Faxfunktionen der pascom Telefonanlage sind sehr umfangreich. Sie als Benutzer können ein virtuelles Faxgerät oder ein physikalisches Faxgerät, dass bei Ihnen im Büro steht, nutzen. Keine Sorge - die Handhabung ist bei beiden Varianten die selbe. Sie werden wohmöglich gar nicht merken, über was für eine Geräteart Sie Faxen. 
 
-1. *Bei einem eingehenden Anruf, wird zuerst nach einem passenden Kontakt in Ihrem privaten Telefonbuch gesucht. Wird das System nicht fündig, so wird das globale Firmentelefonbuch nach einem passenden Eintrag durchsucht. Somit können Sie Firmeneinträge mit Ihren privaten Daten überschreiben und nur Sie können diese Daten sehen.* 
+**Es gibt jedoch einen kleinen Unterschied**
 
-## Das Telefonbuch öffnen
+1. Nutzen Sie ein virtuelles Faxgerät, empfangen Sie Faxe direkt in Ihrem Emailpostfach. Bei einem physikalischen Faxgerät im Büro, ist es in den meisten Fällen so, dass Sie zum Faxgerät rennen müssen, wenn ein neues Fax eingeht. 
 
-Klicken Sie in der Menüleiste auf das Symbol des **Telefonbuch** um das Telefonbuch aufzurufen.
+## Ein neues Fax senden
 
-![Telefonbuch öffnen](open_phonebook.jpg)
-*Telefonbuch öffnen über das Menü*
+Klicken Sie im Wählfeld des **Telefonie-Bereichs** auf das **Fax-Symbol**. Sie können natürlich einen neuen Faxversand auch direkt aus Ihrem **Telefonbuch** heraus starten.
+
+![Neues Fax starten](start_fax.de.jpg)
+*Neuen Faxversand starten und anlegen*
 </br>
 
-## Übersicht über das private und globale Telefonbuch
+1. Wählen Sie im nächsten Schritt das **PDF-Dokument** aus, welches Sie per Fax versenden möchten.
 
-Über den Menüpunkt in der der oberen linken Ecke des Telefonbuch, können Sie mit einem Klick zwischen Ihrem **privaten** und **globalen** Telefonbuch hin- und herwechseln. 
+2. Geben Sie die **Faxnummer** ein, an die Sie das Dokument schicken möchten. Aus dem **Telefonbuch** heraus, steht natürlich bereits die **Faxnummer** im Wählfeld. 
 
-
-![Übersicht Telefonbuch](overview_phonebook.de.jpg)
-*Übersicht über das Telefonbuch*
+![Fax senden](send_fax.de.jpg)
+*Neues Fax senden*
 </br>
 
-Alle Kontakte werden übersichtlich in einer Art **Visitenkarte** dargestellt. Sie haben von hier aus gleich Zugriff auf wichtige Kontaktarten, die wir Ihnen nachfolgend kurz erklären. 
+1. An die Emailadresse für die **Benachrichtigung** erhalten Sie den **Faxsendebericht** 
 
-![Übersicht Telefonbuch](symbols_phonebook.de.jpg)
-*Symbole der Kontakte erklärt*
+2. Eine eindeutige **Auftrags_ID** wird für jeden Faxversand von der pascom Telefonanlage erstellt.
+
+3. Der **Auftragstitel** verhält sich wie ein **Betreff**. Standartmäßig ist der **Dokumentenname** hinterlegt, von der Datei welche Sie versenden wollen. Sie können den **Auftragstitel** aber auch, mit einem **Klick** darauf, anpassen oder verändern.
+
+## Faxen Teil-Automatisieren
+
+Sie können den Faxversand mit dem pascom Client ein Stück weit **Automatisieren** um Dokumente gleich aus einem **Textverarbeitungsprogramm** heraus, zu faxen.
+
+**Wie läuft das ab?**
+
+1. Sie schreiben ein Fax-Dokument in einem Textverarbeitungsprogramm.
+2. Speichern das Dokument als PDF-Datei in einen **überwachten Ordner**.
+
+### Eine Ordnerüberwachung einrichten
+
+Um den **Faxversand** zu automatisieren, überwacht der pascom Client einen Ordner auf Ihrem Computer. Wenn dort neue Faxdokumente abgespeichert werden, startet der Faxversand automatisch.
+
+1. Öffnen Sie die **Client-Einstellungen** über das pascom Menü.
+
+![Client Einstellungen öffnen](open_clientsettings.jpg)
 </br>
 
-Wie Sie in der Übersichtsgrafik sehen, gibt es **farbige** und **ausgegraute** Symbole, anhand denen sich ablesen lässt, ob die entsprechende Kontaktart Daten enthält oder nicht. 
+1. Wählen Sie im Menü **PDF zu Fax Einstellung** oder Scrollen Sie runter bis zu den Einstellungen **PDF zu Fax**.
 
-## Details zum Telefonbucheintrag
-
-Jeder Kontakt im Telefonbuch enthält weitere Informationen. Klicken Sie dazu auf einen **Telefonbucheintrag** und Sie gelangen zu der **Detailansicht**.
-
-![Details Telefonbucheintrag](details_phonebook.de.jpg)
-*Details eines Telefonbucheintrag*
+![Ordner zur Überwachung auswählen](clientsettings_fax.de.jpg)
 </br>
 
-Die **Detailansicht** eines Telefonbucheintrag gibt Ihnen weitere Infos. 
+In den **Fax zu PDF** Einstellungen setzen Sie mit einem **Klick** auf **Ändern** einen neuen Ordner. Wählen Sie einen bestehenden Ordner aus oder erstellen Sie einen neuen Ordner z.B. **Faxe**.
 
-1. Besitzen Sie die Rolle des **Telefonbuchverwalters** oder befinden Sie sich in einem Telefonbucheintrag Ihres privaten Telefonbuch, können Sie oben rechts auf dem **Bearbeiten-Symbol** den Telefonbucheintrag bearbeiten. 
+### Neue PDF-Dokumente im überwachten Ordner speichern
+1. Sobald Sie ein neues **PDF-Dokument** in diesem Ordner abspeichern, startet automatisch der **Faxversand**. Sie müssen nur noch die **Faxnummer** in das Wählfeld eingeben. 
 
-## Neuen Telefonbucheintrag anlegen.
-
-{{% notice info %}}
-Um im globalen Firmentelefonbuch, neue Telefonbucheinträge zu erstellen, müssen Sie die Rolle **Telefonbuchverwalter** besitzen oder **Systemadministrator** sein.
-{{% /notice %}}
-
-Um neue Telefonbucheinträge zu erstellen, klicken Sie im Telefonbuch auf das **rote Plus-Symbol**.
-
-![Neuen Telefonbucheintrag hinzufügen](addnew_phonebook.de.jpg)
-*Neuen Telefonbucheintrag hinzufügen*
+![Faxversand startet](send_fax.de.jpg)
+*Faxversand startet automatisch bei neu abgespeichertem PDF-Dokuement*
 </br>
 
-Füllen Sie die vordefinierten Felder mit Ihren Kontaktdaten aus und klicken Sie abschließen auf das **Disketten-Symbol** um den Telefoneintrag zu speichern. 
+## Faxen Voll-Automatisieren
 
-![Neuen Telefonbucheintrag erstellen](create_phonebook.jpg)
-*Neuen Telefoneintrag erstellen*
+Um einen vollautomatischen **Faxversand** zu nutzen, müssen Ihre PDF-Dokumente **Steuerfelder**-Parameter besitzen, damit der Faxversand automatisch im Hintergrund funktioniert.
+
+**Wie läuft das ab?**
+
+1. Sie schreiben ein Fax-Dokument in einem Textverarbeitungsprogramm.
+2. Fügen Sie dort **Steuerfelder**-Parameter ein.
+3. Speichern das Dokument als PDF-Datei in einen **überwachten Ordner**.
+
+### Einstellungen zur Automatisierung vornehmen
+
+Richten Sie zunächst wie oben beschrieben eine Ordnerüberwachung ein. Danach aktivieren Sie die Option **Automatisches Senden**.
+
+![Automatisches Senden aktivieren](automatic_fax.de.jpg)
+*Automatisches Senden aktivieren*
+</br>
+
+1. Stellen Sie sicher, dass auf Ihrem Computer das Tool **Ghostscript** installiert ist. Dieses wird benötigt, um PDF Dateien zu steuern. Klicken Sie auf **Scan**, um den Pfad zum Installationsordner automatisch zu setzen. 
+
+2. Die **Sendeverzögerung** verzögert in **Sekunden** den Zeitpunkt, an dem der **Faxversand** automatisch startet.
+
+3. Testen Sie die Konfiguration
+
+### Dokumente mit **Steuerfelder**-Parameter versehen
+
+In Ihrem Dokument, fügen Sie als **erste Zeile** (wie ein Faxheader) die **Steuerfeld**-Parameter ein. 
+
+![Faxdokument](faxdocuement.jpg)
+*Steuerfeld-Parameter in einem Faxdokument*
 </br>
 
 
-## Telefonbucheinträge zur Kontaktliste hinzufügen
+|Verfügbare Steuerfelder||
+|---|---|
+|@@+FAX:+49991123456789@@|Das Fax muss mindestens dieses Steuerzeichen mit der Zielnummer enthalten.|
+|@@+TAG:Bestellung XYZ@@|Optional kann der Fax-Job mit einem Betreff versehen werden.|
+|@@+NOTIFY:mustermann@musterfirma.de@@|Optional kann festgelegt werden, wer über den Status des Fax-Jobs informiert werden soll.|
 
-Möchten Sie Kontakte aus Ihrem Telefonbuch direkt in Ihrer **Kontaktliste** platzieren, so müssen Sie den entsprechenden **Telefonbucheintrag** als **Favorit** markieren.
+1. Speichern Sie Ihr Faxdokument als **PDF-Datei** in den **überwachten Ordner** und der **Faxversand** startet vollautomatisch im Hintergrund.  
 
-![Telefonbucheintrag Favorit](add_favorit.jpg)
-*Telefonbucheintrag als Favorit markieren*
+## Faxe empfangen
 
-Dann erscheint der **Telefonbucheintrag** im Abschnitt Ihrer **Favoriten** in der Kontaktliste.
+Faxe empfangen Sie über das **virtuelle Fax** immer als Email, die direkt in Ihrem Emailpostfach landen. Sofern Ihr **Systemadministrator** Ihre Emailadresse eingerichtet hat. 
 
-![Telefonbucheintrag als Favorit in Kontaktliste](favorit_in_contactlist.jpg)
-*Telefonbucheintrag als Favorit in der Kontaktliste hinzufügen*
+Sollten Sie ein **Team Fax** verwenden, erhalten Sie neue Faxen im Emailpostach des Teams.
+
+![Empfangenes Fax](received_fax.jpg)
+*Empfangenes Fax im Emailpostfach*
+</br>
+
+1. Das eigentliche **Faxdokument** finden Sie als **PDF-Datei** im Anhang der Email. 
+2. Zusätzlich haben Sie in der Email einen **Faxbericht**.  
 
 <br />
+
+

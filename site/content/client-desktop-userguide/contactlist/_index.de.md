@@ -108,11 +108,52 @@ Kollegen mit denen Sie häufiger interagieren müssen, können über das **Stern
 *Favoriten in der Kontaktliste*
 </br>
 
-## Kontaktliste einstellen
+## Profil und Kontaktliste | Einstellungen
 
-Die Kontaktliste lässt sich nach Ihren Vorlieben einstellen. Ändern Sie die **Sortierung** und den **Listenstil** Ihrer Kontaktliste um den Überlick zu behalten. Die Einstellungen der Kontaktliste erklären wir Ihnen in dieser [Anleitung](Link zu den Client Settings)
+Das Profil und die Kontaktliste lässt sich nach Ihren Vorlieben einstellen. Ändern Sie die **Sortierung** und den **Listenstil** Ihrer Kontaktliste um den Überlick zu behalten und stellen Sie neue Avatarbilder ein.
+
+1. Öffnen Sie die **Client-Einstellungen** über das pascom Menü
 
 
+![Client Einstellungen öffnen](open_clientsettings.jpg)
+</br>
 
+2. Klicken Sie im **Einstellungs-Menü** auf **Profil**
+
+
+![Profileinstellungen](settings_profile.de.jpg)
+</br>
+
+### Avatar / Profilbild ändern
+
+Klicken Sie auf **Auswählen** um sich ein neues Bild von Ihrem Computer auszusuchen. Bevor Sie das neue Profilbild speichern, hilft Ihnene eine **Maske** das richtige Format auszuwählen. 
+
+1. Sie können sich aber auch, ein Profilbild aus den Anfangsbuchstaben Ihres Vor- und Nachnamen generieren lassen, indem Sie auf **Generieren** klicken.
+
+### Logout und Beenden
+
+Nutzen Sie den **Logout-Button** um sich vom pascom Client abzumelden. Schließen Sie den pascom Client über den **Beenden-Button**, so wird dieser komplett geschlossen und läuft auch nicht mehr im Hintergrund. 
+
+### Kontaktliste einstellen
+
+Nehmen Sie hier Änderungen am **Listenstil** und der **Sortierung** vor, um die Kontaktliste nach Ihren Vorstellungen zu konfigurieren.
+
+### Automatische Abwesenheit einrichten
+
+Mit dieser Einstellung, können Sie Ihren Präsenzstatus automatisch ändern lassen, wenn Sie eine längere Zeit vom Computer entfernt sind und diesen nicht gesperrt haben.
+
+1. Stellen Sie ein, nach wievielen **Sekunden** die automatische Abwesenheit anspringen soll. Ihr Präsenzstatus ändert sich dann in **gelb**
+
+{{% notice info %}}
+Die automatische Abwesenheitsfunktion springt auch dann an, wenn Sie am Computer sitzen und die Maus eine längere Zeit nicht bewegen.
+{{% /notice %}}
+
+### Passwort ändern
+
+Sie als Benutzer können in den Einstellungen Ihr Passwort selbst ändern. Klicken Sie dazu auf **Passwort ändern**. Geben Sie Ihr altes Passwort ein und vergeben  anschließend ein neues Passwort.
+
+1. Sollte der Button **Passwort ändern** bei Ihnen nicht zu finden sein, so wird Ihr Passwort über eine **Benutzerverwaltung** gepflegt (z.B. Active Directory).  
+
+<br />
 
 

@@ -81,6 +81,22 @@ Oft kommt es vor, dass Ihre Kollegen Anrufe bekommen und gerade nicht am Platz s
 
 ## Rufumleitung für Anrufe
 
-Sie möchten alle eingehenden Anrufe zu einem Kollegen, oder einer Telefonnummer umleiten. Kein Problem, der pascom Client bietet in den **Einstellungen** die Möglichkeit eine **Rufumleitung** einzurichten. Voraussetzung, der Systemadministrator hat eine entsprechende *Berechtigungsrolle* zum setzten einer **Rufumleitung** für Sie eingerichtet. Wie man die Rufumleitung einstellt, erklären wir in dieser [Anleitung](Link zu den Client Settings).  
+Sie möchten alle eingehenden Anrufe zu einem Kollegen, oder einer Telefonnummer umleiten. Kein Problem, der pascom Client bietet in den **Einstellungen** die Möglichkeit eine **Rufumleitung** einzurichten. Voraussetzung, der Systemadministrator hat eine entsprechende *Berechtigungsrolle* zum setzten einer **Rufumleitung** für Sie eingerichtet. 
 
+1. Öffnen Sie die **Client-Einstellungen** über das pascom Menü
+
+
+![Client Einstellungen öffnen](open_clientsettings.jpg)
 </br>
+
+2. Klicken Sie im **Einstellungs-Menü** auf **Telefon**
+
+
+![Rufumleitung einrichten](callforwarding.de.jpg)
+</br>
+
+### Rufumleitung setzen
+
+Geben Sie in der **Eingabezeile** die gewünschte Telefonnunmmer ein, zu der Sie Umleiten möchten. Sind bereits durch den Systemadministrator **vordefinierte Rufumleitungen** gesetzt, können Sie diese mit Klick auf die Eingabezeile aus dem Drop-Down Menü auswählen.
+
+<br />

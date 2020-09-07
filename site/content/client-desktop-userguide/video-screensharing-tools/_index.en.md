@@ -98,4 +98,25 @@ Call your colleague as usual. During the **active call** you now have the option
 
 The same options and functions are available to you as for a **video call**.  
 
+## Video | Settings
+
+In the video settings of the pascom client, you can test if your WebCam works and choose between your installed cameras.
+
+1. Open the **Client Settings** via the pascom menu.
+
+
+![Open Client Settings](open_clientsettings.jpg)
 </br>
+
+2. Click on **Video** in the **Settings menu**.
+
+
+![WebCam settings](videosettings.en.jpg)
+</br>
+
+### Select Webcam
+
+Click in the drop-down field next to the **cameras** on the corresponding WebCam you want to use and test at the same time in the preview window whether you get a video image. 
+
+
+<br />

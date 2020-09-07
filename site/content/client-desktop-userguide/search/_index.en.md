@@ -80,3 +80,43 @@ The pascom notifications can be found in the search window. Here you will receiv
 </br>
 
 By clicking on **"More"** you will get to the corresponding message. If you do not want any more messages, you can easily deactivate the notification by clicking on the **"X-Symbol"**.
+
+## Notifications | Settings
+
+Customize your notifications to receive only the information that is of interest to you. 
+
+1. Open the **Client-Settings** via the pascom Menü
+
+
+![Open Client Settings](open_clientsettings.jpg)
+</br>
+
+2. Click on **Notifications** in the **Settings menu**
+
+
+![Notification Settings](notification_settings.en.jpg)
+</br>
+
+### Use the Windows Info Center
+
+pascom notifications can be integrated into the Windows Info Center, so you also have a notification history. The pop-up windows also adapt to the Windows design. 
+
+1. enable / disable **Use Windows Info Center**.
+
+### Set Notifications
+
+You can define yourself what kind of notifications you want to have. **Activate / Deactivate** simply the desired type of notification.
+
+1. **Call notifications** appear around the topic *"telephony"*. These show p.e. incoming or outgoing calls.  
+
+2. **Pickup notifications** appear when you can *pickup* calls from colleagues.  
+
+3. **file transfer notifications** appear when colleagues send you files.  
+
+4. **Incoming messages** notification appears when you receive new individual or group chat messages.  
+
+### Set notification tone
+
+You can choose from a list of **ringtones** for the notifications or disable the notification tone completely.  
+
+<br/>

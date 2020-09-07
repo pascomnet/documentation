@@ -108,10 +108,52 @@ Colleagues with whom you need to interact more frequently can be marked with the
 *Favourites wihtin the contact list*
 </br>
 
-## Configure your Contact List
+## Profile and Contact list | Settings
 
-The contact list can be adjusted according to your preferences. Change the **sorting** and **list style** of your contact list to keep track of your contacts. The contact list settings are explained in this [tutorial](link to the Client Settings).
+The profile and contact list can be set according to your preferences. Change the **sorting** and **list style** of your contact list to keep track of your contacts or set new avatar images.
+
+1. Open the **client settings** via the pascom menu.
 
 
+![Open Client Settings](open_clientsettings.jpg)
+</br>
+
+2. Click on **My Profile** in the Settings menu.
+
+
+![profile settings](settings_profile.en.jpg)
+</br>
+
+### Change avatar / profile picture
+
+Click on **Choose** to select a new image from your computer. Before you save the new profile picture, a **mask** will help you choose the correct format. 
+
+You can also generate a profile picture from the first letters of your first and last name by clicking on **Generate**.
+
+### Logout and Exit
+
+Use the **Logout button** to log out of the pascom client. If you close the pascom Client via the **Exit button**, it will be closed completely and will no longer run in the background. 
+
+### Configure contact list
+
+Make changes to the **list style** and **sorting** to configure the contact list according to your needs.
+
+### Set up automatic away presence
+
+With this setting, you can have your presence status changed automatically if you are away from your computer for a long time and have not locked it.
+
+1. Set the number of **seconds** after which the automatic away presence should start. Your presence status then changes to **yellow**.
+
+{{% notice info %}}
+The auto away function also starts up when you are sitting at the computer and do not move the mouse for a long time.
+{{% /notice %}}
+
+### Change password
+
+You as a user can change your password in the settings. To do so, click on **Change password**. Enter your old password and then enter a new password.
+
+1. If the button **Change password** cannot be found in your Settings your password will be maintained via a **user directory** (e.g. Active Directory).  
+
+<br />
 
 

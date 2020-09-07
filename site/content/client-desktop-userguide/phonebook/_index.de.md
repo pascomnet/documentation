@@ -22,7 +22,7 @@ Das pascom Telefonbuch ist so aufgebaut, dass es ein firmenweites globales Telef
 
 ## Das Telefonbuch öffnen
 
-Klicken Sie in der Menüleiste auf das Symbol des **Telefonbuch** um das Telefonbuch aufzurufen.
+Klicken Sie in der Menüleiste auf das **Telefonbuch-Symbol** um das Telefonbuch aufzurufen.
 
 ![Telefonbuch öffnen](open_phonebook.jpg)
 *Telefonbuch öffnen über das Menü*
@@ -87,5 +87,35 @@ Dann erscheint der **Telefonbucheintrag** im Abschnitt Ihrer **Favoriten** in de
 
 ![Telefonbucheintrag als Favorit in Kontaktliste](favorit_in_contactlist.jpg)
 *Telefonbucheintrag als Favorit in der Kontaktliste hinzufügen*
+
+<br />
+
+## Outlook Kontakte importieren (ab v.2013)
+
+Findet der pascom Desktop Client auf dem PC ein unterstütztes Telefonbuch von Outlook können die Einträge automatisch als **privates Telefonbuch** dem Client hinzugefügt werden.
+
+1. Öffnen Sie die **Client-Einstellungen** über das pascom Menü
+
+
+![Client Einstellungen öffnen](open_clientsettings.jpg)
+</br>
+
+2. Klicken Sie im **Einstellungs-Menü** auf **Outlook Einstellungen**
+
+
+![Outlook Einstellungen](outlook_settings.de.jpg)
+</br>
+
+3. **Aktivieren** Sie den Konnektor und der pascom Client versucht automatisch eine Verbindung zu Ihrem **Outlook** herzustellen.
+
+### Outlook PST-Ordner manuell festlegen
+
+In der Outlook PST Datei sind alle Outlook Daten gespeichert. Unter anderem auch Ihre Kontakte.
+
+1. Klicken Sie bei **Ausgewählte Ordner** auf den **Hinzufügen-Button** und wählen Sie das Verzeichnis aus, indem sich die Outlook-PST Datei befindet.
+
+### Outlook Kontakte aktualisieren
+
+Der pascom Client aktualisiert automatisch Ihre Outlook-Kontakte bei jedem Programmstart. Sollten neu angelegte Kontaktdaten noch nicht im pascom Telefonbuch erscheinen, so klicken Sie im Einstellungsmenü auf **Outlook Kontakte aktualisieren**.  
 
 <br />

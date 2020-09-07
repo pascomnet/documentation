@@ -1,7 +1,7 @@
 ---
-title: The Phonebook
-weight: 13
-description: Learn everything you need to know about using the pascom telephone book
+title: Send and receive faxes
+weight: 14
+description: In this Tutorial we will show you how to send and receive faxes and how to fully automate fax transmission. 
 ---
 
 {{< doctype "both" >}}
@@ -10,82 +10,125 @@ description: Learn everything you need to know about using the pascom telephone 
 
 ## Trainings Video
 
-{{< youtube dZ6U_YShgag >}} 
+{{< youtube zS7hPRGWXPk >}} 
 
 
 ## Overview
 
 
-The pascom phone book is designed to contain a company-wide global phone book and a private phone book for each individual user. This prevents users from storing their private data in the company phone book. System administrators and phone book administrators take care of global phone book entries and you can manage your own records. 
+The fax functions of the pascom telephone system are very extensive. A user can use a virtual fax machine or a physical fax machine that is located in your office. Don't worry - the handling is the same for both variants. You probably won't even notice what kind of device you are faxing on. 
 
-1. *When an incoming call is received, the system first searches for a matching contact in your private phone book. If the system does not find it, it will search the global company phone book for a matching entry. So you can overwrite company entries with your private data and only you can see this data.* 
+**But there is a small difference**
 
-## Open the Phonebook
+1. Use a virtual fax machine, receive faxes directly into your email inbox. With a physical fax machine in the office, in most cases you will have to run to the fax machine when a new fax arrives. 
 
-Click on the **Phone Book** icon in the menu bar to open up the telephone book.
+## Send a new fax
 
-![Open the Phonebook](open_phonebook.jpg)
-*Open Phonebook via the pascom Menue*
+Click on the **Fax icon** in the dialing field of the **Telephony area**. Of course you can also start a new fax transmission directly from your **phone book**.
+
+![Start a new fax](start_fax.en.jpg)
+*Start and create new fax transmission*
 </br>
 
-## Overview of the private and global Phonebook
+1. In the next step, select the **PDF document** that you want to send by fax.
 
-Using the menu item in the upper left corner of the phone book, you can switch between your **private** and **global** phone book with one click. 
+2. Enter the **fax number** to which you want to send the document. If you send it from the **phone book**, the **fax number** is already in the dialing field.
 
-
-![Phonebook overview](overview_phonebook.en.jpg)
-*Overview of the Phonebook*
+![send fax](send_fax.en.jpg)
+*Send a new fax*
 </br>
 
-All contacts are clearly displayed in a kind of **business card**. From here you have immediate access to important contact types, which we will explain briefly below. 
+1. To the email address for the **notification** you will receive the **fax transmission report** 
 
-![Phonebook symbols](symbols_phonebook.en.jpg)
-*Symbols of the Phonebook explained*
+2. A unique **Job_ID** is created by the pascom telephone system for each fax transmission.
+
+3. The **Job title** behaves like a **subject**. The **document name** of the file you want to send is the default. But you can also change the **title** with a **click** on it.
+
+## Partial automation of faxing
+
+You can **automate** faxing with the pascom client to fax documents directly from a **text editor program**.
+
+**How does it work?**
+
+1. You write a fax document in a word editor program.
+2. Save the document as a PDF file in a **watched folder**.
+
+### Set up a folder monitoring
+
+To automate **fax transmission**, the pascom client monitors a folder on your computer. If new fax documents are saved there, fax transmission starts automatically.
+
+1. Open the **client settings** via the pascom menu.
+
+![Open Client Settings](open_clientsettings.jpg)
 </br>
 
-As you can see in the above graphic, there are **colored** and **greyed** symbols that indicate whether the corresponding contact type contains data or not. 
+1. Select **PDF to Fax Setting** from the menu or scroll down to the settings **PDF to Fax**.
 
-## Details of an Phonebook entry
-
-Each contact in the phone book contains additional information. Click on a **phonebook entry** and you will get to the **detail view**. 
-
-![Phonebookentry details](details_phonebook.en.jpg)
-*Details of an Phonebook entry*
+![Select folder for monitoring](clientsettings_fax.en.jpg)
 </br>
 
-The **detail view** of a phone book entry gives you more information. 
+In the **Fax to PDF** settings, set a new folder with a **click** on **Change**. Select an existing folder or create a new folder e.g. **Faxes**.
 
-If you have the role of **Phone book administrator** or if you are in a telephone book entry of your private telephone book, you can edit the telephone book entry on the top right of the **Edit icon**. 
+### Save new PDF documents to the monitored folder
 
-## Create new phone book entry
+1. As soon as you save a new **PDF document** in this folder, the **Fax transmission** starts automatically. You only have to enter the **Fax number** in the dialing field. 
 
-{{% notice info %}}
-To create new phone book entries in the global company phone book, you must have the role **Phone book administrator** or be **system administrator**.
-{{% /notice %}}
-
-To create new phone book entries, click on the **red plus symbol** in the phone book.
-
-![Add a new Phonebook entry](addnew_phonebook.en.jpg)
-*Add a new Phonebook entry*
+![Fax transmission starting](send_fax.en.jpg)
+*Fax transmission starts automatically when a new PDF document is saved*
 </br>
 
-Fill in the predefined fields with your contact data and click on the **floppydisk symbol** to save the phone entry. 
+## Full automation of faxing
 
-![Create new phonebook entry](create_phonebook.jpg)
-*Create and save a new phonebook entry*
+In order to use fully automatic **fax transmission**, your PDF documents must have **control field** parameters so that fax transmission works automatically in the background.
+
+**How does it work?**
+
+1. You write a fax document in a word editor program.
+2. Insert **control field** parameters.
+2. Save the document as a PDF file in a **watched folder**.
+
+### Make settings for automation
+
+First set up a folder monitoring as described above. Then activate the option **Automatic sending**.
+
+![Activate automatic sending](automatic_fax.en.jpg)
+*Activate automatic sending*
+</br>
+
+1. Make sure that the **Ghostscript** tool is installed on your computer. This tool is required to control PDF files. Click on **Scan** to set the path to the installation folder automatically. 
+
+2. The **Send Delay** delays in **seconds** the time when the **Fax transmission** starts automatically.
+
+3. Test the configuration
+
+### Set **control field** parameters in documents
+
+In your document, insert as **first line** (like a fax header) the **control field** parameters. 
+
+![faxdocument](faxdocuement.jpg)
+*Control field parameters in a fax document*
 </br>
 
 
-## Add phone book entries to contact list
+|Available controls||
+|---|---|
+|@@+FAX:+49991123456789@@|The fax must contain at least this control character with the destination number.|
+|@@+TAG:Bestellung XYZ@@|Optionally, the fax job can be provided with a subject.|
+|@@+NOTIFY:mustermann@musterfirma.de@@|Optionally, you can specify who should be notified of the status of the fax job.|
 
-If you want to place contacts from your phonebook directly in your **contact list**, you must mark the corresponding **phonebook entry** as **favorite**.
+1. Save your fax document as **PDF file** in the **monitored folder** and the **fax transmission** will start automatically in the background.  
 
-![Phonebook favorit](add_favorit.jpg)
-*Mark phonebook entry as favorit
+## Receiving Faxes
 
-Then the **Phonebook entry** appears in the section of your **Favorites** in the contact list.
+Faxes are always received via the **virtual fax** as emails, which land directly in your email inbox. If your **system administrator** has set up your email address. 
 
-![phonebook entry as a favorit in your contactlist](favorit_in_contactlist.jpg)
-*Add phone book entry as favorite in the contact list*
+If you use a **Team Fax**, you will receive new faxes in the team email box. 
+
+![received fax](received_fax.jpg)
+*Received fax in email inbox*
+</br>
+
+1. The actual **fax document** is available as **PDF file** attached to the email. 
+2. Additionally you have a **Fax Report** in the email.  
 
 <br />
