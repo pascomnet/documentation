@@ -136,3 +136,29 @@ Im oberen Telefon-Bereich finden Sie die Funktion zur **Amtsholung für ausgehen
 Mit einem Klick auf den **Voicemail-Button** rufen Sie Ihre Voicemailbox an, sofern Ihr Systemadministrator Ihnen eine eigene Voicemailbox eingerichtet hat. Sie können Ihre **Mailbox** auch über einen [Funktionscode](Link zu Funktionscodes) erreichen. 
 
 1. Abrufen Ihrer Nachrichten bzw. das Tätigen von Einstellungen erfolgt über ein **Sprachmenü** in Ihrer **Mailbox**.
+
+## Rückruf Funktion nutzen
+
+Es kommt vor, dass Sie dringend Rücksprache mit einem Kollegen halten müssen, der aber gerade telefoniert. Natürlich müssen Sie nun warten, bis Ihr Kollege fertig ist mit seinem Telefonat, um ihn persönlich zu sprechen. Hier bietet sich die **Rückruf Funktion** an, welche Sie informiert, sobald das Gespräch beendet wurde.
+
+### Rückruf einrichten
+
+![Rückruf einrichten](callback_setup.de.jpg)
+*Anrufen eines belegten Kollegen richtet Rückruf ein*
+</br>
+
+1. Klicken Sie auf den **"roten Höhrer"** des Kollegen, welcher gerade spricht.  
+
+2. Ein Pop-UP erscheint mit **Rückruf planen** und am unteren Bereich des pascom Client sehen Sie, dass der Rückruf **eingerichtet** wurde.
+
+### Rückruf starten
+
+Sobald Ihr Kollege mit seinem Gespräch fertig ist, erscheint bei Ihnen eine **Benachrichtigung**, dass Ihr Kollege wieder verfügbar ist und angerufen werden kann.
+
+![Rückruf starten](callback_available.de.jpg)
+*Starten Sie einen Rückruf, sobald der Kollege wieder verfügbar ist.*
+</br>
+
+1. Klicken Sie auf **"Anruf"** um Ihren Kollegen anzurufen.
+
+<br />

@@ -456,7 +456,7 @@ Bei der Installation des Clients sind die Tastenkürzel bereits vordefiniert. Di
 Tastenkürzel sind nur im Desktop Client unter Windows und macOS verfügbar.
 {{% /notice %}}
 
-Im folgenden werden die globalen Tastenkürzel näher erklärt:
+**Im folgenden werden die globalen Tastenkürzel näher erklärt:**
 
 |Tastenkürzel|Beschreibung|
 |---|---|

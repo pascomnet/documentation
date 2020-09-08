@@ -137,3 +137,29 @@ In the upper telephone area you will find the function **signaling for outgoing 
 Click the **Voicemail button** to call your voicemail box, provided your system administrator has configured your own voicemail box. You can also reach your **mailbox** via a [Function code](link to function codes). 
 
 1. retrieve your messages or make settings via a **voice menu** in your **mailbox**.
+
+## Use Callback Function
+
+It may be that you urgently need to consult with a colleague who is on the phone. Of course, you will have to wait until your colleague has finished his phone call to speak to him in person. This is where the **call back function** comes in, which informs you as soon as the call is finished.
+
+### Setup Callback
+
+![Callback Setup](callback_setup.en.jpg)
+*Calling a busy colleague sets up a callback*
+</br>
+
+1. Click on the **"red handset"** - symbol of the colleague who is currently speaking.
+
+2. A pop-up appears with **"Plan a callback"** and at the bottom of the pascom client you can see that the callback **has been set up**.
+
+### Start Callback
+
+As soon as your colleague has finished his conversation, you will receive a **notification** that your colleague is available again and can be called.
+
+![Start a Callback](callback_available.en.jpg)
+*Start a callback as soon as the colleague is available again.*
+</br>
+
+1. Click on **"Call"** to call your colleague.
+
+<br />

@@ -34,7 +34,7 @@ Sie haben die Wahl bei der Nutzung Ihres Headset. Vom pascom Client **unterstüt
 
 ## Headset einrichten
 
-Schließen Sie Ihr Headset am Computer via **USB** oder einem **Bluetooth-Dongle** an. der Hersteller Jabra benötigt in der Regel für seine Headsets keine Treiberinstallation. Plantronics und Sennheiser benötigen bei einigen Modellen eine Software, die installiert werden muss. Der pascom Client erkennt dann automatisch ein neues **Headset**. 
+Schließen Sie Ihr Headset am Computer via **USB** oder einem **Bluetooth-Dongle** an. Der Hersteller Jabra benötigt in der Regel für seine Headsets keine Treiberinstallation. Plantronics und Sennheiser benötigen bei einigen Modellen eine Software, die installiert werden muss. Der pascom Client erkennt dann automatisch ein neues **Headset**. 
 
 ![Neues Headset erkannt](newheadset.de.jpg)
 </br>
@@ -43,7 +43,7 @@ Schließen Sie Ihr Headset am Computer via **USB** oder einem **Bluetooth-Dongle
 Der Windows **Wave Mapper** kümmert sich um die Zuordnung des Audio zu Ihren Geräten und weiß natürlich nicht, was Sie für Preferenzen haben. Führen Sie daher bei jedem neuen Headset eine Konfiguration durch. 
 {{% /notice %}}
 
-**Warum wird mein Headset automatisch erkannt?**
+**Warum wird mein Headset automatisch erkannt?**  
 Das liegt an den Einstellung des pascom Client. Unterstützte Headsets werden automatisch erkannt, können jedoch auch **ignoriert** werden, falls Sie das Headset in einer anderen Anwendung nutzen möchten.
 
 ## Headset Einstellungen
@@ -83,4 +83,6 @@ Die Audio Einstellungen können Sie ganz nach Ihren Vorlieben vornehmen. Da die 
 
 ### Klingeltöne einstellen
 
-Der pascom Client liefert einige standartmäßig integrierte Klingeltöne mit, aus denen Sie wählen können. Sie können aber auch Ihre eigenen Klingeltöne einstellen, indem Sie auf den Button **"Auswählen"** drücken und ein Musikstück von Ihrem Computer hochladen.
+Der pascom Client liefert einige standartmäßig integrierte Klingeltöne mit, aus denen Sie wählen können. Sie können aber auch Ihre eigenen Klingeltöne einstellen, indem Sie auf den Button **"Auswählen"** drücken und ein Musikstück von Ihrem Computer hochladen.  
+
+<br />

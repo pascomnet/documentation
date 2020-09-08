@@ -84,4 +84,6 @@ You can adjust the audio settings according to your preferences. Since the audio
 
 ### Configure Ringtones
 
-The pascom client comes with several standard integrated ringtones from which you can choose. However, you can also set your own ringtones by pressing the **"Choose"** button and uploading a music track from your computer.
+The pascom client comes with several standard integrated ringtones from which you can choose. However, you can also set your own ringtones by pressing the **"Choose"** button and uploading a music track from your computer.  
+
+<br />
