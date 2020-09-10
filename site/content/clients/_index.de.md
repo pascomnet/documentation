@@ -1,5 +1,5 @@
 ---
-title: pascom Clients
+title: Client Administration
 description: pascom bietet native Clients für Windows, MacOS, Linux, iOS und Android
 icon: "fa fa-desktop"
 type : "pages"

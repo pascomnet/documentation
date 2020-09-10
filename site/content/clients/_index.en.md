@@ -1,5 +1,5 @@
 ---
-title: pascom Clients
+title: Client Administration
 description: pascom phone systems include native clients for Windows, MacOS, Linux, iOS and Android
 icon: "fa fa-desktop"
 type : "pages"
