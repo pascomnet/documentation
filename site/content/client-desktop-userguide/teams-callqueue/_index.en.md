@@ -21,7 +21,7 @@ pascom teams are basically queues. A place where your customers stay until a use
 
 In your **contact list** you will find the **team** of which you are a member, and you can open the queue with a **click** on the team. e.g. **Team Support**
 
-![open pascom Team](open_teams.en.jpg)
+![open pascom Team](open_teams.jpg)
 *Open a pascom team via the contactlist*
 </br>
 

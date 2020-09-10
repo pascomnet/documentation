@@ -4,13 +4,8 @@ weight: 12
 description: Lernen Sie alles Wissenswerte über pascom Teams und das Arbeiten mit Wartenschlangen
 ---
 
-{{< doctype "both" >}}
- 
+
 {{< description >}}
-
-## Trainings Video
-
-{{< youtube r-MfrLPXkXY  >}} 
 
 
 ## Übersicht
@@ -22,7 +17,7 @@ pascom Teams sind im Grunde Warteschlangen. Ein Ort wo Ihre Kunden verbleiben, b
 
 In Ihrer **Kontaktliste** finden Sie das **Team** in dem Sie Mitglied sind, und können mit einem **Klick** auf das Team, die Warteschlange öffnen. z.B. **Team Support**
 
-![pascom Team öffnen](open_teams.de.jpg)
+![pascom Team öffnen](open_teams.jpg)
 *pascom Team öffnen über die Kontaktliste*
 </br>
 
@@ -68,15 +63,6 @@ Sie sehen die Rufnummer, den Namen (sofern ein Telefonbucheintrag vorhanden ist)
 
 ![Wartende Anrufer im Team](waitingcall_teams.de.jpg)
 *Wartende Anrufer in der Warteschlange anzeigen*
-
-### Wartenden Anrufer heranholen
-
-Wenn Ihnen die automatische Zustellung der Anrufe nicht schnell genug geht oder Sie sich einen Anrufer vor einem Kollegen aus der Warteschlange holen möchten, können Sie diesen **heranholen / pickuppen**.
-
-1. Klicken Sie dazu mit der **rechten Maustaste** auf den wartenden Anrufer den Sie heranholen möchten. Wählen Sie dann **Anruf heranholen** aus. 
-
-![Wartenden Anrufer heranholen](pickup_teams.de.jpg)
-*Wartenden Anrufer heranholen*
 
 
 ## Das Team-Journal

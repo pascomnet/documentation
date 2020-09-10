@@ -4,13 +4,9 @@ weight: 12
 description: Learn all you need to know about pascom teams and working with queues
 ---
 
-{{< doctype "both" >}}
  
 {{< description >}}
 
-## Trainings Video
-
-{{< youtube dZ6U_YShgag >}} 
 
 ## Overview
 
@@ -21,7 +17,7 @@ pascom teams are basically queues. A place where your customers stay until a use
 
 In your **contact list** you will find the **team** of which you are a member, and you can open the queue with a **click** on the team. e.g. **Team Support**
 
-![open pascom Team](open_teams.en.jpg)
+![open pascom Team](open_teams.jpg)
 *Open a pascom team via the contactlist*
 </br>
 
@@ -67,15 +63,6 @@ You will see the phone number, the name (if there is a phone book entry) and the
 
 ![Waiting callers in the Team](waitingcall_teams.en.jpg)
 *Show waiting callers in the queue*
-
-### Pick up waiting callers
-
-If the automatic call delivery is not fast enough for you or you want to pick up a caller before a colleague from the queue, you can **pick up** the call.
-
-1. To do this, click with the **right mouse button** on the waiting caller you want to pick up. Then select **Pickup call**. 
-
-![Pick up waiting callers](pickup_teams.en.jpg)
-*Pick up waiting callers*
 
 
 ## The Team-Journal

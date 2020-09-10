@@ -22,7 +22,7 @@ pascom Teams sind im Grunde Warteschlangen. Ein Ort wo Ihre Kunden verbleiben, b
 
 In Ihrer **Kontaktliste** finden Sie das **Team** in dem Sie Mitglied sind, und können mit einem **Klick** auf das Team, die Warteschlange öffnen. z.B. **Team Support**
 
-![pascom Team öffnen](open_teams.de.jpg)
+![pascom Team öffnen](open_teams.jpg)
 *pascom Team öffnen über die Kontaktliste*
 </br>
 

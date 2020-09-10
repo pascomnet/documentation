@@ -6,12 +6,6 @@ description: Alle Infos zur Anrufhistorie finden Sie im Journal des pascom Clien
 
 {{< doctype "both" >}}
  
-{{< description >}}
-
-## Trainings Video
-
-{{< youtube r-MfrLPXkXY  >}} 
-
 
 ## Übersicht
 

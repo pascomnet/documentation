@@ -6,11 +6,6 @@ description: All information about the call history can be found in the journal 
 
 {{< doctype "both" >}}
  
-{{< description >}}
-
-## Trainings Video
-
-{{< youtube dZ6U_YShgag >}} 
 
 ## Übersicht
 

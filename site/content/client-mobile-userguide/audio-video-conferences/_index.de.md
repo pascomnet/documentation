@@ -3,20 +3,14 @@ title: Audio- und Video Konferenzen
 weight: 10
 description: Nutzen Sie für eine effektivere Zusammenarbeit mit Ihren Kollegen und Kunden die Konferenz-Tools des pascom Mobile Client
 ---
-
-{{< doctype "both" >}}
  
 {{< description >}}
-
-## Trainings Video
-
-{{< youtube -k1t5sel0NE >}} 
 
 
 ## Übersicht
 
 
-Konferenzen sind ein wichtiger Bestandteil in der heutigen Geschäftswelt. Besprechen Sie Themen mit Ihren Kollegen oder Kunden in virtuellen Konferenzräumen. Besprechungen mit mehreren Teilnehmern, waren noch nie so einfach wie mit dem pascom Client. 
+Konferenzen sind ein wichtiger Bestandteil in der heutigen Geschäftswelt. Besprechen Sie Themen mit Ihren Kollegen oder Kunden in virtuellen Konferenzräumen. Besprechungen mit mehreren Teilnehmern, waren noch nie so einfach wie mit dem pascom Mobile Client. 
 
 ### Was wird benötigt?
 
@@ -52,23 +46,12 @@ Um eine Konferenz zu starten oder beizutreten, rufen Sie die Gruppe über das **
 
 Ihnen stehen nun alle **Funktionen** zur Verfügung, die Sie bereits aus der Anleitung zu den [Video- und Screensharing-Tools](link zu video screensharing) oder den [Telefonie Funktionen]( link zu telefonie mit pascom) kennen sollten. 
 
-## Video - Screensharing Konferenz mit Ihren Kollegen
+## Video Konferenz mit Ihren Kollegen
 
-Befinden Sie sich in einer aktiven Konferenz, haben Sie die Möglichkeit die **Video-Funktionalität** sowie das **Screensharing** über das **Wählfeld** einzuschalten. 
-
-{{% notice info %}}
-Bitte beachten Sie, sobald Sie in einer Konferenz das **Video** oder **Screensharing** einschalten, können alle Teilnehmer Ihr Video oder Ihren Bildschirminhalt sehen.
-{{% /notice %}}
-
-
-![Aktive Video Konferenz mit Kollegen](active_video_screensharing_conference.jpg)
-*Aktive Video,-Screensharing Konferenz mit Ihren Kollegen*
-</br>
-
-1. Halten Sie so tolle Besprechungen oder Präsentationen, indem Sie die **Screensharing-Funktion** und **Video-Funktion** nutzen.
+Befinden Sie sich in einer aktiven Konferenz, haben Sie die Möglichkeit die **Video-Funktionalität** über das **Wählfeld** einzuschalten. 
 
 {{% notice info %}}
-Die **Screensharing-Funktion** kann immer nur von einem Teilnehmer verwendet werden. In der Regel ist das der Präsentator oder Moderator der Konferenz.
+Bitte beachten Sie, sobald Sie in einer Konferenz das **Video** einschalten, können alle Teilnehmer Ihr Video sehen.
 {{% /notice %}}
 
 ## Audio-Konferenz mit Ihren Kunden
@@ -79,10 +62,4 @@ Eine **Audio-Konferenz** mit Ihren Kunden funktioniert genauso, wie mit Ihren Ko
 *Aktive Video Konferenz mit externen Teilnehmern*
 </br>
 
-{{% notice info %}}
-Externe Teilnehmer können Ihren Chat-Verlauf in einer Audio-Konferenz nicht sehen. 
-{{% /notice %}}
 
-## Video,- Screensharing Konferenz mit Ihren Kunden
-
-Um den visuellen Apsekt in eine Konferenz mit Ihren Kunden zu bringen, müssen Sie eine Web Konferenz starten. Wie Sie eine Online Konferenz in Verbindung mit dem pascom Web Client erstellen können, erfahren Sie in dieser [Anleitung](Link zu Web Konferenz Handbuch).
