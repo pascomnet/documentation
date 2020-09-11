@@ -10,17 +10,17 @@ description: Use chat groups, share information with colleagues and send files.
 
 ## Trainings Video
 
-{{< youtube dZ6U_YShgag >}} 
+{{< youtube 8OBSRSndjas >}} 
 
 ## Chat with colleagues
 
-Quickly exchanging information with a colleague has become an indispensable tool in business communication today. In the pascom client, simply click on a colleague in the **contact list** to open the chat conversation window.
+Quickly exchanging information with a colleague has become an indispensable tool in business communication today. In the pascom client, simply click on a colleague in the {{< ui-button "contact list">}} to open the chat conversation window.
 
 ![Open chat from the contact list](chat_open_contactlist.jpg)
 *Open chat conversation from the contact list*
 </br>
 
-Alternatively, during an active phone call with your colleague, you can simultaneously open the chat conversation by clicking on **Chat** in the **Call element**.
+Alternatively, during an active phone call with your colleague, you can simultaneously open the chat conversation by clicking on {{< ui-button "chat">}} in the **Call element**.
 
 ![Open chat during a conversation](chat_open_duringcall.en.jpg)
 *Open chat conversation during a phone Call*
@@ -34,7 +34,7 @@ The dynamic content area or view window will then show you the chat conversation
 
 ### Type a Chat message
 
-1. Enter your message in the lower **input field** and send the message by clicking on the **red send arrow** or by pressing the **enter key**.
+1. Enter your message in the lower {{< ui-button "input field">}} and send the message by clicking on the {{< ui-button "red send arrow">}} or by pressing the **enter key**.
 
 2. If you want a paragraph in the chat message, press **Shift + Enter key** to insert a blank line.
 
@@ -42,7 +42,7 @@ The dynamic content area or view window will then show you the chat conversation
 
 For group chat rooms you first need a pascom group which you can create with the following [tutorial](link to pascom groups).
 
-Click on the **Group** in your contact list to open the chat conversation.
+Click on the {{< ui-button "group">}} in your contact list to open the chat conversation.
 
 ![Open Group Chat](groupchat_open_contactlist.en.jpg)
 *Open group chat via the contact list*
@@ -54,11 +54,11 @@ The dynamic content area or view window will then show you the chat conversation
 *Group chat with multiple participants*
 </br>
 
-1. Type your message as usual in the **input field** and send it by clicking on the **red send arrow** or by pressing the **enter key**.
+1. Type your message as usual in the {{< ui-button "input field">}}  and send it by clicking on the {{< ui-button "red send arrow">}} or by pressing the **enter key**.
 
 ## Close a Chat
 
-1. Close the current chat conversation by clicking on the **red X symbol** in the upper right corner. 
+1. Close the current chat conversation by clicking on the {{< ui-button "red x icon">}}in the upper right corner. 
 
 {{% notice info %}}
 If you close a chat conversation and have already written a message but have not yet sent it, the pascom client saves what you have already written and you can continue editing it later. This allows you to jump back and forth between chat conversations.
@@ -78,7 +78,7 @@ The client offers you the possibility to exchange files with your colleagues. Th
 
 There are several ways to send a file to your colleague.  
 
-1. Click on the **red paper clip** in the current chat conversation and select the file you want to send.
+1. Click on the {{< ui-button "red paper clip">}} in the current chat conversation and select the file you want to send.
 
 ![File sharing via file selection](filesharing1.en.jpg)
 *File sharing via file selection*

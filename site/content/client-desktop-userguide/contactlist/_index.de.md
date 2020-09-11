@@ -19,7 +19,7 @@ Das eigene Profil, bietet sehr gute Einstellungen, um seinen Kollegen visuell mi
 
 ### Ihren Präsenzstatus einstellen
 
-Klicken Sie zum Einstellen Ihres Präsenzstatus auf das Dopdownfeld in Ihrem Profil. Daraufhin öffnen sich zwei Auswahlmöglichkeiten.
+Klicken Sie zum Einstellen Ihres Präsenzstatus auf das {{< ui-button "Drop Down Feld">}} in Ihrem Profil. Daraufhin öffnen sich zwei Auswahlmöglichkeiten.
 
 ![Eigener präsenzstatus](status.de.png)
 *Auswahl Präsenzstatus*
@@ -29,7 +29,7 @@ Klicken Sie zum Einstellen Ihres Präsenzstatus auf das Dopdownfeld in Ihrem Pro
 2. **rot** = Nicht stören
 
 {{% notice info %}}
-Bitte beachten Sie, dass die **"Bitte nicht stören" -  Funktion** keine DND-Funktionalität ersetzt. Dies signalisiert nur Ihren Kollegen, dass Sie aktuell nicht gestört werden möchten. Wollen Sie nicht erreichbar sein, so verwenden Sie die Gerätesteuerung [LINK]()
+Bitte beachten Sie, dass die **"Bitte nicht stören" -  Funktion** keine DND-Funktionalität ersetzt. Dies signalisiert nur Ihren Kollegen, dass Sie aktuell nicht gestört werden möchten. Wollen Sie nicht erreichbar sein, so verwenden Sie die [Gerätesteuerung]({{< ref "/client-desktop-userguide/mydevices" >}}).
 {{% /notice %}}
 
 ### Präsentzstatus individualisieren
@@ -55,7 +55,7 @@ Der Präsenzstatus zeigt Ihren Kollegen welches Gerät Sie gerade benutzen. Sitz
 
 Zeigen Sie Ihren Kollegen, wo Sie sich gerade befinden. Ihr Systemadministrator kann Ihnen Arbeitsplätze einrichten, welche vordefinierte Einstellungen bieten. So können Sie mit einem einzelnen Klick ein komplett neues Setup übernehmen. z.B. Home-Office, Vertrieb etc.
 
-Klicken Sie dazu neben dem Endgerätestatus auf das Standortsymbol und wählen Ihren Arbeitsplatz aus. 
+Klicken Sie dazu neben dem Endgerätestatus auf das {{< ui-button "Standort-Symbol">}} und wählen Ihren Arbeitsplatz aus. 
 
 ![Wählen Sie Ihren Arbeitsplatz](location_select.de.jpg)
 *Arbeitsplatz auswählen*
@@ -112,13 +112,13 @@ Kollegen mit denen Sie häufiger interagieren müssen, können über das **Stern
 
 Das Profil und die Kontaktliste lässt sich nach Ihren Vorlieben einstellen. Ändern Sie die **Sortierung** und den **Listenstil** Ihrer Kontaktliste um den Überlick zu behalten und stellen Sie neue Avatarbilder ein.
 
-1. Öffnen Sie die **Client-Einstellungen** über das pascom Menü
+1. Öffnen Sie die {{< ui-button "Client Einstellungen">}} über das pascom Menü
 
 
 ![Client Einstellungen öffnen](open_clientsettings.jpg)
 </br>
 
-2. Klicken Sie im **Einstellungs-Menü** auf **Profil**
+2. Klicken Sie im **Einstellungs-Menü** auf {{< ui-button "Profil">}}
 
 
 ![Profileinstellungen](settings_profile.de.jpg)
@@ -132,7 +132,7 @@ Klicken Sie auf **Auswählen** um sich ein neues Bild von Ihrem Computer auszusu
 
 ### Logout und Beenden
 
-Nutzen Sie den **Logout-Button** um sich vom pascom Client abzumelden. Schließen Sie den pascom Client über den **Beenden-Button**, so wird dieser komplett geschlossen und läuft auch nicht mehr im Hintergrund. 
+Nutzen Sie den {{< ui-button "Logout-Button">}} um sich vom pascom Client abzumelden. Schließen Sie den pascom Client über den {{< ui-button "Beenden Button">}}, so wird dieser komplett geschlossen und läuft auch nicht mehr im Hintergrund. 
 
 ### Kontaktliste einstellen
 
@@ -150,9 +150,9 @@ Die automatische Abwesenheitsfunktion springt auch dann an, wenn Sie am Computer
 
 ### Passwort ändern
 
-Sie als Benutzer können in den Einstellungen Ihr Passwort selbst ändern. Klicken Sie dazu auf **Passwort ändern**. Geben Sie Ihr altes Passwort ein und vergeben  anschließend ein neues Passwort.
+Sie als Benutzer können in den Einstellungen Ihr Passwort selbst ändern. Klicken Sie dazu auf {{< ui-button "Passwort ändern">}}. Geben Sie Ihr altes Passwort ein und vergeben  anschließend ein neues Passwort.
 
-1. Sollte der Button **Passwort ändern** bei Ihnen nicht zu finden sein, so wird Ihr Passwort über eine **Benutzerverwaltung** gepflegt (z.B. Active Directory).  
+1. Sollte der Button {{< ui-button "Passwort ändern">}} bei Ihnen nicht zu finden sein, so wird Ihr Passwort über eine **Benutzerverwaltung** gepflegt (z.B. Active Directory).  
 
 <br />
 

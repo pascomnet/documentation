@@ -19,7 +19,7 @@ The own profile, offers very good settings, in order to communicate visually to 
 
 ### Set your Presence status
 
-To set your presence status, click on the dopdownfield in your profile. This opens two options.
+To set your presence status, click on the {{< ui-button "Drop Down Field">}} in your profile. This opens two options.
 
 ![Own Presence status](status.en.png)
 *Choose your Presence status*
@@ -29,7 +29,7 @@ To set your presence status, click on the dopdownfield in your profile. This ope
 2. **red** = Do not disturb
 
 {{% notice info %}}
-Please note that the **"Do not disturb" function** does not replace DND functionality. This only signals to your colleagues that you do not wish to be disturbed at the moment. If you do not want to be reached, use the device control [LINK]()
+Please note that the **"Do not disturb" function** does not replace DND functionality. This only signals to your colleagues that you do not wish to be disturbed at the moment. If you do not want to be reached, use the [device control]({{< ref "/client-desktop-userguide/mydevices" >}}).
 {{% /notice %}}
 
 ### Individualize your presence status
@@ -55,7 +55,7 @@ The presence status shows your colleagues which device you are currently using. 
 
 Show your colleagues where you are right now. Your system administrator can set up locations that offer predefined settings. So you can adopt a completely new setup with a single click. e.g. home office, sales etc.
 
-To do this, click on the location icon next to the device status and select your location. 
+To do this, click on the {{< ui-button "location icon">}} next to the device status and select your location. 
 
 ![Choose your location](location_select.en.jpg)
 *Choose a location*
@@ -112,13 +112,13 @@ Colleagues with whom you need to interact more frequently can be marked with the
 
 The profile and contact list can be set according to your preferences. Change the **sorting** and **list style** of your contact list to keep track of your contacts or set new avatar images.
 
-1. Open the **client settings** via the pascom menu.
+1. Open the {{< ui-button "Client Settings">}} via the pascom menu.
 
 
 ![Open Client Settings](open_clientsettings.jpg)
 </br>
 
-2. Click on **My Profile** in the Settings menu.
+2. Click on {{< ui-button "My Profile">}} in the Settings menu.
 
 
 ![profile settings](settings_profile.en.jpg)
@@ -126,13 +126,13 @@ The profile and contact list can be set according to your preferences. Change th
 
 ### Change avatar / profile picture
 
-Click on **Choose** to select a new image from your computer. Before you save the new profile picture, a **mask** will help you choose the correct format. 
+Click on {{< ui-button "Choose">}} to select a new image from your computer. Before you save the new profile picture, a **mask** will help you choose the correct format. 
 
 You can also generate a profile picture from the first letters of your first and last name by clicking on **Generate**.
 
 ### Logout and Exit
 
-Use the **Logout button** to log out of the pascom client. If you close the pascom Client via the **Exit button**, it will be closed completely and will no longer run in the background. 
+Use the {{< ui-button "Logout Button">}} to log out of the pascom client. If you close the pascom Client via the {{< ui-button "Exit Button">}}, it will be closed completely and will no longer run in the background. 
 
 ### Configure contact list
 
@@ -150,9 +150,9 @@ The auto away function also starts up when you are sitting at the computer and d
 
 ### Change password
 
-You as a user can change your password in the settings. To do so, click on **Change password**. Enter your old password and then enter a new password.
+You as a user can change your password in the settings. To do so, click on {{< ui-button "Change Password">}}. Enter your old password and then enter a new password.
 
-1. If the button **Change password** cannot be found in your Settings your password will be maintained via a **user directory** (e.g. Active Directory).  
+1. If the button {{< ui-button "Change Password">}} cannot be found in your Settings your password will be maintained via a **user directory** (e.g. Active Directory).  
 
 <br />
 

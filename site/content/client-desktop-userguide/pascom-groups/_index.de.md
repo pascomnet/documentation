@@ -31,7 +31,7 @@ Mit der Gruppen-Funktion erstellen Sie permanente Gruppen für:
 Das Anlegen neuer pascom Gruppen ist nicht restriktiert und kann von jedem Benutzer vorgenommen werden.
 {{% /notice %}}
 
-Erstellen Sie eine neue Gruppe über das **+-Symbol** in Ihrem Profil.
+Erstellen Sie eine neue Gruppe über das {{< ui-button "+ - Symbol">}} in Ihrem Profil.
 
 ![Schritt 1 Gruppe erstellen](create_group.jpg)
 </br>
@@ -41,7 +41,7 @@ Geben Sie im Einstellungsfenster der Gruppe eine **Bezeichnung** ein z.B. "Suppo
 ![Schritt 2 Gruppe erstellen](create_group_2.de.jpg)
 </br>
 
-Abschließend klicken Sie zum **Speichern** der Gruppe auf das **rote Diskettensymbol**. Ihre neue Gruppe erscheint nun in der Kontaktliste.
+Abschließend klicken Sie zum **Speichern** der Gruppe auf das {{< ui-button "rote Disketten Symbol">}}. Ihre neue Gruppe erscheint nun in der Kontaktliste.
 
 ![Schritt 3 Gruppe erstellen](create_group_3.de.jpg)
 </br>
@@ -59,15 +59,15 @@ Befinden Sie sich im Fenster einer pascom Gruppe, haben sie in der oberen Menül
 
 ### Gruppe stumm schalten
 
-1. Klicken Sie dazu in der oberen Menüleiste auf das **Lautsprecher-Symbol**. Nun bekommen Sie keine Benachrichtung mehr bei neuen Ereignissen in der Gruppe.
+1. Klicken Sie dazu in der oberen Menüleiste auf das {{< ui-button "Lautsprecher Symbol">}}. Nun bekommen Sie keine Benachrichtung mehr bei neuen Ereignissen in der Gruppe.
 
 ### Gruppe schließen
 
-2. Um eine Gruppe zu schließen, klicken Sie in der oberen Menüleiste auf das **rote X-Symbol**. Keine Sorge, Sie können jederzeit die Gruppe wieder, aus der Kontaktliste heraus, öffnen.
+2. Um eine Gruppe zu schließen, klicken Sie in der oberen Menüleiste auf das {{< ui-button "rote X- Symbol">}}. Keine Sorge, Sie können jederzeit die Gruppe wieder, aus der Kontaktliste heraus, öffnen.
 
 ### Gruppe editieren und Teilnehmer verwalten
 
-3. Um Änderungen an einer Gruppe vorzunehmen, klicken Sie in der oberen Menüleiste auf das **rote Info-Symbol**, und Sie gelangen zu den Gruppen-Einstellungen.
+3. Um Änderungen an einer Gruppe vorzunehmen, klicken Sie in der oberen Menüleiste auf das {{< ui-button "rote Info Symbol">}}, und Sie gelangen zu den Gruppen-Einstellungen.
 
 ![Gruppen Details](group_details.de.jpg)
 
@@ -77,17 +77,17 @@ Befinden Sie sich im Fenster einer pascom Gruppe, haben sie in der oberen Menül
 
 ### Teilnehmer hinzufügen oder entfernen
 
-5. Soll Ihre Gruppe neue Mitglieder aufnehmen, so klicken Sie auf den Menüpunkt **Teilnehmer hinzufügen** und wählen aus einer Liste neue Teilnehmer aus. 
+5. Soll Ihre Gruppe neue Mitglieder aufnehmen, so klicken Sie auf den Menüpunkt {{< ui-button "Teilnehmer hinzufügen">}} und wählen aus einer Liste neue Teilnehmer aus. 
 
-6. Zum entfernen von Teilnehmern aus der Gruppe, klicken Sie auf das **rote Mülleimer-Symbol**.
+6. Zum entfernen von Teilnehmern aus der Gruppe, klicken Sie auf das {{< ui-button "rote Mülleimer Symbol">}}.
 
 ### Gruppe selbst verlassen
 
-7. Möchten Sie selbst die Mitgliedschaft in einer Gruppe beenden, klicken Sie ganz unten in den **Gruppen-Einstellungen** auf **Gruppe verlassen**.
+7. Möchten Sie selbst die Mitgliedschaft in einer Gruppe beenden, klicken Sie ganz unten in den **Gruppen-Einstellungen** auf {{< ui-button "Gruppe verlassen">}}.
 
 ## pascom Gruppe öffentlich machen
 
-Externe Teilnehmer können ebenfalls in Ihre pascom Gruppen eingeladen werden. Mit einem Klick auf **Gäste zulassen** aktivieren Sie den **Gastmodus** und erhalten Einwahldaten für Ihre Gruppe.
+Externe Teilnehmer können ebenfalls in Ihre pascom Gruppen eingeladen werden. Mit einem Klick auf {{< ui-button "Gäste zulassen">}} aktivieren Sie den **Gastmodus** und erhalten Einwahldaten für Ihre Gruppe.
 
 *So lässt sich eine Chat-Gruppe zu einem virtuellem Audio- /Video-Konferenzraum für externe Teilnehmer upgraden*
 
@@ -110,7 +110,7 @@ Sollten Sie obige Warnmeldung erhalten, ist die **Einwahlnummer** durch Ihren Sy
 
 ## pascom Gruppe löschen
 
-Löschen Sie eine pascom Gruppe, indem Sie **alle Teilnehmer** aus einer Gruppe entfernen und zuletzt selbst die **Gruppe verlassen**. Damit verschwindet die Gruppe aus dem System.
+Löschen Sie eine pascom Gruppe, indem Sie **alle Teilnehmer** aus einer Gruppe entfernen und zuletzt selbst die {{< ui-button "Gruppe verlassen">}}. Damit verschwindet die Gruppe aus dem System.
 
 </br>
 

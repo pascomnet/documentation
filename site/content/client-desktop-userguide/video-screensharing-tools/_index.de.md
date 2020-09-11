@@ -15,11 +15,11 @@ description: Nutzen Sie für eine effektivere Zusammenarbeit mit Ihren Kollegen 
 
 ## Video-Telefonie mit Ihren Kollegen
 
-Egal ob im Home-Office oder bei virtuellen Besprechungen, das visuelle Element der Video-Telefonie fördert eine bessere Zusammenarbeit. Voraussetzung hierfür ist eine installierte oder integrierte Webcam, welche Sie in den [Client Einstellungen](Link zu den Einstellungen) auswählen müssen. In der Regel wird die Webcam vom pascom Client automatisch gefunden, sodass Sie sich nicht darum kümmern brauchen. 
+Egal ob im Home-Office oder bei virtuellen Besprechungen, das visuelle Element der Video-Telefonie fördert eine bessere Zusammenarbeit. 
 
 ### Video-Telefonie starten
 
-Rufen Sie wie gewohnt Ihren Kollegen an. Während dem **aktiven Gespräch** haben Sie nun im **Wählfeld** die Option, mit einem Klick, die **Video-Funktion** einzuschalten.
+Rufen Sie wie gewohnt Ihren Kollegen an. Während dem **aktiven Gespräch** haben Sie nun im **Wählfeld** die Option, mit einem Klick, die {{< ui-button "video funktion">}} einzuschalten.
 
 ![Video-Telefonie mit Kollegen starten](video_start.de.jpg)
 *Video-Telefonie mit Kollegen starten*
@@ -42,21 +42,21 @@ Während einem aktiven Video-Telefonat stehen Ihnen viele Optionen und Funktione
 
 ### Chatten
 
-Sie können während dem Video-Telefonat ganz normal die Chat-Konversation mit Ihrem Kollegen nutzen. Klicken Sie dazu auf der linken Seite auf das **Chat-Symbol**.
+Sie können während dem Video-Telefonat ganz normal die Chat-Konversation mit Ihrem Kollegen nutzen. Klicken Sie dazu auf der linken Seite auf das {{< ui-button "Chat symbol">}}.
 
 ### Video-Bild Ein- /Ausschalten
 
-Klicken Sie zum Ein- /Ausschalten des Video-Bild auf den **Kamera-Button** im **Video-Menü**.
+Klicken Sie zum Ein- /Ausschalten des Video-Bild auf den {{< ui-button "Kamera Button">}} im **Video-Menü**.
 
 ### Mikrofon Ein- /Ausschalten
 
-Klicken Sie zum Ein- /Ausschalten Ihres Mikrofons auf den **Mikrofon-Button** im **Video-Menü**.
+Klicken Sie zum Ein- /Ausschalten Ihres Mikrofons auf den {{< ui-button "Mikrofon Button">}}* im **Video-Menü**.
 
 ### Screensharing während aktivem Video-Anruf
 
 Schalten Sie während dem aktiven Video-Anruf das Screensharing ein um Ihren Bildschirminhalt zu teilen. 
 
-Klicken Sie dazu im **Video-Menu** auf den **Screensharing-Button**. Ihr Bildschirminhalt wird mit Ihrem Kollegen geteilt, wobei Sie gleichzeitig noch das Video-Bild sehen. 
+Klicken Sie dazu im **Video-Menu** auf den {{< ui-button "Screensharing Button">}}. Ihr Bildschirminhalt wird mit Ihrem Kollegen geteilt, wobei Sie gleichzeitig noch das Video-Bild sehen. 
 
 ![Aktives Video-Telefonat mit Screensharing](video_screensharing.jpg)
 *Aktives Video-Telefonat mit Screensharing*
@@ -64,7 +64,7 @@ Klicken Sie dazu im **Video-Menu** auf den **Screensharing-Button**. Ihr Bildsch
 
 ### Video-Vollbildmodus beenden
 
-Um den Vollbildmodus des Video-Telefonat zu beenden, klicken Sie im **Video-Menü** auf den **Vollbildmodus-Button**. Das Video-Bild wird dann in die Gruppe im pascom Client integriert.
+Um den Vollbildmodus des Video-Telefonat zu beenden, klicken Sie im **Video-Menü** auf den {{< ui-button "Vollbildschirm Modus">}}. Das Video-Bild wird dann in die Gruppe im pascom Client integriert.
 
 ![Aktives Video-Telefonat minimiert](video_minimized.de.jpg)
 *Aktives Video-Telefonat minimiert im pascom Client*
@@ -72,7 +72,7 @@ Um den Vollbildmodus des Video-Telefonat zu beenden, klicken Sie im **Video-Men�
 
 ### Video-Telefonat beenden
 
-Zum Beenden des Video-Anrufs legen Sie das Gespräch über den **roten Höhrer-Button** auf.
+Zum Beenden des Video-Anrufs legen Sie das Gespräch über den {{< ui-button "roten Höhrer Button">}} auf.
 
 ## Screensharing nutzen
 
@@ -80,7 +80,7 @@ Schnell Bildschirminhalte mit seinem Kollegen zu teilen macht die Team-Zusammena
 
 ### Screensharing starten
 
-Rufen Sie wie gewohnt Ihren Kollegen an. Während dem **aktiven Gespräch** haben Sie nun im **Wählfeld** die Option, mit einem Klick, die **Screensharing-Funktion** einzuschalten.
+Rufen Sie wie gewohnt Ihren Kollegen an. Während dem **aktiven Gespräch** haben Sie nun im **Wählfeld** die Option, mit einem Klick, die {{< ui-button "Screensharing Funktion">}} einzuschalten.
 
 ![Screensharing mit Kollegen starten](screensharing_start.de.jpg)
 *Screensharing mit Kollegen starten*
@@ -103,13 +103,13 @@ Ihnen stehen die selben Optionen- und Funktionen wie bei einem **Video-Telefonat
 
 In den Videoeinstellungen des pascom Client, können Sie testen ob Ihre WebCam funktioniert und zwischen Ihren installierten Kameras wählen.
 
-1. Öffnen Sie die **Client-Einstellungen** über das pascom Menü
+1. Öffnen Sie die {{< ui-button "Client Einstellungen">}} über das pascom Menü
 
 
 ![Client Einstellungen öffnen](open_clientsettings.jpg)
 </br>
 
-2. Klicken Sie im **Einstellungs-Menü** auf **Video**
+2. Klicken Sie im **Einstellungs-Menü** auf {{< ui-button "Video">}}
 
 
 ![WebCam Einstellungen](videosettings.de.jpg)
@@ -117,6 +117,6 @@ In den Videoeinstellungen des pascom Client, können Sie testen ob Ihre WebCam f
 
 ### Webcam auswählen
 
-Klicken Sie im Drop-Down Feld bei den **Kameras** auf die entsprechende WebCam, welche Sie verwenden möchten und testen Sie gleichzeitig im Vorschaufenster, ob Sie ein Videobild erhalten.  
+Klicken Sie im Drop-Down Feld bei den {{< ui-button "Kameras">}} auf die entsprechende WebCam, welche Sie verwenden möchten und testen Sie gleichzeitig im Vorschaufenster, ob Sie ein Videobild erhalten.  
 
 <br />

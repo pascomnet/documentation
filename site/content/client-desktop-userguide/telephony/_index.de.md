@@ -15,11 +15,11 @@ description: Diese Anleitung zeigt Ihnen die Telefonie-Funktionen des pascom Cli
 
 ## Telefonieren mit dem pascom Client
 
-Bevor Sie Ihren ersten Anruf starten, müssen Sie sich in der [Gerätesteuerung](link) für ein Endgerät entscheiden, dass Sie für ausgehende Gespräche verwenden möchten. Dies kann das **integrierte Softphone** des pascom Client sein, oder ein **Tischtelefon** welches Ihnen zugewiesen wurde.
+Bevor Sie Ihren ersten Anruf starten, müssen Sie sich in der [Gerätesteuerung]({{< ref "/client-desktop-userguide/mydevices" >}}) für ein Endgerät entscheiden, dass Sie für ausgehende Gespräche verwenden möchten. Dies kann das **integrierte Softphone** des pascom Client sein, oder ein **Tischtelefon** welches Ihnen zugewiesen wurde.
 
 ### Gespräch starten
 
-Im pascom Client gibt es mehrere Wege, einen neuen Anruf zu starten. Geben Sie eine Telefonnummer im **Wählfeld** ein oder klicken Sie auf einen **grünen Hörer** in der Kontaktliste. Zusätzlich können Anrufe aus dem **Telefonbuch** und dem **Anrufjournal** heraus, gestartet werden. 
+Im pascom Client gibt es mehrere Wege, einen neuen Anruf zu starten. Geben Sie eine Telefonnummer im **Wählfeld** ein oder klicken Sie auf einen {{< ui-button "grünen Höhrer">}} in der Kontaktliste. Zusätzlich können Anrufe aus dem **Telefonbuch** und dem **Anrufjournal** heraus, gestartet werden. 
 
 ![Neuen Anruf starten](start_call.de.jpg)
 *Neuen Anruf starten*
@@ -31,28 +31,29 @@ Der Telefonbereich bietet einige Funktionen die wir Ihnen nachfolgend erklären.
 
 **Wählfeld**
 
-Geben Sie im Wählfeld direkt die Rufnummer ein, die Sie anrufen möchten. Machen Sie sich keine Sorgen über die Syntax der Telefonnummer. Der pascom Client kümmert sich darum. Zum starten des Anrufs drücken Sie auf den **grünen Telefonhörer-Button**. Sie können im Wählfeld auch direkt nach **Personen** suchen. Weitere informationen finden Sie [hier](link zu Suche)
+Geben Sie im Wählfeld direkt die Rufnummer ein, die Sie anrufen möchten. Machen Sie sich keine Sorgen über die Syntax der Telefonnummer. Der pascom Client kümmert sich darum. Zum starten des Anrufs drücken Sie auf den {{< ui-button "grünen Höhrer">}}. Sie können im Wählfeld auch direkt nach **Personen** suchen. Weitere informationen finden Sie [hier]({{< ref "/client-desktop-userguide/search" >}}).
 
 ![Das Wählfeld](dialpad_input.de.jpg)
 </br>
 
 **Voicemailbox**
 
-Zu Ihrem Anrufbeantworter / Voicemailbox gelangen Sie mit einem Klick auf den **Voicemail - Button**. Eine Anleitung zu den Funktionen der Voicemailbox finden Sie [hier](Link zu Voicemail).
+Zu Ihrem Anrufbeantworter / Voicemailbox gelangen Sie mit einem Klick auf {{< ui-button "Voicemail">}}. Eine Anleitung zu den Funktionen der Voicemailbox finden Sie [hier]({{< ref "/client-desktop-userguide/telephony#ihre-voicemailbox" >}}).
+
 
 ![Die Voicemailbox](dialpad_voicemail.jpg)
 </br>
 
 **Faxen**
 
-Über den **Fax-Button** können Sie, sofern für Sie vom Systemadministrator ein **virtuelles Fax** eingerichtet wurde, Dokumente per Fax versenden. Eine detaillierte Anleitung finden Sie [hier](Link zum Faxen).
+Über den {{< ui-button "Fax-Button">}} können Sie, sofern für Sie vom Systemadministrator ein **virtuelles Fax** eingerichtet wurde, Dokumente per Fax versenden. Eine detaillierte Anleitung finden Sie [hier]({{< ref "/client-desktop-userguide/fax" >}}).
 
 ![Faxen](dialpad_fax.jpg)
 </br>
 
 **Wahlwiederholung**
 
-Mit der **Wahlwiederholung** rufen Sie den zuletzt gewählten Kontakt / Telefonnummer erneut an. 
+Mit der {{< ui-button "Wahlwiederholung">}} rufen Sie den zuletzt gewählten Kontakt / Telefonnummer erneut an. 
 
 ![Faxen](dialpad_redial.jpg)
 </br>
@@ -77,7 +78,7 @@ Jeder Gesprächsteilnehmer wird im Telefonbereich des Pascom Client als **intera
 *Gesprächsteilnehmer als interaktives Anrufelement*
 </br>
 
-Mit einem Klick auf den **weissen Pfeil** gelangen Sie zu weiteren Optionen für dieses Anrufelement.
+Mit einem Klick auf den {{< ui-button "weissen Pfeil">}} gelangen Sie zu weiteren Optionen für dieses Anrufelement.
 
 ![Details des Anrufelement](interactive_callelement_details.de.jpg)
 *Erweiterte Funktionen des Anrufelements*
@@ -99,13 +100,13 @@ Hier können Sie nun einen **neuen Anruf** starten, **DTMF Töne** senden, das *
 
 Einen aktiven Gesprächsteilnehmer auf **"Halten"** setzen hat mehrere Vorteile. Anders als beim Stummschalten Ihres Mikrofons, hört der Gesprächsteilnehmer eine Wartemusik und weiss daher das Sie gerade z.B. Rücksprache halten. Zusätzlich können Sie während Ihr Gesprächspartner wartet, andere Kontakte anrufen. 
 
-Klicken Sie zum **"Halten"** des Gesprächspartners im **Anrufelement"** auf den **Pause- / Haltenknopf**. Der Anrufteilnehmer wird dann ausgegraut. 
+Klicken Sie zum **"Halten"** des Gesprächspartners im **Anrufelement"** auf den {{< ui-button "Pause - / Halten Button">}}. Der Anrufteilnehmer wird dann ausgegraut. 
 
 ![Anruf Halten](call_onhold.de.jpg)
 *Anruf Halten*
 </br>
 
-Sie können den wartenden Gesprächsteilnehmer wieder zurückholen, indem Sie erneut auf den **Pauseknopf** klicken.
+Sie können den wartenden Gesprächsteilnehmer wieder zurückholen, indem Sie erneut auf den {{< ui-button "Pause Button">}} klicken.
 
 ## DTMF Töne senden
 
@@ -117,7 +118,7 @@ Um mit dem pascom Client unter Verwendung des pascom Softphones DTMF-Töne zu ve
 *Wählfeld ändern um DTMF-Töne zusenden*
 </br>
 
-Nachdem Sie die Nummerneingabe abgeschlossen haben, können Sie mit einem Klick auf das **rote X-Symbol** das Wählfeld wieder ausblenden. 
+Nachdem Sie die Nummerneingabe abgeschlossen haben, können Sie mit einem Klick auf das {{< ui-button "rote X-Symbol">}} das Wählfeld wieder ausblenden. 
 
 ![DTMF ausblenden](dtmf_2.jpg)
 *Wählfeld wieder ausblenden*
@@ -133,7 +134,7 @@ Im oberen Telefon-Bereich finden Sie die Funktion zur **Amtsholung für ausgehen
 
 ## Ihre Voicemailbox
 
-Mit einem Klick auf den **Voicemail-Button** rufen Sie Ihre Voicemailbox an, sofern Ihr Systemadministrator Ihnen eine eigene Voicemailbox eingerichtet hat. Sie können Ihre **Mailbox** auch über einen [Funktionscode](Link zu Funktionscodes) erreichen. 
+Mit einem Klick auf den **Voicemail-Button** rufen Sie Ihre Voicemailbox an, sofern Ihr Systemadministrator Ihnen eine eigene Voicemailbox eingerichtet hat. Sie können Ihre **Mailbox** auch über einen [Funktionscode]({{< ref "/howto/featurecodes" >}}) erreichen. 
 
 1. Abrufen Ihrer Nachrichten bzw. das Tätigen von Einstellungen erfolgt über ein **Sprachmenü** in Ihrer **Mailbox**.
 
@@ -147,7 +148,7 @@ Es kommt vor, dass Sie dringend Rücksprache mit einem Kollegen halten müssen, 
 *Anrufen eines belegten Kollegen richtet Rückruf ein*
 </br>
 
-1. Klicken Sie auf den **"roten Höhrer"** des Kollegen, welcher gerade spricht.  
+1. Klicken Sie auf den {{< ui-button "roten Höhrer">}} des Kollegen, welcher gerade spricht.  
 
 2. Ein Pop-UP erscheint mit **Rückruf planen** und am unteren Bereich des pascom Client sehen Sie, dass der Rückruf **eingerichtet** wurde.
 
@@ -159,6 +160,6 @@ Sobald Ihr Kollege mit seinem Gespräch fertig ist, erscheint bei Ihnen eine **B
 *Starten Sie einen Rückruf, sobald der Kollege wieder verfügbar ist.*
 </br>
 
-1. Klicken Sie auf **"Anruf"** um Ihren Kollegen anzurufen.
+1. Klicken Sie auf {{< ui-button "Anruf">}} um Ihren Kollegen anzurufen.
 
 <br />

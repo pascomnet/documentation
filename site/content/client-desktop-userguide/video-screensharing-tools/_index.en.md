@@ -10,15 +10,15 @@ description: Use the video and screen sharing tools of the pascom Client for mor
 
 ## Trainings Video
 
-{{< youtube dZ6U_YShgag >}} 
+{{< youtube 8OBSRSndjas >}} 
 
 ## Video telephony with your colleagues
 
-Whether in the home office or in virtual meetings, the visual element of a video Call promotes better collaboration. This requires an installed or integrated webcam, which you must select in the [Client Settings](link to settings). Usually the webcam is found automatically by the pascom client, so you do not need to worry about it. 
+Whether in the home office or in virtual meetings, the visual element of a video Call promotes better collaboration. 
 
 ### Start a Video Call
 
-Call your colleague as usual. During the **active call** you now have the option to activate the **video function** in the **dialing field** with one click.
+Call your colleague as usual. During the **active call** you now have the option to activate the {{< ui-button "video function">}} in the **dialing field** with one click.
 
 ![Start video Call with colleagues](video_start.en.jpg)
 *Start video Call with colleagues*
@@ -41,21 +41,21 @@ During an active video call, many options and functions are available to you.
 
 ### Chat
 
-You can use the chat conversation with your colleague during the video call as normal. To do so, click on the **Chat icon** on the left side.
+You can use the chat conversation with your colleague during the video call as normal. To do so, click on the {{< ui-button "chat icon">}} on the left side.
 
 ### Switch Video on/off
 
-To switch the video picture on/off, click the **Camera button** in the **Video menu**.
+To switch the video picture on/off, click the {{< ui-button "camera button">}} in the **Video menu**.
 
 ### Switch Microphone on/off
 
-Click on the **Microphone button** in the **Video menu** to switch your microphone on/off.
+Click on the {{< ui-button "microphone button">}} in the **Video menu** to switch your microphone on/off.
 
 ### Screensharing during an active Video Call
 
 Turn on screen sharing during an active video call to share your screen content. 
 
-To do so, click on the **Screensharing button** in the **Video menu**. Your screen content will be shared with your colleague while you are still watching the video picture.
+To do so, click on the {{< ui-button "screensharing button">}} in the **Video menu**. Your screen content will be shared with your colleague while you are still watching the video picture.
 
 ![Active Screensharing during a video Call](video_screensharing.jpg)
 *Active Screensharing during a video Call*
@@ -63,7 +63,7 @@ To do so, click on the **Screensharing button** in the **Video menu**. Your scre
 
 ### Exit Video Fullscreen Mode
 
-To exit the full screen mode of the video call, click the **Full Screen Mode button** in the **Video menu**. The video image is then integrated into the group in the pascom client.
+To exit the full screen mode of the video call, click the {{< ui-button "fullscreen mode button">}} in the **Video menu**. The video image is then integrated into the group in the pascom client.
 
 ![Active Video Call minimized](video_minimized.en.jpg)
 *Active Video Call minimized in the pascom client*
@@ -71,7 +71,7 @@ To exit the full screen mode of the video call, click the **Full Screen Mode but
 
 ### End a Video Call
 
-To end the video call, hang up the call using the **red handset button**.
+To end the video call, hang up the call using the {{< ui-button "red handset button">}}.
 
 ## Use Screensharing
 
@@ -79,7 +79,7 @@ Quickly sharing screen content with colleagues makes team collaboration in every
 
 ### Start Screensharing
 
-Call your colleague as usual. During the **active call** you now have the option to activate the **screensharing function** in the **dialing field** with one click.
+Call your colleague as usual. During the **active call** you now have the option to activate the {{< ui-button "screensharing function">}} in the **dialing field** with one click.
 
 ![Start screen sharing with colleagues](screensharing_start.en.jpg)
 *Start screen sharing with colleagues*
@@ -102,13 +102,13 @@ The same options and functions are available to you as for a **video call**.
 
 In the video settings of the pascom client, you can test if your WebCam works and choose between your installed cameras.
 
-1. Open the **Client Settings** via the pascom menu.
+1. Open the {{< ui-button "Client Settings">}} via the pascom menu.
 
 
 ![Open Client Settings](open_clientsettings.jpg)
 </br>
 
-2. Click on **Video** in the **Settings menu**.
+2. Click on {{< ui-button "Video">}} in the **Settings menu**.
 
 
 ![WebCam settings](videosettings.en.jpg)
@@ -116,7 +116,7 @@ In the video settings of the pascom client, you can test if your WebCam works an
 
 ### Select Webcam
 
-Click in the drop-down field next to the **cameras** on the corresponding WebCam you want to use and test at the same time in the preview window whether you get a video image. 
+Click in the drop-down field next to the {{< ui-button "Cameras">}} on the corresponding WebCam you want to use and test at the same time in the preview window whether you get a video image. 
 
 
 <br />

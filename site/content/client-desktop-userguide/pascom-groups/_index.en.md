@@ -30,7 +30,7 @@ With the group function you create permanent groups for:
 Creating new pascom groups is not restricted and can be done by any user.
 {{% /notice %}}
 
-Create a new group using the **+ icon** in your profile.
+Create a new group using the {{< ui-button "+ - Icon">}} in your profile.
 
 ![Step 1 Create Group](create_group.jpg)
 </br>
@@ -40,7 +40,7 @@ Enter a **name** in the settings window of the group e.g. "Support" or "Smalltal
 ![Step 2 Create Group](create_group_2.en.jpg)
 </br>
 
-Finally, click the **red disk icon** to **save** the group. Your new group now appears in the contact list.
+Finally, click the {{< ui-button "red disk icon">}} to **save** the group. Your new group now appears in the contact list.
 
 ![Step 3 Create Group](create_group_3.en.jpg)
 </br>
@@ -58,15 +58,15 @@ If you are in a window of a pascom group, you can choose from several functions 
 
 ### Mute a Group
 
-1. Click on the **speaker symbol** in the upper menu bar. Now you will no longer receive notification of new events in the group.
+1. Click on the {{< ui-button "Speaker Icon">}} in the upper menu bar. Now you will no longer receive notification of new events in the group.
 
 ### Close a Group
 
-2. To close a group, click on the **red X symbol** in the top menu bar. Don't worry, you can always open the group again from the contact list.
+2. To close a group, click on the {{< ui-button "red X Icon">}} in the top menu bar. Don't worry, you can always open the group again from the contact list.
 
 ### Edit Group and manage Participants
 
-3. To make changes to a group, click on the **red info icon** in the top menu bar and you will be taken to the group settings.
+3. To make changes to a group, click on the {{< ui-button "red Info Icon">}} in the top menu bar and you will be taken to the group settings.
 
 ![Group Details](group_details.en.jpg)
 
@@ -76,17 +76,17 @@ If you are in a window of a pascom group, you can choose from several functions 
 
 ### Add or remove Participants
 
-5. If you want your group to include new members, click on the menu item **Add participants** and select new participants from a list. 
+5. If you want your group to include new members, click on the menu item {{< ui-button "Add Participants">}} and select new participants from a list. 
 
-6. To remove participants from the group, click the **red trashcan icon**.
+6. To remove participants from the group, click the {{< ui-button "red trashcan Icon">}}.
 
 ### Leave the Group yourself
 
-7. If you would like to end your membership in a group yourself, click on **Leave Group** at the very bottom of the **Group Settings**.
+7. If you would like to end your membership in a group yourself, click on {{< ui-button "Leave Group">}} at the very bottom of the **Group Settings**.
 
 ## Make pascom Group public
 
-External participants can also be invited to your pascom groups. By clicking on **Allow guests** you activate the **Guest mode** and receive dial-in data for your group.
+External participants can also be invited to your pascom groups. By clicking on {{< ui-button "Allow Guests">}} you activate the **Guest mode** and receive dial-in data for your group.
 
 *To upgrade a chat group to a virtual audio/video conference room for external participants*
 
@@ -109,7 +109,7 @@ If you receive the above warning message, the **dial-in number** is not set up b
 
 ## Delete a pascom Group
 
-Delete a pascom group by removing **all participants** from a group and finally leaving the **group yourself**. The group then disappears from the system.
+Delete a pascom group by removing **all participants** from a group and finally leaving the {{< ui-button "Group yourself">}}. The group then disappears from the system.
 
 </br>
 

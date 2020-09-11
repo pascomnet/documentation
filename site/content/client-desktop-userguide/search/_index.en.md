@@ -16,7 +16,7 @@ description: All information about notifications, the search and Smart Filter in
 
 ## How to use the Search function
 
-The search function is a very good tool for navigating more efficiently in the pascom client. The search function can be found in the dynamic account area when all windows are closed or via the menu bar by clicking on the **magnifying glass symbol**.
+The search function is a very good tool for navigating more efficiently in the pascom client. The search function can be found in the dynamic account area when all windows are closed or via the menu bar by clicking on the {{< ui-button "magnifying glass symbol">}}.
 
 ![the search](search_input.jpg)
 *The Search input field*
@@ -43,7 +43,7 @@ The intelligent search delivers results even if you only know a few letters of y
 
 The Smart Filter is a useful tool to quickly filter your contact list according to predefined categories. With one click you can see which colleagues are currently online or filter only unread messages.
 
-The use is simple, click on the **drop-down icon** next to the filter search bar and select the desired category.
+The use is simple, click on the {{< ui-button "Drop Down Field">}} next to the filter search bar and select the desired category.
 
 ![use smart filter](smartfilter.en.jpg)
 *Use the smart filter in your contact list*
@@ -69,7 +69,6 @@ As soon as an event (call, message etc) occurs a popup notification will appear.
 |![Active Call](notification_missed_call.en.png)|Popup notification indicating a missed call with the ability call back via the green call back button.|
 |![Active Call](notification_chat.en.png)|Popup notification indicating a new chat message with the ability to respond direct from the popup.|
 
-The notifications can be customized according to your preferences in the [Client settings](link to client settings).
 
 ## pascom Notifications
 
@@ -79,19 +78,19 @@ The pascom notifications can be found in the search window. Here you will receiv
 *pascom notifications*
 </br>
 
-By clicking on **"More"** you will get to the corresponding message. If you do not want any more messages, you can easily deactivate the notification by clicking on the **"X-Symbol"**.
+By clicking on {{< ui-button "More">}} you will get to the corresponding message. If you do not want any more messages, you can easily deactivate the notification by clicking on the {{< ui-button "X-Symbol">}}.
 
 ## Notifications | Settings
 
 Customize your notifications to receive only the information that is of interest to you. 
 
-1. Open the **Client-Settings** via the pascom Menü
+1. Open the {{< ui-button "Client Settings">}} via the pascom menu.
 
 
 ![Open Client Settings](open_clientsettings.jpg)
 </br>
 
-2. Click on **Notifications** in the **Settings menu**
+2. Click on {{< ui-button "Notifications">}} in the Settings menu.
 
 
 ![Notification Settings](notification_settings.en.jpg)

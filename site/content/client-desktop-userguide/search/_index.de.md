@@ -15,7 +15,7 @@ description: Alle Infos zu Benachrichtigungen, der Suche und Smart Filter im pas
 
 ## Die Suchfuntkion nutzen
 
-Um effizienter im pascom Client zu navigieren, ist die Suchfunktion ein sehr gutes Werkzeug. Die Suchefunktion finden Sie im dynamischen Kontentbereich wenn alle Fenster geschlossen sind oder über die Menüleiste mit Klick auf das **Lupen-Symbol**.
+Um effizienter im pascom Client zu navigieren, ist die Suchfunktion ein sehr gutes Werkzeug. Die Suchefunktion finden Sie im dynamischen Kontentbereich wenn alle Fenster geschlossen sind oder über die Menüleiste mit Klick auf das {{< ui-button "Lupen Symbol">}}.
 
 ![Die Suche](search_input.jpg)
 *Sucheingabe*
@@ -42,7 +42,7 @@ Die intelligente Suche liefert Ihnen Ergebnisse, auch wenn Sie nur ein paar Buch
 
 Der Smart-Filter ist ein nützliches Werkzeug, um schnell seine Kontaktliste nach vordefinierten Kategorien zu filter. Lassen Sie sich mit einem Klick anzeigen welche Kollegen gerade Online sind oder filtern Sie nur noch ungelesenen Nachrichten.
 
-Die Anwendung ist simpel, klicken Sie neben der Filter-Suchleiste auf das **Dropdown-Symbol** und wählen Sie die gewünschte Kategorie aus.
+Die Anwendung ist simpel, klicken Sie neben der Filter-Suchleiste auf das {{< ui-button "Drop Down Feld">}} und wählen Sie die gewünschte Kategorie aus.
 
 ![Smart-Filter nutzen](smartfilter.de.jpg)
 *Smart-Filter nutzen in der Kontaktliste*
@@ -69,7 +69,6 @@ Benachrichtigungen sind Popups, die erscheinen, sobald eine Aktion stattfindet. 
 |![Verpasster Anruf](notification_missed_call.de.png)|Benachrichtigung über einen verpassten Anruf mit der Möglichkeit zurück zu rufen mit Click auf den grünen Hörer.|
 |![Chat](notification_chat.de.png)|Benachrichtigung über eine neue Chat-Nachricht mit der Möglichkeit zurück zu schreiben.|
 
-Die Benachrichtigungen können nach Ihren Vorlieben in den [Client Einstellungen](Link zu client settings) angepasst werden.
 
 ## pascom Benachrichtigungen
 
@@ -79,19 +78,19 @@ Die pascom Benachrichtigungen finden Sie im Suchfenster. Hier erhalten Sie wertv
 *pascom Benachrichtigungen*
 </br>
 
-Mit einem Klick auf **"Mehr"** gelangen Sie zur entsprechenden Mitteilung. Sollten Sie keine Meldungen mehr wünschen, können Sie ganz einfach die Benachrichtigung mit Klick auf das **"X-Symbol"** deaktivieren.
+Mit einem Klick auf {{< ui-button "Mehr">}} gelangen Sie zur entsprechenden Mitteilung. Sollten Sie keine Meldungen mehr wünschen, können Sie ganz einfach die Benachrichtigung mit Klick auf das {{< ui-button "X-Symbol">}} deaktivieren.
 
 ## Benachrichtigungen | Einstellungen
 
 Passen Sie Ihre Benachrichtungen an, um auch nur die Informationen zu erhalten, die für Sie Interessant sind. 
 
-1. Öffnen Sie die **Client-Einstellungen** über das pascom Menü
+1. Öffnen Sie die {{< ui-button "Client Einstellungen">}} über das pascom Menü
 
 
 ![Client Einstellungen öffnen](open_clientsettings.jpg)
 </br>
 
-2. Klicken Sie im **Einstellungs-Menü** auf **Benachrichtigungen**
+2. Klicken Sie im **Einstellungs-Menü** auf {{< ui-button "Benachrichtigungen">}}
 
 
 ![Benachrichtigungseinstellungen](notification_settings.de.jpg)

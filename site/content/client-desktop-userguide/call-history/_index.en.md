@@ -19,7 +19,7 @@ In the call journal you will find the complete history of your calls. Filter opt
 
 ## Open the Call History
 
-Click on the **Call History** icon in the menu bar to access the journal.
+Click on the {{< ui-button "call history">}} icon in the menu bar to access the journal.
 
 ![Open Call History](open_call_history.jpg)
 *Open Call History via the pascom Menue*
@@ -27,7 +27,7 @@ Click on the **Call History** icon in the menu bar to access the journal.
 
 ## Use Filters of the Call History
 
-Click on **Filter Options** in the upper part of the call history.
+Click on {{< ui-button "filter options">}} in the upper part of the call history.
 
 ![The Call Histroy](journal.en.jpg)
 *The Call History within the pascom Client*
