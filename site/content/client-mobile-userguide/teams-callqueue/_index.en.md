@@ -65,8 +65,4 @@ You will see the phone number, the name (if there is a phone book entry) and the
 *Show waiting callers in the queue*
 
 
-## The Team-Journal
-
-The functions of the Team Journal are explained in the following [Tutorial](Link to Team Journal).
-
 <br />

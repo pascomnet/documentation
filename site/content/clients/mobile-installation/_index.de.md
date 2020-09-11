@@ -56,5 +56,5 @@ Möchten Sie als Administrator den Pairing Vorgang für Ihre Benutzer übernehme
 
 ### Via Desktop Client pairen
 
-Alternativ haben Ihre Benutzer die Möglichkeit das Mobiltelefon selbst über den pascom Desktop Client zu Pairen. Details dazu entnehmen Sie bitte dem [Mobile Client Benutzerhandbuch]({{< ref "/clients/mobile-userguide">}})
+Alternativ haben Ihre Benutzer die Möglichkeit das Mobiltelefon selbst über den pascom Desktop Client zu Pairen. Details dazu entnehmen Sie bitte dem [Mobile Client Benutzerhandbuch]({{< ref "/client-mobile-userguide">}})
 

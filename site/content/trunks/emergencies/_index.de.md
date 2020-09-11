@@ -25,7 +25,7 @@ Bei der Verwendung von Internetzugängen mit gekoppelten SIP-Zugängen (z.b. Tel
 ## Interne Teilnehmer
 
 Da die Ortsermittlung bei Firmen mit mehreren Standorten, Außendienstmitarbeitern und Homeoffice-Benutzern oftmals nicht eindeutig ist, empfehlen wir in diesen Fällen das Mobiltelefon für Notrufe zu nutzen.         
-Der [pascom Mobile Client]({{< ref "/clients/mobile-userguide" >}}) verwendet bei Notrufen ausschließlich GSM um den exakten Standort des Anrufers fehlerfrei zu übermitteln. 
+Der [pascom Mobile Client]({{< ref "/client-mobile-userguide" >}}) verwendet bei Notrufen ausschließlich GSM um den exakten Standort des Anrufers fehlerfrei zu übermitteln. 
 
 {{% notice warning %}}
 **Unterweisen Sie alle mobilen Benutzer (Homeoffice usw.) ihr Mobiltelefon und nicht den pascom Desktop Client oder ein Hardwaretelefon für Notrufe zu verwenden. Alternativ können Sie sicher stellen, dass der genutzte SIP-Trunk den tatsächlichen Standort übermittelt.**

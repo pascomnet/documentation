@@ -24,6 +24,6 @@ Under **External Number** enter the number under which the mobile hub is availab
 
 ### Activate the GSM Fallback 
 
-It is possible to activate the GSM fallback function per mobile device by entering your mobile phone number when pairing the pascom mobile App or directly in the mobile device's entry in the device list. Futher details can be found in our <!--FixMe--> Mobile Client Installation <!--({{<ref "/clients/mobile-installation#optional-mobilgerät-am-server-anlegen" >}})-->. 
+It is possible to activate the GSM fallback function per mobile device by entering your mobile phone number when pairing the pascom mobile App or directly in the mobile device's entry in the device list. 
 
-The end user also has the ability to manually use the GSM fallback for outbound calls by using the [GSM switch]({{<ref "/clients/mobile-userguide#telephony" >}}).
+The end user also has the ability to manually use the GSM fallback for outbound calls by using the [GSM switch]({{<ref "/client-mobile-userguide/telephony" >}}).

@@ -95,4 +95,15 @@ Click the **Voicemail button** to call your voicemail box, provided your system 
 
 1. retrieve your messages or make settings via a **voice menu** in your **mailbox**.
 
+## Enable GSM fallback
+
+It can happen that where you are, there is no stable WLAN connection. The pascom Mobile Client automatically detects the
+switches to GSM mode to establish the connection via your mobile network. 
+
+You can also activate the GSM mode manually.
+
+![GSM mode](gsm_switch.jpg)
+
+1. Click on the **GSM button** in the top right-hand corner of the **Telephony area**.
+
 <br />

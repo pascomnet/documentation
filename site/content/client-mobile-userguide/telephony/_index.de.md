@@ -92,6 +92,15 @@ Mit einem Klick auf den **Voicemail-Button** rufen Sie Ihre Voicemailbox an, sof
 
 1. Abrufen Ihrer Nachrichten bzw. das Tätigen von Einstellungen erfolgt über ein **Sprachmenü** in Ihrer **Mailbox**.
 
+## GSM Fallback aktivieren
 
+Es kommt vor, dass dort wo Sie sich gerade befinden, keine stabile WLAN Verbindung besteht. Der pascom Mobile Client erkennt die automatisch und
+wechselt in den GSM Modus um die Verbindung über Ihr Handynetz aufzubauen. 
+
+Sie können den GSM Modus auch manuell aktivieren.
+
+![GSM-Modus](gsm_switch.jpg)
+
+1. Klicken Sie dazu rechts oben im **Telefonie-Bereich** auf den **GSM-Schalter**.
 
 <br />

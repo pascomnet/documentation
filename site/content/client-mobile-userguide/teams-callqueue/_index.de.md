@@ -65,8 +65,4 @@ Sie sehen die Rufnummer, den Namen (sofern ein Telefonbucheintrag vorhanden ist)
 *Wartende Anrufer in der Warteschlange anzeigen*
 
 
-## Das Team-Journal
-
-Die Funktionen des Team-Journal erklären wir Ihnen in folgender [Anleitung](Link zum Team-Journal).
-
 <br />

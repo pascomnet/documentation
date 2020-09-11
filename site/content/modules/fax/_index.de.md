@@ -19,7 +19,7 @@ weight: 10
 Dabei stehen Ihnen folgende [UC Fax-Möglichkeiten](https://www.pascom.net/de/voip-telefonanlage/unified-communications/ "pascom Unified Communications Fax-to-E-mail") zur Verfügung:
 
 + Empfangen von Faxen über E-Mail.
-+ Versenden von Faxen über den [pascom Client]({{< ref "/clients/desktop-userguide">}}).
++ Versenden von Faxen über den [pascom Client]({{< ref "/client-desktop-userguide/fax">}}).
 + Versenden von Faxen über [Mail-to-Fax]({{< relref "#mail-to-fax">}}) als E-Mail-Weiterleitung.
 + Versenden von Faxen über [Print-to-Fax]({{< relref "#print-to-fax">}}) mit Steueranweisungen per virtuellem Drucker oder ohne Steueranweisungen mit virtuellem Drucker über den Client.
 

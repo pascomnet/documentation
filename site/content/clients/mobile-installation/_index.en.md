@@ -56,5 +56,5 @@ Should you choose to, as an administrator, you can perform the pairing process f
 
 ### Pairing via the pascom Desktop Client
 
-Alternatively, your user can pair the devices themselves via the pascom Desktop Client. Further details can be found in the [Mobile Client User Guide]({{< relref "/clients/mobile-userguide">}})
+Alternatively, your user can pair the devices themselves via the pascom Desktop Client. Further details can be found in the [Mobile Client User Guide]({{< relref "/client-mobile-userguide">}})
 

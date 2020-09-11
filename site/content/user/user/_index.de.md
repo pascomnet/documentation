@@ -192,7 +192,7 @@ Die Einstellungen erfolgen für
 
 ## FollowMe über den Client steuern
 
-Darf der Benutzer (je nach Berechtigung) selber seine FollowMe-Einstellungen verwalten, kann er dies über seinen pascom Desktop Client in den [Einstellungen]({{< relref "/clients/desktop-userguide#meine-geräte">}}) tun.
+Darf der Benutzer (je nach Berechtigung) selber seine FollowMe-Einstellungen verwalten, kann er dies über seinen pascom Desktop Client in den [Einstellungen]({{< relref "/client-desktop-userguide/mydevices">}}) tun.
 
 
 

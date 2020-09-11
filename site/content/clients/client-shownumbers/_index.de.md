@@ -10,7 +10,7 @@ weight: 65
 
 ## Konzept
 
-Wenn es für Ihr Team sinnvoll ist jederzeit im pascom Client überprüfen zu können, mit wem ein Kollege oder Mitarbeiter gerade spricht, können Sie mit dem Setzen einer zusätzlichen Systemvariable diese Information in Ihrem [pascom Desktop Client]({{< relref "/clients/desktop-userguide">}}) und [pascom Mobile Client]({{< relref "/clients/mobile-userguide">}}) anzeigen lassen.
+Wenn es für Ihr Team sinnvoll ist jederzeit im pascom Client überprüfen zu können, mit wem ein Kollege oder Mitarbeiter gerade spricht, können Sie mit dem Setzen einer zusätzlichen Systemvariable diese Information in Ihrem [pascom Desktop Client]({{< relref "/client-desktop-userguide">}}) und [pascom Mobile Client]({{< relref "/client-mobile-userguide">}}) anzeigen lassen.
 So ist für jeden Benutzer des pascom Clients direkt in der Kontaktliste die Nummer, und bei vorhandenem Telefonbucheintrag, der Name des Gesprächspartners sichtbar.
 
 {{% notice info %}}
