@@ -26,6 +26,6 @@ Tragen Sie hier die **Externe Nummer** ein, unter welcher der Mobile Hub erreich
 
 ### GSM Fallback Aktivieren
 
-Sie können den GSM Fallback pro Mobiltelefon aktivieren indem Sie die Mobiltelefonnummer beim Pairen des pascom Mobile Clients oder direkt beim Mobilgerät in der Geräteliste angeben. Details entnehmen Sie bitte der [Mobile Client Installation]({{<ref "/clients/mobile-installation#optional-mobilgerät-am-server-anlegen" >}}). 
+Sie können den GSM Fallback pro Mobiltelefon aktivieren indem Sie die Mobiltelefonnummer beim Pairen des pascom Mobile Clients oder direkt beim Mobilgerät in der Geräteliste angeben. 
 
-Der Endanwender ist auch in der Lage die Nutzung des GSM Fallbacks pro ausgehendem Anruf durch den [GSM-Schalter]({{<ref "/clients/mobile-userguide#telefonieren" >}}) zu erzwingen.
+Der Endanwender ist auch in der Lage die Nutzung des GSM Fallbacks pro ausgehendem Anruf durch den [GSM-Schalter]({{<ref "/client-mobile-userguide/telephony" >}}) zu erzwingen.

@@ -217,4 +217,4 @@ FollowMe settings can be configured for
 
 ### FollowMe UC Client Set up
 
-If a user is permitted to manage their FollowMe settings, this can be done via their pascom Desktop UC client in the [Settings]({{< relref "/clients/desktop-userguide#my-devices">}})
+If a user is permitted to manage their FollowMe settings, this can be done via their pascom Desktop UC client in the [Settings]({{< relref "/client-desktop-userguide/mydevices">}})

@@ -25,7 +25,7 @@ When using internet access coupled with SIP connections (e.g. Deutsche Telekom),
 ## Internal Participants
 
 Location tracking for companies with multiple locations, field-based, and HomeOffice employees is often unclear. In such circumstances, we recommend using mobile phones for emergency calls. 
-In order to remove any potential errors, the [pascom Mobile Client]({{< ref "/clients/mobile-userguide" >}}) exclusively uses GSM to make emergency calls as this provides the exact caller location. 
+In order to remove any potential errors, the [pascom Mobile Client]({{< ref "/client-mobile-userguide" >}}) exclusively uses GSM to make emergency calls as this provides the exact caller location. 
 
 {{% notice warning %}}
 **Instruct all remote users (HomeOffice etc.) to make emergency calls using their mobile phones and NOT the pascom desktop client or a hardware phone. Alternatively, please ensure that the used SIP trunk transmits the actual location.**

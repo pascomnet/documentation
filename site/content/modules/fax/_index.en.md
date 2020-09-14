@@ -21,7 +21,7 @@ The included fax server is [HylaFax](http://www.hylafax.org/ "pascom Integrated 
 The integrated fax server provides users with a number of [UCC optimisating functions](https://www.pascom.net/en/business-phone-system/unified-communications/ "pascom Unified Communications"), which are described in this how-to:
 
 + Receive faxes via E-mail.
-+ Send faxes via the [pascom Client]({{< ref "/clients/desktop-userguide">}}).
++ Send faxes via the [pascom Client]({{< ref "/client-desktop-userguide/fax">}}).
 + Send faxes via [Mail-to-Fax]({{< relref "#mail-to-fax">}}) as an e-mail forwarding.
 + Send faxes via [Print-to-Fax]({{< relref "#print-to-fax">}}) using printer commands via virtual printer or without printer commands via virtual printer using the client.
 
