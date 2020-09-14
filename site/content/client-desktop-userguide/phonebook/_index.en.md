@@ -22,7 +22,7 @@ The pascom phone book is designed to contain a company-wide global phone book an
 
 ## Open the Phonebook
 
-Click on the **Phone Book** icon in the menu bar to open up the telephone book.
+Click on the {{< ui-button "phone book">}} icon in the menu bar to open up the telephone book.
 
 ![Open the Phonebook](open_phonebook.jpg)
 *Open Phonebook via the pascom Menue*
@@ -47,7 +47,7 @@ As you can see in the above graphic, there are **colored** and **greyed** symbol
 
 ## Details of an Phonebook entry
 
-Each contact in the phone book contains additional information. Click on a **phonebook entry** and you will get to the **detail view**. 
+Each contact in the phone book contains additional information. Click on a {{< ui-button "phone book entry">}} and you will get to the **detail view**. 
 
 ![Phonebookentry details](details_phonebook.en.jpg)
 *Details of an Phonebook entry*
@@ -55,7 +55,7 @@ Each contact in the phone book contains additional information. Click on a **pho
 
 The **detail view** of a phone book entry gives you more information. 
 
-If you have the role of **Phone book administrator** or if you are in a telephone book entry of your private telephone book, you can edit the telephone book entry on the top right of the **Edit icon**. 
+If you have the role of **Phone book administrator** or if you are in a telephone book entry of your private telephone book, you can edit the telephone book entry on the top right of the {{< ui-button "edit icon">}}. 
 
 ## Create new phone book entry
 
@@ -63,13 +63,13 @@ If you have the role of **Phone book administrator** or if you are in a telephon
 To create new phone book entries in the global company phone book, you must have the role **Phone book administrator** or be **system administrator**.
 {{% /notice %}}
 
-To create new phone book entries, click on the **red plus symbol** in the phone book.
+To create new phone book entries, click on the {{< ui-button "red + symbol">}} in the phone book.
 
 ![Add a new Phonebook entry](addnew_phonebook.en.jpg)
 *Add a new Phonebook entry*
 </br>
 
-Fill in the predefined fields with your contact data and click on the **floppydisk symbol** to save the phone entry. 
+Fill in the predefined fields with your contact data and click on the {{< ui-button "floppy disk symbol">}} to save the phone entry. 
 
 ![Create new phonebook entry](create_phonebook.jpg)
 *Create and save a new phonebook entry*
@@ -78,7 +78,7 @@ Fill in the predefined fields with your contact data and click on the **floppydi
 
 ## Add phone book entries to contact list
 
-If you want to place contacts from your phonebook directly in your **contact list**, you must mark the corresponding **phonebook entry** as **favorite**.
+If you want to place contacts from your phonebook directly in your **contact list**, you must mark the corresponding **phonebook entry** as {{< ui-button "favorite">}}.
 
 ![Phonebook favorit](add_favorit.jpg)
 *Mark phonebook entry as favorit
@@ -90,30 +90,30 @@ Then the **Phonebook entry** appears in the section of your **Favorites** in the
 
 ## Outlook Kontakte importieren (ab v.2013)
 
-Findet der pascom Desktop Client auf dem PC ein unterstütztes Telefonbuch von Outlook können die Einträge automatisch als **privates Telefonbuch** dem Client hinzugefügt werden.
+If the pascom Desktop Client finds a supported Outlook phone book on the PC, the entries can be automatically added to the client in the **private phone book**.
 
-1. Open the **Client-Settings** via the pascom Menü
+1. Open the {{< ui-button "client settings">}} via the pascom Menü
 
 
 ![Open Client Settings](open_clientsettings.jpg)
 </br>
 
-2. Click on **Outlook Settings** in the **Settings menu**
+2. Click on {{< ui-button "Outlook settings">}} in the **Settings menu**
 
 
 ![Outlook Settings](outlook_settings.en.jpg)
 </br>
 
-3. **Activate** the connector and the pascom client will automatically attempt to connect to your **Outlook**.
+3. {{< ui-button "Activate">}} the connector and the pascom client will automatically attempt to connect to your **Outlook**.
 
 ### Set Outlook PST folder manually
 
 The Outlook PST file contains all Outlook data. Among others also your contacts.
 
-1. Click the **Add**-Button at **Selected folders** and select the directory where the Outlook PST file is located.
+1. Click on {{< ui-button "add">}} by the **Selected folders** section and select the directory where the Outlook PST file is located.
 
 ### Update Outlook contacts
 
-The pascom client automatically updates your Outlook contacts every time you start the program. If newly created contact data does not yet appear in the pascom phone book, click on **Update Outlook Contacts** in the settings menu.  
+The pascom client automatically updates your Outlook contacts every time you start the program. If newly created contact data does not yet appear in the pascom phone book, click on {{< ui-button "update outlook contacts">}} in the settings menu.  
 
 <br />

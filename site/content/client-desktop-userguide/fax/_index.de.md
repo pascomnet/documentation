@@ -24,15 +24,15 @@ Die Faxfunktionen der pascom Telefonanlage sind sehr umfangreich. Sie als Benutz
 
 ## Ein neues Fax senden
 
-Klicken Sie im Wählfeld des **Telefonie-Bereichs** auf das **Fax-Symbol**. Sie können natürlich einen neuen Faxversand auch direkt aus Ihrem **Telefonbuch** heraus starten.
+Klicken Sie im Wählfeld des **Telefonie-Bereichs** auf das {{< ui-button "Fax Symbol">}}. Sie können natürlich einen neuen Faxversand auch direkt aus Ihrem **Telefonbuch** heraus starten.
 
 ![Neues Fax starten](start_fax.de.jpg)
 *Neuen Faxversand starten und anlegen*
 </br>
 
-1. Wählen Sie im nächsten Schritt das **PDF-Dokument** aus, welches Sie per Fax versenden möchten.
+1. Wählen Sie im nächsten Schritt das {{< ui-button "PDF Dokument">}} aus, welches Sie per Fax versenden möchten.
 
-2. Geben Sie die **Faxnummer** ein, an die Sie das Dokument schicken möchten. Aus dem **Telefonbuch** heraus, steht natürlich bereits die **Faxnummer** im Wählfeld. 
+2. Geben Sie die {{< ui-button "Faxnummer">}} ein, an die Sie das Dokument schicken möchten. Aus dem **Telefonbuch** heraus, steht natürlich bereits die **Faxnummer** im Wählfeld. 
 
 ![Fax senden](send_fax.de.jpg)
 *Neues Fax senden*
@@ -42,7 +42,7 @@ Klicken Sie im Wählfeld des **Telefonie-Bereichs** auf das **Fax-Symbol**. Sie 
 
 2. Eine eindeutige **Auftrags_ID** wird für jeden Faxversand von der pascom Telefonanlage erstellt.
 
-3. Der **Auftragstitel** verhält sich wie ein **Betreff**. Standartmäßig ist der **Dokumentenname** hinterlegt, von der Datei welche Sie versenden wollen. Sie können den **Auftragstitel** aber auch, mit einem **Klick** darauf, anpassen oder verändern.
+3. Der **Auftragstitel** verhält sich wie ein **Betreff**. Standartmäßig ist der **Dokumentenname** hinterlegt, von der Datei welche Sie versenden wollen. Sie können den {{< ui-button "Auftragstitel">}} aber auch, mit einem **Klick** darauf, anpassen oder verändern.
 
 ## Faxen Teil-Automatisieren
 
@@ -57,17 +57,17 @@ Sie können den Faxversand mit dem pascom Client ein Stück weit **Automatisiere
 
 Um den **Faxversand** zu automatisieren, überwacht der pascom Client einen Ordner auf Ihrem Computer. Wenn dort neue Faxdokumente abgespeichert werden, startet der Faxversand automatisch.
 
-1. Öffnen Sie die **Client-Einstellungen** über das pascom Menü.
+1. Öffnen Sie die {{< ui-button "Client Einstellungen">}} über das pascom Menü.
 
 ![Client Einstellungen öffnen](open_clientsettings.jpg)
 </br>
 
-1. Wählen Sie im Menü **PDF zu Fax Einstellung** oder Scrollen Sie runter bis zu den Einstellungen **PDF zu Fax**.
+1. Wählen Sie im Menü {{< ui-button "pdf zu fax einstellungen">}} oder Scrollen Sie runter bis zu den Einstellungen **PDF zu Fax**.
 
 ![Ordner zur Überwachung auswählen](clientsettings_fax.de.jpg)
 </br>
 
-In den **Fax zu PDF** Einstellungen setzen Sie mit einem **Klick** auf **Ändern** einen neuen Ordner. Wählen Sie einen bestehenden Ordner aus oder erstellen Sie einen neuen Ordner z.B. **Faxe**.
+In den **Fax zu PDF** Einstellungen setzen Sie mit einem **Klick** auf {{< ui-button "ändern">}} einen neuen Ordner. Wählen Sie einen bestehenden Ordner aus oder erstellen Sie einen neuen Ordner z.B. **Faxe**.
 
 ### Neue PDF-Dokumente im überwachten Ordner speichern
 1. Sobald Sie ein neues **PDF-Dokument** in diesem Ordner abspeichern, startet automatisch der **Faxversand**. Sie müssen nur noch die **Faxnummer** in das Wählfeld eingeben. 
@@ -88,13 +88,13 @@ Um einen vollautomatischen **Faxversand** zu nutzen, müssen Ihre PDF-Dokumente 
 
 ### Einstellungen zur Automatisierung vornehmen
 
-Richten Sie zunächst wie oben beschrieben eine Ordnerüberwachung ein. Danach aktivieren Sie die Option **Automatisches Senden**.
+Richten Sie zunächst wie oben beschrieben eine Ordnerüberwachung ein. Danach aktivieren Sie die Option {{< ui-button "automatisches senden">}}.
 
 ![Automatisches Senden aktivieren](automatic_fax.de.jpg)
 *Automatisches Senden aktivieren*
 </br>
 
-1. Stellen Sie sicher, dass auf Ihrem Computer das Tool **Ghostscript** installiert ist. Dieses wird benötigt, um PDF Dateien zu steuern. Klicken Sie auf **Scan**, um den Pfad zum Installationsordner automatisch zu setzen. 
+1. Stellen Sie sicher, dass auf Ihrem Computer das Tool **Ghostscript** installiert ist. Dieses wird benötigt, um PDF Dateien zu steuern. Klicken Sie auf {{< ui-button "scan">}}, um den Pfad zum Installationsordner automatisch zu setzen. 
 
 2. Die **Sendeverzögerung** verzögert in **Sekunden** den Zeitpunkt, an dem der **Faxversand** automatisch startet.
 
@@ -102,7 +102,7 @@ Richten Sie zunächst wie oben beschrieben eine Ordnerüberwachung ein. Danach a
 
 ### Dokumente mit **Steuerfelder**-Parameter versehen
 
-In Ihrem Dokument, fügen Sie als **erste Zeile** (wie ein Faxheader) die **Steuerfeld**-Parameter ein. 
+In Ihrem Dokument, fügen Sie als **erste Zeile** (wie ein Faxheader) die {{< ui-button "steuerfeld-parameter">}} ein. 
 
 ![Faxdokument](faxdocuement.jpg)
 *Steuerfeld-Parameter in einem Faxdokument*

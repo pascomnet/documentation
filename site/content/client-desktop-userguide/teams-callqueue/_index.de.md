@@ -10,7 +10,7 @@ description: Lernen Sie alles Wissenswerte über pascom Teams und das Arbeiten m
 
 ## Trainings Video
 
-{{< youtube r-MfrLPXkXY  >}} 
+{{< youtube -k1t5sel0NE >}} 
 
 
 ## Übersicht
@@ -20,7 +20,7 @@ pascom Teams sind im Grunde Warteschlangen. Ein Ort wo Ihre Kunden verbleiben, b
 
 ## Ein pascom Team öffnen
 
-In Ihrer **Kontaktliste** finden Sie das **Team** in dem Sie Mitglied sind, und können mit einem **Klick** auf das Team, die Warteschlange öffnen. z.B. **Team Support**
+In Ihrer **Kontaktliste** finden Sie das **Team** in dem Sie Mitglied sind, und können mit einem **Klick** auf das Team, die Warteschlange öffnen. z.B. {{< ui-button "Support">}}
 
 ![pascom Team öffnen](open_teams.jpg)
 *pascom Team öffnen über die Kontaktliste*
@@ -38,7 +38,7 @@ In der Übersicht der Warteschlange finden Sie Ihre Kollegen sowie Tabs und Men�
 *Übersicht über das pascom Team*
 </br>
 
-1. Im **aktiven grünen Bereich** finden Sie Kollegen, die an in der Warteschlange aktiv angemeldet sind und Anrufe zugestellt bekommen. Zudem sehen Sie anhand des **Höhrer-Symbols** den aktuellen **Rufstatus**
+1. Im **aktiven grünen Bereich** finden Sie Kollegen, die in der Warteschlange aktiv angemeldet sind und Anrufe zugestellt bekommen. Zudem sehen Sie anhand des **Höhrer-Symbols** den aktuellen **Rufstatus**
 
 2. Im **deaktivierten grauen Bereich** finden Sie Kollegen, die sich aus der Warteschlange ausgeloggt haben und keine Anrufe zugestellt bekommen. Zudem sehen Sie anhand des **Höhrer-Symbols** den aktuellen **Rufstatus**
 
@@ -46,7 +46,7 @@ In der Übersicht der Warteschlange finden Sie Ihre Kollegen sowie Tabs und Men�
 
 Benutzer in Teams, können **flexible** oder **fest zugewiesene** Mitglieder einer Warteschlange sein. Sofern Ihr Systemadministrator Sie als  **flexibles Mitglied** eingestellt hat, können Sie sich an der Warteschlange an- und abmelden und wechseln so, vom **aktiven** in den **deaktivierten** Bereich.
 
-1. Nutzen Sie für das An- und Abmelden im Team den  **Login- / Logout-** Button.
+1. Nutzen Sie für das An- und Abmelden im Team den  {{< ui-button "Login - / Logout">}} Button.
 
 ![Vom Team an- und abmelden](login_teams.de.jpg)
 *Als flexibles Mitglied im Team an- und abmelden*
@@ -55,7 +55,7 @@ Benutzer in Teams, können **flexible** oder **fest zugewiesene** Mitglieder ein
 
 Auf der pascom Telefonanlage lassen sich **Pausengründe** definieren, die Sie verwenden können, um kurzzeitig keine Anrufe aus der Warteschlange zu erhalten. z.B. **Kaffeepause** oder **Nachbearbeitung** etc. 
 
-1. Klicken Sie dazu auf den **Pause-Button** und wählen einen **Pausengrund** aus.
+1. Klicken Sie dazu auf {{< ui-button "Pause">}} und wählen einen **Pausengrund** aus.
 
 ![Arbeit im Team pausieren](pause_teams.de.jpg)
 *Arbeit im Team kurz pausieren*
@@ -73,7 +73,7 @@ Sie sehen die Rufnummer, den Namen (sofern ein Telefonbucheintrag vorhanden ist)
 
 Wenn Ihnen die automatische Zustellung der Anrufe nicht schnell genug geht oder Sie sich einen Anrufer vor einem Kollegen aus der Warteschlange holen möchten, können Sie diesen **heranholen / pickuppen**.
 
-1. Klicken Sie dazu mit der **rechten Maustaste** auf den wartenden Anrufer den Sie heranholen möchten. Wählen Sie dann **Anruf heranholen** aus. 
+1. Klicken Sie dazu mit der **rechten Maustaste** auf den wartenden Anrufer den Sie heranholen möchten. Wählen Sie dann {{< ui-button "Anruf heranholen">}} aus. 
 
 ![Wartenden Anrufer heranholen](pickup_teams.de.jpg)
 *Wartenden Anrufer heranholen*
@@ -81,6 +81,6 @@ Wenn Ihnen die automatische Zustellung der Anrufe nicht schnell genug geht oder 
 
 ## Das Team-Journal
 
-Die Funktionen des Team-Journal erklären wir Ihnen in folgender [Anleitung](Link zum Team-Journal).
+Die Funktionen des Team-Journal erklären wir Ihnen in folgender [Anleitung]({{< ref "/client-desktop-userguide/call-history#team-journal-nutzen" >}}).
 
 <br />

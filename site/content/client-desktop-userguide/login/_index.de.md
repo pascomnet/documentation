@@ -1,7 +1,7 @@
 ---
 title: Anmelden am pascom Client
 weight: 1
-description: Erfahren Sie, wie Sie sich am pascom Desktop Client anmelden
+description: Erfahren Sie hier, wie Sie sich am pascom Desktop Client anmelden
 ---
 
 {{< doctype "both" >}}

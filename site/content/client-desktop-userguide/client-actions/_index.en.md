@@ -10,7 +10,7 @@ description: In this tutorial we will show you how to use client actions and tra
 
 ## Trainings Video
 
-{{< youtube ZVieZBOLqDE >}} 
+{{< youtube pyVqJ5SKIIk >}} 
 
 
 ## Overview
@@ -22,19 +22,19 @@ Client actions allow you to transfer data to third-party applications for furthe
 
 The client actions can be found in the **Client Settings**.
 
-1. Open the **Client-Settings** via the pascom Menü
+1. Open the {{< ui-button "Client Settings">}} via the pascom Menü
 
 
 ![Open Client Settings](open_clientsettings.jpg)
 </br>
 
-2. Click on **Client Actions** in the **Settings menu**
+2. Click on {{< ui-button "Client Actions">}} in the **Settings menu**
 
 
 ![Actions](actions.en.jpg)
 </br>
 
-3. Create a new action using **"Add Action"**.
+3. Create a new action using {{< ui-button "Add Action">}}.
 
 
 ### Pass data to URL or application
@@ -55,11 +55,11 @@ Here you determine which data you want to pass and how your action should behave
 
 ### Set a Name
 
-Assign a unique name to the action at **"Name"**, because you can create several actions and therefore you can see immediately what the action does. 
+Assign a unique name to the action at {{< ui-button "Name">}}, because you can create several actions and therefore you can see immediately what the action does. 
 
 ### Set the URL
 
-At **"URL"** set the address of your web application, followed by a variable and the data you want to pass.
+At {{< ui-button "URL">}} set the address of your web application, followed by a variable and the data you want to pass.
 
 **Example**  
 
@@ -95,22 +95,22 @@ Actions can be started automatically in connection with the **call direction** a
 
 ### Call direction for automatic actions
 
-For **"Call direction"**, specify whether the action should start automatically for **incoming**, **outgoing** or **both** call directions.
+For {{< ui-button "Call direction">}}, specify whether the action should start automatically for **incoming**, **outgoing** or **both** call directions.
 
 ### Trigger event for automatic actions
 
-In the **"trigger event"** item, set when the action should start automatically. Already during **ring**, after **accepting** the call or when **Hanging up** the call.
+In the {{< ui-button "Trigger event">}} item, set when the action should start automatically. Already during **ring**, after **accepting** the call or when **Hanging up** the call.
 
 ## Start actions manually
 
-Actions can also be executed or started manually at any time. For actions that apply to the respective call, you will find a **Action-Open** Button.
+Actions can also be executed or started manually at any time. For actions that apply to the respective call, you will find a {{< ui-button "Action open">}} Button.
 
 ![Start actions manually](actions-manuel.en.jpg)
 *Start actions manually with one click*
 </br>
 
-1. Click on the **Action-Open** button for an incoming call and A popup will also show you the name of the action that will be executed.  
-2. Actions can also be started directly from the **call journal**. There you will find the same **Actions-Open** button.
+1. Click on the {{< ui-button "Action open">}} button for an incoming call and A popup will also show you the name of the action that will be executed.  
+2. Actions can also be started directly from the **call journal**. There you will find the same {{< ui-button "Action open">}} button.
 
 ## Work with data in a third-party application
 
@@ -125,14 +125,14 @@ Of course, you should also process the data that you transfer to a third-party a
 
 ## Manage Actions
 
-In the **Client Settings** you can manage your actions. Add new actions, remove existing actions and favor actions that should be used by default.
+In the {{< ui-button "Client Settings">}} you can manage your actions. Add new actions, remove existing actions and favor actions that should be used by default.
 
 ![Manage Actions](actions_manage.en.jpg)
 *Manage your actions in the pascom client*
 </br>
 
-1. **Deactivate** actions that you temporarily do not need.
-2. Click on an **action** to **edit** it.
-3. Please note that one action must always be marked as **favorite**. A single action is therefore always **favorite**.
+1. {{< ui-button "Deactivate">}} actions that you temporarily do not need.
+2. Click on an {{< ui-button "action">}} to **edit** it.
+3. Please note that one action must always be marked as {{< ui-button "favorite">}}*. A single action is therefore always **favorite**.
 
 <br />

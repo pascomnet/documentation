@@ -1,6 +1,6 @@
 ---
 title: Client Administration
-description: pascom bietet native Clients für Windows, MacOS, Linux, iOS und Android
+description: pascom bietet native Clients für Windows, MacOS, Linux, iOS und Android. Erfahren Sie hier alles zur Installation und Verwaltung.
 icon: "fa fa-desktop"
 type : "pages"
 weight : 5

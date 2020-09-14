@@ -10,7 +10,7 @@ description: In dieser Anleitung zeigen wir Ihnen, wie Sie das Anrufverhalten Ih
 
 ## Trainings Video
 
-{{< youtube ZVieZBOLqDE >}} 
+{{< youtube JC9AhCM2p_M >}} 
 
 
 ## Übersicht
@@ -30,13 +30,13 @@ Um selbst Konfigurationen an seinen Geräten vorzunehmen, muss der Systemadminis
 
 Die Gerätesteuerung finden Sie in den **Client-Einstellungen**.
 
-1. Öffnen Sie die **Client-Einstellungen** über das pascom Menü
+1. Öffnen Sie die {{< ui-button "Client Einstellungen">}} über das pascom Menü
 
 
 ![Client Einstellungen öffnen](open_clientsettings.jpg)
 </br>
 
-2. Klicken Sie im **Einstellungs-Menü** auf **Meine Geräte**
+2. Klicken Sie im **Einstellungs-Menü** auf {{< ui-button "Meine Geräte">}}
 
 
 ![Die Gerätesteuerung](mydevices_on.de.jpg)
@@ -46,19 +46,19 @@ Die Gerätesteuerung finden Sie in den **Client-Einstellungen**.
 
 Hier bestimmen Sie, welches Gerät Sie für ausgehende Anrufe verwenden möchten. Das **pascom integrierte Softphone** oder ein Ihnen zugewiesenes **Tischtelefon**. Das pascom Softphone ist in die Software eingebaut und lässt sich ideal mit einem Headset nutzen. 
 
-1. Klicken Sie bei **"Ausgehende Anrufe"** auf das Drop-Down-Feld und wählen Sie Ihr **Endgerät** aus. 
+1. Klicken Sie bei **"Ausgehende Anrufe"** auf das {{< ui-button "Drop Down Feld">}} und wählen Sie Ihr **Endgerät** aus. 
 
 ## Gerätesteuerung für eingehende Anrufe
 
 Bei der Gerätesteuerung für eingehende Anrufe kann man das Anrufverhalten seiner Geräte steuern.
 
-1. **Aktivieren / Deaktivieren** Sie einfach den Schalter der Anrufart, bei welcher Ihr Endgerät klingeln soll. z.B. **internen Anrufen**
+1. {{< ui-button "aktivieren / deaktivieren">}} Sie einfach den Schalter der Anrufart, bei welcher Ihr Endgerät klingeln soll. z.B. **internen Anrufen**
 
 2. Sie können den **Start** des Klingelns zusätzlich **verzögern**. Dies macht Sinn, wenn Sie für eine Anrufart (z.B. interne Anrufe) 2 Geräte nutzen und ein Gerät von beiden soll später anfangen zu klingeln.
 
 ## Alle Geräte ausschalten | DND
 
-Wollen Sie einmal nicht erreichbar sein, so können Sie alle **Schalter** deaktivieren. 
+Wollen Sie einmal nicht erreichbar sein, so können Sie alle {{< ui-button "Schalter">}} deaktivieren. 
 
 ![Alle Geräte ausschalten](mydevices_off.de.jpg)
 </br>

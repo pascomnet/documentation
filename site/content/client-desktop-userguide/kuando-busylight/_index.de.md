@@ -56,19 +56,19 @@ Das liegt an den Einstellung des pascom Client. Das Kuando Busylight ist ein unt
 
 <br />
 
-1. Öffnen Sie die **Client-Einstellungen** über das pascom Menü
+1. Öffnen Sie die {{< ui-button "Client Einstellungen">}} über das pascom Menü
 
 
 ![Client Einstellungen öffnen](open_clientsettings.jpg)
 </br>
 
-2. Klicken Sie im **Einstellungs-Menü** auf **Headset und Audio**
+2. Klicken Sie im **Einstellungs-Menü** auf {{< ui-button "Headset und Audio">}}
 
 
 ![Kuando Busylight Einstellungen](kuando_busylight_setup.de.jpg)
 </br>
 
-Um die **automatische Erkennung** des Kuando Busylight zu unterbinden, wählen Sie bei **Kuando Busylight** statt **"Auto"**, im Drop-Down-Feld **"ignorieren"** aus. 
+Um die **automatische Erkennung** des Kuando Busylight zu unterbinden, wählen Sie bei **Kuando Busylight** statt {{< ui-button "auto">}}, im Drop-Down-Feld {{< ui-button "ignorieren">}} aus. 
 
 ## Kuando Busylight Audio Einstellungen
 

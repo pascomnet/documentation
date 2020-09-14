@@ -11,7 +11,7 @@ description: In this tutorial we show you how to control the call behavior of yo
 
 ## Trainings Video
 
-{{< youtube zS7hPRGWXPk >}} 
+{{< youtube xATkFu9Qizk >}} 
 
 
 ## Overview
@@ -31,13 +31,13 @@ If you want to configure your devices yourself, the system administrator must en
 
 The device control can be found in the **Client Settings**.
 
-1. Open the **Client-Settings** via the pascom Menü
+1. Open the {{< ui-button "Client Settings">}} via the pascom Menü
 
 
 ![Open Client Settings](open_clientsettings.jpg)
 </br>
 
-2. Click on **My Devices** in the **Settings menu**
+2. Click on {{< ui-button "My Devices">}} in the **Settings menu**
 
 
 ![Device Control Settings](mydevices_on.en.jpg)
@@ -47,19 +47,19 @@ The device control can be found in the **Client Settings**.
 
 Here you determine which device you want to use for outgoing calls. The **pascom integrated softphone** or a **desk phone** assigned to you. The pascom softphone is built into the software and is ideal for use with a headset. 
 
-1. Click the drop-down box at **"Outgoing Calls "** and select your **device**. 
+1. Click the {{< ui-button "Drop Down Box">}} at **"Outgoing Calls "** and select your **device**. 
 
 ## Device Control for incomming Calls
 
 With the device control for incoming calls you can control the call behavior of your devices.
 
-1. **activate / deactivate** simply the switch of the call type at which your  Endpoint devices should ring. e.g. **internal calls**
+1. {{< ui-button "activate / deactivate">}} simply the switch of the call type at which your  Endpoint devices should ring. e.g. **internal calls**
 
 2. You can additionally **delay** the **start** of the ringing. This makes sense if you use 2 devices for one type of call (e.g. internal calls) and one of them should start ringing later.
 
 ## Switch off all Devices | DND
 
-If you want to be unreachable, you can deactivate all **switches**. 
+If you want to be unreachable, you can deactivate all {{< ui-button "switches">}}. 
 
 ![Switch off all Devices](mydevices_off.en.jpg)
 </br>

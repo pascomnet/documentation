@@ -9,10 +9,6 @@ description: Configure your audio and headset settings with this tutorial
 {{< description >}}
 
 
-## Trainings Video
-
-{{< youtube zS7hPRGWXPk >}} 
-
 
 ## Overview
 
@@ -28,9 +24,9 @@ You have the choice when using your headset. Headsets **supported** by the pasco
 
 |Manufacturer|Description|
 |---|---|
-|Jabra|All Jabra headsets are supported, our favorite is the Evolve series.|
-|Plantronics|All Plantronics headsets are supported. Sometimes you may need to install an additional SDK from the manufacturer for some models.|
-|Sennheiser| All Sennheiser headsets are supported. Sometimes you may need to install an additional SDK from the manufacturer for some models.| |Sennheiser| All Sennheiser headsets are supported.
+|Jabra|All Jabra headsets are supported|
+|Poly / Plantronics|All Plantronics headsets are supported. You need to install an additional SDK or Software from the manufacturer.|
+|Sennheiser| All Sennheiser headsets are supported. You need to install an additional SDK or Software from the manufacturer.|
 
 
 ## Headset Setup
@@ -49,19 +45,19 @@ This is due to the settings of the pascom client. Supported headsets are automat
 
 ## Headset Settings
 
-1. Open the **Client-Settings** via the pascom Menü
+1. Open the {{< ui-button "Client Settings">}} via the pascom Menü
 
 
 ![Open Client Settings](open_clientsettings.jpg)
 </br>
 
-2. Click on **Headset and Audio Settings** in the **Settings menu**
+2. Click on {{< ui-button "headset and audio settings">}} in the **Settings menu**
 
 
 ![Device Control Settings](headset_settings.en.jpg)
 </br>
 
-To stop the **automatic detection** of new headsets, select **"Ignore"** in the drop-down field instead of **"Auto"**. 
+To stop the **automatic detection** of new headsets, select {{< ui-button "ignore">}} in the drop-down field instead of {{< ui-button "auto">}}. 
 
 ## Audio Settings
 
@@ -72,18 +68,18 @@ You can adjust the audio settings according to your preferences. Since the audio
 
 ### Configure Microphone
 
-1. Click on **"Microphone"** and select your desired microphone from the drop-down field
+1. Click on {{< ui-button "microphone">}} and select your desired microphone from the drop-down field
 
 ### Configure Speaker
 
-1. Click on **"Speaker"** and select your desired speaker for the conversation audio from the drop-down box. 
+1. Click on {{< ui-button "speaker">}} and select your desired speaker for the conversation audio from the drop-down box. 
 
 ### Configure Speaker for Ringtone
 
-1. Click on **"Speaker for Ringtone"** and select your desired speaker for the ringtone from the drop-down box. 
+1. Click on {{< ui-button "speaker for ringtone">}} and select your desired speaker for the ringtone from the drop-down box. 
 
 ### Configure Ringtones
 
-The pascom client comes with several standard integrated ringtones from which you can choose. However, you can also set your own ringtones by pressing the **"Choose"** button and uploading a music track from your computer.  
+The pascom client comes with several standard integrated ringtones from which you can choose. However, you can also set your own ringtones by pressing the {{< ui-button "choose">}} button and uploading a music track from your computer.  
 
 <br />

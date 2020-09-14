@@ -24,15 +24,15 @@ The fax functions of the pascom telephone system are very extensive. A user can 
 
 ## Send a new fax
 
-Click on the **Fax icon** in the dialing field of the **Telephony area**. Of course you can also start a new fax transmission directly from your **phone book**.
+Click on the {{< ui-button "fax icon">}}in the dialing field of the **Telephony area**. Of course you can also start a new fax transmission directly from your **phone book**.
 
 ![Start a new fax](start_fax.en.jpg)
 *Start and create new fax transmission*
 </br>
 
-1. In the next step, select the **PDF document** that you want to send by fax.
+1. In the next step, select the {{< ui-button "pdf document">}} that you want to send by fax.
 
-2. Enter the **fax number** to which you want to send the document. If you send it from the **phone book**, the **fax number** is already in the dialing field.
+2. Enter the {{< ui-button "fax number">}} to which you want to send the document. If you send it from the **phone book**, the **fax number** is already in the dialing field.
 
 ![send fax](send_fax.en.jpg)
 *Send a new fax*
@@ -42,7 +42,7 @@ Click on the **Fax icon** in the dialing field of the **Telephony area**. Of cou
 
 2. A unique **Job_ID** is created by the pascom telephone system for each fax transmission.
 
-3. The **Job title** behaves like a **subject**. The **document name** of the file you want to send is the default. But you can also change the **title** with a **click** on it.
+3. The **Job title** behaves like a **subject**. The **document name** of the file you want to send is the default. But you can also change the {{< ui-button "title">}} with a **click** on it.
 
 ## Partial automation of faxing
 
@@ -57,17 +57,17 @@ You can **automate** faxing with the pascom client to fax documents directly fro
 
 To automate **fax transmission**, the pascom client monitors a folder on your computer. If new fax documents are saved there, fax transmission starts automatically.
 
-1. Open the **client settings** via the pascom menu.
+1. Open the {{< ui-button "Client Settings">}} via the pascom menu.
 
 ![Open Client Settings](open_clientsettings.jpg)
 </br>
 
-1. Select **PDF to Fax Setting** from the menu or scroll down to the settings **PDF to Fax**.
+1. Select {{< ui-button "pdf to fax settings">}}from the menu or scroll down to the settings **PDF to Fax**.
 
 ![Select folder for monitoring](clientsettings_fax.en.jpg)
 </br>
 
-In the **Fax to PDF** settings, set a new folder with a **click** on **Change**. Select an existing folder or create a new folder e.g. **Faxes**.
+In the **Fax to PDF** settings, set a new folder with a **click** on {{< ui-button "change">}}. Select an existing folder or create a new folder e.g. **Faxes**.
 
 ### Save new PDF documents to the monitored folder
 
@@ -89,19 +89,19 @@ In order to use fully automatic **fax transmission**, your PDF documents must ha
 
 ### Make settings for automation
 
-First set up a folder monitoring as described above. Then activate the option **Automatic sending**.
+First set up a folder monitoring as described above. Then activate the option {{< ui-button "automatic sending">}}.
 
 ![Activate automatic sending](automatic_fax.en.jpg)
 *Activate automatic sending*
 </br>
 
-1. Make sure that the **Ghostscript** tool is installed on your computer. This tool is required to control PDF files. Click on **Scan** to set the path to the installation folder automatically. 
+1. Make sure that the **Ghostscript** tool is installed on your computer. This tool is required to control PDF files. Click on {{< ui-button "scan">}} to set the path to the installation folder automatically. 
 
 2. The **Send Delay** delays in **seconds** the time when the **Fax transmission** starts automatically.
 
 3. Test the configuration
 
-### Set **control field** parameters in documents
+### Set control field parameters in documents
 
 In your document, insert as **first line** (like a fax header) the **control field** parameters. 
 

@@ -8,21 +8,17 @@ description: Erfahren Sie in dieser Anleitung, welche Einstellungen Sie am pasco
  
 {{< description >}}
 
-## Trainings Video
-
-{{< youtube ZVieZBOLqDE >}} 
-
 
 ## Client Einstellungen öffnen
 
 
-1. Öffnen Sie die **Client-Einstellungen** über das pascom Menü. Sie können auch in der oberen rechten Ecke des **Telefonie Bereichs** auf den **Optionen/Einstellungen** Button klicken.
+1. Öffnen Sie die {{< ui-button "Client Einstellungen">}} über das pascom Menü. Sie können auch in der oberen rechten Ecke des **Telefonie Bereichs** auf den {{< ui-button "Optionen / Einstellungen">}} Button klicken.
 
 
 ![Client Einstellungen öffnen](open_clientsettings.jpg)
 </br>
 
-2. Klicken Sie im **Einstellungs-Menü** auf **Client**.
+2. Klicken Sie im **Einstellungs-Menü** auf {{< ui-button "Client">}}.
 
 ![Client Einstellungen](lang-design.de.jpg)
 </br>
@@ -31,17 +27,17 @@ description: Erfahren Sie in dieser Anleitung, welche Einstellungen Sie am pasco
 ## Sprache und Design ändern
 
 
-Den pascom Client gibt es in verschiedenen Sprachen. Klicken Sie einfach auf **Sprache** und wählen Ihre bevorzugte Sprache aus. Nach Auswahl der Sprache, erscheint im unteren Bereich eine Meldung zum **Neustart** des pascom Client.
+Den pascom Client gibt es in verschiedenen Sprachen. Klicken Sie einfach auf {{< ui-button "Sprache">}} und wählen Ihre bevorzugte Sprache aus. Nach Auswahl der Sprache, erscheint im unteren Bereich eine Meldung zum **Neustart** des pascom Client.
 
 
-3. Sie können zwischen 2 verschiedenen **Design Themes** wählen. Ein **light** und ein **dark** Design Schema, stehen zur Auswahl.
+3. Sie können zwischen 2 verschiedenen {{< ui-button "Design Themes">}} wählen. Ein **light** und ein **dark** Design Schema, stehen zur Auswahl.
 
 
 ## Download Ordner ändern
 
 Alle Dateien die Sie von Ihren Kollegen zugesendet bekommen, werden in einen **Download-Ordner** herunter geladen. Standartmäßig ist dieser Ordner derselbe, wie der **Download-Ordner** Ihres Browsers. Sie können diesen Ordner jedoch ändern.
 
-1. Klicken Sie bei dem Punkt **Download-Ordner** auf den Button **Ändern** und geben im Auswahlfenster einen neuen Ordner an. 
+1. Klicken Sie bei dem Punkt **Download-Ordner** auf den Button {{< ui-button "Ändern">}} und geben im Auswahlfenster einen neuen Ordner an. 
 
 ## pascom Client automatisch starten
 
@@ -50,24 +46,24 @@ Sie melden Sich bei Ihrem Betriebssystem an und der pascom Client startet automa
 ![pascom Client automatisch starten](download_settings.de.jpg)
 </br>
 
-1. **Aktivieren** Sie dazu die "Option" - **pascom Client automatisch beim Anmelden starten**
+1. **Aktivieren** Sie dazu die "Option" - {{< ui-button "pascom Client automatisch beim Anmelden starten">}}.
 
 ## Dynamisches Scrollen deaktivieren
 
 Das dynamische Scrollen bewirgt ein weicheres Navigieren durch Menüs und Listen. Beim Scrollen bemerken Sie, dass der bewegliche Kontent noch etwas nach rollt. 
 
-1. Sollten Sie dieses Scroll-Verhalten nicht mögen, können Sie die Option mit Klick auf **Dynamisches Scrollen deaktivieren** ausschalten.
+1. Sollten Sie dieses Scroll-Verhalten nicht mögen, können Sie die Option mit Klick auf {{< ui-button "Dynamisches Scrollen deaktivieren">}} ausschalten.
 
 ## Tastenkürzel (Shortcuts) anpassen.
 
 Im pascom Client können Sie mit **Tastenkürzel** arbeiten, um sich z.B. das Navigieren zu erleichtern. 
 
-2. Klicken Sie im **Einstellungs-Menü** auf **Tastenkürzel**.
+2. Klicken Sie im **Einstellungs-Menü** auf {{< ui-button "Tastenkürzel">}}.
 
 ![Tastenkürzel](shortcuts.de.jpg)
 </br>
 
-2. Klicken Sie zum Ändern eines **Tastenkürzel** bei der gewünschten Funktion auf das Drop-Down-Feld und geben eine neue **Tastenkombination** ein.
+2. Klicken Sie zum Ändern eines **Tastenkürzel** bei der gewünschten Funktion auf das {{< ui-button "Drop Down Feld">}} und geben eine neue **Tastenkombination** ein.
 
 
 {{% notice info %}}
@@ -86,13 +82,13 @@ Im folgenden werden die globalen Tastenkürzel näher erklärt:
 
 Bei Fehlern oder Problemen mit dem pascom Client, können Sie Ihren Systemadministrator oder das pascom Support-Team unterstützen, indem Sie Log und Support Informationen bereitstellen. 
 
-2. Klicken Sie im **Einstellungs-Menü** auf **Über pascom Client**.
+2. Klicken Sie im **Einstellungs-Menü** auf {{< ui-button "Über den pascom Client">}}.
 
 ![Über pascom Client](about.de.jpg)
 </br>
 
-1. Hier finden Sie die **Log-Dateien** des pascom Client, welche sich in einem **Text-Editor** öffnen.
+1. Hier finden Sie die **Log-Dateien** des pascom Client, welche sich in einem **Text-Editor** öffnen lassen.
 
-2. Generieren Sie ein **Support-Packet** für Ihren Systemadministrator oder dem pascom Support. Klicken Sie dazu auf **Support-Info speichern**. Das Zip-Archiv finden Sie dann in Ihrem **Download-Ordner**
+2. Generieren Sie ein **Support-Packet** für Ihren Systemadministrator oder dem pascom Support. Klicken Sie dazu auf {{< ui-button "Support Info speichern">}}. Das Zip-Archiv finden Sie dann in Ihrem **Download-Ordner**
 
 <br />

@@ -1,5 +1,6 @@
 ---
 title: Mobile Client Energiespareinstellungen
+weight: 20
 description: Damit die pascom Android Mobile App im Hintergrund zuverlässig Nachrichten und Anrufe empfangen kann, muss die Akku-Optimierung ausgeschalten werden. 
 ---
  

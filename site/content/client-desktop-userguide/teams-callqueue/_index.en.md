@@ -10,7 +10,7 @@ description: Learn all you need to know about pascom teams and working with queu
 
 ## Trainings Video
 
-{{< youtube dZ6U_YShgag >}} 
+{{< youtube 8OBSRSndjas>}} 
 
 ## Overview
 
@@ -19,7 +19,7 @@ pascom teams are basically queues. A place where your customers stay until a use
 
 ## Open a pascom team
 
-In your **contact list** you will find the **team** of which you are a member, and you can open the queue with a **click** on the team. e.g. **Team Support**
+In your **contact list** you will find the **team** of which you are a member, and you can open the queue with a **click** on the team. e.g. {{< ui-button "Support">}}.
 
 ![open pascom Team](open_teams.jpg)
 *Open a pascom team via the contactlist*
@@ -45,7 +45,7 @@ In the queue overview you will find your colleagues as well as tabs and menu ite
 
 Users in teams, can be **flexible** or **fixed** members of a queue. If your system administrator has set you up as a **flexible member**, you can log on and off the queue and thus switch from the **active** to the **disabled** area.
 
-1. Use the **Login- / Logout-** button to log in and out of the team.
+1. Use the {{< ui-button "Login - / Logout">}} button to log in and out of the team.
 
 ![Log in and log out from the team](login_teams.en.jpg)
 *Log in and log out as a flexible member of the team*
@@ -54,7 +54,7 @@ Users in teams, can be **flexible** or **fixed** members of a queue. If your sys
 
 On the pascom telephone system, **pause reasons** can be defined that you can use to temporarily not receive calls from the queue. e.g. **coffee break** or **postprocessing** etc. 
 
-1. Click on the **Pause button** and select a **Pause reason**.
+1. Click on {{< ui-button "pause">}} and select a **Pause reason**.
 
 ![Pause work in a team](pause_teams.en.jpg)
 *Take a short break from working in a team*
@@ -72,7 +72,7 @@ You will see the phone number, the name (if there is a phone book entry) and the
 
 If the automatic call delivery is not fast enough for you or you want to pick up a caller before a colleague from the queue, you can **pick up** the call.
 
-1. To do this, click with the **right mouse button** on the waiting caller you want to pick up. Then select **Pickup call**. 
+1. To do this, click with the **right mouse button** on the waiting caller you want to pick up. Then select {{< ui-button "pickup call">}}. 
 
 ![Pick up waiting callers](pickup_teams.en.jpg)
 *Pick up waiting callers*
@@ -80,6 +80,6 @@ If the automatic call delivery is not fast enough for you or you want to pick up
 
 ## The Team-Journal
 
-The functions of the Team Journal are explained in the following [Tutorial](Link to Team Journal).
+The functions of the Team Journal are explained in the following [Tutorial]({{< ref "/client-desktop-userguide/call-history#use-team-journal" >}}).
 
 <br />

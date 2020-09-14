@@ -20,7 +20,7 @@ Im Anrufjournal finden Sie die komplette Historie Ihrer Anrufe. Filteroptionen e
 
 ## Das Anrufjournal aufrufen
 
-Klicken Sie in der Menüleiste auf das Symbol der **Anrufhistorie** um das Journal aufzurufen.
+Klicken Sie in der Menüleiste auf das Symbol der {{< ui-button "Anrufhistorie">}} um das Journal aufzurufen.
 
 ![Anruf Historie öffnen](open_call_history.jpg)
 *Anrufjournal öffnen über das Menü*
@@ -28,7 +28,7 @@ Klicken Sie in der Menüleiste auf das Symbol der **Anrufhistorie** um das Journ
 
 ## Filter des Anruf Journal nutzen
 
-Klicken Sie im oberen Bereich der Anrufhistorie auf **Filter-Optionen**.
+Klicken Sie im oberen Bereich der Anrufhistorie auf {{< ui-button "Filter-Optionen">}}.
 
 ![Journal](journal.de.jpg)
 *Das Anrufjournal im pascom Client*
@@ -69,11 +69,11 @@ Im Anrufjournal finden Sie auf der rechten Seite in jedem Anrufdatensatz **Symbo
 
 Zudem zeigen kleine Pfeile die **Rufrichtung** an. **Eingehend / Ausgehend** oder **Verbunden**.
 
-1. Mit Klick auf den **roten Höhrer** in jedem Anrufdatensatz, starten Sie einen **Rückruf**.
+1. Mit Klick auf den {{< ui-button "roten Höhrer">}} in jedem Anrufdatensatz, starten Sie einen **Rückruf**.
 
 ## Weitere Anruf-Details anzeigen lassen.
 
-Das Anrufjournal zeigt Ihnen noch mehr Daten zu jedem einzelnen Anruf. Klicken Sie auf den gewünschten Anrufdatensatz und Sie gelangen in die **Detail-Ansicht**
+Das Anrufjournal zeigt Ihnen noch mehr Daten zu jedem einzelnen Anruf. Klicken Sie auf den gewünschten Anrufdatensatz und Sie gelangen in die {{< ui-button "Detail-Ansicht">}}
 
 ![Anrufdatensatz Detail Ansicht](journal_details.de.jpg)
 
@@ -87,14 +87,14 @@ In der **Detail-Ansicht** können Sie den kompletten Verlauf durch das pascom Te
 Entnehmen Sie Daten zum **Anrufverlauf**, den letzten **3 Anrufen**, Details zum **Anrufer** und Daten aus dem **Telefonbuch**
 
 {{% notice info %}}
-Tip: Klicken Sie auf das **rote Info-Symbol** bei den letzten 3 Anrufen. Damit gelangen Sie zu dem entsprechenden Anrufdatensatz und können diesen weiter auswerten.
+Tip: Klicken Sie auf das {{< ui-button "rote Höhrersymbol">}} bei den letzten 3 Anrufen. Damit gelangen Sie zu dem entsprechenden Anrufdatensatz und können diesen weiter auswerten.
 {{% /notice %}}
 
 ## Team-Journal nutzen
 
-{{< youtube r-MfrLPXkXY  >}} 
+{{< youtube xwi1VOCCAjE >}} 
 
-Das Team-Journal gibt Ihnen eine komplette Übersicht über alle Anrufe die im Team, in welchem Sie Mitglied sind, getätigt wurden. Weitere Infos zu pascom Teams, finden Sie in folgender [Anleitung](Link zu Teams).
+Das Team-Journal gibt Ihnen eine komplette Übersicht über alle Anrufe die im Team, in welchem Sie Mitglied sind, getätigt wurden. Weitere Infos zu pascom Teams, finden Sie in folgender [Anleitung]({{< ref "/client-desktop-userguide/teams-callqueue" >}}).
 
 Klicken Sie zum öffnen des **Team-Journal** in Ihrem **Team** auf **Team Journal**.
 
@@ -105,7 +105,7 @@ Klicken Sie zum öffnen des **Team-Journal** in Ihrem **Team** auf **Team Journa
 
 Ihnen stehen im **Team-Journal** wieder alle Funktionen, Filter und Einstellungen zur Verfügung, wie in Ihrer persönlichen Anrufhistorie.
 
-Zusätzlich können Sie das Team-Journal in Ihr persönliches Journal, wie [hier Beschrieben](link zu settings Team Journal), integrieren.
+Zusätzlich können Sie das Team-Journal in Ihr persönliches Journal, wie [hier beschrieben]({{< ref "/client-desktop-userguide/call-history#team-journal-in-die-anrufhistorie-einbinden" >}}), integrieren.
 
 ### Team-Journal erklärt
 

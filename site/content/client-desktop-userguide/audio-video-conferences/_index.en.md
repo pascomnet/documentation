@@ -10,7 +10,7 @@ description: Use the pascom Client conference tools for more effective collabora
 
 ## Trainings Video
 
-{{< youtube dZ6U_YShgag >}} 
+{{< youtube 8OBSRSndjas >}} 
 
 ## Overview
 
@@ -18,7 +18,7 @@ Conferences are an important part of today's business world. Discuss topics with
 
 ### What is required?
 
-To make conferences in the pascom client, you need a pascom group. Use the following [tutorial](link to pascom groups) to create a pascom group.
+To make conferences in the pascom client, you need a pascom group. Use the following [Tutorial]({{< ref "/client-desktop-userguide/pascom-groups" >}}) to create a pascom group.
 
 **Conference with colleagues**
 
@@ -41,14 +41,14 @@ A pascom group starts to light up **green** when there is an **active conference
 
 ## Audio conference with your colleagues
 
-To start or join a conference, call the group by clicking on the **handset icon**. You are now logged in to the group's conference room.
+To start or join a conference, call the group by clicking on the {{< ui-button "handset icon">}}. You are now logged in to the group's conference room.
 
 
 ![Active conference with colleagues](active_conference_intern.en.jpg)
 *Active conference with colleagues*
 </br>
 
-You now have all **functions** at your disposal, which you should already know from the tutorials for the [video and screensharing tools](link to video screensharing) or the [telephony functions](link to telephony with pascom). 
+You now have all **functions** at your disposal, which you should already know from the tutorials for the [Video- und Screensharing-Tools]({{< ref "/client-desktop-userguide/video-screensharing-tools" >}}) or the [telephony functions]({{< ref "/client-desktop-userguide/telephony" >}}). 
 
 ## Video - Screensharing conference with your colleagues
 
@@ -83,4 +83,4 @@ External participants cannot see your chat history in an audio conference.
 
 ## Video,- Screensharing conference with your customers
 
-To bring the visual aspect into a conference with your customers, you need to start a web conference. How to create an online conference in connection with the pascom Web Client is explained in this [Tutorial](Link to Web Conference Manual).
+To bring the visual aspect into a conference with your customers, you need to start a web conference. How to create an online conference in connection with the pascom Web Client is explained in this [Tutorial]({{< ref "/client-web-userguide" >}}).

@@ -20,7 +20,7 @@ Konferenzen sind ein wichtiger Bestandteil in der heutigen Geschäftswelt. Bespr
 
 ### Was wird benötigt?
 
-Um Konferenzen im pascom Client abzuhalten, benötigen Sie eine pascom Gruppe. Nutzen Sie folgende [Anleitung](link zu pascom Gruppen) zum erstellen einer pascom Gruppe.
+Um Konferenzen im pascom Client abzuhalten, benötigen Sie eine pascom Gruppe. Nutzen Sie folgende [Anleitung]({{< ref "/client-desktop-userguide/pascom-groups" >}}) zum erstellen einer pascom Gruppe.
 
 **Konferenz mit Kollegen**
 
@@ -43,14 +43,14 @@ Eine pascom Gruppe fängt **grün an zu leuchten**, wenn eine **aktive Konferenz
 
 ## Audio-Konferenz mit Ihren Kollegen
 
-Um eine Konferenz zu starten oder beizutreten, rufen Sie die Gruppe über das **Höhrer-Symbol** an. Sie sind nun im Konferenzraum der Gruppe eingeloggt.
+Um eine Konferenz zu starten oder beizutreten, rufen Sie die Gruppe über das {{< ui-button "Höhrersymbol">}} an. Sie sind nun im Konferenzraum der Gruppe eingeloggt.
 
 
 ![Aktive Konferenz mit Kollegen](active_conference_intern.de.jpg)
 *Aktive Konferenz mit Ihren Kollegen*
 </br>
 
-Ihnen stehen nun alle **Funktionen** zur Verfügung, die Sie bereits aus der Anleitung zu den [Video- und Screensharing-Tools](link zu video screensharing) oder den [Telefonie Funktionen]( link zu telefonie mit pascom) kennen sollten. 
+Ihnen stehen nun alle **Funktionen** zur Verfügung, die Sie bereits aus der Anleitung zu den [Video- und Screensharing-Tools]({{< ref "/client-desktop-userguide/video-screensharing-tools" >}}) oder den [Telefonie Funktionen]({{< ref "/client-desktop-userguide/telephony" >}}) kennen sollten. 
 
 ## Video - Screensharing Konferenz mit Ihren Kollegen
 
@@ -85,4 +85,4 @@ Externe Teilnehmer können Ihren Chat-Verlauf in einer Audio-Konferenz nicht seh
 
 ## Video,- Screensharing Konferenz mit Ihren Kunden
 
-Um den visuellen Apsekt in eine Konferenz mit Ihren Kunden zu bringen, müssen Sie eine Web Konferenz starten. Wie Sie eine Online Konferenz in Verbindung mit dem pascom Web Client erstellen können, erfahren Sie in dieser [Anleitung](Link zu Web Konferenz Handbuch).
+Um den visuellen Apsekt in eine Konferenz mit Ihren Kunden zu bringen, müssen Sie eine Web Konferenz starten. Wie Sie eine Online Konferenz in Verbindung mit dem pascom Web Client erstellen können, erfahren Sie in dieser [Anleitung]({{< ref "/client-web-userguide" >}}).

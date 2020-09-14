@@ -68,11 +68,11 @@ In the call journal, you will find **symbols** on the right-hand side of each ca
 
 In addition, small arrows indicate the **call direction**. **Inbound / Outbound** or **Connected**.
 
-1. by clicking on the **red handset** in each call record, you start a **callback**.
+1. by clicking on the {{< ui-button "red handset">}} in each call record, you start a **callback**.
 
 ## Access further call details.
 
-The call journal shows you even more data on each individual call. Click on the desired call record and you will get to the **detail view**.
+The call journal shows you even more data on each individual call. Click on the desired call record and you will get to the {{< ui-button "detail view">}}.
 
 ![Call record detail view](journal_details.en.jpg)
 
@@ -86,12 +86,16 @@ In the **detail view** you can follow the complete process through the pascom te
 Find data to **call history**, last **3 calls**, details on **caller** and data from the **phone book**.
 
 {{% notice info %}}
-Tip: Click on the **red info icon** in the "last 3 calls" section. This will take you to the corresponding call record and you can evaluate it further.
+Tip: Click on the {{< ui-button "red info icon">}} in the "last 3 calls" section. This will take you to the corresponding call record and you can evaluate it further.
 {{% /notice %}}
+
 
 ## Use Team Journal
 
-The Team Journal gives you a complete overview of all calls made in the team you are a member of. More information about pascom teams can be found in the following [Tutorial](Link to Teams).
+{{< youtube Mt6oszyCp3M >}} 
+
+
+The Team Journal gives you a complete overview of all calls made in the team you are a member of. More information about pascom teams can be found in the following [tutorial]({{< ref "/client-desktop-userguide/teams-callqueue" >}}).
 
 
 To open the **Team Journal** in your **Team**, click on **Team Journal**.
@@ -103,7 +107,7 @@ To open the **Team Journal** in your **Team**, click on **Team Journal**.
 
 In the **Team-Journal** all functions, filters and settings are available to you again, just like in your personal call history.
 
-Additionally, you can integrate the Team Journal into your personal journal, as described in this [Tutorial](link to settings Team Journal).
+Additionally, you can integrate the Team Journal into your personal journal, as described in this [section]({{< ref "/client-desktop-userguide/call-history#integrate-team-history-into-the-call-history" >}}).
 
 ### Team-Journal explained
 

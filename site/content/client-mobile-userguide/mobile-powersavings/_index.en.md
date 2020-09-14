@@ -1,5 +1,6 @@
 ---
 title: Mobile App Energy Optimisation Settings
+weight: 20
 description: In order to ensure that the pascom mobile app for Android is able to reliably receive messages and calls whilst running in the background, the app's battery optimisation settings must be switched off.
 ---
  

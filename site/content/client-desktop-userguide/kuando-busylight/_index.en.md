@@ -56,19 +56,19 @@ This is due to the settings of the pascom client. The Kuando Busylight is a supp
 
 <br />
 
-1. Open the **Client Settings** via the pascom menu.
+1. Open the {{< ui-button "Client settings">}} via the pascom menu.
 
 
 ![Open Client Settings](open_clientsettings.jpg)
 </br>
 
-2. Click on **Headset and Audio** in the **Settings menu**.
+2. Click on {{< ui-button "headset and audio settings">}} in the **Settings menu**.
 
 
 ![Kuando Busylight Setup](kuando_busylight_setup.en.jpg)
 </br>
 
-To disable the **automatic detection** of Kuando Busylight, select **"ignore "** instead of **"Auto "** in the drop-down box. 
+To disable the **automatic detection** of Kuando Busylight, select {{< ui-button "ignore">}} instead of {{< ui-button "auto">}} in the drop-down box. 
 
 ## Kuando Busylight Audio Settings
 

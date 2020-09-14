@@ -8,7 +8,7 @@ weight: 2
 
 </br>
 
-![Supported Operatingsystems](mobile_handbook.png?width=20%)
+![Supported Operatingsystems](mobile_handbook.png?width=15%)
 
 
 ![pascom Mobile Client Userhandbook](frontpage_mobile_intro.png?width=80%)
