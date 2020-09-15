@@ -1,6 +1,6 @@
 ---
 title: Client Aktionen verwenden
-weight: 18
+weight: 19
 description: In dieser Anleitung zeigen wir Ihnen, wie Sie Client Aktionen nutzen und Anrufdaten an eine externe Anwendung übergeben. 
 ---
 

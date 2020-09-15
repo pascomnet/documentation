@@ -1,6 +1,6 @@
 ---
 title: pascom Client Settings
-weight: 19
+weight: 20
 description: In this tutorial you will learn which settings you can make on the pascom client.
 ---
 

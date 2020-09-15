@@ -1,6 +1,6 @@
 ---
 title: Kuando Busylight nutzen
-weight: 17
+weight: 18
 description: Das Kuando Busylight ermöglicht eine visuelle Präsenzanzeige in Verbindung mit dem pascom Client
 ---
 

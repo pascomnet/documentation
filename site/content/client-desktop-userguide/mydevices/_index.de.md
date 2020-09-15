@@ -1,6 +1,6 @@
 ---
 title: Meine Gerätesteuerung
-weight: 15
+weight: 16
 description: In dieser Anleitung zeigen wir Ihnen, wie Sie das Anrufverhalten Ihrer Geräte steuern können. 
 ---
 
