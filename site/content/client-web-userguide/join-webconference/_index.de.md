@@ -63,7 +63,7 @@ Geben Sie einen Namen ein mit dem Sie an der Web Konferenz teilnehmen möchten. 
 
 ### Die Web Client Optionen
 
-![Webclient Optionen](webclient_options.PNG?width=100%)
+![Webclient Optionen](webclient_options.de.jpg)
 
 **Video Auswählen**  
 

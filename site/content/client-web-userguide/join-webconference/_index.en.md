@@ -62,7 +62,7 @@ Enter a name with which you want to join the web conference. This name will also
 
 ### The Web Client Options
 
-![Web Client Options](webclient_options1.en.png)
+![Web Client Options](webclient_options.en.png)
 
 **Select Camera**  
 
