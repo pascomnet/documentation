@@ -54,7 +54,7 @@ This section explains the changes that you must consider when migrating to pasco
 * With this update, **static conference rooms** will be deleted without being migrated!
 * **Clients older than Version 65** will no longer be able to connect to this server.
 * **Snom M700 3X firmware** is no longer supported.
-* As with the Grafana SQL API, the **CDR Rest API** is no longer compatible.
+* **CDR Rest API** has a new data structure and any implementations must be adapted.
 
 
 ## Known Issues

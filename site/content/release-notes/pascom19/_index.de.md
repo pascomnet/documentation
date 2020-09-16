@@ -55,7 +55,7 @@ In diesem Abschnitt werden die Änderungen erläutert, die Sie bei der Migration
 * **Statische Konferenzräume** werden mit diesem Update ohne Migration gelöscht!
 * **Clients alter als Version 65** können sich nicht mehr zu diesem Server verbinden.
 * **Snom M700 3X firmware** wird nicht mehr unterstützt.
-* **CDR Rest API** ist jetzt wie die Grafana SQL API nicht länger kompatibel.
+* **CDR Rest API** hat neue Datenstruktur und etwaige Implementierungen müssen angepasst werden.
 
 
 ## Bekannte Probleme
