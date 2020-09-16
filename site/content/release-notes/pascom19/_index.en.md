@@ -67,7 +67,7 @@ These problems are known to us and we are already working on a solution
 
 ## Release 19.09 (16.09.2020)
 
-**Auf einen Blick**
+**Overview**
 
 * New team call histories and enhanced global call history tools (req. Client v. 65).
 * Improved the pascom Management UI reboot behaviour.
@@ -81,7 +81,7 @@ These problems are known to us and we are already working on a solution
 * Updated PHP to Version 7.4.
 * Upgraded Proxy and Janus to Ubuntu bionic and latest versions.
 
-**ÄNDERUNGEN**
+**Modifications**
 
 * [MD-11509] - Queuemetrics spy / monitoring feature not working
 * [MD-11664] - Wait for rebooting the server in a consistent way in both CSUI and SetupUI
