@@ -49,6 +49,13 @@ This section explains the changes that you must consider when migrating to pasco
 * **Automatic Trunk Updates** will be performed for Telekom, peoplefone (DE, AT, CH), HFO, Sipgate Trunking, RKom, t-m-net, sipcallch, seabix, mnet, easybell and qsc/plusnet. Please check your trunk after update.
 * **Cronjob Scripts (before/after)** are no longer supported
 * Tunks which have their **own template**, get this automatically assigned again. All customizations using a generic template are removed
+* After the update, the **Provisioning URL for generic IP endpoints** need to be reset! Existing, duplicated generic Base Configurations will need to be updated to match the REGEX pattern of the new Standard Base Configurations ("/provisioning/v1-[0-9a-zA-Z] {16} /?$").
+* **Queuemetrics** must be re configured.
+* With this update, **static conference rooms** will be deleted without being migrated!
+* **Clients older than Version 65** will no longer be able to connect to this server.
+* **Snom M700 3X firmware** is no longer supported.
+* As with the Grafana SQL API, the **CDR Rest API** is no longer compatible.
+
 
 ## Known Issues
 
@@ -57,6 +64,106 @@ These problems are known to us and we are already working on a solution
 {{% / notice%}}
 
 * Onsite Telekom trunks only work if an outbound proxy is used. To do this, select the appropriate interface in the trunk instead of "default / NAT".
+
+## Release 19.09 (16.09.2020)
+
+**Auf einen Blick**
+
+* New team call histories and enhanced global call history tools (req. Client v. 65).
+* Improved the pascom Management UI reboot behaviour.
+* Connector Import is now possible with authentication.
+* Added Wilhelm Tel SIP provider trunk template.
+* Fixed issues with call holding on Mitel and Grandstream devices.
+* Fax services now all function again after updates.
+* Supported devices are now provisioned with optimised QoS/ToS settings.
+* New Gigaset N670 DECT Gateway support.
+* Updated Asterisk to Version 16.11.1.
+* Updated PHP to Version 7.4.
+* Upgraded Proxy and Janus to Ubuntu bionic and latest versions.
+
+**ÄNDERUNGEN**
+
+* [MD-11509] - Queuemetrics spy / monitoring feature not working
+* [MD-11664] - Wait for rebooting the server in a consistent way in both CSUI and SetupUI
+* [MD-11891] - Update monitoring api in swagger ui
+* [MD-11908] - Invitation mails to gmail accounts are broken
+* [MD-11923] - Add auth method for connector import files via URL
+* [MD-12038] - Integrate wilhelm.tel trunk template
+* [MD-12102] - Redirect requests to setupui URL during installation
+* [MD-12115] - Shutdown jobs shown as failed
+* [MD-12205] - Show group display name in user's contact list activity
+* [MD-12290] - Webclient audio without camera doesn't work in Chrome and Chromium Edge
+* [MD-12337] - Phone instance UI: missing mac address input of device shows wrong message
+* [MD-12343] - Prevent huge asterisk logfiles if somebody enables debug logging
+* [MD-12355] - User instance wizard regenerates QR code for pairing too frequently
+* [MD-12381] - Show proper error message if the user exceeds the upload size for backups
+* [MD-12394] - Yealink can't determine downloaded logo with secure provisioning
+* [MD-12398] - Randomize and cleanup cron in all containers
+* [MD-12399] - Show correct device status for devices with changed display name
+* [MD-12410] - Prevent pairing of the mobile device if it's already paired
+* [MD-12417] - Group calls are reported as "extensions/unknown" to the new journal
+* [MD-12420] - MoH still played after transfer with Mitel DECT because of 381 SIP "SIPS Required"
+* [MD-12437] - Can't add device if mobile pairing is deactivated in interface
+* [MD-12443] - Fax sometimes not working after update because of broken iax modems
+* [MD-12459] - Queue call transferred via Snom results in wrong caller number
+* [MD-12460] - Improve nginx configuration to handle /setup route
+* [MD-12461] - Improve order of Yealink LDAP contacts
+* [MD-12462] - Validate and send prepared MAC address to the API in instance wizard
+* [MD-12468] - Grandstream phone image is missing in instance wizard
+* [MD-12473] - Can not dial on a registerless trunk
+* [MD-12474] - SetupUI and Instance Wizard CSS issues in latest Chrome
+* [MD-12476] - Change grandstream provisioning template to avoid SIPS and fix transfers
+* [MD-12477] - White screen after manual page refresh on reboot page
+* [MD-12491] - Migration md_cmd_71902_01 fails while restoring older backups
+* [MD-12497] - Team journal entry missing some details
+* [MD-12499] - Disable unwanted systemd .timer units / cron jobs in containers based on bionic
+* [MD-12521] - Pause reason of team member is empty sometimes
+* [MD-12523] - Client can not connect to server if there are no teams configured
+* [MD-12528] - Layout glitch in setup wizard when entering an invalid email
+* [MD-12545] - "Passwords not matching" error not showing properly
+* [MD-12560] - Change ldap_base in Snom M700 basic configuration
+* [MD-12582] - Improve webclient name validation for joining users
+* [MD-12585] - Instance wizard: Checkbox status and interaction is wrong
+* [MD-12588] - Broken text during instalation in instance wizard
+* [MD-12590] - Some pbx metrics are missing after container restart/reboot until asterisk reload
+* [MD-12599] - OpenVPN Export broken after backup restore
+* [MD-12620] - Insecure provisioning of Snom and Yealink broken because of device handler error
+* [MD-12625] - Can't change password via management UI
+* [MD-12639] - Rest ipdevice returns unexpected response
+* [MD-12643] - Cron produces an error message every day
+* [MD-8307]- Allow to enter various mac address patterns, automatically convert to our internal string format
+* [MD-8644]- Enhanced and replicated journal, including Team Calls
+* [MD-11737] - Implement grafana authentication proxy
+* [MD-11797] - Improve timestamp format in phonecall records
+* [MD-11817] - Configurable query timeout for postgresql queries
+* [MD-12016] - Store detailed metrics about pushes
+* [MD-12026] - Set correct TOS flags for all supported hardware devices
+* [MD-12072] - Toggle xmppserver debug log via REST Api
+* [MD-12081] - Cleanup call history in event stream
+* [MD-12110] - Update WebUIs to angular 9.1
+* [MD-12127] - Deprecate static conference room feature
+* [MD-12214] - Improve pbx settings handling for php and xmppserver
+* [MD-12223] - Reduce CSD log level
+* [MD-12240] - Improve Yealink DECT gateway configuration template
+* [MD-12251] - Upgrade Janus container to ubuntu bionic and latest versions
+* [MD-12254] - Upgrade proxy container to ubuntu bionic and latest versions
+* [MD-12256] - Update asterisk to version 16.11.1, remove srtp support
+* [MD-12265] - Data volumes for cloudstack lxc containers
+* [MD-12284] - Upgrade php to version 7.4
+* [MD-12341] - Research and implement Gigaset N670 DECT gateway
+* [MD-12347] - Optimize asterisk logging
+* [MD-12368] - Configure consul leader election check time
+* [MD-12378] - Refactor voicemail and recording download API, use nginx secure urls
+* [MD-12391] - Improve interface configuration, combine all client protocols
+* [MD-12424] - Xmppserver stops doing license checks
+* [MD-12430] - Refactor xmpp faxserver file upload api, use nginx
+* [MD-12433] - Automatic inplace pbx update for csp / cloud hosts
+* [MD-12466] - Show background/picture if QR code generating
+* [MD-12495] - Improve journal and monitoring documentation
+* [MD-12498] - Prohibit older clients (<v65) to connect to a 19.09 server
+* [MD-12508] - Remove deprecated Task 050397
+* [MD-12515] - Remove dynamically generated TLS keys between xmppserver and xmppproxy
+* [MD-12595] - Provide a metric for number of created fax devices
 
 ## Release 19.08 (24.06.2020)
 

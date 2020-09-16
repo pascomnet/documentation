@@ -31,7 +31,7 @@ Hier finden Sie eine Übersicht über Services und Dienste, die mit der aktuelle
 
 |Datum|mit Version|
 |---|---|
-|demnächst|19.xx|  
+|September 2020|19.09|  
 **Statische Konferenzräume wurden durch pascom Gruppen ersetzt**
 
 <hr>

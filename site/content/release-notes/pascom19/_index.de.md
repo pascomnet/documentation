@@ -49,6 +49,13 @@ In diesem Abschnitt werden die Änderungen erläutert, die Sie bei der Migration
 * **Automatische Ämter Updates** werden für Telekom, peoplefone (DE, AT, CH), HFO, Sipgate Trunking, RKom, t-m-net, sipcallch, seabix, mnet, easybell und qsc/plusnet durchgeführt. Bitte prüfen Sie Ihr Amt nach dem Update.
 * **Cronjob Skript (vorher/nachher)** wird nicht mehr unterstützt
 * Ämter, bei denen eine **eigene Vorlage** vorhanden ist,  bekommen diese automatisch wieder zugewiesen. Eventuelle Anpassungen über eine generische Vorlage werden verworfen.
+* **Provisionierungs-URL für generische Geräte** muss nach dem Update ggf. neu gesetzt werden! Bereits vorhandene, duplizierte, generische Basis-Konfigurationen müssen auf die Regex-Pattern der neuen Standard-Basis-Konfiguration angepasst werden ("/provisioning/v1-[0-9a-zA-Z] {16}
+/?$").
+* **Queuemetrics** muss ggf. neu konfiguriert werden
+* **Statische Konferenzräume** werden mit diesem Update ohne Migration gelöscht!
+* **Clients alter als Version 65** können sich nicht mehr zu diesem Server verbinden.
+* **Snom M700 3X firmware** wird nicht mehr unterstützt.
+* **CDR Rest API** ist jetzt wie die Grafana SQL API nicht länger kompatibel.
 
 
 ## Bekannte Probleme
@@ -58,6 +65,106 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 {{% /notice %}}
 
 * Onsite Telekom Ämter funktionieren nur wenn ein Outbound Proxy genutzt wird. Wählen Sie hierzu statt "default / NAT" das entsprechende Schnittstelle im Amt aus.
+
+## Release 19.09 (16.09.2020)
+
+**Auf einen Blick**
+
+* Team Journal und erweitertes Journal in Verbindung mit Client 65.
+* Management UI reboot Verhalten verbessert.
+* Connector Import ist nun auch mit Authentifizierung möglich.
+* Wilhelm Tel Amtsvorlage hinzugefügt.
+* Probleme mit Halten bei Mitel und Grandstream Geräten behoben.
+* Fax Dienst funktioniert nach Updates nun wieder.
+* Unterstütze Geräte werden nun mit optimieren QoS/ToS Einstellungen provisioniert.
+* Gigaset N670 DECT Gateway wird nun unterstützt.
+* Update Asterisk auf Version 16.11.1.
+* Update PHP auf Version 7.4.
+* Upgrade Proxy und Janus auf Ubuntu bionic mit den neusten Versionen.
+
+**ÄNDERUNGEN**
+
+* [MD-11509] - Queuemetrics spy / monitoring feature not working
+* [MD-11664] - Wait for rebooting the server in a consistent way in both CSUI and SetupUI
+* [MD-11891] - Update monitoring api in swagger ui
+* [MD-11908] - Invitation mails to gmail accounts are broken
+* [MD-11923] - Add auth method for connector import files via URL
+* [MD-12038] - Integrate wilhelm.tel trunk template
+* [MD-12102] - Redirect requests to setupui URL during installation
+* [MD-12115] - Shutdown jobs shown as failed
+* [MD-12205] - Show group display name in user's contact list activity
+* [MD-12290] - Webclient audio without camera doesn't work in Chrome and Chromium Edge
+* [MD-12337] - Phone instance UI: missing mac address input of device shows wrong message
+* [MD-12343] - Prevent huge asterisk logfiles if somebody enables debug logging
+* [MD-12355] - User instance wizard regenerates QR code for pairing too frequently
+* [MD-12381] - Show proper error message if the user exceeds the upload size for backups
+* [MD-12394] - Yealink can't determine downloaded logo with secure provisioning
+* [MD-12398] - Randomize and cleanup cron in all containers
+* [MD-12399] - Show correct device status for devices with changed display name
+* [MD-12410] - Prevent pairing of the mobile device if it's already paired
+* [MD-12417] - Group calls are reported as "extensions/unknown" to the new journal
+* [MD-12420] - MoH still played after transfer with Mitel DECT because of 381 SIP "SIPS Required"
+* [MD-12437] - Can't add device if mobile pairing is deactivated in interface
+* [MD-12443] - Fax sometimes not working after update because of broken iax modems
+* [MD-12459] - Queue call transferred via Snom results in wrong caller number
+* [MD-12460] - Improve nginx configuration to handle /setup route
+* [MD-12461] - Improve order of Yealink LDAP contacts
+* [MD-12462] - Validate and send prepared MAC address to the API in instance wizard
+* [MD-12468] - Grandstream phone image is missing in instance wizard
+* [MD-12473] - Can not dial on a registerless trunk
+* [MD-12474] - SetupUI and Instance Wizard CSS issues in latest Chrome
+* [MD-12476] - Change grandstream provisioning template to avoid SIPS and fix transfers
+* [MD-12477] - White screen after manual page refresh on reboot page
+* [MD-12491] - Migration md_cmd_71902_01 fails while restoring older backups
+* [MD-12497] - Team journal entry missing some details
+* [MD-12499] - Disable unwanted systemd .timer units / cron jobs in containers based on bionic
+* [MD-12521] - Pause reason of team member is empty sometimes
+* [MD-12523] - Client can not connect to server if there are no teams configured
+* [MD-12528] - Layout glitch in setup wizard when entering an invalid email
+* [MD-12545] - "Passwords not matching" error not showing properly
+* [MD-12560] - Change ldap_base in Snom M700 basic configuration
+* [MD-12582] - Improve webclient name validation for joining users
+* [MD-12585] - Instance wizard: Checkbox status and interaction is wrong
+* [MD-12588] - Broken text during instalation in instance wizard
+* [MD-12590] - Some pbx metrics are missing after container restart/reboot until asterisk reload
+* [MD-12599] - OpenVPN Export broken after backup restore
+* [MD-12620] - Insecure provisioning of Snom and Yealink broken because of device handler error
+* [MD-12625] - Can't change password via management UI
+* [MD-12639] - Rest ipdevice returns unexpected response
+* [MD-12643] - Cron produces an error message every day
+* [MD-8307]- Allow to enter various mac address patterns, automatically convert to our internal string format
+* [MD-8644]- Enhanced and replicated journal, including Team Calls
+* [MD-11737] - Implement grafana authentication proxy
+* [MD-11797] - Improve timestamp format in phonecall records
+* [MD-11817] - Configurable query timeout for postgresql queries
+* [MD-12016] - Store detailed metrics about pushes
+* [MD-12026] - Set correct TOS flags for all supported hardware devices
+* [MD-12072] - Toggle xmppserver debug log via REST Api
+* [MD-12081] - Cleanup call history in event stream
+* [MD-12110] - Update WebUIs to angular 9.1
+* [MD-12127] - Deprecate static conference room feature
+* [MD-12214] - Improve pbx settings handling for php and xmppserver
+* [MD-12223] - Reduce CSD log level
+* [MD-12240] - Improve Yealink DECT gateway configuration template
+* [MD-12251] - Upgrade Janus container to ubuntu bionic and latest versions
+* [MD-12254] - Upgrade proxy container to ubuntu bionic and latest versions
+* [MD-12256] - Update asterisk to version 16.11.1, remove srtp support
+* [MD-12265] - Data volumes for cloudstack lxc containers
+* [MD-12284] - Upgrade php to version 7.4
+* [MD-12341] - Research and implement Gigaset N670 DECT gateway
+* [MD-12347] - Optimize asterisk logging
+* [MD-12368] - Configure consul leader election check time
+* [MD-12378] - Refactor voicemail and recording download API, use nginx secure urls
+* [MD-12391] - Improve interface configuration, combine all client protocols
+* [MD-12424] - Xmppserver stops doing license checks
+* [MD-12430] - Refactor xmpp faxserver file upload api, use nginx
+* [MD-12433] - Automatic inplace pbx update for csp / cloud hosts
+* [MD-12466] - Show background/picture if QR code generating
+* [MD-12495] - Improve journal and monitoring documentation
+* [MD-12498] - Prohibit older clients (<v65) to connect to a 19.09 server
+* [MD-12508] - Remove deprecated Task 050397
+* [MD-12515] - Remove dynamically generated TLS keys between xmppserver and xmppproxy
+* [MD-12595] - Provide a metric for number of created fax devices
 
 ## Release 19.08 (24.06.2020)
 
