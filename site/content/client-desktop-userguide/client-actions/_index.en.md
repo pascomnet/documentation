@@ -1,6 +1,6 @@
 ---
 title: How to use Client Actions
-weight: 18
+weight: 19
 description: In this tutorial we will show you how to use client actions and transfer call data to an 3rd party application. 
 ---
 

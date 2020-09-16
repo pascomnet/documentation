@@ -21,7 +21,7 @@ Im Vollbild-Modus besteht der pascom Client aus drei grundsätzlichen Bereichen.
 *dynamischer Kontentbereich*
 </br>
 
-Der dynamische mittlere Content-Bereich ist flexibel. Sie können über die rote Menüleiste Chat, Journal oder das Telefonbuch anzeigen lassen. Die Standardansicht bietet Ihnen die Suchfunktion und aktuelle pascom Newsmeldungen.  
+Der dynamische mittlere Content-Bereich ist flexibel. Sie können über die rote Menüleiste den Chat, das Journal oder das Telefonbuch anzeigen lassen. Die Standardansicht bietet Ihnen die Suchfunktion und aktuelle pascom Benachrichtigungen.  
 
 
 ![Kontaktliste im Vollbildmodus](contactlist_fullscreen.de.png)
@@ -52,11 +52,11 @@ Im normalen Modus sind der Profil- und Kontakt-Bereich sichtbar, zusätzlich kan
 *Mini Modus (Shortcut: STRG + 1)*
 </br>
 
-Im mini Modus ist nur ein Bereich sichtbar, und die Menüleiste ist nun unten zu finden. Über diese kann zwischen den Bereichen gewechselt werden.
+Im Mini Modus ist nur ein Bereich sichtbar, und die Menüleiste ist unten zu finden. Über diese kann zwischen den Bereichen gewechselt werden.
 
 ## Responsive Layout des pascom Client nutzen
 
-Der pascom Client bietet ein responsives Layout, welches sich an die Größe des Programfenster anpasst. Clicken und halten Sie die Maustaste am Rahmen des pascom Client und ziehen Sie die Fenstergröße auf das von Ihnen gewünschte Format.
+Der pascom Client bietet ein responsives Layout, welches sich an die Größe des Anwendungsfensters anpasst. Klicken und halten Sie die Maustaste am Rahmen des pascom Client und ziehen Sie die Fenstergröße auf das von Ihnen gewünschte Format.
 
 ![pascom Client responsive Layout](responsive.de.png)
 *selbst definiertes Layout*
@@ -64,6 +64,6 @@ Der pascom Client bietet ein responsives Layout, welches sich an die Größe des
 
 ### Wo hin mit dem Client?
 
-Platzieren Sie den pascom Client dort, wo Sie ihn haben möchten. Klicken und halten Sie dazu die Maustaste auf der oberen Programleiste und verschieben Sie den pascom Client auf dem Desktop. 
+Platzieren Sie den pascom Client dort, wo Sie ihn haben möchten. Klicken und halten Sie dazu die Maustaste auf der oberen Anwendungsleiste und verschieben Sie den pascom Client auf dem Desktop. 
 
 ![pascom Client verschieben](responsive_placing.de.png)

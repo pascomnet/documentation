@@ -1,6 +1,6 @@
 ---
 title: Headset and Audio Settings
-weight: 16
+weight: 17
 description: Configure your audio and headset settings with this tutorial
 ---
 

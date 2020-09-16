@@ -1,6 +1,6 @@
 ---
 title: pascom Client Einstellungen
-weight: 19
+weight: 20
 description: Erfahren Sie in dieser Anleitung, welche Einstellungen Sie am pascom Client vornehmen können.
 ---
 

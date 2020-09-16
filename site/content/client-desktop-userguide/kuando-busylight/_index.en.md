@@ -1,6 +1,6 @@
 ---
 title: Use Kuando Busylight
-weight: 17
+weight: 18
 description: The Kuando Busylight enables a visual presence display in conjunction with the pascom client
 ---
 

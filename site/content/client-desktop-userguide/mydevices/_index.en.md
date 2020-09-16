@@ -1,6 +1,6 @@
 ---
 title: My Device Control
-weight: 15
+weight: 16
 description: In this tutorial we show you how to control the call behavior of your devices. 
 ---
 
