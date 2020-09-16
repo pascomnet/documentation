@@ -14,7 +14,7 @@ weight: 71
 
 ## Concept
 
-Actions are an important and useful pascom phone system tool for SMBs, Contact Centre and larger [Call Centers](https://www.pascom.net/en/call-center "pascom CallCenter solutions"). Through using actions, the process of each individual call flow can be controlled.
+Actions are an important and useful pascom phone system tool for SMBs, Contact Centre and larger [Call Centers](https://www.pascom.net/en/business-phone-system/call-contact-center/ "pascom CallCenter solutions"). Through using actions, the process of each individual call flow can be controlled.
 
 Actions are available with the following objects:
 
@@ -33,7 +33,7 @@ With the exception of Call Routers, Actions distinguish the caller origin. This 
 
 ### Before/After Actions
 
-Before the call setup, each call is processed according the **Actions Before**. To fulfill certain conditions or requirements, it is also possible to configure and **Actions After**. This can be used for example to send the caller to a feedback IVR for your [Contact Centre Team](/en/call-center/ "pascom Contact Centre solutions").
+Before the call setup, each call is processed according the **Actions Before**. To fulfill certain conditions or requirements, it is also possible to configure and **Actions After**. This can be used for example to send the caller to a feedback IVR for your [Contact Centre Team](/en/business-phone-system/call-contact-center// "pascom Contact Centre solutions").
 
 ### Example Scenario
 

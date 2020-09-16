@@ -141,5 +141,4 @@ The Print-to-Fax Gateway can be used to automatically send documents from, for e
 
 {{% notice info %}}
 Print-to-Fax is not supported by cloudstack and pascom 18 solutions.
-If you are using an older pascom self-hosted version, the Print-to-Fax setup guide can be found in our [Old documentation](https://www.pascom.net/doc-old/en/modules/fax-server/#sending-faxes-with-the-print-to-fax-gateway).
 {{% /notice %}}

@@ -10,7 +10,7 @@ weight: 20
 
 ## Concept
 
-As mentioned in the previous section on the concept of actions, your call flow can be managed in various ways depending on whether they are inbound calls for individual users or for teams. When there is an inbound call for the central office or one of [your Contact Center](https://www.pascom.net/en/call-center/ "pascom Call Center solutions") extensions, it makes sense to check whether the call is received during your business hours or whether the call is coming in during a public or company holiday.
+As mentioned in the previous section on the concept of actions, your call flow can be managed in various ways depending on whether they are inbound calls for individual users or for teams. When there is an inbound call for the central office or one of [your Contact Center](https://www.pascom.net/en/business-phone-system/call-contact-center// "pascom Call Center solutions") extensions, it makes sense to check whether the call is received during your business hours or whether the call is coming in during a public or company holiday.
 
 To manage call flows with respect to time scheduling, certain conditions should be implemented. Conditions can be applied for each defined action, allowing for flexible decisions over whether a particular action is carried out or not. There is no global system governing the availability of telephone lines, but an arbitrary number of calendars, time frames and triggers can be used with the various objects within the telephony system.
 

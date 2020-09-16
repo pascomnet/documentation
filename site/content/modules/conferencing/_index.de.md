@@ -9,7 +9,7 @@ weight: 20
 {{< description >}}
 
 ## Konzept
-Wollen sich mehr als drei Personen gleichzeitig unterhalten kann man dies [bei unserer VoIP Software](https://www.pascom.net/de/mobydick-voip/)  durch Konferenzräume realisieren.
+Wollen sich mehr als drei Personen gleichzeitig unterhalten kann man dies [bei unserer VoIP Software](https://www.pascom.net/de/voip-telefonanlage/ "pascom VoIP Telefonanlage")  durch Konferenzräume realisieren.
 
 Ein Konferenzraum ist unter einer Durchwahl erreichbar. Um diesen zu betreten muss man die Durchwahl wählen und PIN eingeben.
 Gehört die Durchwahl zum Rufnummernblock des Amts, so ist der Konferenzraum auch von extern erreichbar.

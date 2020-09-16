@@ -10,7 +10,7 @@ weight: 60
 
 ## Overview
 
-QueueMetrics is a [Call and Contact Center Software](https://www.pascom.net/en/call-center/ "pascom Contact Center Solutions") Queues and Agents reporting tool. 
+QueueMetrics is a [Call and Contact Center Software](https://www.pascom.net/en/business-phone-system/call-contact-center// "pascom Contact Center Solutions") Queues and Agents reporting tool. 
 
 ## Configuration
 

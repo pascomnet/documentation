@@ -10,7 +10,7 @@ weight: 60
 
 ## Übersicht
 
-Queuemetrics ist eine [Software für Callcenter](https://www.pascom.net/de/call-center/) zur Auswertung von Warteschleifen (Teams) und deren Benutzern. 
+Queuemetrics ist eine [Software für Callcenter](https://www.pascom.net/de/voip-telefonanlage/call-contact-center//) zur Auswertung von Warteschleifen (Teams) und deren Benutzern. 
 
 ## Konfiguration
 

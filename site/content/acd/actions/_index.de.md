@@ -13,7 +13,7 @@ weight: 10
 
 ## Konzept
 
-Aktionen sind in der pascom ein mächtiges Werkzeug. Mit ihrer Hilfe kann der Ablauf eines Anrufs (Callflow) gesteuert werden. Aktionen in erweiterter Form sind vor allem in [Call Center](https://www.pascom.net/de/call-center/) unentbehrlich.
+Aktionen sind in der pascom ein mächtiges Werkzeug. Mit ihrer Hilfe kann der Ablauf eines Anrufs (Callflow) gesteuert werden. Aktionen in erweiterter Form sind vor allem in [Call Center](https://www.pascom.net/de/voip-telefonanlage/call-contact-center/) unentbehrlich.
 
 Aktionen sind für folgende Objekte verfügbar:
 
