@@ -78,7 +78,6 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 * Fax Dienst funktioniert nach Updates nun wieder.
 * Unterstütze Geräte werden nun mit optimieren QoS/ToS Einstellungen provisioniert.
 * Gigaset N670 DECT Gateway wird nun unterstützt.
-* Update Asterisk auf Version 16.11.1.
 * Update PHP auf Version 7.4.
 * Upgrade Proxy und Janus auf Ubuntu bionic mit den neusten Versionen.
 
@@ -148,7 +147,6 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 * [MD-12240] - Improve Yealink DECT gateway configuration template
 * [MD-12251] - Upgrade Janus container to ubuntu bionic and latest versions
 * [MD-12254] - Upgrade proxy container to ubuntu bionic and latest versions
-* [MD-12256] - Update asterisk to version 16.11.1, remove srtp support
 * [MD-12265] - Data volumes for cloudstack lxc containers
 * [MD-12284] - Upgrade php to version 7.4
 * [MD-12341] - Research and implement Gigaset N670 DECT gateway
