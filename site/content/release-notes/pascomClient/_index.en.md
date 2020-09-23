@@ -27,11 +27,61 @@ In this section, we give you an overview of all breaking changes in the pascom c
 These following issues are known to us and we are already working on solutions.
 {{% / notice%}}
 
-* [CL-1071] On some platforms, Plantronics support is unstable. If the client often crashes in combination with a Plantronics headset, set the Plantronics support to "ignore" in the settings. The only loss of functionality will be the use of headset buttons. 
 * [CL-1165] Outlook support is unstable on some systems and causes the pascom client to crash
 * [CL-1260] If the integrated camera of Microsoft Surface devices is used, the image often has a green cast. [A Beta-Version with a bugfix is available here.](https://www.pascom.net/forum/t/pascom-client-beta-fur-microsoft-surface-gerate-intel-avstream-webcams/7312)
 * [CL-1344] Screensharing does not work if a Wayland Session is used on Linux. As a work around, use a X11 Session type instead.
 * [CL-1501] A problem with ringtone playback can occur after updating from v64 to v65. To resolve this issue, just re-select the configured ringtone and ringtone speaker again in the settings.
+
+## Release 66.R1326 (23.09.2020)
+
+**Overview**
+
+- Extension switches are now controlable from the client (if the server supports this feature)
+- Improved headset support. If a compatible headset is plugged in, the correct audio devices are selected automatically
+- Stability improvements with plantronics headsets. 
+-- Native Plantronics integration has been removed
+-- An installed Plantronics Hub is necessary now to control headset functions
+- Screensharing direction can be changed during an active call
+- Added screen selection for screensharing on Linux
+- iOS 14 compatibility
+
+**MODIFICATIONS**
+
+* [CL-4] - Missing audio with Plantronics D100 after headset was charging in dock
+* [CL-320] - Picked up call lost after pickup and plantronics or jabra headset on macOS
+* [CL-321] - Missing audio after hold with plantronics and status problems on macOS
+* [CL-371] - Make Extension-Switches available in the Client
+* [CL-482] - Clean up location dropdown if location gets deleted/changed
+* [CL-1071] - Get rid of plantronics native library
+* [CL-1076] - Improved Headset Support - auto-select the correct audio devices
+* [CL-1277] - Implement a protocol to "switch" screensharing during a call
+* [CL-1279] - Call Notifications show a hold button for a group call
+* [CL-1307] - Empty phonebook entry after initiating GSM call
+* [CL-1313] - Implement "select screen to share" on linux
+* [CL-1316] - Improve handsfree button
+* [CL-1319] - Correctly handle unpair push messages in the client (iOS)
+* [CL-1330] - Prevent opening both drawer in call fullscreen layout
+* [CL-1331] - Crash after wipe the client on conference and start again
+* [CL-1334] - Invalid softphone state after exception
+* [CL-1338] - Mobile pairing failed error page
+* [CL-1342] - Client synchronization performance very slow if chat is opened
+* [CL-1345] - Cannot handle login button on the pair login screen on android
+* [CL-1348] - Resolving numbers from android phonebook is broken with international format
+* [CL-1350] - Toast is not removed if timed-out file transfer is accepted
+* [CL-1365] - Start single chat from group details participants list
+* [CL-1392] - Correctly handle unpair push messages in the client (Android)
+* [CL-1410] - Top-right settings button is not disabled while settings are loading
+* [CL-1411] - Improve macOS usb monitor to report both vendor and product id
+* [CL-1414] - Notifications for unread chat messages missing after log in
+* [CL-1417] - Integrate Backtrace Crash Reporting on Android and keep debug symbols
+* [CL-1437] - Empty roster if unread messages filter active
+* [CL-1438] - Add trunk prefix drop-down to transfer and add call screen
+* [CL-1443] - No offhook via iOS client if call was not accepted via native call notification on iOS 14
+* [CL-1468] - Windows native notification fades in twice on an incoming call
+* [CL-1522] - Memory leaks in client
+* [CL-1537] - Move Confident to notification sounds instead of ringtones
+* [CL-1538] - Client crashes when notifications are disabled in windows
+* [CL-1556] - Ringtone plays on wrong device after reconnecting headset
 
 ## Release 65.R1286 (05.08.2020)
 

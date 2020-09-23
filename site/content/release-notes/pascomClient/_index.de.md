@@ -33,6 +33,57 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 * [CL-1344] Screensharing funktioniert unter Ubuntu Linux nicht wenn eine Wayland-Session verwendet wird. Als Workaround kann auf eine X11-Session umgeschaltet werden.
 * [CL-1501] Beim Update von v64 auf v65 kann es zu Problemen beim Abspielen von Klingeltönen kommen. Als Lösung reicht es aus, den konfigurierten Klingelton bzw. Klingelton-Lautsprecher in den Einstellungen einfach erneut auszuwählen.
 
+## Release 66.R1326 (23.09.2020)
+
+**Auf einen Blick**
+
+- Durchwahlschalter sind über den pascom Client steuerbar (sobald der Server dieses Feature auch unterstützt)
+- Verbesserter Headset Support - Wenn ein kompatibles Headset eingesteckt wird, werden die passenden Audiogeräte automatisch ausgewählt
+- Stabilitätsverbesserung des Clients in Verbindung mit Plantronics Headsets 
+-- Native Plantronics Bibliothek entfernt
+-- Für die Headset Integration muss Plantronics Hub installiert werden
+- Screensharing kann während einem aktiven Anruf gewechselt werden
+- Bildschirmauswahl für Screensharing auf Linux Betriebssystemen hinzugefügt
+- iOS 14 Kompatibilität
+
+**ÄNDERUNGEN**
+
+* [CL-4] - Missing audio with Plantronics D100 after headset was charging in dock
+* [CL-320] - Picked up call lost after pickup and plantronics or jabra headset on macOS
+* [CL-321] - Missing audio after hold with plantronics and status problems on macOS
+* [CL-371] - Make Extension-Switches available in the Client
+* [CL-482] - Clean up location dropdown if location gets deleted/changed
+* [CL-1071] - Get rid of plantronics native library
+* [CL-1076] - Improved Headset Support - auto-select the correct audio devices
+* [CL-1277] - Implement a protocol to "switch" screensharing during a call
+* [CL-1279] - Call Notifications show a hold button for a group call
+* [CL-1307] - Empty phonebook entry after initiating GSM call
+* [CL-1313] - Implement "select screen to share" on linux
+* [CL-1316] - Improve handsfree button
+* [CL-1319] - Correctly handle unpair push messages in the client (iOS)
+* [CL-1330] - Prevent opening both drawer in call fullscreen layout
+* [CL-1331] - Crash after wipe the client on conference and start again
+* [CL-1334] - Invalid softphone state after exception
+* [CL-1338] - Mobile pairing failed error page
+* [CL-1342] - Client synchronization performance very slow if chat is opened
+* [CL-1345] - Cannot handle login button on the pair login screen on android
+* [CL-1348] - Resolving numbers from android phonebook is broken with international format
+* [CL-1350] - Toast is not removed if timed-out file transfer is accepted
+* [CL-1365] - Start single chat from group details participants list
+* [CL-1392] - Correctly handle unpair push messages in the client (Android)
+* [CL-1410] - Top-right settings button is not disabled while settings are loading
+* [CL-1411] - Improve macOS usb monitor to report both vendor and product id
+* [CL-1414] - Notifications for unread chat messages missing after log in
+* [CL-1417] - Integrate Backtrace Crash Reporting on Android and keep debug symbols
+* [CL-1437] - Empty roster if unread messages filter active
+* [CL-1438] - Add trunk prefix drop-down to transfer and add call screen
+* [CL-1443] - No offhook via iOS client if call was not accepted via native call notification on iOS 14
+* [CL-1468] - Windows native notification fades in twice on an incoming call
+* [CL-1522] - Memory leaks in client
+* [CL-1537] - Move Confident to notification sounds instead of ringtones
+* [CL-1538] - Client crashes when notifications are disabled in windows
+* [CL-1556] - Ringtone plays on wrong device after reconnecting headset
+
 ## Release 65.R1286 (05.08.2020)
 
 **Auf einen Blick**
