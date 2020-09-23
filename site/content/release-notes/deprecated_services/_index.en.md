@@ -37,6 +37,19 @@ Here you will find an overview of services that no longer work with the current 
 
 <hr>
 
+### SNOM support for models 3XX + 7XX deprecated
+(All models without the D in front)  
+**Hardware**
+
+|Date|with Version|
+|---|---|
+|September 2020|19.09|  
+**Support of reconditioned models deprecated**  
+
+![pascom17 EOS](snom-deprecated.jpg?width=60%)
+
+<hr>
+
 ### Call Groups deleted
 **Software**
 

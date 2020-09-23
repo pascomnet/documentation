@@ -55,6 +55,7 @@ This section explains the changes that you must consider when migrating to pasco
 * **Clients older than Version 65** will no longer be able to connect to this server.
 * **Snom M700 3X firmware** is no longer supported.
 * **CDR Rest API** has a new data structure and any implementations must be adapted.
+* **Snom models 3XX + 7XX** (without the D in front) are no longer supported.
 
 
 ## Known Issues

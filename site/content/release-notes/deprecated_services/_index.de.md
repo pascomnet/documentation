@@ -36,6 +36,19 @@ Hier finden Sie eine Übersicht über Services und Dienste, die mit der aktuelle
 
 <hr>
 
+### SNOM Support für Modelle 3XX + 7XX eingestellt
+(Alle Modelle ohne dem D davor)  
+**Hardware**
+
+|Datum|mit Version|
+|---|---|
+|September 2020|19.09|  
+**Unterstützung der generalüberholten Modelle eingestellt**  
+
+![pascom17 EOS](snom-deprecated.jpg?width=60%)
+
+<hr>
+
 
 ### Anrufgruppen gelöscht
 **Software**
