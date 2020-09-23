@@ -39,9 +39,9 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 
 - Durchwahlschalter sind über den pascom Client steuerbar (sobald der Server dieses Feature auch unterstützt).
 - Verbesserter Headset Support - Wenn ein kompatibles Headset eingesteckt wird, werden die passenden Audiogeräte automatisch ausgewählt.
-- Stabilitätsverbesserung des Clients in Verbindung mit Plantronics Headsets.
-1. -  Native Plantronics Bibliothek entfernt.
-2. -  Für die Headset Integration muss Plantronics Hub installiert werden.
+- Stabilitätsverbesserung des Clients in Verbindung mit Plantronics Headsets:  
+--  Native Plantronics Bibliothek entfernt.  
+--  Für die Headset Integration muss Plantronics Hub installiert werden.
 - Screensharing kann während einem aktiven Anruf gewechselt werden.
 - Bildschirmauswahl für Screensharing auf Linux Betriebssystemen hinzugefügt.
 - iOS 14 Kompatibilität.
