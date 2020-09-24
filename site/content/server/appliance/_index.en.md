@@ -85,7 +85,6 @@ Create the file **setup.json** directly on the USB stick with the following cont
 
 ```
 {
-    "device": "sdb",
     "skipWelcome": true,
     "skipDevice": true,
     "skipHostname": true,
@@ -145,7 +144,6 @@ create the file **setup.json** with the following content, also directly on the 
 {{% tab "pascom 19" %}}
 ```
 {
-    "device": "sdb",
     "skipWelcome": true,
     "skipHostname": true,
     "skipDevice": true,
@@ -156,9 +154,9 @@ create the file **setup.json** with the following content, also directly on the 
     "skipReboot": true,
     "halt": true,
     "preinst" : {
-        "device": "sdb",
         "skipWelcome": true,
         "skipHostname": true,
+        "skipDevice": true,
         "hostname": "pascom-server",
         "skipNetwork": true,
         "network": {
