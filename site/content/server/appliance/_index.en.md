@@ -64,7 +64,6 @@ Create the file **setup.json** directly on the USB stick with the following cont
 
 ```
 {
-    "device": "sda",
     "skipWelcome": true,
     "skipDevice": true,
     "skipHostname": true,
@@ -111,7 +110,6 @@ create the file **setup.json** with the following content, also directly on the 
 {{% tab "pascom 18" %}}
 ```
 {
-    "device": "sda",
     "skipWelcome": true,
     "skipHostname": true,
     "skipDevice": true,
