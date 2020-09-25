@@ -91,7 +91,7 @@ Beachten Sie, dass eine SIP-Kommunikation mit dem angegebenen SBC nur von der IP
 Falls Sie Ihre pascom Telefonanlage in Ihrem eigenen Netzwerk mit einer privaten IP-Adresse verwenden, beachten Sie bitte die notwendigen Netzwerk-Einstellungen an Firewall/ Router (NAT).
 
 Eingehender Verkehr vom SBC der Vodafone muss an die IP-Adresse der pascom Telefonanlage weitergereicht werden. Aus Sicherheitsgründen sollte die Firewall-Regel sich hier ausschließlich auf Port 5060 UDP zu Port 5060 der Telefonanlage beschränken. 
-Umgekehrt muss ausgehender Verkehr per NAT modifiziert werden, da der SBC der Vodafone nur Daten von der externen IP von Port 5069 auf Port 5060 UDP des Access akzeptiert.
+Umgekehrt muss ausgehender Verkehr per NAT modifiziert werden, da der SBC der Vodafone nur Daten von der externen IP von Port 5060 auf Port 5060 UDP des Access akzeptiert.
 Abgehend sind Ihre Einstellungen der Telefonanlage mit dem Bereich der RTP Ports zu berücksichtigen, damit diese Pakete von der Telefonanlage über die Firewall zum SBC übertragen werden. 
 
 ![Vodafone Port-Forwarding](vodafone_ngn_forwarding_PC19.de.png)
