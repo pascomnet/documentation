@@ -36,6 +36,7 @@ Hier finden Sie eine Übersicht über Services und Dienste, die mit der aktuelle
 
 <hr>
 
+
 ### SNOM Support für Modelle 3XX + 7XX eingestellt
 (Alle Modelle ohne dem D davor)  
 **Hardware**
@@ -45,7 +46,18 @@ Hier finden Sie eine Übersicht über Services und Dienste, die mit der aktuelle
 |September 2020|19.09|  
 **Unterstützung der generalüberholten Modelle eingestellt**  
 
-![pascom17 EOS](snom-deprecated.jpg?width=60%)
+![Snom](snom-deprecated.jpg?width=60%)
+
+<hr>
+
+### SNOM PA1 Durchsagesystem nicht mehr unterstützt 
+**Hardware**
+
+|Datum|mit Version|
+|---|---|
+|September 2020|19.09|   
+
+![Snom PA1](snom-pa1.jpg?width=60%)
 
 <hr>
 

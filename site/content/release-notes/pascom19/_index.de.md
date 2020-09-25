@@ -57,6 +57,7 @@ In diesem Abschnitt werden die Änderungen erläutert, die Sie bei der Migration
 * **Snom M700 3X firmware** wird nicht mehr unterstützt.
 * **CDR Rest API** hat neue Datenstruktur und etwaige Implementierungen müssen angepasst werden.
 * **Snom Modelle 3XX + 7XX** (ohne vorangestelltem D) werden nicht mehr unterstützt.
+* **Snom PA1 Durchsagesystem** wird nicht mehr unterstützt.
 
 
 ## Bekannte Probleme

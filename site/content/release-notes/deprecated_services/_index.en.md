@@ -50,6 +50,17 @@ Here you will find an overview of services that no longer work with the current 
 
 <hr>
 
+### SNOM PA1 is no longer supported 
+**Hardware**
+
+|Datum|mit Version|
+|---|---|
+|September 2020|19.09|   
+
+![Snom PA1](snom-pa1.jpg?width=60%)
+
+<hr>
+
 ### Call Groups deleted
 **Software**
 
