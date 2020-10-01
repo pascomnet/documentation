@@ -1,5 +1,5 @@
 ---
-title: Create an manage a Web Conference
+title: Create and manage a Web Conference
 description: This User Handbook explains how to use the pascom Web Conference Feature.
 weight: 1
 ---
