@@ -67,6 +67,24 @@ These problems are known to us and we are already working on a solution
 
 * Onsite Telekom trunks only work if an outbound proxy is used. To do this, select the appropriate interface in the trunk instead of "default / NAT".
 
+## Release 19.10 (01.10.2020)
+
+**Overview**
+
+* Fixed broken network configuration with certain hypervisors.
+* Minor migration problems fixed.
+* Various improvements in the UI.
+
+**Modifications**
+
+* [MD-12725] - Static management network configuration breaks with 19.09 and ifeth interfaces
+* [MD-12581] - Instance wizard: Validators are not executed while typing
+* [MD-12586] - Management UI: Mark currently shown jobs section
+* [MD-12587] - Management UI: Change cursor on hovering Browse button
+* [MD-12700] - Migration error with some Labels while upgrading to 19.09
+* [MD-12707] - Incomplete pbx startup after update or restore, instance not reachable
+* [MD-12711] - Broken Migration due to wrongly parsed timezone
+
 ## Release 19.09 (16.09.2020)
 
 **Overview**
