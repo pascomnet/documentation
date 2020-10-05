@@ -65,8 +65,7 @@ neues Gerät vom Typ **Generic SIP Phone** an.
 
 Vergeben Sie hier einen **"Geräte-Anmeldenamen"** und ein **"Password"** für die Sprechstelle. Im Eingabefeld **"SIP-Optionen"** müssen folgende Optionen eingetragen werden. 
 
-**disallow=all**  
-**allow=alaw:20**  
+1. **endpoint/allow=!all,alaw:20**
 
 {{% notice tip %}}
 Der hier vergebene **"Geräte-Anmeldename"**, sowie das vergebene **"Password"** werden später in der Sprechstelle eingetragen.

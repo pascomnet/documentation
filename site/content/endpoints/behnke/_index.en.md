@@ -57,8 +57,7 @@ Insert under {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}}
 
 Enter a **"Device Login Name"** and a **"Password "** for the door intercom station. The following options must be entered in the **"SIP options "** entry field. 
 
-**disallow=all**  
-**allow=alaw:20**  
+1. **endpoint/allow=!all,alaw:20**
 
 {{% notice tip %}}
 The **"Device Login Name "** assigned here, as well as the assigned **"Password "** are entered later in the Behnke door intercom station settings.
