@@ -76,9 +76,22 @@ Tragen Sie die so erhaltenen Zugangsdaten in der Queuemetrics Weboberfläche unt
 Ersetzten Sie BENUTZERNAME und KENNWORT mit den AMI-Zugangsdaten aus der pascom Weboberfläche. Die IP-Adresse 127.0.0.1 muss nicht angepasst werden, da sich der Queumetrics Uniloader auf dem Host der pascom Telefonanlage befindet.
 
 
-{{% notice note %}}
-Das Mithören von Live-Anrufen via Queuemetrics ist mit der aktuellen pascom 18 nicht möglich. 
-{{% /notice %}}
+
+### Queuemetrics Live Anrufüberwachung einrichten
+
+Tragen Sie folgende Parameter in der Queuemetrics Weboberfläche unter {{< ui-button "Administrative Tools" >}} > {{< ui-button "Edit system parameters." >}} ein:
+
+```
+callfile.monitoring.enabled=true
+callfile.monitoring.channel=Local/10@queuemetrics
+callfile.monitoring.extension=11
+callfile.monitoring.context=queuemetrics
+```
+
+In Quemetrics selbst müssen Sie dann den **Benutzernamen** und _nicht_ die Durchwahl unter "Ihre Nebenstellennummer" eingeben:
+
+![Queuemetrics Live Anrufüberwachung](spy-queuemetrics.png)
+
 
 ## Verbindung überprüfen (Onsite)
 

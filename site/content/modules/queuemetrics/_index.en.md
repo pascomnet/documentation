@@ -80,7 +80,23 @@ Replace the USERNAME and PASSWORD with the AMI credentials from the pascom Web U
 The Call Monitor function (listening to live calls) from QueueMetrics is not currently possible with pascom 18. 
 {{% /notice %}}
 
-## Check the Connection (On-premise
+### Set up Queuemetrics Live Call Monitoring
+
+Enter the following parameters in the Queuemetrics web interface under {{< ui-button "Administrative Tools" >}}> {{< ui-button "Edit system parameters." >}}:
+
+```
+callfile.monitoring.enabled=true
+callfile.monitoring.channel=Local/10@queuemetrics
+callfile.monitoring.extension=11
+callfile.monitoring.context=queuemetrics
+```
+
+In Quemetrics itself you then have to enter the **username** and _not_ the extension number under "Your extension":
+
+![Queuemetrics Live Call Monitoring](spy-queuemetrics.png)
+
+
+## Check the Connection (On-premise)
 
 ### pascom to QueueMetrics Data Loading Checks
 
