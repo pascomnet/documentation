@@ -33,6 +33,10 @@ You will receive the account data for your SIP trunk account from your provider 
 
 </br>
 
+### (Onsite) Use Outbound Proxy 
+
+Plusnet only works reliably on-site if you use the pascom outbound proxy. Details can be found under [Outbound Proxy usage]({{< ref "trunks/outbound_proxy">}}).
+
 ### Create Trunk with Provider Templates
 
 With your account data you can create a new Trunk on the pascom telephone system. You can find detailed instructions for setting up trunks with provider templates in our trunk section. 

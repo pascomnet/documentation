@@ -32,6 +32,10 @@ Die Zugangsdaten für Ihren SIP Trunk Account erhalten Sie von Ihrem Provider pe
 
 </br>
 
+### (Onsite) Outbound Proxy nutzen
+
+Onsite funktioniert Plusnet nur zuverlässig wenn Sie den pascom Outbound Proxy verwenden. Details hierzu finden Sie unter [Outbound Proxy nutzen]({{< ref "trunks/outbound_proxy">}}).
+
 ### Amt anlegen mit Provider Templates
 
 Mit Ihren Zugangsdaten können Sie ein neues Amt auf der pascom Telefonanlage erstellen. Eine detaillierte Anleitung zum Einrichten von Ämtern mit Provider Vorlagen finden Sie in unserer Ämter Sektion. 
