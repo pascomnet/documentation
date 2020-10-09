@@ -1,7 +1,7 @@
 ---
-title: pasocm Mobile Client pairing and login
+title: pascom Mobile App pairing and login
 weight: 1
-description: In this tutorial we explain how you can pair the pascom Mobile Client with the Desktop Client.
+description: In this guide, we explain how to pair your pascom Mobile app using the pascom desktop client.
 ---
 
  

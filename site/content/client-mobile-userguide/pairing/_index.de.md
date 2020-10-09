@@ -1,5 +1,5 @@
 ---
-title: pasocm Mobile Client pairen und Anmelden
+title: pascom Mobile Client pairen und Anmelden
 weight: 1
 description: In dieser Anleitung erklären wir Ihnen, wie Sie den pascom Mobile Client mit dem Desktop Client koppeln können.
 ---

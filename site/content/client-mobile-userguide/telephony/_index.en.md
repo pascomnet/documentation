@@ -1,7 +1,7 @@
 ---
 title: Telephoning with the pascom Mobile Client
 weight: 5
-description: This Tutorial shows you the telephony functions of the pascom Client
+description: This tutorial shows you the telephony functions of the pascom Client
 ---
  
 {{< description >}}
