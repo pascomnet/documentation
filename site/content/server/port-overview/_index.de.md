@@ -31,7 +31,7 @@ Wenn Sie jedoch genau festlegen auf welche Internetdienste Ihr Unternehmensnetzw
 |3478|Video-Funktionalität| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |*|
 |5222|Chat| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |*|
 |19302|WebRTC - WebClient| <i class="fas fa-video"></i> |*|
-|8885|VPN Tunnel zur PBX| <i class="fas fa-server"></i> |pascom.cloud|
+|8885|VPN Tunnel zur PBX| <i class="fas fa-server"></i> |*|
 
 <br/>
 #### Legende
@@ -70,7 +70,7 @@ Für einen Zugriff Ihrer Geräte über das Internet in Ihr Netzwerk zur pascom T
 |3478|Video-Funktionalität| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |*|
 |5222|Chat| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |*|
 |19302|WebRTC - WebClient| <i class="fas fa-video"></i> |*|
-|8885|VPN Tunnel zur PBX| <i class="fas fa-server"></i> |pascom.cloud|
+|8885|VPN Tunnel zur PBX| <i class="fas fa-server"></i> |*|
 
 <br/>
 #### Legende
