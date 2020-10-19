@@ -29,22 +29,7 @@ In dieser Variante nutzen Sie Ihre feste, externe IP-Adresse direkt, ohne die Ei
 
 Um den Zugriff auf Ihren pascom Server aus dem Internet einzurichten ist es notwendig ein Forwarding auf die IP-Adresse des pascom Server für folgende Ports einzurichten:
 
-#### Telefonieren und Chatten
-
-| Port | Beschreibung |
-| ---- | ------------ |
-| TCP **5061** | SIP-TLS - sichere SIP-Kommunikation |
-| TCP **5222** | pascom Desktop- und Mobile-Client Zugriffe |
-| UDP **30000 - 35000** | SRTP - verschlüsselte Sprachdaten |
-
-#### Optionale Dienste
-
-| Port | Beschreibung |
-| ---- | ------------ |
-| TCP **636** | LDAPS für Telefonbuchzugriffe via LDAP |
-| TCP **8884**  | Provisionierung von IP-Hardware-Telefonen |
-| TCP **8885**  | VPN Tunnel direkt zur Telefonanlage |
-
+[Firewall konfigurieren / Portübersicht]({{< ref "/server/port-overview" >}})
 
 ### pascom Server Interface anpassen
 

@@ -21,17 +21,17 @@ Wenn Sie jedoch genau festlegen auf welche Internetdienste Ihr Unternehmensnetzw
 ![Port Übersicht Cloud](port_overview_cloud.png)
 
 
-| Port | Funktion | Gerät | Ziel|
-| ---- | ---- | ------------ |-----|
-|5061|SIP-Verbindung|<i class="fas fa-desktop"></i>  <i class="fas fa-phone"></i>  <i class="fas fa-mobile-alt"></i>|pascom.cloud|
-|30.000-35.000|RTP-Sprache|<i class="fas fa-desktop"></i>  <i class="fas fa-phone"></i>  <i class="fas fa-mobile-alt"></i>|*|
-|636|LDAPS, Telefonbuch| <i class="fas fa-phone"></i> |*|
-|8884|Telefonprovisionierung| <i class="fas fa-phone"></i> |*|
-|80 / 443|Updates, Push| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |mypascom.net|
-|3478|Video-Funktionalität| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |*|
-|5222|Chat| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |*|
-|19302|WebRTC - WebClient| <i class="fas fa-video"></i> |*|
-|8885|VPN Tunnel zur PBX| <i class="fas fa-server"></i> |*|
+| Port | Funktion | Gerät | Quelle |Ziel|
+| ---- | ---- | ------------ |---|---|
+|5061/TCP|SIP-Verbindung|<i class="fas fa-desktop"></i>  <i class="fas fa-phone"></i>  <i class="fas fa-mobile-alt"></i>|Ihr Netzwerk|pascom.cloud*|
+|30.000-35.000/UDP|RTP-Sprache|<i class="fas fa-desktop"></i>  <i class="fas fa-phone"></i>  <i class="fas fa-mobile-alt"></i>|Ihr Netzwerk|pascom.cloud*|
+|636/TCP|LDAPS, Telefonbuch| <i class="fas fa-phone"></i> |Ihr Netzwerk|pascom.cloud*|
+|8884/TCP|Telefonprovisionierung| <i class="fas fa-phone"></i> |Ihr Netzwerk|pascom.cloud*|
+|80 / 443/TCP|Updates, Push| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |Ihr Netzwerk|my.pascom.net|
+|3478/UDP|Video-Funktionalität| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |Ihr Netzwerk|pascom.cloud*|
+|5222/TCP|Chat| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |Ihr Netzwerk|pascom.cloud*|
+|19302/UDP+TCP|WebRTC - WebClient| <i class="fas fa-video"></i> |Ihr Netzwerk|pascom.cloud*|
+|8885/TCP|VPN Tunnel zur PBX| <i class="fas fa-server"></i> |Ihr Netzwerk|pascom.cloud*|
 
 <br/>
 #### Legende
@@ -41,6 +41,8 @@ Wenn Sie jedoch genau festlegen auf welche Internetdienste Ihr Unternehmensnetzw
 <i class="fas fa-phone"></i>  =  IP-Telefon  
 <i class="fas fa-video"></i>  =  WebClient
 
+| * = Die pascom.cloud kann unterschiedliche IP-Adressen als Ziel haben  
+
 
 {{% /tab %}}
 
@@ -48,11 +50,11 @@ Wenn Sie jedoch genau festlegen auf welche Internetdienste Ihr Unternehmensnetzw
 ![Port Übersicht Onsite](port_overview_onsite.png)
 
 
-| Port | Funktion | Gerät | Ziel|
-| ---- | ---- | ------------ |-----|
-|80 / 443|Lizenzserver|<i class="fas fa-server"></i> |mypascom.net|
-|25|Zugriff zum pascom Mailserver|<i class="fas fa-server"></i> |cloudmx1.pascom.net, cloudmx2.pascom.net|
-|123|Zugriff zum Zeitserver (NTP)| <i class="fas fa-server"></i> |*|
+| Port | Funktion | Gerät | Quelle | Ziel|
+| ---- | ---- | ------------ |---| ---|
+|80 / 443/TCP|Lizenzserver|<i class="fas fa-server"></i> |Ihr Netzwerk|my.pascom.net|
+|25/TCP|Zugriff zum pascom Mailserver|<i class="fas fa-server"></i> |Ihr Netzwerk|cloudmx1.pascom.net, cloudmx2.pascom.net|
+|123/UDP|Zugriff zum Zeitserver (NTP)| <i class="fas fa-server"></i> |Ihr Netzwerk|ntp.pool.org|
 
 
 <br />
@@ -62,15 +64,15 @@ Für einen Zugriff Ihrer Geräte über das Internet in Ihr Netzwerk zur pascom T
 
 | Port | Funktion | Gerät | Ziel|
 | ---- | ---- | ------------ |-----|
-|5061|SIP-Verbindung|<i class="fas fa-desktop"></i>  <i class="fas fa-phone"></i>  <i class="fas fa-mobile-alt"></i>|pascom.cloud|
-|30.000-35.000|RTP-Sprache|<i class="fas fa-desktop"></i>  <i class="fas fa-phone"></i>  <i class="fas fa-mobile-alt"></i>|*|
-|636|LDAPS, Telefonbuch| <i class="fas fa-phone"></i> |*|
-|8884|Telefonprovisionierung| <i class="fas fa-phone"></i> |*|
-|80 / 443|Updates, Push| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |mypascom.net|
-|3478|Video-Funktionalität| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |*|
-|5222|Chat| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |*|
-|19302|WebRTC - WebClient| <i class="fas fa-video"></i> |*|
-|8885|VPN Tunnel zur PBX| <i class="fas fa-server"></i> |*|
+|5061/TCP|SIP-Verbindung|<i class="fas fa-desktop"></i>  <i class="fas fa-phone"></i>  <i class="fas fa-mobile-alt"></i>|Ihr Netzwerk|
+|30.000-35.000/UDP|RTP-Sprache|<i class="fas fa-desktop"></i>  <i class="fas fa-phone"></i>  <i class="fas fa-mobile-alt"></i>|Ihr Netzwerk|
+|636/TCP|LDAPS, Telefonbuch| <i class="fas fa-phone"></i> |Ihr Netzwerk|
+|8884/TCP|Telefonprovisionierung| <i class="fas fa-phone"></i> |Ihr Netzwerk|
+|80 / 443/TCP|Updates, Push| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |my.pascom.net|
+|3478/UDP|Video-Funktionalität| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |Ihr Netzwerk|
+|5222/TCP|Chat| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |Ihr Netzwerk|
+|19302/UDP+TCP|WebRTC - WebClient| <i class="fas fa-video"></i> |Ihr Netzwerk|
+|8885/TCP|VPN Tunnel zur PBX| <i class="fas fa-server"></i> |Ihr Netzwerk|
 
 <br/>
 #### Legende
@@ -79,6 +81,9 @@ Für einen Zugriff Ihrer Geräte über das Internet in Ihr Netzwerk zur pascom T
 <i class="fas fa-mobile-alt"></i>  = Mobile Client  
 <i class="fas fa-phone"></i>  =  IP-Telefon  
 <i class="fas fa-video"></i>  =  WebClient
+
+| * = Die pascom.cloud kann unterschiedliche IP-Adressen als Ziel haben  
+
 {{% /tab %}}
 {{% /tabs %}}
 

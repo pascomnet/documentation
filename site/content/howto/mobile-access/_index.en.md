@@ -29,22 +29,7 @@ This options uses your fixed external IP address, without needing to setup a dom
 
 In order to enable pascom server access from the Internet, it is necessary to setup a Port Forwarding on to the IP address of the pascom server as follows: 
 
-#### Telephony and Instant Messaging
-
-| Port | Description |
-| ---- | ------------ |
-| TCP **5061** | SIP-TLS - secure SIP communication |
-| TCP **5222** | pascom Desktop and Mobile client access |
-| UDP **30000 - 35000** | SRTP - encrypted Voice Data |
-
-
-#### Optional Services
-
-| Port | Description |
-| ---- | ------------ |
-| TCP **636** | LDAPS for telephone book access via LDAP |
-| TCP **8884**  | Provisioning of Desktop IP Phones (hardware telephones) |
-| TCP **8885**  | VPN Tunnel direct to the phone system |
+[Configure Firewall / Port Overview]({{< ref "/server/port-overview" >}})
 
 ### pascom Server Interface Update
 
