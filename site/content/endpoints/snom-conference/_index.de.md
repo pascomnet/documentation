@@ -132,7 +132,6 @@ Duplizieren Sie die Basiskonfiguration **Empty Generic Profile** und geben Ihr e
 			<user_id>{{{013pee_username}}}</user_id>
 			<authentication_name>{{{013pee_username}}}</authentication_name>
 			<authentication_access_password>{{{013pee_password}}}</authentication_access_password>
-			<voice_encryption_enable>1</voice_encryption_enable>
 			<primary_sip_server_address>{{{cs_domain}}}</primary_sip_server_address>
 			<primary_registration_server_address>{{{cs_domain}}}</primary_registration_server_address>
 			<unregister_after_reboot_enable>0</unregister_after_reboot_enable>
@@ -147,6 +146,7 @@ Duplizieren Sie die Basiskonfiguration **Empty Generic Profile** und geben Ihr e
 			<primary_sip_server_port>5061</primary_sip_server_port>
 			<primary_registration_server_port>5061</primary_registration_server_port>
 			<local_sip_port>5061</local_sip_port>
+			<voice_encryption_enable>1</voice_encryption_enable>
 {{else}}
     {{#if_eq voip_sip 'udp'}}
             
@@ -155,6 +155,7 @@ Duplizieren Sie die Basiskonfiguration **Empty Generic Profile** und geben Ihr e
 			<primary_sip_server_port>5060</primary_sip_server_port>
 			<primary_registration_server_port>5060</primary_registration_server_port>
 			<local_sip_port>5060</local_sip_port>
+			<voice_encryption_enable>0</voice_encryption_enable>
     {{else}}
              
 			<primary_outbound_proxy_server_port>5060</primary_outbound_proxy_server_port>
@@ -162,6 +163,7 @@ Duplizieren Sie die Basiskonfiguration **Empty Generic Profile** und geben Ihr e
 			<primary_sip_server_port>5060</primary_sip_server_port>
 			<primary_registration_server_port>5060</primary_registration_server_port>
 			<local_sip_port>5060</local_sip_port>
+			<voice_encryption_enable>0</voice_encryption_enable>
     {{/if_eq}}
 {{/if_eq}}
 			
