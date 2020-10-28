@@ -73,7 +73,7 @@ These problems are known to us and we are already working on a solution
 
 * TLS Trunks function correctly again
 * Optimised 'Apply telephony config' task
-* Fixed prompts for external callers calling pascom groups (via dial-in number) to ensure they are no long cut at the beginning of playback
+* Fixed prompts for external callers calling pascom groups (via dial-in number) to ensure they are no longer cut at the beginning of playback
 * Improved Web Client stability for Firefox browsers
 
 **Modifications**
