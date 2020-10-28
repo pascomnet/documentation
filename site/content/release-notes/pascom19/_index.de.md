@@ -68,6 +68,23 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 
 * Onsite Telekom Ämter funktionieren nur wenn ein Outbound Proxy genutzt wird. Wählen Sie hierzu statt "default / NAT" das entsprechende Schnittstelle im Amt aus.
 
+## Release 19.11 (28.10.2020)
+
+**Auf einen Blick** 
+
+* Ämter mit TLS funktionieren wieder problemlos
+* Telefonie Konfig. anwenden' Task optimiert
+* Ansage für externe Anrufer auf Gruppen (über Einwahlnummer) wird nun nicht mehr am Anfang abgeschnitten
+* Web Client mit Firefox läuft nun stabiler
+
+**ÄNDERUNGEN**
+
+* [MD-12741] - Update rtpengine version to 7.5.5.2 to ensure proper outbound proxy TLS trunk handling
+* [MD-12315] - Improve apply telephony configuration on huge systems
+* [MD-12736] - Allow to set a waiting time between SIP OK and dialplan for call to group
+* [MD-12652] - WebSocket in WebClient guest session fails after 10 minutes of inactivity
+
+
 ## Release 19.10 (01.10.2020)
 
 **Auf einen Blick**
