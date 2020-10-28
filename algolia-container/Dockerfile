@@ -1,4 +1,4 @@
-FROM node
+FROM node:lts
 ARG TARGET
 ARG KEY
 COPY package.json /package.json
