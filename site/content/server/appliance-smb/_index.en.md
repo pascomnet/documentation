@@ -28,15 +28,7 @@ Many companies have **no Internet access restrictions** and can therefore **imme
 
 However, should you choose to, you can specify which internet services your company network is permitted to access by opening the following ports and allowing the pascom SMB server access in order to ensure that your pascom phone system operates optimally:
 
-#### pascom Services
-
-| Port | Host | Description |
-| ---- | ---- | ------------ |
-| TCP **80**/**443** | my.pascom.net | Access to the pascom licence server + PUSH services |
-| TCP **25** | cloudmx1.pascom.net, cloudmx2.pascom.net | Access to the pascom Mailserver |
-| UDP **123** | \* | Access to the preferred time server (NTP) |
-| UDP **3478** | \* | Access for Video-Functionality |
-| UDP + TCP **19302** | WebRTC | Access for Web Client |
+[Configure Firewall / Port Overview]({{< ref "/server/port-overview" >}})
 
 ## pascom Server Installation (for new / reinstallations only)
 {{% notice warning %}}

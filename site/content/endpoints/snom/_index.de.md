@@ -22,130 +22,64 @@ pascom ist in der Lage IP-Telefone des Herstellers Snom automatisch und zentral 
 
 {{% tabs %}}
 
-{{% tab "Zero Touch" %}}
+{{% tab "Cloud" %}}
 
-**Funkioniert in der CLOUD + ONSITE**
 
-Die Zero Touch Funktion ermöglicht Ihnen eine Einrichtung der Telefone ohne diese manuell zu konfigurieren. Die Provisionierung erfolgt über die Provisionierungs-Server der jeweiligen Hersteller. Dies geschieht alles vollautomatisch.
+Die Cloud Provisionierung ermöglicht Ihnen eine Einrichtung der Telefone ohne diese manuell zu konfigurieren. Die Provisionierung erfolgt über die Provisionierungs-Server der jeweiligen Hersteller. Dies geschieht alles vollautomatisch.
 
-{{< num 1 "Telefon anschließen" >}}
+{{< num 1 "MAC-Adresse ermitteln" >}}
 
-{{% notice tip %}}
-Handelt es sich nicht um ein fabrikneues Telefon setzen Sie es in jedem
-Fall auf **Werkseinstellungen** zurück. Wählen Sie hierzu am Telefon, im eingeschalteten
-Zustand, <strong>\**##</strong> und halten anschließend <strong>#</strong> gedrückt bis nach dem Reboot ein Menü
-erscheint. Wählen Sie **1** für Werkseinstellungen.
-{{% /notice %}}
+Die MAC-Adresse steht auf der Rückseite des Telefon.
 
-Stecken Sie das IP-Telefon an das Netzwerk. Das Telefon enthält einen eingebauten Switch, benutzen Sie den Ethernet-Port mit der Bezeichnung **NET**. Falls Sie kein **PoE** (Power over Ethernet) verwenden, stecken Sie das Telefon an den Netzstrom.
+Alternativ befindet sich die MAC-Adresse oft auf der Produktverpackung.
 
-Während des Boot-Vorganges steht wiederholt die IP-Adresse des Telefones im
-Display. Notieren Sie sich diese.
 
-Nach dem Booten bleibt das Telefon bei der Länderauswahl stehen.
+{{< num 2 "Endgerät anlegen" >}}
 
-{{< num 2 "MAC-Adresse ermitteln" >}}
-
-Die MAC-Adresse steht auf der Rückseite des Telefones.
-
-Alternativ surfen Sie nun mit Ihrem Browser auf die zuvor notierte IP-Adresse des Telefones.
-
-Unter {{< ui-button "System Information" >}} > {{< ui-button "MAC-Address" >}} notieren Sie sich die MAC-Adresse des
-Telefones.
-
-{{< num 3 "Endgerät anlegen" >}}
-
-Loggen Sie sich in Ihrer Telefonanlage ein und fügen unter {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} ein
+Loggen Sie sich in Ihrer pascom Telefonanlage ein und fügen unter {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} ein
 neues Gerät vom Typ **IP-Telefon: Hersteller Snom** hinzu.
+
+![Neues Snom Endgerät einrichten](add.de.png)
 
 Wählen Sie einen **Anzeigenamen** für das Telefon z.B Fr. Müller - Zentrale.
 
-Tragen Sie im Feld **Mac-Adresse** die zuvor ermittelte MAC-Adresse des Telefones
-ein.
+Tragen Sie im Feld **Mac-Adresse** die zuvor ermittelte MAC-Adresse des Telefones ein.
 
-Für eine Zero Touch Provisionierung hinterlegen Sie noch den **HTTP-Benutzer** und das **HTTP-Passwort** des Telefons. Die Daten erhalten Sie aus dem jeweiligen Herstellerhandbuch. 
+Geben Sie den **HTTP-Benutzer** und das **HTTP-Passwort** des Telefons an. Die Daten erhalten Sie aus dem jeweiligen Herstellerhandbuch.
 
-{{% notice tip %}}
-Sie können die HTTP-Daten auch frei lassen, müssen dann aber das Telefon manuell neustarten, da die pascom Telefonanlage keinen Zugriff erhält um den erforderlichen Geräteneustart für die Provisionierung durchzuführen.
-{{% /notice %}}
+![Neues Snom Endgerät einrichten](setup.de.png?width=70%)
 
-{{< num 4 "Benutzer zuweisen" >}}
 
-Als nächstes können Sie dem IP-Telefon einen Benutzer oder Arbeitsplatz zuweisen. Klicken Sie hierzu auf {{< ui-button "Bearbeiten" >}}. Im Tab {{< ui-button "Zuweisung" >}} kann dem Telefon ein [Benutzer (oder Arbeitsplatz)]({{< ref "concept/user">}}) zugewiesen werden.
+{{< num 3 "Benutzer zuweisen" >}}
 
-{{< num 5 "Jobs Anwenden" >}}
+Als nächstes können Sie dem IP-Telefon einen Benutzer oder Arbeitsplatz zuweisen. Im Tab {{< ui-button "Zuweisung" >}} kann dem Telefon ein [Benutzer (oder Arbeitsplatz)]({{< ref "concept/user">}}) zugewiesen werden.
+
+![Neues Snom Endgerät einrichten](assign.de.png?width=60%)
+
+Klicken Sie abschließend auf {{< ui-button "Speichern" >}}
+
+{{< num 4 "Jobs Anwenden" >}}
 
 Nach dem Speichern von Änderungen erscheint in der Job-Box (oben) ein
 entsprechender Eintrag die Telefonie anzuwenden. Starten Sie den Job durch
 einen Klick auf den {{< ui-button "grünen Haken" >}}. Das Telefon wird nun komplett eingerichtet.
 
-{{< num 6 "Funktion testen" >}}
-
-Am einfachsten kann man die erfolgreiche Inbetriebnahme testen, indem man mit **\*100** die eigene Voicemailbox anruft. Daraufhin sollte die Ansage Ihrer Voicemailbox zu hören sein.
-
-{{% /tab %}}
-
-{{% tab "Cloud" %}}
-
-**Pairing via URL funktioniert in der CLOUD + ONSITE**  
-*für eine einfachere Einrichtung nutzen Sie Zero Touch*
-
-{{< num 1 "Telefon anschließen" >}}
-
-{{% notice tip %}}
-Handelt es sich nicht um ein fabrikneues Telefon setzen Sie es in jedem
-Fall auf **Werkseinstellungen** zurück. Wählen Sie hierzu am Telefon, im eingeschalteten
-Zustand, <strong>\**##</strong> und halten anschließend <strong>#</strong> gedrückt bis nach dem Reboot ein Menü
-erscheint. Wählen Sie **1** für Werkseinstellungen.
-{{% /notice %}}
+{{< num 5 "Telefon anschließen" >}}
 
 Stecken Sie das IP-Telefon an das Netzwerk. Das Telefon enthält einen eingebauten Switch, benutzen Sie den Ethernet-Port mit der Bezeichnung **NET**. Falls Sie kein **PoE** (Power over Ethernet) verwenden, stecken Sie das Telefon an den Netzstrom.
 
-Während des Boot-Vorganges steht wiederholt die IP-Adresse des Telefones im
-Display. Notieren Sie sich diese.
+**Ist das Telefon bereits in Ihrem Netzwerk eingebunden?**  
+1. Starten Sie das Telefon neu.
 
-Nach dem Booten bleibt das Telefon bei der Länderauswahl stehen.
+{{% notice tip %}}
+Handelt es sich nicht um ein fabrikneues Telefon setzen Sie es in jedem
+Fall auf **Werkseinstellungen**zurück. Um dies am Telefon zu tun, schalten Sie das Telefon ein und drücken Sie im HomeScreen die Tasten {{< ui-button "** + ##" >}} und halten Sie die Tasten {{< ui-button "* + #" >}}  gedrückt, bis das Telefon neustartet. Bestätigen Sie durch Drücken der {{< ui-button "1" >}} den Factory Reset. 
+{{% /notice %}}
 
-{{< num 2 "MAC-Adresse ermitteln" >}}
+Sobald das Telefon erfolgreich für Ihren Benutzer registriert wurde, testen Sie die Telefonie
 
-Die MAC-Adresse steht auf der Rückseite des Telefones.
 
-Alternativ surfen Sie nun mit Ihrem Browser auf die zuvor notierte IP-Adresse des Telefones.
-
-Unter {{< ui-button "System Information" >}} > {{< ui-button "MAC-Address" >}} notieren Sie sich die MAC-Adresse des
-Telefones.
-
-{{< num 3 "Endgerät anlegen" >}}
-
-Loggen Sie sich in Ihrer Telefonanlage ein und fügen unter {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} ein
-neues Gerät vom Typ **IP-Telefon: Hersteller Snom** hinzu.
-
-Tragen Sie im Feld **Mac-Adresse** die zuvor ermittelte MAC-Adresse des Telefones
-ein.
-
-{{< num 4 "Benutzer zuweisen" >}}
-
-Als nächstes können Sie dem IP-Telefon einen Benutzer oder Arbeitsplatz zuweisen. Klicken Sie hierzu auf {{< ui-button "Bearbeiten" >}}. Im Tab {{< ui-button "Zuweisung" >}} kann dem Telefon ein [Benutzer (oder Arbeitsplatz)]({{< ref "concept/user">}}) zugewiesen werden.
-
-{{< num 5 "Jobs Anwenden" >}}
-
-Nach dem Speichern von Änderungen erscheint in der Job-Box (oben) ein
-entsprechender Eintrag die Telefonie anzuwenden. Starten Sie den Job durch
-einen Klick auf den {{< ui-button "grünen Haken" >}}.
-
-{{< num 6 "Provisionierung-URL ermitteln" >}}
-
-Haken Sie das Telefon in der Geräte-Liste an und wählen {{< ui-button "Aktion" >}} > {{< ui-button "Provisioning URL" >}}. Kopieren Sie die
-**URL** in die Zwischenablage.
-
-{{< num 7 "Provisionierung-URL am Telefon eintragen" >}}
-
-Zurück auf der Web-UI des Telefones tragen Sie unter {{< ui-button "Advanced Settings" >}} > {{< ui-button "Update" >}} > {{< ui-button "Setting URL" >}}
-die eben kopierte Provisionierung-URL ein.
-
-Klicken Sie auf {{< ui-button "Apply" >}} und anschließend auf {{< ui-button "Reboot" >}}.
-
-{{< num 8 "Funktion testen" >}}
+{{< num 6 "Funktion testen" >}}
 
 Am einfachsten kann man die erfolgreiche Inbetriebnahme testen, indem man mit **\*100** die eigene Voicemailbox anruft. Daraufhin sollte die Ansage Ihrer Voicemailbox zu hören sein.
 

@@ -13,3 +13,7 @@ weight: 1
 
 
 ![pascom Desktop Client UserGuide](frontpage_intro.png?width=80%)
+
+</br>
+
+{{< youtube dZ6U_YShgag >}} 

@@ -28,9 +28,13 @@ These following issues are known to us and we are already working on solutions.
 {{% / notice%}}
 
 * [CL-1165] Outlook support is unstable on some systems and can cause the pascom client to crash
-* [CL-1260] If the integrated camera on Microsoft Surface devices is used, the image often has a green cast. [A Beta-Version with a bugfix is available here.](https://www.pascom.net/forum/t/pascom-client-beta-fur-microsoft-surface-gerate-intel-avstream-webcams/7312)
+* [CL-1260] If the integrated camera on Microsoft Surface devices is used, the image often has a green cast. [A Beta-Version with a bugfix is available here.](https://www.pascom.net/forum/t/pascom-client-v67-beta-v67-d1363/7726)
 * [CL-1344] Screen sharing does not work if a Wayland Session is used on Linux. As a work around, use a X11 Session type instead.
 * [CL-1501] A ringtone playback problem can occur after updating from v64 to v65. To resolve this issue, just re-select the configured ringtone and ringtone speaker in the settings.
+
+## BETA Version 67
+
+[For Feedback / Release Notes go here](https://www.pascom.net/forum/t/pascom-client-v67-beta-v67-d1363/7726)
 
 ## Release 66.R1326 (23.09.2020)
 

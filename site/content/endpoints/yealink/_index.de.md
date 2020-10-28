@@ -24,63 +24,66 @@ Details können Sie dem Howto [Telefon-Provisionierung via DHCP]({{< ref "/howto
 
 pascom ist in der Lage IP-Telefone des Herstellers Yealink automatisch und zentral zu konfigurieren. Diesen Vorgang nennt man Provisionierung. Dazu stellt pascom eine Basis-Konfiguration ({{< ui-button "Endgeräte" >}} > {{< ui-button "Basis-Konfigurationen" >}}) zur Verfügung. Diese ist ausreichend vorparametriert und muss nur in manchen Fällen angepasst werden.
 
-## Neues Telefon hinzufügen
+## Neues Telefon einrichten
 
 {{% tabs %}}
 
-{{% tab "Zero Touch" %}}
-
-**Funkioniert in der CLOUD + ONSITE**
-
-Die Zero Touch Funktion ermöglicht Ihnen eine Einrichtung der Telefone ohne diese manuell zu konfigurieren. Die Provisionierung erfolgt über die Provisionierungs-Server der jeweiligen Hersteller. Dies geschieht alles vollautomatisch.
-
-{{< num 1 "Telefon anschließen" >}}
-
-{{% notice tip %}}
-Handelt es sich nicht um ein fabrikneues Telefon setzen Sie es in jedem
-Fall auf **Werkseinstellungen**zurück. Um dies am Telefon zu tun, schalten Sie das Telefon ein und drücken Sie dann {{{< ui-button "OK" >}}} und halten Sie die Taste gedrückt, bis **Factory Reset** auf dem Display erscheint. Bestätigen Sie durch Drücken der {{{< ui-button "OK" >}}. 
-{{% /notice %}}
-
-Stecken Sie das IP-Telefon an das Netzwerk. Das Telefon enthält einen eingebauten Switch, benutzen Sie den Ethernet-Port mit der Bezeichnung **NET**. Falls Sie kein **PoE** (Power over Ethernet) verwenden, stecken Sie das Telefon an den Netzstrom.
-
-Während des Boot-Vorganges steht wiederholt die IP-Adresse des Telefones im
-Display. Notieren Sie sich diese.
+{{% tab "Cloud" %}}
 
 
-{{< num 2 "MAC-Adresse ermitteln" >}}
+Die Cloud Provisionierung ermöglicht Ihnen eine Einrichtung der Telefone ohne diese manuell zu konfigurieren. Die Provisionierung erfolgt über die Provisionierungs-Server der jeweiligen Hersteller. Dies geschieht alles vollautomatisch.
 
-Die MAC-Adresse steht auf der Rückseite des Telefones.
+{{< num 1 "MAC-Adresse ermitteln" >}}
 
-Alternativ surfen Sie nun mit Ihrem Browser auf die zuvor notierte IP-Adresse des Telefones.
+Die MAC-Adresse steht auf der Rückseite des Telefon.
 
-Unter {{< ui-button "System Information" >}} > {{< ui-button "MAC-Address" >}} notieren Sie sich die MAC-Adresse des
-Telefones.
+Alternativ befindet sich die MAC-Adresse oft auf der Produktverpackung.
 
-{{< num 3 "Endgerät anlegen" >}}
 
-Loggen Sie sich in Ihrer Telefonanlage ein und fügen unter {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} ein
+{{< num 2 "Endgerät anlegen" >}}
+
+Loggen Sie sich in Ihrer pascom Telefonanlage ein und fügen unter {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} ein
 neues Gerät vom Typ **IP-Telefon: Hersteller Yealink** hinzu.
+
+![Neues Yealink Endgerät einrichten](add.de.png)
 
 Wählen Sie einen **Anzeigenamen** für das Telefon z.B Fr. Müller - Zentrale.
 
-Tragen Sie im Feld **Mac-Adresse** die zuvor ermittelte MAC-Adresse des Telefones
-ein.
+Tragen Sie im Feld **Mac-Adresse** die zuvor ermittelte MAC-Adresse des Telefones ein.
 
-Für eine Zero Touch Provisionierung hinterlegen Sie noch den **HTTP-Benutzer** und das **HTTP-Passwort** des Telefons. Die Daten erhalten Sie aus dem jeweiligen Herstellerhandbuch. 
+Geben Sie den **HTTP-Benutzer** und das **HTTP-Passwort** des Telefons an. Die Daten erhalten Sie aus dem jeweiligen Herstellerhandbuch.
 
-{{% notice tip %}}
-Sie können die HTTP-Daten auch frei lassen, müssen dann aber das Telefon manuell neustarten, da die pascom Telefonanlage keinen Zugriff erhält um den erforderlichen Geräteneustart für die Provisionierung durchzuführen.
-{{% /notice %}}
+![Neues Yealink Endgerät einrichten](setup.de.png?width=70%)
 
-{{< num 4 "Benutzer zuweisen" >}}
 
-Als nächstes können Sie dem IP-Telefon einen Benutzer oder Arbeitsplatz zuweisen. Klicken Sie hierzu auf {{< ui-button "Bearbeiten" >}}. Im Tab {{< ui-button "Zuweisung" >}} kann dem Telefon ein [Benutzer (oder Arbeitsplatz)]({{< ref "concept/user">}}) zugewiesen werden.
+{{< num 3 "Benutzer zuweisen" >}}
 
-{{< num 5 "Jobs Anwenden" >}}
+Als nächstes können Sie dem IP-Telefon einen Benutzer oder Arbeitsplatz zuweisen. Im Tab {{< ui-button "Zuweisung" >}} kann dem Telefon ein [Benutzer (oder Arbeitsplatz)]({{< ref "concept/user">}}) zugewiesen werden.
+
+![Neues Yealink Endgerät einrichten](assign.de.png?width=60%)
+
+Klicken Sie abschließend auf {{< ui-button "Speichern" >}}
+
+{{< num 4 "Jobs Anwenden" >}}
 
 Nach dem Speichern von Änderungen erscheint in der Job-Box (oben) ein
 entsprechender Eintrag die Telefonie anzuwenden. Starten Sie den Job durch
 einen Klick auf den {{< ui-button "grünen Haken" >}}. Das Telefon wird nun komplett eingerichtet.
+
+{{< num 5 "Telefon anschließen" >}}
+
+Stecken Sie das IP-Telefon an das Netzwerk. Das Telefon enthält einen eingebauten Switch, benutzen Sie den Ethernet-Port mit der Bezeichnung **NET**. Falls Sie kein **PoE** (Power over Ethernet) verwenden, stecken Sie das Telefon an den Netzstrom.
+
+**Ist das Telefon bereits in Ihrem Netzwerk eingebunden?**  
+1. Starten Sie das Telefon neu.
+
+{{% notice tip %}}
+Handelt es sich nicht um ein fabrikneues Telefon setzen Sie es in jedem
+Fall auf **Werkseinstellungen**zurück. Um dies am Telefon zu tun, schalten Sie das Telefon ein und drücken Sie dann {{< ui-button "OK" >}} und halten Sie die Taste gedrückt, bis **Factory Reset** auf dem Display erscheint. Bestätigen Sie durch Drücken der {{< ui-button "OK" >}}. 
+{{% /notice %}}
+
+Sobald das Telefon erfolgreich für Ihren Benutzer registriert wurde, testen Sie die Telefonie
+
 
 {{< num 6 "Funktion testen" >}}
 
@@ -88,73 +91,6 @@ Am einfachsten kann man die erfolgreiche Inbetriebnahme testen, indem man mit **
 
 {{% /tab %}}
 
-{{% tab "Cloud" %}}
-
-**Pairing via URL funktioniert in der CLOUD + ONSITE**  
-*für eine einfachere Einrichtung nutzen Sie Zero Touch*
-
-{{< num 1 "Telefon anschließen" >}}
-
-{{% notice tip %}}
-Handelt es sich nicht um ein fabrikneues Telefon setzen Sie es in jedem
-Fall auf **Werkseinstellungen**zurück. Um dies am Telefon zu tun, schalten Sie das Telefon ein und drücken Sie dann {{{< ui-button "OK" >}}} und halten Sie die Taste gedrückt, bis **Factory Reset** auf dem Display erscheint. Bestätigen Sie durch Drücken der {{{< ui-button "OK" >}}. 
-{{% /notice %}}
-
-Stecken Sie das IP-Telefon an das Netzwerk. Das Telefon enthält einen eingebauten Switch, benutzen Sie den Ethernet-Port mit der Bezeichnung **NET**. Falls Sie kein **PoE** (Power over Ethernet) verwenden, stecken Sie das Telefon an den Netzstrom.
-
-Während des Boot-Vorganges steht wiederholt die IP-Adresse des Telefones im
-Display. Notieren Sie sich diese.
-
-
-{{< num 2 "MAC-Adresse ermitteln" >}}
-
-Die MAC-Adresse steht auf der Rückseite des Telefones.
-
-Alternativ surfen Sie nun mit Ihrem Browser auf die zuvor notierte IP-Adresse des Telefones.
-
-Unter {{< ui-button "System Information" >}} > {{< ui-button "MAC-Address" >}} notieren Sie sich die MAC-Adresse des
-Telefones.
-
-{{< num 3 "Endgerät anlegen" >}}
-
-Loggen Sie sich in Ihrer Telefonanlage ein und fügen unter {{< ui-button "Endgeräte" >}} > {{< ui-button "Geräteliste" >}} ein
-neues Gerät vom Typ **IP-Telefon: Hersteller Yealink** hinzu.
-
-Tragen Sie im Feld **Mac-Adresse** die zuvor ermittelte MAC-Adresse des Telefones
-ein.
-
-{{< num 4 "Benutzer zuweisen" >}}
-
-Als nächstes können Sie dem IP-Telefon einen Benutzer oder Arbeitsplatz zuweisen. Klicken Sie hierzu auf {{< ui-button "Bearbeiten" >}}. Im Tab {{< ui-button "Zuweisung" >}} kann dem Telefon ein [Benutzer (oder Arbeitsplatz)]({{< ref "concept/user">}}) zugewiesen werden.
-
-{{< num 5 "Jobs Anwenden" >}}
-
-Nach dem Speichern von Änderungen erscheint in der Job-Box (oben) ein
-entsprechender Eintrag die Telefonie anzuwenden. Starten Sie den Job durch
-einen Klick auf den {{< ui-button "grünen Haken" >}}.
-
-{{< num 6 "Provisionierung-URL ermitteln" >}}
-
-Haken Sie das Telefon in der Geräte-Liste an und wählen {{< ui-button "Aktion" >}} > {{< ui-button "Provisioning URL" >}}. Kopieren Sie die
-**URL** in die Zwischenablage.
-
-{{< num 7 "Provisionierung-URL am Telefon eintragen" >}}
-
-{{% notice tip %}}
-Sollten Sie kein **offizielles Zertifikat** auf Ihrem Proxy installiert haben, müssen Sie das Telefon so konfigurieren, dass ***Nur vertrauenswürdige Zertifikate*** akzeptiert werden, indem Sie das Web-Benutzeroberflächenmenü des Telefons aufrufen {{{< ui-button "Sicherheit" >}} > {{{< ui-button "Vertrauenswürdige Zertifikate" >}}} und Auswahl **Disabled** nehmen. 
-{{% /notice %}}
-
-Gehen Sie wieder in der Admin-UI des Yealink-Telefons auf {{{< ui-button "Einstellungen" >}} > {{{< ui-button"Automatische Provisionierung" >}} > {{{< ui-button "Server-URL" >}} und geben Sie die kopierte Provisionierungs-URL ein.
-
-Klicken Sie auf {{< ui-button "Bestätigen" >}} und anschließend auf {{< ui-button "Jetzt Autoprovisionieren" >}}.
-
-Das Telefon startet nun neu.
-
-{{< num 8 "Funktion testen" >}}
-
-Am einfachsten kann man die erfolgreiche Inbetriebnahme testen, indem man mit **\*100** die eigene Voicemailbox anruft. Daraufhin sollte die Ansage Ihrer Voicemailbox zu hören sein.
-
-{{% /tab %}}
 
 {{% tab "Onsite" %}}
 

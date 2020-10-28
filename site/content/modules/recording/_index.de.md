@@ -49,7 +49,7 @@ Wird die Versandart Bash Skript gewählt wird ein Bash-Editor eingeblendet in de
 
 Für den Versand der Mitschnitte per E-Mail oder Skript und das Bereinigen der Festplatte (siehe Festplattenspeicher verwalten) wird standardmäßig jeden Tag um 20 Uhr ein Cronjob ausgeführt. Alle Daten über den Versand werden zur Laufzeit im System gespeichert und dann durch den Cronjob batchmäßg abgearbeitet.
 
-Dies gilt wirklich nur für den Versand der Mitschnitte per E-Mail oder Skript. Im pasocm Client werden die Mitschnitte sofort nach Fertigstellung der Aufnahme angezeigt.
+Dies gilt wirklich nur für den Versand der Mitschnitte per E-Mail oder Skript. Im pascom Client werden die Mitschnitte sofort nach Fertigstellung der Aufnahme angezeigt.
 
 Möchten Sie den Intervall des Cronjobs erhöhen, z. B. alle 15 Minuten die Mitschnitte per E-Mail versenden, können Sie dies unter {{< ui-button "Erweitert" >}} > {{< ui-button "Mitschnitte" >}} > {{< ui-button "Aktionen" >}} > {{< ui-button "Versand Automatisieren" >}}  bzw. {{< ui-button "Appliance" >}} > {{< ui-button "Cronjobs" >}} > {{< ui-button "Mitschnitte" >}} verarbeiten anpassen.
 

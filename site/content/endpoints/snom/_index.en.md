@@ -21,115 +21,62 @@ The process of configuring or registering an VoIP phone with an IP PBX such as p
 ## Add New Phone
 {{% tabs %}}
 
-{{% tab "Zero Touch" %}}
+{{% tab "Cloud" %}}
 
-**works with CLOUD + ONSITE**
+Cloud provisioning allows you to set up the phones without having to configure them manually. The provisioning is done via the provisioning servers of the respective manufacturers. This all happens fully automatically.
 
-The Zero Touch function allows you to set up the phones without having to configure them manually. The provisioning is done via the provisioning servers of the respective manufacturers. This all happens fully automatically.
-
-{{< num 1 "Connect your Device" >}}
-
-{{% notice tip %}}
-Should the telephone not be factory new, ensure you perform a **factory reset**. In order to do this on the phone, power up the phone and then press <strong>\**##</strong> holding the final <strong>#</strong> until after the phone has restarted and a menu has appeared. Select option **1** for factory settings. 
-{{% /notice %}}
-
-Connect the phone to your network. Snom IP phones come with a built in switch, allowing you to connect the phone directly via the Ethernet port labelled as **NET**. Should you not have a **PoE** option available, connect the phone to a power supply.
-
-The Snom IP phone will now boot and acquires an IP address which is displayed on the screen during the boot process. Please take a note of this address.
-
-After booting, the phone will stop at the country selection screen.
-
-{{< num 2 "Finding the MAC Address" >}}
+{{< num 1 "Finding the MAC Address" >}}
 
 MAC addresses can be found on the rear underside of the telephone.
 
-Alternatively, using your browser, surf to the previously noted telephone's IP address.
+Alternatively, the MAC address is often found on the product packaging.
 
-Under {{< ui-button "System Information" >}} > {{< ui-button "MAC-Address" >}} please take a note of the phone's IP address.
 
-{{< num 3 "Add Phones / Endpoints" >}}
+{{< num 2 "Add Phones / Endpoints" >}}
+
 
 Log into your pascom phone system and under {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}} and press {{< ui-button "Add" >}} and select the option **IP Telephone: Manufacturer Snom**.
 
-Select a **display name** for the telephone
+![Add new Snom Phone](add.en.png)  
+
+Select a **display name** for the telephone.  
 
 Under the corresponding field, enter the **Mac-Address** that you have just found and noted. 
 
-For a Zero Touch Provisioning, you still have to enter the **HTTP user** and the **HTTP password** of the phone. You can obtain the data from the respective manufacturer's manual. 
+For Provisioning, you still have to enter the **HTTP user** and the **HTTP password** of the phone. You can obtain the data from the respective manufacturer's manual.  
 
-{{% notice tip %}}
-You can also leave the HTTP data free, but then you must restart the phone manually, as the pascom telephone system does not have access to perform the necessary device restart for provisioning.
-{{% /notice %}}
+![Add new Snom Phone](setup.en.png?width=70%)
 
-{{< num 4 "Assigning Users" >}}
+
+{{< num 3 "Assigning Users" >}}
 
 As soon as the IP phone has appeared in the Device List, it can be edited via the {{< ui-button "Edit" >}} button. Under the {{< ui-button "Assign" >}} tab, the phone can be assigned to a [user (or location)]({{< ref "concept/user">}})
 
-{{< num 5 "Apply Jobs" >}}
+![Add new Snom Phone](assign.en.png?width=60%)
+
+
+{{< num 4 "Apply Jobs" >}}
 
 After saving your phone setup configurations, a corresponding prompt to apply telephony configs will appear in the job box (top of the screen). Simply start the job by clicking on the {{< ui-button "green tick" >}}.
+
+{{< num 5 "Connect the Phone" >}}
+
+Connect the phone to your network. Snom IP phones come with a built in switch, allowing you to connect the phone directly via the Ethernet port labelled as **NET**. Should you not have a **PoE** option available, connect the phone to a power supply.
+
+**Is the phone already integrated in your network?**  
+  
+1. Restart the Phone.
+
+{{% notice tip %}}
+Should the telephone not be factory new, ensure you perform a **factory reset**. In order to do this on the phone, power up the phone and then press {{< ui-button "** + ##" >}} holding the Buttons {{< ui-button "* + #" >}} until the phone restarts. Confirm by pressing {{< ui-button "1" >}} to perform the factory reset. 
+{{% /notice %}}
+
 
 {{< num 6 "Function testing" >}}
 
 The simplest method of testing whether a device has been successfully deployed is to call ones Voicemail box via **\*100**. On successfully provisioned phones, you should now hear your Voicemail box prompts.
 
 {{% /tab %}}
-
-{{% tab "Cloud" %}}
-
-**Pairing via URL works with CLOUD + ONSITE**  
-*for a simplier Setup use the Zero Touch function*
-
-{{< num 1 "Connect your Device" >}}
-
-{{% notice tip %}}
-Should the telephone not be factory new, ensure you perform a **factory reset**. In order to do this on the phone, power up the phone and then press <strong>\**##</strong> holding the final <strong>#</strong> until after the phone has restarted and a menu has appeared. Select option **1** for factory settings. 
-{{% /notice %}}
-
-Connect the phone to your network. Snom IP phones come with a built in switch, allowing you to connect the phone directly via the Ethernet port labelled as **NET**. Should you not have a **PoE** option available, connect the phone to a power supply.
-
-The Snom IP phone will now boot and acquires an IP address which is displayed on the screen during the boot process. Please take a note of this address.
-
-After booting, the phone will stop at the country selection screen.
-
-{{< num 2 "Finding the MAC Address" >}}
-
-MAC addresses can be found on the rear underside of the telephone.
-
-Alternatively, using your browser, surf to the previously noted telephone's IP address.
-
-Under {{< ui-button "System Information" >}} > {{< ui-button "MAC-Address" >}} please take a note of the phone's IP address.
-
-{{< num 3 "Add Phones / Endpoints" >}}
-
-Log into your pascom phone system and under {{< ui-button "Devices" >}} > {{< ui-button "Device list" >}} and press {{< ui-button "Add" >}} and select the option **IP Telephone: Manufacturer Snom**.
-
-Under the corresponding field, enter the **Mac-Address** that you have just found and noted. 
-
-{{< num 4 "Assigning Users" >}}
-
-As soon as the IP phone has appeared in the Device List, it can be edited via the {{< ui-button "Edit" >}} button. Under the {{< ui-button "Assign" >}} tab, the phone can be assigned to a [user (or location)]({{< ref "concept/user">}})
-
-{{< num 5 "Apply Jobs" >}}
-
-After saving your phone setup configurations, a corresponding prompt to apply telephony configs will appear in the job box (top of the screen). Simply start the job by clicking on the {{< ui-button "green tick" >}}.
-
-{{< num 6 "Finding the Provisioning URL" >}}
-
-Select the desired telephone from the device list and under {{< ui-button "Action" >}} select the option {{< ui-button "Provisioning URL" >}}. Copy the **URL** to your clipboard.
-
-{{< num 7 "Enter the Provisioning URL on the Telephone" >}}
-
-Go back to the telephone Web UI and under {{< ui-button "Advanced Settings" >}} > {{< ui-button "Update" >}} > {{< ui-button "Setting URL" >}} paste the copied Provisioning URL.
-
-Click on {{< ui-button "Apply" >}} and finally {{< ui-button "Reboot" >}}.
-
-{{< num 8 "Function Testing" >}}
-
-The simplest method of testing whether a device has been successfully deployed is to call ones Voicemail box via **\*100**. On successfully provisioned phones, you should now hear your Voicemail box prompts.
-
-{{% /tab %}}
-
 {{% tab "Onsite" %}}
 
 **DHCP Provisioning works only ONSITE**  

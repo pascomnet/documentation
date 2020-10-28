@@ -85,7 +85,7 @@ In order to ensure that your pascom phone system is reachable for telephony purp
 
 {{% notice tip %}}
 **Test your trunk!**<br/>
-To get started and test your business telephony functionality, it is time to start with the pascom software clients. The pascom clients for Windows, Linux, MacOS and Android and iOS can be found on our <a href="https://www.pascom.net/en/downloads/" title="pasocm Client Downloads" alt="pascom free cloud PBX edition" target="_blank">download page</a>.
+To get started and test your business telephony functionality, it is time to start with the pascom software clients. The pascom clients for Windows, Linux, MacOS and Android and iOS can be found on our <a href="https://www.pascom.net/en/downloads/" title="pascom Client Downloads" alt="pascom free cloud PBX edition" target="_blank">download page</a>.
 {{%/notice%}}
 
 ### 4. Create users

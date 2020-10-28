@@ -27,11 +27,14 @@ In diesem Abschnitt geben wir Ihnen einen Überblick aller wichtigen Änderungen
 Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung  
 {{% /notice %}}
 
-* [CL-1071] Plantronics Support ist auf einigen Systemen instabil. Falls im Zusammenspiel mit einem Plantronics Headset der Client oft abstürzt, in den Einstellungen Plantronics auf “ignorieren” stellen. Nur die Nutzung der Headset-Tasten funktioniert dann nicht mehr.
 * [CL-1165] Outlook Support ist auf einigen Systemen instabil und führt zu Abstürzen des pascom Clients.
-* [CL-1260] Auf Microsoft-Surface Geräten kommt es bei der Verwendung der integrierten Kamera oft zu einem Grünstich im Bild. [Eine Beta-Version mit einem Bugfix ist hier verfügbar.](https://www.pascom.net/forum/t/pascom-client-beta-fur-microsoft-surface-gerate-intel-avstream-webcams/7312)
+* [CL-1260] Auf Microsoft-Surface Geräten kommt es bei der Verwendung der integrierten Kamera oft zu einem Grünstich im Bild. [Eine Beta-Version mit einem Bugfix ist hier verfügbar.](https://www.pascom.net/forum/t/pascom-client-v67-beta-v67-d1363/7726)
 * [CL-1344] Screensharing funktioniert unter Ubuntu Linux nicht wenn eine Wayland-Session verwendet wird. Als Workaround kann auf eine X11-Session umgeschaltet werden.
 * [CL-1501] Beim Update von v64 auf v65 kann es zu Problemen beim Abspielen von Klingeltönen kommen. Als Lösung reicht es aus, den konfigurierten Klingelton bzw. Klingelton-Lautsprecher in den Einstellungen einfach erneut auszuwählen.
+
+## BETA Version 67
+
+[Feedback / Release Notes findet sich hier](https://www.pascom.net/forum/t/pascom-client-v67-beta-v67-d1363/7726)
 
 ## Release 66.R1326 (23.09.2020)
 

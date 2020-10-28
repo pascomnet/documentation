@@ -14,12 +14,7 @@ Many companies do not have any **Internet access restrictions** and can therefor
 
 However, should you choose to, you can specify which internet services your company network is permitted to access by opening the following ports and allowing the pascom desktop client access in order to ensure that your pascom phone system operates optimally:
 
-#### pascom Services
-
-| Port | Host | Description |
-| ---- | ---- | ------------ |
-| TCP **443** | my.pascom.net | To check for client updates |
-| TCP **443** | download.pascom.net | To download client updates |
+[Configure Firewall / Port Overview]({{< ref "/server/port-overview" >}})
 
 ## Windows Installation
 

@@ -1,6 +1,6 @@
 ---
 title: Mobile Client User Guide
-description: pascom mobile Client User Guide for Android and iOS
+description: pascom mobile App User Guide for Android and iOS
 icon: "fa fa-mobile"
 type : "pages-handbook"
 weight: 2
@@ -12,3 +12,7 @@ weight: 2
 
 
 ![pascom Mobile Client Userhandbook](frontpage_mobile_intro.png?width=80%)
+
+</br>
+
+{{< youtube l-PAiultpNI >}} 
