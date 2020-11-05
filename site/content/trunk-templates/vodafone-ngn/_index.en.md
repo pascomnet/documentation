@@ -4,23 +4,23 @@ description: Overview of the pascom managed Provider Template from Vodafone
 weight: 50
 ---
 
+{{< doctype "self"  >}}
+
 {{< description >}}
 
 ![Vodafone Provider Logo](vodafone-logo.png?width=50%)
 
 ## Overview
 
+Tariff in combination with pascom: **Vodafone NGN Trunk**  
+ 
+
 Since pascom 18.05, a trunk template for Vodafone NGN Trunks is available.
 
 As the authentication to the Vodafone SIP server takes place via the your Internet connection IP address, configuring these trunks is only possible in a self hosted on-premise pascom phone system. 
 
-## Supported usage variants
-Do you use the pascom telephone system in the cloud or on-site at your company? Learn more about the respective supported providers in our overview of trunk templates. 
 
-[Overview Trunk Templates]({{< ref "trunk-templates">}})
-
-
-## Your Account
+{{< num 1 "Your Account" >}}
 
 After the purchase and activation of your Vodafone NGN trunk, you will receive a letter containing your account information. This document contains important information relating to your telephone connection:
 
@@ -33,10 +33,8 @@ After the purchase and activation of your Vodafone NGN trunk, you will receive a
 |SIP Domain|SIP Domain of the telephony connections|pascom.ngn.vodafone.de|
 *(For data proctection purposes exact numbers and data have been replaced with "X")*
 
-{{% tabs %}}
-{{% tab "pascom 18" %}}
 
-## Router Preparation
+{{< num 2 "Router preparation" >}}
 
 Please note that SIP communication with the entered SBC is only possible from the phone system IP address. 
 Should you use your pascom phone system inside your own network with a private IP address, please verify the necessary network settings on your firewall / router (NAT).
@@ -48,9 +46,11 @@ Finally, you must consider your phone system settings in terms of the range of R
 ![Vodafone Port-Forwarding](vodafone_ngn_forwarding.en.png)
 
 
-## Setup
+{{< num 3 "Trunk Setup on the pascom" >}}
 
 Under {{< ui-button "Gateways" >}} > {{< ui-button "Trunks" >}} > {{< ui-button "add" >}}, add a new Vodafone NGN trunk. This will take you to the Provider Database where you can filter directly for *Vodafone* and the select the template **Vodafone NGN Trunk**. Complete the template using the account data you received.
+
+![setup vodafone trunk](choose-template-onsite.en.png)
 
 |Variable|Description|
 |---|---|
@@ -64,7 +64,31 @@ Under {{< ui-button "Gateways" >}} > {{< ui-button "Trunks" >}} > {{< ui-button 
 |**Extension length**|Number of digits for user extensions (not the amount of numbers in the number block!)|
 |**Switchboard extension**|Enter the internal extension number to which calls from the first number of your number block (normally 0).|
 
-After pressing {{< ui-button "Save" >}} the trunk will be added. This will also automatically add call rules. These can be modified according to your needs. For further information, please refer to the article [Call Rules]({{< ref "trunks/rules">}}).
+### Example
+
+![setup vodafone trunk](fill-variables-onsite.en.png?width=70%)
+
+After pressing {{< ui-button "Save" >}} the trunk will be added. 
+
+{{< num 4 "Does your Trunk work?" >}}
+
+To make sure that your data has been entered correctly and that the pascom PBX has successfully registered with your provider, click on the {{< ui-button "Gateway" >}} - {{< ui-button "Trunks" >}} on the {{< ui-button "Info Symbol" >}} at your trunk.
+Here you can see if the **registration** has worked. (*registered*).
+
+![trunk registered](registered-template.en.PNG?width=50%)
+
+{{< num 5 "activate pascom Outbound Proxy" >}}
+
+For onsite telephony, the pascom Outbound Proxy is required for this provider. In the {{< ui-button "Basic Settings" >}} you will find the setting {{< ui-button "Interface" >}} for which the **Outbound Proxy** should be activated.
+
+![activate pascom Outbound Proxy](setup_op.en.jpg?width=70%)
+
+{{< num 6 "Define your Call rules" >}}
+
+The trunnk is established and successfully registered. As a final step, you define your incoming and outgoing call rules to set the call behavior of your pascom telephone system. 
+
+We explain how to set up call rules in the [Call Rules Tutorial]({{{< ref "trunks/rules">}})
+
 
 ### Add an additional Vodafone NGN account
 
@@ -72,18 +96,6 @@ Should you wish to expand your Vodafone NGN connection with an additional accoun
 In the new account line, you can now modify the **username** and **host** and other fields if necessary.
 
 Now you will need to modify your [inbound and outbound call rules]({{< ref "trunks/rules">}}). For outbound rules, you must now select which Account per rule should be used. To do this, scroll right and under the column {{< ui-button "Account" >}} select the appropriate account.
-{{% /tab %}}
 
-{{% tab "pascom 19" %}}
 
-## Setup
 
-Under {{< ui-button "Gateways" >}} > {{< ui-button "Trunks" >}} > {{< ui-button "add" >}}, add a new Vodafone NGN trunk. This will take you to the Provider Database where you can filter directly for *Vodafone* and the select the template **Vodafone NGN Trunk**. Complete the template using the account data you received.
-
-{{% notice tip %}}
-For easier setup of the Vodafone NGN trunk, use the pascom outbound proxy without having to configure the NAT. (from pascom 19.05)
-Instructions for activating the outbound proxy can be found [here] ({{<ref "/trunks/outbound_proxy">}}).
-{{% /notice %}}
-
-{{% /tab %}}
-{{% /tabs %}}
