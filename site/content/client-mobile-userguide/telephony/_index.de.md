@@ -99,7 +99,7 @@ wechselt in den GSM Modus um die Verbindung über Ihr Handynetz aufzubauen.
 
 Sie können den GSM Modus auch manuell aktivieren.
 
-![GSM-Modus](gsm_switch.jpg)
+![GSM-Modus](gsm-switch.jpg)
 
 1. Klicken Sie dazu rechts oben im **Telefonie-Bereich** auf den **GSM-Schalter**.
 

@@ -8,6 +8,25 @@ weight: 1000
 Here you will find an overview of services that no longer work with the current pascom version.
 {{%/notice%}}
 
+
+### Support for pascom SMB Server ends 2020
+**Hardware**
+
+|Date|with Version|
+|---|---|
+|End of 2020|---|  
+**Our technology is constantly evolving, which is why we are ending the Support for the pascom SMB Server at the upcoming turn of the year.**
+
+
+1. Replace your pascom on-site telephone system with a CLOUD telephone system. Use our attractive [Exclusive Offer](https://www.pascom.net/en/exclusive-offers/switch-to-pascom-cloud/).  
+2. Contact our **Sales Team**, or your pascom **sales partner** to get free information about your possibilities.
+
+</br>
+
+![pascom SMB Server EOS](pascom-smb-eos.png)
+
+<hr>
+
 ### Support for pascom 17 & 18 ends 2020
 **Service**
 

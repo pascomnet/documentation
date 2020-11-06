@@ -27,9 +27,9 @@ However, if you specify exactly which Internet services your company network may
 |30.000-35.000/UDP|RTP-Voice|<i class="fas fa-desktop"></i>  <i class="fas fa-phone"></i>  <i class="fas fa-mobile-alt"></i>|Your Network|pascom.cloud*|
 |636/TCP|LDAPS, Phonebook| <i class="fas fa-phone"></i> |Your Network|pascom.cloud*|
 |8884/TCP|Phone Provisioning| <i class="fas fa-phone"></i> |Your Network|pascom.cloud*|
-|80 / 443/TCP|Updates, Push| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |Your Network|mypascom.net|
+|80 / 443/TCP|Updates, Push, Fax, Voicemail, Recordings| <i class="fas fa-desktop"></i>  <i class="fas fa-mobile-alt"></i> <i class="fas fa-video"></i> |Your Network|mypascom.net|
 |3478|Video-Functionality/UDP| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |Your Network|pascom.cloud*|
-|5222/TCP|Chat| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |Your Network|pascom.cloud*|
+|5222/TCP|Chat, Filetransfer| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |Your Network|pascom.cloud*|
 |19302/UDP+TCP|WebRTC - WebClient| <i class="fas fa-video"></i> |Your Network|pascom.cloud*|
 |8885/TCP|VPN Tunnel to PBX| <i class="fas fa-server"></i> |Your Network|pascom.cloud*|
 
@@ -68,9 +68,9 @@ To access your devices via the Internet in your network to the pascom telephone 
 |30.000-35.000/UDP|RTP-Voice|<i class="fas fa-desktop"></i>  <i class="fas fa-phone"></i>  <i class="fas fa-mobile-alt"></i>|Your Network|
 |636/TCP|LDAPS, Phonebook| <i class="fas fa-phone"></i> |Your Network|
 |8884/TCP|Phone Provisioning| <i class="fas fa-phone"></i> |Your Network|
-|80 / 443/TCP|Updates, Push| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |mypascom.net|
+|80 / 443/TCP|Updates, Push, Fax, Voicemail, Recordings| <i class="fas fa-desktop"></i>  <i class="fas fa-mobile-alt"></i> <i class="fas fa-video"></i> |mypascom.net|
 |3478/UDP|Video-Functionality| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |Your Network|
-|5222/TCP|Chat| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |Your Network|
+|5222/TCP|Chat, Filetransfer| <i class="fas fa-desktop">  <i class="fas fa-mobile-alt"></i></i> |Your Network|
 |19302/UDP+TCP|WebRTC - WebClient| <i class="fas fa-video"></i> |Your Network|
 |8885/TCP|VPN Tunnel to PBX| <i class="fas fa-server"></i> |Your Network|
 

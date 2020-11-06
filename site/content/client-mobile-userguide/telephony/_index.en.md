@@ -102,7 +102,7 @@ switches to GSM mode to establish the connection via your mobile network.
 
 You can also activate the GSM mode manually.
 
-![GSM mode](gsm_switch.jpg)
+![GSM mode](gsm-switch.jpg)
 
 1. Click on the **GSM button** in the top right-hand corner of the **Telephony area**.
 
