@@ -74,12 +74,12 @@ The following screenshots were created using a *LANCOM R883VAW (over ISDN)* with
 The SIP-ALG settings are found on the LANCOM router Web UI under {{< ui-button "Configuration" >}} > {{< ui-button "SIP-ALG" >}} > {{< ui-button "General" >}}.
 Uncheck the "SIP-ALG activated" box.
 
-![LANCOM SIP-ALG Settings](/Lancom_SIP_Alg.png?width=70%)
+![LANCOM SIP-ALG Settings](/lancom_sip_alg.de.png?width=70%)
 
 The trunk configuration is found within the LANCOM router web UI under {{< ui-button "Configuration" >}} > {{< ui-button "Voice Call Manager" >}} > {{< ui-button "Lines" >}} > {{< ui-button "SIP Lines" >}}.
 Makes sure that these settings are either empty or deactivated.
 
-![LANCOM SIP-Lines](/Lancom_SIP_Leitungen.png?width=70%)
+![LANCOM SIP-Lines](/lancom_sip_lines.de.png?width=70%)
 
 #### Completing the Trunk Template
 
@@ -136,9 +136,9 @@ Firstly, you will need to setup the telekom phone numbers on the Fritz!Box in or
 5. Enter {{< ui-button "Further phone numbers" >}} and repeat the process from step 4 with all numbers from your account info letter.
 6. Confirm the settings in the current and all following screens by clicking {{< ui-button "Next" >}} and {{< ui-button "Apply" >}}.
 
-The Fritz!Box will immediately try to establish a connection with Deutsche Deutsche Telekom using the entered credentials.
+The Fritz!Box will immediately try to establish a connection with Deutsche Telekom using the entered credentials.
 
-![Fritz!Box](/fritzbox_telekom_rufnummern.png?width=80%)
+![Fritz!Box](/fritzbox_telekom_dids.de.png?width=80%)
 
 After the Deutsche Telekom numbers have been successfully setup, you will need to setup some accounts on your Fritz!Box with which your pascom PBX can register with the Fritz!Box.
 
@@ -152,7 +152,7 @@ After the Deutsche Telekom numbers have been successfully setup, you will need t
 8. If you would like to use all the numbers of your Deutsche Telekom account, then repeat steps 1 -7 for each number. 
 9. Within the Telephony Device Overview you should now see the internal numbers pertaining to the account (e.g. \**620). You will need this extension for the registration with your pascom PBX.
 
-![Fritz!Box](/fritzbox_telekom_telefoniegeraete.png?width=80%)
+![Fritz!Box](/fritzbox_telekom_phones.de?width=80%)
 
 #### pascom Fritz!Box Trunk Setup
 
@@ -160,7 +160,7 @@ After the Deutsche Telekom numbers have been successfully setup, you will need t
 
 Add a new Frtz!Box trunk under {{< ui-button "Gateways" >}} > {{< ui-button "Trunks" >}} > {{< ui-button "Add" >}}, which directs you the the SIP provider database. Using the filter, you can search directly for *fritz* templates and select this template. Complete the template using the account data you have just set up on your Fritz!Box.
 
-![Fritz!Box Account](/fritzbox_account_telekom.png?width=80%)
+![Fritz!Box Account](/fritzbox_account_telekom.de.png?width=80%)
 
 Using the template, it is possible to add the first 3 accounts.
 
