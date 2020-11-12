@@ -216,7 +216,7 @@ Eine Basis-Konfiguration kann auf mehreren Wegen zugewiesen werden:
 
 Im Tab {{< ui-button "Konfiguration" >}} können Sie die vorhandene Basis-Konfiguration anpassen. Im Bereich **keys** finden Sie bereits vorkonfigurierte Funktionstasten, an denen Sie sich orientieren können.
 
-Surfen Sie auf das Web-UI Ihres Snom Telefons und belegen Sie unter *Funktionstasten* als Beispiel die Taste **P1**. Wählen Sie als Typ **BLF**, als Nummer **\*8123** und als Label **Musterbenutzer**. Übernehmen Sie die Einstellungen.
+Surfen Sie auf das Web-UI Ihres Snom Telefons und belegen Sie unter *Funktionstasten* als Beispiel die Taste **P1**. Wählen Sie als Typ **BLF**, als Nummer **123|*8** und als Label **Musterbenutzer**. Übernehmen Sie die Einstellungen.
 
 Klicken Sie auf den Menüpunkt *Einstellungen*. Falls Sie den Menüpunkt noch nicht sehen, benötigen Sie [Admin-Rechte]({{< relref "#auf-die-snom-weboberfläche-zugreifen">}}).<br>
 Suchen Sie nach *fkey0* und *fkey_label0*. Die gefundenen Zeilen tragen Sie anschließend in der Basis-Konfiguration über das Web-UI der pascom ein:

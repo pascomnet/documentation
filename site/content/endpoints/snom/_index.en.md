@@ -198,7 +198,7 @@ A default configuration can be assigned using multiple methods:
 
 Under the {{< ui-button "Configuration" >}} tab, it is possible to modify the existing basic configuration. Under the **Keys** section you will find the already pre-configured function keys which provide a useful guideline to work with.
 
-Navigate to the Snom Telephone web UI and under *Function Keys* configure the **P1** button as an example. As type, select **BLF**, and as number **\*8123** and **ExampleUser** as the short text. Once done, apply the settings.
+Navigate to the Snom Telephone web UI and under *Function Keys* configure the **P1** button as an example. As type, select **BLF**, and as number **123|*8** and **ExampleUser** as the short text. Once done, apply the settings.
 
 Next, click on the *Settings* menu option. Should this option not be visible, you will require [admin rights]({{< relref "#accessing-the-snom-telephone-web-ui">}}).<br>
 Search for *fkey0* and *fkey_label0*. Next copy and paste the search result lines into the phone system web UI:
