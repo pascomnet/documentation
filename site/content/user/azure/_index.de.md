@@ -12,7 +12,7 @@ weight: 60
 
 ## Über Azure Active Directory Domain Services (aadds)
 
-Dies ist ein "klassischer" Domain-Server als Cloud-Dienst, der in Azure gehostet wird. Er ist mit dem Azure AD des in Azure installierten Azure-Account "gekoppelt" und synchronisiert die Benutzer automatisch.
+Dies ist ein "klassischer" Domain-Server als Cloud-Dienst, der in Azure gehostet wird. Er ist mit dem Azure AD “gekoppelt” und synchronisiert die Benutzer automatisch.
 
 Dieser Dienst kann verwendet werden, um klassische Domänenserver-Implementierungen in Azure zu erstellen und auf verschiedene Weise mit einer Vor-Ort-Domäne gekoppelt werden.
 
@@ -70,6 +70,12 @@ Wählen Sie die Vorlage *Benutzer aus AD* und tragen Sie folgende Daten ein:
 ### Importlauf testen und aktivieren
 
 Nachdem Sie die Konfiguration abgeschlossen haben, können Sie durch die Schaltfläche {{< ui-button "Speichern und Simulieren" >}} testen welche Datensätze importiert werden würden. Wenn Sie mit dem Ergebnis zufrieden sind können Sie den Import entweder einmalig unter {{< ui-button "Aktion" >}} > {{< ui-button "Import jetzt durchführen" >}} ausführen oder durch die Schaltfläche {{< ui-button "Automatisieren" >}} eine regelmäßige Durchführung des Importes einrichten.
+
+{{% notice warning %}}
+Bitte beachten Sie das der Konnektor nach dem Speichern beim Benutzernamen im Konnektorprofil selbst und auch bei der LDAP Authentifizierung den Domain Namen dahinter setzt. Löschen Sie hier bitte die Domain.
+{{% /notice %}}
+
+![Fehler](delete_mail.de.png?width=80%)
 
 ### Authentifizierung testen
 

@@ -12,7 +12,7 @@ weight: 60
 
 ## About Azure Active Directory Domain Services (aadds)
 
-This is a "classic" domain server as a cloud service hosted in Azure. It is "coupled" with the Azure AD of the account installed in Azure and automatically synchronizes users.
+ This is a "classic" domain server as a cloud service hosted in Azure. It is "coupled" with the Azure AD and automatically synchronizes users.
 
 This service can be used to create classic domain server implementations in Azure and can be coupled with an on-premise domain in various ways.
 
@@ -64,6 +64,12 @@ After saving, the template can be modified according to requirements under the t
 ### Test and Activate the Import Process
 
 After you have finalised your configuration, you can test the connector profile to determine which data sets will be imported using the {{< ui-button "Save and Simulate" >}} button. Once you are satisfied with the results, it is possible to either perform a one off import using the {{< ui-button "Action" >}} > {{< ui-button "Import Now" >}} option or automate the import to be performed at regular intervals by clicking the {{< ui-button "Automate" >}} button.
+
+{{% notice warning %}}
+Please delete the domain name after the username. The System will do that behavior automatically after saving the connector profile.
+{{% /notice %}}
+
+![Failure](delete_mail.en.png?width=80%)
 
 ### Authentication Tests
 
