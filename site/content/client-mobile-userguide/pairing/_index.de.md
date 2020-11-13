@@ -9,7 +9,7 @@ description: In dieser Anleitung erklären wir Ihnen, wie Sie den pascom Mobile 
 
 
 
-## Überischt
+## Übersicht
 
 Um sich am pascom Mobile Client anmelden zu können ist zuvor einmalig der Pairing-Vorgang notwendig. Einfacher ausgedrückt, die pascom Mobile App muss sich mit dem Desktop Client koppeln. Dies kann vom Systemadministrator durchgeführt werden oder, mit den notwendigen Berechtigungen, auch von Ihnen selbst.
 
