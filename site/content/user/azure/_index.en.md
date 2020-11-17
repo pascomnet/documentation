@@ -27,20 +27,6 @@ The current AD connector does not work against an Azure AD, instead an Azure Act
 
 For setting up Aadds, the [official documentation](https://docs.microsoft.com/en-us/azure/active-directory-domain-services/tutorial-create-instance) can be used, also for LDAPS configuration.
 
-## Setting up authentication on the pascom
-
-Set up the LDAP service on the pascom telephone system by selecting the
-Menu item {< ui-button "Appliance" >}} > {{< ui-button "Services" >}} click {{< ui-button "Authentication" >}}
-
-|Field|Description|
-|---|---|
-|LDAP-Authentication enabled|ja|
-|LDAP Host|ldap://aadds.yourDomain.de|
-|LDAP Search Base|DC=aadds,DC=ihreDomain,DC=de|
-|LDAP Username - Field|sAMAccountName|
-|LDAP Proxy-User|IhreEmail@onmicrosoft.com|
-|LDAP Proxy-Password|Ihr Passwort|  
-
 ## "Users from AD" Connector Profile
 
 Create a new connector profile by using the following steps in the pascom phone system Web UI:
@@ -74,6 +60,19 @@ Please delete the domain name after the username. The System will do that behavi
 ### Authentication Tests
 
 If you have configured the template using the *Configure authentication* *YES* option, it is now possible to test the user authentication process using the following menu options {{< ui-button "Appliance" >}} > {{< ui-button "Services" >}} under the {{< ui-button "Authentification" >}} tab and finally using the {{< ui-button "Test Authentication" >}} button.
+
+The parameters for authentication are as follows.
+
+|Field|Description|
+|---|---|
+|LDAP-Authentication enabled|ja|
+|LDAP Host|ldap://aadds.yourDomain.de|
+|LDAP Search Base|DC=aadds,DC=ihreDomain,DC=de|
+|LDAP Username - Field|sAMAccountName|
+|LDAP Proxy-User|IhreEmail@onmicrosoft.com|
+|LDAP Proxy-Password|Ihr Passwort|  
+
+![Setup Authentication](setup-auth.en.png?width=80%)
 
 {{% notice info %}}
 To authenticate the user against the Azure AD, the user must have the same name on the pascom telephone system as in the Azure AD (sAMAccountName)
