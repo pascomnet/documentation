@@ -1,71 +1,136 @@
-node('docker') {
+pipeline {
 
-    def version = "${env.DOC_VERSION}"
-    def target = "${env.DOC_TARGET}"
-    def algoliaKey = "${env.ALGOLIA_KEY}"
-    def baseUrl
-    def sedCmd
-    
-    doc = null
-    
-    switch (target) {
-        case 'dev':
-            baseUrl = 'https://www.pascom-dev.net/doc/'
-            mypascom = 'https://my.pascom-dev.net'
-            homepage = 'https://www.pascom-dev.net'
-            doc = 'doc-dev'
-            break
-        
-        case 'test':
-            baseUrl = 'https://www.pascom-test.net/doc/'
-            mypascom = 'https://my.pascom-test.net'
-            homepage = 'https://www.pascom-test.net'
-            doc = 'doc-test'
-            break
+    // we need a small podman server
+    agent { label "podman && t3small" }
+
+    // Ask for BRANCH and TARGET environment before we build
+    parameters {
+        gitParameter(name: 'BRANCH', description: 'Select branch to build', branchFilter: 'origin/(.*)', defaultValue: 'master', type: 'PT_BRANCH')
+        choice(name: 'TARGET', description: 'AWS Target account', choices: ['dev', 'test', 'productive'])
     }
 
-    stage('Checkout') {
-        checkout scm
-    }
+    stages {
+        stage('Checkout') {
+            steps {
+                script {
+                    // fill a few variables by looking at the selected TARGET
+                    switch (env.TARGET) {
+                        case 'dev':
+                            env.aws_key_id = "Jenkins AWS-DEV"
+                            env.inventory_file = "ansible/dev.inv"
+                            env.repo = '351025823571.dkr.ecr.eu-central-1.amazonaws.com'
+                            env.baseUrl = 'https://www.pascom-dev.net'
+                            env.mypascom = 'https://my.pascom-dev.net'
+                            env.doc = 'doc-dev'
+                            vault = ["vaultUrl": 'https://vault.in.pascom-dev.net:8200', "vaultCredentialId": 'vault-dev']
+                            break
 
-    if (doc != null){
-        
-        sh "sed -i 's#baseURL.*#baseURL = \"${baseUrl}\"#' ./site/config.toml"
-        sh "sed -i 's/doc-productive/${doc}/g' ./site/config.toml"
-        sh "sed -i 's#https://my.pascom.net#${mypascom}#g' ./site/config.toml"
-        sh "sed -i 's#https://www.pascom.net#${homepage}#g' ./site/config.toml"
+                        case 'test':
+                            env.aws_key_id = "Jenkins AWS-TEST"
+                            env.inventory_file = "ansible/test.inv"
+                            env.repo = '626737757095.dkr.ecr.eu-central-1.amazonaws.com'
+                            env.baseUrl = 'https://www.pascom-test.net'
+                            env.mypascom = 'https://my.pascom-test.net'
+                            env.doc = 'doc-test'
+                            vault = ["vaultUrl": 'https://vault.in.pascom-dev.net:8200', "vaultCredentialId": 'vault-dev']
+                            break
 
-    }
-    stage('Build doc') {
-        def hugo = docker.build("hugo:${env.BUILD_ID}")
+                        case 'productive':
+                            env.aws_key_id = "Jenkins AWS"
+                            env.inventory_file = "ansible/prod.inv"
+                            env.repo = '157248286409.dkr.ecr.eu-central-1.amazonaws.com'
+                            env.baseUrl = 'https://www.pascom.net'
+                            env.mypascom = 'https://my.pascom.net'
+                            env.doc = 'doc-productive'
+                            vault = ["vaultUrl": 'https://vault.in.pascom.net:8200', "vaultCredentialId": 'vault-prod']
+                            break
 
-        hugo.inside {
-            sh 'cp -a /usr/share/nginx/html ./doc-container/'
-            sh 'cp /usr/share/nginx/html/de/index.json ./algolia-container/index.de.json'
-            sh 'cp /usr/share/nginx/html/en/index.json ./algolia-container/index.en.json'
+                        default:
+                            error "unknown/no target selected"
+                    }
+                }
+
+                // run a shallow clone because of huge homepage history (>450M)
+                // a simple "checkout scm" would be enough for smaler repos....
+                checkout scm: [
+                    $class: 'GitSCM',
+                    branches: [[name: "origin/${env.BRANCH}"]],
+                    extensions: [
+                        [
+                            $class: 'CloneOption',
+                            depth: 3,
+                            noTags: true,
+                            reference: '',
+                            shallow: true
+                        ],
+                        [$class: 'CleanBeforeCheckout'],
+                    ]
+                ]
+            }
+
         }
-    }
 
-    stage('Push Algolia Index') {
-        def algolia = docker.build("algolia:${env.BUILD_ID}", "--build-arg TARGET=${target} --build-arg KEY=${algoliaKey} ./algolia-container")
-
-    }
-
-
-    stage('Build container') {
-   
-        version = version.replaceAll('origin/','')
-        def doc = docker.build("doc/${target}:${version}", "./doc-container")
-        stage('Push container') {
-            docker.withRegistry('https://docker-registry.in.pascom.net', '6495aa9c-a076-4ac9-89eb-a29f622667f6') {
-
-                doc.push()
-
-                doc.push('latest')
-
+        stage('Build container') {
+            steps {
+                withVault([configuration: vault, vaultSecrets: [ [
+                        path: 'kv/deploy/algolia', 
+                        secretValues: [ 
+                        [
+                            vaultKey: 'AlgoliaKey'
+                        ], 
+                        ] ] ] ]) {
+                    sh """
+                    podman build \
+                            --build-arg baseUrl=${env.baseUrl} \
+                            --build-arg mypascom=${env.mypascom} \
+                            --build-arg doc=${env.doc} \
+                            --build-arg key=${AlgoliaKey} \
+                            -t documentation:${env.BUILD_NUMBER} .
+                    """
+                }
             }
         }
 
-    }
+        stage('Push container') {
+            steps {
+                withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: env.aws_key_id, secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
+                    ansiColor('xterm') {
+                        ansiblePlaybook(
+                            inventory: env.inventory_file,
+                            limit: params.DEPLOY,
+                            playbook: "ansible/deploy_ecr.yml",
+                            sudoUser: null,
+                            colorized: true
+                        )
+                    }
 
+                    sh """
+                    aws ecr get-login-password --region eu-central-1 | podman login --username AWS --password-stdin ${env.repo}
+
+                    podman push documentation:${env.BUILD_NUMBER} docker://${env.repo}/ci/documentation:${env.BUILD_NUMBER}
+                    podman push documentation:${env.BUILD_NUMBER} docker://${env.repo}/ci/documentation:${env.BRANCH}
+                    """
+                }
+            }
+        }
+
+        stage('Update ECS Task') {
+            steps {
+                withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: env.aws_key_id, secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
+                    ansiColor('xterm') {
+                        ansiblePlaybook(
+                            inventory: env.inventory_file,
+                            limit: params.DEPLOY,
+                            playbook: "ansible/deploy_ecs_task.yml",
+                            sudoUser: null,
+                            colorized: true,
+                            extraVars: [
+                                image: "${env.repo}/ci/documentation:${env.BUILD_NUMBER}",
+                            ]
+                        )
+                    }
+                }
+            }
+        }
+    }
 }

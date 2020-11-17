@@ -1,0 +1,29 @@
+- hosts: cloudformation_server
+  gather_facts: false
+  tasks:
+    - name: Get Target Group
+      elb_target_group_info:
+        region: eu-central-1
+        names: webgate-doc
+      register: target_group
+    - name: Target Group ARN
+      debug: msg="{{target_group.target_groups.0.target_group_arn}}"
+    - name: Get IAM role
+      iam_role_info:
+        region: eu-central-1
+        name: ECS1-ECSServiceRole
+      register: iam_role
+    - name: IAM role ARN
+      debug: msg="{{iam_role.iam_roles.0.arn}}"
+    - name: Launch cloudformation
+      cloudformation:
+        stack_name="Documentation-WWW-{{ECSCluster}}" state=present
+        region=eu-central-1 disable_rollback=false
+        template=../cloudformation/deploy_container.yml
+      args:
+        template_parameters:
+          ECSServiceRole: "{{iam_role.iam_roles.0.arn}}"
+          ECSCluster: "{{ECSCluster}}"
+          TargetGroupArn: "{{target_group.target_groups.0.target_group_arn}}"
+          Image: "{{image}}"
+      register: cloudformation

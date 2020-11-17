@@ -1,0 +1,7 @@
+- hosts: cloudformation_server
+  gather_facts: false
+  tasks:
+    - name: Manage ecr, image reposiotry
+      ecs_ecr: 
+        name: ci/documentation
+        region: eu-central-1

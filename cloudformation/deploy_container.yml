@@ -1,0 +1,47 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Parameters:
+  ECSServiceRole:
+    Type: String
+    Description: ARN of ECS Service Role
+  ECSCluster:
+    Type: String
+    Description: Name of ECS Cluster
+  TargetGroupArn:
+    Type: String
+    Description: ARN of ALB Webgate Target Group for WWW
+  Image:
+    Type: String
+    Description: Docker image
+Resources:
+  TaskDocumentationWWW:
+    Type: AWS::ECS::TaskDefinition
+    Properties:
+      Family: TaskDocumentationWWW
+      ContainerDefinitions:
+        - Name: documentation
+          Cpu: '256'
+          Essential: 'true'
+          Image: !Ref Image
+          Memory: '256'
+          MemoryReservation: '64'
+          PortMappings:
+            - ContainerPort: 80
+  ServiceDocumentationWWW:
+    Type: AWS::ECS::Service
+    Properties:
+      LaunchType: EC2
+      ServiceName: ServiceDocumentationWWW
+      Cluster: !Ref ECSCluster
+      DesiredCount: '2'
+      DeploymentConfiguration:
+        MaximumPercent: '150'
+        MinimumHealthyPercent: '50'
+      PlacementStrategies:
+        - type: spread
+          field: 'attribute:ecs.availability-zone'
+      LoadBalancers:
+        - ContainerName: documentation
+          ContainerPort: '80'
+          TargetGroupArn: !Ref TargetGroupArn
+      Role: !Ref ECSServiceRole
+      TaskDefinition: !Ref TaskDocumentationWWW
