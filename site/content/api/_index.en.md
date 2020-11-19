@@ -1,6 +1,6 @@
 ---
-title: Developer APIs
-description: For developers pascom provides a REST and XMPP API as well as an IO-Framework 
+title: REST API
+description: For developers pascom provides a REST API 
 icon: "fa fa-code"
 type : "pages"
 weight : 15
