@@ -19,7 +19,7 @@ Den aktuellen pascom Mobile Client installieren Sie direkt auf Ihrem Android Sma
 ## iOS Installation
 
 {{% notice tip %}}
-Systemvoraussetzung **iOS 10 (64bit)** oder höher.
+Systemvoraussetzung **iOS 12.0 (64bit)** oder höher.
 {{% /notice %}}
 
 Den aktuellen pascom Mobile Client installieren Sie direkt auf Ihrem Apple Smartphone via [Apple Appstore](https://www.pascom.net/appstore).
