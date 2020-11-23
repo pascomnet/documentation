@@ -75,16 +75,36 @@ Der Nachteil dieser Installationsart ist, dass Sie sich selbst um das Update des
 * Öffnen Sie die Eingabeaufforderung als Administrator
 * Starten Sie das Setup und geben Sie das Zielverzeichnis an 
 
-Beispiel
+**Beispiel:**
 
 ```
 pascomClient-setup.exe /D=C:\Program Files (x86)\pascom Client
 ```
 
+### RDP Modus am Terminalserver nutzen
+
+Mithilfe des Kommandozeilenparamters **- -rdp** oder durch Setzen der Umgebungsvariable **PC_RDP auf 1** ist es nun möglich, für den Client am Terminalserver, die Verwendung von Softphone und Video-Support zu deaktivieren. Dies erlaubt dem Client am Terminalserver, das Softphone einer weiteren Client-Instanz zur Telefonie zu verwenden.
+
+Damit ist es z.B. möglich, eine Client Instanz innerhalb einer RDP Sitzung und eine weitere auf dem Host-Rechner zu starten. Die innerhalb der RDP-Sitzung laufende Instanz hat das --rdp Flag gesetzt, die äußere nicht. Somit kann ein an den PC angestecktes Headset zur Telefonie verwendet werden.
+
+
+
+#### Was bewirkt das?
+
+- Bessere Audioqualität, da das Audio nicht in die RDP-Sitzung übertragen werden muss.
+- Headsetsteuerung (z. B. Annehmen über Taste am Headset) funktioniert dadurch.
+- Integrationen in Software die auf einem Terminal-Server läuft (z. B. Outlook, Datev) funktioniert weiterhin.
+- Weniger CPU-Last auf Terminal-Servern, da Audio und Video über den Client auf dem jeweilgen Endgerät enkodiert und dekodiert werden.
+- Anrufsteuerung ist über jeden der Clients vollständig möglich.  
+
+Das Feature funktioniert plattformübergreifend (Windows, macOS, Linux) und ist nicht auf RDP-Sitzungen beschränkt.
+
+
+
 ## macOS Installation
 
 {{% notice tip %}}
-Systemvoraussetzung **macOS Sierra 10.12** oder höher
+Systemvoraussetzung **macOS High Sierra 10.13** oder höher
 {{% /notice %}}
 
 * [macOS Desktop Client](https://my.pascom.net/update/client/stable/macos) herunterladen
@@ -95,7 +115,7 @@ Systemvoraussetzung **macOS Sierra 10.12** oder höher
 ## Linux Installation
 
 {{% notice tip %}}
-Systemvoraussetzung **Ubuntu 16.04 LTS** oder höher. Andere Linux Distributionen können funktionieren, werden aber von pascom weder aktiv getestet noch offiziell unterstützt. 
+Systemvoraussetzung **Ubuntu 18.04 LTS** oder höher. Andere Linux Distributionen können funktionieren, werden aber von pascom weder aktiv getestet noch offiziell unterstützt. 
 {{% /notice %}}
 
 * [Linux Desktop Client](https://my.pascom.net/update/client/stable/linux) herunterladen
@@ -172,4 +192,6 @@ Options:
                            PC_PASS environment variable instead
   --server <server>        Override login server. Via Environment: Set
                            PC_SERVER to desired value.
+  --rdp                    Use RDP Mode. Via Environment: Set
+                           PC_RDP to 1.
 ```

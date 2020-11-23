@@ -80,10 +80,27 @@ Example
 pascomClient-setup.exe /D=C:\Program Files (x86)\pascom Client
 ```
 
+### Use RDP mode on Terminal Server
+
+Using the command line parameter **- -rdp** or by setting the environment variable **PC_RDP to 1** it is now possible to disable softphone and video support for the client on the Terminal Server. This allows the client on the Terminal Server to use the softphone of another client instance for telephony.
+
+This allows e.g. to start one client instance within an RDP session and another one on the host computer. The instance running within the RDP session has the --rdp flag set, the outer one does not. Thus, a headset connected to the PC can be used for telephony.
+
+#### What does this do?
+
+- Better audio quality, as the audio does not have to be transferred to the RDP session
+- Headset control (e.g. Accept via button on headset) works as a result.
+- Integrations in software running on a terminal server (e.g. Outlook, Datev) still works.
+- Less CPU load on terminal servers, since audio and video are encoded and decoded via the client on the respective terminal device.
+- Call control is fully possible via each of the clients.  
+
+The feature works across platforms (Windows, macOS, Linux) and is not limited to RDP sessions.
+
+
 ### Mac OS
 
 {{% notice tip %}}
-System requirements: **macOS Sierra 10.12** or higher
+System requirements: **macOS High Sierra 10.13** or higher
 {{% /notice %}}
 
 * Download [macOS Desktop Client](https://my.pascom.net/update/client/stable/macos)
@@ -94,7 +111,7 @@ System requirements: **macOS Sierra 10.12** or higher
 ## Linux Installation
 
 {{% notice tip %}}
-System requirements **Ubuntu 16.04 LTS** or higher. Other Linux distributions may work, but are however neither tested nor officially supported by pascom. 
+System requirements **Ubuntu 18.04 LTS** or higher. Other Linux distributions may work, but are however neither tested nor officially supported by pascom. 
 {{% /notice %}}
 
 * Download the [Linux Desktop Client](https://my.pascom.net/update/client/stable/linux) 
@@ -171,4 +188,6 @@ Options:
                            PC_PASS environment variable instead
   --server <server>        Override login server. Via Environment: Set
                            PC_SERVER to desired value.
+  --rdp                    Use RDP Mode. Via Environment: Set
+                           PC_RDP to 1.
 ```
