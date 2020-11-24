@@ -34,21 +34,25 @@ These following issues are known to us and we are already working on solutions.
 
 ## Release 67.R1416 (24.11.2020)
 
+{{% notice issues%}}
+Please note that the app icon has been updated with this release. For visual identification of the app, the icon is now a white background with the red pascom "C". 
+{{% / notice%}}
+
 **Overview**
 
+- New App icon
 - Phone numbers are formattted automatically and enhanced with area information
-- Improved screensharing quality and stability Screensharing Qualität und Stabilität verbessert
+- Improved screensharing quality and stability
 - Full support for unicode emoticons
-- Call waiting is supported, if enabled on server side
+- Call waiting is supported, if enabled on the pascom server
 - Support for Ubuntu 20.10 "Groovy Gorilla"
 - Support for macOS 11 "Big Sur"
 - Linux: Support for high resolution screens (HiDPI / 4k)
-- Windows: Supprot for Webcams built in to Microsoft Surface Geräten or Intel AVStream Cameras
-- New App icon
+- Windows: Support for in-built webcams on Microsoft Surface devices or Intel AVStream Cameras
 - Improved Jabra headset integration
 - Improved Sennheiser / EPOS headset integration
 - Introduced RDP / Terminal Server split mode
-- macOS: Handsfree when using the internal microphone and speakers has now much better quality
+- macOS: Handsfree when using the internal microphone and speakers now has much better quality
 - iOS: Fixed problems with calling in IPv6 LTE Networks
 
 Note: This version has new minimum requirements for the operating system:
@@ -57,7 +61,7 @@ Note: This version has new minimum requirements for the operating system:
 - macOS: 10.13
 - iOS: 12.0
 
-**ÄNDERUNGEN**
+**MODIFICATIONS**
 
 * [CL-56] - Proper emoticon support in pascom Client
 * [CL-66] - No feedback in client if a destination is not reachable
