@@ -28,13 +28,154 @@ These following issues are known to us and we are already working on solutions.
 {{% / notice%}}
 
 * [CL-1165] Outlook support is unstable on some systems and can cause the pascom client to crash
-* [CL-1260] If the integrated camera on Microsoft Surface devices is used, the image often has a green cast. [A Beta-Version with a bugfix is available here.](https://www.pascom.net/forum/t/pascom-client-v67-beta-v67-d1363/7726)
 * [CL-1344] Screen sharing does not work if a Wayland Session is used on Linux. As a work around, use a X11 Session type instead.
 * [CL-1501] A ringtone playback problem can occur after updating from v64 to v65. To resolve this issue, just re-select the configured ringtone and ringtone speaker in the settings.
 
-## BETA Version 67
 
-[For Feedback / Release Notes go here](https://www.pascom.net/forum/t/pascom-client-v67-beta-v67-d1363/7726)
+## Release 67.R1416 (24.11.2020)
+
+**Overview**
+
+- Phone numbers are formattted automatically and enhanced with area information
+- Improved screensharing quality and stability Screensharing Qualität und Stabilität verbessert
+- Full support for unicode emoticons
+- Call waiting is supported, if enabled on server side
+- Support for Ubuntu 20.10 "Groovy Gorilla"
+- Support for macOS 11 "Big Sur"
+- Linux: Support for high resolution screens (HiDPI / 4k)
+- Windows: Supprot for Webcams built in to Microsoft Surface Geräten or Intel AVStream Cameras
+- New App icon
+- Improved Jabra headset integration
+- Improved Sennheiser / EPOS headset integration
+- Introduced RDP / Terminal Server split mode
+- macOS: Handsfree when using the internal microphone and speakers has now much better quality
+- iOS: Fixed problems with calling in IPv6 LTE Networks
+
+Note: This version has new minimum requirements for the operating system:
+
+- Linux: Ubuntu 18.04 LTS
+- macOS: 10.13
+- iOS: 12.0
+
+**ÄNDERUNGEN**
+
+* [CL-56] - Proper emoticon support in pascom Client
+* [CL-66] - No feedback in client if a destination is not reachable
+* [CL-170] - Format phone numbers nicely in client UI and show area names
+* [CL-1008] - Switch the client to Qt 5.15
+* [CL-1037] - Enable HiDPI Support on Linux Client
+* [CL-1083] - Crash on windows if the screen geometry changes
+* [CL-1260] - Video does not work on Microsoft Surface Devices with Intel AVStream Camera
+* [CL-1267] - Prevent screen lock when a video call is running
+* [CL-1306] - Use one consistent brand font for the UI in pascom client
+* [CL-1312] - Implement bandwidth management based on twcc
+* [CL-1353] - Show Journal entries in Chat View 
+* [CL-1358] - Missing recording indicator in recorded client
+* [CL-1359] - Re-Enable call waiting support on iOS
+* [CL-1361] - Fix and enable call waiting in client
+* [CL-1384] - Conference is possible despite enabled video / screenshare
+* [CL-1386] - Implement team voicemail playback in Journal
+* [CL-1399] - Update application logo and signet
+* [CL-1400] - Remove phone.Enable and fix softphone unregister if it's not the preferred device
+* [CL-1412] - Sort Audio and Video devices consistently in Settings
+* [CL-1422] - Missed call notification will be closed on updating
+* [CL-1434] - Remove broken JobScheduler implementation in android client
+* [CL-1435] - Screensharing on macOS flaps between stale images
+* [CL-1444] - iOS switches to handsfree if video/screenshare gets enabled
+* [CL-1462] - Update API Level to 30 on android until November 2020
+* [CL-1464] - Android client crashes with OpenGL error
+* [CL-1465] - Android client needs 13 seconds to boot main activity
+* [CL-1479] - Client crashes on macOS when restoring audio devices
+* [CL-1483] - Remove stale chat notifications on mobile phone when app is synced
+* [CL-1486] - Improve Layout for Journal list cells
+* [CL-1488] - LinkButton underline property inconsistent
+* [CL-1492] - Settings glitches
+* [CL-1493] - Client glitches with multiple actions 
+* [CL-1494] - Phone book details consumes too much space for phone book info sometimes
+* [CL-1495] - Back in journal instead of team after closing details of team call
+* [CL-1496] - Show a phone icon in front of the "activity description"
+* [CL-1510] - Pick up call via right click on ringing roster contact not possible
+* [CL-1512] - Highlight colors match background color
+* [CL-1513] - Disable team pause button if there is no pause reason at all
+* [CL-1516] - After backup restore previous calls are visible
+* [CL-1517] - Call fullscreen is closed on click on call notification
+* [CL-1518] - Immediately check for updates if client version is too old for server version
+* [CL-1526] - List of participants in group shows chat button for external web clients
+* [CL-1529] - Close 'add action' and dropdowns in settings after click in background
+* [CL-1535] - Show own phone status correctly in the queue overview
+* [CL-1539] - Client increases output every time recording starts 
+* [CL-1541] - Using different color for hovering texts and rects
+* [CL-1545] - Fix news box layout on all platforms
+* [CL-1547] - Redial in client loads last journal entry instead of last outgoing
+* [CL-1557] - Hangup on Headsetbutton should hangup all calls in a conference
+* [CL-1567] - Play 'knock' tone sequence for waiting calls
+* [CL-1575] - Upgrade Jabra SDK to latest version
+* [CL-1577] - Jabra Headsets immediately Unmute after muting
+* [CL-1581] - Some chat search results are not jumping to correct chat history
+* [CL-1582] - Tapping on a notification only opens the client, not the chat
+* [CL-1583] - Sort-by-recent breaks if the client is on sleep while chat messages are sent
+* [CL-1584] - iOS Client emoticon keyboard overlays text input on iOS 14
+* [CL-1585] - Info toast buttons are hard to read
+* [CL-1588] - Xmpp connection fails with "KeepAliveError" because of XEP-198
+* [CL-1589] - Current calling info in roster does not elide
+* [CL-1594] - Double replication started
+* [CL-1597] - Too wide chat cell if multiline text
+* [CL-1602] - Do not show error toast when 'playing' silence as notification tone
+* [CL-1603] - File transfer broken with client 67
+* [CL-1606] - Android client freezes after hang up of video conference
+* [CL-1607] - Opening links in chat broken on mobile
+* [CL-1608] - Header in client on iPhone X is short
+* [CL-1609] - More UI glitches from feedback
+* [CL-1612] - Initial Scaling of the Client Window is wrong after update
+* [CL-1613] - pascom Client UI glitches from Feedback.
+* [CL-1616] - More ui glitches from feedback
+* [CL-1617] - Use VPIO on macOS
+* [CL-1618] - Improve journal entries in chat room
+* [CL-1621] - Incoming call auto declined on mobile client because of wrong call counter status
+* [CL-1622] - Client actions layout broken
+* [CL-1623] - macOS + Ubuntu client crash because of broken database after switching user/server
+* [CL-1626] - Implement fax pdf download
+* [CL-1628] - Automatic device selection breaks with Jabra Evolve 65
+* [CL-1630] - Links in Chat notifications are broken and have wrong color in dark theme
+* [CL-1635] - Can't play recordings on Android
+* [CL-1636] - Broken layout shows bar in iOS settings 
+* [CL-1641] - Downgrade of client failed because of version check
+* [CL-1647] - Sennheiser plays call waiting tone after pickup
+* [CL-1650] - Client call notification click broken
+* [CL-1652] - Bubble roster items to the top if call happened
+* [CL-1654] - Test client compatibility to Ubuntu 20.10
+* [CL-1655] - Improve linker speed on Linux during debug builds
+* [CL-1656] - Upgrade to GStreamer 1.18.1
+* [CL-1659] - Android armeabi-v7a (32bit) devices are broken
+* [CL-1660] - Can't open chats with 18.12 server after initial sign in
+* [CL-1661] - Android client layout issue on initial screen when red toast 
+* [CL-1662] - Recordings are not saved to customized download folder
+* [CL-1666] - Open journal entry from search broken
+* [CL-1667] - Improve redial button
+* [CL-1668] - Crash in connection service if you put an unpaired app in the background
+* [CL-1669] - File transfer displays success after accept timeout
+* [CL-1670] - Handle discardEvents only when fastForward was received
+* [CL-1672] - Client shows "No sip connection" during wakeup
+* [CL-1673] - Add app version to crash reports on android
+* [CL-1678] - Hide fax button in details of fax journal entry on mobiles
+* [CL-1679] - Update OpenGL windows blacklist
+* [CL-1680] - Client audio devices / camera selection are wrong after restart
+* [CL-1681] - Open chat takes a long time on MacOS
+* [CL-1685] - Fix pascom notification glitches
+* [CL-1688] - Android client crashes after pairing
+* [CL-1690] - Support a "split mode" for the client, run UI and Audio / Video input and output on different machines
+* [CL-1692] - Active group calls not indicated in roster after re-login
+* [CL-1693] - Client doesn't show name of joined web client participant in chat
+* [CL-1694] - Missing ringing tone for softphone with follow me delay
+* [CL-1701] - Phone numbers of external participants are not formatted in groups
+* [CL-1706] - pascom Client code signature is invalid on macOS 11
+* [CL-1707] - Issues with iOS and LTE with IPv6
+* [CL-1708] - Fix glitches in phone book and call details
+* [CL-1709] - Client phonecall list datamodel not synchronized with hardware phone datamodel
+* [CL-1712] - Can't install client apk on Pixel 3a
+* [CL-1717] - Creating a phonebook entry from journal during running call replaces name of internal user
+* [CL-1722] - Click on chat entry in search results not jumping to the correct time
+* [CL-1731] - Do not send empty avatar updates
 
 ## Release 66.R1326 (23.09.2020)
 
