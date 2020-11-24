@@ -51,7 +51,7 @@ Please note that the app icon has been updated with this release. For visual ide
 - Windows: Support for in-built webcams on Microsoft Surface devices or Intel AVStream Cameras
 - Improved Jabra headset integration
 - Improved Sennheiser / EPOS headset integration
-- Introduced RDP / Terminal Server split mode
+- Introduced RDP / Terminal Server split mode. More Informations [here](https://www.pascom.net/doc/en/clients/desktop-installation/#use-rdp-mode-on-terminal-server).
 - macOS: Handsfree when using the internal microphone and speakers now has much better quality
 - iOS: Fixed problems with calling in IPv6 LTE Networks
 

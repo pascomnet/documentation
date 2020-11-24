@@ -35,20 +35,20 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 
 **Auf einen Blick**
 
-- Rufnummern werden nun automatisch formattiert und mit einer Ortsangabe versehen
-- Screensharing Qualität und Stabilität verbessert
-- Volle Unterstützung für Unicode Emoticons
-- Anklopfen wird unterstützt, falls Serverseitig aktiviert
-- Unterstützung für Ubuntu 20.10 "Groovy Gorilla"
-- Unterstützung für macOS 11 "Big Sur"
-- Linux: Support für Hochauflösende Bildschirme (HiDPI / 4k)
-- Windows: Unterstützung für Webcams in Microsoft Surface Geräten / Intel AVStream basierte Webcams
-- Neues App Icon
-- Jabra Integration überarbeitet
-- Sennheiser / EPOS Integration überarbeitet
-- Introduced an RDP / Terminal Server Split Modus eingeführt
-- macOS: Freisprechen über integriertes Mikrofon und Lautsprecher hat nun bessere Qualität
-- iOS: Probleme mit Anrufen in IPv6 LTE Netzwerken behoben
+- Rufnummern werden nun automatisch formattiert und mit einer Ortsangabe versehen.
+- Screensharing Qualität und Stabilität verbessert.
+- Volle Unterstützung für Unicode Emoticons.
+- Anklopfen wird unterstützt, falls serverseitig aktiviert.
+- Unterstützung für Ubuntu 20.10 "Groovy Gorilla".
+- Unterstützung für macOS 11 "Big Sur".
+- Linux: Support für hochauflösende Bildschirme (HiDPI / 4k).
+- Windows: Unterstützung für Webcams in Microsoft Surface Geräten / Intel AVStream basierte Webcams.
+- Neues App Icon.
+- Jabra Integration überarbeitet.
+- Sennheiser / EPOS Integration überarbeitet.
+- RDP / Terminal Server Split Modus eingeführt. Weitere Infos [hier](https://www.pascom.net/doc/de/clients/desktop-installation/#rdp-modus-am-terminalserver-nutzen).
+- macOS: Freisprechen über integriertes Mikrofon und Lautsprecher hat nun eine bessere Qualität.
+- iOS: Probleme mit Anrufen in IPv6 LTE Netzwerken behoben.
 
 Achtung: Diese Version hat neue Mindestanforderungen an das Betriebssystem:
 
