@@ -94,7 +94,7 @@ Für die Onsite Telefonie wird für diesen Provider der pascom Outbound Proxy be
 
 ![Outound Proxy aktivieren](setup_op.de.jpg?width=70%)
 
-{{< num 4 "Definieren Sie Ihre Rufregeln" >}}
+{{< num 5 "Definieren Sie Ihre Rufregeln" >}}
 
 Das Amt ist eingerichtet und erfolgreich registriert. Als letzten Schritt definieren Sie Ihre eingehenden und ausgehenden Rufregeln um das Anrufverhalten Ihrer pascom Telefonanlage einzustellen. 
 
