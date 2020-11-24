@@ -83,6 +83,8 @@ pascomClient-setup.exe /D=C:\Program Files (x86)\pascom Client
 
 ### RDP Modus am Terminalserver nutzen
 
+![RDP SPLIT MODE](rdp-split-mode.png)
+
 Mithilfe des Kommandozeilenparamters **- -rdp** oder durch Setzen der Umgebungsvariable **PC_RDP auf 1** ist es nun möglich, für den Client am Terminalserver, die Verwendung von Softphone und Video-Support zu deaktivieren. Dies erlaubt dem Client am Terminalserver, das Softphone einer weiteren Client-Instanz zur Telefonie zu verwenden.
 
 Damit ist es z.B. möglich, eine Client Instanz innerhalb einer RDP Sitzung und eine weitere auf dem Host-Rechner zu starten. Die innerhalb der RDP-Sitzung laufende Instanz hat das --rdp Flag gesetzt, die äußere nicht. Somit kann ein an den PC angestecktes Headset zur Telefonie verwendet werden.

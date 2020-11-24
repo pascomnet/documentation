@@ -82,6 +82,8 @@ pascomClient-setup.exe /D=C:\Program Files (x86)\pascom Client
 
 ### Use RDP mode on Terminal Server
 
+![RDP SPLIT MODE](rdp-split-mode.png)
+
 Using the command line parameter **- -rdp** or by setting the environment variable **PC_RDP to 1** it is now possible to disable softphone and video support for the client on the Terminal Server. This allows the client on the Terminal Server to use the softphone of another client instance for telephony.
 
 This allows e.g. to start one client instance within an RDP session and another one on the host computer. The instance running within the RDP session has the --rdp flag set, the outer one does not. Thus, a headset connected to the PC can be used for telephony.
