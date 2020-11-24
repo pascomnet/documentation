@@ -53,7 +53,7 @@ See the checklist in the detailed [Upgrade Guide]({{<ref "/server/upgrade">}})
 * Due to the limitation of the **cisco SPA 112 Gateway** to exclusive use cisco certificates, the support with pascom 18 has been discontinued.
 * **Connector**: Reading files from an SMB share is no longer supported. Instead, the import file can now be uploaded or queried from a URL.
 * **Print to Fax** has been removed. Alternatively, the pascom client can now monitor a spool directory and send stored PDFs as a fax.
-* **Beronet Gateways** require at least firmware version 16
+* **Beronet Gateways** require the latest firmware version 16
 * **pascom Cluster** has been discontinued
 * **pascom SOHO Server** is no longer compatible. Please perform a hardware upgrade to the [pascom Appliance]({{< ref "server/appliance" >}}) or use the pascom.cloud.
 

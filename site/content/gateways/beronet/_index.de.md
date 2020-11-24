@@ -56,10 +56,10 @@ Sollten Sie die IP-Adresse des Gateways nicht kennen können Sie das Gateway mit
 ### Firmware Update (optional)
 
 {{% notice warning %}}
-pascom Server ab Version 18 benötigt mindestens die **beroNet Firmware 16** oder höher!
+pascom Server ab Version 18 benötigt die Neueste **beroNet Firmware Version 16** !
 {{% /notice %}}
 
-Loggen Sie sich auf der Weboberfläche des beroNet Gateways ein (Standard Benutzer: admin Passwort: admin) und stellen Sie zunächst unter {{< ui-button "Management" >}} > {{< ui-button "Info" >}} sicher, dass Sie appfs **16 oder neuer** verwenden. Falls nicht updaten Sie die Box jetzt:
+Loggen Sie sich auf der Weboberfläche des beroNet Gateways ein (Standard Benutzer: admin Passwort: admin) und stellen Sie zunächst unter {{< ui-button "Management" >}} > {{< ui-button "Info" >}} sicher, dass Sie die Neueste appfs **16** verwenden. Falls nicht updaten Sie die Box jetzt:
 
 * Download der [Firmware 16.X](https://beronet.atlassian.net/wiki/spaces/PUB/pages/61210659/Tools+and+Downloads) (Abschnitt: beroNet OS)
 * Setzen Sie die beroNet unter {{< ui-button "Management" >}} > {{< ui-button "Firmwareupdate" >}} in den Updatemodus

@@ -46,10 +46,10 @@ Nach dem Systemstart finden Sie erkannte beroNet Karten im pascom Management unt
 ### Firmware Update (optional)
 
 {{% notice warning %}}
-pascom Server ab Version 18 benötigt mindestens die **beroNet Firmware 16** oder höher!
+pascom Server ab Version 18 benötigt die Neueste **beroNet Firmware Version 16** !
 {{% /notice %}}
 
-Loggen Sie sich auf der Weboberfläche des beroNet Karte ein (Standardbenutzer: admin Passwort: admin) und stellen Sie zunächst unter **Management** > **Info** sicher, dass Sie appfs **16 oder neuer** verwenden. Falls nicht updaten Sie die Karte jetzt:
+Loggen Sie sich auf der Weboberfläche des beroNet Karte ein (Standardbenutzer: admin Passwort: admin) und stellen Sie zunächst unter **Management** > **Info** sicher, dass Sie die Neueste appfs **16** verwenden. Falls nicht updaten Sie die Karte jetzt:
 
 * Download der [Firmware 16.X](https://beronet.atlassian.net/wiki/spaces/PUB/pages/61210659/Tools+and+Downloads) (Abschnitt: beroNet OS)
 * Setzen Sie die beroNet unter **Management** > **Firmwareupdate** in den Updatemodus

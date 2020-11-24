@@ -47,10 +47,10 @@ After the system startup it will now be possible to view all detected cards with
 ### Firmware Update (optional)
 
 {{% notice warning %}}
-pascom phone system server's from version 18 onwards required a minimum of the **beroNet Firmware 16** or higher.
+pascom phone system server's from version 18 onwards required the latest **beroNet Firmware Version 16** !
 {{% /notice %}}
 
-Log into the beroNet card web UI (per default User: admin, password: admin) and under **Management** > **Info** that you use appfs **16 or newer**. If not, update the box now:
+Log into the beroNet card web UI (per default User: admin, password: admin) and under **Management** > **Info** that you use the latest appfs **16**. If not, update the box now:
 
 * Download the [Firmware 16.X](https://beronet.atlassian.net/wiki/spaces/PUB/pages/61210659/Tools+and+Downloads) (Section: beroNet OS)
 * Under the beroNet **Management** > **Firmware update** select the update mode. 
