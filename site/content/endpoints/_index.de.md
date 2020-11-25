@@ -196,7 +196,7 @@ Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es
 
 |Modelle||
 |---|---|
-|Gigaset N870|
+|Gigaset N870 IP PRO|
 
 
 **[Einrichtung Gigaset DECT, hier klicken!]({{<ref "/endpoints/gigaset-dect" >}})**

@@ -197,6 +197,6 @@ Due to vast range of firmware versions available for the different IP telephones
 
 |Models||
 |---|---|
-|Gigaset N870|
+|Gigaset N870 IP Pro|
 
 **[Setup Gigaset Pro IP DECT, click here!]({{<ref "/endpoints/gigaset-dect" >}})**
