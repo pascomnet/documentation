@@ -30,7 +30,17 @@ These following issues are known to us and we are already working on solutions.
 * [CL-1165] Outlook support is unstable on some systems and can cause the pascom client to crash
 * [CL-1344] Screen sharing does not work if a Wayland Session is used on Linux. As a work around, use a X11 Session type instead.
 * [CL-1501] A ringtone playback problem can occur after updating from v64 to v65. To resolve this issue, just re-select the configured ringtone and ringtone speaker in the settings.
+* [CL-1748] Accessibility Support is disabled on windows to avoid freezes
 
+## Release 68.R1423 (27.11.2020, Windows, Linux, macOS)
+
+**Overview**
+
+- In rare cases, the pascom Client freezes if a button is clicked while accessibility support is enabled in windows
+
+**MODIFICATIONS**
+
+- [CL-1742] pascom Client v67 freezes on windows if accessibility support is enabled
 
 ## Release 67.R1416 (24.11.2020)
 

@@ -30,6 +30,17 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 * [CL-1165] Outlook Support ist auf einigen Systemen instabil und führt zu Abstürzen des pascom Clients.
 * [CL-1344] Screensharing funktioniert unter Ubuntu Linux nicht wenn eine Wayland-Session verwendet wird. Als Workaround kann auf eine X11-Session umgeschaltet werden.
 * [CL-1501] Beim Update von v64 auf v65 kann es zu Problemen beim Abspielen von Klingeltönen kommen. Als Lösung reicht es aus, den konfigurierten Klingelton bzw. Klingelton-Lautsprecher in den Einstellungen einfach erneut auszuwählen.
+* [CL-1748] Accessibility Support ist unter Windows momentan deaktiviert um ein einfrieren des Clients zu vermeiden.
+
+## Release 68.R1423 (27.11.2020, Windows, Linux, macOS)
+
+**Auf einen Blick**
+
+- In seltenen Fällen friert der pascom Client beim Klick auf einen Button ein, wenn unter Windows der Accessibility Support aktiv ist
+
+**ÄNDERUNGEN**
+
+- [CL-1742] pascom Client v67 freezes on windows if accessibility support is enabled
 
 ## Release 67.R1416 (24.11.2020)
 
