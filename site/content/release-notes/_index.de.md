@@ -64,13 +64,13 @@ Wegen des Technologiewechsels von pascom 17 auf 18 und den damit verbundenen Meh
 - pascom PREMIUM Support
 - Kompatibilität der pascom Desktop- und Mobile-Clients
 
-
 ## Release Notes
 
 ### pascom Client
 
 |Version|Release Type|Veröffentlichung|
 |-------|------------|---------------:|
+|[Release 68.R1423]({{< ref "/release-notes/pascomClient#release-68-r1423-27-11-2020">}})| Bugfix Release | 27.11.2020|
 |[Release 67.R1416]({{< ref "/release-notes/pascomClient#release-67-r1416-24-11-2020">}})| Bugfix Release | 24.11.2020|
 |[Release 66.R1326]({{< ref "/release-notes/pascomClient#release-66-r1326-23-09-2020">}})| Bugfix Release | 23.09.2020|
 |[Release 65.R1286]({{< ref "/release-notes/pascomClient#release-65-r1286-05-08-2020">}})| Bugfix Release | 05.08.2020|

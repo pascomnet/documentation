@@ -36,7 +36,7 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 
 **Auf einen Blick**
 
-- In seltenen Fällen friert der pascom Client beim Klick auf einen Button ein, wenn unter Windows der Accessibility Support aktiv ist
+- In seltenen Fällen friert der pascom Client beim Klick auf einen Button ein, wenn unter Windows der Accessibility Support aktiv ist.
 
 **ÄNDERUNGEN**
 

@@ -36,7 +36,7 @@ These following issues are known to us and we are already working on solutions.
 
 **Overview**
 
-- In rare cases, the pascom Client freezes if a button is clicked while accessibility support is enabled in windows
+- In rare cases, the pascom Client freezes if a button is clicked while accessibility support is enabled in windows.
 
 **MODIFICATIONS**
 
