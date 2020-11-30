@@ -8,6 +8,29 @@ weight: 1000
 Here you will find an overview of services that no longer work with the current pascom version.
 {{%/notice%}}
 
+### Support for some Yealink T4 models ends 2021
+**Hardware**
+
+|Date|with Version|
+|---|---|
+|31.July.2021|---|  
+
+Phones of following models are supported until 31.07.21. Furthermore, we cannot guarantee it because of the encryption technology used.
+
+#### Affected models
+
+|Model|
+|---|
+|Yealink T41P|
+|Yealink T42G| 
+|Yealink T46G|  
+|Yealink T48G|     
+
+</br>
+
+![EOL Yealink T4 Models](yealink-t4-series1.jpg)
+
+<hr>
 
 ### Support for pascom SMB Server ends 2020
 **Hardware**

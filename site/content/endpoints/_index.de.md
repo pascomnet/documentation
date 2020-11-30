@@ -115,7 +115,7 @@ Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es
 
 |Modelle||
 |---|---|
-|Alle Modelle der T4-Serie|Alle Modelle der T5-Serie|
+|Alle Modelle der T4-Serie </br> (Einige Modelle sind bereits abgekündigt. [Weitere Informationen]({{<ref "/release-notes/deprecated_services" >}}))|Alle Modelle der T5-Serie|
 
 {{% notice note %}}
 Da es für die verschiedenen IP-Telefone eine Vielzahl von Firmwares gibt ist es uns leider nicht möglich jede zu testen, so dass es sein kann, dass manche Firmware-Versionen pascom Funktionen nicht unterstützen. 

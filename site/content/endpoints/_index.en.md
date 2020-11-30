@@ -116,7 +116,7 @@ Due to vast range of firmware versions available for the different IP telephones
 
 |Models||
 |---|---|
-|All T4 Series Phones |All T5 Series Phones|
+|All T4 Series Phones </br> (Some models are already deprecated. [More Information]({{<ref "/release-notes/deprecated_services" >}})) |All T5 Series Phones|
 
 {{% notice note %}}
 Due to vast range of firmware versions available for the different IP telephones, it is not possible for us to test each version. Therefore, it could be the case that pascom does not support some firmware versions. 
