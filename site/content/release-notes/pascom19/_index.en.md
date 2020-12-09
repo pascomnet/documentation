@@ -57,6 +57,11 @@ This section explains the changes that you must consider when migrating to pasco
 * **CDR Rest API** has a new data structure and any implementations must be adapted.
 * **Snom models 3XX + 7XX** (without the D in front) are no longer supported.
 * **Snom PA1** is no longer supported.
+* **Cisco SPA Gateway** no longer supported. Existing devices will be migrated to generic SIP devices.
+* pascom 18 instances can no longer be run on this host version
+* Outbound Proxy Interfaces for Trunks are now visible with this update
+* **Customised Analytics Dashboards** will be deleted and must be created again
+* **Grafana Dashboards** on the host must be newly created or modified
 
 
 ## Known Issues
@@ -65,7 +70,115 @@ This section explains the changes that you must consider when migrating to pasco
 These problems are known to us and we are already working on a solution
 {{% / notice%}}
 
-* Onsite Telekom trunks only work if an outbound proxy is used. To do this, select the appropriate interface in the trunk instead of "default / NAT".
+* none
+
+## Release 19.12 (09.12.2020)
+
+**Overview**  
+
+* Added new web client screen sharing functionality.
+* Extension switches can be controlled from within the client contact list.
+* Incoming faxes can now be downloaded from the client.
+* Team Voicemails can now be listened to from within the client.
+* Added DTMF remote control via the client for Snom desktop phones.
+* Added Management Administrator Password reset function.
+* Hostname and DNS can now be changed in the Management UI.
+* Caller language can be set as an action.
+* External devices connected via a trunk once again display call activity.
+* Endpoint IP address can now be queried via the REST API.
+* Exchange Connector now also imports contacts from folders which were created using Outlook for Mac.
+* Integrated Trunk template for German VoIP provider NetCologne.
+* Improved Analytics statistics.
+* Added new Grafana version at both the host and instance level.
+* Upgraded Host Operating System to Ubuntu 18.08 LTS.
+
+**Modifications**
+
+* [MD-12876] Improve journal for extension switch call
+* [MD-12867] Restrict empty avatars on the server
+* [MD-12857] Phone system UI shows 'useless' Janus WebRTC in overview
+* [MD-12846] Prevent old client connections on pascom server
+* [MD-12825] OpenLDAP, slapd, still hogs CPU, must be killed with -9
+* [MD-12809] slapd-restart.sh should also start not running slapd.service
+* [MD-12808] Group and phonebook entries are not shown as favorite
+* [MD-12779] Phone instance sometimes not updated automatically during onsite appliances update
+* [MD-12737] Enhance pascom Analytics Live Data
+* [MD-12727] "Introduce "feature flags" for pascom clients"
+* [MD-12722] Replace Openfire Connection Pool with HikariCP
+* [MD-12695] Calendar action condition job fails
+* [MD-12692] External phone via trunk shows no call activity in client
+* [MD-12688] Refactor Exchange Save-Test feature
+* [MD-12670] Upgrade pascom 19 host os to ubuntu 18.04 LTS bionic
+* [MD-12658] Phone book admin gets blank page after click on username
+* [MD-12653] A user should not be able to rename another user via client phonebook
+* [MD-12637] Change ldap_base in Snom M700 basic configuration
+* [MD-12613] Endpoint, baudisch, routing problem with loose-routed ACK messages
+* [MD-12589] Yealink vendor provisioning still active after reset
+* [MD-12584] instance wizard: Improve validation
+* [MD-12578] SetupUI: Use correct colors everywhere
+* [MD-12574] Delay of ~ 20 seconds after hangup a call if push message doesn't wake up mobile client
+* [MD-12571] Prepend group display name with @ sign in users contact list
+* [MD-12552] Upgrade controller container to ubuntu bionic and latest versions
+* [MD-12548] Allow downloading received Fax pdf files from the client
+* [MD-12543] Trim tabs and spaces from MAC address in instance wizard
+* [MD-12537] Store a vendor for paired mobile device
+* [MD-12536] Already deleted participants are deleted again
+* [MD-12531] Remove pascom 18 compatiblity code from kamailio
+* [MD-12529] Remove Cisco SPA ATA gateway support
+* [MD-12503] Add icons and other downloadable content to item / trunk bundles
+* [MD-12502] Separate huge template / item bundles into many small bundles
+* [MD-12490] Optimize events handling
+* [MD-12467] Instance wizard button logic
+* [MD-12455] Analytics shows error 'division by zero'
+* [MD-12449] DECT gateways can be created with a MAC outside the vendor's address range
+* [MD-12447] Reduce apache and kamailio related consul / consul-template traffic in proxies
+* [MD-12445] Do not create a vendor provisioning lease for insecure interfaces
+* [MD-12422] Invalid call data after various actions leads to ghost calls
+* [MD-12419] Show mailbox recordings for team voicemail
+* [MD-12418] Device create/edit action acts wrongly on wrong entered data
+* [MD-12409] phone.Enable command is broken and probably unused
+* [MD-12405] Transfer with Yealink leads to invalid call data sometimes
+* [MD-12392] Enforce outbound proxy usage via trunk template
+* [MD-12354] Update pbx instance grafana
+* [MD-12349] Handle webclient when there are no audio devices at all
+* [MD-12346] Update consul version to 1.7.x
+* [MD-12324] Upgrade management grafana
+* [MD-12313] Include a technical pbx dashboad in the management grafana
+* [MD-12305] Configurable search attrs property for LDAP connector
+* [MD-12257] Xmpp sometimes prints misleading errors for MediaStreams/hanging up conference channels
+* [MD-12219] Implement screensharing in WebClient
+* [MD-12217] Enable groovy invokedynamic optimization
+* [MD-12171] Modernize pbx system settings api, fix i18n problems
+* [MD-12169] Reimplement pbx autostart logic, manage it via csd
+* [MD-12164] Show device IP via REST API
+* [MD-12147] Outlook (macOS) sub folders are not imported from Exchange/Office 365 as private contacts
+* [MD-12108] Implement dtmf remote control for snom desktop phones
+* [MD-12082] Hangup fails with "no permission" if CallerIdUpdate is sent after picking the call
+* [MD-11989] Add reset management password functionality
+* [MD-11913] Provide system settings to customize pjsip_wizard config
+* [MD-11870] CSUI dashboard shows wrong memory size
+* [MD-11859] Login form to CSUI often not shown after setup
+* [MD-11785] Show if appliance pairing failed because of duplicated MAC in odoo backend
+* [MD-11746] Improve version check for database backups
+* [MD-11676] Improve restore backup process if 'broken' tgz gets uploaded during setup
+* [MD-11649] Show more feedback if restoring a backup
+* [MD-11628] Update prometheus
+* [MD-11622] Use more reliant value for free disc space in prometheus
+* [MD-11587] Show reconnect page after host reboot
+* [MD-11515] Missing channel event if user accidentially calls fax device
+* [MD-11514] Empty page after installation and automatic forwarding/reload sometimes
+* [MD-11439] ldap mode handling in provisioning files is too complex and error prone
+* [MD-11228] Modernize Extension Switches, expose via ContactList
+* [MD-10693] Change hostname and DNS server in management ui
+* [MD-10612] Roll out IVR action templates causes error
+* [MD-8936]Copy to clipboard button for provisioning URLs
+* [MD-6494]New action type to set a channels language
+* [PT-11] Toplink Template seems to be broken
+* [PT-3] - Netcologne SIP-Provider Integration
+* [PT-19] - Remove community template status from sipcall.ch trunk template description
+* [PT-6] - Update T-M-Net trunk template
+* [PT-9] - Improve naming of basic configurations
+* [PT-15] - Snom phone wallpaper URL - change to HTTPS
 
 ## Release 19.11 (28.10.2020)
 
