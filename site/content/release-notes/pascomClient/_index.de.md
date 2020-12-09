@@ -32,6 +32,18 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 * [CL-1501] Beim Update von v64 auf v65 kann es zu Problemen beim Abspielen von Klingeltönen kommen. Als Lösung reicht es aus, den konfigurierten Klingelton bzw. Klingelton-Lautsprecher in den Einstellungen einfach erneut auszuwählen.
 * [CL-1748] Accessibility Support ist unter Windows momentan deaktiviert um ein einfrieren des Clients zu vermeiden.
 
+## Release 69.R1548 (8.12.2020, iOS, Android)
+
+**Auf einen Blick**
+
+- Unter bestimmten Umständen wird ein Anruf an das Mobilgerät nach einmaligem Klingeln beendet
+
+**ÄNDERUNGEN**
+
+- [CL-1728] - Answering a call via CarPlay UI is unreliable
+- [CL-1760] - SIP Debug Logging switch doesn't work
+- [CL-1772] - mobile client hangs up the incoming call under certain circumstances
+
 ## Release 68.R1423 (27.11.2020, Windows, Linux, macOS)
 
 **Auf einen Blick**

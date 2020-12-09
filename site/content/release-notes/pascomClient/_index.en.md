@@ -32,6 +32,18 @@ These following issues are known to us and we are already working on solutions.
 * [CL-1501] A ringtone playback problem can occur after updating from v64 to v65. To resolve this issue, just re-select the configured ringtone and ringtone speaker in the settings.
 * [CL-1748] Accessibility Support is disabled on windows to avoid freezes
 
+## Release 69.R1548 (8.12.2020, iOS, Android)
+
+**Auf einen Blick**
+
+- In certain specific cirumcstances, a call to a mobile phone is hung up after ringing one time
+
+**ÄNDERUNGEN**
+
+- [CL-1728] - Answering a call via CarPlay UI is unreliable
+- [CL-1760] - SIP Debug Logging switch doesn't work
+- [CL-1772] - mobile client hangs up the incoming call under certain circumstances
+
 ## Release 68.R1423 (27.11.2020, Windows, Linux, macOS)
 
 **Overview**
