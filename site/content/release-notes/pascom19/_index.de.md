@@ -61,8 +61,8 @@ In diesem Abschnitt werden die Änderungen erläutert, die Sie bei der Migration
 * **Cisco SPA Gateway** werden nicht mehr unterstützt. Vorhandene Geräte werden in generische SIP Geräte migriert.
 * pascom 18 Instanzen können nicht mehr mit dieser Host-Version betrieben werden. (CSP)
 * Outbound Proxy Schnittstellen bei Ämtern werden bei manchen Vorlagen nun erzwungen.
-* **Angepasste Dashboards in Analytics** werden gelöscht und müssen neu erstellt werden.
-* **Grafana-Dashboards des Hosts** müssen ggf. angepasst oder neu erstellt werden
+* **Angepasste Dashboards in Analytics** müssen ggf. bearbeitet werden.
+* **Angepasste Grafana-Dashboards** des Hosts werden gelöscht.
 
 
 ## Bekannte Probleme

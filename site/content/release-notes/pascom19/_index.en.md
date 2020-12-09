@@ -60,8 +60,8 @@ This section explains the changes that you must consider when migrating to pasco
 * **Cisco SPA Gateway** no longer supported. Existing devices will be migrated to generic SIP devices.
 * pascom 18 instances can no longer be run on this host version
 * Outbound Proxy Interfaces for Trunks are now visible with this update
-* **Customised Analytics Dashboards** will be deleted and must be created again
-* **Grafana Dashboards** on the host must be newly created or modified
+* **Customised Analytics Dashboards** must maybe modified again
+* **Customised Grafana Dashboards** on the host must be newly created.
 
 
 ## Known Issues
