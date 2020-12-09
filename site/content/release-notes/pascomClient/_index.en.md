@@ -32,7 +32,9 @@ These following issues are known to us and we are already working on solutions.
 * [CL-1501] A ringtone playback problem can occur after updating from v64 to v65. To resolve this issue, just re-select the configured ringtone and ringtone speaker in the settings.
 * [CL-1748] Accessibility Support is disabled on windows to avoid freezes
 
-## Release 69.R1548 (8.12.2020, iOS, Android)
+## Release 69.R1548 (08.12.2020)
+
+(iOS, Android)
 
 **Overview**
 
@@ -45,7 +47,9 @@ These following issues are known to us and we are already working on solutions.
 - [CL-1760] - SIP Debug logging switch doesn't work
 - [CL-1772] - Mobile client hangs up the incoming call under certain circumstances
 
-## Release 68.R1423 (27.11.2020, Windows, Linux, macOS)
+## Release 68.R1423 (27.11.2020)
+
+(Windows, Linux, macOS)
 
 **Overview**
 
