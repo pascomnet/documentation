@@ -34,15 +34,16 @@ These following issues are known to us and we are already working on solutions.
 
 ## Release 69.R1548 (8.12.2020, iOS, Android)
 
-**Auf einen Blick**
+**Overview**
 
-- In certain specific cirumcstances, a call to a mobile phone is hung up after ringing one time
+- Fixed bug causing an incoming mobile call to hang up after ringing only once
+- Improved CarPlay UI call answer reliability
 
-**ÄNDERUNGEN**
+**MODIFICATIONS**
 
 - [CL-1728] - Answering a call via CarPlay UI is unreliable
-- [CL-1760] - SIP Debug Logging switch doesn't work
-- [CL-1772] - mobile client hangs up the incoming call under certain circumstances
+- [CL-1760] - SIP Debug logging switch doesn't work
+- [CL-1772] - Mobile client hangs up the incoming call under certain circumstances
 
 ## Release 68.R1423 (27.11.2020, Windows, Linux, macOS)
 
