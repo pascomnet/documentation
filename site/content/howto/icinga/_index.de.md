@@ -46,15 +46,15 @@ https://github.com/prometheus/nagios_plugins
 
 **RAM Auslastung (Critical < 90%, Warning < 75%)**
 
-    ./check_prometheus_metric.sh -H 'https://_PASCOM-IP_:8443/prometheus' -q '100-(node_memory_MemAvailable/node_memory_MemTotal*100)'  -n "Memory used in %" -w 75 -c 90 -C "-k" -t vector
+    ./check_prometheus_metric.sh -H 'https://_PASCOM-IP_:8443/prometheus' -q '100-(node_memory_MemAvailable_bytes/node_memory_MemTotal_bytes*100)'  -n "Memory used in %" -w 75 -c 90 -C "-k" -t vector
 
 **Auslastung der SYSTEM Disk (Critical < 3GB, Warning < 8GB)**
 
-    ./check_prometheus_metric.sh -H 'https://_PASCOM-IP_:8443/prometheus' -q 'node_filesystem_free{mountpoint="/SYSTEM"}/1024/1024/1024'  -n "Number of free diskspace in GB" -w 8000 -c 3000 -C "-k" -t vector -m lt
+    ./check_prometheus_metric.sh -H 'https://_PASCOM-IP_:8443/prometheus' -q 'node_filesystem_avail_bytes{mountpoint="/SYSTEM"}/1024/1024/1024'  -n "Number of free diskspace in GB" -w 8000 -c 3000 -C "-k" -t vector -m lt
 
 **Auslastung der RAM Disk (Critical < 400MB, Warning < 200MB)**
 
-    ./check_prometheus_metric.sh -H 'https://_PASCOM-IP_:8443/prometheus' -q 'node_filesystem_free{mountpoint="/"}/1024/1024'  -n "Number of free diskspace in MB" -w 8000 -c 3000 -C "-k" -t vector -m lt
+    ./check_prometheus_metric.sh -H 'https://_PASCOM-IP_:8443/prometheus' -q 'node_memory_MemAvailable_bytes/1024/1024'  -n "Number of free diskspace in MB" -w 8000 -c 3000 -C "-k" -t vector -m lt
 
 **Auslastung der CPU (load1)  (Critical < 10, Warning < 5. Werte werden mit 10 multipliziert)**
 
