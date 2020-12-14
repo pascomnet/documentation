@@ -90,7 +90,7 @@ These problems are known to us and we are already working on a solution
 * Integrated Trunk template for German VoIP provider NetCologne.
 * Improved Analytics statistics.
 * Added new Grafana version at both the host and instance level.
-* Upgraded Host Operating System to Ubuntu 18.08 LTS.
+* Upgraded Host Operating System to Ubuntu 18.04 LTS.
 
 **Modifications**
 

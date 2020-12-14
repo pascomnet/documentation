@@ -92,7 +92,7 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 * Amtsvorlage für Netcologne integriert.
 * Analytics Statistiken verbessert.
 * Neue Grafana Version auf Host- und Instanzebene.
-* Host Betriebssystem ist nun Ubuntu 18.08 LTS.
+* Host Betriebssystem ist nun Ubuntu 18.04 LTS.
 
 **ÄNDERUNGEN**
 
