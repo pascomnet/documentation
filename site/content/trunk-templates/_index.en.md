@@ -29,6 +29,7 @@ Find out [more]({{<ref"trunks/templates#pascom-managed-trunk-templates">}}) abou
 |[HFO Telekom]( {{< ref "/trunk-templates/hfo-telecom" >}})|DE|All|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
 |M-Net|DE (Regional)|SIP Trunk|<i class='fas fa-check'></i>|<i class='fas fa-times'></i><br/><sub> Is currently not supported.</sub>||
 |Magenta.at (formerly UPC)|AT|SIP Trunk|<i class='fas fa-check'></i>|<i class='fas fa-times'></i><br/><sub> Is currently not supported.</sub>|
+|[NetCologne]( {{< ref "/trunk-templates/netcologne" >}})|DE|Sip Trunk|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
 |[Peoplefone]( {{< ref "/trunk-templates/peoplefone" >}})|CH, DE, AT, PL, LT|Alle|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
 |[Plusnet (QSC)]( {{< ref "/trunk-templates/plusnet" >}})|DE|Ipfonie extended connect|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
 |[R-Kom]( {{< ref "/trunk-templates/rkom" >}})|DE (Regional)|VoipTrunk, <br /> Glasfaser Ostbayern|<i class='fas fa-check'></i>|<i class='fas fa-check'></i> <br/><sub>When migrating a local trunk to the pascom cloud, it is first necessary to coordinate with the R-Kom sales team.</sub>|<i class='fas fa-check'></i>|

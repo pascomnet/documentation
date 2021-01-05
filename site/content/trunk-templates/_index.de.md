@@ -31,6 +31,7 @@ Erfahren Sie [hier]({{< ref "trunks/templates#pascom-managed-amtsvorlagen">}}) m
 |[[HFO Telekom]( {{< ref "/trunk-templates/hfo-telecom" >}})]( {{< ref "/trunk-templates/hfo-telecom" >}})|DE|Alle|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
 |M-Net|DE (Regional)|SIP Trunk|<i class='fas fa-check'></i>|<i class='fas fa-times'></i><br/><sub> Wird derzeit nicht unterstützt.</sub>||
 |Magenta.at (ehemals UPC)|AT|SIP Trunk|<i class='fas fa-check'></i>|<i class='fas fa-times'></i><br/><sub> Wird derzeit nicht unterstützt.</sub>|
+|[NetCologne]( {{< ref "/trunk-templates/netcologne" >}})|DE|Sip Trunk|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
 |[Peoplefone]( {{< ref "/trunk-templates/peoplefone" >}})|CH, DE, AT, PL, LT|Alle|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
 |[Plusnet (QSC)]( {{< ref "/trunk-templates/plusnet" >}})|DE|Ipfonie extended connect|<i class='fas fa-check'></i>|<i class='fas fa-check'></i>|
 |[R-Kom]( {{< ref "/trunk-templates/rkom" >}})|DE (Regional)|VoipTrunk, <br /> Glasfaser Ostbayern|<i class='fas fa-check'></i>|<i class='fas fa-check'></i> <br/><sub>Bei einem Umzug des lokalen Amts zur pascom Cloud ist eine Abstimmung mit dem R-Kom Vertrieb notwendig.</sub>|<i class='fas fa-check'></i>|
