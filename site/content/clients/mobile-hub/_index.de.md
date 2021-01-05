@@ -1,6 +1,6 @@
 ---
 title: Mobile Hub Einrichtung
-description: Die Einrichtung des Mobile Hub ist optional und wird nur benötigt, wenn Sie den pascom Mobile Client GSM-Fallback nutzen möchten.
+description: Die Einrichtung des Mobile Hub wird benötigt, wenn Sie den pascom Mobile Client nutzen möchten.
 weight: 60
 ---
 
