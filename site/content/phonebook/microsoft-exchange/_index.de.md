@@ -31,11 +31,6 @@ Der Connector durchsucht rekursiv alle öffentlichen Ordner nach Adressbüchern 
 Möchten Sie bestimme öffentliche Adressbücher nicht synchronisieren, entziehen Sie
 dem pascom Exchange Benutzer ensprechend die Leserechte auf dieses Adressbuch.
 
-### Freigegebene Adressbücher
-
-Analog zu den öffentlichen Adressbüchern synchronisiert der Exchange Connector auch
-alle Telefonbücher die ein beliebiger Exchange Benutzer dem pascom Exchange Benutzer
-freigegeben hat.
 
 ### Persönlicher Adressbücher
 

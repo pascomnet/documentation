@@ -28,10 +28,6 @@ The Connector recursively searches through all public folders for address books,
 
 Should you wish to not sync specific address books, simply revoke the pascom Exchange user's read permissions for these address books.
 
-### Shared Address Books
-
-Similar to public address books, the pascom Exchange Connector can also synchronize all phone books, which an Exchange user has shared with the pascom Exchange User.
-
 ### Personal Address Books
 
 The connector also searches for personal address books belonging to an Exchange user and synchronizes these with the corresponding pascom phone system user's personal address book.
