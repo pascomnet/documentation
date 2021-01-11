@@ -24,7 +24,7 @@ In this section, we give you an overview of all breaking changes in the pascom c
 ## Known Issues
 
 {{% notice issues%}}
-These following issues are known to us and we are already working on solutions.
+The following issues are known to us and we are already working on solutions.
 {{% / notice%}}
 
 * [CL-1165] Outlook support is unstable on some systems and can cause the pascom client to crash
@@ -35,13 +35,13 @@ These following issues are known to us and we are already working on solutions.
 
 ## Release 70.R1493 (11.01.2021)
 
-**Auf einen Blick**
+**Overview**
 
 - Note: this is the last version supporting pascom 17 and 18
-- Fixed various crash reasons and improved stability
-- Fixed wrong displaying of license error messages
-- correctly format swiss phone numbers
-- the client now shows the correct name and avatar after renaming a user
+- Improved client stability and fixed various crash causes
+- Fixed incorrect display of license error messages
+- Swiss phone numbers are now correctly formated
+- If a user is renamed, the client now shows the correct name and avatar.
 
 **Tickets**
 
