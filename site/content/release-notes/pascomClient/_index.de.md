@@ -37,11 +37,11 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 
 **Auf einen Blick**
 
-- Hinweis: Dies ist die letzte Version mit support für pascom 17 und 18
-- Stabilität des Clients verbessert und diverse Absturzursachen behoben
-- Falsche Anzeigen von Lizenzfehlermeldungen behoben
-- Schweizer Telefonnummern werden nun korrekt formattiert
-- Wird ein Benutzer umbennant, so zeigt der Client nun immer die richtigen Informationen an
+- Hinweis: Dies ist die letzte Version mit Support für pascom 17 und 18 Server.
+- Stabilität des Clients verbessert und diverse Absturzursachen behoben.
+- Falsche Anzeigen von Lizenzfehlermeldungen behoben.
+- Schweizer Telefonnummern werden nun korrekt formatiert.
+- Wird ein Benutzer umbenannt, so zeigt der Client nun immer die richtigen Anzeigenamen und Avatare an.
 
 **Tickets**
 

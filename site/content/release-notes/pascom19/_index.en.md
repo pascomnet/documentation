@@ -62,6 +62,7 @@ This section explains the changes that you must consider when migrating to pasco
 * Outbound Proxy Interfaces for Trunks are now visible with this update
 * **Customised Analytics Dashboards** must maybe modified again
 * **Customised Grafana Dashboards** on the host must be newly created.
+* **Team calls** are not displayed in the journal of hardware phones (Alternative - pascom Client).
 
 
 ## Known Issues

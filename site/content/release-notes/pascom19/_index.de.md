@@ -63,6 +63,7 @@ In diesem Abschnitt werden die Änderungen erläutert, die Sie bei der Migration
 * Outbound Proxy Schnittstellen bei Ämtern werden bei manchen Vorlagen nun erzwungen.
 * **Angepasste Dashboards in Analytics** müssen ggf. bearbeitet werden.
 * **Angepasste Grafana-Dashboards** des Hosts werden gelöscht.
+* **Team-Anrufe** werden nicht im Journal von Hardware-Telefonen angezeigt.(Alternative - pascom Client).
 
 
 ## Bekannte Probleme

@@ -196,7 +196,7 @@ Within the **</config>** section, you can add your desired keys. The following e
 **Max** is the label which should appear on the telephone screen
 **103** is the extension to be watched.
 
-For more information, please refer to our [Grandstream Key Documentation](/grandstream_key_configuration.pdf).
+<!-- For more information, please refer to our [Grandstream Key Documentation](/grandstream_key_configuration.pdf). -->
 
 Via the menu tab {{< ui-button "devices" >}}, assign these default configurations to the telephones which should have this BLF configuration. Save and apply your changes and once the phones have restarted, the changes will have taken affect.
 

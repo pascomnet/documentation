@@ -208,7 +208,7 @@ Im Bereich **</config>** können Sie Ihre Wunschtasten einfügen. Folgendes Beis
 
 *Erklärung*: **11** ist der Code für die BLF-Taste; **0** ist er erste Account auf dem Telefon; **Max** erscheint am Telefon-Display als Bezeichnung der Taste; **103** ist die Nebenstelle die überwacht wird.
 
-Weitere Informationen entnehmen Sie bitte der [Grandstream-Tasten-Dokumentation](/grandstream_key_configuration.pdf).
+<!-- Weitere Informationen entnehmen Sie bitte der [Grandstream-Tasten-Dokumentation](/grandstream_key_configuration.pdf). -->
 
 Weisen Sie diese Basis-Konfiguration über den Tab {{< ui-button "Geräte" >}} den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und speichern Sie, nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
 
