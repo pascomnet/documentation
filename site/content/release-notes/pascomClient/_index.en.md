@@ -32,6 +32,33 @@ These following issues are known to us and we are already working on solutions.
 * [CL-1501] A ringtone playback problem can occur after updating from v64 to v65. To resolve this issue, just re-select the configured ringtone and ringtone speaker in the settings.
 * [CL-1748] Accessibility Support is disabled on windows to avoid freezes
 
+
+## Release 70.R1493 (11.01.2021)
+
+**Auf einen Blick**
+
+- Note: this is the last version supporting pascom 17 and 18
+- Fixed various crash reasons and improved stability
+- Fixed wrong displaying of license error messages
+- correctly format swiss phone numbers
+- the client now shows the correct name and avatar after renaming a user
+
+**Tickets**
+
+- [CL-1716] - Crash in avatar scaling code
+- [CL-1736] - Upgrade to Qt 5.15.2
+- [CL-1750] - Transfer via roster is disabled for the internal user the phonecall is currently active with
+- [CL-1751] - Call notification is missing queue information
+- [CL-1752] - Wrong error message is shown if license is exceeded
+- [CL-1754] - Missing toast message when downloading unavailable voicemails
+- [CL-1756] - 'Phone Book Info' heading too small on macOS
+- [CL-1757] - macOS and iOS builds fail after Qt and Xcode updates
+- [CL-1758] - Swiss phone numbers are formatted wrongly
+- [CL-1763] - pascom Client shows wrong information if user is recreated with same extension
+- [CL-1764] - Racy init between PlatformController and GStreamerController
+- [CL-1770] - Upgrade to GStreamer 1.18.2
+- [CL-1791] - Set do-nack property to false in gstreamer controller
+
 ## Release 69.R1548 (08.12.2020)
 
 (iOS, Android)

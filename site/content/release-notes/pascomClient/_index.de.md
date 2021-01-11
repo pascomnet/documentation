@@ -33,6 +33,33 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 * [CL-1748] Accessibility Support ist unter Windows momentan deaktiviert um ein einfrieren des Clients zu vermeiden.
 
 
+## Release 70.R1493 (11.01.2021)
+
+**Auf einen Blick**
+
+- Hinweis: Dies ist die letzte Version mit support für pascom 17 und 18
+- Stabilität des Clients verbessert und diverse Absturzursachen behoben
+- Falsche Anzeigen von Lizenzfehlermeldungen behoben
+- Schweizer Telefonnummern werden nun korrekt formattiert
+- Wird ein Benutzer umbennant, so zeigt der Client nun immer die richtigen Informationen an
+
+**Tickets**
+
+- [CL-1716] - Crash in avatar scaling code
+- [CL-1736] - Upgrade to Qt 5.15.2
+- [CL-1750] - Transfer via roster is disabled for the internal user the phonecall is currently active with
+- [CL-1751] - Call notification is missing queue information
+- [CL-1752] - Wrong error message is shown if license is exceeded
+- [CL-1754] - Missing toast message when downloading unavailable voicemails
+- [CL-1756] - 'Phone Book Info' heading too small on macOS
+- [CL-1757] - macOS and iOS builds fail after Qt and Xcode updates
+- [CL-1758] - Swiss phone numbers are formatted wrongly
+- [CL-1763] - pascom Client shows wrong information if user is recreated with same extension
+- [CL-1764] - Racy init between PlatformController and GStreamerController
+- [CL-1770] - Upgrade to GStreamer 1.18.2
+- [CL-1791] - Set do-nack property to false in gstreamer controller
+
+
 ## Release 69.R1548 (08.12.2020)
  
  (iOS, Android)  
