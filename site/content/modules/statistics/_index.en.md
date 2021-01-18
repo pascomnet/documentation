@@ -381,13 +381,15 @@ Click {{< ui-button "View JSON" >}} in order to display the JSON configurations 
 
 It is possible to export individual call analytics statistics as a CSV file. 
 
-To do so, click on the title of any Analysis / Statistic in an existing dashboard in order to open the advanced action options. With the mouse fo the {{< ui-button "More" >}} action and select the {{< ui-button "Export CSV" >}} option. 
+To do so, click on the title of any Analysis / Statistic in an existing dashboard in order to open the advanced action options. Klick on the {{< ui-button "Inspect" >}} action and select the {{< ui-button "Data" >}} option. 
 
 ![Exporting Analyses](Panel-Options.png)
 
-Finally, a details window will open in which you can define the CSV settings such as Date and Analysis Display.
+Finally, a details window will open in which you can define the CSV settings.
 
-Click {{< ui-button "Export" >}} and the CSV file will be generated.
+![Exporting Analyses](Panel-Export.png)
+
+Click {{< ui-button "Download CSV" >}} and the CSV file will be generated.
 
 
 ### Sharing Dashboards

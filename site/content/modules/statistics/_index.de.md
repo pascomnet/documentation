@@ -388,13 +388,15 @@ Klicken Sie auf {{< ui-button "View JSON" >}} um den JSON-Konfigurationscode anz
 
 Es ist möglich jede einzelne Statistik des Rufauswertungs-Tools via CSV zu exportieren. 
 
-Klicken Sie dazu die Bezeichnung einer beliebigen Auswertung/ Statistik in einem bestehenden Dashboard an, um eine erweiterte Aktions-Auswahl zu erhalten. Fahren Sie mit der Maus über die Aktion {{< ui-button "More" >}} und wählen Sie {{< ui-button "Export CSV" >}} aus. 
+Klicken Sie dazu die Bezeichnung einer beliebigen Auswertung/ Statistik in einem bestehenden Dashboard an, um eine erweiterte Aktions-Auswahl zu erhalten. Fahren Sie mit der Maus über die Aktion {{< ui-button "Inspect" >}} und wählen Sie {{< ui-button "Data" >}} aus. 
 
 ![Auswertung exportieren](Panel-Options.png)
 
-Anschließend öffnet sich ein Detail-Fenster in dem Sie Einstellungen, wie Datumsformat und Darstellung der Auswertung zu dem CSV angeben können.
+Anschließend öffnet sich ein neues Fenster in dem Sie weitere Einstellungen für Ihren Export vornehmen können.
 
-Mit einem Klick auf {{< ui-button "Export" >}} wird die CSV-Datei generiert.
+![Auswertung exportieren](Panel-Export.png)
+
+Mit einem Klick auf {{< ui-button "Download CSV" >}} wird die CSV-Datei generiert.
 
 ### Dashboards teilen
 
