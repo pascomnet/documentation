@@ -17,6 +17,10 @@ weight: 5
 
 Tarif in Kombination mit pascom: **DeutschlandLan SIP Trunk**  
 
+{{% notice warning %}}
+**Telekom Company Flex SIP Trunk** wird derzeit noch nicht unterstützt.
+{{% /notice %}}
+
 
 Informationen über Leistungsmerkmale und Tarife finden Sie [hier](https://geschaeftskunden.telekom.de/startseite/festnetz-internet/tarife/333506/deutschlandlan-sip-trunk.html). Die [pascom Telefonanlage](https://www.pascom.net/de/voip-telefonanlage/ "pascom VoIP-Telefonagen Software") (sowohl Onsite als auch Cloud) unterstützt nur Business-SIP-Trunk Anschlüsse der Telekom.
 

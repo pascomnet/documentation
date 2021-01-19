@@ -14,6 +14,10 @@ weight: 5
 
 Tariff in combination with pascom: **DeutschlandLAN SIP Trunk**  
 
+{{% notice warning %}}
+**Telekom Company Flex SIP Trunk** is not supported yet.
+{{% /notice %}}
+
 
 Deutsche Telekom package specifications and tariff information can be found [here](https://geschaeftskunden.telekom.de/startseite/festnetz-internet/tarife/333506/deutschlandlan-sip-trunk.html). pascom phone systems (onsite and cloud) support only Deutsche Telekom business SIP Trunk tariffs.  
 
