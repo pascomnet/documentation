@@ -70,10 +70,18 @@ Select {{< ui-button "ACD" >}} > {{< ui-button "Action conditions" >}} in the pa
 
 When adding the condition, select extension switch as the type and enter a **title**.
 
-Enter an extension number that should be used. The switch will be activated when a call is made to this extension. Another call will deactivate the switch again. The extension switch can be used as a condition for actions.
+Enter an extension number that should be used. The switch will be activated when a call is made to this extension. Another call will deactivate the switch again. The extension switch can be used as a condition for actions. Finally, decide which status the extension switch should have after creation. Switched on or off.
 
 Extension switches can be used if, for example, you want to play a voice prompt such as "All staff members are currently in a meeting" as soon as there is an inbound call to the central office. Another scenario could be that you do not have regular business hours. When the last employee leaves the office, the message could be switched to indicate that the incoming call has been received "outside of business hours".
 
 {{% notice tip %}}
 You can configure your IP telephone so that it indicates an active extension switch with the LED of the key for the specified extension number. A deactivation of the switch will trigger the LED to go out.
 {{% /notice %}}
+
+#### Using the extension switch in the pascom client
+
+If you want to provide the extension switch directly to your team as an interactive element in the contact list, you have to set roles for the extension switch.
+
+1. more information on [roles]({{< ref "/user/role" >}}).
+
+2. use extension switch in the pascom [client]({{< ref "/client-desktop-userguide/extension-switch" >}}).

@@ -65,10 +65,20 @@ Wählen Sie hierzu in der pascom Weboberfläche {{< ui-button "Anrufverteilung" 
 
 Beim Hinzufügen selektieren Sie den **Typ Durchwahlschalter** und geben Sie eine **Bezeichnung** ein.
 
-Geben Sie eine Durchwahl an. Wird diese Durchwahl angerufen ist dieser Schalter aktiv. Durch einen erneuten Anruf wird dieser wieder deaktiviert. Beim Anrufen des Durchwahlschalters erhalten Sie eine Info über den aktuellen Status. In den Aktionen können Sie die Durchwahlschalter dann als Bedingung verwenden.
+Geben Sie eine Durchwahl an. Wird diese Durchwahl angerufen ist dieser Schalter aktiv. Durch einen erneuten Anruf wird dieser wieder deaktiviert. Beim Anrufen des Durchwahlschalters erhalten Sie eine Info über den aktuellen Status. In den Aktionen können Sie die Durchwahlschalter zusätzlich als Bedingung verwenden. Entscheiden Sie abschließend noch, welchen Status der Durchwahlschalter nach Erstellung haben soll. Ein- oder Ausgeschaltet.
 
 Durchwahlschalter sind nützlich wenn Sie z. B. die Zentrale spontan auf die Ansage *"Alle Mitarbeiter befinden sich derzeit in einem Meeting"* schalten wollen oder falls es keine festen Geschäftszeiten gibt und der letzte der die Firma verlässt die Zentrale auf "außerhalb der Geschäftszeiten" schalten soll.
 
 {{% notice tip %}}
 Die Durchwahl eines Durchwahlschalters können Sie auf eine LED-**Nebenstellentaste** Ihres IP-Telefones legen. Somit leuchtet die LED solange der Schalter aktiv ist und erlischt bei inaktivem Schalter.
 {{% /notice %}}
+
+#### Durchwahlschalter im Client nutzen
+
+Möchten Sie Ihrem Team den Durchwahlschalter direkt als interaktives Element in der Kontaktliste bereistellen, so müssen Sie den Durchwahlschalter unter den Rollen entsprechend verrechten.
+
+1. Weitere Informationen zu [Rollen]({{< ref "/user/role" >}}).
+
+2. Durchwahlschalter im [Client]({{< ref "/client-desktop-userguide/extension-switch" >}}) nutzen.
+
+
