@@ -79,6 +79,6 @@ For onsite telephony, the pascom Outbound Proxy is required for this provider. I
 
 The trunnk is established and successfully registered. As a final step, you define your incoming and outgoing call rules to set the call behavior of your pascom telephone system. 
 
-We explain how to set up call rules in the [Call Rules Tutorial]({{{< ref "trunks/rules">}})
+We explain how to set up call rules in the [Call Rules Tutorial]({{< ref "trunks/rules">}})
 
 

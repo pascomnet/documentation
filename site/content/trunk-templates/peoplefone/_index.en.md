@@ -1,6 +1,6 @@
 ---
 title: Peoplefone
-description: Overview of the pascom managed Provider Template from Peoplefone
+description: Overview of the pascom managed Provider Template from peoplefone
 weight: 35
 ---
 {{< doctype "both"  >}}
@@ -8,13 +8,13 @@ weight: 35
 
 {{< description >}}
 
-![Peoplefone Provider Logo](peoplefone_logo.png?width=50%)
+![peoplefone Provider Logo](peoplefone_logo.png?width=50%)
 
 ## Overview
 
 Tariff in combination with pascom: **All offered Tariffs**  
 
-Information about features and tariff informations can be found here: [Peoplefone](https://www.peoplefone.de/de/geschaeftskunden).
+Information about features and tariff informations can be found here: [peoplefone](https://www.peoplefone.de/de/geschaeftskunden).
 
 
 {{< num 1 "Your Account" >}}
@@ -91,7 +91,7 @@ Here you can see if the **registration** has worked. (*registered*).
 
 The trunnk is established and successfully registered. As a final step, you define your incoming and outgoing call rules to set the call behavior of your pascom telephone system. 
 
-We explain how to set up call rules in the [Call Rules Tutorial]({{{< ref "trunks/rules">}})
+We explain how to set up call rules in the [Call Rules Tutorial]({{< ref "trunks/rules">}})
 
 
 
