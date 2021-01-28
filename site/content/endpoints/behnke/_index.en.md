@@ -1,6 +1,6 @@
 ---
-title: Behnke Door Intercom Station
-description: How to integrate the door intercom statio from Behnke into your pascom phone system
+title: Behnke Door Intercom
+description: How to integrate Behnke door intercoms systems into your pascom phone system
 weight: 10
 ---
 

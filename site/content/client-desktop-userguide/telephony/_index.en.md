@@ -1,7 +1,7 @@
 ---
-title: Telephoning with the pascom Client
+title: Making and receiving with the pascom Client
 weight: 5
-description: This Tutorial shows you the telephony functions of the pascom Client
+description: This tutorial shows you the telephony functions of the pascom Client
 ---
 
 {{< doctype "both" >}}
@@ -15,7 +15,7 @@ description: This Tutorial shows you the telephony functions of the pascom Clien
 
 ## Telephoning with the pascom Client
 
-Before you start your first call, you must decide in the [Device Control]({{< ref "/client-desktop-userguide/mydevices" >}}) for a device that you want to use for outgoing calls. This can be the **integrated softphone** of the pascom client, or a **desktop phone** that has been assigned to you.
+Before you start your first call, you will need to go to the [Device Menu]({{< ref "/client-desktop-userguide/mydevices" >}}) and decide on the device you wish to use for outbound calls. For example, this can be the **integrated softphone** of the pascom client, or a **desktop phone** that has been assigned to you.
 
 ### Start a Call
 

@@ -21,7 +21,7 @@ The Phone area or Phone field offers some functions which are explained below.
 
 **Dialpad**
 
-Enter the phone number you want to call directly in the dialing field. Do not worry about the syntax of the phone number. The pascom client takes care of it. To start the call, press the **green handset button**. You can also search directly for **persons** in the dialing field. You can find more information [here](link to search)
+Enter the phone number you want to call directly in the dialing field. Do not worry about the syntax of the phone number. The pascom client takes care of it. To start the call, press the **green handset button**. You can also search directly for **persons** in the dialing field. You can find more information [here]({{< ref "/client-mobile-userguide/search" >}})
 
 ![The Dialpad](dialpad_input.en.jpg)
 </br>

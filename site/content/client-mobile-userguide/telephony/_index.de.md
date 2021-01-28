@@ -20,7 +20,7 @@ Der Telefonbereich bietet einige Funktionen die wir Ihnen nachfolgend erklären.
 
 **Wählfeld**
 
-Geben Sie im Wählfeld direkt die Rufnummer ein, die Sie anrufen möchten. Machen Sie sich keine Sorgen über die Syntax der Telefonnummer. Der pascom Client kümmert sich darum. Zum starten des Anrufs drücken Sie auf den **grünen Telefonhörer-Button**. Sie können im Wählfeld auch direkt nach **Personen** suchen. Weitere informationen finden Sie [hier](link zu Suche)
+Geben Sie im Wählfeld direkt die Rufnummer ein, die Sie anrufen möchten. Machen Sie sich keine Sorgen über die Syntax der Telefonnummer. Der pascom Client kümmert sich darum. Zum starten des Anrufs drücken Sie auf den **grünen Telefonhörer-Button**. Sie können im Wählfeld auch direkt nach **Personen** suchen. Weitere informationen finden Sie [hier]({{< ref "/client-mobile-userguide/search" >}}).
 
 ![Das Wählfeld](dialpad_input.de.jpg)
 </br>
