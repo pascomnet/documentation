@@ -114,7 +114,7 @@ Connected to Asterisk 16.8.0 currently running on werkstatt (pid = 705)
 werkstatt*CLI>
 ```
 {{% notice warning %}}
-Never update the pascom system using the **APT command**. Use the following [Update Guide]({{{< ref "/server/update">}})
+Never update the pascom system using the **APT command**. Use the following [Update Guide]({{< ref "/server/update">}})
 to update your system to the latest version.
 {{% /notice %}}
 

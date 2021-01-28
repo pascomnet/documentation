@@ -8,7 +8,7 @@ description: In this tutorial we show you how to use the tomedo® integration.
  
 {{< description >}}
 
-## Trainings Video
+## Training Video
 
 {{< youtube epDEnW36V60 >}} 
 
@@ -17,7 +17,7 @@ description: In this tutorial we show you how to use the tomedo® integration.
 
 
 When a new incoming call is received, you will receive a **PopUp message** from the pascom client, in which you can answer your patient's call.
-You can already open the caller's patient data records before you **answer** the call via the {{{< ui-button "Action - Button" >}}.
+You can already open the caller's patient data records before you **answer** the call via the {{< ui-button "Action - Button" >}}.
 
 
 ![New incomming call in tomedo®](tomedo-incomming-call.png)

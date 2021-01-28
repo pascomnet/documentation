@@ -109,7 +109,7 @@ Bereiten Sie einen DHCP-Server wie unter [Telefon-Provisionierung via DHCP]({{< 
 
 {{% notice tip %}}
 Handelt es sich nicht um ein fabrikneues Telefon setzen Sie es in jedem
-Fall auf **Werkseinstellungen**zurück. Um dies am Telefon zu tun, schalten Sie das Telefon ein und drücken Sie dann {{{< ui-button "OK" >}}} und halten Sie die Taste gedrückt, bis **Factory Reset** auf dem Display erscheint. Bestätigen Sie durch Drücken der {{{< ui-button "OK" >}}. 
+Fall auf **Werkseinstellungen**zurück. Um dies am Telefon zu tun, schalten Sie das Telefon ein und drücken Sie dann {{< ui-button "OK" >}}} und halten Sie die Taste gedrückt, bis **Factory Reset** auf dem Display erscheint. Bestätigen Sie durch Drücken der {{< ui-button "OK" >}}. 
 {{% /notice %}}
 
 Stecken Sie das IP-Telefon an das Netzwerk. Das Telefon enthält einen eingebauten Switch, benutzen Sie den Ethernet-Port mit der Bezeichnung **NET**. Falls Sie kein **PoE** (Power over Ethernet) verwenden, stecken Sie das Telefon an den Netzstrom.

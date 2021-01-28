@@ -88,7 +88,7 @@ For local installations of the pascom server it is possible to commission end de
 
 {{< num 1 "Prepare your DHCP-Server" >}}
 
-Prepare a DHCP server as described in [Phone Provisioning via DHCP]({{{< ref "/howto/dhcp-provisioning" >}}).
+Prepare a DHCP server as described in [Phone Provisioning via DHCP]({{< ref "/howto/dhcp-provisioning" >}}).
 
 {{< num 2 "Connect your Device" >}}
 
@@ -98,7 +98,7 @@ Should the telephone not be factory new, ensure you perform a **factory reset**.
 
 Connect the phone to your network. Snom IP phones come with a built in switch, allowing you to connect the phone directly via the Ethernet port labelled as **NET**. Should you not have a **PoE** option available, connect the phone to a power supply.
 
-The device is **automatically** configured by the pascom server and **appears** in the list {{{< ui-button "Devices" >}}} > {{{< ui-button "Device List" >}}. 
+The device is **automatically** configured by the pascom server and **appears** in the list {{< ui-button "Devices" >}} > {{< ui-button "Device List" >}}. 
 
 {{< num 3 "Assigning Users" >}}
 

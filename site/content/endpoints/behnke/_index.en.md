@@ -66,7 +66,7 @@ The **"Device Login Name "** assigned here, as well as the assigned **"Password 
 ![Create new Behnke device](newendpoint.en.PNG?width=80%)
 
 
-Under the tab {{{< ui-button "Assignment" >}} you assign the previosly created user to the door intercom station. Finally save and apply the job of the telephony configuration!
+Under the tab {{< ui-button "Assignment" >}} you assign the previosly created user to the door intercom station. Finally save and apply the job of the telephony configuration!
 
 
 ## Configure the Behnke door intercom station
