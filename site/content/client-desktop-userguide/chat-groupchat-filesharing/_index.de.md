@@ -41,7 +41,7 @@ Der dynamische Kontentbereich bzw. das Ansichtsfenster zeigt Ihnen dann die Chat
 
 ## Gruppen-Chat mit mehreren Kollegen
 
-Für Gruppen-Chat-Räume benötigen Sie zuerst eine pascom Gruppe die Sie mit folgender [Anleitung](Link zu pascom Gruppen) erstellen können.
+Für Gruppen-Chat-Räume benötigen Sie zuerst eine pascom Gruppe die Sie mit folgender [Anleitung]({{< ref "/client-desktop-userguide/pascom-groups" >}}) erstellen können.
 
 Klicken Sie in Ihrer Kontaktliste auf die {{< ui-button "Gruppe">}} um die Chat-Konversation zu öffnen.
 

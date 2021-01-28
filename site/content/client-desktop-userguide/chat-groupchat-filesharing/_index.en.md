@@ -40,7 +40,7 @@ The dynamic content area or view window will then show you the chat conversation
 
 ## Group chat with several colleagues
 
-For group chat rooms you first need a pascom group which you can create with the following [tutorial](link to pascom groups).
+For group chat rooms you first need a pascom group which you can create with the following [tutorial]({{< ref "/client-desktop-userguide/pascom-groups" >}}).
 
 Click on the {{< ui-button "group">}} in your contact list to open the chat conversation.
 
