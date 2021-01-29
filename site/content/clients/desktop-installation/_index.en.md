@@ -142,10 +142,6 @@ The pascom Desktop Client supports a range of command line options and reacts to
 
 Using the `--help` parameter for more information on which options and envirnoment variables are supported by your version of the pascom desktop client. 
 
-{{% notice tip %}}
-The Desktop Client must not be running when accessing the help output.
-{{% /notice %}}
-
 Example
 
 ```text
