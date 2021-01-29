@@ -146,10 +146,6 @@ Der pascom Desktop Client unterstützt auf allen Betriebsystemen zahlreiche Komm
 
 Welche Parameter und Umgebungsvariablen von Ihrer Version unterstützt werden können Sie durch den Parameter `--help` abfragen.
 
-{{% notice tip %}}
-Der Desktop Client darf nicht gestartet sein um die Hilfe auszugeben.
-{{% /notice %}}
-
 Beispiel
 
 ```text
