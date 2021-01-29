@@ -33,7 +33,6 @@ You can reach your answering machine / voice mailbox by clicking on the **Voicem
 ![The Voicemailbox](dialpad_voicemail.jpg)
 </br>
 
-
 **Redial**
 
 Use **Redial** to call the last contact / phone number dialed, again. 
