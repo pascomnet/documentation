@@ -20,6 +20,7 @@ In this section, we give you an overview of all breaking changes in the pascom c
 
 * Compatibility with pascom 16 and older has been discontinued. Older client versions can be found in our [Release archive] (https://www.pascom.net/en/downloads/#release-archive).
 * The pascom macOS client now requires macOS 10.12 and higher
+* pascom client with Apple M1 Silicon CPU. [More information]({{< ref "/clients/desktop-installation">}})
 
 ## Known Issues
 

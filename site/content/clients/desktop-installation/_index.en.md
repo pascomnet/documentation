@@ -110,6 +110,10 @@ System requirements: **macOS High Sierra 10.13** or higher
 * Drag the pascom icon (red) on to the Applications folder
 * As soon as the copy process has been completed, you will be able to start the client
 
+### Installation on MAC with Apple M1 Silicon CPU
+
+As soon as you want to install the pascom client on a MAC with Apple M1 Silicon chipset, the installer will ask you to install the [Rosetta 2](https://support.apple.com/de-de/HT211861) program. This program ensures that you can use applications designed for a Mac with Intel processor.
+
 ## Linux Installation
 
 {{% notice tip %}}

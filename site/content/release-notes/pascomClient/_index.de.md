@@ -20,6 +20,7 @@ In diesem Abschnitt geben wir Ihnen einen Überblick aller wichtigen Änderungen
 
 * Kompatibilität zu pascom 16 und älter wurde eingestellt. Ältere Client Versionen finden Sie in unserem [Release-Archiv](https://www.pascom.net/de/downloads/#release-archive).
 * Der pascom macOS Client setzt jetzt mindestens macOS 10.12 voraus
+* pascom Client mit Apple M1 Silicon CPU nutzen. [Weitere Informationen]({{< ref "/clients/desktop-installation">}})
 
 ## Bekannte Probleme
 
