@@ -71,7 +71,7 @@ This section explains the changes that you must consider when migrating to pasco
 These problems are known to us and we are already working on a solution
 {{% / notice%}}
 
-* none
+* When upgrading from pascom 19.11 to 19.13, call forwarding configurations will be lost. This predominantly affects onsite customers. Please make a note of all call forwardings so that they can be readded after the update
 
 ## Release 19.13 (01.02.2021)
 

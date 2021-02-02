@@ -72,7 +72,7 @@ In diesem Abschnitt werden die Änderungen erläutert, die Sie bei der Migration
 Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 {{% /notice %}}
 
-* keine
+* Rufweiterleitungen gehen bei einem Update von Version 19.11 auf 19.13 verloren. Dies betrifft vorallem Onsite-Kunden. Bitte notieren Sie sich die Weiterleitungen um diese nach dem Update, wieder anzulegen. 
 
 ## Release 19.13 (01.02.2021)
 
