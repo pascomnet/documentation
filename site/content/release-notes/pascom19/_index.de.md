@@ -74,6 +74,32 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 
 * keine
 
+## Release 19.13 (01.02.2021)
+
+**Auf einen Blick** 
+
+* Unterstützung für [Telekom Company Flex]({{< ref "/trunk-templates/telekom-companyflex" >}}) Amt.
+* Let's Encrypt Unterstützung verbessert.
+
+**ÄNDERUNGEN**
+
+* [MD-12952] Management grafana shows the janus streams for all instances
+* [MD-12704] Setup Wizard: Error message appears under wrong input field
+* [MD-12706] Improve trunk import when 025out_bez already exists
+* [MD-12719] WebClient UI has no rounded corner when using Chromium Edge
+* [MD-12922] Show reconnect page after changing hostname or DNS
+* [MD-12949] Ensure that migrated instances has disabled xmpp logs
+* [MD-12944] Controller causes unnecessary high cpu load and traffic on consul servers
+* [MD-12828] Fix URL encoding for Grandstream remote control dial command with ‘#’
+* [MD-12916] Improve copy to clipboard button for provisioning URLs
+* [MD-12987] Reduce log level or output of parse-statemap.py because it pollutes the journal
+* [MD-12976] Upgrade liblxc1 because of csd memory leak
+* [MD-12128] Replace unmaintained acmetool with lets encrypt certbot
+* [MD-12955] Asterisk should not write messages.log
+* [MD-12953] Migration fails because of role-device link to a cisco gateway
+* [MD-12765] Support E.164 number format for outgoing trunk calls
+* [MD-12668] Add support for Telekom Company Flex Trunk
+* [MD-13014] Downgrade Kernel to Version 4.15 due to load spikes on AWS instances
 
 ## Release 19.12 (09.12.2020)
 

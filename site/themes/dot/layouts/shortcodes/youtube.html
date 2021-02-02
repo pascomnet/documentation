@@ -1,6 +1,13 @@
 
+<div class="cookieconsent-optout-marketing">
+  <p>
+  {{ .Site.Params.cookiebot.videoText }}
+  </p>
+  <a class="btn btn-primary" href="javascript:Cookiebot.renew()">{{ .Site.Params.cookiebot.videoButton }}</a>
+</div>
+
 <div class=video-container>
   <iframe id="{{ .Get 0 }}" type="text/html"
   src="https://www.youtube.com/embed/{{ .Get 0 }}?rel=0"
   frameborder="0"></iframe>
- </div>
+</div>

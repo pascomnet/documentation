@@ -73,6 +73,10 @@ whiteColor = "#ffffff"
       btnText = "Ask Our Support Forum"
       btnURL = "https://www.pascom.net/forum/tags/english"
 
+    [Languages.en.params.cookiebot]
+      videoText = "Please accept marketing cookies to watch this video"
+      videoButton = "ACCEPT" 
+
 
     # footer social icon
     [[Languages.en.socialIcon]]
@@ -147,6 +151,10 @@ whiteColor = "#ffffff"
       description = "Fragen Sie unser Support Forum. Wir sind hier um zu helfen!"
       btnText = "Support Forum Fragen"
       btnURL = "https://www.pascom.net/forum"
+
+    [Languages.de.params.cookiebot]
+      videoText = "Bitte akzeptieren Sie die Marketing-Cookies um dieses Video ansehen zu können"
+      videoButton = "AKZEPTIEREN" 
 
   
     # footer social icon
