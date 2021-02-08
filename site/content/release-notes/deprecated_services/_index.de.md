@@ -8,6 +8,19 @@ weight: 1000
 Hier finden Sie eine Übersicht über Services und Dienste, die mit der aktuellen pascom Version nicht mehr funktionieren.
 {{%/notice%}}
 
+
+### Unterstützung von Windows 7 und Android 32bit wird zum Jahresende eingestellt.
+**Software**
+
+|Datum|mit Version|
+|---|---|
+|01.01.2022|---|  
+
+Der pascom Client wird ab dem 01.01.2022 nicht mehr auf Windows7 und Android 32bit Systemen nutzbar sein. Diese Systeme haben sich mittlerweile stark verändert, weshalb die Unterstützung eine Menge Entwicklungs- und Bugfixing-Aufwand erzeugt.
+
+</br>
+<hr>
+
 ### Support für einige Yealink T4 Modelle endet 2021
 **Hardware**
 
