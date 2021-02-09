@@ -12,9 +12,18 @@ weight: 50
 
 The DATEV interface enables you to transfer incoming call data into your *DATEV Arbeitsplatz pro* software. What's more, the interface also allows DATEV users to start calls directly from the DATEV telephone book providing they are using the *DATEV Arbeitsplatz pro (DATEV Workstation Pro)* with the *Telefoniemodul (Telephony module)*. 
 
-{{% notice warning %}}
-DATEV Cloud is only compatible with pascom on-premise phone systems.
-If you have an on-site DATEV Arbeitsplatz pro solution, you can also connect and integrate with a pascom Cloud phone system.
+## Use pascom Cloud with DATEV ASP Cloud
+
+Datev also offers its products as Datev ASP in the cloud. This means that Datev provides a server in its data center where customers (tax advisor, lawyer, etc.) can connect via remote desktop. From this remote session, communication to the Internet is only possible via proxy (port 80 and 443). However, the law firm's network is connected to Datev ASP via VPN and has no port restrictions. In this scenario, you can connect to the office network via the remote session, but not to pascom.cloud.
+
+The pascom DATEV ASP Appliance provides a remedy by acting as a gateway in the law firm and forwarding the data to the pascom.cloud.
+
+### How does this work?
+
+![pascom DATEV ASP Appliance](datev_asp_appliance_en.png)
+
+{{% notice info %}}
+For more information about the pascom DATEV ASP Appliance for your company, please contact our sales team.
 {{% /notice %}}
 
 ## Configuration

@@ -12,9 +12,18 @@ weight: 50
 
 Die DATEV-Schnittstelle ermöglicht es bei einem eingehenden Anruf die Anrufdaten in Ihre *DATEV Arbeitsplatz pro*-Software zu übertragen. Ebenso können Sie aus dem DATEV-Telefonbuch Gespräche starten. Voraussetzung ist die Verwendung von *DATEV Arbeitsplatz pro* mit dem *Telefoniemodul*.
 
-{{% notice warning %}}
-DATEV Cloud ist nur kompatibel zu einer pascom OnPremise Telefonanlage vor Ort.
-Verwenden Sie DATEV Arbeitsplatz pro vor Ort können Sie auch eine pascom Cloud Anlage verwenden.
+## pascom Cloud mit DATEV ASP Cloud verwenden
+
+Datev bietet ihre Produkte auch als Datev ASP in der Cloud an. Dies bedeutet, dass Datev einen Server in ihrem Rechenzentrum bereit stellt, auf dem sich Kunden (Steuerberater, Rechtsanwalt usw) via Remotedesktop verbinden können. Von dieser Remotesitzung aus, kann nur über Proxy (port 80 und 443) ins Internet kommuniziert werden. Das Netz der Kanzlei ist jedoch mit VPN an die Datev ASP angebunden und hat keinerlei Einschränkungen der Ports. Bei diesem Szenario, kann man sich über die Remotesitung zwar ins Kanzleinetz aber nicht zur pascom.cloud verbinden.
+
+Abhilfe schafft die pascom DATEV ASP Appliance, welche als Gateway in der Kanzlei, die Daten an die pascom.cloud weiterleitet.
+
+### Wie funktioniert das?
+
+![pascom DATEV ASP Appliance](datev_asp_appliance_de.png)
+
+{{% notice info %}}
+Weitere Informationen zu der pascom DATEV ASP Appliance für Ihr Unternehmen erhalten Sie von unserem Vertrieb.
 {{% /notice %}}
 
 ## Konfiguration
