@@ -38,7 +38,7 @@ Sollte das Label nicht angelegt sein, erscheint beim Übertragen der Anrufdaten 
 
 ## Bedienung
 
-![DATEV-Klick ausführen](datev-journal.de.png)
+![DATEV-Klick ausführen](datev-journal.de.jpg)
 
 ### Eingehender Anruf
 
@@ -51,7 +51,7 @@ Nach einem Anruf können die Daten über den DATEV-Klick aus dem Journal übertr
 
 Sollten zu einer Telefonnummer keine oder mehrere Einträge in den DATEV-Stammdaten zu finden sein, erscheint eine Liste mit den möglichen Treffern und Sie können den richtigen Kontakt für die Datenübertragung auswählen, oder die Anrufdaten ohne Zuordnung übertragen.
 
-![DATEV Eintrag auswählen](datev-selection.de.png)
+![DATEV Eintrag auswählen](datev-selection.de.jpg)
 
 ### Ausgehender Anruf
 
@@ -66,7 +66,7 @@ Sobald ein Gespräch beendet wurde, können die Daten ebenfalls über den DATEV-
 
 Im pascom Client können unter {{< ui-button "Einstellungen" >}} > {{< ui-button "DATEV Integration" >}} Einstellungen vorgenommen werden:
 
-![DATEV Einstellungen](datev-settings.de.png)
+![DATEV Einstellungen](datev-settings.de.jpg)
 
 |Einstellungen|Beschreibung|
 |---|---|
