@@ -13,7 +13,7 @@ Conferences are an important part of today's business world. Discuss topics with
 
 ### What is required?
 
-To make conferences in the pascom client, you need a pascom group. Use the following [tutorial](link to pascom groups) to create a pascom group.
+To make conferences in the pascom client, you need a pascom group. Use the following [tutorial]({{< ref "/client-mobile-userguide/chat-groupchat/" >}}) to create a pascom group.
 
 **Conference with colleagues**
 
@@ -43,7 +43,7 @@ To start or join a conference, call the group by clicking on the **handset icon*
 *Active conference with colleagues*
 </br>
 
-You now have all **functions** at your disposal, which you should already know from the tutorials for the [video tools](link to video) or the [telephony functions](link to telephony with pascom). 
+You now have all **functions** at your disposal, which you should already know from the tutorials for the [video tools]({{< ref "/client-mobile-userguide/video-tools/" >}}) or the [telephony functions]({{< ref "/client-mobile-userguide/telephony/" >}}). 
 
 ## Video - conference with your colleagues
 
