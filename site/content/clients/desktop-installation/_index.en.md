@@ -80,7 +80,7 @@ Example
 pascomClient-setup.exe /D=C:\Program Files (x86)\pascom Client
 ```
 
-### Use RDP mode on Terminal Server
+### Use RDP Split Mode on Terminal Server
 
 ![RDP SPLIT MODE](rdp-split-mode.png)
 

@@ -81,7 +81,7 @@ Der Nachteil dieser Installationsart ist, dass Sie sich selbst um das Update des
 pascomClient-setup.exe /D=C:\Program Files (x86)\pascom Client
 ```
 
-### RDP Modus am Terminalserver nutzen
+### RDP Split Modus am Terminalserver nutzen
 
 ![RDP SPLIT MODE](rdp-split-mode.png)
 
