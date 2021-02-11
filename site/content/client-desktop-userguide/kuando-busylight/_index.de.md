@@ -56,6 +56,10 @@ Das liegt an den Einstellung des pascom Client. Das Kuando Busylight ist ein unt
 
 <br />
 
+{{% notice Warning %}}
+Nachfolgende Kuando Busylight Einstellungen sind nur vorhanden, wenn der Benutzer auch ein pascom Softphone besitzt.
+{{% /notice %}}
+
 1. Öffnen Sie die {{< ui-button "Client Einstellungen">}} über das pascom Menü
 
 

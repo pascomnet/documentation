@@ -56,6 +56,10 @@ This is due to the settings of the pascom client. The Kuando Busylight is a supp
 
 <br />
 
+{{% notice Warning %}}
+The following Kuando Busylight settings are only available if the user also has a pascom softphone.
+{{% /notice %}}
+
 1. Open the {{< ui-button "Client settings">}} via the pascom menu.
 
 
