@@ -28,7 +28,7 @@ Enter the phone number you want to call directly in the dialing field. Do not wo
 
 **Voicemailbox**
 
-You can reach your answering machine / voice mailbox by clicking on the **Voicemail - Button**. You can find instructions on the functions of the voicemail box [here]({{< ref "/client-mobile-userguide/telephony#your-voicemail-box/" >}}).
+You can reach your answering machine / voice mailbox by clicking on the **Voicemail - Button**. You can find instructions on how to access and use the voicemail box in the [voicemail]({{< ref "/client-mobile-userguide/telephony/#your-voicemail-box" >}}) section below.
 
 ![The Voicemailbox](dialpad_voicemail.jpg)
 </br>
@@ -76,7 +76,7 @@ Here you can now start a **new call**, send **DTMF tones**, mute the **microphon
 
 ## Hold a Call
 
-Putting an active Call on **"Hold "** has several advantages. Differently than with the muting of your microphone, the conversation partner hears music on hold and knows therefore that you e.g. hold consultation. In addition, you can call other contacts while the other party is on hold. 
+Putting an active Call on **"Hold"** has several advantages. Differently than with the muting of your microphone, the conversation partner hears music on hold and knows therefore that you e.g. hold consultation. In addition, you can call other contacts while the other party is on hold. 
 
 To **"hold"** a call, click on the **pause/hold button** in the **call element"**. The caller is then grayed out.
 
@@ -86,7 +86,6 @@ To **"hold"** a call, click on the **pause/hold button** in the **call element"*
 </br>
 
 You can retrieve the waiting caller by clicking the **pause button** again.
-
 
 ## Your Voicemail Box
 

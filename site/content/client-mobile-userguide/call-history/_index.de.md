@@ -99,7 +99,7 @@ Klicken Sie zum öffnen des **Team-Journal** in Ihrem **Team** auf **Team Journa
 
 Ihnen stehen im **Team-Journal** wieder alle Funktionen, Filter und Einstellungen zur Verfügung, wie in Ihrer persönlichen Anrufhistorie.
 
-Zusätzlich können Sie das Team-Journal in Ihr persönliches Journal, wie [hier Beschrieben](link zu settings Team Journal), integrieren.
+Zusätzlich können Sie das Team-Journal in Ihr persönliches Journal, wie [hier Beschrieben]({{< ref "/client-mobile-userguide/call-history/#filter-des-anruf-journal-nutzen" >}}), integrieren. 
 
 ### Team-Journal erklärt
 

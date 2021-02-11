@@ -14,7 +14,7 @@ Konferenzen sind ein wichtiger Bestandteil in der heutigen Geschäftswelt. Bespr
 
 ### Was wird benötigt?
 
-Um Konferenzen im pascom Client abzuhalten, benötigen Sie eine pascom Gruppe. Nutzen Sie folgende [Anleitung](link zu pascom Gruppen) zum erstellen einer pascom Gruppe.
+Um Konferenzen im pascom Client abzuhalten, benötigen Sie eine pascom Gruppe. Nutzen Sie folgende [Anleitung]({{< ref "/client-mobile-userguide/pascom-groups" >}}) zum erstellen einer pascom Gruppe.
 
 **Konferenz mit Kollegen**
 
@@ -44,7 +44,7 @@ Um eine Konferenz zu starten oder beizutreten, rufen Sie die Gruppe über das **
 *Aktive Konferenz mit Ihren Kollegen*
 </br>
 
-Ihnen stehen nun alle **Funktionen** zur Verfügung, die Sie bereits aus der Anleitung zu den [Video- und Screensharing-Tools](link zu video screensharing) oder den [Telefonie Funktionen]( link zu telefonie mit pascom) kennen sollten. 
+Ihnen stehen nun alle **Funktionen** zur Verfügung, die Sie bereits aus der Anleitung zu den [Video Tools]({{< ref "/client-mobile-userguide/video-tools" >}}) oder den [Telefonie Funktionen]({{< ref "/client-mobile-userguide/telephony" >}}) kennen sollten. 
 
 ## Video Konferenz mit Ihren Kollegen
 
