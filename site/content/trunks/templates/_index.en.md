@@ -36,7 +36,7 @@ As different Trunk types require different variables, please refer to the overvi
 
 Official templates maintained by pascom make it easier to maintain your Trunks. Occasionally, connection data and options on the side of a provider change. In this case, the official templates maintained by pascom update themselves, which saves you to make manual adjustments.
 
-Please refer to our list for [supported trunk templates]({{<ref"trunk-templates#pascom-supported-trunk-templates">}}) which templates are maintained by pascom
+Please refer to our list for [supported trunk templates]({{< ref "/trunk-templates#pascom-supported-trunk-templates" >}}) which templates are maintained by pascom
 
 ### Change pascom maintained Trunk Template
 

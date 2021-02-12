@@ -36,6 +36,12 @@ Den Auftragsverarbeitungsvertrag finden Sie als PDF-Datei zum Download.
 
 **Alle Infos finden Sie auf der pascom [Datenschutzseite](https://www.pascom.net/de/datenschutz/)**
 
+
+### Wo finde ich Informationen zur DS-GVO bei AWS?
+
+[Auf der Compliance Webseite der AWS](https://aws.amazon.com/de/compliance/gdpr-center/).
+
+
 ### Werden meine Daten gesichert?
 
 Alle Instanzen in der pascom.cloud werden täglich gesichert. Jedoch kann nur mit einer Premium Lizenz die Widerherstellung über den pascom Support beauftragt werden.

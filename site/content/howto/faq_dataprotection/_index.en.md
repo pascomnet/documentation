@@ -36,6 +36,10 @@ The order processing contract can be found in the downloadable PDF below:
 
 **All information can be found on the [pascom data protection page](https://www.pascom.net/en/data-protection/)**
 
+### Where can I find information about the GDPR at AWS??
+
+**[On the compliance website of AWS](https://aws.amazon.com/en/compliance/gdpr-center/).**
+
 ### Will my data be backed up?
 
 All pascom.cloud phone system instances are backed up daily. However, only premium subscription licence customers can request a restoration via the pascom support.
