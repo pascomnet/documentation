@@ -31,7 +31,7 @@ Einen Gesprächspartner **blind** ohne Rücksprache weiterzuleiten, ist bei Koll
 ![Schritt 2 Blind Transfer](transfer_blind_2.de.jpg)
 </br>
 
-3. Alternativ können Sie während dem aktiven Gespräch mit der **rechten Maustaste** in Ihrer Kontaktliste auf einen Kollegen klicken und im **Pop-Up-Menü** den Punkt {{< ui-button "Transfer">}} auswählen. 
+3. Alternativ können Sie während dem aktiven Gespräch mit der **rechten Maustaste** in Ihrer Kontaktliste auf einen Kollegen klicken und im **Pop-Up-Menü** den Punkt {{< ui-button "Verbinden">}} auswählen. 
 
 ![Schritt 3 Blind Transfer](transfer_blind_3.de.jpg)
 </br>
