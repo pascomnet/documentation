@@ -39,7 +39,7 @@ Den Auftragsverarbeitungsvertrag finden Sie als PDF-Datei zum Download.
 
 ### Wo finde ich Informationen zur DS-GVO bei AWS?
 
-[Auf der Compliance Webseite der AWS](https://aws.amazon.com/de/compliance/gdpr-center/).
+**[Auf der Compliance Webseite der AWS](https://aws.amazon.com/de/compliance/gdpr-center/).**
 
 
 ### Werden meine Daten gesichert?
