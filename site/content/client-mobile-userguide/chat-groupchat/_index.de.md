@@ -27,7 +27,7 @@ Schnell Informationen mit einem Kollegen austauschen, ist heutzutage ein unverzi
 
 ## Gruppen-Chat mit mehreren Kollegen
 
-Für Gruppen-Chat-Räume benötigen Sie zuerst eine pascom Gruppe die Sie mit folgender [Anleitung](Link zu pascom Gruppen) erstellen können.
+Für Gruppen-Chat-Räume benötigen Sie zuerst eine pascom Gruppe die Sie mit folgender [Anleitung]({{< ref "/client-mobile-userguide/pascom-groups" >}}) erstellen können.
 
 Klicken Sie in Ihrer Kontaktliste auf die **Gruppe** um die Chat-Konversation zu öffnen.
 

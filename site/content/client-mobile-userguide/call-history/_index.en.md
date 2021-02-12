@@ -86,7 +86,7 @@ Tip: Click on the **red info icon** in the "last 3 calls" section. This will tak
 
 ## Use Team Call History
 
-The team call history provides a complete overview of all calls made in the team you are a member of. More information about pascom teams can be found in the following [guide]({{< ref "/client-mobile-userguide/teams-callqueue/" >}})
+The team call history provides a complete overview of all calls made in the team you are a member of. More information about pascom teams can be found in the following [guide]({{< ref "/client-mobile-userguide/teams-callqueue" >}})
 
 To open the **Team Journal** in your **Team**, click on **Team Journal**.
 
@@ -97,7 +97,7 @@ To open the **Team Journal** in your **Team**, click on **Team Journal**.
 
 In the **Team-Journal** all functions, filters and settings are available to you again, just like in your personal call history.
 
-Additionally, you can integrate the Team Journal into your personal journal, as described in this [Tutorial]({{< ref "/client-mobile-userguide/telephony/" >}}).
+Additionally, you can integrate the Team Journal into your personal journal, as described in this [Tutorial]({{< ref "/client-mobile-userguide/telephony" >}}).
 
 ### Team-Journal explained
 

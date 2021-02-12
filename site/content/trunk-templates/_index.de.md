@@ -19,7 +19,7 @@ Ist Ihr Amt nicht in den unten aufgelisteten Tabellen enthalten, nutzen Sie bitt
 Folgende Amtsvorlagen werden vom pascom Support unterstützt. Um diese Unterstützung in Anspruch zu nehmen ist eine pascom Premium Version erforderlich.
 
 {{% notice tip %}}
-Erfahren Sie [hier]({{< ref "trunks/templates#pascom-managed-amtsvorlagen">}}) mehr über **pascom maintained** Amtsvorlagen.
+Erfahren Sie [hier]({{< ref "/trunks/templates#pascom-managed-amtsvorlagen" >}}) mehr über **pascom maintained** Amtsvorlagen.
 {{% /notice %}}
 
 |Vorlage/ Provider|verfügbar in|Produkt|OnSite|Cloud|pascom maintained|

@@ -27,7 +27,7 @@ Quickly exchanging information with a colleague has become an indispensable tool
 
 ## Group chat with several colleagues
 
-For group chat rooms you first need a pascom group which you can create with the following [tutorial]({{< ref "/client-mobile-userguide/pascom-groups/" >}}).
+For group chat rooms you first need a pascom group which you can create with the following [tutorial]({{< ref "/client-mobile-userguide/pascom-groups" >}}).
 
 Click on the **Group** in your contact list to open the chat conversation.
 

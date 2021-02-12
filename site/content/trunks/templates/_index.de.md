@@ -36,7 +36,7 @@ Da verschiedene Ämter-Typen unterschiedliche Variablen benötigen finden Sie im
 
 Von pascom verwaltete Amtsvorlagen erleichtern den Wartungsaufwand Ihrer eingerichteten Ämter. Hin und wieder kommt es vor, dass sich Verbindungsdaten und Optionen von Seiten eines Providers ändern. Die von pascom verwalteten Amtsvorlagen updaten sich in diesem Fall selbständig, was Ihnen manuelle Anpassungen erspart.  
 
-Entnehmen Sie unserer Liste für [unterstützte Amtsvorlagen]({{< ref "trunk-templates#pascom-unterstützte-vorlagen">}}) welche Templates von pascom verwaltet werden.
+Entnehmen Sie unserer Liste für [unterstützte Amtsvorlagen]({{< ref "/trunk-templates">}}) welche Templates von pascom verwaltet werden.
 
 ### pascom maintained Amtsvorlagen selbst anpassen
 

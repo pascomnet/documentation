@@ -27,7 +27,7 @@ Geben Sie im Wählfeld direkt die Rufnummer ein, die Sie anrufen möchten. Mache
 
 **Voicemailbox**
 
-Zu Ihrem Anrufbeantworter / Voicemailbox gelangen Sie mit einem Klick auf den **Voicemail - Button**. Eine Anleitung zu den Funktionen der Voicemailbox finden Sie [hier](Link zu Voicemail).
+Zu Ihrem Anrufbeantworter / Voicemailbox gelangen Sie mit einem Klick auf den **Voicemail - Button**. Eine Anleitung zu den Funktionen der Voicemailbox finden Sie [hier]({{< ref "/client-mobile-userguide/telephony#ihre-voicemailbox" >}}).
 
 ![Die Voicemailbox](dialpad_voicemail.jpg)
 </br>
@@ -88,7 +88,8 @@ Sie können den wartenden Gesprächsteilnehmer wieder zurückholen, indem Sie er
 
 ## Ihre Voicemailbox
 
-Mit einem Klick auf den **Voicemail-Button** rufen Sie Ihre Voicemailbox an, sofern Ihr Systemadministrator Ihnen eine eigene Voicemailbox eingerichtet hat. Sie können Ihre **Mailbox** auch über einen [Funktionscode](Link zu Funktionscodes) erreichen. 
+Mit einem Klick auf den **Voicemail-Button** rufen Sie Ihre Voicemailbox an, sofern Ihr Systemadministrator Ihnen eine eigene Voicemailbox eingerichtet hat. Sie können Ihre **Mailbox** auch über einen [Funktionscode]({{< ref "/howto/featurecodes" >}}) erreichen. 
+
 
 1. Abrufen Ihrer Nachrichten bzw. das Tätigen von Einstellungen erfolgt über ein **Sprachmenü** in Ihrer **Mailbox**.
 

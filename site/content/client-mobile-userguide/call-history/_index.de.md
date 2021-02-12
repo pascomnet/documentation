@@ -88,7 +88,7 @@ Tip: Klicken Sie auf das **rote Info-Symbol** bei den letzten 3 Anrufen. Damit g
 
 {{< youtube r-MfrLPXkXY  >}} 
 
-Das Team-Journal gibt Ihnen eine komplette Übersicht über alle Anrufe die im Team, in welchem Sie Mitglied sind, getätigt wurden. Weitere Infos zu pascom Teams, finden Sie in folgender [Anleitung](Link zu Teams).
+Das Team-Journal gibt Ihnen eine komplette Übersicht über alle Anrufe die im Team, in welchem Sie Mitglied sind, getätigt wurden. Weitere Infos zu pascom Teams, finden Sie in folgender [Anleitung]({{< ref "/client-mobile-userguide/teams-callqueue" >}}).
 
 Klicken Sie zum öffnen des **Team-Journal** in Ihrem **Team** auf **Team Journal**.
 
@@ -99,7 +99,7 @@ Klicken Sie zum öffnen des **Team-Journal** in Ihrem **Team** auf **Team Journa
 
 Ihnen stehen im **Team-Journal** wieder alle Funktionen, Filter und Einstellungen zur Verfügung, wie in Ihrer persönlichen Anrufhistorie.
 
-Zusätzlich können Sie das Team-Journal in Ihr persönliches Journal, wie [hier Beschrieben]({{< ref "/client-mobile-userguide/call-history/#filter-des-anruf-journal-nutzen" >}}), integrieren. 
+Zusätzlich können Sie das Team-Journal in Ihr persönliches Journal, wie [hier Beschrieben]({{< ref "/client-mobile-userguide/call-history#filter-des-anruf-journal-nutzen" >}}), integrieren. 
 
 ### Team-Journal erklärt
 

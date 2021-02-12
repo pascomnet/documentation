@@ -17,7 +17,7 @@ Should your SIP trunk not be listed, please use the "Generic SIP Trunk" template
 The following trunk templates are supported by the pascom support team. In order to benefit from this support, a pascom Premium subscription is required.
 
 {{% notice tip %}}
-Find out [more]({{<ref"trunks/templates#pascom-managed-trunk-templates">}}) about **pascom maintained** provider templates.
+Find out [more]({{< ref "/trunks/templates" >}}) about **pascom maintained** provider templates.
 {{% /notice %}}
 
 |Template / Provider|Available in|Product(s)|On-premise|Cloud|pascom maintained|

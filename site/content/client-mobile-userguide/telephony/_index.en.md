@@ -28,7 +28,7 @@ Enter the phone number you want to call directly in the dialing field. Do not wo
 
 **Voicemailbox**
 
-You can reach your answering machine / voice mailbox by clicking on the **Voicemail - Button**. You can find instructions on how to access and use the voicemail box in the [voicemail]({{< ref "/client-mobile-userguide/telephony/#your-voicemail-box" >}}) section below.
+You can reach your answering machine / voice mailbox by clicking on the **Voicemail - Button**. You can find instructions on how to access and use the voicemail box in the [voicemail]({{< ref "/client-mobile-userguide/telephony#your-voicemail-box" >}}) section below.
 
 ![The Voicemailbox](dialpad_voicemail.jpg)
 </br>
@@ -89,7 +89,7 @@ You can retrieve the waiting caller by clicking the **pause button** again.
 
 ## Your Voicemail Box
 
-Click the **Voicemail button** to call your voicemail box, provided your system administrator has configured your own voicemail box. You can also reach your **mailbox** via a [Function code]({{< ref "/howto/featurecodes/" >}}). 
+Click the **Voicemail button** to call your voicemail box, provided your system administrator has configured your own voicemail box. You can also reach your **mailbox** via a [Function code]({{< ref "/howto/featurecodes" >}}). 
 
 1. retrieve your messages or make settings via a **voice menu** in your **mailbox**.
 
