@@ -166,7 +166,7 @@ Sobald Ihr Kollege mit seinem Gespräch fertig ist, erscheint bei Ihnen eine **B
 
 ### Rufnummernformatierung im pascom Client
 
-Der pascom Client formatiert automatisch **eingehende** Telefonnummern in ein besser lesbares Format. Zwischen Länderkennung, Ortsnetzkennzahl und der Stammtelefonnummer sind jeweils Abstände platziert, um die Telefonnummer besser zu visualiesieren.
+Der pascom Client formatiert automatisch **eingehende** Telefonnummern in ein besser lesbares Format. Zwischen Länderkennung, Ortsnetzkennzahl und der Stammtelefonnummer sind jeweils Abstände platziert, um die Telefonnummer besser zu visualisieren.
 
 ![Rufnummernformatierung](number-formatting.png)
 
@@ -177,7 +177,7 @@ Der pascom Client formatiert automatisch **eingehende** Telefonnummern in ein be
 2. Die Rufnummernformatierung wird auch in der **Anrufhistorie** / **Journal** entsprechend angezeigt. 
 
 {{% notice info %}}
-Für die Netz- und Ortserkennung der Rufnummernformatierung werden keine Daten nach Extern herausgegeben. 
+Für die Netz- und Ortserkennung der Rufnummernformatierung werden keine Daten zu externen Diensten übertragen. 
 {{% /notice %}}
 
 <br />
