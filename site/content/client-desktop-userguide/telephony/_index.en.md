@@ -164,3 +164,21 @@ As soon as your colleague has finished his conversation, you will receive a **no
 1. Click on {{< ui-button "Call">}} to call your colleague.
 
 <br />
+
+### Phone number formatting in pascom client
+
+The pascom client automatically formats **incoming** phone numbers into a more readable format. Spaces are placed between country code, area code and the base phone number to better visualize the phone number.
+
+![Phone number formatting](number-formatting.png)
+
+</br>
+
+1. For mobile numbers, the pascom client also displays the **provider** and for **landline numbers**, from which **location** the caller is calling. 
+
+2. The call number formatting is also displayed accordingly in the **Call history** / **Journal**. 
+
+{{% notice info %}}
+For the network and location recognition of the phone number formatting, no data is issued externally. 
+{{% /notice %}}
+
+<br />

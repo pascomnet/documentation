@@ -163,3 +163,21 @@ Sobald Ihr Kollege mit seinem Gespräch fertig ist, erscheint bei Ihnen eine **B
 1. Klicken Sie auf {{< ui-button "Anruf">}} um Ihren Kollegen anzurufen.
 
 <br />
+
+### Rufnummernformatierung im pascom Client
+
+Der pascom Client formatiert automatisch **eingehende** Telefonnummern in ein besser lesbares Format. Zwischen Länderkennung, Ortsnetzkennzahl und der Stammtelefonnummer sind jeweils Abstände platziert, um die Telefonnummer besser zu visualiesieren.
+
+![Rufnummernformatierung](number-formatting.png)
+
+</br>
+
+1. Bei Mobilfunknummern zeigt der pascom Client zusätzlich den **Provider** an und bei **Festnetznummern**, aus welchem **Ort** der Anrufer anruft. 
+
+2. Die Rufnummernformatierung wird auch in der **Anrufhistorie** / **Journal** entsprechend angezeigt. 
+
+{{% notice info %}}
+Für die Netz- und Ortserkennung der Rufnummernformatierung werden keine Daten nach Extern herausgegeben. 
+{{% /notice %}}
+
+<br />
