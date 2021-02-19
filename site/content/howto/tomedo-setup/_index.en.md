@@ -19,7 +19,7 @@ The telephony behavior of the tomedo® integration is set in the pascom client. 
 
 For the tomedo® integration 3 actions are required. For each **event type** one action is needed (**incoming**/**connected**/**hangup**).
 
-1. Action | **incomming**
+1. Action | **incoming**
 2. Action | **connected**
 3. Action | **hangup**
 
@@ -40,11 +40,11 @@ For the tomedo® integration 3 actions are required. For each **event type** one
 
 #### Action for incoming calls
 
-1. **Name:** - assign a name for the action e.g. ```incomming```.
+1. **Name:** - assign a name for the action e.g. ```incoming```.
 2. **App-Path** - set the path = ```/usr/bin/curl```.
-3. **App-Parameter** - set the URL for the parameters = ```http://localhost:9090/incomming/${number}```.
+3. **App-Parameter** - set the URL for the parameters = ```http://localhost:9090/incoming/${number}```.
 4. **Auomatically Perform Action** - Activate all ```Call Types```.
-5. **Call Direction** - incomming and outgoing = ```Both```.
+5. **Call Direction** - incoming and outgoing = ```Both```.
 6. **Trigger Event** - ```upon ringing```.
 
 #### Action for active / answered call
@@ -53,7 +53,7 @@ For the tomedo® integration 3 actions are required. For each **event type** one
 2. **App-Path** - set the path = ```/usr/bin/curl```.
 3. **App-Parameter** - set the URL for the parameters = ```http://localhost:9090/connected/${number}```.
 4. **Auomatically Perform Action** - Activate all ```Call Types```.
-5. **Call Direction** - incomming and outgoing = ```Both```.
+5. **Call Direction** - incoming and outgoing = ```Both```.
 6. **Trigger Event** - ```upon accept```.
 
 
@@ -63,7 +63,7 @@ For the tomedo® integration 3 actions are required. For each **event type** one
 2. **App-Path** - set the path = ```/usr/bin/curl```.
 3. **App-Parameter** - set the URL for the parameters = ```http://localhost:9090/hangup/${number}```.
 4. **Auomatically Perform Action** - Activate all ```Call Types```.
-5. **Call Direction** - incomming and outgoing = ```Both```.
+5. **Call Direction** - incoming and outgoing = ```Both```.
 6. **Trigger Event** - ```upon hangup```.
 
 

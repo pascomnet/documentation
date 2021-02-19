@@ -19,7 +19,7 @@ Das Telefonieverhalten der tomedo® Integration wird im pascom Client eingestell
 
 Für die tomedo® Integration werden 3 Aktionen benötigt. Für jeden **Ereignistyp** wird eine Aktion benötigt (**eingehend**/**aktiv**/**auflegen**) 
 
-1. Aktion | **incomming**
+1. Aktion | **incoming**
 2. Aktion | **connected**
 3. Aktion | **hangup**
 
@@ -40,9 +40,9 @@ Für die tomedo® Integration werden 3 Aktionen benötigt. Für jeden **Ereignis
 
 #### Aktion für eingehende Anrufe
 
-1. **Name:** - vergeben Sie einen Namen für die Aktion z.B. ```incomming```.
+1. **Name:** - vergeben Sie einen Namen für die Aktion z.B. ```incoming```.
 2. **App-Pfad** - setzen Sie den Pfad ```/usr/bin/curl```.
-3. **App-Parameter** - setzen Sie die URL für die Parameter ```http://localhost:9090/incomming/${number}```.
+3. **App-Parameter** - setzen Sie die URL für die Parameter ```http://localhost:9090/incoming/${number}```.
 4. **Aktion automatisch ausführen** - Aktivieren Sie alle ```Anruftypen```.
 5. **Rufrichtung** - Eingehend und ausgehend = ```Beide```.
 6. **Ereignis** - ```beim Klingeln```.
