@@ -204,8 +204,7 @@ Next, click on the *Settings* menu option. Should this option not be visible, yo
 Search for *fkey0* and *fkey_label0*. Next copy and paste the search result lines into the phone system web UI:
 
     {{!-- keys --}}
-    fkey0: blf sip:123@{{{cs_domain}}}|*8
-    fkey_label0: Switchboard
+    <fkey idx="0" context="active" label="Zentrale">blf sip:123@{{{cs_domain}}}|{{{setting sys.asterisk.pickup.prefix.snom}}}</fkey>
 
 Via the menu tab {{< ui-button "devices" >}}, assign these default configurations to the telephones which should have this BLF configuration. Save and apply your changes and once the phones have restarted, the changes will have taken affect.
 

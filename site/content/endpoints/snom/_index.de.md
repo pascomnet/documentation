@@ -222,8 +222,7 @@ Klicken Sie auf den Menüpunkt *Einstellungen*. Falls Sie den Menüpunkt noch ni
 Suchen Sie nach *fkey0* und *fkey_label0*. Die gefundenen Zeilen tragen Sie anschließend in der Basis-Konfiguration über das Web-UI der pascom ein:
 
     {{!-- keys --}}
-    fkey0: blf sip:123@{{{cs_domain}}}|*8
-    fkey_label0: Zentrale
+    <fkey idx="0" context="active" label="Zentrale">blf sip:123@{{{cs_domain}}}|{{{setting sys.asterisk.pickup.prefix.snom}}}</fkey>
 
 Weisen Sie diese Basis-Konfiguration über den Tab {{< ui-button "Geräte" >}} den IP-Telefonen zu, die diese Taste auch in der Weise belegt haben sollen und speichern Sie. Nach dem Neustart der IP-Telefone werden die Änderungen auf diesen übernommen.
 
