@@ -14,7 +14,7 @@ Die DATEV-Schnittstelle ermöglicht es bei einem eingehenden Anruf die Anrufdate
 
 ## pascom Cloud mit DATEV Cloud (DATEVasp und PARTNERasp) verwenden
 
-DATEV bietet ihre Produkte auch als Software as a Service (SaaS) in der Cloud an. Dies bedeutet, dass DATEV einen Server in ihrem Rechenzentrum bereit stellt, auf dem sich Kunden (Steuerberater, Rechtsanwalt usw) via Remotedesktop verbinden können. Von dieser Remotesitzung aus, kann nur über Proxy (port 80 und 443) ins Internet kommuniziert werden. Das Netz der Kanzlei ist jedoch mit VPN an die DATEV ASP angebunden und hat keinerlei Einschränkungen der Ports. Bei diesem Szenario, kann man sich über die Remotesitung zwar ins Kanzleinetz aber nicht zur pascom.cloud verbinden.
+DATEV bietet ihre Produkte auch als Software as a Service (SaaS) in der Cloud an. Dies bedeutet, dass DATEV einen Server in ihrem Rechenzentrum bereit stellt, auf dem sich Kunden (Steuerberater, Rechtsanwalt usw) via Remotedesktop verbinden können. Von dieser Remotesitzung aus, kann nur über Proxy (port 80 und 443) ins Internet kommuniziert werden. Das Netz der Kanzlei ist jedoch mit VPN an die DATEVasp angebunden und hat keinerlei Einschränkungen der Ports. Bei diesem Szenario, kann man sich über die Remotesitzung zwar ins Kanzleinetz aber nicht zur pascom.cloud verbinden.
 
 Abhilfe schafft der pascom Cloud Connect, welcher als Gateway in der Kanzlei, die Daten an die pascom.cloud weiterleitet.
 

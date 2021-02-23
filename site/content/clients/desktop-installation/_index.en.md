@@ -92,7 +92,7 @@ This allows e.g. to start one client instance within an RDP session and another 
 
 - Better audio quality, as the audio does not have to be transferred to the RDP session
 - Headset control (e.g. Accept via button on headset) works as a result.
-- Integrations in software running on a terminal server (e.g. Outlook, Datev) still works.
+- Integrations in software running on a terminal server (e.g. Outlook, DATEV) still works.
 - Less CPU load on terminal servers, since audio and video are encoded and decoded via the client on the respective terminal device.
 - Call control is fully possible via each of the clients.  
 

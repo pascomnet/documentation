@@ -95,7 +95,7 @@ Damit ist es z.B. möglich, eine Client Instanz innerhalb einer RDP Sitzung und 
 
 - Bessere Audioqualität, da das Audio nicht in die RDP-Sitzung übertragen werden muss.
 - Headsetsteuerung (z. B. Annehmen über Taste am Headset) funktioniert dadurch.
-- Integrationen in Software die auf einem Terminal-Server läuft (z. B. Outlook, Datev) funktioniert weiterhin.
+- Integrationen in Software die auf einem Terminal-Server läuft (z. B. Outlook, DATEV) funktioniert weiterhin.
 - Weniger CPU-Last auf Terminal-Servern, da Audio und Video über den Client auf dem jeweilgen Endgerät enkodiert und dekodiert werden.
 - Anrufsteuerung ist über jeden der Clients vollständig möglich.  
 

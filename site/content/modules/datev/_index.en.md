@@ -14,16 +14,16 @@ The DATEV interface enables you to transfer incoming call data into your *DATEV 
 
 ## Use pascom Cloud with DATEV Cloud (DATEVasp und PARTNERasp)
 
-Datev also offers its products as Software as a Service (SaaS). This means that Datev provides a server in its data center where customers (tax advisor, lawyer, etc.) can connect via remote desktop. From this remote session, communication to the Internet is only possible via proxy (port 80 and 443). However, the law firm's network is connected to Datev ASP via VPN and has no port restrictions. In this scenario, you can connect to the office network via the remote session, but not to pascom.cloud.
+DATEV also offers its products as Software as a Service (SaaS) solution. This means that DATEV hosts the solution in their DataCentre and makes the solution accessible to their customers (accountants, tax advisors, lawyers, etc.) who can connect via remote desktop. From this remote session, communication via the Internet is only possible via a proxy (port 80 and 443). However, the organisations' network is connected to DATEVasp via VPN and has no port restrictions. In this scenario, you can connect to the office network via the remote session, but not to pascom.cloud.
 
-The pascom cloud connect provides a remedy by acting as a gateway in the law firm and forwarding the data to the pascom.cloud.
+The pascom Cloud Connect solves this by acting as a gateway between your local office network and forwarding the data to the pascom.cloud.
 
 ### How does this work?
 
-![pascom DATEV ASP Appliance](datev_asp_appliance_en.png)
+![pascom Cloud Connect](datev_asp_appliance_en.png)
 
 {{% notice info %}}
-For more information about the pascom DATEV ASP Appliance for your company, please contact our sales team.
+For more information about the pascom Cloud Connect solution, please contact our sales team.
 {{% /notice %}}
 
 ## Configuration

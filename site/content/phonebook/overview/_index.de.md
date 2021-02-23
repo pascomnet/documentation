@@ -74,9 +74,9 @@ Die Suche filtert alle Einträge nach dem Vorkommen des eingetragenen Suchfilter
 
 Wir empfehlen daher nach ganzen Namen und Nummern bzw. Teilen davon zu suchen um schneller den gewünschten Eintrag zu finden.
 
-### Zusätzliche Einträge aus Outlook (ab v.2013), Datev & Apple Kontakte.
+### Zusätzliche Einträge aus Outlook (ab v.2013), DATEV & Apple Kontakte.
 
-Findet der pascom Desktop Client auf dem PC ein unterstütztes Telefonbuch, z.B. von Outlook, Datev oder Apple Kontakte, können diese automatisch als Privates Telefonbuch dem Client hinzugefügt werden.
+Findet der pascom Desktop Client auf dem PC ein unterstütztes Telefonbuch, z.B. von Outlook, DATEV oder Apple Kontakte, können diese automatisch als Privates Telefonbuch dem Client hinzugefügt werden.
 Wählen Sie dazu im pascom Desktop Client unter {{< ui-button "Einstellungen">}} > {{< ui-button "Adressbuch Einstellungen">}} aus.
 
 Diese Einträge sind nicht auf den zugewiesenen Telefoniegeräten verfügbar und werden nur im Client aufgelöst.
