@@ -10,7 +10,7 @@ weight: 50
 
 ## Konzept
 
-Die DATEV-Schnittstelle ermöglicht es bei einem eingehenden Anruf die Anrufdaten in Ihre *DATEV Arbeitsplatz pro*-Software zu übertragen. Ebenso können Sie aus dem DATEV-Telefonbuch Gespräche starten. Voraussetzung ist die Verwendung von *DATEV Arbeitsplatz pro* mit der *Telefonie Basis*.
+Die DATEV-Schnittstelle ermöglicht es bei einem eingehenden Anruf die Anrufdaten in Ihre *DATEV Arbeitsplatz*-Software zu übertragen. Ebenso können Sie aus dem DATEV-Telefonbuch Gespräche starten. Voraussetzung ist die Verwendung von *DATEV Arbeitsplatz* mit der *Telefonie Basis*.
 
 ## pascom Cloud mit DATEV Cloud (DATEVasp und PARTNERasp) verwenden
 
@@ -30,7 +30,7 @@ Weitere Informationen zum pascom Cloud Connect für Ihr Unternehmen erhalten Sie
 
 Zur Vorbereitung muss zunächst ein *Generisches Label* angelegt werden. Klicken Sie hierfür auf {{< ui-button "Anrufverteilung" >}} > {{< ui-button "Anruf Labels" >}} > {{< ui-button "Hinzufügen" >}}. Wählen Sie {{< ui-button "Generisches Label" >}} und tragen Sie als *Label Name* **DATEV** ein. *Im Client anzeigen* sollten Sie auf *NEIN* setzen.
 
-Anschließend ist die DATEV-Schnittstelle automatisch aktiv sobald Sie neben *DATEV Arbeitsplatz pro* mit Telefoniemodul den [pascom Client]({{< relref "clients/desktop-installation">}}) installieren.
+Anschließend ist die DATEV-Schnittstelle automatisch aktiv sobald Sie neben *DATEV Arbeitsplatz* mit Telefoniemodul den [pascom Client]({{< relref "clients/desktop-installation">}}) installieren.
 
 Sollte das Label nicht angelegt sein, erscheint beim Übertragen der Anrufdaten in DATEV während einem aktiven Anruf mit dem pascom Client folgende Meldung:
 
@@ -44,7 +44,7 @@ Sollte das Label nicht angelegt sein, erscheint beim Übertragen der Anrufdaten 
 
 Bei einem eingehenden Anruf werden die DATEV-Stammdaten abgefragt und Treffer in der Anruf-Notification angezeigt.
 
-Schon während des Läutens ist es möglich über den DATEV-Klick die Telefonie-Daten in die Telefonliste Ihres *DATEV Arbeitsplatz pro* zu übertragen.
+Schon während des Läutens ist es möglich über den DATEV-Klick die Telefonie-Daten in die Telefonliste Ihres *DATEV Arbeitsplatz* zu übertragen.
 
 Nach einem Anruf können die Daten über den DATEV-Klick aus dem Journal übertragen werden.
 
@@ -56,7 +56,7 @@ Sollten zu einer Telefonnummer keine oder mehrere Einträge in den DATEV-Stammda
 ### Ausgehender Anruf
 
 Wird im Client-Telefonbuch nach einem Kontakt gesucht, wird immer auch das DATEV-Telefonbuch durchsucht.
-Außerdem kann auch direkt aus der Kontaktliste des *DATEV Arbeitsplatz pro* heraus ein Kontakt angerufen werden.
+Außerdem kann auch direkt aus der Kontaktliste des *DATEV Arbeitsplatz* heraus ein Kontakt angerufen werden.
 
 Wird eine Nummer über den pascom Client oder einem Hardware-Telefon gewählt, erscheint in der Gesprächs-Benachrichtigung der DATEV-Klick. Über den Klick können die Gesprächs-Daten an die DATEV-Software übertragen werden. 
 Sobald ein Gespräch beendet wurde, können die Daten ebenfalls über den DATEV-Klick direkt aus dem Client-Journal heraus übertragen werden.
