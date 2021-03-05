@@ -153,7 +153,7 @@ Firstly, you will need to setup the telekom phone numbers on the Fritz!Box in or
 
 The Fritz!Box will immediately try to establish a connection with Deutsche Deutsche Telekom using the entered credentials.
 
-![Fritz!Box](/fritzbox_telekom_rufnummern.png?width=80%)
+![Fritz!Box](/fritzbox_telekom_dids.de.png?width=80%)
 
 After the Deutsche Telekom numbers have been successfully setup, you will need to setup some accounts on your Fritz!Box with which your pascom PBX can register with the Fritz!Box.
 
@@ -167,7 +167,7 @@ After the Deutsche Telekom numbers have been successfully setup, you will need t
 8. If you would like to use all the numbers of your Deutsche Telekom account, then repeat steps 1 -7 for each number. 
 9. Within the Telephony Device Overview you should now see the internal numbers pertaining to the account (e.g. \**620). You will need this extension for the registration with your pascom PBX.
 
-![Fritz!Box](/fritzbox_telekom_telefoniegeraete.png?width=80%)
+![Fritz!Box](/fritzbox_telekom_phones.de.png?width=80%)
 
 #### pascom Fritz!Box Trunk Setup
 
@@ -175,7 +175,7 @@ After the Deutsche Telekom numbers have been successfully setup, you will need t
 
 Add a new Frtz!Box trunk under {{< ui-button "Gateways" >}} > {{< ui-button "Trunks" >}} > {{< ui-button "Add" >}}, which directs you the the SIP provider database. Using the filter, you can search directly for *fritz* templates and select this template. Complete the template using the account data you have just set up on your Fritz!Box.
 
-![Fritz!Box Account](/fritzbox_account_telekom.png?width=80%)
+![Fritz!Box Account](/ffritzbox_account_telekom.de.png?width=80%)
 
 Using the template, it is possible to add the first 3 accounts.
 
