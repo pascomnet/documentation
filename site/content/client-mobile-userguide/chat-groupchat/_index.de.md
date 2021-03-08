@@ -1,7 +1,7 @@
 ---
-title: Chat und Gruppen-Chat
+title: Chat, Gruppen-Chat & Filesharing
 weight: 8
-description: Nutzen Sie Chat-Gruppen und tauschen Sie Informationen mit Kollegen aus.
+description: Nutzen Sie Chat-Gruppen und tauschen Sie Informationen und Dateien mit Kollegen aus.
 ---
  
 {{< description >}}
@@ -59,6 +59,57 @@ Ist der Konversations-Bereich nicht im Fokus, und Sie erhalten eine neue Nachric
 *Chat-Hinweismeldung in der Kontaktliste*
 </br>
 
+## Dateien versenden (Filesharing)
+
+Der Client bietet Ihnen die Möglichkeit mit Ihren Kollegen Dateien auszutauschen. 
+
+1. Klicken Sie in der aktuellen Chat-Konversation auf die {{< ui-button "rote Büroklammer">}} und wählen Sie die Datei aus, welche Sie versenden möchten.
+
+![Filesharing über Dateiauswahl](choose-file.de.png)
+*Filesharing über Dateiauswahl*
+</br>
+
+## Dateitransfer - Das Rendering-Feature
+
+Dateien, Bilder und Dokumente welche Sie im pascom Client mit anderen Nutzern teilen, werden nachvollziehbar in der Chathistorie angezeigt. Somit haben Sie die volle Kontrolle über den Dateitransfer.
+
+1. Dokumente und Dateien werden beim Transfer wie folgt angezeigt.
+
+
+![Dateitransfer](filesharing-rendering-files.de.png)
+*Dokumente und Dateien im pascom Client*
+</br>
+
+2. Über das **Download-Symbol** können Sie die Datei ganz einfach herunterladen. Über das **Mülleimer-Symbol** löschen Sie die Datei. Im Chatfenster wird weiterhin angezeigt, das diese Datei entfernt wurde.
+
+![Löschen von Dateien](delete-files.de.png)
+*Gelöschte Dateien im pascom Client*
+</br>
+
+3. Bilder, welche Sie im pascom Client teilen, werden gerendert und als Vorschau im Chatfenster angezeigt.
+
+![Bilder mit Vorschau](pictures-render.de.png)
+*Bilder mit Vorschau im pascom Client*
+</br>
+
+### Nützliche Hinweise zum Dateitransfer
+
+1. Wo finde ich meine heruntergeladenen Bilder und Dateien?
+</br>
+Im **Download-Ordner** des Betriebssystem.
+
+2. Wie groß dürfen meine Dateien sein?
+</br>
+**Dateigröße max. 100 MB**.
+
+3. Warum haben Bilder nicht die originale Auflösung?
+</br>
+Bilder werden bei der Übertragung komprimiert, um den Datentransfer zu beschleunigen. Möchten Sie Ihren Kollegen Bilder in Ihrer **Originalauflösung** zukommen lassen, müssen Sie das Bild vorher mit einem **ZIP-Programm** komprimieren.
+
+4. Warum haben transparente PNG-Bilder einen schwarzen Hintergrund in der Vorschau?
+</br>
+Aufgrund der Komprimierung werden **transparente PNG-Bilder** für das Vorschaubild im pascom Client in ein kleineres **JPG-Bildformat** konvertiert. **KEINE SORGE**: Laden Sie das Bild auf Ihren Computer herunter, hat es sein ursprüngliches Format.
+</br>
 
 
 
