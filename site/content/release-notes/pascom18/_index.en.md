@@ -5,7 +5,8 @@ weight: 996
 ---
 
 {{% notice tip %}}
-With pascom 18 there are a number of core changes that you will need to check before updating and then modify once you have updated. Please use our check list in our detailed [Upgrade Guide]({{ ref "/server/upgrade" }}).{{%/notice%}}
+Please use our check list in our detailed [Upgrade Guide]({{< ref "/server/upgrade/" >}}).
+{{% /notice %}}
 
 ## Highlights
 
