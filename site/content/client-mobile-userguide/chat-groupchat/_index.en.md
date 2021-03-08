@@ -1,7 +1,7 @@
 ---
-title: Chat and Group-Chats
+title: Chat, Group-Chats & Filesharing
 weight: 8
-description: Use chat groups and share information with colleagues.
+description: Use chat groups and share information and data with colleagues.
 ---
 
 {{< description >}}
@@ -57,5 +57,57 @@ If the conversation area is not in focus and you receive a new message, a notifi
 
 ![Chat notification message in the contact list](chat_notification.jpg)
 *Chat notification message in the contact list*
+</br>
+
+## Send Files (Filesharing)
+
+The client offers you the possibility to exchange files with your colleagues.
+
+1. Click on the {{< ui-button "red paper clip">}} in the current chat conversation and select the file you want to send.
+
+![File sharing via file selection](choose-file.en.png)
+*File sharing via file selection*
+</br>
+
+## Filetransfer - The Rendering-Feature
+
+Files, images and documents that you share with other users in the pascom client are displayed in the chat history. This gives you full control over the file transfer.
+
+1. Documents and files are displayed during transfer as follows.
+
+
+![Filetransfer](filesharing-rendering-files.en.png)
+*Documents and files in pascom Client*
+</br>
+
+2. Via the **download icon** you can easily download the file. Via the **trash can icon** you delete the file. The chat window will still show that this file has been removed.
+
+![Löschen von Dateien](delete-files.en.png)
+*Deleted files in pascom Client*
+</br>
+
+3. Images you share in the pascom client are rendered and displayed as a preview in the chat window.
+
+![Images with preview](pictures-render.en.png)
+*Images with preview in pascom Client*
+</br>
+
+### Useful tips for file transfer
+
+1. Where can I find my downloaded images and files?
+</br>
+In the **Download folder** of the operating system.
+
+2. What is the maximum file size?
+</br>
+**File size max. 100 MB**.
+
+3. Why do images not have the original resolution?
+</br>
+Images are compressed during transmission to speed up data transfer. If you want to send your colleagues images in the **original resolution**, you must compress the image beforehand with a **ZIP program**.
+
+4. Why do transparent PNG images have a black background in the preview?
+</br>
+Due to compression, **transparent PNG images** are converted to a smaller **JPG image format** for the preview image in the pascom client. **DON'T WORRY**: Download the image to your computer, it will have its original format.
 </br>
 
