@@ -1,6 +1,6 @@
 ---
-title: Grandstream ATA HT701 und HT802
-description: Integrieren Sie Ihre Analog-Endgeräte mithilfe des Grandstream ATA HT701 und HT802 in Ihre pascom
+title: Grandstream HTXXX und GXW42XX
+description: Integrieren Sie Ihre Analog-Endgeräte mithilfe des Grandstream ATA  in die pascom Telefonanlage
 weight: 40
 ---
 
@@ -8,19 +8,24 @@ weight: 40
 
 {{< description >}}
 
+![Grandstream Modelle](grandstream_image.png)
+
 ## Kompatibilität
 
-**Grandstream HT701**
 
-- Ein FXS-Anschluss für ein analoges Endgerät.
-![Grandstream HT701](grandstream_ht701.jpg?width=300px)
+|Modell|Ports|
+|---|---|
+|HT701|1|
+|HT802|2|
+|HT812|12|
+|HT814|14|
+|HT818|18|
+|GXW4216|16|
+|GXW4224|24|
+|GXW4232|32|
+|GXW4248|48|
 
-
-**Grandstream HT802**
-
-- Zwei FXS-Anschlüsse für zwei analoge Endgeräte.
-![Grandstream HT802](grandstream_ht802.png?width=300px)
-
+## Provisionierung
 
 |Provisionierung|Firmware-Verwaltung|
 |---|---|

@@ -1,22 +1,30 @@
 ---
-title: Grandstream ATA HT701 and HT802
+title: Grandstream HTXXX and GXW42XX
 description: Grandstream ATA adapters provide a cost effective solution for integrating Analog technology such as Fax / Door Intercom systems etc into your pascom phone system.
 weight: 40
 ---
 
+{{< doctype "both"  >}}
+
+{{< description >}}
+
+![Grandstream Modelle](grandstream_image.png)
+
 ## Compatibility
 
-**Grandstream HT701**
+|Model|Ports|
+|---|---|
+|HT701|1|
+|HT802|2|
+|HT812|12|
+|HT814|14|
+|HT818|18|
+|GXW4216|16|
+|GXW4224|24|
+|GXW4232|32|
+|GXW4248|48|
 
-- A FXS Port for one analog fax device.
-![Grandstream HT701](grandstream_ht701.jpg?width=300px)
-
-
-**Grandstream HT802**
-
-- Two FXS Ports for two analog endpoints
-![Grandstream HT802](grandstream_ht802.png?width=300px)
-
+## Provisioning
 
 |Provisioning|Firmware Management|
 |---|---|

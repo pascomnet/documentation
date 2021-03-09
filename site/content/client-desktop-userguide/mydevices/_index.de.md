@@ -44,9 +44,12 @@ Die Gerätesteuerung finden Sie in den **Client-Einstellungen**.
 
 ## Gerät für ausgehende Anrufe
 
-Hier bestimmen Sie, welches Gerät Sie für ausgehende Anrufe verwenden möchten. Das **pascom integrierte Softphone** oder ein Ihnen zugewiesenes **Tischtelefon**. Das pascom Softphone ist in die Software eingebaut und lässt sich ideal mit einem Headset nutzen. 
+Hier bestimmen Sie Ihr bevorzugtes Endgerät, welches Sie für ausgehende Anrufe verwenden möchten. Das **pascom integrierte Softphone** oder ein Ihnen zugewiesenes **Tischtelefon**. Das pascom Softphone ist in die Software eingebaut und lässt sich ideal mit einem Headset nutzen. 
 
 1. Klicken Sie bei **"Ausgehende Anrufe"** auf das {{< ui-button "Drop Down Feld">}} und wählen Sie Ihr **Endgerät** aus. 
+
+![Gerät auswählen](choose-device.de.png)
+</br>
 
 ## Gerätesteuerung für eingehende Anrufe
 
@@ -64,5 +67,16 @@ Wollen Sie einmal nicht erreichbar sein, so können Sie alle {{< ui-button "Scha
 </br>
 
 1. **Was passiert wenn Sie alle Geräte ausschalten?** Dazu befragen Sie am Besten Ihren Systemadministrator, denn die Möglichkeiten sind vielfälltig z.B. *Ansagen, Weiterleitungen, Voicemailbox usw.*.
+
+## GSM-Einstellung für eingehende Mobilgespräche
+
+In den Geräteeinstellungen können Sie für eingehende Gespräche auf Ihrem Mobilgerät festlegen, ob diese über das GSM-Netz erfolgen sollen. Somit steuern Sie über den Desktop Client, das Anrufverhalten Ihres Mobilgerätes.
+
+1. **Aktivieren/Deaktivieren** Sie den GSM-Schalter bei den eingehenden Mobilgesprächen.
+
+![GSM Schalter nutzen](gsm-switch.de.png)
+</br>
+
+Weitere Informationen zum GSM-Fallback finden Sie [hier]({{< ref "/clients/mobile-hub" >}}).
 
 <br />

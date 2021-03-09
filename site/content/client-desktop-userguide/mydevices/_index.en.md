@@ -49,6 +49,10 @@ Here you determine which device you want to use for outgoing calls. The **pascom
 
 1. Click the {{< ui-button "Drop Down Box">}} at **"Outgoing Calls "** and select your **device**. 
 
+![Choose device](choose-device.en.png)
+</br>
+
+
 ## Device Control for incomming Calls
 
 With the device control for incoming calls you can control the call behavior of your devices.
@@ -65,5 +69,18 @@ If you want to be unreachable, you can deactivate all {{< ui-button "switches">}
 </br>
 
 1. **What happens if you switch off all devices?** It is best to consult your system administrator, because there are many possibilities, e.g. *announcements, call forwardings, voicemail box, etc.*.
+
+<br />
+
+## GSM Setting for outgoing mobile Calls
+
+In the device settings, you can specify incoming calls on your mobile device that they should be made via the GSM network. This allows you to control the call behavior of your mobile device via the Desktop Client.
+
+1. **Activate/Deactivate** the GSM switch for incoming mobile calls.
+
+![GSM Switch](gsm-switch.en.png)
+</br>
+
+More information about GSM fallback can be found [here]({{< ref "/clients/mobile-hub" >}}).
 
 <br />
