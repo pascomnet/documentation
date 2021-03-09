@@ -1,5 +1,5 @@
 ---
-title: Deutsche Telekom Company Flex BETA
+title: Deutsche Telekom Company Flex
 description: Overview of the pascom managed Provider Template from Deutsche Telekom
 weight: 5
 ---
@@ -13,10 +13,6 @@ weight: 5
 ## Overview
 
 Tariff in combination with pascom: **Company Flex**  
-
-{{% notice warning %}}
-**Telekom Company Flex SIP Trunk** is actually only supported with pascom 19.13 BETA.
-{{% /notice %}}
 
 
 Deutsche Telekom package specifications and tariff information can be found [here](https://geschaeftskunden.telekom.de/internet-dsl/tarife/festnetz-internet-dsl/companyflex). pascom phone systems (onsite and cloud) support only Deutsche Telekom business SIP Trunk tariffs.  

@@ -1,5 +1,5 @@
 ---
-title: Deutsche Telekom Company Flex BETA
+title: Deutsche Telekom Company Flex 
 description: Übersicht zum pascom managed Provider Template von der Deutschen Telekom
 weight: 5
 ---
@@ -13,10 +13,6 @@ weight: 5
 ## Übersicht
 
 Tarif in Kombination mit pascom: **Company Flex**  
-
-{{% notice warning %}}
-**Telekom Company Flex SIP Trunk** ist aktuell nur mit pascom 19.13 BETA verfügbar.
-{{% /notice %}}
 
 
 Informationen über Leistungsmerkmale und Tarife finden Sie [hier](https://geschaeftskunden.telekom.de/internet-dsl/tarife/festnetz-internet-dsl/companyflex). Die [pascom Telefonanlage](https://www.pascom.net/de/voip-telefonanlage/ "pascom VoIP-Telefonagen Software") (sowohl Onsite als auch Cloud) unterstützt nur Business-SIP-Trunk Anschlüsse der Telekom.
