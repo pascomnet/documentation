@@ -97,7 +97,8 @@ Es gibt mehrere Wege, eine Datei an Ihren Kollegen zu senden.
 *Datei auf einen Kollegen in der Kontaktliste ziehen*
 </br>
 
-## Dateitransfer - Das Rendering-Feature
+
+## Dateitransfer - Das Rendering-Feature |BETA 
 
 Dateien, Bilder und Dokumente welche Sie im pascom Client mit anderen Nutzern teilen, werden nachvollziehbar in der Chathistorie angezeigt. Somit haben Sie die volle Kontrolle über den Dateitransfer.
 
