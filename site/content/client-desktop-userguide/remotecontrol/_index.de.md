@@ -37,6 +37,12 @@ Tätigen Sie nun über den **pascom Desktop Client** einen ausgehenden Anruf, wi
 ![Dockingstation](dockingstation.jpg?width=60%)
 </br>
 
-Nutzen Sie Ihr Mobilgerät in einer **Dockingstation**, kann das Gespräch vom **pascom Desktop Client** nahtlos auf das Mobiltelefon übergeben werden, da sich das Mobilgerät im Ladezustand befindet und das Display in der Regel eingeschalten ist. Dies funktioniert sowohl bei **Android** als auch bei **iOS** Geräten.
+Nutzen Sie Ihr Mobilgerät in einer **Dockingstation**, kann das Gespräch vom **pascom Desktop Client** nahtlos auf das Mobiltelefon übergeben werden.
+
+1. Ist die pascom mobile App während dem Ladevorgang geöffnet, schaltet sich das Display Ihres Mobilgerätes nicht aus.
+
+2. Somit haben Sie einen kompletten Desktop Client Ersatz auf Ihrem Smartphone.
+
+3. Dies funktioniert sowohl bei **Android** als auch bei **iOS** Geräten.
 
 </br>

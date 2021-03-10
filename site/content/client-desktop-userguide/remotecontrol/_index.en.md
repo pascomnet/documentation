@@ -36,6 +36,12 @@ If you now make an outgoing call via the **pascom Desktop Client**, it will be t
 ![Dockingstation](dockingstation.jpg?width=60%)
 </br>
 
-If you use your mobile device in a **docking station**, the call can be seamlessly transferred from the **pascom Desktop Client** to the mobile phone, as the mobile device is in charging mode and the display is usually switched on. This works for both **Android** and **iOS** devices.
+If you use your mobile device in a **docking station**, the call can be seamlessly transferred from the **pascom Desktop Client** to the mobile phone.
+
+1. If the pascom mobile app is open during the charging process, the display of your mobile device does not turn off.
+
+2. Thus, you have a complete desktop client replacement on your smartphone.
+
+3. This works for both **Android** and **iOS** devices.
 
 </br>
