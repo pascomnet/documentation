@@ -5,7 +5,7 @@ weight: 996
 ---
 
 {{% notice tip %}}
-Please use our check list in our detailed [Upgrade Guide]({{< ref "/server/upgrade/" >}}).
+Please use our check list in our detailed [Upgrade Guide]({{< ref "/server/upgrade" >}}).
 {{% /notice %}}
 
 ## Highlights

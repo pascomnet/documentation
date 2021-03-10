@@ -1,5 +1,5 @@
 ---
-title: Remote Control - Mobilgeräte steuern BETA
+title: Remote Control - Mobilgeräte steuern |BETA
 weight: 16
 description: In diesem Abschnitt erfahren Sie, wie der pascom Desktop Client die pascom Mobile App steuern kann.
 ---
@@ -11,7 +11,7 @@ description: In diesem Abschnitt erfahren Sie, wie der pascom Desktop Client die
 
 ## Mit dem Desktop Client den Mobil Client steuern
 
-Der pascom Client bietet die Möglichkeit, Gespräche welche Sie am Desktop Client starten, auf Ihr Mobilgerät zu übergeben. Dies geschieht über einen sogenannten **Push-Call**, welcher an Ihr Mobilgerät gesendet wird.
+Sie wollen Ihre Arbeit, vermehrt auf das Smartphone verlagern um die Vorteile einer standortunabhängigen Konnektivität zu genießen? Kein Problem, der pascom Client bietet die Möglichkeit, über den pascom Desktop Client die mobile pascom App am Handy zu steuern. Dies geschieht über sogenannte **Push-Calls**, welche an Ihr Mobilgerät gesendet werden.
 
 </br>
 ![Übersicht Push Call](overview-remotecontrol.png)

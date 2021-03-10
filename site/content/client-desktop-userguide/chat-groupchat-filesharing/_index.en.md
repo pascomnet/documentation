@@ -96,7 +96,7 @@ There are several ways to send a file to your colleague.
 *Drag file onto a colleague in the contact list*
 </br>
 
-## Filetransfer - The Rendering-Feature
+## Filetransfer - The Rendering-Feature |BETA
 
 Files, images and documents that you share with other users in the pascom client are displayed in the chat history. This gives you full control over the file transfer.
 

@@ -1,5 +1,5 @@
 ---
-title: Remote Control of Mobile Devices BETA
+title: Remote Control of Mobile Devices |BETA
 weight: 16
 description: In this section you will learn how the pascom Desktop Client can control the pascom Mobile App.
 ---
@@ -10,7 +10,7 @@ description: In this section you will learn how the pascom Desktop Client can co
 
 ## Control the mobile client with the desktop client
 
-The pascom Client offers the possibility to transfer calls that you start on the Desktop Client to your mobile device. This is done via a so-called **push call**, which is sent to your mobile device.
+You want to shift more of your work to your smartphone to enjoy the benefits of location-independent connectivity? No problem, the pascom client offers the possibility to control the mobile pascom app on your mobile phone via the pascom desktop client. This is done via so-called **push calls**, which are sent to your mobile device.
 
 </br>
 ![Overview Push Call](overview-remotecontrol.png)
