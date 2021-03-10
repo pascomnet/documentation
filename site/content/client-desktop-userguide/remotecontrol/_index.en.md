@@ -40,7 +40,7 @@ If you use your mobile device in a **docking station**, the call can be seamless
 
 1. If the pascom mobile app is open during the charging process, the display of your mobile device does not turn off.
 
-2. Thus, you have a complete desktop client replacement on your smartphone.
+2. Thus, you have a complete replacement for your desk phone.
 
 3. This works for both **Android** and **iOS** devices.
 

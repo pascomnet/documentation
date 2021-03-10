@@ -41,7 +41,7 @@ Nutzen Sie Ihr Mobilgerät in einer **Dockingstation**, kann das Gespräch vom *
 
 1. Ist die pascom mobile App während dem Ladevorgang geöffnet, schaltet sich das Display Ihres Mobilgerätes nicht aus.
 
-2. Somit haben Sie einen kompletten Desktop Client Ersatz auf Ihrem Smartphone.
+2. Somit haben Sie einen vollständigen Ersatz für Ihr Tischtelefon.
 
 3. Dies funktioniert sowohl bei **Android** als auch bei **iOS** Geräten.
 
