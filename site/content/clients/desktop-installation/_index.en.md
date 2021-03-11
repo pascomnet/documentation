@@ -84,9 +84,9 @@ pascomClient-setup.exe /D=C:\Program Files (x86)\pascom Client
 
 ![RDP SPLIT MODE](rdp-split-mode.png)
 
-Using the command line parameter **- -rdp** or by setting the environment variable **PC_RDP to 1** it is now possible to disable softphone and video support for the client on the Terminal Server. This allows the client on the Terminal Server to use the softphone of another client instance for telephony.
+Using the command line parameter **```--rdp```** or by setting the environment variable **PC_RDP to 1** it is now possible to disable softphone and video support for the client on the Terminal Server. This allows the client on the Terminal Server to use the softphone of another client instance for telephony.
 
-This allows e.g. to start one client instance within an RDP session and another one on the host computer. The instance running within the RDP session has the --rdp flag set, the outer one does not. Thus, a headset connected to the PC can be used for telephony.
+This allows e.g. to start one client instance within an RDP session and another one on the host computer. The instance running within the RDP session has the ```--rdp``` flag set, the outer one does not. Thus, a headset connected to the PC can be used for telephony.
 
 #### What does this do?
 
@@ -146,7 +146,7 @@ The pascom Desktop Client supports a range of command line options and reacts to
 
 Using the `--help` parameter for more information on which options and envirnoment variables are supported by your version of the pascom desktop client. 
 
-Example
+**Example**
 
 ```text
 pascom Client 7.18.00.D3667_267a0cd
