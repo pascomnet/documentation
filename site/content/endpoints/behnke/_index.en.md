@@ -4,7 +4,7 @@ description: How to integrate Behnke door intercoms systems into your pascom pho
 weight: 10
 ---
 
-{{< doctype "self"  >}}
+{{< doctype "both"  >}}
 
 {{< description >}}
 

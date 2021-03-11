@@ -4,7 +4,7 @@ description: So binden Sie die Behnke Türsprechstelle in die pascom Telefonanla
 weight: 10
 ---
 
-{{< doctype "self"  >}}
+{{< doctype "both"  >}}
 
 {{< description >}}
 
