@@ -67,8 +67,8 @@ Hier finden Sie einige Referenz-URLs, für die Integration der Video- und Standb
 
 |Typ|Beispiel-Wert|
 |---|---|
-|MJPEG via HTTP|http://user:password@1.2.3.4/mjpg/video.mjpg|
-|JPG Bild|http://user:password@1.2.3.4/jpg/image.jpg|
+|MJPEG via HTTP|```http://user:password@1.2.3.4/mjpg/video.mjpg```|
+|JPG Bild|```http://user:password@1.2.3.4/jpg/image.jpg```|
 
 </br>
 
@@ -76,9 +76,9 @@ Hier finden Sie einige Referenz-URLs, für die Integration der Video- und Standb
 
 |Typ|Beispiel-Wert|
 |---|---|
-|MJPEG via HTTP|https://admin:12345678@1.2.3.4/api/camera/snapshot?width=640&height=480&fps=15|
-|RTSP h264|rtsp://1.2.3.4:554/h264_stream|
-|RTSP mjpeg|rtsp://1.2.3.4:554/mjpeg_stream|
+|MJPEG via HTTP|```https://admin:12345678@1.2.3.4/api/camera/snapshot?width=640&height=480&fps=15```|
+|RTSP h264|```rtsp://1.2.3.4:554/h264_stream```|
+|RTSP mjpeg|```rtsp://1.2.3.4:554/mjpeg_stream```|
 |JPG Bild|--|
 
 </br>
@@ -87,8 +87,8 @@ Hier finden Sie einige Referenz-URLs, für die Integration der Video- und Standb
 
 |Typ|Beispiel-Wert|
 |---|---|
-|RTSP h264|rtsp://admin:1234567@1.2.3.4:554/4|
-|JPG Bild|http://admin:1234567@1.2.3.4/snapshot/view0.jpg|
+|RTSP h264|```rtsp://admin:1234567@1.2.3.4:554/4```|
+|JPG Bild|```http://admin:1234567@1.2.3.4/snapshot/view0.jpg```|
 
 </br>
 
@@ -96,9 +96,9 @@ Hier finden Sie einige Referenz-URLs, für die Integration der Video- und Standb
 
 |Typ|Beispiel-Wert|
 |---|---|
-|RTSP h264|rtsp://root:Admin@1.2.3.4/axis-media/media.amp|
-|JPG Bild |http://root:Admin@1.2.3.4/axis-cgi/jpg/image.cgi|
-[Behnke Anleitung PDF](https://www.behnke-online.de/telefonanlagen/540-pascom-cloud-anlage/file)
+|RTSP h264|```rtsp://root:Admin@1.2.3.4/axis-media/media.amp```|
+|JPG Bild |```http://root:Admin@1.2.3.4/axis-cgi/jpg/image.cgi```|
+
 
 
 ## Funktionen der Türsprechstelle im pascom Client
@@ -108,7 +108,7 @@ Der pascom Client ermöglicht eine umfangreiche Interaktion mit angebundenen Tü
 Eine direkte Verbindung bedeutet, der pascom Client muss sich im selben Netzwerk wie die Türsprechstelle befinden. Egal, ob es sich dabei um den pascom Desktop oder Mobile Client handelt.
 
 
-![Netzwerkübersicht](network.de.png?width=80%)
+![Netzwerkübersicht](network.de.png)
 *Mobile Client ohne Videostream, außerhalb des Firmennetzwerk*
 </br>
 

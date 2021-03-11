@@ -67,8 +67,8 @@ Here you can find some reference URLs, for the integration of the video and  ima
 
 |Typ|URL|
 |---|---|
-|MJPEG via HTTP|http://user:password@1.2.3.4/mjpg/video.mjpg|
-|JPG Image|http://user:password@1.2.3.4/jpg/image.jpg|
+|MJPEG via HTTP|```http://user:password@1.2.3.4/mjpg/video.mjpg```|
+|JPG Image|```http://user:password@1.2.3.4/jpg/image.jpg```|
 
 </br>
 
@@ -76,9 +76,9 @@ Here you can find some reference URLs, for the integration of the video and  ima
 
 |Typ|URL|
 |---|---|
-|MJPEG via HTTP|https://admin:12345678@1.2.3.4/api/camera/snapshot?width=640&height=480&fps=15|
-|RTSP h264|rtsp://1.2.3.4:554/h264_stream|
-|RTSP mjpeg|rtsp://1.2.3.4:554/mjpeg_stream|
+|MJPEG via HTTP|```https://admin:12345678@1.2.3.4/api/camera/snapshot?width=640&height=480&fps=15```|
+|RTSP h264|```rtsp://1.2.3.4:554/h264_stream```|
+|RTSP mjpeg|```rtsp://1.2.3.4:554/mjpeg_stream```|
 |JPG Image|--|
 
 </br>
@@ -87,8 +87,8 @@ Here you can find some reference URLs, for the integration of the video and  ima
 
 |Typ|URL|
 |---|---|
-|RTSP h264|rtsp://admin:1234567@1.2.3.4:554/4|
-|JPG Image|http://admin:1234567@1.2.3.4/snapshot/view0.jpg|
+|RTSP h264|```rtsp://admin:1234567@1.2.3.4:554/4```|
+|JPG Image|```http://admin:1234567@1.2.3.4/snapshot/view0.jpg```|
 
 </br>
 
@@ -96,9 +96,9 @@ Here you can find some reference URLs, for the integration of the video and  ima
 
 |Typ|URL|
 |---|---|
-|RTSP h264|rtsp://root:Admin@1.2.3.4/axis-media/media.amp|
-|JPG Image |http://root:Admin@1.2.3.4/axis-cgi/jpg/image.cgi|
-[Behnke Guide PDF](https://www.behnke-online.de/telefonanlagen/540-pascom-cloud-anlage/file)
+|RTSP h264|```rtsp://root:Admin@1.2.3.4/axis-media/media.amp```|
+|JPG Image |```http://root:Admin@1.2.3.4/axis-cgi/jpg/image.cgi```|
+
 
 
 ## Functions of the Door Bell in the pascom Client
@@ -108,7 +108,7 @@ The pascom client enables extensive interaction with connected door bells. This 
 A direct connection means that the pascom client must be in the same network as the door intercom. It does not matter whether it is the pascom Desktop or Mobile Client.
 
 
-![Network Overview](network.en.png?width=80%)
+![Network Overview](network.en.png)
 *Mobile client without video stream, outside the corporate network*
 </br>
 
