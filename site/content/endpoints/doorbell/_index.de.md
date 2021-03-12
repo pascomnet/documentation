@@ -35,8 +35,8 @@ Füllen Sie die vordefinierten Felder mit Ihren Daten aus.
 |Bezeichnung|**Haupteingang**|Der Name der Türsprechstelle|
 |Geräte-Anmeldename|**XXXXXXXXXXX**|Anmeldename wird von der **pascom genereiert**|
 |Passwort| **XXXXXXX** | Passwort wird von der **pascom generiert**|
-|Bild-URL|**http://user:password@1.2.3.4/jpg/image.jpg**|URL der Standbildfunktion|
-|Video-URL|**http://user:password@1.2.3.4/mjpg/video.mjpg**| URL der Videostreamfunktion|
+|Bild-URL|```http://user:password@1.2.3.4/jpg/image.jpg```|URL der Standbildfunktion|
+|Video-URL|```http://user:password@1.2.3.4/mjpg/video.mjpg```| URL der Videostreamfunktion|
 |Türcode|**1234**| DTMF Code um die Tür zu öffnen|
 |Durchwahl|**503**| Interne Durchwahl der Türsprechstelle|
 
