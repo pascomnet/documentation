@@ -48,7 +48,7 @@ Füllen Sie die vordefinierten Felder mit Ihren Daten aus.
 
 ## Türsprechstellen konfigurieren
 
-Nachfolgend finden Sie eine Übersicht über Türsprechstellen die von pascom im Rahmen der Implementation getestet wurden. Generell können Sie jede SIP-fähige Türsprechstelle verwenden. Die nachfolgenden URL-Adressen müssen auf der Türsprechstelle selbst und auch auf der pascom Telefonanlage eingerichtet werden. Infos zum Aufbau der Video-URLS finden Sie meist direkt beim Hersteller auf der Webseite oder in den jeweiligen Handbüchern.
+Nachfolgend finden Sie eine Übersicht über Türsprechstellen die von pascom im Rahmen der Implementation getestet wurden. Generell können Sie jede SIP-fähige Türsprechstelle verwenden. Die nachfolgenden URL-Adressen müssen auf der Türsprechstelle selbst und auch auf der pascom Telefonanlage eingerichtet werden. Für die Konfiguration der Türsprechstelle halten Sie als nützliche Hilfestellung zusätzlich die Dokumentation des Herstellers bereit.
 
 ### Grundlegende Technologie
 
@@ -63,16 +63,27 @@ Hier finden Sie einige Referenz-URLs, für die Integration der Video- und Standb
 
 *Die hier aufgelisteten Hersteller, sollen keinesfalls eine Kaufempfehlung darstellen.*
 
-**Baudisch**
+### Baudisch
 
 |Typ|Beispiel-Wert|
 |---|---|
 |MJPEG via HTTP|```http://user:password@1.2.3.4/mjpg/video.mjpg```|
 |JPG Bild|```http://user:password@1.2.3.4/jpg/image.jpg```|
 
+**SIP Konfiguration**
+
+1. Kein Bild vorhanden
+
 </br>
 
-**2N IP Base**
+**Video Konfiguration**
+
+1. Kein Bild vorhanden
+
+
+</br>
+
+### 2N IP Base
 
 |Typ|Beispiel-Wert|
 |---|---|
@@ -83,7 +94,23 @@ Hier finden Sie einige Referenz-URLs, für die Integration der Video- und Standb
 
 </br>
 
-**Grandstream**
+**SIP Konfiguration**
+
+![2N Sip Konfiguration Part1](2n-phonesettings.de.PNG?width=80%)
+
+</br>
+
+![2N Sip Konfiguration Part2](2n-phonesettings-part2.de.PNG?width=80%)
+
+**Video Konfiguration**
+
+![2N Sip Konfiguration Video](2n-videosettings.de.PNG?width=80%)
+
+Bitte beachten Sie, dass zusätzlich das Öffnen der Tür per DTMF-Code konfiguriert werden muss.
+
+</br>
+
+### Grandstream
 
 |Typ|Beispiel-Wert|
 |---|---|
@@ -92,14 +119,43 @@ Hier finden Sie einige Referenz-URLs, für die Integration der Video- und Standb
 
 </br>
 
-**Behnke**
+**SIP Konfiguration**
+
+![Grandstream Konfiguration](Grandstream0.PNG?width=80%)
+
+
+**Video Konfiguration**
+
+![Grandstream Konfiguration Video](Grandstream1.PNG?width=80%)
+
+Bitte beachten Sie, dass zusätzlich das Öffnen der Tür per DTMF-Code konfiguriert werden muss.
+
+## Behnke
 
 |Typ|Beispiel-Wert|
 |---|---|
 |RTSP h264|```rtsp://root:Admin@1.2.3.4/axis-media/media.amp```|
 |JPG Bild |```http://root:Admin@1.2.3.4/axis-cgi/jpg/image.cgi```|
 
+**SIP Konfiguration**
 
+![Behnke Part1](behnke0.PNG?width=80%)
+
+</br>
+
+![Behnke Part2](behnke1.PNG?width=80%)
+
+</br>
+
+**Video Konfiguration**
+
+1. Kein Bild verhanden
+
+</br>
+
+Bitte beachten Sie, dass zusätzlich das Öffnen der Tür per DTMF-Code konfiguriert werden muss.
+
+[Behnke Anleitung PDF](https://www.behnke-online.de/telefonanlagen/540-pascom-cloud-anlage/file)(Schritte der Anleitung nicht mehr aktuell!)
 
 ## Funktionen der Türsprechstelle im pascom Client
 

@@ -48,7 +48,7 @@ Fill in the predefined fields with your data.
 
 ## Door Bell Configuration
 
-Below you will find an overview of door bells that have been tested by pascom during the implementation. In general, you can use any SIP-enabled door bell. The following URL addresses must be set up on the door bell itself and also on the pascom telephone system. Information about the structure of the video URLs can usually be found directly from the manufacturer on the website or in the respective manuals.
+Below you will find an overview of door bells that have been tested by pascom during the implementation. In general, you can use any SIP-enabled door bell. The following URL addresses must be set up on the door bell itself and also on the pascom telephone system. For the configuration of the door bell, also have the manufacturer's documentation available as a useful aid.
 
 ### Base Technology
 
@@ -63,7 +63,7 @@ Here you can find some reference URLs, for the integration of the video and  ima
 
 *The manufacturers listed here are in no way intended to be a recommendation to buy.*
 
-**Baudisch**
+## Baudisch
 
 |Typ|URL|
 |---|---|
@@ -72,7 +72,20 @@ Here you can find some reference URLs, for the integration of the video and  ima
 
 </br>
 
-**2N IP Base**
+**SIP Configuration**
+
+1. No Image available
+
+</br>
+
+**Video Configuration**
+
+1. No Image available
+
+
+</br>
+
+## 2N IP Base
 
 |Typ|URL|
 |---|---|
@@ -80,6 +93,22 @@ Here you can find some reference URLs, for the integration of the video and  ima
 |RTSP h264|```rtsp://1.2.3.4:554/h264_stream```|
 |RTSP mjpeg|```rtsp://1.2.3.4:554/mjpeg_stream```|
 |JPG Image|--|
+
+</br>
+
+**SIP Configuration**
+
+![2N Sip Configuration Part1](2n-phonesettings.en.PNG?width=80%)
+
+</br>
+
+![2N Sip Configuration Part2](2n-phonesettings-part2.en.PNG?width=80%)
+
+**Video Configuration**
+
+![2N Sip Configuration Video](2n-videosettings.en.PNG?width=80%)
+
+Please note that additionally the opening of the door must be configured by DTMF code.
 
 </br>
 
@@ -92,14 +121,43 @@ Here you can find some reference URLs, for the integration of the video and  ima
 
 </br>
 
-**Behnke**
+**SIP Configuration**
+
+![Grandstream Configuration](Grandstream0.PNG?width=80%)
+
+
+**Video Configuration**
+
+![Grandstream Configuartion Video](Grandstream1.PNG?width=80%)
+
+Please note that additionally the opening of the door must be configured by DTMF code.
+
+## Behnke
 
 |Typ|URL|
 |---|---|
 |RTSP h264|```rtsp://root:Admin@1.2.3.4/axis-media/media.amp```|
 |JPG Image |```http://root:Admin@1.2.3.4/axis-cgi/jpg/image.cgi```|
 
+**SIP Configuration**
 
+![Behnke Part1](behnke0.PNG?width=80%)
+
+</br>
+
+![Behnke Part2](behnke1.PNG?width=80%)
+
+</br>
+
+**Video Configuration**
+
+1. No Image available
+
+</br>
+
+Please note that additionally the opening of the door must be configured by DTMF code.
+
+[Behnke Manual PDF](https://www.behnke-online.de/telefonanlagen/540-pascom-cloud-anlage/file)(Steps of the manual no longer up to date!)
 
 ## Functions of the Door Bell in the pascom Client
 
