@@ -33,6 +33,189 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 * [CL-1501] Beim Update von v64 auf v65 kann es zu Problemen beim Abspielen von Klingeltönen kommen. Als Lösung reicht es aus, den konfigurierten Klingelton bzw. Klingelton-Lautsprecher in den Einstellungen einfach erneut auszuwählen.
 * [CL-1748] Accessibility Support ist unter Windows momentan deaktiviert um ein einfrieren des Clients zu vermeiden.
 
+## Release 71.R1640 (15.03.2021)
+
+
+**Auf einen Blick**
+
+- Hinweis: Diese Version ist nur noch zu pascom 19 servern kompatibel
+
+Neue Funktionen mit pascom 19.14 Server:
+- Unterstützung für Video-Türklingeln
+– Ein iOS/Android Gerät kann im Desktop Client nun als bevorzugtes Gerät gewählt und ferngesteuert werden
+– Verbesserter Dateitransfer mit Anzeige im Chat und auch auf iOS/Android Geräten
+
+Neue Funktionen:
+- Verbesserte Suchfunktion mit As-you-type Live-Suche
+- Konferenzanrufe werden nun in einer Benachrichtigung dargestellt
+- iOS/Android: Der gewünschte Lautsprecher (Bluetooth, Intern, Lautsprechen) kann nun während des Gespräches umgeschaltet werden
+- iOS/Android: Während eines Videotelefonates kann nun der Bildschirm gedreht werden
+- Kuando Busylight funktioniert nun auch mit anderen Geräten als dem Softphone
+- Ausgehende Anrufe können nun mit dem “Smart Offhook” Tastenkürzel aufgelegt werden
+- Telefonnummern werden im Chat erkannt und sind Klickbar
+- Performanceverbesserungen unter Windows in RDP Sitzungen/Terminal-Server Umgebungen
+- Dialog zum setzen von Rufumleitungen verbessert
+- Android: System DND Einstellungen werden nun korrekt beachtet
+- Verbesserte Unterstützung für iPads
+
+**Tickets**
+
+* [CL-150] - Use mobile app as preferred Device in Client
+* [CL-359] - Improve conference call notification
+* [CL-449] - Support switching audio devices during call on mobile
+* [CL-1033] - Provision BLF Keys from pascom Client, Milestone 1
+* [CL-1034] - Doorbell support in pascom Client
+* [CL-1139] - Open journal details from missed call notification
+* [CL-1212] - Sennheiser rebrand to EPOS
+* [CL-1269] - Enhance FollowMe UI with "gsmonly" switch
+* [CL-1325] - Roaming to location doesn't add phone device section
+* [CL-1334] - Invalid softphone state after exception
+* [CL-1406] - Switch to dxgiscreencapsrc for desktop sharing on windows
+* [CL-1440] - Show a "Ringing Indicator" if the app is backgrounded while ringing on android
+* [CL-1448] - Kuando busylight not working if desktop phone is preferred device
+* [CL-1451] - Get rid of QDateTime::toTime_t() calls in client
+* [CL-1452] - Show dtmf pad for a ringing outgoing internal queue call
+* [CL-1454] - Consistently handle open external link failures in client
+* [CL-1455] - update_tmstmp in client database is never updated
+* [CL-1472] - Replace QML copy with QClipboard in c++
+* [CL-1473] - Improve UsbMonitor rescan logic
+* [CL-1478] - Avatar is sometimes re-generated without user interaction
+* [CL-1523] - Also hangup outgoing ringing calls when using pascom smart offhook shortcut
+* [CL-1536] - Fix Phonebook notes field, it should accept line breaks
+* [CL-1542] - Add press and hold for search input field in client
+* [CL-1555] - Add trunk prefix to call forwarding input field in settings
+* [CL-1563] - Restoring ringtone device is broken on macOS
+* [CL-1572] - Disable phonebook section in journal details for group and system calls
+* [CL-1574] - Fix iPad glitches
+* [CL-1578] - Sunset support for servers older than pascom 19
+* [CL-1600] - Improve client search usability
+* [CL-1611] - Make phone numbers in chat clickable
+* [CL-1619] - Remember last journal filter and position
+* [CL-1632] - Do not allow editing of user phonebook entries in client
+* [CL-1637] - Refactor Toast API
+* [CL-1638] - Displaying many notifications at once lock up windows if native notifications are in use
+* [CL-1642] - Copy group dial number and pin separately
+* [CL-1643] - No toast is shown if call is rejected in some cases
+* [CL-1648] - Fix crash on shutdown in pascom Client
+* [CL-1671] - Shaking an iPhone invokes default undo dialog
+* [CL-1674] - Introduce a 'downloaded file' toast with 'open file/open folder' buttons
+* [CL-1676] - Commandline parameters are cut off on windows
+* [CL-1677] - Possibility to mute the ringtone/vibration for an incoming call on android
+* [CL-1687] - Android notification problems
+* [CL-1691] - Improve Team Details View, allow avatar uploads
+* [CL-1697] - Show counter for missed call in pascom icon on iOS
+* [CL-1703] - Improve mobile client speaker selection for playing voicemails or recordings
+* [CL-1705] - Asset based file Transfer (Milestone 1)
+* [CL-1710] - Do not enforce OpenGL Software backend on Windows/RDP
+* [CL-1714] - Increment file names instead of overwriting old ones after download
+* [CL-1719] - Improve message on failed update download
+* [CL-1720] - Provide a "remove filter link" on the "no matches" pane in contact list
+* [CL-1723] - Phonebook entry not updated after creating in journal details
+* [CL-1724] - Phone book roster entry number not shown
+* [CL-1725] - No emoji live translation in custom chat notification
+* [CL-1726] - Sign all pascom Client binaries, not only setup and main executable
+* [CL-1733] - Layout on iPhone with iPhone SE is broken
+* [CL-1735] - Add call waiting buttons to windows native notification
+* [CL-1737] - Button texts in notifications elide too early
+* [CL-1743] - Weird behavior if user calls own extension with the iOS application
+* [CL-1749] - Remove xmppuser_FindClientInfoByOsUser
+* [CL-1753] - pascom Client can't register softphone if tls version is not exactly specified in kamailio config
+* [CL-1755] - Client crashes on macOS on state sync to jabra device
+* [CL-1762] - Hover tooltip 'blinking' during video call
+* [CL-1769] - Clean up userprofile getValue and setValue
+* [CL-1771] - Unequal spacing in UI
+* [CL-1773] - Select screen for screensharing transparent
+* [CL-1774] - Android does not show chat notifications anymore if in app
+* [CL-1777] - Improve pjsip dependency build
+* [CL-1780] - Client should log environment variables and commandline parameters
+* [CL-1783] - Refactor USB Bus monitoring in pascom Client
+* [CL-1786] - Transfer call to favorite phone book entry via right click menu
+* [CL-1789] - Collect detailed metrics about screensharing and video calls
+* [CL-1790] - Rotate camera if device is rotated on mobile
+* [CL-1797] - pascom client build script improvements
+* [CL-1799] - Compile warning in ipcservice due to wrong memset usage
+* [CL-1809] - Client resyncs on every login
+* [CL-1810] - Middle section empty after relogin
+* [CL-1811] - Hide chat button for external conference participant via dial in number
+* [CL-1817] - Version number is cut off in start screen on macOS
+* [CL-1821] - Multiple loading indicator in client when starting video
+* [CL-1824] - Unset update threshold is handled incorrectly in pascom Client
+* [CL-1825] - Can't accept call on iOS using CallKit
+* [CL-1827] - Avatar for team is now shown if client is restarted
+* [CL-1830] - Linux client fontconfig broken on ubuntu 20.10
+* [CL-1831] - Client crashes after attended transfer
+* [CL-1832] - Limit status text input length
+* [CL-1833] - Emoji renderer in windows client broken
+* [CL-1834] - Maximize video streams in fullscreen layout broken
+* [CL-1835] - Chat buttons in call/video fullscreen mode broken
+* [CL-1843] - Client shows "No sip connection" during wakeup
+* [CL-1844] - "Softphone has no SIP connection" after roaming
+* [CL-1845] - Links in client broken
+* [CL-1846] - Android client crash after pairing again
+* [CL-1847] - Rendering for journal cells is broken
+* [CL-1849] - Improve file asset handling in pascom Client
+* [CL-1852] - Client crashes when setting call forwarding
+* [CL-1853] - pascom App rings despite ongoing gsm call
+* [CL-1854] - Escape characters in phone book note field to avoid XSS attacks
+* [CL-1860] - Removing roster smart filter takes about 3 sec on mobile
+* [CL-1862] - Check both device id and name in softphone remote control commands
+* [CL-1863] - Client shows new 'Today' in the chat when sending long message
+* [CL-1867] - Cannot switch camera in settings with android mobile client
+* [CL-1868] - Notification is sometimes displayed multiple times
+* [CL-1869] - "Accept incoming calls here" message is shown if the rdp mode client is started first
+* [CL-1870] - Build ios notificationExtension out of tree
+* [CL-1879] - Android client stays in splash screen after accepting permissions
+* [CL-1881] - Support new BLF key types
+* [CL-1882] - Handle remote pushes for file assets correctly
+* [CL-1885] - Handle Quota errors during file uploads correctly
+* [CL-1894] - Nothing happens when we click on a play button in journal entry
+* [CL-1896] - RetryUpdateToast (Popup) broken
+* [CL-1902] - Message sound should not be tied to notification
+* [CL-1904] - Journal Meta Notifications layout glitch
+* [CL-1914] - Team Journal Filters are not visible on mobile
+* [CL-1917] - client utilizes 100% of one CPU core
+* [CL-1919] - Wrong queue details UI if you switch between queues
+* [CL-1921] - Phonebook Search is not re-executed if search view is dismissed with an entered text
+* [CL-1926] - Headset configure dialog opens if a supported headset is detached
+* [CL-1927] - Preview images are sometimes not rendered in the chat pane
+* [CL-1928] - Respect rotation tag from exif metadata when scaling an image
+* [CL-1929] - Scroll to end if a message or file is sent
+* [CL-1931] - Improve preview renderer quality and scale down algorithm
+* [CL-1932] - ConnectionState is wrong on Android if a remote controlled outgoing call is started
+* [CL-1933] - Download and Open media file if clicked/tapped on
+* [CL-1934] - Improve file asset upload and download toasts
+* [CL-1935] - Improve file asset behaviour
+* [CL-1938] - fkey index in Snom configuration is negative without any default line key
+* [CL-1942] - Improve client blf behavior
+* [CL-1943] - Allow accepting a call for an integrated mobile phone on my desktop client
+* [CL-1944] - Only add videotestsrc if no other camera was found
+* [CL-1948] - Doorbell video stream starts very slowly
+* [CL-1951] - Android Client stays in "incoming call" screen when accepting a call on the desktop client
+* [CL-1952] - Delete file asset button does not react on click
+* [CL-1954] - User should be able to delete the files sent by the guest
+* [CL-1955] - Improve Contact selection for BLF keys
+* [CL-1956] - Client crash after downloading fax and open file/folder
+* [CL-1960] - Keep the screen active if the device is charging and pascom is in foreground
+* [CL-1964] - Links in ChatNotification broken
+* [CL-1965] - Client crashes often when searching or opening the search view
+* [CL-1969] - Android mobile client exception after closing app
+* [CL-1972] - Fix Chat Search for file transfer messages
+* [CL-1973] - Copy to clipboard copies formatted text on android
+* [CL-1976] - Show an error toast if preferred mobile device is gsmonly
+* [CL-1979] - Deleting of file assets is unreliable
+* [CL-1980] - Last search entries broken on first opening
+* [CL-1982] - tgz file gets manipulated to jpg after sending it in chat
+* [CL-1984] - Always select the front camera if a video call is started for the first time
+* [CL-1985] - RTSP doorbell streams on android don't work
+* [CL-1986] - Client crashes when searching on iOS
+* [CL-1989] - Wrong display name of BLF after apply and save line key
+* [CL-1991] - Sometimes "ghost calls" happen when remote controlling an android phone
+* [CL-1992] - Crash in PickupList::clearData()
+* [CL-1994] - iOS client doesn't stop to ring, hangup ends call on other device
+* [CL-1995] - Pushed calls not started from background if android api version <28
+* [CL-2003] - If on desktop mobile is preferred device with gsmonly, we show toast, but phoning is still working
+* [CL-2010] - Client should disallow phonebook actions for grafana viewers
+* [CL-2014] - File asset is not deleted
 
 ## Release 70.R1493 (11.01.2021)
 
