@@ -70,15 +70,19 @@ Hier finden Sie einige Referenz-URLs, für die Integration der Video- und Standb
 |MJPEG via HTTP|```http://user:password@1.2.3.4/mjpg/video.mjpg```|
 |JPG Bild|```http://user:password@1.2.3.4/jpg/image.jpg```|
 
+</br>
+
 **SIP Konfiguration**
 
-1. Kein Bild vorhanden
+![Baudisch Sip Konfiguration](baudisch-phonesettings.de.PNG?width=80%)
 
 </br>
 
 **Video Konfiguration**
 
-1. Kein Bild vorhanden
+![Baudisch Sip Konfiguration Video](baudisch-videosettings.de.PNG?width=80%)
+
+Bitte beachten Sie, dass zusätzlich das Öffnen der Tür per DTMF-Code konfiguriert werden muss.
 
 
 </br>
@@ -92,7 +96,6 @@ Hier finden Sie einige Referenz-URLs, für die Integration der Video- und Standb
 |RTSP mjpeg|```rtsp://1.2.3.4:554/mjpeg_stream```|
 |JPG Bild|--|
 
-</br>
 
 **SIP Konfiguration**
 

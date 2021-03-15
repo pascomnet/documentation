@@ -74,13 +74,15 @@ Here you can find some reference URLs, for the integration of the video and  ima
 
 **SIP Configuration**
 
-1. No Image available
+![Baudisch Sip Configuration](baudisch-phonesettings.en.PNG?width=80%)
 
 </br>
 
-**Video Configuration**
+**Video Konfiguration**
 
-1. No Image available
+![Baudisch Sip Configuration Video](baudisch-videosettings.en.PNG?width=80%)
+
+Please note that additionally the opening of the door must be configured by DTMF code.
 
 
 </br>
