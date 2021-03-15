@@ -70,6 +70,7 @@ Due to the technological changes made between pascom 17 to 18 and the resulting 
 
 |Version|Release Type|Published|
 |-------|------------|---------------:|
+|[Release 71.R1640]({{< ref "/release-notes/pascomClient#release-71-r1640-15-03-2021">}})| Bugfix Release | 15.03.2021|
 |[Release 70.R1493]({{< ref "/release-notes/pascomClient#release-70-r1493-11-01-2021">}})| Bugfix Release | 11.01.2021|
 |[Release 69.R1548]({{< ref "/release-notes/pascomClient#release-69-r1548-08-12-2020">}})| Bugfix Release | 08.12.2020|
 |[Release 68.R1423]({{< ref "/release-notes/pascomClient#release-68-r1423-27-11-2020">}})| Bugfix Release | 27.11.2020|

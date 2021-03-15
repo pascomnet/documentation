@@ -39,28 +39,28 @@ The following issues are known to us and we are already working on solutions.
 
 **Overview**
 
-- Note: This version is only compatible to pascom 19 and newer servers
+- Note: This version is only compatible to **pascom 19 and newer servers**
 
-New features when using a pascom 19.14 server:
+**New features when using a pascom 19.14 server:**
 
-- Support for video Intercom systems
-- Using the desktop client, iOS/Android devices can now be selected as the preferred device and remote controlled
-- Added file transfer preview and chat logging 
-- Added file transfer capabilites for iOS/Android devices
+- Support for video Intercom systems.
+- Using the desktop client, iOS/Android devices can now be selected as the preferred device and remote controlled.
+- Added file transfer preview and chat logging .
+- Added file transfer capabilites for iOS/Android devices.
 
 New Features:
 
-- Improved search feature with as-you-type live search
-- Conference calls are now displayed in a single notification
-- iOS/Android: Added in call speaker toggle to change between Bluetooth, In-built, Handsfree
-- iOS/Android: Added screen rotation for video calls
-- Kuando Busylight now works with more devices other than just the pascom Softphone
-- Outbound calls can now be ended using the “Smart Offhook” shortcut
-- Phone numbers are recognized in chats and are clickable
-- Improve performance on Windows inside RDP/Terminal Server environments
-- Improved dialog for setting call redirections
-- Android: System DND settings are now handled correctly
-- Improved support for iPads
+- Improved search feature with as-you-type live search.
+- Conference calls are now displayed in a single notification.
+- iOS/Android: Added in call speaker toggle to change between Bluetooth, In-built, Handsfree.
+- iOS/Android: Added screen rotation for video calls.
+- Kuando Busylight now works with more devices other than just the pascom Softphone.
+- Outbound calls can now be ended using the “Smart Offhook” shortcut.
+- Phone numbers are recognized in chats and are clickable.
+- Improve performance on Windows inside RDP/Terminal Server environments.
+- Improved dialog for setting call redirections.
+- Android: System DND settings are now handled correctly.
+- Improved support for iPads.
 
 **Tickets**
 

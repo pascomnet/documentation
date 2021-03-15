@@ -38,25 +38,27 @@ Diese Probleme sind uns bekannt und wir arbeiten bereits an einer Lösung
 
 **Auf einen Blick**
 
-- Hinweis: Diese Version ist nur noch zu pascom 19 servern kompatibel
+- Hinweis: Diese Version ist nur noch zu **pascom 19 Servern** kompatibel
 
-Neue Funktionen mit pascom 19.14 Server:
-- Unterstützung für Video-Türklingeln
-– Ein iOS/Android Gerät kann im Desktop Client nun als bevorzugtes Gerät gewählt und ferngesteuert werden
-– Verbesserter Dateitransfer mit Anzeige im Chat und auch auf iOS/Android Geräten
+**Neue Funktionen mit pascom 19.14 Server:**
+
+- Unterstützung für Video-Türsprechstellen.
+- Ein iOS/Android Gerät kann im Desktop Client nun als bevorzugtes Gerät gewählt und via Remote Control ferngesteuert werden.
+- Verbesserter Dateitransfer mit Rendering-Funktion im Chat, sowohl für Desktop als auch auf iOS/Android Geräten.
 
 Neue Funktionen:
-- Verbesserte Suchfunktion mit As-you-type Live-Suche
-- Konferenzanrufe werden nun in einer Benachrichtigung dargestellt
-- iOS/Android: Der gewünschte Lautsprecher (Bluetooth, Intern, Lautsprechen) kann nun während des Gespräches umgeschaltet werden
-- iOS/Android: Während eines Videotelefonates kann nun der Bildschirm gedreht werden
-- Kuando Busylight funktioniert nun auch mit anderen Geräten als dem Softphone
-- Ausgehende Anrufe können nun mit dem “Smart Offhook” Tastenkürzel aufgelegt werden
-- Telefonnummern werden im Chat erkannt und sind Klickbar
-- Performanceverbesserungen unter Windows in RDP Sitzungen/Terminal-Server Umgebungen
-- Dialog zum setzen von Rufumleitungen verbessert
-- Android: System DND Einstellungen werden nun korrekt beachtet
-- Verbesserte Unterstützung für iPads
+
+- Verbesserte Suchfunktion mit Live-Suche.
+- Konferenzanrufe werden nun in einer Benachrichtigung dargestellt.
+- iOS/Android: Der gewünschte Lautsprecher (Bluetooth, Intern, Lautsprechen) kann nun während des Gespräches umgeschaltet werden.
+- iOS/Android: Während eines Videotelefonates kann nun der Bildschirm gedreht werden.
+- Kuando Busylight funktioniert nun auch mit anderen Geräten als dem Softphone.
+- Ausgehende Anrufe können nun mit dem “Smart Offhook” Tastenkürzel aufgelegt werden.
+- Telefonnummern werden im Chat erkannt und sind klickbar.
+- Performanceverbesserungen unter Windows in bei RDP Sitzungen/Terminal-Server Umgebungen.
+- Dialog zum setzen von Rufumleitungen verbessert.
+- Android: System DND Einstellungen werden nun korrekt beachtet.
+- Verbesserte Unterstützung für iPads.
 
 **Tickets**
 
