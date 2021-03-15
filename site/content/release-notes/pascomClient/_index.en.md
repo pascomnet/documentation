@@ -37,27 +37,29 @@ The following issues are known to us and we are already working on solutions.
 ## Release 71.R1640 (15.03.2021)
 
 
-**Auf einen Blick**
+**Overview**
 
 - Note: This version is only compatible to pascom 19 and newer servers
 
 New features when using a pascom 19.14 server:
-- Support for video doorbells
-– An iOS/Android can now be selected as preferred device desktop Client and remote controlled
-– Improved File transfer, now also available on iOS/Android devices
+
+- Support for video Intercom systems
+- Using the desktop client, iOS/Android devices can now be selected as the preferred device and remote controlled
+- Added file transfer preview and chat logging 
+- Added file transfer capabilites for iOS/Android devices
 
 New Features:
 
 - Improved search feature with as-you-type live search
-- Conference calls are now shown in a single notification
-- iOS/Android: The speaker (Bluetooth, Intern, Handsfree) can now be switched during a call
-- iOS/Android: Screen rotates now during a video call if the device is rotated
-- Kuando Busylight now works with other devices than the pascom Softphone
-- Outgoing ringing calls can now be ended using the “Smart Offhook” shortcut
+- Conference calls are now displayed in a single notification
+- iOS/Android: Added in call speaker toggle to change between Bluetooth, In-built, Handsfree
+- iOS/Android: Added screen rotation for video calls
+- Kuando Busylight now works with more devices other than just the pascom Softphone
+- Outbound calls can now be ended using the “Smart Offhook” shortcut
 - Phone numbers are recognized in chats and are clickable
-- Performance improvements on Windows inside of RDP/Terminal Server sessions
+- Improve performance on Windows inside RDP/Terminal Server environments
 - Improved dialog for setting call redirections
-- Android: System DND settings are now treated correctly
+- Android: System DND settings are now handled correctly
 - Improved support for iPads
 
 **Tickets**
